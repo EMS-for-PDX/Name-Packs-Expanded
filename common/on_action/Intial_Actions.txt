@@ -1,0 +1,22 @@
+﻿on_game_start = {
+	on_actions = {
+		on_867_start
+		on_1066_start
+	}
+}
+on_867_start = {
+	trigger = {
+		current_date > 866.12.31
+	}
+	effect = {
+		867_oghuz_effects = yes
+	}
+}
+on_1066_start = {
+	trigger = {
+		current_date > 1066.9.14
+	}
+	effect = {
+		1066_oghuz_effects = yes
+	}
+}

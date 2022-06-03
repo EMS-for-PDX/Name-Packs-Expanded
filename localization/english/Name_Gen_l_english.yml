@@ -1,0 +1,35 @@
+﻿l_english:
+Gui_blank: ""
+Gui_blank_After: ""
+Gui_blank_Before: ""
+
+#Given Names
+Supported_Name: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
+Nonsupported_Name: "[ROOT.Char.GetFirstNameNoTooltip]"
+
+#Patronyms
+Supported_Patronym: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetFather.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')),'_pat_dad'),ROOT.Char.Custom('CharacterGender')))]"
+Supported_Patronym_After: " [Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetFather.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')),'_pat_dad'),ROOT.Char.Custom('CharacterGender')))]"
+Supported_Patronym_Before: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetFather.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')),'_pat_dad'),ROOT.Char.Custom('CharacterGender')))] "
+Nonsupported_Patronym: "[Localize(Concatenate(Concatenate('PatPrefix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))][ROOT.Char.GetFather.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('PatSuffix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))]"
+Nonsupported_Patronym_After: " [Localize(Concatenate(Concatenate('PatPrefix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))][ROOT.Char.GetFather.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('PatSuffix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))]"
+Nonsupported_Patronym_Before: "[Localize(Concatenate(Concatenate('PatPrefix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))][ROOT.Char.GetFather.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('PatSuffix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))] "
+
+#Tier Gen
+Tier_Gen_Default: "[ROOT.Char.GetTitleTierName]"
+Tier_Gen_Default_After: " [ROOT.Char.GetTitleTierName]"
+Tier_Gen_Default_Before: "[ROOT.Char.GetTitleTierName] "
+Tier_Gen_CNP: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')))]"
+Tier_Gen_CNP_After: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_after'))]"
+Tier_Gen_CNP_Before: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_before'))]"
+
+#Laqab Gen
+Reg_Laqab_Gen: "[Localize(Concatenate(ROOT.Char.Custom('RegLaqabGen'),ROOT.Char.Custom('CharacterCulture')))]"
+Reg_Laqab_Gen_SGUI: "[Localize(Concatenate(CHARACTER.Custom('RegLaqabGen'),CHARACTER.Custom('CharacterCulture')))]"
+
+#Tek Gen
+Supported_Tek: "[Localize(Concatenate(Concatenate(Concatenate(TARGET_CHARACTER.GetFirstNameNoTooltip,CHARACTER.Custom('CharacterCulture')),'_tek'),CHARACTER.Custom('CharacterGender')))] "
+Nonsupported_Tek: "[Localize(Concatenate(Concatenate('TekPrefix', CHARACTER.Custom('CharacterCulture')),CHARACTER.Custom('CharacterGender')))][TARGET_CHARACTER.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('TekSuffix', CHARACTER.Custom('CharacterCulture')),CHARACTER.Custom('CharacterGender')))] "
+
+#Defaults
+UI_Name_Default: "[ROOT.Char.GetUIName]"

@@ -1,0 +1,109 @@
+﻿#Tier
+CharacterTierCheck = {
+	type = character
+	text = {
+		trigger = {
+			is_landed = yes
+			any_held_title = {
+				OR = {
+					this = title:d_CTFA_vanity_0
+					this = title:d_CTFA_vanity_1
+					this = title:d_CTFA_vanity_2
+					this = title:d_CTFA_vanity_3
+					this = title:d_CTFA_vanity_4
+					this = title:d_CTFA_vanity_5
+					this = title:d_CTFA_vanity_6
+					this = title:d_CTFA_vanity_7
+					this = title:d_CTFA_vanity_8
+					this = title:d_CTFA_vanity_9
+				}
+			}
+		}
+		localization_key = Tier_Gen_Default
+	}
+	text = {
+		fallback = yes
+		localization_key = Tier_Gen_CNP
+	}
+}
+CharacterTierCheckAfter = {
+	parent = CTPTierGen
+	suffix = "_After"
+}
+CharacterTierCheckBefore = {
+	parent = CTPTierGen
+	suffix = "_Before"
+}
+
+
+CharacterNameCheck = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = name_pack_support_dynasty
+                            this = root
+                        }
+                    }
+                }
+                any_in_global_list = {
+                    variable = name_pack_support_global
+                    this = root
+                }
+			}
+		}
+		localization_key = Supported_Name
+	}
+    text = {
+        fallback = yes
+		localization_key = Nonsupported_Name
+    }
+}
+CharacterPatCheck = {
+	type = character
+	text = {
+		trigger = {
+			exists = father
+            father = {
+                OR = {
+                    AND = {
+                        exists = dynasty
+                        dynasty = {
+                            any_in_list = {
+                                variable = name_pack_support_dynasty
+                                this = root.father
+                            }
+                        }
+                    }
+                    any_in_global_list = {
+                        variable = name_pack_support_global
+                        this = root.father
+                    }
+                }
+            }
+		}
+		localization_key = Supported_Patronym
+	}
+    text = {
+        trigger = {
+            exists = father
+        }
+        localization_key = Nonsupported_Patronym
+    }
+	text = {
+		fallback = yes
+		localization_key = Gui_blank
+	}
+}
+CharacterPatCheckAfter = {
+	parent = CharacterPatCheck
+	suffix = "_After"
+}
+CharacterPatCheckBefore = {
+	parent = CharacterPatCheck
+	suffix = "_Before"
+}

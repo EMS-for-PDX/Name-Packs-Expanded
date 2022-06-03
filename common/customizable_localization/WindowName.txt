@@ -1,0 +1,85 @@
+﻿WindowName = {
+	type = character
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						is_independent_ruler = yes
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+		}
+		localization_key = Window_Turkish_Muslim_Sultan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+		}
+		localization_key = Window_Turkish_Muslim_Low
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = Window_Uyghur_E
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_kingdom
+		}
+		localization_key = Window_Uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				karluk_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Window_Karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+		}
+		localization_key = Window_Turkish
+	}
+	text = {
+		fallback = yes
+		localization_key = UI_Name_Default
+	}
+}

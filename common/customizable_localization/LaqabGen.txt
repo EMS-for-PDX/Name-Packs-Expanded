@@ -1,0 +1,1384 @@
+﻿PreLaqabCheck = {
+	type = character
+	log_loc_errors = no
+    text = {
+        fallback = yes
+		localization_key = Gui_blank
+    }
+}
+LaqabNameCheck = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = regular_laqab_dynasty
+                            this = root
+                        }
+                    }
+                }
+                any_in_global_list = {
+                    variable = regular_laqab_global
+                    this = root
+                }
+			}
+		}
+		localization_key = Reg_Laqab_Gen
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = name_pack_support_dynasty
+                            this = root
+                        }
+                    }
+                }
+                any_in_global_list = {
+                    variable = name_pack_support_global
+                    this = root
+                }
+			}
+		}
+		localization_key = Supported_Name
+	}
+    text = {
+        fallback = yes
+		localization_key = Nonsupported_Name
+    }
+}
+
+RegLaqabGen = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Badi_al_Mulk
+				this = root
+			}
+		}
+        localization_key = Badi_al_Mulk
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Badi_az_Zaman
+				this = root
+			}
+		}
+        localization_key = Badi_az_Zaman
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Badr_ad_Din
+				this = root
+			}
+		}
+        localization_key = Badr_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Baha_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Baha_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Baha_ad_Din
+				this = root
+			}
+		}
+        localization_key = Baha_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Bakht_an_Nissa
+				this = root
+			}
+		}
+        localization_key = Bakht_an_Nissa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Burhan_ad_Din
+				this = root
+			}
+		}
+        localization_key = Burhan_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Diya_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Diya_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Diya_ad_Din
+				this = root
+			}
+		}
+        localization_key = Diya_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Fakhr_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Fakhr_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Fakhr_ad_Din
+				this = root
+			}
+		}
+        localization_key = Fakhr_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Fakhr_an_Nissa
+				this = root
+			}
+		}
+        localization_key = Fakhr_an_Nissa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Falak_ad_Din
+				this = root
+			}
+		}
+        localization_key = Falak_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Farid_ad_Din
+				this = root
+			}
+		}
+        localization_key = Farid_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Faris_ad_Din
+				this = root
+			}
+		}
+        localization_key = Faris_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Fath_ad_Din
+				this = root
+			}
+		}
+        localization_key = Fath_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Ghiyath_ad_Din
+				this = root
+			}
+		}
+        localization_key = Ghiyath_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Hafiz_ad_Din
+				this = root
+			}
+		}
+        localization_key = Hafiz_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Hamid_ad_Din
+				this = root
+			}
+		}
+        localization_key = Hamid_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Haqq_ad_Din
+				this = root
+			}
+		}
+        localization_key = Haqq_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Hisham_ad_Din
+				this = root
+			}
+		}
+        localization_key = Hisham_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Hisn_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Hisn_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Hujjat_al_Islam
+				this = root
+			}
+		}
+        localization_key = Hujjat_al_Islam
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Husam_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Husam_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Husam_ad_Din
+				this = root
+			}
+		}
+        localization_key = Husam_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Itimad_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Itimad_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Jalal_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Jalal_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Jalal_ad_Din
+				this = root
+			}
+		}
+        localization_key = Jalal_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Jalalat_ad_Din
+				this = root
+			}
+		}
+        localization_key = Jalalat_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Jamal_ad_Din
+				this = root
+			}
+		}
+        localization_key = Jamal_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Kamal_ad_Din
+				this = root
+			}
+		}
+        localization_key = Kamal_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Karim_ad_Din
+				this = root
+			}
+		}
+        localization_key = Karim_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Khayr_ad_Din
+				this = root
+			}
+		}
+        localization_key = Khayr_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Mah_i_Mulk
+				this = root
+			}
+		}
+        localization_key = Mah_i_Mulk
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Majd_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Majd_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Majd_ad_Din
+				this = root
+			}
+		}
+        localization_key = Majd_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Malika_i_Jahan
+				this = root
+			}
+		}
+        localization_key = Malika_i_Jahan
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Mansur_ad_Din
+				this = root
+			}
+		}
+        localization_key = Mansur_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Mugith_ad_Din
+				this = root
+			}
+		}
+        localization_key = Mugith_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muhibb_ad_Din
+				this = root
+			}
+		}
+        localization_key = Muhibb_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muhyi_ad_Din
+				this = root
+			}
+		}
+        localization_key = Muhyi_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muhyi_al_Milla
+				this = root
+			}
+		}
+        localization_key = Muhyi_al_Milla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Mujir_ad_Din
+				this = root
+			}
+		}
+        localization_key = Mujir_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Mumahhid_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Mumahhid_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Mumahhid_ad_Din
+				this = root
+			}
+		}
+        localization_key = Mumahhid_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Murtada_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Murtada_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Musharraf_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Musharraf_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Mushir_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Mushir_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muslih_ad_Din
+				this = root
+			}
+		}
+        localization_key = Muslih_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muzaffar_ad_Din
+				this = root
+			}
+		}
+        localization_key = Muzaffar_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muayyad_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Muayyad_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muayyad_ad_Din
+				this = root
+			}
+		}
+        localization_key = Muayyad_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muayyad_al_Milla
+				this = root
+			}
+		}
+        localization_key = Muayyad_al_Milla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muin_ad_Din
+				this = root
+			}
+		}
+        localization_key = Muin_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muizz_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Muizz_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muizz_ad_Din
+				this = root
+			}
+		}
+        localization_key = Muizz_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Mutamid_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Mutamid_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Najm_ad_Din
+				this = root
+			}
+		}
+        localization_key = Najm_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Nasir_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Nasir_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Nasir_ad_Din
+				this = root
+			}
+		}
+        localization_key = Nasir_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Nasir_al_Milla
+				this = root
+			}
+		}
+        localization_key = Nasir_al_Milla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Nizam_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Nizam_ad_Dalwa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Nizam_ad_Din
+				this = root
+			}
+		}
+        localization_key = Nizam_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Nizam_al_Mulk
+				this = root
+			}
+		}
+        localization_key = Nizam_al_Mulk
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Nur_ad_Din
+				this = root
+			}
+		}
+        localization_key = Nur_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Nusrat_ad_Din
+				this = root
+			}
+		}
+        localization_key = Nusrat_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Qamar_ad_Din
+				this = root
+			}
+		}
+        localization_key = Qamar_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Qatr_an_Nada
+				this = root
+			}
+		}
+        localization_key = Qatr_an_Nada
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Qawam_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Qawam_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Qutb_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Qutb_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Qutb_ad_Din
+				this = root
+			}
+		}
+        localization_key = Qutb_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Radiyat_ad_Din
+				this = root
+			}
+		}
+        localization_key = Radiyat_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Radiyat_ad_Dunya
+				this = root
+			}
+		}
+        localization_key = Radiyat_ad_Dunya
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rafi_ad_Din
+				this = root
+			}
+		}
+        localization_key = Rafi_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rashid_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Rashid_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rashid_ad_Din
+				this = root
+			}
+		}
+        localization_key = Rashid_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Riyad_ad_Din
+				this = root
+			}
+		}
+        localization_key = Riyad_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rukn_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Rukn_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rukn_ad_Din
+				this = root
+			}
+		}
+        localization_key = Rukn_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sabah_ad_Din
+				this = root
+			}
+		}
+        localization_key = Sabah_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sabr_ad_Din
+				this = root
+			}
+		}
+        localization_key = Sabr_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sadr_ad_Din
+				this = root
+			}
+		}
+        localization_key = Sadr_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Safi_ad_Din
+				this = root
+			}
+		}
+        localization_key = Safi_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Safwat_ad_Din
+				this = root
+			}
+		}
+        localization_key = Safwat_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Safwat_al_Mulk
+				this = root
+			}
+		}
+        localization_key = Safwat_al_Mulk
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sahib_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Sahib_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Shakr_un_Nissa
+				this = root
+			}
+		}
+        localization_key = Shakr_un_Nissa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Salah_ad_Din
+				this = root
+			}
+		}
+        localization_key = Salah_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sama_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Sama_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Shams_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Shams_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Shams_ad_Din
+				this = root
+			}
+		}
+        localization_key = Shams_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Shams_al_Mulk
+				this = root
+			}
+		}
+        localization_key = Shams_al_Mulk
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Samsam_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Samsam_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sharaf_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Sharaf_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sharaf_ad_Din
+				this = root
+			}
+		}
+        localization_key = Sharaf_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sarim_ad_Din
+				this = root
+			}
+		}
+        localization_key = Sarim_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sayf_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Sayf_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sayf_ad_Din
+				this = root
+			}
+		}
+        localization_key = Sayf_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sayf_as_Sunna
+				this = root
+			}
+		}
+        localization_key = Sayf_as_Sunna
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Shayk_al_Islam
+				this = root
+			}
+		}
+        localization_key = Shayk_al_Islam
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sad_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Sad_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sad_ad_Din
+				this = root
+			}
+		}
+        localization_key = Sad_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Said_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Said_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Shibl_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Shibl_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sihab_ad_Din
+				this = root
+			}
+		}
+        localization_key = Sihab_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Siraj_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Siraj_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Siraj_ad_Din
+				this = root
+			}
+		}
+        localization_key = Siraj_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sitr_i_Mualla
+				this = root
+			}
+		}
+        localization_key = Sitr_i_Mualla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sitt_al_Mulk
+				this = root
+			}
+		}
+        localization_key = Sitt_al_Mulk
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Shuja_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Shuja_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Shuja_ad_Din
+				this = root
+			}
+		}
+        localization_key = Shuja_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Taj_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Taj_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Taj_ad_Din
+				this = root
+			}
+		}
+        localization_key = Taj_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Taj_al_Milla
+				this = root
+			}
+		}
+        localization_key = Taj_al_Milla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Taj_al_Mulk
+				this = root
+			}
+		}
+        localization_key = Taj_al_Mulk
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Taqi_ad_Din
+				this = root
+			}
+		}
+        localization_key = Taqi_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Wali_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Wali_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Yamin_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Yamin_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Zahir_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Zahir_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Zahir_ad_Dawa
+				this = root
+			}
+		}
+        localization_key = Zahir_ad_Dawa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Zahir_ad_Din
+				this = root
+			}
+		}
+        localization_key = Zahir_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Zayn_ad_Din
+				this = root
+			}
+		}
+        localization_key = Zayn_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Zaim_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Zaim_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Zinat_an_Nisa
+				this = root
+			}
+		}
+        localization_key = Zinat_an_Nisa
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Asad_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Asad_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Azhar_ad_Din
+				this = root
+			}
+		}
+        localization_key = Azhar_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Iftikhar_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Iftikhar_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Ikhtiyar_ad_Din
+				this = root
+			}
+		}
+        localization_key = Ikhtiyar_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Adud_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Adud_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Ala_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Ala_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Ala_ad_Din
+				this = root
+			}
+		}
+        localization_key = Ala_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Alim_ad_Din
+				this = root
+			}
+		}
+        localization_key = Alim_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Alimat_ad_Din
+				this = root
+			}
+		}
+        localization_key = Alimat_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Amid_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Amid_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Amin_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Amin_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Anwar_ad_Din
+				this = root
+			}
+		}
+        localization_key = Anwar_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Ayn_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Ayn_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Azim_ad_Din
+				this = root
+			}
+		}
+        localization_key = Azim_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Azizat_ad_Din
+				this = root
+			}
+		}
+        localization_key = Azizat_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Imad_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Imad_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Imad_ad_Din
+				this = root
+			}
+		}
+        localization_key = Imad_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Ismat_ad_Din
+				this = root
+			}
+		}
+        localization_key = Ismat_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Ismat_ad_Dunya
+				this = root
+			}
+		}
+        localization_key = Ismat_ad_Dunya
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Izz_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Izz_ad_Dawla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Izz_ad_Din
+				this = root
+			}
+		}
+        localization_key = Izz_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Izz_al_Milla
+				this = root
+			}
+		}
+        localization_key = Izz_al_Milla
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Uddat_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Uddat_ad_Dawla
+	}
+}

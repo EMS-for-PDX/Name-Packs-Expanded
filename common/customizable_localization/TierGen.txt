@@ -1,0 +1,1698 @@
+﻿CharacterTier = {
+    type = character
+    log_loc_errors = no
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_empire
+        }
+        localization_key = EmperorA
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_empire
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_empire
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = EmperorA_consort
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                AND = {
+                    exists = father
+                    father = {
+                        OR = {
+                            highest_held_title_tier = tier_empire
+                        }
+                        OR = {
+                            has_government = feudal_government
+                            has_government = clan_government
+                            has_government = tribal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    OR = {
+                                        any_in_list = {
+                                            variable = dynasty_feudalclan
+                                            this = root.father
+                                        }
+                                        any_in_list = {
+                                            variable = dynasty_tribe
+                                            this = root.father
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = mother
+                    mother = {
+                        OR = {
+                            highest_held_title_tier = tier_empire
+                        }
+                        OR = {
+                            has_government = feudal_government
+                            has_government = clan_government
+                            has_government = tribal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    OR = {
+                                        any_in_list = {
+                                            variable = dynasty_feudalclan
+                                            this = root.mother
+                                        }
+                                        any_in_list = {
+                                            variable = dynasty_tribe
+                                            this = root.mother
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = EmperorA_prince
+    }
+    text = {
+        trigger = {
+            has_council_position = councillor_court_chaplain
+            is_landed = no
+            liege_or_court_owner = {
+                highest_held_title_tier = tier_empire
+            }
+        }
+        localization_key = EmperorA_chaplain
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_kingdom
+            OR = {
+                is_independent_ruler = yes
+                dynasty = {
+                    any_in_list = {
+                        variable = dynasty_independent
+                        this = root
+                    }
+                }
+            }
+        }
+        localization_key = independent_king
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_kingdom
+                    OR = {
+                        is_independent_ruler = yes
+                        dynasty = {
+                            any_in_list = {
+                                variable = dynasty_independent
+                                this = root
+                            }
+                        }
+                    }
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_kingdom
+                    OR = {
+                        is_independent_ruler = yes
+                        dynasty = {
+                            any_in_list = {
+                                variable = dynasty_independent
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = independent_king_consort
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                AND = {
+                    exists = father
+                    father = {
+                        highest_held_title_tier = tier_kingdom
+                        OR = {
+                            is_independent_ruler = yes
+                            dynasty = {
+                                any_in_list = {
+                                    variable = dynasty_independent
+                                    this = root.father
+                                }
+                            }
+                        }
+                        OR = {
+                            has_government = feudal_government
+                            has_government = clan_government
+                            has_government = tribal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    OR = {
+                                        any_in_list = {
+                                            variable = dynasty_feudalclan
+                                            this = root.father
+                                        }
+                                        any_in_list = {
+                                            variable = dynasty_tribe
+                                            this = root.father
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = mother
+                    mother = {
+                        highest_held_title_tier = tier_kingdom
+                        OR = {
+                            is_independent_ruler = yes
+                            dynasty = {
+                                any_in_list = {
+                                    variable = dynasty_independent
+                                    this = root.mother
+                                }
+                            }
+                        }
+                        OR = {
+                            has_government = feudal_government
+                            has_government = clan_government
+                            has_government = tribal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    OR = {
+                                        any_in_list = {
+                                            variable = dynasty_feudalclan
+                                            this = root.mother
+                                        }
+                                        any_in_list = {
+                                            variable = dynasty_tribe
+                                            this = root.mother
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = independent_king_prince
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_kingdom
+        }
+        localization_key = King
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_kingdom
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_kingdom
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = King_consort
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                AND = {
+                    exists = father
+                    father = {
+                        highest_held_title_tier = tier_kingdom
+                        OR = {
+                            has_government = feudal_government
+                            has_government = clan_government
+                            has_government = tribal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    OR = {
+                                        any_in_list = {
+                                            variable = dynasty_feudalclan
+                                            this = root.father
+                                        }
+                                        any_in_list = {
+                                            variable = dynasty_tribe
+                                            this = root.father
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = mother
+                    mother = {
+                        highest_held_title_tier = tier_kingdom
+                        OR = {
+                            has_government = feudal_government
+                            has_government = clan_government
+                            has_government = tribal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    OR = {
+                                        any_in_list = {
+                                            variable = dynasty_feudalclan
+                                            this = root.mother
+                                        }
+                                        any_in_list = {
+                                            variable = dynasty_tribe
+                                            this = root.mother
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = King_prince
+    }
+    text = {
+        trigger = {
+            has_council_position = councillor_court_chaplain
+            is_landed = no
+            liege_or_court_owner = {
+                highest_held_title_tier = tier_kingdom
+            }
+        }
+        localization_key = King_chaplain
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_duchy
+            OR = {
+                is_independent_ruler = yes
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = dynasty_independent
+                            this = root
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = independent_duke
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_duchy
+                    OR = {
+                        is_independent_ruler = yes
+                        dynasty = {
+                            any_in_list = {
+                                variable = dynasty_independent
+                                this = root
+                            }
+                        }
+                    }
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_duchy
+                    OR = {
+                        is_independent_ruler = yes
+                        dynasty = {
+                            any_in_list = {
+                                variable = dynasty_independent
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = independent_duke_consort
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_duchy
+        }
+        localization_key = Duke
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_duchy
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_duchy
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = Duke_consort
+    }
+    text = {
+        trigger = {
+            has_council_position = councillor_court_chaplain
+            is_landed = no
+            liege_or_court_owner = {
+                highest_held_title_tier = tier_duchy
+            }
+        }
+        localization_key = Duke_chaplain
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_county
+            OR = {
+                is_independent_ruler = yes
+                dynasty = {
+                    any_in_list = {
+                        variable = dynasty_independent
+                        this = root
+                    }
+                }
+            }
+        }
+        localization_key = independent_count
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_county
+                    OR = {
+                        is_independent_ruler = yes
+                        dynasty = {
+                            any_in_list = {
+                                variable = dynasty_independent
+                                this = root
+                            }
+                        }
+                    }
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_county
+                    OR = {
+                        is_independent_ruler = yes
+                        dynasty = {
+                            any_in_list = {
+                                variable = dynasty_independent
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = independent_count_consort
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_county
+        }
+        localization_key = Count
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_county
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_county
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = Count_consort
+    }
+    text = {
+        trigger = {
+            has_council_position = councillor_court_chaplain
+            is_landed = no
+            liege_or_court_owner = {
+                highest_held_title_tier = tier_county
+            }
+        }
+        localization_key = Count_chaplain
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_barony
+        }
+        localization_key = Baron
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_barony
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_barony
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = Baron_consort
+    }
+    text = {
+        trigger = {
+            has_council_position = councillor_court_chaplain
+            is_landed = no
+            liege_or_court_owner = {
+                highest_held_title_tier = tier_barony
+            }
+        }
+        localization_key = Baron_chaplain
+    }
+    text = {
+        trigger = {
+            has_trait = sayyid
+            has_religion = religion:islam_religion
+        }
+        localization_key = sayyid
+    }
+    text = {
+        trigger = {
+            is_lowborn = no
+        }
+        localization_key = lord
+    }
+    text = {
+        trigger = {
+            exists = liege
+            liege.primary_title = {
+                OR = {
+                    has_variable = bicameral_government_republic
+                    has_variable = senate_government_republic
+                }
+                any_in_list = {
+                    variable = republic_families_list
+                    this.house_head = root
+                }
+            }
+        }
+        localization_key = senator
+    }
+    text = {
+        trigger = {
+            exists = liege
+            liege.primary_title = {
+                has_variable = council_government_republic
+                any_in_list = {
+                    variable = republic_families_list
+                    this.house_head = root
+                }
+            }
+        }
+        localization_key = councilor
+    }
+    text = {
+        trigger = {
+            exists = liege
+            liege.primary_title = {
+                any_in_list = {
+                    variable = republic_families_list
+                    this.house_head.house = root.house
+                }
+            }
+        }
+        localization_key = patrician
+    }
+    text = {
+        fallback = yes
+        localization_key = Default
+    }
+}
+CharacterGender = {
+    type = character
+    log_loc_errors = no
+    text = {
+        trigger = {
+            is_male = no
+        }
+        localization_key = _female
+    }
+    text = {
+        fallback = yes
+        localization_key = _male
+    }
+}
+CharacterGov = {
+    type = character
+    log_loc_errors = no
+    text = {
+        trigger = {
+            this = character:33922
+        }
+        localization_key = _prophet
+    }
+    text = {
+        trigger = {
+            faith = {
+                has_variable_list = faith_saints
+                any_in_list = {
+                    variable = faith_saints
+                    this = root
+                }
+            }
+        }
+        localization_key = _saint
+    }
+    text = {
+        trigger = {
+            OR = {
+                root.faith.religious_head = root
+                any_in_global_list = {
+                    variable = global_list_dead_hofs
+                    this = root
+                }
+            }
+        }
+        localization_key = _hof
+    }
+    text = {
+        trigger = {
+            exists = global_var:KoH_is_loaded
+            has_trait = koh_cardinal
+            any_in_global_list = {
+                variable = global_list_dead_cardinals
+                this = root
+            }
+        }
+        localization_key = _cardinal
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = theocracy_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = dynasty_theocrats
+                            this = root
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _theo
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = holy_order_government
+                AND = {
+                    exists = global_var:KoH_is_loaded
+                    has_government = holy_order_county_government
+                }
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = dynasty_HO
+                            this = root
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _ho
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = feudal_government
+                AND = {
+                    OR = {
+                        exists = primary_spouse
+                        any_former_spouse = {
+                            exists = this
+                        }
+                    }
+                    any_spouse = {
+                        even_if_dead = yes
+                        save_temporary_scope_as = the_spouse
+                        OR = {
+                            has_government = feudal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = father
+                    father = {
+                        OR = {
+                            has_government = feudal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = root.father
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = mother
+                    mother = {
+                        OR = {
+                            has_government = feudal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = root.mother
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _feudal
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = clan_government
+                AND = {
+                    OR = {
+                        exists = primary_spouse
+                        any_former_spouse = {
+                            exists = this
+                        }
+                    }
+                    any_spouse = {
+                        even_if_dead = yes
+                        save_temporary_scope_as = the_spouse
+                        OR = {
+                            has_government = clan_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = father
+                    father = {
+                        OR = {
+                            has_government = clan_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = root.father
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = mother
+                    mother = {
+                        OR = {
+                            has_government = clan_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = root.mother
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _clan
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = tribal_government
+                AND = {
+                    OR = {
+                        exists = primary_spouse
+                        any_former_spouse = {
+                            exists = this
+                        }
+                    }
+                    any_spouse = {
+                        even_if_dead = yes
+                        save_temporary_scope_as = the_spouse
+                        OR = {
+                            has_government = tribal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = father
+                    father = {
+                        OR = {
+                            has_government = tribal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = root.father
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = mother
+                    mother = {
+                        OR = {
+                            has_government = tribal_government
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = root.mother
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _tribal
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = republic_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = dynasty_repub
+                            this = root.mother
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _republic
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = mercenary_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = dynasty_merc
+                            this = root.mother
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _merc
+    }
+    text = {
+        trigger = {
+            OR = {
+                AND = {
+                    exists = global_var:KoH_is_loaded
+                    has_government = monastic_government
+                }
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = dynasty_abbot
+                            this = root.mother
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _abbot
+    }
+    text = {
+        fallback = yes
+        localization_key = _default
+    }
+}
+CharacterCulture = {
+    type = character
+    log_loc_errors = no
+	text = {
+		trigger = {
+			culture = {
+				turkish_check = yes
+				oghur_check = yes
+			}
+		}
+		localization_key = _oghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				turkish_check = yes
+				uyghur_check = yes
+			}
+		}
+		localization_key = _uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				turkish_check = yes
+				karluk_check = yes
+			}
+		}
+		localization_key = _karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				turkish_check = yes
+				kipchak_check = yes
+			}
+		}
+		localization_key = _kipchak
+	}
+	text = {
+		trigger = {
+			culture = {
+				turkish_check = yes
+				pecheneg_check = yes
+			}
+		}
+		localization_key = _pecheneg
+	}
+	text = {
+		trigger = {
+			culture = {
+				turkish_check = yes
+			}
+		}
+		localization_key = _turkish
+	}
+}
+CharacterReligion = {
+    type = character
+    log_loc_errors = no
+    text = {
+        trigger = {
+            OR = {
+                root.faith = faith:quranist
+                root.faith = faith:azariqa
+                root.faith = faith:najdat
+                root.faith = faith:sufri
+            }
+        }
+        localization_key = _quranist
+    }
+    text = {
+        trigger = {
+            root.faith = faith:druze
+        }
+        localization_key = _druze
+    }
+    text = {
+        trigger = {
+            root.faith = faith:qarmatian
+        }
+        localization_key = _qarmatian
+    }
+    text = {
+        trigger = {
+            OR = {
+                root.faith = faith:zayidi
+                root.faith = faith:imami
+            }
+        }
+        localization_key = _zayidi
+    }
+    text = {
+        trigger = {
+            root.faith = faith:ibadi
+        }
+        localization_key = _ibadi
+    }
+    text = {
+        trigger = {
+            OR = {
+                root.faith = faith:ghulat
+                root.faith = faith:alawite
+                root.faith = faith:ismaili
+                root.faith = faith:nizari
+                root.faith = faith:hafizi
+            }
+        }
+        localization_key = _shia
+    }
+    text = {
+        trigger = {
+            root.religion = religion:islam_religion
+        }
+        localization_key = _islam
+    }
+    text = {
+        trigger = {
+            OR = {
+                root.faith = faith:catholic
+                faith = {
+                    has_doctrine = tenet_rite
+                }
+            }
+        }
+        localization_key = _catholic
+    }
+    text = {
+        trigger = {
+            OR = {
+                root.faith = faith:orthodox
+                root.faith = faith:iconoclast
+            }
+        }
+        localization_key = _orthodox
+    }
+    text = {
+        trigger = {
+            root.religion = religion:christianity_religion
+        }
+        localization_key = _christian
+    }
+    text = {
+        trigger = {
+            root.religion = religion:judaism_religion
+        }
+        localization_key = _jewish
+    }
+    text = {
+        trigger = {
+            root.religion = religion:judaism_religion
+        }
+        localization_key = _jewish
+    }
+    text = {
+        trigger = {
+            root.religion = religion:dualism_religion
+        }
+        localization_key = _manichean
+    }
+    text = {
+        trigger = {
+            root.religion = religion:baltic_religion
+        }
+        localization_key = _baltic
+    }
+    text = {
+        trigger = {
+            root.religion = religion:baltic_religion
+        }
+        localization_key = _baltic
+    }
+    text = {
+        trigger = {
+            root.religion = religion:bon_religion
+        }
+        localization_key = _bon
+    }
+    text = {
+        trigger = {
+            root.religion = religion:finno_ugric_religion
+        }
+        localization_key = _finnish
+    }
+    text = {
+        trigger = {
+            root.religion = religion:germanic_religion
+        }
+        localization_key = _norse
+    }
+    text = {
+        trigger = {
+            root.religion = religion:hellenism_religion
+        }
+        localization_key = _hellenism
+    }
+    text = {
+        trigger = {
+            root.religion = religion:tengrism_religion
+        }
+        localization_key = _tengri
+    }
+    text = {
+        trigger = {
+            root.religion = religion:zunism_religion
+        }
+        localization_key = _zunism
+    }
+    text = {
+        trigger = {
+            root.religion = religion:west_african_roog_religion
+        }
+        localization_key = _roog
+    }
+    text = {
+        trigger = {
+            root.religion = religion:west_african_orisha_religion
+        }
+        localization_key = _yoruba
+    }
+    text = {
+        trigger = {
+            root.religion = religion:zoroastrianism_religion
+        }
+        localization_key = _zoro
+    }
+    text = {
+        trigger = {
+            root.religion = religion:buddhism_religion
+        }
+        localization_key = _buddism
+    }
+    text = {
+        fallback = yes
+        localization_key = _default
+    }
+}

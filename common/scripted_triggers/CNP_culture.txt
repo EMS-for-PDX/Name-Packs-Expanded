@@ -1,0 +1,39 @@
+﻿is_cnp_supported_culture = {
+	has_cultural_pillar = heritage_turkic
+	OR = {
+		has_cultural_pillar = language_turkic
+		has_cultural_pillar = language_oghur
+	}
+}
+turkish_check = {
+	has_cultural_pillar = heritage_turkic
+}
+pecheneg_check = {
+	has_cultural_pillar = language_turkic
+	has_name_list = name_list_pecheneg
+}
+uyghur_check = {
+	has_cultural_pillar = language_turkic
+	OR = {
+		has_name_list = name_list_uyghur
+		has_name_list = name_list_yughur
+		has_name_list = name_list_kirghiz
+	}
+}
+karluk_check = {
+	has_cultural_pillar = language_turkic
+	has_name_list = name_list_karluk
+}
+kipchak_check = {
+	has_cultural_pillar = language_turkic
+	OR = {
+		has_name_list = name_list_kipchak
+		has_name_list = name_list_cuman
+		has_name_list = name_list_kimek
+		has_name_list = name_list_laktan
+		has_name_list = name_list_bashkir
+	}
+}
+oghur_check = {
+	has_cultural_pillar = language_oghur
+}
