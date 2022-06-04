@@ -9,13 +9,61 @@
 			has_religion = religion:islam_religion
 			OR = {
 				AND = {
-					is_independent_ruler = yes
+					OR = {
+						is_independent_ruler = yes
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
 					exists = primary_spouse
 					primary_spouse = {
-						is_independent_ruler = yes
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.primary_spouse
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = father
+					father = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = mother
+					mother = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
 						highest_held_title_tier >= tier_kingdom
 					}
 				}

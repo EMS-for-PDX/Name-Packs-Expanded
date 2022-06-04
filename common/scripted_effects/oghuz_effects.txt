@@ -70,7 +70,7 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:93161 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:93130 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:93123 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:93160 } #Alpsuŋqur
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:93160 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1229949 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1000229907 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1229919 }
@@ -98,10 +98,16 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:3030 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:3038 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:3040 }
+        add_to_variable_list = { name = dynasty_independent target = character:3038 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:3038 }
+    }
+    character:93160 = {
+        add_to_global_variable_list = { name = Alpsungqur_byname target = this }
     }
     character:3038 = { #Tugrul-Beg
         change_first_name = Muhammad
         add_to_global_variable_list = { name = Rukn_ad_Dawla target = this }
+        add_to_global_variable_list = { name = Tugrul_Beg_byname target = this }
     }
     character:turkish0002 = {
         change_first_name = Togan-Shah
@@ -135,6 +141,7 @@
     }
     character:3014 = { #Qavurt
         change_first_name = Ahmad
+        add_to_global_variable_list = { name = QavurtN_byname target = this }
     }
     character:1229957 = {
         change_first_name = Sulayman
@@ -160,7 +167,7 @@
     character:1229926 = {
         change_first_name = Alpilek
     }
-    character:3030 = {
+    character:3046 = {
         change_first_name = Sulayman
     }
     character:3030 = {
@@ -168,6 +175,7 @@
     }
     character:3032 = { #Arslan
         change_first_name = Israil
+        add_to_global_variable_list = { name = Lion_byname target = this }
     }
     character:turkish0001 = {
         change_first_name = Qara-Arslan
@@ -177,12 +185,11 @@
     }
     character:1000229901 = { #Inanch
         change_first_name = Moses
-    }
-    character:3030 = {
-        change_first_name = Arslanshah
+        add_to_global_variable_list = { name = InanchN_byname target = this }
     }
     character:3036 = { #Chagri-Beg
         change_first_name = David
+        add_to_global_variable_list = { name = Chagri_Beg_byname target = this }
     }
     character:93129 = {
         change_first_name = Arslanshah
@@ -199,7 +206,7 @@
     character:1229922 = {
         change_first_name = Tekesh
     }
-    character:3045 = {
+    character:1229911 = {
         change_first_name = Aisha
     }
     character:3045 = {
@@ -208,6 +215,7 @@
     character:3040 = { #Alp-Arslan
         change_first_name = Muhammad
         add_to_global_variable_list = { name = Adud_ad_Dawla target = this }
+        add_to_global_variable_list = { name = Alp_ArslanN_byname target = this }
 		add_Character_flag = has_reg_laqab
     }
 }

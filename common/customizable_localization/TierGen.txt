@@ -1522,63 +1522,63 @@ CharacterReligion = {
     text = {
         trigger = {
             OR = {
-                root.faith = faith:quranist
-                root.faith = faith:azariqa
-                root.faith = faith:najdat
-                root.faith = faith:sufri
+                has_faith = faith:quranist
+                has_faith = faith:azariqa
+                has_faith = faith:najdat
+                has_faith = faith:sufri
             }
         }
         localization_key = _quranist
     }
     text = {
         trigger = {
-            root.faith = faith:druze
+            has_faith = faith:druze
         }
         localization_key = _druze
     }
     text = {
         trigger = {
-            root.faith = faith:qarmatian
+            has_faith = faith:qarmatian
         }
         localization_key = _qarmatian
     }
     text = {
         trigger = {
             OR = {
-                root.faith = faith:zayidi
-                root.faith = faith:imami
+                has_faith = faith:zayidi
+                has_faith = faith:imami
             }
         }
         localization_key = _zayidi
     }
     text = {
         trigger = {
-            root.faith = faith:ibadi
+            has_faith = faith:ibadi
         }
         localization_key = _ibadi
     }
     text = {
         trigger = {
             OR = {
-                root.faith = faith:ghulat
-                root.faith = faith:alawite
-                root.faith = faith:ismaili
-                root.faith = faith:nizari
-                root.faith = faith:hafizi
+                has_faith = faith:ghulat
+                has_faith = faith:alawite
+                has_faith = faith:ismaili
+                has_faith = faith:nizari
+                has_faith = faith:hafizi
             }
         }
         localization_key = _shia
     }
     text = {
         trigger = {
-            root.religion = religion:islam_religion
+            has_religion = religion:islam_religion
         }
         localization_key = _islam
     }
     text = {
         trigger = {
             OR = {
-                root.faith = faith:catholic
+                has_faith = faith:catholic
                 faith = {
                     has_doctrine = tenet_rite
                 }
@@ -1589,105 +1589,105 @@ CharacterReligion = {
     text = {
         trigger = {
             OR = {
-                root.faith = faith:orthodox
-                root.faith = faith:iconoclast
+                has_faith = faith:orthodox
+                has_faith = faith:iconoclast
             }
         }
         localization_key = _orthodox
     }
     text = {
         trigger = {
-            root.religion = religion:christianity_religion
+            has_religion = religion:christianity_religion
         }
         localization_key = _christian
     }
     text = {
         trigger = {
-            root.religion = religion:judaism_religion
+            has_religion = religion:judaism_religion
         }
         localization_key = _jewish
     }
     text = {
         trigger = {
-            root.religion = religion:judaism_religion
+            has_religion = religion:judaism_religion
         }
         localization_key = _jewish
     }
     text = {
         trigger = {
-            root.religion = religion:dualism_religion
+            has_religion = religion:dualism_religion
         }
         localization_key = _manichean
     }
     text = {
         trigger = {
-            root.religion = religion:baltic_religion
+            has_religion = religion:baltic_religion
         }
         localization_key = _baltic
     }
     text = {
         trigger = {
-            root.religion = religion:baltic_religion
+            has_religion = religion:baltic_religion
         }
         localization_key = _baltic
     }
     text = {
         trigger = {
-            root.religion = religion:bon_religion
+            has_religion = religion:bon_religion
         }
         localization_key = _bon
     }
     text = {
         trigger = {
-            root.religion = religion:finno_ugric_religion
+            has_religion = religion:finno_ugric_religion
         }
         localization_key = _finnish
     }
     text = {
         trigger = {
-            root.religion = religion:germanic_religion
+            has_religion = religion:germanic_religion
         }
         localization_key = _norse
     }
     text = {
         trigger = {
-            root.religion = religion:hellenism_religion
+            has_religion = religion:hellenism_religion
         }
         localization_key = _hellenism
     }
     text = {
         trigger = {
-            root.religion = religion:tengrism_religion
+            has_religion = religion:tengrism_religion
         }
         localization_key = _tengri
     }
     text = {
         trigger = {
-            root.religion = religion:zunism_religion
+            has_religion = religion:zunism_religion
         }
         localization_key = _zunism
     }
     text = {
         trigger = {
-            root.religion = religion:west_african_roog_religion
+            has_religion = religion:west_african_roog_religion
         }
         localization_key = _roog
     }
     text = {
         trigger = {
-            root.religion = religion:west_african_orisha_religion
+            has_religion = religion:west_african_orisha_religion
         }
         localization_key = _yoruba
     }
     text = {
         trigger = {
-            root.religion = religion:zoroastrianism_religion
+            has_religion = religion:zoroastrianism_religion
         }
         localization_key = _zoro
     }
     text = {
         trigger = {
-            root.religion = religion:buddhism_religion
+            has_religion = religion:buddhism_religion
         }
         localization_key = _buddism
     }
