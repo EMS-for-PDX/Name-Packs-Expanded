@@ -1,10 +1,43 @@
 ﻿PreLaqabCheck = {
 	type = character
 	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = pre_laqab_dynasty
+                            this = root
+                        }
+                    }
+                }
+                any_in_global_list = {
+                    variable = pre_laqab_global
+                    this = root
+                }
+			}
+		}
+		localization_key = Pre_Laqab_Gen
+	}
     text = {
         fallback = yes
 		localization_key = Gui_blank
     }
+}
+PreLaqabGen = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Muazzam
+				this = root
+			}
+		}
+        localization_key = Muazzam
+	}
 }
 LaqabNameCheck = {
 	type = character
@@ -327,6 +360,15 @@ RegLaqabGen = {
 			}
 		}
         localization_key = Jamal_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Jamal_ad_Dalwa
+				this = root
+			}
+		}
+        localization_key = Jamal_ad_Dalwa
 	}
 	text = {
 		trigger = {
@@ -1002,6 +1044,15 @@ RegLaqabGen = {
 			}
 		}
         localization_key = Sihab_ad_Din
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Sihab_ad_Dawla
+				this = root
+			}
+		}
+        localization_key = Sihab_ad_Dawla
 	}
 	text = {
 		trigger = {
