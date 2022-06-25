@@ -73,6 +73,30 @@
 						exists = dynasty
 						dynasty = {
 							any_in_list = {
+								variable = caliph_laqab_dynasty
+								this = scope:effect_root
+							}
+						}
+					}
+					any_in_global_list = {
+						variable = caliph_laqab_global
+						this = scope:effect_root
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = trigger_caliph_laqab_gen_from_sgui
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
 								variable = regular_laqab_dynasty
 								this = scope:effect_root
 							}
