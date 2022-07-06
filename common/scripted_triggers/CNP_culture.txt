@@ -1,9 +1,16 @@
 ﻿is_cnp_supported_culture = {
-	has_cultural_pillar = heritage_turkic
+	OR = {
+		has_cultural_pillar = heritage_turkic
+		has_cultural_pillar = heritage_arabic
+	}
 	OR = {
 		has_cultural_pillar = language_turkic
 		has_cultural_pillar = language_oghur
+		has_cultural_pillar = language_arabic
 	}
+}
+arabic_check = {
+	has_cultural_pillar = heritage_arabic
 }
 turkish_check = {
 	has_cultural_pillar = heritage_turkic

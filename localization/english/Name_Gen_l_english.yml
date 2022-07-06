@@ -23,10 +23,14 @@ Tier_Gen_CNP: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Ch
 Tier_Gen_CNP_After: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_after'))]"
 Tier_Gen_CNP_Before: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_before'))]"
 
+#House stuff
+Supported_House: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, ROOT.Char.Custom('CharacterCulture')), '_house'), ROOT.Char.Custom('CharacterGender')))]"
+Supported_House_After: " [Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, ROOT.Char.Custom('CharacterCulture')), '_house'), ROOT.Char.Custom('CharacterGender')))]"
+Supported_House_Before: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, ROOT.Char.Custom('CharacterCulture')), '_house'), ROOT.Char.Custom('CharacterGender')))] "
+
 #Laqab Gen
 Reg_Laqab_Gen: "[Localize(Concatenate(ROOT.Char.Custom('RegLaqabGen'),ROOT.Char.Custom('CharacterCulture')))]"
 Reg_Laqab_Gen_SGUI: "[Localize(Concatenate(CHARACTER.Custom('RegLaqabGen'),CHARACTER.Custom('CharacterCulture')))]"
-Caliph_Laqab_Gen_SGUI: "[Localize(Concatenate(CHARACTER.Custom('CaliphLaqabGen'),CHARACTER.Custom('CharacterCulture')))]"
 Pre_Laqab_Gen: "[Localize(Concatenate(ROOT.Char.Custom('PreLaqabGen'),ROOT.Char.Custom('CharacterCulture')))]"
 
 #Tek Gen

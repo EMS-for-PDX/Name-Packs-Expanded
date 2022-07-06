@@ -327,6 +327,34 @@ PreLaqabGen = {
         localization_key = az_Zahir
 	}
 }
+LaqabCheck = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = regular_laqab_dynasty
+                            this = root
+                        }
+                    }
+                }
+                any_in_global_list = {
+                    variable = regular_laqab_global
+                    this = root
+                }
+			}
+		}
+		localization_key = Reg_Laqab_Gen
+	}
+    text = {
+        fallback = yes
+		localization_key = Gui_blank
+    }
+}
 LaqabNameCheck = {
 	type = character
 	log_loc_errors = no
@@ -375,7 +403,7 @@ LaqabNameCheck = {
 		localization_key = Nonsupported_Name
     }
 }
-CaliphLaqabGen = {
+RegLaqabGen = {
 	type = character
 	log_loc_errors = no
 	text = {
@@ -801,10 +829,6 @@ CaliphLaqabGen = {
 		}
         localization_key = Zahir_li_Izaz_Din_Allah
 	}
-}
-RegLaqabGen = {
-	type = character
-	log_loc_errors = no
 	text = {
 		trigger = {
 			any_in_global_list = {

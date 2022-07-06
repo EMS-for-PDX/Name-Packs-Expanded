@@ -1,0 +1,25 @@
+﻿867_mashriqi_char_effect = {
+	character:34014.house = {
+		set_variable = {
+			name = name_founder
+			value = character:33900
+		}
+	}
+	character:34014.dynasty = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:33900 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:34010 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:34014 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:34010 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:34014 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34012 }
+	}
+    character:34010 = {
+        change_first_name = Jafar
+        add_to_global_variable_list = { name = Mutawakkil_ala_llah target = this }
+    }
+    character:34014 = {
+        change_first_name = Muhammad
+        add_to_global_variable_list = { name = Mutazz_billah target = this }
+		add_character_flag = has_caliph_laqab
+    }
+}
