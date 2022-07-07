@@ -3,12 +3,26 @@
 		has_cultural_pillar = heritage_turkic
 		has_cultural_pillar = heritage_arabic
 		has_cultural_pillar = heritage_byzantine
+		has_cultural_pillar = heritage_aramean
+		has_cultural_pillar = heritage_armenian
+		has_cultural_pillar = heritage_caucasian
+		has_cultural_pillar = heritage_iranian
 	}
 	OR = {
 		has_cultural_pillar = language_turkic
 		has_cultural_pillar = language_oghur
 		has_cultural_pillar = language_arabic
 		has_cultural_pillar = language_scythian
+		has_cultural_pillar = language_armenian
+		has_cultural_pillar = language_greek
+		has_cultural_pillar = language_georgian
+		has_cultural_pillar = language_aramaic
+		has_cultural_pillar = language_iranian
+		has_cultural_pillar = language_alani
+		has_cultural_pillar = language_scythian
+		has_cultural_pillar = language_balochi
+		has_cultural_pillar = language_caspian_iranian
+		has_cultural_pillar = language_kurdish
 	}
 }
 turkish_check = {
@@ -40,9 +54,94 @@ kipchak_check = {
 		has_name_list = name_list_bashkir
 	}
 }
+kurdish_check = {
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = heritage_iranian
+		has_cultural_pillar = language_kurdish
+	}
+	trigger_else = {
+		has_cultural_pillar = heritage_iranian
+		has_name_list = name_list_kurdish
+	}
+}
+kurdish_lang_check = {
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = language_kurdish
+	}
+	trigger_else = {
+		has_cultural_pillar = heritage_iranian
+		has_name_list = name_list_kurdish
+	}
+}
 alan_check = {
-	has_cultural_pillar = heritage_byzantine
-	has_cultural_pillar = language_scythian
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = heritage_iranian
+		has_cultural_pillar = language_alani
+	}
+	trigger_else = {
+		has_cultural_pillar = heritage_byzantine
+		has_cultural_pillar = language_scythian
+	}
+}
+alan_lang_check = {
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = language_alani
+	}
+	trigger_else = {
+		has_cultural_pillar = heritage_byzantine
+		has_cultural_pillar = language_scythian
+	}
+}
+armenian_check = {
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = heritage_armenian
+	}
+	trigger_else = {
+		has_cultural_pillar = heritage_byzantine
+		has_cultural_pillar = language_armenian
+	}
+}
+georgian_check = {
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = heritage_caucasian
+		has_cultural_pillar = language_georgian
+	}
+	trigger_else = {
+		has_cultural_pillar = heritage_byzantine
+		has_cultural_pillar = language_georgian
+
+	}
+}
+assyrian_check = {
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = heritage_aramean
+	}
+	trigger_else = {
+		has_cultural_pillar = heritage_byzantine
+		has_cultural_pillar = language_aramaic
+
+	}
 }
 oghur_check = {
 	has_cultural_pillar = language_oghur
