@@ -1465,7 +1465,8 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				arabic_check = yes
+                has_cultural_pillar = language_scythian
+                has_name_list = name_list_alan
 			}
 		}
 		localization_key = _arabic
@@ -1473,16 +1474,14 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				turkish_check = yes
-				oghur_check = yes
+                has_cultural_pillar = language_arabic
 			}
 		}
-		localization_key = _oghur
+		localization_key = _arabic
 	}
 	text = {
 		trigger = {
 			culture = {
-				turkish_check = yes
 				uyghur_check = yes
 			}
 		}
@@ -1491,7 +1490,6 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				turkish_check = yes
 				karluk_check = yes
 			}
 		}
@@ -1500,7 +1498,6 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				turkish_check = yes
 				kipchak_check = yes
 			}
 		}
@@ -1509,8 +1506,7 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				turkish_check = yes
-				pecheneg_check = yes
+                pecheneg_check = yes
 			}
 		}
 		localization_key = _pecheneg
@@ -1518,7 +1514,15 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				turkish_check = yes
+                oghur_check = yes
+			}
+		}
+		localization_key = _oghur
+	}
+	text = {
+		trigger = {
+			culture = {
+                has_cultural_pillar = language_turkic
 			}
 		}
 		localization_key = _turkish

@@ -2,15 +2,14 @@
 	OR = {
 		has_cultural_pillar = heritage_turkic
 		has_cultural_pillar = heritage_arabic
+		has_cultural_pillar = heritage_byzantine
 	}
 	OR = {
 		has_cultural_pillar = language_turkic
 		has_cultural_pillar = language_oghur
 		has_cultural_pillar = language_arabic
+		has_cultural_pillar = language_scythian
 	}
-}
-arabic_check = {
-	has_cultural_pillar = heritage_arabic
 }
 turkish_check = {
 	has_cultural_pillar = heritage_turkic
@@ -40,6 +39,10 @@ kipchak_check = {
 		has_name_list = name_list_laktan
 		has_name_list = name_list_bashkir
 	}
+}
+alan_check = {
+	has_cultural_pillar = heritage_byzantine
+	has_cultural_pillar = language_scythian
 }
 oghur_check = {
 	has_cultural_pillar = language_oghur
