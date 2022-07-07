@@ -19,7 +19,6 @@
 		has_cultural_pillar = language_aramaic
 		has_cultural_pillar = language_iranian
 		has_cultural_pillar = language_alani
-		has_cultural_pillar = language_scythian
 		has_cultural_pillar = language_balochi
 		has_cultural_pillar = language_caspian_iranian
 		has_cultural_pillar = language_kurdish
@@ -54,19 +53,6 @@ kipchak_check = {
 		has_name_list = name_list_bashkir
 	}
 }
-kurdish_check = {
-	trigger_if = {
-		limit = {
-			exists = global_var:CE_is_loaded
-		}
-		has_cultural_pillar = heritage_iranian
-		has_cultural_pillar = language_kurdish
-	}
-	trigger_else = {
-		has_cultural_pillar = heritage_iranian
-		has_name_list = name_list_kurdish
-	}
-}
 kurdish_lang_check = {
 	trigger_if = {
 		limit = {
@@ -75,7 +61,7 @@ kurdish_lang_check = {
 		has_cultural_pillar = language_kurdish
 	}
 	trigger_else = {
-		has_cultural_pillar = heritage_iranian
+		has_cultural_pillar = language_iranian
 		has_name_list = name_list_kurdish
 	}
 }
@@ -100,8 +86,8 @@ alan_lang_check = {
 		has_cultural_pillar = language_alani
 	}
 	trigger_else = {
-		has_cultural_pillar = heritage_byzantine
 		has_cultural_pillar = language_scythian
+		has_name_list = name_list_alan
 	}
 }
 armenian_check = {
