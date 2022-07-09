@@ -7,6 +7,12 @@
 		has_cultural_pillar = heritage_armenian
 		has_cultural_pillar = heritage_caucasian
 		has_cultural_pillar = heritage_iranian
+		trigger_if = {
+			limit = {
+				has_cultural_pillar = language_arabic
+			}
+			has_cultural_pillar = heritage_iberian
+		}
 	}
 	OR = {
 		has_cultural_pillar = language_turkic
