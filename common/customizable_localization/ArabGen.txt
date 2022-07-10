@@ -1,0 +1,190 @@
+﻿ArabNickHouse = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			is_male = yes
+			OR = {
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = Got_Arab_Nick_dynasty
+							this = root
+						}
+					}
+				}
+				any_in_global_list = {
+					variable = Got_Arab_Nick_global
+					this = root
+				}
+			}
+		}
+		localization_key = ArabicNickGenMale
+	}
+	text = {
+		trigger = {
+			is_male = no
+			OR = {
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = Got_Arab_Nick_dynasty
+							this = root
+						}
+					}
+				}
+				any_in_global_list = {
+					variable = Got_Arab_Nick_global
+					this = root
+				}
+			}
+		}
+		localization_key = ArabicNickGenFemale
+	}
+	text = {
+		trigger = {
+			exists = house.var:name_founder
+			house.var:name_founder = {
+				save_temporary_scope_as = good_lad
+			}
+			NOT = {
+				root = scope:good_lad
+			}
+			dynasty = {
+				any_in_list = {
+					variable = name_pack_support_dynasty
+					this = scope:good_lad
+				}
+			}
+		}
+		localization_key = Supported_House_After
+	}
+	text = {
+		fallback = yes
+		localization_key = Gui_blank
+	}
+}
+ArabNickMale = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			has_nickname = nick_the_hawk_of_quraysh
+		}
+        localization_key = HawkQuraysh
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_hand
+		}
+        localization_key = BadHand
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_feareater
+		}
+        localization_key = FearEater
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_half_hand
+		}
+        localization_key = HalfHand
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_haardraade
+		}
+        localization_key = HardRuler
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_moneybags
+		}
+        localization_key = MoneyBags
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_nord_foe
+		}
+        localization_key = NordFoe
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_nord_foe
+		}
+        localization_key = NordFoe
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_priest_eater
+		}
+        localization_key = PriestEater
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_priest_hater
+		}
+        localization_key = PriestHater
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_culture_wall
+		}
+        localization_key = TheArabWall
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_able
+		}
+        localization_key = TheAble
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_accursed
+		}
+        localization_key = Accursed
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_affable
+		}
+        localization_key = Affable
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_anointed
+		}
+        localization_key = Anointed
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_apostate
+		}
+        localization_key = Apostate
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_architect
+		}
+        localization_key = Architect
+	}
+	text = { ###
+		trigger = {
+			has_nickname = nick_the_architect
+		}
+        localization_key = Avenger
+	}
+	text = { ###
+		trigger = {
+			has_nickname = nick_the_architect
+		}
+        localization_key = Avenger
+	}
+	text = {
+		fallback = yes
+		localization_key = BlankNick
+	}
+}
