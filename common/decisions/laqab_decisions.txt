@@ -1,6 +1,6 @@
 ﻿get_caliph_laqab = {
     picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-
+    major = yes
     desc = get_caliph_laqab_desc
 	selection_tooltip = get_caliph_laqab_tooltip
 
@@ -11,17 +11,20 @@
 		NOT = {
 			has_character_flag = has_caliph_laqab
 		}
-        has_religion = religion:islam_religion
-        root.faith.religious_head = root
+        religion = religion:islam_religion
+        faith.religious_head = root
+    }
+    is_valid = {
+        religion = religion:islam_religion
+        faith.religious_head = root
     }
 
     effect = {
-        trigger_event = {
-            id = arabicnamepack.001
-            days = -1
-        }
         custom_description = {
             text = get_caliph_laqab_trigger
+        }
+        trigger_event = {
+            id = cnplaqab.001
         }
     }
 
@@ -76,7 +79,7 @@ get_regnal_laqab = {
 
     effect = {
         trigger_event = {
-            id = arabicnamepack.002
+            id = cnplaqab.002
             days = -1
         }
         custom_description = {
@@ -139,7 +142,7 @@ get_ducal_laqab = {
 
     effect = {
         trigger_event = {
-            id = arabicnamepack.003
+            id = cnplaqab.003
             days = -1
         }
         custom_description = {

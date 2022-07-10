@@ -1,5 +1,1390 @@
 set_laqab_effect = {
-	add_to_global_variable_list = { name = $LAQAB$ target = this }
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Adil
+		}
+		add_to_global_variable_list = { name = al_Adil target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Afdal
+		}
+		add_to_global_variable_list = { name = al_Afdal target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Afdal
+		}
+		add_to_global_variable_list = { name = al_Amin target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Ashraf
+		}
+		add_to_global_variable_list = { name = al_Ashraf target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Awhad
+		}
+		add_to_global_variable_list = { name = al_Awhad target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Aziz
+		}
+		add_to_global_variable_list = { name = al_Aziz target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:ad_Dai
+		}
+		add_to_global_variable_list = { name = ad_Dai target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Ghalib
+		}
+		add_to_global_variable_list = { name = al_Ghalib target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Ghani
+		}
+		add_to_global_variable_list = { name = al_Ghani target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Hadi
+		}
+		add_to_global_variable_list = { name = al_Hadi target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Jawad
+		}
+		add_to_global_variable_list = { name = al_Jawad target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Kamil
+		}
+		add_to_global_variable_list = { name = al_Kamil target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Mahdi
+		}
+		add_to_global_variable_list = { name = al_Mahdi target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Mamun
+		}
+		add_to_global_variable_list = { name = al_Mamun target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Mansur
+		}
+		add_to_global_variable_list = { name = al_Mansur target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Muayyad
+		}
+		add_to_global_variable_list = { name = al_Muayyad target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Muazzam
+		}
+		add_to_global_variable_list = { name = al_Muazzam target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Muhsin
+		}
+		add_to_global_variable_list = { name = al_Muhsin target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Muhtasib
+		}
+		add_to_global_variable_list = { name = al_Muhtasib target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Muizz
+		}
+		add_to_global_variable_list = { name = al_Muizz target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Mujahid
+		}
+		add_to_global_variable_list = { name = al_Mujahid target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Mukhtar
+		}
+		add_to_global_variable_list = { name = al_Mukhtar target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Muntakhab
+		}
+		add_to_global_variable_list = { name = al_Muntakhab target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Murtada
+		}
+		add_to_global_variable_list = { name = al_Murtada target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Mutawakkil
+		}
+		add_to_global_variable_list = { name = al_Mutawakkil target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Muzaffar
+		}
+		add_to_global_variable_list = { name = al_Muzaffar target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:an_Nasir
+		}
+		add_to_global_variable_list = { name = an_Nasir target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:ar_Rahim
+		}
+		add_to_global_variable_list = { name = ar_Rahim target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:ar_Rashid
+		}
+		add_to_global_variable_list = { name = ar_Rashid target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:as_Saffah
+		}
+		add_to_global_variable_list = { name = as_Saffah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:as_Said
+		}
+		add_to_global_variable_list = { name = as_Said target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:as_Salih
+		}
+		add_to_global_variable_list = { name = as_Salih target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:al_Wathiq
+		}
+		add_to_global_variable_list = { name = al_Wathiq target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:az_Zafir
+		}
+		add_to_global_variable_list = { name = az_Zafir target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:az_Zahir
+		}
+		add_to_global_variable_list = { name = az_Zahir target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Adid_li_Din_Allah
+		}
+		add_to_global_variable_list = { name = Adid_li_Din_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Amir_bi_Ahkam_Allah
+		}
+		add_to_global_variable_list = { name = Amir_bi_Ahkam_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Aziz_billah
+		}
+		add_to_global_variable_list = { name = Aziz_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Dai_ila_l_Haqq
+		}
+		add_to_global_variable_list = { name = Dai_ila_l_Haqq target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Faiz_bi_Nasr_Allah
+		}
+		add_to_global_variable_list = { name = Faiz_bi_Nasr_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Hadi_ila_l_Haqq
+		}
+		add_to_global_variable_list = { name = Hadi_ila_l_Haqq target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Hafiz_li_Din_Allah
+		}
+		add_to_global_variable_list = { name = Hafiz_li_Din_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Hakim_bi_Amr_Allah
+		}
+		add_to_global_variable_list = { name = Hakim_bi_Amr_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mahdi_billah
+		}
+		add_to_global_variable_list = { name = Mahdi_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mansur_bi_Nasr_Allah
+		}
+		add_to_global_variable_list = { name = Mansur_bi_Nasr_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muayyad_billah
+		}
+		add_to_global_variable_list = { name = Muayyad_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muhtadi_billah
+		}
+		add_to_global_variable_list = { name = Muhtadi_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muhtadi_bi_Quwat_Allah
+		}
+		add_to_global_variable_list = { name = Muhtadi_bi_Quwat_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muid_li_Din_Allah
+		}
+		add_to_global_variable_list = { name = Muid_li_Din_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muizz_li_Din_Allah
+		}
+		add_to_global_variable_list = { name = Muizz_li_Din_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muktafi_billah
+		}
+		add_to_global_variable_list = { name = Muktafi_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muntasir_billah
+		}
+		add_to_global_variable_list = { name = Muntasir_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muqtadi_bi_Amr_Allah
+		}
+		add_to_global_variable_list = { name = Muqtadi_bi_Amr_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muqtadir_billah
+		}
+		add_to_global_variable_list = { name = Muqtadir_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muqtafi_li_Amr_Allah
+		}
+		add_to_global_variable_list = { name = Muqtafi_li_Amr_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustadi_bi_Amr_Allah
+		}
+		add_to_global_variable_list = { name = Mustadi_bi_Amr_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustain_billah
+		}
+		add_to_global_variable_list = { name = Mustain_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustakfi_billah
+		}
+		add_to_global_variable_list = { name = Mustakfi_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustali_billah
+		}
+		add_to_global_variable_list = { name = Mustali_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustamsik_billah
+		}
+		add_to_global_variable_list = { name = Mustamsik_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustanjid_billah
+		}
+		add_to_global_variable_list = { name = Mustanjid_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustansir_billah
+		}
+		add_to_global_variable_list = { name = Mustansir_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustarshid_billah
+		}
+		add_to_global_variable_list = { name = Mustarshid_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustasim_billah
+		}
+		add_to_global_variable_list = { name = Mustasim_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mustazhir_billah
+		}
+		add_to_global_variable_list = { name = Mustazhir_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mutadid_billah
+		}
+		add_to_global_variable_list = { name = Mutadid_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mutamid_ala_llah
+		}
+		add_to_global_variable_list = { name = Mutamid_ala_llah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mutasim_billah
+		}
+		add_to_global_variable_list = { name = Mutasim_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mutasim_billah
+		}
+		add_to_global_variable_list = { name = Mutasim_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mutazz_billah
+		}
+		add_to_global_variable_list = { name = Mutazz_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muti_lillah
+		}
+		add_to_global_variable_list = { name = Muti_lillah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muttaqi_lillah
+		}
+		add_to_global_variable_list = { name = Muttaqi_lillah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Nasir_li_Din_Allah
+		}
+		add_to_global_variable_list = { name = Nasir_li_Din_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Qadir_billah
+		}
+		add_to_global_variable_list = { name = Qadir_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Qadir_billah
+		}
+		add_to_global_variable_list = { name = Qahir_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Qaim_bi_Amr_Allah
+		}
+		add_to_global_variable_list = { name = Qaim_bi_Amr_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Radi_billah
+		}
+		add_to_global_variable_list = { name = Radi_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Rashid_billah
+		}
+		add_to_global_variable_list = { name = Rashid_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Tai_li_Amr_Allah
+		}
+		add_to_global_variable_list = { name = Tai_li_Amr_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Wathiq_billah
+		}
+		add_to_global_variable_list = { name = Wathiq_billah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Zahir_bi_Amr_Allah
+		}
+		add_to_global_variable_list = { name = Zahir_bi_Amr_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Zahir_li_Izaz_Din_Allah
+		}
+		add_to_global_variable_list = { name = Zahir_li_Izaz_Din_Allah target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Adud_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Adud_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Ala_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Ala_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Ala_ad_Din
+		}
+		add_to_global_variable_list = { name = Ala_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Alim_ad_Din
+		}
+		add_to_global_variable_list = { name = Alim_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Alimat_ad_Din
+		}
+		add_to_global_variable_list = { name = Alimat_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Amid_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Amid_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Amin_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Amin_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Anwar_ad_Din
+		}
+		add_to_global_variable_list = { name = Anwar_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Asad_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Asad_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Ayn_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Ayn_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Azhar_ad_Din
+		}
+		add_to_global_variable_list = { name = Azhar_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Azim_ad_Din
+		}
+		add_to_global_variable_list = { name = Azim_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Azizat_ad_Din
+		}
+		add_to_global_variable_list = { name = Azizat_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Badi_al_Mulk
+		}
+		add_to_global_variable_list = { name = Badi_al_Mulk target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Badi_az_Zaman
+		}
+		add_to_global_variable_list = { name = Badi_az_Zaman target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Badr_ad_Din
+		}
+		add_to_global_variable_list = { name = Badr_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Baha_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Baha_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Baha_ad_Din
+		}
+		add_to_global_variable_list = { name = Baha_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Bakht_an_Nissa
+		}
+		add_to_global_variable_list = { name = Bakht_an_Nissa target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Burhan_ad_Din
+		}
+		add_to_global_variable_list = { name = Burhan_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Diya_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Diya_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Diya_ad_Din
+		}
+		add_to_global_variable_list = { name = Diya_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Fakhr_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Fakhr_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Fakhr_ad_Din
+		}
+		add_to_global_variable_list = { name = Fakhr_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Fakhr_an_Nissa
+		}
+		add_to_global_variable_list = { name = Fakhr_an_Nissa target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Falak_ad_Din
+		}
+		add_to_global_variable_list = { name = Falak_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Farid_ad_Din
+		}
+		add_to_global_variable_list = { name = Farid_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Faris_ad_Din
+		}
+		add_to_global_variable_list = { name = Faris_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Fath_ad_Din
+		}
+		add_to_global_variable_list = { name = Fath_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Ghiyath_ad_Din
+		}
+		add_to_global_variable_list = { name = Ghiyath_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Hafiz_ad_Din
+		}
+		add_to_global_variable_list = { name = Hafiz_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Hamid_ad_Din
+		}
+		add_to_global_variable_list = { name = Hamid_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Haqq_ad_Din
+		}
+		add_to_global_variable_list = { name = Haqq_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Hisham_ad_Din
+		}
+		add_to_global_variable_list = { name = Hisham_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Hisn_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Hisn_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Hujjat_ad_Islam
+		}
+		add_to_global_variable_list = { name = Hujjat_ad_Islam target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Husam_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Husam_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Husam_ad_Din
+		}
+		add_to_global_variable_list = { name = Husam_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Iftikhar_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Iftikhar_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Ikhtiyar_ad_Din
+		}
+		add_to_global_variable_list = { name = Ikhtiyar_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Imad_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Imad_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Imad_ad_Din
+		}
+		add_to_global_variable_list = { name = Imad_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Ismat_ad_Din
+		}
+		add_to_global_variable_list = { name = Ismat_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Ismat_ad_Dunya
+		}
+		add_to_global_variable_list = { name = Ismat_ad_Dunya target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Izz_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Izz_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Izz_ad_Din
+		}
+		add_to_global_variable_list = { name = Izz_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Izz_al_Milla
+		}
+		add_to_global_variable_list = { name = Izz_al_Milla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Itimad_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Itimad_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Jalal_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Jalal_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Jalal_ad_Din
+		}
+		add_to_global_variable_list = { name = Jalal_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Jalalat_ad_Din
+		}
+		add_to_global_variable_list = { name = Jalalat_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Jamal_ad_Din
+		}
+		add_to_global_variable_list = { name = Jamal_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Jamal_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Jamal_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Kamal_ad_Din
+		}
+		add_to_global_variable_list = { name = Kamal_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Karim_ad_Din
+		}
+		add_to_global_variable_list = { name = Karim_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Khayr_ad_Din
+		}
+		add_to_global_variable_list = { name = Khayr_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mah_i_Mulk
+		}
+		add_to_global_variable_list = { name = Mah_i_Mulk target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Majd_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Majd_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Majd_ad_Din
+		}
+		add_to_global_variable_list = { name = Majd_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Malika_i_Jahan
+		}
+		add_to_global_variable_list = { name = Malika_i_Jahan target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mansur_ad_Din
+		}
+		add_to_global_variable_list = { name = Mansur_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mugith_ad_Din
+		}
+		add_to_global_variable_list = { name = Mugith_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muhibb_ad_Din
+		}
+		add_to_global_variable_list = { name = Muhibb_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muhyi_ad_Din
+		}
+		add_to_global_variable_list = { name = Muhyi_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muhyi_al_Milla
+		}
+		add_to_global_variable_list = { name = Muhyi_al_Milla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mujir_ad_Din
+		}
+		add_to_global_variable_list = { name = Mujir_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mumahhid_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Mumahhid_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mumahhid_ad_Din
+		}
+		add_to_global_variable_list = { name = Mumahhid_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Murtada_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Murtada_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Musharraf_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Musharraf_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mushir_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Mushir_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muslih_ad_Din
+		}
+		add_to_global_variable_list = { name = Muslih_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muzaffar_ad_Din
+		}
+		add_to_global_variable_list = { name = Muzaffar_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muayyad_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Muayyad_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muayyad_ad_Din
+		}
+		add_to_global_variable_list = { name = Muayyad_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muayyad_al_Milla
+		}
+		add_to_global_variable_list = { name = Muayyad_al_Milla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muin_ad_Din
+		}
+		add_to_global_variable_list = { name = Muin_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muizz_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Muizz_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Muizz_ad_Din
+		}
+		add_to_global_variable_list = { name = Muizz_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Mutamid_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Mutamid_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Najm_ad_Din
+		}
+		add_to_global_variable_list = { name = Najm_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Nasir_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Nasir_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Nasir_ad_Din
+		}
+		add_to_global_variable_list = { name = Nasir_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Nasir_al_Milla
+		}
+		add_to_global_variable_list = { name = Nasir_al_Milla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Nizam_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Nizam_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Nizam_ad_Din
+		}
+		add_to_global_variable_list = { name = Nizam_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Nizam_al_Mulk
+		}
+		add_to_global_variable_list = { name = Nizam_al_Mulk target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Nur_ad_Din
+		}
+		add_to_global_variable_list = { name = Nur_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Nusrat_ad_Din
+		}
+		add_to_global_variable_list = { name = Nusrat_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Qamar_ad_Din
+		}
+		add_to_global_variable_list = { name = Qamar_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Qatr_an_Nada
+		}
+		add_to_global_variable_list = { name = Qatr_an_Nada target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Qawam_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Qawam_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Qutb_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Qutb_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Qutb_ad_Din
+		}
+		add_to_global_variable_list = { name = Qutb_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Radiyat_ad_Din
+		}
+		add_to_global_variable_list = { name = Radiyat_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Radiyat_ad_Dunya
+		}
+		add_to_global_variable_list = { name = Radiyat_ad_Dunya target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Rafi_ad_Din
+		}
+		add_to_global_variable_list = { name = Rafi_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Rashid_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Rashid_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Rashid_ad_Din
+		}
+		add_to_global_variable_list = { name = Rashid_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Riyad_ad_Din
+		}
+		add_to_global_variable_list = { name = Riyad_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Rukn_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Rukn_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Rukn_ad_Din
+		}
+		add_to_global_variable_list = { name = Rukn_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sabah_ad_Din
+		}
+		add_to_global_variable_list = { name = Sabah_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sabr_ad_Din
+		}
+		add_to_global_variable_list = { name = Sabr_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sadr_ad_Din
+		}
+		add_to_global_variable_list = { name = Sadr_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Safi_ad_Din
+		}
+		add_to_global_variable_list = { name = Safi_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Safwat_ad_Din
+		}
+		add_to_global_variable_list = { name = Safwat_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Safwat_al_Mulk
+		}
+		add_to_global_variable_list = { name = Safwat_al_Mulk target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sahib_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Sahib_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Shakr_un_Nissa
+		}
+		add_to_global_variable_list = { name = Shakr_un_Nissa target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Salah_ad_Din
+		}
+		add_to_global_variable_list = { name = Salah_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sama_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Sama_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Shams_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Shams_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Shams_ad_Din
+		}
+		add_to_global_variable_list = { name = Shams_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Shams_al_Mulk
+		}
+		add_to_global_variable_list = { name = Shams_al_Mulk target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Samsam_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Samsam_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sharaf_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Sharaf_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sharaf_ad_Din
+		}
+		add_to_global_variable_list = { name = Sharaf_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sarim_ad_Din
+		}
+		add_to_global_variable_list = { name = Sarim_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sayf_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Sayf_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sayf_ad_Din
+		}
+		add_to_global_variable_list = { name = Sayf_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sayf_as_Sunna
+		}
+		add_to_global_variable_list = { name = Sayf_as_Sunna target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Shayk_ad_Islam
+		}
+		add_to_global_variable_list = { name = Shayk_ad_Islam target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sad_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Sad_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sad_ad_Din
+		}
+		add_to_global_variable_list = { name = Sad_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Said_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Said_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Shibl_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Shibl_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sihab_ad_Din
+		}
+		add_to_global_variable_list = { name = Sihab_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sihab_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Sihab_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Siraj_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Siraj_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Siraj_ad_Din
+		}
+		add_to_global_variable_list = { name = Siraj_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sitr_i_Mualla
+		}
+		add_to_global_variable_list = { name = Sitr_i_Mualla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Sitt_al_Mulk
+		}
+		add_to_global_variable_list = { name = Sitt_al_Mulk target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Shuja_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Shuja_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Shuja_ad_Din
+		}
+		add_to_global_variable_list = { name = Shuja_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Taj_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Taj_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Taj_ad_Din
+		}
+		add_to_global_variable_list = { name = Taj_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Taj_al_Milla
+		}
+		add_to_global_variable_list = { name = Taj_al_Milla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Taj_al_Mulk
+		}
+		add_to_global_variable_list = { name = Taj_al_Mulk target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Taqi_ad_Din
+		}
+		add_to_global_variable_list = { name = Taqi_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Uddat_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Uddat_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Wali_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Wali_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Yamin_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Yamin_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Zahir_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Zahir_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Zahir_ad_Dawa
+		}
+		add_to_global_variable_list = { name = Zahir_ad_Dawa target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Zahir_ad_Din
+		}
+		add_to_global_variable_list = { name = Zahir_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Zayn_ad_Din
+		}
+		add_to_global_variable_list = { name = Zayn_ad_Din target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Zaim_ad_Dawla
+		}
+		add_to_global_variable_list = { name = Zaim_ad_Dawla target = this }
+	}
+	if = {
+		limit = {
+			this.var:laqab_temp = flag:Zinat_an_Nisa
+		}
+		add_to_global_variable_list = { name = Zinat_an_Nisa target = this }
+	}
 	remove_variable = laqab_temp
 }
 regular_laqab_effect = {
