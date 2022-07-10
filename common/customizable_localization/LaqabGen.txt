@@ -32,6 +32,15 @@ PreLaqabGen = {
 	text = {
 		trigger = {
 			any_in_global_list = {
+				variable = al_Ashraf
+				this = root
+			}
+		}
+        localization_key = al_Ashraf
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
 				variable = al_Adil
 				this = root
 			}
@@ -2183,6 +2192,12 @@ RegLaqabGen = {
 PreLaqabEvent = {
 	type = character
 	log_loc_errors = no
+	text = {
+		trigger = {
+			root.var:laqab_temp = flag:al_Ashraf
+		}
+        localization_key = al_Ashraf
+	}
 	text = {
 		trigger = {
 			root.var:laqab_temp = flag:al_Adil
