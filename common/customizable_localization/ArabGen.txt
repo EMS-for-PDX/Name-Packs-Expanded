@@ -40,8 +40,12 @@ ArabicPatCheck = {
 			OR = {
 				has_nickname = nick_the_bastard
 				has_nickname = nick_the_child_of_devilgod
+				has_trait = bastard
+				has_trait = wild_oat
+				has_trait = disputed_heritage
 			}
 		}
+		localization_key = arabic_nick_pat
 	}
 	text = {
 		trigger = {
@@ -82,15 +86,20 @@ ArabNickPat = {
 	log_loc_errors = no
 	text = {
 		trigger = {
-			has_nickname = nick_the_bastard
-		}
-        localization_key = Bastard
-	}
-	text = {
-		trigger = {
 			has_nickname = nick_the_child_of_devilgod
 		}
         localization_key = DevilChild
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_nickname = nick_the_bastard
+				has_trait = bastard
+				has_trait = wild_oat
+				has_trait = disputed_heritage
+			}
+		}
+        localization_key = Bastard
 	}
 	text = {
 		fallback = yes

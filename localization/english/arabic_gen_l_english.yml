@@ -1,9 +1,10 @@
 ﻿l_english:
-Window_Arabic: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('ArabNickHouse')]#!"
+Window_Arabic: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]#!"
 
 
 ArabicNickGen: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('ArabNick'), '_arabic'), ROOT.Char.Custom('CharacterGender')))]"
-arabic_nick_tek: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('ArabNickTek'), '_arabic'), ROOT.Char.Custom('CharacterGender')))]"
+arabic_nick_pat: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('ArabNickPat'), '_arabic'), ROOT.Char.Custom('CharacterGender')))]"
+arabic_nick_tek: "[Localize(Concatenate(Concatenate(CHARACTER.Custom('ArabNickTek'), '_arabic'), CHARACTER.Custom('CharacterGender')))]"
 
 PatPrefix_arabic_male: "ibn "
 PatSuffix_arabic_male: ""
