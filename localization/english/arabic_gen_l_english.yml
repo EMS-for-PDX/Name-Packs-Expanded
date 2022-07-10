@@ -2,8 +2,8 @@
 Window_Arabic: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('ArabNickHouse')]#!"
 
 
-ArabicNickGenMale: "[Localize(Concatenate(ROOT.Char.Custom('ArabNickMale'), '_arabic_m'))]"
-ArabicHouse
+ArabicNickGen: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('ArabNick'), '_arabic'), ROOT.Char.Custom('CharacterGender')))]"
+arabic_nick_tek: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('ArabNickTek'), '_arabic'), ROOT.Char.Custom('CharacterGender')))]"
 
 PatPrefix_arabic_male: "ibn "
 PatSuffix_arabic_male: ""

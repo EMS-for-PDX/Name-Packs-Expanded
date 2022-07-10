@@ -244,6 +244,27 @@ scripted_gui_tek = {
 		}
 		IF = {
 			limit = {
+				culture = {
+					has_cultural_pillar = language_arabic
+				}
+				OR = {
+					has_nickname = nick_feareater
+					has_nickname = nick_the_blood_motherfather
+					has_nickname = nick_the_confessor
+					has_nickname = nick_the_fishy
+					has_nickname = nick_the_fury
+					has_nickname = nick_the_meticulous
+					has_nickname = nick_the_mindbreaker
+				}
+			}
+			custom_description_no_bullet = {
+				text = scripted_gui_arabic_nick_tek
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+		else_if = {
+			limit = {
 				exists = scope:scripted_gui_eldest_son
 				scope:scripted_gui_eldest_son = {
 					OR = {

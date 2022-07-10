@@ -3,45 +3,9 @@
 	log_loc_errors = no
 	text = {
 		trigger = {
-			is_male = yes
-			OR = {
-				AND = {
-					exists = dynasty
-					dynasty = {
-						any_in_list = {
-							variable = Got_Arab_Nick_dynasty
-							this = root
-						}
-					}
-				}
-				any_in_global_list = {
-					variable = Got_Arab_Nick_global
-					this = root
-				}
-			}
+			has_any_nickname = yes
 		}
-		localization_key = ArabicNickGenMale
-	}
-	text = {
-		trigger = {
-			is_male = no
-			OR = {
-				AND = {
-					exists = dynasty
-					dynasty = {
-						any_in_list = {
-							variable = Got_Arab_Nick_dynasty
-							this = root
-						}
-					}
-				}
-				any_in_global_list = {
-					variable = Got_Arab_Nick_global
-					this = root
-				}
-			}
-		}
-		localization_key = ArabicNickGenFemale
+		localization_key = ArabicNickGen
 	}
 	text = {
 		trigger = {
@@ -66,7 +30,124 @@
 		localization_key = Gui_blank
 	}
 }
-ArabNickMale = {
+ArabicPatCheck = {
+	type = character
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_arabic
+			}
+			OR = {
+				has_nickname = nick_the_bastard
+				has_nickname = nick_the_child_of_devilgod
+			}
+		}
+	}
+	text = {
+		trigger = {
+			exists = father
+            father = {
+                OR = {
+                    AND = {
+                        exists = dynasty
+                        dynasty = {
+                            any_in_list = {
+                                variable = name_pack_support_dynasty
+                                this = root.father
+                            }
+                        }
+                    }
+                    any_in_global_list = {
+                        variable = name_pack_support_global
+                        this = root.father
+                    }
+                }
+            }
+		}
+		localization_key = Supported_Patronym_After
+	}
+    text = {
+        trigger = {
+            exists = father
+        }
+        localization_key = Nonsupported_Patronym_After
+    }
+	text = {
+		fallback = yes
+		localization_key = Gui_blank
+	}
+}
+ArabNickPat = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			has_nickname = nick_the_bastard
+		}
+        localization_key = Bastard
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_child_of_devilgod
+		}
+        localization_key = DevilChild
+	}
+	text = {
+		fallback = yes
+		localization_key = BlankNick
+	}
+}
+ArabNickTek = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			has_nickname = nick_feareater
+		}
+        localization_key = FearEater
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_blood_motherfather
+		}
+        localization_key = BloodFather
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_confessor
+		}
+        localization_key = Confessor
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_fishy
+		}
+        localization_key = Fishy
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_fury
+		}
+        localization_key = Fury
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_meticulous
+		}
+        localization_key = Meticulous
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_mindbreaker
+		}
+        localization_key = Mindbreaker
+	}
+	text = {
+		fallback = yes
+		localization_key = BlankNick
+	}
+}
+ArabNick = {
 	type = character
 	log_loc_errors = no
 	text = {
@@ -80,12 +161,6 @@ ArabNickMale = {
 			has_nickname = nick_hand
 		}
         localization_key = BadHand
-	}
-	text = {
-		trigger = {
-			has_nickname = nick_feareater
-		}
-        localization_key = FearEater
 	}
 	text = {
 		trigger = {
@@ -113,12 +188,6 @@ ArabNickMale = {
 	}
 	text = {
 		trigger = {
-			has_nickname = nick_nord_foe
-		}
-        localization_key = NordFoe
-	}
-	text = {
-		trigger = {
 			has_nickname = nick_priest_eater
 		}
         localization_key = PriestEater
@@ -133,13 +202,13 @@ ArabNickMale = {
 		trigger = {
 			has_nickname = nick_the_culture_wall
 		}
-        localization_key = TheArabWall
+        localization_key = ArabWall
 	}
 	text = {
 		trigger = {
 			has_nickname = nick_the_able
 		}
-        localization_key = TheAble
+        localization_key = Able
 	}
 	text = {
 		trigger = {
@@ -171,17 +240,1157 @@ ArabNickMale = {
 		}
         localization_key = Architect
 	}
-	text = { ###
+	text = {
 		trigger = {
-			has_nickname = nick_the_architect
+			has_nickname = nick_the_avenger
 		}
         localization_key = Avenger
 	}
-	text = { ###
+	text = { 
 		trigger = {
-			has_nickname = nick_the_architect
+			has_nickname = nick_the_bane_of_danes
 		}
-        localization_key = Avenger
+        localization_key = BaneDane
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_bard
+		}
+        localization_key = Bard
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_bear
+		}
+        localization_key = Bear
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_beguiling
+		}
+        localization_key = Beguiling
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_benevolent
+		}
+        localization_key = Benevolent
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_betrayer
+		}
+        localization_key = Betrayer
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_big_halberd
+		}
+        localization_key = BigHalberd
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_black
+		}
+        localization_key = Black
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_black_adder
+		}
+        localization_key = BlackAdder
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_blessed
+		}
+        localization_key = Blessed
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_blind
+		}
+        localization_key = Blind
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_bloody
+		}
+        localization_key = Bloody
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_bold
+		}
+        localization_key = Bold
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_brave
+		}
+        localization_key = Brave
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_brilliant
+		}
+        localization_key = Brilliant
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_brute
+		}
+        localization_key = Brute
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_bully
+		}
+        localization_key = Bully
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_butcher
+		}
+        localization_key = Butcher
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_cannibal
+		}
+        localization_key = Cannibal
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_chaste
+		}
+        localization_key = Chaste
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_chivalrous
+		}
+        localization_key = Chivalrous
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_chronicler
+		}
+        localization_key = Chronicler
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_compassionate
+		}
+        localization_key = Compassionate
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_conqueror
+		}
+        localization_key = Conqueror
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_courageous
+		}
+        localization_key = Courageous
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_crow
+		}
+        localization_key = Crow
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_cruel
+		}
+        localization_key = Cruel
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_crusader
+		}
+        localization_key = Crusader
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_demon
+		}
+        localization_key = Demon
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_depraved
+		}
+        localization_key = Depraved
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_devil
+		}
+        localization_key = Devil
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_devourer
+		}
+        localization_key = Devourer
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_diplomat
+		}
+        localization_key = Diplomat
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_diseased
+		}
+        localization_key = Diseased
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_divine
+		}
+        localization_key = Divine
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_dragon
+		}
+        localization_key = Dragon
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_drunkard
+		}
+        localization_key = Drunkard
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_dull
+		}
+        localization_key = Dull
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_eager
+		}
+        localization_key = Eager
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_ecumenist
+		}
+        localization_key = Ecumenist
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_elegant
+		}
+        localization_key = Elegant
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_enlightened
+		}
+        localization_key = Enlightened
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_fair
+		}
+        localization_key = Fair
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_fat
+		}
+        localization_key = Fat
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_motherfather_of_spain
+		}
+        localization_key = FatherofSpain
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_fearless
+		}
+        localization_key = Fearless
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_ferocious_giant
+		}
+        localization_key = FerociousGiant
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_flash
+		}
+        localization_key = FlashGod
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_flayer
+		}
+        localization_key = Flayer
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_foolish
+		}
+        localization_key = Foolish
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_fowler
+		}
+        localization_key = Fowler
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_fox
+		}
+        localization_key = Fox
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_frail
+		}
+        localization_key = Frail
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_frog
+		}
+        localization_key = Frog
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_gardener
+		}
+        localization_key = Gardener
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_generous
+		}
+        localization_key = Generous
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_gentle
+		}
+        localization_key = Gentle
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_giant
+		}
+        localization_key = Giant
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_girthy
+		}
+        localization_key = Girthy
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_glorious
+		}
+        localization_key = Glorious
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_good
+		}
+        localization_key = Good
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_gouty
+		}
+        localization_key = Gouty
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_gracious
+		}
+        localization_key = Gracious
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_great
+		}
+        localization_key = Great
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_greedy
+		}
+        localization_key = Greedy
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_guardian
+		}
+        localization_key = Guardian
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_hammer
+		}
+        localization_key = Hammer
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_handsome
+		}
+        localization_key = Handsome
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_hawk
+		}
+        localization_key = Hawk
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_heartbreaker
+		}
+        localization_key = Heartbreaker
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_heathen
+		}
+        localization_key = Heathen
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_hideous
+		}
+        localization_key = Hideous
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_historian
+		}
+        localization_key = Historian
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_holy
+		}
+        localization_key = Holy
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_honest
+		}
+        localization_key = Honest
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_honorable
+		}
+        localization_key = Honorable
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_hotspur
+		}
+        localization_key = Hotspur
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_hunchback
+		}
+        localization_key = Hunchback
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_hunter
+		}
+        localization_key = Hunter
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_immortal
+		}
+        localization_key = Immortal
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_impaler
+		}
+        localization_key = Impaler
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_imperious
+		}
+        localization_key = Imperious
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_inevitable
+		}
+        localization_key = Inevitable
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_insane
+		}
+        localization_key = Insane
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_ironside
+		}
+        localization_key = Ironside
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_judge
+		}
+        localization_key = Judge
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_just
+		}
+        localization_key = Just
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_kind
+		}
+        localization_key = Kind
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_knight_of_gabriel
+		}
+        localization_key = KnightGabriel
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_lame
+		}
+        localization_key = Lame
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_lawgiver
+		}
+        localization_key = Lawgiver
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_lecher
+		}
+        localization_key = Lecher
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_leper
+		}
+        localization_key = Leper
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_lewd
+		}
+        localization_key = Lewd
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_liberator
+		}
+        localization_key = Liberator
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_lionheart
+		}
+        localization_key = Lionheart
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_lisp_and_lame
+		}
+        localization_key = LispLame
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_little
+		}
+        localization_key = Little
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_ladylord_of_the_ganges
+		}
+        localization_key = LordGanges
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_loyal
+		}
+        localization_key = Loyal
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_mad
+		}
+        localization_key = Mad
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_magnanimous
+		}
+        localization_key = Magnanimous
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_magnificent
+		}
+        localization_key = Magnificent
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_glass
+		}
+        localization_key = ManofGlass
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_martyr
+		}
+        localization_key = Martyr
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_merciless
+		}
+        localization_key = Merciless
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_merry
+		}
+        localization_key = Merry
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_messenger_of_christ
+		}
+        localization_key = MessengerChrist
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_monk
+		}
+        localization_key = Monk
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_monster
+		}
+        localization_key = Monster
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_noble
+		}
+        localization_key = Noble
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_old
+		}
+        localization_key = Old
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_one_eyed
+		}
+        localization_key = OneEyed
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_overseer
+		}
+        localization_key = Overseer
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_passionate
+		}
+        localization_key = Passionate
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_peacemaker
+		}
+        localization_key = Peacemaker
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_philosopher
+		}
+        localization_key = Philosopher
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_pilgrim
+		}
+        localization_key = Pilgrim
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_pious
+		}
+        localization_key = Pious
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_plump
+		}
+        localization_key = Plump
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_poet
+		}
+        localization_key = Poet
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_prodigy
+		}
+        localization_key = Prodigy
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_proud
+		}
+        localization_key = Proud
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_quarreller
+		}
+        localization_key = Quarreler
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_quick
+		}
+        localization_key = Quick
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_rash
+		}
+        localization_key = Rash
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_red
+		}
+        localization_key = Red
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_repulsive
+		}
+        localization_key = Repulsive
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_restorer
+		}
+        localization_key = Restorer
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_ruthless
+		}
+        localization_key = Ruthless
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_sage
+		}
+        localization_key = Sage
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_saint
+		}
+        localization_key = Saint
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_saoshyant
+		}
+        localization_key = Saoshyant
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_scholar
+		}
+        localization_key = Scholar
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_scourge_of_the_northerners
+		}
+        localization_key = ScourgeNorth
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_seducer
+		}
+        localization_key = Seducer
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_selfish
+		}
+        localization_key = Selfish
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_shadow
+		}
+        localization_key = Shadow
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_shepherd
+		}
+        localization_key = Shepherd
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_shrewd
+		}
+        localization_key = Shrewd
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_shy
+		}
+        localization_key = Shy
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_silent
+		}
+        localization_key = Silent
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_silly
+		}
+        localization_key = Silly
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_simple
+		}
+        localization_key = Simple
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_sly
+		}
+        localization_key = Sly
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_spider
+		}
+        localization_key = Spider
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_stalwart
+		}
+        localization_key = Stalwart
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_stammerer
+		}
+        localization_key = Stammerer
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_stonefaced
+		}
+        localization_key = Stonefaced
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_strong
+		}
+        localization_key = Strong
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_stupor_mundi
+		}
+        localization_key = StuporMundi
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_sword_of_god
+		}
+        localization_key = SwordGod
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_tactician
+		}
+        localization_key = Tactician
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_terrible
+		}
+        localization_key = Terrible
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_temptress
+		}
+        localization_key = Temptress
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_theologian
+		}
+        localization_key = Theologian
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_thunderbolt
+		}
+        localization_key = Thunderbolt
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_timid
+		}
+        localization_key = Timid
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_tormentor
+		}
+        localization_key = Tormentor
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_traitor
+		}
+        localization_key = Traitor
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_trembling
+		}
+        localization_key = Trembling
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_trickster
+		}
+        localization_key = Trickster
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_triumphant
+		}
+        localization_key = Triumphant
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_troubadour
+		}
+        localization_key = Troubadour
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_trustworthy
+		}
+        localization_key = Trustworthy
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_truthseeker
+		}
+        localization_key = Truthseeker
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_truthspeaker
+		}
+        localization_key = Truthspeaker
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_tyrant
+		}
+        localization_key = Tyrant
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_unchaste
+		}
+        localization_key = Unchaste
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_unfaithful
+		}
+        localization_key = Unfaithful
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_undefeated
+		}
+        localization_key = Undefeated
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_unifier_of_africa
+		}
+        localization_key = UnifierAfrica
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_unready
+		}
+        localization_key = Unready
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_unrelenting
+		}
+        localization_key = Unrelenting
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_unrestrained
+		}
+        localization_key = Unrestrained
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_unworthy
+		}
+        localization_key = Unworthy
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_usurper
+		}
+        localization_key = Usurper
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_valiant
+		}
+        localization_key = Valiant
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_vanquisher
+		}
+        localization_key = Vanquisher
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_victorious
+		}
+        localization_key = Victorious
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_maiden_of_virgin
+		}
+        localization_key = VirginMaiden
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_weak
+		}
+        localization_key = Weak
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_whirlwind
+		}
+        localization_key = Whirlwind
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_whisperer
+		}
+        localization_key = Whisperer
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_wicked
+		}
+        localization_key = Wicked
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_wise
+		}
+        localization_key = Wise
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_witch
+		}
+        localization_key = Witch
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_wizard
+		}
+        localization_key = Wizard
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_wolf
+		}
+        localization_key = Wolf
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_worthy
+		}
+        localization_key = Worthy
+	}
+	text = { 
+		trigger = {
+			has_nickname = nick_the_young
+		}
+        localization_key = Young
 	}
 	text = {
 		fallback = yes
