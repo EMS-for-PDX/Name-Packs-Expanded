@@ -1,0 +1,1539 @@
+set_laqab_effect = {
+	add_to_global_variable_list = { name = $LAQAB$ target = this }
+	remove_variable = laqab_temp
+}
+regular_laqab_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = regular_laqab_dynasty target = prev }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = regular_laqab_global target = this }
+	}
+}
+pre_laqab_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = pre_laqab_dynasty target = prev }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = pre_laqab_global target = this }
+	}
+}
+given_king_laqab_effect_female = {
+	random_list = {
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Zinat_an_Nisa
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Taj_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Fakhr_an_Nissa
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Bakht_an_Nissa
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Shakr_un_Nissa
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Qatr_an_Nada
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Malika_i_Jahan
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Safwat_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Radiyat_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nusrat_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Jalalat_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Ismat_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Azizat_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Alimat_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Badi_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mah_i_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Safwat_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sitt_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sitr_i_Mualla
+			}
+		}
+	}
+}
+given_king_laqab_effect_male = {
+	random_list = {
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Taj_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Shams_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nizam_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Izz_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muhyi_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muayyad_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nasir_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nizam_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Taj_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Badi_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Ala_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Alim_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Anwar_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Azhar_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Azim_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Badi_az_Zaman
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Badr_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Baha_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Burhan_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Diya_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Fakhr_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Falak_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Farid_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Faris_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Fath_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Ghiyath_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Hafiz_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Hamid_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Haqq_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Hisham_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Husam_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Ikhtiyar_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Imad_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Izz_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Jalal_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Kamal_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Karim_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Khayr_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Majd_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mansur_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mugith_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muhibb_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muhyi_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mujir_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mumahhid_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muslih_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muzaffar_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muayyad_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muin_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muizz_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Najm_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nasir_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nizam_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nur_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Qamar_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Qutb_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Rafi_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Rashid_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Riyad_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Rukn_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sabah_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sabr_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sadr_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Salah_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Shams_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sharaf_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sarim_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sayf_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sad_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sihab_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Siraj_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Shuja_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Taj_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Taqi_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Zahir_ad_Din
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Zayn_ad_Din
+			}
+		}
+	}
+}
+given_caliph_laqab_effect_female = {
+	random_list = {
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Badi_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Hujjat_ad_Islam
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Ismat_ad_Dunya
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mah_i_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Radiyat_ad_Dunya
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Safwat_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sitt_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sitr_i_Mualla
+			}
+		}
+	}
+}
+given_caliph_laqab_effect_male = {
+	random_list = {
+		0 = {
+			modifier = {
+				exists = faith.religious_head
+				faith.religious_head = {
+					has_title = title:d_sunni
+				}
+				add = 1
+			}
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sayf_as_Sunna
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Taj_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Shams_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nizam_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Izz_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muhyi_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muayyad_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nasir_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nizam_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Taj_al_Milla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Adud_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Ala_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Amid_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Amin_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Asad_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Ayn_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Badi_al_Mulk
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Baha_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Baha_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Diya_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Fakhr_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Hisn_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Husam_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Iftikhar_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Imad_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Izz_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Itimad_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Jalal_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Jamal_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Majd_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mumahhid_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Murtada_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Musharraf_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mushir_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muayyad_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Muizz_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mutamid_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nasir_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Nizam_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Qawam_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Qutb_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Rashid_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Rukn_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sahib_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sama_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Shams_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Samsam_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sharaf_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sayf_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sad_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Said_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Shibl_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Sihab_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Siraj_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Shuja_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Taj_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Uddat_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Wali_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Yamin_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Zahir_ad_Dawla
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:Zaim_ad_Dawla
+			}
+		}
+	}
+}
+regnal_laqab_effect = {
+	random_list = {
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:ad_Dai
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Adil
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Afdal
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Ashraf
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Awhad
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Aziz
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Ghalib
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Jawad
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Kamil
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Mansur
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Muayyad
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Muazzam
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Muhsin
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Muizz
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Mujahid
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:al_Muzaffar
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:an_Nasir
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:ar_Rahim
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:as_Said
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:as_Salih
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:az_Zafir
+			}
+		}
+		1 = {
+			set_variable = {
+				name = laqab_temp
+				value = flag:az_Zahir
+			}
+		}
+	}
+}
+caliph_laqab_effect = {
+	random_list = {
+		0 = {
+			modifier = {
+				NOT = {
+					has_faith = faith:zayidi
+				}
+				add = 33
+			}
+			random_list = {
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Hakim_bi_Amr_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muayyad_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muhtadi_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muktafi_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muntasir_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muqtadi_bi_Amr_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muqtadir_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muqtafi_li_Amr_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustadi_bi_Amr_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustain_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustakfi_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustali_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustamsik_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustanjid_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustansir_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustarshid_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustasim_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mustazhir_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mutadid_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mutamid_ala_llah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mutasim_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mutawakkil_ala_llah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muti_lillah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muttaqi_lillah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Qadir_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Qahir_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Qaim_bi_Amr_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Wathiq_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Nasir_li_Din_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Radi_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Rashid_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Tai_li_Amr_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Zahir_bi_Amr_Allah
+					}
+				}
+			}
+		}
+		
+		0 = {
+			modifier = {
+				has_title = title:d_sunni
+				add = 1
+			}
+			set_variable = {
+				name = laqab_temp
+				value = flag:Mutazz_billah
+			}
+		}
+		0 = {
+			modifier = {
+				has_title = title:d_shiite
+				add = 10
+			}
+			random_list = {
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muid_li_Din_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Adid_li_Din_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Amir_bi_Ahkam_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Aziz_billah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Faiz_bi_Nasr_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Hafiz_li_Din_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Mansur_bi_Nasr_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muhtadi_bi_Quwat_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Muizz_li_Din_Allah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:Zahir_li_Izaz_Din_Allah
+					}
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_faith = faith:zayidi
+				add = 11
+			}
+			add_character_flag = this_is_pre_laqab
+			random_list = {
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:ad_Dai
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:al_Mansur
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:al_Muayyad
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:an_Nasir
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:al_Mahdi
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:al_Muhtasib
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:al_Mukhtar
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:al_Muntakhab
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:al_Murtada
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:al_Mutawakkil
+					}
+				}
+				1 = {
+					set_variable = {
+						name = laqab_temp
+						value = flag:al_Wathiq
+					}
+				}
+			}
+		}
+	}
+}

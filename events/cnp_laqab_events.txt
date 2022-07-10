@@ -1,0 +1,331 @@
+﻿namespace = cnplaqab
+cnplaqab.001 = { #Caliph Decision
+    type = character_event
+	theme = faith
+	title = cnplaqab.001.t
+	desc = cnplaqab.001.desc
+	right_portrait = root
+	immediate = {
+		caliph_laqab_effect = yes
+	}
+	option = {
+		name = cnplaqab.001.a
+		custom_tooltip = cnplaqab.001.a.tt
+		remove_variable = laqab_temp
+		trigger_event = {
+			id = cnplaqab.001
+			days = -1
+		}
+	}
+	option = {
+		name = cnplaqab.001.b
+		custom_tooltip = cnplaqab.001.b.tt
+		set_laqab_effect = { LAQAB = root.var:laqab_temp }
+		if = {
+			limit = {
+				has_character_flag = this_is_pre_laqab
+			}
+			pre_laqab_effect = yes
+		}
+		else = {
+			regular_laqab_effect = yes
+		}
+		add_character_flag = has_caliph_laqab
+	}
+}
+
+cnplaqab.002 = { #Regnal Decision
+    type = character_event
+	theme = faith
+	title = cnplaqab.002.t
+	desc = cnplaqab.002.desc
+	right_portrait = root
+
+	immediate = {
+		regnal_laqab_effect = yes
+	}
+	
+	option = {
+		name = cnplaqab.002.a
+		custom_tooltip = cnplaqab.002.a.tt
+		remove_variable = laqab_temp
+		trigger_event = {
+			id = cnplaqab.002
+			days = -1
+		}
+	}
+
+	option = {
+		name = cnplaqab.001.b
+		custom_tooltip = cnplaqab.001.b.tt
+		set_laqab_effect = { LAQAB = root.var:laqab_temp }
+		pre_laqab_effect = yes
+		add_character_flag = has_regnal_laqab
+	}
+}
+cnplaqab.003 = { #Ducal Regnal Decision
+    type = character_event
+	theme = faith
+	title = cnplaqab.003.t
+	desc = cnplaqab.003.desc
+	right_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				is_male = yes
+			}
+			given_king_laqab_effect_male = yes
+		}
+		else = {
+			given_king_laqab_effect_female = yes
+		}
+	}
+	
+	option = {
+		name = cnplaqab.003.a
+		custom_tooltip = cnplaqab.003.a.tt
+		remove_variable = laqab_temp
+		trigger_event = {
+			id = cnplaqab.003
+			days = -1
+		}
+	}
+
+	option = {
+		name = cnplaqab.003.b
+		custom_tooltip = cnplaqab.003.b.tt
+		set_laqab_effect = { LAQAB = root.var:laqab_temp }
+		regular_laqab_effect = yes
+		add_character_flag = has_reg_laqab
+	}
+}
+cnplaqab.004 = { #Give Other Caliph
+    type = character_event
+	theme = faith
+	title = cnplaqab.004.t
+	desc = cnplaqab.004.desc
+	left_portrait = root
+	right_portrait = scope:recipient
+
+	immediate = {
+		scope:recipient = {
+			if = {
+				limit = {
+					is_male = yes
+				}
+				given_caliph_laqab_effect_male = yes
+			}
+			else = {
+				given_caliph_laqab_effect_female = yes
+			}
+		}
+	}
+
+	option = {
+		name = cnplaqab.004.a
+		custom_tooltip = cnplaqab.004.a.tt
+		scope:recipient = {
+			remove_variable = laqab_temp
+		}
+		trigger_event = {
+			id = cnplaqab.004
+			days = -1
+		}
+	}
+	option = {
+		name = cnplaqab.004.b
+		custom_tooltip = cnplaqab.004.b.tt
+		scope:recipient = {
+			set_laqab_effect = yes
+			regular_laqab_effect = yes
+			add_character_flag = has_reg_laqab
+			trigger_event = {
+				id = cnplaqab.010
+				days = -1
+			}
+		}
+	}
+}
+cnplaqab.005 = { #Give You Caliph
+    type = character_event
+	theme = faith
+	title = cnplaqab.005.t
+	desc = cnplaqab.005.desc
+	left_portrait = scope:actor
+	right_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				is_male = yes
+			}
+			given_caliph_laqab_effect_male = yes
+		}
+		else = {
+			given_caliph_laqab_effect_female = yes
+		}
+	}
+
+	option = {
+		name = cnplaqab.005.a
+		custom_tooltip = cnplaqab.005.a.tt
+		remove_variable = laqab_temp
+		trigger_event = {
+			id = cnplaqab.005
+			days = -1
+		}
+	}
+	option = {
+		name = cnplaqab.005.b
+		custom_tooltip = cnplaqab.005.b.tt
+		set_laqab_effect = yes
+		regular_laqab_effect = yes
+		add_character_flag = has_reg_laqab
+	}
+}
+cnplaqab.006 = { #Hidden Event Caliph
+	type = character_event
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				is_male = yes
+			}
+			given_caliph_laqab_effect_male = yes
+		}
+		else = {
+			given_caliph_laqab_effect_female = yes
+		}
+		set_laqab_effect = yes
+		regular_laqab_effect = yes
+		add_character_flag = has_reg_laqab
+	}
+}
+cnplaqab.007 = { #Give Other Regnal
+    type = character_event
+	theme = faith
+	title = cnplaqab.007.t
+	desc = cnplaqab.007.desc
+	left_portrait = root
+	right_portrait = scope:recipient
+
+	immediate = {
+		scope:recipient = {
+			if = {
+				limit = {
+					is_male = yes
+				}
+				given_king_laqab_effect_male = yes
+			}
+			else = {
+				given_king_laqab_effect_female = yes
+			}
+		}
+	}
+
+	option = {
+		name = cnplaqab.007.a
+		custom_tooltip = cnplaqab.007.a.tt
+		remove_variable = laqab_temp
+		trigger_event = {
+			id = cnplaqab.007
+			days = -1
+		}
+	}
+	option = {
+		name = cnplaqab.007.b
+		custom_tooltip = cnplaqab.007.b.tt
+		add_character_flag = has_reg_laqab
+		scope:recipient = {
+			set_laqab_effect = yes
+			regular_laqab_effect = yes
+			add_character_flag = has_reg_laqab
+			trigger_event = {
+				id = cnplaqab.011
+				days = -1
+			}
+		}
+	}
+}
+cnplaqab.008 = { #Give You Regnal
+    type = character_event
+	theme = faith
+	title = cnplaqab.008.t
+	desc = cnplaqab.008.desc
+	left_portrait = scope:actor
+	right_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				is_male = yes
+			}
+			given_king_laqab_effect_male = yes
+		}
+		else = {
+			given_king_laqab_effect_female = yes
+		}
+	}
+
+	option = {
+		name = cnplaqab.008.a
+		custom_tooltip = cnplaqab.008.a.tt
+		remove_variable = laqab_temp
+		trigger_event = {
+			id = cnplaqab.008
+			days = -1
+		}
+	}
+	option = {
+		name = cnplaqab.008.b
+		custom_tooltip = cnplaqab.008.b.tt
+		set_laqab_effect = yes
+		regular_laqab_effect = yes
+		add_character_flag = has_reg_laqab
+	}
+}
+cnplaqab.009 = { #Hidden Event Regnal
+	type = character_event
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				is_male = yes
+			}
+			given_king_laqab_effect_male = yes
+		}
+		else = {
+			given_king_laqab_effect_female = yes
+		}
+		set_laqab_effect = yes
+		regular_laqab_effect = yes
+		add_character_flag = has_reg_laqab
+	}
+}
+cnplaqab.010 = { #Recieve Caliph
+    type = character_event
+	theme = faith
+	title = cnplaqab.005.t
+	desc = cnplaqab.005.desc
+	left_portrait = scope:actor
+	right_portrait = root
+
+	option = {
+		name = cnplaqab.005.b
+		custom_tooltip = cnplaqab.005.b.tt
+	}
+}
+cnplaqab.011 = { #Recieve Regnal
+    type = character_event
+	theme = faith
+	title = cnplaqab.008.t
+	desc = cnplaqab.008.desc
+	left_portrait = scope:actor
+	right_portrait = root
+
+	option = {
+		name = cnplaqab.008.b
+		custom_tooltip = cnplaqab.008.b.tt
+	}
+}
