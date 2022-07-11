@@ -1,0 +1,54 @@
+﻿on_dynasty_created = {
+	on_actions = {
+		set_dynasty
+	}
+}
+set_dynasty = {
+	trigger = {
+		dynast = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			save_temporary_scope_as = good_lad
+			OR = {
+				AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = name_pack_support_dynasty
+                            this = scope:good_lad
+                        }
+                    }
+                }
+                any_in_global_list = {
+                    variable = name_pack_support_global
+                    this = scope:good_lad
+                }
+			}
+		}
+	}
+	effect = {
+		dynast = {
+			save_scope_as = good_lad
+		}
+		every_player = {
+			set_variable = {
+				name = temp_head
+				value = scope:good_lad
+			}
+		}
+		scope:good_lad.dynasty = {
+			set_dynasty_name = "[Localize(Concatenate(Concatenate(GetPlayer.MakeScope.Var('temp_head').Char.GetFirstNameNoTooltip, GetPlayer.MakeScope.Var('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
+		}
+		scope:good_lad.house = {
+			set_house_name = "[Localize(Concatenate(Concatenate(GetPlayer.MakeScope.Var('temp_head').Char.GetFirstNameNoTooltip, GetPlayer.MakeScope.Var('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
+			set_variable = {
+				name = name_founder
+				value = scope:good_lad
+			}
+		}
+		every_player = {
+			remove_variable = temp_head
+		}
+	}
+}
