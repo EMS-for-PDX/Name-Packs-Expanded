@@ -7,7 +7,9 @@ cnplaqab.001 = { #Caliph Decision
 	desc = cnplaqab.001.desc
 	right_portrait = root
 	immediate = {
-		caliph_laqab_effect = yes
+		hidden_effect = {
+			caliph_laqab_effect = yes
+		}
 	}
 	option = {
 		name = cnplaqab.001.a
@@ -21,7 +23,7 @@ cnplaqab.001 = { #Caliph Decision
 	option = {
 		name = cnplaqab.001.b
 		custom_tooltip = cnplaqab.001.b.tt
-		set_laqab_effect = { LAQAB = root.var:laqab_temp }
+		set_laqab_effect = yes
 		if = {
 			limit = {
 				has_character_flag = this_is_pre_laqab
@@ -43,7 +45,9 @@ cnplaqab.002 = { #Regnal Decision
 	right_portrait = root
 
 	immediate = {
-		regnal_laqab_effect = yes
+		hidden_effect = {
+			regnal_laqab_effect = yes
+		}
 	}
 	
 	option = {
@@ -59,7 +63,7 @@ cnplaqab.002 = { #Regnal Decision
 	option = {
 		name = cnplaqab.001.b
 		custom_tooltip = cnplaqab.001.b.tt
-		set_laqab_effect = { LAQAB = root.var:laqab_temp }
+		set_laqab_effect = yes
 		pre_laqab_effect = yes
 		add_character_flag = has_regnal_laqab
 	}
@@ -72,14 +76,16 @@ cnplaqab.003 = { #Ducal Regnal Decision
 	right_portrait = root
 
 	immediate = {
-		if = {
-			limit = {
-				is_male = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					is_male = yes
+				}
+				given_king_laqab_effect_male = yes
 			}
-			given_king_laqab_effect_male = yes
-		}
-		else = {
-			given_king_laqab_effect_female = yes
+			else = {
+				given_king_laqab_effect_female = yes
+			}
 		}
 	}
 	
@@ -96,7 +102,7 @@ cnplaqab.003 = { #Ducal Regnal Decision
 	option = {
 		name = cnplaqab.003.b
 		custom_tooltip = cnplaqab.003.b.tt
-		set_laqab_effect = { LAQAB = root.var:laqab_temp }
+		set_laqab_effect = yes
 		regular_laqab_effect = yes
 		add_character_flag = has_reg_laqab
 	}
@@ -110,15 +116,17 @@ cnplaqab.004 = { #Give Other Caliph
 	right_portrait = scope:recipient
 
 	immediate = {
-		scope:recipient = {
-			if = {
-				limit = {
-					is_male = yes
+		hidden_effect = {
+			scope:recipient = {
+				if = {
+					limit = {
+						is_male = yes
+					}
+					given_caliph_laqab_effect_male = yes
 				}
-				given_caliph_laqab_effect_male = yes
-			}
-			else = {
-				given_caliph_laqab_effect_female = yes
+				else = {
+					given_caliph_laqab_effect_female = yes
+				}
 			}
 		}
 	}
@@ -228,7 +236,9 @@ cnplaqab.007 = { #Give Other Regnal
 	option = {
 		name = cnplaqab.007.a
 		custom_tooltip = cnplaqab.007.a.tt
-		remove_variable = laqab_temp
+		scope:recipient = {
+			remove_variable = laqab_temp
+		}
 		trigger_event = {
 			id = cnplaqab.007
 			days = -1
