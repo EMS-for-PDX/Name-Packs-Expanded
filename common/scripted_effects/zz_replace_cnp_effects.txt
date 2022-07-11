@@ -15,19 +15,6 @@
 		house = {
 			save_scope_as = new_house
 		}
-		every_player = {
-			limit = {
-				exists = house
-				house = scope:new_house
-				NOT = { this = $CHARACTER$ }
-			}
-			send_interface_toast = {
-				type = msg_created_new_house
-				title = created_cadet_branch_toast_new_house_desc
-				left_icon = scope:new_head
-				desc = created_cadet_branch_toast_new_house_other_tt
-			}
-		}
 		send_interface_toast = {
 			type = msg_created_new_house
 			title = created_cadet_branch_toast_new_house_desc
@@ -100,5 +87,18 @@
                 remove_variable = temp_head
             }
         }
+		every_player = {
+			limit = {
+				exists = house
+				house = scope:new_house
+				NOT = { this = $CHARACTER$ }
+			}
+			send_interface_toast = {
+				type = msg_created_new_house
+				title = created_cadet_branch_toast_new_house_desc
+				left_icon = scope:new_head
+				desc = created_cadet_branch_toast_new_house_other_tt
+			}
+		}
 	}
 }

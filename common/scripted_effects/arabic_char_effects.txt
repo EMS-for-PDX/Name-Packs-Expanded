@@ -5,14 +5,24 @@
 			value = character:33900
 		}
 	}
-	character:34014.dynasty = {
+	character:34014.dynasty = { #Abbasids
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:34009 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:34015 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:33900 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:34010 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:34014 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:34010 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:34014 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34012 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34015 }
 	}
+    character:34009 = {
+        change_first_name = Harun
+        add_to_global_variable_list = { name = Wathiq_billah target = this }
+    }
+    character:34015 = {
+        change_first_name = Muhammad
+    }
     character:34010 = {
         change_first_name = Jafar
         add_to_global_variable_list = { name = Mutawakkil_ala_llah target = this }

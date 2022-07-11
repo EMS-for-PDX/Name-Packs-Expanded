@@ -17,7 +17,14 @@
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:70559 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:70558 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:70556 }
+    character:1700.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgreek001
+        }
+    }
 	character:1700.dynasty = { #Makedon
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgreek001 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1700 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:145129 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:145130 }
@@ -25,20 +32,25 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:145133 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1702 }
     }
+    character:145834.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgreek002
+        }
+    }
 	character:145834.dynasty = { #Rangabes
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgreek002 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:145834 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70494 }
     }
-	character:145150.dynasty = { #Skleros
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:145150 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:145151 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:145152 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:1770 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:145149 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:145148 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:145806 }
+    character:145150.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgreek003
+        }
     }
-	character:145106.dynasty = { #Skleros
+	character:145150.dynasty = { #Skleros
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgreek003 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:145150 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:145151 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:145152 }
