@@ -1205,6 +1205,116 @@ CharacterGov = {
     text = {
         trigger = {
             OR = {
+                AND = {
+                    has_government = feudal_government
+                    OR = {
+                        has_title = e_byzantium
+                        AND = {
+                            exists = top_liege
+                            top_liege = {
+                                has_title = e_byzantium
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    OR = {
+                        exists = primary_spouse
+                        any_former_spouse = {
+                            exists = this
+                        }
+                    }
+                    any_spouse = {
+                        even_if_dead = yes
+                        save_temporary_scope_as = the_spouse
+                        OR = {
+                            AND = {
+                                has_government = feudal_government
+                                OR = {
+                                    has_title = e_byzantium
+                                    AND = {
+                                        exists = top_liege
+                                        top_liege = {
+                                            has_title = e_byzantium
+                                        }
+                                    }
+                                }
+                            }
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_byzantine
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = father
+                    father = {
+                        OR = {
+                            AND = {
+                                has_government = feudal_government
+                                OR = {
+                                    has_title = e_byzantium
+                                    AND = {
+                                        exists = top_liege
+                                        top_liege = {
+                                            has_title = e_byzantium
+                                        }
+                                    }
+                                }
+                            }
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_byzantine
+                                        this = root.father
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    exists = mother
+                    mother = {
+                        OR = {
+                            AND = {
+                                has_government = feudal_government
+                                OR = {
+                                    has_title = e_byzantium
+                                    AND = {
+                                        exists = top_liege
+                                        top_liege = {
+                                            has_title = e_byzantium
+                                        }
+                                    }
+                                }
+                            }
+                            AND = {
+                                exists = dynasty
+                                dynasty = {
+                                    any_in_list = {
+                                        variable = dynasty_byzantine
+                                        this = root.mother
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _byzantine
+    }
+    text = {
+        trigger = {
+            OR = {
                 has_government = feudal_government
                 AND = {
                     OR = {
