@@ -20,16 +20,17 @@
     }
 
     effect = {
-        custom_description = {
-            text = get_caliph_laqab_trigger
-        }
         trigger_event = {
             id = cnplaqab.001
+            days = -1
+        }
+        custom_description = {
+            text = get_caliph_laqab_trigger
         }
     }
 
     ai_will_do = {
-        base = 100
+        base = 80
     }
 
     ai_goal = yes
