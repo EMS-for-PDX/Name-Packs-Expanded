@@ -1208,12 +1208,21 @@ CharacterGov = {
                 AND = {
                     has_government = feudal_government
                     OR = {
-                        has_title = e_byzantium
+                        has_title = title:e_byzantium
                         AND = {
                             exists = top_liege
                             top_liege = {
-                                has_title = e_byzantium
+                                has_title = title:e_byzantium
                             }
+                        }
+                    }
+                }
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = dynasty_byzantine
+                            this = root
                         }
                     }
                 }
@@ -1231,11 +1240,11 @@ CharacterGov = {
                             AND = {
                                 has_government = feudal_government
                                 OR = {
-                                    has_title = e_byzantium
+                                    has_title = title:e_byzantium
                                     AND = {
                                         exists = top_liege
                                         top_liege = {
-                                            has_title = e_byzantium
+                                            has_title = title:e_byzantium
                                         }
                                     }
                                 }
@@ -1259,11 +1268,11 @@ CharacterGov = {
                             AND = {
                                 has_government = feudal_government
                                 OR = {
-                                    has_title = e_byzantium
+                                    has_title = title:e_byzantium
                                     AND = {
                                         exists = top_liege
                                         top_liege = {
-                                            has_title = e_byzantium
+                                            has_title = title:e_byzantium
                                         }
                                     }
                                 }
@@ -1287,11 +1296,11 @@ CharacterGov = {
                             AND = {
                                 has_government = feudal_government
                                 OR = {
-                                    has_title = e_byzantium
+                                    has_title = title:e_byzantium
                                     AND = {
                                         exists = top_liege
                                         top_liege = {
-                                            has_title = e_byzantium
+                                            has_title = title:e_byzantium
                                         }
                                     }
                                 }
