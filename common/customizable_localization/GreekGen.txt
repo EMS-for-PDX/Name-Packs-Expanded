@@ -1,0 +1,15 @@
+﻿GreekNick = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			has_trait = born_in_the_purple
+			highest_held_title_tier < tier_kingdom
+		}
+        localization_key = BornPurple
+	}
+	text = {
+		fallback = yes
+		localization_key = BlankNick
+	}
+}
