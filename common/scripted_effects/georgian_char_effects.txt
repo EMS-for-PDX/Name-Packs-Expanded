@@ -1,5 +1,12 @@
 ﻿867_georgian_char_effect = {
+    character:160021.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgeorgian003
+        }
+    }
 	character:160021.dynasty = { #Achabadze
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgeorgian003 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:160026 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:160027 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:160028 }
@@ -30,7 +37,14 @@
         add_to_variable_list = { name = dynasty_feudalclan target = character:70473 }
         add_to_variable_list = { name = dynasty_independent target = character:70473 }
 	}
+    character:41541.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgeorgian001
+        }
+    }
 	character:41541.dynasty = { #Bagrationi
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgeorgian001 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:41541 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:41542 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70460 }
@@ -45,6 +59,12 @@
         add_to_variable_list = { name = dynasty_independent target = character:41540 }
         add_to_variable_list = { name = dynasty_independent target = character:41539 }
 	}
+    character:159790.house = {
+        set_variable = {
+            name = name_founder
+            value = character:159776
+        }
+    }
 	character:159790.dynasty = { #Guramiani
         add_to_variable_list = { name = name_pack_support_dynasty target = character:159790 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:159786 }
@@ -61,7 +81,13 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:159772 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:159766 }
 	}
-	character:159790.dynasty = { #Khosroviani (Sassanids :O)
+    character:159603.house = {
+        set_variable = {
+            name = name_founder
+            value = character:159603
+        }
+    }
+	character:159603.dynasty = { #Khosroviani (Sassanids :O)
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159775 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159768 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159769 }
@@ -80,13 +106,27 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159604 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159603 }
 	}
+    character:159598.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgeorgian002
+        }
+    }
 	character:159598.dynasty = { #Arsacid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgeorgian002 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159597 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159596 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159595 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159594 }
 	}
+    character:159598.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgeorgian004
+        }
+    }
 	character:159916.dynasty = { #Parnavaziani
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgeorgian004 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159915 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159914 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159912 }
