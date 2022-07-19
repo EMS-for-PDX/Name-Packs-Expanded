@@ -129,6 +129,18 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:163018 }
         add_to_variable_list = { name = Got_Arab_Nick_dynasty target = character:73679 }
 	}
+    character:73957.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbarabic001
+		}
+	}
+	character:73957.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73957 }
+    }
+    character:73957 = {
+        change_first_name = Abdar-Rahman
+    }
     character:200020 = {
         change_first_name = Sulayman
     }
