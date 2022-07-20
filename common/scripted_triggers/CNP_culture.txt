@@ -3,10 +3,17 @@
 		has_cultural_pillar = heritage_turkic
 		has_cultural_pillar = heritage_arabic
 		has_cultural_pillar = heritage_byzantine
-		has_cultural_pillar = heritage_aramean
-		has_cultural_pillar = heritage_armenian
-		has_cultural_pillar = heritage_caucasian
 		has_cultural_pillar = heritage_iranian
+		trigger_if = {
+			limit = {
+				exists = global_var:CE_is_loaded
+			}
+			OR = {
+				has_cultural_pillar = heritage_aramean
+				has_cultural_pillar = heritage_armenian
+				has_cultural_pillar = heritage_caucasian
+			}
+		}
 		trigger_if = {
 			limit = {
 				has_cultural_pillar = language_arabic
@@ -24,10 +31,17 @@
 		has_cultural_pillar = language_georgian
 		has_cultural_pillar = language_aramaic
 		has_cultural_pillar = language_iranian
-		has_cultural_pillar = language_alani
-		has_cultural_pillar = language_balochi
-		has_cultural_pillar = language_caspian_iranian
-		has_cultural_pillar = language_kurdish
+		trigger_if = {
+			limit = {
+				exists = global_var:CE_is_loaded
+			}
+			OR = {
+				has_cultural_pillar = language_alani
+				has_cultural_pillar = language_balochi
+				has_cultural_pillar = language_caspian_iranian
+				has_cultural_pillar = language_kurdish
+			}
+		}
 	}
 }
 turkish_check = {
