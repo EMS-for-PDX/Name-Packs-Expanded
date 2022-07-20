@@ -4,6 +4,7 @@
     add_to_global_variable_list = { name = name_pack_support_global target = character:73939 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:200213 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:andalusian0083 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:73953 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:163021 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:163029 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:163030 }
@@ -229,6 +230,110 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:andalusian0088 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:200210 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:200212 }
+    }
+    character:73941.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbarabic005
+		}
+	}
+	character:73941.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbarabic005 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73941 }
+    }
+    character:levantine0078.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbarabic006
+		}
+	}
+	character:200206.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbarabic006 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:levantine0078 }
+    }
+	character:73964.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73964 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73966 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73965 }
+    }
+	character:73952.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73952 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73954 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73954 }
+    }
+    character:73802.house = {
+		set_variable = {
+			name = name_founder
+			value = character:73803
+		}
+	}
+	character:73802.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73802 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73803 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73805 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73806 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73807 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73803 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73805 }
+    }
+    character:73943.house = {
+		set_variable = {
+			name = name_founder
+			value = character:73943
+		}
+	}
+	character:73943.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73943 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73944 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73946 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73947 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73945 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73944 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73943 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73947 }
+    }
+    character:73910.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbarabic007
+		}
+	}
+	character:73910.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbarabic007 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73910 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73911 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73909 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73908 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73909 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73910 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73911 }
+    }
+    character:73908 = {
+        change_first_name = Ghazi
+    }
+    character:73909 = {
+        change_first_name = Abd-Allah
+    }
+    character:73911 = {
+        change_first_name = Abd-Allah
+    }
+    character:73945 = {
+        change_first_name = Najih
+    }
+    character:73944 = {
+        change_first_name = Sulayman
+    }
+    character:73943 = {
+        change_first_name = Najih
+    }
+    character:73807 = {
+        change_first_name = Jafar
+    }
+    character:73806 = {
+        change_first_name = Job
+    }
+    character:73802 = {
+        change_first_name = Jafar
     }
     character:andalusian0081 = {
         change_first_name = Fortun
