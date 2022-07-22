@@ -29,3 +29,43 @@ on_1066_start = {
 		1066_alan_char_effect = yes
 	}
 }
+courtier_effect = {
+	effect = {
+		every_living_character = {
+			limit = {
+				save_temporary_scope_as = thecourt
+				is_lowborn = yes
+				culture = {
+					is_cnp_supported_culture = yes
+				}
+				OR = {
+					is_foreign_court_or_pool_guest = yes
+					is_courtier = yes
+				}
+				NOT = {
+					any_in_global_list = {
+						variable = name_pack_support_global
+						this = scope:thecourt
+					}
+				}
+			}
+			name_gen_effect = yes
+		}
+		every_living_character = {
+			limit = {
+				save_temporary_scope_as = thebaron
+				highest_held_title_tier = tier_barony
+				culture = {
+					is_cnp_supported_culture = yes
+				}
+				NOT = {
+					any_in_global_list = {
+						variable = name_pack_support_global
+						this = scope:thebaron
+					}
+				}
+			}
+			name_gen_effect = yes
+		}
+	}
+}

@@ -5,12 +5,14 @@ name_gen_effect = {
 				is_cnp_supported_culture = yes
 			}
 			is_male = yes
-			NAND = {
-				has_faith = faith:orthodox
-				OR = {
-					has_trait = devoted
-					has_council_position = councillor_court_chaplain
-					has_government = theocracy_government
+			NOT = {
+				AND = {	
+					has_faith = faith:orthodox
+					OR = {
+						has_trait = devoted
+						has_council_position = councillor_court_chaplain
+						has_government = theocracy_government
+					}
 				}
 			}
 		}
@@ -91,8 +93,8 @@ name_gen_effect = {
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 						}
-						has_religion = religion:islam_religion
 					}
+					has_religion = religion:islam_religion
 					add = 1
 				}
 				persian_islam_male_name_effect = yes
@@ -123,10 +125,10 @@ name_gen_effect = {
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 						}
-						NOT = {
-							has_religion = religion:islam_religion
-							has_religion = religion:christianity_religion
-						}
+					}
+					NOT = {
+						has_religion = religion:islam_religion
+						has_religion = religion:christianity_religion
 					}
 					add = 1
 				}
@@ -145,8 +147,8 @@ name_gen_effect = {
 								has_name_list = name_list_hephthalite
 							}
 						}
-						has_religion = religion:islam_religion
 					}
+					has_religion = religion:islam_religion
 					add = 1
 				}
 				sogdian_islam_male_name_effect = yes
@@ -164,8 +166,8 @@ name_gen_effect = {
 								has_name_list = name_list_hephthalite
 							}
 						}
-						has_religion = religion:christianity_religion
 					}
+					has_religion = religion:christianity_religion
 					add = 1
 				}
 				sogdian_christian_male_name_effect = yes
@@ -183,10 +185,10 @@ name_gen_effect = {
 								has_name_list = name_list_hephthalite
 							}
 						}
-						NOT = {
-							has_religion = religion:islam_religion
-							has_religion = religion:christianity_religion
-						}
+					}
+					NOT = {
+						has_religion = religion:islam_religion
+						has_religion = religion:christianity_religion
 					}
 					add = 1
 				}
@@ -276,17 +278,19 @@ name_gen_effect = {
 			}
 			0 = {
 				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_bedouin
-							has_name_list = name_list_levantine
-							has_name_list = name_list_egyptian
-							has_name_list = name_list_maghrebi
-							has_name_list = name_list_yemeni
-							AND = {
-								has_name_list = name_list_assyrian
-								has_religion = religion:islam_religion
+					OR = {
+						culture = {
+							OR = {
+								has_name_list = name_list_bedouin
+								has_name_list = name_list_levantine
+								has_name_list = name_list_egyptian
+								has_name_list = name_list_maghrebi
+								has_name_list = name_list_yemeni
 							}
+						}
+						AND = {
+							culture = { has_name_list = name_list_assyrian }
+							has_religion = religion:islam_religion
 						}
 					}
 					add = 1
@@ -321,8 +325,8 @@ name_gen_effect = {
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 						}
-						has_religion = religion:islam_religion
 					}
+					has_religion = religion:islam_religion
 					add = 1
 				}
 				persian_islam_female_name_effect = yes
@@ -337,8 +341,8 @@ name_gen_effect = {
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 						}
-						has_religion = religion:christianity_religion
 					}
+					has_religion = religion:christianity_religion
 					add = 1
 				}
 				persian_christian_female_name_effect = yes
@@ -353,10 +357,10 @@ name_gen_effect = {
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 						}
-						NOT = {
-							has_religion = religion:islam_religion
-							has_religion = religion:christianity_religion
-						}
+					}
+					NOT = {
+						has_religion = religion:islam_religion
+						has_religion = religion:christianity_religion
 					}
 					add = 1
 				}
@@ -375,8 +379,8 @@ name_gen_effect = {
 								has_name_list = name_list_hephthalite
 							}
 						}
-						has_religion = religion:islam_religion
 					}
+					has_religion = religion:islam_religion
 					add = 1
 				}
 				sogdian_islam_female_name_effect = yes
@@ -394,8 +398,8 @@ name_gen_effect = {
 								has_name_list = name_list_hephthalite
 							}
 						}
-						has_religion = religion:christianity_religion
 					}
+					has_religion = religion:christianity_religion
 					add = 1
 				}
 				sogdian_christian_female_name_effect = yes
@@ -413,10 +417,10 @@ name_gen_effect = {
 								has_name_list = name_list_hephthalite
 							}
 						}
-						NOT = {
-							has_religion = religion:islam_religion
-							has_religion = religion:christianity_religion
-						}
+					}
+					NOT = {
+						has_religion = religion:islam_religion
+						has_religion = religion:christianity_religion
 					}
 					add = 1
 				}
@@ -477,5 +481,17 @@ name_gen_effect = {
 			}
 		}
 		greek_orthodox_name_effect = yes
+	}
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
 	}
 }
