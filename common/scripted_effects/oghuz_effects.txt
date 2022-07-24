@@ -33,6 +33,12 @@
 }
 1066_oghuz_char_effect = {
     add_to_global_variable_list = { name = name_pack_support_global target = character:3045 }
+	character:3040.house = {
+        set_variable = {
+            name = name_founder
+            value = character:3030
+        }
+    }
     character:3040.dynasty = { #seljuks
         add_to_variable_list = { name = name_pack_support_dynasty target = character:3040 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1229911 }
@@ -157,6 +163,9 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:170304 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:170304 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:170303 }
+    }
+    character:3034 = {
+        change_first_name = Michael
     }
     character:170304 = {
         change_first_name = Ibrahim
