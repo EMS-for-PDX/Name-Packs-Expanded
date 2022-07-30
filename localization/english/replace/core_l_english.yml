@@ -1,0 +1,48 @@
+﻿l_english:
+ CHARACTER_DEFAULT_TOOLTIP: "[CHARACTER.Custom('UIName')]\n[CHARACTER.PlayerName|D]\nID: [CHARACTER.GetID|V]\nHistorical ID: [CHARACTER.GetSlowHistoryIdForDebug|V]\nDynasty: [CHARACTER.GetDynastyName|V]\nCulture: [CHARACTER.GetCulture.GetName|V]\nFertility: [CHARACTER.GetFertility|%0V]\nHealth: [CHARACTER.GetHealth|1V]\n"
+ CHARACTER_INCAPABLE_TOOLTIP: "#T Incapable#!\n[Character.Custom('UINameNotMe')] is [GetTrait('incapable').GetName( Character.Self )] and cannot take actions independently"
+ CHARACTER_INTERACTION_REPLY: "[CHARACTER.Custom('UIName')] is waiting for answer regarding $INTERACTION|D$."
+ CHARACTER_INTERACTION_REPLY_MARRIAGE: "[CHARACTER.Custom('UIName')] is waiting for answer regarding $INTERACTION|D$ between [TARGET_CHARACTER.Custom('UIName')] and [TARGET_CHARACTER_2.Custom('UIName')]."
+
+ CHARACTER_INTERACTION_CANT_SEND_RECIPIENT_REJECTS: "@warning_icon!#X [CHARACTER.Custom('ShortName')] would not accept this#!"
+
+ CHARACTER_INTERACTION_ALREADY_CONSIDERING: "[CHARACTER.Custom('UIName')] is already considering a proposal from [TARGET_CHARACTER.Custom('UIName')]"
+
+ OPINION_MTTH: "[CHARACTER.Custom('ShortNamePossessive')] Opinion of [TARGET_CHARACTER.Custom('ShortName')]: $VALUE|=+0$"
+
+ RELATION_LIST: "[CHARACTER.Custom('ShortNamePossessive')|U] $LIST$"
+
+ RELATION_COUNCIL_POSITION: "[CHARACTER.GetCouncilTitle] of [TARGET_CHARACTER.Custom('ShortName')]"
+ RELATION_COURTIER: "Courtier of [CHARACTER.Custom('ShortName')]"
+ RELATION_GUEST: "Guest of [CHARACTER.Custom('ShortName')]"
+
+ ESTIMATE_TAX_VASSAL: "[CHARACTER.Custom('UIName')]"
+
+ GOLD_SIMPLE_TOOLTIP: "#T [CHARACTER.Custom('ShortNamePossessive')|U] [gold|E]: $VALUE|V0$#!"
+
+ CHARACTER_VALUE: "[CHARACTER.Custom('UIName')]: $VALUE|V0$"
+ CHARACTER_VALUE_F1: "[CHARACTER.Custom('UIName')]: $VALUE|V1$"
+ CHARACTER_VALUE_F2: "[CHARACTER.Custom('UIName')]: $VALUE|V2$"
+
+ SCOPE_CHARACTER: "[ROOT.GetCharacter.Custom('UIName')]:"
+ SCOPE_CHARACTER_ME: "I, [ROOT.GetCharacter.Custom('UIName')]:"
+
+ EVENT_SIGNATURE: "[CHARACTER.Custom('RegNameNoTooltip')]"
+
+ RELATION_LIEGE_COUNCILLOR: "[TARGET_CHARACTER.Custom('ShortNamePossessive')] [CHARACTER.GetCouncilTitle]"
+ RELATION_LIEGE_COURT_POSITION: "[CHARACTER.Custom('ShortNamePossessive')] [COURT_POSITION.GetName]"
+
+ INTERACTION_REPLY_ITEM: "#T $INTERACTION$\n#!Sender: [CHARACTER.Custom('UIName')]\n"
+
+ BETROTHAL_ACTION_ITEM: "#T [CHARACTER.Custom('UIName')] and [TARGET_CHARACTER.Custom('UIName')] can marry#!\n#I Click to view\nRight-click to break betrothal#! "
+
+ CHARACTER_PORTRAIT_TOOLTIP: "[Character.GetFullNameNicknamedNoTooltip]\n[Character.GetDebugTooltip]"
+
+ COUNTY_OPINION_DIFFERENT_CULTURE_KNOWS_LANGUAGE: " #weak ([GetDefine('NCharacterOpinion', 'CULTURE_ACCEPTANCE_MULT_KNOWS_LANGUAGE')|%0] less as [CHARACTER.Custom('ShortName')] can speak [CULTURE.GetLanguage.GetName])#!"
+
+ LAUNCHER_SAVE_DESCRIPTION: "Playing as [CHARACTER.Custom('RegNameNoTooltip')]"
+ LAUNCHER_SAVE_DESCRIPTION_OBSERVER: "Observing [CHARACTER.Custom('RegNameNoTooltip')]"
+
+ CHARACTER_ARMY_COMPOSITION_NAME: "Army of [CHARACTER.Custom('ShortNameNotMe')]"
+
+ event_troop_default_name: "[ROOT.Char.Custom('TitledFirstNamePossessiveNoTooltip')] Host"

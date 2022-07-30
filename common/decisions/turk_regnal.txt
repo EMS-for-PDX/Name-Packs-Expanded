@@ -1,0 +1,199 @@
+uyghur_emperor = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+	desc = uyghur_emperor_desc
+	selection_tooltip = uyghur_emperor_tooltip
+	is_shown = {
+		culture = {
+			is_cnp_supported_culture = yes
+			turkish_check = yes
+			uyghur_check = yes
+		}
+		NOT = {
+			has_character_flag = Uyghur_Empire_flag
+		}
+	}
+    is_valid = {
+        NOT = {
+			religion = religion:islam_religion
+		}
+		is_independent_ruler = yes
+		highest_held_title_tier >= tier_kingdom
+    }
+	effect = {
+		add_character_flag = Uyghur_Empire_flag
+		random_list = {
+			10 = {
+				add_to_global_variable_list = { name = HeavenBorn_intit target = root }
+			}
+			10 = {
+				add_to_global_variable_list = { name = MoonGodBorn_intit target = root }
+			}
+			5 = {
+				add_to_global_variable_list = { name = SunGodBorn_intit target = root }
+			}
+			10 = {
+				add_to_global_variable_list = { name = BlessedbyHeaven_intit target = root }
+			}
+			20 = {
+				add_to_global_variable_list = { name = BlessedbyMoonGod_intit target = root }
+			}
+			10 = {
+				add_to_global_variable_list = { name = BlessedbySunGod_intit target = root }
+			}
+			10 = {
+				add_to_global_variable_list = { name = AnnoitedbyHeaven_intit target = root }
+			}
+			20 = {
+				add_to_global_variable_list = { name = AnnoitedbyMoonGod_intit target = root }
+			}
+			5 = {
+				add_to_global_variable_list = { name = AnnoitedbySunGod_intit target = root }
+			}
+		}
+		random_list = {
+			30 = {
+				random_list = {
+					30 = {
+						add_to_global_variable_list = { name = Tutmis_regnal target = root }
+					}
+					40 = {
+						add_to_global_variable_list = { name = Etmis_regnal target = root }
+					}
+					30 = {
+						add_to_global_variable_list = { name = Bilga_regnal target = root }
+					}
+				}
+			}
+			70 = {}
+		}
+		random_list = {
+			55 = {
+				random_list = {
+					50 = {
+						add_to_global_variable_list = { name = Alp_regnal target = root }
+					}
+					30 = {
+						add_to_global_variable_list = { name = Arslan_regnal target = root }
+					}
+					10 = {
+						add_to_global_variable_list = { name = AlpArslan_regnal target = root }
+					}
+					10 = {
+						add_to_global_variable_list = { name = Ardamin_regnal target = root }
+					}
+				}
+			}
+			45 = {}
+		}
+		random_list = {
+			55 = {
+				random_list = {
+					40 = {
+						add_to_global_variable_list = { name = Qutlug_regnal target = root }
+					}
+					55 = {
+						add_to_global_variable_list = { name = Kulug_regnal target = root }
+					}
+					5 = {
+						add_to_global_variable_list = { name = Kuclug_regnal target = root }
+					}
+				}
+			}
+			45 = {}
+		}
+		random_list = {
+			30 = {
+				random_list = {
+					70 = {
+						add_to_global_variable_list = { name = Uygur_regnal target = root }
+					}
+					30 = {
+						add_to_global_variable_list = { name = Ulug_regnal target = root }
+					}
+				}
+			}
+			70 = {}
+		}
+		random_list = {
+			90 = {
+				add_to_global_variable_list = { name = BilgaTangri_regnal target = root }
+			}
+			10 = {
+				add_to_global_variable_list = { name = BoguTangri_regnal target = root }
+			}
+		}
+	}
+}
+karluk_regnal = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+	desc = karluk_regnal_desc
+	selection_tooltip = karluk_regnal_tooltip
+	is_shown = {
+		culture = {
+			is_cnp_supported_culture = yes
+			turkish_check = yes
+			karluk_check = yes
+		}
+		NOT = {
+			has_character_flag = Karluk_Regnal_flag
+		}
+	}
+    is_valid = {
+        NOT = {
+			religion = religion:islam_religion
+		}
+		is_independent_ruler = yes
+		highest_held_title_tier >= tier_kingdom
+    }
+	effect = {
+		add_character_flag = Karluk_Regnal_flag
+		random_list = {
+			70 = {
+				random_list = {
+					25 = {
+						add_to_global_variable_list = { name = ArslanQara_regnal target = root }
+					}
+					30 = {
+						add_to_global_variable_list = { name = BugraQara_regnal target = root }
+					}
+					15 = {
+						add_to_global_variable_list = { name = QadirQara_regnal target = root }
+					}
+					20 = {
+						add_to_global_variable_list = { name = TavgacQara_regnal target = root }
+					}
+					5 = {
+						add_to_global_variable_list = { name = ToganQara_regnal target = root }
+					}
+					5 = {
+						add_to_global_variable_list = { name = TurgrulQara_regnal target = root }
+					}
+				}
+			}
+			30 = {
+				random_list = {
+					25 = {
+						add_to_global_variable_list = { name = Arslan_regnal target = root }
+					}
+					30 = {
+						add_to_global_variable_list = { name = Bugra_regnal target = root }
+					}
+					15 = {
+						add_to_global_variable_list = { name = Qadir_regnal target = root }
+					}
+					20 = {
+						add_to_global_variable_list = { name = Tavgac_regnal target = root }
+					}
+					5 = {
+						add_to_global_variable_list = { name = Togan_regnal target = root }
+					}
+					5 = {
+						add_to_global_variable_list = { name = Turgrul_regnal target = root }
+					}
+				}
+			}
+		}
+	}
+}

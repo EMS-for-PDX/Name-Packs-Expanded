@@ -1,0 +1,38 @@
+867_uyghur_char_effect = {
+	character:302970.dynasty = { #Bilga
+        add_to_variable_list = { name = dynasty_tribal target = character:302970 }
+        add_to_variable_list = { name = dynasty_independent target = character:302970 }
+	}
+	character:217175.dynasty = { #Kilichli
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:217175 }
+        add_to_variable_list = { name = dynasty_tribal target = character:217173 }
+	}
+	character:302985.dynasty = { #Urulchiq
+        add_to_variable_list = { name = dynasty_tribal target = character:302985 }
+	}
+	character:uyghur0096.dynasty = { #Charkliq
+        add_to_variable_list = { name = dynasty_tribal target = character:uyghur0096 }
+	}
+	character:166766.dynasty = { #Yughur
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166766 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166767 }
+        add_to_variable_list = { name = dynasty_independent target = character:166766 }
+        add_to_variable_list = { name = dynasty_tribal target = character:166766 }
+	}
+	character:194191.dynasty = { #Ediz
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:194191 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166759 }
+	}
+	character:194191 = {
+		change_first_name = 166767
+	}
+	character:166759 = {
+		change_first_name = Kuclug
+	}
+	character:194191 = {
+		change_first_name = Qutlug
+	}
+	character:166766 = {
+		change_first_name = Bogu
+	}
+}

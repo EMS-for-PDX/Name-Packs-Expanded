@@ -1,0 +1,27 @@
+﻿l_english:
+ OPINION_OF: "[CHARACTER.Custom('ShortNameNotMePossessiveNoTooltip')] [opinion|E] of [TARGET_CHARACTER.Custom('ShortName')]: "
+ OPINION_CONCUBINE: "[CHARACTER.Custom('UINamePossessive')|U] [TARGET_CHARACTER.Custom('RegNameNoTooltip')]"
+ OPINION_CONCUBINIST: "[CHARACTER.Custom('UINamePossessive')|U] [TARGET_CHARACTER.Custom('RegNameNoTooltip')]"
+
+ CULTURAL_ACCEPTANCE_KNOWS_LANGUAGE: "[GetDefine('NCharacterOpinion', 'CULTURE_ACCEPTANCE_MULT_KNOWS_LANGUAGE')|%0] less as [TARGET_CHARACTER.Custom('ShortName')] can speak [CHARACTER.GetCulture.GetLanguage.GetName]"
+
+ TRAIT_DESC_CRIME_FOR_LIEGE: "[crime_i] This is a [crime|E] to [CHARACTER.Custom('ShortName')], [TARGET_CHARACTER.Custom('ShortNameNotMePossessiveNoTooltip')] [liege|E] ([CHARACTER.GetFaith.GetAdjective])"
+ TRAIT_DESC_CRIME_FOR_THEM: "[crime_i] This is a [crime|E] to [CHARACTER.Custom('ShortNameNoTooltip')] ([CHARACTER.GetFaith.GetAdjective])"
+ TRAIT_DESC_SHUNNED_FOR_LIEGE: "[crime_i] This is [shunned|E] by [CHARACTER.Custom('ShortName')], [TARGET_CHARACTER.Custom('ShortNameNotMePossessiveNoTooltip')] [liege|E] ([CHARACTER.GetFaith.GetAdjective])"
+ TRAIT_DESC_SHUNNED_FOR_THEM: "[crime_i] This is [shunned|E] to [CHARACTER.Custom('ShortNameNotMePossessiveNoTooltip')] faith ([CHARACTER.GetFaith.GetAdjective])"
+ TRAIT_DESC_POSITIVE_FOR_LIEGE: "[crime_i] This is liked by [CHARACTER.Custom('ShortName')], [TARGET_CHARACTER.Custom('ShortNameNotMePossessiveNoTooltip')] [liege|E] ([CHARACTER.GetFaith.GetAdjective])"
+ TRAIT_DESC_POSITIVE_FOR_THEM: "[crime_i] This is liked by [CHARACTER.Custom('ShortNameNotMePossessiveNoTooltip')] faith ([CHARACTER.GetFaith.GetAdjective])"
+
+ THEOCRATIC_LEASE_INCOME_DOMAIN: "Temples in [CHARACTER.Custom('ShortNamePossessive')] Domain"
+
+ BLOCKER_ALREADY_PREGNANT: "@warning_icon!#X [CHARACTER.Custom('ShortNameNotMe')] is pregnant#!"
+ BLOCKER_RECENTLY_GAVE_BIRTH: "@warning_icon!#X [CHARACTER.Custom('ShortNameNotMe')] gave birth recently#!"
+ BLOCKER_IS_INFERTILE: "@warning_icon!#X [CHARACTER.Custom('ShortNameNotMe')] is infertile#!"
+ BLOCKER_TOO_YOUNG_FOR_CHILDREN: "@warning_icon!#X [CHARACTER.Custom('ShortNameNotMe')] is too young#!"
+ BLOCKER_TOO_OLD_FOR_CHILDREN: "@warning_icon!#X [CHARACTER.Custom('ShortNameNotMe')] is too old#!"
+ BLOCKER_TRAIT_BLOCKING_CHILDREN: "@warning_icon!#X [CHARACTER.Custom('ShortNameNotMe')] is [TRAIT.GetName( CHARACTER.Self )|L]#!"
+ BLOCKER_TOO_MANY_CHILDREN: "@warning_icon!#X [CHARACTER.Custom('ShortNameNotMe')] and [TARGET_CHARACTER.Custom('ShortNameNotMe')] have too many children together#!"
+
+ PLAYER_OPINION_UNIMPORTANT: "Because [Character.Custom('ShortName')] is played by [Character.PlayerName], their behavior will not be affected by Opinion"
+ PLAYER_OPINION_UNIMPORTANT_SELF: "Because [Character.Custom('ShortName')] is played by you, Opinion does not dictate your behavior"
+ CHARACTER_IS_KNIGHT: "#T $knight_culture_player_no_tooltip$#!\n[Character.Custom('ShortName')] is a $knight_culture_player$ in [Character.GetKnightArmy.GetName]"
