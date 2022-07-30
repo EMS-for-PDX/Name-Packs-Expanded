@@ -1,0 +1,90 @@
+﻿l_english:
+# These are used for when we generate the title at the same time as we create the artifact
+ artifact_name_prefix_owner_name: "[owner.Custom('TitledFirstNamePossessiveNoTooltip')]"
+ artifact_name_prefix_inspiration_owner_name: "[inspiration_owner.Custom('TitledFirstNamePossessiveNoTooltip')]"
+
+# These are used for when we generate the title after the artifact is already created since we have to use different scopes then
+ artifact_name_prefix_artifact_scope_owner_name: "[Artifact.GetOwner.Custom('TitledFirstNamePossessiveNoTooltip')]"
+
+ ############################
+ # Weapon Descriptions 		#
+ ############################
+ create_artifact_weapon_tooltip: "[inspiration_owner.Custom('ShortName')] produced [SCOPE.Custom('ArtifactWeaponType')] of [SCOPE.Custom('ArtifactQuality')] craftsmanship"
+ # Sword and Dagger components (Blades, Hilts, and Pommels) 
+ feature_blade_decoration_etched_owner: "on the blade, there's an inscription that reads "Owned by [Artifact.GetOwner.Custom('TitledFirstName')] of [Artifact.GetOwner.GetPrimaryTitle.GetNameNoTierNoTooltip]""
+
+ # Daggers
+ artifact_dagger_name: "[owner.Custom('TitledFirstNamePossessiveNoTooltip')] Dagger"
+
+ ############################
+ # Wearable Descriptions	#
+ ############################
+
+ # Armor
+ create_artifact_armor_tooltip: "[inspiration_owner.Custom('ShortName')] produced [SCOPE.Custom('ArtifactArmorTypeLowercase')] of [SCOPE.Custom('ArtifactQuality')] craftsmanship"
+
+ # Regalia
+ create_artifact_regalia_tooltip: "[inspiration_owner.Custom('ShortName')] produced a regalia set of [SCOPE.Custom('ArtifactQuality')] craftsmanship"
+
+
+ # Crowns
+ create_artifact_crown_tooltip: "[inspiration_owner.Custom('ShortName')] produced a crown of [SCOPE.Custom('ArtifactQuality')] craftsmanship"
+
+
+ # Brooches
+ create_artifact_brooch_tooltip: "[inspiration_owner.Custom('ShortName')] produced [SCOPE.Custom('ArtifactArticleWealth')|l] brooch of [SCOPE.Custom('ArtifactQuality')] craftsmanship"
+
+ ## fund_inspiration.6001-6006 trinkets from your adventurer
+ morin_khuur_ornament_description: "A horse head carved from horse bone, usually a decoration at the top of a Morin Khuur fiddle. Sent to [owner.Custom('TitledFirstNameNoTooltip')] by [inspiration_owner.Custom('TitledFirstNameNoTooltip')] during [inspiration_owner.GetHerHis] adventures."
+ animal_ring_description: "Jewel-encrusted and in far too many colors, you are likelier to be able to blind your courtiers with it than impress with your sense of fashion. Sent to [owner.Custom('TitledFirstNameNoTooltip')] by [inspiration_owner.Custom('TitledFirstNameNoTooltip')] during [inspiration_owner.GetHerHis] adventures."
+ ostrich_shell_necklace_description: "A delicate piece of jewelry in a brilliant white hue. Sent to [owner.Custom('TitledFirstNameNoTooltip')] by [inspiration_owner.Custom('TitledFirstNameNoTooltip')] during [inspiration_owner.GetHerHis] adventures."
+ pilgrimage_figurine_description: "A figurine of Vardan Mamikonian, an Armenian general who secured the Armenian right to practice Christianity in the Battle of Avarayr in 451. His helmet is filled with bronze detail. Sent to [owner.Custom('TitledFirstNameNoTooltip')] by [inspiration_owner.Custom('TitledFirstNameNoTooltip')] during [inspiration_owner.GetHerHis] adventures."
+ saint_margaret_fingernails_description: "Saint Margaret of Antioch was famed for slaying a dragon using the heels of her shoes alone. Supposedly, these old disgusting fingernails' cuts belonged to her. Sent to [owner.Custom('TitledFirstNameNoTooltip')] by [inspiration_owner.Custom('TitledFirstNameNoTooltip')] during [inspiration_owner.GetHerHis] adventures."
+ seahorse_brooch_description: "A brooch with delicate chained tassels beneath the horse, which has both wings and a fin tail. Sent to [owner.Custom('TitledFirstNameNoTooltip')] by [inspiration_owner.Custom('TitledFirstNameNoTooltip')] during [inspiration_owner.GetHerHis] adventures."
+
+
+ #fund_inspiration.6500- trinkets from your adventurer
+ leopard_hat_description: "A hat made from the head of a leopard, slain by [inspiration_owner.Custom('TitledFirstName')]."
+ kurgan_ornament_description: "A stone figurine looted by [inspiration_owner.Custom('TitledFirstName')] from an old Scythian Kurgan burial mound."
+ kurgan_saddle_description: "A saddle swiped by [inspiration_owner.Custom('TitledFirstName')] from a Scythian burial mound. Over a thousand years old, it has been preserved in the trapped air of the tomb, amidst the bodies of dozens of embalmed horses. Perhaps we can learn something from the ways of the ancient saddle-warriors."
+ naked_tapestry_description: "A nude depiction of [inspiration_owner.Custom('TitledFirstName')] at a beach oasis, fanning [inspiration_owner.GetHerselfHimself] with a leaf, and glistening with crystal-clear droplets."
+ frogspawn_jar_description: "A jar filled with some sloshing spawn, and a few hatched tadpoles. Sent to [ROOT.Char.Custom('TitledFirstNameNoTooltip')] by [inspiration_owner.Custom('TitledFirstName')] as an indication of the horrors of the outdoors.\n\nWriggle!"
+ beaver_book_description: "A book on beaver architecture and construction techniques, written up with sketches by [inspiration_owner.Custom('TitledFirstName')] on [inspiration_owner.GetHerHis] travels."
+ crocodile_tapestry_description: "A tapestry of a crocodile made to the best of [inspiration_owner.Custom('TitledFirstNamePossessive')] abilities. The creature is bright red, has several layers of fangs, poisonous pustules, and a barbed tail. It is surrounded by a hoard-nest of eggs in a cave behind a waterfall."
+ mountain_rock_description: "A large rock, laboriously lugged around by [inspiration_owner.Custom('TitledFirstName')] all the way back from [mountain_location.GetName]."
+
+
+
+
+ # Brooches
+ tiny_sculpture_trinket_description: "A tiny sculpture of [statue_owner.Custom('TitledFirstNameNoTooltip')]. Pocket-sized and ready to rule. Crafted by [inspiration_owner.Custom('TitledFirstNameNoTooltip')]."
+ tiny_box_trinket_description: "A tiny but mysterious box. Perhaps it will unleash a single sin upon the world when opened. Crafted by [inspiration_owner.Custom('TitledFirstNameNoTooltip')]."
+ tiny_chest_trinket_description: "A tiny locked chest but the size of a thumb. It rattles when shaken, betraying the contents inside. Crafted by [inspiration_owner.Custom('TitledFirstNameNoTooltip')]."
+ tiny_cabinet_trinket_description: "A cabinet small enough it should probably be stored in another cabinet to prevent it from being tread on. Crafted by [inspiration_owner.Custom('TitledFirstNameNoTooltip')]."
+ tiny_throne_trinket_description: "A throne fit for a mouse or other rodent to rule from. Crafted by [inspiration_owner.Custom('TitledFirstNameNoTooltip')]."
+
+
+#fund_inspiration.6301 same sex love poems
+ prince_archivist_love_poem_description: "A ballad of two men in love - a prince and an archivist, stargazing atop a tower away from prying eyes and together amongst the stars. Rumors suggest the archivist is based off of the author [inspiration_owner.Custom('TitledFirstNamePossessiveNoTooltip')] experiences."
+ witch_queen_love_poem_description: "A poem featuring two women in love, a witch and a queen lost in the woods by her cottage. Both take solace in a moment away from society. Whispers suggest the witch is a self-caricature from the author [inspiration_owner.Custom('TitledFirstNameNoTooltip')]."
+
+ #Books
+ create_artifact_book_tooltip: "[inspiration_owner.Custom('ShortName')] produced [SCOPE.Custom('ArtifactArticleWealth')|l] book with [SCOPE.Custom('ArtifactQuality')] lettering"
+
+ create_artifact_artisan_tooltip: "[inspiration_owner.Custom('ShortName')] produced [inspiration_owner.Custom('InspirationArtisanType')] of [SCOPE.Custom('ArtifactQuality')] craftsmanship"
+
+ create_artifact_smith_tooltip: "[inspiration_owner.Custom('ShortName')] produced [inspiration_owner.Custom('InspirationSmithType')] of [SCOPE.Custom('ArtifactQuality')] craftsmanship"
+
+ ## Character Modifiers made to artifacts ##
+ # From lover.3219
+ lover_keepsake_hair_name: "[original_lover.Custom('FirstNamePossessiveNoTooltip')] Forelock"
+ lover_keepsake_hair_description: "A keepsake given by [original_lover.Custom('TitledFirstNamePossessive')] to [original_lover.GetHerHis] distant lover [lover.Custom('TitledFirstName')], that [lover.GetSheHe] might carry a part of [original_lover.GetHerHim] with [lover.GetHerHim] always."
+ lover_keepsake_clothes_male_name: "[original_lover.Custom('FirstNamePossessiveNoTooltip')] Braies"
+ lover_keepsake_clothes_female_name: "[original_lover.Custom('FirstNamePossessiveNoTooltip')] Chemise"
+ lover_keepsake_clothes_description: "[original_lover.Custom('TitledFirstNamePossessive')] most intimate articles, sent to [original_lover.GetHerHis] distant lover [lover.Custom('TitledFirstNameNoTooltip')], to keep alive the fire of their exploits in the bedchamber."
+ lover_keepsake_shell_name: "[original_lover.Custom('FirstNamePossessiveNoTooltip')] Shell"
+ lover_keepsake_shell_description: "A keepsake sent by [original_lover.Custom('TitledFirstNamePossessive')] to [original_lover.GetHerHis] distant lover [lover.Custom('TitledFirstNameNoTooltip')], picked up as a memento on their very first liaison."
+ translated_arabic_book_shared_desc: "translated into Arabic from the original Greek for [ROOT.Char.Custom('TitledFirstNameNoTooltip')]]."
+ 
+ # hold_court.4300
+ dress_me_artifact_desc: "An exquisite garment made by the most skilled tailors, ordered by [ROOT.Char.Custom('TitledFirstNameNoTooltip')]] to impress [ROOT.Char.GetHerHis] court with its splendor."

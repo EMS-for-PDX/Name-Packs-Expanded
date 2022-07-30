@@ -1,0 +1,1632 @@
+UINameNotMe = {
+	type = character
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+			OR = {
+				AND = {
+					OR = {
+						is_independent_ruler = yes
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.primary_spouse
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = father
+					father = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = mother
+					mother = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+		}
+		localization_key = UI_Name_Turkish_Muslim_Sultan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+		}
+		localization_key = UI_Name_Turkish_Muslim_Low
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = UI_Name_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                armenian_check = yes
+			}
+		}
+		localization_key = UI_Name_Armenian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                georgian_check = yes
+			}
+		}
+		localization_key = UI_Name_Georgian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                assyrian_check = yes
+			}
+		}
+		localization_key = UI_Name_Assyrian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				alan_check = yes
+			}
+		}
+		localization_key = UI_Name_Alan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		localization_key = UI_Name_Greek
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_iranian
+			}
+		}
+		localization_key = UI_Name_Persian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = UI_Name_Uyghur_E
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_kingdom
+		}
+		localization_key = UI_Name_Uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				karluk_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = UI_Name_Karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+		}
+		localization_key = UI_Name_Turkish
+	}
+	text = {
+		fallback = yes
+		localization_key = UI_Char_Name_Default
+	}
+}
+UINameNotMeNoTooltip = {
+	type = character
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+			OR = {
+				AND = {
+					OR = {
+						is_independent_ruler = yes
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.primary_spouse
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = father
+					father = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = mother
+					mother = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Turkish_Muslim_Sultan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+		}
+		localization_key = UI_Name_No_Tooltip_Turkish_Muslim_Low
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                armenian_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Armenian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                georgian_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Georgian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                assyrian_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Assyrian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				alan_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Alan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Greek
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_iranian
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Persian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = UI_Name_No_Tooltip_Uyghur_E
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_kingdom
+		}
+		localization_key = UI_Name_No_Tooltip_Uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				karluk_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = UI_Name_No_Tooltip_Karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Turkish
+	}
+	text = {
+		fallback = yes
+		localization_key = UI_Char_Name_Default
+	}
+}
+UINameNotMePossessive = {
+	type = character
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+			OR = {
+				AND = {
+					OR = {
+						is_independent_ruler = yes
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.primary_spouse
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = father
+					father = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = mother
+					mother = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+		}
+		localization_key = UI_Name_Possessive_Turkish_Muslim_Sultan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+		}
+		localization_key = UI_Name_Possessive_Turkish_Muslim_Low
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = UI_Name_Possessive_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                armenian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Armenian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                georgian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Georgian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                assyrian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Assyrian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				alan_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Alan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		localization_key = UI_Name_Possessive_Greek
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_iranian
+			}
+		}
+		localization_key = UI_Name_Possessive_Persian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = UI_Name_Possessive_Uyghur_E
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_kingdom
+		}
+		localization_key = UI_Name_Possessive_Uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				karluk_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = UI_Name_Possessive_Karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Turkish
+	}
+	text = {
+		fallback = yes
+		localization_key = UI_Char_Name_Default
+	}
+}
+UINameNotMePossessiveNoTooltip = {
+	type = character
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+			OR = {
+				AND = {
+					OR = {
+						is_independent_ruler = yes
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.primary_spouse
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = father
+					father = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = mother
+					mother = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Turkish_Muslim_Sultan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Turkish_Muslim_Low
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                armenian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Armenian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                georgian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Georgian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                assyrian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Assyrian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				alan_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Alan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Greek
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_iranian
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Persian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Uyghur_E
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_kingdom
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				karluk_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Turkish
+	}
+	text = {
+		fallback = yes
+		localization_key = UI_Char_Name_Default
+	}
+}
+UIName = {
+	type = character
+	text = {
+        trigger ={
+            is_local_player = yes
+        }
+        localization_key = NE_You
+    }
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+			OR = {
+				AND = {
+					OR = {
+						is_independent_ruler = yes
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.primary_spouse
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = father
+					father = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = mother
+					mother = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+		}
+		localization_key = UI_Name_Turkish_Muslim_Sultan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+		}
+		localization_key = UI_Name_Turkish_Muslim_Low
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = UI_Name_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                armenian_check = yes
+			}
+		}
+		localization_key = UI_Name_Armenian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                georgian_check = yes
+			}
+		}
+		localization_key = UI_Name_Georgian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                assyrian_check = yes
+			}
+		}
+		localization_key = UI_Name_Assyrian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				alan_check = yes
+			}
+		}
+		localization_key = UI_Name_Alan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		localization_key = UI_Name_Greek
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_iranian
+			}
+		}
+		localization_key = UI_Name_Persian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = UI_Name_Uyghur_E
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_kingdom
+		}
+		localization_key = UI_Name_Uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				karluk_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = UI_Name_Karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+		}
+		localization_key = UI_Name_Turkish
+	}
+	text = {
+		fallback = yes
+		localization_key = UI_Char_Name_Default
+	}
+}
+UINameNoTooltip = {
+	type = character
+	text = {
+        trigger ={
+            is_local_player = yes
+        }
+        localization_key = NE_You_No_Tooltip
+    }
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+			OR = {
+				AND = {
+					OR = {
+						is_independent_ruler = yes
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.primary_spouse
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = father
+					father = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = mother
+					mother = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Turkish_Muslim_Sultan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+		}
+		localization_key = UI_Name_No_Tooltip_Turkish_Muslim_Low
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                armenian_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Armenian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                georgian_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Georgian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                assyrian_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Assyrian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				alan_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Alan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Greek
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_iranian
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Persian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = UI_Name_No_Tooltip_Uyghur_E
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_kingdom
+		}
+		localization_key = UI_Name_No_Tooltip_Uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				karluk_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = UI_Name_No_Tooltip_Karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+		}
+		localization_key = UI_Name_No_Tooltip_Turkish
+	}
+	text = {
+		fallback = yes
+		localization_key = UI_Char_Name_Default
+	}
+}
+UINamePossessive = {
+	type = character
+	text = {
+        trigger ={
+            is_local_player = yes
+        }
+        localization_key = NE_Your
+    }
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+			OR = {
+				AND = {
+					OR = {
+						is_independent_ruler = yes
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.primary_spouse
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = father
+					father = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = mother
+					mother = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+		}
+		localization_key = UI_Name_Possessive_Turkish_Muslim_Sultan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+		}
+		localization_key = UI_Name_Possessive_Turkish_Muslim_Low
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = UI_Name_Possessive_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                armenian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Armenian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                georgian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Georgian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                assyrian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Assyrian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				alan_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Alan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		localization_key = UI_Name_Possessive_Greek
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_iranian
+			}
+		}
+		localization_key = UI_Name_Possessive_Persian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = UI_Name_Possessive_Uyghur_E
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_kingdom
+		}
+		localization_key = UI_Name_Possessive_Uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				karluk_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = UI_Name_Possessive_Karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_Turkish
+	}
+	text = {
+		fallback = yes
+		localization_key = UI_Char_Name_Default
+	}
+}
+UINamePossessiveNoTooltip = {
+	type = character
+	text = {
+        trigger ={
+            is_local_player = yes
+        }
+        localization_key = NE_Your_No_Tooltip
+    }
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+			OR = {
+				AND = {
+					OR = {
+						is_independent_ruler = yes
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.primary_spouse
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = father
+					father = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+				AND = {
+					is_male = yes
+					exists = mother
+					mother = {
+						OR = {
+							is_independent_ruler = yes
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Turkish_Muslim_Sultan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+			has_religion = religion:islam_religion
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Turkish_Muslim_Low
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                armenian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Armenian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                georgian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Georgian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+                assyrian_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Assyrian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				alan_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Alan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Greek
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				has_cultural_pillar = heritage_iranian
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Persian
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Uyghur_E
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				uyghur_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier = tier_kingdom
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Uyghur
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+				karluk_check = yes
+			}
+			is_independent_ruler = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Karluk
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_cnp_supported_culture = yes
+				turkish_check = yes
+			}
+		}
+		localization_key = UI_Name_Possessive_No_Tooltip_Turkish
+	}
+	text = {
+		fallback = yes
+		localization_key = UI_Char_Name_Default
+	}
+}

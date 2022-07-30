@@ -1,4 +1,204 @@
-﻿scripted_gui_laqab_tek = {
+﻿scripted_gui_laqab_tek_name = {
+	scope = character
+	effect = {
+		save_scope_as = effect_root
+		hidden_effect = {
+			IF = {
+				limit = { is_male = yes }
+				IF = {
+					limit = { exists = dynasty }
+					dynasty = {
+						every_in_list = {
+							variable = dynasty_list_ctp_sons
+							limit = { scope:effect_root = THIS.father }
+							save_scope_as = scripted_gui_eldest_son
+						}
+						every_in_list = {
+							variable = dynasty_list_ctp_daughters
+							limit = { scope:effect_root = THIS.father }
+							save_scope_as = scripted_gui_eldest_daughter
+						}
+					}
+				}
+				else_if = {
+					limit = { NOT = { exists = dynasty } }
+					every_in_global_list = {
+						variable = global_list_ctp_sons
+						limit = { scope:effect_root = THIS.father }
+						save_scope_as = scripted_gui_eldest_son
+					}
+					every_in_global_list = {
+						variable = global_list_ctp_daughters
+						limit = { scope:effect_root = THIS.father }
+						save_scope_as = scripted_gui_eldest_daughter
+					}
+				}
+			}
+			IF = {
+				limit = { is_male = no }
+				IF = {
+					limit = { exists = dynasty }
+					dynasty = {
+						every_in_list = {
+							variable = dynasty_list_ctp_sons
+							limit = { scope:effect_root = THIS.mother }
+							save_scope_as = scripted_gui_eldest_son
+						}
+						every_in_list = {
+							variable = dynasty_list_ctp_daughters
+							limit = { scope:effect_root = THIS.mother }
+							save_scope_as = scripted_gui_eldest_daughter
+						}
+					}
+				}
+				else_if = {
+					limit = { NOT = { exists = dynasty } }
+					every_in_global_list = {
+						variable = global_list_ctp_sons
+						limit = { scope:effect_root = THIS.mother }
+						save_scope_as = scripted_gui_eldest_son
+					}
+					every_in_global_list = {
+						variable = global_list_ctp_daughters
+						limit = { scope:effect_root = THIS.mother }
+						save_scope_as = scripted_gui_eldest_daughter
+					}
+				}
+			}
+		}
+		IF = {
+			limit = {
+				OR = {
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = regular_laqab_dynasty
+								this = scope:effect_root
+							}
+						}
+					}
+					any_in_global_list = {
+						variable = regular_laqab_global
+						this = scope:effect_root
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = trigger_reg_laqab_gen_from_sgui
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+		else_if = {
+			limit = {
+				exists = scope:scripted_gui_eldest_son
+				scope:scripted_gui_eldest_son = {
+					OR = {
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:scripted_gui_eldest_son
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:scripted_gui_eldest_son
+						}
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_tek_support
+				subject = scope:effect_root
+				object = scope:scripted_gui_eldest_son
+			}
+		}
+		else_if = {
+			limit = {
+				exists = scope:scripted_gui_eldest_son
+				is_male = no
+			}
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_tek_non_support
+				subject = scope:effect_root
+				object = scope:scripted_gui_eldest_son
+			}
+		}
+		else_if = {
+			limit = {
+				exists = scope:scripted_gui_eldest_daughter
+				scope:scripted_gui_eldest_daughter = {
+					OR = {
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:scripted_gui_eldest_daughter
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:scripted_gui_eldest_daughter
+						}
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_tek_support
+				subject = scope:effect_root
+				object = scope:scripted_gui_eldest_daughter
+			}
+		}
+		else_if = {
+			limit = {
+				exists = scope:scripted_gui_eldest_daughter
+			}
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_tek_non_support
+				subject = scope:effect_root
+				object = scope:scripted_gui_eldest_daughter
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = name_pack_support_dynasty
+								this = scope:effect_root
+							}
+						}
+					}
+					any_in_global_list = {
+						variable = name_pack_support_global
+						this = scope:effect_root
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_name_support
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+		else = {
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_name_non_support
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+	}
+}
+scripted_gui_laqab_tek = {
 	scope = character
 	effect = {
 		save_scope_as = effect_root

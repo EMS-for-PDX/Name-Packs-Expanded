@@ -1,6 +1,62 @@
 ﻿l_english:
 Window_Arabic: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]#!"
 
+First_Name_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]#!#!#!"
+
+First_Name_No_Tooltip_Arabic: "[GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]"
+
+First_Name_Possessive_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]'s#!#!#!"
+
+First_Name_Possessive_No_Tooltip_Arabic: "[GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]'s"
+
+Titled_First_Name_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]#!#!#!"
+
+Titled_First_Name_No_Tooltip_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]"
+
+Titled_First_Name_Possessive_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]'s#!#!#!"
+
+Titled_First_Name_Possessive_No_Tooltip_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]'s"
+
+Full_Name_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]#!#!#!"
+
+Full_Name_No_Tooltip_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]"
+
+Full_Name_Possessive_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]'s#!#!#!"
+
+Full_Name_Possessive_No_Tooltip_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]'s"
+
+Name_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('ArabicPatCheck')]#!#!#!"
+
+Name_No_Tooltip_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('ArabicPatCheck')]"
+
+Name_Possessive_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('ArabicPatCheck')]'s#!#!#!"
+
+Name_Possessive_No_Tooltip_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('ArabicPatCheck')]'s"
+
+Short_Name_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]#!#!#!#!"
+
+Short_Name_No_Tooltip_Arabic: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]#!"
+
+Short_Name_Possessive_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]'s#!#!#!#!"
+
+Short_Name_Possessive_No_Tooltip_Arabic: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]'s#!"
+
+Short_Name_Possessive_No_Tooltip_No_Format_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]'s"
+
+UI_Name_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]#!#!#!#!"
+
+UI_Name_No_Tooltip_Arabic: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]#!"
+
+UI_Name_Possessive_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]'s#!#!#!#!"
+
+UI_Name_Possessive_No_Tooltip_Arabic: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][ROOT.Char.Custom('LaqabCheck')][GetScriptedGui('scripted_gui_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('ArabicPatCheck')][ROOT.Char.Custom('ArabNickHouse')]'s#!"
+
+SNAT_First_Arabic: "#high [GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]#!"
+
+SNAT_First_Last_Arabic: "#high [GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('ArabicPatCheck')]#!"
+
+Title_Tier_Name_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')]"
+Title_Tier_Name_Possessive_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')]'s"
 
 ArabicNickGen: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('ArabNick'), '_arabic'), ROOT.Char.Custom('CharacterGender')))]"
 arabic_nick_pat: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('ArabNickPat'), '_arabic'), ROOT.Char.Custom('CharacterGender')))]"

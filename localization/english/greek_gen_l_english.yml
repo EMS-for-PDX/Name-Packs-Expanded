@@ -1,6 +1,62 @@
 ﻿l_english:
 Window_Greek: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('GreekNick'), ROOT.Char.Custom('CharacterGender')), '_greek'))][ROOT.Char.Custom('CharacterHouseCheckAfter')][ROOT.Char.Custom('CharacterSpouseHouseCheckAfter')]#!"
 
+First_Name_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+
+First_Name_No_Tooltip_Greek: "[ROOT.Char.Custom('CharacterNameCheck')]"
+
+First_Name_Possessive_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
+
+First_Name_Possessive_No_Tooltip_Greek: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
+
+Titled_First_Name_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+
+Titled_First_Name_No_Tooltip_Greek: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+
+Titled_First_Name_Possessive_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+
+Titled_First_Name_Possessive_No_Tooltip_Greek: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+
+Full_Name_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('GreekNick'), ROOT.Char.Custom('CharacterGender')), '_greek'))][ROOT.Char.Custom('CharacterHouseCheckAfter')][ROOT.Char.Custom('CharacterSpouseHouseCheckAfter')]#!#!#!"
+
+Full_Name_No_Tooltip_Greek: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('GreekNick'), ROOT.Char.Custom('CharacterGender')), '_greek'))][ROOT.Char.Custom('CharacterHouseCheckAfter')][ROOT.Char.Custom('CharacterSpouseHouseCheckAfter')]"
+
+Full_Name_Possessive_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('GreekNick'), ROOT.Char.Custom('CharacterGender')), '_greek'))][ROOT.Char.Custom('CharacterHouseCheckAfter')][ROOT.Char.Custom('CharacterSpouseHouseCheckAfter')]'s#!#!#!"
+
+Full_Name_Possessive_No_Tooltip_Greek: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('GreekNick'), ROOT.Char.Custom('CharacterGender')), '_greek'))][ROOT.Char.Custom('CharacterHouseCheckAfter')][ROOT.Char.Custom('CharacterSpouseHouseCheckAfter')]'s"
+
+Name_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]#!#!#!"
+
+Name_No_Tooltip_Greek: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]"
+
+Name_Possessive_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]'s#!#!#!"
+
+Name_Possessive_No_Tooltip_Greek: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]'s"
+
+Short_Name_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
+
+Short_Name_No_Tooltip_Greek: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
+
+Short_Name_Possessive_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
+
+Short_Name_Possessive_No_Tooltip_Greek: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
+
+Short_Name_Possessive_No_Tooltip_No_Format_Greek: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+
+UI_Name_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('GreekNick'), ROOT.Char.Custom('CharacterGender')), '_greek'))][ROOT.Char.Custom('CharacterHouseCheckAfter')][ROOT.Char.Custom('CharacterSpouseHouseCheckAfter')]#!#!#!#!"
+
+UI_Name_No_Tooltip_Greek: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('GreekNick'), ROOT.Char.Custom('CharacterGender')), '_greek'))][ROOT.Char.Custom('CharacterHouseCheckAfter')][ROOT.Char.Custom('CharacterSpouseHouseCheckAfter')]#!"
+
+UI_Name_Possessive_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('GreekNick'), ROOT.Char.Custom('CharacterGender')), '_greek'))][ROOT.Char.Custom('CharacterHouseCheckAfter')][ROOT.Char.Custom('CharacterSpouseHouseCheckAfter')]'s#!#!#!#!"
+
+UI_Name_Possessive_No_Tooltip_Greek: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('GreekNick'), ROOT.Char.Custom('CharacterGender')), '_greek'))][ROOT.Char.Custom('CharacterHouseCheckAfter')][ROOT.Char.Custom('CharacterSpouseHouseCheckAfter')]'s#!"
+
+SNAT_First_Greek: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!"
+
+SNAT_First_Last_Greek: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterHouseCheckAfter')]#!"
+
+Title_Tier_Name_Greek: "[ROOT.Char.Custom('CharacterTierCheck')]"
+Title_Tier_Name_Possessive_Greek: "[ROOT.Char.Custom('CharacterTierCheck')]'s"
 
 PatPrefix_armenian_male: ""
 PatSuffix_armenian_male: ""
