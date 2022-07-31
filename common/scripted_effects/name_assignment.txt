@@ -248,6 +248,34 @@ name_gen_effect = {
 				}
 				cuman_male_name_effect = yes
 			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_uyghur
+							has_name_list = name_list_yughur
+							has_name_list = name_list_uriankhai
+							has_name_list = name_list_kirghiz
+						}
+					}
+					add = 1
+				}
+				uyghur_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_khazar
+							has_name_list = name_list_bolghar
+							has_name_list = name_list_avar
+							has_name_list = name_list_chuvash
+						}
+					}
+					add = 1
+				}
+				oghur_male_name_effect = yes
+			}
 		}
 	}
 	else_if = {
@@ -424,7 +452,7 @@ name_gen_effect = {
 					}
 					add = 1
 				}
-				sogdian_default_female_name_effect = yes
+				sogdian_fallback_female_name_effect = yes
 			}
 			0 = {
 				modifier = {
@@ -464,6 +492,49 @@ name_gen_effect = {
 					add = 1
 				}
 				karluk_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_cuman
+							has_name_list = name_list_kipchak
+							has_name_list = name_list_kimek
+							has_name_list = name_list_bashkir
+							has_name_list = name_list_laktan
+						}
+					}
+					add = 1
+				}
+				cuman_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_uyghur
+							has_name_list = name_list_yughur
+							has_name_list = name_list_uriankhai
+							has_name_list = name_list_kirghiz
+						}
+					}
+					add = 1
+				}
+				uyghur_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_khazar
+							has_name_list = name_list_bolghar
+							has_name_list = name_list_avar
+							has_name_list = name_list_chuvash
+						}
+					}
+					add = 1
+				}
+				oghur_female_name_effect = yes
 			}
 		}
 	}
