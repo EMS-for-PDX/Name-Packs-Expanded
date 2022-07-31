@@ -1,0 +1,22 @@
+867_khwarezmian_char_effect = {
+	character:188598.house = {
+		set_variable = {
+			name = name_founder
+			value = character:188580
+		}
+	}
+	character:188598.dynasty = { #Afrighids
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188580 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188599 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1230301 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188597 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188596 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:188597 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1230301 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:188599 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:188598 }
+	}
+	character:188596 = {
+		change_first_name = Abd-Allah
+	}
+}
