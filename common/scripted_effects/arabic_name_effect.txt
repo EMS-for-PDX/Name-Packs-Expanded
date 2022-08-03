@@ -1,4 +1,15 @@
 ﻿arabic_male_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
 	random_list = {
 		40 = {
 			random_list = {
@@ -1019,6 +1030,17 @@
 	}
 }
 arabic_female_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
 	random_list = {
 		40 = {
 			random_list = {

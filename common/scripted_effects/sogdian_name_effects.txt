@@ -1,4 +1,15 @@
 sogdian_islam_male_name_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
 	random_list = {
 		25 = {
 			change_first_name = Muhammad
@@ -722,6 +733,17 @@ sogdian_islam_male_name_effect = {
 	}
 }
 sogdian_christian_male_name_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
 	random_list = {
 		40 = {
 			random_list = {
@@ -1383,6 +1405,17 @@ sogdian_christian_male_name_effect = {
 	}
 }
 sogdian_default_male_name_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
 	random_list = {
 		40 = {
 			random_list = {
@@ -2083,6 +2116,17 @@ sogdian_default_male_name_effect = {
 	}
 }
 sogdian_islam_female_name_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
 	random_list = {
 		25 = {
 			random_list = {
@@ -2286,6 +2330,17 @@ sogdian_islam_female_name_effect = {
 	}
 }
 sogdian_christian_female_name_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
 	random_list = {
 		30 = {
 			random_list = {
@@ -2430,6 +2485,17 @@ sogdian_christian_female_name_effect = {
 	}
 }
 sogdian_fallback_female_name_effect = {
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
 	random_list = {
 		30 = {
 			random_list = {

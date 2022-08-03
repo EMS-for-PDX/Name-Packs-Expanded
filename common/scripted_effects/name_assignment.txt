@@ -5,16 +5,21 @@ name_gen_effect = {
 				is_cnp_supported_culture = yes
 			}
 			is_male = yes
-			NOT = {
-				AND = {	
-					has_faith = faith:orthodox
-					OR = {
-						has_trait = devoted
-						has_council_position = councillor_court_chaplain
-						has_government = theocracy_government
-					}
-				}
+			has_faith = faith:orthodox
+			OR = {
+				has_trait = devoted
+				has_council_position = councillor_court_chaplain
+				has_government = theocracy_government
 			}
+		}
+		greek_orthodox_name_effect = yes
+	}
+	else_if = {
+		limit = {
+			culture = {
+				is_cnp_supported_culture = yes
+			}
+			is_male = yes
 		}
 		random_list = {
 			0 = {
@@ -538,31 +543,5 @@ name_gen_effect = {
 			}
 		}
 	}
-	else_if = {
-		limit = {
-			culture = {
-				is_cnp_supported_culture = yes
-			}
-			is_male = yes
-			has_faith = faith:orthodox
-			OR = {
-				has_trait = devoted
-				has_council_position = councillor_court_chaplain
-				has_government = theocracy_government
-			}
-		}
-		greek_orthodox_name_effect = yes
-	}
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 }
