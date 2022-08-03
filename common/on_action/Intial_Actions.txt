@@ -5,11 +5,6 @@
 		courtier_effect
 	}
 }
-on_game_start_after_lobby = {
-	on_actions = {
-		set_dynasty_name_oa
-	}
-}
 on_867_start = {
 	trigger = {
 		current_date > 866.12.31
@@ -76,45 +71,29 @@ courtier_effect = {
 				}
 			}
 			name_gen_effect = yes
-		}
-	}
-}
-set_dynasty_name_oa = {
-	effect = {
-		every_living_character = {
-			limit = {
-				save_temporary_scope_as = thebaron
-				highest_held_title_tier = tier_barony
-				culture = {
-					is_cnp_supported_culture = yes
-				}
-				exists = dynasty
-				dynasty = {
-					any_in_list = {
-						variable = name_pack_support_dynasty
-						this = scope:thebaron
+			if = {
+				limit = {
+					exists = dynasty
+					NOT = {
+						exists = house.var:name_founder
 					}
 				}
-			}
-			save_scope_as = thebaron
-			every_player = {
-				set_variable = {
+				save_scope_as = thebaron
+				set_global_variable = {
 					name = temp_head
 					value = scope:thebaron
 				}
-			}
-			scope:thebaron.dynasty = {
-				set_dynasty_name = "[Localize(Concatenate(Concatenate(GetPlayer.MakeScope.Var('temp_head').Char.GetFirstNameNoTooltip, GetPlayer.MakeScope.Var('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
-			}
-			scope:thebaron.house = {
-				set_house_name = "[Localize(Concatenate(Concatenate(GetPlayer.MakeScope.Var('temp_head').Char.GetFirstNameNoTooltip, GetPlayer.MakeScope.Var('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
-				set_variable = {
-					name = name_founder
-					value = scope:thebaron
+				scope:thebaron.dynasty = {
+					set_dynasty_name = "[Localize(Concatenate(Concatenate(GetGlobalVariable('temp_head').Char.GetFirstNameNoTooltip, GetGlobalVariable('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
 				}
-			}
-			every_player = {
-				remove_variable = temp_head
+				scope:thebaron.house = {
+					set_house_name = "[Localize(Concatenate(Concatenate(GetGlobalVariable('temp_head').Char.GetFirstNameNoTooltip, GetGlobalVariable('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
+					set_variable = {
+						name = name_founder
+						value = scope:thebaron
+					}
+				}
+				remove_global_variable = temp_head
 			}
 		}
 	}

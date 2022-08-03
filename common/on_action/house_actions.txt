@@ -31,24 +31,20 @@ set_dynasty = {
 		dynast = {
 			save_scope_as = good_lad
 		}
-		every_player = {
-			set_variable = {
-				name = temp_head
-				value = scope:good_lad
-			}
+		set_global_variable = {
+			name = temp_head
+			value = scope:good_lad
 		}
 		scope:good_lad.dynasty = {
-			set_dynasty_name = "[Localize(Concatenate(Concatenate(GetPlayer.MakeScope.Var('temp_head').Char.GetFirstNameNoTooltip, GetPlayer.MakeScope.Var('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
+			set_dynasty_name = "[Localize(Concatenate(Concatenate(GetGlobalVariable('temp_head').Char.GetFirstNameNoTooltip, GetGlobalVariable('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
 		}
 		scope:good_lad.house = {
-			set_house_name = "[Localize(Concatenate(Concatenate(GetPlayer.MakeScope.Var('temp_head').Char.GetFirstNameNoTooltip, GetPlayer.MakeScope.Var('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
+			set_house_name = "[Localize(Concatenate(Concatenate(GetGlobalVariable('temp_head').Char.GetFirstNameNoTooltip, GetGlobalVariable('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
 			set_variable = {
 				name = name_founder
 				value = scope:good_lad
 			}
 		}
-		every_player = {
-			remove_variable = temp_head
-		}
+		remove_global_variable = temp_head
 	}
 }
