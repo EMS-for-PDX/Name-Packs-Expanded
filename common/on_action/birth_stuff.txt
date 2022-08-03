@@ -1,0 +1,167 @@
+﻿on_birth_child = {
+	on_actions = {
+		on_birth_child_ne
+        on_son_mother_birth
+        on_son_father_birth
+		on_daughter_father_birth
+		on_daughter_mother_birth
+	}
+}
+on_birth_child_ne = {
+    trigger = {
+        culture = {
+            is_cnp_supported_culture = yes
+        }
+    }
+	effect = {
+		name_gen_effect = yes
+	}
+}
+on_son_father_birth = {
+	trigger = {
+		NOT = {
+			has_trait = bastard
+		}
+		is_male = yes
+		exists = father
+		father = {
+			is_alive = yes
+			NOT = {
+				has_character_flag = had_eldest_son
+			}
+		}
+	}
+	effect = {
+		save_scope_as = the_child
+		father = {
+			add_character_flag = had_eldest_son
+		}
+		if = {
+			limit = {
+				exists = father.dynasty
+			}
+			father.dynasty = {
+				add_to_variable_list = { name = dynasty_list_ctp_sons target = scope:the_child }
+			}
+		}
+		if = {
+			limit = {
+				father = {
+					is_lowborn = yes
+				}
+			}
+			add_to_global_variable_list = { name = global_list_ctp_sons target = scope:the_child }
+		}
+	}
+}
+on_son_mother_birth = {
+	trigger = {
+		NOT = {
+			has_trait = bastard
+		}
+		is_male = yes
+		exists = mother
+		mother = {
+			is_alive = yes
+			NOT = {
+				has_character_flag = had_eldest_son
+			}
+		}
+	}
+	effect = {
+		save_scope_as = the_child
+		mother = {
+			add_character_flag = had_eldest_son
+		}
+		if = {
+			limit = {
+				exists = mother.dynasty
+			}
+			mother.dynasty = {
+				add_to_variable_list = { name = dynasty_list_ctp_sons target = scope:the_child }
+			}
+		}
+		if = {
+			limit = {
+				mother = {
+					is_lowborn = yes
+				}
+			}
+			add_to_global_variable_list = { name = global_list_ctp_sons target = scope:the_child }
+		}
+	}
+}
+on_daughter_father_birth = {
+	trigger = {
+		NOT = {
+			has_trait = bastard
+		}
+		is_male = yes
+		exists = father
+		father = {
+			is_alive = yes
+			NOT = {
+				has_character_flag = had_eldest_daughter
+			}
+		}
+	}
+	effect = {
+		save_scope_as = the_child
+		father = {
+			add_character_flag = had_eldest_daughter
+		}
+		if = {
+			limit = {
+				exists = father.dynasty
+			}
+			father.dynasty = {
+				add_to_variable_list = { name = dynasty_list_ctp_daughters target = scope:the_child }
+			}
+		}
+		if = {
+			limit = {
+				father = {
+					is_lowborn = yes
+				}
+			}
+			add_to_global_variable_list = { name = global_list_ctp_daughters target = scope:the_child }
+		}
+	}
+}
+on_daughter_mother_birth = {
+	trigger = {
+		NOT = {
+			has_trait = bastard
+		}
+		is_male = yes
+		exists = mother
+		mother = {
+			is_alive = yes
+			NOT = {
+				has_character_flag = had_eldest_daughter
+			}
+		}
+	}
+	effect = {
+		save_scope_as = the_child
+		mother = {
+			add_character_flag = had_eldest_daughter
+		}
+		if = {
+			limit = {
+				exists = mother.dynasty
+			}
+			mother.dynasty = {
+				add_to_variable_list = { name = dynasty_list_ctp_daughters target = scope:the_child }
+			}
+		}
+		if = {
+			limit = {
+				mother = {
+					is_lowborn = yes
+				}
+			}
+			add_to_global_variable_list = { name = global_list_ctp_daughters target = scope:the_child }
+		}
+	}
+}
