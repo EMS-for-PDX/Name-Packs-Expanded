@@ -1,5 +1,6 @@
 #Storage
 indo_aryan_male_name_effect = {
+	save_scope_as = thechar
 	if = {
 		limit = {
 			exists = dynasty
@@ -195,73 +196,73 @@ indo_aryan_male_name_effect = {
 suffix_ia_roll_male = {
 	if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:aditya
+			#dynasty.var:ia_dynasty_suffix = flag:aditya
 		}
 		aditya_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:candra
+			#dynasty.var:ia_dynasty_suffix = flag:candra
 		}
 		candra_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:datta
+			#dynasty.var:ia_dynasty_suffix = flag:datta
 		}
 		datta_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:deva
+			#dynasty.var:ia_dynasty_suffix = flag:deva
 		}
 		deva_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:gupta
+			#dynasty.var:ia_dynasty_suffix = flag:gupta
 		}
 		gupta_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:malla
+			#dynasty.var:ia_dynasty_suffix = flag:malla
 		}
 		malla_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:pala
+			#dynasty.var:ia_dynasty_suffix = flag:pala
 		}
 		pala_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:raja
+			#dynasty.var:ia_dynasty_suffix = flag:raja
 		}
 		raja_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:sena
+			#dynasty.var:ia_dynasty_suffix = flag:sena
 		}
 		sena_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:simha
+			#dynasty.var:ia_dynasty_suffix = flag:simha
 		}
 		simha_male_name_effect = yes
 	}
 	else_if = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:vardhana
+			#dynasty.var:ia_dynasty_suffix = flag:vardhana
 		}
 		vardhana_male_name_effect = yes
 	}
 	else = {
 		limit = {
-			dynasty.var:ia_dynasty_suffix = flag:varma
+			#dynasty.var:ia_dynasty_suffix = flag:varma
 		}
 		varma_male_name_effect = yes
 	}
@@ -277,19 +278,19 @@ name_ia_roll_male = {
 			}
 			modifier = {
 				any_parent = {
-					highest_held_title_ter >= tier_county
+					highest_held_title_tier >= tier_county
 				}
 				add = 25
 			}
 			modifier = {
 				any_parent = {
-					highest_held_title_ter >= tier_duchy
+					highest_held_title_tier >= tier_duchy
 				}
 				add = 25
 			}
 			modifier = {
 				any_parent = {
-					highest_held_title_ter >= tier_kingdom
+					highest_held_title_tier >= tier_kingdom
 				}
 				add = 25
 			}
@@ -304,19 +305,19 @@ name_ia_roll_male = {
 			}
 			modifier = {
 				any_parent = {
-					highest_held_title_ter >= tier_county
+					highest_held_title_tier >= tier_county
 				}
 				add = -25
 			}
 			modifier = {
 				any_parent = {
-					highest_held_title_ter >= tier_duchy
+					highest_held_title_tier >= tier_duchy
 				}
 				add = -25
 			}
 			modifier = {
 				any_parent = {
-					highest_held_title_ter >= tier_kingdom
+					highest_held_title_tier >= tier_kingdom
 				}
 				add = -25
 			}
@@ -1086,9 +1087,9 @@ datta_male_name_effect = {
 }
 deva_male_name_effect = {
     save_scope_as = effect_root
-    dynasty = {
-        add_to_variable_list = { name = deva_removal target = scope:effect_root }
-    }
+   # dynasty = {
+        #add_to_variable_list = { name = deva_removal target = scope:effect_root }
+   # }
     random_list = {
         40 = {
             random_list = {
@@ -5054,7 +5055,7 @@ short_male_indo_aryan_name_effect = {
 				0 = {
 					modifier = {
 						culture = {
-							has_name_list = name_listname_list_hindustani_rajput
+							has_name_list = name_list_hindustani
 						}
 						add = 1
 					}

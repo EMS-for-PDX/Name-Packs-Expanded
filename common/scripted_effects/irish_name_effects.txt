@@ -1,5 +1,6 @@
 #Storage for now
 celtic_christian_name_effect = {
+	save_scope_as = thechar
 	if = {
 		limit = {
 			exists = dynasty
@@ -718,7 +719,6 @@ irish_pack_name_female_ancestor = {
                     }
                 }
             }
-			add_character_flag = name_pack_support
         }
         change_first_name = { template_character = scope:the_ancestor }
     }
@@ -727,6 +727,7 @@ irish_pack_name_female_ancestor = {
     }
 }
 irish_male_name_effect = {
+	save_scope_as = thechar
 	if = {
 		limit = {
 			exists = dynasty
@@ -895,7 +896,7 @@ irish_male_name_effect = {
 				0 = {
 					modifier = {
 						culture = {
-							has_name_list = irish_name_list
+							has_name_list = name_list_irish
 						}
 						add = 1
 					}
@@ -1198,7 +1199,7 @@ irish_male_name_effect = {
 				0 = {
 					modifier = {
 						culture = {
-							has_name_list = irish_name_list
+							has_name_list = name_list_irish
 						}
 						add = 12
 					}
@@ -2344,6 +2345,7 @@ irish_male_name_effect = {
 	}
 }
 irish_female_name_effect = {
+	save_scope_as = thechar
 	if = {
 		limit = {
 			exists = dynasty
@@ -2554,7 +2556,7 @@ irish_female_name_effect = {
 				0 = {
 					modifier = {
 						culture = {
-							has_name_list = irish_name_list
+							has_name_list = name_list_irish
 						}
 						add = 1
 					}

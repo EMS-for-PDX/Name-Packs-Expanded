@@ -1,4 +1,5 @@
 ﻿alan_male_name_effect = {
+	save_scope_as = thechar
 	if = {
 		limit = {
 			exists = dynasty
@@ -329,6 +330,7 @@
     }
 }
 alan_female_name_effect = {
+	save_scope_as = thechar
 	if = {
 		limit = {
 			exists = dynasty
@@ -343,7 +345,7 @@ alan_female_name_effect = {
     random_list = {
         0 = {
             modifier = {
-                has_religion - religion:islam_religion
+                has_religion = religion:islam_religion
                 add = 40
             }
             random_list = {
@@ -363,7 +365,7 @@ alan_female_name_effect = {
         }
         0 = {
             modifier = {
-                has_religion - religion:islam_religion
+                has_religion = religion:islam_religion
                 add = 30
             }
             random_list = {
@@ -377,7 +379,7 @@ alan_female_name_effect = {
         }
         0 = {
             modifier = {
-                has_religion - religion:islam_religion
+                has_religion = religion:islam_religion
                 add = 20
             }
             random_list = {

@@ -1,4 +1,5 @@
 ﻿arabic_male_effect = {
+	save_scope_as = thechar
 	if = {
 		limit = {
 			exists = dynasty
@@ -30,7 +31,7 @@
 				0 = {
 					modifier = {
 						religion = {
-							is_in_family = abrhamic
+							is_in_family = rf_abrahamic
 						}
 						add = 1
 					}
@@ -81,8 +82,8 @@
 					modifier = {
 						has_religion = religion:christianity_religion
 						OR = {
-							has_culture = levantine
-							has_culture = egyptian
+							has_culture = culture:levantine
+							has_culture = culture:egyptian
 						}
 						add = 2
 					}
@@ -97,7 +98,7 @@
 				}
 				0 = {
 					modifier = {
-						has_faith = faith:mozarabic
+						has_faith = faith:mozarabic_church
 						add = 3
 					}
 					random_list = {
@@ -237,8 +238,8 @@
 					modifier = {
 						has_religion = religion:christianity_religion
 						OR = {
-							has_culture = levantine
-							has_culture = egyptian
+							has_culture = culture:levantine
+							has_culture = culture:egyptian
 						}
 						add = 2
 					}
@@ -387,7 +388,7 @@
 				0 = {
 					modifier = {
 						religion = {
-							is_in_family = abrhamic
+							is_in_family = rf_abrahamic
 						}
 						add = 3
 					}
@@ -405,7 +406,7 @@
 				}
 				0 = {
 					modifier = {
-						has_faith = faith:mozarabic
+						has_faith = faith:mozarabic_church
 						add = 18
 					}
 					random_list = {
@@ -638,7 +639,7 @@
 				0 = {
 					modifier = {
 						religion = {
-							is_in_family = abrhamic
+							is_in_family = rf_abrahamic
 						}
 						add = 1
 					}
@@ -1030,6 +1031,7 @@
 	}
 }
 arabic_female_effect = {
+	save_scope_as = thechar
 	if = {
 		limit = {
 			exists = dynasty
@@ -1106,7 +1108,7 @@ arabic_female_effect = {
 				0 = {
 					modifier = {
 						religion = {
-							is_in_family = abrhamic
+							is_in_family = rf_abrahamic
 						}
 						add = 3
 					}
@@ -1124,7 +1126,7 @@ arabic_female_effect = {
 				}
 				0 = {
 					modifier = {
-						has_faith = faith:mozarabic
+						has_faith = faith:mozarabic_church
 						add = 1
 					}
 					change_first_name = Dhuna
@@ -1307,7 +1309,7 @@ arabic_female_effect = {
 				}
 				0 = {
 					modifier = {
-						has_faith = faith:mozarabic
+						has_faith = faith:mozarabic_church
 						add = 8
 					}
 					random_list = {
