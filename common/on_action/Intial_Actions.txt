@@ -34,6 +34,29 @@ on_1066_start = {
 		1066_greek_char_effect = yes
 	}
 }
+random_yearly_everyone_pulse = {
+	on_actions = {
+		courtiers_action
+	}
+}
+courtiers_action = {
+	trigger = {
+		culture = {
+			is_cnp_supported_culture = yes
+		}
+		save_temporary_scope_as = to_be_checked
+		is_lowborn = yes
+		NOT = {
+			any_in_global_list = {
+				variable = name_pack_support_global
+				this = scope:to_be_checked
+			}
+		}
+	}
+	effect = {
+		name_gen_effect = yes
+	}
+}
 courtier_effect = {
 	effect = {
 		every_living_character = {
