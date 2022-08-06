@@ -1,0 +1,62 @@
+﻿l_english:
+ do_not_execute_claim_throne_tooltip: "I do not attempt to Claim [target.GetPrimaryTitle.GetName]"
+
+ # Distant Relation
+ claim_throne_outcome.1001.t: "Claim Throne"
+ claim_throne_outcome.1001.desc: "After all my hard work, it is finally time to present the evidence I have "come across", that I am in fact the rightful heir to [target_title.GetName] through an old dynastic marriage.\n\n[target.Custom('TitledFirstName')] will be nothing more than a simple pretender as long as [target.GetSheHe] stands in my way!"
+ claim_throne_outcome.1001.a: "Soon I will rule [target.GetPrimaryTitle.GetNameNoTierNoTooltip]!"
+ claim_throne_outcome.1001.b: "Perhaps I am being too rash..."
+
+ claim_throne_outcome.2001.opening: "Finally, no one can doubt the fact that I have a reasonable claim on the [target_title.GetName]!"
+ claim_throne_outcome.2001.discovered: "\n\nWhile [target.Custom('TitledFirstName')] believes my claim of old dynastic marriage is entirely fabricated, the important matter is that [target.GetSheHe] cannot disprove it."
+ claim_throne_outcome.2001.no_awareness: "\n\nWhile the exact details of the old dynastic marriage are shrouded in the mists of time, there is no reason to doubt its veracity. Even [target.Custom('TitledFirstName')] must admit my claim is a legitimate one."
+ claim_throne_outcome.2001.a: "Nothing can stop me now!"
+ claim_throne_outcome.2001.b: "[target.Custom('FirstNameNoTooltip')] can complain all [target.GetSheHe] wants! It changes nothing."
+
+ claim_throne_outcome.4001.opening: "My claim on the [target_title.GetName] has failed to convince anyone!"
+ claim_throne_outcome.4001.owner_discovered: "\n\nEver worse, [target.Custom('TitledFirstName')] has discovered my efforts to fabricate marriage records between the dynasty of [ROOT.Char.GetDynasty.GetBaseName] and the old ruling dynasty of [target_title.GetNameNoTierNoTooltip]!"
+ claim_throne_outcome.4001.owner_secret: "\n\nAlthough the marriage records between the dynasty of [ROOT.Char.GetDynasty.GetBaseName] and the old ruling dynasty of [target_title.GetNameNoTierNoTooltip] have been dismissed as inaccurate, at least no one has discovered that I was the one who had them created."
+ claim_throne_outcome.4001.a: ""I only wanted to partake in the glory of your family, my Liege!""
+ claim_throne_outcome.4001.b: "I will give this the time it requires."
+ claim_throne_outcome.4001.c: "This game I am playing is far too dangerous."
+
+
+ # Relation to Mythical Founder
+ claim_throne_outcome.1002.desc: "I now have near-indisputable evidence that I am of the lineage of none other than [ROOT.Char.Custom('ClaimThroneMythicalFounder')] [ROOT.Char.Custom('ClaimThroneMythicalFounderHerselfHimself')]!\n\nEven [target.Custom('TitledFirstName')] can no longer refuse the righteousness of my claim to rule the [target_title.GetName]."
+
+ claim_throne_outcome.2002.discovered: "\n\nWhile [target.Custom('TitledFirstName')] believes the tracing of my lineage to [ROOT.Char.Custom('ClaimThroneMythicalFounder')] is entirely spurious, [target.GetSheHe] has been unable to disprove it, and that is all that matters."
+ claim_throne_outcome.2002.no_awareness: "\n\nWith a lineage traced to [ROOT.Char.Custom('ClaimThroneMythicalFounder')], who could ever find my claim unreasonable?"
+
+ claim_throne_outcome.4002.owner_discovered: "\n\nIt was far easier than I expected for [target.Custom('TitledFirstName')] to disprove that I have any relation to that ancient ruler, [owner.Custom('ClaimThroneMythicalFounder')]. [target.GetSheHe|U] even knew that all my "evidence" was entirely fabricated!"
+ claim_throne_outcome.4002.owner_secret: "\n\nNo one believes that I could be descended from that ancient ruler, [owner.Custom('ClaimThroneMythicalFounder')], but at least [target.Custom('TitledFirstName')] seems unaware that all my "evidence" was entirely fabricated in the first place."
+ claim_throne_outcome.4002.a: ""I merely wanted to partake in the glory, my Liege!""
+
+
+ # Chosen by previous ruler
+ claim_throne_outcome.1003.desc: "I have several witnesses who will swear to [ROOT.Char.GetFaith.PantheonTerm] that [previous_title_holder.Custom('TitledFirstName')], the old [previous_title_holder.Custom('TitleAsNameNoTooltip')] of [target_title.GetNameNoTier], had as [previous_title_holder.GetHerHis] final wish that the [target.Custom('RealmType')] should pass to me.\n\nWhile [target.Custom('TitledFirstName')] is unlikely to acknowledge my claim, it is not really [target.GetHerHim] I need to convince..."
+
+ claim_throne_outcome.2003.discovered: "[target.Custom('TitledFirstName')] has publicly condemned the promise made to me by the old [previous_holder.Custom('TitledFirstName')] as desperate lies, but it is [target.GetHerHis] word against the sacred oaths speaking in my favor."
+ claim_throne_outcome.2003.no_awareness: "With the old [previous_holder.Custom('TitledFirstNamePossessive')] promise to me, and so many people willing to swear that they witnessed it, there is nothing [target.Custom('TitledFirstName')] can do except acknowledge it. [target.GetSheHe|U] may not give up the [target.GetTierAsNameNoTooltip] easily, but neither can I be denied."
+ claim_throne_outcome.4003.owner_discovered: "\n\nUnder pressure from [target.Custom('TitledFirstName')], all those who swore that the old [previous_holder.Custom('TitledFirstName')] had promised to make me [previous_holder.GetHerHis] heir, suddenly changed their minds! Instead, they now claim that I bribed them to do it! While true, it is an absolutely despicable breach of loyalty."
+ claim_throne_outcome.4003.owner_secret: "\n\nUnder pressure from [target.Custom('TitledFirstName')], all those who swore that the old [previous_holder.Custom('TitledFirstName')] had promised to make me [previous_holder.GetHerHis] heir backed away from their claims. However, since [target.Custom('FirstNameNoTooltip')] has not accused me of anything, [target.GetSheHe] must be worried there could have been some truth to it."
+ claim_throne_outcome.4003.a: "Is there no one you can trust these days?"
+
+ # Response events for target
+ claim_throne_outcome.5001.opening: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('owner'))], [owner.Custom('TitledFirstName')], has laid claim to the [target_title.GetName]!"
+ claim_throne_outcome.5001.distant_relation: "\n\nApparently there was a strategic marriage between our dynasties some generations ago, which [owner.GetSheHe] is now leveraging into an inheritance dispute."
+ claim_throne_outcome.5001.mythical_founder: "\n\n[owner.Custom('FirstNameNoTooltip')] claims to be descended from none other than [owner.Custom('ClaimThroneMythicalFounder')]! [owner.GetSheHe|U] believes that is all the reason [owner.GetSheHe] needs to be named ruler of the [target_title.GetNameNoTooltip]."
+ claim_throne_outcome.5001.previous_holder_promise: "\n\n[owner.Custom('FirstNameNoTooltip')] claims that [previous_holder.Custom2('RelationToMe', ROOT.Char)] swore on [previous_holder.GetHerHis] deathbed that the [target_title.GetTierAsNameNoTooltip] should pass to [owner.Custom('FirstNameNoTooltip')]. Distressingly, [owner.GetSheHe] has found several people who will swear holy oaths that it is true."
+ claim_throne_outcome.5001.fallback: "\n\n[owner.Custom('FirstNameNoTooltip')] refuses to say what the claims are based on, but [owner.GetSheHe] is refusing to back down!"
+ claim_throne_outcome.5001.discovered: "\n\nThese claims are entirely fabricated, but there is enough uncertainty that they pose a real threat, should others support them!"
+ claim_throne_outcome.5001.a: "As if I will give up my realm without a fight!"
+ claim_throne_outcome.5002.a: "Does [owner.GetSheHe] really think [owner.GetSheHe] will get away with this?!"
+ claim_throne_outcome.5003.opening: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('owner'))], [owner.Custom('TitledFirstName')], has attempted to lay claim to the [target_title.GetName]!"
+ claim_throne_outcome.5003.owner_known: "\n\nThese claims are laughable, of course, and if this is the extent of [owner.Custom('FirstNamePossessiveNoTooltip')] threat, I have little reason to worry."
+ claim_throne_outcome.5003.a: "[owner.GetSheHe|U] will pay for this insolence."
+
+ # Other text
+ claim_throne_invalidated: "Claim Throne Scheme ends"
+ claim_throne_target_died_tt: "[target.Custom('TitledFirstName')] has died"
+ claim_throne_target_lost_titles_tt: "[target.Custom('TitledFirstName')] is no longer landed"
+ claim_throne_target_no_longer_liege_tt: "[target.Custom('TitledFirstName')] is no longer my Liege"
+ claim_throne_invalidate_fallback_tt: "I am no longer able to claim [target.Custom('TitledFirstNamePossessive')] throne"

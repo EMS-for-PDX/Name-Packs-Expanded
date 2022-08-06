@@ -1,0 +1,14 @@
+﻿l_english:
+ COURT_CHAPLAIN_CANT_FIRE_DOCTRINES_TCT: "$EFFECT_LIST_BULLET$[CHARACTER.GetFaith.GetName] does #bold not#! have #V Revocable Clerical Appointment#! [doctrine|E].\n\n$EFFECT_LIST_BULLET$[CHARACTER.Custom('RegName')] does not have [free_investiture|E].\n\nWithout such a $game_concept_doctrine$, or [law|E], there is always a [court_chaplain|E] or [realm_priest|E]."
+
+ add_pope_to_name: "Pope [ROOT.GetCharacter.Custom('FirstNameNoTooltip')]"
+
+  INVESTITURECouncil_TITLE: "[GetPlayer.GetPrimaryTitle.MakeScope.Var('selected_councillor_for_investiture').GetCharacter.Custom('RegName')]"
+
+  rot_antipopes_name: "[Scope.GetCharacter.Custom('FirstNameNicknamed')] #medium ([Scope.GetCharacter.GetLiege.GetPrimaryTitle.GetName]) #!"
+
+  ROT_MAKE_ANTIPOPE_NEGATIVE_OPINION: "[recipient.Custom('ShortName')|U] has a negative opinion about my character: $VALUE|=+0$"
+  ROT_MAKE_ANTIPOPE_VIRTUES: "[actor.GetFaith.GetReligiousHead.Custom('ShortName')|U] has virtuous [traits|El]: $VALUE|=+0$"
+  ROT_MAKE_ANTIPOPE_SINS: "[recipient.GetFaith.GetReligiousHead.Custom('ShortName')|U] has sinful [traits|El]: $VALUE|=+0$"
+
+  RELIGIOUS_HEAD_INTERACTION_CONCLAVE_INFLUENCE_RECIPIENT: "Influence of [secondary_recipient.Custom('ShortName')|U] on [collegeofcardinals|E]: $VALUE|=+0$"

@@ -1,0 +1,602 @@
+﻿l_english:
+ ANSWER_PLAYER_TOOLTIP: "Since [CHARACTER.Custom('RegName')] is played by $PLAYER|V$, they decide how to response"
+
+ break_up_with_lover_interaction_desc: "End your [lover|E] [relation|E] with [recipient.Custom('ShortNameNoTooltip')]"
+
+ blackmail_decline_summary: "@warning_icon!#X If [recipient.Custom('ShortNameNoTooltip')] declines, [recipient.GetHerHis] secret can be exposed!#!"
+
+ liege_modify_vassal_contract_interaction_desc: "Renegotiate [recipient.Custom('ShortNamePossessiveNoTooltip')] [obligations|E] to you"
+
+ vassal_modify_vassal_contract_interaction_desc: "Renegotiate your [obligations|E] to [recipient.Custom('ShortNameNoTooltip')]"
+
+ gift_interaction_desc: "Send a [gift|E] to increase [recipient.Custom('ShortNamePossessiveNoTooltip')] opinion of you"
+
+ offer_vassalization_interaction_desc: "Ask [recipient.Custom('ShortNameNoTooltip')] to become your [vassal|E]"
+
+ offer_fealty_interaction_desc: "Ask [recipient.Custom('ShortNameNoTooltip')] to become your [liege|E]"
+
+ divorce_character_interaction_desc: "The time has come for [recipient.Custom('ShortNameNoTooltip')] and I to part ways"
+ divorce_cannot_concubine_ex_wife: "You will be unable to take [recipient.Custom('ShortNameNoTooltip')] as a [concubine|E] for a period of 50 years."
+
+ declare_war_desc: "Use a [casus_belli|E] to declare [war|E] on [recipient.Custom('ShortNameNoTooltip')]"
+
+ declare_war_interaction_notification_tooltip: "Declared war on [recipient.Custom('ShortNameNoTooltip')]"
+
+ make_concubine_interaction_desc: "Make [recipient.Custom('ShortNameNoTooltip')] your [concubine|E]"
+
+ find_concubine_button_name: "Take [CharacterInteractionConfirmationWindow.GetRecipient.Custom('ShortNameNoTooltip')] as my Concubine"
+
+ CONCUBINE_PROMPT_CHARACTER: "#I Take [CHARACTER.Custom('ShortName')] as a [concubine|E]#!"
+
+ offer_concubine_desc: "Offer a [concubine|E] to [recipient.Custom('ShortNameNoTooltip')]"
+ OFFER_CONCUBINE_NOTIFICATION: "I think [secondary_actor.Custom('ShortName')] would serve you well as a [concubine|E]. Will you let [secondary_actor.GetHerHim] into your bed?"
+
+ CHARACTER_UNAVAILABLE_TO_BE_OFFERED_AS_CONCUBINE: "[TARGET_CHARACTER.Custom('ShortName')|U] is unavailable right now"
+
+ arrange_marriage_interaction_desc_both_rulers_can_marry: "Suggest a [marriage|E] involving either:\n$EFFECT_LIST_BULLET$Yourself\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]\nto:\n$EFFECT_LIST_BULLET$[recipient.Custom('ShortNameNoTooltip')]\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] children\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] [courtiers|E]"
+ arrange_marriage_interaction_desc_both_rulers_recipient_only_can_marry: "Suggest a [marriage|E] involving either:\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]\nto:\n$EFFECT_LIST_BULLET$[recipient.Custom('ShortNameNoTooltip')]\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] children\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] [courtiers|E]"
+ arrange_marriage_interaction_desc_both_rulers_recipient_neither_can_marry: "Suggest a [marriage|E] involving either:\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]\nto:\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] children\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] [courtiers|E]"
+ arrange_marriage_interaction_desc_one_ruler_can_marry: "Suggest a [marriage|E] between [recipient.Custom('ShortNameNoTooltip')] and either:\n$EFFECT_LIST_BULLET$Yourself\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]"
+ arrange_marriage_interaction_desc_recipient_one_ruler_cannot_marry: "Suggest a [marriage|E] between [recipient.Custom('ShortNameNoTooltip')] and either:\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]"
+
+ arrange_marriage_interaction_accept_toast_desc: "[secondary_actor.Custom('ShortNameNoTooltip')|U] married [secondary_recipient.Custom('ShortNameNoTooltip')]"
+
+ arrange_marriage_interaction_accept_betrothal_toast_desc: "[secondary_actor.Custom('ShortNameNoTooltip')|U] is now betrothed to [secondary_recipient.Custom('ShortNameNoTooltip')]"
+
+ marry_off_interaction_desc: "Find a spouse for [secondary_actor.Custom('ShortNameNoTooltip')]"
+
+ offer_ward_interaction_desc: "Offer [recipient.Custom('ShortName')] a [ward|E], making [recipient.GetHerHim], or someone in [recipient.GetHerHis] [court|E], the [guardian|E] of the chosen child"
+
+ offer_guardianship_interaction_desc: "Offer [recipient.Custom('ShortName')] a [guardian|E], making someone in [recipient.GetHerHis] [court|E] the [ward|E] of the chosen adult"
+
+ EDUCATE_CHILD_OPTION_CONVERT_CULTURE_TT_TO_ACTOR: "Attempt to convert [secondary_recipient.Custom('ShortName')] to [secondary_actor.Custom('ShortNameNotMePossessive')] [culture|E] ([secondary_actor.GetCulture.GetName])."
+ EDUCATE_CHILD_OPTION_CONVERT_CULTURE_TT_TO_RECIPIENT: "Attempt to convert [secondary_actor.Custom('ShortName')] to [secondary_recipient.Custom('ShortNameNotMePossessive')] [culture|E] ([secondary_recipient.GetCulture.GetName])."
+
+ EDUCATE_CHILD_OPTION_CONVERT_FAITH_TT_TO_ACTOR: "Attempt to convert [secondary_recipient.Custom('ShortName')] to [secondary_actor.Custom('ShortNameNotMePossessive')] [faith|E] ([secondary_actor.GetFaith.GetName])."
+ EDUCATE_CHILD_OPTION_CONVERT_FAITH_TT_TO_RECIPIENT: "Attempt to convert [secondary_actor.Custom('ShortName')] to [secondary_recipient.Custom('ShortNameNotMePossessive')] [faith|E] ([secondary_recipient.GetFaith.GetName])."
+
+ imprison_interaction_desc: "Attempt to [imprison|E] [recipient.Custom('ShortNameNoTooltip')]"
+
+ imprison_decline_summary_war: "@warning_icon!#X If you fail to imprison [ROOT.Char.Custom('ShortNameNoTooltip')] [ROOT.Char.GetSheHe] will rise up in rebellion with other disgruntled [vassals|E]!#!"
+ imprison_decline_summary_no_war: "@warning_icon!#X If you fail to imprison [ROOT.Char.Custom('ShortNameNoTooltip')] [ROOT.Char.GetSheHe] will leave [ROOT.Char.GetLiege.Custom('ShortNamePossessiveNoTooltip')] court!#!"
+ imprison_decline_summary_no_war_your_courtier: "@warning_icon!#X If you fail to imprison [ROOT.Char.Custom('ShortNameNoTooltip')] [ROOT.Char.GetSheHe] will leave your court!#!"
+ imprison_decline_summary_no_court: "@warning_icon!#X If you fail to imprison [ROOT.Char.Custom('ShortNameNoTooltip')] [ROOT.Char.GetSheHe] will leave to become a wanderer!#!"
+ imprison_decline_summary_cannot_fire_court_chaplain: "@warning_icon!#X If you fail to imprison [ROOT.Char.Custom('ShortNameNoTooltip')] [ROOT.Char.GetSheHe] will still be [ROOT.Char.GetLiege.Custom('ShortNamePossessiveNoTooltip')] [ROOT.Char.GetCouncilTitle]!#!"
+ imprison_decline_summary_cannot_fire_HoF: "@warning_icon!#X Even if you imprison [ROOT.Char.Custom('ShortNameNoTooltip')] [ROOT.Char.GetSheHe] will still be the [ROOT.Char.Custom('TitleAsNameNoTooltip')]!#!"
+
+ release_from_prison_interaction_desc: "Negotiate the release of [recipient.Custom('ShortNameNoTooltip')] from your [prison|E]"
+
+ move_to_dungeon_interaction_desc: "Move [recipient.Custom('ShortNameNoTooltip')] from [house_arrest|E] to the [dungeon|E]"
+ move_to_house_arrest_interaction_desc: "Move [recipient.Custom('ShortNameNoTooltip')] from the [dungeon|E] to [house_arrest|E]"
+
+ ransom_interaction_desc: "Ransom [secondary_recipient.Custom('ShortNamePossessiveNoTooltip')] release for a payment of [gold|E] or a [favor|E]"
+
+ ransom_me_interaction: "Ransom [Select_CString( ACTOR.IsLocalPlayer, 'Yourself', ACTOR.Custom('ShortName') )]"
+
+ execute_prisoner_interaction_desc: "Make sure that [recipient.Custom('ShortNameNoTooltip')] never bothers you again"
+
+ ALREADY_SENT_GIFT_WARNING: "@warning_icon!#X You have already sent a Gift to [recipient.Custom('ShortName')], sending another one will #underline override#! the existing [opinion|E] modifier!#!"
+
+ IS_ALLOWED_TO_IMPRISON_DESC: "[Select_CString( recipient.IsLocalPlayer, 'You', recipient.Custom('ShortName') )] [Select_CString( recipient.IsLocalPlayer, 'are', 'is' )] a known [criminal|E] #weak ([recipient.GetImprisonmentReasons( actor.Self )])#!, allowing [imprisoner.Custom('ShortName')] to imprison [Select_CString( recipient.IsLocalPlayer, 'you', recipient.Custom('ShortName') )] without being viewed as a [tyrant|E]"
+ IS_ALLOWED_TO_EXECUTE_DESC: "[recipient.Custom('ShortName')|U] is a known [criminal|E] #weak ([recipient.GetExecuteReasons( actor.Self )])#!, allowing you to execute [recipient.GetHerHim] without being viewed as a [tyrant|E]"
+ IS_ALLOWED_TO_EXECUTE_HOSTILE_RELIGION_DESC: "[recipient.Custom('ShortNameNotMePossessive')|U] faith, [recipient.GetFaith.GetName], is considered to be either $hostility_hostile_tooltippable$ or $hostility_evil_tooltippable$ by your faith, allowing you to execute [recipient.GetHerHim] without being viewed as a [tyrant|E]."
+ IS_ALLOWED_TO_IMPRISON_NO_RECIPIENT_DESC: "#weak As [Select_CString( imprisoner.IsLocalPlayer, 'I', imprisoner.Custom('ShortName') )] [Select_CString( imprisoner.IsLocalPlayer, 'have', 'has' )] a fair reason, no one will think [Select_CString( imprisoner.IsLocalPlayer, 'me', imprisoner.Custom('ShortName') )] a [tyrant|E]#!"
+
+ IS_ALLOWED_TO_REVOKE_TITLE_DESC: "[recipient.Custom('ShortName')|U] [Select_CString( recipient.IsLocalPlayer, 'are', 'is' )] a known [criminal|E] #weak ([recipient.GetRevokeReasons( actor.Self )])#!, allowing [Select_CString( actor.IsLocalPlayer, 'you', 'them' )] to revoke [Select_CString( recipient.IsLocalPlayer, 'your', recipient.GetHerHis )] [title|E] without being viewed as a tyrant"
+ IS_ALLOWED_TO_REVOKE_VASSAL_DESC: "[recipient.Custom('ShortName')|U] [Select_CString( recipient.IsLocalPlayer, 'are', 'is' )] a known [criminal|E] #weak ([recipient.GetRevokeReasons( actor.Self )])#!, allowing [Select_CString( actor.IsLocalPlayer, 'you', 'them' )] to revoke [Select_CString( recipient.IsLocalPlayer, 'your', recipient.GetHerHis )] [vassals|E] without being viewed as a tyrant"
+
+ IS_ALLOWED_TO_REVOKE_EVIL_INFIDEL_TITLE: "Because you consider [recipient.GetFaith.GetAdherentNamePlural] to be $hostility_evil_tooltippable$, you can revoke [recipient.Custom('ShortNameNotMePossessive')] titles without being viewed as a tyrant."
+ IS_ALLOWED_TO_REVOKE_HOSTILE_INFIDEL_TITLE: "Because you consider [recipient.GetFaith.GetAdherentNamePlural] to be $hostility_hostile_tooltippable$, you can revoke [recipient.Custom('ShortNameNotMePossessive')] titles without being viewed as a tyrant."
+ IS_ALLOWED_TO_REVOKE_EVIL_INFIDEL_VASSAL: "Because you consider [recipient.GetFaith.GetAdherentNamePlural] to be $hostility_evil_tooltippable$, you can revoke [recipient.Custom('ShortNameNotMePossessive')] vassals without being viewed as a tyrant."
+ IS_ALLOWED_TO_REVOKE_HOSTILE_INFIDEL_VASSAL: "Because you consider [recipient.GetFaith.GetAdherentNamePlural] to be $hostility_hostile_tooltippable$, you can revoke [recipient.Custom('ShortNameNotMePossessive')] vassals without being viewed as a tyrant."
+
+ IMPRISONMENT_RELATIVES_EFFECT_DUNGEON: "All of [THIS.GetCharacter.Custom('ShortNameNotMePossessive')] [family|E] loses #N 30#! [opinion|E] of [imprisoner.Custom('ShortName')]"
+ IMPRISONMENT_RELATIVES_EFFECT_HOUSE_ARREST: "All of [THIS.GetCharacter.Custom('ShortNameNotMePossessive')] [family|E] loses #N 15#! [opinion|E] of [imprisoner.Custom('ShortName')]"
+ MOVE_PRISONER_TO_DUNGEON: "[recipient.Custom('ShortName')|U] is thrown in the [dungeon|E], lowering [recipient.GetHerHis] [health|E] and angering [recipient.GetHerHis] [close_family|E]."
+ MOVE_PRISONER_TO_HOUSE_ARREST: "[recipient.Custom('ShortName')|U] is placed in [house_arrest|E], removing the dungeon's negative effects on [recipient.GetHerHis] [health|E] as well as the disapproval of [recipient.GetHerHis] [close_family|E]."
+
+ RELEASE_RENOUNCE_CLAIMS_DESC: "[recipient.Custom('ShortName')] loses all [claims|E] on Titles in your Realm"
+ RELEASE_RENOUNCE_CLAIMS_CONDITION: "[CHARACTER.Custom('ShortName')] has no [claims|E] on Titles in your Realm that can be [renounced|E]"
+
+ RELEASE_TAKE_VOWS_VALID: "[recipient.Custom('ShortName')|U] enters into a monastic covenant."
+ take_vows_decline_summary: "If [recipient.Custom('ShortNameNoTooltip')] declines [recipient.GetSheHe] will remain in your [court|E]"
+
+ RELEASE_AS_EXECUTIONER_VALID: "[recipient.Custom('ShortName')|U] fills the Executioner [court_position|E]."
+
+ RELEASE_BANISH_INVALID_TAKE_VOWS_CONDITION: "You cannot banish [TARGET_CHARACTER.Custom('ShortNameNoTooltip')] and order [TARGET_CHARACTER.GetHerHim] to take vows at the same time"
+
+ RELEASE_EXECUTIONER_INVALID_TAKE_VOWS_CONDITION: "You cannot assign [TARGET_CHARACTER.Custom('ShortNameNoTooltip')] as Executioner and order [TARGET_CHARACTER.GetHerHim] to take vows at the same time"
+ RELEASE_BANISH_VALID: "Banish [recipient.Custom('ShortName')] from your [realm|E]."
+
+ RELEASE_TAKE_VOWS_INVALID_NOT_YOUR_FAITH: "[TARGET_CHARACTER.Custom('ShortName')|U] is #bold not#! [CHARACTER.GetFaith.GetAdjective]. To demand $RELEASE_TAKE_VOWS$, you must first $RELEASE_DEMAND_CONVERSION$."
+
+ HIGHLIGHTED_HAS_IMPRISONMENT_REASON: "Highlighted because you have a valid reason to imprison [recipient.Custom('ShortName')]."
+ HIGHLIGHTED_HAS_REVOKE_TITLE_REASON: "Highlighted because you have a valid reason to revoke one of [recipient.Custom('ShortNameNotMePossessive')] [titles|E]."
+
+ MARRIAGE_NOTIFICATION: "I propose a marriage between my [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))] [secondary_actor.Custom('ShortName')] and your [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('ShortName')]."
+ MARRIAGE_NOTIFICATION_ACTOR_PERSONAL: "With your permission, I would like to marry your [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], the [secondary_recipient.Custom('ComplimentAdjective')] [secondary_recipient.Custom('ShortName')]."
+ MARRIAGE_NOTIFICATION_RECIPIENT_PERSONAL: "I would like to offer you my [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))], the [secondary_actor.Custom('ComplimentAdjective')] [secondary_actor.Custom('ShortName')]'s hand in marriage."
+
+ MARRIAGE_NOTIFICATION_MATRI: "I propose a matrilineal marriage between my [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))] [secondary_actor.Custom('ShortName')] and your [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('ShortName')]."
+ MARRIAGE_NOTIFICATION_ACTOR_PERSONAL_MATRI: "With your permission, I would like to matrilineally marry your [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], the [secondary_recipient.Custom('ComplimentAdjective')] [secondary_recipient.Custom('ShortName')]."
+ MARRIAGE_NOTIFICATION_RECIPIENT_PERSONAL_MATRI: "I would like to offer you my [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))], the [secondary_actor.Custom('ComplimentAdjective')] [secondary_actor.Custom('ShortName')]'s hand in matrilineal marriage."
+
+ BETROTHAL_NOTIFICATION: "I propose a betrothal between my [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))] [secondary_actor.Custom('ShortName')] and your [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('ShortName')]."
+ BETROTHAL_NOTIFICATION_ACTOR_PERSONAL: "With your permission, I would like to betroth your [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], the [secondary_recipient.Custom('ComplimentAdjective')] [secondary_recipient.Custom('ShortName')]."
+ BETROTHAL_NOTIFICATION_RECIPIENT_PERSONAL: "I would like to offer you my [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))], the [secondary_actor.Custom('ComplimentAdjective')] [secondary_actor.Custom('ShortName')]'s hand in betrothal."
+
+ BETROTHAL_NOTIFICATION_MATRI: "I propose a matrilineal betrothal between my [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))] [secondary_actor.Custom('ShortName')] and your [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('ShortName')]."
+ BETROTHAL_NOTIFICATION_ACTOR_PERSONAL_MATRI: "With your permission, I would like to matrilineally betroth your [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], the [secondary_recipient.Custom('ComplimentAdjective')] [secondary_recipient.Custom('ShortName')]."
+ BETROTHAL_NOTIFICATION_RECIPIENT_PERSONAL_MATRI: "I would like to offer you my [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))], the [secondary_actor.Custom('ComplimentAdjective')] [secondary_actor.Custom('ShortName')]'s hand in matrilineal betrothal."
+
+ TARGET_WAS_RECENTLY_RANSOMED: "[TARGET_CHARACTER.Custom('ShortName')|U] was recently ransomed"
+
+ I_AM_ALREADY_SCHEMING_AGAINST_THIS_CHARACTER: "You are already scheming against [TARGET_CHARACTER.Custom('ShortName')]"
+
+ I_AM_ALREADY_FRIEND: "[TARGET_CHARACTER.Custom('ShortName')|U] is already your [friend|E]"
+ I_AM_ALREADY_LOVER: "[TARGET_CHARACTER.Custom('ShortName')|U] is already your [lover|E]"
+ I_AM_ALREADY_SOULMATE: "[TARGET_CHARACTER.Custom('ShortName')|U] is already your [soulmate|E]"
+ I_AM_BLOCKED_FROM_SEDUCING_THIS_CHARACTER: "[TARGET_CHARACTER.Custom('ShortName')|U] has made [TARGET_CHARACTER.GetHerHis] disdain for you clear enough already"
+ I_HAVE_SEDUCE_COOLDOWN_ON_THIS_CHARACTER: "You cannot seduce [TARGET_CHARACTER.Custom('ShortName')] again for a while"
+ I_HAVE_ROMANCE_COOLDOWN_ON_THIS_CHARACTER: "You cannot romance [TARGET_CHARACTER.Custom('ShortName')] again for a while"
+ I_HAVE_ALREADY_ROMANCED_THIS_CHARACTER: "You have already successfully romanced [TARGET_CHARACTER.Custom('ShortName')]"
+ GENERAL_SEDUCE_COOLDOWN: "[CHARACTER.Custom('ShortName')|U] does not want to be seduced by anyone"
+ NOT_ATTRACTED_TO_GENDER: "[TARGET_CHARACTER.Custom('ShortName')|U] is not attracted to [CHARACTER.GetWomenMen]"
+
+ ASK_TO_legitimize_bastard_interaction: "I humbly request that you, as the Head of our House, legitimize my [actor.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('ShortName')]."
+ EDUCATE_ACTOR_CHILD_PERSONALLY_REQUEST: "It would please me greatly if you could personally see to little [secondary_actor.Custom('ShortName')]'s education until [secondary_actor.GetSheHe] comes of age."
+
+ EDUCATE_ACTOR_CHILD_REQUEST: "It would please me greatly if you would allow little [secondary_actor.Custom('ShortName')] to be educated by your [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))] until [secondary_actor.GetSheHe] comes of age."
+
+ EDUCATE_RECIPIENT_CHILD_PERSONALLY_REQUEST: "I would like to educate your young [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))] [secondary_recipient.Custom('ShortName')] personally, if that sounds reasonable to you."
+
+ EDUCATE_RECIPIENT_CHILD_REQUEST: "I would like for your young [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))] [secondary_recipient.Custom('ShortName')] to be raised by [secondary_actor.Custom('ShortName')] — a most skillful Guardian!"
+ EDUCATE_RECIPIENT_REQUEST: "In order to ensure that you receive an excellent education, I would like for you to be raised by [secondary_actor.Custom('ShortName')] — a most skillful Guardian!"
+
+ SECONDARY_ACTOR_CAN_MARRY: "[CHARACTER.Custom('ShortName')|U] can and [TARGET_CHARACTER.Custom('ShortName')] can marry"
+ NOT_SECONDARY_ACTOR_CAN_MARRY: "[CHARACTER.Custom('ShortName')|U] and [TARGET_CHARACTER.Custom('ShortName')] can #bold not#! marry"
+ NOT_CHARACTER_IS_CLERGY_AND_CANNOT_MARRY: "[CHARACTER.Custom('ShortName')|U] belongs to the clergy"
+ SECONDARY_RECIPIENT_CAN_MARRY: "[TARGET_CHARACTER.Custom('ShortName')|U] is available to marry [CHARACTER.Custom('ShortName')]"
+ NOT_SECONDARY_RECIPIENT_CAN_MARRY: "[TARGET_CHARACTER.Custom('ShortName')|U] is NOT available to marry [CHARACTER.Custom('ShortName')]"
+ RECIPIENT_CAN_MARRY: "No one in [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] court is available for marriage"
+ NOT_I_RECENTLY_DIVORCED: "You recently divorced [TARGET_CHARACTER.Custom('ShortName')]"
+ SECONDARY_ACTOR_CAN_BETROTH: "[CHARACTER.Custom('ShortName')|U] and [TARGET_CHARACTER.Custom('ShortName')] can get betrothed"
+ NOT_SECONDARY_ACTOR_CAN_BETROTH: "[CHARACTER.Custom('ShortName')|U] and [TARGET_CHARACTER.Custom('ShortName')] #bold cannot#! get betrothed"
+ SECONDARY_RECIPIENT_CAN_BETROTH: "[TARGET_CHARACTER.Custom('ShortName')|U] and [CHARACTER.Custom('ShortName')] can get betrothed"
+ I_SPEND_MY_HOOK_ON_RECIPIENT: "You use your [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ RECIPIENT_IS_MY_SPOUSE: "[TARGET_CHARACTER.Custom('ShortName')|U] is your [spouse|E]"
+
+ I_HAVE_ALREADY_CALLED_THEM: "You have already called [CHARACTER.Custom('ShortName')] to all your wars"
+
+ I_AM_RECIPIENTS_PLAYER_HEIR: "You are the [player_heir|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ IS_PLAYER_HEIR_OF_ACTOR: "[CHARACTER.Custom('ShortName')|U] is [TARGET_CHARACTER.GetShortUINamePossessiveOrMy] [player_heir|E]"
+ THEY_CAN_EDUCATE: "[TARGET_CHARACTER.Custom('ShortName')|U] can educate [CHARACTER.Custom('ShortName')]"
+ NOT_I_HAVE_VALID_VASSAL_TO_TRANSFER: "You do not have any valid [vassal|E] to transfer to [TARGET_CHARACTER.Custom('ShortName')]"
+ NOT_HAS_VASSAL_TO_RETRACT: "[CHARACTER.Custom('ShortName')|U] does not have any [vassals|E] you can retract"
+ IS_AT_WAR_WITH_VASSAL_FIRST: "You are at war with [TARGET_CHARACTER.Custom('ShortName')]"
+ IS_AT_WAR_WITH_VASSAL_THIRD: "[CHARACTER.Custom('ShortName')|U] is at war with [TARGET_CHARACTER.Custom('ShortName')]"
+ IS_AT_WAR_WITH_SUB_VASSAL_FIRST: "You are at war with a vassal of [TARGET_CHARACTER.Custom('ShortName')]"
+ IS_AT_WAR_WITH_SUB_VASSAL_THIRD: "[CHARACTER.Custom('ShortName')|U] is at war with a vassal of [TARGET_CHARACTER.Custom('ShortName')]"
+ INDEPENDENCE_FACTION_AT_WAR: "Independence Faction is at war against [CHARACTER.Custom('ShortName')]"
+ NOT_CAN_ALLY_BECAUSE_LIEGE_OR_VASSALS: "[CHARACTER.Custom('UIName')|U] can't be called as an [ally|E] against [CHARACTER.GetHerHis] [liege|E] or [vassals|E]"
+ CANNOT_DECLARE_WAR_LIEGE_IS_FIGHTING: "[liege|E] is already fighting against [TARGET_CHARACTER.Custom('ShortName')]"
+ CANNOT_DECLARE_WAR_MY_LIEGE_IS_FIGHTING: "Your [liege|E] is already fighting against [TARGET_CHARACTER.Custom('ShortName')]"
+ CANNOT_DECLARE_WAR_VASSAL_IS_FIGHTING: "A [vassal|E] is already fighting against [TARGET_CHARACTER.Custom('ShortName')]"
+ CANNOT_DECLARE_WAR_MY_VASSAL_IS_FIGHTING: "One of your [vassals|E] is already fighting against [TARGET_CHARACTER.Custom('ShortName')] for the area\n\nYou can join the war by using the interaction 'Offer to Join War'"
+ NOT_basic_claimant_found: "[CHARACTER.Custom('ShortName')|U] doesn't have any claimants on any of [CHARACTER.GetHerHis] titles"
+ NOT_basic_capable_claimant_found: "[CHARACTER.Custom('ShortName')|U] doesn't have any valid claimants on any of [CHARACTER.GetHerHis] titles"
+ NOT_claimant_faction_already_exists: "A faction for [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|U] [claim|E] on [TITLE.GetName] already exists"
+ IS_ALREADY_WAR_ENEMY_OF_PRIMARY_ENEMY: "[CHARACTER.Custom('ShortName')|U] [Select_CString( CHARACTER.IsLocalPlayer, 'are', 'is' )] fighting [TARGET_CHARACTER.Custom('ShortName')], in another war"
+ IS_WAR_ENEMY_WITH_ANOTHER_TARGET_WAR_ENEMY: "[CHARACTER.Custom('ShortName')|U] [Select_CString( CHARACTER.IsLocalPlayer, 'are', 'is' )] fighting one of their opponents, in another war"
+
+ HAS_USABLE_HOOK_OR_COUNCIL_RIGHTS_THROUGH_VASSAL_CONTRACT: "[CHARACTER.Custom('ShortName')|U] do not have a usable [hook|E] or contractual $council_rights$"
+ IS_BLOCKED_FROM_BEING_FIRED_FROM_COUNCIL: "[CHARACTER.Custom('ShortName')|U] cannot be fired from [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [council|E]"
+ IS_NOT_BLOCKED_FROM_BEING_FIRED_FROM_COUNCIL: "[CHARACTER.Custom('ShortName')|U] can be fired from [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [council|E]"
+ IS_WAR_ENEMY_WITH_MY_WAR_ALLY: "[CHARACTER.Custom('ShortName')|U] [Select_CString( CHARACTER.IsLocalPlayer, 'are', 'is' )] fighting someone on their side, in another war"
+ VASSALIZATION_TARGET_TOO_BIG: "[CHARACTER.Custom('ShortName')|U] holds too many [counties|E] to be [vassalized_casus_belli|E]"
+ IS_WAR_ALLY_OF_PRIMARY_ENEMY: "[CHARACTER.Custom('ShortName')|U] [Select_CString( CHARACTER.IsLocalPlayer, 'are', 'is' )] on the same side as [TARGET_CHARACTER.Custom('ShortName')], in another war"
+ IS_OF_WRONG_FAITH_FOR_HOLY_WAR: "[TARGET_CHARACTER.Custom('ShortName')|U] needs to be [CHARACTER.GetFaith.GetAdjective] to join you in the [great_holy_war|E]"
+ IS_OF_ATTACKER_FAITH_IN_HOLY_WAR: "[TARGET_CHARACTER.Custom('ShortName')|U] follows the attacking [TARGET_CHARACTER.GetFaith.GetAdjective] [faith|E] and will not join you in this [great_holy_war|E]"
+ IS_WAR_ALLY_OF_ANOTHER_TARGET_ENEMY: "[CHARACTER.Custom('ShortName')|U] [Select_CString( CHARACTER.IsLocalPlayer, 'are', 'is' )] on the same side as one of their opponents, in another war"
+ THEY_CANNOT_CREATE_CADET_BRANCH: "[CHARACTER.Custom('ShortName')|U] cannot create a [cadet_branch|E]"
+ is_married_and_spouse_is_dominant_partner: "[CHARACTER.Custom('ShortName')|U] is in a [matrilineal|E] marriage and [CHARACTER.GetHerHis] partner is employed by their liege"
+ is_married_patrilineally_and_spouse_is_dominant_partner: "[CHARACTER.Custom('ShortName')|U] is in a [patrilineal|E] marriage and [CHARACTER.GetHerHis] partner is employed by their liege"
+ is_escaped_prisoner: "You recently tried to [imprison|E] [CHARACTER.Custom('ShortName')|U]"
+
+ EFFECTS_ON_ME: "Effects on #high [Character.Custom('RegNameNoTooltip')]#!"
+
+ DIPLOMATICALLY_AVAILABLE: "[CHARACTER.Custom('ShortName')|U] is diplomatically available"
+ NOT_DIPLOMATICALLY_AVAILABLE: "[CHARACTER.Custom('ShortName')|U] is not diplomatically available"
+ YEARLY_1010_ABDUCTED: "[CHARACTER.Custom('ShortName')|U] is has been abducted and [CHARACTER.GetHerHis] whereabouts are unknown"
+ YEARLY_1010_ABDUCTOR: "[CHARACTER.Custom('ShortName')|U] has embarked on a secretive mission and [CHARACTER.GetHerHis] whereabouts are unknown"
+
+ BLACKMAIL_NOTIFICATION_SECRET_MURDER: "\nI know that you are [secret_target.Custom('ShortNameNotMePossessive')] real killer!"
+ BLACKMAIL_NOTIFICATION_SECRET_MURDER_ATTEMPT: "\nI have evidence of your attempted murder of [secret_target.Custom('ShortName')]!"
+
+ BLACKMAIL_NOTIFICATION_SECRET_LOVER: "\nI know of your relationship with [secret_target.Custom('ShortName')]."
+
+ BLACKMAIL_NOTIFICATION_SECRET_ILLEGITIMATE_PREGNANCY_OTHER: "\nI know that [secret_target.Custom('ShortName')] is the real father of the child you carry."
+
+ BLACKMAIL_INTERACTION_HUMAN_TT: "Unless [actor.Custom('ShortNameNoTooltip')] [Select_CString( actor.IsLocalPlayer, 'change', 'changes' )] [Select_CString( actor.IsLocalPlayer, 'your', actor.GetHerHis )] mind:"
+
+
+ BLACKMAIL_NOTIFICATION_SECRET_ILLEGITIMATE_CHILD_ACTOR: "\nI know that [father.Custom('ShortName')] is not the real father of [secret_target.Custom('ShortName')], but that I am!"
+ BLACKMAIL_NOTIFICATION_SECRET_ILLEGITIMATE_CHILD_OTHER: "\nI know that [father.Custom('ShortName')] is not the real father of [secret_target.Custom('ShortName')], and that [real_father.Custom('ShortName')] is!"
+ BLACKMAIL_NOTIFICATION_SECRET_ILLEGITIMATE_CHILD_TARGET_ACTOR: "\nI know that you are not the [recipient.Custom('GetDaughterSon')] of [father.Custom('ShortName')], but that you are mine!"
+ BLACKMAIL_NOTIFICATION_SECRET_ILLEGITIMATE_CHILD_TARGET_OTHER: "\nI know that [father.Custom('ShortName')] is not your true father, but that [real_father.Custom('ShortName')] is!"
+ BLACKMAIL_NOTIFICATION_SECRET_UNMARRIED_ILLEGITIMATE_CHILD_ACTOR: "\nI know that I am the true father of [secret_target.Custom('ShortName')]."
+ BLACKMAIL_NOTIFICATION_SECRET_UNMARRIED_ILLEGITIMATE_CHILD_OTHER: "\nI know that [real_father.Custom('ShortName')] is the true father of [secret_target.Custom('ShortName')]."
+
+ BLACKMAIL_NOTIFICATION_SECRET_UNMARRIED_ILLEGITIMATE_CHILD_TARGET_OTHER: "\nI know the identity of your true father, [real_father.Custom('ShortName')]!"
+
+ declaration_of_repentance_interaction_desc_hook: "#weak (or use a [hook|E] on [recipient.Custom('ShortNameNoTooltip')] in place of Prestige)#!"
+
+ excommunicate_interaction_desc: "[recipient.Custom('FirstNamePossessive')] vile misdeeds are poisonous to the [actor.GetFaith.GetAdjective] [faith|E]. [recipient.GetSheHe|U] shall be [excommunicated|E] until [recipient.GetSheHe] repents for [recipient.GetHerHis] wicked ways."
+ excommunicate_interaction_desc.tt: "[recipient.Custom('ShortName')] Excommunicated!"
+ excommunicate_message: "[religious_head.Custom('ShortName')|U] has [excommunicated|E] you!"
+
+ other_excommunicated_message: "[target_character.Custom('ShortName')] has been [excommunicated|E] by [religious_head.Custom('ShortName')]"
+
+ lift_excommunication_interaction_desc: "[recipient.Custom('FirstName')] has sufficiently repented for [recipient.GetHerHis] misdeeds, and will be welcomed back into the [actor.GetFaith.GetAdjective] [faith|E]."
+ lift_excommunication_interaction_desc.tt: "[recipient.Custom('FirstName')] welcomed back into [actor.GetFaithGetName]"
+
+ request_excommunication_interaction_desc: "The vile misdeeds of [secondary_recipient.Custom('TitledFirstName')] have gone unpunished for too long. I will petition [recipient.Custom('TitledFirstName')] to [excommunicate|E] [secondary_recipient.GetHerHim] from the [actor.GetFaith.GetAdjective] [faith|E] and hope that [recipient.Custom('TitledFirstName')] sees reason."
+ request_excommunication_interaction_message: "[requesting_character.Custom('ShortName')|U] somehow managed to convince [religious_head.Custom('ShortName')] to [excommunicate|E] me!"
+
+ EXCOMMUNICATION_OPINION: "[recipient.Custom('ShortName')|U] has a positive Opinion of [secondary_recipient.Custom('ShortName')]: $VALUE|=+0$"
+ EXCOMMUNICATION_VIRTUES: "[secondary_recipient.Custom('ShortName')|U] has [virtuous|E] [traits|E]: $VALUE|=+0$"
+ EXCOMMUNICATION_SINS: "[secondary_recipient.Custom('ShortName')|U] has [sinful|E] [traits|E]: $VALUE|=+0$"
+
+ temporal_condemnation_interaction.tt: "[recipient.Custom('ShortName')] Condemned"
+ TEMPORAL_CONDEMNATION_IS_NOT_SINFUL: "[TARGET_CHARACTER.Custom('ShortName')|U] has no [sinful|E] traits"
+ TEMPORAL_CONDEMNATION_LESS_SINFUL: "You have at least as many [sinful|E] traits as [TARGET_CHARACTER.Custom('ShortName')]"
+ TEMPORAL_CONDEMNATION_AS_SINFUL: "You are as [sinful|E] as [TARGET_CHARACTER.Custom('ShortName')]"
+ TEMPORAL_CONDEMNATION_HAS_BEEN_CONDEMNED: "[TARGET_CHARACTER.Custom('ShortName')|U] has already been condemned for [TARGET_CHARACTER.GetHerHis] [sins|E]"
+ TEMPORAL_CONDEMNATION_LEARNING: "You need at least $VALUE|V0$ [learning|E] to condemn [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [sins|E]"
+ temporal_condemnation_revoke_reason: "Gets a [revoke_title_reason|E] against [recipient.Custom('ShortName')]"
+ temporal_condemnation_got_revoke_reason: "Got a [revoke_title_reason|E] against [recipient.Custom('ShortName')]"
+
+ host_honored_guest_interaction_desc: "You extend your hospitality to [recipient.Custom('ShortName')] and honor them with a ritual celebration."
+
+ host_honored_guest_interaction_recipient.notification: "You were hosted as a guest of honor at [actor.Custom('ShortNameNotMePossessive')] ritual celebration."
+ HOST_HONORED_GUEST_IS_HOSTILE: "[TARGET_CHARACTER.Custom('ShortName')|U] considers your [faith|E] to be $hostility_hostile_tooltippable$"
+ HOST_HONORED_GUEST_IS_EVIL: "[TARGET_CHARACTER.Custom('ShortName')|U] considers your [faith|E] to be $hostility_evil_tooltippable$"
+ HOST_HONORED_GUEST_IS_UNWELL: "[TARGET_CHARACTER.Custom('ShortName')|U] is too sick to visit you"
+ HOST_HONORED_GUEST_IS_COMMANDING: "[TARGET_CHARACTER.Custom('ShortName')|U] is commanding an army"
+ HOST_HONORED_GUEST_IS_IMPRISONED: "[TARGET_CHARACTER.Custom('ShortName')|U] cannot visit you while imprisoned"
+ HOST_HONORED_GUEST_IS_AT_WAR: "You are at war with [TARGET_CHARACTER.Custom('ShortName')]!"
+ HOST_HONORED_GUEST_IS_MY_COURTIER: "[TARGET_CHARACTER.Custom('ShortName')|U] is a permanent resident in your court"
+
+ hof_ask_for_gold_interaction_desc: "Petition [recipient.Custom('ShortName')] to finance my realm with a large sum of [gold|E], in exchange for [piety|E]"
+
+ hof_ask_for_claim_interaction_desc: "Petition [recipient.Custom('ShortName')] to give you a [claim|E] on a [title|e], in exchange for [piety|E]"
+
+ THEY_ARE_YOUR_VASSAL: "[secondary_recipient.Custom('ShortName')|U] is your [vassal|E]: $VALUE|=+0$"
+ THEY_ARE_EXCOMMUNICATED: "[secondary_recipient.Custom('ShortName')|U] is [excommunicated|E]: $VALUE|=+0$"
+ THEY_ARE_FEMALE_WHEN_MALE_IS_PREFERRED: "[secondary_recipient.Custom('ShortName')|U] is a woman: $VALUE|=+0$"
+ THEY_ARE_MALE_WHEN_FEMALE_IS_PREFERRED: "[secondary_recipient.Custom('ShortName')|U] is a man: $VALUE|=+0$"
+ THEY_ARE_A_CHILD: "[secondary_recipient.Custom('ShortName')|U] is a child: $VALUE|=+0$"
+
+ THEY_ARE_LOWER_TIER: "[secondary_recipient.Custom('ShortName')|U] is of a lower [rank|E] than you: $VALUE|=+0$"
+
+ ask_for_conversion_interaction_desc: "Demand that [recipient.Custom('ShortNameNoTooltip')] converts to your [faith|E]\n#weak (From [recipient.GetFaith.GetName] to [actor.GetFaith.GetName])#!"
+
+ ask_for_conversion_decline_notification: "[recipient.Custom('ShortNameNoTooltip')] Refused Conversion"
+ ASK_FOR_CONVERSION_RECIPIENT_LEARNING: "Difference between [recipient.Custom('ShortNameNotMePossessive')] and your [learning_skill|E]: $VALUE|=+0$"
+ ASK_FOR_CONVERSION_RECIPIENT_DIPLOMACY: "Difference between [recipient.Custom('ShortNameNotMePossessive')] and your [diplomacy_skill|E]: $VALUE|=+0$"
+ ASK_FOR_CONVERSION_CAN_NOT_CREATE_CADET_BRANCH: "[recipient.Custom('ShortName')] is unable to create a [cadet_branch|E]: $VALUE|=+0$"
+ ASK_FOR_CONVERSION_CAN_CREATE_CADET_BRANCH: "[recipient.Custom('ShortName')] is able to create a [cadet_branch|E]: $VALUE|=+0$"
+ IS_PROTECTED_VIA_CONTRACT: "[CHARACTER.Custom('ShortNameNotMePossessive')] [feudal_contract] forbids forceful conversion"
+
+ ASK_FOR_CONVERSION_RECIPIENT_IS_ZEALOUS: "[recipient.Custom('ShortName')|U] is [GetTrait('zealous').GetName( GetPlayer )]: $VALUE|=+0$"
+ ASK_FOR_CONVERSION_RECIPIENT_IS_CYNICAL: "[recipient.Custom('ShortName')|U] is [GetTrait('cynical').GetName( GetPlayer )]: $VALUE|=+0$"
+ ASK_FOR_CONVERSION_RECIPIENT_IS_STUBBORN: "[recipient.Custom('ShortName')|U] is [GetTrait('stubborn').GetName( GetPlayer )]: $VALUE|=+0$"
+ ASK_FOR_CONVERSION_RECIPIENT_IS_HERESIARCH: "[recipient.Custom('ShortName')|U] is a [GetTrait('heresiarch').GetName( GetPlayer )]: $VALUE|=+0$"
+ ASK_FOR_CONVERSION_RECIPIENT_IS_HERETIC: "[recipient.Custom('ShortName')|U] is a [GetTrait('heretic').GetName( GetPlayer )]: $VALUE|=+0$"
+ ASK_FOR_CONVERSION_SAME_CULTURE_PRESTIGE_LEVEL: "Both [actor.GetCulture.GetName], and [actor.Custom('ShortName')] are [GetPrestigeLevelName( actor.GetPrestigeLevel )]: $VALUE|=+0$"
+
+ demand_conversion_vassal_ruler_does_not_convert: "[recipient.Custom('ShortName')|U] does not convert"
+ might_ask_for_something_in_return_warning: "@warning_icon! #X [recipient.Custom('ShortName')|U] might ask for something in return#!"
+
+ convert_to_religion_interaction_desc: "Convert to [recipient.Custom('ShortNamePossessiveNoTooltip')] [faith|E]\n#weak (From [actor.GetFaith.GetName] to [recipient.GetFaith.GetName])#!"
+
+ convert_at_war_interaction_desc: "Convert to [recipient.Custom('ShortNamePossessiveNoTooltip')] [faith|E] in order to end the [holy_war|E]\n#weak (From [actor.GetFaith.GetName] to [recipient.GetFaith.GetName])#!"
+
+ is_head_of_religion: "[CHARACTER.Custom('ShortName')|U] will not convert as [CHARACTER.GetSheHe] is the religious head of [CHARACTER.GetHerHis] [faith|E]."
+
+ offer_vassalization_interaction_aibehavior_amkingtier_tt: "[recipient.Custom('ShortName')|U] is a [recipient.Custom('TitleTierName')]: $VALUE|=+0$"
+
+ foreign_realm_court_language_non_spoken_interaction_reason: "[recipient.Custom('ShortNameNotMePossessive')] [realm|E] is Foreign and shares your [court_language|E] #weak (you do not personally know [actor.GetCourtLanguage.GetNameNoTooltip])#!: $VALUE|=+0$"
+ foreign_realm_court_language_spoken_interaction_reason: "[recipient.Custom('ShortNameNotMePossessive')] [realm|E] is Foreign and shares your [court_language|E] #weak (and you personally know [actor.GetCourtLanguage.GetNameNoTooltip])#!: $VALUE|=+0$"
+ offer_fealty_interaction_aibehavior_amkingtier_tt: "You are a [actor.Custom('TitleTierName')]: $VALUE|=+0$"
+ IS_NEIGHBOR_OR_DEJURE_LIEGE: "[TARGET_CHARACTER.Custom('ShortNameNotMe')] must be a neighbor, or the [de_jure|E] liege of your capital"
+
+ CHARACTER_INTERACTION_ALLOW_MARRIAGE: "#T Allow Marriage\n#!#I Click to allow [CHARACTER.Custom('UIName')] to marry on [CHARACTER.GetHerHis] own#!"
+ CHARACTER_INTERACTION_DISALLOW_MARRIAGE: "#T Disallow Marriage\n#!#I Click to forbid [CHARACTER.Custom('UIName')] from marrying on [CHARACTER.GetHerHis] own#!"
+ CHARACTER_INTERACTION_CANT_CONTROL_MARRIAGE: "#T Disallow Marriage\n#!#X [CHARACTER.Custom('UIName')] has been a ruler for over $YEARS|V$ years and can marry on [CHARACTER.GetHerHis] own#!"
+ ASK_FOR_DIVORCE_NOTIFICATION: "My marriage to [secondary_recipient.Custom('ShortName')] is clearly not blessed by [actor.GetFaith.HighGodName]. Will you grant me a divorce?"
+
+ OFFER_RANSOM_PROPOSAL: "I am willing to release [secondary_recipient.Custom('ShortName')] from my care, but freedom does not come for free. Consider my offer."
+
+ PAY_RANSOM_PROPOSAL: "[secondary_recipient.Custom('ShortName')|U] is dear to me. Would you let [secondary_recipient.GetHerHim] go in return for this offer?"
+
+ GRANT_VASSAL_PROPOSAL: "Good tidings! I have decided to make [secondary_actor.Custom('FullName')] your vassal."
+ RETRACT_VASSAL_PROPOSAL: "I have come to the conclusion that, for the greater good of [secondary_actor.GetPrimaryTitle.GetNameNoTierNoTooltip], [recipient.Custom('FullName')] must be placed as a vassal under my direct authority."
+
+ RELIGIOUS_HEAD_REQUEST_EXCOMMUNICATION: "[secondary_recipient.Custom('ShortName')|U] has crossed the line with [secondary_recipient.GetHerHis] latest misdeeds. I petition for you to please excommunicate [secondary_recipient.GetHerHim] so that the world knows we condemn [secondary_recipient.GetHerHis] actions."
+
+ RELIGIOUS_HEAD_ASK_CLAIM: "[secondary_recipient.Custom('ShortName')|U] has not been upholding the values of our faith well, and the [actor.GetFaith.GetAdherentNamePlural] in [target.GetNameNoTier] suffer for it. Would you give me your blessing to liberate those lands from [secondary_recipient.GetHerHis] misguided rule?"
+
+ char_interaction.0010.desc: "[actor.Custom('FirstName')], I think this is the beginning of a beautiful vassalship!"
+
+ char_interaction.0071.desc: "This infighting within the [actor.GetDynastyName] Dynasty is unseemly and must come to an immediate end. As Dynasty Head, I have ordered [recipient.Custom('FullName')] to accept White Peace with you."
+
+ char_interaction.0078.desc_them: "I know we agreed for [ward.Custom('TitledFirstName')] to be educated by me, but here's the thing... I am already very busy with other wards. Sorry."
+ char_interaction.0078.desc: "I know we agreed for [ward.Custom('TitledFirstName')] to be educated by [guardian.Custom('TitledFirstName')], but here's the thing... [guardian.GetSheHe|U] is already very busy with other wards. Sorry."
+
+ char_interaction.0079.desc_them: "I thought we had agreed for you to educate [ward.Custom('TitledFirstName')], but now I hear that you have your hands full with other wards?! For shame."
+ char_interaction.0079.desc: "I thought we had agreed for [guardian.Custom('TitledFirstName')] to educate [ward.Custom('TitledFirstName')], but now I hear that [guardian.GetSheHe] has [guardian.GetHerHis] hands full with other wards?! For shame."
+
+ char_interaction.0090.two_wards.desc: "I fear the education of [ward.Custom('TitledFirstName')] and [ward_2.Custom('TitledFirstName')] at your court no longer suit our needs. They are hereby recalled to our care."
+ char_interaction.0090.one_ward.desc: "I fear the education of [ward.Custom('TitledFirstName')] at your court no longer suits our needs. [ward.GetSheHe|U] is hereby recalled to our care."
+
+ char_interaction.0131.desc: "I find your offer entirely unreasonable. Do the honorable thing and let [secondary_recipient.Custom('ShortName')] go."
+
+
+ char_interaction.0140.desc: "I accept your ransom offer. [secondary_recipient.Custom('ShortName')|U] shall be returned to you forthwith!"
+
+ char_interaction.0141.desc: "I find your ransom offer quite underwhelming. I think I will hold onto [secondary_recipient.Custom('ShortName')] for now."
+
+ char_interaction.0160.a: "Farewell, [recipient.Custom('FirstNameNoTooltip')]..."
+ char_interaction.0160.a.courtier: "Watch your step now, [recipient.Custom('FirstNameNoTooltip')]..."
+
+ char_interaction.0170.desc: "I was woken in the early hours of the morning by two unfamiliar guards. Being led outside, I had no illusions about what was about to happen. As I kneel for [actor.Custom('ShortNameNotMePossessive')] headsman, I experience a moment of serene and perfect clarity."
+
+ char_interaction.0170.desc_devoured: "The door slammed open, and [actor.Custom('ShortNameNotMePossessive')] guards forced me to the floor and pinned me down. Then the [actor.Custom('TitleAsNameNoTooltip')] [actor.GetHerselfHimself] entered, knife in hand and smile wide.\n\nHeedless to my screams [actor.GetSheHe] carves into my flesh with both knife and teeth. Through a haze I find [actor.GetHerHis] face covered in gore — covered in pieces of #EMP me#! — and plead, but as [actor.GetSheHe] chews and swallows with relish, I realize that this is how I die."
+ char_interaction.0170.desc_public: "At the break of dawn I am roughly awoken by two guards manhandling me outside.\n\nAs they lead me towards a raised scaffold in the middle of a gathered crowd my heart sinks, and as [actor.Custom('ShortNameNotMePossessive')] executioner smiles at me and hefts [executioner.GetHerHis] heavy sword I despair.\n\nThe crowd goes quiet as the executioner looms over me where I am forced to kneel, and with a grunt of effort and an almost soundless #EMP swish#! all goes dark."
+ char_interaction.0170.a: "Curse your black soul, [actor.Custom('FirstNameNoTooltip')]!!!"
+
+ char_interaction.0211.desc: "I truly appreciate your generous offer of making [secondary_recipient.Custom('ShortName')] my vassal, but I fear I must decline."
+
+ char_interaction.0220.desc: "I accept your retraction of my vassal, [secondary_recipient.Custom('ShortName')], though I think it unjust."
+
+ char_interaction.0221.desc: "I cannot betray the oath of fealty of [secondary_recipient.Custom('ShortName')]. I will protect my vassal, even if it means breaking the oath I have towards you."
+
+ char_interaction.0230.desc.courtier: "[recipient.Custom('TitledFirstName')] has managed to avoid capture and has fled to the countryside!"
+ char_interaction.0230.desc.courtier_court_chaplain_stayed: "[recipient.Custom('TitledFirstName')] managed to avoid capture, and to say that [recipient.GetSheHe] is displeased with my actions would be to put it mildly."
+
+ char_interaction.0231.desc_prison: "[recipient.Custom('TitledFirstName')] has been apprehended and awaits [recipient.GetHerHis] fate safely locked in my dungeons."
+ char_interaction.0231.desc_house_arrest: "As per my orders, [recipient.Custom('TitledFirstName')] is now to be confined to [recipient.GetHerHis] home. I've posted some of my guards to ensure [recipient.GetSheHe] is compliant with the house arrest."
+
+ char_interaction.0232.desc: "For too long I have suffered indignities at the hands of [actor.Custom('TitledFirstName')]. I will not stand idly by while our liege abuses [actor.GetHerHis] loyal vassals. I urge you to join me in the fight to depose this tyrant."
+
+ marriage_interaction.0010.e_desc: "I, [secondary_recipient.Custom('FirstName')], gladly accept your hand in marriage!"
+ marriage_interaction.0010.mid.a_desc: "\n\nYour [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))], [secondary_actor.Custom('FirstName')], and my [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('FirstName')], will be joined in holy matrimony."
+ marriage_interaction.0010.mid.a_no_acquaintance_desc: "\n\nYour courtier, [secondary_actor.Custom('FirstName')], and my [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('FirstName')], will be joined in holy matrimony."
+ marriage_interaction.0010.mid.b_desc: "\n\nYou will be joined with my [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('FirstName')], in holy matrimony."
+ marriage_interaction.0010.mid.c_desc: "\n\nI will graciously take the hand of your [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))], [secondary_actor.Custom('FirstName')], in holy matrimony."
+ marriage_interaction.0010.mid.c_no_acquaintance_desc: "\n\nI will graciously take the hand of your courtier, [secondary_actor.Custom('FirstName')], in holy matrimony."
+ marriage_interaction.0010.mid.d_desc: "\n\nYour [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))], [secondary_actor.Custom('FirstName')], will be betrothed to my [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('FirstName')]."
+ marriage_interaction.0010.mid.e_desc: "\n\nYou will be betrothed to my [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))], [secondary_recipient.Custom('FirstName')]."
+ marriage_interaction.0010.mid.f_desc: "\n\nI will graciously take the hand of your [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))], [secondary_actor.Custom('FirstName')], when the time comes."
+ marriage_interaction.0010.mid.g_desc: "\n\nYour [actor.Custom2('RelationToMe', SCOPE.sC('secondary_actor'))], [secondary_actor.Custom('FirstName')], and I will be the best couple #EMP ever#!!"
+
+ marriage_interaction.0011.desc: "After due consideration, I must refuse your marriage proposal.\n\n[secondary_actor.Custom('FirstName')] and [secondary_recipient.Custom('FirstName')] are not meant for each other."
+ marriage_interaction.0011.b_desc: "After due consideration, I must refuse your betrothal proposition.\n\n[secondary_actor.Custom('FirstName')] and [secondary_recipient.Custom('FirstName')] are not meant for each other."
+
+ marriage_interaction.0020.desc: "I have decided to break the betrothal between [rejecting_betrothed.Custom('ShortName')] and [rejected_betrothed.Custom('ShortName')]."
+ marriage_interaction.0020.actor_desc: "I have decided to break my betrothal with [rejected_betrothed.Custom('ShortName')]."
+ marriage_interaction.0020.recipient_desc: "I have decided to break your betrothal with [rejecting_betrothed.Custom('ShortName')]."
+
+ marriage_interaction.0030.a_love: "[actor.Custom('FirstName')], no! I love you!"
+
+ marriage_interaction.0042.desc: "I have decided to give you to [recipient.Custom('TitledFirstName')] as [recipient.GetHerHis] concubine."
+ marriage_interaction.0043.desc_concubine: "I have released your concubine from my prison to serve as [recipient.Custom('TitledFirstNamePossessive')] concubine."
+ marriage_interaction.0043.desc_spouse: "I have released your [secondary_actor.Custom('WifeHusband')] from my prison to serve as [recipient.Custom('TitledFirstNamePossessive')] concubine."
+
+ I_HAVE_BEFRIEND_COOLDOWN_ON_THIS_CHARACTER: "You cannot befriend [TARGET_CHARACTER.Custom('ShortName')] again for a long while"
+
+ I_AM_BLOCKED_FROM_SWAYING_THIS_CHARACTER: "You cannot sway [TARGET_CHARACTER.Custom('ShortName')] while [TARGET_CHARACTER.GetSheHe] is irritated at me"
+
+ VASSAL_MODIFY_VASSAL_CONTRACT_CANNOT_INCREASE_OBLIGATION_LEVEL: "You must propose an equal exchange in obligations and [hooks|E], current changes in favor of [SelectLocalization( GreaterThan_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)0.0' ), CHARACTER.Custom('ShortName'), TARGET_CHARACTER.Custom('ShortName') )]: [Abs_CFixedPoint( '(CFixedPoint)$VALUE$' )|V0]"
+
+ vassal_modify_vassal_contract_unnecessary_hook_usage_vassal_favor: "You cannot use a [hook|E] on contract already in favor of the [vassal|E], current changes in favor of [TARGET_CHARACTER.Custom('ShortName')]: $VALUE|V0$"
+
+ revoke_leased_title_interaction_desc: "Retract a [title|E] you currently have [leased|E] to [recipient.Custom('ShortNameNoTooltip')]"
+
+ liege_offer_council_position_powerful: "\nAs an influential [recipient.Custom('TitleAsNameNoTooltip')] it is only fair that you have a voice on my council.\n\nIn recognition of this fact, I hereby offer you the position of [target.GetPositionName] of [actor.GetPrimaryTitle.GetNameNoTierNoTooltip].\n"
+
+ liege_offer_council_position_skilled: "\nYour considerable talents have not gone unnoticed, [recipient.Custom('FirstNameNoTooltip')].\n\nIn recognition of your skills, I would like to offer you the position of [target.GetPositionName] of [actor.GetPrimaryTitle.GetNameNoTierNoTooltip].\n"
+ liege_offer_council_position_fallback: "\nFortune smiles upon you [recipient.Custom('FirstNameNoTooltip')], for I find myself in need of a new [target.GetPositionName] and you are the only candidate I have available.\n\nI trust you will take the job?\n"
+ auto_accept_interaction_ai: "It is in [TARGET_CHARACTER.Custom('FirstNamePossessiveNoTooltip')] best interests"
+
+ OUT_OF_DIPLOMACY_RANGE_TOOLTIP: "#T [CharacterInteractionMenuWindow.GetCharacter.Custom('UIName')] is outside my [diplomatic_range|E]#! \nI won't be able to use most interactions with [CharacterInteractionMenuWindow.GetCharacter.GetHerHim]"
+
+ CHARACTER_IS_A_DYNAST: "[CHARACTER.Custom('ShortName')|U] is a [dynast|E]"
+ CHARACTER_IS_NOT_A_DYNAST: "[CHARACTER.Custom('ShortName')|U] is #bold not#! a [dynast|E]"
+
+ CHARACTER_IS_A_WITCH: "[CHARACTER.Custom('ShortName')|U] is a [GetTrait('witch').GetName( CHARACTER.Self )]"
+
+ CHARCTER_HAS_A_WITCH_SECRET_KNOWN_BY_CHARACTER: "[CHARACTER.Custom('ShortName')|U] has a Witch [secret|E] known by [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARCTER_HAS_A_WITCH_SECRET_NOT_KNOWN_BY_CHARACTER: "[CHARACTER.Custom('ShortName')|U] has a Witch [secret|E] known by [TARGET_CHARACTER.Custom('ShortName')]"
+ HAS_A_WITCH_SECRET_KNOWN_BY_CHARACTER: "Has a Witch [secret|E] known by [TARGET_CHARACTER.Custom('ShortName')]"
+
+ I_ALREADY_HAVE_A_SUPERIOR_HOOK: "You already have a superior hook on [TARGET_CHARACTER.Custom('ShortName')]"
+
+ FORCE_VOTE_IN_SUCCESSION_ELECTION_ALREADY_FORCED: "@warning_icon!#X [CHARACTER.Custom('UINameNotMe')] is already controlling [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] vote in this election#!"
+
+ torture_interaction_desc: "[torture|E] [recipient.Custom('ShortNameNoTooltip')]"
+
+ CHARACTER_WAS_RECENTLY_TORTURED: "[CHARACTER.Custom('ShortName')|U] was recently tortured"
+ 
+ torture_interaction_actor_effects.secrets.tt: "Might discover a [secret|E], if [recipient.Custom('ShortName')] has or knows about one"
+
+ blind_interaction_desc: "Make [recipient.Custom('ShortNameNoTooltip')] [GetTrait('blind').GetName( GetPlayer )]"
+
+ castrate_interaction_desc: "Make [recipient.Custom('ShortNameNoTooltip')] a [GetTrait('eunuch').GetName( GetPlayer )]"
+
+ THEY_ARE_BEING_TORTURED: "[CHARACTER.Custom('ShortName')|U] is being tortured"
+
+ recruit_guest_interaction_desc: "Pay to employ [recipient.Custom('ShortNameNoTooltip')] as your [courtier|E]"
+
+ kick_from_court_interaction_desc: "Turn [recipient.Custom('ShortNameNoTooltip')] into a [wanderer|E] and send [recipient.GetHerHim] away from your [court|E]"
+ kick_from_court_interaction_desc_guest: "Send [recipient.Custom('ShortNameNoTooltip')] away from your [court|E]"
+ kick_from_court_councillor_warning_tt: "@warning_icon!#X [kicked.Custom('ShortName')] is my [kicked.GetCouncilTitle]#!"
+ kick_from_court_claimant_warning_tt: "@warning_icon!#X [kicked.Custom('ShortName')] has a claim on the [kicked_claim.GetName]#!"
+ kick_from_court_commander_warning_tt: "@warning_icon!#X [kicked.Custom('ShortName')] is my [commander|E]#!"
+ kick_from_court_knight_warning_tt: "@warning_icon!#X [kicked.Custom('ShortName')] is my $knight_culture_player$#!"
+ kick_from_court_holds_court_title_warning_tt: "@warning_icon!#X [kicked.Custom('ShortName')] holds a [court_position|E] in my [court|E]#!"
+ KICK_FROM_COURT_INTERACTION_TRAVELLING_FAMILY_INVALID_LOC: "[CHARACTER.Custom('ShortName')|U] would be leaving a close family member behind"
+
+ invite_to_court_interaction_desc: "Invite [recipient.Custom('ShortNameNoTooltip')] to move to your [court|E], where [recipient.GetSheHe] will be your [courtier|E]"
+
+ AI_THEIR_LOVER: "[recipient.Custom('ShortName')] is close to [recipient.GetHerHis] Liege: $VALUE|=+0$"
+ AI_THEIR_FRIEND: "[recipient.Custom('ShortName')] is [recipient.GetHerHis] Liege's Friend: $VALUE|=+0$"
+ AI_THEIR_RIVAL: "[recipient.Custom('ShortName')] is [recipient.GetHerHis] Liege's Rival: $VALUE|=+0$"
+ AI_THEIR_CHILD: "[recipient.Custom('ShortName')] is [recipient.GetHerHis] Liege's Child: $VALUE|=+0$ "
+ AI_THEIR_RELATIVE: "[recipient.Custom('ShortName')] is [recipient.GetHerHis] Liege's Relative: $VALUE|=+0$ "
+ AI_MY_LIEGES_KNIGHT: "[recipient.Custom('ShortName')] is [recipient.GetHerHis] Liege's [recipient.GetLiege.Custom('KnightCulture')]: $VALUE|=+0$"
+ AI_MY_LIEGES_COMMANDER: "[recipient.Custom('ShortName')] is [recipient.GetHerHis] Liege's Commander: $VALUE|=+0$"
+ AI_ON_THE_COUNCIL: "[recipient.Custom('ShortName')] is on the Council: $VALUE|=+0$"
+ AI_COURT_PHYSICIAN: "[recipient.Custom('ShortName')] is [recipient.GetHerHis] Liege's Court Physician: $VALUE|=+0$"
+ AI_LEAVING_MY_SPOUSE: "[recipient.Custom('ShortName')] would be leaving [recipient.GetHerHis] Spouse: $VALUE|=+0$"
+ AI_LEAVING_MY_CHILD: "[recipient.Custom('ShortName')] would be leaving [recipient.GetHerHis] Child: $VALUE|=+0$"
+ AI_MARRIED_MATRILINIALLY: "[recipient.Custom('ShortName')] is in a [matrilineal|E] marriage: $VALUE|=+0$"
+ AI_MARRIED_PATRILINIALLY: "[recipient.Custom('ShortName')] is in a [patrilineal|E] marriage: $VALUE|=+0$"
+
+ AI_YOU_ARE_THE_FATHER: "[secondary_actor.Custom('ShortName')] are the true father: $VALUE|=+0$"
+
+ take_vows_interaction_desc: "Ask [recipient.Custom('ShortNameNoTooltip')] to take the vows and join the clergy"
+
+ character_will_leave_court_holy_order: "Will leave [actor.Custom('TitledFirstNamePossessiveNoTooltip')] court for a Holy Order"
+
+ send_to_holy_order_interaction_desc: "Ask [recipient.Custom('ShortNameNoTooltip')] to take the vows and join a Holy Order"
+
+ was_asked_to_take_vows_recently: "I have already asked [TARGET_CHARACTER.Custom('ShortNameNoTooltip')] to Take the Vows recently"
+
+ perk_alliance_interaction_desc: "Use strategic diplomacy to forge an alliance with [recipient.Custom('TitledFirstNameNoTooltip')] — not with blood, but with words!"
+
+ negotiate_alliance_interaction_desc: "Use the existing blood ties with [recipient.Custom('TitledFirstNamePossessive')] family to forge an alliance with [recipient.GetHerHim]"
+
+ HAS_ALREADY_REJECTED_RENEGOTIATION: "[CHARACTER.Custom('TitledFirstName')] has already rejected an offer of [alliance|E] from you"
+ RULERS_FAMILY_IS_MARRIED_TO_ME: "You are married to [CHARACTER.Custom('TitledFirstNamePossessive')] child, parent, sibling, grandchild, grandparent, uncle, aunt, niece or nephew"
+ RULERS_FAMILY_IS_MARRIED_TO_THEM: "[CHARACTER.Custom('ShortName')] is married to a child, parent, sibling, grandchild, grandparent, uncle, aunt, niece or nephew of [TARGET_CHARACTER.Custom('ShortName')]"
+ RULERS_CHILD_PARENT_SIBLING_IS_MARRIED_TO_OTHER_RULERS: "[CHARACTER.Custom('TitledFirstNamePossessive')] child, parent or sibling is married to a child, parent or sibling of [TARGET_CHARACTER.Custom('ShortName')]"
+
+ negotiate_alliance_effect_tooltip: "[recipient.Custom('TitledFirstName')] and I enter a mutual [alliance|E]"
+
+ char_interaction.0235.tooltip: "[recipient.Custom('TitledFirstNameNoTooltip')] entered a mutual [alliance|E] with you"
+
+ SCHEME_PREDICTION_NAME: "[InteractionSchemeInfo.GetScheme.GetActionName] [InteractionSchemeInfo.GetTarget.Custom('TitledFirstNameNoTooltip')]"
+
+ SCHEME_PREDICTION_AGENT: "[CHARACTER.Custom('ShortName')|U]\n"
+
+ set_primary_spouse_interaction_desc: "Make [recipient.Custom('FirstNameNoTooltip')] your primary spouse. This will allow [recipient.GetHerHim] to join your [council|E] and help run the affairs of the realm."
+
+ designate_heir_interaction_desc: "Choose [recipient.Custom('ShortNameNoTooltip')] as your [designated_heir|E]"
+
+ join_war_interaction_recipient_not_liege: "[CHARACTER.Custom('UIName')] is not your [liege|E]"
+ join_war_interaction_recipient_not_ally: "[CHARACTER.Custom('UIName')] is not your [ally|E]"
+ join_war_interaction_recipient_not_fighting_peasant_faction: "[CHARACTER.Custom('UIName')] is not fighting a [peasant_faction|E]"
+ join_war_interaction_recipient_not_def_GHW: "[CHARACTER.Custom('UIName')] is not defending my [faith|E] in this [holy_war|E]"
+ join_war_interaction_recipient_warring_with_my_liege: "[CHARACTER.Custom('UIName')] is at war with my [liege|E]"
+ join_war_interaction_already_warring_against_enemy: "You are already at war with [CHARACTER.Custom('UINamePossessive')] enemy"
+ join_war_interaction_vassal_war_invalidated_message: "Your [liege|E] [actor.Custom('ShortName')] has joined [invalid_combatant.Custom('ShortNameNotMePossessive')] side in the [target.GetName], and forcibly ended your war with [invalid_combatant.Custom('ShortName')]."
+
+ grant_independence_interaction_desc: "Grant [recipient.Custom('ShortNameNoTooltip')] independence from your realm\n\n@warning_icon!#X [recipient.GetSheHe|U] will no longer be your vassal!#!"
+
+ CHARACTER_IS_MY_DE_JURE_VASSAL: "[TARGET_CHARACTER.Custom('ShortName')|U] is your [de_jure|E] vassal"
+ is_de_jure_vassal_check: "[TARGET_CHARACTER.Custom('ShortName')|U] is a [de_jure|E] vassal"
+ is_at_war_with_another_vassal: "[TARGET_CHARACTER.Custom('ShortName')|U] is at war with one of your other vassals"
+
+ they_have_usable_hook_on_them: "[CHARACTER.Custom('ShortName')|U] has a usable [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ they_do_not_have_usable_hook_on_them: "[CHARACTER.Custom('ShortName')|U] does not have a usable [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ i_do_not_have_usable_hook_on_them: "I do not have a usable [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+
+ blocked_from_remove_councillor: "I am blocked from removing [TARGET_CHARACTER.Custom('ShortName')] from the [council|E] until [GetCurrentDateWithDiff( GetVarTimeRemaining( TARGET_CHARACTER.MakeScope, 'block_fire_councillor') )]"
+
+ character_interaction_against_on_cooldown: "$INTERACTION_NAME$ unavailable on [TARGET_CHARACTER.Custom('ShortName')] until [DATE.GetStringLong]"
+
+ NOT_offer_fealty_neighboring_condition: "[CHARACTER.Custom('ShortName')|U] is neither your de jure liege nor a neighboring liege"
+
+ NOT_character_interaction_within_diplomatic_range: "[TARGET_CHARACTER.Custom('UIName')] is too far away for [CHARACTER.Custom('UIName')] to interact with"
+
+ sun_trial_interaction.success.tt: "[recipient.Custom('TitledFirstName')] perishes in the sun"
+ sun_trial_interaction.failure.tt: "[recipient.Custom('TitledFirstName')] survives the trial"
+ sun_trial_interaction.non_faith_family: "All non-[actor.GetFaith.GetAdjective] [family_members|E] of [recipient.Custom('TitledFirstName')]"
+
+ literalist_debate_interaction.tt_winnings_actor: "If you win, you gain [piety|E] from [recipient.Custom('TitledFirstNameNoTooltip')]"
+
+ mongol_demand_subjugation_interaction_desc: "Demand that [recipient.Custom('ShortNameNoTooltip')] becomes your [vassal|E], under threat of [war|E]"
+ mongol_demand_subjugation_interaction_tooltip: "[recipient.Custom('ShortName')|U] gets a chance to respond"
+
+ set_primary_spouse_interaction_toast_changed: "[recipient.Custom('TitledFirstName')] is now your primary spouse."
+ set_primary_spouse_interaction_toast_removed: "[actor.Custom('TitledFirstName')] removed you as their primary spouse."
+ set_primary_spouse_interaction_toast_added: "[actor.Custom('TitledFirstName')] made you their primary spouse."
+
+ grant_vassal_independence_interaction_toast_desc: "[recipient.Custom('TitledFirstName')] is no longer your [vassal|E]"
+ break_betrothal_hook_toast_desc: "The betrothal between [rejecting_betrothed.Custom('TitledFirstNameNoTooltip')] and [rejected_betrothed.Custom('TitledFirstNameNoTooltip')] is now broken."
+
+ deposed_and_become_wanderer: "[recipient.Custom('ShortNameNoTooltip')] is [deposed|E] and becomes a [wanderer|E]"
+ 
+
+ NOT_TAKE_VOWS_INTERACTION_MARTIAL_EDUCATION: "[TARGET_CHARACTER.Custom('TitledFirstName')] does #bold not#! have a [martial|E] [education_trait|E]"
+
+ gift_artifact_interaction_desc: "Give an Artifact to [recipient.Custom('ShortNameNoTooltip')] to increase [recipient.GetHerHis] opinion of you"
+
+ ARTIFACT_NOT_EQUIPPABLE_REASON: "This artifact is useless to [recipient.Custom('ShortNameNoTooltip')]: $VALUE|=+0$"
+ ARTIFACT_NOT_BENEFIT_REASON: "This artifact is not relevant to [recipient.Custom('ShortNameNoTooltip')]: $VALUE|=+0$"
+ ARTIFACT_MILITARY_STRONGER_REASON: "[recipient.Custom('ShortNamePossessiveNoTooltip')] military is weaker than yours: $VALUE|=+0$"
+ ARTIFACT_MILITARY_WEAKER_REASON: "[recipient.Custom('ShortNamePossessiveNoTooltip')] military is stronger than yours: $VALUE|=+0$"
+ ARTIFACT_BOLDNESS_REASON: "[recipient.Custom('ShortNamePossessiveNoTooltip')] Boldness: $VALUE|=+0$"
+ ARTIFACT_RIVAL_REASON: "[recipient.Custom('ShortNameNoTooltip')] is your rival: $VALUE|=+0$"
+ ARTIFACT_NEMESIS_REASON: "[recipient.Custom('ShortNameNoTooltip')] is your nemesis: $VALUE|=+0$"
+ ARTIFACT_LIEGE_REASON: "You are [recipient.Custom('ShortNamePossessiveNoTooltip')] liege: $VALUE|=+0$"
+ ARTIFACT_CLAIM_REASON: "[recipient.Custom('ShortNameNoTooltip')] could claim the artifact: $VALUE|=+0$"
+
+ demand_artifact_interaction_desc: "Demand an Artifact from [recipient.Custom('ShortNameNoTooltip')] that you have an [artifact_claim|E] on"
+
+ demand_artifact_interaction_notification_refused: "[recipient.Custom('ShortNameNoTooltip')|U] has refused to give you the Artifact!"
+
+ challenge_for_artifact_interaction_desc: "Challenge [recipient.Custom('ShortNameNoTooltip')] to a non-lethal duel for an Artifact you have a claim on"
+
+ abandon_hook_interaction_desc: "Give up the hook you have on [recipient.Custom('ShortNameNoTooltip')] to lose some [stress|E]."
+
+ msg_abandon_hook_interaction_title: "[recipient.Custom('ShortNameNoTooltip')] is forgiven"
+
+ dismiss_strong_hook_interaction_desc: "Force [recipient.Custom('ShortNameNoTooltip')] to give up their [hook|E].\nIt will cost you [prestige|E] and you will gain [tyranny|E]."
+
+ dismiss_weak_hook_interaction_desc: "Force [recipient.Custom('ShortNameNoTooltip')] to give up their [hook|E].\nIt will cost you [prestige|E] and you will gain [tyranny|E]."
+
+ force_duel_criminals_interaction.imprison_punishment.tt: "You will imprison [recipient.Custom('UIName')] if you win."
+ force_duel_criminals_interaction.banish_punishment.tt: "You will banish [recipient.Custom('UIName')] if you win."
+ force_duel_criminals_interaction.execute_punishment.tt: "You will execute [recipient.Custom('UIName')] if you win."
+ force_duel_criminals_interaction.punishment_succeeded.victor.t: "You successfully punished [SCOPE.sC('sc_loser').Custom('UIName')]"
+ force_duel_criminals_interaction.punishment_succeeded.loser.t: "You were punished by [SCOPE.sC('sc_victor').Custom('UIName')]"
+ force_duel_criminals_interaction.punishment_failed.victor.t: "You avoided the punishment from [SCOPE.sC('sc_loser').Custom('UIName')]"
+ force_duel_criminals_interaction.punishment_failed.loser.t: "You failed to punish[SCOPE.sC('sc_victor').Custom('UIName')]"
+
+ divorce_character_dynast_request_interaction_desc: "The time has come for [secondary_actor.Custom('TitledFirstNameNoTooltip')] and [recipient.Custom('TitledFirstNameNoTooltip')] to part ways"
+
+ FOREIGN_PRISONER_RECOVATION_TT: "[TARGET_CHARACTER.Custom('ShortName')] refused your title revocation while imprisoned by someone else"
+
+ sumptuary_debate_interaction.tt_winnings_actor: "If you win, you gain [prestige|E] from [recipient.Custom('TitledFirstNameNoTooltip')]"
+
+ court_amenities_interactions.0001.b_turned_down: "[recipient.Custom('ShortName')|U] has caved at the pressure and changed [recipient.GetHerHis] style choices"
+
+ court_amenities_interactions.0001.desc_intro: "As I wander the halls of [debate_locale.GetNameNoTierNoTooltip] dressed as usual, I am suddenly stopped in the middle of the throne room by none other than [actor.Custom2('MyCharacterIntroduction', ROOT.Char)]! [Custom('RegNameNoTooltip')] presses [actor.GetHerHis] finger hard against my chest."
+
+ court_amenities_interactions.0001.desc_court_position: ""You call that a garb befitting a [recipient.Custom('TitleAsNameNoTooltip')]? You look like a fool! Undress this instance or I shall be forced to call the guards!""
+
+ court_amenities_interactions.0001.desc_outro: "[Custom('RegNameNoTooltip')] has accused me of violating the sumptuary law of [debate_locale.GetName] and has demanded that I submit myself for punishment to the full extent of the law, a social stain and embarrassment I am unlikely to outlive. These charges are obviously trumped up, and I'm sure that if I argue my case well, I can run circles around [actor.Custom('FirstNameNoTooltip')]! I might even manage to secure damages..."
+
+ court_amenities_interactions.0002.desc_won.nakey: "it would appear I won!\n\n As such, [Custom('RegName')] was forced to don the clothes of a commoner and hide their shamefully neglected body from the world."
+
+ court_amenities_interactions.0003.desc_won.nakey: "it would appear I won!\n\n As such, [Custom('RegName')] was forced to don the clothes of a commoner and hide their shamefully neglected body from the world."
+ court_amenities_interactions.0003.desc_won: "it would appear I won!\n\n As such, [Custom('RegName')] was forced to undress down to [actor.GetHerHis] undergarments! All present at court saw [actor.GetHerHim] exactly as [ROOT.Char.GetFaith.CreatorName] created [actor.GetHerHim]!"
+
+ buy_artifact_claim_desc: "Spend [prestige|E] or [piety|E] to gain a [personal_artifact_claim|E] on one of [recipient.Custom('ShortNamePossessiveNoTooltip')] [artifacts|E]"
+
+ sold_artifact_claim.desc: "[actor.Custom('TitledFirstNameNoTooltip')] bought a [personal_artifact_claim|E] on your [artifact|E] [target.GetName]"
+
+ ARTIFACT_DYNASTY_BANNER_REASON: "This is [recipient.Custom('ShortNamePossessiveNoTooltip')] [dynasty|E] Banner: $VALUE|=+0$"

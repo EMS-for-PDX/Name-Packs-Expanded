@@ -1,0 +1,19 @@
+﻿l_english:
+ designate_gruesome_festivals_sacrifice_interaction_desc:0 "Select [recipient.Custom('ShortNameNoTooltip')] as your personal [designate_chief_sacrifice_chief_sacrifice|E] in the upcoming [actor.Custom('GruesomeFestivalName')]"
+
+ remove_designated_gruesome_festivals_sacrifice_interaction_desc:0 "Stop [recipient.Custom('ShortNameNoTooltip')] from being your [designate_chief_sacrifice_chief_sacrifice|E] at the upcoming [actor.Custom('GruesomeFestivalName')]"
+
+ designate_gruesome_festivals_sacrifice_modifier_removed_effect.manual.tt:0 "[actor.Custom('FirstNameNoTooltip')] has shown mercy"
+ designate_gruesome_festivals_sacrifice_modifier_removed_effect.override.tt:0 "[actor.Custom('FirstNameNoTooltip')] has decided on a different sacrifice"
+
+ challenge_to_trial_by_combat_interaction_desc: "Challenge [recipient.Custom('ShortNameNoTooltip')] to a [trial_by_combat|E]"
+
+ fp1_tbc_recipient_will_designate_champion: "[recipient.Custom('TitledFirstNameNoTooltip')] is not a suitable fighter and will designate a skill knight as [recipient.GetHerHis] champion instead"
+ fp1_tbc_winner_actor: "If [actor.Custom('ShortNameNoTooltip')] [Select_CString( actor.IsLocalPlayer, 'are', 'is' )] victorious"
+ fp1_tbc_winner_recipient: "If [recipient.Custom('ShortNameNoTooltip')] [Select_CString( recipient.IsLocalPlayer, 'are', 'is' )] victorious"
+
+ TBC_PROWESS_ACTOR:0 "[actor.Custom('ShortNameNotMePossessive')|U] [prowess|E]: $VALUE|=+0$"
+ TBC_PROWESS_RECIPIENT:0 "[recipient.Custom('ShortNameNotMePossessive')|U] [prowess|E]: $VALUE|=+0$"
+
+ designate_shieldmaiden_interaction_desc: "Offer [recipient.Custom('FirstNameNoTooltip')] the opportunity to fight in your ranks as a [recipient.Custom('ShieldPersonFemaleMale')|U].\n\n#weak A [recipient.Custom('ShieldPersonFemaleMale')|U] can serve as a [actor.Custom('KnightCulture')] or [commander|E], and might even save you from a [GetScheme('murder').GetTypeName] [scheme|E]. Only [close_family|E] members can be offered to become a [recipient.Custom('ShieldPersonFemaleMale')|U].#!"
+ designate_shieldmaiden_interaction_notification:0 "[recipient.Custom('ShortName')] became a [recipient.Custom('ShieldPersonFemaleMale')|U]!"

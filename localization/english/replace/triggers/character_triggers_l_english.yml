@@ -1,0 +1,549 @@
+﻿l_english:
+ THEY_HAVE_GOLD_TRIGGER: "[CHARACTER.Custom('ShortName')|V] has [gold_i]$NUM|V0$"
+ NOT_THEY_HAVE_GOLD_TRIGGER: "[CHARACTER.Custom('ShortName')|V] does #bold not#! have [gold_i]$NUM|V0$"
+
+ PIETY_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|V] has [piety_i]$NUM|V0$"
+ NOT_PIETY_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|V] does not have [piety_i]$NUM|V0$"
+
+ PRESTIGE_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|V] has [prestige_i]$NUM|V0$"
+ NOT_PRESTIGE_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|V] does not have [prestige_i]$NUM|V0$"
+
+ I_AM_PARENT_OF_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')|V] is your child"
+ I_AM_NOT_PARENT_OF_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')|V] is #bold not#! your child"
+ THEY_IS_PARENT_OF_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] [CHARACTER.Custom('MotherFather')]"
+ THEY_IS_NOT_PARENT_OF_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] [CHARACTER.Custom('MotherFather')]"
+ IS_PARENT_OF: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] parent"
+ IS_NOT_PARENT_OF: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] parent"
+
+ I_AM_CHILD_OF_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')|V] is your parent"
+ I_AM_NOT_CHILD_OF_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')|V] is #bold not#! your parent"
+ THEY_IS_CHILD_OF_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] [CHARACTER.Custom('DaughterSon')]"
+ THEY_IS_NOT_CHILD_OF_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] [CHARACTER.Custom('DaughterSon')]"
+ IS_CHILD_OF: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] child"
+ IS_NOT_CHILD_OF: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] child"
+
+ I_AM_SIBLING_OF_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')|V] is your sibling"
+ I_AM_NOT_SIBLING_OF_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')|V] is #bold not#! your sibling"
+ THEY_IS_SIBLING_OF_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] [CHARACTER.Custom('SisterBrother')]"
+ THEY_IS_NOT_SIBLING_OF_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] [CHARACTER.Custom('SisterBrother')]"
+ IS_SIBLING_OF: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] sibling"
+ IS_NOT_SIBLING_OF: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|V] sibling"
+
+ IS_COUNCILLOR_OF_TRIGGER: "Is a Councillor of [TARGET_CHARACTER.Custom('UIName')]"
+ NOT_IS_COUNCILLOR_OF_TRIGGER: "Is #bold not#! a Councillor of [TARGET_CHARACTER.Custom('UIName')]"
+ I_AM_COUNCILLOR_OF_TRIGGER: "You are a Councillor of [TARGET_CHARACTER.Custom('UIName')]"
+ NOT_I_AM_COUNCILLOR_OF_TRIGGER: "You are #bold not#! a Councillor of [TARGET_CHARACTER.Custom('UIName')]"
+ THEY_ARE_COUNCILLOR_OF_TRIGGER: "[CHARACTER.Custom('UIName')] is a Councillor of [TARGET_CHARACTER.Custom('UIName')]"
+ NOT_THEY_ARE_COUNCILLOR_OF_TRIGGER: "[CHARACTER.Custom('UIName')] is #bold not#! a Councillor of [TARGET_CHARACTER.Custom('UIName')]"
+
+ THEY_HAVE_TRAIT_TRIGGER: "[CHARACTER.Custom('ShortName')|U] has the Trait: [TRAIT.GetName( CHARACTER.Self )|L]"
+ NOT_THEY_HAVE_TRAIT_TRIGGER: "[CHARACTER.Custom('ShortName')|U] does #bold not#! have the Trait: [TRAIT.GetName( CHARACTER.Self )|L]"
+
+ THEY_HAVE_TRAIT_GROUP_TRIGGER: "[CHARACTER.Custom('ShortName')|U] has a Trait from the [TRAIT_GROUP.GetName] group"
+ NOT_THEY_HAVE_TRAIT_GROUP_TRIGGER: "[CHARACTER.Custom('ShortName')|U] does #bold not#! have a Trait from the [TRAIT_GROUP.GetName] group"
+
+ THEY_HAVE_CHARACTER_MODIFIER_TRIGGER: "[CHARACTER.Custom('ShortName')|U] has Modifier: $MODIFIER|V$"
+ NOT_THEY_HAVE_CHARACTER_MODIFIER_TRIGGER: "[CHARACTER.Custom('ShortName')|U] does #bold not#! have Modifier: $MODIFIER|V$""
+
+ HAS_OPINION: "Has at least $NUM|V$ [opinion|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ I_HAVE_OPINION: "You have at least $NUM|V$ [opinion|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ THEY_HAVE_OPINION: "[CHARACTER.Custom('ShortName')|U] has at least $NUM|V$ [opinion|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+
+ I_DO_NOT_HAVE_OPINION: "Your opinion of [TARGET_CHARACTER.Custom('ShortName')] is less than $NUM|V$"
+ THEY_DO_NOT_HAVE_OPINION: "[CHARACTER.Custom('ShortNameNotMePossessive')] opinion of [TARGET_CHARACTER.Custom('ShortName')] is less than $NUM|V$"
+
+ HAS_REVERSE_OPINION_MODIFIER_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')] Has Opinion Modifier: $MODIFIER|V$"
+
+ THEY_HAVE_COUNCIL_POSITION_TRIGGER: "[CHARACTER.Custom('UIName')] has the Council position [COUNCIL_POSITION_TYPE.GetName]"
+ NOT_THEY_HAVE_COUNCIL_POSITION_TRIGGER: "[CHARACTER.Custom('UIName')] do #bold not#! have the Council position [COUNCIL_POSITION_TYPE.GetName]"
+
+ THEY_IN_CIVIL_WAR: "[CHARACTER.Custom('UIName')] is in a Civil War"
+ NOT_THEY_IN_CIVIL_WAR: "[CHARACTER.Custom('UIName')] is #bold not#! in a Civil War"
+
+ THEY_IN_ONGOING_GREAT_HOLY_WAR: "[CHARACTER.Custom('UIName')] is in an ongoing [great_holy_war|E]"
+ NOT_THEY_IN_ONGOING_GREAT_HOLY_WAR: "[CHARACTER.Custom('UIName')] is #bold not#! in an ongoing [great_holy_war|E]"
+
+ THEY_ARE_COUNCILLOR_TRIGGER: "[CHARACTER.Custom('UIName')] is a Councillor"
+ NOT_THEY_ARE_COUNCILLOR_TRIGGER: "[CHARACTER.Custom('UIName')] is #bold not#! a Councillor"
+
+ THEY_ARE_NORMAL_COUNCILLOR_TRIGGER: "[CHARACTER.Custom('UIName')] is a normal Councillor"
+ NOT_THEY_ARE_NORMAL_COUNCILLOR_TRIGGER: "[CHARACTER.Custom('UIName')] is #bold not#! a normal Councillor"
+
+ THEY_ARE_SPECIAL_COUNCILLOR_TRIGGER: "[CHARACTER.Custom('UIName')] is a special Councillor"
+ NOT_THEY_ARE_SPECIAL_COUNCILLOR_TRIGGER: "[CHARACTER.Custom('UIName')] is #bold not#! a special Councillor"
+
+ THEY_ARE_PERFORMING_COUNCIL_TASK_TRIGGER: "[CHARACTER.Custom('UIName')] is performing [COUNCIL_TASK_TYPE.GetName]"
+ NOT_THEY_ARE_PERFORMING_COUNCIL_TASK_TRIGGER: "[CHARACTER.Custom('UIName')] is #bold not#! performing [COUNCIL_TASK_TYPE.GetName]"
+
+ THEY_HAVE_FREE_COUNCIL_SLOT_TRIGGER: "[CHARACTER.Custom('UIName')] has a free [council|E] position"
+ NOT_THEY_HAVE_FREE_COUNCIL_SLOT_TRIGGER: "[CHARACTER.Custom('UIName')] does #bold not#! have a free [council|E] position"
+
+ THEY_AT_WAR_WITH_LIEGE: "[CHARACTER.Custom('UIName')] is at War with their Liege"
+ NOT_THEY_AT_WAR_WITH_LIEGE: "[CHARACTER.Custom('UIName')] is #bold not#! at War with their Liege"
+
+ THEY_ARE_MARRIED_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is married"
+ NOT_THEY_ARE_MARRIED_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! married"
+
+ IS_OPPOSITE_SEX_TRIGGER: "Is of the opposite gender of [TARGET_CHARACTER.Custom('ShortName')|V]"
+ NOT_IS_OPPOSITE_SEX_TRIGGER: "Is of the same gender as [TARGET_CHARACTER.Custom('ShortName')|V]"
+ I_AM_OPPOSITE_SEX_TRIGGER: "You are of the opposite gender of [TARGET_CHARACTER.Custom('ShortName')|V]"
+ NOT_I_AM_OPPOSITE_SEX_TRIGGER: "You are of the same gender as [TARGET_CHARACTER.Custom('ShortName')|V]"
+ THEY_ARE_OPPOSITE_SEX_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is of the opposite gender of [TARGET_CHARACTER.Custom('ShortName')|V]"
+ NOT_THEY_ARE_OPPOSITE_SEX_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is of the same gender as [TARGET_CHARACTER.Custom('ShortName')|V]"
+
+ THEY_ARE_LANDED_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is landed"
+ NOT_THEY_ARE_LANDED_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! landed"
+
+ THEY_ARE_RULER_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is a ruler"
+ NOT_THEY_ARE_RULER_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! a ruler"
+
+ THEY_ARE_THEOCRATIC_LESSEE_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is [leasing|E] holdings from their [liege|E]"
+ NOT_THEY_ARE_THEOCRATIC_LESSEE_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! [leasing|E] holdings from their [liege|E]"
+
+ THEY_ARE_CLAIMANT_TRIGGER: "[CHARACTER.Custom('ShortName')|U] is a Claimant"
+ NOT_THEY_ARE_CLAIMANT_TRIGGER: "[CHARACTER.Custom('ShortName')|U] is #bold not#! a Claimant"
+
+ THEY_HAVE_CLAIM_TRIGGER: "[CHARACTER.Custom('ShortName')|U] has a Claim on this County"
+
+ THEY_HAVE_STRONG_CLAIM_TRIGGER: "[CHARACTER.Custom('ShortName')|U] has a [pressed_claim|E]"
+
+ THEY_ARE_ALLOWED_MORE_SPOUSES_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is allowed to have more spouses"
+ NOT_THEY_ARE_ALLOWED_MORE_SPOUSES_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! allowed to have more spouses"
+
+ THEY_ARE_ADULT_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is an Adult"
+ NOT_THEY_ARE_ADULT_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is a Child"
+
+ THEY_ARE_BETROTHED_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is betrothed"
+ NOT_THEY_ARE_BETROTHED_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! betrothed"
+
+ CHARACTER_IS_COMMANDING_AN_ARMY: "[CHARACTER.Custom('ShortName')|V] is commanding an army"
+
+ CHARACTER_IS_NOT_COMMANDING_AN_ARMY: "[CHARACTER.Custom('ShortName')|V] is #bold not#! commanding an army"
+
+ CHARACTER_IS_IN_AN_ARMY: "[CHARACTER.Custom('ShortName')|V] is in an army"
+
+ CHARACTER_IS_NOT_IN_AN_ARMY: "[CHARACTER.Custom('ShortName')|V] is #bold not#! in an army"
+
+ THIRD_IS_IMPRISONED_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is imprisoned"
+ THIRD_NOT_IS_IMPRISONED_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! imprisoned"
+ I_AM_IMPRISONED_BY_TRIGGER: "You are imprisoned by [TARGET_CHARACTER.Custom('ShortName')]"
+ I_AM_NOT_IMPRISONED_BY_TRIGGER: "You are #bold not#! imprisoned by [TARGET_CHARACTER.Custom('ShortName')]"
+ THEY_IS_IMPRISONED_BY_TRIGGER: "[CHARACTER.Custom('ShortName')|U] is imprisoned by [TARGET_CHARACTER.Custom('ShortName')]"
+ THEY_IS_NOT_IMPRISONED_BY_TRIGGER: "[CHARACTER.Custom('ShortName')|U] is #bold not#! imprisoned by [TARGET_CHARACTER.Custom('ShortName')]"
+ IS_IMPRISONED_BY_TRIGGER: "Is imprisoned by [TARGET_CHARACTER.Custom('ShortName')]"
+ IS_NOT_IMPRISONED_BY_TRIGGER: "Is #bold not#! imprisoned by [TARGET_CHARACTER.Custom('ShortName')]"
+
+ I_IMPRISONED_THEM_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')|V] is imprisoned by you"
+
+ YOU_HAVE_BEEN_CAUGHT_TRYING_TO_MURDER_TARGET: "You have recently been caught trying to murder [TARGET_CHARACTER.Custom('ShortName')]"
+
+ YOU_HAVE_BEEN_CAUGHT_TRYING_TO_ELOPE_WITH_TARGET: "You have recently been caught trying to elope with [TARGET_CHARACTER.Custom('ShortName')]"
+ YOU_HAVE_BEEN_CAUGHT_TRYING_TO_STEAL_ARTIFACT_FROM_TARGET: "You have recently been caught trying to steal an artifact from [TARGET_CHARACTER.Custom('ShortName')]"
+ YOU_HAVE_RECENTLY_STOLEN_ARTIFACT_FROM_TARGET: "You have recently stolen an artifact from [TARGET_CHARACTER.Custom('ShortName')]"
+
+ THEY_HAVE_TRAIT_WITH_CAN_NOT_MARRY_FLAG_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! allowed to marry"
+ NOT_THEY_HAVE_TRAIT_WITH_CAN_NOT_MARRY_FLAG_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is allowed to marry"
+
+ THEY_HAVE_TRAIT_WITH_CAN_MURDER_OWN_CHILDREN_FLAG_TRIGGER: "[CHARACTER.Custom('ShortName')|V] can start [hostile_schemes|E] against their own children"
+ NOT_THEY_HAVE_TRAIT_WITH_CAN_MURDER_OWN_CHILDREN_FLAG_TRIGGER: "[CHARACTER.Custom('ShortName')|V] can #bold not#! start [hostile_schemes|E] against their own children"
+
+ THEY_HAVE_COUCILLOR_FOR_SKILL_TRIGGER: "[CHARACTER.Custom('ShortName')|V] has a $SKILL|V$ Councillor"
+ NOT_THEY_HAVE_COUCILLOR_FOR_SKILL_TRIGGER: "[CHARACTER.Custom('ShortName')|V] does #bold not#! have a $SKILL|V$ Councillor"
+
+ THEY_ARE_AT_WAR_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is at [war|E]"
+ NOT_THEY_ARE_AT_WAR_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! at [war|E]"
+
+ THEY_ARE_HOUSE_HEAD: "[CHARACTER.Custom('ShortName')|V] is a [house_head|E]"
+ NOT_THEY_ARE_HOUSE_HEAD: "[CHARACTER.Custom('ShortName')|V] is not a [house_head|E]"
+
+ THEY_ARE_IN_ACTIVITY_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is at an [activity|E] already"
+
+ THEY_HAVE_CHARACTER_FLAG_TRIGGER: "[CHARACTER.Custom('ShortName')|V] has the $FLAG|V$ flag"
+ NOT_THEY_HAVE_CHARACTER_FLAG_TRIGGER: "[CHARACTER.Custom('ShortName')|V] does #bold not#! have the $FLAG|V$ flag"
+
+ I_HAVE_A_HOOK_ON: "You have a [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ I_DO_NOT_HAVE_A_HOOK_ON: "You do #bold not#! have a [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ HAS_A_HOOK_ON: "Has a [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_HAS_A_HOOK_ON: "[CHARACTER.Custom('ShortName')|U] has a [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_DOES_NOT_HAVE_A_HOOK_ON: "[CHARACTER.Custom('ShortName')|U] does #bold not#! have a [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ DOES_NOT_HAVE_A_HOOK_ON: "Does #bold not#! have a [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+
+ HAS_HOOK_FROM_SECRET_THIRD: "[CHARACTER.Custom('UIName')] has a [hook|E] based on [SECRET.GetName]"
+
+ THEY_HAVE_REALM_LAW_TRIGGER: "[CHARACTER.Custom('UIName')] has the Law [LAW.GetName|V]"
+ NOT_THEY_HAVE_REALM_LAW_TRIGGER: "[CHARACTER.Custom('UIName')] does NOT have the Law [LAW.GetName|V]"
+
+ CLAIMANT_ALREADY_PRESSING_THEIR_CLAIM_THIRD: "[CHARACTER.Custom('ShortName')] is already at [war|E] pressing [CHARACTER.GetHerHis] [claim|E] on [TARGET_TITLE.GetName]"
+
+ CLAIMANT_IS_BLIND_THIRD: "[CHARACTER.Custom('ShortName')] is blind"
+
+ CLAIM_TARGET_POSITION_IS_WEAK_THIRD: "[CHARACTER.Custom('ShortName')] is not [TARGET_CHARACTER.Custom( 'weak_claim_requirements' )], which is necessary for this Claim to be pressed"
+
+ CLAIMANT_IS_ATTACKER_OR_SAME_DYNASTY: "[TARGET_CHARACTER.Custom('ShortName')] is not the [claimant|E], nor belongs to the claimant's [dynasty|E]"
+
+ BYZANTINE_CLAIMANT_IS_DISFIGURED: "[CHARACTER.Custom('ShortName')] is disfigured or deformed"
+
+ BYZANTINE_CLAIMANT_IS_CELIBATE: "[CHARACTER.Custom('ShortName')] must be capable of producing offspring"
+
+ IS_THEOCRATIC_COURT_CHAPLAIN: "[CHARACTER.Custom('ShortName')] is a [GetFaithDoctrine('doctrine_theocracy_temporal').GetBaseName] [CHARACTER.GetCouncilTitle]"
+ NOT_IS_THEOCRATIC_COURT_CHAPLAIN: "[CHARACTER.Custom('ShortName')] is NOT a [GetFaithDoctrine('doctrine_theocracy_temporal').GetBaseName] [CHARACTER.GetCouncilTitle]"
+
+ PARTITION_PRIMARY_HEIR_UNFAIR: "Under [GetLaw('partition_succession_law').GetName] your [realm_heir|E] [CHARACTER.Custom('ShortName')] cannot be given a title [CHARACTER.GetSheHe] does not stand to inherit"
+
+ THEY_HAVE_FAITH_GROUP_TRIGGER: "[CHARACTER.Custom('ShortName')|U] is of the [FAITH.GetName] [faith|E]"
+ THEY_DO_NOT_HAVE_FAITH_GROUP_TRIGGER: "[CHARACTER.Custom('ShortName')|U] is NOT of the [FAITH.GetName] [faith|E]"
+
+ THEY_HAVE_RELIGION_GROUP_TRIGGER: "[CHARACTER.Custom('ShortName')|U] is of a [RELIGION.GetName] [faith|E]"
+ THEY_DO_NOT_HAVE_RELIGION_GROUP_TRIGGER: "[CHARACTER.Custom('ShortName')|U] is NOT of a [RELIGION.GetName] [faith|E]"
+
+ CHARACTER_IS_INDEPENDENT_RULER_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is an [independent|E] Ruler"
+
+ CHARACTER_IS_NOT_INDEPENDENT_RULER_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! an [independent|E] Ruler"
+
+ THEIR_PRESTIGE_LEVEL_IS_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [prestige_level|E] is [GetPrestigeLevelName( '(int32)$NUM$' )] ($NUM|V0$) or above"
+
+ THEIR_PRESTIGE_LEVEL_IS_NOT_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [prestige_level|E] is less than [GetPrestigeLevelName( '(int32)$NUM$' )] ($NUM|V0$)"
+
+ THEIR_PRESTIGE_LEVEL_IS_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [prestige_level|E] is less than [GetPrestigeLevelName( '(int32)$NUM$' )] ($NUM|V0$)"
+
+ THEIR_PRESTIGE_LEVEL_IS_NOT_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [prestige_level|E] is [GetPrestigeLevelName( '(int32)$NUM$' )] ($NUM|V0$) or above"
+
+ THEIR_PIETY_LEVEL_IS_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [piety_level|E] is [GetPietyLevelName( '(int32)$NUM$' )] ($NUM|V0$) or above"
+
+ THEIR_PIETY_LEVEL_IS_NOT_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [piety_level|E] is less than [GetPietyLevelName( '(int32)$NUM$' )] ($NUM|V0$)"
+
+ THEIR_PIETY_LEVEL_IS_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [piety_level|E] is less than [GetPietyLevelName( '(int32)$NUM$' )] ($NUM|V0$)"
+
+ THEIR_PIETY_LEVEL_IS_NOT_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [piety_level|E] is [GetPietyLevelName( '(int32)$NUM$' )] ($NUM|V0$) or above"
+
+ IS_VASSAL_CONTRACT_BLOCKED_FROM_MODIFICATION_THIRD: "[CHARACTER.Custom('ShortNameNotMePossessive')] [obligations|E] have already been changed"
+
+ CAN_MODIFY_VASSAL_CONTRACT_THIRD: "[CHARACTER.Custom('ShortNameNotMePossessive')] [feudal_contract|E] can be changed"
+ NOT_CAN_MODIFY_VASSAL_CONTRACT_THIRD: "[CHARACTER.Custom('ShortNameNotMePossessive')] [feudal_contract|E] #bold cannot#! be changed"
+
+ THEY_IS_RELIGIOUS_HEAD: "[CHARACTER.Custom('ShortName')|U] is the [CHARACTER.GetFaith.GetAdjective] Religious Head"
+ NOT_THEY_IS_RELIGIOUS_HEAD: "[CHARACTER.Custom('ShortName')|U] is #bold not#! the [CHARACTER.GetFaith.GetAdjective] Religious Head"
+
+ THEIR_DIPLOMACY_IS_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [diplomacy|E] is [diplomacy_i]$NUM|V0$ or above"
+
+ THEIR_DIPLOMACY_IS_NOT_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [diplomacy|E] is less than [diplomacy_i]$NUM|V0$"
+
+ THEIR_DIPLOMACY_IS_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [diplomacy|E] is less than [diplomacy_i]$NUM|V0$"
+
+ THEIR_DIPLOMACY_IS_NOT_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [diplomacy|E] is [diplomacy_i]$NUM|V0$ or above"
+
+ THEIR_MARTIAL_IS_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [martial|E] is [martial_i]$NUM|V0$ or above"
+
+ THEIR_MARTIAL_IS_NOT_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [martial|E] is less than [martial_i]$NUM|V0$"
+
+ THEIR_MARTIAL_IS_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [martial|E] is less than [martial_i]$NUM|V0$"
+
+ THEIR_MARTIAL_IS_NOT_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [martial|E] is [martial_i]$NUM|V0$ or above"
+
+ THEIR_STEWARDSHIP_IS_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [stewardship|E] is [stewardship_i]$NUM|V0$ or above"
+
+ THEIR_STEWARDSHIP_IS_NOT_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [stewardship|E] is less than [stewardship_i]$NUM|V0$"
+
+ THEIR_STEWARDSHIP_IS_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [stewardship|E] is less than [stewardship_i]$NUM|V0$"
+
+ THEIR_STEWARDSHIP_IS_NOT_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [stewardship|E] is [stewardship_i]$NUM|V0$ or above"
+
+ THEIR_INTRIGUE_IS_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [intrigue|E] is [intrigue_i]$NUM|V0$ or above"
+
+ THEIR_INTRIGUE_IS_NOT_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [intrigue|E] is less than [intrigue_i]$NUM|V0$"
+
+ THEIR_INTRIGUE_IS_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [intrigue|E] is less than [intrigue_i]$NUM|V0$"
+
+ THEIR_INTRIGUE_IS_NOT_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [intrigue|E] is [intrigue_i]$NUM|V0$ or above"
+
+ THEIR_LEARNING_IS_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [learning|E] is [learning_i]$NUM|V0$ or above"
+
+ THEIR_LEARNING_IS_NOT_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [learning|E] is less than [learning_i]$NUM|V0$"
+
+ THEIR_LEARNING_IS_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [learning|E] is less than [learning_i]$NUM|V0$"
+
+ THEIR_LEARNING_IS_NOT_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [learning|E] is [learning_i]$NUM|V0$ or above"
+
+ THEIR_PROWESS_IS_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [prowess|E] is [prowess_i]$NUM|V0$ or above"
+
+ THEIR_PROWESS_IS_NOT_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [prowess|E] is less than [prowess_i]$NUM|V0$"
+
+ THEIR_PROWESS_IS_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [prowess|E] is less than [prowess_i]$NUM|V0$"
+
+ THEIR_PROWESS_IS_NOT_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [prowess|E] is [prowess_i]$NUM|V0$ or above"
+
+ CAN_ATTACK_IN_HIERARCHY_GLOBAL: "Can attack [TARGET_CHARACTER.Custom('ShortName')] as [TARGET_CHARACTER.GetSheHe] is [independent|E], the [liege|E], or under the same [liege|E]."
+ CAN_NOT_ATTACK_IN_HIERARCHY_GLOBAL: "Can #bold not#! attack [TARGET_CHARACTER.Custom('ShortName')] as [TARGET_CHARACTER.GetSheHe] is not [independent|E], the [liege|E], or under the same [liege|E]."
+ CAN_ATTACK_IN_HIERARCHY_FIRST_THIRD: "[CHARACTER.Custom('ShortName')|U] can attack [TARGET_CHARACTER.Custom('ShortName')] as [TARGET_CHARACTER.GetSheHe] is [independent|E], the [liege|E], or under the same [liege|E]"
+ CAN_NOT_ATTACK_IN_HIERARCHY_FIRST_THIRD: "[CHARACTER.Custom('ShortName')|U] can #bold not#! attack [TARGET_CHARACTER.Custom('ShortName')] as [TARGET_CHARACTER.GetSheHe] is not [independent|E], the [liege|E], or under the same [liege|E]"
+
+ CHARACTER_HAS_NUM_BAD_CONGENITAL_TRAITS: "[CHARACTER.Custom('ShortName')|U] has $NUM|V0$ bad [congenital|E] traits"
+
+ CHARACTER_HAS_NUM_GOOD_CONGENITAL_TRAITS: "[CHARACTER.Custom('ShortName')|U] has $NUM|V0$ good [congenital|E] traits"
+
+ NUMBER_OF_TRAITS_TRIGGER: "Number of traits that [CHARACTER.Custom('ShortName')|U] has: $NUM|V0$"
+ NUMBER_OF_TRAITS_IN_COMMON_WITH_TARGET_TRIGGER: "Number of traits in common with [TARGET_CHARACTER.Custom('ShortName')|U]: $NUM|V0$"
+ CHARACTER_HAS_NUM_OPPOSING_TRAITS: "[CHARACTER.Custom('ShortName')|U] has $NUM|V0$ opposing [traits|E]"
+ CHARACTER_HAS_NUM_OPPOSING_TRAITS_ON_TARGET: "Number of opposing traits with [TARGET_CHARACTER.Custom('ShortName')|U]: $NUM|V0$"
+ CHARACTER_HAS_NUM_SAME_TRAITS: "[CHARACTER.Custom('ShortName')|U] has $NUM|V0$ [traits|E] in common"
+
+ THEY_HAVE_SUB_REALM_SIZE_TRIGGER: "[CHARACTER.Custom('ShortNameNotMePossessive')] [realm_size|E] is $NUM|V$ or more #weak ($CURRENT_VALUE$)#!"
+
+ THEY_HOLD_THREE_OR_MORE_DUCHY_TITLES_TRIGGER: "[CHARACTER.Custom('ShortName')|U] holds 3 or more [duchies|E]"
+
+ THEY_HOLD_THREE_OR_MORE_KINGDOM_TITLES_TRIGGER: "[CHARACTER.Custom('ShortName')|U] holds 3 or more [kingdoms|E]"
+
+ HAS_A_STRONG_HOOK_ON_CHARACTER: "Has a [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_HAS_A_STRONG_HOOK_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] has a [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ I_HAVE_A_STRONG_HOOK_ON_CHARACTER: "You have a [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ DOES_NOT_HAVE_A_STRONG_HOOK_ON_CHARACTER: "Does #bold not#! have a [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_DOES_NOT_HAVE_A_STRONG_HOOK_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] does not have a [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ I_DO_NOT_HAVE_A_STRONG_HOOK_ON_CHARACTER: "You do #bold not#! have a [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+
+ HAS_AN_AVAILABLE_STRONG_HOOK_ON_CHARACTER: "Has an available [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_HAS_AN_AVAILABLE_STRONG_HOOK_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] has an available [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ I_HAVE_AN_AVAILABLE_STRONG_HOOK_ON_CHARACTER: "You have an available [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ DOES_NOT_HAVE_AN_AVAILABLE_STRONG_HOOK_ON_CHARACTER: "Does #bold not#! have an available [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_DOES_NOT_HAVE_AN_AVAILABLE_STRONG_HOOK_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] does #bold not#! have an available [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ I_DO_NOT_HAVE_AN_AVAILABLE_STRONG_HOOK_ON_CHARACTER: "You do #bold not#! have an available [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+
+ HAS_AN_AVAILABLE_HOOK_ON_CHARACTER: "Has an available [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_HAS_AN_AVAILABLE_HOOK_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] has an available [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ I_HAVE_AN_AVAILABLE_HOOK_ON_CHARACTER: "You have an available [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ DOES_NOT_HAVE_AN_AVAILABLE_HOOK_ON_CHARACTER: "Does #bold not#! have an available [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_DOES_NOT_HAVE_AN_AVAILABLE_HOOK_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] does #bold not#! have an available [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ I_DO_NOT_HAVE_AN_AVAILABLE_HOOK_ON_CHARACTER: "You do #bold not#! have an available [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+
+ HAS_A_WEAK_HOOK_ON_CHARACTER: "Has a [weak_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_HAS_A_WEAK_HOOK_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] has a [weak_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ I_HAVE_A_WEAK_HOOK_ON_CHARACTER: "You have a [weak_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ DOES_NOT_HAVE_A_WEAK_HOOK_ON_CHARACTER: "Does #bold not#! have a [weak_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_DOES_NOT_HAVE_A_WEAK_HOOK_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] does not have a [weak_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ I_DO_NOT_HAVE_A_WEAK_HOOK_ON_CHARACTER: "You do #bold not#! have a [weak_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+
+ HAS_THIS_OPINION_OF_CHARACTER_OR_ABOVE: "[opinion|E] of [CHARACTER.Custom('ShortName')] is $COMPARATOR$ $NUM|V0$"
+ TARGET_HAS_THIS_OPINION_OF_CHARACTER_OR_ABOVE: "[TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [opinion|E] of [CHARACTER.Custom('ShortName')] is $COMPARATOR$ $NUM|V0$"
+
+ HAS_THIS_OPINION_OF_TARGET_OR_ABOVE: "[opinion|E] of [TARGET_CHARACTER.Custom('ShortName')] is $COMPARATOR$ $NUM|V0$"
+ I_HAVE_THIS_OPINION_OF_TARGET_OR_ABOVE: "Your [opinion|E] of [TARGET_CHARACTER.Custom('ShortName')] is $COMPARATOR$ $NUM|V0$"
+ CHARACTER_HAS_THIS_OPINION_OF_TARGET_OR_ABOVE: "[CHARACTER.Custom('ShortNameNotMePossessive')] [opinion|E] of [TARGET_CHARACTER.Custom('ShortName')] is $COMPARATOR$ $NUM|V0$"
+
+ THEIR_STRESS_LEVEL_IS_AT_LEAST: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [stress_level|E] is [stress_i]$NUM|V0$ or above"
+
+ THEIR_STRESS_LEVEL_IS_LESS_THAN: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] [stress_level|E] is less than [stress_i]$NUM|V0$"
+
+ IS_THE_SPOUSE_OF_CHARACTER: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [spouse|E]"
+ CHARACTER_IS_THE_SPOUSE_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [spouse|E]"
+ I_AM_THE_SPOUSE_OF_CHARACTER: "You are [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [spouse|E]"
+ IS_NOT_THE_SPOUSE_OF_CHARACTER: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [spouse|E]"
+ CHARACTER_IS_NOT_THE_SPOUSE_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [spouse|E]"
+ I_AM_NOT_THE_SPOUSE_OF_CHARACTER: "You are #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [spouse|E]"
+
+ IS_THE_CONCUBINE_OF_CHARACTER: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [concubine|E]"
+ CHARACTER_IS_THE_CONCUBINE_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [concubine|E]"
+ I_AM_THE_CONCUBINE_OF_CHARACTER: "You are [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [concubine|E]"
+ IS_NOT_THE_CONCUBINE_OF_CHARACTER: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [concubine|E]"
+ CHARACTER_IS_NOT_THE_CONCUBINE_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [concubine|E]"
+ I_AM_NOT_THE_CONCUBINE_OF_CHARACTER: "You are #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [concubine|E]"
+
+ IS_CLOSE_FAMILY_OF_CHARACTER: "Is [close_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_IS_CLOSE_FAMILY_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is [close_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ I_AM_CLOSE_FAMILY_OF_CHARACTER: "You are [close_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ IS_NOT_CLOSE_FAMILY_OF_CHARACTER: "Is #bold not#! [close_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_IS_NOT_CLOSE_FAMILY_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [close_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ I_AM_NOT_CLOSE_FAMILY_OF_CHARACTER: "You are #bold not#! [close_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+
+ IS_EXTENDED_FAMILY_OF_CHARACTER: "Is [extended_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_IS_EXTENDED_FAMILY_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is [extended_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ I_AM_EXTENDED_FAMILY_OF_CHARACTER: "You are [extended_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ IS_NOT_EXTENDED_FAMILY_OF_CHARACTER: "Is #bold not#! [extended_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_IS_NOT_EXTENDED_FAMILY_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [extended_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ I_AM_NOT_EXTENDED_FAMILY_OF_CHARACTER: "You are #bold not#! [extended_family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+
+ IS_CLOSE_OR_EXTENDED_FAMILY_OF_CHARACTER: "Is [family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_IS_CLOSE_OR_EXTENDED_FAMILY_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is [family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ I_AM_CLOSE_OR_EXTENDED_FAMILY_OF_CHARACTER: "You are [family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ IS_NOT_CLOSE_OR_EXTENDED_FAMILY_OF_CHARACTER: "Is #bold not#! [family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_IS_NOT_CLOSE_OR_EXTENDED_FAMILY_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+ I_AM_NOT_CLOSE_OR_EXTENDED_FAMILY_OF_CHARACTER: "You are #bold not#! [family|E] of [TARGET_CHARACTER.Custom('ShortName')]"
+
+ CHARACTERS_HIGHEST_HELD_TITLE_TIER_IS_TIER: "[CHARACTER.Custom('ShortNameNotMePossessive')] highest held Title is $COMPARATOR$ $TIER|U$ [rank|E]"
+ NOT_CHARACTERS_HIGHEST_HELD_TITLE_TIER_IS_TIER: "[CHARACTER.Custom('ShortNameNotMePossessive')] highest held Title is not $COMPARATOR$ $TIER|U$ [rank|E]"
+
+ I_HAVE_TRUCE_WITH_CHARACTER: "You have a [truce|E] with [TARGET_CHARACTER.Custom('ShortName')]"
+
+ IS_A_GUEST_OF_CHARACTER: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [guest|E]"
+ CHARACTER_IS_A_GUEST_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [guest|E]"
+ I_AM_A_GUEST_OF_CHARACTER: "You are [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [guest|E]"
+ IS_NOT_A_GUEST_OF_CHARACTER: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [guest|E]"
+ CHARACTER_IS_NOT_A_GUEST_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [guest|E]"
+ I_AM_NOT_A_GUEST_OF_CHARACTER: "You are #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [guest|E]"
+
+ IS_A_COURTIER_OF_CHARACTER: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [courtier|E]"
+ CHARACTER_IS_A_COURTIER_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [courtier|E]"
+ I_AM_A_COURTIER_OF_CHARACTER: "You are [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [courtier|E]"
+ IS_NOT_A_COURTIER_OF_CHARACTER: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [courtier|E]"
+ CHARACTER_IS_NOT_A_COURTIER_OF_CHARACTER: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [courtier|E]"
+ I_AM_NOT_A_COURTIER_OF_CHARACTER: "You are #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [courtier|E]"
+
+ CHARACTER_IS_A_POWERFUL_VASSAL: "[CHARACTER.Custom('ShortName')|U] is a [powerful_vassal|E]"
+
+ CHARACTER_IS_NOT_A_POWERFUL_VASSAL: "[CHARACTER.Custom('ShortName')|U] is #bold not#! a [powerful_vassal|E]"
+
+ CHARACTER_IS_MALE_CHARACTER_TRIGGER_CONDITION: "[CHARACTER.Custom('ShortName')|U] is male"
+
+ CHARACTER_IS_NOT_MALE_CHARACTER_TRIGGER_CONDITION: "[CHARACTER.Custom('ShortName')|U] is #bold not#! male"
+
+ CHARACTER_IS_FEMALE_CHARACTER_TRIGGER_CONDITION: "[CHARACTER.Custom('ShortName')|U] is female"
+
+ CHARACTER_IS_NOT_FEMALE_CHARACTER_TRIGGER_CONDITION: "[CHARACTER.Custom('ShortName')|U] is #bold not#! female"
+
+ CHARACTER_IS_MARRIED_PATRILINEALLY: "[CHARACTER.Custom('ShortName')|U] is in a [patrilineal|E] marriage"
+
+ CHARACTER_IS_NOT_MARRIED_PATRILINEALLY: "[CHARACTER.Custom('ShortName')|U] is #bold not#! in a [patrilineal|E] marriage"
+
+ CHARACTER_IS_MARRIED_MATRILINEALLY: "[CHARACTER.Custom('ShortName')|U] is in a [matrilineal|E] marriage"
+
+ CHARACTER_IS_NOT_MARRIED_MATRILINEALLY: "[CHARACTER.Custom('ShortName')|U] is #bold not#! in a [matrilineal|E] marriage"
+
+ CHARACTER_IS_BETROTHED_PATRILINEALLY: "[CHARACTER.Custom('ShortName')|U] is in a [patrilineal|E] betrothal"
+
+ CHARACTER_IS_NOT_BETROTHED_PATRILINEALLY: "[CHARACTER.Custom('ShortName')|U] is #bold not#! in a [patrilineal|E] betrothal"
+
+ CHARACTER_IS_BETROTHED_MATRILINEALLY: "[CHARACTER.Custom('ShortName')|U] is in a [matrilineal|E] betrothal"
+
+ CHARACTER_IS_NOT_BETROTHED_MATRILINEALLY: "[CHARACTER.Custom('ShortName')|U] is #bold not#! in a [matrilineal|E] betrothal"
+
+ IS_A_VASSAL_OF: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [direct_vassal|E]"
+ CHARACTER_IS_A_VASSAL_OF: "[CHARACTER.Custom('ShortName')|U] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [direct_vassal|E]"
+ I_AM_A_VASSAL_OF: "You are [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [direct_vassal|E]"
+ IS_NOT_A_VASSAL_OF: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [direct_vassal|E]"
+ CHARACTER_IS_NOT_A_VASSAL_OF: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [direct_vassal|E]"
+ I_AM_NOT_A_VASSAL_OF: "You are #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [direct_vassal|E]"
+
+ IS_TARGET_CHARACTERS_HEIR: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [player_heir|E]"
+ I_AM_TARGET_CHARACTERS_HEIR: "You are [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [player_heir|E]"
+ CHARACTER_IS_TARGET_CHARACTERS_HEIR: "[CHARACTER.Custom('ShortName')|U] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [player_heir|E]"
+ IS_NOT_TARGET_CHARACTERS_HEIR: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [player_heir|E]"
+ I_AM_NOT_TARGET_CHARACTERS_HEIR: "You are #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [player_heir|E]"
+ CHARACTER_IS_NOT_TARGET_CHARACTERS_HEIR: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [player_heir|E]"
+
+ IS_TARGET_CHARACTERS_CONSORT: "Is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] Spouse or Concubine"
+ I_AM_TARGET_CHARACTERS_CONSORT: "You are [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] Spouse or Concubine"
+ CHARACTER_IS_TARGET_CHARACTERS_CONSORT: "[CHARACTER.Custom('ShortName')|U] is [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] Spouse or Concubine"
+ IS_NOT_TARGET_CHARACTERS_CONSORT: "Is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] Spouse or Concubine"
+ I_AM_NOT_TARGET_CHARACTERS_CONSORT: "You are #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] Spouse or Concubine"
+ CHARACTER_IS_NOT_TARGET_CHARACTERS_CONSORT: "[CHARACTER.Custom('ShortName')|U] is #bold not#! [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] Spouse or Concubine"
+
+ CHARACTER_INTERACTION_ALREADY_CONSIDERING_CONVERSION: "[CHARACTER.Custom('UIName')] is already considering to convert from [CHARACTER.GetHerHis] [faith|E] "
+
+ THEY_DEATH_REASON_TRIGGER: "[CHARACTER.Custom('ShortName')|U] has the death reason "$DEATH_REASON$""
+
+ THEIR_AGE_IS_AT_LEAST: "[CHARACTER.Custom('ShortName')|U] is at least $NUM|V0$ years old"
+
+ THEIR_AGE_IS_NOT_AT_LEAST: "[CHARACTER.Custom('ShortName')|U] is #bold not#! at least $NUM|V0$ years old"
+
+ THEIR_AGE_IS_LESS_THAN: "[CHARACTER.Custom('ShortName')|U] is under $NUM|V0$ years old"
+
+ THEIR_AGE_IS_NOT_LESS_THAN: "[CHARACTER.Custom('ShortName')|U] is #bold not#! under $NUM|V0$ years old"
+ 
+ TARGET_IS_DE_JURE_LIEGE_OR_ABOVE_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')]"
+
+ DREAD_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|U] has at least $NUM|V0$ [dread|E]"
+
+ NOT_DREAD_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|U] has less than $NUM|E$ [dread|E]"
+
+ TYRANNY_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|U] has at least $NUM|V0$ [tyranny|E]"
+
+ NOT_TYRANNY_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|U] has less than $NUM|E$ [tyranny|E]"
+
+ HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER: "Has a valid [imprisonment_reason|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ YOU_HAVE_AN_IMPRISONMENT_REASON_ON_CHARACTER: "You have a valid [imprisonment_reason|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ CHARACTER_HAS_AN_IMPRISONMENT_REASON_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] has a valid [imprisonment_reason|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ DOES_NOT_HAVE_AN_IMPRISONMENT_REASON_ON_CHARACTER: "Does #bold not#! have a valid [imprisonment_reason|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ YOU_DO_NOT_HAVE_AN_IMPRISONMENT_REASON_ON_CHARACTER: "You do #bold not#! have a valid [imprisonment_reason|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ THEY_DOES_NOT_HAVE_AN_IMPRISONMENT_REASON_ON_CHARACTER: "[CHARACTER.Custom('ShortName')|U] does #bold not#! have a valid [imprisonment_reason|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+
+ MISSING_UNIQUE_ANCESTORS_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|U] is missing at least $NUM|V0$ unique ancestors"
+
+ NOT_MISSING_UNIQUE_ANCESTORS_TRIGGER_THIRD: "[CHARACTER.Custom('ShortName')|U] does #bold not#! have more than $NUM|E$ missing unique ancestors"
+
+ character_this_equal: "Target is [CHARACTER.Custom('ShortName')]"
+ character_scope_equal: "Target is [CHARACTER.Custom('ShortName')]"
+
+ THEY_COMPLETELY_CONTROLS_REGION: "[CHARACTER.Custom('ShortName')|U] [completely_controls_region|E] the [region|E] of $REGION$"
+ THEY_DO_NOT_COMPLETELY_CONTROL_REGION: "[CHARACTER.Custom('ShortName')|U] does #bold not#! [completely_control_region|E] the [region|E] of $REGION$"
+
+ YOU_ALREADY_HAVE_A_HOOK_ON_TARGET: "You already have a [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ YOU_ALREADY_HAVE_A_STRONG_HOOK_ON_TARGET: "You already have a [strong_hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+
+ THIRD_IS_COWED: "[CHARACTER.Custom('ShortName')|U] is [cowed|E]"
+
+ EAGER_FOR_MORE_VASSALS: "[CHARACTER.Custom('ShortName')|U] will always accept more power"
+
+ IS_A_POWERFUL_VASSAL_OF_CHARACTER_TRIGGER: "Is a powerful vassal of [CHARACTER.Custom('ShortName')|U]"
+
+ IS_VASSAL_OR_BELOW_OF_CHARACTER_TRIGGER: "Is a vassal or below [CHARACTER.Custom('ShortName')|U]"
+
+ TIER_DIFFERENCE_TRIGGER: "The tier difference between [TARGET_CHARACTER.Custom('ShortName')|U] and [CHARACTER.Custom('ShortName')|U] is: $NUM|V0$"
+
+ NUMBER_OF_LIFESTYLE_TRAITS_TRIGGER: "Number of lifestyle traits that [CHARACTER.Custom('ShortName')|U] has: $NUM|V0$"
+
+ IS_TWIN_OF_CHARACTER_TRIGGER: "Is [CHARACTER.Custom('ShortNameNotMePossessive')|U] twin"
+ IS_COUSIN_OF_CHARACTER_TRIGGER: "Is [CHARACTER.Custom('ShortNameNotMePossessive')|U] cousin"
+
+ IS_A_KNIGHT_OF_CHARACTER_TRIGGER: "Serves as a [knight|E] for [CHARACTER.Custom('ShortName')|U]"
+ IS_EMPLOYER_OF_CHARACTER_TRIGGER: "Is employed by [CHARACTER.Custom('ShortName')|U]"
+ IS_HEIR_OF_CHARACTER_TRIGGER: "Is [CHARACTER.Custom('ShortNameNotMePossessive')|U] heir"
+ IS_PRIMARY_HEIR_OF_CHARACTER_TRIGGER: "Is [CHARACTER.Custom('ShortNameNotMePossessive')|U] primary heir"
+ IS_NIBLING_OF_CHARACTER_TRIGGER: "Is the nephew or niece of [CHARACTER.Custom('ShortName')|U]"
+ IS_UNCLE_OR_AUNT_OF_CHARACTER_TRIGGER: "Is the uncle or aunt of [CHARACTER.Custom('ShortName')|U]"
+ IS_GREAT_GRANDCHILD_OF_CHARACTER_TRIGGER: "Is the great grandchild of [CHARACTER.Custom('ShortName')|U]"
+
+ IS_GRANDCHILD_OF_CHARACTER_TRIGGER: "Is the grandchild of [CHARACTER.Custom('ShortName')|U]"
+ IS_GRANDPARENT_OF_CHARACTER_TRIGGER: "Is the grandparent of [CHARACTER.Custom('ShortName')|U]"
+ IS_GREAT_GRANDPARENT_OF_CHARACTER_TRIGGER: "Is the great grandparent of [CHARACTER.Custom('ShortName')|U]"
+
+ TARGET_HAS_SAME_CULTURE_AS_CHARACTER_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')|U] shares the same [culture|E] as [CHARACTER.Custom('ShortName')|U]"
+
+ CHARACTER_HAS_COMMANDER_TRAIT_SCOPE_DOES_NOT_TRIGGER: "[TARGET_CHARACTER.Custom('ShortName')|U] has a commander trait that [CHARACTER.Custom('ShortName')|U] does not"
+
+ SAME_SEX_AS_CHARACTER_TRIGGER: "Is the same sex as [CHARACTER.Custom('ShortName')|U]"
+ 
+ has_any_secrets_trigger: "[CHARACTER.Custom('ShortName')|U] has any [secrets|E]"
+
+ IS_COUNCIL_TASK_VALID: "[CHARACTER.Custom('RegName')] can start the $TYPE|V$ task"
+ IS_COUNCIL_TASK_VALID_COUNTY: "[CHARACTER.Custom('RegName')] can start the $TYPE|V$ task in [PROVINCE.GetName]"
+ IS_COUNCIL_TASK_VALID_COURT: "[CHARACTER.Custom('RegName')] can start the $TYPE|V$ task targeting [TARGET_CHARACTER.Custom('UINamePossessive')] court"
+
+ THEY_HAVE_ANY_COURT_POSITION: "[CHARACTER.Custom('ShortName')|U] holds a court position"
+ NOT_THEY_HAVE_ANY_COURT_POSITION: "[CHARACTER.Custom('ShortName')|U] does not hold a court position"
+
+ THEY_HAVE_EMPLOYED_ANY_COURT_POSITION: "[CHARACTER.Custom('ShortName')|U] has employed any court position"
+ NOT_THEY_HAVE_EMPLOYED_ANY_COURT_POSITION: "[CHARACTER.Custom('ShortName')|U] has not employed any court position"
+
+ THEY_HAVE_COURT_POSITION: "[CHARACTER.Custom('ShortName')|U] is employed as $COURT_POSITION$"
+ NOT_THEY_HAVE_COURT_POSITION: "[CHARACTER.Custom('ShortName')|U] is not employed as $COURT_POSITION$"
+
+ THEY_EMPLOY_COURT_POSITION: "[CHARACTER.Custom('ShortName')|U] is employing a $COURT_POSITION$"
+ NOT_THEY_EMPLOY_COURT_POSITION: "[CHARACTER.Custom('ShortName')|U] is not employing a $COURT_POSITION$"
+
+ THEY_CAN_BE_EMPLOYED_AS: "[CHARACTER.Custom('ShortName')|U] can be employed as $COURT_POSITION$"
+ NOT_THEY_CAN_BE_EMPLOYED_AS: "[CHARACTER.Custom('ShortName')|U] cannot be employed as $COURT_POSITION$"
+
+ THEY_CAN_EMPLOY_COURT_POSITION_TYPE: "[CHARACTER.Custom('ShortName')|U] can employ $COURT_POSITION$"
+ NOT_THEY_CAN_EMPLOY_COURT_POSITION_TYPE: "[CHARACTER.Custom('ShortName')|U] cannot employ $COURT_POSITION$"
+
+ IS_COURT_POSITION_EMPLOYER: "Employs [CHARACTER.Custom('ShortName')|U] as $COURT_POSITION$"
+ NOT_IS_COURT_POSITION_EMPLOYER: "In not employing [CHARACTER.Custom('ShortName')|U] as $COURT_POSITION$"
+ YOU_IS_COURT_POSITION_EMPLOYER: "You are employing [CHARACTER.Custom('ShortName')|U] as $COURT_POSITION$"
+ NOT_YOU_IS_COURT_POSITION_EMPLOYER: "You are not employing [CHARACTER.Custom('ShortName')|U] as $COURT_POSITION$"
+ THEY_IS_COURT_POSITION_EMPLOYER: "$EMPLOYER$ is employing [CHARACTER.Custom('ShortName')|U] as $COURT_POSITION$"
+ NOT_THEY_IS_COURT_POSITION_EMPLOYER: "$EMPLOYER$ is not employing [CHARACTER.Custom('ShortName')|U] as $COURT_POSITION$"
+
+ YOU_THEY_HAS_ROYAL_COURT: "[CHARACTER.Custom('ShortName')|U] [LocalPlayerString(CHARACTER, 'have', 'has')] have a Royal Court"
+ NOT_YOU_THEY_HAS_ROYAL_COURT: "[CHARACTER.Custom('ShortName')|U] don't have a Royal Court"
+
+ NOT_FIRST_IS_DECISION_ON_COOLDOWN: "$DECISION_NAME|V$ is #bold not#! on cooldown for [CHARACTER.Custom('ShortName')]"
+ THIRD_IS_DECISION_ON_COOLDOWN: "$DECISION_NAME|V$ is on cooldown for [CHARACTER.Custom('ShortName')] #weak (Expires: [DATE.GetStringLong])#!"
+ NOT_THIRD_IS_DECISION_ON_COOLDOWN: "$DECISION_NAME|V$ is #bold not#! on cooldown for [CHARACTER.Custom('ShortName')]"

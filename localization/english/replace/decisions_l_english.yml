@@ -1,0 +1,50 @@
+﻿l_english:
+ escape_from_prison_decision_failure_outcome.tt: "[imprisoner.Custom('TitledFirstName')] might be... displeased"
+
+ tribal_challenge_ruler_decision: "Challenge the [ROOT.Char.GetLiege.Custom('TitleAsNameNoTooltip')|U]"
+ tribal_challenge_ruler_decision_desc: "[ROOT.Char.GetLiege.Custom('FirstName')] carries the title of [ROOT.Char.GetLiege.Custom('TitleAsNameNoTooltip')] as if it is unquestionably [ROOT.Char.GetLiege.GetHersHis]; as if it is not skill and strength alone that should decide our leader.\n\nI, [ROOT.Char.Custom('FullNameNoTooltip')], question [ROOT.Char.GetLiege.GetHerHis] right to the title, to all of [ROOT.Char.GetLiege.GetPrimaryTitle.GetNameNoTier], and I will be silent no longer!"
+ tribal_challenge_ruler_decision_tooltip: "Challenge the [ROOT.Char.GetLiege.Custom('TitleAsNameNoTooltip')|U] for [ROOT.Char.GetLiege.GetHerHis] title and [ROOT.Char.GetLiege.GetHerHis] land"
+ tribal_challenge_ruler_effect_tooltip: "[liege_to_challenge.Custom('TitledFirstNameNoTooltip')] will decide upon the challenge\n"
+
+ tribal_challenge_ruler_decision_confirm: "Challenge [ROOT.Char.GetLiege.Custom('TitledFirstNameNoTooltip')]!"
+
+ commit_suicide_decision_desc_soulmate: "I can no longer endure the emptiness felt within my soul. Life without you, my beloved [ROOT.Var('mourning_soulmate').Char.Custom('FirstName')], has been nothing more than a burden. If the only way to return to your arms is by departing this world, so be it."
+ commit_suicide_decision_desc_friend: "Life is too bleak if I cannot share it with a true friend. Moments that would've made both [ROOT.Var('mourning_friend').Char.Custom('FirstName')] and me laugh for hours now only fill me with despair. This path of loneliness is not for me."
+
+ repay_loan_decision_decision_desc: "To have a debt hanging over me is unbecoming of a [ROOT.Char.Custom('TitleAsNameNoTooltip')] – the time has come to repay the money I owe."
+
+ take_vow_of_poverty_decision_desc: "Money is the root of all evil. While I cannot feasibly give away everything and remain [ROOT.Char.Custom('TitleAsNameNoTooltip')], I can vow to give a portion of my income away each month."
+
+ raise_runestone_decision_desc: "[ROOT.Var('ancestor_to_bury').Char.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has passed away. I will raise a runestone to honor [ROOT.Var('ancestor_to_bury').Char.GetHerHis] life, and to bring fame to all who bear the name [ROOT.Var('ancestor_to_bury').Char.GetDynasty.GetName]. Future generations will never forget the greatness of [ROOT.Var('ancestor_to_bury').Char.Custom('FullNameNickNoTooltip')]!"
+
+ commission_artifact_decision_desc: "What is the point of being a [ROOT.Char.Custom('TitleAsNameNoTooltip')] if I don't have nice things to show for it? A new sword would be nice, or maybe a brooch..."
+
+ portguese_convert_list: "Every [THIS.Char.GetCulture.GetHeritage.GetNameNoTooltip] [heritage|E] subject in [THIS.Char.Custom('UINamePossessive')] Portuguese realm"
+
+ invite_knights_decision_desc: "As the [ROOT.Char.Custom('TitleAsNameNoTooltip')] of [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip], I need brave $knight_culture_player_plural_no_tooltip_lowercase$ to defend the realm and conquer new lands. I will send out a herald to let my subjects know I am in search of skilled warriors."
+
+ minor_decisions.0001.desc: "[knight.Custom('TitledFirstName')] heeded my summons and has arrived at court as my guest"
+
+ converted_culture_msg_title: "[converting_character.Custom('ShortName')|U] converted [culture|E]"
+
+ secede_from_empire_decision_desc: "[ROOT.Char.GetLiege.Custom('TitledFirstNamePossessive')] incompetence has left [ROOT.Char.GetLiege.GetPrimaryTitle.GetNameNoTooltip] unable to protect its subjects from their enemies, both internal and external. Even a new ruler would be hard-pressed to undo all of the damage [ROOT.Char.GetLiege.GetSheHe] has done.\n\nIt is a far wiser course of action for us to split off and form a new realm, living or dying on our own merits instead of being dragged down with the rest of the Empire."
+
+ secede_from_empire_decision_trigger_debt: "[CHARACTER.Custom('TitledFirstName')] is more than 25 years in debt"
+ secede_from_empire_decision_trigger_war: "[CHARACTER.Custom('TitledFirstName')] has been fighting the same offensive war for more than 25 years"
+
+ secede_from_empire_decision_notification: "[ROOT.Char.Custom('TitledFirstName')] Gained Independence"
+
+ negotiate_the_danelaw_integrate_duchies_decision_confirm: "One realm, one [ROOT.Char.Custom('TitleAsNameNoTooltip')]."
+
+ court_amenities_interactions.0010.desc_intro: "[Custom('RegNameNoTooltip')|U] has burst into court, catching the eye of all the lords and ladies of the realm with [actor.GetHerHis] most peculiar garments."
+
+ court_amenities_interactions.0010.a.tt_success: "You convince the crowd that [actor.Custom('RegNamePossessiveNoTooltip')] outfit is stupid"
+ court_amenities_interactions.0010.a.tt_failure: "The crowd disagrees with you and thinks [actor.Custom('RegNamePossessiveNoTooltip')] outfit is the new fashion trend"
+
+ court_amenities_interactions.0012.desc_intro: ""Well, some of us are followers, and others leaders." [Custom('RegNameNoTooltip')] stands firm in [actor.GetHerHis] commitment to that ridiculous outfit.\n\nWe spend the next few hours debating the nature of high-fashion, with a small crowd of courtiers watching as I fling insult after insult at this fool."
+ court_amenities_interactions.0012.desc_won: "Before long, many other courtiers begin joining me in mocking [Custom('RegNameNoTooltip')], and I know my work is done."
+ court_amenities_interactions.0012.desc_lost: "Unfortunately, the crowd did not seem swayed by my arguments and within days, I am the only one in court #EMP not#! dressing like [Custom('RegNameNoTooltip')]."
+ court_amenities_interactions.0012.desc_lost.kof: "Not only that, but many have taken to referring to [actor.GetHerHim] as the "[actor.Custom('TitleAsNameNoTooltip')] of Fashion.""
+
+ court_amenities_interactions.0013.desc: "As time goes by, many in [debate_locale.GetNameNoTierNoTooltip] have taken to calling me the [actor.Custom('TitleAsNameNoTooltip')] of Fashion!"
+ court_amenities_interactions.0013.a: "Hail to the [actor.Custom('TitleAsNameNoTooltip')]!"

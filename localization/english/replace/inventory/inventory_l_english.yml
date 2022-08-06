@@ -1,0 +1,33 @@
+﻿l_english:
+ artifact_history_created_desc: "Created by [SelectLocalization( HISTORY_ENTRY.HasActor, HISTORY_ENTRY.GetActor.GetNameNoTooltip, 'UNKNOWN_BENEFACTOR' )] for [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')] at [HISTORY_ENTRY.GetLocation.GetNameNoTooltip]"
+
+ artifact_history_stolen_desc: "Stolen by [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')]"
+
+ artifact_history_given_desc: "Given to [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')]"
+
+ artifact_history_inherited_desc: "Inherited by [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')]"
+
+ artifact_history_conquest_desc: "Taken by [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')] in a war against [HISTORY_ENTRY.GetActor.Custom('TitledFirstNameNickNoTooltip')]"
+
+ artifact_history_taken_in_siege_desc: "Seized by [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')] after the siege of [HISTORY_ENTRY.GetLocation.GetNameNoTooltip]"
+
+ artifact_history_reforged_desc: "Reforged by [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')] in [HISTORY_ENTRY.GetLocation.GetNameNoTooltip]"
+
+ artifact_history_discovered_desc: "Discovered by [HISTORY_ENTRY.GetActor.Custom('TitledFirstNameNickNoTooltip')] for [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')] at [HISTORY_ENTRY.GetLocation.GetNameNoTooltip]"
+
+ artifact_history_won_in_duel_desc: "Won in duel by [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')]"
+
+ artifact_history_taken_in_battle_desc: "Taken by [HISTORY_ENTRY.GetRecipient.Custom('TitledFirstNameNickNoTooltip')] in the battle of [HISTORY_ENTRY.GetLocation.GetNameNoTooltip]"
+
+ CHARACTER_PAYS_REFORGE_COST: "[CHARACTER.Custom('ShortName')|U] will pay $COST$ to reforge [ARTIFACT.GetName]"
+ CHARACTER_PAYS_REPAIR_COST: "[CHARACTER.Custom('ShortName')|U] will pay $COST$ to repair [ARTIFACT.GetName]"
+
+ ARTIFACT_CURRENT_HOLDER: "Current Holder: [Artifact.GetOwner.Custom('RegName')]"
+
+ CLAIMANT_ENTRY_HOUSE_HEAD: "House Head: [ClaimantEntry.GetHouse.GetHeadOfHouse.Custom('RegName')]"
+
+ CHARACTER_CANNOT_DECLARE_WAR: "[Character.Custom('ShortNameNoTooltip')|U] cannot currently declare war for this [artifact|e]"
+
+ CHARACTER_CAN_DECLARE_WAR: "[Character.Custom('ShortNameNoTooltip')|U] can declare war for this [artifact|e]"
+
+ CHARACTER_WITHOUT_ROYAL_COURT_COURT_ARTIFACT_TAB: "Since [Character.Custom('ShortName')] [Character.LocalPlayerString( 'have', 'has' )] no [royal_court|e], [Character.Custom('ShortName')] [Character.LocalPlayerString( 'have', 'has' )] nowhere to display these [court_artifacts|e]."

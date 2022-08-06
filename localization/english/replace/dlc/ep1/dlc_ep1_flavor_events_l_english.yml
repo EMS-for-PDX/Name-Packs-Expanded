@@ -1,0 +1,124 @@
+﻿l_english:
+ ep1_flavor.1000.desc: "A travelling eunuch is presenting [eunuch_target.GetHerselfHimself] at my court today.\n\n"Greetings, oh most [ROOT.Char.Custom('ComplimentAdjective')] [ROOT.Char.Custom('TitleTierName')]." [eunuch_target.GetSheHe] says, respectfully.\n\n"My name is [eunuch_target.Custom('FirstName')], a wanderer of repute — I have lent my knowledge to noble scholar-Kings, and tended the harems of great Sultans — now I am here, offering my services to you. For a modest fee."\n\nAn intriguing character, perhaps I should employ [eunuch_target.GetHerHim]?"
+
+ ep1_flavor.1000.b: "[eunuch_target.Custom('FirstNameNoTooltip')], my [eunuch_target.Custom('ComplimentAdjective')] friend, stay a while longer?"
+
+ eunuch_moves_tt: "[eunuch_target.Custom('FirstNameNoTooltip')] moves on to the [new_court.GetBaseName]"
+ ep1_flavor.1000.c.success: "You convince [eunuch_target.Custom('FirstNameNoTooltip')] to stay"
+ ep1_flavor.1000.c.failure: "[eunuch_target.Custom('FirstNameNoTooltip')] calls you a cheapskate and moves on"
+
+ ep1_flavor.1200.desc: "The eunuch [eunuch_target.Custom('FirstName')] steps into my view, [eunuch_target.Custom('quirk_pos_pp')].\n\n"You know many things, great [ROOT.Char.Custom('TitleTierName')]. But there are things that elude even your ineffable mind — secrets and knowledge that I am more than willing to share with you." [eunuch_target.GetSheHe] whispers.\n\n"For a price."\n\nOf course. Yet still, I am intrigued."
+
+ ep1_flavor.0001.desc: "A petty business affair in town brings my retinue and I, thirsty and hungry, to the little smoke-filled tavern.\n\nOf all people, I least expected to find [scion_parent.Custom('TitledFirstName')] sat at the back, poorly disguised with cloak and hood. Next to [scion_parent.GetHerHim] sits a young [scion_actual.GetWomanMan] who... it can't be!\n\nFrom [scion_actual.GetHerHis] face, the way [scion_actual.GetSheHe] glances around the room in wonder, and [scion_actual.GetHerHis] mimicking of the distinctive mannerisms of [scion_parent.Custom('FirstNameNoTooltip')], I am #EMP convinced#! [scion_actual.GetSheHe] must be some secret bastard of the [scion_parent.Custom('TitleAsNameNoTooltip')], perhaps seeing the world outside for the first time."
+ ep1_flavor.0001.a: "[scion_parent.Custom('FirstNameNoTooltip')]! Have you brought me a [scion_actual.Custom('GetBrideGroom')]?"
+
+ ep1_flavor.0001.a.tt.failure: "[scion_parent.Custom('FirstNameNoTooltip')] escapes with [scion_parent.GetHerHis] [scion_actual.Custom('GetDaughterSon')]"
+ ep1_flavor.0001.b: "[scion_parent.Custom('FirstNameNoTooltip')]! Have you brought my [ROOT.Char.Custom2('RelationToMeShort',SCOPE.sC('prospective_spouse'))] a [scion_actual.Custom('GetBrideGroom')]?"
+
+ ep1_flavor.0001.c.tt.failure: "[scion_parent.Custom('FirstNameNoTooltip')] covers [scion_parent.GetHerHis] tracks too well"
+ ep1_flavor.0001.d: "Worry not, my [scion_parent.Custom('TitleAsNameNoTooltip')], you can trust me to forget I saw you..."
+ ep1_flavor.0001.tt.scion_escapes: "[scion_actual.Custom('FirstName')] is secreted away and never heard from again"
+
+ ep1_flavor.0011.desc: ""My [ROOT.Char.GetLadyLord], it's not what it looks like!" cries [diplomat_1.Custom('TitledFirstName')] as I enter my favorite dining hall.\n\nWhat it #EMP looks#! like is that [diplomat_1.GetSheHe]'s utterly wrecked the room. Food cakes the walls, the tables are all but shattered, someone has stacked every chair into a pyramid, and the comatose form of [diplomat_2.Custom('TitledFirstName')] (totally nude) lies face up and slathered in soup on one of #EMP my#! beds.\n\nThe two diplomats only arrived yesterday. I gave them permission for a good meal and some light entertainment, not a party fit to raise [ROOT.Char.GetFaith.NegativeAfterLife|U] itself."
+
+ ep1_flavor.0011.d: "One night? Pathetic! Make way for the Party [ROOT.Char.Custom('TitleAsNameNoTooltip')]!"
+
+ ep1_flavor.0021.desc: "Giggling confronts me as I walk into the chamber: a gaggle of courtiers, led by [nitpicker.Custom('TitledFirstName')], are all crowded around a recent letter from [rival_monarch.Custom('TitledFirstName')].\n\n[nitpicker.Custom('FirstNameNoTooltip')] waves me over with a shout of laughter.\n\n"My [ROOT.Char.GetLadyLord], you simply #EMP must#! read this! It has the official seal of [rival_realm.GetNameNoTier], but every other word is spelled like it was written by an illiterate peasant. Those scatterbrained sluggards can't even use the right consonants, much less speak good [ROOT.Char.GetCourtLanguage.GetName], and it's #EMP hilarious#!.""
+
+ ep1_flavor.0031.desc: "T'is well-said that great minds require great traditions, and there are no greater scholastic initiation traditions than those of [ROOT.Char.GetPrimaryTitle.GetNameNoTier]!\n\nThis week marks the induction of several new, talented scholars to the court, drawn from all around the realm, every one of whom is currently being subjected to various #EMP academic#! tests at a local inn.\n\nMy gaze falls on [scholar_1.Custom('FirstName')], as [scholar_1.GetSheHe] suspiciously eyes the mysterious, frothing, fizzing beverage sat in front of [scholar_1.GetHerHim]. Behind the wary scholar, [scholar_2.Custom('FirstName')] is topping up an entire #EMP jug#! with something thick and oozy, to many cheers and jeers from [scholar_2.GetHerHis] fellow academicians."
+ ep1_flavor.0031.a: "Down it, [scholar_1.Custom('FirstNameNoTooltip')]!"
+ ep1_flavor.0031.b: "We like to drink with [scholar_2.Custom('FirstNameNoTooltip')], 'cause [scholar_2.Custom('FirstNameNoTooltip')] is our mate!"
+
+ ep1_flavor.0031.inspire.scholar_1.tt: "[scholar_1.Custom('FirstNameNoTooltip')] becomes [inspired|E]"
+ ep1_flavor.0031.inspire.scholar_2.tt: "[scholar_2.Custom('FirstNameNoTooltip')] becomes [inspired|E]"
+
+ ep1_flavor.2000.desc_intro: "As I inspect a local army camp, it is clear [marshal_scope.Custom('TitledFirstName')] and [knight_scope.Custom('TitledFirstName')] are trying to corner me. \n\n"Liege, the men are idle when peace prevails; some activities would keep them active...", my [marshal_scope.GetCouncilTitle] prods."
+
+ ep1_flavor.2000.desc_bridge: "\n\n"No, efforts are needed elsewhere." [knight_scope.Custom('FirstNameNoTooltip')] interjects,"
+
+ ep1_flavor.2010.desc_spy_real: "[spymaster.GetCouncilTitleFirstName] seems certain that my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('real_plotter'))], [real_plotter.Custom('TitledFirstName')], is behind it... \n\n"
+ ep1_flavor.2010.desc_spy_1: "[spymaster.GetCouncilTitleFirstName] says that my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('scapegoat_1'))], [scapegoat_1.Custom('TitledFirstName')], is probably, #EMP maybe#! behind it... \n\n"
+ ep1_flavor.2010.desc_spy_2: "[spymaster.GetCouncilTitleFirstName] is almost nearly half-certain that my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('scapegoat_2'))], [scapegoat_2.Custom('TitledFirstName')], is behind it... \n\n"
+ # COUNCILLOR 1
+ ep1_flavor.2010.desc_1_real: "[councillor_1.GetCouncilTitleFirstName] privately disagrees, arguing that [real_plotter.Custom('TitledFirstName')], my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('real_plotter'))], is to blame, while"
+ ep1_flavor.2010.desc_1_1: "[councillor_1.GetCouncilTitleFirstName] privately disagrees, arguing that the foul odor of [scapegoat_1.Custom('TitledFirstName')], my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('scapegoat_1'))], warrants investigation, while"
+ ep1_flavor.2010.desc_1_2: "[councillor_1.GetCouncilTitleFirstName] privately disagrees, arguing that [scapegoat_2.Custom('TitledFirstName')], my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('scapegoat_2'))], has a shifty demeanor, while"
+ # COUNCILLOR 2
+ ep1_flavor.2010.desc_2_real: "[councillor_2.GetCouncilTitleFirstName] urges me to imprison my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('real_plotter'))], [real_plotter.Custom('TitledFirstName')], the "obvious traitor", before it is too late.\n\n"
+ ep1_flavor.2010.desc_2_1: "[councillor_2.GetCouncilTitleFirstName] urges me to imprison my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('scapegoat_1'))], [scapegoat_1.Custom('TitledFirstName')], the "spook of [scapegoat_1.GetCurrentLocation.GetNameNoTooltip]", before it is too late.\n\n"
+ ep1_flavor.2010.desc_2_2: "[councillor_2.GetCouncilTitleFirstName] urges me to imprison my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('scapegoat_2'))], [scapegoat_2.Custom('TitledFirstName')], the "[ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] devil", before it is too late.\n\n"
+
+ ep1_flavor.2010.a.real: "It is [real_plotter.Custom('TitledFirstNameNoTooltip')], I am sure!"
+ ep1_flavor.2010.a.fake_1: "It is [scapegoat_1.Custom('TitledFirstNameNoTooltip')], I am sure!"
+ ep1_flavor.2010.a.fake_2: "It is [scapegoat_2.Custom('TitledFirstNameNoTooltip')], I am sure!"
+ ep1_flavor.2010.b.real: "No... could it be [real_plotter.Custom('TitledFirstNameNoTooltip')]?"
+ ep1_flavor.2010.b.fake_1: "No... could it be [scapegoat_1.Custom('TitledFirstNameNoTooltip')]?"
+ ep1_flavor.2010.b.fake_2: "No... could it be [scapegoat_2.Custom('TitledFirstNameNoTooltip')]?"
+ ep1_flavor.2010.c.real: "[real_plotter.Custom('TitledFirstNameNoTooltip')] must be behind this."
+ ep1_flavor.2010.c.fake_1: "[scapegoat_1.Custom('TitledFirstNameNoTooltip')] must be behind this."
+ ep1_flavor.2010.c.fake_2: "[scapegoat_2.Custom('TitledFirstNameNoTooltip')] must be behind this."
+
+ ep1_flavor.2020.desc: "Some healthy competition amongst soldiers is only natural, but the division between my [SCOPE.Custom('GetMAAType1')] and [SCOPE.Custom('GetMAAType2')] is stark. \n\nIts development is reflected in the growing animosity of their officers, [ROOT.Char.Custom('MountedWarriorTermPlural')] [knight_1.Custom('TitledFirstName')] and [knight_2.Custom('TitledFirstName')], who once again bicker before me. \n\n"
+
+ ep1_flavor.2020.desc_bridge: "[knight_2.Custom('FirstNameNoTooltip')] sneers, before [knight_1.Custom('FirstNameNoTooltip')] viciously retorts:"
+
+ ep1_flavor.2030.desc_1_monk: "[local_dispute_1.Custom('FirstName')], a noted [local_dispute_1.GetFaith.GetAdjective] [local_dispute_1.Custom('NunMonk')] of [local_county_1.GetNameNoTier],"
+ ep1_flavor.2030.desc_1_bishop: "[local_dispute_1.Custom('FirstName')], the [local_dispute_1.GetFaith.GetAdjective] [local_dispute_1.Custom('TitleAsNameNoTooltip')] of [local_dispute_1.GetPrimaryTitle.GetNameNoTier],"
+ ep1_flavor.2030.desc_1_baron: "[local_dispute_1.Custom('FirstName')], the [local_dispute_1.Custom('TitleAsNameNoTooltip')] of [local_dispute_1.GetPrimaryTitle.GetNameNoTier],"
+ ep1_flavor.2030.desc_1_scholar: "[local_dispute_1.Custom('FirstName')], an eminent learned [local_dispute_1.GetWomanMan] in [local_county_1.GetNameNoTier],"
+ ep1_flavor.2030.desc_1_culture: "[local_dispute_1.Custom('FirstName')], a leader of [local_county_1.GetNameNoTierPossessive] [local_dispute_1.GetCulture.GetName] minority,"
+ ep1_flavor.2030.desc_1_faith: "[local_dispute_1.Custom('FirstName')], a figurehead of [local_county_1.GetNameNoTierPossessive] [local_dispute_1.GetFaith.GetAdjective] population,"
+ ep1_flavor.2030.desc_1_judge: "[local_dispute_1.Custom('FirstName')], a celebrated local arbitrator of [local_county_1.GetNameNoTier],"
+ ep1_flavor.2030.desc_1_captain: "[local_dispute_1.Custom('FirstName')], a commander of [local_county_1.GetNameNoTierPossessive] local garrison,"
+ ep1_flavor.2030.desc_1_merchant: "[local_dispute_1.Custom('FirstName')], a leading merchant of [local_county_1.GetNameNoTier],"
+
+ ep1_flavor.2030.desc_2_monk: "[local_dispute_2.Custom('FirstName')], a celebrated [local_dispute_2.GetFaith.GetAdjectiveNoTooltip] [local_dispute_2.Custom('NunMonk')] from [local_county_2.GetNameNoTier],"
+ ep1_flavor.2030.desc_2_bishop: "[local_dispute_2.Custom('FirstName')], the [local_dispute_2.GetFaith.GetAdjective] [local_dispute_2.Custom('TitleAsNameNoTooltip')] of [local_dispute_2.GetPrimaryTitle.GetNameNoTier],"
+ ep1_flavor.2030.desc_2_baron: "[local_dispute_2.Custom('FirstName')], [local_dispute_2.Custom('TitleAsNameNoTooltip')] of [local_dispute_2.GetPrimaryTitle.GetNameNoTier],"
+ ep1_flavor.2030.desc_2_scholar: "[local_dispute_2.Custom('FirstName')], a noted [local_dispute_2.GetWomanMan] of letters in [local_county_1.GetNameNoTier],"
+ ep1_flavor.2030.desc_2_culture: "[local_dispute_2.Custom('FirstName')], a spokesman for [local_county_1.GetNameNoTierPossessive] [local_dispute_1.GetCulture.GetName] minority,"
+ ep1_flavor.2030.desc_2_faith: "[local_dispute_2.Custom('FirstName')], a representative of [local_county_2.GetNameNoTierPossessive] [local_dispute_2.GetFaith.GetAdjective] minority,"
+ ep1_flavor.2030.desc_2_judge: "[local_dispute_2.Custom('FirstName')], an eminent [local_county_2.GetTierAsNameNoTooltip|l] judge of [local_county_2.GetNameNoTier],"
+ ep1_flavor.2030.desc_2_captain: "[local_dispute_2.Custom('FirstName')], a well-known bailiff of [local_county_2.GetNameNoTier],"
+ ep1_flavor.2030.desc_2_merchant: "[local_dispute_2.Custom('FirstName')], a prominent trader based in [local_county_2.GetNameNoTier],"
+
+ ep1_flavor.2030.a: ""I find in favor of [local_dispute_1.Custom('TitledFirstNameNoTooltip')].""
+ ep1_flavor.2030.b: ""[local_dispute_2.Custom('TitledFirstNameNoTooltip')] is in the right.""
+ ep1_flavor.2030.c: ""[local_dispute_1.Custom('GetLocalRole')|U], I could use a [local_dispute_1.GetWomanMan] like you.""
+ ep1_flavor.2030.c.tt: "[local_dispute_1.Custom('FirstNameNoTooltip')] joins your court"
+ ep1_flavor.2030.d: ""Come work for me, [local_dispute_2.Custom('GetLocalRole')|l].""
+ ep1_flavor.2030.d.tt: "[local_dispute_2.Custom('FirstNameNoTooltip')] joins your court"
+
+ local_role_landed: "[ROOT.Char.Custom('TitleAsNameNoTooltip')]"
+
+ ep1_flavor.2040.desc: "Along with their strange goods, merchants bring tall-tales from distant lands; unverifiable; full of wonder. \n\nA group of [foreign_merchant.GetCulture.GetNameNoTooltip] peddlers purport to have brought '#EMP [exotic_blade_holder.GetCulture.GetNameNoTooltip]#!' objects, said to have come from the faraway court of a great ruler: '#EMP [exotic_blade_holder.Custom('FullNameNoTooltip')]#!', no less. \n\n[foreign_merchant.Custom('TitledFirstName')], the leading trader, grins darkly,"
+
+ ep1_flavor.2040.desc.gold: ""This unique [exotic_blade.GetType|l] could be yours—for a special price of course—great [ROOT.Char.Custom('TitleAsNameNoTooltip')]..."\n\nA likely yarn indeed!"
+
+ ep1_flavor.2040.desc.outro_antiquarian: "I look to [antiquarian.Custom('TitledFirstName')] for guidance:"
+
+ ep1_flavor.2060.desc: "[detective_scope.Custom('FirstName')], a local [sandford_scope.GetTitle.GetHolder.Custom('TitleAsNamePossessiveNoTooltip')] underling, requests a private audience, claiming to know who is behind the recent disappearances of [victim_scope.Custom('TitledFirstName')] and other travelers to my court. \n\n"My [ROOT.Char.GetLadyLord]! I have uncovered a shadowy cabal led by [grocer_scope.Custom('TitledFirstName')], a trader. They call themselves the [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] Watch, and those who they claim tarnish the [ROOT.Char.GetPrimaryTitle.GetTierAsNamePossessiveNoTooltip] grandeur often soon disappear!" \n\nWhen I fetch the grocer, [grocer_scope.GetSheHe] denies everything, claiming the [detective_scope.GetWomanMan] is delusional from too many years on the mean streets of [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]..."
+
+ ep1_flavor.2060.a.tt: "[detective_scope.Custom('FirstName')] and [grocer_scope.Custom('FirstName')] leave"
+ ep1_flavor.2060.b: ""Arrest [grocer_scope.Custom('FirstNameNoTooltip')], then come work for me!""
+
+ ep1_flavor.2060.c: ""A shame you had to get involved, [detective_scope.Custom('FirstNameNoTooltip')]...""
+
+ ep1_flavor.2070.desc.intro: "As I pass the library, the rumbles of [symposium_courtier.Custom('TitledFirstNamePossessive')] discontent pique my interest. [symposium_courtier.GetSheHe|U] is debating [symposium_scholar.Custom('TitledFirstName')], a visiting [symposium_scholar.GetCulture.GetNameNoTooltip] [symposium_scholar.Custom('GetScholarType')|l] of some repute. \n\n"
+ ep1_flavor.2070.desc.theo_same_faith: ""You are making the same mistakes as [symposium_courtier.GetFaith.GetAdjectiveNoTooltip] initiates," [symposium_courtier.Custom('FirstNameNoTooltip')] turns [symposium_courtier.GetHerHis] nose up, "truly, this is the way to heresy." \n\n"Come now," the [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] entreats, "surely [symposium_scholar.GetFaith.HighGodName] did not intend [symposium_scholar.GetHerHis] teachings be so immovable, especially when merely left to us to interpret.""
+ ep1_flavor.2070.desc.theo_same_faith_diff_cult: ""I had no inkling of just how far [symposium_ruler.GetPrimaryTitle.GetAdjectiveNoTooltip] [symposium_courtier.GetFaith.GetNameNoTooltip] had diverged from [symposium_scholar.GetFaith.HighGodNamePossessive] teachings!" [symposium_courtier.Custom('FirstNameNoTooltip')] scoffs.\n\n"Nonsense," the [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] wags [symposium_scholar.GetHerHis] finger, "it is the [symposium_courtier.GetCulture.GetNameNoTooltip] [symposium_courtier.GetFaith.GetAdherentNamePluralNoTooltip] who have lost their way, backsliding into pagan practices.""
+ ep1_flavor.2070.desc.theo_same_relig: ""The differences between [symposium_courtier.GetFaith.GetNameNoTooltip] and [symposium_scholar.GetFaith.GetNameNoTooltip] are more than merely technical," [symposium_courtier.Custom('FirstNameNoTooltip')] lectures, "your heresy has diverged from [symposium_courtier.GetFaith.HighGodName]."\n\n"The true nature of [symposium_courtier.GetFaith.GetReligion.GetNameNoTooltip] is encompassed by both faiths," the [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] says solemnly, "it is the ignorant who make canyons of rills.""
+ ep1_flavor.2070.desc.theo_diff_relig: ""I have never understood the [symposium_scholar.GetFaith.GetReligion.GetAdjectiveNoTooltip] teachings," [symposium_courtier.Custom('FirstNameNoTooltip')] ponders, "[symposium_scholar.GetFaith.HighGodName] seems such an unconvincing figure compared to [symposium_courtier.GetFaith.HighGodName]."\n\nThe [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] smiles sarcastically: "Such deep understanding you have! If you were a [symposium_scholar.GetFaith.BishopNeuter] you would surely reach [symposium_scholar.GetFaith.PositiveAfterLife]!""
+ ep1_flavor.2070.desc.mystic: ""These esoteric practices have no place in [symposium_courtier.GetFaith.HighGodNamePossessive] realm," [symposium_courtier.Custom('FirstNameNoTooltip')] sternly rebukes, "t'is but smoke and mirrors, and hiding behind mystery." \n\nThe [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] smiles contemptuously, "You simply fear what you don't understand, and lack the courage or intelligence to learn.""
+ ep1_flavor.2070.desc.medicine: ""A medicus has their uses, but it is [symposium_courtier.GetFaith.HighGodName] who has the final say over life and death," [symposium_courtier.Custom('FirstNameNoTooltip')] laments, "no amount of poultice can treat the soul." \n\n"You lack understanding of physic I see," the [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] sighs, "so many could be saved if there was not such ignorance.""
+ ep1_flavor.2070.desc.ling_same_cult: ""[ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] writing is far more developed than anything to be found in [symposium_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip], [symposium_courtier.Custom('FirstNameNoTooltip')] yawns, "you must take some books with you when you leave." \n\n"It is incredible how wrong someone can be," the [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] snorts, "and while delivered of such certainty...""
+ ep1_flavor.2070.desc.ling_diff_cult: ""By [symposium_courtier.GetFaith.HighGodName], listen to yourself!", [symposium_courtier.Custom('FirstNameNoTooltip')] cringes, "This [symposium_scholar.GetCulture.GetNameNoTooltip] dialect butchers the beautiful language of [symposium_courtier.GetCulture.GetLanguage.GetNameNoTooltip], you may as well be speaking [ling_cul_1_bonus.GetLanguage.GetNameNoTooltip]!" \n\n[symposium_scholar.Custom('FirstNameNoTooltip')] composes [symposium_scholar.GetHerselfHimself], "[symposium_ruler.Custom('TitledFirstNamePossessive')] court and tongue is purer by far, than this petty excuse for a [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip].""
+ ep1_flavor.2070.desc.ling_diff_lang: ""Your foreign tongue lacks the nuances to discuss these ideas," [symposium_courtier.Custom('FirstNameNoTooltip')] says scornfully, "this is of course why you learned #EMP [ROOT.Char.GetCulture.GetLanguage.GetNameNoTooltip]#!." \n\nThe [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] rolls [symposium_scholar.GetHerHis] eyes and disdainfully mutters some [symposium_scholar.GetCulture.GetLanguage.GetNameNoTooltip] oaths under [symposium_scholar.GetHerHis] breath."
+ ep1_flavor.2070.desc.fall_alchemy: ""This ratio would never work," [symposium_courtier.Custom('FirstNameNoTooltip')] shakes [symposium_courtier.GetHerHis] head, pouring over scratches in a piece of bark. "This has all been tried before." \n\nThe [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] replies "Everyone makes mistakes—even alchemists—they may have missed something.""
+ ep1_flavor.2070.desc.fall_stars: ""No no no! These theories were debunked centuries ago," [symposium_courtier.Custom('FirstNameNoTooltip')] scowls in genuine disbelief, "have you not read the classics of astronomy?" \n\n"You read instead of think," the [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] retorts, "there is still much we have to learn.""
+ ep1_flavor.2070.desc.fall_books: ""You have #EMP clearly#! been reading the wrong books," [symposium_courtier.Custom('FirstNameNoTooltip')] says dismissively, "I'll give you a list of [symposium_courtier.GetCulture.GetNameNoTooltip] recommendations..." \n\n"That's quite alright," the [symposium_scholar.Custom('GetYoungMiddleAgedOld')] [symposium_scholar.GetWomanMan] replies evenly, "there is #EMP clearly#! not much in them.""
+ ep1_flavor.2070.a: ""Say, would you stay a while longer, [symposium_scholar.Custom('FirstNameNoTooltip')]?""
+
+ ep1_flavor.2070.c.success: "You prove [symposium_scholar.Custom('FirstNameNoTooltip')] wrong"
+ ep1_flavor.2070.c.failure: "[symposium_scholar.Custom('FirstNameNoTooltip')] embarrasses you"
+ ep1_flavor.2070.c.tt: "[symposium_scholar.Custom('FirstNameNoTooltip')] may join your court"

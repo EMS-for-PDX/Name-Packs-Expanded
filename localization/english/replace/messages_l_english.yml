@@ -1,0 +1,236 @@
+﻿l_english:
+ msg_marriage: "Marriage: Your [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] #high [LEFT_CHARACTER.Custom('FirstNameNoTooltip')]#! and #high [RIGHT_CHARACTER.Custom('FirstNameNoTooltip')]#!"
+ msg_marriage_desc: "Your [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.Custom('ShortNameNotMe')] married [RIGHT_CHARACTER.Custom('UINameNotMe')]"
+ msg_building_done: "#high [BUILDING.GetNameNoTooltip]#! constructed in [PROVINCE.GetNameNoTooltip]"
+
+ msg_new_heir_desc: "Your [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.Custom('RegNameNoTooltip')] is your new [player_heir|E]"
+
+ msg_new_heir_old_heir_dead_desc: "With the death of [RIGHT_CHARACTER.Custom('RegNameNoTooltip')], your [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.Custom('RegNameNoTooltip')] is your new [player_heir|E]"
+
+ msg_no_new_heir_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] is no longer your [player_heir|E]"
+
+ msg_no_new_heir_old_heir_dead_desc: "With the death of [LEFT_CHARACTER.Custom('RegNameNoTooltip')], you have no [player_heir|E]"
+
+ msg_inherited_single_title_desc: "You inherited the [LEFT_TITLE.GetName] from [CHARACTER.Custom('RegNameNoTooltip')] ($LAW$)"
+
+ msg_inherited_titles_desc: "You inherited the [LEFT_TITLE.GetName] and $VALUE$ other titles from [CHARACTER.Custom('RegNameNoTooltip')] ($LAW$)"
+
+ msg_lost_single_title_desc: "You lost the [LEFT_TITLE.GetName] to [CHARACTER.Custom('RegNameNoTooltip')]"
+
+ msg_lost_titles_desc: "You lost the [LEFT_TITLE.GetName] and $VALUE$ other titles to [CHARACTER.Custom('RegNameNoTooltip')]"
+
+ msg_siege_started_desc: "[PROVINCE.GetName|U] is under [siege|E] by [PROVINCE.GetSiege.GetSiegingRealmCharacter.Custom('UIName')]!"
+
+ msg_scheme_abandoned_desc: "$SCHEME_NAME|V$ on [CHARACTER.Custom('RegNameNoTooltip')] has been abandoned"
+ msg_agent_joined_my_scheme: "Agent Joined Scheme: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_agent_joined_my_scheme_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] joined as an [agent|E] in your [scheme|E] to [SCHEME.GetFullActionName]"
+
+ msg_multiple_agents_joined_my_scheme_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] and $OTHER|V$ other [agents|E] joined your [scheme|E] to [SCHEME.GetFullActionName]"
+
+ msg_2_agents_joined_my_scheme_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] and [RIGHT_CHARACTER.Custom('RegNameNoTooltip')] joined your [scheme|E] to [SCHEME.GetFullActionName]"
+
+ msg_agent_removed_my_scheme_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] is no longer an agent in your [scheme|E] to [SCHEME.GetFullActionName]"
+
+ msg_2_agents_removed_my_scheme_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] and [RIGHT_CHARACTER.Custom('RegNameNoTooltip')] are no longer part of your [scheme|E] to [SCHEME.GetFullActionName]"
+
+ msg_multiple_agents_removed_my_scheme_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] and $OTHER|V$ other [agents|E] are no longer part of your [scheme|E] to [SCHEME.GetFullActionName]"
+
+ msg_council_task_finished_location_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] finished the $TASK_NAME|D$ task in $TASK_LOCATION|D$"
+
+ msg_council_task_finished_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] finished the $TASK_NAME|D$ task"
+ msg_alliance: "Alliance Formed: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_alliance_desc: "[alliance|E] formed with [LEFT_CHARACTER.Custom('RegNameNoTooltip')]"
+ msg_broken_alliance: "Alliance Broken: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_broken_alliance_desc: "The [alliance|E] with [LEFT_CHARACTER.Custom('RegNameNoTooltip')] has been broken"
+ msg_expired_alliance: "Alliance Expired: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_expired_alliance_desc: "My [alliance|E] with [LEFT_CHARACTER.Custom('RegNameNoTooltip')] has ended since [SECONDARY_ACTOR.Custom('UIName')] and [SECONDARY_RECIPIENT.Custom('UIName')] are no longer married or betrothed"
+ msg_expired_alliance_ally_death_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] has died"
+ msg_alliance_became_landed: "Alliance Formed: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_alliance_became_landed_desc: "[alliance|E] formed with [LEFT_CHARACTER.Custom('RegNameNoTooltip')] because [LEFT_CHARACTER.GetSheHe] is now a [ruler|E]"
+ msg_alliance_became_unlanded: "Alliance Invalid: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_alliance_became_unlanded_desc: "You no longer have an [alliance|E] with [LEFT_CHARACTER.Custom('RegNameNoTooltip')] because [LEFT_CHARACTER.GetSheHe] is no longer a [ruler|E]"
+
+ msg_i_am_not_powerful_vassal_desc: "You are no longer considered a [powerful_vassal|E] of [LEFT_CHARACTER.Custom('RegNameNoTooltip')]"
+ msg_war_ally_joined: "Ally Joins War: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_war_ally_joined_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] joined the [WAR.GetName|V]"
+
+ msg_war_ally_joined_multiple_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] and $VALUE|V$ other [rulers|E] joined the [WAR.GetName|V]"
+ msg_war_enemy_joined: "Enemy Ally Joins War: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_war_enemy_joined_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] joined [WAR.GetName|V]"
+
+ msg_war_enemy_joined_multiple_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] and $VALUE|V$ other [rulers|E] joined the [WAR.GetName|V]"
+
+ msg_war_ally_replaced: "Ally Joins War: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_war_ally_replaced_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] replaced [RIGHT_CHARACTER.Custom('RegNameNoTooltip')] in the [WAR.GetName|V]"
+ msg_war_enemy_replaced: "Enemy Ally Joins War: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_war_enemy_replaced_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] replaced [RIGHT_CHARACTER.Custom('RegNameNoTooltip')] in the [WAR.GetName|V]"
+
+ msg_war_player_replaced_desc: "You replaced [RIGHT_CHARACTER.Custom('RegNameNoTooltip')] in the [WAR.GetName|V]"
+ msg_war_enemy_transferred: "New War Target: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_war_enemy_transferred_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] is now the target of the [WAR.GetName|V]"
+ msg_war_player_transferred: "New War: [WAR.GetActiveCB.GetAttacker.Custom('RegNameNoTooltip')]"
+
+ msg_war_ally_removed: "Ally Left War: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_war_ally_removed_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] left the [WAR.GetName|V]"
+ msg_war_ally_removed_multiple: "Ally Left War: [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_war_ally_removed_multiple_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] and $VALUE|V$ other [rulers|E] left the [WAR.GetName|V]"
+
+ msg_war_enemy_removed_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] left the [WAR.GetName|V]"
+
+ msg_war_enemy_removed_multiple_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] and $VALUE|V$ other [rulers|E] left the [WAR.GetName|V]"
+
+ msg_invalidation_of_council_task_desc: "[LEFT_CHARACTER.Custom('RegNameNoTooltip')] can no longer continue with [ACTIVE_COUNCIL_TASK.GetName]"
+
+ msg_troops_disbanding_civil_war_desc: "$AMOUNT$ levies from [LEFT_CHARACTER.Custom('ShortNameNoTooltip')] are disbanding due to civil war"
+
+ msg_war_declared_on_liege_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] is being attacked by [RIGHT_CHARACTER.Custom('ShortName')]"
+
+ msg_war_declared_by_liege_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] has declared war on [RIGHT_CHARACTER.Custom('ShortName')]"
+
+ msg_title_rank_up_desc: "You are now a mighty [CHARACTER.Custom('TitleTierName')|V]"
+
+ msg_title_rank_down_desc: "You are now a mere [CHARACTER.Custom('TitleTierName')|V]"
+
+ msg_disbanded_faction_target_died_desc: "[FACTION.GetName] target [CHARACTER.Custom('RegNameNoTooltip')] died, therefore the faction has been disbanded"
+
+ msg_removed_from_faction_not_valid_desc: "You had to leave the [FACTION.GetName] against [CHARACTER.Custom('RegNameNoTooltip')].\n$REASONS$"
+
+ msg_removed_from_faction_not_valid_leader_desc: "[FACTION.GetName] against [CHARACTER.Custom('RegNameNoTooltip')] doesn't have a valid leader, therefore the faction has been disbanded"
+
+ msg_removed_from_faction_not_liege_desc: "[CHARACTER.Custom('RegNameNoTooltip')] is not your liege anymore so you have left the [FACTION.GetName] against [CHARACTER.GetHerHim]"
+ msg_faction_against_liege_or_me_created: "Faction Created against [RIGHT_CHARACTER.Custom('ShortNameNoTooltip')]!"
+ msg_faction_against_liege_or_me_created_desc: "Your [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.Custom('ShortNameNoTooltip')] created the [FACTION.GetName] against [RIGHT_CHARACTER.Custom('ShortNameNoTooltip')]"
+ msg_county_faction_against_liege_or_me_created_desc: "The [LEFT_TITLE.GetNameNoTooltip] has given rise to the [FACTION.GetName], targeting [RIGHT_CHARACTER.Custom('ShortNameNoTooltip')]"
+
+ msg_faction_local_not_leader_anymore_desc: "[LEFT_CHARACTER.Custom('ShortNameNoTooltip')] has replaced you as the leader of [FACTION.GetName]"
+
+ msg_faction_local_becomes_leader_desc: "You are now the leader of the [FACTION.GetName] against [CHARACTER.Custom('ShortNameNoTooltip')]"
+
+ msg_faction_forced_to_join_desc: "[RIGHT_CHARACTER.Custom('ShortNameNoTooltip')] used [RIGHT_CHARACTER.GetHerHis] [hook|E] on you to force you into joining the [FACTION.GetName] against [LEFT_CHARACTER.Custom('ShortNameNoTooltip')]"
+
+ msg_betrothal_invalidated_desc: "Your new [faith|E] dictates that you may no longer be betrothed to [LEFT_CHARACTER.Custom('ShortName')]"
+
+ msg_betrothal_invalidated_player_heir_desc: "[LEFT_CHARACTER.Custom('ShortNameNotMePossessive')] new [faith|E] dictates that [LEFT_CHARACTER.GetSheHe] may no longer be betrothed to [RIGHT_CHARACTER.Custom('ShortName')]"
+
+ msg_break_betrothal_desc: "Your [betrothal|E] to [LEFT_CHARACTER.Custom('ShortName')] has been broken."
+
+ msg_break_betrothal_player_heir_desc: "[LEFT_CHARACTER.Custom('ShortNameNotMePossessive')] [betrothal|E] to [RIGHT_CHARACTER.Custom('ShortName')] has been broken."
+
+ msg_spouse_invalidated_desc: "Your [faith|E] or [culture|E]'s values mean that [LEFT_CHARACTER.Custom('ShortName')] is no longer your [spouse|E]"
+
+ msg_divorce_desc: "You have gotten [divorced|E] from [LEFT_CHARACTER.Custom('ShortName')] – [LEFT_CHARACTER.GetSheHe] is no longer your [spouse|E]"
+
+ msg_spouse_invalidated_player_heir_desc: "[LEFT_CHARACTER.Custom('ShortNameNotMePossessive')] new [faith|E]'s beliefs mean that [RIGHT_CHARACTER.Custom('ShortName')] is no longer [LEFT_CHARACTER.GetHerHis] [spouse|E]"
+
+ msg_divorce_player_heir_desc: "[LEFT_CHARACTER.Custom('ShortName')] has gotten [divorced|E] from [RIGHT_CHARACTER.Custom('ShortName')] – [RIGHT_CHARACTER.GetSheHe] is no longer [LEFT_CHARACTER.GetHerHis] [spouse|E]"
+
+ msg_betrothal_fulfilled_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] and [RIGHT_CHARACTER.Custom('ShortName')] are now married"
+
+ msg_marriage_forced_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] and [RIGHT_CHARACTER.Custom('ShortName')] are marrying due to a [strong_hook|E]"
+
+ msg_consort_invalidated_desc: "Your [faith|E] or [culture|E]'s values mean that [LEFT_CHARACTER.Custom('ShortName')] is no longer your Consort"
+
+ msg_cadet_branch_created_desc: "Your [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.Custom('ShortName')] created the [cadet_branch|E] $NAME|V$"
+
+ msg_i_not_head_of_house_anymore_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] replaced you as the [house_head|E] of the $NAME|V$ dynasty"
+
+ msg_became_head_of_house_desc: "Your [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.Custom('ShortName')] became the new [house_head|E] of House $NAME|V$"
+
+ msg_i_not_dynast_anymore_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] replaced you as [dynast|E] of the $NAME|V$ dynasty"
+
+ msg_became_dynast_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] became the new [dynast|E] of the $NAME|V$ dynasty"
+
+ msg_i_not_head_of_faith_anymore_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] replaced you as the [FAITH.ReligiousHeadName] of [FAITH.GetName]"
+
+ msg_no_longer_culture_head_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] took your place as [culture_head|E]"
+
+ msg_new_theocracy_lesee_approve_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] endorses you #weak ([church_property|E])#!"
+ msg_new_theocracy_lesee_disapprove_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] does not endorse you #weak ([church_property|E])#!"
+
+ msg_fired_from_council_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] has fired you from the [council|E]"
+
+ msg_council_swap_position_desc: "You're now a $POSITION_NAME$ on [LEFT_CHARACTER.Custom('ShortNameNotMePossessive')] [council|E]"
+
+ msg_left_council_position_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] left [LEFT_CHARACTER.GetHerHis] position as $POSITION_NAME$"
+
+ msg_claim_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] no longer controls any of the claimed Counties."
+ msg_claim_war_invalidated_claimant_unavailable_dead_message: "The [war.GetName] has ended: [claimant.Custom('ShortName')] died, and thus [claimant.GetHerHis] claim can no longer be used by [attacker.Custom('ShortName')]."
+ msg_claim_war_invalidated_claimant_unavailable_not_vassal_message: "The [war.GetName] has ended: [claimant.Custom('ShortName')] is not a vassal or courtier of [attacker.Custom('ShortName')] and thus [claimant.GetHerHis] claim can no longer be used."
+ msg_de_jure_duchy_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] no longer controls any land in the targeted duchy."
+ msg_de_jure_county_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] no longer controls the County."
+ msg_de_jure_duchy_war_invalidated_liege_war_message: "The [war.GetName] has ended: [Select_CString( attacker.IsLocalPlayer, 'You', attacker.Custom('ShortName') )] have joined [Select_CString( attacker.IsLocalPlayer, 'your', attacker.GetHerHis )] liege's war against [Select_CString( defender.IsLocalPlayer, 'you', defender.Custom('ShortName') )]."
+ msg_de_jure_all_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] no longer controls any de jure claimed land."
+ msg_religious_war_invalidation_region_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] no longer controls any land in the target region."
+ msg_religious_war_invalidated_hostility_level_message: "The [war.GetName] has ended: [attacker.Custom('ShortName')] can not $game_concept_holy_war$ the [defender.GetFaith.GetAdjective] [faith|E]."
+ msg_invasion_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] no longer controls any land in the target region."
+ msg_mongol_invasion_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] no longer controls any land in the target region."
+ msg_county_conquest_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] no longer controls the County."
+ msg_duchy_conquest_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] no longer controls any land in the target region."
+ msg_vassalization_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] can no longer be vassalized."
+ msg_subjugation_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] can no longer be subjugated."
+ msg_excommunication_war_invalidation_trait_message: "The [war.GetName] has ended: [defender.Custom('ShortName')] is no longer Excommunicated."
+
+ msg_my_hook_replaced_desc: "Your [hook|E] on [LEFT_CHARACTER.Custom('ShortName')] has been replaced with a [HOOK.GetName] Hook"
+
+ msg_my_hook_added_desc: "You have gained a [HOOK.GetName] [hook|E] on [LEFT_CHARACTER.Custom('ShortName')]"
+
+ msg_hook_on_me_replaced_desc: "[LEFT_CHARACTER.Custom('ShortNameNotMePossessive')] [hook|E] on you has been replaced with a [HOOK.GetName] Hook"
+
+ msg_hook_on_me_added_desc: "[LEFT_CHARACTER.Custom('ShortName')|U] has gained a [HOOK.GetName] [hook|E] on you"
+
+ msg_hook_on_me_expired_desc: "[LEFT_CHARACTER.Custom('ShortNameNotMePossessive')] [HOOK.GetName] [hook|E] on you has expired"
+
+ msg_my_hook_expired_desc: "Your [hook|E] on [LEFT_CHARACTER.Custom('ShortName')] has expired"
+ msg_raid_war_invalidated_message: "The [war.GetName] has ended: [defender.Custom('TitledFirstName')] can no longer be raided"
+ death_notification_title: "Your [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )|U] #high [LEFT_CHARACTER.Custom('FirstNameNoTooltip')]#! Died"
+ lover_death_notification_title: "Your Lover #high [LEFT_CHARACTER.Custom('FirstNameNoTooltip')]#! Died"
+ friend_death_notification_title: "Your Friend #high [LEFT_CHARACTER.Custom('FirstNameNoTooltip')]#! Died"
+ councillor_death_notification_title: "Your Councillor #high [LEFT_CHARACTER.Custom('FirstNameNoTooltip')]#! Died"
+
+ msg_vassal_feudalised_desc: "Your vassal, [ROOT.Char.Custom('ShortName')], has given up [ROOT.Char.GetHerHis] tribal ways and become feudal"
+
+ msg_murder_scheme_agent_join_message: "[agent.Custom('TitledFirstName')] joined your scheme to kill [target.Custom('TitledFirstName')]."
+
+ msg_murder_scheme_agent_leave_message: "[agent.Custom('TitledFirstName')] left your scheme to kill [target.Custom('TitledFirstName')]."
+
+ msg_vassal_contract_level_invalidated_desc: "[RIGHT_CHARACTER.Custom('UINamePossessiveNoTooltip')] $OBLIGATION_TYPE_0|V$ obligation has been invalidated"
+
+ msg_vassal_contract_2_levels_invalidated_desc: "[RIGHT_CHARACTER.Custom('UINamePossessiveNoTooltip')] $OBLIGATION_TYPE_0|V$ and $OBLIGATION_TYPE_1|V$ obligations have been invalidated"
+
+ msg_vassal_contract_multiple_levels_invalidated_desc: "[RIGHT_CHARACTER.Custom('UINamePossessiveNoTooltip')] $OBLIGATION_TYPE_0|V$ and $OBLIGATION_TYPE_1|V$ and $COUNT|V$ other obligations have been invalidated"
+
+ msg_force_vote_in_succession_election_message: "You force [recipient.Custom('TitledFirstName')] to vote for the same candidate as you for the next [GetDefine('NCharacter', 'FORCED_SUCCESSION_ELECTION_YEARS')] years."
+
+ msg_recruited_guest_to_court_interaction_message: "[recipient.Custom('TitledFirstName')] is now a member of your [court|E]."
+
+ msg_hired_court_physician_interaction_message: "[recipient.Custom('TitledFirstName')] is now your [GetCourtPositionType('court_physician_court_position').GetName()]."
+
+ msg_fired_court_physician_interaction_message: "You fired [recipient.Custom('TitledFirstName')] from the position as [GetCourtPositionType('court_physician_court_position').GetName()]."
+
+ msg_concubine_accepted_title: "Accepted [secondary_actor.Custom('ShortName')] as my concubine"
+
+ msg_concubine_offered_title: "Made [secondary_actor.Custom('TitledFirstName')] [recipient.Custom('TitledFirstNamePossessive')] concubine"
+
+ msg_concubine_offered_invalidated_consort: "[secondary_actor.Custom('TitledFirstName')] is [spouse.Custom('ShortNameNotMePossessive')] consort and therefore cannot become [recipient.Custom('ShortNameNotMePossessive')] concubine"
+ msg_concubine_offered_invalidated_betrothed: "[secondary_actor.Custom('TitledFirstName')] is betrothed to [spouse.Custom('ShortName')] and therefore cannot become [recipient.Custom('ShortNameNotMePossessive')] concubine"
+
+ msg_concubine_offer_rejected: "[recipient.Custom('TitledFirstName')] rejected [secondary_actor.Custom('TitledFirstName')] as [recipient.GetHerHis] concubine"
+ msg_close_family_member_taken_as_concubine_title: "[recipient.Custom('TitledFirstName')] Taken as Concubine"
+ msg_close_family_member_offered_as_concubine_title: "[secondary_actor.Custom('TitledFirstName')] Taken as Concubine"
+
+ msg_execute_prisoner_desc: "[recipient.Custom('TitledFirstName')] [recipient.GetDeathReason]"
+
+ msg_artifact_gained_desc: "You inherited [artifact_inherited.GetNameNoTooltip] from [old_owner.Custom('UIName')]!"
+ 
+ msg_rival_dethroned: "Your rival [actor.Custom('TitledFirstName')] lost a Title"
+ msg_rival_dethroned_desc: "Your [rival|E] [actor.Custom('TitledFirstName')] lost the [title.GetBaseName]"
+
+ msg_court_position_gained_desc: "You have been appointed [LEFT_CHARACTER.Custom('ShortNameNotMePossessive')] [COURT_POSITION_TYPE.GetNameNoTooltip]"
+
+ msg_court_position_removed_desc: "[LEFT_CHARACTER.Custom('ShortName')] is no longer employing you as [COURT_POSITION_TYPE.GetNameNoTooltip]"
+
+ msg_court_position_invalidated_employee_desc: "[LEFT_CHARACTER.Custom('ShortName')] can no longer employ you as [COURT_POSITION_TYPE.GetNameNoTooltip]"
+
+ msg_court_position_invalidated_employer_desc: "[LEFT_CHARACTER.Custom('ShortName')] is no longer your [COURT_POSITION_TYPE.GetNameNoTooltip]"
+
+ msg_letter_event_timeout: "Event from [CHARACTER.Custom('ShortName')] timed out"

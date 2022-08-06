@@ -1,0 +1,65 @@
+﻿l_english:
+
+ war_event.1901: "Your liege won their war with [defender_loser.Custom('ShortName')]!"
+ war_event.1902: "Your liege lost their war with [attacker_winner.Custom('ShortName')]!"
+ war_event.1903: "Your liege has signed a White Peace with [defender_white_peace.Custom('ShortName')]!"
+ war_event.1904: "Your liege has signed a White Peace with [attacker_white_peace.Custom('ShortName')]!"
+ war_event.1905: "Your liege lost their war with [defender_winner.Custom('ShortName')]!"
+ war_event.1906: "Your liege won their war with [attacker_loser.Custom('ShortName')]!"
+ war_event.notification_liege_win.t: "Liege Won War"
+ war_event.notification_liege_loss.t: "Liege Lost War"
+
+ war_event.1001.t: "My Liege Declares War"
+ war_event.1001.desc: "It is strange how quickly a situation can change during war.\n\nIn the midst of fighting against [recipient.Custom2('MyCharacterIntroduction', ROOT.Char)], a missive from [liege_invalidator.Custom2('MyCharacterIntroduction', ROOT.Char)] arrives. [liege_invalidator.GetSheHe|U] is telling me to abandon my own cause and join [liege_invalidator.GetHerHim] in #EMP [liege_invalidator.GetHerHis]#! war against [recipient.Custom('TitledFirstName')]."
+ war_event.1001.a: "B-but what about my war!? Damn you!"
+
+ war_event.2003.desc: "Since [liege_invalidator.Custom2('MyCharacterIntroduction', invalidator)] now wages war against you my forces will join [liege_invalidator.GetHerHis] cause."
+ war_event.2003.a: "So be it."
+
+ war_event.2001.t: "A New Opponent"
+ war_event.2001.desc: "Nothing in this world is certain, especially in times of war. The [war.GetName] has been no different.\n\nAs this conflict is no longer against [previous_defender.Custom2('MyCharacterIntroduction', ROOT.Char)] but [defender.Custom2('MyCharacterIntroduction', ROOT.Char)] instead, it might be wise to reevaluate the situation."
+ war_event.2001.a: "My goal is still the same."
+ war_event.2001.a.tt: "The war rages on"
+ war_event.2001.b: "This is no longer the best course of action."
+
+ war_event.2002.t: "[invalidator.Custom2('AppropriateGreeting', ROOT.Char)]"
+ war_event.2002.desc: "We have regrettably found ourselves on opposing sides in this conflict. It was never my intention, and thus I will withdraw my troops."
+ war_event.2002.a: "A wise choice."
+
+ war_event.3001.t: "[war_owner.Custom2('AppropriateGreeting', ROOT.Char)]"
+ war_event.3001.desc: "Two years ago you promised to aid me in the [war.GetName], yet so far you have done nothing to support me in this endeavor.\n\nWhat is the point of our alliance if you never to even lift a finger to help me?"
+ war_event.3001.a: "I will send my troops to your aid immediately!"
+ war_event.3001.a.tt: "If I do not earn any [war_contribution|E] within 12 months I will lose a [prestige_level|E] and place my alliance with [war_owner.Custom('TitledFirstNameNoTooltip')] at risk!"
+ war_event.3001.b: "This chest of gold should make up for my absence..."
+ war_event.3001.b.tt: "I will no longer be expected to send soldiers to fight in [war.GetName]."
+ war_event.3001.c: "I apologize, I should not have claimed that I would help."
+
+ war_event.3002.t: "[war_owner.Custom2('AppropriateGreeting', ROOT.Char)]"
+ war_event.3002.desc.start: "Despite your promise to send troops to my aid, I still have yet to see a single one of your soldiers on the battlefield."
+ war_event.3002.desc.end.1: "By breaking your oath this way you have brought dishonor upon yourself and your family."
+ war_event.3003.desc.end.2: "Your failure in this regard has severely damaged my trust in you, [ROOT.Char.Custom('TitledFirstName')]."
+ war_event.3002.1.a: "Very well."
+ war_event.3003.2.a: "I will do better next time."
+ war_event.3003.2.b: "Maybe I should just end our alliance...?"
+
+ war_event.neighbor_war.both_neighbors.t: "Neighbors' War Resolved"
+ war_event.neighbor_war.both_neighbors.desc: "Your neighbor [winner.Custom('TitledFirstName')] won against your other neighbor [loser.Custom('TitledFirstName')] in the [war.GetName]!"
+
+ war_event.neighbor_war.only_winner.t: "Neighboring Ruler Won War"
+ war_event.neighbor_war.only_winner.desc: "Your neighbor [winner.Custom('TitledFirstName')] has won against [loser.Custom2('YourCharacterIntroductionNoComma', this_player)] in the [war.GetName]!"
+
+ war_event.neighbor_war.only_loser.t: "Neighboring Ruler Lost War"
+ war_event.neighbor_war.only_loser.desc: "Your neighbor [loser.Custom('TitledFirstName')] has lost against [winner.Custom2('YourCharacterIntroductionNoComma', this_player)] in the [war.GetName]!"
+
+ #Holy wars "soft invalidated" by faith change
+ war_event.3101.t: "Newfound Faith"
+ war_event.3101.desc: "News have reached me of [defender.Custom('TitledFirstNamePossessive')] conversion to [defender.GetFaith.GetNameNoTooltip]. I no longer have a [ROOT.Char.GetFaith.HighGodName]-given right to wage war on [defender.GetPrimaryTitle.GetNameNoTierNoTooltip]."
+ war_event.3101.a: "The time has come to put down our swords."
+ war_event.3101.b.tt: "[war.GetName] continues"
+ war_event.3101.b: "[defender.GetSheHe|U] thinks this will stop me? Ha!"
+
+ war_event.3102.t: "[attacker.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
+ war_event.3102.desc: "Your newfound faith in [ROOT.Char.GetFaith.HighGodName] is hardly convincing. My cause is still righteous — there will be no mercy."
+ war_event.3102.a: "[ROOT.Char.Custom('CulturalCurse')|U]!"
+
+

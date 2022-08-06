@@ -1,0 +1,14 @@
+﻿l_english:
+ PLACE_IN_LINE_OF_SUCCESSION_TRIGGER_THIRD: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] place in line of succession is $OPERATOR$ $VALUE|V0$"
+ NOT_PLACE_IN_LINE_OF_SUCCESSION_TRIGGER_THIRD: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] place in line of succession is #bold not#! $OPERATOR$ $VALUE|V0$"
+
+ PLACE_IN_LINE_OF_SUCCESSION_RANGE_TRIGGER_THIRD: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] place in line of succession is between $MINVALUE|V0$ and $MAXVALUE|V0$"
+ NOT_PLACE_IN_LINE_OF_SUCCESSION_RANGE_TRIGGER_THIRD: "[CHARACTER.Custom('ShortNameNotMePossessive')|V] place in line of succession is #bold not#! between $MINVALUE|V0$ and $MAXVALUE|V0$"
+
+ CHARACTER_HAS_THE_TITLE: "[CHARACTER.Custom('ShortName')|U] has the [title|E] [TARGET_TITLE.GetNameNoTier]"
+ CHARACTER_DOES_NOT_HAVE_THE_TITLE: "[CHARACTER.Custom('ShortName')|U] does #bold not#! have the [title|E] [TARGET_TITLE.GetNameNoTier]"
+
+ THEIR_PRIMARY_TITLE_IS: "[CHARACTER.Custom('ShortNameNotMePossessive')] [primary_title|E] is [TARGET_TITLE.GetNameNoTier]"
+ THEIR_PRIMARY_TITLE_IS_NOT: "[CHARACTER.Custom('ShortNameNotMePossessive')] [primary_title|E] is #bold not#! [TARGET_TITLE.GetNameNoTier]"
+
+ CONSECRATE_BLOODLINE_HIGH_RELIGIOUS_HEAD_OPINION: "[CHARACTER.GetFaith.GetReligiousHead.Custom('ShortNameNotMePossessive')] [opinion|E] of you is 75 or higher"

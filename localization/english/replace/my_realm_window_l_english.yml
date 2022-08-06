@@ -1,0 +1,11 @@
+﻿l_english:
+ MRW_TT_NOT_RIGHTFUL_LIEGE: "@warning_icon!#X [levies|E] and [tax|E] are reduced as [Select_CString(Character.GetLiege.IsLocalPlayer, 'you', Character.GetLiege.Custom('UIName'))] [Select_CString(Character.GetLiege.IsLocalPlayer, 'are', 'is')] not [Character.Custom('ShortNameNotMePossessive')] [rightful_liege|E]#!\n\n[Select_CString(Character.IsLocalPlayer, 'You', Character.Custom('UIName'))] [Select_CString(Character.IsLocalPlayer, 'want', 'wants')] [Select_CString(Character.IsLocalPlayer, 'your', Character.GetHerHis)] [liege|E] to hold the [Character.GetPrimaryTitle.GetDeJureLiege.GetName], since [Select_CString(Character.IsLocalPlayer, 'your', Character.GetHerHis)] [primary_title|E] ([Character.GetPrimaryTitle.GetName]) is [de_jure|E] part of that [Character.GetPrimaryTitle.GetDeJureLiege.GetRankConcept]."
+ MRW_TITLE_ALLEGIANCE: "#T [title_allegiance|E]#!\n[Character.Custom('ShortName')] has allegiance towards the [Title.GetName] rather than you!"
+
+ VASSAL_CONTRACT_OPINION_MODIFICATION: "[VassalContract.GetVassal.Custom('ShortNamePossessiveNoTooltip')] Opinion: [VassalContract.GetVassalOpinionModification|+=]"
+
+ MY_REALM_WINDOW_NOT_PRIMARY_HEIR: "@warning_icon! #X [MyRealmWindow.GetCharacter.GetPlayerHeir.Custom('ShortNameNoTooltip')] is not your [primary_heir|E]#!"
+
+ MRW_DESIGNATED_HEIR: "[MyRealmWindow.GetCharacter.GetDesignatedHeir.Custom('UIName')]"
+
+ VASSAL_CONTRACT_VASSAL_TITLE: "Modifying the Contract of\n#high [VassalContract.GetVassal.Custom('FirstNameNoTooltip')] [VassalContract.GetVassal.GetHouse.GetNameNoTooltip]\nRuler of [VassalContract.GetVassal.GetPrimaryTitle.GetNameNoTierNoTooltip]#!"

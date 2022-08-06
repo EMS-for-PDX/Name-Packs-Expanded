@@ -1,0 +1,24 @@
+﻿l_english:
+ MILITARY_STRENGTH_RATIO: "[CHARACTER.Custom('ShortName')|U] has $VALUE|V%0$ of our number of Soldiers"
+
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_WAR_ATTACKER: "#tooltip_subheading #attacker_color Attacking#! [DEFENDER.Custom('UIName')] in the [WAR.GetName|V]#!\nWar Started: [WAR.GetStartDate.GetString|V]"
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_WAR_DEFENDER: "#tooltip_subheading #defender_color Defending#! against [ATTACKER.Custom('UIName')] in the [WAR.GetName|V]#!\nWar Started: [WAR.GetStartDate.GetString|V]"
+
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_WAR_PARTICIPANT: "$BULLET_WITH_TAB$[CHARACTER.Custom('UIName')|U]"
+
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_ALLY: "#T [allied|E] to [CHARACTER.Custom('UIName')|U]#!"
+
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_ALLY_REASON_DIPLOMACY_MARRIAGE: "Through [marriage|E] between [CHARACTER.Custom('UIName')] and [TARGET_CHARACTER.Custom('UIName')]"
+
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_TRUCE_COMMON: "#T [truce|E] with [CHARACTER.Custom('UIName')]#!\nHindered from declaring [war|E] on [CHARACTER.Custom('ShortName')] for [DATE.GetTimeDiffFromNow|V] #weak ([DATE.GetStringShort])#!"
+
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_TRUCE_RESULT: "\nTruce signed after $NAME|V$, which was won by [CHARACTER.Custom('ShortName')|E]\n\n"
+
+ TRUCE_GRANT_INDEPENDENCE: "[SCOPE.sC('recipient').Custom('UINameNotMe')|U] was granted independence"
+ TRUCE_GRANT_INDEPENDENCE_ROOT: "[ROOT.Char.Custom('UINameNotMe')|U] was granted independence"
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_RAID_ON: "#T Raided by [CHARACTER.Custom('UIName')]#!\nHostile until [DATE.GetString|V]"
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_RAID_BY: "#T Raiding [CHARACTER.Custom('UIName')]#!\nHostile until [DATE.GetString|V]"
+
+ REALM_WINDOW_SIZE_TT: "#T [realm_size|E]: [Character.RealmSize|V] [counties|E]\n#!Counties in [Character.Custom('ShortNameNotMePossessive')] [domain|E]: [Character.NumberOfDirectlyHeldCounties|V]\nCounties in [vassal|E] Realms: [Subtract_int32(Character.RealmSize, Character.NumberOfDirectlyHeldCounties)|V] "
+
+ REALM_OF_CHARACTER: "Realm of [CHARACTER.Custom('UIName')]"

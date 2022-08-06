@@ -1,0 +1,79 @@
+﻿l_english:
+ ### OUTCOME EVENTS ###
+
+ ##I am a player, do I want to take the risk?
+ elope_event_title: "Elope:"
+ elope.0001.t: "$elope_event_title$ Protected by Shadows"
+ elope.0001.positive.desc: "The final preparations are in place. The escape route has been charted, the guards bribed and [target.Custom('TitledFirstName')] is ready. Tonight, as darkness falls over [location.GetNameNoTooltip], I shall set my [target.Custom('LoverPetName')] free and make [target.GetHerHim] my [target.GetWifeHusband]."
+ elope.0001.negative.desc: "I go through the list in my head. The escape route has been charted, the guards should have received their bribes and hopefully the note I sent to [target.Custom('TitledFirstName')] reached [target.GetHerHim] in time. But what if it did not? Maybe [target.GetSheHe] hasn't received it at all! And there are so many other things that might have gone wrong...\n\nThere is no time for doubt. This is my only chance. I must go to [target.GetHerHim], come what may, or abandon the endeavor."
+ elope.0001.a: "I am coming for you, [target.Custom('FirstNameNoTooltip')]!"
+ elope.0001.b: "What am I doing? This is madness!"
+ elope.0001.a.tt: "I attempt to Elope with [target.Custom('ShortName')]"
+ elope.0001.a.success: "I am #P successful#!"
+ elope.0001.a.failure_discover: "I #N fail and I'm discovered#!"
+ elope.0001.a.failure_hidden: "I #N fail#! but I'm not discovered"
+
+#Success event owner
+ elope.1001.t: "$elope_event_title$ Love Endures"
+ elope.1001.start.desc: "As we wait, I cannot help but imagine everything that might go wrong. I feel utterly powerless — a feeling that I #EMP don't#! care to get further acquainted with.\n\nI spot a torch ahead, moving in our direction, and gesture to my guards to hide."
+ elope.1001.start.desc_brave: "As we wait, I cannot help but wonder where [target.Custom('FirstName')] is now. Did [target.GetSheHe] make it out okay? Will there be pursuers?\n\nI spot a torch ahead, moving in our direction, and gesture to my guards to hide."
+ elope.1001.end.desc: "The light moves closer and we can make out two silhouettes. One is carrying a sword, that much is clear. The other... it must be #EMP [target.GetHerHim]#!!\n\nI run to meet my [target.Custom('LoverPetName')], and [target.GetSheHe] throw [target.GetHerselfHimself] in my open arms. The embrace is swift, but sweet as honey. With [target.GetHerHis] hand in mine, I begin to run."
+ elope.1001.a: "Hurry, my love! The [ROOT.Char.Custom('DefaultPriestTitle')] is waiting!"
+ 
+ #Success for target liege
+ elope.1002.t: "Gone In The Night"
+ elope.1002.start.desc: "I am jarred awake by a hard knock on the door. "My [ROOT.Char.Custom('TitleAsNameNoTooltip')]! A guard has been found dead and your [ROOT.GetCharacter.Custom2('RelationToMeShort' , SCOPE.sC('target'))] is missing!""
+ elope.1002.desc_naked: "I clamber out of bed, yelling orders even before I am out the door."
+ elope.1002.desc_not_naked: "I clamber out of bed, yelling orders while I pull on my clothes."
+ elope.1002.desc: "\n\nThe search goes on for hours. It is not until noon they uncover a signed letter from [target.Custom('TitledFirstName')]. The handwriting is unmistakably [target.GetHersHis].\n\n"
+ elope.1002.apologetic_relationship.desc: ""My dearest [target.Custom('FirstNameNoTooltip')], I am so very sorry, but I have to follow my heart. I have left you to marry the love of my life — [owner.Custom2('YourCharacterIntroductionNoComma', ROOT.Char)].""
+ elope.1002.unapologetic_relationship.desc: ""I have left to marry [owner.Custom2('YourCharacterIntroductionNoComma', ROOT.Char)]. Do not come after me — I would rather die than be yours again!""
+ elope.1002.apologetic_family.desc: ""[ROOT.GetCharacter.Custom2('RelationToMeShort' , SCOPE.sC('target'))|U], I have left to marry the love of my life — [owner.Custom2('YourCharacterIntroductionNoComma', ROOT.Char)]. All I want is to be happy. I hope you can find it in your heart to forgive me.""
+ elope.1002.unapologetic_family.desc: ""If you truly loved your own [ROOT.Char.Custom2('RelationToMeShort' , target)], you would have wanted me to be happy. But as you care so little for me, I have left to follow my heart. I will marry [owner.Custom2('YourCharacterIntroduction', ROOT.Char)] and there is nothing you can do to stop me!""
+ elope.1002.a.fallback: "How could [target.GetSheHe]?"
+ elope.1002.a.vengeful: "That treacherous [target.Custom('InsultNounSexual')] will get what [target.GetSheHe] deserves!"
+ elope.1002.a.compassionate: "I hope [target.GetSheHe] will be happy, whatever happens."
+ 
+ #Success event for relatives of target and owner
+ elope.1003.opening: "[target_keeper.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
+ elope.1003.start.desc: "I write to inform you that"
+ elope.1003.target_root_family.desc: "your [ROOT.GetCharacter.Custom2('RelationToMeShort' , SCOPE.sC('target'))] [target.Custom('FirstName')]"
+ elope.1003.target_keeper_relation.desc: "my [target_keeper.Custom2('RelationToMeShort' , SCOPE.sC('target'))] [target.Custom('FirstName')]"
+ elope.1003.target_liege_subject.desc: "my subject [target.Custom('FirstName')]"
+ elope.1003.middle.desc: "has eloped with"
+ elope.1003.owner_root_family.desc: "your [ROOT.GetCharacter.Custom2('RelationToMeShort' , SCOPE.sC('owner'))] [owner.Custom('FirstName')]!"
+ elope.1003.your_character_introduction.desc: "[owner.Custom2('YourCharacterIntroductionNoComma', ROOT.Char)]!"
+ elope.1003.end.desc: "Let me be frank: this is a grave insult, and a stain on your family's honor. If the #EMP happy couple#! seeks refuge in [capital.GetNameNoTooltip], I trust you will teach them a lesson!"
+ elope.1003.a: "What a catastrophe!"
+
+#Failure discovered event owner
+ elope.1011.t: "$elope_event_title$ Torches In The Dark"
+ elope.1011.middle.desc: "I can see two silhouettes, three, four... [ROOT.Char.GetFaith.HighGodName], this can't be good!"
+ elope.1011.end.desc: "On my command, we retreat through the underbrush. Our pursuers, on the other hand, have no regard for subtlety and close in quickly.\n\n"You can't hide forever, [ROOT.Char.Custom('TitledFirstNameNoTooltip')]! We've captured one of your [dummy_soldier.GetWomenMen], and you will be next!""
+ elope.1011.a: "#EMP Run!#!"
+
+ elope.1012.t: "A Failed Elopement"
+ elope.1012.desc: "An attempt to elope with [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] has been thwarted! The captain of the guard tells me [owner.Custom2('YourCharacterIntroduction', ROOT.Char)] was scheming to steal [target.GetHerHim] away and marry [target.GetHerHim] in secret.\n\nAs if that wasn't enough, letters found in [target.Custom('FirstNamePossessiveNoTooltip')] chambers indicate [target.GetSheHe] was in on the whole thing!"
+ elope.1012.a: "That [owner.Custom('InsultAdjective')] [owner.Custom('InsultNounSexual')] will never have my [ROOT.GetCharacter.Custom2('RelationToMeShort' , SCOPE.sC('target'))]!"
+ elope.1012.b: "Treachery! Lock [target.Custom('FirstNameNoTooltip')] up, #EMP now!#!"
+ elope.1012.c: "I will make them suffer, mark my word!"
+ elope.1012.d: "This is giving me a headache..."
+
+#Failure undiscovered for owner
+ elope.1021.end.desc: "\n\nOn my command, we retreat through the underbrush. By sheer luck, we make our way back to the carriage and escape in the night."
+ elope.1021.a: "[target.Custom('FirstNameNoTooltip')], my love... I pray you are alright."
+
+
+### ONGOING EVENTS ###
+
+# Lover is doubting
+ elope.2000.t: "My love,"
+ elope.2000.start.desc: "You have told me to be brave, but I cannot contain my fears any longer. What if"
+ elope.2000.target_relation.desc: "my [target.Custom2('RelationToMeShort' , SCOPE.sC('discoverer'))] finds out about our plans? I can hardly sleep and struggle to keep my food down. [discoverer.GetSheHe|U] is starting to get worried — perhaps even suspicious!"
+ elope.2000.titledname.desc: "[discoverer.Custom('TitledFirstName')] finds out about our plans? Whenever [discoverer.GetSheHe] appears, I go stiff and speechless. It is only a matter of time until [discoverer.GetSheHe] notices!"
+ elope.2000.end.desc: "\n\nWe are running out of time. Please, my dearest [ROOT.Char.Custom('FirstNameNoTooltip')], make haste!"
+ elope.2000.a: "We will speed up the plans, my [target.Custom('LoverPetName')]."
+ elope.2000.c: "Trust me — everything is under control."
+ elope.2000.c.success: "[target.Custom('ShortName')|U] is convinced"
+ elope.2000.c.failure: "[target.Custom('ShortName')|U] feels dismissed"
+ elope.2000.b: "You shouldn't be sending letters, then!"

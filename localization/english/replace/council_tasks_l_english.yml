@@ -1,0 +1,63 @@
+﻿l_english:
+ ACTIVE_COUNCIL_TASK_TT: "My [ActiveCouncilTask.GetPositionType.GetName] [ActiveCouncilTask.GetCouncillor.Custom('UIName')] is assigned to [ActiveCouncilTask.GetTaskType.GetName|V]"
+
+ POTENTIAL_COUNCIL_TASK_TT: "[ActiveCouncilTask.GetCouncillor.Custom('UIName')] will be assigned to [ActiveCouncilTask.GetTaskType.GetName|V]"
+
+ COUNCILLOR_IS_YOUR_FRIEND: "[councillor.GetCouncilTitle] [councillor.Custom('ShortName')] is your [friend|E]"
+ COUNCILLOR_IS_YOUR_BEST_FRIEND: "[councillor.GetCouncilTitle] [councillor.Custom('ShortName')] is your [best_friend|E]"
+ COUNCILLOR_IS_YOUR_RIVAL: "[councillor.GetCouncilTitle] [councillor.Custom('ShortName')] is your [rival|E]"
+ COUNCILLOR_IS_YOUR_NEMESIS: "[councillor.GetCouncilTitle] [councillor.Custom('ShortName')] is your [nemesis|E]"
+
+ task_domestic_affairs_effect_desc: "[direct_vassal|E] Opinion: #P +[SCOPE.ScriptValue('chancellor_domestic_affairs_opinion_scale')|1]#!\n(Increases by #P +#![SCOPE.ScriptValue('chancellor_domestic_affairs_monthly_increase')|2P]/month up to #P +#![SCOPE.ScriptValue('chancellor_domestic_affairs_opinion_max')|1P])\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] [diplomacy_skill|E]: #P +[SCOPE.ScriptValue('chancellor_domestic_affairs_opinion_base')|2]#!"
+
+ SCALED_COUNCILLOR_DIPLOMACY_VALUE: "[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] Diplomacy Skill"
+
+ task_bestow_royal_favor_target_message: "[councillor_liege.Custom('ShortName')] is bestowing [councillor_liege.GetHerHis] royal favor upon you"
+ task_bestow_royal_favor_target_cancel_message: "[councillor_liege.Custom('ShortName')] is no longer bestowing [councillor_liege.GetHerHis] royal favor upon you"
+
+ SCALED_COUNCILLOR_MARTIAL_VALUE: "[councillor.GetCouncilTitle] [councillor.Custom('ShortName')]'s [martial_skill|E]"
+
+ task_disrupt_schemes_hostile_scheme_resistance_base: "[hostile_scheme_resistance|E]: #P +[SCOPE.ScriptValue('spymaster_disrupt_schemes_modifier_final_scale')|1]#!\n$TAB$Base: #P +[SCOPE.ScriptValue('spymaster_disrupt_schemes_hostile_scheme_resistance_base')|1]#!\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] [intrigue_skill|E]: #P +[SCOPE.ScriptValue('spymaster_disrupt_schemes_modifier_base_scale')|1]#!"
+
+ task_disrupt_schemes_discovery_chance_base: "\n[scheme_discovery_chance|E]: #P +[SCOPE.ScriptValue('spymaster_disrupt_schemes_total_modifier')|1]#!\n$TAB$Base: #P +[SCOPE.ScriptValue('spymaster_disrupt_schemes_scheme_discovery_base')|1]#!\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] [intrigue_skill|E]: #P +[SCOPE.ScriptValue('spymaster_disrupt_schemes_scheme_discovery_modifier')|1]#!"
+
+ task_support_schemes_base_desc: "[hostile_scheme|E] Power: #P +[SCOPE.ScriptValue('spymaster_espionage_modifier_final_scale')|1]#!\n$TAB$Base: #P +[SCOPE.ScriptValue('spymaster_espionage_scheme_power_base')|P1]#!\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] [intrigue_skill|E]: #P +[SCOPE.ScriptValue('spymaster_espionage_modifier_base_scale')|P1]#!"
+
+ task_support_schemes_success_chance_base_desc: "\n[hostile_scheme|E] [success_chance|E]: #P +[SCOPE.ScriptValue('spymaster_espionage_success_chance_total')|P1]#!\n$TAB$Base: #P +[SCOPE.ScriptValue('spymaster_espionage_success_chance_base')|P1]#!\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] [intrigue_skill|E]: #P +[SCOPE.ScriptValue('spymaster_espionage_success_chance_modifier_base_scale')|P1]#!"
+
+ 
+ SCALED_COUNCILLOR_INTRIGUE_VALUE: "[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] Intrigue Skill"
+
+ task_collect_taxes_effect_desc: "[domain|E] Taxes: #P +[SCOPE.ScriptValue('steward_collect_taxes_scale_tooltip_total')|2]%#!\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortName')] [stewardship_skill|E]: #P +[SCOPE.ScriptValue('steward_collect_taxes_scale_base')|1]%#!"
+
+ steward_convince_dejure_cg_malus_desc: "[county.GetHolder.GetTopLiege.Custom('ShortNameNotMePossessive')] [court_grandeur_level|E]"
+  
+ SCALED_COUNCILLOR_STEWARDSHIP_VALUE: "[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] [stewardship_skill|E]"
+
+ task_religious_relations_piety_effect_desc: "[piety|E]: @piety_icon!#P +[SCOPE.ScriptValue('court_chaplain_religious_relations_total_piety_gain')]#!/month\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] [learning_skill|E]: #P +[SCOPE.ScriptValue('court_chaplain_religious_relations_modifier')]#!"
+
+ task_religious_relations_effect_desc_opinion: "\n\n[councillor.GetFaith.GetAdjective] [theocratic|E] Ruler Opinion: #P +[SCOPE.ScriptValue('court_chaplain_religious_relations_opinion_modifier')|1P]#!\n(Increases by #P +#![SCOPE.ScriptValue('court_chaplain_religious_relations_monthly_increase')|P]/month up to #P +#![SCOPE.ScriptValue('court_chaplain_religious_relations_opinion_max')|1P])\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] [learning_skill|E]: #P +#![SCOPE.ScriptValue('court_chaplain_religious_relations_opinion_base')|P]"
+ task_religious_relations_effect_no_hof_layman_clergy_desc_opinion: "\n\n[councillor.GetFaith.GetAdjective] Same Faith Opinion: #P +[SCOPE.ScriptValue('court_chaplain_religious_relations_no_hof_opinion_modifier')|1P]#!\n(Increases by #P +#![SCOPE.ScriptValue('court_chaplain_religious_relations_no_hof_monthly_increase')|P]/month up to #P +#![SCOPE.ScriptValue('court_chaplain_religious_relations_no_hof_opinion_max')|1P])\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] [learning_skill|E]: #P +#![SCOPE.ScriptValue('court_chaplain_religious_relations_no_hof_opinion_base')|P]"
+
+ SCALED_COUNCILLOR_LEARNING_VALUE: "[councillor.GetCouncilTitle] [councillor.Custom('ShortNameNotMePossessive')] Learning Skill"
+
+ task_spouse_default_effect_desc: "[councillor.Custom('ShortNameNoTooltip')] helps you run the Realm in general\n\n[councillor.GetHerHis|U] support gives you:\n[councillor.GetModifierDescForTask('task_spouse_default')]"
+
+ task_court_politics_effect_desc: "[councillor.Custom('ShortNameNoTooltip')] focuses on your court and those closest to you\n\n[councillor.GetHerHis|U] support gives you:\n[councillor.GetModifierDescForTask('task_court_politics')]"
+
+ task_chivalry_effect_desc: "[councillor.Custom('ShortNameNoTooltip')] focuses on your soldiers and your commanders\n\n[councillor.GetHerHis|U] support gives you:\n[councillor.GetModifierDescForTask('task_chivalry')]"
+
+ task_court_intrigue_effect_desc: "[councillor.Custom('ShortNameNoTooltip')] focuses on rumors and whispers at court\n\n[councillor.GetHerHis|U] support gives you:\n[councillor.GetModifierDescForTask('task_court_intrigue')]"
+
+ task_manage_domain_effect_desc: "[councillor.Custom('ShortNameNoTooltip')] focuses on your domain and your personal holdings\n\n[councillor.GetHerHis|U] support gives you:\n[councillor.GetModifierDescForTask('task_manage_domain')]"
+
+ task_patronage_effect_desc: "[councillor.Custom('ShortNameNoTooltip')] focuses on matters of culture, religion and education\n\n[councillor.GetHerHis|U] support gives you:\n[councillor.GetModifierDescForTask('task_patronage')]"
+ councillor_spouse_background.0001.diplomacy_notification: "With experience, [councillor.Custom('ShortNameNotMePossessive')] skill at diplomacy has increased."
+ councillor_spouse_background.0001.martial_notification: "With experience, [councillor.Custom('ShortNameNotMePossessive')] understanding of warfare has increased."
+ councillor_spouse_background.0001.stewardship_notification: "With experience, [councillor.Custom('ShortNameNotMePossessive')] administrative abilities have increased."
+ councillor_spouse_background.0001.intrigue_notification: "With experience, [councillor.Custom('ShortNameNotMePossessive')] intrigue skills have increased."
+ councillor_spouse_background.0001.learning_notification: "With experience, [councillor.Custom('ShortNameNotMePossessive')] scholarly understanding has increased."
+
+ task_accept_culture_base_value_desc: "\n$TAB$[councillor.GetCouncilTitle] [councillor.Custom('ShortName')]: #P [SCOPE.ScriptValue('task_accept_culture_total_base_value')|+=2]#!"
+
+ task_accept_culture_acceptance_gain: "Increased cultural understanding due to the efforts of [councillor.Custom('ShortName')]"

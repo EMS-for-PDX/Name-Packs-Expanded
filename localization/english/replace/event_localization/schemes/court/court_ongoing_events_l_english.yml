@@ -1,0 +1,347 @@
+﻿l_english:
+ court_event_title: "Romance:"
+
+ #Modifiers
+ court_competitor_modifier: "Romantic Competitor"
+
+ #ONGOING MANAGEMENT: Player target opted out
+ court_ongoing.0001.t: "$court_event_title$ Rejection"
+ court_ongoing.0001.desc: "[target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has shunned my advances! [target.GetSheHe|U] made it very clear that [target.GetSheHe] isn't interested, and probably never will be."
+ court_ongoing.0001.a: "Oh, woe!"
+
+ #START EVENT: Owner picks method
+ court_ongoing.0501.t: "$court_event_title$ Declaration Of Love"
+ court_ongoing.0501.desc: "The time has come to let my feelings towards [target.Custom('TitledFirstName')] be known. I want [target.GetHerHim] to remember this day for the rest of [target.GetHerHis] life."
+ court_ongoing.0501.a: "Sing a love ballad."
+ court_ongoing.0501.b: "Secretly plant a letter in [target.GetHerHis] chambers."
+ court_ongoing.0501.c: "Write a love poem."
+ court_ongoing.0501.d: "Impress [target.GetHerHim] by winning a sparring match."
+ court_ongoing.0501.x: "Go with my gut in the moment."
+ court_ongoing.0501.tt: "You declare your undying devotion to [target.Custom('ShortName')]"
+
+ #START EVENT: For Target 
+ court_ongoing.0502.t: "$court_event_title$ Declaration Of Love"
+ court_ongoing.court_start_song.start.0502.desc: "I am walking the gardens with some of the [ROOT.Char.Custom('LadiesLords')] at court when I notice [owner.Custom2('MyCharacterIntroduction', ROOT.Char)] approaching. I step aside to let [owner.GetHerHim] pass, but to my great surprise, [owner.GetSheHe] blocks my path and kneels before me!\n\nBefore I have time to properly process this turn of events, [owner.Custom('TitledFirstNameNoTooltip')] begins to sing.\n\n"
+ court_ongoing.court_start_song.bad.0502.desc: "To my great dismay, the [owner.GetWomanMan] before me cannot carry a tune to save [owner.GetHerHis] life. It takes a while before I am able to identify the song — it's a famous [target.GetCulture.GetNameNoTooltip] love ballad. [owner.GetSheHe|U] has altered the lyrics to include my name and mentions of my physical appearance, ruining the rhythm even further."
+ court_ongoing.court_start_song.good.0502.desc: "I quickly recognize the tune — it is a famous [target.GetCulture.GetNameNoTooltip] love ballad. I have heard it performed countless times, but never with such skill and passion!\n\nThe intense emotions of the song are mirrored in [owner.Custom('FirstNamePossessiveNoTooltip')] gaze, which is set on me. [owner.GetSheHe|U] does not look away for a single heartbeat."
+ court_ongoing.court_start_sneaky_love_letter.start.0502.desc: "As I push aside the sheets to lay down, I find a little scroll resting on my bolster. Someone has entered my chambers unnoticed? A chill runs down my spine as I carefully unroll the thick parchment.\n\n"My [ROOT.Char.Custom('RomanticComplimentAdjective')]"
+ court_ongoing.court_start_sneaky_love_letter.compliment.0502.desc: "[ROOT.Char.Custom('RomanticComplimentNoun')]!"
+ court_ongoing.court_start_sneaky_love_letter.relative.0502.desc: "[owner.Custom2('RelationToMeShort', ROOT.Char)]!"
+ court_ongoing.court_start_sneaky_love_letter.end.0502.desc: "[ROOT.Char.GetLadyLord|U] of my heart! I can keep my feelings secret no longer. From this day on, I will do everything in my power to prove my loyal affections."\n\n"We will see each other soon. Until then, dream of me, my love. Eternally yours, [owner.Custom('TitledFirstName')].""
+ court_ongoing.court_start_poem_love_letter.0502.desc: "[owner.Custom2('love_letter', SCOPE.sC('target'))]\n\nThese lines are but a bleak reflection of my feelings for you. I will do anything to prove my loyal affections."
+ court_ongoing.court_start_sparring.start.0502.desc: "The clang of weapons and excited cheers draw me towards the courtyard. What is going on?\n\nI find two armored warriors engaged in a"
+ court_ongoing.court_start_sparring.bad.0502.desc: "clumsy sparring match. I try not to cringe as one of them stumbles after an unnecessarily forceful swing."
+ court_ongoing.court_start_sparring.good.0502.desc: "vigorous sparring match. Both of them have undoubtedly been tested on the field of battle."
+ court_ongoing.court_start_sparring.great.0502.desc: "breathtaking sparring match. Never before have I seen such skill with [owner.Custom('SignatureWeaponArticle')] [owner.Custom('signature_weapon')]! I cannot look away!"
+ court_ongoing.court_start_sparring.end.0502.desc: "\n\nWith a final reckless assault, one of the fighters disarms the other. To my surprise, [owner.GetSheHe] kneels before me and takes off [owner.GetHerHis] helmet. It is [owner.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)]!\n\n"I dedicate this victory to you, [ROOT.Char.Custom('TitledFirstNameNoTooltip')]," he says solemnly. "Bringing you honor is my only desire!""
+ court_ongoing.0502.a: "You flatter me, my [owner.GetLadyLord]!"
+ court_ongoing.0502.b.incest: "What? You are my #EMP [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('owner'))]#!!"
+ court_ongoing.0502.b: "Abandon this foolish endeavor #EMP immediately#!."
+ court_ongoing.0502.a.tt: "[owner.Custom('ShortName')|U] will attempt to win my heart"
+
+
+ #START EVENT: For Owner (target's reaction)
+ court_ongoing.court_start_song.intro.0503.desc: "I have found a classic [target.GetCulture.GetNameNoTooltip] love ballad which suits [target.Custom('FirstName')] perfectly! I practice it over and over — everything must be perfect!\n\nI find my [target.Custom('LoverPetName')] walking in the [target_location.GetNameNoTooltip] gardens, surrounded by [target.GetHerHis] friends. With my heart beating like a hammer, I kneel before [target.GetHerHim] and sing."
+ court_ongoing.court_start_song.success.0503.desc: "\n\n[target.Custom('FirstNamePossessiveNoTooltip')] cheeks turn a deep pomegranate red, but [target.GetSheHe] does not interrupt me. [target.GetHerHis|U] companions all look pleased, or jealous — surely a good sign!\n\n"You have a beautiful voice, my [ROOT.Char.GetLadyLord]," [target.Custom('FirstNameNoTooltip')] says before [target.GetSheHe] hurries off. [target.GetHerHis|U] friends are quick to follow. I stand up on shaking legs, watching them disappear between the hedges, my heart beating harder than ever."
+ court_ongoing.court_start_sneaky_love_letter.intro.0503.desc: "My declaration of love is for [target.Custom('TitledFirstNamePossessive')] eyes only. No one else matters! I pour my heart out, page after page, my feelings growing as I finally put them into words. The ink has barely dried as I set out for [target.Custom('FirstNamePossessive')] chambers.\n\nI gently place the scroll on [target.GetHerHis] bolster. Will [target.GetSheHe] lay here tonight, dreaming of me?"
+ court_ongoing.court_start_sneaky_love_letter.success.0503.desc: "\n\nThe waiting is unbearable. The thought of rejection makes me sick to my stomach! When [target.GetHerHis] reply arrives, I tear the seal with shaking hands.\n\n"While I cannot encourage you, [owner.Custom2('RelationToMeAddress', ROOT.Char)], I am most grateful for your kind words. Yours faithfully, [target.Custom('FirstNameNoTooltip')].""
+ court_ongoing.court_start_poem_love_letter.intro.0503.desc: "The candle is burning low when I finally finish my poem. Before I send it, I give it one last read.\n\n"[owner.Custom2('love_letter', SCOPE.sC('target'))]""
+ court_ongoing.court_start_sparring.same_locaton_intro.0503.desc: "I recruit one of my most senior soldiers and practice with [sparring_soldier.GetHerHim] for three days straight. Once [sparring_soldier.GetSheHe] deems me ready, we head together to the main courtyard.\n\nAs we begin to spar, a crowd gathers, and their cheers soon draw none other than the [target.Custom('RomanticComplimentAdjective')] [target.Custom('TitledFirstName')].\n\nThe soldier fights valiantly, but I disarm [sparring_soldier.GetHerHim] with a final, flawless thrust. I kneel before [target.Custom('FirstNameNoTooltip')] and declare my noble intentions. "I dedicate this victory to you, [target.Custom('TitledFirstNameNoTooltip')]. Bringing you honor is my only desire!"\n\n"
+ court_ongoing.court_start_sparring.other_locaton_intro.0503.desc: "I recruit one of my most senior soldiers and set out for [target_location.GetNameNoTooltip]. We practice our routine after each day's ride.\n\nOnce we arrive, we begin to spar in the main courtyard. A crowd gathers, and their cheers soon draw none other than the [target.Custom('RomanticComplimentAdjective')] [target.Custom('TitledFirstName')].\n\nThe soldier fights valiantly, but I disarm [sparring_soldier.GetHerHim] with a final, flawless thrust. I kneel before [target.Custom('FirstNameNoTooltip')] and declare my noble intentions. "I dedicate this victory to you, [target.Custom2('RelationToMeAddress', ROOT.Char)]. Bringing you honor is my only desire!"\n\n"
+ court_ongoing.court_start_sparring.success.0503.desc: "My [ROOT.Char.Custom('LoverPetName')] is speechless, but clearly flattered. Why else would [target.GetSheHe] be smiling thusly?"
+ court_ongoing.public_sodomy_rejection.0503.desc: "[target.Custom('FirstNamePossessiveNoTooltip')] reaction is not what I hoped for. "Have you gone mad, [ROOT.Char.Custom2('RelationToMeAddress', target)]?! What exactly are you suggesting?"
+ court_ongoing.public_incest_rejection.0503.desc: "[target.Custom('FirstNamePossessiveNoTooltip')] reaction is not what I hoped for. "What are you suggesting? I am your #EMP [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('target'))]#!!""
+ court_ongoing.public_regular_rejection.0503.desc: "[target.Custom('FirstNamePossessiveNoTooltip')] reaction is not what I hoped for. "Do not embarrass yourself further, [ROOT.Char.Custom2('RelationToMeAddress', target)]. I would rather eat my own [target.Custom('GetClothingArticle')] than spend another minute in your presence!""
+ court_ongoing.written_sodomy_rejection.0503.desc: "\n\n[target.Custom('FirstNamePossessiveNoTooltip')] reply is swift and unambiguous. "Are you insane? Do you know how dangerous your words would be, if they fell in the wrong hands? I beg you — give up this foolish endeavor immediately!""
+ court_ongoing.written_incest_rejection.0503.desc: "\n\n[target.Custom('FirstNamePossessiveNoTooltip')] reply is swift and unambiguous. "You have always been strange, but this? A declaration of passion to your own #EMP [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('target'))]#!? The mere thought of us together makes me sick!""
+ court_ongoing.written_regular_rejection.0503.desc: "\n\n[target.Custom('FirstNamePossessiveNoTooltip')] reply is swift and unambiguous. "You have my deepest gratitude for your note. It sure gave me a good laugh! What a ludicrous idea, that my heart would ever yearn for #EMP you#!!""
+ court_ongoing.0503.a: "[target.Custom('FirstNameNoTooltip')] won't resist my charms for long!"
+ court_ongoing.0503.a.tt: "My Scheme to Romance [target.Custom('ShortName')] continues"
+ court_ongoing.0503.b: "I thought we were meant to be..."
+
+
+ #Someone farted! by Mathilda Bjarnehed
+ court_ongoing.1000.t: "$court_event_title$ An Embarrassing Odour"
+ court_ongoing.1000.desc: "I have secured an invitation to a feast in [location.GetNameNoTooltip], and a seat close to [target.Custom('FirstName')]. Despite my determined attempts, I am failing to strike up a conversation. [target.GetSheHe|U] is probably rendered speechless by the intensity of my affections.\n\nSuddenly, the loudest fart I have ever heard erupts from our table. A few of the guests are looking at [target.Custom('FirstNameNoTooltip')]. I must save [target.GetHerHim]!"
+ court_ongoing.1000.a: "It was me! I farted!"
+ court_ongoing.1000.a.success: "[target.Custom('FirstNameNoTooltip')] is relieved and grateful"
+ court_ongoing.1000.a.failure: "[target.Custom('FirstNameNoTooltip')] was not the one who farted"
+ court_ongoing.1000.b: "[scapegoat.Custom('TitledFirstNameNoTooltip')], you stinky old [scapegoat.Custom('InsultNoun')]!"
+ court_ongoing.1000.b.rl: "I try to pass the blame on [scapegoat.Custom('TitledFirstNameNoTooltip')]"
+ court_ongoing.1000.b.failure: "[target.Custom('FirstNameNoTooltip')] feels very bad for [scapegoat.Custom('TitledFirstNameNoTooltip')]"
+ court_ongoing.1000.b.tt: "The outcome depends on how empathic [target.Custom('FirstNameNoTooltip')] is"
+ court_ongoing.1000.c: "Perhaps I should stay quiet..."
+
+ #Defend their honor through duel or diplomacy, by Mathilda Bjarnehed
+ court_ongoing.1010.t: "$court_event_title$ A [target.GetLadyLord|U]'s Honor"
+ court_ongoing.1010.desc: ""By [insulter.GetFaith.HighGodName], [target.Custom('TitledFirstName')] is an insufferable [target.Custom('InsultNoun')]! Have you seen how [target.GetSheHe] [target.Custom('quirk_neg_present')]? Ridiculous!"\n\n[insulter.Custom2('MyCharacterIntroduction', ROOT.Char)|U] throws [insulter.GetHerHis] head back with a wicked laugh.\n\n[target.Custom('FirstNameNoTooltip')] is still conversing with [target.GetHerHis] friends, but I can tell [target.GetSheHe] heard [insulter.GetHerHim]. I hate to see [target.GetHerHim] hurt."
+ court_ongoing.1010.a: "Vile lies! Draw your sword, [insulter.Custom('InsultNoun')]!"
+ court_ongoing.1010.b: "You should apologize to the [target.GetLadyLord]."
+ court_ongoing.1010.c: "Oh, [target.Custom('FirstNameNoTooltip')]. [insulter.GetSheHe|U] couldn't be more wrong!"
+
+ court_ongoing.1010.a.success: "You best [insulter.Custom('FirstNameNoTooltip')] in a duel"
+ court_ongoing.1010.a.failure: "You are defeated by [insulter.Custom('FirstNameNoTooltip')]"
+ court_ongoing.1010.b.success: "You convince [insulter.Custom('FirstNameNoTooltip')] to apologize"
+ court_ongoing.1010.b.failure: "[insulter.Custom('FirstNameNoTooltip')] refuses to listen"
+
+ court_ongoing.1011.desc: "[insulter.Custom('TitledFirstName')] draws [insulter.GetHerHis] sword with a cocky grin. Oh, how I will enjoy wiping that arrogant look off [insulter.GetHerHis] face!\n\nWhen I am done with [insulter.GetHerHim], [insulter.Custom('TitledFirstNamePossessiveNoTooltip')] humiliation is absolute. Bruised and blushing, [insulter.GetSheHe] croaks out an apology and limps away to lick [insulter.GetHerHis] wounds.\n\n[target.Custom('TitledFirstName')], on the other hand, is glowing like the sun. "You are a true hero, [ROOT.Char.Custom('TitledFirstNameNoTooltip')]! You have my eternal gratitude!""
+ court_ongoing.1011.a: "It was my honor, [target.GetLadyLord] [target.Custom('FirstNameNoTooltip')]."
+
+ #Fetch gift, by Mathilda Bjarnehed
+ court_ongoing.1021.t: "Proof Of Devotion"
+ court_ongoing.1021.desc: ""[target.GetLadyLord|U] [target.Custom('FirstName')]! My [target.Custom('RomanticComplimentAdjective')] [target.Custom('RomanticComplimentNoun')]!"\n\n[owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] is kneeling in the dust before me, right hand above [owner.GetHerHis] heart. "My only desire is to bring you honor and happiness. Pray, tell me — how can I prove my love for you?""
+ court_ongoing.1021.a: "Slay a wolf and bring me its pelt."
+ court_ongoing.1021.wolf_pelt.success: "[owner.Custom('ShortNameNoTooltip')] brings you a wolf pelt"
+ court_ongoing.1021.wolf_pelt.failure: "[owner.Custom('ShortNameNoTooltip')] fails to slay a wolf"
+ court_ongoing.1021.b: "I want a befurred companion."
+ court_ongoing.1021.cat_pet.success: "[owner.Custom('ShortNameNoTooltip')] gives you a cat"
+ court_ongoing.1021.dog_pet.success: "[owner.Custom('ShortNameNoTooltip')] gives you a dog"
+ court_ongoing.1021.pet.failure: "[owner.Custom('ShortNameNoTooltip')] does not give you a pet"
+ court_ongoing.1021.c: "[necklace_owner.Custom('TitledFirstNamePossessiveNoTooltip')] necklace looks lovely..."
+ court_ongoing.1021.necklace.success: "[owner.Custom('ShortNameNoTooltip')] gives you a necklace"
+ court_ongoing.1021.necklace.failure: "[owner.Custom('ShortNameNoTooltip')] refuses to give you a necklace"
+ court_ongoing.1021.d: "Bring me something unusual — an exotic orchid, perhaps?"
+ court_ongoing.1021.orchid.success: "[owner.Custom('ShortNameNoTooltip')] brings you a rare orchid"
+ court_ongoing.1021.orchid.failure: "[owner.Custom('ShortNameNoTooltip')] refuses to give you an orchid"
+ court_ongoing.1021.x: "Enough! This madness ends now!"
+
+ #GIFT: wolf Pelt, by Mathilda Bjarnehed
+ court_ongoing.1022.t: "$court_event_title$ The Grey One"
+ court_ongoing.1022.start.desc: ""Sweet [target.GetLadyLord] [target.Custom('FirstName')]!" I sigh as I kneel before [target.GetHerHim]. "My only desire is to bring you honor and happiness. Pray, tell me — how can I prove my love for you?"\n\n"
+ court_ongoing.1022.end.desc: "[target.Custom('TitledFirstNameNoTooltip')] hesitates and [target.GetHerHis] cheeks turn red. By [ROOT.Char.GetFaith.HighGodName], I hope [target.GetSheHe] is pleased and not embarrassed!\n\n"Slay a wolf for me and bring me its pelt. Then we may continue this conversation.""
+ court_ongoing.1022.a: ""Your wish is my command!""
+ court_ongoing.1022.a.success: "You slay a wolf"
+ court_ongoing.1022.a.failure: "You return empty-handed"
+ court_ongoing.1022.b: "I saw a shaggy beast in the kennel..."
+ court_ongoing.1022.b.success: "[target.Custom('ShortNameNoTooltip')] is convinced by the dog pelt"
+ court_ongoing.1022.b.failure: "[target.Custom('ShortNameNoTooltip')] sees through your trickery"
+ court_ongoing.1022.c: "I will bribe a hunter."
+ court_ongoing.1022.c.master_of_hunt: "My $master_of_hunt_court_position$ will find me a wolf pelt!"
+ court_ongoing.1022.c.master_of_hunt.success: "[master_of_hunt.Custom('FirstNameNoTooltip')] finds and fells a wolf during a hunt"
+ court_ongoing.1022.c.master_of_hunt.success.tt: "You acquire a pelt at no cost, and no risk to you."
+ court_ongoing.1022.c.master_of_hunt.failure: "[master_of_hunt.Custom('FirstNameNoTooltip')] finds a wolf pelt to purchase"
+ court_ongoing.1022.d: ""I'm sorry, but I can't do this.""
+
+ court_ongoing.1023.desc: "One of my favorite dogs has gone missing from the kennels. The [dummy_gender.Custom('MistressMaster')] of hounds arranged a search last night, but returned empty-handed. "I have no idea how [dog_gender.GetSheHe] got out," the grey-haired [dummy_gender.GetWomanMan] says with a sigh. "A dog should not be able to open the gate..."\n\n"[ROOT.Char.GetLadyLord] [ROOT.Char.Custom('FirstNameNoTooltip')]!" As I turn around, I am greeted by [owner.Custom('TitledFirstNamePossessive')] wide smile. There is a gleaming pelt in [target.GetHerHis] hands..."
+ court_ongoing.1023.a: "Leave me alone. I need time to think..."
+ court_ongoing.1023.b: "Murderer! I never want to see you again!"
+
+ court_ongoing.1024.desc: "Under cover of night I snuck into the kennel. I soon found the perfect victim. "Come here, beastie," I whispered as I waved a thick sausage in front of the unsuspecting creature...\n\nBut my cunning plan took an unexpected turn as I presented the pelt to [target.Custom('TitledFirstName')]. As soon as [target.GetSheHe] laid [target.GetHerHis] eyes on it, I knew [target.GetSheHe] recognized it. "You... You murderer! That dog was like a child to me!""
+ court_ongoing.1024.a: "I... I have no idea what you're talking about!"
+
+ #GIFT: PET, by Mathilda Bjarnehed
+ court_ongoing.1030.t: "$court_event_title$ Cats and Dogs"
+ court_ongoing.1030.desc: "The rain is pouring down outside. My [target.Custom('ComplimentAdjective')] [target.Custom('TitledFirstName')] sighs as [target.GetSheHe] looks out the blurred window.\n\n"How wretched [location.GetNameNoTooltip] can be. I wish I had someone to keep me company during long and dreary days..."\n\nIs my [target.Custom('LoverPetName')] a cat person or a dog person, I wonder?"
+ court_ongoing.1030.a: "A clever cat will keep [target.GetHerHim] happy."
+ court_ongoing.1030.a.success: "[target.Custom('ShortNameNoTooltip')] adores the cat"
+ court_ongoing.1030.a.failure: "[target.Custom('ShortNameNoTooltip')] dislikes the cat"
+ court_ongoing.1030.b: "A loyal dog would make an excellent companion."
+ court_ongoing.1030.b.success: "[target.Custom('ShortNameNoTooltip')] adores the dog"
+ court_ongoing.1030.b.failure: "[target.Custom('ShortNameNoTooltip')] dislikes the dog"
+ court_ongoing.1030.c: ""Fear not, I will always be by your side!""
+
+ court_ongoing.1031.start.desc: ""I thought long and hard, my [ROOT.Char.Custom('LoverPetName')]," [owner.Custom('TitledFirstName')] says as [owner.GetSheHe] gently places the basket onto my desk. "What would the perfect companion for such a loyal, energetic and sociable creature as yourself? And then it hit me — nothing would fit you better than a dog!"\n\n[owner.Custom('FirstNameNoTooltip')|U] removes the blanket covering the basket, revealing a little puppy! It jumps at me, stumbling over the edge of the basket in sheer excitement."
+ court_ongoing.1031.a: "Awh! I will take such good care of you!"
+ court_ongoing.1031.b: "This is... not what I expected."
+
+ court_ongoing.1032.desc: ""I thought long and hard, my [ROOT.Char.Custom('LoverPetName')]," [owner.Custom('TitledFirstName')] says as [owner.GetSheHe] gently places the basket onto my desk. "What would the perfect companion for such a clever and independent creature as yourself? And then it hit me — nothing would fit you better than a cat!"\n\n[owner.Custom('FirstNameNoTooltip')|U] removes the blanket covering the basket, revealing a little kitten! It looks up at me with its big, [ROOT.Char.Custom('RandomCatEyeColor')] eyes and begins to purr."
+
+ #GIFT: Necklace, by Mathilda Bjarnehed
+ court_ongoing.1040.t: "$court_event_title$ Glimmering Gold"
+ court_ongoing.1040.end.desc: "[target.Custom('FirstNameNoTooltip')] gives me a long look. "[necklace_owner.GetLadyLord|U] [necklace_owner.Custom('FirstNamePossessiveNoTooltip')] necklace is lovely," [target.GetSheHe] says and nods [target.GetHerHis] head in the direction of [necklace_owner.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)]. "But it would look even better around my neck.""
+ court_ongoing.1040.a: "Commission an identical necklace."
+ court_ongoing.1040.b: "Offer [necklace_owner.Custom('FirstNameNoTooltip')] a favor for [necklace_owner.GetHerHis] necklace."
+ court_ongoing.1040.c: "Steal it."
+ court_ongoing.1040.c.success: "You get away with the necklace"
+ court_ongoing.1040.c.failure: "You are discovered in [necklace_owner.Custom('FirstNamePossessiveNoTooltip')] chamber"
+
+ court_ongoing.1040.d: "Compliment [target.Custom('FirstNamePossessiveNoTooltip')] taste."
+
+ #GIFT: Flower, by Mathilda Bjarnehed
+ court_ongoing.1050.t: "$court_event_title$ A Rare Flower"
+ court_ongoing.1050.start.desc: "As my [target.Custom('LoverPetName')] and I walk through the [target_location.GetNameNoTooltip] gardens, I gesture at the greenery around us. "For all their beauty, there isn't a single flower which rivals your own, my [target.GetLadyLord]."\n\n"There is one," [target.GetSheHe] says with a mischievous smile. "A rare orchid from [orchid_origin.GetNameNoTierNoTooltip], which is nearly impossible to cultivate."
+ court_ongoing.1050.monastery.desc: "The monastery ruin in [orchid_location.GetNameNoTooltip] is the only place where it thrives in these regions.""
+ court_ongoing.1050.temple.desc: "The abandoned [target_host.GetFaith.HouseOfWorship] garden in [orchid_location.GetNameNoTooltip] is the only place where it thrives in these regions.""
+ court_ongoing.1050.a: "Surely I can find a merchant willing to sell me one."
+ court_ongoing.1050.b: ""I will brave the ruins for you!""
+ court_ongoing.1050.b.success: "You find an orchid in the ruins"
+ court_ongoing.1050.b.soft_failure: "You search all day but find nothing"
+ court_ongoing.1050.b.hard_failure: "You injure yourself when you climb a tower"
+ court_ongoing.1050.b.friend.success: "[helpful_friend.Custom('ShortName')|U] finds an orchid in the ruins"
+ court_ongoing.1050.b.friend.soft_failure: "[helpful_friend.Custom('ShortName')|U] finds nothing"
+ court_ongoing.1050.b.friend.hard_failure: "[helpful_friend.Custom('ShortName')|U] gets injured in the ruins"
+ court_ongoing.1050.b.friend: "[helpful_friend.Custom('TitledFirstNameNoTooltip')] might be able to help me out."
+ court_ongoing.1050.b.friend.f: "This option is available because of your friend [helpful_friend.Custom('ShortNameNotMePossessive')] high [prowess|E] Skill"
+ court_ongoing.1050.c: "Nearly impossible? I already have it in my collection!"
+ court_ongoing.1050.c.friend.f: "This option is available because of your friend [helpful_friend.Custom('ShortNameNotMePossessive')] Herbalist Trait"
+ court_ongoing.1050.d: ""I heard the ruins are haunted...""
+ court_ongoing.1050.e: ""Surely they must pale compared to your fair visage!""
+ court_ongoing.1050.f: ""Perhaps I will get to see it, one day.""
+
+ 
+
+ #COMPLIMENT POEM, by Mathilda Bjarnehed
+ court_ongoing.1100.t: "$court_event_title$ Poetic License"
+ court_ongoing.1100.desc: "There is no [target.GetWomanMan] lovelier than [target.Custom('TitledFirstName')]! In [target.GetHerHis] presence, my words often fail me — none of my compliments ever do [target.GetHerHim] justice. Perhaps a carefully drafted poem would better capture [target.GetHerHis] virtues?\n\nI will write about [target.GetHerHis]..."
+ court_ongoing.1100.compliment.tt: "[target.Custom('TitledFirstNamePossessive')] reply will be based on how well the poem suits [target.GetHerHim]."
+ court_ongoing.1100.success.tt: "[target.Custom('FirstNameNoTooltip')] responds positively"
+ court_ongoing.1100.neutral.tt: "[target.Custom('FirstNameNoTooltip')] does not respond"
+ court_ongoing.1100.failure.tt: "[target.Custom('FirstNameNoTooltip')] responds negatively"
+
+ court_ongoing.1100.compassionate: "Kind and feeling heart."
+ court_ongoing.1100.bold: "Fierce fearlessness."
+ court_ongoing.1100.honorable: "Noble righteousness."
+ court_ongoing.1100.greed: "Soaring ambition."
+ court_ongoing.1100.rational: "Endless wisdom."
+ court_ongoing.1100.zealous: "Burning faith."
+ court_ongoing.1100.energetic: "Youthful vigor."
+ court_ongoing.1100.forgiving: "Forgiving nature."
+ court_ongoing.1100.beautiful: "Exquisite features."
+ court_ongoing.1100.strong: "Strength of body."
+ court_ongoing.1100.extroverted: "Charming demeanor."
+ court_ongoing.1100.dominant: "Assertive presence."
+ court_ongoing.1100.fallback: "Poetry is not my strong suit."
+
+ court_ongoing.1101.t: "To the [target.Custom('RomanticComplimentAdjective')] [target.Custom('TitledFirstNameNoTooltip')],"
+ court_ongoing.1101.desc: "[owner.Custom2('love_letter_compliment_system', SCOPE.sC('target'))]"
+ court_ongoing.1101.a.good: "[owner.GetSheHe|U] has captured my essence on parchment!"
+ court_ongoing.1101.a.bad: "How odd! Yet it's... charming."
+ court_ongoing.1101.c.good: "How pretentious."
+ court_ongoing.1101.c.bad: "Is [owner.GetSheHe] trying to insult me?!"
+
+ court_ongoing.1102.t: "To the [owner.Custom('RomanticComplimentAdjective')] [owner.Custom('TitledFirstNameNoTooltip')],"
+ court_ongoing.1102.desc: "[target.Custom2('love_letter', SCOPE.sC('owner'))]"
+ court_ongoing.1102.a: "[target.GetSheHe|U] must have liked my poem!"
+
+ court_ongoing.1103.t: "[target.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
+ court_ongoing.1103.a: "Is [target.GetSheHe]... mocking me?"
+
+
+ #Dealing with competition, by Mathilda Bjarnehed
+ court_ongoing.1110.t: "$court_event_title$ Competition"
+ court_ongoing.1110.desc: "As of late, all of my visits to [target.Custom('FirstName')] have been ruined by [competitor.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)]! [competitor.GetSheHe|U] follows [target.GetHerHim] everywhere, like a lost puppy. [competitor.GetHerHis|U] attempts to charm the [target.GetLadyLord] are laughable, yet I fear [competitor.GetHerHis] persistence will be rewarded."
+ court_ongoing.1110.a: "A duel will prove who is worthy!"
+ court_ongoing.1110.a.success: "You win the duel"
+ court_ongoing.1110.a.failure: "You lose the duel"
+ court_ongoing_1110.competitor_remains.tt: "[competitor.Custom('ShortName')|U] keeps courting [target.Custom('ShortName')]"
+ court_ongoing.1110.b: "An "unfortunate" case of "food poisoning" will do the trick."
+ court_ongoing.1110.b.success: "[competitor.Custom('ShortNameNoTooltip')] makes an embarrassing scene at dinner"
+ court_ongoing.1110.b.failure: "[competitor.Custom('ShortNameNoTooltip')] notices when you pour poison in [competitor.GetHerHis] cup"
+ court_ongoing.1110.b.murder: "The poison is #EMP too#! effective"
+ court_ongoing.1110.c: "[competitor.GetHerHis|U] love is not true; coin will persuade [competitor.GetHerHim] to stop."
+ court_ongoing.1110.c.success: "[competitor.Custom('ShortNameNoTooltip')] accepts the bribe"
+ court_ongoing.1110.c.failure: "[competitor.Custom('ShortNameNoTooltip')] tells [target.Custom('ShortNameNoTooltip')] of your offer"
+ court_ongoing.1111.t: "Popular"
+ court_ongoing.1111.start.desc: "[owner.Custom('TitledFirstName')] is not the only one trying to win my approval. More and more often I am approached by [competitor.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] and [competitor.GetHerHis] compliments have gone from polite to intimate.\n\n"
+ court_ongoing.1111.duel_success.desc: "[owner.Custom('TitledFirstNameNoTooltip')] has not taken kindly to [competitor.Custom('FirstNamePossessiveNoTooltip')] attentions. [owner.GetSheHe|U] challenged [competitor.Custom('FirstNameNoTooltip')] to a duel! When I got there, the thing was already finished; [owner.Custom('TitledFirstNameNoTooltip')] stood triumphant over [owner.GetHerHis] battered enemy."
+ court_ongoing.1111.duel_failure.desc: "[owner.Custom('TitledFirstNameNoTooltip')] has not taken kindly to [competitor.Custom('FirstNamePossessiveNoTooltip')] attentions. [owner.GetSheHe|U] challenged [competitor.Custom('FirstNameNoTooltip')] to a duel! When I got there, the thing was already finished; [competitor.Custom('TitledFirstNameNoTooltip')] stood triumphant over [competitor.GetHerHis] battered enemy."
+ court_ongoing.1111.poison_success.desc: "But tonight, at dinner, [competitor.Custom('TitledFirstNameNoTooltip')] drank to much and puked on my dress! Without wasting a second, [owner.Custom('TitledFirstNameNoTooltip')] swooped in to save me from the mess."
+ court_ongoing.1111.poison_failure.desc: "Now [competitor.Custom('TitledFirstNameNoTooltip')] tells me [owner.Custom('TitledFirstNameNoTooltip')] has been driven mad with jealousy and tried to poison [competitor.GetHerHim]!"
+
+ court_ongoing.1111.a.success: "Oh, [owner.Custom('TitledFirstNameNoTooltip')]! How heroic!"
+ court_ongoing.1111.a.duel_failure: "Poor [owner.Custom('TitledFirstNameNoTooltip')]! Let me care for your scrapes."
+ court_ongoing.1111.a.poison_failure: "[owner.Custom('TitledFirstNameNoTooltip')] would never use such despicable tricks!"
+ court_ongoing.1111.b.poison_success: "Leave me be! I can manage on my own!"
+ court_ongoing.1111.b.poison_failure: "How could you, [owner.Custom('TitledFirstNameNoTooltip')]?!"
+ court_ongoing.1111.b.duel_success: "Childish squabble does #EMP not#! impress me."
+ court_ongoing.1111.b: "Jealousy does not become you, [owner.Custom('TitledFirstNameNoTooltip')]."
+ court_ongoing.1111.c.duel_failure: "Oh, [competitor.Custom('TitledFirstNameNoTooltip')]! How brave you are!"
+ court_ongoing.1111.c: "Poor [competitor.Custom('TitledFirstNameNoTooltip')]! My heart aches for you!"
+ court_ongoing.1111.d: "I've had enough of the both of you!"
+
+ court_ongoing.1112.desc: "[competitor.Custom('TitledFirstName')] stood no chance against my might! [competitor.GetHerHis|U] defeat was surely embarrassing — and my [target.Custom('LoverPetName')] [target.Custom('FirstName')] saw all of it! [target.GetSheHe|U] has not paid [competitor.GetHerHim] any attention since."
+ court_ongoing.1112.a: "Another enemy vanquished!"
+
+ court_ongoing.1113.desc: "It seems like I underestimated [competitor.Custom('TitledFirstNamePossessive')] abilities — my defeat at [competitor.GetHerHis] hands was painful and embarrassing in equal measure. My only solace is that [target.Custom('TitledFirstName')] was not there to witness it."
+ court_ongoing.1113.a: "Let's forget all about this..."
+ court_ongoing.1113.b: "I will have my vengeance! Trust my word!"
+
+ court_ongoing.1114.desc: "Nothing compares to the satisfaction of a perfectly executed plan!\n\nNo one noticed as I poured the poison in [competitor.Custom('TitledFirstNamePossessive')] cup, and the spectacle that followed will not be forgotten anytime soon! [competitor.GetSheHe|U] puked all over [target.Custom('FirstNamePossessive')] [target.Custom('GetClothingArticle')] and [target.GetSheHe] was immensely grateful when I swooped in to save [target.GetHerHim] from the mess."
+ court_ongoing.1114.a: "[target.GetSheHe|U] will never look [competitor.GetHerHis] way again!"
+
+
+ court_ongoing.1115.desc: "As it turned out, [competitor.Custom('TitledFirstName')] is far more perceptive than I gave [competitor.GetHerHim] credit for. [competitor.GetSheHe|U] caught me red-handed when I tried to poison [competitor.GetHerHis] cup and he ratted me out in a heartbeat!"
+ court_ongoing.1115.a: "It's not what it looks like..."
+
+ court_ongoing.1116.desc: "The first part of my plan went perfectly. No one saw me when I poured the poison in [competitor.Custom('TitledFirstNamePossessive')] cup. However, it seems like I underestimated the its potency.\n\nMere seconds after [competitor.Custom('FirstNameNoTooltip')] put the drink to [competitor.GetHerHis] lips, [competitor.GetSheHe] began choking! Before anyone could help, [competitor.GetSheHe] collapsed into [competitor.GetHerHis] stew, dead as a doornail."
+ court_ongoing.1116.a: "At least [competitor.GetSheHe] won't be courting [target.Custom('FirstNameNoTooltip')] anymore."
+
+ # Boring party guest
+ court_ongoing.1120.t: "$court_event_title$ $court_ongoing.1121.t$"
+ court_ongoing.1120.desc: "I am attending a dance in [target_location.GetNameNoTooltip] to spend some time with [target.Custom('TitledFirstName')]. The mere thought of touching hands makes my heart jump! But when I arrive, I find [target.GetHerHim] stuck in a conversation with [unpleasant_guest.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)].\n\nThe [unpleasant_guest.Custom('InsultAdjective')] [unpleasant_guest.GetWomanMan] drones on and on, totally oblivious to [target.Custom('FirstNamePossessiveNoTooltip')] discomfort."
+ court_ongoing.1120.a: "A little #EMP "distraction"#! seems appropriate."
+ court_ongoing.1120.a.failure: "The conversation is excruciatingly boring"
+ court_ongoing.1120.b: "My charms improve any conversation!"
+ court_ongoing.1120.c: "I will take [target.GetHerHis] place. Better that I suffer than [target.GetHerHim]."
+ court_ongoing.1120.d: ""Enough! You are boring the [target.GetLadyLord] to death!""
+ court_ongoing.1120.e: "I'm not going anywhere anywhere close to that [unpleasant_guest.GetWomanMan]!"
+
+
+ court_ongoing.1121.t: "Unpleasant Pleasantries"
+ court_ongoing.1121.start.desc: "When I sent out invitations to a dance, I was looking forward to an evening of good company and frivolous fun. Instead, I have found myself stuck in a dreadful conversation with [unpleasant_guest.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)]...\n\n"
+ court_ongoing.1121.diplomacy.desc: ""Good evening," greets a familiar voice — [owner.Custom('TitledFirstName')] joins the conversation. [owner.GetSheHe|U] is an attentive listener, and soon [unpleasant_guest.Custom('FirstNamePossessiveNoTooltip')] attention is fully on [owner.GetHerHim]. I am free to escape."
+ court_ongoing.1121.intrigue.desc: ""My deepest apologies, but there is an urgent situation which needs your attention, [unpleasant_guest.Custom2('RelationToMeAddress', owner)]." The familiar voice belongs to none other than [owner.Custom('TitledFirstName')]. [owner.GetSheHe|U] winks at me as [owner.GetSheHe] gestures for [unpleasant_guest.Custom('FirstNameNoTooltip')] to follow."
+ court_ongoing.1121.insult.desc: ""I think the [ROOT.Char.GetLadyLord] has had enough," a [owner.GetWomanMan] interrupts — it is [owner.Custom('TitledFirstName')]! "Can't you tell you're boring [ROOT.Char.GetHerHim], [unpleasant_guest.Custom2('RelationToMeAddress', owner)]?""
+ court_ongoing.1121.a: "A useful, albeit unpleasant, lesson in diplomacy!"
+ court_ongoing.1121.a.critical_success: "You pick up a new diplomatic trick"
+ court_ongoing.1121.a.success: "Your understanding of diplomacy increases"
+ court_ongoing.1121.b: "A useful, albeit unpleasant, lesson in subterfuge!"
+ court_ongoing.1121.b.critical_success: "You pick up a new intrigue trick"
+ court_ongoing.1121.b.success: "Your understanding of intrigue increases"
+ court_ongoing.1121.c: ""Indeed, I have had quite enough.""
+ court_ongoing.1121.c.success: "[unpleasant_guest.Custom('ShortName')|U] appreciates your honesty"
+ court_ongoing.1121.c.failure: "[unpleasant_guest.Custom('ShortName')|U] is insulted"
+ court_ongoing.1121.d: "A [ROOT.Char.Custom('TitleAsNameNoTooltip')] has time for everyone. [owner.Custom('FirstNameNoTooltip')] should know that."
+ court_ongoing.1121.e: "I am not staying a moment longer than I have to!"
+ 
+
+ #EXTREME REQUEST — CHOOSE, by Linnéa Thimrén
+ court_ongoing.1201.t: "The Request"
+ court_ongoing.1201.desc: ""[target.GetLadyLord|U] [target.Custom('FirstName')], let me prove my devotion to you in any way you deem fit!" [owner.Custom('TitledFirstName')] implores me to engineer a test of [owner.GetHerHis] devotion — a feat of my liking. I will have [owner.GetHerHim] abstain multiple days from..."
+ court_ongoing.1201.a: "Sleep — guard me from nightmares!"
+ court_ongoing.1201.a_success: "[owner.GetHerHis|U] vigil lets me rest soundly"
+ court_ongoing.1201.a_failure: "[owner.GetSheHe|U] fails in [owner.GetHerHis] duty"
+ court_ongoing.1201.b: "Food — your love for me should be sustenance enough."
+ court_ongoing.1201.b_success: "[owner.GetSheHe|U] proves [owner.GetHerHis] devotion"
+ court_ongoing.1201.c: "I have no interest in testing [owner.GetHerHim]."
+
+ #EXTREME REQUEST — SLEEP, by Linnéa Thimrén
+ court_ongoing.1211.t: "$court_event_title$ The Request"
+ court_ongoing.1211.desc_opening: ""[target.GetLadyLord|U] [target.Custom('FirstName')], let me prove my devotion to you in any way you deem fit!"\n\n[target.Custom('FirstNameNoTooltip')] ponders the request for a while before [target.GetHerHis] face lights up."
+ court_ongoing.1211.desc: ""I have been plagued by nightmares lately. If you are truly devoted to me you will stand guard outside my chambers and make sure no evil reaches me.""
+ court_ongoing.1211.a: "You will sleep undisturbed!"
+ court_ongoing.1211.a.success: "You manage to stay awake"
+ court_ongoing.1211.a.failure: "The lure of sleep claims you"
+ court_ongoing.1211.b: "Leave me undisturbed all night and I will stand guard."
+ court_ongoing.1211.b.tt: "A broom with my cloak on top can fight nightmares just as well."
+ court_ongoing.1211.b.success: "No one uncovers the ruse"
+ court_ongoing.1211.b.failure: "[target.GetSheHe|U] notices the deception"
+ court_ongoing.1211.c: "I will not do it."
+
+ court_ongoing.1212.desc: "As the sun rises after yet another night of good sleep I can do nothing but thank [owner.Custom('TitledFirstName')] for standing guard outside of my chambers, keeping my rest calm and undisturbed."
+ court_ongoing.1212.a: "My brave guardian!"
+
+ court_ongoing.1213.desc: "Just as I am drifting of to sleep, in the middle of the darkest night, I suddenly hear a loud #EMP thump#!! Peeking out of my chambers I see none other than [owner.Custom('TitledFirstName')], fast asleep on the floor."
+ court_ongoing.1213.a: "My brave guardian..."
+
+ court_ongoing.1214.desc: "\n\nI even peeked out the door a couple of times to find [owner.GetHerHim] standing stiffly upright, never so much as swaying."
+
+ court_ongoing.1215.desc: "Just as I am drifting of to sleep, in the middle of the darkest night, I suddenly hear a loud #EMP thump#!! Peeking out of my chambers I see the empty cloak of [owner.Custom('TitledFirstName')], a helmet, and a broom tumbled to the ground."
+ court_ongoing.1215.a: "[owner.GetSheHe|U] meant to trick me!"
+
+ #EXTREME REQUEST — FOOD, by Linnéa Thimrén
+ court_ongoing.1221.desc: ""You should be able to sustain yourself on nothing but your love for me for many days.""
+ court_ongoing.1221.a: "My devotion will carry me through!"
+ court_ongoing.1221.a.success: "You manage to avoid sustenance"
+ court_ongoing.1221.a.failure: "You succumb to your body's needs"
+ court_ongoing.1221.b: "Not a crumb will pass these lips!"
+ court_ongoing.1221.b.tt: "But I won't shun a chunk, or a piece..."
+
+ court_ongoing.1222.desc: "[owner.Custom('TitledFirstName')] looked gaunter and gaunter for every day that passed, but even as [owner.GetHerHis] body whithered [owner.GetHerHis] will and devotion stood strong.\n\nI find [owner.GetHerHim] to proclaim the challenge won, and the first thing to pass [owner.GetHerHis] lips is another promise of faithfulness."
+ court_ongoing.1222.a: "My devoted [owner.GetLadyLord]!"
+
+ court_ongoing.1223.desc: "[owner.Custom('TitledFirstName')] looked gaunter and gaunter for every day that passed."
+ court_ongoing.1223.desc_ending: "But, as I look for [owner.GetHerHim] to proclaim the challenge won, I find [owner.GetHerHim] in the larder, covered in crumbs and in the process of devouring a whole cheese wheel."
+ court_ongoing.1223.a: "I see you found another source of sustenance..."
+
+ court_ongoing.1225.desc: "[owner.Custom('TitledFirstName')] seems to be handling the fasting rather well, and as I search [owner.GetHerHim] out to express my surprise and admiration I find out how.\n\n[owner.GetHerHis|U] entire cloak is stuffed with food! Judging by [owner.GetHerHis] shamed expression I was not meant to see that..."

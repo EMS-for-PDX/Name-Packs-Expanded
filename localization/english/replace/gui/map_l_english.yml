@@ -1,0 +1,29 @@
+﻿l_english:
+ SIEGE_TOOLTIP_OCUPIED: "Occupied by [CHARACTER.Custom('UIName')]."
+
+ CHARACTER_ACTIVITY_TOOLTIP: "[CHARACTER.Custom('UIName')] attends this activity"
+
+ CHARACTER_IMPRISONED_AT: "Imprisoned by [CHARACTER.Custom('UIName')|V] in [PROVINCE.GetName|V]"
+ CHARACTER_AT_COURT_VISITING: "Visiting [CHARACTER.Custom('ShortNameNotMePossessive')|V] [court|E] in [PROVINCE.GetName|V]"
+ CHARACTER_AT_COURT: "At [CHARACTER.Custom('ShortNameNotMePossessive')|V] [court|E] in [PROVINCE.GetName|V]"
+
+ MAP_REALM_TT_BOTTOM: "Ruler: [CHARACTER.Custom('RegNameNoTooltip')|UV]"
+ MAP_REALM_LOBBY_TT_HEADER: "#T [CHARACTER.Custom('ShortNameNotMeNoTooltip')]#!\n[TITLE.GetNameNoTooltip]"
+
+ MAP_REALM_TT_RELATION_VASSAL: "[TARGET_CHARACTER.Custom('ShortNamePossessiveNoTooltip')|UV] Vassal"
+ MAP_REALM_TT_RELATION_PEER: "[TARGET_CHARACTER.Custom('ShortNamePossessiveNoTooltip')|UV] fellow Vassal"
+ MAP_REALM_TT_RELATION_LIEGE: "[TARGET_CHARACTER.Custom('ShortNamePossessiveNoTooltip')|UV] Liege"
+ MAP_REALM_TT_RELATION_TOP_LIEGE: "[TARGET_CHARACTER.Custom('ShortNameNotMePossessive')|UV] Top Liege"
+
+ PROVINCE_TOOLTIP_HOLDER: "Holder: [CHARACTER.Custom('RegNameNoTooltip')|UV]"
+ PROVINCE_TOOLTIP_LESSEE: "Lessee: [CHARACTER.Custom('RegNameNoTooltip')|UV]"
+ PROVINCE_TOOLTIP_OCCUPIED: "Occupied by: [CHARACTER.Custom('RegNameNoTooltip')|UV]"
+
+ MAP_COUNTY_HOLDER_MAIN_TEXT: "\nTop Realm: [TITLE.GetDeFactoTopLiege.GetNameNoTooltip|V]\nCounty Holder: [CHARACTER.Custom('RegNameNoTooltip')|UV]"
+
+ MAP_OCCUPANT_TEXT: "Occupant: [CHARACTER.Custom('RegNameNoTooltip')|UV]"
+
+ COURT_LANGUAGES_MAP_MODE_TOOLTIP_COUNTY_HOLDER: "#T $COURT_LANGUAGES_MAP_MODE_COUNTY_HOLDER$#!\nCourt Language of the [ROOT.Province.GetCounty.GetTitle.GetHolder.Custom('TitleAsNameNoTooltip')] of [ROOT.Province.GetCounty.GetTitle.GetHolder.GetPrimaryTitle.GetNameNoTierNoTooltip]\n"
+ COURT_LANGUAGES_MAP_MODE_TOOLTIP_LIEGE: "#T $COURT_LANGUAGES_MAP_MODE_LIEGE$#!\nCourt Language of the [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.Custom('TitleAsNameNoTooltip')] of [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]\n"
+ COURT_LANGUAGES_MAP_MODE_TOOLTIP_LIEGES_LIEGE: "#T $COURT_LANGUAGES_MAP_MODE_LIEGES_LIEGE$#!\nCourt Language of the [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetLiege.Custom('TitleAsNameNoTooltip')] of [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]\n"
+ COURT_LANGUAGES_MAP_MODE_TOOLTIP_TOP_LIEGE: "#T $COURT_LANGUAGES_MAP_MODE_TOP_LIEGE$#!\nCourt Language of the [ROOT.Province.GetCounty.GetTitle.GetHolder.GetTopLiege.Custom('TitleAsNameNoTooltip')] of [ROOT.Province.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]\n"

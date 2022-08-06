@@ -1,0 +1,9 @@
+﻿l_english:
+
+ FAITH_TOOLTIP_HEAD_OF_FAITH: "[head_of_faith|E]: [Faith.GetReligiousHead.Custom('UIName')|U]"
+
+ FAITH_TOOLTIP_DOCTRINE_HEAD_OF_FAITH: "[head_of_faith|E]: [Faith.GetReligiousHead.Custom('ShortName')|U]"
+
+ RELIGIOUS_HEAD_WITH_NAME: "[Faith.GetReligiousHead.Custom('RegNameNoTooltip')|U]"
+
+ FAITH_HOLY_SITE_HOLDER_TOOLTIP: "#T [Character.GetPrimaryTitle.GetNameNoTooltip]\n#![ruler|E]: [Character.Custom('UIName')]\n[faith|E]: [Character.GetFaith.GetName]\n\n[Select_CString( GuiHolySiteItem.IsHeldByFaith, '#same ', '#weak ' )]Since the Ruler of [HolySite.GetName] is [Character.GetFaith.GetAdjectiveNoTooltip], it will [Select_CString( GuiHolySiteItem.IsHeldByFaith, '', 'not ' )]provide [Select_CString( GuiHolySiteItem.IsHeldByFaith, '', 'any ' )]benefits to all [Faith.GetAdjectiveNoTooltip] Characters#!\n\n#I Click to view#!"

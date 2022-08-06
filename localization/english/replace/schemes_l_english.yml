@@ -1,0 +1,153 @@
+﻿l_english:
+ SCHEME_AGENT_GOLD_VALID: "Pay [recipient.Custom('ShortNameNoTooltip')] [gold_i] [SCOPE.ScriptValue('bribe_value')|V0]"
+
+ SCHEME_TT_BODY: "Target: [SCHEME.GetTarget.Custom('UIName')]\nProgress: [SCHEME.GetProgress|0V]/#V 10#! (#V ~[SCHEME.GetEstimatedTimeRemaining]#!)\n[success_chance|E]: #V $SUCCESS_CHANCE$%#!"
+
+ SCHEME_FULL_ACTION_NAME: "[SCHEME.GetActionName] [SCHEME.GetTarget.Custom('ShortNameNoTooltip')]"
+
+ scheme_target_died: "[TARGET_CHARACTER.Custom('ShortName')|U] has died"
+ scheme_target_not_in_diplomatic_range: "[TARGET_CHARACTER.Custom('ShortName')|U] is no longer within [diplomatic_range|E]"
+
+ murder_desc: "It is time for [SCHEME.GetTarget.Custom('ShortNameNoTooltip')] to face the judgment of [SCHEME.GetOwner.GetFaith.HighGodName]!"
+
+ scheme_interaction_tt_murder_approved: "Attempt to murder [recipient.Custom('ShortNameNoTooltip')]"
+ murder_successful_roll_tt: "[target.Custom('ShortNameNoTooltip')] is killed!"
+
+ MURDER_SUCCESS_DESC: "[TARGET_CHARACTER.Custom('ShortName')|U] is killed"
+
+ ABDUCT_SUCCESS_DESC: "[TARGET_CHARACTER.Custom('ShortName')|U] becomes your [prisoner|E]. However, you will be exposed for the [crime|E] of kidnapping."
+
+ BEFRIEND_SUCCESS_DESC: "[TARGET_CHARACTER.Custom('ShortName')|U] might become your [friend|E]"
+ COURT_SUCCESS_DESC: "You gain [prestige|E] and [TARGET_CHARACTER.Custom('ShortName')] may become your Soulmate"
+ CONVERT_TO_WITCHCRAFT_SUCCESS_DESC: "[TARGET_CHARACTER.Custom('ShortName')|U] becomes a Witch"
+ SEDUCE_SUCCESS_DESC: "[TARGET_CHARACTER.Custom('ShortName')|U] becomes your [lover|E]"
+ SWAY_SUCCESS_DESC: "[TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] [opinion|E] of you will increase by #P [CHARACTER.MakeScope.ScriptValue('sway_opinion_increase_per_success')|V0]#!"
+
+ SCHEME_I_AM_COUNCILLOR_OF_TARGET: "You serve on [target.Custom('ShortNameNotMePossessive')] [council|E]: $VALUE|+=0$"
+ CLAIM_THRONE_SCHEME_AGENT_COUNCILLOR: "[target.Custom('ShortNameNotMePossessive')] councillor"
+ CLAIM_THRONE_SCHEME_AGENT_COURT_CHAPLAIN: "[target.Custom('ShortNameNotMePossessive')] [target.GetCouncillorPosition( 'councillor_court_chaplain' ).GetPositionName]"
+ CLAIM_THRONE_SCHEME_AGENT_VASSAL: "[target.Custom('ShortNameNotMePossessive')] vassal"
+
+ learn_language_desc: "I will attempt to learn [SCHEME.GetTarget.Custom('ShortNamePossessiveNoTooltip')] [SCHEME.GetTarget.GetCulture.GetLanguage.GetName] [language|E]."
+
+ scheme_interaction_tt_learn_language_approved: "Attempt to learn [recipient.Custom('ShortNamePossessiveNoTooltip')] [recipient.GetCulture.GetLanguage.GetName] [language|E], improving the attitude of all who speak that Language towards you.\n\n#weak Current [language_limit|E]: [actor.MakeScope.ScriptValue('current_extra_languages')|V0] out of [actor.MakeScope.ScriptValue('language_soft_cap')|V0]#!"
+
+ scheme_interaction_tt_learn_language_desc: "I will learn [recipient.Custom('ShortNamePossessiveNoTooltip')] [language|E]!"
+ learn_language_invalidated_cannot_learn_language_desc: "You can no longer learn [target.Custom('ShortNameNotMePossessive')] [language|E]"
+
+ learn_language_invalidated_dead_desc: "[target.Custom('ShortName')|U] has passed away. You can no longer use the $learn_language$ on [target.GetHerHim]."
+ learn_language_complete: "You have learned [target.Custom('ShortNamePossessiveNoTooltip')] [target.GetCulture.GetLanguage.GetName] [language|E]"
+
+ abduct_desc: "I will kidnap and [imprison|E] [SCHEME.GetTarget.Custom('ShortNameNoTooltip')]!"
+
+ scheme_interaction_tt_abduct_approved: "[recipient.Custom('ShortName')] will soon be my prisoner!"
+ abduct_successful_roll_tt: "[target.Custom('ShortNameNoTooltip')] becomes my prisoner!"
+
+ abduct_scheme_i_imprisoned_them_message: "[target.Custom('ShortName')|U] is already in my prison"
+ scheme_target_imprisoned_by_other: "[TARGET_CHARACTER.Custom('ShortName')|U] has been imprisoned by [CHARACTER.Custom('ShortName')]"
+
+ befriend_desc: "With care and attention a friendship might flourish between [SCHEME.GetTarget.Custom('ShortNameNoTooltip')] and myself!"
+
+ scheme_interaction_tt_befriend_approved: "I will win the friendship of [recipient.Custom('ShortName')]!"
+ befriend_already_friend: "[recipient.Custom('ShortName')] is already your friend"
+ befriend_already_lover: "[TARGET_CHARACTER.Custom('ShortName')|U] is already in love with you"
+
+ befriend_invalid: "I stop trying to befriend [target.Custom('ShortName')|U] as we can no longer become [friends|E]"
+
+ seduce_desc: "I will win [SCHEME.GetTarget.Custom('ShortNameNoTooltip')] over with sweet words and sweeter gestures – [SCHEME.GetTarget.GetSheHe] will soon be mine!"
+
+ seduce_interaction_desc_consort: "Attempt to seduce [recipient.Custom('ShortNameNoTooltip')] #weak (your [actor.Custom2('RelationToMeShort', SCOPE.sC('recipient'))])#!, improving [recipient.GetHerHis] opinion of you and possibly gaining the [lover|E] status"
+ scheme_interaction_tt_seduce_approved: "Attempt to seduce [recipient.Custom('ShortNameNoTooltip')], [extramarital_sex_sleeping_with|E] [recipient.GetHerHim] and possibly making [recipient.GetHerHim] your [lover|E]"
+
+ scheme_interaction_tt_wrong_gender_no_lover: "[recipient.Custom('ShortName')] and you will not become lovers"
+ seduce_invalid: "I stop trying to seduce [target.Custom('ShortName')|U] as we can no longer become [lovers|E]."
+
+ courting_desc: "I will declare my undying love for [SCHEME.GetTarget.Custom('ShortNameNoTooltip')] and win [SCHEME.GetTarget.GetHerHis] heart through noble acts of chivalry."
+
+ scheme_interaction_tt_courtship_approved: "Attempt to romance [recipient.Custom('ShortNameNoTooltip')], gaining [prestige|E], improving their [opinion|E] of you, and possibly becoming [soulmates|E]!"
+ courting_invalid: "I stop trying to romance [target.Custom('ShortName')|U] as we can no longer become [soulmates|E]."
+
+ sway_desc: "I will attempt to make [SCHEME.GetTarget.Custom('ShortNameNoTooltip')] understand me, and perhaps even like me."
+
+ scheme_interaction_tt_sway_approved: "Attempt to sway [recipient.Custom('ShortNameNoTooltip')], improving [recipient.GetHerHis] [opinion|E] of you"
+ sway_sway_success_message: "[target.Custom('ShortNameNoTooltip')] Swayed"
+ sway_sway_failed_message: "[target.Custom('ShortNameNoTooltip')] is not Swayed"
+
+ scheme_interaction_tt_sway_desc: "I will sway [recipient.Custom('ShortNameNoTooltip')] to my cause!"
+
+ sway_invalidated_war: "Due to the War between you, you can no longer $sway_action$ [target.Custom('ShortName')]"
+ sway_invalidated_dead: "[target.Custom('ShortName')|U] has passed away. You can no longer $sway_action$ [target.GetHerHim]"
+ sway_complete: "You have Swayed [target.Custom('ShortName')] as much as you can"
+
+ claim_throne_desc: "I will claim the throne of [SCHEME.GetTarget.Custom('ShortNameNoTooltip')]!"
+
+ fabricate_hook_interaction_desc: "Attempt to fabricate a [hook|E] on [recipient.Custom('ShortNameNoTooltip')]"
+
+ fabricate_hook_has_gained_hook: "You have gained a [hook|E] on [target.Custom('ShortName')]"
+ fabricate_hook_i_may_not_fabricate_again: "You may not try to fabricate hooks at [court_owner.Custom('ShortNameNotMePossessive')] court again for 5 years"
+
+ FABRICATE_HOOK_TARGETING_SPYMASTER: "[target.Custom('ShortName')|U] is a [spymaster|E]: $VALUE|=+0$"
+
+ FABRICATE_HOOK_TARGET_TRUSTING: "[target.Custom('ShortName')|U] is [GetTrait('trusting').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_INTELLECT_BAD_1: "[target.Custom('ShortName')|U] is [GetTrait('intellect_bad_1').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_INTELLECT_BAD_2: "[target.Custom('ShortName')|U] is [GetTrait('intellect_bad_2').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_INTELLECT_BAD_3: "[target.Custom('ShortName')|U] is [GetTrait('intellect_bad_3').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_INTELLECT_GOOD_1: "[target.Custom('ShortName')|U] is [GetTrait('intellect_good_1').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_INTELLECT_GOOD_2: "[target.Custom('ShortName')|U] is [GetTrait('intellect_good_2').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_INTELLECT_GOOD_3: "[target.Custom('ShortName')|U] is [GetTrait('intellect_good_3').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_SCHEMER: "[target.Custom('ShortName')|U] is [GetTrait('schemer').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_PARANOID: "[target.Custom('ShortName')|U] is [GetTrait('paranoid').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_FICKLE: "[target.Custom('ShortName')|U] is [GetTrait('fickle').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_ARROGANT: "[target.Custom('ShortName')|U] is [GetTrait('arrogant').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_GREEDY: "[target.Custom('ShortName')|U] is [GetTrait('greedy').GetName( target )]: $VALUE|=+0$"
+ FABRICATE_HOOK_TARGET_CRAVEN: "[target.Custom('ShortName')|U] is [GetTrait('craven').GetName( target )]: $VALUE|=+0$"
+
+ FABRICATE_HOOK_SUCCESS_DESC: "You gain a [hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
+ FABRICATE_HOOK_DISCOVERY_DESC: "You can keep fabricating Hooks at [TARGET_CHARACTER.Custom('ShortNamePossessiveNoTooltip')] [court|E]"
+
+ scheme_interaction_tt_spy_on_approved: "I will soon find whatever [recipient.Custom('ShortName')] seeks to keep secret!"
+ 
+ SCEHEME_ON_COOLDOWN: "#X Can not use the $SCHEME_NAME$ on [TARGET_CHARACTER.Custom('ShortName')] until [DATE.GetStringLong]#!"
+ scheme_target_is_incapable: "[target.Custom('ShortName')|U] is [GetTrait('incapable').GetName( target )]"
+
+ elope_desc: "Bring [SCHEME.GetTarget.Custom('ShortNameNoTooltip')] to your [court|E] and [marry|E] [SCHEME.GetTarget.GetHerHim]"
+
+ ELOPE_SUCCESS_OWNER_INTRIGUE: "[owner.Custom('ShortNameNotMePossessive')|U] Intrigue: $VALUE|=+0$"
+ ELOPE_SUCCESS_TARGET_INTRIGUE: "[target.Custom('ShortNameNotMePossessive')|U] Intrigue: $VALUE|=+0$"
+ ELOPE_SUCCESS_TARGETS_LIEGE_INTRIGUE: "[target.GetLiege.Custom('ShortNameNotMePossessive')|U] Intrigue: $VALUE|=+0$"
+ ELOPE_SUCCESS_TARGETS_LIEGES_SPYMASTER_INTRIGUE: "[target.GetLiege.Custom('ShortNameNotMePossessive')|U] Spymaster's Intrigue: $VALUE|=+0$"
+ ELOPE_SUCCESS_UNIMPORTANT: "[target.Custom('ShortName')|U] is not important: $VALUE|=+0$"
+ ELOPE_SUCCESS_IMPRISONED: "[target.Custom('ShortName')|U] is [imprisoned|E]: $VALUE|=+0$"
+ ELOPE_SUCCESS_DESC: "[TARGET_CHARACTER.Custom('ShortName')|U] joins your Court and you get married"
+ ELOPE_SUCCESS_TARGETS_LIEGE_KNOWS_ABOUT_RELATIONSHIP: "Relationship is known to [target.GetLiege.Custom('ShortName')]: $VALUE|=+0$"
+ elope_interaction_desc: "Attempt to Elope with [recipient.Custom('ShortNameNoTooltip')] to [marry|E] in secret"
+
+ scheme_target_no_longer_courtier: "[TARGET_CHARACTER.Custom('ShortName')|U] has left the court of [CHARACTER.Custom('ShortName')]"
+ scheme_target_no_longer_courtier_no_var: "[CHARACTER.Custom('ShortName')] is no longer a courtier"
+ scheme_target_is_your_courtier: "[CHARACTER.Custom('ShortName')] is your courtier now"
+ scheme_target_no_longer_lover: "You and [TARGET_CHARACTER.Custom('ShortName')|U] are no longer lovers"
+
+ steal_back_artifact_desc: "I will attempt to steal what's rightfully mine from [SCHEME.GetTarget.Custom('ShortNameNoTooltip')]."
+
+ scheme_interaction_tt_steal_back_artifact_approved: "[recipient.Custom('ShortName')] will no longer own what's rightfully mine!"
+
+ steal_back_artifact_failed_message: "Artifact Remains With [target.Custom('ShortNameNoTooltip')]"
+ scheme_interaction_tt_steal_back_artifact_desc: "I will take back what [recipient.Custom('ShortNameNoTooltip')] is unrighteously keeping from me!"
+
+ steal_back_artifact_complete: "You have stolen an artifact from [target.Custom('ShortName')]"
+
+ they_steal_back_artifact_must_have_claim_blocker: "[CHARACTER.Custom('ShortName')|U] does not own an artifact that [TARGET_CHARACTER.Custom('ShortName')] has a claim on"
+ i_steal_back_artifact_must_have_claim_blocker: "[TARGET_CHARACTER.Custom('ShortName')] does not own an artifact that I have a claim on"
+
+ STEAL_BACK_ARTIFACT_SUCCESS_DESC: "You will steal an artifact from [TARGET_CHARACTER.Custom('ShortName')] that you have a claim on"
+ steal_back_artifact_invalidated_war: "Due to the War between you, you can no longer $steal_back_artifact_action$ [target.Custom('ShortName')]"
+ steal_back_artifact_invalidated_dead: "[target.Custom('ShortName')|U] has passed away. You can no longer $steal_back_artifact_action$ [target.GetHerHim]"
+ steal_back_artifact_can_start_scheme: "I cannot $steal_back_artifact_action$ at this time"
+
+ learn_own_court_language_desc: "I will attempt to learn [SCHEME.GetOwner.GetCourtLanguage.GetName], my [court_language|E], from [SCHEME.GetTarget.Custom('ShortNameNoTooltip')]."
+
+ scheme_interaction_tt_learn_own_court_language_approved: "Attempt to learn [recipient.Custom('ShortNamePossessiveNoTooltip')] [court_language|E].\n\n#weak Current [language_limit|E]: [actor.MakeScope.ScriptValue('current_extra_languages')|V0] out of [actor.MakeScope.ScriptValue('language_soft_cap')|V0]#!"
+
+ learn_liege_court_language_desc: "I will attempt to learn [SCHEME.GetOwner.GetLiege.GetCourtLanguage.GetName], my [liege|E]'s [court_language|E], from [SCHEME.GetTarget.Custom('ShortNameNoTooltip')]."
+
+ scheme_interaction_tt_learn_liege_court_language_approved: "Attempt to learn [recipient.Custom('ShortNamePossessiveNoTooltip')] your liege's [court_language|E].\n\n#weak Current [language_limit|E]: [actor.MakeScope.ScriptValue('current_extra_languages')|V0] out of [actor.MakeScope.ScriptValue('language_soft_cap')|V0]#!"

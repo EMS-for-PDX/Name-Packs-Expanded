@@ -1,0 +1,679 @@
+﻿l_english:
+ seduce_ongoing.success.rejection: "This was nice, but no more."
+ seduce_ongoing.failure.rejection: "No, no, and forever no, [owner.Custom('FirstNameNoTooltip')]."
+ seduce_ongoing_decline_event.tt: "I forsake this opportunity to impress [target.Custom('TitledFirstName')]"
+ seduce_ongoing_possible_outcomes_tooltip_effect.success.desc: "Everything goes according to plan"
+ seduce_ongoing_possible_outcomes_tooltip_effect.failure.desc: "[target.Custom('FirstNameNoTooltip')] is not impressed"
+
+ seduce_ongoing.1001.t: "The Dance"
+ seduce_ongoing.1001.distant_opening: "I have made my way to the court in [court_of_residence.GetNameNoTier] in time for the dance at the [court_owner.Custom('ResidenceBuilding')]. I secured an invitation, for I have to see [target.Custom('TitledFirstName')]."
+ seduce_ongoing.1001.close_opening: "I am attending the dance not simply because I am the [ROOT.Char.GetLadyLord|U] of the [court_owner.Custom('ResidenceBuilding')], but because I want to see [target.Custom('TitledFirstName')] there."
+ seduce_ongoing.1001.desc: "\n\n[target.GetSheHe|U] looks resplendent, and when we finally have a moment to ourselves, I offer my suggestion."
+ seduce_ongoing.1001.a: "Join me in the circle for the next dance, my [target.GetLadyLord]?"
+ seduce_ongoing.1001.a.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] playful side.#!"
+ seduce_ongoing.1001.b: "A walk in the garden, away from all of this?"
+ seduce_ongoing.1001.b.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] thoughtful side.#!"
+ seduce_ongoing.1001.c: "Could I provide you with some more food?"
+ seduce_ongoing.1001.c.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] greedy side.#!"
+ seduce_ongoing.1001.d: "Have you seen how these people "dance"?"
+ seduce_ongoing.1001.d.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] malicious side.#!"
+
+ seduce_ongoing.1003.opening: "At the [court_owner.Custom('ResidenceBuilding')] dance [owner.Custom('TitledFirstName')] came to me, offering [owner.GetHerHis] company."
+ seduce_ongoing.1003.dance: "\n\nAs we spun on the floor we certainly turned some heads, and I was laughing like a little [ROOT.Char.Custom('GirlBoy')]!"
+ seduce_ongoing.1003.walk: "\n\nWe walked in the garden, talking about all manner of things until we realized we had both lost track of time!"
+ seduce_ongoing.1003.food: "\n\n[owner.GetSheHe|U] had some servants bring out a few more dishes, and we sat eating together for most of the night. It was delicious!"
+ seduce_ongoing.1003.mockery: "\n\nWe sat making fun of the other guests, sharing jokes and laughter. I am thoroughly impressed with [owner.Custom('FirstNamePossessiveNoTooltip')] incisive wit!"
+ seduce_ongoing.1003.fallback: "\n\nWe ended up having so much fun, we danced almost the entire duration of the celebration!"
+ seduce_ongoing.1003.a: "I had such a good evening!"
+
+ seduce_ongoing.1004.dance: "[owner.GetSheHe|U] failed to take the hint that I was not interested in dancing, and after a few reluctant spins I had to ask [owner.GetHerHim] to let me go."
+ seduce_ongoing.1004.walk: "While a walk in the garden was bracing, [owner.Custom('FirstNamePossessive')] chatter bored me immensely.\n\nI soon made my excuses, and found my way back to the dance."
+ seduce_ongoing.1004.food: "While I was not opposed to [owner.GetHerHis] presence, the entire evening [owner.GetSheHe] sent servants for more and more dishes of food. I was quickly full, and made my excuses to go dancing instead."
+ seduce_ongoing.1004.mockery: "[target.GetSheHe|U] sat next to me, making comments about the other guests.\n\nNot only was it needlessly cruel, but crude and completely artless as well."
+ seduce_ongoing.1004.fallback: "[owner.GetSheHe|U] kept suggesting ways of spending time at the celebrations, but there is only so much [owner.GetSheHe] can do when [owner.GetSheHe] is such dreadful company by [owner.GetHerselfHimself]."
+ seduce_ongoing.1004.a: "What was [owner.GetSheHe] thinking?"
+
+ seduce_ongoing.1005.dance: "[target.Custom('TitledFirstName')] and I spun across the floor together, turning heads as [target.GetSheHe] laughed to [target.GetHerHis] heart's content."
+ seduce_ongoing.1005.walk: "[target.Custom('TitledFirstName')] and I walked gardens, talking about all manner of things. We eventually realized we had both lost track of time, and when we returned the dance had already started winding down."
+ seduce_ongoing.1005.food: "I had the servants bring more food for [target.Custom('TitledFirstName')] and myself, and as the evening went by we delighted in every delicious dish that the cooks of [court_of_residence.GetNameNoTier] have to offer. That [target.GetWomanMan] certainly has a taste for the finer things in life."
+ seduce_ongoing.1005.mockery: "We sat together, making one joke after another about the other guests. I had not expected [target.Custom('TitledFirstName')] to be quite so skilled in the art of mockery!"
+ seduce_ongoing.1005.fallback: "[target.Custom('TitledFirstName')] and I ended up having so much fun, we danced almost the entire duration of the celebration!"
+ seduce_ongoing.1005.a: "What an evening we had!"
+
+ seduce_ongoing.1006.dance: "I thought I was set once [target.GetSheHe] agreed to dance, but even though I handled myself deftly, [target.Custom('TitledFirstName')] soon made some excuses and left me standing by myself among the other dancers."
+ seduce_ongoing.1006.walk: "I thought it a pleasant walk, but perhaps it was too cold, or perhaps I spoke too much, for [target.GetSheHe] soon made [target.GetHerHis] excuses and returned to the dance, not even waiting to see if I was coming along.\n\nBy the time I made it back, [target.GetSheHe] was busy having fun with the other dancers."
+ seduce_ongoing.1006.food: "Perhaps there was something wrong with the food I had the servants bring out for [target.Custom('TitledFirstName')]? Even after [target.GetSheHe] had made [target.GetHerHis] excuses the food kept streaming in from the kitchen, piling up as I sat picking at it alone."
+ seduce_ongoing.1006.mockery: "No matter how hard I tried, [target.Custom('TitledFirstName')] did not laugh at my jokes. In the end [target.GetSheHe] accused me of being pointlessly cruel, and left me sitting by myself."
+ seduce_ongoing.1006.fallback: "I kept suggesting ways we could spend time at the celebrations, but [target.Custom('TitledFirstName')] seemed completely uninterested. Did I do something wrong?"
+ seduce_ongoing.1006.a: "This went poorly."
+
+ seduce_ongoing.successful.target: "\n\nWhile the gift was anonymous, [owner.Custom('TitledFirstName')] has gone to great lengths to make sure that I would figure out that [owner.GetSheHe] was behind it."
+ seduce_ongoing.unsuccessful.target: "\n\nWhile the gift was sent anonymously, it is not hard to understand that [owner.Custom('TitledFirstName')] was behind it..."
+ seduce_ongoing.target_successful.option: "[owner.GetSheHe|U] deserves my unreserved thanks!"
+ seduce_ongoing.target_unsuccessful.option: "Maybe there is #EMP someone#! who will like this..."
+ 
+ seduce_ongoing.target.opening: "[target.Custom2('AppropriateGreeting', ROOT.Char)]"
+ seduce_ongoing.successful.owner: "Thank you so much for the [SCOPE.Custom('SeductionGiftType')] you gave me. I can scarce remember the last time I received such a wonderful gift!"
+ seduce_ongoing.unsuccessful.owner: "I received the [SCOPE.Custom('SeductionGiftType')] you sent. I am... unsure as to the reason why you sent me a gift like this, but I took note of it."
+ seduce_ongoing.owner_successful.option: "Anything for you, [target.Custom('FirstNameNoTooltip')]."
+ seduce_ongoing.owner_unsuccessful.option: "What did I do wrong?"
+
+ seduce_ongoing.1101.t: "Something Expensive"
+ seduce_ongoing.1101.desc: "A gift is certain to catch [target.Custom('TitledFirstNamePossessive')] attention, and surely anyone would appreciate a fine, clearly expensive one."
+ seduce_ongoing.gift_selection.tapestry: "A tapestry, featuring [target.GetHerHis] dynasty."
+ seduce_ongoing.gift_selection.tapestry_tt: "I think [target.Custom('TitledFirstName')] is a [target.GetWomanMan] whose loyalty is to [target.GetHerHis] family and dynasty"
+ seduce_ongoing.gift_selection.horse: "A purebred horse must be appreciated."
+ seduce_ongoing.gift_selection.horse_tt: "I think [target.Custom('TitledFirstName')] is someone who appreciates activity and the open sky"
+ seduce_ongoing.gift_selection.tailor: "A tailor to dress [target.GetHerHim] to perfection!"
+ seduce_ongoing.gift_selection.tailor_tt: "I think [target.Custom('TitledFirstName')] appreciates style and making an impression"
+ seduce_ongoing.gift_selection.decline: "Perhaps not."
+
+ seduce_ongoing.1102.t: "A Gift of Labor"
+ seduce_ongoing.1102.desc: "Everyone appreciates a gift, but perhaps I could come up with something truly unique that will make a real impression on [target.Custom('TitledFirstName')]!"
+ seduce_ongoing.gift_selection.embroidery: "An embroidery featuring [target.GetHerHis] house crest."
+ seduce_ongoing.gift_selection.embroidery_tt: "I think [target.Custom('TitledFirstName')] cares about [target.GetHerHis] family's stature"
+ seduce_ongoing.gift_selection.poem: "Commissioned poetry on the joys of life, dedicated to [target.GetHerHim]."
+ seduce_ongoing.gift_selection.poem_tt: "I think [target.Custom('TitledFirstName')] appreciates the physical pleasures of life, or at the very least poetry"
+ seduce_ongoing.gift_selection.woodcarving: "A woodcarving of a castle!"
+ seduce_ongoing.gift_selection.woodcarving_tt: "I think [target.Custom('TitledFirstName')] appreciates architecture"
+ 
+ seduce_ongoing.1103.t: "Small but Meaningful"
+ seduce_ongoing.1103.desc: "Not every gift has to be a grand statement of wealth. Smaller things can make a far greater impression, as long as they are chosen well. I wonder what [target.Custom('TitledFirstName')] would appreciate."
+ seduce_ongoing.gift_selection.jewelry: "A silver locket, always close to [target.GetHerHis] heart."
+ seduce_ongoing.gift_selection.jewelry_tt: "I think [target.Custom('TitledFirstName')] likes to catch people's attention — or just things that glimmer"
+ seduce_ongoing.gift_selection.stuffed_animal: "A stuffed fox would certainly be unusual..."
+ seduce_ongoing.gift_selection.stuffed_animal_tt: "I think [target.Custom('TitledFirstName')] appreciates symbols of authority — over life itself"
+ seduce_ongoing.gift_selection.flower_display: "A flower display, for the garden at [court_location.GetNameNoTierNoTooltip]."
+ seduce_ongoing.gift_selection.flower_display_tt: "I think [target.Custom('TitledFirstName')] likes tending to things, or at least appreciates beauty"
+
+ seduce_ongoing.1104.t: "Something Unusual"
+ seduce_ongoing.1104.desc: "Anyone can buy a token of affection, big or small. If I want to impress [target.Custom('TitledFirstName')], I should send [target.GetHerHim] something truly special"
+ seduce_ongoing.gift_selection.rare_book: "I should acquire an especially rare book for [target.GetHerHim]."
+ seduce_ongoing.gift_selection.rare_book_tt: "I think [target.Custom('TitledFirstName')] likes knowledge, or at least the objects that contains it"
+ seduce_ongoing.gift_selection.handkerchief: "A handkerchief with my crest on it."
+ seduce_ongoing.gift_selection.handkerchief_tt: "I think [target.Custom('TitledFirstName')] would make good use of a symbol from someone of my stature"
+ seduce_ongoing.gift_selection.object: "[SCOPE.Custom('SeductionObjectIndefinite')|U], a reminder of our first meeting"
+ seduce_ongoing.gift_selection.object_tt: "I think [target.Custom('TitledFirstName')] already cares for me, in some way"
+
+ seduce_ongoing.1201.t: "A Well-Chosen Gift"
+ seduce_ongoing.1201.desc: "I have received a gift, a beautiful tapestry featuring scenes from my dynasty's history, and framed by skillfully woven crests!"
+ seduce_ongoing.1201.a: "[owner.GetSheHe|U] deserves my unreserved thanks!"
+
+ seduce_ongoing.1301.t: "An Odd Gift"
+ seduce_ongoing.1301.desc: "I have received a tapestry, meant to feature scenes from the history of my dynasty, but the figures look strange, and no one can interpret exactly what is going on in any scene."
+ seduce_ongoing.1301.a: "Sell it. It could be used as a blanket, if nothing else."
+
+ seduce_ongoing.1202.opening: "I have been given a horse, well bred and nourished! The magnificent beast seems perfect for riding, and"
+ seduce_ongoing.1202.courtier: "I already caught [courtier.Custom('TitledFirstName')] eying it with envy."
+ seduce_ongoing.1202.no_courtier: "it already has several admirers at court."
+
+ seduce_ongoing.1302.desc: "I have been given a horse, which makes me wonder what others think of me. Do they expect I would go riding on that starved old thing?"
+ seduce_ongoing.1302.a: "What am I going to do with this mule? Sell it."
+
+ seduce_ongoing.1203.desc: "A tailor arrived at court, specifically to provide me with whatever new clothing I might desire. Now that [ROOT.Char.GetHerHis] work is done, I must say that [ROOT.Char.GetSheHe] is very skilled, too!"
+ seduce_ongoing.1203.a: "I feel splendid!"
+
+ seduce_ongoing.1303.desc: "A tailor arrived at court to provide me with whatever new clothing I might desire. [ROOT.Char.GetSheHe|U] was soon terrified at the offense caused when I wondered exactly what was wrong with my old clothes."
+ seduce_ongoing.1303.a: "At least I can sell these ugly rags [ROOT.Char.GetSheHe] tried to dress me in."
+
+ seduce_ongoing.1204.desc: "I almost cannot believe it as I unwrap the leather package. The tome inside must be a century old, if not more, carefully written, decorated and gilded by ancient hands."
+ seduce_ongoing.1204.a: "What wonders does this book contain?"
+
+ seduce_ongoing.1304.desc: "I am a little confused as I open the leather package to find a dusty old tome. Flipping through its pages, I find a few pretty illustrations, but I cannot even read the text."
+ seduce_ongoing.1304.a: "What use would I have for this book? Sell it."
+
+ seduce_ongoing.1205.desc: "I was sent a beautiful piece of large embroidery, replicating my house crest in vibrant colors! It will make for a perfect mantelpiece in my chambers."
+ seduce_ongoing.1205.a: "Its craftsmanship will undoubtedly impress."
+
+ seduce_ongoing.1305.desc: "I was sent a piece of large embroidery, supposedly attempting to replicate my house crest. I am unsure of what the artist has used for reference, however, for I certainly do not recognize it. Maybe someone else would like it better..."
+ seduce_ongoing.1305.a: "It might have been nice had it been the right crest..."
+
+ seduce_ongoing.1206.desc: "A poet has come before me to recite a composition on the pleasures of life, dedicated to "the [ROOT.Char.Custom('ComplimentAdjective')] [ROOT.Char.Custom('TitledFirstName')]!""
+ seduce_ongoing.1206.a: "A poetic breath of fresh air!"
+
+ seduce_ongoing.1306.desc: "A poet has come before me to recite a lengthy composition on the pleasures of life, dedicated to "the [ROOT.Char.Custom('ComplimentAdjective')] [ROOT.Char.Custom('TitledFirstName')]." The pleasures of life does not include this poem."
+
+ seduce_ongoing.1207.desc: "I have been sent a woodcarving of a miniature castle! Every guest that comes by admires the detail and craftsmanship on display."
+ seduce_ongoing.1207.a: "What an unusual thing!"
+
+ seduce_ongoing.1307.desc: "I have been sent a woodcarving of... a building of some sort? Oh— it's supposed to be a castle! Supposed to."
+ seduce_ongoing.1307.a: "I wonder how long it can keep the fire going."
+
+ seduce_ongoing.1208.desc: "[owner.Custom('TitledFirstName')] has sent me [SCOPE.Custom('SeductionObjectIndefinite')], a token of our first meeting."
+ seduce_ongoing.1208.a: "Does [owner.GetSheHe] think I would ever forget?"
+
+ seduce_ongoing.1308.desc: "[owner.Custom('TitledFirstName')] has sent me [SCOPE.Custom('SeductionObjectIndefinite')], a token of our first meeting. [owner.GetSheHe|U] must have much fonder memories of it than I do."
+
+ seduce_ongoing.1209.desc: "I have received a small locket, a beautiful little piece of silversmithing. Although I wonder what is inside, it is far more important that others will gossip about what it might contain."
+ seduce_ongoing.1209.a: "Perhaps someone can help me open it, one day?"
+
+ seduce_ongoing.1309.desc: "I have received a small locket, and at first I did not realize that the small unpolished lump was actually silver. It doesn't open either, so I see little use for it."
+ seduce_ongoing.1309.a: "Why would someone think I would want this?"
+
+ seduce_ongoing.1210.desc: "It is unusual, that is true, but there is something appealing about the stuffed fox that has been placed before me. Perhaps it is the frozen, vicious snarl on its lips?"
+ seduce_ongoing.1210.a: "Unconventional, but not unpleasant."
+
+ seduce_ongoing.1310.desc: ""Get that thing away from me!" The stuffed fox has a disgusting snarl on its lips, baring vicious teeth at me."
+ seduce_ongoing.1310.a: "Who would ever like this kind of gift?!"
+
+ seduce_ongoing.1211.desc: "The flower display is breathtaking, and since the peasants finished planting it in the garden, walks there have become far more popular."
+ seduce_ongoing.1211.a: "I did not know this kind of beauty would touch me so."
+
+ seduce_ongoing.1311.desc: ""So you don't want us planting 'em, then, my [ROOT.Char.GetLadyLord]?" The peasants are standing before me, soil spilling from crates on their yokes. The flower display they carry looks worn and battered."
+ seduce_ongoing.1311.a: "I do not want those anywhere near the gardens."
+
+ seduce_ongoing.1212.desc: "[owner.Custom('TitledFirstName')] has sent me a gift, a handkerchief with the crest of [owner.GetDynasty.GetBaseName] on it.\n\nIt will certainly be interesting to see what reaction others will have when I display the [owner.GetTitlePossessive] emblem so flagrantly."
+ seduce_ongoing.1212.a: "It is sure to leave an impression of one kind or another."
+
+ seduce_ongoing.1312.desc: "[owner.Custom('TitledFirstName')] has sent me a gift, a handkerchief with the crest of [owner.GetDynasty.GetBaseName] on it.\n\nIf [owner.GetSheHe] thinks I will ever display [owner.GetHerHis] emblem in public, [owner.GetSheHe] is sorely mistaken!"
+
+ seduce_ongoing.1801.t: "[ROOT.Char.Custom('MistressMaster')|U] of Words"
+ seduce_ongoing.1801.start.desc: "As a scholar of the diplomatic arts, I am well aware of the power of an eloquent compliment. Showing admiration for a [target.GetWomanMan]'s best quality is a sure path to [target.GetHerHis] heart.\n\n"
+ seduce_ongoing.1801.close.desc: "The next time we meet, I shall compliment [target.Custom('FirstNamePossessive')]..."
+ seduce_ongoing.1801.distant.desc: "I shall write a letter to [target.Custom('FirstName')], complimenting [target.GetHerHis]..."
+
+ seduce_ongoing.1801.compassionate: "Warm and gentle heart."
+ seduce_ongoing.1801.bold: "Brave, unfettered spirit."
+ seduce_ongoing.1801.honorable: "Noble and loyal nature."
+ seduce_ongoing.1801.greed: "Ambition and lust for life."
+ seduce_ongoing.1801.rational: "Rational, brilliant mind."
+ seduce_ongoing.1801.zealous: "Piousness and unwavering faith."
+ seduce_ongoing.1801.energetic: "Spontaneity and vigor."
+ seduce_ongoing.1801.forgiving: "Forgiving nature."
+ seduce_ongoing.1801.beautiful_male: "Strikingly handsome appearance."
+ seduce_ongoing.1801.beautiful_female: "Unparalleled, breath-taking beauty."
+ seduce_ongoing.1801.strong: "Impressive physical shape."
+ seduce_ongoing.1801.extroverted: "Irresistible charisma."
+ seduce_ongoing.1801.dominant: "Assertive, powerful presence."
+ seduce_ongoing.1801.compliment.tt: "#F How well the compliment is received by [target.Custom('TitledFirstName')] is based on how well it suits [target.GetHerHim]#!"
+ 
+ seduce_ongoing.1802.t: "Pretty Words"
+ seduce_ongoing.1802.close.desc: "As I wander the gardens in quiet contemplation, my mind in some far off place, I almost run straight into [owner.Custom('TitledFirstName')]. Before I can collect myself, [owner.GetSheHe] asks for my forgiveness, saying that [owner.GetSheHe] never meant to inconvenience a [target.Custom('LadyLordWomanMan')] of such"
+ seduce_ongoing.1802.distant.desc: "I have received an intriguing letter from [owner.Custom('TitledFirstName')]. Intertwined with the normal inquiries and anecdotes are subtle, yet unmistakable, compliments on my"
+ seduce_ongoing.1802.compassionate.desc: ""gentle compassion.""
+ seduce_ongoing.1802.bold.desc: ""spirited courage.""
+ seduce_ongoing.1802.honorable.desc: ""noble morals.""
+ seduce_ongoing.1802.greed.desc: ""soaring aspirations.""
+ seduce_ongoing.1802.rational.desc: ""singular clear-headedness.""
+ seduce_ongoing.1802.zealous.desc: ""admirable faith.""
+ seduce_ongoing.1802.energetic.desc: ""vital energy.""
+ seduce_ongoing.1802.forgiving.desc: ""magnanimous mercy.""
+ seduce_ongoing.1802.beautiful_male.desc: ""striking appearance.""
+ seduce_ongoing.1802.beautiful_female.desc: ""inspiring beauty.""
+ seduce_ongoing.1802.strong.desc: ""physical prowess.""
+ seduce_ongoing.1802.extroverted.desc: ""irresistible charms.""
+ seduce_ongoing.1802.dominant.desc: ""assertive energy.""
+ seduce_ongoing.1802.good.desc: "\n\n[owner.GetHerHis|U] words reveal a level of affectionate attentiveness which takes me by surprise."
+ seduce_ongoing.1802.neutral.desc: "\n\n[owner.GetHerHis|U] words make little sense, but the gesture is one of kindness, I suppose."
+ seduce_ongoing.1802.bad.desc: "\n\nI suspect [owner.GetSheHe] means well, yet it sure sounds like thinly veiled sarcasm to me."
+ seduce_ongoing.1802.a.good: "[owner.Custom('TitledFirstNameNoTooltip')]... You flatter me!"
+ seduce_ongoing.1802.a.bad: "Slightly ignorant, but mostly sweet."
+ seduce_ongoing.1802.b.good: "You should try harder next time."
+ seduce_ongoing.1802.b.bad: "How embarrassing..."
+ seduce_ongoing.1802.c: "I have no interest in these attentions!"
+
+ seduce_ongoing.1601.t: "A Reading in [location.GetNameNoTierNoTooltip]"
+ seduce_ongoing.1601.t_no_location: "A Reading"
+ seduce_ongoing.1601.desc: "The celebrations had come to an end and the evening's entertainment seemed to be over, when [target.Custom('TitledFirstName')] suggested a reading.\n\nA clerk soon arrives, wondering what the guests would like to hear, and I see my chance to impress [target.Custom('FirstName')]."
+ seduce_ongoing.1601.a: "Something pious, like [SCOPE.Custom('RandomReligiousTextName')]."
+ seduce_ongoing.1601.a.tt: "I think [target.GetSheHe] wants to hear about religion."
+ seduce_ongoing.1601.b: "Let's be entertained. [SCOPE.Custom('RandomEntertainmentTextName')|U]!"
+ seduce_ongoing.1601.b.tt: "I think [target.GetSheHe] wants to hear something entertaining."
+ seduce_ongoing.1601.c: "[SCOPE.Custom('RandomInformativeTextName')|U] would give us a chance to learn."
+ seduce_ongoing.1601.c.tt: "I think [target.GetSheHe] wants to hear something informative."
+
+ seduce_ongoing.1603.desc: "It looked like it would be a tedious evening once the feast's entertainment was over, but [owner.Custom('TitledFirstName')] saved the day by suggesting a reading from [SCOPE.Custom('BookInQuestion')]!"
+ seduce_ongoing.1603.a: "I also love that one!"
+
+ seduce_ongoing.1604.desc: "As the clerk reads for us, [target.Custom('FirstName')] seemed completely engrossed.\n\n[target.GetSheHe|U] later approaches me. "Good choice, [ROOT.Char.Custom('FirstName')]," [target.GetSheHe] says and [target.Custom('quirk_pos_present')]."
+ seduce_ongoing.1604.a: "It was great, wasn't it?"
+
+ seduce_ongoing.1605.desc_1: "A tedious feast became even worse when [owner.Custom('TitledFirstName')] suggested a reading from [SCOPE.Custom('BookInQuestion')]."
+ seduce_ongoing.1605.desc_2: "Thankfully, [other_guest.Custom('TitledFirstName')] soon suggested reading [SCOPE.Custom('GoodBookSuggestion')] instead!"
+ seduce_ongoing.1605.desc_no_other_guest: "Thankfully, an attendant soon suggested reading [SCOPE.Custom('GoodBookSuggestion')] instead!"
+ seduce_ongoing.1605.a: "A much better choice!"
+
+ seduce_ongoing.1606.desc_1: "As the clerk drones on and on, I can tell [target.Custom('FirstNamePossessive')] attention is slipping."
+ seduce_ongoing.1606.desc_2: "\n\nWhile I am thinking of how to salvage the situation, [other_guest.Custom2('MyCharacterIntroduction', ROOT.Char)] suddenly chimes in and asks, "May I humbly suggest we read [SCOPE.Custom('GoodBookSuggestion')] instead?" and "
+ seduce_ongoing.1606.desc_3: "[target.Custom('FirstName')] immediately perks up with renewed interest."
+ seduce_ongoing.1606.desc_no_other_guest: "An attendant suddenly chimes in. "May I humbly suggest we read [SCOPE.Custom('GoodBookSuggestion')] instead?""
+ seduce_ongoing.1606.a: "Why didn't I think of that?"
+
+ seduce_ongoing.1701.t: "The Meet"
+ seduce_ongoing.1701.desc: "I make sure to pass through [court_of_residence.GetNameNoTier] on the day of a practice jousting meet. [target.Custom('TitledFirstNamePossessive')] officers are milling about, instructing young [target.Custom('MountedWarriorTermPlural')], and I find [target.Custom('FirstName')] wandering among them.\n\nWhatever intentions I had, [target.GetHerHis] attention is clearly on [target.GetHerHis] duties as the [target.GetLadyLord|U] of these soldiers."
+ seduce_ongoing.1701.a: "How about we show these novices a mock joust?"
+ seduce_ongoing.1701.a.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] active or playful side.#!"
+ seduce_ongoing.1701.b: "Let's take a walk on the battlements, to discuss strategy."
+ seduce_ongoing.1701.b.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] thoughtful side.#!"
+ seduce_ongoing.1701.c: "I want to hear all about your plans for tax season."
+ seduce_ongoing.1701.c.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] thrifty side.#!"
+ seduce_ongoing.1701.d: "One of these "[target.Custom('MountedWarriorTermPlural')]" could be made to look a real fool..."
+ seduce_ongoing.1701.d.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] malicious side.#!"
+
+ seduce_ongoing.1703.opening: "To my surprise, [owner.Custom('TitledFirstName')] came to the joust meet for young [target.Custom('MountedWarriorTermPlural')] in [court_of_residence.GetNameNoTier]."
+ seduce_ongoing.1703.duel: "\n\n[owner.GetSheHe|U] challenged me to a mock joust, and we put on quite the show for the novice warriors. The joust quickly became an intense effort, but at the end of the day we shared an embrace, and felt better for our efforts."
+ seduce_ongoing.1703.strategy: "\n\nWe walked the battlements, discussing strategy at length while watching the novice warriors in the courtyard below. [owner.Custom('FirstName')] had some insightful points, and I thanked [owner.GetHerHim] for making me rethink some of the assumptions about my new soldiers. Our discussion's many diversions had been very engaging, too..."
+ seduce_ongoing.1703.tax_season: "\n\nWhile the meet was necessary, I had a far better time sitting inside, discussing my plans for the coming tax season with [owner.Custom('FirstName')]. What use is an army after all, without the means to feed it, as [owner.GetSheHe] pointed out."
+ seduce_ongoing.1703.trap: "\n\nWatching the novice warriors was necessary, but uninteresting, so I was grateful when [owner.Custom('FirstName')] suggested a fun little distraction. Having a page pour pigs blood out on the ground behind the tray drove some of the less well-trained horses into a wild fear, and several of their riders were thrown to the ground, while the rest struggled to hold on!"
+ seduce_ongoing.1703.fallback: "\n\nWhile watching the novice warriors is usually tedious, [owner.Custom('FirstName')] made the whole day go by in a moment."
+ seduce_ongoing.1703.a: "I must thank [owner.Custom('FirstName')] for [owner.GetHerHis] visit."
+
+ seduce_ongoing.1704.duel: "\n\n[owner.GetSheHe|U] insisted on a mock joust in front of the novice warriors, but I was not about to embarrass myself like that. [owner.Custom('FirstName')] looked dejected, but I had better things to spend my time on that comforting [owner.GetHerHim]."
+ seduce_ongoing.1704.strategy: "\n\n[owner.GetSheHe|U] asked me for a walk on the battlements, to discuss ideas for strategies, but I found myself having to shoot down bad suggestion after bad suggestion. Perhaps [owner.Custom('FirstName')] should keep to matters [owner.GetSheHe] knows anything about..."
+ seduce_ongoing.1704.tax_season: "\n\nDespite my obvious occupation with the novice warriors, [owner.GetSheHe] insisted on discussing my plans for next tax season. Eventually I had to leave [owner.GetHerHim] by [owner.GetHerselfHimself] so I could tend to actually important matters."
+ seduce_ongoing.1704.trap: "\n\nTo my astonishment, [owner.GetSheHe] suggested that we set in motion an elaborate ploy to cause chaos among the novice [target.Custom('MountedWarriorTermPlural')]. Does [owner.GetSheHe] not realize that is the last thing I would want?"
+ seduce_ongoing.1704.fallback: "\n\n[owner.Custom('FirstName')] wanted to spend [owner.GetHerHis] visit conversing, as if [owner.GetSheHe] failed to realize that today was a very busy day for me."
+ seduce_ongoing.1704.a: "What has gotten into [owner.Custom('TitledFirstNameNoTooltip')]?"
+
+ seduce_ongoing.1705.duel: "The mock joust turned out to be a great success with the novice [target.Custom('MountedWarriorTermPlural')]!\n\n[target.Custom('TitledFirstName')] seemed to enjoy [target.GetHerselfHimself] as well, and after our intense "battle" we shared a supportive embrace, feeling better for our efforts."
+ seduce_ongoing.1705.strategy: "Walking the battlements, [target.Custom('TitledFirstName')] and I shared many thoughts on how best to employ novice warriors, such as the ones in the courtyard below.\n\nBy the end of the day, I could tell that [target.GetSheHe] felt as pleased with our discussions as I did, even for all our discussion's many diversions — or perhaps because of them."
+ seduce_ongoing.1705.tax_season: "[target.Custom('FirstName')] and I spent most of the day discussing our plans for next tax season. After all, what good is an army if you cannot feed it? [target.GetSheHe|U] laughed heartily at that.\n\nThere was even more laughter as we both found ourselves engrossed in our many discussions."
+ seduce_ongoing.1705.trap: "After a short while, I suggested a fun little distraction from watching the novice warriors. A page poured some pigs' blood by the water troughs, and the smell drove some of the less well-trained horses into a great fear. Several young [target.Custom('MountedWarriorTermPlural')] were thrown, and others could barely hold on.\n\n[target.Custom('FirstName')] laughed loudly at the scene I had concocted."
+ seduce_ongoing.1705.fallback: "At the end of my visit, [target.Custom('TitledFirstName')] seemed pleased. "Watching the novices is normally tedious, but today has gone by in an instant!""
+ seduce_ongoing.1705.a: "[target.GetSheHe|U] is sure to remember this day."
+
+ seduce_ongoing.1706.duel: "[target.Custom('TitledFirstName')] simply laughed off my suggestion of a mock joust. "No need for anyone to embarrass themselves like that in front of these young [target.Custom('MountedWarriorTermPlural')]!"\n\nI spent the rest of the day trying to figure out whether [target.GetSheHe] meant [target.GetHerHim] or me."
+ seduce_ongoing.1706.strategy: "[target.Custom('TitledFirstName')] and I walked the battlements, while I tried to offer strategic advice. [target.GetSheHe|U] did not seem in a mood to listen, however. Anything I came up with was full of weaknesses, according to [target.Custom('FirstName')], and it was obvious that [target.GetHerHis] attention was more on the courtyard below than on me."
+ seduce_ongoing.1706.tax_season: "I tried to discuss the coming tax season, and how to ensure [target.Custom('FirstName')] would have the means to feed [target.GetHerHis] army. Unfortunately [target.Custom('FirstNamePossessive')] thoughts were elsewhere, and [target.GetSheHe] quickly left me behind in order to focus on the novice warriors."
+ seduce_ongoing.1706.trap: "When I suggested we play a prank on the practicing [target.Custom('MountedWarriorTermPlural')], [target.Custom('FirstName')] only stared at me in shock.\n\n"Pigs blood and rampaging horses? Are you #EMP mad#!, [ROOT.Char.GetWomanMan]?""
+ seduce_ongoing.1706.fallback: "I attempted to speak with [target.Custom('TitledFirstName')] all day, but there was always something about the meet demanding [target.GetHerHis] attention. In the end I could never catch [target.GetHerHis] attention for more than a moment at a time, and I felt more in the way than anything."
+ seduce_ongoing.1706.a: "I hope [target.Custom('FirstNameNoTooltip')] forgets this day quickly."
+
+ seduce_ongoing.2001.t: "The Love Potion"
+ seduce_ongoing.2001.desc: "One of my servants acquired a love potion from an old [dummy_gender.GetWomanMan] at the fair, but claimed it had given [dummy_gender.GetHerHim] no luck.\n\nAs I hold the small bottle in my hands I cannot help but think of [target.Custom('TitledFirstName')] and wonder if maybe my luck would fall differently."
+ seduce_ongoing.2001.a: "[target.GetSheHe|U] will undoubtedly find it fun!"
+ seduce_ongoing.2001.b: "[target.Custom('FirstNameNoTooltip')] would love to make fun of superstitions like this."
+ seduce_ongoing.2001.c: "I do not have time for nonsense love potions."
+ seduce_ongoing.2001.c.tt: "#F I need a better opportunity to show my affection than this!#!"
+
+
+ seduce_ongoing.2002.desc: "[owner.Custom('TitledFirstName')] presented me with a "love potion" that [owner.GetSheHe] had gotten from a fair. We poured some in our wine and had a fun evening pretending it was affecting us, and by the end the line between what we pretended and what was real started to get a bit blurry."
+ seduce_ongoing.2002.a: "What a fun diversion!"
+
+ seduce_ongoing.2003.desc: "[target.Custom('FirstName')] and I had the "love potion" together with a little wine and spent the evening pretending it was affecting us.\n\nIt was all a little innocent fun, but the hint of affection was clear in [target.GetHerHis] smile as [target.GetSheHe] bid me farewell."
+ seduce_ongoing.2003.a: "Time together well spent."
+
+ seduce_ongoing.2004.desc: "For a little bit of fun, [owner.Custom('TitledFirstName')] dared me to drink a "love potion" [owner.GetSheHe] had gotten from a fair. When I declined to drink something I did not know the contents of, [owner.GetSheHe] seemed to get a little upset! I soon asked [owner.GetHerHim] to excuse [owner.GetHerselfHimself] so I could turn in early."
+ seduce_ongoing.2004.a: "What has gotten into [owner.GetHerHim]?"
+
+ seduce_ongoing.2005.desc: "[target.Custom('FirstName')] declined the "love potion", and then wondered exactly what I was trying to do. I got a little carried away, trying to explain that it was all for fun, and then [target.GetSheHe] asked me to depart."
+ seduce_ongoing.2005.a: "This was unfortunate."
+
+ seduce_ongoing.2006.t: "The "Love Potion""
+ seduce_ongoing.2006.desc: "[owner.Custom('TitledFirstName')] brought me a love potion [owner.GetSheHe] had acquired from a fair. I thought it fun, and indulged [owner.GetHerHis] insistence that we try some.\n\n[owner.Custom('FirstName')] declined having a sip, however, when I became violently ill!"
+ seduce_ongoing.2006.a: "I'm not feeling very well..."
+ seduce_ongoing.2006.a.tt: "#F Damn your stupidity #EMP *bluuurgh#! [owner.Custom('FirstNameNoTooltip')]!#!"
+
+ seduce_ongoing.2007.desc: "Oh no! [target.Custom('TitledFirstName')] agreed to try the love potion, but what was supposed to be a little spot of fun ended with [target.GetHerHim] vomiting and bedridden!"
+ seduce_ongoing.2007.a: "Where is that servant who gave it to me?"
+ 
+ seduce_ongoing.2008.desc: "[owner.Custom('TitledFirstName')] came to me with a "love potion" that a servant of [owner.GetHerHis] had acquired at a fair. We did not drink the unknown liquid, but instead we had a lovely evening with some wine, making fun of the simple superstitions that flourish out there.\n\nIf you cannot tell me which humor it affects, you cannot claim it works! Ah, commoners will believe anything..."
+ seduce_ongoing.2008.a: "I had such a fun time with [owner.Custom('FirstNameNoTooltip')]!"
+
+ seduce_ongoing.2009.desc: "I brought the "love potion" to [target.Custom('TitledFirstName')], and [target.GetSheHe] was as astounded at the gullibility of my servant as I had been!\n\nWe spent the evening discussing superstition and ridiculous beliefs. Commoners will believe anything."
+ seduce_ongoing.2009.a: "It was such a pleasant evening."
+
+ seduce_ongoing.2010.desc: "[owner.Custom('TitledFirstName')] came to me with a "love potion" that a servant of [owner.GetHersHis] had acquired. I did not find it interesting, but [owner.Custom('FirstName')] kept going on and on about it, and about how superstitious and gullible commoners are."
+ seduce_ongoing.2010.a: "If you don't believe in it, don't annoy me with it!"
+
+ seduce_ongoing.2011.desc: "[target.Custom('FirstName')] seemed unimpressed with the "love potion", and I had no more luck trying to discuss ridiculous peasant superstitions. In fact [target.GetSheHe] seemed annoyed by it all!"
+ seduce_ongoing.2011.a: "[target.GetSheHe|U] must be unusually phlegmatic today."
+
+ seduce_ongoing.3001.t: "Hearts and Minds"
+ seduce_ongoing.3001.desc: "I have been made aware that [target.Custom('TitledFirstName')] is very close to [target.GetHerHis] [target.Custom2('RelationToMe', SCOPE.sC('close_character'))], [close_character.Custom('TitledFirstName')]. Gaining [close_character.GetHerHis] favor might help me catch [target.Custom('FirstNamePossessive')] attention."
+ seduce_ongoing.3001.a: "I will get [close_character.Custom('FirstNameNoTooltip')] whatever [close_character.GetSheHe] asks for."
+ seduce_ongoing.3001.b: "A show of good will should do it."
+ seduce_ongoing.3001.c: "I could help pay off [close_character.GetHerHis] loans."
+ seduce_ongoing.3001.d: "Surely anyone would feel blessed by a gift of gold."
+ seduce_ongoing.3001.e: "This does not seem right."
+ seduce_ongoing.3001.e.tt: "#F I will find other ways of winning [target.Custom('FirstNamePossessiveNoTooltip')] affection.#!"
+
+ seduce_ongoing.3002.desc: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('close_character'))], [close_character.Custom('TitledFirstName')], has lately been telling me how impressed [close_character.GetSheHe] is with the generosity of [owner.Custom('TitledFirstName')].\n\nApparently [owner.GetSheHe] came through for [close_character.GetHerHim] when [close_character.GetSheHe] needed it the most."
+ seduce_ongoing.3002.a: "Perhaps I have been underestimating [owner.GetHerHim]?"
+ seduce_ongoing.3002.b: "[owner.Custom('FirstName')] helping [close_character.Custom('FirstName')]? Impressive, in a way."
+
+ seduce_ongoing.3003.desc: "The next time we meet, [target.Custom('FirstName')] offers me a wider smile than usual.\n\n"My [target.Custom2('RelationToMe', SCOPE.sC('close_character'))] [close_character.Custom('FirstName')] told me of how you helped [close_character.GetHerHim], and I wanted to offer my thanks.""
+ seduce_ongoing.3003.a: "Anything for a [target.Custom2('RelationToMe', SCOPE.sC('close_character'))] of [target.Custom('FirstNamePossessiveNoTooltip')]."
+
+ seduce_ongoing.3004.desc: "It seems that [target.Custom('FirstName')] has not taken notice of my generosity towards [target.GetHerHis] [target.Custom2('RelationToMe', SCOPE.sC('close_character'))]. At least [close_character.Custom('FirstName')] is grateful!"
+ seduce_ongoing.3004.a: "What will it take?"
+
+ seduce_ongoing.4001.t: "[target.Custom('MusicalPerformerPossessive')|U] Dedication"
+ seduce_ongoing.4001.desc: "A [target.Custom('MusicalPerformer')] will soon be performing for the court at [court_location.GetNameNoTier]. It would be a simple request to have [dummy_musician_gender.GetHerHim] change the performance to be a dedication to [target.Custom('TitledFirstName')], the target of my affection."
+ seduce_ongoing.4001.desc.court_musician: "A [target.Custom('MusicalPerformer')] will soon be performing for the court at [court_location.GetNameNoTier]. I could make the simple request to have [dummy_musician_gender.GetHerHim] change the performance to be a dedication to [target.Custom('TitledFirstName')], the target of my affection.\n\nAlternatively, if I ask my $court_musician_court_position$ to join, I could have them play pieces that make me look good in front of the audience there."
+ seduce_ongoing.4001.a: "It will be a bold declaration to the [target.GetLadyLord]!"
+ seduce_ongoing.4001.b: "I prefer veiled allusions to my desire for [target.GetHerHim]."
+ seduce_ongoing.4001.b.failure: "The dedication goes unnoticed"
+ seduce_ongoing.4001.c: "The people at [court_location.GetNameNoTierNoTooltip] will bask in my glory!"
+ seduce_ongoing.4001.d: "I should not dabble in things like this."
+
+ seduce_ongoing.4002.desc.opening: "There are often performers at court, but this time we were promised something special, and I certainly got it."
+ seduce_ongoing.4002.desc: "\n\nAs the [ROOT.Char.Custom('MusicalPerformer')] starts yet another stanza, I try not to show how flattered I am by this dedication, directed at me in front of the entire court."
+ seduce_ongoing.4002.desc.court_musician: "\n\nAs the [ROOT.Char.Custom('MusicalPerformer')] together with [owner.Custom('TitledFirstNamePossessive')] $court_musician_court_position$ starts yet another stanza, I try not to let my admiration show too much as I listen to the exploits of [owner.Custom('FirstNameNoTooltip')]."
+ seduce_ongoing.4002.a: "[owner.Custom('TitledFirstNameNoTooltip')] has truly outdone [owner.GetHerselfHimself]."
+
+ seduce_ongoing.4003.desc: "\n\nAs the [ROOT.Char.Custom('MusicalPerformer')] starts yet another stanza, I walk out of the great hall in embarrassment. Each and every song is a dedication to me from [owner.Custom('TitledFirstName')]!"
+ seduce_ongoing.4003.desc.court_musician: "\n\nAs the [ROOT.Char.Custom('MusicalPerformer')] together with [owner.Custom('TitledFirstNamePossessive')] $court_musician_court_position$ starts yet another stanza, I walk out of the great hall in embarrassment. Did [owner.Custom('FirstNameNoTooltip')] send [owner.GetHerHis] $court_musician_court_position$ to just to rave about [owner.GetHerselfHimself]!?"
+ seduce_ongoing.4003.a: "The nerve!"
+
+ seduce_ongoing.4004.desc: "Thank you for your gift of music. The [target.Custom('MusicalPerformerPossessive')] performance was greatly appreciated! I always knew you were a [ROOT.Char.GetWomanMan] of impeccable taste."
+ seduce_ongoing.4004.a: "Perfect!"
+
+ seduce_ongoing.4005.opening: "[target.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
+ seduce_ongoing.4005.desc.court_musician: "I write to tell you how much of a fool you made of yourself having to force the audience to listen to your so-called exploits. Do you truly believe that talking about yourself is a good way to entertain the court?"
+ seduce_ongoing.4005.desc: "How dare you embarrass me in public like that?! Did you #EMP want#! me to have to explain what the [target.Custom('MusicalPerformerPossessive')] words meant to"
+ seduce_ongoing.4005.spouse: "my [target.Custom2('RelationToMe', SCOPE.sC('spouse'))]?"
+ seduce_ongoing.4005.court: "the entire court?"
+ seduce_ongoing.4005.a: "That was not what I wanted!"
+
+ seduce_ongoing.4006.desc: "As the [ROOT.Char.Custom('MusicalPerformer')] keeps pronouncing lines of love and desire, I try to keep from showing the rest of the court how flattered I feel.\n\nThough [owner.GetSheHe] is veiled behind metaphor and allegory, I know that this is a dedication from [owner.Custom('TitledFirstName')] to me."
+ seduce_ongoing.4006.a: "You know how to get my attention, [owner.Custom('FirstName')]."
+
+ seduce_ongoing.4007.desc: "Perhaps my dedication to the [target.GetLadyLord] [target.Custom('FirstName')] was a little too subtle... [target.GetSheHe|U] seems not to have taken any notice."
+ seduce_ongoing.4007.a: "What a waste of effort."
+
+ seduce_ongoing.4011.t: "A Walk in [court_location.GetNameNoTierNoTooltip]"
+ seduce_ongoing.4011.desc: "It might seem forwards, but I have been thinking of inviting [target.Custom('TitledFirstName')] to ride with me through the [court_location.Custom('BaronyTownType')] of [court_location.GetNameNoTier]."
+ seduce_ongoing.4011.a: "A ride down the market street, to let everyone see!"
+ seduce_ongoing.4011.b: "Let us stick to back alleys. Who needs the company of others?"
+ seduce_ongoing.4011.b.failure: "I fail to impress [target.Custom('FirstNameNoTooltip')]"
+ seduce_ongoing.4011.c: "Maybe we shouldn't do this."
+ seduce_ongoing.4011.c.tt: "#F I can wait for other opportunities#!"
+
+ seduce_ongoing.4012.opening: "I was a little surprised when [owner.Custom('TitledFirstName')] invited me for a ride through the [court_location.Custom('BaronyTownType')] of [court_location.GetNameNoTier]."
+ seduce_ongoing.4012.end: "\n\nIt turned out to be a pleasant day, however, as we rode down the market street, chatting about all manner of things as the merchants hawked their wares to the peasants staring open-mouthed at our armor-gleaming entourage."
+ seduce_ongoing.4012.a: "We certainly made an impression."
+
+ seduce_ongoing.4013.end: "\n\nI got ever more uncertain as [owner.GetSheHe] insisted we ride down the market street, and between our elaborate entourage and the lack of conversation, it was clear that [owner.GetSheHe] was simply trying to show off. I would have ridden off if it would not have caused a scene."
+ seduce_ongoing.4013.a: "Let us not do that again."
+
+ seduce_ongoing.4014.desc: "Dear [owner.Custom('TitledFirstName')],\n\nIt was nothing short of lovely to have your company in [court_location.GetNameNoTier] [court_location.Custom('BaronyTownType')], and I hope I will see more of you soon."
+ seduce_ongoing.4014.a: "The pleasure was all mine."
+
+ seduce_ongoing.4015.desc: "To [target.Custom('TitledFirstName')],\n\nWere you hoping to embarrass me in public? Parading me around like some ridiculous trophy... Do you know what kind of things they are saying at court?"
+ seduce_ongoing.4015.a: "I didn't mean it like that!"
+
+ seduce_ongoing.4016.end: "\n\nWe passed through the multitude of back alleys, laughing at the surprise of commoners as our entourage passed by. At the end of the day, I knew the [court_location.Custom('BaronyTownType')] better than I ever thought I would."
+ seduce_ongoing.4016.a: "[target.Custom('FirstNameNoTooltip')] makes me see so many new perspectives."
+
+ seduce_ongoing.4017.desc: "Dear [ROOT.Char.Custom('TitledFirstName')],\n\nThank you for your company at my visit to [court_location.GetNameNoTier] [court_location.Custom('BaronyTownType')], although your insistence on sticking to back alleys and staying out of sight thoroughly confused me. Perhaps you can explain another time."
+ seduce_ongoing.4017.a: "It was... the two of us, we—"
+
+ seduce_ongoing.4018.desc: "Dear [owner.Custom('TitledFirstName')],\n\nI had so much fun during your visit to [court_location.GetNameNoTier]. I now know parts of the [court_location.Custom('BaronyTownType')] I never thought I would see!"
+ seduce_ongoing.4018.a: "The pleasure was all mine."
+
+ seduce_ongoing.4101.t: "My Beloved's Balcony"
+ seduce_ongoing.4101.desc_opening: "[target.Custom('TitledFirstNamePossessive')] windows are lit by a warm glow, and even from the ground I can see movement inside.\n\n"
+ seduce_ongoing.4101.desc_same_court: "My pulse thrums loudly in my ears; I might be within my own [ROOT.Char.Custom('ResidenceBuilding')], but when vying for [target.GetHerHis] desire I am treading new ground nonetheless."
+ seduce_ongoing.4101.desc_other_court: "My pulse thrums loudly in my ears; both courting the chance to bed [target.GetHerHim], as well as visiting [court_location.GetNameNoTier], has left me in deep waters."
+ seduce_ongoing.4101.a: "[target.Custom('FirstNameNoTooltip')]! Look outside and shine up my night!"
+ seduce_ongoing.4101.a.tt: "#F I attempt to gain [target.GetHerHis] attention in an unobtrusive way#!"
+ seduce_ongoing.4101.b: "Up I go."
+ seduce_ongoing.4101.b.tt: "#F Surely [target.GetSheHe] will be happy to see me!#!"
+ seduce_ongoing.4101.c: "I will leave [SCOPE.Custom('SeductionObjectIndefinite')] for [target.GetHerHim] to find, along with a note."
+ seduce_ongoing.4101.c.tt: "#F [target.GetSheHe|U] will surely appreciate the subtle gesture, and what [target.GetSheHe] means to me#!"
+ seduce_ongoing.4101.d: "I better leave before anyone sees me."
+ seduce_ongoing.4101.d.tt: "#F I will not approach [target.GetHerHim] like a thief in the night!#!"
+
+ seduce_ongoing.4102.t: "Beneath My Balcony"
+ seduce_ongoing.4102.desc: "Having retreated to my chambers for the evening I am surprised to hear a muffled voice reaching me from the outside, sounding suspiciously like [owner.Custom('TitledFirstName')].\n\n"[ROOT.Char.Custom('TitledFirstNameNoTooltip')], I beseech you, let me see your fair visage!""
+ seduce_ongoing.4102.a: "It's like something out of a story, how romantic!"
+ seduce_ongoing.4102.b: "So that I'm subjected to your hideous one? No."
+
+ seduce_ongoing.4103.desc: "As the light from [target.Custom('TitledFirstNamePossessive')] opening door spills across the balcony, so does it spill across my heart.\n\nThe shroud of darkness around us lends our conversation an odd sense of freedom, and — even though I stayed on the ground — we have never been so intimate before."
+ seduce_ongoing.4103.a: "Oh [target.Custom('FirstNameNoTooltip')], you are the sun in my night!"
+
+ seduce_ongoing.4104.desc: "As the light from [target.Custom('TitledFirstNamePossessive')] opening door spills across the balcony, so does it spill across my heart.\n\nIt quickly dims as I see the [target.Custom('quirk_neg_adjective')] grimace on [target.GetHerHis] face, and dies completely as [target.GetSheHe] speaks. "What are you doing here, [ROOT.Char.Custom('TitledFirstNameNoTooltip')]?! Please, leave me alone.""
+ seduce_ongoing.4104.a: "But... You are the sun in my dark night...!"
+
+ seduce_ongoing.4105.desc: "#EMP Gasp!#!\n\nHaving retreated to my chambers for the evening I am suddenly standing face to face with a [owner.GetWomanMan] outside my window... A [owner.GetWomanMan] that looks suspiciously like [owner.Custom('TitledFirstName')]."
+ seduce_ongoing.4105.a: "Oh you silly [owner.GetWomanMan], come inside!"
+ seduce_ongoing.4105.b: "I am lucky my drapes are so thick."
+ seduce_ongoing.4105.c: "Guards! Help me, guards!"
+
+ seduce_ongoing.4106.desc: "As soon as I reach [target.Custom('TitledFirstNamePossessive')] balcony [target.GetSheHe] steps outside with a laugh. "Why would you pull such a stunt, [ROOT.Char.Custom('FirstNameNoTooltip')]? Just use the door like a normal [ROOT.Char.GetWomanMan]. You act as if you have intentions you want to keep secret."\n\nThe playful joy in [target.GetHerHis] eyes makes it all worth it."
+ seduce_ongoing.4106.a: "No barrier can keep me from you!"
+
+ seduce_ongoing.4107.desc_paranoid: "As soon as I reach [target.Custom('TitledFirstNamePossessive')] balcony [target.GetSheHe] starts screaming for [target.GetHerHis] guards. "Help, an intruder!"\n\n[target.GetHerHis|U] voice follows me down as I scramble to get away, tumbling the last of the way back to the ground before I disappear into the night."
+ seduce_ongoing.4107.desc: "As soon as I reach [target.Custom('TitledFirstNamePossessive')] balcony [target.GetSheHe] steps outside with a [target.Custom('quirk_neg_adjective')] grimace on [target.GetHerHis] face.\n\n"What silly stunt is this [ROOT.Char.Custom('FirstNameNoTooltip')]? You cannot — you are a [ROOT.Char.Custom('TitleTierName')]! This is not appropriate.""
+ seduce_ongoing.4107.a: "That could have gone better..."
+ seduce_ongoing.4107.a.tt: "#F I should have known better than to sneak up on such a paranoid [target.GetWomanMan]!#!"
+
+ seduce_ongoing.4108.desc: "Having retreated to my chambers for the evening I am startled by what sounds like a pebble striking my window. Peering into the dark garden I spot [SCOPE.Custom('SeductionObjectIndefinite')] lying on the ground wrapped in a note, and a [owner.GetWomanMan] that looks like [owner.Custom('TitledFirstName')] vanishing into the night.\n\n#EMP To the [ROOT.Char.Custom2('ComplimentAdjective', ROOT.Char)] [ROOT.Char.Custom('TitledFirstNameNoTooltip')], as a token of my feelings.#!"
+ seduce_ongoing.4108.a: "I will leave [SCOPE.Custom('SeductionObjectIndefinite')] for [owner.GetHerHim] to find in turn!"
+ seduce_ongoing.4108.b: "What am I supposed to do with this? Sell it off!"
+
+ seduce_ongoing.4109.desc: "Two [SCOPE.Custom('SeductionObjectMultiple')], waiting for me in my chambers. No note or greeting, but I swear I can still smell the sweet scent of the [ROOT.Char.Custom2('ComplimentAdjective', SCOPE.sC('target'))] [target.Custom('TitledFirstName')] in the air!"
+ seduce_ongoing.4109.a: "Oh, [target.Custom('FirstNameNoTooltip')]!"
+
+ seduce_ongoing.4110.desc: "As the days pass without any response from [target.Custom('TitledFirstName')] I decide to try my luck once more — maybe [target.GetSheHe] never saw the gift in the first place?\n\nOh, how quickly my hope died as I found the [SCOPE.Custom('SeductionObject')] underneath [target.GetHerHis] window, the imprint of a heel still visible in the mud [target.GetSheHe] ground it into."
+ seduce_ongoing.4110.a: "My heart is as broken as the [SCOPE.Custom('SeductionObject')]!"
+
+ seduce_ongoing.5001.t_rival: "My [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('target'))|U] Rival"
+ seduce_ongoing.5001.t: "The [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('target'))|U] [target.GetWomanMan|U]"
+ seduce_ongoing.5001.desc_tier_up: ""To what do I owe this pleasure, my #EMP [ROOT.Char.Custom('TitleTierName')]#!?" [target.Custom('TitledFirstName')] asks with a smile that does not even come close to [target.GetHerHis] eyes."
+ seduce_ongoing.5001.desc_tier_down: ""Will the [target.Custom2('RelationDescriptor', ROOT.Char)] [ROOT.Char.GetWomanMan] never leave me alone..." [target.Custom('TitledFirstName')] mutters under [target.GetHerHis] breath as I approach. "What can I do for you, [ROOT.Char.Custom('TitledFirstNameNoTooltip')]?""
+ seduce_ongoing.5001.desc_ending: "\n\nThe hostilities between us simmer as usual, but I have a plan on how to tame the stormy feelings we harbor for each other..."
+ seduce_ongoing.5001.a: "What are your thought on the subject of [ROOT.GetCharacter.Custom('education_conversation_subject')]?"
+ seduce_ongoing.5001.a.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] intellectual side#!"
+ seduce_ongoing.5001.b: "About the [mocked_courtier.Custom('InsultNoun')] [mocked_courtier.Custom('FirstNameNoTooltip')]..."
+ seduce_ongoing.5001.b.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] malicious side by mocking [mocked_courtier.Custom('TitledFirstNameNoTooltip')] together#!"
+ seduce_ongoing.5001.c_tier_down: "The question is what #EMP I#! can do for #EMP you#!, my [target.GetLadyLord]."
+ seduce_ongoing.5001.c_tier_up: "The pleasure is all mine, my [target.GetLadyLord]. We should remedy that."
+ seduce_ongoing.5001.c.tt: "#F Appeal to [target.Custom('FirstNamePossessiveNoTooltip')] lustful side#!"
+ seduce_ongoing.5001.d: "Pardon the intrusion, I was just leaving."
+ 
+
+ seduce_ongoing.5003.t: "My [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('owner'))|U] Rival"
+ seduce_ongoing.5003.opening: "For every step [owner.Custom('TitledFirstName')] takes towards me I can feel my mood drop. What does the [owner.Custom('InsultNoun')] want now?\n\n"
+ seduce_ongoing.5003.conversation: "To my surprise [owner.GetSheHe] engaged me in a discussion on the subject of [ROOT.GetCharacter.Custom('education_conversation_subject')], and despite my initial reservations regarding [owner.GetHerHis] company I found it very interesting!"
+ seduce_ongoing.5003.mockery: ""[ROOT.Char.Custom('TitledFirstNameNoTooltip')]! You will not believe what the [mocked_courtier.Custom('InsultNoun')] [mocked_courtier.Custom('FirstName')] did today!"\nTo my surprise we enjoyed a rather pleasant conversation on the topic of [mocked_courtier.Custom('FirstNamePossessive')] many faults."
+ seduce_ongoing.5003.bodily: "Nothing could prepare me for the temptation of [owner.GetHerHis] bare flesh as [owner.GetSheHe] removed [owner.GetHerHis] [owner.Custom('GetUpperClothingArticle')]."
+ seduce_ongoing.5003.fallback: "To my surprise we spent a rather pleasant evening together, laughing over the most mundane topics and walking the gardens together."
+ seduce_ongoing.5003.a: "Never before have I known [owner.GetHerHim] to be so #EMP pleasing#!!"
+
+ seduce_ongoing.5004.opening: "For every step [owner.Custom('TitledFirstName')] takes towards me I can feel my mood drop. What does the [owner.Custom('InsultNoun')] want now?\n\n"
+ seduce_ongoing.5004.conversation: ""On the topic of [owner.Custom('education_conversation_subject')]..."\n\nI do not know why [owner.GetSheHe] imagined that I would be interested in the topic, but I soon made it clear beyond a shadow of a doubt that I was anything but."
+ seduce_ongoing.5004.mockery: ""[ROOT.Char.Custom('TitledFirstNameNoTooltip')]! You will not believe what the [mocked_courtier.Custom('InsultNoun')] [mocked_courtier.Custom('FirstName')] did today!"\n\nI cannot imagine what possessed [owner.GetHerHim] to slander [mocked_courtier.Custom('TitledFirstName')] in front of me, but [owner.GetSheHe] could not stop soon enough."
+ seduce_ongoing.5004.bodily: "As [owner.GetSheHe] draws up uncomfortably close to me and proceeds to tug suggestively at [owner.GetHerHis] [owner.Custom('GetUpperClothingArticle')] I quickly retreat."
+ seduce_ongoing.5004.fallback: "Apparently [owner.GetSheHe] had gotten it into [owner.GetHerHis] mind to spend the day with me, because [owner.GetSheHe] refused to leave before I made my distaste for [owner.GetHerHis] presence clear."
+ seduce_ongoing.5004.a: "As unpleasant an interaction as usual!"
+
+ seduce_ongoing.5005.conversation: "[target.Custom('TitledFirstNamePossessive')] smile lights up [target.GetHerHis] whole face by the end of a long conversation about [target.Custom('herhis_subject_of_interest')]. As an amiable silence settles between us I realize we are standing much closer than before; my hand almost brushes [target.GetHerHis] [target.Custom('GetClothingArticle')]."
+ seduce_ongoing.5005.mockery: ""... and the way [mocked_courtier.GetSheHe] [mocked_courtier.Custom('quirk_neg_present')] – I have never seen anything like it!"\n\nThe laughter we share at [mocked_courtier.Custom('TitledFirstNamePossessive')] expense is more genuine than what I had hoped for, and as an amiable silence settles between us I realize we are standing much closer than before; my hand almost brushes [target.GetHerHis] [target.Custom('GetClothingArticle')]."
+ seduce_ongoing.5005.bodily: "I am only allowed a small taste of what [target.Custom('TitledFirstName')] has to offer, but it leaves me thirsting for more. An amiable silence settles between us as we break apart, and I realize [target.GetSheHe] is more relaxed than ever in my company – [target.Custom('GetUpperClothingArticle')] askew and all."
+ seduce_ongoing.5005.fallback: "We spend the evening in each other's company, talking and laughing. As an amiable silence settles between us I realize we are standing much closer than before; my hand almost brushes [target.GetHerHis] [target.Custom('GetClothingArticle')]."
+ seduce_ongoing.5005.ending: "\n\n"I never knew you were such good company, [ROOT.Char.Custom('FirstNameNoTooltip')]!""
+ seduce_ongoing.5005.a: "I will yet show [target.GetHerHim] just how good company I can be!"
+
+ seduce_ongoing.5006.conversation: "After nearly an hour of awkward conversation [target.Custom('FirstName')] looks as bored as I have ever seen [target.GetHerHim]. When I switch topic from [target.Custom('herhis_subject_of_interest')] to [ROOT.GetCharacter.Custom('education_conversation_subject')] [target.GetSheHe] [target.Custom('quirk_neg_present')] and excuses [target.GetHerselfHimself]."
+ seduce_ongoing.5006.mockery: ""[target.Custom('TitledFirstNameNoTooltip')]! Can you believe that the [mocked_courtier.Custom('InsultNoun')] [mocked_courtier.Custom('FirstName')] actually..."\n\nI quickly trail of as the disdain in [target.Custom('FirstNamePossessive')] face grows more and more pronounced."
+ seduce_ongoing.5006.bodily: "As I approach [target.Custom('FirstName')], smiling [ROOT.Char.Custom('quirk_pos_adverb')] and suggestively lifting my [ROOT.Char.Custom('GetUpperClothingArticle')], [target.GetSheHe] quickly backs away with a look of pure disgust."
+ seduce_ongoing.5006.fallback: "As I flounder, trying to find some common ground with [target.Custom('FirstName')], [target.GetHerHis] disdain grows more pronounced by the minute.\n\nSoon enough [target.GetSheHe] excuses [target.GetHerselfHimself] and flees my company."
+ seduce_ongoing.5006.a: "Why am I trying to bed such a [target.Custom('InsultNounSexual')]?!"
+
+ seduce_ongoing.5011.t: "Aggravating Attractions"
+ seduce_ongoing.5011.desc: "Few can provoke me like [target.Custom('TitledFirstName')] can, and as we find ourselves alone [target.GetSheHe] soon lays both insult and hand on me. I, of course, respond in kind.\n\nI must admit that the thrill of it — both the fight and the closeness to [target.GetHerHis] sweating, heaving, body — is enough to set my blood aflame. Soon I could not say if I am truly trying to best [target.GetHerHim], or just drawing the altercation out..."
+ seduce_ongoing.5011.a: "I will make sure that [target.Custom('quirk_neg_adjective')] smile leaves [target.GetHerHis] face!"
+ seduce_ongoing.5011.b: "Can I help you up?"
+ seduce_ongoing.5011.c: "[target.GetHerHis|U] next punch will draw blood."
+ seduce_ongoing.5011.c.tt: "#F The pain I endure for love!#!\nThis option is available because of [target.Custom('FirstNamePossessiveNoTooltip')] Sadistic trait\n\n"
+ seduce_ongoing.5011.d: "To wrestle like children cannot be the way to [target.GetHerHis] heart!"
+
+ seduce_ongoing.5012.desc: "Few can provoke me like [owner.Custom('TitledFirstName')] can, and as we find ourselves alone we soon lay both insult and hand on each other.\n\nI must admit that the thrill of it — both the fight and the closeness to another sweating, heaving, body — is enough to set my blood aflame, and [owner.GetSheHe] shows no signs of letting up."
+ seduce_ongoing.5012.a: "[owner.GetSheHe|U] better not go easy on me!"
+ seduce_ongoing.5012.b: "Enough is enough! Leave me."
+
+ seduce_ongoing.5013.desc: "[target.Custom('TitledFirstName')] and I end up on the ground, brawling like small [target.Custom('GirlsBoysChildren')]. Our scowls soon turn into smiles, our fists into caresses, our swears into moans...\n\nIf [target.GetSheHe] notices me lingering in [target.GetHerHis] restrictive embrace longer than necessary [target.GetSheHe] does not seem to mind."
+ seduce_ongoing.5013.a: "It's good to blow off some steam!"
+
+ seduce_ongoing.5014.desc: "[target.Custom('TitledFirstName')] and I end up on the ground, brawling like small [target.Custom('GirlsBoysChildren')], and [target.GetHerHis] scowl soon turns into a grimace.\n\n"Let up, you brute!""
+ seduce_ongoing.5014.a: "This was unfortunate."
+
+ seduce_ongoing.5015.desc: "Few can provoke me like [owner.Custom('TitledFirstName')] can, and as we find ourselves alone we soon lay both insult and hand on each other.\n\nI must admit that I was surprised when [owner.GetSheHe] extended a hand towards me, offering to help me up."
+ seduce_ongoing.5015.a: "Thank you, [owner.Custom('FirstNameNoTooltip')]."
+ seduce_ongoing.5015.b: "Who does [owner.GetSheHe] think [owner.GetSheHe] is?!"
+
+ seduce_ongoing.5016.desc: "[target.Custom('TitledFirstName')] and I end up on the ground, brawling like small [target.Custom('GirlsBoysChildren')], and our scowls soon turn into smiles.\n\nAs I offer [target.GetHerHim] a hand up [target.GetSheHe] takes it and nods [target.GetHerHis] thanks."
+
+ seduce_ongoing.5017.desc: "[target.Custom('TitledFirstName')] and I end up on the ground, brawling like small [target.Custom('GirlsBoysChildren')], and [target.GetHerHis] scowl soon turns into a grimace that deepens as I stand up before [target.GetHerHim].\n\n"Not even helping me up... I should not have expected anything else form such a [owner.Custom('InsultNoun')].""
+
+ seduce_ongoing.5018.desc: "Few can provoke me like [owner.Custom('TitledFirstName')] can, and as we find ourselves alone we soon lay both insult and hand on each other.\n\nAfter a brief hesitation on [owner.GetHerHis] part I gain the upper hand in the altercation, and I cannot help but enjoy having [owner.GetHerHim] at my mercy like this, panting and submissive."
+ seduce_ongoing.5018.a: "To cower before me suits you!"
+ seduce_ongoing.5018.b: "This is pathetic. Leave me alone."
+
+ seduce_ongoing.5019.desc: "As [target.Custom('TitledFirstName')] stand above me I cannot stop the shiver of fear that runs up my spine as I see the pleasure in [target.GetHerHis] eyes. At least [target.GetSheHe] seems to have appreciated the gesture..."
+ seduce_ongoing.5019.a: "That shiver was of anticipation! T–truly!"
+
+ seduce_ongoing.5020.desc: "As [target.Custom('TitledFirstName')] stands above me I cannot stop the shiver of fear that runs up my spine as I see the pleasure in [target.GetHerHis] eyes. As [target.GetSheHe] turns away from me with a sneer of disgust I feel both relief and disappointment.\n\n"You could never please me. Leave me alone, [ROOT.Char.Custom('FirstNameNoTooltip')].""
+ seduce_ongoing.5020.a: "That could have gone better... But also worse!"
+
+ seduce_ongoing.5101.t: "Obligations and Desires"
+ seduce_ongoing.5101.desc: "[target.Custom('TitledFirstName')] often speaks to me in ways that makes it clear that [target.GetHerHis] service to me creates a distance between us.\n\nI need to make [target.GetHerHim] understand that I want [target.GetHerHim] in more ways than as my vassal, that I yearn for [target.GetHerHis] warmth, [target.GetHerHis] touch, and those luscious lips."
+ seduce_ongoing.5101.a: "We are as equals before [ROOT.Char.GetFaith.HighGodNameAlternate], [target.Custom('FirstNameNoTooltip')]!"
+ seduce_ongoing.5101.a.tt: "#F I emphasize our similarities#!"
+ seduce_ongoing.5101.success_tt: "If [target.Custom('FirstNameNoTooltip')] responds positively:"
+ seduce_ongoing.5101.b: "There are more ways for you to serve me, [target.Custom('FirstNameNoTooltip')]..."
+ seduce_ongoing.5101.b.tt: "#F I emphasize my power#!"
+ seduce_ongoing.5101.c: "I should keep my feelings to myself for now."
+ seduce_ongoing.5101.c.tt: "#F There are bound to be better ways of letting [target.GetHerHim] know.#!"
+
+ seduce_ongoing.5102.desc: ""I may be your [owner.Custom('TitleTierName')], but I have always thought of us as equals." My liege, [owner.Custom('FirstName')], has come to me, and while I am at first uncertain of why, it soon becomes clear. "Us... this... We do not have to be bound by titles. We are more than mere names. So much more.""
+ seduce_ongoing.5102.a: "My [ROOT.Char.Custom2(''RelationToMe'Possessive', SCOPE.sC('owner'))] attention is flattering."
+ seduce_ongoing.5102.b: "I do not want more than what we already have."
+
+ seduce_ongoing.5103.desc: "My dear [target.Custom2('RelationToMe', ROOT.Char)], [ROOT.Char.Custom('TitledFirstName')],\nI am flattered to hear you describe us not only as liege and vassal, but in many ways as equals. May we share a future equally bright for the both of us."
+ seduce_ongoing.5103.a: "[target.Custom('FirstNameNoTooltip')], I will have you yet!"
+
+ seduce_ongoing.5104.desc: "[owner.Custom('FirstName')], my [target.Custom2('RelationToMe', SCOPE.sC('owner'))]!\nWhat you imply, what you ask, is most improper! I have my obligations of servitude to the realm, but do not mistake my loyalty for desire."
+ seduce_ongoing.5104.a: "Ah, but [target.Custom('FirstNameNoTooltip')]..."
+
+ seduce_ongoing.5105.desc: ""You have always served me so well, so loyally." My liege, [owner.Custom('FirstName')], has come to me, and while I am at first uncertain of why, it soon becomes clear. "I desire you not only as a vassal, but as a [target.GetWomanMan]. Serve your [owner.GetLadyLord] in this way, too!""
+ seduce_ongoing.5105.a: "I can care for you in ways no one else can."
+ seduce_ongoing.5105.b: "You have my obligations, but will never have more."
+
+ seduce_ongoing.5106.desc: "My dear [target.Custom2('RelationToMe', ROOT.Char)], [ROOT.Char.Custom('TitledFirstName')],\nI am flattered that even I, your humble subject, may inspire you in this way. Let us see where time takes us."
+
+ seduce_ongoing.5201.t: "More Than Friends"
+ seduce_ongoing.5201.desc: "[target.Custom('FirstName')] and I make our way through the [court_location.Custom('BaronyTownType')] of [court_location.GetNameNoTier].\n\nAs we come upon a square with a lovely fountain we stop to take in the bustling activity all around us, our entourage momentarily fading into the background. "
+ seduce_ongoing.5201.a: "Let us toss a coin and wish for romance!"
+ seduce_ongoing.5201.a.tt: "I think [target.Custom('TitledFirstName')] is already fantasizing about us, or at least romance in general"
+ seduce_ongoing.5201.b: "Remember that time we..."
+ seduce_ongoing.5201.b.tt: "I think [target.Custom('TitledFirstName')] truly values our friendship"
+ seduce_ongoing.5201.c: "I will not jeopardize this moment."
+
+
+ seduce_ongoing.5202.desc: "As my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('owner'))] [owner.Custom('FirstName')] and I make our way through the [court_location.Custom('BaronyTownType')] of [court_location.GetNameNoTier] we stumble upon a square with a lovely fountain.\n\n"Shall we toss a coin in together, my [ROOT.Char.GetLadyLord]? It is said that it will bring you romance...""
+ seduce_ongoing.5202.a: "Let's make it three, for extra luck!"
+ seduce_ongoing.5202.b: "Sounds like something for a couple to do, not friends."
+
+ seduce_ongoing.5203.desc: "[target.Custom('FirstName')] gladly stands by my side, tossing a coin into the water of the fountain and meeting my gaze with a smile.\n\nThe rest of the walk is tinged with an amiable tone brought on by our shared wish."
+ seduce_ongoing.5203.a: "[target.GetSheHe|U] truly is [target.Custom2('ComplimentAdjectiveArticle', ROOT.Char)] [target.GetWomanMan]!"
+
+ seduce_ongoing.5204.desc: ""What silly game are you playing, [ROOT.Char.Custom('FirstNameNoTooltip')]?"\n\n[target.Custom('FirstName')] declines my request of wishing for romance. The rest of the walk is spent in tense silence, and we soon bid each other farewell."
+ seduce_ongoing.5204.a: "My mood turned as dark as the depths of the fountain..."
+
+ seduce_ongoing.5205.desc: "As my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('owner'))] [owner.Custom('FirstName')] and I make our way through the [court_location.Custom('BaronyTownType')] of [court_location.GetNameNoTier] we talk of old times.\n\n"Remember that time we lingered in each other's company well into the night, making plans for the future, imagining a shared one...?""
+ seduce_ongoing.5205.a: "How could I ever forget?"
+ seduce_ongoing.5205.b: "Why is [owner.GetSheHe] bringing up that embarrassing night?!"
+
+ seduce_ongoing.5206.desc: "[target.Custom('FirstName')] and I spend hours reminiscing about the past, and playing out hypothetical futures together.\n\nThe rest of the walk is tinged with an amiable tone, and I cannot help but hope that some of our playful theories will turn into reality."
+
+ seduce_ongoing.5207.desc: ""You are such a good friend [ROOT.Char.Custom('FirstNameNoTooltip')], that is something I would never want to change.""\n\n[target.Custom('FirstName')] makes it clear that [target.GetSheHe] has no interest in speculations for what could have been, or still could happen, between us. The rest of the walk is spent in tense silence, and we soon bid each other farewell."
+ seduce_ongoing.5207.a: "Well, that could have gone better!"
+
+ seduce_ongoing.5301.t: "A Moment Alone"
+ seduce_ongoing.5301.desc: "No one would ever find it strange that I sit with my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))] by the fireplace until late in the evening. Yet there is a tension in the air.\n\nI want nothing more than to pull [target.GetHerHis] close and tear the clothes from [target.GetHerHis] body, but if [target.GetSheHe] knew that, [target.GetSheHe] would be horrified. Or...?"
+ seduce_ongoing.5301.a: "A hand on [target.GetHerHis] hand would say it all."
+ seduce_ongoing.5301.a.tt: "#F I hope my subtle signals will be well received#!"
+ seduce_ongoing.5301.b: "We are alone, and I will not deny myself [target.GetHerHis] lips."
+ seduce_ongoing.5301.b.tt: "#F I hope my overt interest will be well received#!"
+ seduce_ongoing.5301.c: "It would be a terrible shame to ruin a wonderful evening."
+ seduce_ongoing.5301.c.tt: "#F There will be other times. My [THIS.Char.Custom2('RelationToMe', SCOPE.sC('target'))] is not going anywhere.#!"
+ seduce_ongoing.5301.success_tt: "If [target.Custom('FirstName')] returns my advances:"
+
+ seduce_ongoing.5302.desc: "It feels so right, I do not even take note at first, but as we sit in front of the fireplace, my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('owner'))] [owner.Custom('FirstName')] clasps my hand with an intensity far beyond the assurances of a [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('owner'))].\n\nI can feel [target.GetHerHis] pulse quicken with desire."
+ seduce_ongoing.5302.a: "I refuse to believe what I feel is wrong."
+ seduce_ongoing.5302.b: "I'm flattered by the attention, [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('owner'))], but no."
+
+ seduce_ongoing.5303.desc: "[target.Custom('FirstName')] does not even flinch as my hand grasps [target.GetHersHis], even though we both know what it means. I can feel [target.GetHerHis] pulse rising as our conversation continues. My palm sweats and my breathing becomes shallow before-\n#EMP What was that?#! Ah, only a servant.\n\nMy [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))] and I make our excuses, before departing. Separately."
+ seduce_ongoing.5303.a: "I know you felt it too, [target.Custom('FirstNameNoTooltip')]."
+
+ seduce_ongoing.5304.desc: "I try to play it off as a joke, but [target.Custom('FirstName')] has correctly interpreted my intentions.\n\n"A [target.Custom2('RelationToMe', SCOPE.sC('owner'))] should never... This should never be!" [target.GetSheHe|U] leaves me sitting alone by the fire."
+ seduce_ongoing.5304.a: "I know, [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))], but still..."
+
+ seduce_ongoing.5305.desc: "It happens so suddenly, and yet I am not surprised. One moment we are sitting by the fire, the next my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('owner'))] leans closer. Then [owner.GetHerHis] lips are pressed against mine, hands caressing my neck, my shoulders, my thighs, my loins-\n\nThe noise of an approaching servant makes us break away in all haste, and my thoughts swiftly catch up to my desire."
+ seduce_ongoing.5305.a: "It feels as if things are finally right."
+
+ seduce_ongoing.5306.desc: "[target.Custom('FirstName')] returns my kiss, and for a few heart-pounding moments, all is right with the world. It cannot last, of course, as we hastily break off before we are seen by a passing servant.\n\nWhen we leave to go our separate ways [target.GetSheHe] gazes at me. "I did not fully understand until now, [target.Custom2('RelationToMe', SCOPE.sC('owner'))].""
+ seduce_ongoing.5306.a: "You and I, my dearest [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))]."
+
+ seduce_ongoing.5307.desc: "[target.Custom('FirstName')] seems lost in the kiss for a moment, as my hands wander across [target.GetHerHis] body, seeking hungrily. Then [target.GetSheHe] pushes me away. "What do you think you are doing?! You are my [target.Custom2('RelationToMe', SCOPE.sC('owner'))]!"\n\nI have nothing to say, no way to explain myself, before [target.GetSheHe] rushes out of the room."
+ seduce_ongoing.5307.a: "[target.Custom('FirstNameNoTooltip')], I truly thought..."
+
+ seduce_ongoing.6001.t: "Only Curious"
+ seduce_ongoing.6001.desc: "While visiting other courts, I find it beneficial to spend time with courtiers in order to get to know their liege. If it happens to be with [target.Custom('TitledFirstName')], all the better.\n\n[target.GetSheHe|U] answers my questions diligently, and I feel as if I could spend all day listening, and [target.GetSheHe] seems content to talk."
+ seduce_ongoing.6001.a: "Your [target.Custom2('RelationToMe', SCOPE.sC('court_owner'))] is interesting, but what do #EMP you#! like?"
+ seduce_ongoing.6001.b: "Surely you will mention me to [court_owner.Custom('FirstNameNoTooltip')]?"
+
+ seduce_ongoing.6011.t: "A Show of Force"
+ seduce_ongoing.6011.desc: "I am watching the troops in the courtyard practice the drill I instructed them to, over and over again. I pay such close attention that I do not notice [target.Custom('TitledFirstName')] come up beside me.\n\n"They move well, but that [dummy_gender.GetWomanMan] is constantly a half-step behind.""
+ seduce_ongoing.6011.a: "Most impressive! We have more in common than I thought."
+ seduce_ongoing.6011.b: "You have a keen eye!"
+ seduce_ongoing.6011.c: "A diversionary tactic. See what happens now..."
+
+ seduce_ongoing.6021.t: "A Meeting of Minds"
+ seduce_ongoing.6021.desc: "It surprised me that [target.Custom('TitledFirstName')] and I would get caught up in a discussion on military matters, but [target.GetSheHe] seems almost as passionate as I am about the subject. [target.GetSheHe|U] is incredibly well-informed, too!"
+ seduce_ongoing.6021.a: "Why [target.Custom('FirstNameNoTooltip')], in all my years I have never heard the like!"
+ seduce_ongoing.6021.b: "[target.Custom('FirstNameNoTooltip')], I never knew we had so much in common."
+ seduce_ongoing.6021.c: "Tell me more about your thoughts on cavalry formations..."
+
+ seduce_ongoing.6031.t: "A Web"
+ seduce_ongoing.6031.desc: "Just as I do, [target.Custom('TitledFirstName')] has [target.GetHerHis] web of spies, reaching as far as they can for all manners of hidden knowledge. I could let them "discover" my intentions towards [target.Custom('FirstName')] and let [target.GetHerHim] feel that [target.GetSheHe] has the upper hand."
+ seduce_ongoing.6031.a: "I will also let them know that I know that they know..."
+ seduce_ongoing.6031.b: "I'll make sure the spies come across #EMP something of interest.#!"
+ seduce_ongoing.6031.c: "Oh, what an excellent opportunity to practice!"
+
+ seduce_ongoing.6041.t: "Amorous Understanding"
+ seduce_ongoing.6041.desc: "In my pursuit of [target.Custom('TitledFirstNamePossessive')] affection, it would be very helpful to know exactly what [target.GetHerHis] tastes and preferences are..."
+ seduce_ongoing.6041.a: "#EMP Pah#!, this isn't even a challenge!"
+ seduce_ongoing.6041.b: "I am sure I could convince [target.GetHerHim] to tell me."
+ seduce_ongoing.6041.b.success: "I learn more about [target.Custom('FirstNamePossessive')] interests"
+ seduce_ongoing.6041.b.failure: "[target.Custom('FirstName')] evades my questions"
+ seduce_ongoing.6041.c: "My spies will uncover this in no time."
+ seduce_ongoing.6041.c.success: "My spies are successful"
+ seduce_ongoing.6041.c.failure: "[target.Custom('FirstName')] eludes my spies"
+ seduce_ongoing.6041.d: "You know what? I'm just going to ask."
+
+ seduce_ongoing.6042.desc: "This is very interesting... [target.Custom('FirstName')] is a [target.GetWomanMan] of fine taste."
+ seduce_ongoing.6042.a: "This will help me win [target.GetHerHis] affection."
+
+ seduce_ongoing.6043.desc: "It seems I was perhaps a little indelicate in approaching [target.Custom('FirstName')]. Now [target.GetSheHe] wonders why I am so unreasonably interested in [target.GetHerHis] valuables!"
+ seduce_ongoing.6043.a: "This does not bode well for me."
+
+ seduce_ongoing.6051.t: "The Veil of Courtesy"
+ seduce_ongoing.6051.close: "I framed it all as an opportunity to practice diplomatic courtesy. I am certain [target.Custom('TitledFirstName')] can see through my excuse, but [target.GetSheHe] agreed nevertheless."
+ seduce_ongoing.6051.far: "Visiting another court is always an excuse to exchange diplomatic courtesies. Thankfully [target.Custom('TitledFirstName')] was more than willing to oblige me."
+ seduce_ongoing.6051.end: "\n\nTo any outsider, our exchanges might have sounded like empty platitudes demanded by tradition. To us, however, the passion burning underneath the surface of our words was fire."
+ seduce_ongoing.6051.a: "Ah, refreshing!"
+ seduce_ongoing.6051.b: "Some of the hints you gave me, [target.Custom('FirstNameNoTooltip')]..."
+ seduce_ongoing.6051.c: "I need more practice like this."
+
+ seduce_ongoing.7001.t: "Beneath Those Layers"
+ seduce_ongoing.7001.desc: "How should I approach [target.Custom('TitledFirstName')]? [target.GetSheHe|U] seems like a reserved individual who prefers silence as a companion, at least that's how [target.GetSheHe] appears on the surface. Who knows what sort of person [target.GetSheHe] is in private? Is [target.GetSheHe] meek and submissive or perhaps passionate and fiery?\n\nI'll find out once I have breached [target.GetHerHis] stony exterior. For now, I have to decide how to make myself remain in [target.GetHerHis] thoughts after spending some time alone."
+ seduce_ongoing.7001.a: "Be as gallant and charming as possible."
+ seduce_ongoing.7001.a.tt: "#F You think [target.Custom('FirstNameNoTooltip')] has a secret romantic side and prefers ardent lovers#!"
+ seduce_ongoing.7001.b: "Approach [target.Custom('FirstNameNoTooltip')] tenderly – as a friend."
+ seduce_ongoing.7001.b.tt: "#F You think [target.Custom('FirstNameNoTooltip')] is the type of person who prefers gentle lovers#!"
+ seduce_ongoing.7001.c: "I'll just wait for the right opportunity..."
+
+ seduce_ongoing.7101.desc_opening: "I manage to get a moment alone with [target.Custom('TitledFirstName')]. I bide my time, balancing flattery and conversation. Then as the right mood settles, "
+ seduce_ongoing.7101.desc_can_touch_arms: "I reach out and clasp [target.Custom('FirstNamePossessive')] hand in mine."
+ seduce_ongoing.7101.desc_cannot_touch_arms: "I catch myself reaching to grasp [target.Custom('FirstNamePossessive')] hand, but pull back before [target.GetSheHe] notices."
+ seduce_ongoing.7101.desc_closing: "I lay bare my feelings for [target.Custom('FirstNameNoTooltip')] and declare my undying love for [target.GetHerHim]. \n\n"Not even in my wildest dreams could I've imagined you were this passionate, [owner.Custom('FirstNameNoTooltip')]!" [target.GetSheHe|U] exclaims while desperately fanning [target.GetHerselfHimself].\n\nWhile [target.GetSheHe] doesn't respond to my proclamation in kind, I'm certain that the shade of red on [target.GetHerHis] ears is due to [target.GetHerHim] blushing ferociously at my bold words."
+ seduce_ongoing.7101.a: "It shouldn't be long before [target.GetSheHe] reciprocates my feelings."
+ seduce_ongoing.7102.desc: "I try to create an opportunity for a private moment with [target.Custom('TitledFirstName')], but the mood for romance doesn't come naturally with [target.GetHerHim]. Even with my lack of success, I decided to go for it, despite the atmosphere not being perfect. I lean in closer so that I can whisper sweet nothings into [target.GetHerHis] ear, but before I can say anything, [target.Custom('FirstNameNoTooltip')] recoils as if burned by something and stalks off.\n\nI'm uncertain if that reaction is due to inexperience, disgust, or bashfulness. However, I do know that things could've gone better."
+ seduce_ongoing.7102.a: "I should rethink my approach..."
+ seduce_ongoing.7201.desc: ""I'd like to get to know you better."\n[target.Custom('TitledFirstName')] appears tense at first, but relaxes over time as [target.GetSheHe] starts to believe there's no ulterior motive behind my request.\n\nBefore we part, I thank [target.Custom('FirstNameNoTooltip')] for the lovely time and [target.GetSheHe] tries to return my smile with a wobbly one of [target.GetHerHis] own. While the time spent is hardly one for the books, there's no denying that I've never seen [target.Custom('FirstNameNoTooltip')] smile this much in one day. I am certain that [target.Custom('FirstNameNoTooltip')] will be thinking of me for a long time."
+ seduce_ongoing.7202.desc: "Getting a moment alone with [target.Custom('TitledFirstName')] wasn't difficult. However, it turns out that the challenging part is having a normal conversation with [target.GetHerHim]. I ask [target.GetHerHim] a question and [target.GetSheHe] replies with the shortest answer [target.GetSheHe] can think of just to shut down our conversation. It's like pulling an endless amount of teeth!"
+ seduce_ongoing.7202.desc_animal: "\n\nI can't stop thinking that I would get more of a response from a dead [ROOT.Char.Custom('LocalAnimal')] than from [target.Custom('FirstNameNoTooltip')]."

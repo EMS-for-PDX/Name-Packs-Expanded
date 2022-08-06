@@ -1,0 +1,25 @@
+﻿l_english:
+ faction_demand.2004.opt_tt: "I join the war against [faction_target.Custom('ShortName')]"
+
+ FACTION_IMPRISONMENT_RETALIATION_WARNING: "#high Imprisoning [recipient.Custom('ShortName')] may incite the [retaliating_faction.GetName] to revolt!#!"
+
+ FACTION_FAILED_IMPRISONMENT_RETALIATION: "[actor.Custom('ShortName')] has unjustly attempted to imprison [recipient.Custom('ShortName')], who is one of my fellow faction members."
+ FACTION_SUCCESSFUL_IMPRISONMENT_RETALIATION: "[actor.Custom('ShortName')] has unjustly imprisoned [recipient.Custom('ShortName')], who was one of my fellow faction members."
+
+ FACTION_DEMAND_PEASANT: "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]"
+
+ FACTION_DEMAND_POPULIST: "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]"
+
+ FACTION_DEMAND_CLAIMANT_REFUSED_DESC: "[faction_claimant.Custom('ShortNameNotMePossessive')|U] claim on my title is no more real than the stories we tell children at night. No matter how many misguided fools you have gathered to help carry out your scheme I will not bend to such a collection of dung. I'd rather die than see my birthright fall to someone so low!"
+
+ FACTION_CLAIMANT_INVITE_ACCEPTED_DESC: "Finally! [faction_target.GetName] is nothing more than a jester acting a [faction_target.Custom('TitleAsNameNoTooltip')], and I am sure the realm will rise to my cause. Those who aid me will not be forgotten."
+
+ FACTION_CLAIMANT_INVITE_REFUSED_ALLY_DESC: "My claim is just, this I know. But my alliance to [faction_target.Custom('TitledFirstName')] prevents me from going to war. I will be with you in spirit."
+ FACTION_CLAIMANT_INVITE_REFUSED_HOOK_DESC: "While my claim is just I... just can't join you. [faction_target.Custom('TitledFirstName')] has this... #emphasis 'undeniable charm'#! that prevents me from ever lifting my hand against [faction_target.GetHerHim]. Yes, that's it. I wish you luck."
+ FACTION_CLAIMANT_INVITE_REFUSED_PREDICAMENT_DESC: "While I am glad to see the realm rise against the false [faction_target.Custom('TitledFirstName')] my current predicament prevents me from joining you in this righteous endeavor. If you succeed, I will be in your debt."
+ FACTION_CLAIMANT_INVITE_REFUSED_CHILD_DESC: "I am happy that you too think that [faction_target.Custom('TitledFirstName')] is a real meanie, and that I would be a much better ruler than [faction_target.GetHerHim]!\n\nI am busy playing with my new toys right now... but if you win I promise that I'll share them with you!"
+ FACTION_CLAIMANT_INVITE_REFUSED_INSIGNIFICANT_DESC: "Finally! [faction_target.GetName] is nothing more than a jester acting a [faction_target.Custom('TitleAsNameNoTooltip')], and I am sure the realm will rise to my cause.\n\nDue to my current lowly status, I cannot aid you. But know this – #emphasis when#! you are victorious, I will see you rewarded handsomely!"
+
+ WARNING_I_AM_ALREADY_AT_WAR_WITH_TARGET: "@warning_icon!#X You are already at war with [faction_target.Custom('TitledFirstName')]#!"
+ WARNING_I_AM_AT_WAR_WITH_FACTION_LEADER: "@warning_icon!#X You are at war with [faction_invite_from.Custom('TitledFirstName')]#!"
+ WARNING_INVITE_CANNOT_JOIN: "@warning_icon!#X [faction_invite_from.Custom('TitledFirstName')] can't join the faction#!"

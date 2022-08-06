@@ -1,0 +1,17 @@
+﻿l_english:
+
+ bishop.1001.desc: "It is my duty to inform you that irrefutable evidence has been unveiled proving that your marriage with [spouse.Custom('TitledFirstName')] is consanguineous in nature. This information will stay between the two of us if you end this unholy union at once."
+ bishop.1001.a: "Of course, [bishop.Custom('TitledFirstNameNoTooltip')]."
+ bishop.1001.a.tt: "@warning_icon!#X You divorce [spouse.Custom('UIName')]#!"
+
+ bishop.1001.c.failure: "[bishop.Custom('TitledFirstNameNoTooltip')] is not persuaded"
+
+ bishop.1011.desc_opening: "Your involvement in the [faction.GetNameNoTooltip] targeting [targeting.Custom('TitledFirstName')] is most unseemly — if you do not withdraw from it, I will be forced to take drastic action."
+ bishop.1011.desc_cannibal: "\n\nSay, your [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('cannibal_food'))] [cannibal_food.Custom('TitledFirstName')] looks very tasty. It would be a #EMP shame#! if something were to happen to [cannibal_food.GetHerHim]..."
+ bishop.1011.desc_beating: "\n\nA group of zealots is roaming close by, handing out divine punishment with little mercy. Your [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('to_beat_up'))] [to_beat_up.Custom('TitledFirstName')] still walks the streets alone sometimes, right...?"
+
+ bishop.1011.c.success_vassal: "[bishop.Custom('TitledFirstNameNoTooltip')] is so convinced that [bishop.GetSheHe] recruits a colleague to the cause"
+ bishop.1011.c.success: "[bishop.Custom('TitledFirstNameNoTooltip')] understands my motivations"
+ bishop.1011.c.failure: "[bishop.Custom('TitledFirstNameNoTooltip')] is not impressed"
+
+ bishop.1012.desc: "[cannibal_food.Custom('TitledFirstName')] has disappeared, leaving only a pool of blood behind..."

@@ -1,0 +1,16 @@
+﻿l_english:
+ CAN_CREATE_FACTION_TRIGGER: "Can create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
+ NOT_CAN_CREATE_FACTION_TRIGGER: "Can #bold not#! create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
+ I_CAN_CREATE_FACTION_TRIGGER: "You can create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
+ NOT_I_CAN_CREATE_FACTION_TRIGGER: "You can #bold not#! create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
+ THEY_CAN_CREATE_FACTION_TRIGGER: "[CHARACTER.Custom('ShortName')|U] can create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
+ NOT_THEY_CAN_CREATE_FACTION_TRIGGER: "[CHARACTER.Custom('ShortName')|U] can #bold not#! create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
+
+ THEY_CAN_JOIN_FACTION_TRIGGER: "[CHARACTER.Custom('ShortName')|U] can join the [FACTION.GetNameNoTooltip]"
+ NOT_THEY_CAN_JOIN_FACTION_TRIGGER: "[CHARACTER.Custom('ShortName')|U] can #bold not#! join the [FACTION.GetNameNoTooltip]"
+
+ THEY_WAS_BLOCKED_FROM_JOINING_TRIGGER: "[CHARACTER.Custom('ShortName')|U] was forbidden to join factions until [GetCurrentDateWithDiff( GetVarTimeRemaining( CHARACTER.MakeScope, 'joining_faction_block') )]"
+
+ CANNOT_START_FACTION_AGAINST_CHARACTER: "It is not possible to start a [faction|E] against [CHARACTER.Custom('ShortName')]"
+
+ CHARACTER_CANNOT_LOWER_CROWN_AUTHORITY: "[CHARACTER.Custom('ShortName')|U] already has the lowest possible [crown_authority|E]"

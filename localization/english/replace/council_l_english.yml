@@ -1,0 +1,28 @@
+﻿l_english:
+ COUNCIL_SAME_CHARACTER: "[CHARACTER.Custom('ShortName')|U] can not be Councillor and Council owner at the same time."
+ COUNCIL_NOT_LIEGE: "[CHARACTER.Custom('ShortName')|U] must be the liege of [TARGET_CHARACTER.Custom('ShortName')] to assign it as Councillor."
+ COUNCIL_NOT_VALID_POSITION: "[CHARACTER.Custom('ShortName')|U] can not have a $NAME$ councillor in the council."
+ COUNCIL_NOT_VALID_CHARACTER: "The $NAME$ position is not valid for [CHARACTER.Custom('ShortName')]."
+
+ COUNCIL_POSITION_FILLED: "[CHARACTER.Custom('ShortNameNotMePossessive')] Council already has a $NAME$"
+ COUNCIL_CANT_TAKE_NO_POSITION: "[CHARACTER.Custom('ShortName')|U] can not take [TARGET_CHARACTER.Custom('ShortNameNotMePossessive')] Council position because [TARGET_CHARACTER.GetSheHe] is not on the Council."
+ COUNCIL_CANT_SWAP_NO_POSITION: "[CHARACTER.Custom('ShortName')|U] can not swap Council positions with [TARGET_CHARACTER.Custom('ShortName')] because [TARGET_CHARACTER_2.Custom('ShortName')] is not on the Council."
+ COUNCIL_CANT_SWAP_EQUAL: "[TARGET_CHARACTER.Custom('ShortName')|U] and [TARGET_CHARACTER_2.Custom('ShortName')] can not swap Council positions because they have the same position already."
+ COUNCIL_CANT_FIRE_NO_COUNCILLOR: "[CHARACTER.Custom('ShortName')|U] can not fire [TARGET_CHARACTER.Custom('ShortName')] from the Council because [TARGET_CHARACTER.GetSheHe] does not have this Council position."
+ COUNCIL_NOT_LIEGE_TASK: "[CHARACTER.Custom('ShortName')|U] must be the liege of [TARGET_CHARACTER.Custom('ShortName')] to be able to assign [TARGET_CHARACTER.GetHerHim] a task."
+ COUNCIL_CANT_TASK_COUNCILLOR: "[CHARACTER.Custom('ShortName')|U] can not give a task to [TARGET_CHARACTER.Custom('ShortName')] because [TARGET_CHARACTER.GetSheHe] does not have a Council position."
+ COUNCIL_CANT_TAKE_TASK_COUNCIL_TYPE: "[CHARACTER.Custom('ShortNameNotMePossessive')] current $ACTUAL_POS$ council position is not the $REQUIRED_POS$ required for the $TASK_NAME$ task."
+ COUNCIL_CANT_TAKE_TASK_CHARACTER: "[CHARACTER.Custom('ShortName')|U] does not fit the requirements to perform the $TASK_NAME$ task."
+ COUNCIL_CANT_CANCEL_TASK_COUNCILLOR: "[CHARACTER.Custom('ShortName')|U] can not cancel a task of [TARGET_CHARACTER.Custom('ShortName')] because does not have a Council position."
+ COUNCIL_CANT_CANCEL_NO_RUNING: "[CHARACTER.Custom('ShortName')|U] is not running any task."
+
+ START_COUNCIL_TASK_SEND_COURT: "Send your [COUNCIL_TASK.GetPositionName] to [COUNCIL_TASK_TYPE.GetName] on [TARGET.Custom('ShortNameNotMePossessive')] court"
+ START_COUNCIL_TASK_ABORTED: "\n@warning_icon!#X Your [COUNCIL_TASK.GetPositionNamePossesive] current Task ('[COUNCIL_TASK.GetTaskType.GetName]') will be aborted.#!"
+
+ COUNCILLOR_CAN_CHANGE_ONCE: "@warning_icon!#X Once appointed as [COUNCIL_POSITION_TYPE.GetName|V], [CHARACTER.Custom('ShortName')] cannot be fired or assigned another position#!"
+
+ COUNCILLOR_LIEGE_MISSING_SPOUSE: "[CouncilWindow.GetCharacter.Custom('ShortName')] has no [available_spouse|E]"
+
+ councillor_leaving_court_marriage_notification: "Your [council_task.GetPositionName], [councillor.Custom('ShortNameNoTooltip')|U], left [councillor.GetHerHis] position and your court as a result of [councillor.GetHerHis] marriage to a landed spouse."
+ councillor_leaving_court_landed_notification: "Your [council_task.GetPositionName], [councillor.Custom('ShortNameNoTooltip')|U], left [councillor.GetHerHis] position and your court as a result of [councillor.GetHerHim] inheriting a title."
+ councillor_leaving_court_generic_fallback_notification: "Your [council_task.GetPositionName], [councillor.Custom('ShortNameNoTooltip')|U], has left [councillor.GetHerHis] position and your court."

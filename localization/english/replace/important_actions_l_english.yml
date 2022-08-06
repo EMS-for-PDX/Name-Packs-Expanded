@@ -1,0 +1,109 @@
+﻿l_english:
+ action_adult_player_heir_not_married_desc: "Your [player_heir|E] [recipient.Custom('UIName')] has no [spouse|E].\n\n$GENERAL_MARRIAGE_ACTION_HEIR_HELP$"
+
+ action_betrothed_can_marry_desc: "The [betrothed|E] [secondary_recipient.Custom('UIName')] and [secondary_actor.Custom('UIName')] are both [adults|E], and can now get [married|E].\n\n#help While you can break the Betrothal, it is generally best to honor it.#!"
+
+ action_close_family_can_marry: "[recipient.Custom('ShortNameNoTooltip')] can marry"
+
+ action_close_family_can_marry_desc: "Your [actor.Custom2('RelationToMe', recipient)] [recipient.Custom('ShortName')] is eligible to be wed.\n\n#help Arranging a suitable [marriage|E] for [recipient.GetHerHim] would benefit your [dynasty|E] and could even result in a new [alliance|E].#!"
+
+ action_close_family_can_marry_combined_label: "[recipient.GetRelationToString( GetPlayer )], [recipient.Custom('ShortNameNoTooltip')]"
+
+ action_can_lawfully_imprison_label: "You can lawfully imprison [recipient.Custom('ShortNameNoTooltip')]"
+ action_can_lawfully_imprison_combined_label: "[recipient.Custom('ShortNameNoTooltip')]"
+ action_can_lawfully_imprison_desc: "[recipient.Custom('UIName')] has committed [crimes|E] ([recipient.GetImprisonmentReasons( actor.Self )]) allowing you to imprison [recipient.GetHerHim] without gaining [tyranny|E].$action_can_lawfully_imprison_HELP$"
+
+ action_powerful_vassal_not_on_council_desc: "[recipient.Custom('UIName')] expects to be on your [council|E] since [recipient.GetSheHe] is a [powerful_vassal|E]. $action_powerful_vassal_not_on_council_HELP$"
+
+ action_powerful_vassal_not_on_council_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_can_call_ally_desc: "You can call your [ally|E] [recipient.Custom('UIName')] to your [wars|E].$CALL_TO_WAR_HELP$"
+ action_can_call_ally_combined_group_description: "You can call your [allies|E] to your [wars|E].$CALL_TO_WAR_HELP$"
+ action_can_call_ally_label: "You can call on your Ally [recipient.Custom('ShortNameNoTooltip')]"
+ action_can_call_ally_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+ action_can_call_ally_click: "#I Click to call Ally#!"
+
+ action_has_any_display_cb_on: "You can declare [war|E] on [recipient.Custom('ShortNameNoTooltip')]"
+
+ action_has_any_display_cb_on_desc: "You have one or more [casus_bellis|E] on [recipient.Custom('UIName')]$action_has_any_display_cb_on_HELP$"
+
+ action_has_any_display_cb_on_label: "You can declare war on [recipient.Custom('ShortNameNoTooltip')]"
+ action_has_any_display_cb_on_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_title_lost_from_realm_on_succession_desc: "Your [vassal|E] [recipient.Custom('UIName')] holds [titles|E] that will be inherited by [rulers|E] who are not your [vassals|E].\n\n$TLFR_CROWN_AUTHORITY_TIP$"
+
+ action_title_lost_from_realm_on_succession_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_title_lost_from_realm_on_foreign_ruler_succession_desc: "Your [vassal|E] [recipient.Custom('ShortName')] will [Concept( 'heir', 'inherit' )|E] the [landed_title.GetBaseName], a foreign [title|E] of a higher [Concept( 'title_tier', 'Tier' )|E] than [recipient.GetHerHis] current [primary_title|E].\n\n$TLFR_FOREIGN_RULER_SUCCESSION_TIPS$"
+
+ action_title_lost_from_realm_on_foreign_ruler_succession_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_can_call_house_member_desc: "You can call your [house|E] member [recipient.Custom('UIName')] to your [wars|E].$CALL_TO_WAR_HELP$"
+
+ action_can_call_house_member_label: "You can call your House member [recipient.Custom('ShortNameNoTooltip')]"
+ action_can_call_house_member_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_can_call_dynasty_member_desc: "You can call your [dynasty|E] member [recipient.Custom('UIName')] to your [wars|E].$CALL_TO_WAR_HELP$"
+
+ action_can_call_dynasty_member_label: "You can call your Dynasty member [recipient.Custom('ShortNameNoTooltip')]"
+ action_can_call_dynasty_member_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_convert_at_war_interaction_desc: "You can convert to the [faith|E] of [recipient.Custom('ShortName')] in order to end [recipient.GetHerHis] [holy_war|E] against you.\n\n#help While ending a War that is losing is useful, be aware that the members of your former Faith will lose [opinion|E] of you!#!"
+
+ action_not_endorsed_by_realm_priest_desc: "Your [recipient.GetCouncilTitle], [recipient.Custom('UIName')], does not endorse you. \n\n#help You should ensure that [recipient.GetSheHe] has a #P positive#! [opinion|E] of you. Otherwise, [recipient.GetSheHe] will not provide you with any [levies|E] or [taxes|E]!\n\nIf [recipient.GetHerHis] Opinion of you is at or below #N -10#!, [recipient.GetSheHe] might start interfering in your affairs.#!"
+
+ action_not_endorsed_by_realm_priest_no_holding_desc: "Your [recipient.GetCouncilTitle], [recipient.Custom('UIName')], does not endorse you.\n\n#help You should ensure that [recipient.GetSheHe] has a #P positive#! [opinion|E] of you. If [recipient.GetHerHis] Opinion of you is at or below #N -10#!, [recipient.GetSheHe] might start interfering in your affairs.#!"
+
+ action_can_assign_guardian_desc: "You can designate a [guardian|E] for [recipient.Custom('ShortName')].$action_can_assign_guardian_HELP$"
+
+ action_can_assign_guardian_label: "You can designate a guardian for [recipient.Custom('ShortNameNoTooltip')]"
+ action_can_assign_guardian_combined_label: "[recipient.GetRelationToString( GetPlayer )], [recipient.Custom('ShortNameNoTooltip')]"
+
+ action_heir_in_line_of_succession_for_title_desc: "Your [player_heir|E] [actor.Custom('ShortName')] is [actor.GetPlaceInSuccession(landed_title)|O] in the [line_of_succession|E] for the [landed_title.GetName].\n\n#help While it is possible that [actor.GetSheHe] will inherit this title on [actor.GetHerHis] own, a [GetScheme('murder').GetTypeName] could speed up [actor.GetHerHis] acquisition of it while ensuring [actor.GetSheHe] does not lose [actor.GetHerHis] place in line.#!"
+ action_heir_in_line_of_succession_for_title_combined_group_description: "Your [player_heir|E] [actor.Custom('ShortName')] is high in the [line_of_succession|E] for multiple [titles|E].\n\n#help While it is possible that [actor.GetSheHe] will inherit these titles on [actor.GetHerHis] own, a [GetScheme('murder').GetTypeName] could speed up [actor.GetHerHis] acquisition of them while ensuring [actor.GetSheHe] does not lose [actor.GetHerHis] place in line.#!"
+
+ action_not_rightful_liege: "Not rightful liege of [recipient.Custom('ShortNameNoTooltip')]"
+
+ action_not_rightful_liege_desc: "You are not the [rightful_liege|E] of your [actor.Custom2('RelationToMeShort', recipient)] [recipient.Custom('ShortName')].\n\nYou should check if you can [create|E] or [usurp|E] a title that would make you [recipient.GetHerHis] [de_jure|E] [liege|E]; doing so will improve [recipient.GetHerHis] [opinion|E] of you as well as increasing the [taxes|E] and [levies|E] you receive from [recipient.GetHerHim].\n\nIf that is not possible, you may wish to consider [transferring|E] them to another one of your vassals, especially if that vassal would be their [rightful_liege|E]."
+
+ action_not_rightful_liege_combined_label: "[recipient.Custom('ShortNameNoTooltip')]"
+
+ action_being_raided_desc: "[raiders|E] from [recipient.Custom('ShortName')] are in your territory.\n\n#help Raise your [armies|E] and defeat them in [battle|E] to prevent them from raiding and reducing [county_control|E] in your [realm|E]#!"
+
+ action_can_ransom_desc: "You can ransom your [prisoner|E], [recipient.Custom('ShortName')], for [gold|E].$action_can_ransom_HELP$"
+
+ action_can_ransom_label: "You can ransom [recipient.Custom('ShortNameNoTooltip')] @gold_icon!"
+ action_can_ransom_combined_label: "[recipient.GetRelationToString( GetPlayer )], [recipient.Custom('ShortNameNoTooltip')]"
+
+ action_can_vassalize_desc: "A neighboring [ruler|E], [recipient.Custom('UIName')], wishes for your protection and would accept [vassalization|E].$action_can_vassalize_HELP$"
+
+ action_can_vassalize_label: "You can Vassalize [recipient.Custom('ShortNameNoTooltip')]"
+ action_can_vassalize_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_can_propose_alliance_to_family_member_desc: "You can negotiate an [alliance|E] with [recipient.Custom('UIName')] as you already share bonds of blood.#help \n\nBe warned! Some [alliances|E] are more trouble than they are worth...\n\nMake sure that you truly desire this [alliance|E], as you might be dragged into their pointless conflicts.#!"
+
+ action_can_propose_alliance_to_family_member_label: "You can Negotiate an Alliance with [recipient.Custom('ShortNameNoTooltip')]"
+ action_can_propose_alliance_to_family_member_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_can_demand_payment_desc: "You can spend the [hook|E] you have on [recipient.Custom('UIName')] to demand that they pay you [gold|E].$action_can_demand_payment_HELP$"
+
+ action_can_demand_payment_label: "You can Demand Payment from [recipient.Custom('ShortNameNoTooltip')]"
+ action_can_demand_payment_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_hook_expiring_desc: "You should spend the [hook|E] you have on [recipient.Custom('UIName')] soon, or it will expire on [actor.GetHookOn( recipient.Self ).GetExpirationDate.GetString]."
+
+ action_hook_expiring_label: "Your [hook|E] on [recipient.Custom('ShortNameNoTooltip')] will soon expire"
+ action_hook_expiring_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_can_use_hook_to_change_contract_desc: "As you have a [hook|E] on your [GetGovernment( 'feudal_government' ).GetName] [vassal|E] [recipient.Custom('UIName')], you can spend it to modify their [contract|E].\n\n#help Increasing a [vassals_possessive|E] [obligations|E] to you is one of the most worthwhile uses for a [hook].\n\nNormally, proposing an unfair [contract|E] change would incur [tyranny|E] – but you avoid this by spending a [hook|E]. You can only propose one unfair change, any more and you will still gain [tyranny].\n\nRemember to #high check the 'Use a Hook' box#! when modifying the [contract]!#!"
+
+ action_can_use_hook_to_change_contract_label: "You can Change [recipient.Custom('ShortNamePossessiveNoTooltip')] Contract @weak_hook_icon!"
+ action_can_use_hook_to_change_contract_combined_label: "[recipient.Custom('RegNameNoTooltip')]"
+
+ action_can_ask_hof_for_money_desc: "Your [head_of_faith|E], [recipient.Custom('UIName')], would accept a plea for [gold|E].\n\n#help If you are low on [gold|E], this is a way to spend your [piety|E] to to expand your treasury!#!"
+
+ action_title_election_desc: "There is an ongoing election in [landed_title.GetNameNoTooltip], a [title|E] ruled by [landed_title.GetHolder.Custom('ShortName')]. Currently, the leading candidate is [landed_title.GetHeir.Custom('UIName')].\n\n#help If you are an [elector|E] it is worthwhile to keep tabs on active elections, even if you have already cast your votes. Remember, you can change your vote at any time!\n\nEven if you are not an [elector|E] it's good to keep tabs on elections. After all, anything can happen... it might be #emp you#! who are the top candidate!#!"
+
+ HAS_CB_ON_TARGET_TRIGGER: "Has a $CASUS_BELLI$ on [TARGET_CHARACTER.Custom('ShortName')|U]"
+
+ IS_ARMY_IN_SIEGE_RELEVANT_FOR_TRIGGER: "[CHARACTER.Custom('ShortName')|U] is in a sieging army in a war relevant for [TARGET_CHARACTER.Custom('ShortName')|U]"
