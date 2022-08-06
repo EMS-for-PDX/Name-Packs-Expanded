@@ -55,6 +55,8 @@ SNAT_First_Georgian: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!"
 
 SNAT_First_Last_Georgian: "#high[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')]#!"
 
+Title_As_Name_Georgian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheck')]#!#!#!#!"
+Title_As_Name_No_Tooltip_Georgian: "#high [ROOT.Char.Custom('CharacterTierCheck')]#!"
 Title_Tier_Name_Georgian: "[ROOT.Char.Custom('CharacterTierCheck')]"
 Title_Tier_Name_Possessive_Georgian: "[ROOT.Char.Custom('CharacterTierCheck')]'s"
 

@@ -154,8 +154,10 @@
  SNAT_First_Last_Turkish_Muslim_Low: "#high [ROOT.Char.Custom('CharacterPatCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('TurkNick'), ROOT.Char.Custom('TurkNickCulture')))][ROOT.Char.Custom('LaqabNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
  SNAT_First_Last_Turkish_Muslim_Sultan: "#high [ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('LaqabNameCheck')]#!"
 
- Title_Tier_Name_Turkish: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')]"
- Title_Tier_Name_Possessive_Turkish: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')]'s"
+ Title_As_Name_Turkish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheck')]#!#!#!#!"
+ Title_As_Name_No_Tooltip_Turkish: "#high [ROOT.Char.Custom('CharacterTierCheck')]#!"
+ Title_Tier_Name_Turkish: "[ROOT.Char.Custom('CharacterTierCheck')]"
+ Title_Tier_Name_Possessive_Turkish: "[ROOT.Char.Custom('CharacterTierCheck')]'s"
 
  PatPrefix_turkish_male: ""
  PatPrefix_turkish_female: ""

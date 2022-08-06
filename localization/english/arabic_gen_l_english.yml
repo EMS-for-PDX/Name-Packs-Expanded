@@ -55,6 +55,8 @@ SNAT_First_Arabic: "#high [GetScriptedGui('scripted_gui_laqab_tek_name').Execute
 
 SNAT_First_Last_Arabic: "#high [GetScriptedGui('scripted_gui_laqab_tek_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('ArabicPatCheck')]#!"
 
+Title_As_Name_Arabic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')]#!#!#!#!"
+Title_As_Name_No_Tooltip_Arabic: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')]#!"
 Title_Tier_Name_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')]"
 Title_Tier_Name_Possessive_Arabic: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')]'s"
 

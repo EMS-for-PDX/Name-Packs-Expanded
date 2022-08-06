@@ -55,6 +55,8 @@ SNAT_First_Greek: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!"
 
 SNAT_First_Last_Greek: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterHouseCheckAfter')]#!"
 
+Title_As_Name_Greek: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheck')]#!#!#!#!"
+Title_As_Name_No_Tooltip_Greek: "#high [ROOT.Char.Custom('CharacterTierCheck')]#!"
 Title_Tier_Name_Greek: "[ROOT.Char.Custom('CharacterTierCheck')]"
 Title_Tier_Name_Possessive_Greek: "[ROOT.Char.Custom('CharacterTierCheck')]'s"
 
