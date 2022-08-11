@@ -200,30 +200,14 @@
         add_to_variable_list = { name = dynasty_tribal target = character:bedouin0053 }
         add_to_variable_list = { name = dynasty_tribal target = character:bedouin0054 }
 	}
-	character:bedouin0054.house = {
-		set_variable = {
-			name = name_founder
-			value = character:cnpdbarabic024
-		}
-	}
-	character:bedouin0054.dynasty = { #Ukhaidhirid
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbarabic024 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0053 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0055 }
-        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0054 }
-        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0055 }
-        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0056 }
-        add_to_variable_list = { name = dynasty_tribal target = character:bedouin0053 }
-        add_to_variable_list = { name = dynasty_tribal target = character:bedouin0054 }
-	}
 	character:bedouin0043.house = {
 		set_variable = {
 			name = name_founder
-			value = character:cnpdbarabic016
+			value = character:cnpdbarabic026
 		}
 	}
 	character:bedouin0043.dynasty = { #Sulaymid
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbarabic016 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbarabic026 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0043 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0041 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0042 }
@@ -237,11 +221,11 @@
 	character:74041.house = {
 		set_variable = {
 			name = name_founder
-			value = character:cnpdbarabic026
+			value = character:cnpdbarabic025
 		}
 	}
 	character:74041.dynasty = { #Hashimids
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbarabic026 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbarabic025 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:74041 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160016 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:160016 }
@@ -296,6 +280,9 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:159378 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:159388 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:159389 }
+	}
+	character:bedouin0048 = {
+		change_first_name = Mani
 	}
 	character:159378 = {
 		change_first_name = Kab
