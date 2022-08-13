@@ -1632,8 +1632,17 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_scythian
-                has_name_list = name_list_khwarezmian
+                OR = {
+                    AND = {
+                        has_cultural_pillar = language_scythian
+                        has_name_list = name_list_khwarezmian
+                    }
+                    AND = {
+                        exists = global_var:CE_is_loaded
+                        has_cultural_pillar = language_khwarezmian
+                    }
+                }
+            
 			}
 		}
 		localization_key = _khwarezmian
@@ -1641,7 +1650,17 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_scythian
+                OR = {
+                    has_cultural_pillar = language_scythian
+                    AND = {
+                        exists = global_var:CE_is_loaded
+                        OR = {
+                            has_cultural_pillar = language_pashto
+                            has_cultural_pillar = language_pamiri
+                            has_cultural_pillar = language_sogdian
+                        }
+                    }
+                }
 			}
 		}
 		localization_key = _sogdian
@@ -1649,7 +1668,16 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_iranian
+                OR = {
+                    has_cultural_pillar = language_iranian
+                    AND = {
+                        exists = global_var:CE_is_loaded
+                        OR = {
+                            has_cultural_pillar = language_caspian_iranian
+                            has_cultural_pillar = language_balochi
+                        }
+                    }
+                }
 			}
 		}
 		localization_key = _persian
