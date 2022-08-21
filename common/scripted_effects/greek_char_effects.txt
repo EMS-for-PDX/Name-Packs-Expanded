@@ -383,7 +383,7 @@
             value = character:168372
         }
     }
-	character:145113.dynasty = { #Konstantios
+	character:168374.dynasty = { #Konstantios
         add_to_variable_list = { name = name_pack_support_dynasty target = character:168374 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:168375 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:168384 }
@@ -541,12 +541,87 @@
         }
     }
 	character:greek0002.dynasty = { #Kretikos
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgreek044 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgreek045 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:greek0002 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:greek0001 }
         add_to_variable_list = { name = dynasty_byzantine target = character:greek0001 }
         add_to_variable_list = { name = dynasty_byzantine target = character:145859 }
     }
+    character:145128.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgreek047
+        }
+    }
+	character:145128.dynasty = { #Chlorokokis
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgreek047 }
+    }
+    character:145147.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgreek048
+        }
+    }
+	character:145147.dynasty = { #Phokas
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgreek048 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:145147 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:41316 }
+    }
+	character:145127.dynasty = { #Orphanotrophos
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:145127 }
+    }
+    character:145190.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgreek049
+        }
+    }
+	character:145147.dynasty = { #Kontomytes
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgreek049 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:145190 }
+    }
+    character:145124.house = {
+        set_variable = {
+            name = name_founder
+            value = character:cnpdbgreek050
+        }
+    }
+	character:145124.dynasty = { #Gerontas
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbgreek050 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:145124 }
+    }
+	character:145114 = {
+		name_gen_effect = yes
+        dynasty_effect_ne = yes
+	}
+	character:145122 = {
+		name_gen_effect = yes
+        dynasty_effect_ne = yes
+	}
+	character:145108 = {
+		name_gen_effect = yes
+        dynasty_effect_ne = yes
+	}
+	character:145189 = {
+		name_gen_effect = yes
+        dynasty_effect_ne = yes
+	}
+	character:145192 = {
+		name_gen_effect = yes
+        dynasty_effect_ne = yes
+	}
+	character:145181 = {
+		change_first_name = Constantius
+	}
+	character:145190 = {
+		change_first_name = Constantine
+	}
+	character:145127 = {
+		dynasty_effect_ne = yes
+	}
+	character:145128 = {
+		name_gen_effect = yes
+	}
 	character:greek0002 = {
 		change_first_name = Agapetos
 	}
@@ -638,7 +713,7 @@
 		change_first_name = Gregory
 	}
 	character:168415 = {
-		change_first_name = Stephan
+		change_first_name = Stephen
 	}
 	character:145165 = {
 		change_first_name = Romanus
