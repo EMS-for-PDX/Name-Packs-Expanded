@@ -1131,11 +1131,19 @@ CharacterGov = {
     }
     text = {
         trigger = {
-            faith = {
-                has_variable_list = faith_saints
-                any_in_list = {
-                    variable = faith_saints
+            OR = {
+                any_in_global_list = {
+                    variable = global_list_saints
                     this = root
+                }
+                AND = {
+                    faith = {
+                        has_variable_list = faith_saints
+                        any_in_list = {
+                            variable = faith_saints
+                            this = root
+                        }
+                    }
                 }
             }
         }
