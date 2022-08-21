@@ -1,0 +1,32 @@
+get_ortho_monk_name = {
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+    desc = get_ortho_monk_name_desc
+	selection_tooltip = get_ortho_monk_name_tooltip
+
+    is_shown = {
+        culture = {
+            is_cnp_supported_culture = yes
+        }
+		NOT = {
+			has_character_flag = ortho_monk_name
+		}
+		is_male = yes
+        has_faith = faith:orthodox
+		OR = {
+			has_trait = devoted
+			has_council_position = councillor_court_chaplain
+			has_government = theocracy_government
+		}
+    }
+
+    effect = {
+        greek_orthodox_name_effect = yes
+    }
+
+    ai_will_do = {
+        base = 80
+    }
+
+    ai_goal = yes
+}
