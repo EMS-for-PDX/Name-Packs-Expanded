@@ -1,4 +1,6 @@
 ﻿l_english:
+Window_Persian_TT: "#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#TOOLTIP:GAME_CONCEPT,nickname #color_green [ROOT.Char.Custom('PerisanNick')]#!#!#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue [ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!"
+
 Window_Persian: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('PerisanNick')][ROOT.Char.Custom('CharacterPatCheckAfter')]#!"
 
 First_Name_Persian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"

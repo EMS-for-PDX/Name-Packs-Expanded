@@ -1,4 +1,6 @@
 ﻿l_english:
+Window_Armenian_TT: "#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#TOOLTIP:GAME_CONCEPT,surname #color_red [ROOT.Char.Custom('CharacterHouseCheckAfter')]#!#!"
+
 Window_Armenian: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]#!"
 
 First_Name_Armenian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
