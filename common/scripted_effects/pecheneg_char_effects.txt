@@ -54,3 +54,69 @@
 		dynasty_effect_ne = yes
 	}
 }
+1066_pecheneg_char_effect = {
+	character:pecheneg000001.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:pecheneg000001 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:pecheneg000002 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:pecheneg000003 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:pecheneg000004 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:pecheneg000005 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:pecheneg000006 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:20641 }
+		add_to_variable_list = { name = dynasty_independent target = character:pecheneg000001 }
+		add_to_variable_list = { name = dynasty_independent target = character:pecheneg000002 }
+		add_to_variable_list = { name = dynasty_independent target = character:pecheneg000003 }
+		add_to_variable_list = { name = dynasty_independent target = character:pecheneg000004 }
+		add_to_variable_list = { name = dynasty_independent target = character:pecheneg000005 }
+		add_to_variable_list = { name = dynasty_independent target = character:pecheneg000006 }
+    }
+	character:20638.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:20638 }
+    }
+	character:20635.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:20635 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:194386 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:194387 }
+    }
+	character:20637.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:20637 }
+    }
+	character:20642.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:20642 }
+    }
+	character:20642 = {
+		change_first_name = Qorqutay
+		dynasty_effect_ne = yes
+	}
+	character:20637 = {
+		dynasty_effect_ne = yes
+	}
+	character:194387 = {
+		change_first_name = Mengu
+	}
+	character:194386 = {
+		change_first_name = Korak
+	}
+	character:20635 = {
+		dynasty_effect_ne = yes
+	}
+	character:20638 = {
+		dynasty_effect_ne = yes
+	}
+	character:20641 = {
+		change_first_name = Tatush
+	}
+	character:pecheneg000006 = {
+		change_first_name = Bilter
+	}
+	character:pecheneg000005 = {
+		change_first_name = Tirak
+	}
+	character:pecheneg000002 = {
+		change_first_name = Metigay
+	}
+	character:pecheneg000001 = {
+		change_first_name = Kura
+		dynasty_effect_ne = yes
+	}
+}
