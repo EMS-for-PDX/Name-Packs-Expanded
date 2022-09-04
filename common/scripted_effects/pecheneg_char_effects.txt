@@ -1,0 +1,56 @@
+867_pecheneg_char_effect = {
+	character:302717.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:302717 }
+    }
+	character:188807.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbpecheneg001
+		}
+	}
+	character:188807.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbpecheneg001 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:188807 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:188808 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:180229 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:180230 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:180231 }
+    }
+	character:180243.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbpecheneg002
+		}
+	}
+	character:180243.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbpecheneg002 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:180243 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:188823 }
+    }
+	character:180241.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:180241 }
+    }
+	character.180241 = {
+		change_first_name = Kochumur
+		dynasty_effect_ne = yes
+	}
+	character.188823 = {
+		change_first_name = Kura
+	}
+	character.180231 = {
+		change_first_name = Bata
+	}
+	character.180230 = {
+		change_first_name = Tatush
+	}
+	character.188808 = {
+		change_first_name = Tatush
+	}
+	character.188807 = {
+		change_first_name = Tatush
+	}
+	character.302717 = {
+		change_first_name = Yashar
+		dynasty_effect_ne = yes
+	}
+}
