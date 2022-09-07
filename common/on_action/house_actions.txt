@@ -12,7 +12,6 @@ set_dynasty = {
 			save_temporary_scope_as = good_lad
 			OR = {
 				AND = {
-                    exists = dynasty
                     dynasty = {
                         any_in_list = {
                             variable = name_pack_support_dynasty
@@ -29,22 +28,7 @@ set_dynasty = {
 	}
 	effect = {
 		dynast = {
-			save_scope_as = good_lad
+			dynasty_effect_ne = yes
 		}
-		set_global_variable = {
-			name = temp_head
-			value = scope:good_lad
-		}
-		scope:good_lad.dynasty = {
-			set_dynasty_name = "[Localize(Concatenate(Concatenate(GetGlobalVariable('temp_head').Char.GetFirstNameNoTooltip, GetGlobalVariable('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
-		}
-		scope:good_lad.house = {
-			set_house_name = "[Localize(Concatenate(Concatenate(GetGlobalVariable('temp_head').Char.GetFirstNameNoTooltip, GetGlobalVariable('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
-			set_variable = {
-				name = name_founder
-				value = scope:good_lad
-			}
-		}
-		remove_global_variable = temp_head
 	}
 }
