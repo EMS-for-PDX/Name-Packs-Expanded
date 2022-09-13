@@ -1,6 +1,13 @@
 ﻿867_alan_char_effect = {
+	character:163118.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbalan006
+		}
+	}
 	character:163118.dynasty = { #Ovseti
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:163118 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbalan006 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:183223 } #Leon
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:183224 } #Saros
 	}
@@ -69,7 +76,14 @@
 	}
 }
 1066_alan_char_effect = {
+	character:20662.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbalan006
+		}
+	}
 	character:20662.dynasty = { #Oseti
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbalan006 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20662 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41592 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:9956 }
@@ -79,6 +93,21 @@
         add_to_variable_list = { name = dynasty_independent target = character:41592 }
         add_to_variable_list = { name = dynasty_tribal target = character:41592 }
 	}
+	character:20664.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbalan007
+		}
+	}
+	character:20664.dynasty = { #Alauni
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbalan007 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20664 }
+	}
+	character:20665.dynasty = { #Shona
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20665 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:194425 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:228064 }
+	}
 	character:9957.dynasty = { #Bagrationi
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:9957 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:9958 }
@@ -86,8 +115,29 @@
 	character:20666.dynasty = { #Senty
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20666 }
 	}
+	character:93040.dynasty = { #Alp
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20666 }
+	}
+	character:93040 = {
+		change_first_name = AEldar
+		dynasty_effect_ne = yes
+	}
+	character:228064 = {
+		change_first_name = Guaram
+	}
+	character:194425 = {
+		change_first_name = Burduxan
+	}
+	character:20665 = {
+		change_first_name = Berae
+		dynasty_effect_ne = yes
+	}
+	character:20664 = {
+		change_first_name = Borenae
+	}
 	character:20666 = {
 		change_first_name = David
+		dynasty_effect_ne = yes
 	}
 	character:9957 = {
 		change_first_name = Demetrios

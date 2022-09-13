@@ -115,11 +115,6 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159888 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159885 }
 	}
-	character:armenian.000083.dynasty = { #Armani
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:armenian.000083 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:163135 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:armenian.000084 }
-	}
 	character:159262.house = {
 		set_variable = {
 			name = name_founder
@@ -210,6 +205,18 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159252 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159254 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159257 }
+	}
+	character:163135.house = {
+		set_variable = {
+			name = name_founder
+			value = character:cnpdbarmenian007
+		}
+	}
+	character:163135.dynasty = { #Armani
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cnpdbarmenian007 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = title:d_cilicia.holder.father.father }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:163135 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = title:d_cilicia.holder }
 	}
 	character:159257 = {
 		change_first_name = Isaac
