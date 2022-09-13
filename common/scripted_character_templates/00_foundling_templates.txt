@@ -7,7 +7,12 @@ peasant_villager_foundling_character = {
 	faith = scope:county.faith
 	gender_female_chance = 50
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }

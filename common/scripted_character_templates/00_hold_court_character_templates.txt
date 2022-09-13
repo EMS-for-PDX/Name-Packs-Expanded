@@ -16,8 +16,13 @@ demanding_poet_character = {
 	martial = average_skill_level
 	random_traits = no
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -38,8 +43,13 @@ demanding_poet_lover_character = {
 	martial = average_skill_level
 	random_traits = no
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -61,8 +71,13 @@ demanding_poet_diplomacy_character = {
 	martial = 2
 	random_traits = no
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -84,8 +99,13 @@ demanding_poet_stewardship_character = {
 	martial = 2
 	random_traits = no
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -107,8 +127,13 @@ demanding_poet_martial_character = {
 	martial = 13
 	random_traits = no
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -130,8 +155,13 @@ demanding_poet_intrigue_character = {
 	martial = 2
 	random_traits = no
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 demanding_poet_learning_character = {
@@ -152,8 +182,13 @@ demanding_poet_learning_character = {
 	martial = 2
 	random_traits = no
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -170,8 +205,13 @@ suspicious_genealogist_character = {
 	martial = 3
 	random_traits = yes
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -190,7 +230,12 @@ alluring_suitor_character = {
 		max_template_decent_skill
 	}
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }

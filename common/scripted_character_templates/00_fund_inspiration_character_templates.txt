@@ -21,8 +21,13 @@
 		education_stewardship_3 = {}
 	}
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -32,8 +37,13 @@ adventurer_female_lover_character = {
 	random_traits = yes
 	trait = beauty_good_3
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -43,7 +53,12 @@ adventurer_male_lover_character = {
 	random_traits = yes
 	trait = beauty_good_3
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }

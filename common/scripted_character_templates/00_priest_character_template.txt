@@ -221,7 +221,12 @@ monk_character_template = {
 	}
 
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }

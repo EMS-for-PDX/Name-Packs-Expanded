@@ -14,8 +14,13 @@
 		max_template_decent_skill
 	}
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -31,8 +36,13 @@ servant_character = {
 		max_template_decent_skill
 	}
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -125,8 +135,13 @@ witchy_template = {
 		scholar = {}
 	}
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -154,8 +169,13 @@ merchant_template = {
 	diplomacy = { 5 13 }
 	learning = { 5 13 }
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -199,8 +219,13 @@ hunter_template = {
 		athletic = {}
 	}
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -231,8 +256,13 @@ detective_template = {
 	diplomacy = { 2 10 }
 	learning = { 5 10 }
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -264,8 +294,13 @@ generic_peasant_character = {
 		max_template_low_skill
 	}
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -297,8 +332,13 @@ generic_female_peasant_character = {
 		max_template_low_skill
 	}
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -319,8 +359,13 @@ challenger_peasant_character = {
 	diplomacy = { 2 6 }
 	learning = { 5 7 }
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -330,7 +375,12 @@ peasant_character = {
 	trait = peasant_leader
 	random_traits = yes
 	after_creation = {
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				is_cnp_supported_culture = yes
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
