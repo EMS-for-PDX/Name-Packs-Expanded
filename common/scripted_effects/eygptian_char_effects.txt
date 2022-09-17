@@ -16,3 +16,125 @@
 		change_first_name = Shayban
 	}
 }
+1066_egyptian_char_effect = {
+	character:20766.dynasty = { #Khalid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20766 }
+	}
+	character:20836.dynasty = { #Hananids
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20836 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20761 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:93384 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20794 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:93359 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93359 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93384 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:20761 }
+	}
+	character:20802.dynasty = { #Yazid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20802 }
+	}
+	character:20768.dynasty = { #Haydar
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20768 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:20768 }
+	}
+	character:20780.dynasty = { #Imrani
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20780 }
+	}
+	character:20785.dynasty = { #Umar
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20785 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:93352 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93352 }
+	}
+	character:20770.dynasty = { #Ishaq
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20770 }
+	}
+	character:20771.dynasty = { #Yahya
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20771 }
+	}
+	character:20799.dynasty = { #Abdal-Majid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20799 }
+	}
+	character:20790.dynasty = { #Yasir
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20790 }
+	}
+	character:20891.dynasty = { #Ilyas
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20891 }
+	}
+	character:20788.dynasty = { #Qasim
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20788 }
+	}
+	character:20786.dynasty = { #Zach
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20786 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:93366 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93366 }
+	}
+	character:20772.dynasty = { #FAKE
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20772 }
+	}
+	character:20772 = {
+		change_first_name = Najm
+		dynasty_effect_ne = yes
+	}
+	character:93366 = {
+		change_first_name = Mudar
+	}
+	character:20786 = {
+		change_first_name = Zakariya
+		dynasty_effect_ne = yes
+	}
+	character:20788 = {
+		dynasty_effect_ne = yes
+	}
+	character:20891 = {
+		dynasty_effect_ne = yes
+	}
+	character:20790 = {
+		change_first_name = Yasir
+		dynasty_effect_ne = yes
+	}
+	character:20799 = {
+		change_first_name = Abdal-Majid
+		dynasty_effect_ne = yes
+	}
+	character:20771 = {
+		dynasty_effect_ne = yes
+	}
+	character:20770 = {
+		dynasty_effect_ne = yes
+	}
+	character:93352 = {
+		change_first_name = Bashir
+	}
+	character:20785 = {
+		change_first_name = Umar
+		dynasty_effect_ne = yes
+	}
+	character:20780 = {
+		change_first_name = Muawiya
+	}
+	character:20768 = {
+		change_first_name = Haydar
+		dynasty_effect_ne = yes
+		add_character_flag = has_reg_laqab
+        add_to_global_variable_list = { name = Hisn_ad_Dawla target = this }
+	}
+	character:20802 = {
+		dynasty_effect_ne = yes
+	}
+	character:93359 = {
+		change_first_name = Maysar
+	}
+	character:20794 = {
+		change_first_name = Dawud
+	}
+	character:93384 = {
+		change_first_name = Abdal-Azim
+	}
+	character:20836 = {
+		dynasty_effect_ne = yes
+	}
+	character:20766 = {
+		change_first_name = Khalid
+		dynasty_effect_ne = yes
+	}
+}
