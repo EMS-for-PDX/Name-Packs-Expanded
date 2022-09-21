@@ -16,7 +16,7 @@
             has_religion = religion:islam_religion
             this.faith.religious_head = scope:actor
             culture = {
-                is_cnp_supported_culture = yes
+                is_npe_supported_culture = yes
             }
             NOT = {
                 has_character_flag = has_reg_laqab
@@ -47,7 +47,7 @@
             has_religion = religion:islam_religion
             this.faith.religious_head = scope:actor
             culture = {
-                is_cnp_supported_culture = yes
+                is_npe_supported_culture = yes
             }
             NOT = {
                 has_character_flag = has_reg_laqab
@@ -73,7 +73,7 @@
                 has_religion = religion:islam_religion
                 this.faith.religious_head = scope:actor
                 culture = {
-                    is_cnp_supported_culture = yes
+                    is_npe_supported_culture = yes
                 }
             }
         }
@@ -93,7 +93,7 @@
                 has_religion = religion:islam_religion
                 this.faith.religious_head = scope:actor
                 culture = {
-                    is_cnp_supported_culture = yes
+                    is_npe_supported_culture = yes
                 }
             }
         }
@@ -105,7 +105,7 @@
             limit = { scope:actor = { is_ai = no } }
             scope:actor = {
                 trigger_event = {
-                    id = cnplaqab.004
+                    id = npelaqab.004
                     days = -1
                 }
             }
@@ -114,7 +114,7 @@
             limit = { scope:recipient = { is_ai = no } }
             scope:recipient = {
                 trigger_event = {
-                    id = cnplaqab.005
+                    id = npelaqab.005
                     days = -1
                 }
             }
@@ -122,7 +122,7 @@
         else = {
             scope:recipient = {
                 trigger_event = {
-                    id = cnplaqab.006
+                    id = npelaqab.006
                     days = -1
                 }
             }
@@ -171,7 +171,7 @@ assign_faith_laqab = {
         scope:recipient = {
             has_religion = religion:islam_religion
             culture = {
-                is_cnp_supported_culture = yes
+                is_npe_supported_culture = yes
             }
             top_liege = scope:actor
             NOT = {
@@ -198,7 +198,7 @@ assign_faith_laqab = {
         scope:recipient = {
             has_religion = religion:islam_religion
             culture = {
-                is_cnp_supported_culture = yes
+                is_npe_supported_culture = yes
             }
             top_liege = scope:actor
             NOT = {
@@ -219,7 +219,7 @@ assign_faith_laqab = {
             scope:recipient = {
                 has_religion = religion:islam_religion
                 culture = {
-                    is_cnp_supported_culture = yes
+                    is_npe_supported_culture = yes
                 }
                 top_liege = scope:actor
             }
@@ -240,7 +240,7 @@ assign_faith_laqab = {
             scope:recipient = {
                 has_religion = religion:islam_religion
                 culture = {
-                    is_cnp_supported_culture = yes
+                    is_npe_supported_culture = yes
                 }
                 top_liege = scope:actor
             }
@@ -253,7 +253,7 @@ assign_faith_laqab = {
             limit = { scope:actor = { is_ai = no } }
             scope:actor = {
                 trigger_event = {
-                    id = cnplaqab.007
+                    id = npelaqab.007
                     days = -1
                 }
             }
@@ -262,7 +262,7 @@ assign_faith_laqab = {
             limit = { scope:recipient = { is_ai = no } }
             scope:recipient = {
                 trigger_event = {
-                    id = cnplaqab.008
+                    id = npelaqab.008
                     days = -1
                 }
             }
@@ -270,7 +270,7 @@ assign_faith_laqab = {
         else = {
             scope:recipient = {
                 trigger_event = {
-                    id = cnplaqab.009
+                    id = npelaqab.009
                     days = -1
                 }
             }

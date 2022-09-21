@@ -70,7 +70,7 @@ post_migration_local_warlord_template = {
 	after_creation = {
 		if = {
 			limit = {
-				is_cnp_supported_culture = yes
+				is_npe_supported_culture = yes
 			}
 			name_gen_effect = yes
 			dynasty_effect_ne = yes
@@ -103,7 +103,7 @@ post_migration_minor_warlord_template = {
 	after_creation = {
 		if = {
 			limit = {
-				is_cnp_supported_culture = yes
+				is_npe_supported_culture = yes
 			}
 			name_gen_effect = yes
 			dynasty_effect_ne = yes

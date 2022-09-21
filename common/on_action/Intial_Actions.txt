@@ -57,7 +57,7 @@ random_yearly_everyone_pulse = {
 courtiers_action = {
 	trigger = {
 		culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		save_temporary_scope_as = to_be_checked
 		is_lowborn = yes
@@ -79,7 +79,7 @@ courtier_effect = {
 				save_temporary_scope_as = thecourt
 				is_lowborn = yes
 				culture = {
-					is_cnp_supported_culture = yes
+					is_npe_supported_culture = yes
 				}
 				OR = {
 					is_foreign_court_or_pool_guest = yes
@@ -99,7 +99,7 @@ courtier_effect = {
 				save_temporary_scope_as = thebaron
 				highest_held_title_tier = tier_barony
 				culture = {
-					is_cnp_supported_culture = yes
+					is_npe_supported_culture = yes
 				}
 				NOT = {
 					any_in_global_list = {

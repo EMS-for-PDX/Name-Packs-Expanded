@@ -6,7 +6,7 @@
 
     is_shown = {
         culture = {
-            is_cnp_supported_culture = yes
+            is_npe_supported_culture = yes
         }
 		NOT = {
 			has_character_flag = has_caliph_laqab
@@ -21,7 +21,7 @@
 
     effect = {
         trigger_event = {
-            id = cnplaqab.001
+            id = npelaqab.001
             days = -1
         }
         custom_description = {
@@ -43,7 +43,7 @@ get_regnal_laqab = {
 
     is_shown = {
         culture = {
-            is_cnp_supported_culture = yes
+            is_npe_supported_culture = yes
         }
         is_independent_ruler = yes
         current_year >= 1050
@@ -80,7 +80,7 @@ get_regnal_laqab = {
 
     effect = {
         trigger_event = {
-            id = cnplaqab.002
+            id = npelaqab.002
             days = -1
         }
         custom_description = {
@@ -102,7 +102,7 @@ get_ducal_laqab = {
 
     is_shown = {
         culture = {
-            is_cnp_supported_culture = yes
+            is_npe_supported_culture = yes
         }
         current_year >= 1050
         is_independent_ruler = yes
@@ -143,7 +143,7 @@ get_ducal_laqab = {
 
     effect = {
         trigger_event = {
-            id = cnplaqab.003
+            id = npelaqab.003
             days = -1
         }
         custom_description = {

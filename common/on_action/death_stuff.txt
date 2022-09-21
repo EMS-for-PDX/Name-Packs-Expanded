@@ -15,7 +15,7 @@
 on_monk_death = {
     trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
         exists = global_var:KoH_is_loaded
 		has_government = monastic_government
@@ -28,7 +28,7 @@ on_monk_death = {
 on_merc_death = {
     trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		has_government = mercenary_government
 		exists = dynasty
@@ -40,7 +40,7 @@ on_merc_death = {
 on_repub_death = {
     trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		has_government = republic_government
 		exists = dynasty
@@ -52,7 +52,7 @@ on_repub_death = {
 on_hof_death = {
     trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		root.faith.religious_head = root
 	}
@@ -63,7 +63,7 @@ on_hof_death = {
 on_cardinal_death = {
     trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		exists = global_var:KoH_is_loaded
         has_trait = koh_cardinal
@@ -75,7 +75,7 @@ on_cardinal_death = {
 on_independent_death = {
     trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		is_independent_ruler = yes
 		exists = dynasty
@@ -100,7 +100,7 @@ on_name_pack_death = {
 on_theo_death = {
 	trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		has_government = theocracy_government
 		exists = dynasty
@@ -112,7 +112,7 @@ on_theo_death = {
 on_HO_death = {
 	trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		OR = {
 			has_government = holy_order_government
@@ -130,7 +130,7 @@ on_HO_death = {
 on_feudalclan_death = {
 	trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		OR = {
 			has_government = feudal_government
@@ -145,7 +145,7 @@ on_feudalclan_death = {
 on_tribe_death = {
 	trigger = {
         culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 		has_government = tribal_government
 		exists = dynasty

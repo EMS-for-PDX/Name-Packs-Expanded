@@ -1,10 +1,10 @@
-﻿namespace = cnplaqab
+﻿namespace = npelaqab
 
-cnplaqab.001 = { #Caliph Decision
+npelaqab.001 = { #Caliph Decision
     type = character_event
 	theme = faith
-	title = cnplaqab.001.t
-	desc = cnplaqab.001.desc
+	title = npelaqab.001.t
+	desc = npelaqab.001.desc
 	right_portrait = root
 	immediate = {
 		hidden_effect = {
@@ -12,17 +12,17 @@ cnplaqab.001 = { #Caliph Decision
 		}
 	}
 	option = {
-		name = cnplaqab.001.a
-		custom_tooltip = cnplaqab.001.a.tt
+		name = npelaqab.001.a
+		custom_tooltip = npelaqab.001.a.tt
 		remove_variable = laqab_temp
 		trigger_event = {
-			id = cnplaqab.001
+			id = npelaqab.001
 			days = -1
 		}
 	}
 	option = {
-		name = cnplaqab.001.b
-		custom_tooltip = cnplaqab.001.b.tt
+		name = npelaqab.001.b
+		custom_tooltip = npelaqab.001.b.tt
 		set_laqab_effect = yes
 		if = {
 			limit = {
@@ -37,11 +37,11 @@ cnplaqab.001 = { #Caliph Decision
 	}
 }
 
-cnplaqab.002 = { #Regnal Decision
+npelaqab.002 = { #Regnal Decision
     type = character_event
 	theme = faith
-	title = cnplaqab.002.t
-	desc = cnplaqab.002.desc
+	title = npelaqab.002.t
+	desc = npelaqab.002.desc
 	right_portrait = root
 
 	immediate = {
@@ -51,28 +51,28 @@ cnplaqab.002 = { #Regnal Decision
 	}
 	
 	option = {
-		name = cnplaqab.002.a
-		custom_tooltip = cnplaqab.002.a.tt
+		name = npelaqab.002.a
+		custom_tooltip = npelaqab.002.a.tt
 		remove_variable = laqab_temp
 		trigger_event = {
-			id = cnplaqab.002
+			id = npelaqab.002
 			days = -1
 		}
 	}
 
 	option = {
-		name = cnplaqab.001.b
-		custom_tooltip = cnplaqab.001.b.tt
+		name = npelaqab.001.b
+		custom_tooltip = npelaqab.001.b.tt
 		set_laqab_effect = yes
 		pre_laqab_effect = yes
 		add_character_flag = has_regnal_laqab
 	}
 }
-cnplaqab.003 = { #Ducal Regnal Decision
+npelaqab.003 = { #Ducal Regnal Decision
     type = character_event
 	theme = faith
-	title = cnplaqab.003.t
-	desc = cnplaqab.003.desc
+	title = npelaqab.003.t
+	desc = npelaqab.003.desc
 	right_portrait = root
 
 	immediate = {
@@ -90,28 +90,28 @@ cnplaqab.003 = { #Ducal Regnal Decision
 	}
 	
 	option = {
-		name = cnplaqab.003.a
-		custom_tooltip = cnplaqab.003.a.tt
+		name = npelaqab.003.a
+		custom_tooltip = npelaqab.003.a.tt
 		remove_variable = laqab_temp
 		trigger_event = {
-			id = cnplaqab.003
+			id = npelaqab.003
 			days = -1
 		}
 	}
 
 	option = {
-		name = cnplaqab.003.b
-		custom_tooltip = cnplaqab.003.b.tt
+		name = npelaqab.003.b
+		custom_tooltip = npelaqab.003.b.tt
 		set_laqab_effect = yes
 		regular_laqab_effect = yes
 		add_character_flag = has_reg_laqab
 	}
 }
-cnplaqab.004 = { #Give Other Caliph
+npelaqab.004 = { #Give Other Caliph
     type = character_event
 	theme = faith
-	title = cnplaqab.004.t
-	desc = cnplaqab.004.desc
+	title = npelaqab.004.t
+	desc = npelaqab.004.desc
 	left_portrait = root
 	right_portrait = scope:recipient
 
@@ -132,35 +132,35 @@ cnplaqab.004 = { #Give Other Caliph
 	}
 
 	option = {
-		name = cnplaqab.004.a
-		custom_tooltip = cnplaqab.004.a.tt
+		name = npelaqab.004.a
+		custom_tooltip = npelaqab.004.a.tt
 		scope:recipient = {
 			remove_variable = laqab_temp
 		}
 		trigger_event = {
-			id = cnplaqab.004
+			id = npelaqab.004
 			days = -1
 		}
 	}
 	option = {
-		name = cnplaqab.004.b
-		custom_tooltip = cnplaqab.004.b.tt
+		name = npelaqab.004.b
+		custom_tooltip = npelaqab.004.b.tt
 		scope:recipient = {
 			set_laqab_effect = yes
 			regular_laqab_effect = yes
 			add_character_flag = has_reg_laqab
 			trigger_event = {
-				id = cnplaqab.010
+				id = npelaqab.010
 				days = -1
 			}
 		}
 	}
 }
-cnplaqab.005 = { #Give You Caliph
+npelaqab.005 = { #Give You Caliph
     type = character_event
 	theme = faith
-	title = cnplaqab.005.t
-	desc = cnplaqab.005.desc
+	title = npelaqab.005.t
+	desc = npelaqab.005.desc
 	left_portrait = scope:actor
 	right_portrait = root
 
@@ -177,23 +177,23 @@ cnplaqab.005 = { #Give You Caliph
 	}
 
 	option = {
-		name = cnplaqab.005.a
-		custom_tooltip = cnplaqab.005.a.tt
+		name = npelaqab.005.a
+		custom_tooltip = npelaqab.005.a.tt
 		remove_variable = laqab_temp
 		trigger_event = {
-			id = cnplaqab.005
+			id = npelaqab.005
 			days = -1
 		}
 	}
 	option = {
-		name = cnplaqab.005.b
-		custom_tooltip = cnplaqab.005.b.tt
+		name = npelaqab.005.b
+		custom_tooltip = npelaqab.005.b.tt
 		set_laqab_effect = yes
 		regular_laqab_effect = yes
 		add_character_flag = has_reg_laqab
 	}
 }
-cnplaqab.006 = { #Hidden Event Caliph
+npelaqab.006 = { #Hidden Event Caliph
 	type = character_event
 	hidden = yes
 	immediate = {
@@ -211,11 +211,11 @@ cnplaqab.006 = { #Hidden Event Caliph
 		add_character_flag = has_reg_laqab
 	}
 }
-cnplaqab.007 = { #Give Other Regnal
+npelaqab.007 = { #Give Other Regnal
     type = character_event
 	theme = faith
-	title = cnplaqab.007.t
-	desc = cnplaqab.007.desc
+	title = npelaqab.007.t
+	desc = npelaqab.007.desc
 	left_portrait = root
 	right_portrait = scope:recipient
 
@@ -234,36 +234,36 @@ cnplaqab.007 = { #Give Other Regnal
 	}
 
 	option = {
-		name = cnplaqab.007.a
-		custom_tooltip = cnplaqab.007.a.tt
+		name = npelaqab.007.a
+		custom_tooltip = npelaqab.007.a.tt
 		scope:recipient = {
 			remove_variable = laqab_temp
 		}
 		trigger_event = {
-			id = cnplaqab.007
+			id = npelaqab.007
 			days = -1
 		}
 	}
 	option = {
-		name = cnplaqab.007.b
-		custom_tooltip = cnplaqab.007.b.tt
+		name = npelaqab.007.b
+		custom_tooltip = npelaqab.007.b.tt
 		add_character_flag = has_reg_laqab
 		scope:recipient = {
 			set_laqab_effect = yes
 			regular_laqab_effect = yes
 			add_character_flag = has_reg_laqab
 			trigger_event = {
-				id = cnplaqab.011
+				id = npelaqab.011
 				days = -1
 			}
 		}
 	}
 }
-cnplaqab.008 = { #Give You Regnal
+npelaqab.008 = { #Give You Regnal
     type = character_event
 	theme = faith
-	title = cnplaqab.008.t
-	desc = cnplaqab.008.desc
+	title = npelaqab.008.t
+	desc = npelaqab.008.desc
 	left_portrait = scope:actor
 	right_portrait = root
 
@@ -280,23 +280,23 @@ cnplaqab.008 = { #Give You Regnal
 	}
 
 	option = {
-		name = cnplaqab.008.a
-		custom_tooltip = cnplaqab.008.a.tt
+		name = npelaqab.008.a
+		custom_tooltip = npelaqab.008.a.tt
 		remove_variable = laqab_temp
 		trigger_event = {
-			id = cnplaqab.008
+			id = npelaqab.008
 			days = -1
 		}
 	}
 	option = {
-		name = cnplaqab.008.b
-		custom_tooltip = cnplaqab.008.b.tt
+		name = npelaqab.008.b
+		custom_tooltip = npelaqab.008.b.tt
 		set_laqab_effect = yes
 		regular_laqab_effect = yes
 		add_character_flag = has_reg_laqab
 	}
 }
-cnplaqab.009 = { #Hidden Event Regnal
+npelaqab.009 = { #Hidden Event Regnal
 	type = character_event
 	hidden = yes
 	immediate = {
@@ -314,29 +314,29 @@ cnplaqab.009 = { #Hidden Event Regnal
 		add_character_flag = has_reg_laqab
 	}
 }
-cnplaqab.010 = { #Recieve Caliph
+npelaqab.010 = { #Recieve Caliph
     type = character_event
 	theme = faith
-	title = cnplaqab.005.t
-	desc = cnplaqab.005.desc
+	title = npelaqab.005.t
+	desc = npelaqab.005.desc
 	left_portrait = scope:actor
 	right_portrait = root
 
 	option = {
-		name = cnplaqab.005.b
-		custom_tooltip = cnplaqab.005.b.tt
+		name = npelaqab.005.b
+		custom_tooltip = npelaqab.005.b.tt
 	}
 }
-cnplaqab.011 = { #Recieve Regnal
+npelaqab.011 = { #Recieve Regnal
     type = character_event
 	theme = faith
-	title = cnplaqab.008.t
-	desc = cnplaqab.008.desc
+	title = npelaqab.008.t
+	desc = npelaqab.008.desc
 	left_portrait = scope:actor
 	right_portrait = root
 
 	option = {
-		name = cnplaqab.008.b
-		custom_tooltip = cnplaqab.008.b.tt
+		name = npelaqab.008.b
+		custom_tooltip = npelaqab.008.b.tt
 	}
 }

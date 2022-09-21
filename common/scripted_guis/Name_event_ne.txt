@@ -207,7 +207,7 @@ CTP_pack_support = {
 	scope = character
 	is_shown = {
 		culture = {
-			is_cnp_supported_culture = yes
+			is_npe_supported_culture = yes
 		}
 	}
 }
@@ -215,7 +215,7 @@ CTP_no_pack_support = {
 	scope = character
 	is_shown = {
 		culture = {
-			is_cnp_supported_culture = no
+			is_npe_supported_culture = no
 		}
 	}
 }
@@ -376,7 +376,7 @@ CTP_faith_name_support = {
 	is_shown = {
 		always = no
 		#culture = {
-		#	is_cnp_supported_culture = yes
+		#	is_npe_supported_culture = yes
 		#	NOT = {
 		#		has_name_list = name_list_persian
 		#		has_name_list = name_list_kurdish
@@ -397,7 +397,7 @@ CTP_faith_name_no_support = {
 	is_shown = {
 		NOT = {
 			culture = {
-				is_cnp_supported_culture = yes
+				is_npe_supported_culture = yes
 			}
 			#OR = {
 			#	has_religion = religion:islam_religion

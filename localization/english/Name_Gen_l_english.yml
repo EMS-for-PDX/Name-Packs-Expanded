@@ -21,9 +21,9 @@ Nonsupported_Patronym_Before: "[Localize(Concatenate(Concatenate('PatPrefix', RO
 Tier_Gen_Default: "[ROOT.Char.GetTitleTierName]"
 Tier_Gen_Default_After: " [ROOT.Char.GetTitleTierName]"
 Tier_Gen_Default_Before: "[ROOT.Char.GetTitleTierName] "
-Tier_Gen_CNP: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')))]"
-Tier_Gen_CNP_After: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_after'))]"
-Tier_Gen_CNP_Before: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_before'))]"
+Tier_Gen_NPE: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')))]"
+Tier_Gen_NPE_After: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_after'))]"
+Tier_Gen_NPE_Before: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_before'))]"
 
 #House stuff
 Supported_House: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, ROOT.Char.Custom('CharacterCulture')), '_house'), ROOT.Char.Custom('CharacterGender')))]"
