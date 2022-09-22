@@ -49,6 +49,23 @@ on_1066_start = {
 		1066_egyptian_char_effect = yes
 	}
 }
+eldest_son_fix = {
+	effect = {
+		every_living_character = {
+			limit = {
+				has_religion = religion:islam_religion
+				culture = {
+					is_npe_supported_culture = yes
+				}
+				any_child = {
+					is_male = yes
+					exists = this
+				}
+			}
+			add_character_flag = had_eldest_son
+		}
+	}
+}
 random_yearly_everyone_pulse = {
 	on_actions = {
 		courtiers_action
