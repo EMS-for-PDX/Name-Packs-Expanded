@@ -1,6 +1,7 @@
-version="alpha"
+version="1"
 tags={
 	"Culture"
+	"Historical"
 }
-name="Name Packs Expanded"
-supported_version="1.7.1"
+name="Name Pack Expanded"
+supported_version="1.7.2"
