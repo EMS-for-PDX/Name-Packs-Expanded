@@ -49,7 +49,9 @@ soldier_friend_character = {
 	after_creation = {
 		if = {
 			limit = {
-				is_npe_supported_culture = yes
+				culture = {
+					is_npe_supported_culture = yes
+				}
 			}
 			name_gen_effect = yes
 			dynasty_effect_ne = yes
@@ -104,8 +106,15 @@ new_commander_character = {
 			chance = 25
 			give_random_commander_trait_effect = yes
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -193,8 +202,15 @@ new_warrior_character = {
 			chance = 25
 			give_random_commander_trait_effect = yes
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -249,8 +265,15 @@ new_siege_engineer = {
 			chance = 25
 			give_random_commander_trait_effect = yes
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -316,7 +339,9 @@ new_berserker_character = {
 	after_creation = {
 		if = {
 			limit = {
-				is_npe_supported_culture = yes
+				culture = {
+					is_npe_supported_culture = yes
+				}
 			}
 			name_gen_effect = yes
 			dynasty_effect_ne = yes

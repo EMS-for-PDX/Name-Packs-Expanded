@@ -42,8 +42,15 @@
 			chance = 33
 			add_trait = scarred
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -91,8 +98,15 @@ forest_commander_character = {
 
 	after_creation = {
 		add_trait = forest_fighter
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -180,8 +194,15 @@ desert_commander_character = {
 
 	after_creation = {
 		add_trait = desert_warrior
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -221,8 +242,15 @@ hill_commander_character = {
 
 	after_creation = {
 		add_trait = rough_terrain_expert
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -270,8 +298,15 @@ jungle_commander_character = {
 
 	after_creation = {
 		add_trait = jungle_stalker
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -316,7 +351,14 @@ open_commander_character = {
 
 	after_creation = {
 		add_trait = open_terrain_expert
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }

@@ -14,7 +14,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -39,7 +39,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -64,7 +64,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -90,7 +90,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -117,7 +117,7 @@
                             has_government = tribal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     OR = {
                                         any_in_list = {
                                             variable = dynasty_feudalclan
@@ -145,7 +145,7 @@
                             has_government = tribal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     OR = {
                                         any_in_list = {
                                             variable = dynasty_feudalclan
@@ -180,7 +180,7 @@
             highest_held_title_tier = tier_kingdom
             OR = {
                 is_independent_ruler = yes
-                dynasty = {
+                this.dynasty = {
                     any_in_list = {
                         variable = dynasty_independent
                         this = root
@@ -197,7 +197,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -218,7 +218,7 @@
                     highest_held_title_tier = tier_kingdom
                     OR = {
                         is_independent_ruler = yes
-                        dynasty = {
+                        this.dynasty = {
                             any_in_list = {
                                 variable = dynasty_independent
                                 this = root
@@ -231,7 +231,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -252,7 +252,7 @@
                     highest_held_title_tier = tier_kingdom
                     OR = {
                         is_independent_ruler = yes
-                        dynasty = {
+                        this.dynasty = {
                             any_in_list = {
                                 variable = dynasty_independent
                                 this = scope:the_spouse
@@ -265,7 +265,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -291,7 +291,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -312,7 +312,7 @@
                         highest_held_title_tier = tier_kingdom
                         OR = {
                             is_independent_ruler = yes
-                            dynasty = {
+                            this.dynasty = {
                                 any_in_list = {
                                     variable = dynasty_independent
                                     this = root.father
@@ -325,7 +325,7 @@
                             has_government = tribal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     OR = {
                                         any_in_list = {
                                             variable = dynasty_feudalclan
@@ -347,7 +347,7 @@
                         highest_held_title_tier = tier_kingdom
                         OR = {
                             is_independent_ruler = yes
-                            dynasty = {
+                            this.dynasty = {
                                 any_in_list = {
                                     variable = dynasty_independent
                                     this = root.mother
@@ -360,7 +360,7 @@
                             has_government = tribal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     OR = {
                                         any_in_list = {
                                             variable = dynasty_feudalclan
@@ -393,7 +393,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -418,7 +418,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -443,7 +443,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -469,7 +469,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -494,7 +494,7 @@
                             has_government = tribal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     OR = {
                                         any_in_list = {
                                             variable = dynasty_feudalclan
@@ -520,7 +520,7 @@
                             has_government = tribal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     OR = {
                                         any_in_list = {
                                             variable = dynasty_feudalclan
@@ -557,7 +557,7 @@
                 is_independent_ruler = yes
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         any_in_list = {
                             variable = dynasty_independent
                             this = root
@@ -575,7 +575,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -596,7 +596,7 @@
                     highest_held_title_tier = tier_duchy
                     OR = {
                         is_independent_ruler = yes
-                        dynasty = {
+                        this.dynasty = {
                             any_in_list = {
                                 variable = dynasty_independent
                                 this = root
@@ -609,7 +609,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -630,7 +630,7 @@
                     highest_held_title_tier = tier_duchy
                     OR = {
                         is_independent_ruler = yes
-                        dynasty = {
+                        this.dynasty = {
                             any_in_list = {
                                 variable = dynasty_independent
                                 this = scope:the_spouse
@@ -643,7 +643,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -675,7 +675,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -700,7 +700,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -725,7 +725,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -759,7 +759,7 @@
             highest_held_title_tier = tier_county
             OR = {
                 is_independent_ruler = yes
-                dynasty = {
+                this.dynasty = {
                     any_in_list = {
                         variable = dynasty_independent
                         this = root
@@ -776,7 +776,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -797,7 +797,7 @@
                     highest_held_title_tier = tier_county
                     OR = {
                         is_independent_ruler = yes
-                        dynasty = {
+                        this.dynasty = {
                             any_in_list = {
                                 variable = dynasty_independent
                                 this = root
@@ -810,7 +810,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -831,7 +831,7 @@
                     highest_held_title_tier = tier_county
                     OR = {
                         is_independent_ruler = yes
-                        dynasty = {
+                        this.dynasty = {
                             any_in_list = {
                                 variable = dynasty_independent
                                 this = scope:the_spouse
@@ -844,7 +844,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -876,7 +876,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -901,7 +901,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -926,7 +926,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -968,7 +968,7 @@
                 has_government = holy_order_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         OR = {
                             any_in_list = {
                                 variable = dynasty_theocrats
@@ -993,7 +993,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -1018,7 +1018,7 @@
                         has_government = tribal_government
                         AND = {
                             exists = dynasty
-                            dynasty = {
+                            this.dynasty = {
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
@@ -1161,24 +1161,24 @@ CharacterGov = {
         }
         localization_key = _hof
     }
-    text = {
-        trigger = {
-            exists = global_var:KoH_is_loaded
-            has_trait = koh_cardinal
-            any_in_global_list = {
-                variable = global_list_dead_cardinals
-                this = root
-            }
-        }
-        localization_key = _cardinal
-    }
+    #text = {
+    #    trigger = {
+    #        exists = global_var:KoH_is_loaded
+    #        has_trait = koh_cardinal
+    #        any_in_global_list = {
+    #            variable = global_list_dead_cardinals
+    #            this = root
+    #        }
+    #    }
+     #   localization_key = _cardinal
+    #}
     text = {
         trigger = {
             OR = {
                 has_government = theocracy_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         any_in_list = {
                             variable = dynasty_theocrats
                             this = root
@@ -1193,13 +1193,13 @@ CharacterGov = {
         trigger = {
             OR = {
                 has_government = holy_order_government
-                AND = {
-                    exists = global_var:KoH_is_loaded
-                    has_government = holy_order_county_government
-                }
+                #AND = {
+                #    exists = global_var:KoH_is_loaded
+                #    has_government = holy_order_county_government
+                #}
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         any_in_list = {
                             variable = dynasty_HO
                             this = root
@@ -1227,7 +1227,7 @@ CharacterGov = {
                 }
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         any_in_list = {
                             variable = dynasty_byzantine
                             this = root
@@ -1259,7 +1259,7 @@ CharacterGov = {
                             }
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_byzantine
                                         this = scope:the_spouse
@@ -1287,7 +1287,7 @@ CharacterGov = {
                             }
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_byzantine
                                         this = root.father
@@ -1315,7 +1315,7 @@ CharacterGov = {
                             }
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_byzantine
                                         this = root.mother
@@ -1347,7 +1347,7 @@ CharacterGov = {
                             has_government = feudal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
                                         this = scope:the_spouse
@@ -1364,7 +1364,7 @@ CharacterGov = {
                             has_government = feudal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
                                         this = root.father
@@ -1381,7 +1381,7 @@ CharacterGov = {
                             has_government = feudal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
                                         this = root.mother
@@ -1413,7 +1413,7 @@ CharacterGov = {
                             has_government = clan_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
                                         this = scope:the_spouse
@@ -1430,7 +1430,7 @@ CharacterGov = {
                             has_government = clan_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
                                         this = root.father
@@ -1447,7 +1447,7 @@ CharacterGov = {
                             has_government = clan_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
                                         this = root.mother
@@ -1479,7 +1479,7 @@ CharacterGov = {
                             has_government = tribal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_tribal
                                         this = scope:the_spouse
@@ -1496,7 +1496,7 @@ CharacterGov = {
                             has_government = tribal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_tribal
                                         this = root.father
@@ -1513,7 +1513,7 @@ CharacterGov = {
                             has_government = tribal_government
                             AND = {
                                 exists = dynasty
-                                dynasty = {
+                                this.dynasty = {
                                     any_in_list = {
                                         variable = dynasty_tribal
                                         this = root.mother
@@ -1533,7 +1533,7 @@ CharacterGov = {
                 has_government = republic_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         any_in_list = {
                             variable = dynasty_repub
                             this = root.mother
@@ -1550,7 +1550,7 @@ CharacterGov = {
                 has_government = mercenary_government
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         any_in_list = {
                             variable = dynasty_merc
                             this = root.mother
@@ -1564,13 +1564,13 @@ CharacterGov = {
     text = {
         trigger = {
             OR = {
-                AND = {
-                    exists = global_var:KoH_is_loaded
-                    has_government = monastic_government
-                }
+                #AND = {
+                #    exists = global_var:KoH_is_loaded
+                #    has_government = monastic_government
+                #}
                 AND = {
                     exists = dynasty
-                    dynasty = {
+                    this.dynasty = {
                         any_in_list = {
                             variable = dynasty_abbot
                             this = root.mother
@@ -1645,10 +1645,16 @@ CharacterCulture = {
                         has_cultural_pillar = language_scythian
                         has_name_list = name_list_khwarezmian
                     }
-                    AND = {
-                        exists = global_var:CE_is_loaded
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
                         has_cultural_pillar = language_khwarezmian
                     }
+                    #AND = {
+                    #    exists = global_var:CE_is_loaded
+                    #    has_cultural_pillar = language_khwarezmian
+                    #}
                 }
             
 			}

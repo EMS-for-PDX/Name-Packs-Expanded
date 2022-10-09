@@ -151,8 +151,15 @@ pool_repopulate_prowess = {
 				add_trait = jungle_stalker
 			}
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -206,8 +213,15 @@ pool_repopulate_diplomacy = {
 				}
 			}
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -342,8 +356,15 @@ pool_repopulate_martial = {
 				add_trait = jungle_stalker
 			}
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -392,8 +413,15 @@ pool_repopulate_stewardship = {
 				}
 			}
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -446,8 +474,15 @@ pool_repopulate_intrigue = {
 				}
 			}
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -518,8 +553,15 @@ pool_repopulate_learning = {
 				}
 			}
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -640,8 +682,15 @@ pool_repopulate_spouse = {
 				}
 			}
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }
 
@@ -1359,7 +1408,14 @@ pool_repopulate_local_flavor = {
 				}
 			}
 		}
-		name_gen_effect = yes
-		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 	}
 }

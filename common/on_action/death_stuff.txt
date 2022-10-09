@@ -5,26 +5,26 @@
 		on_feudalclan_death
 		on_tribe_death
         on_independent_death
-        on_cardinal_death
+        #on_cardinal_death
         on_hof_death
         on_repub_death
         on_merc_death
-        on_monk_death
+        #on_monk_death
 	}
 }
-on_monk_death = {
-    trigger = {
-        culture = {
-			is_npe_supported_culture = yes
-		}
-        exists = global_var:KoH_is_loaded
-		has_government = monastic_government
-		exists = dynasty
-	}
-	effect = {
-		dynasty = { add_to_variable_list = { name = dynasty_abbot target = root} }
-	}
-}
+#on_monk_death = {
+#    trigger = {
+#       culture = {
+#			is_npe_supported_culture = yes
+#		}
+#       exists = global_var:KoH_is_loaded
+#		has_government = monastic_government
+#		exists = dynasty
+#	}
+#	effect = {
+#		dynasty = { add_to_variable_list = { name = dynasty_abbot target = root} }
+#	}
+#}
 on_merc_death = {
     trigger = {
         culture = {
@@ -60,18 +60,18 @@ on_hof_death = {
 		add_to_global_variable_list = { name = global_list_dead_hofs target = root }
 	}
 }
-on_cardinal_death = {
-    trigger = {
-        culture = {
-			is_npe_supported_culture = yes
-		}
-		exists = global_var:KoH_is_loaded
-        has_trait = koh_cardinal
-	}
-	effect = {
-		add_to_global_variable_list = { name = global_list_dead_cardinals target = root }
-	}
-}
+#on_cardinal_death = {
+#    trigger = {
+#        culture = {
+#			is_npe_supported_culture = yes
+#		}
+#		exists = global_var:KoH_is_loaded
+#        has_trait = koh_cardinal
+#	}
+#	effect = {
+#		add_to_global_variable_list = { name = global_list_dead_cardinals target = root }
+#	}
+#}
 on_independent_death = {
     trigger = {
         culture = {

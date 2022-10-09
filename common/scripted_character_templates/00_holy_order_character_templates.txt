@@ -116,7 +116,9 @@
 	after_creation = {
 		if = {
 			limit = {
-				is_npe_supported_culture = yes
+				culture = {
+					is_npe_supported_culture = yes
+				}
 			}
 			name_gen_effect = yes
 			dynasty_effect_ne = yes
@@ -319,7 +321,9 @@ religious_leader_character = {
 	after_creation = {
 		if = {
 			limit = {
-				is_npe_supported_culture = yes
+				culture = {
+					is_npe_supported_culture = yes
+				}
 			}
 			name_gen_effect = yes
 			dynasty_effect_ne = yes
