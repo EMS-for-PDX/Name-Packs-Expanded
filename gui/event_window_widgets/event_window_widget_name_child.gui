@@ -20,7 +20,7 @@ vbox = {
 		    name = "no_name_needed"
 		    text = "[EventWindowWidgetNameCharacter.GetCurrentName]"
 			ontextedited = "[EventWindowWidgetNameCharacter.OnEditCurrentName]"
-			ontextedited = "[GetScriptedGui('CTP_text_edit').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			ontextedited = "[GetScriptedGui('NPE_text_edit').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 			
 			
 			state = {
@@ -39,7 +39,7 @@ vbox = {
 				next = "name_refresh"
 				duration = 0.05
 				trigger_on_create = no
-				on_start = "[GetScriptedGui('CTP_culture_names').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+				on_start = "[GetScriptedGui('NPE_culture_names').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 				on_finish = "[EventWindowWidgetNameCharacter.SetCurrentName( EventWindowWidgetNameCharacter.GetCharacter.GetFirstNameNoTooltip)]"
 			}
 
@@ -48,7 +48,7 @@ vbox = {
 				next = "name_refresh"
 				duration = 0.05
 				trigger_on_create = no
-				on_start = "[GetScriptedGui('CTP_faith_names').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+				on_start = "[GetScriptedGui('NPE_faith_names').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 				on_finish = "[EventWindowWidgetNameCharacter.SetCurrentName( EventWindowWidgetNameCharacter.GetCharacter.GetFirstNameNoTooltip)]"
 			}
 
@@ -57,7 +57,7 @@ vbox = {
 				next = "name_refresh"
 				duration = 0.05
 				trigger_on_create = no
-				on_start = "[GetScriptedGui('CTP_random_ancestor').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+				on_start = "[GetScriptedGui('NPE_random_ancestor').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 				on_finish = "[EventWindowWidgetNameCharacter.SetCurrentName( EventWindowWidgetNameCharacter.GetCharacter.GetFirstNameNoTooltip)]"
 			}
 
@@ -92,51 +92,51 @@ vbox = {
 			visible = "[And( Not( Character.IsFemale ), Character.GetFather.IsValid )]"
 			text = "event_window_widget_name_child_after_father"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetFather.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('CTP_name_dad').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			onclick = "[GetScriptedGui('NPE_name_dad').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	
 		event_widget_name_child_option = {
 			visible = "[And( Character.IsFemale, Character.GetMother.IsValid )]"
 			text = "event_window_widget_name_child_after_mother"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetMother.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('CTP_name_mom').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			onclick = "[GetScriptedGui('NPE_name_mom').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	
 		event_widget_name_child_option = {
 			visible = "[And( Not( Character.IsFemale ), Character.GetFather.GetFather.IsValid )]"
 			text = "event_window_widget_name_child_after_fathers_father"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetFather.GetFather.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('CTP_name_granddad1').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			onclick = "[GetScriptedGui('NPE_name_granddad1').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	
 		event_widget_name_child_option = {
 			visible = "[And( Character.IsFemale, Character.GetFather.GetMother.IsValid )]"
 			text = "event_window_widget_name_child_after_fathers_mother"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetFather.GetMother.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('CTP_name_grandmom1').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			onclick = "[GetScriptedGui('NPE_name_grandmom1').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	
 		event_widget_name_child_option = {
 			visible = "[And( Not( Character.IsFemale ), Character.GetMother.GetFather.IsValid )]"
 			text = "event_window_widget_name_child_after_mothers_father"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetMother.GetFather.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('CTP_name_granddad2').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			onclick = "[GetScriptedGui('NPE_name_granddad2').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 
 		event_widget_name_child_option = {
 			visible = "[And( Character.IsFemale, Character.GetMother.GetMother.IsValid )]"
 			text = "event_window_widget_name_child_after_mothers_mother"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetMother.GetMother.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('CTP_name_grandmom2').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			onclick = "[GetScriptedGui('NPE_name_grandmom2').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	}
 
 	hbox = {
 		
 		event_button_round = {
-			visible = "[GetScriptedGui('CTP_pack_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
-			onclick = "[GetScriptedGui('CTP_random_ancestor').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
-			onclick = "[EventWindowWidgetNameCharacter.SetCurrentName( GetScriptedGui('CTP_random_ancestor').ExecuteTooltip(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End) )]"
+			visible = "[GetScriptedGui('NPE_pack_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			onclick = "[GetScriptedGui('NPE_random_ancestor').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			onclick = "[EventWindowWidgetNameCharacter.SetCurrentName( GetScriptedGui('NPE_random_ancestor').ExecuteTooltip(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End) )]"
 			onclick = "[PdxGuiTriggerAllAnimations('ancestor_name_refresh')]"
 			tooltip = "event_window_widget_name_child_after_random_ancestor"
 			using = tooltip_se
@@ -148,7 +148,7 @@ vbox = {
 		}
 
 		event_button_round = {
-			visible = "[GetScriptedGui('CTP_no_pack_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			visible = "[GetScriptedGui('NPE_no_pack_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( EventWindowWidgetNameCharacter.GetRandomAvailableAncestorName )]"
 			onclick = "[PdxGuiTriggerAllAnimations('name_refresh')]"
 			tooltip = "event_window_widget_name_child_after_random_ancestor"
@@ -161,7 +161,7 @@ vbox = {
 		}
 	
 		event_button_round = {
-			visible = "[GetScriptedGui('CTP_faith_name_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			visible = "[GetScriptedGui('NPE_faith_name_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 			onclick = "[PdxGuiTriggerAllAnimations('faith_name_refresh')]"
 			tooltip =  "event_window_widget_name_child_random_faith_name"
 			using = tooltip_se
@@ -175,7 +175,7 @@ vbox = {
 		}
 	
 		event_button_round = {
-			visible = "[And( Character.GetFaith.HasReservedNames( Character.IsFemale ), GetScriptedGui('CTP_faith_name_no_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End) )]"
+			visible = "[And( Character.GetFaith.HasReservedNames( Character.IsFemale ), GetScriptedGui('NPE_faith_name_no_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End) )]"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( EventWindowWidgetNameCharacter.GetRandomAvailableFaithName )]"
 			onclick = "[PdxGuiTriggerAllAnimations('name_refresh')]"
 			tooltip =  "event_window_widget_name_child_random_faith_name"
@@ -216,7 +216,7 @@ vbox = {
 		}
 	
 		event_button_round = {
-			visible = "[GetScriptedGui('CTP_pack_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			visible = "[GetScriptedGui('NPE_pack_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 			onclick = "[PdxGuiTriggerAllAnimations('culture_name_refresh')]"
 			tooltip =  "event_window_widget_name_child_random_cultural_name"
 			using = tooltip_se
@@ -230,7 +230,7 @@ vbox = {
 		}
 	
 		event_button_round = {
-			visible = "[GetScriptedGui('CTP_no_pack_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
+			visible = "[GetScriptedGui('NPE_no_pack_support').IsShown(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentName( EventWindowWidgetNameCharacter.GetRandomAvailableCultureName )]"
 			onclick = "[PdxGuiTriggerAllAnimations('name_refresh')]"
 			tooltip =  "event_window_widget_name_child_random_cultural_name"

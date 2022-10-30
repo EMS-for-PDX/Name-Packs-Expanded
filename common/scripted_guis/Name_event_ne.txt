@@ -1,11 +1,11 @@
 
-CTP_text_edit = {
+NPE_text_edit = {
 	scope = character
 	effect = {
 		remove_name_gen = yes
 	}
 }
-CTP_name_dad = {
+NPE_name_dad = {
 	scope = character
 	effect = {
 		remove_name_gen = yes
@@ -38,7 +38,7 @@ CTP_name_dad = {
 		}
 	}
 }
-CTP_name_mom = {
+NPE_name_mom = {
 	scope = character
 	effect = {
 		remove_name_gen = yes
@@ -71,7 +71,7 @@ CTP_name_mom = {
 		}
 	}
 }
-CTP_name_granddad1 = {
+NPE_name_granddad1 = {
 	scope = character
 	effect = {
 		remove_name_gen = yes
@@ -104,7 +104,7 @@ CTP_name_granddad1 = {
 		}
 	}
 }
-CTP_name_granddad2 = {
+NPE_name_granddad2 = {
 	scope = character
 	effect = {
 		remove_name_gen = yes
@@ -137,7 +137,7 @@ CTP_name_granddad2 = {
 		}
 	}
 }
-CTP_name_grandmom1 = {
+NPE_name_grandmom1 = {
 	scope = character
 	effect = {
 		remove_name_gen = yes
@@ -170,7 +170,7 @@ CTP_name_grandmom1 = {
 		}
 	}
 }
-CTP_name_grandmom2 = {
+NPE_name_grandmom2 = {
 	scope = character
 	effect = {
 		remove_name_gen = yes
@@ -203,7 +203,7 @@ CTP_name_grandmom2 = {
 		}
 	}
 }
-CTP_pack_support = {
+NPE_pack_support = {
 	scope = character
 	is_shown = {
 		culture = {
@@ -211,7 +211,7 @@ CTP_pack_support = {
 		}
 	}
 }
-CTP_no_pack_support = {
+NPE_no_pack_support = {
 	scope = character
 	is_shown = {
 		culture = {
@@ -219,7 +219,7 @@ CTP_no_pack_support = {
 		}
 	}
 }
-CTP_random_ancestor = {
+NPE_random_ancestor = {
 	scope = character
 	effect = {
 		hidden_effect = {
@@ -371,7 +371,7 @@ random_saint_female_name = {
 	}
 }
 
-CTP_faith_name_support = {
+NPE_faith_name_support = {
 	scope = character
 	is_shown = {
 		always = no
@@ -392,7 +392,7 @@ CTP_faith_name_support = {
 		#}
 	}
 }
-CTP_faith_name_no_support = {
+NPE_faith_name_no_support = {
 	scope = character
 	is_shown = {
 		NOT = {
@@ -407,15 +407,16 @@ CTP_faith_name_no_support = {
 		}
 	}
 }
-CTP_faith_names = {
+NPE_faith_names = {
 	scope = character
 	effect = {
 		hidden_effect = {
+			save_scope_as = effect_root
 			remove_name_gen = yes
 		}
 	}
 }
-CTP_culture_names = {
+NPE_culture_names = {
 	scope = character
 	effect = {
 		hidden_effect = {
