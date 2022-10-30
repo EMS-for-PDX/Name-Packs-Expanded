@@ -14,7 +14,9 @@
     add_to_global_variable_list = { name = name_pack_support_global target = character:73937 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:73973 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:73977 }
-    add_to_global_variable_list = { name = name_pack_support_global target = character:73939 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:levantine0032 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:73963 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:73985 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:163021 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:163029 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:163030 }
@@ -537,6 +539,29 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73961 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73962 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73962 }
+    }
+	character:73964.dynasty = { #Balawids
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73964 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73965 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73966 }
+    }
+    character:73985 = {
+        change_first_name = Nadiya
+    }
+    character:73965 = {
+        change_first_name = Salama
+    }
+    character:73965 = {
+        change_first_name = Khayr
+    }
+    character:73964 = {
+        dynasty_effect_ne = yes
+    }
+    character:73963 = {
+        change_first_name = Yasaman
+    }
+    character:levantine0027 = {
+        change_first_name = Halawa
     }
     character:73938 = {
         dynasty_effect_ne = yes
