@@ -1,0 +1,26 @@
+﻿FSBToggle = {
+	log_loc_errors = no
+	type = character
+	text = {
+		trigger = {
+			exists = global_var:NPEFSB_long
+		}
+		localization_key = NPEFSB_Long_TEXT
+	}
+	text = {
+		trigger = {
+			exists = global_var:NPEFSB_stan
+		}
+		localization_key = NPEFSB_Stan_TEXT
+	}
+	text = {
+		trigger = {
+			exists = global_var:NPEFSB_short
+		}
+		localization_key = NPEFSB_Short_TEXT
+	}
+	text = {
+		fallback = yes
+		localization_key = NPEFSBERROR
+	}
+}

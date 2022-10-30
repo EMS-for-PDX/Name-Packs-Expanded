@@ -1,0 +1,69 @@
+﻿toggle_NPE_Full = {
+	scope = character 
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = global_var:NPEFSB_stan
+				}
+				remove_global_variable = NPEFSB_stan
+			}
+			if = {
+				limit = {
+					exists = global_var:NPEFSB_short
+				}
+				remove_global_variable = NPEFSB_short
+			}
+			set_global_variable = {
+				name = NPEFSB_long
+				value = yes
+			}
+		}
+	}
+}
+toggle_NPE_Standard = {
+	scope = character
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = global_var:NPEFSB_long
+				}
+				remove_global_variable = NPEFSB_long
+			}
+			if = {
+				limit = {
+					exists = global_var:NPEFSB_short
+				}
+				remove_global_variable = NPEFSB_short
+			}
+			set_global_variable = {
+				name = NPEFSB_stan
+				value = yes
+			}
+		}
+	}
+}
+toggle_NPE_Short = {
+	scope = character
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = global_var:NPEFSB_stan
+				}
+				remove_global_variable = NPEFSB_stan
+			}
+			if = {
+				limit = {
+					exists = global_var:NPEFSB_long
+				}
+				remove_global_variable = NPEFSB_long
+			}
+			set_global_variable = {
+				name = NPEFSB_short
+				value = yes
+			}
+		}
+	}
+}

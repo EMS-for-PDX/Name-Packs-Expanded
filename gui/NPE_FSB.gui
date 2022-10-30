@@ -1,0 +1,156 @@
+﻿window = {
+	name = NPE_name_selector_Icon
+
+	visible = "[Not(GetPlayer.MakeScope.Var('barber_text').IsSet)]"
+	parentanchor = top|center
+	position = { 550 0 }
+	size = { 50 50 }
+	movable = no
+	layer = confirmation
+	filter_mouse = all
+
+	state = {
+		name = hide_controls
+		on_start = "[PdxGuiWidget.Hide]"
+	}
+
+	state = {
+		name = show_controls
+		on_start = "[PdxGuiWidget.Show]"
+	}
+
+	button_round = {
+		onclick = "[GetVariableSystem.Toggle('show_npe_name_selector')]"
+		#onclick = "[CharacterWindow.Close]"
+		#onclick = "[Character.OpenRoyalCourtView( 'characters' )]"
+
+		size = { 60 60 }
+		icon = {
+			texture = "gfx/interface/icons/flat_icons/coop_logo.dds"
+			size = { 40 40 }
+			parentanchor = center
+		}
+	}
+}
+window = {
+	name = "NPE_name_selector"
+
+	visible = "[And(GetVariableSystem.Exists('show_npe_name_selector'), Not(GetPlayer.MakeScope.Var('barber_text').IsSet))]"
+	size = { 400 200}
+	parentanchor = center
+	position = { 550 0 }
+	movable = yes
+	layer = confirmation
+	filter_mouse = all
+	using = Window_Decoration
+
+	###DUIT
+	vbox={
+		using = Window_Background
+		alpha = 0.9
+	}
+	###DUIT/
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+		position_x = 0
+	}
+
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+		position_x = 60
+	}
+	vbox = {
+		margin_left = 40
+		margin_right = 40
+		margin_top = 18
+		margin_bottom = 20
+		size = { 62 20 }
+		
+
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+
+			blockoverride "header_text"
+			{
+				raw_text = "Select Name Size"
+			}
+
+			blockoverride "button_close"
+			{
+				visible = no
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				using = UMS_Entry_Margins
+
+				text_single = {
+					autoresize = yes
+					raw_text = "NPE Full"
+					using = Font_Size_Medium
+				}
+
+				expand = {}
+
+				button_checkbox = {
+					size = { 30 30 }
+					
+					checked = "[GetGlobalVariable('NPEFSB_long').IsSet]"
+					onclick = "[GetScriptedGui('toggle_NPE_Full').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End ) ]"
+				}
+
+			}
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				using = UMS_Entry_Margins
+
+				text_single = {
+					autoresize = yes
+					raw_text = "NPE Standard"
+					using = Font_Size_Medium
+				}
+
+				expand = {}
+
+				button_checkbox = {
+					size = { 30 30 }
+					
+					checked = "[GetGlobalVariable('NPEFSB_stan').IsSet]"
+					onclick = "[GetScriptedGui('toggle_NPE_Standard').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End ) ]"
+				}
+
+			}
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				using = UMS_Entry_Margins
+
+				text_single = {
+					autoresize = yes
+					raw_text = "NPE Short"
+					using = Font_Size_Medium
+				}
+
+				expand = {}
+
+				button_checkbox = {
+					size = { 30 30 }
+					
+					checked = "[GetGlobalVariable('NPEFSB_short').IsSet]"
+					onclick = "[GetScriptedGui('toggle_NPE_Short').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End ) ]"
+				}
+
+			}
+
+		}
+	}
+
+}
