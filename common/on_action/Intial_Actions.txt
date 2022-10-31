@@ -3,6 +3,19 @@
 		on_867_start
 		on_1066_start
 		courtier_effect
+		always_NPE
+	}
+}
+always_NPE = {
+	effect = {
+		set_global_variable = {
+			name = NPEFSB_long
+			value = yes
+		}
+		set_global_variable = {
+			name = NPE_is_loaded
+			value = yes
+		}
 	}
 }
 on_867_start = {
