@@ -247,6 +247,7 @@
         }
     }
     character:3040.dynasty = { #seljuks
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:3044 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:3040 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1229911 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1229921 }
@@ -559,7 +560,7 @@
     character:144027 = {
         change_first_name = Turanshah
     }
-    character:3014 = { #Qavurt
+    character:3041 = { #Qavurt
         change_first_name = Ahmad
         add_to_global_variable_list = { name = QavurtN_byname target = this }
     }
@@ -585,7 +586,7 @@
         change_first_name = Qilicharslan
     }
     character:1229926 = {
-        change_first_name = Alpilek
+        change_first_name = Alpilig
     }
     character:3046 = {
         change_first_name = Sulayman
@@ -635,7 +636,7 @@
     character:3040 = { #Alp-Arslan
         change_first_name = Muhammad
         add_to_global_variable_list = { name = Adud_ad_Dawla target = this }
-        #add_to_global_variable_list = { name = al_Muazzam target = this } #don't believe this was a laqab, part of title "Sultan al-Muazzam" which was used by Seljuks interchangeably with "Sultan us-Selatin" and "Sultan-i Azam"
+        add_to_global_variable_list = { name = al_Muazzam target = this } #don't believe this was a laqab
         add_to_global_variable_list = { name = Alp_ArslanN_byname target = this }
 		add_character_flag = has_reg_laqab
     }
