@@ -7030,3 +7030,38 @@ oghur_female_name_effect = {
 		}
 	}
 }
+turkish_nicks = {
+	save_scope_as = nick_reciever
+	random_list = {
+		0 = {
+			modifier = {
+				dread >= 25
+				add = 1
+			}
+			modifier = {
+				dread >= 50
+				add = 1
+			}
+			modifier = {
+				dread >= 75
+				add = 1
+			}
+			modifier = {
+				dread >= 100
+				add = 1
+			}
+			add_to_global_variable_list = { name = Bad_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Beardless_byname target = scope:nick_reciever }
+				}
+			}
+		}
+	}
+}
