@@ -1,0 +1,26 @@
+﻿random_yearly_everyone_pulse = {
+	on_actions = {
+		turk_nick
+	}
+}
+turk_nick = {
+	trigger = {
+		is_npe_supported_culture = yes
+		culture = {
+			has_cultural_pillar = heritage_turkic
+			OR = {
+				has_cultural_pillar = language_turkic
+				has_cultural_pillar = language_oghur
+			}
+		}
+		NOT = {
+			has_character_flag = has_turk_nick
+		}
+	}
+	effect = {
+		random = {
+			chance = 1
+			turkish_nicks = yes
+		}
+	}
+}

@@ -7032,6 +7032,7 @@ oghur_female_name_effect = {
 }
 turkish_nicks = {
 	save_scope_as = nick_reciever
+	add_character_flag = has_turk_nick
 	random_list = {
 		0 = {
 			modifier = {
@@ -7050,7 +7051,38 @@ turkish_nicks = {
 				dread >= 100
 				add = 1
 			}
-			add_to_global_variable_list = { name = Bad_byname target = scope:nick_reciever }
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Bad_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 1
+					}
+					add_to_global_variable_list = { name = BlackHell_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 1
+					}
+					add_to_global_variable_list = { name = Devil_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 1
+					}
+					add_to_global_variable_list = { name = Hell_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Black_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Terrible_byname target = scope:nick_reciever }
+				}
+			}
 		}
 		0 = {
 			modifier = {
@@ -7060,6 +7092,754 @@ turkish_nicks = {
 			random_list = {
 				1 = {
 					add_to_global_variable_list = { name = Beardless_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = beauty_good_1
+				add = 1
+			}
+			modifier = {
+				has_trait = beauty_good_2
+				add = 1
+			}
+			modifier = {
+				has_trait = beauty_good_3
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Beautiful_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Beautiful2_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_character_modifier = obese_modifier
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_1
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_2
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_3
+				add = 2
+			}
+			modifier = {
+				has_trait = giant
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Big_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = stuttering
+					has_trait = lisping
+				}
+				add = 3
+			}
+			modifier = {
+				has_trait = gregarious
+				add = 1
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Blabberer_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				is_lowborn = yes
+				add = 1
+			}
+			modifier = {
+				has_trait = brave
+				add = 1
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Black_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				piety_level >= 1
+				add = 1
+			}
+			modifier = {
+				piety_level >= 2
+				add = 1
+			}
+			modifier = {
+				piety_level >= 3
+				add = 1
+			}
+			modifier = {
+				piety_level >= 4
+				add = 2
+			}
+			modifier = {
+				piety_level >= 5
+				add = 4
+			}
+			random_list = {
+				2 = {
+					add_to_global_variable_list = { name = Blessed_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Good_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:tengrism_religion
+						add = 3
+					}
+					add_to_global_variable_list = { name = Devout_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						NOT = {
+							has_religion = religion:islam_religion
+						}
+						add = 3
+					}
+					add_to_global_variable_list = { name = Holy_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = blind
+				add = 5
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						NOT = {
+							has_religion = religion:islam_religion
+						}
+						add = 1
+					}
+					add_to_global_variable_list = { name = Blind_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 1
+					}
+					add_to_global_variable_list = { name = Blind2_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = physique_good_1
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_2
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_3
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Bowbreaker_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Ironbow_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = brave
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Bowbreaker_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = gregarious
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Chatterer_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = maimed
+				add = 4
+			}
+			modifier = {
+				has_trait = disfigured
+				add = 2
+			}
+			modifier = {
+				has_trait = infirm
+				add = 1
+			}
+			modifier = {
+				has_trait = incapable
+				add = 4
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						NOT = {
+							has_trait = incapable
+						}
+						add = 1
+					}
+					add_to_global_variable_list = { name = Cripple_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Cripple2_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = poet
+				is_landed = no
+				add = 8
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Dede_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				prowess >= 5
+				add = 1
+			}
+			modifier = {
+				prowess >= 10
+				add = 1
+			}
+			modifier = {
+				prowess >= 15
+				add = 2
+			}
+			modifier = {
+				prowess >= 20
+				add = 4
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Dragon_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Ox_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Strong_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 4
+					}
+					add_to_global_variable_list = { name = Ghazi_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_trait = brave
+						add = 2
+					}
+					add_to_global_variable_list = { name = Lion_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = drunkard
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Drunkard_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = eunuch
+				OR = {
+					culture = {
+						has_cultural_parameter = eunuch_trait_bonuses
+					}
+					has_religion = religion:islam_religion
+				}
+				add = 6
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Drunkard_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				prestige_level >= 1
+				add = 1
+			}
+			modifier = {
+				prestige_level >= 2
+				add = 1
+			}
+			modifier = {
+				prestige_level >= 3
+				add = 1
+			}
+			modifier = {
+				prestige_level >= 4
+				add = 2
+			}
+			modifier = {
+				prestige_level >= 5
+				add = 4
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Famous_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Great_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 1
+					}
+					add_to_global_variable_list = { name = Great2_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_character_modifier = obese_modifier
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Fat_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = shrewd
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Fox_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = { #Mark muslim if alone
+			modifier = {
+				diplomacy >= 5
+				add = 1
+			}
+			modifier = {
+				diplomacy >= 10
+				add = 1
+			}
+			modifier = {
+				diplomacy >= 15
+				add = 2
+			}
+			modifier = {
+				diplomacy >= 20
+				add = 4
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Gentleman_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = greedy
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Greedy_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = pilgrim
+				can_perform_the_hajj_trigger = yes
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Hajji_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = { #Mark muslim if alone
+			modifier = {
+				health >= 4
+				add = 1
+			}
+			modifier = {
+				health >= 5
+				add = 1
+			}
+			modifier = {
+				health >= 6
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Healthy_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = hunchbacked
+				add = 6
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Hunchback_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = lunatic_1
+				add = 4
+			}
+			modifier = {
+				has_trait = lunatic_genetic
+				add = 4
+			}
+			modifier = {
+				has_trait = possessed_1
+				add = 4
+			}
+			modifier = {
+				has_trait = possessed_genetic
+				add = 4
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Insane_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				intrigue >= 5
+				add = 1
+			}
+			modifier = {
+				intrigue >= 10
+				add = 1
+			}
+			modifier = {
+				intrigue >= 15
+				add = 2
+			}
+			modifier = {
+				intrigue >= 20
+				add = 4
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Intriguer_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = { #Mark islam if needbe
+			modifier = {
+				has_trait = just
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Just_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = one_legged
+				add = 3
+			}
+			modifier = {
+				has_trait = clubfooted
+				add = 6
+			}
+			modifier = {
+				has_trait = gout_ridden
+				add = 6
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Lame_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		1 = {
+			add_to_global_variable_list = { name = Lucky_byname target = scope:nick_reciever }
+		}
+		0 = { #Mark islam if needbe
+			modifier = {
+				age >= 50
+				add = 1
+			}
+			modifier = {
+				age >= 60
+				add = 1
+			}
+			modifier = {
+				age >= 70
+				add = 2
+			}
+			modifier = {
+				age >= 80
+				add = 4
+			}
+			modifier = {
+				age >= 90
+				add = 8
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Old_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = { #Mark islam if needbe
+			modifier = {
+				has_trait = one_eyed
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = OneEyed_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				gold >= 1000
+				add = 2
+			}
+			modifier = {
+				gold >= 2000
+				add = 2
+			}
+			modifier = {
+				gold >= 3000
+				add = 2
+			}
+			modifier = {
+				gold >= 4000
+				add = 2
+			}
+			modifier = {
+				gold >= 5000
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Rich_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = dwarf
+				add = 6
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Short_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = dwarf
+				add = 3
+			}
+			modifier = {
+				has_trait = spindly
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Small_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = giant
+				add = 6
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Tall_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Tall2_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				martial >= 5
+				add = 1
+			}
+			modifier = {
+				martial >= 10
+				add = 1
+			}
+			modifier = {
+				martial >= 15
+				add = 2
+			}
+			modifier = {
+				martial >= 20
+				add = 4
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 4
+					}
+					add_to_global_variable_list = { name = Ghazi_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_trait = brave
+						add = 2
+					}
+					add_to_global_variable_list = { name = Lion_byname target = scope:nick_reciever }
+				}
+				1 = {
+					modifier = {
+						has_trait = reckless
+						add = 3
+					}
+					modifier = {
+						has_trait = organizer
+						add = 3
+					}
+					add_to_global_variable_list = { name = Thunderbolt_byname target = scope:nick_reciever }
+				}
+				1 = {
+					modifier = {
+						has_trait = forest_fighter
+						add = 3
+					}
+					modifier = {
+						has_trait = winter_soldier
+						add = 3
+					}
+					add_to_global_variable_list = { name = Wolf_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = seducer
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = VagabondHeart_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifer = {
+						is_male = yes
+						add = 1
+					}
+					add_to_global_variable_list = { name = Womanizer_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				learning >= 5
+				add = 1
+			}
+			modifier = {
+				learning >= 10
+				add = 1
+			}
+			modifier = {
+				learning >= 15
+				add = 2
+			}
+			modifier = {
+				learning >= 20
+				add = 4
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Wise_byname target = scope:nick_reciever }
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 2
+					}
+					add_to_global_variable_list = { name = Wise2_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Wise3_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = craven
+				add = 6
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Coward_byname target = scope:nick_reciever }
 				}
 			}
 		}

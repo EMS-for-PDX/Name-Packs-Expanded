@@ -96,13 +96,8 @@
 	}
 	text = {
 		trigger = {
-			OR = {
-				any_in_global_list = {
-					variable = Conqueror_byname
-					this = root
-				}
-				has_nickname = nick_the_conqueror
-			}
+			has_nickname = nick_the_conqueror
+			has_religion = religion:islam_religion
 		}
         localization_key = Conqueror
 	}
@@ -228,13 +223,7 @@
 	}
 	text = {
 		trigger = {
-			OR = {
-				any_in_global_list = {
-					variable = Impaler_byname
-					this = root
-				}
-				has_nickname = nick_the_impaler
-			}
+			has_nickname = nick_the_impaler
 		}
         localization_key = Impaler
 	}
