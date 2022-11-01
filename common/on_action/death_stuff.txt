@@ -116,8 +116,10 @@ on_HO_death = {
 		}
 		OR = {
 			has_government = holy_order_government
-			AND = {
-				exists = global_var:KoH_is_loaded
+			trigger_if = {
+				limit = {
+					exists = global_var:KoH_is_loaded
+				}
 				has_government = holy_order_county_government
 			}
 		}

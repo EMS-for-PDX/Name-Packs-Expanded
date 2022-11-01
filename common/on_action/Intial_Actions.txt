@@ -141,6 +141,7 @@ courtier_effect = {
 			name_gen_effect = yes
 			if = {
 				limit = {
+					exists = this
 					exists = dynasty
 					NOT = {
 						exists = house.var:name_founder
