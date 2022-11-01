@@ -7089,11 +7089,7 @@ turkish_nicks = {
 				has_religion = religion:islam_religion
 				add = 2
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Beardless_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Beardless_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7138,11 +7134,7 @@ turkish_nicks = {
 				has_trait = giant
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Big_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Big_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7156,11 +7148,7 @@ turkish_nicks = {
 				has_trait = gregarious
 				add = 1
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Blabberer_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Blabberer_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7171,11 +7159,7 @@ turkish_nicks = {
 				has_trait = brave
 				add = 1
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Black_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Black_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7274,22 +7258,14 @@ turkish_nicks = {
 				has_trait = brave
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Bowbreaker_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Bowbreaker_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
 				has_trait = gregarious
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Chatterer_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Chatterer_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7329,11 +7305,7 @@ turkish_nicks = {
 				is_landed = no
 				add = 8
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Dede_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Dede_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7383,11 +7355,7 @@ turkish_nicks = {
 				has_trait = drunkard
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Drunkard_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Drunkard_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7400,11 +7368,7 @@ turkish_nicks = {
 				}
 				add = 6
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Drunkard_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Drunkard_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7448,56 +7412,44 @@ turkish_nicks = {
 				has_character_modifier = obese_modifier
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Fat_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Fat_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
 				has_trait = shrewd
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Fox_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Fox_byname target = scope:nick_reciever }
 		}
-		0 = { #Mark muslim if alone
+		0 = {
 			modifier = {
 				diplomacy >= 5
+				has_religion = religion:islam_religion
 				add = 1
 			}
 			modifier = {
 				diplomacy >= 10
+				has_religion = religion:islam_religion
 				add = 1
 			}
 			modifier = {
 				diplomacy >= 15
+				has_religion = religion:islam_religion
 				add = 2
 			}
 			modifier = {
 				diplomacy >= 20
+				has_religion = religion:islam_religion
 				add = 4
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Gentleman_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Gentleman_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
 				has_trait = greedy
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Greedy_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Greedy_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7505,41 +7457,32 @@ turkish_nicks = {
 				can_perform_the_hajj_trigger = yes
 				add = 2
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Hajji_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Hajji_byname target = scope:nick_reciever }
 		}
-		0 = { #Mark muslim if alone
+		0 = {
 			modifier = {
 				health >= 4
+				has_religion = religion:islam_religion
 				add = 1
 			}
 			modifier = {
 				health >= 5
+				has_religion = religion:islam_religion
 				add = 1
 			}
 			modifier = {
 				health >= 6
+				has_religion = religion:islam_religion
 				add = 2
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Healthy_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Healthy_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
 				has_trait = hunchbacked
 				add = 6
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Hunchback_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Hunchback_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7558,11 +7501,7 @@ turkish_nicks = {
 				has_trait = possessed_genetic
 				add = 4
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Insane_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Insane_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7581,22 +7520,15 @@ turkish_nicks = {
 				intrigue >= 20
 				add = 4
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Intriguer_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Intriguer_byname target = scope:nick_reciever }
 		}
-		0 = { #Mark islam if needbe
+		0 = {
 			modifier = {
 				has_trait = just
+				has_religion = religion:islam_religion
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Just_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Just_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7611,52 +7543,46 @@ turkish_nicks = {
 				has_trait = gout_ridden
 				add = 6
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Lame_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Lame_byname target = scope:nick_reciever }
 		}
 		1 = {
 			add_to_global_variable_list = { name = Lucky_byname target = scope:nick_reciever }
 		}
-		0 = { #Mark islam if needbe
+		0 = {
 			modifier = {
 				age >= 50
+				has_religion = religion:islam_religion
 				add = 1
 			}
 			modifier = {
 				age >= 60
+				has_religion = religion:islam_religion
 				add = 1
 			}
 			modifier = {
 				age >= 70
+				has_religion = religion:islam_religion
 				add = 2
 			}
 			modifier = {
 				age >= 80
+				has_religion = religion:islam_religion
 				add = 4
 			}
 			modifier = {
 				age >= 90
+				has_religion = religion:islam_religion
 				add = 8
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Old_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Old_byname target = scope:nick_reciever }
 		}
-		0 = { #Mark islam if needbe
+		0 = {
 			modifier = {
 				has_trait = one_eyed
+				has_religion = religion:islam_religion
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = OneEyed_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = OneEyed_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7679,22 +7605,14 @@ turkish_nicks = {
 				gold >= 5000
 				add = 2
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Rich_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Rich_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
 				has_trait = dwarf
 				add = 6
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Short_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Short_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7705,11 +7623,7 @@ turkish_nicks = {
 				has_trait = spindly
 				add = 3
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Small_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Small_byname target = scope:nick_reciever }
 		}
 		0 = {
 			modifier = {
@@ -7837,11 +7751,7 @@ turkish_nicks = {
 				has_trait = craven
 				add = 6
 			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Coward_byname target = scope:nick_reciever }
-				}
-			}
+			add_to_global_variable_list = { name = Coward_byname target = scope:nick_reciever }
 		}
 	}
 }
