@@ -218,6 +218,20 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:163135 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = title:d_cilicia.holder }
 	}
+	character:145225.dynasty = { #Artavasd
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145225 }
+	}
+	character:145068.dynasty = { #Philippikos Should be flipped
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:145068 }
+    }
+	character:145068 = {
+        dynasty_effect_ne = yes
+		change_first_name = Vardan
+	}
+	character:145225 = {
+		change_first_name = Ardawazd
+		dynasty_effect_ne = yes
+	}
 	character:159257 = {
 		change_first_name = Isaac
 	}

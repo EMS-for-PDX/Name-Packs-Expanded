@@ -3,6 +3,72 @@
 	log_loc_errors = no
 	text = {
 		trigger = {
+			any_in_global_list = {
+				variable = Bearded_byname
+				this = root
+			}
+		}
+        localization_key = Bearded
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = SlitNosed_byname
+				this = root
+			}
+		}
+        localization_key = SlitNosed
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = DungNamed_byname
+				this = root
+			}
+		}
+        localization_key = DungNamed
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Khazar_byname
+				this = root
+			}
+		}
+        localization_key = KhazarB
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Logos_byname
+				this = root
+			}
+		}
+        localization_key = Logos
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Stammerer2_byname
+				this = root
+			}
+		}
+        localization_key = Stammerer2
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_nickname = nick_the_drunkard
+				any_in_global_list = {
+					variable = Drunkard_byname
+					this = root
+				}
+			}
+		}
+        localization_key = Drunkard
+	}
+	text = {
+		trigger = {
 			has_trait = born_in_the_purple
 			highest_held_title_tier < tier_kingdom
 		}
