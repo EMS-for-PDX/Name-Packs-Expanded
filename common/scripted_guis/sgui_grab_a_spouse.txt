@@ -1,0 +1,46 @@
+﻿scripted_gui_grab_a_spouse = {
+	scope = character
+	effect = {
+		save_scope_as = effect_root
+		hidden_effect = {
+			ordered_former_spouse = {
+				even_if_dead = yes
+				limit = {
+					exists = house.var:name_founder
+					house.var:name_founder = {
+						save_temporary_scope_as = good_lad
+					}
+					NOT = {
+						root = scope:good_lad
+					}
+					dynasty = {
+						any_in_list = {
+							variable = name_pack_support_dynasty
+							this = scope:good_lad
+						}
+					}
+				}
+				order_by = prestige
+				position = 1
+				save_scope_as = the_spouse
+			}
+		}
+		IF = {
+			limit = {
+				exists = scope:the_spouse
+			}
+			custom_description_no_bullet = {
+				text = Spousal_House_Name_sgui
+				subject = scope:effect_root
+				object = scope:the_spouse
+			}
+		}
+		else = {
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_blank
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+	}
+}

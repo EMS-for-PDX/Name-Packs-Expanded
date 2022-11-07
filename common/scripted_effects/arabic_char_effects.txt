@@ -538,7 +538,12 @@
     character:34014 = {
         change_first_name = Muhammad
         add_to_global_variable_list = { name = Mutazz_billah target = this }
-		add_character_flag = has_caliph_laqab
+        if = {
+            limit = {
+                is_alive = yes
+            }
+            add_character_flag = has_caliph_laqab
+        }
     }
 }
 1066_mashriqi_char_effect = {

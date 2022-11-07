@@ -1,7 +1,7 @@
 ﻿window = {
 	name = NPE_name_selector_Icon
 
-	visible = "[Not(GetPlayer.MakeScope.Var('barber_text').IsSet)]"
+	visible = "[GetPlayer.MakeScope.Var('barber_text').IsSet]"
 	parentanchor = top|center
 	position = { 550 0 }
 	size = { 50 50 }
@@ -35,7 +35,7 @@
 window = {
 	name = "NPE_name_selector"
 
-	visible = "[And(GetVariableSystem.Exists('show_npe_name_selector'), Not(GetPlayer.MakeScope.Var('barber_text').IsSet))]"
+	visible = "[And(GetVariableSystem.Exists('show_npe_name_selector'), GetPlayer.MakeScope.Var('barber_text').IsSet)]"
 	size = { 400 200}
 	parentanchor = center
 	position = { 550 0 }

@@ -46,6 +46,10 @@
                                         this = scope:the_spouse
                                     }
                                     any_in_list = {
+                                        variable = dynasty_byzantine
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
                                         variable = dynasty_tribe
                                         this = scope:the_spouse
                                     }
@@ -68,6 +72,10 @@
                                 OR = {
                                     any_in_list = {
                                         variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_byzantine
                                         this = scope:the_spouse
                                     }
                                     any_in_list = {
@@ -124,6 +132,10 @@
                                             this = root.father
                                         }
                                         any_in_list = {
+                                            variable = dynasty_byzantine
+                                            this = root.father
+                                        }
+                                        any_in_list = {
                                             variable = dynasty_tribe
                                             this = root.father
                                         }
@@ -149,6 +161,10 @@
                                     OR = {
                                         any_in_list = {
                                             variable = dynasty_feudalclan
+                                            this = root.mother
+                                        }
+                                        any_in_list = {
+                                            variable = dynasty_byzantine
                                             this = root.mother
                                         }
                                         any_in_list = {

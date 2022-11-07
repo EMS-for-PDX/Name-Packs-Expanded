@@ -34,6 +34,12 @@ Supported_Spouse_House: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char
 Supported_Spouse_House_After: " [Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetPrimarySpouse.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, ROOT.Char.Custom('CharacterCulture')), '_house'), ROOT.Char.Custom('CharacterGender')))]"
 Supported_Spouse_House_Before: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetPrimarySpouse.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, ROOT.Char.Custom('CharacterCulture')), '_house'), ROOT.Char.Custom('CharacterGender')))] "
 
+Supported_Spouse_House_DEAD: "[GetScriptedGui('scripted_gui_grab_a_spouse').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')]"
+Supported_Spouse_House_DEAD_After: " [GetScriptedGui('scripted_gui_grab_a_spouse').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')]"
+Supported_Spouse_House_DEAD_Before: "[GetScriptedGui('scripted_gui_grab_a_spouse').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')] "
+
+Spousal_House_Name: "[Localize(Concatenate(Concatenate(Concatenate(TARGET_CHARACTER.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, CHARACTER.Custom('CharacterCulture')), '_house'), CHARACTER.Custom('CharacterGender')))]"
+
 #Laqab Gen
 Reg_Laqab_Gen: "[Localize(Concatenate(ROOT.Char.Custom('RegLaqabGen'),ROOT.Char.Custom('CharacterCulture')))]"
 Reg_Laqab_Gen_SGUI: "[Localize(Concatenate(CHARACTER.Custom('RegLaqabGen'),CHARACTER.Custom('CharacterCulture')))]"
