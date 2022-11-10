@@ -282,6 +282,14 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:155198 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:155209 }
 	}
+	character:20828.dynasty = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20828 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:73314 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73314 }
+	}
+	character:20828 = {
+		dynasty_effect_ne = yes
+	}
 	character:155203 = {
 		change_first_name = Hamza
 	}

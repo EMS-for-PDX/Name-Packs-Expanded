@@ -70,12 +70,6 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:74039 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:74040 }
 	}
-	character:33921.house = {
-		set_variable = {
-			name = name_founder
-			value = character:33911
-		}
-	}
 	character:33921.dynasty = { #Fatimids
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:33911 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:33921 }
@@ -544,6 +538,7 @@
 	}
 	character:33921 = {
 		change_first_name = Fatima
+		dynasty_effect_ne = yes
 	}
 	character:74040 = {
 		name_gen_effect = yes
