@@ -1,4 +1,4 @@
-﻿PreLaqabCheck = {
+PreLaqabCheck = {
 	type = character
 	log_loc_errors = no
 	text = {
@@ -1183,11 +1183,11 @@ RegLaqabGen = {
 	text = {
 		trigger = {
 			any_in_global_list = {
-				variable = Hujjat_al_Islam
+				variable = Hujjat_ad_Islam
 				this = root
 			}
 		}
-        localization_key = Hujjat_al_Islam
+        localization_key = Hujjat_ad_Islam
 	}
 	text = {
 		trigger = {
@@ -1804,6 +1804,15 @@ RegLaqabGen = {
 	text = {
 		trigger = {
 			any_in_global_list = {
+				variable = Shayk_ad_Islam
+				this = root
+			}
+		}
+        localization_key = Shayk_ad_Islam
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
 				variable = Salah_ad_Din
 				this = root
 			}
@@ -1908,15 +1917,6 @@ RegLaqabGen = {
 			}
 		}
         localization_key = Sayf_as_Sunna
-	}
-	text = {
-		trigger = {
-			any_in_global_list = {
-				variable = Shayk_al_Islam
-				this = root
-			}
-		}
-        localization_key = Shayk_al_Islam
 	}
 	text = {
 		trigger = {
@@ -2392,12 +2392,6 @@ PreLaqabEvent = {
 	}
 	text = {
 		trigger = {
-			root.var:laqab_temp = flag:al_Amin
-		}
-        localization_key = al_Amin
-	}
-	text = {
-		trigger = {
 			root.var:laqab_temp = flag:al_Awhad
 		}
         localization_key = al_Awhad
@@ -2422,18 +2416,6 @@ PreLaqabEvent = {
 	}
 	text = {
 		trigger = {
-			root.var:laqab_temp = flag:al_Ghani
-		}
-        localization_key = al_Ghani
-	}
-	text = {
-		trigger = {
-			root.var:laqab_temp = flag:al_Hadi
-		}
-        localization_key = al_Hadi
-	}
-	text = {
-		trigger = {
 			root.var:laqab_temp = flag:al_Jawad
 		}
         localization_key = al_Jawad
@@ -2449,12 +2431,6 @@ PreLaqabEvent = {
 			root.var:laqab_temp = flag:al_Mahdi
 		}
         localization_key = al_Mahdi
-	}
-	text = {
-		trigger = {
-			root.var:laqab_temp = flag:al_Mamun
-		}
-        localization_key = al_Mamun
 	}
 	text = {
 		trigger = {
@@ -2542,18 +2518,6 @@ PreLaqabEvent = {
 	}
 	text = {
 		trigger = {
-			root.var:laqab_temp = flag:ar_Rashid
-		}
-        localization_key = ar_Rashid
-	}
-	text = {
-		trigger = {
-			root.var:laqab_temp = flag:as_Saffah
-		}
-        localization_key = as_Saffah
-	}
-	text = {
-		trigger = {
 			root.var:laqab_temp = flag:as_Said
 		}
         localization_key = as_Said
@@ -2606,21 +2570,9 @@ RegLaqabEvent = {
 	}
 	text = {
 		trigger = {
-			root.var:laqab_temp = flag:Dai_ila_l_Haqq
-		}
-        localization_key = Dai_ila_l_Haqq
-	}
-	text = {
-		trigger = {
 			root.var:laqab_temp = flag:Faiz_bi_Nasr_Allah
 		}
         localization_key = Faiz_bi_Nasr_Allah
-	}
-	text = {
-		trigger = {
-			root.var:laqab_temp = flag:Hadi_ila_l_Haqq
-		}
-        localization_key = Hadi_ila_l_Haqq
 	}
 	text = {
 		trigger = {
@@ -2633,12 +2585,6 @@ RegLaqabEvent = {
 			root.var:laqab_temp = flag:Hakim_bi_Amr_Allah
 		}
         localization_key = Hakim_bi_Amr_Allah
-	}
-	text = {
-		trigger = {
-			root.var:laqab_temp = flag:Mahdi_billah
-		}
-        localization_key = Mahdi_billah
 	}
 	text = {
 		trigger = {
@@ -3002,9 +2948,9 @@ RegLaqabEvent = {
 	}
 	text = {
 		trigger = {
-			root.var:laqab_temp = flag:Hujjat_al_Islam
+			root.var:laqab_temp = flag:Hujjat_ad_Islam
 		}
-        localization_key = Hujjat_al_Islam
+        localization_key = Hujjat_ad_Islam
 	}
 	text = {
 		trigger = {
@@ -3041,12 +2987,6 @@ RegLaqabEvent = {
 			root.var:laqab_temp = flag:Jalalat_ad_Din
 		}
         localization_key = Jalalat_ad_Din
-	}
-	text = {
-		trigger = {
-			root.var:laqab_temp = flag:Jamal_ad_Din
-		}
-        localization_key = Jamal_ad_Din
 	}
 	text = {
 		trigger = {
@@ -3368,12 +3308,6 @@ RegLaqabEvent = {
 	}
 	text = {
 		trigger = {
-			root.var:laqab_temp = flag:Safi_ad_Din
-		}
-        localization_key = Safi_ad_Din
-	}
-	text = {
-		trigger = {
 			root.var:laqab_temp = flag:Safwat_ad_Din
 		}
         localization_key = Safwat_ad_Din
@@ -3467,12 +3401,6 @@ RegLaqabEvent = {
 			root.var:laqab_temp = flag:Sayf_as_Sunna
 		}
         localization_key = Sayf_as_Sunna
-	}
-	text = {
-		trigger = {
-			root.var:laqab_temp = flag:Shayk_al_Islam
-		}
-        localization_key = Shayk_al_Islam
 	}
 	text = {
 		trigger = {
@@ -3593,12 +3521,6 @@ RegLaqabEvent = {
 			root.var:laqab_temp = flag:Zahir_ad_Dawla
 		}
         localization_key = Zahir_ad_Dawla
-	}
-	text = {
-		trigger = {
-			root.var:laqab_temp = flag:Zahir_ad_Dawa
-		}
-        localization_key = Zahir_ad_Dawa
 	}
 	text = {
 		trigger = {

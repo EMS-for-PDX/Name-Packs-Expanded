@@ -17,7 +17,10 @@ always_NPE = {
 			name = NPE_is_loaded
 			value = yes
 		}
-		npe_unprune_effect = yes
+		if = {
+			limit = { exists = global_var:NPE_is_loaded }
+			npe_unprune_effect = yes
+		}
 	}
 }
 on_867_start = {

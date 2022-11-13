@@ -84,19 +84,6 @@ on_independent_death = {
 		dynasty = { add_to_variable_list = { name = dynasty_independent target = root} }
 	}
 }
-on_name_pack_death = {
-	trigger = {
-		has_character_flag = name_pack_support
-	}
-	effect = {
-		IF = { limit = { exists = dynasty }
-			dynasty = { add_to_variable_list = { name = name_pack_support_dynasty target = root} }
-		}
-		else = {
-			add_to_global_variable_list = { name = name_pack_support_global target = root }
-		}
-	}
-}
 on_theo_death = {
 	trigger = {
         culture = {
