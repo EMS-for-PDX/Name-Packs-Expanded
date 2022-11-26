@@ -734,6 +734,20 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93136 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93138 }
     }
+    character:41607.house = {
+		set_variable = {
+			name = name_founder
+			value = character:41607
+		}
+	}
+	character:41607.dynasty = { #Fadlun
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:41607 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:41608 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:41608 }
+    }
+    character:41608 = {
+        change_first_name = Sahlan
+    }
     character:1231062 = {
         change_first_name = Ali
     }
