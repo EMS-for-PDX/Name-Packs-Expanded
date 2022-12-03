@@ -155,9 +155,6 @@
 	character:20837.dynasty = { #Mazin
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20837 }
 	}
-	character:34700.dynasty = { #This is Iftikhar ad-Dawla no known given name
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:34700 }
-	}
 	character:bedouin0025.house = {
 		set_variable = {
 			name = name_founder
@@ -186,6 +183,10 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0024 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0025 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0020 }
+	}
+	character:34700 = { #This is Iftikhar ad-Dawla no known given name
+		change_first_name = Nafi
+		dynasty_effect_ne = yes
 	}
 	character:bedouin0020 = {
 		change_first_name = Numayr

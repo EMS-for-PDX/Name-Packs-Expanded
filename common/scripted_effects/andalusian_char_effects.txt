@@ -1150,7 +1150,6 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0192 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73209 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0193 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:3212 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0195 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:3214 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0196 }
@@ -1162,7 +1161,6 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0195 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0193 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73209 }
-        add_to_variable_list = { name = pre_laqab_dynasty target = character:3212 }
     }
 	character:andalusian0121.dynasty = { #Harunids
         add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0122 }
@@ -1217,15 +1215,11 @@
 	}
 	character:45000.dynasty = {
         add_to_variable_list = { name = name_pack_support_dynasty target = character:45000 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:45001 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:45002 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:20852 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:levantine0092 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:levantine0091 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:45002 }
-        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:45001 }
         add_to_variable_list = { name = dynasty_repub target = character:45000 }
-        add_to_variable_list = { name = dynasty_repub target = character:45001 }
     }
 	character:200261.dynasty = {
         add_to_variable_list = { name = name_pack_support_dynasty target = character:200261 }
@@ -1309,6 +1303,15 @@
 	character:73205.dynasty = {
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73205 }
     }
+	character:20890.house = {
+		set_variable = {
+			name = name_founder
+			value = character:20890
+		}
+	}
+	character:20890.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:20890 }
+    }
     character:73205 = {
         dynasty_effect_ne = yes
     }
@@ -1387,9 +1390,6 @@
     character:levantine0092 = {
         change_first_name = Walid
     }
-    character:20852 = {
-        change_first_name = Mansur
-    }
     character:45002 = {
         change_first_name = Abdar-Rahman
     }
@@ -1429,10 +1429,6 @@
     }
     character:bedouin0195 = {
         change_first_name = Amr
-    }
-    character:3212 = {
-        change_first_name = Abbad
-        add_to_global_variable_list = { name = al_Mutadid target = this }
     }
     character:bedouin0193 = {
         change_first_name = Ismail

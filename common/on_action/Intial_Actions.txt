@@ -1,10 +1,9 @@
-﻿on_game_start = {
+on_game_start = {
 	on_actions = {
 		on_867_start
 		on_1066_start
 		courtier_effect
 		always_NPE
-		make_unprunable_npe
 	}
 }
 always_NPE = {
@@ -54,6 +53,12 @@ on_1066_start = {
 		current_date > 1066.9.14
 	}
 	effect = {
+		character:3212 = {
+			trigger_event = {
+				id = fixpdx.001
+				days = 1
+			}
+		}
 		1066_oghuz_char_effect = yes
 		1066_georgian_char_effect = yes
 		1066_alan_char_effect = yes
@@ -66,6 +71,7 @@ on_1066_start = {
 		1066_persian_char_effect = yes
 		1066_egyptian_char_effect = yes
 		1066_kipchak_char_effect = yes
+		1066_leftover_arabic_char_effect = yes
 	}
 }
 eldest_son_fix = {
@@ -134,6 +140,7 @@ courtier_effect = {
 			limit = {
 				save_temporary_scope_as = thebarontemp
 				highest_held_title_tier = tier_barony
+				is_lowborn = no
 				culture = {
 					is_npe_supported_culture = yes
 				}
