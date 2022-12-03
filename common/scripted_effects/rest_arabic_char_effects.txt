@@ -385,7 +385,6 @@
 		dynasty_effect_ne = yes
 	}
 	character:3212 = {
-		change_first_name = Abbad
 		add_to_global_variable_list = { name = al_Mutadid target = this }
 		dynasty = {
 			add_to_variable_list = { name = name_pack_support_dynasty target = character:3212 }
@@ -397,15 +396,16 @@
 		add_to_global_variable_list = { name = al_Mansur target = this }
 		dynasty = {
 			add_to_variable_list = { name = name_pack_support_dynasty target = character:20852 }
+			add_to_variable_list = { name = pre_laqab_dynasty target = character:20852 }
 		}
 	}
 	character:45001 = {
-		change_first_name = Muhammad
 		add_to_global_variable_list = { name = ar_Rashid target = this }
 		dynasty = {
 			add_to_variable_list = { name = name_pack_support_dynasty target = character:45001 }
 			add_to_variable_list = { name = dynasty_list_ctp_sons target = character:45001 }
 			add_to_variable_list = { name = dynasty_repub target = character:45001 }
+			add_to_variable_list = { name = pre_laqab_dynasty target = character:45001 }
 		}
 	}
 }
