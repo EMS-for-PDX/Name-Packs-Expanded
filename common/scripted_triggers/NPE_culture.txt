@@ -4,6 +4,8 @@
 		has_cultural_pillar = heritage_arabic
 		has_cultural_pillar = heritage_byzantine
 		has_cultural_pillar = heritage_iranian
+		has_cultural_pillar = heritage_south_slavic
+		has_cultural_pillar = heritage_vlach
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -31,6 +33,9 @@
 		has_cultural_pillar = language_georgian
 		has_cultural_pillar = language_aramaic
 		has_cultural_pillar = language_iranian
+		has_cultural_pillar = language_south_slavic
+		has_cultural_pillar = language_slavonic
+		has_cultural_pillar = language_wallachian
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -47,6 +52,13 @@
 			}
 		}
 	}
+}
+bulgarian_check = {
+	has_cultural_pillar = heritage_south_slavic
+	has_cultural_pillar = language_slavonic
+}
+south_slav_check = {
+	has_cultural_pillar = heritage_south_slavic
 }
 turkish_check = {
 	has_cultural_pillar = heritage_turkic
