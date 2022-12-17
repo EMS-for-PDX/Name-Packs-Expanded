@@ -1,0 +1,2574 @@
+﻿scripted_gui_slav_name = {
+	scope = character
+	effect = {
+		save_scope_as = effect_root
+		if = {
+			limit = {
+				exists = scope:effect_root.dynasty
+				scope:effect_root.dynasty = {
+					any_in_list = {
+						variable = slav_name_dynasty
+						this = scope:effect_root
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Aldemir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Aldemir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Altoman_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Altoman
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Balsa_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Balsa
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Beloje_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Beloje
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Beridrug_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Beridrug
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Berigoj_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Berigoj
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bodin_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bodin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bogdan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bogdan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bogomil_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bogomil
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Boledrug_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Boledrug
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bolemir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bolemir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Boleslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Boleslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Boric_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Boric
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Boril_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Boril
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Borislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Borislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Botko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Botko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bran_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bran
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Branimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Branimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Branislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Branislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Branko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Branko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Budimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Budimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Chaslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Chaslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Chuchimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Chuchimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Coloman_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Coloman
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Crne_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Crne
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Crnomir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Crnomir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Crnoslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Crnoslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dabisha_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dabisha
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dabizhiv_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dabizhiv
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Darko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Darko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dejan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dejan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Delyan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Delyan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Desidrug_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Desidrug
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Desimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Desimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Desina_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Desina
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Desislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Desislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobran_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobran
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobravac_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobravac
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobro_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobro
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobrogost_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobrogost
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobromir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobromir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobrosh_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobrosh
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobroslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobroslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobrotica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobrotica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobrovit_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobrovit
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Domagoj_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Domagoj
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Domanek_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Domanek
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Domald_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Domald
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragic_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragic
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Drago_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Drago
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragoljub_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragoljub
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragomaz_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragoljub
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragomir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragomir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragosh_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragosh
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragoslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragoslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragshan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragshan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragushin_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragushin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragutin_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragutin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Drashko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Drashko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Drzimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Drzimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dujmus_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dujmus
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dushan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dushan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Esen_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Esen
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Frederick_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Frederick
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Fruzhin_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Fruzhin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Glad_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Glad
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Godemir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Godemir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gojcho_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gojcho
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gojnik_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gojnik
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gojslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gojslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gradinja_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gradinja
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gradislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gradislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Grdesha_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Grdesha
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Grubesha_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Grubesha
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Hrab_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Hrab
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Hrabar_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Hrabar
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Hranislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Hranislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Hrelja_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Hrelja
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Hrvoje_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Hrvoje
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Hvalimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Hvalimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ilica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ilica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ivaca_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ivaca
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ivaylo_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ivaylo
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Jurislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Jurislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Klonimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Klonimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Kochapar_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Kochapar
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Krajina_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Krajina
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Krakra_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Krakra
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Krasimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Krasimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Kresimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Kresimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Kudelin_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Kudelin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Kulin_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Kulin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ljudislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ljudislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ljutovid_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ljutovid
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Lubomir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Lubomir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Malamir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Malamir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Meneslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Meneslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Mico_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Mico
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Milan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Milan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Miljan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Miljan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Milko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Milko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Milosh_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Milosh
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Milutin_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Milutin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Mirosh_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Mirosh
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Miroslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Miroslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Mladen_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Mladen
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Momchil_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Momchil
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Muncimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Muncimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Mutimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Mutimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Nemanja_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Nemanja
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ninoslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ninoslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Novak_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Novak
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Nyagol_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Nyagol
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Obrad_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Obrad
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ognyan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ognyan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Persiyan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Persiyan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Plenimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Plenimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Predimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Predimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Predislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Predislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Presiyan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Presiyan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Pribidrug_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Pribidrug
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Pribimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Pribimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Pribina_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Pribina
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Pribilsha_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Pribilsha
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Pribislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Pribislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Pribo_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Pribo
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Prijezda_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Prijezda
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Prodan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Prodan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Prosigoj_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Prosigoj
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Prvoslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Prvoslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radich_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radich
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radivoj_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radivoj
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radoje_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radoje
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radoman_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radoman
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radomir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radomir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radosh_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radosh
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radoslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radoslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radovan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radovan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Rastko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Rastko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ratimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ratimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Roger_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Roger
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Rostislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Rostislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Saganek_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Saganek
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Shegmon_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Shegmon
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Shishman_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Shishman
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Sigrica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Sigrica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Slav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Slav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Smilec_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Smilec
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Sracimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Sracimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Sramko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Sramko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stracimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stracimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stanimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stanimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stanislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stanislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stanko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stanko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Strojimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Strojimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Svetoslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Svetoslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Terter_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Terter
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Tihomir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Tihomir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Tolislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Tolislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Toljen_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Toljen
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Tomislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Tomislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Trpimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Trpimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Tvrtko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Tvrtko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Uglesha_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Uglesha
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Urosh_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Urosh
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Visheslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Visheslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vitomir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vitomir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vladimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vladimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vladislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vladislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlastimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlastimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlatko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlatko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlk_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlk
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlkan_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlkan
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlkashin_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlkashin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlkosav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlkosav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlkoslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlkoslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vojihna_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vojihna
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vojin_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vojin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vojislav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vojislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vojn_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vojn
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vojnomir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vojnomir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Voysil_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Voysil
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Voyteh_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Voyteh
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vuchina_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vuchina
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Xurum_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Xurum
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zavida_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zavida
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zdeslav_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zdeslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zharko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zharko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zlatko_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zlatko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zvinicha_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zvinicha
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zvonimir_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zvonimir
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Beloslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Beloslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bijela_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bijela
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bika_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bika
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bogdana_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bogdana
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bogomila_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bogomila
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Borislava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Borislava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Branislava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Branislava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Branka_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Branka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bratidrugi_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bratidrugi
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Brnjacha_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Brnjacha
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Buna_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Buna
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bunica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bunica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Chika_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Chika
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Deva_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Deva
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Desica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Desica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Desislava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Desislava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dobrica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dobrica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Domaslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Domaslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Desislava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Desislava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Draga_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Draga
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragana_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragana
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dragoslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dragoslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Drazhena_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Drazhena
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dumica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dumica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dushanka_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dushanka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gojica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gojica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gojslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gojslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gordana_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gordana
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gruba_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gruba
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Kumica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Kumica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Milca_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Milca
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Milica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Milica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Milka_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Milka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Miroslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Miroslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Neda_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Neda
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ozra_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ozra
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Prvica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Prvica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radoslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radoslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Radovana_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Radovana
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ratislava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ratislava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ratoslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ratoslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Rudina_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Rudina
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Slavica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Slavica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Smilcena_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Smilcena
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Sobeslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Sobeslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stana_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stana
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stanislava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stanislava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stanka_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stanka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stoyanka_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stoyanka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vekenega_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vekenega
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Veleslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Veleslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vinica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vinica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Visheslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Visheslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlachena_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlachena
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vladislava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vladislava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlka_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vlkoslava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vlkoslava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Vojislava_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Vojislava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zlatka_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zlatka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zorica_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zorica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zvonimira_slav target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zvonimira
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+		}
+		else = {
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_blank
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+	}
+}

@@ -1,0 +1,554 @@
+﻿romanian_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		50 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 12
+					}
+					random_list = {
+						1 = {
+							change_first_name = Alexander
+						}
+						1 = {
+							change_first_name = Andrew
+						}
+						1 = {
+							change_first_name = Basil
+						}
+						1 = {
+							change_first_name = Constantine
+						}
+						1 = {
+							change_first_name = Demetrios
+						}
+						1 = {
+							change_first_name = George
+						}
+						1 = {
+							change_first_name = Gregory
+						}
+						1 = {
+							change_first_name = John
+						}
+						1 = {
+							change_first_name = Michael
+						}
+						1 = {
+							change_first_name = Peter
+						}
+						1 = {
+							change_first_name = Stephen
+						}
+						1 = {
+							change_first_name = Theodore
+						}
+					}
+				}
+				1 = {
+					change_first_name = Bogdan
+				}
+				1 = {
+					change_first_name = Dan
+				}
+				1 = {
+					change_first_name = Dragan
+				}
+				1 = {
+					change_first_name = Dragomir
+				}
+				1 = {
+					change_first_name = Dragosh
+				}
+				1 = {
+					change_first_name = Dragoslav
+				}
+				1 = {
+					change_first_name = Mircea
+				}
+				1 = {
+					change_first_name = Nyagol
+				}
+				1 = {
+					change_first_name = Radu
+				}
+				1 = {
+					change_first_name = Stan
+				}
+				1 = {
+					change_first_name = Stanciul
+				}
+				1 = {
+					change_first_name = Stayko
+				}
+				1 = {
+					change_first_name = Stoyan
+				}
+				1 = {
+					change_first_name = Valcul
+				}
+				1 = {
+					change_first_name = Vlad
+				}
+			}
+		}
+		35 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 8
+					}
+					random_list = {
+						1 = {
+							change_first_name = Elijah
+						}
+						1 = {
+							change_first_name = Ioanita
+						}
+						1 = {
+							change_first_name = Luke
+						}
+						1 = {
+							change_first_name = Marcus
+						}
+						1 = {
+							change_first_name = Nicholas
+						}
+						1 = {
+							change_first_name = Simon
+						}
+						1 = {
+							change_first_name = Stefanita
+						}
+						1 = {
+							change_first_name = Gabriel
+						}
+					}
+				}
+				1 = {
+					change_first_name = Bucur
+				}
+				1 = {
+					change_first_name = Bunea
+				}
+				1 = {
+					change_first_name = Cocor
+				}
+				1 = {
+					change_first_name = Costa
+				}
+				1 = {
+					change_first_name = Dobromir
+				}
+				1 = {
+					change_first_name = Dobroslav
+				}
+				1 = {
+					change_first_name = Dragnea
+				}
+				1 = {
+					change_first_name = Dragota
+				}
+				1 = {
+					change_first_name = Farcash
+				}
+				1 = {
+					change_first_name = Gostimir
+				}
+				1 = {
+					change_first_name = Gyula
+				}
+				1 = {
+					change_first_name = Latcu
+				}
+				1 = {
+					change_first_name = Litovoi
+				}
+				1 = {
+					change_first_name = Lope
+				}
+				1 = {
+					change_first_name = Mihnea
+				}
+				1 = {
+					change_first_name = Mirosh
+				}
+				1 = {
+					change_first_name = Neagota
+				}
+				1 = {
+					change_first_name = Neagsha
+				}
+				1 = {
+					change_first_name = Neagush
+				}
+				1 = {
+					change_first_name = Parvu
+				}
+				1 = {
+					change_first_name = Prodan
+				}
+				1 = {
+					change_first_name = Radomir
+				}
+				1 = {
+					change_first_name = Radosh
+				}
+				1 = {
+					change_first_name = Radoslav
+				}
+				1 = {
+					change_first_name = Romanus
+				}
+				1 = {
+					change_first_name = Sas
+				}
+				1 = {
+					change_first_name = Sima
+				}
+				1 = {
+					change_first_name = Stanila
+				}
+				1 = {
+					change_first_name = Stanimir
+				}
+				1 = {
+					change_first_name = Stanislav
+				}
+				1 = {
+					change_first_name = Stoya
+				}
+				1 = {
+					change_first_name = Tatomir
+				}
+				1 = {
+					change_first_name = Teshimir
+				}
+				1 = {
+					change_first_name = Tihomir
+				}
+				1 = {
+					change_first_name = Turiac
+				}
+				1 = {
+					change_first_name = Varban
+				}
+				1 = {
+					change_first_name = Velimir
+				}
+				1 = {
+					change_first_name = Verivoi
+				}
+				1 = {
+					change_first_name = Vintila
+				}
+				1 = {
+					change_first_name = Vladislav
+				}
+				1 = {
+					change_first_name = Voinea
+				}
+				1 = {
+					change_first_name = Vuzhin
+				}
+			}
+		}
+		15 = {
+			random_list = {
+				1 = {
+					change_first_name = Bratilo
+				}
+				1 = {
+					change_first_name = Bratina
+				}
+				1 = {
+					change_first_name = Brativoe
+				}
+				1 = {
+					change_first_name = Bratoneag
+				}
+				1 = {
+					change_first_name = Bucan
+				}
+				1 = {
+					change_first_name = Bucea
+				}
+				1 = {
+					change_first_name = Budislav
+				}
+				1 = {
+					change_first_name = Ciarneaga
+				}
+				1 = {
+					change_first_name = Ciucea
+				}
+				1 = {
+					change_first_name = Culin
+				}
+				1 = {
+					change_first_name = Desimir
+				}
+				1 = {
+					change_first_name = Desislav
+				}
+				1 = {
+					change_first_name = Dobrita
+				}
+				1 = {
+					change_first_name = Dobrotica
+				}
+				1 = {
+					change_first_name = Dragashan
+				}
+				1 = {
+					change_first_name = Dragovita
+				}
+				1 = {
+					change_first_name = Drajan
+				}
+				1 = {
+					change_first_name = Drujoe
+				}
+				1 = {
+					change_first_name = Dubravita
+				}
+				1 = {
+					change_first_name = Dusha
+				}
+				1 = {
+					change_first_name = Goishin
+				}
+				1 = {
+					change_first_name = Gostisha
+				}
+				1 = {
+					change_first_name = Gradan
+				}
+				1 = {
+					change_first_name = Gugota
+				}
+				1 = {
+					change_first_name = Gunea
+				}
+				1 = {
+					change_first_name = Hodisha
+				}
+				1 = {
+					change_first_name = Hrelja
+				}
+				1 = {
+					change_first_name = Liubota
+				}
+				1 = {
+					change_first_name = Lutan
+				}
+				1 = {
+					change_first_name = Milosh
+				}
+				1 = {
+					change_first_name = Miroslav
+				}
+				1 = {
+					change_first_name = Nanota
+				}
+				1 = {
+					change_first_name = Slavota
+				}
+				1 = {
+					change_first_name = Tihoslav
+				}
+				1 = {
+					change_first_name = Vojislav
+				}
+				1 = {
+					change_first_name = Volimir
+				}
+				1 = {
+					change_first_name = Vratisha
+				}
+			}
+		}
+	}
+}
+romanian_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		50 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 9
+					}
+					random_list = {
+						1 = {
+							change_first_name = Alexandra
+						}
+						1 = {
+							change_first_name = Anastasia
+						}
+						1 = {
+							change_first_name = Anka
+						}
+						1 = {
+							change_first_name = Anna
+						}
+						1 = {
+							change_first_name = Helen
+						}
+						1 = {
+							change_first_name = Joanna
+						}
+						1 = {
+							change_first_name = Mary
+						}
+						1 = {
+							change_first_name = Nastasia
+						}
+						1 = {
+							change_first_name = Sophia
+						}
+					}
+				}
+				1 = {
+					change_first_name = Rada
+				}
+				1 = {
+					change_first_name = Rokhsana
+				}
+				1 = {
+					change_first_name = Stana
+				}
+				1 = {
+					change_first_name = Stanka
+				}
+			}
+		}
+		35 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 13
+					}
+					random_list = {
+						1 = {
+							change_first_name = Angelina
+						}
+						1 = {
+							change_first_name = Anushka
+						}
+						1 = {
+							change_first_name = Catherine
+						}
+						1 = {
+							change_first_name = Elizabeth
+						}
+						1 = {
+							change_first_name = Eupraxia
+						}
+						1 = {
+							change_first_name = Ileana
+						}
+						1 = {
+							change_first_name = Ilinca
+						}
+						1 = {
+							change_first_name = Juliana
+						}
+						1 = {
+							change_first_name = Magdalene
+						}
+						1 = {
+							change_first_name = Margaret
+						}
+						1 = {
+							change_first_name = Marica
+						}
+						1 = {
+							change_first_name = Sofiica
+						}
+						1 = {
+							change_first_name = Theodora
+						}
+					}
+				}
+				1 = {
+					change_first_name = Calina
+				}
+				1 = {
+					change_first_name = Calinichia
+				}
+				1 = {
+					change_first_name = Caltuna
+				}
+				1 = {
+					change_first_name = Dragoshina
+				}
+				1 = {
+					change_first_name = Florica
+				}
+				1 = {
+					change_first_name = Ghinda
+				}
+				1 = {
+					change_first_name = Luna
+				}
+				1 = {
+					change_first_name = Sorea
+				}
+				1 = {
+					change_first_name = Velica
+				}
+				1 = {
+					change_first_name = Voica
+				}
+			}
+		}
+		15 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = Marushka
+				}
+				1 = {
+					change_first_name = Basilissa
+				}
+				1 = {
+					change_first_name = Cneajna
+				}
+				1 = {
+					change_first_name = Oltea
+				}
+			}
+		}
+	}
+}
