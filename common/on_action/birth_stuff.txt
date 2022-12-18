@@ -13,8 +13,53 @@ on_birth_child_ne = {
             is_npe_supported_culture = yes
         }
     }
+	on_actions = {
+		on_player_baptismal
+	}
 	effect = {
 		name_gen_effect = yes
+	}
+}
+on_player_baptismal = {
+	trigger = {
+		OR = {
+			father = {
+				is_ai = no
+			}
+			mother = {
+				is_ai = no
+			}
+		}
+		culture = {
+			has_name_list = name_list_croatian
+			has_name_list = name_list_bulgarian
+			has_name_list = name_list_serbian
+			has_name_list = name_list_bosnian
+		}
+	}
+	effect = {
+		save_scope_as = the_child
+		if = {
+			limit = {
+				father = {
+					is_ai = no
+				}
+				father = {
+					trigger_event = {
+						id = npebaptismal.001
+						days = { 14 30 }
+					}
+				}
+			}
+		}
+		else = {
+			mother = {
+				trigger_event = {
+					id = npebaptismal.001
+					days = { 14 30 }
+				}
+			}
+		}
 	}
 }
 on_son_father_birth = {

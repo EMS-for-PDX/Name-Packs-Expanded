@@ -1,0 +1,2776 @@
+slav_baptismal_primary_player_name_effect = {
+	save_scope_as = thechar
+	dynasty = {
+		add_to_variable_list = { name = slav_name_dynasty target = scope:thechar }
+	}
+	if = {
+		limit = {
+			this.var:bap_temp = flag:Aaron
+		}
+		change_first_name = Aaron
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Adam
+		}
+		change_first_name = Adam
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Alexander
+		}
+		change_first_name = Alexander
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Alexios
+		}
+		change_first_name = Alexios
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Andrew
+		}
+		change_first_name = Andrew
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Anthony
+		}
+		change_first_name = Anthony
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Bartholomew
+		}
+		change_first_name = Bartholomew
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Basil
+		}
+		change_first_name = Bartholomew
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Benedict
+		}
+		change_first_name = Benedict
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Blasius
+		}
+		change_first_name = Blasius
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Christopher
+		}
+		change_first_name = Christopher
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Clement
+		}
+		change_first_name = Clement
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Constantine
+		}
+		change_first_name = Constantine
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Damian
+		}
+		change_first_name = Damian
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Daniel
+		}
+		change_first_name = Daniel
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:David
+		}
+		change_first_name = David
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Demetrios
+		}
+		change_first_name = Demetrios
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Dminoslav
+		}
+		change_first_name = Dminoslav
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Dominikos
+		}
+		change_first_name = Dominikos
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Dorde
+		}
+		change_first_name = Dorde
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Duro
+		}
+		change_first_name = Duro
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Elijah
+		}
+		change_first_name = Elijah
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Francis
+		}
+		change_first_name = Francis
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Gabriel
+		}
+		change_first_name = Gabriel
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:George
+		}
+		change_first_name = George
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Georgije
+		}
+		change_first_name = Georgije
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Gregory
+		}
+		change_first_name = Gregory
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Isaac
+		}
+		change_first_name = Isaac
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Ivanko
+		}
+		change_first_name = Ivanko
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Ivanis
+		}
+		change_first_name = Ivanis
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Jacob
+		}
+		change_first_name = Jacob
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:John
+		}
+		change_first_name = John
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Joseph
+		}
+		change_first_name = Joseph
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Laurence
+		}
+		change_first_name = Laurence
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Lazarus
+		}
+		change_first_name = Lazarus
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Luke
+		}
+		change_first_name = Luke
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Manuel
+		}
+		change_first_name = Manuel
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Marcus
+		}
+		change_first_name = Marcus
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Marinus
+		}
+		change_first_name = Marinus
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Martin
+		}
+		change_first_name = Martin
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Matko
+		}
+		change_first_name = Matko
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Matthew
+		}
+		change_first_name = Matthew
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Michael
+		}
+		change_first_name = Michael
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Moses
+		}
+		change_first_name = Moses
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Nestorica
+		}
+		change_first_name = Nestorica
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Nicholas
+		}
+		change_first_name = Nicholas
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Nikephoros
+		}
+		change_first_name = Nikephoros
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Oliver
+		}
+		change_first_name = Oliver
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Paul
+		}
+		change_first_name = Paul
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Peter
+		}
+		change_first_name = Peter
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Petko
+		}
+		change_first_name = Petko
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Petrislav
+		}
+		change_first_name = Petrislav
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Romanus
+		}
+		change_first_name = Romanus
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Samuel
+		}
+		change_first_name = Samuel
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Sergius
+		}
+		change_first_name = Sergius
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Simon
+		}
+		change_first_name = Simon
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Stephen
+		}
+		change_first_name = Stephen
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Stjepko
+		}
+		change_first_name = Stjepko
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Theodore
+		}
+		change_first_name = Theodore
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Thomas
+		}
+		change_first_name = Thomas
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Zachary
+		}
+		change_first_name = Zachary
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Alexandra
+		}
+		change_first_name = Alexandra
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Anastasia
+		}
+		change_first_name = Anastasia
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Angelica
+		}
+		change_first_name = Angelica
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Angelina
+		}
+		change_first_name = Angelina
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Anka
+		}
+		change_first_name = Anka
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Anna
+		}
+		change_first_name = Anna
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Basilissa
+		}
+		change_first_name = Basilissa
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Catherine
+		}
+		change_first_name = Catherine
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Christina
+		}
+		change_first_name = Christina
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Clarica
+		}
+		change_first_name = Clarica
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Claudia
+		}
+		change_first_name = Claudia
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Dominica
+		}
+		change_first_name = Dominica
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Dorothea
+		}
+		change_first_name = Dorothea
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Elizabeth
+		}
+		change_first_name = Elizabeth
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Euphemia
+		}
+		change_first_name = Euphemia
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Eupraxia
+		}
+		change_first_name = Eupraxia
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Franica
+		}
+		change_first_name = Franica
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Helen
+		}
+		change_first_name = Helen
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Irene
+		}
+		change_first_name = Irene
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Ivanka
+		}
+		change_first_name = Ivanka
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Mara
+		}
+		change_first_name = Mara
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Margaret
+		}
+		change_first_name = Margaret
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Marica
+		}
+		change_first_name = Marica
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Marina
+		}
+		change_first_name = Marina
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Marislava
+		}
+		change_first_name = Marislava
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Martha
+		}
+		change_first_name = Martha
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Mary
+		}
+		change_first_name = Mary
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Olivera
+		}
+		change_first_name = Olivera
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Petka
+		}
+		change_first_name = Petka
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Petrica
+		}
+		change_first_name = Petrica
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Sarah
+		}
+		change_first_name = Sarah
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Scholastica
+		}
+		change_first_name = Scholastica
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Sophia
+		}
+		change_first_name = Sophia
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Tamar
+		}
+		change_first_name = Tamar
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Theodora
+		}
+		change_first_name = Theodora
+	}
+	if = {
+		limit = {
+			this.var:slav_name = flag:Aldemir
+		}
+		add_to_global_variable_list = { name = Aldemir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Altoman
+		}
+		add_to_global_variable_list = { name = Altoman_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Alusian
+		}
+		add_to_global_variable_list = { name = Alusian_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Andronikos
+		}
+		add_to_global_variable_list = { name = Andronikos_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Arslan
+		}
+		add_to_global_variable_list = { name = Arslan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Balik
+		}
+		add_to_global_variable_list = { name = Balik_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Balsa
+		}
+		add_to_global_variable_list = { name = Balsa_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Bars
+		}
+		add_to_global_variable_list = { name = Bars_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Bayan
+		}
+		add_to_global_variable_list = { name = Bayan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Belaur
+		}
+		add_to_global_variable_list = { name = Belaur_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Beloje
+		}
+		add_to_global_variable_list = { name = Beloje_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Beridrug
+		}
+		add_to_global_variable_list = { name = Beridrug_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Berigoj
+		}
+		add_to_global_variable_list = { name = Berigoj_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Bodin
+		}
+		add_to_global_variable_list = { name = Bodin_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:slav_name = flag:Bogdan
+		}
+		add_to_global_variable_list = { name = Bogdan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Bogomil
+		}
+		add_to_global_variable_list = { name = Bogomil_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Boledrug
+		}
+		add_to_global_variable_list = { name = Boledrug_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Bolemir
+		}
+		add_to_global_variable_list = { name = Bolemir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Boleslav
+		}
+		add_to_global_variable_list = { name = Boleslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Boric
+		}
+		add_to_global_variable_list = { name = Boric_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Boril
+		}
+		add_to_global_variable_list = { name = Boril_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Borislav
+		}
+		add_to_global_variable_list = { name = Borislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Botko
+		}
+		add_to_global_variable_list = { name = Botko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Bran
+		}
+		add_to_global_variable_list = { name = Bran_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Branimir
+		}
+		add_to_global_variable_list = { name = Branimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Branislav
+		}
+		add_to_global_variable_list = { name = Branislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Branko
+		}
+		add_to_global_variable_list = { name = Branko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Budimir
+		}
+		add_to_global_variable_list = { name = Budimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Chaslav
+		}
+		add_to_global_variable_list = { name = Chaslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Chuchimir
+		}
+		add_to_global_variable_list = { name = Chuchimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Coloman
+		}
+		add_to_global_variable_list = { name = Coloman_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Crne
+		}
+		add_to_global_variable_list = { name = Crne_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Crnomir
+		}
+		add_to_global_variable_list = { name = Crnomir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Crnoslav
+		}
+		add_to_global_variable_list = { name = Crnoslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dabisha
+		}
+		add_to_global_variable_list = { name = Dabisha_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dabizhiv
+		}
+		add_to_global_variable_list = { name = Dabizhiv_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Darko
+		}
+		add_to_global_variable_list = { name = Darko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dejan
+		}
+		add_to_global_variable_list = { name = Dejan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Delyan
+		}
+		add_to_global_variable_list = { name = Delyan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Desidrug
+		}
+		add_to_global_variable_list = { name = Desidrug_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Desimir
+		}
+		add_to_global_variable_list = { name = Desimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Desina
+		}
+		add_to_global_variable_list = { name = Desina_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Desislav
+		}
+		add_to_global_variable_list = { name = Desislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobran
+		}
+		add_to_global_variable_list = { name = Dobran_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobravac
+		}
+		add_to_global_variable_list = { name = Dobravac_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobro
+		}
+		add_to_global_variable_list = { name = Dobro_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobrogost
+		}
+		add_to_global_variable_list = { name = Dobrogost_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobromir
+		}
+		add_to_global_variable_list = { name = Dobromir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobrosh
+		}
+		add_to_global_variable_list = { name = Dobrosh_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobroslav
+		}
+		add_to_global_variable_list = { name = Dobroslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobrotica
+		}
+		add_to_global_variable_list = { name = Dobrotica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobrovit
+		}
+		add_to_global_variable_list = { name = Dobrovit_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Domagoj
+		}
+		add_to_global_variable_list = { name = Domagoj_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Domanek
+		}
+		add_to_global_variable_list = { name = Domanek_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Domald
+		}
+		add_to_global_variable_list = { name = Domald_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragan
+		}
+		add_to_global_variable_list = { name = Dragan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragic
+		}
+		add_to_global_variable_list = { name = Dragic_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Drago
+		}
+		add_to_global_variable_list = { name = Drago_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragoljub
+		}
+		add_to_global_variable_list = { name = Dragoljub_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragomaz
+		}
+		add_to_global_variable_list = { name = Dragomaz_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragomir
+		}
+		add_to_global_variable_list = { name = Dragomir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragosh
+		}
+		add_to_global_variable_list = { name = Dragosh_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragoslav
+		}
+		add_to_global_variable_list = { name = Dragoslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragshan
+		}
+		add_to_global_variable_list = { name = Dragshan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragushin
+		}
+		add_to_global_variable_list = { name = Dragushin_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragutin
+		}
+		add_to_global_variable_list = { name = Dragutin_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Drashko
+		}
+		add_to_global_variable_list = { name = Drashko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Drzimir
+		}
+		add_to_global_variable_list = { name = Drzimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dujmus
+		}
+		add_to_global_variable_list = { name = Dujmus_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dushan
+		}
+		add_to_global_variable_list = { name = Dushan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Esen
+		}
+		add_to_global_variable_list = { name = Esen_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Frederick
+		}
+		add_to_global_variable_list = { name = Frederick_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Fruzhin
+		}
+		add_to_global_variable_list = { name = Fruzhin_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Glad
+		}
+		add_to_global_variable_list = { name = Glad_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Godemir
+		}
+		add_to_global_variable_list = { name = Godemir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Gojcho
+		}
+		add_to_global_variable_list = { name = Gojcho_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Gojnik
+		}
+		add_to_global_variable_list = { name = Gojnik_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Gojslav
+		}
+		add_to_global_variable_list = { name = Gojslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Gradinja
+		}
+		add_to_global_variable_list = { name = Gradinja_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Gradislav
+		}
+		add_to_global_variable_list = { name = Gradislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Grdesha
+		}
+		add_to_global_variable_list = { name = Grdesha_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Grubesha
+		}
+		add_to_global_variable_list = { name = Grubesha_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Hrab
+		}
+		add_to_global_variable_list = { name = Hrab_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Hrabar
+		}
+		add_to_global_variable_list = { name = Hrabar_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Hranislav
+		}
+		add_to_global_variable_list = { name = Hranislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Hrelja
+		}
+		add_to_global_variable_list = { name = Hrelja_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Hrvoje
+		}
+		add_to_global_variable_list = { name = Hrvoje_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Hvalimir
+		}
+		add_to_global_variable_list = { name = Hvalimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ilica
+		}
+		add_to_global_variable_list = { name = Ilica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ivaca
+		}
+		add_to_global_variable_list = { name = Ivaca_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ivaylo
+		}
+		add_to_global_variable_list = { name = Ivaylo_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Jurislav
+		}
+		add_to_global_variable_list = { name = Jurislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Klonimir
+		}
+		add_to_global_variable_list = { name = Klonimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Kochapar
+		}
+		add_to_global_variable_list = { name = Kochapar_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Krajina
+		}
+		add_to_global_variable_list = { name = Krajina_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Krakra
+		}
+		add_to_global_variable_list = { name = Krakra_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Krasimir
+		}
+		add_to_global_variable_list = { name = Krasimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Kresimir
+		}
+		add_to_global_variable_list = { name = Kresimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Kudelin
+		}
+		add_to_global_variable_list = { name = Kudelin_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Kulin
+		}
+		add_to_global_variable_list = { name = Kulin_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ljudislav
+		}
+		add_to_global_variable_list = { name = Ljudislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ljutovid
+		}
+		add_to_global_variable_list = { name = Ljutovid_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Lubomir
+		}
+		add_to_global_variable_list = { name = Lubomir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Malamir
+		}
+		add_to_global_variable_list = { name = Malamir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Meneslav
+		}
+		add_to_global_variable_list = { name = Meneslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Mico
+		}
+		add_to_global_variable_list = { name = Mico_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Milan
+		}
+		add_to_global_variable_list = { name = Milan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Miljan
+		}
+		add_to_global_variable_list = { name = Miljan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Milko
+		}
+		add_to_global_variable_list = { name = Milko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Milosh
+		}
+		add_to_global_variable_list = { name = Milosh_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Milutin
+		}
+		add_to_global_variable_list = { name = Milutin_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Mirosh
+		}
+		add_to_global_variable_list = { name = Mirosh_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Miroslav
+		}
+		add_to_global_variable_list = { name = Miroslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Mladen
+		}
+		add_to_global_variable_list = { name = Mladen_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Momchil
+		}
+		add_to_global_variable_list = { name = Momchil_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Muncimir
+		}
+		add_to_global_variable_list = { name = Muncimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Mutimir
+		}
+		add_to_global_variable_list = { name = Mutimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Nemanja
+		}
+		add_to_global_variable_list = { name = Nemanja_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ninoslav
+		}
+		add_to_global_variable_list = { name = Ninoslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Novak
+		}
+		add_to_global_variable_list = { name = Novak_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Nyagol
+		}
+		add_to_global_variable_list = { name = Nyagol_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Obrad
+		}
+		add_to_global_variable_list = { name = Obrad_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ognyan
+		}
+		add_to_global_variable_list = { name = Ognyan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Persiyan
+		}
+		add_to_global_variable_list = { name = Persiyan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Plenimir
+		}
+		add_to_global_variable_list = { name = Plenimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Predimir
+		}
+		add_to_global_variable_list = { name = Predimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Predislav
+		}
+		add_to_global_variable_list = { name = Predislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Presiyan
+		}
+		add_to_global_variable_list = { name = Presiyan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Pribidrug
+		}
+		add_to_global_variable_list = { name = Pribidrug_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Pribimir
+		}
+		add_to_global_variable_list = { name = Pribimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Pribina
+		}
+		add_to_global_variable_list = { name = Pribina_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Pribilsha
+		}
+		add_to_global_variable_list = { name = Pribilsha_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Pribislav
+		}
+		add_to_global_variable_list = { name = Pribislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Pribo
+		}
+		add_to_global_variable_list = { name = Pribo_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Prijezda
+		}
+		add_to_global_variable_list = { name = Prijezda_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Prodan
+		}
+		add_to_global_variable_list = { name = Prodan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Prosigoj
+		}
+		add_to_global_variable_list = { name = Prosigoj_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Prvoslav
+		}
+		add_to_global_variable_list = { name = Prvoslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radich
+		}
+		add_to_global_variable_list = { name = Radich_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radivoj
+		}
+		add_to_global_variable_list = { name = Radivoj_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radoje
+		}
+		add_to_global_variable_list = { name = Radoje_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radoman
+		}
+		add_to_global_variable_list = { name = Radoman_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radomir
+		}
+		add_to_global_variable_list = { name = Radomir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radosh
+		}
+		add_to_global_variable_list = { name = Radosh_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radoslav
+		}
+		add_to_global_variable_list = { name = Radoslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radovan
+		}
+		add_to_global_variable_list = { name = Radovan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Rastko
+		}
+		add_to_global_variable_list = { name = Rastko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ratimir
+		}
+		add_to_global_variable_list = { name = Ratimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Roger
+		}
+		add_to_global_variable_list = { name = Roger_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Rostislav
+		}
+		add_to_global_variable_list = { name = Rostislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Saganek
+		}
+		add_to_global_variable_list = { name = Saganek_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Shegmon
+		}
+		add_to_global_variable_list = { name = Shegmon_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Shishman
+		}
+		add_to_global_variable_list = { name = Shishman_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Sigrica
+		}
+		add_to_global_variable_list = { name = Sigrica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Slav
+		}
+		add_to_global_variable_list = { name = Slav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Smilec
+		}
+		add_to_global_variable_list = { name = Smilec_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Sracimir
+		}
+		add_to_global_variable_list = { name = Sracimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Sramko
+		}
+		add_to_global_variable_list = { name = Sramko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stracimir
+		}
+		add_to_global_variable_list = { name = Stracimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stanimir
+		}
+		add_to_global_variable_list = { name = Stanimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stanislav
+		}
+		add_to_global_variable_list = { name = Stanislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stanko
+		}
+		add_to_global_variable_list = { name = Stanko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stayko
+		}
+		add_to_global_variable_list = { name = Stayko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stoyan
+		}
+		add_to_global_variable_list = { name = Stoyan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Strez
+		}
+		add_to_global_variable_list = { name = Strez_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Strojimir
+		}
+		add_to_global_variable_list = { name = Strojimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Svetoslav
+		}
+		add_to_global_variable_list = { name = Svetoslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Terter
+		}
+		add_to_global_variable_list = { name = Terter_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Tihomir
+		}
+		add_to_global_variable_list = { name = Tihomir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Tolislav
+		}
+		add_to_global_variable_list = { name = Tolislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Toljen
+		}
+		add_to_global_variable_list = { name = Toljen_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Tomislav
+		}
+		add_to_global_variable_list = { name = Tomislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Trpimir
+		}
+		add_to_global_variable_list = { name = Trpimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Tvrtko
+		}
+		add_to_global_variable_list = { name = Tvrtko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Uglesha
+		}
+		add_to_global_variable_list = { name = Uglesha_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Urosh
+		}
+		add_to_global_variable_list = { name = Urosh_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Visheslav
+		}
+		add_to_global_variable_list = { name = Visheslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vitomir
+		}
+		add_to_global_variable_list = { name = Vitomir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vladimir
+		}
+		add_to_global_variable_list = { name = Vladimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vladislav
+		}
+		add_to_global_variable_list = { name = Vladislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlastimir
+		}
+		add_to_global_variable_list = { name = Vlastimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlatko
+		}
+		add_to_global_variable_list = { name = Vlatko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlk
+		}
+		add_to_global_variable_list = { name = Vlk_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlkan
+		}
+		add_to_global_variable_list = { name = Vlkan_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlkashin
+		}
+		add_to_global_variable_list = { name = Vlkashin_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlkosav
+		}
+		add_to_global_variable_list = { name = Vlkosav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlkoslav
+		}
+		add_to_global_variable_list = { name = Vlkoslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vojihna
+		}
+		add_to_global_variable_list = { name = Vojihna_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vojin
+		}
+		add_to_global_variable_list = { name = Vojin_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vojislav
+		}
+		add_to_global_variable_list = { name = Vojislav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vojn
+		}
+		add_to_global_variable_list = { name = Vojn_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vojnomir
+		}
+		add_to_global_variable_list = { name = Vojnomir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Voysil
+		}
+		add_to_global_variable_list = { name = Voysil_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Voyteh
+		}
+		add_to_global_variable_list = { name = Voyteh_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vuchina
+		}
+		add_to_global_variable_list = { name = Vuchina_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Xurum
+		}
+		add_to_global_variable_list = { name = Xurum_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Zavida
+		}
+		add_to_global_variable_list = { name = Zavida_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Zdeslav
+		}
+		add_to_global_variable_list = { name = Zdeslav_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Zharko
+		}
+		add_to_global_variable_list = { name = Zharko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Zlatko
+		}
+		add_to_global_variable_list = { name = Zlatko_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Zvinicha
+		}
+		add_to_global_variable_list = { name = Zvinicha_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Zvonimir
+		}
+		add_to_global_variable_list = { name = Zvonimir_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Beloslava
+		}
+		add_to_global_variable_list = { name = Beloslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Bijela
+		}
+		add_to_global_variable_list = { name = Bijela_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Bika
+		}
+		add_to_global_variable_list = { name = Bika_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Bogdana
+		}
+		add_to_global_variable_list = { name = Bogdana_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Bogomila
+		}
+		add_to_global_variable_list = { name = Bogomila_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Borislava
+		}
+		add_to_global_variable_list = { name = Borislava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Branislava
+		}
+		add_to_global_variable_list = { name = Branislava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Branka
+		}
+		add_to_global_variable_list = { name = Branka_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Bratidrugi
+		}
+		add_to_global_variable_list = { name = Bratidrugi_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Brnjacha
+		}
+		add_to_global_variable_list = { name = Brnjacha_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Buna
+		}
+		add_to_global_variable_list = { name = Buna_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Bunica
+		}
+		add_to_global_variable_list = { name = Bunica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Chika
+		}
+		add_to_global_variable_list = { name = Chika_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Deva
+		}
+		add_to_global_variable_list = { name = Deva_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Desica
+		}
+		add_to_global_variable_list = { name = Desica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Desislava
+		}
+		add_to_global_variable_list = { name = Desislava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dobrica
+		}
+		add_to_global_variable_list = { name = Dobrica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Domaslava
+		}
+		add_to_global_variable_list = { name = Domaslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Draga
+		}
+		add_to_global_variable_list = { name = Draga_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragana
+		}
+		add_to_global_variable_list = { name = Dragana_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragica
+		}
+		add_to_global_variable_list = { name = Dragica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dragoslava
+		}
+		add_to_global_variable_list = { name = Dragoslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Drazhena
+		}
+		add_to_global_variable_list = { name = Drazhena_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dumica
+		}
+		add_to_global_variable_list = { name = Dumica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Dushanka
+		}
+		add_to_global_variable_list = { name = Dushanka_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Gojica
+		}
+		add_to_global_variable_list = { name = Gojica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Gojslava
+		}
+		add_to_global_variable_list = { name = Gojslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Gordana
+		}
+		add_to_global_variable_list = { name = Gordana_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Gruba
+		}
+		add_to_global_variable_list = { name = Gruba_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ileana
+		}
+		add_to_global_variable_list = { name = Ileana_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Kalya
+		}
+		add_to_global_variable_list = { name = Kalya_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Keraca
+		}
+		add_to_global_variable_list = { name = Keraca_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Kosara
+		}
+		add_to_global_variable_list = { name = Kosara_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Krasimira
+		}
+		add_to_global_variable_list = { name = Krasimira_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Kumica
+		}
+		add_to_global_variable_list = { name = Kumica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Milca
+		}
+		add_to_global_variable_list = { name = Milca_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Milica
+		}
+		add_to_global_variable_list = { name = Milica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Miroslava
+		}
+		add_to_global_variable_list = { name = Miroslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Neda
+		}
+		add_to_global_variable_list = { name = Neda_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ozra
+		}
+		add_to_global_variable_list = { name = Ozra_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Prvica
+		}
+		add_to_global_variable_list = { name = Prvica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radica
+		}
+		add_to_global_variable_list = { name = Radica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radoslava
+		}
+		add_to_global_variable_list = { name = Radoslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Radovana
+		}
+		add_to_global_variable_list = { name = Radovana_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ratislava
+		}
+		add_to_global_variable_list = { name = Ratislava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Ratoslava
+		}
+		add_to_global_variable_list = { name = Ratoslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Rudina
+		}
+		add_to_global_variable_list = { name = Rudina_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Slavica
+		}
+		add_to_global_variable_list = { name = Slavica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Smilcena
+		}
+		add_to_global_variable_list = { name = Smilcena_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Sobeslava
+		}
+		add_to_global_variable_list = { name = Sobeslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stana
+		}
+		add_to_global_variable_list = { name = Stana_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stanislava
+		}
+		add_to_global_variable_list = { name = Stanislava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stanka
+		}
+		add_to_global_variable_list = { name = Stanka_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Stoyanka
+		}
+		add_to_global_variable_list = { name = Stoyanka_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vekenega
+		}
+		add_to_global_variable_list = { name = Vekenega_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Veleslava
+		}
+		add_to_global_variable_list = { name = Veleslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vinica
+		}
+		add_to_global_variable_list = { name = Vinica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Visheslava
+		}
+		add_to_global_variable_list = { name = Visheslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlachena
+		}
+		add_to_global_variable_list = { name = Vlachena_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vladislava
+		}
+		add_to_global_variable_list = { name = Vladislava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlka
+		}
+		add_to_global_variable_list = { name = Vlka_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vlkoslava
+		}
+		add_to_global_variable_list = { name = Vlkoslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Vojislava
+		}
+		add_to_global_variable_list = { name = Vojislava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Zlatka
+		}
+		add_to_global_variable_list = { name = Zlatka_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Zorica
+		}
+		add_to_global_variable_list = { name = Zorica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Zvonimira
+		}
+		add_to_global_variable_list = { name = Zvonimira_slav target = scope:thechar }
+	}
+	remove_variable = bap_temp
+	remove_variable = slav_name
+}
+slav_slav_primary_player_name_effect = {
+	save_scope_as = thechar
+	dynasty = {
+		add_to_variable_list = { name = baptismal_name_dynasty target = scope:thechar }
+	}
+	if = {
+		limit = {
+			this.var:bap_temp = flag:Aaron
+		}
+		add_to_global_variable_list = { name = Aaron_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+			this.var:bap_temp = flag:Adam
+		}
+		add_to_global_variable_list = { name = Adam_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Alexander
+		}
+		add_to_global_variable_list = { name = Alexander_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Alexios
+		}
+		add_to_global_variable_list = { name = Alexios_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Andrew
+		}
+		add_to_global_variable_list = { name = Andrew_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Anthony
+		}
+		add_to_global_variable_list = { name = Anthony_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Bartholomew
+		}
+		add_to_global_variable_list = { name = Bartholomew_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Basil
+		}
+		add_to_global_variable_list = { name = Basil_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Benedict
+		}
+		add_to_global_variable_list = { name = Benedict_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Blasius
+		}
+		add_to_global_variable_list = { name = Blasius_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Christopher
+		}
+		add_to_global_variable_list = { name = Christopher_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Clement
+		}
+		add_to_global_variable_list = { name = Clement_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Constantine
+		}
+		add_to_global_variable_list = { name = Constantine_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Damian
+		}
+		add_to_global_variable_list = { name = Damian_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Daniel
+		}
+		add_to_global_variable_list = { name = Daniel_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:David
+		}
+		add_to_global_variable_list = { name = David_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Demetrios
+		}
+		add_to_global_variable_list = { name = Demetrios_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Dminoslav
+		}
+		add_to_global_variable_list = { name = Dminoslav_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Dominikos
+		}
+		add_to_global_variable_list = { name = Dominikos_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Dorde
+		}
+		add_to_global_variable_list = { name = Dorde_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Duro
+		}
+		add_to_global_variable_list = { name = Duro_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Elijah
+		}
+		add_to_global_variable_list = { name = Elijah_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Francis
+		}
+		add_to_global_variable_list = { name = Francis_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Gabriel
+		}
+		add_to_global_variable_list = { name = Gabriel_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:George
+		}
+		add_to_global_variable_list = { name = George_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Georgije
+		}
+		add_to_global_variable_list = { name = Georgije_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Gregory
+		}
+		add_to_global_variable_list = { name = Gregory_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Isaac
+		}
+		add_to_global_variable_list = { name = Isaac_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Ivanko
+		}
+		add_to_global_variable_list = { name = Ivanko_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Ivanis
+		}
+		add_to_global_variable_list = { name = Ivanis_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Jacob
+		}
+		add_to_global_variable_list = { name = Jacob_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:John
+		}
+		add_to_global_variable_list = { name = John_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Joseph
+		}
+		add_to_global_variable_list = { name = Joseph_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Laurence
+		}
+		add_to_global_variable_list = { name = Laurence_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Lazarus
+		}
+		add_to_global_variable_list = { name = Lazarus_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Luke
+		}
+		add_to_global_variable_list = { name = Luke_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Manuel
+		}
+		add_to_global_variable_list = { name = Manuel_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Marcus
+		}
+		add_to_global_variable_list = { name = Marcus_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Marinus
+		}
+		add_to_global_variable_list = { name = Marinus_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Martin
+		}
+		add_to_global_variable_list = { name = Martin_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Matko
+		}
+		add_to_global_variable_list = { name = Matko_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Matthew
+		}
+		add_to_global_variable_list = { name = Matthew_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Michael
+		}
+		add_to_global_variable_list = { name = Michael_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Moses
+		}
+		add_to_global_variable_list = { name = Moses_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Nestorica
+		}
+		add_to_global_variable_list = { name = Nestorica_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Nicholas
+		}
+		add_to_global_variable_list = { name = Nicholas_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Nikephoros
+		}
+		add_to_global_variable_list = { name = Nikephoros_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Oliver
+		}
+		add_to_global_variable_list = { name = Oliver_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Paul
+		}
+		add_to_global_variable_list = { name = Paul_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Peter
+		}
+		add_to_global_variable_list = { name = Peter_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Petko
+		}
+		add_to_global_variable_list = { name = Petko_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Petrislav
+		}
+		add_to_global_variable_list = { name = Petrislav_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Romanus
+		}
+		add_to_global_variable_list = { name = Romanus_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Samuel
+		}
+		add_to_global_variable_list = { name = Samuel_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Sergius
+		}
+		add_to_global_variable_list = { name = Sergius_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Simon
+		}
+		add_to_global_variable_list = { name = Simon_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Stephen
+		}
+		add_to_global_variable_list = { name = Stephen_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Stjepko
+		}
+		add_to_global_variable_list = { name = Stjepko_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Theodore
+		}
+		add_to_global_variable_list = { name = Theodore_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Thomas
+		}
+		add_to_global_variable_list = { name = Thomas_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Zachary
+		}
+		add_to_global_variable_list = { name = Zachary_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Alexandra
+		}
+		add_to_global_variable_list = { name = Alexandra_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Anastasia
+		}
+		add_to_global_variable_list = { name = Anastasia_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Angelica
+		}
+		add_to_global_variable_list = { name = Angelica_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Angelina
+		}
+		add_to_global_variable_list = { name = Angelina_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Anka
+		}
+		add_to_global_variable_list = { name = Anka_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Anna
+		}
+		add_to_global_variable_list = { name = Anna_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Basilissa
+		}
+		add_to_global_variable_list = { name = Basilissa_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Catherine
+		}
+		add_to_global_variable_list = { name = Catherine_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Christina
+		}
+		add_to_global_variable_list = { name = Christina_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Clarica
+		}
+		add_to_global_variable_list = { name = Clarica_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Claudia
+		}
+		add_to_global_variable_list = { name = Claudia_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Dominica
+		}
+		add_to_global_variable_list = { name = Dominica_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Dorothea
+		}
+		add_to_global_variable_list = { name = Dorothea_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Elizabeth
+		}
+		add_to_global_variable_list = { name = Elizabeth_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Euphemia
+		}
+		add_to_global_variable_list = { name = Euphemia_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Eupraxia
+		}
+		add_to_global_variable_list = { name = Eupraxia_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Franica
+		}
+		add_to_global_variable_list = { name = Franica_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Helen
+		}
+		add_to_global_variable_list = { name = Helen_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Irene
+		}
+		add_to_global_variable_list = { name = Irene_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Ivanka
+		}
+		add_to_global_variable_list = { name = Ivanka_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Mara
+		}
+		add_to_global_variable_list = { name = Mara_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Margaret
+		}
+		add_to_global_variable_list = { name = Margaret_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Marica
+		}
+		add_to_global_variable_list = { name = Marica_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Marina
+		}
+		add_to_global_variable_list = { name = Marina_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Marislava
+		}
+		add_to_global_variable_list = { name = Marislava_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Martha
+		}
+		add_to_global_variable_list = { name = Martha_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Mary
+		}
+		add_to_global_variable_list = { name = Mary_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Olivera
+		}
+		add_to_global_variable_list = { name = Olivera_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Petka
+		}
+		add_to_global_variable_list = { name = Petka_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Petrica
+		}
+		add_to_global_variable_list = { name = Petrica_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Sarah
+		}
+		add_to_global_variable_list = { name = Sarah_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Scholastica
+		}
+		add_to_global_variable_list = { name = Scholastica_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Sophia
+		}
+		add_to_global_variable_list = { name = Sophia_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Tamar
+		}
+		add_to_global_variable_list = { name = Tamar_bap target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:bap_temp = flag:Theodora
+		}
+		add_to_global_variable_list = { name = Theodora_bap target = scope:thechar }
+	}
+	remove_variable = bap_temp
+	remove_variable = slav_name
+}

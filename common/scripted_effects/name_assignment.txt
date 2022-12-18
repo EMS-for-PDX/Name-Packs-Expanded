@@ -279,6 +279,99 @@
 				}
 				oghur_male_name_effect = yes
 			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_vlach
+					}
+					add = 1
+				}
+				romanian_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_croatian
+					}
+					NOT = {
+						any_parent = {
+							is_ai = no
+						}
+					}
+					add = 1
+				}
+				croatian_non_player_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_croatian
+					}
+					any_parent = {
+						is_ai = no
+					}
+					add = 1
+				}
+				croatian_player_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_bulgarian
+					}
+					NOT = {
+						any_parent = {
+							is_ai = no
+						}
+					}
+					add = 1
+				}
+				bulgarian_non_player_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_bulgarian
+					}
+					any_parent = {
+						is_ai = no
+					}
+					add = 1
+				}
+				bulgarian_player_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_serbian
+							has_name_list = name_list_bosnian
+						}
+					}
+					NOT = {
+						any_parent = {
+							is_ai = no
+						}
+					}
+					add = 1
+				}
+				serbian_non_player_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_serbian
+							has_name_list = name_list_bosnian
+						}
+					}
+					any_parent = {
+						is_ai = no
+					}
+					add = 1
+				}
+				serbian_player_male_name_effect = yes
+			}
 		}
 	}
 	else_if = {
@@ -544,6 +637,99 @@
 					add = 1
 				}
 				oghur_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_vlach
+					}
+					add = 1
+				}
+				romanian_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_croatian
+					}
+					NOT = {
+						any_parent = {
+							is_ai = no
+						}
+					}
+					add = 1
+				}
+				croatian_non_player_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_croatian
+					}
+					any_parent = {
+						is_ai = no
+					}
+					add = 1
+				}
+				croatian_player_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_bulgarian
+					}
+					NOT = {
+						any_parent = {
+							is_ai = no
+						}
+					}
+					add = 1
+				}
+				bulgarian_non_player_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_bulgarian
+					}
+					any_parent = {
+						is_ai = no
+					}
+					add = 1
+				}
+				bulgarian_player_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_serbian
+							has_name_list = name_list_bosnian
+						}
+					}
+					NOT = {
+						any_parent = {
+							is_ai = no
+						}
+					}
+					add = 1
+				}
+				serbian_non_player_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_serbian
+							has_name_list = name_list_bosnian
+						}
+					}
+					any_parent = {
+						is_ai = no
+					}
+					add = 1
+				}
+				serbian_player_female_name_effect = yes
 			}
 		}
 	}

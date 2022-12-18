@@ -1,0 +1,984 @@
+﻿scripted_gui_bap_name = {
+	scope = character
+	effect = {
+		save_scope_as = effect_root
+		if = {
+			limit = {
+				exists = scope:effect_root.dynasty
+				scope:effect_root.dynasty = {
+					any_in_list = {
+						variable = baptismal_name_dynasty
+						this = scope:effect_root
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Aaron_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Aaron
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Adam_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Adam
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Alexander_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Alexander
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Alexios_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Alexios
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Andrew_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Andrew
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Anthony_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Anthony
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Bartholomew_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Bartholomew
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Basil_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Basil
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Benedict_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Benedict
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Blasius_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Blasius
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Christopher_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Christopher
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Clement_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Clement
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Constantine_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Constantine
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Damian_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Damian
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Daniel_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Daniel
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = David_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_David
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Demetrios_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Demetrios
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dminoslav_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dminoslav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dominikos_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dominikos
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dorde_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dorde
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Duro_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Duro
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Elijah_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Elijah
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Francis_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Francis
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gabriel_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gabriel
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = George_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_George
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Georgije_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Georgije
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Gregory_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Gregory
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Isaac_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Isaac
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ivanko_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ivanko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ivanis_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ivanis
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Jacob_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Jacob
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = John_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_John
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Joseph_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Joseph
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Laurence_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Laurence
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Lazarus_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Lazarus
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Luke_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Luke
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Manuel_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Manuel
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Marcus_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Marcus
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Marinus_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Marinus
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Martin_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Martin
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Matko_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Matko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Matthew_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Matthew
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Michael_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Michael
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Moses_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Moses
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Nestorica_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Nestorica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Nicholas_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Nicholas
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Nikephoros_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Nikephoros
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Oliver_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Oliver
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Paul_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Paul
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Peter_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Peter
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Petko_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Petko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Petrislav_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Petrislav
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Romanus_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Romanus
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Samuel_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Samuel
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Sergius_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Sergius
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Simon_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Simon
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stephen_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stephen
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Stjepko_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Stjepko
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Theodore_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Theodore
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Thomas_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Thomas
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Zachary_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Zachary
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Alexandra_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Alexandra
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Anastasia_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Anastasia
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Angelica_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Angelica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Angelina_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Angelina
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Anka_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Anka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Anna_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Anna
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Basilissa_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Basilissa
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Catherine_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Catherine
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Christina_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Christina
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Clarica_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Clarica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Claudia_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Claudia
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dominica_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dominica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Dorothea_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Dorothea
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Elizabeth_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Elizabeth
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Euphemia_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Euphemia
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Eupraxia_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Eupraxia
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Franica_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Franica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Helen_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Helen
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Irene_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Irene
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Ivanka_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Ivanka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Mara_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Mara
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Margaret_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Margaret
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Marica_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Marica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Marina_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Marina
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Marislava_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Marislava
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Martha_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Martha
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Mary_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Mary
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Olivera_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Olivera
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Petka_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Petka
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Petrica_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Petrica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Sarah_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Sarah
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Scholastica_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Scholastica
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Sophia_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Sophia
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Tamar_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Tamar
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+			if = {
+				limit = {
+					is_target_in_global_variable_list = { name = Theodora_bap target = scope:effect_root }
+				}
+				custom_description_no_bullet = {
+					text = get_trigger_Theodora
+					subject = scope:effect_root
+					object = scope:effect_root
+				}
+			}
+		}
+		else = {
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_blank
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+	}
+}

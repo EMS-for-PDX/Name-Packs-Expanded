@@ -1,0 +1,159 @@
+﻿namespace = npebaptismal
+
+npebaptismal.001 = { #Check if want baptismal
+	type = character_event
+	theme = faith
+	title = npebaptismal.001.t
+	desc = npebaptismal.001.desc
+	right_portrait = root
+	left_portrait = scope:the_child
+	immediate = {
+		random_courtier_or_guest = {
+			limit = {
+				has_religion = religion:christianity_religion
+				OR = {
+					has_trait = devoted
+					has_council_position = councillor_court_chaplain
+				}
+			}
+			save_scope_as = baptiser
+		}
+	}
+	option = {
+		name = npebaptismal.001.a
+		custom_tooltip = npebaptismal.001.a.tt
+		trigger_event = {
+			id = npebaptismal.002
+			days = -1
+		}
+	}
+	option = {
+		name = npebaptismal.001.b
+		custom_tooltip = npebaptismal.001.b.tt
+		scope:the_child = {
+			remove_variable = slav_name
+		}
+	}
+}
+npebaptismal.002 = {
+	type = character_event
+	theme = faith
+	title = npebaptismal.002.t
+	desc = npebaptismal.002.desc
+	right_portrait = scope:the_child
+	left_portrait = scope:baptiser
+	immediate = {
+		scope:the_child = {
+			if = {
+				limit = {
+					is_male = yes
+				}
+				if = {
+					limit = {
+						culture = {
+							has_name_list = name_list_croatian
+						}
+					}
+					croatian_temp_bap_player_male_name_effect = yes
+				}
+				if = {
+					limit = {
+						culture = {
+							OR = {
+								has_name_list = name_list_serbian
+								has_name_list = name_list_bosnian
+							}
+						}
+					}
+					serbian_temp_bap_player_male_name_effect = yes
+				}
+				if = {
+					limit = {
+						culture = {
+							has_name_list = name_list_bulgarian
+						}
+					}
+					bulgarian_temp_bap_player_male_name_effect = yes
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						culture = {
+							has_name_list = name_list_croatian
+						}
+					}
+					croatian_temp_bap_player_female_name_effect = yes
+				}
+				if = {
+					limit = {
+						culture = {
+							OR = {
+								has_name_list = name_list_serbian
+								has_name_list = name_list_bosnian
+							}
+						}
+					}
+					serbian_temp_bap_player_female_name_effect = yes
+				}
+				if = {
+					limit = {
+						culture = {
+							has_name_list = name_list_bulgarian
+						}
+					}
+					bulgarian_temp_bap_player_female_name_effect = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = npebaptismal.002.a
+		custom_tooltip = npebaptismal.002.a.tt
+		scope:the_child = {
+			remove_variable = bap_temp
+		}
+		trigger_event = {
+			id = npebaptismal.002
+			days = -1
+		}
+	}
+	option = {
+		name = npebaptismal.002.b
+		custom_tooltip = npebaptismal.002.b.tt
+		scope:the_child = {
+			if = {
+				limit = {
+					culture = {
+						OR = {
+							has_name_list = name_list_croatian
+							has_name_list = name_list_serbian
+							has_name_list = name_list_bulgarian
+							has_name_list = name_list_bosnian
+						}
+					}
+				}
+				slav_baptismal_primary_player_name_effect = yes
+			}
+		}
+	}
+	option = {
+		name = npebaptismal.002.c
+		custom_tooltip = npebaptismal.002.c.tt
+		scope:the_child = {
+			if = {
+				limit = {
+					culture = {
+						OR = {
+							has_name_list = name_list_croatian
+							has_name_list = name_list_serbian
+							has_name_list = name_list_bulgarian
+							has_name_list = name_list_bosnian
+						}
+					}
+				}
+				slav_slav_primary_player_name_effect = yes
+			}
+		}
+	}
+}
