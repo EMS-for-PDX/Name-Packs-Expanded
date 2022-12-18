@@ -95,6 +95,8 @@
 }
 1066_serbian_char_effect = {
 	add_to_global_variable_list = { name = Constantine_bap target = character:20493 }
+	add_to_global_variable_list = { name = Stephen_bap target = character:20490 }
+	add_to_global_variable_list = { name = Vladimir_slav target = character:40530 }
 	character:20491.dynasty = { #Vojislavljević
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20491 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20490 }
@@ -116,10 +118,47 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20529 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20533 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20538 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:70362 }
 		add_to_variable_list = { name = dynasty_independent target = character:20490 }
 		add_to_variable_list = { name = baptismal_name_dynasty target = character:20493 }
+		add_to_variable_list = { name = baptismal_name_dynasty target = character:20490 }
 	}
-	character:20493 = {
+	character:20497.dynasty = { #Lukaric
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20497 }
+	}
+	character:20495.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbsouthslav001
+		}
+	}
+	character:20495.dynasty = { #Dukljanin
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbsouthslav001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20495 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20496 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40530 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:4491 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20494 }
+		add_to_variable_list = { name = slav_name_dynasty target = character:40530 }
+	}
+	character:20499.dynasty = { #Drogosevic
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20499 }
+	}
+	character:20499 = {
+		change_first_name = Dragosh
+		dynasty_effect_ne = yes
+	}
+	character:20494 = {
+		change_first_name = Dragomir
+	}
+	character:40530 = {
+		change_first_name = John
+	}
+	character:20497 = {
+		change_first_name = Alexander
+		dynasty_effect_ne = yes
+	}
+	character:20538 = {
 		change_first_name = Vlkan
 	}
 	character:20533 = {

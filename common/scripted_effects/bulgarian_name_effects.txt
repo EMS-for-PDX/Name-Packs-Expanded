@@ -825,6 +825,806 @@ bulgarian_non_player_female_name_effect = {
 		}
 	}
 }
+bulgarian_player_male_name_effect = {
+	remove_varible = slav_name
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		50 = {
+			random_list = {
+				1 = {
+					change_first_name = Bars
+					set_variable = {
+						name = slav_name
+						value = flag:Bars
+					}
+				}
+				1 = {
+					change_first_name = Dragomir
+					set_variable = {
+						name = slav_name
+						value = flag:Dragomir
+					}
+				}
+				1 = {
+					change_first_name = Esen
+					set_variable = {
+						name = slav_name
+						value = flag:Esen
+					}
+				}
+				1 = {
+					change_first_name = Miroslav
+					set_variable = {
+						name = slav_name
+						value = flag:Miroslav
+					}
+				}
+				1 = {
+					change_first_name = Radoslav
+					set_variable = {
+						name = slav_name
+						value = flag:Radoslav
+					}
+				}
+				1 = {
+					change_first_name = Sracimir
+					set_variable = {
+						name = slav_name
+						value = flag:Sracimir
+					}
+				}
+				1 = {
+					change_first_name = Stanislav
+					set_variable = {
+						name = slav_name
+						value = flag:Stanislav
+					}
+				}
+				1 = {
+					change_first_name = Stoyan
+					set_variable = {
+						name = slav_name
+						value = flag:Stoyan
+					}
+				}
+				1 = {
+					change_first_name = Tihomir
+					set_variable = {
+						name = slav_name
+						value = flag:Tihomir
+					}
+				}
+			}
+		}
+		35 = {
+			random_list = {
+				1 = {
+					change_first_name = Bayan
+					set_variable = {
+						name = slav_name
+						value = flag:Bayan
+					}
+				}
+				1 = {
+					change_first_name = Bogomil
+					set_variable = {
+						name = slav_name
+						value = flag:Bogomil
+					}
+				}
+				1 = {
+					change_first_name = Borislav
+					set_variable = {
+						name = slav_name
+						value = flag:Borislav
+					}
+				}
+				1 = {
+					change_first_name = Branimir
+					set_variable = {
+						name = slav_name
+						value = flag:Branimir
+					}
+				}
+				1 = {
+					change_first_name = Branislav
+					set_variable = {
+						name = slav_name
+						value = flag:Branislav
+					}
+				}
+				1 = {
+					change_first_name = Desimir
+					set_variable = {
+						name = slav_name
+						value = flag:Desimir
+					}
+				}
+				1 = {
+					change_first_name = Desislav
+					set_variable = {
+						name = slav_name
+						value = flag:Desislav
+					}
+				}
+				1 = {
+					change_first_name = Dobromir
+					set_variable = {
+						name = slav_name
+						value = flag:Dobromir
+					}
+				}
+				1 = {
+					change_first_name = Dobroslav
+					set_variable = {
+						name = slav_name
+						value = flag:Dobroslav
+					}
+				}
+				1 = {
+					change_first_name = Dragan
+					set_variable = {
+						name = slav_name
+						value = flag:Dragan
+					}
+				}
+				1 = {
+					change_first_name = Dragomaz
+					set_variable = {
+						name = slav_name
+						value = flag:Dragomaz
+					}
+				}
+				1 = {
+					change_first_name = Dragosh
+					set_variable = {
+						name = slav_name
+						value = flag:Dragosh
+					}
+				}
+				1 = {
+					change_first_name = Dragoslav
+					set_variable = {
+						name = slav_name
+						value = flag:Dragoslav
+					}
+				}
+				1 = {
+					change_first_name = Dragshan
+					set_variable = {
+						name = slav_name
+						value = flag:Dragshan
+					}
+				}
+				1 = {
+					change_first_name = Dragushin
+					set_variable = {
+						name = slav_name
+						value = flag:Dragushin
+					}
+				}
+				1 = {
+					change_first_name = Hrab
+					set_variable = {
+						name = slav_name
+						value = flag:Hrab
+					}
+				}
+				1 = {
+					change_first_name = Ivaca
+					set_variable = {
+						name = slav_name
+						value = flag:Ivaca
+					}
+				}
+				1 = {
+					change_first_name = Ivaylo
+					set_variable = {
+						name = slav_name
+						value = flag:Ivaylo
+					}
+				}
+				1 = {
+					change_first_name = Krasimir
+					set_variable = {
+						name = slav_name
+						value = flag:Krasimir
+					}
+				}
+				1 = {
+					change_first_name = Lubomir
+					set_variable = {
+						name = slav_name
+						value = flag:Lubomir
+					}
+				}
+				1 = {
+					change_first_name = Mladen
+					set_variable = {
+						name = slav_name
+						value = flag:Mladen
+					}
+				}
+				1 = {
+					change_first_name = Momchil
+					set_variable = {
+						name = slav_name
+						value = flag:Momchil
+					}
+				}
+				1 = {
+					change_first_name = Nyagol
+					set_variable = {
+						name = slav_name
+						value = flag:Nyagol
+					}
+				}
+				1 = {
+					change_first_name = Ognyan
+					set_variable = {
+						name = slav_name
+						value = flag:Ognyan
+					}
+				}
+				1 = {
+					change_first_name = Presiyan
+					set_variable = {
+						name = slav_name
+						value = flag:Presiyan
+					}
+				}
+				1 = {
+					change_first_name = Pribislav
+					set_variable = {
+						name = slav_name
+						value = flag:Mladen
+					}
+				}
+				1 = {
+					change_first_name = Prodan
+					set_variable = {
+						name = slav_name
+						value = flag:Prodan
+					}
+				}
+				1 = {
+					change_first_name = Radich
+					set_variable = {
+						name = slav_name
+						value = flag:Radich
+					}
+				}
+				1 = {
+					change_first_name = Ratimir
+					set_variable = {
+						name = slav_name
+						value = flag:Ratimir
+					}
+				}
+				1 = {
+					change_first_name = Shishman
+					set_variable = {
+						name = slav_name
+						value = flag:Shishman
+					}
+				}
+				1 = {
+					change_first_name = Slav
+					set_variable = {
+						name = slav_name
+						value = flag:Slav
+					}
+				}
+				1 = {
+					change_first_name = Stanimir
+					set_variable = {
+						name = slav_name
+						value = flag:Stanimir
+					}
+				}
+				1 = {
+					change_first_name = Stanko
+					set_variable = {
+						name = slav_name
+						value = flag:Stanko
+					}
+				}
+				1 = {
+					change_first_name = Stayko
+					set_variable = {
+						name = slav_name
+						value = flag:Stayko
+					}
+				}
+				1 = {
+					change_first_name = Vladimir
+					set_variable = {
+						name = slav_name
+						value = flag:Vladimir
+					}
+				}
+				1 = {
+					change_first_name = Vladislav
+					set_variable = {
+						name = slav_name
+						value = flag:Vladislav
+					}
+				}
+				1 = {
+					change_first_name = Voysil
+					set_variable = {
+						name = slav_name
+						value = flag:Voysil
+					}
+				}
+				1 = {
+					change_first_name = Xurum
+					set_variable = {
+						name = slav_name
+						value = flag:Xurum
+					}
+				}
+				1 = {
+					change_first_name = Zlatko
+					set_variable = {
+						name = slav_name
+						value = flag:Zlatko
+					}
+				}
+			}
+		}
+		15 = {
+			random_list = {
+				1 = {
+					change_first_name = Aldemir
+					set_variable = {
+						name = slav_name
+						value = flag:Aldemir
+					}
+				}
+				1 = {
+					change_first_name = Alusian
+					set_variable = {
+						name = slav_name
+						value = flag:Alusian
+					}
+				}
+				1 = {
+					change_first_name = Andronikos
+					set_variable = {
+						name = slav_name
+						value = flag:Andronikos
+					}
+				}
+				1 = {
+					change_first_name = Arslan
+					set_variable = {
+						name = slav_name
+						value = flag:Arslan
+					}
+				}
+				1 = {
+					change_first_name = Balik
+					set_variable = {
+						name = slav_name
+						value = flag:Balik
+					}
+				}
+				1 = {
+					change_first_name = Belaur
+					set_variable = {
+						name = slav_name
+						value = flag:Belaur
+					}
+				}
+				1 = {
+					change_first_name = Boril
+					set_variable = {
+						name = slav_name
+						value = flag:Boril
+					}
+				}
+				1 = {
+					change_first_name = Botko
+					set_variable = {
+						name = slav_name
+						value = flag:Botko
+					}
+				}
+				1 = {
+					change_first_name = Coloman
+					set_variable = {
+						name = slav_name
+						value = flag:Coloman
+					}
+				}
+				1 = {
+					change_first_name = Delyan
+					set_variable = {
+						name = slav_name
+						value = flag:Delyan
+					}
+				}
+				1 = {
+					change_first_name = Dobrotica
+					set_variable = {
+						name = slav_name
+						value = flag:Dobrotica
+					}
+				}
+				1 = {
+					change_first_name = Fruzhin
+					set_variable = {
+						name = slav_name
+						value = flag:Fruzhin
+					}
+				}
+				1 = {
+					change_first_name = Glad
+					set_variable = {
+						name = slav_name
+						value = flag:Glad
+					}
+				}
+				1 = {
+					change_first_name = Hrabar
+					set_variable = {
+						name = slav_name
+						value = flag:Hrabar
+					}
+				}
+				1 = {
+					change_first_name = Hranislav
+					set_variable = {
+						name = slav_name
+						value = flag:Hranislav
+					}
+				}
+				1 = {
+					change_first_name = Ilica
+					set_variable = {
+						name = slav_name
+						value = flag:Ilica
+					}
+				}
+				1 = {
+					change_first_name = Krakra
+					set_variable = {
+						name = slav_name
+						value = flag:Krakra
+					}
+				}
+				1 = {
+					change_first_name = Kudelin
+					set_variable = {
+						name = slav_name
+						value = flag:Kudelin
+					}
+				}
+				1 = {
+					change_first_name = Malamir
+					set_variable = {
+						name = slav_name
+						value = flag:Malamir
+					}
+				}
+				1 = {
+					change_first_name = Mico
+					set_variable = {
+						name = slav_name
+						value = flag:Mico
+					}
+				}
+				1 = {
+					change_first_name = Milko
+					set_variable = {
+						name = slav_name
+						value = flag:Milko
+					}
+				}
+				1 = {
+					change_first_name = Persiyan
+					set_variable = {
+						name = slav_name
+						value = flag:Persiyan
+					}
+				}
+				1 = {
+					change_first_name = Plenimir
+					set_variable = {
+						name = slav_name
+						value = flag:Plenimir
+					}
+				}
+				1 = {
+					change_first_name = Pribo
+					set_variable = {
+						name = slav_name
+						value = flag:Pribo
+					}
+				}
+				1 = {
+					change_first_name = Radomir
+					set_variable = {
+						name = slav_name
+						value = flag:Radomir
+					}
+				}
+				1 = {
+					change_first_name = Rostislav
+					set_variable = {
+						name = slav_name
+						value = flag:Rostislav
+					}
+				}
+				1 = {
+					change_first_name = Sergius
+					set_variable = {
+						name = slav_name
+						value = flag:Sergius
+					}
+				}
+				1 = {
+					change_first_name = Shegmon
+					set_variable = {
+						name = slav_name
+						value = flag:Shegmon
+					}
+				}
+				1 = {
+					change_first_name = Sigrica
+					set_variable = {
+						name = slav_name
+						value = flag:Sigrica
+					}
+				}
+				1 = {
+					change_first_name = Smilec
+					set_variable = {
+						name = slav_name
+						value = flag:Smilec
+					}
+				}
+				1 = {
+					change_first_name = Strez
+					set_variable = {
+						name = slav_name
+						value = flag:Strez
+					}
+				}
+				1 = {
+					change_first_name = Svetoslav
+					set_variable = {
+						name = slav_name
+						value = flag:Svetoslav
+					}
+				}
+				1 = {
+					change_first_name = Terter
+					set_variable = {
+						name = slav_name
+						value = flag:Terter
+					}
+				}
+				1 = {
+					change_first_name = Voyteh
+					set_variable = {
+						name = slav_name
+						value = flag:Voyteh
+					}
+				}
+				1 = {
+					change_first_name = Zvinicha
+					set_variable = {
+						name = slav_name
+						value = flag:Zvinicha
+					}
+				}
+			}
+		}
+	}
+}
+bulgarian_player_female_name_effect = {
+	remove_varible = slav_name
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		50 = {
+			random_list = {
+				1 = {
+					change_first_name = Desislava
+					set_variable = {
+						name = slav_name
+						value = flag:Desislava
+					}
+				}
+				1 = {
+					change_first_name = Dragana
+					set_variable = {
+						name = slav_name
+						value = flag:Dragana
+					}
+				}
+				1 = {
+					change_first_name = Miroslava
+					set_variable = {
+						name = slav_name
+						value = flag:Miroslava
+					}
+				}
+				1 = {
+					change_first_name = Stanislava
+					set_variable = {
+						name = slav_name
+						value = flag:Stanislava
+					}
+				}
+				1 = {
+					change_first_name = Stanka
+					set_variable = {
+						name = slav_name
+						value = flag:Stanka
+					}
+				}
+				1 = {
+					change_first_name = Stoyanka
+					set_variable = {
+						name = slav_name
+						value = flag:Stoyanka
+					}
+				}
+			}
+		}
+		35 = {
+			random_list = {
+				1 = {
+					change_first_name = Beloslava
+					set_variable = {
+						name = slav_name
+						value = flag:Beloslava
+					}
+				}
+				1 = {
+					change_first_name = Bogdana
+					set_variable = {
+						name = slav_name
+						value = flag:Bogdana
+					}
+				}
+				1 = {
+					change_first_name = Bogomila
+					set_variable = {
+						name = slav_name
+						value = flag:Bogomila
+					}
+				}
+				1 = {
+					change_first_name = Borislava
+					set_variable = {
+						name = slav_name
+						value = flag:Borislava
+					}
+				}
+				1 = {
+					change_first_name = Doroslava
+					set_variable = {
+						name = slav_name
+						value = flag:Doroslava
+					}
+				}
+				1 = {
+					change_first_name = Dragoslava
+					set_variable = {
+						name = slav_name
+						value = flag:Dragoslava
+					}
+				}
+				1 = {
+					change_first_name = Ileana
+					set_variable = {
+						name = slav_name
+						value = flag:Ileana
+					}
+				}
+				1 = {
+					change_first_name = Keraca
+					set_variable = {
+						name = slav_name
+						value = flag:Keraca
+					}
+				}
+				1 = {
+					change_first_name = Kosara
+					set_variable = {
+						name = slav_name
+						value = flag:Kosara
+					}
+				}
+				1 = {
+					change_first_name = Krasimira
+					set_variable = {
+						name = slav_name
+						value = flag:Krasimira
+					}
+				}
+				1 = {
+					change_first_name = Radoslava
+					set_variable = {
+						name = slav_name
+						value = flag:Radoslava
+					}
+				}
+				1 = {
+					change_first_name = Vladislava
+					set_variable = {
+						name = slav_name
+						value = flag:Vladislava
+					}
+				}
+			}
+		}
+		15 = {
+			random_list = {
+				1 = {
+					change_first_name = Kalya
+					set_variable = {
+						name = slav_name
+						value = flag:Kalya
+					}
+				}
+				1 = {
+					change_first_name = Smilcena
+					set_variable = {
+						name = slav_name
+						value = flag:Smilcena
+					}
+				}
+				1 = {
+					change_first_name = Sobeslava
+					set_variable = {
+						name = slav_name
+						value = flag:Sobeslava
+					}
+				}
+				1 = {
+					change_first_name = Veleslava
+					set_variable = {
+						name = slav_name
+						value = flag:Veleslava
+					}
+				}
+				1 = {
+					change_first_name = Zlatka
+					set_variable = {
+						name = slav_name
+						value = flag:Zlatka
+					}
+				}
+			}
+		}
+	}
+}
 bulgarian_baptismal_non_player_male_name_effect = {
 	save_scope_as = thechar
 	dynasty = {
@@ -1365,6 +2165,334 @@ bulgarian_slav_non_player_female_name_effect = {
 				1 = {
 					add_to_global_variable_list = { name = Zlatka_slav target = scope:thechar }
 				}
+			}
+		}
+	}
+}
+bulgarian_temp_bap_player_male_name_effect = {
+	random_list = {
+		50 = {
+			random_list = {
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Alexander
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Basil
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Demetrios
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:George
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:John
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Michael
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Nicholas
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Peter
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Simon
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Stephen
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Theodore
+					}
+				}
+			}
+		}
+		35 = {
+			random_list = {
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Alexios
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Andrew
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Bogdan
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Christopher
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Constantine
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:David
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Elijah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Gabriel
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Gregory
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Petko
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Isaac
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Ivanko
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Jacob
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Manuel
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Martin
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Paul
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Romanus
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Samuel
+					}
+				}
+			}
+		}
+		15 = {
+			random_list = {
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Aaron
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Matthew
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Moses
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Nestorica
+					}
+				}
+			}
+		}
+	}
+}
+bulgarian_temp_bap_player_female_name_effect = {
+	random_list = {
+		50 = {
+			random_list = {
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Anna
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Helen
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Ivanka
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Mary
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Theodora
+					}
+				}
+			}
+		}
+		35 = {
+			random_list = {
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Anka
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Basilissa
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Christina
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Dorothea
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Eupraxia
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Marina
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Martha
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Petka
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Petrica
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Sarah
+					}
+				}
+				1 = {
+					set_variable = {
+						name = bap_temp
+						value = flag:Sophia
+					}
+				}
+			}
+		}
+		15 = {
+			set_variable = {
+				name = bap_temp
+				value = flag:Tamar
 			}
 		}
 	}

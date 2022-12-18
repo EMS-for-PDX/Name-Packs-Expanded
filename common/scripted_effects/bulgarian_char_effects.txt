@@ -1,6 +1,7 @@
 867_bulgarian_char_effect = {
 	add_to_global_variable_list = { name = Michael_bap target = character:70382 }
 	add_to_global_variable_list = { name = Xurum_slav target = character:168070 }
+	add_to_global_variable_list = { name = Theodora_bap target = character:40531 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:168075 }
 	character:70382.house = {
 		set_variable = {
@@ -97,6 +98,7 @@
 	add_to_global_variable_list = { name = Vladislav_slav target = character:722 }
 	add_to_global_variable_list = { name = Radomir_slav target = character:730 }
 	add_to_global_variable_list = { name = Delyan_slav target = character:732 }
+	add_to_global_variable_list = { name = Voyteh_slav target = character:34463 }
 	add_to_global_variable_list = { name = Anna_bap target = character:732 }
 	character:70381.house = {
 		set_variable = {
@@ -134,6 +136,15 @@
 		add_to_variable_list = { name = slav_name_dynasty target = character:730 }
 		add_to_variable_list = { name = slav_name_dynasty target = character:732 }
 		add_to_variable_list = { name = baptismal_name_dynasty target = character:4490 }
+		add_to_variable_list = { name = baptismal_name_dynasty target = character:40531 }
+	}
+	character:34463.dynasty = { #Voiteh
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:34463 }
+		add_to_variable_list = { name = slav_name_dynasty target = character:34463 }
+	}
+	character:34463 = {
+		change_first_name = George
+		dynasty_effect_ne = yes
 	}
 	character:4490 = {
 		change_first_name = Miroslava
