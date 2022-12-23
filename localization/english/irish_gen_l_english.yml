@@ -1,0 +1,73 @@
+﻿l_english:
+Window_Irish_TT: "#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,nickname #color_green [Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))]#!#!#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue [ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#TOOLTIP:GAME_CONCEPT,surname #color_red [ROOT.Char.Custom('CharacterHouseCheckAfter')]#!#!"
+
+Window_Irish: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]"
+
+First_Name_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+
+First_Name_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')]"
+
+First_Name_Possessive_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
+
+First_Name_Possessive_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
+
+Titled_First_Name_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+
+Titled_First_Name_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+
+Titled_First_Name_Possessive_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+
+Titled_First_Name_Possessive_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+
+Full_Name_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]#!#!#!"
+
+Full_Name_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]"
+
+Full_Name_Possessive_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]'s#!#!#!"
+
+Full_Name_Possessive_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]'s"
+
+Name_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+
+Name_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+
+Name_Possessive_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+
+Name_Possessive_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+
+Short_Name_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
+
+Short_Name_No_Tooltip_Irish: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
+
+Short_Name_Possessive_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
+
+Short_Name_Possessive_No_Tooltip_Irish: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
+
+Short_Name_Possessive_No_Tooltip_No_Format_Irish: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+
+UI_Name_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]#!#!#!#!"
+
+UI_Name_No_Tooltip_Irish: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]#!"
+
+UI_Name_Possessive_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]'s#!#!#!#!"
+
+UI_Name_Possessive_No_Tooltip_Irish: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]'s#!"
+
+SNAT_First_Irish: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))]#!"
+
+SNAT_First_Last_Irish: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('IrishNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterPatCheckAfter')]#!"
+
+Title_As_Name_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheck')]#!#!#!#!"
+Title_As_Name_No_Tooltip_Irish: "#high [ROOT.Char.Custom('CharacterTierCheck')]]#!"
+Title_Tier_Name_Irish: "[ROOT.Char.Custom('CharacterTierCheck')]]"
+Title_Tier_Name_Possessive_Irish: "[ROOT.Char.Custom('CharacterTierCheck')]]'s"
+
+PatPrefix_irish_male: "mac "
+PatSuffix_irish_male: ""
+PatPrefix_irish_female: "ingen "
+PatSuffix_irish_female: ""
+
+TekPrefix_irish_male: "athair "
+TekSuffix_irish_male: ""
+TekPrefix_irish_female: "máthair "
+TekSuffix_irish_female: ""
