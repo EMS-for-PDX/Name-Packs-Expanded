@@ -30,3 +30,35 @@
 
     ai_goal = yes
 }
+get_irish_monk_name = {
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+    desc = get_irish_monk_name_desc
+	selection_tooltip = get_irish_monk_name_tooltip
+
+    is_shown = {
+        culture = {
+            is_npe_supported_culture = yes
+        }
+		NOT = {
+			has_character_flag = irish_monk_name
+		}
+		is_male = yes
+        has_faith = faith:insular_celtic
+		OR = {
+			has_trait = devoted
+			has_council_position = councillor_court_chaplain
+			has_government = theocracy_government
+		}
+    }
+
+    effect = {
+        irish_bishop_name = yes
+    }
+
+    ai_will_do = {
+        base = 80
+    }
+
+    ai_goal = yes
+}
