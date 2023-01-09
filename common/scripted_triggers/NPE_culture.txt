@@ -7,6 +7,7 @@
 		has_cultural_pillar = heritage_south_slavic
 		has_cultural_pillar = heritage_vlach
 		has_cultural_pillar = heritage_goidelic
+		has_cultural_pillar = heritage_west_germanic
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -38,6 +39,7 @@
 		has_cultural_pillar = language_slavonic
 		has_cultural_pillar = language_wallachian
 		has_cultural_pillar = language_goidelic
+		has_cultural_pillar = language_anglic
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -173,4 +175,28 @@ assyrian_check = {
 }
 oghur_check = {
 	has_cultural_pillar = language_oghur
+}
+english_check = {
+	OR = {
+		this = culture:english
+		this = culture:scottish
+		any_parent_culture_or_above = {
+			OR = {
+				this = culture:english
+				this = culture:scottish
+			}
+		}
+	}
+}
+anglo_norse_check = {
+	OR = {
+		culture = {
+			has_cultural_pillar = heritage_north_germanic
+		}
+		any_ancestor = {
+			culture = {
+				has_cultural_pillar = heritage_north_germanic
+			}
+		}
+	}
 }

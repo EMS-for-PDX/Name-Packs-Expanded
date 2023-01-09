@@ -1,0 +1,74 @@
+867_anglo_char_effect = {
+    add_to_global_variable_list = { name = name_pack_support_global target = character:6891 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:6890 }
+	#character:163103.house = { Northumbria
+	#	set_variable = {
+	#		name = name_founder
+	#		value = character:npedbarabic001
+	#	}
+	#}
+	character:163103.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:163103 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:6861 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:6875 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205253 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205252 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205250 }
+    }
+	character:205240.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205240 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205241 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205245 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205246 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205247 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205245 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205248 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205249 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205251 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205254 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205250 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205242 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205243 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:205244 }
+    }
+	character:205244 = {
+		change_first_name = Athelred
+	}
+	character:205243 = {
+		change_first_name = Athelvald
+	}
+	character:205242 = {
+		change_first_name = Athelvald #real name
+	}
+	character:205254 = {
+		change_first_name = Redwulf
+	}
+	character:205248 = {
+		change_first_name = Aswulf
+	}
+	character:205245 = {
+		change_first_name = Athelred
+	}
+	character:205240 = {
+		change_first_name = Audulf
+		dynasty_effect_ne = yes
+	}
+	character:205252 = {
+		change_first_name = Aswulf
+	}
+	character:205253 = {
+		change_first_name = Ansbert
+	}
+	character:6891 = {
+		change_first_name = Burgflaed
+	}
+	character:6875 = {
+		change_first_name = Alfgeir
+	}
+	character:163103 = {
+		change_first_name = Ella
+	}
+	character:6861 = {
+		change_first_name = Helen
+	}
+}
