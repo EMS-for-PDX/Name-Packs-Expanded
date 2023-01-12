@@ -1607,6 +1607,34 @@ CharacterCulture = {
     log_loc_errors = no
 	text = {
 		trigger = {
+			culture = {
+                OR = {
+                    this = culture:english
+                    any_parent_culture_or_above = {
+                        this = culture:english
+                    }
+                }
+                has_cultural_pillar = language_anglic
+			}
+		}
+		localization_key = _english
+	}
+	text = {
+		trigger = {
+			culture = {
+                OR = {
+                    this = culture:scottish
+                    any_parent_culture_or_above = {
+                        this = culture:scottish
+                    }
+                }
+                has_cultural_pillar = language_anglic
+			}
+		}
+		localization_key = _scots
+	}
+	text = {
+		trigger = {
             anglo_norse_check = yes
 			culture = {
                 has_cultural_pillar = language_anglic

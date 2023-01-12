@@ -49,6 +49,9 @@ Pre_Laqab_Gen: "[Localize(Concatenate(ROOT.Char.Custom('PreLaqabGen'),ROOT.Char.
 Supported_Tek: "[Localize(Concatenate(Concatenate(Concatenate(TARGET_CHARACTER.GetFirstNameNoTooltip,CHARACTER.Custom('CharacterCulture')),'_tek'),CHARACTER.Custom('CharacterGender')))] "
 Nonsupported_Tek: "[Localize(Concatenate(Concatenate('TekPrefix', CHARACTER.Custom('CharacterCulture')),CHARACTER.Custom('CharacterGender')))][TARGET_CHARACTER.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('TekSuffix', CHARACTER.Custom('CharacterCulture')),CHARACTER.Custom('CharacterGender')))] "
 
+#Proper Title
+proper_title_after: ", [Localize(Concatenate(Concatenate(Concatenate(Concatenate(CHARACTER.Custom('CharacterTier'),CHARACTER.Custom('CharacterGender')),CHARACTER.Custom('CharacterGov')),CHARACTER.Custom('CharacterCulture')),CHARACTER.Custom('CharacterReligion')))] of [TARGET_CHARACTER.GetPrimaryTitle.GetNameNoTierNoTooltip]"
+
 #ME My You
 NE_Me: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L Me#!#!#!#!"
 NE_Me_No_Tooltip: "#high Me#!"
