@@ -391,6 +391,8 @@
 1066_anglo_char_effect = {
     add_to_global_variable_list = { name = name_pack_support_global target = character:161280 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:161279 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:161263 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:161265 }
 	character:120.dynasty = {
         add_to_variable_list = { name = name_pack_support_dynasty target = character:120 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:128 }
@@ -486,6 +488,7 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:33350 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:33351 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:100 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:7629 }
         add_to_variable_list = { name = dynasty_feudal target = character:100 }
         add_to_variable_list = { name = dynasty_feudal target = character:33351 }
         add_to_variable_list = { name = dynasty_feudal target = character:33350 }
@@ -496,7 +499,100 @@
         add_to_variable_list = { name = dynasty_feudal target = character:106 }
         add_to_variable_list = { name = dynasty_feudal target = character:114 }
         add_to_variable_list = { name = dynasty_feudal target = character:108 }
+        add_to_variable_list = { name = dynasty_indpendent target = character:100 }
+        add_to_variable_list = { name = dynasty_indpendent target = character:7627 }
+        add_to_variable_list = { name = dynasty_independent target = character:33358 }
     }
+	character:163103.dynasty = {
+        add_to_variable_list = { name = dynasty_feudal target = character:163103 }
+        add_to_variable_list = { name = dynasty_independent target = character:163103 }
+    }
+	character:163064.dynasty = {
+        add_to_variable_list = { name = dynasty_feudal target = character:163064 }
+        add_to_variable_list = { name = dynasty_independent target = character:163064 }
+    }
+	character:186.dynasty = { #Bamburg
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:186 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:188 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:192 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:193 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:161269 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:190 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:191 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:161268 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:82002 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:82001 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:189 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:161264 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:161266 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:161267 }
+    }
+	character:82040.dynasty = { #Bamburg
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:82040 }
+    }
+	character:161275.dynasty = { #Bamburg
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:161275 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:161276 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:161278 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:90027 }
+    }
+	character:161278 = {
+		change_first_name = Alfric
+	}
+	character:161275 = {
+		change_first_name = Athelric
+        dynasty_effect_ne = yes
+	}
+	character:82040 = {
+        dynasty_effect_ne = yes
+	}
+	character:161266 = {
+		change_first_name = Sigurd
+	}
+	character:161265 = {
+		change_first_name = Athelgeir
+	}
+	character:161264 = {
+		change_first_name = Elfgifu
+	}
+	character:189 = {
+		change_first_name = Ealdgyd
+	}
+	character:82001 = {
+		change_first_name = Audulf
+        add_to_global_variable_list = { name = Rus_byname target = this }
+	}
+	character:82002 = {
+		change_first_name = Headda
+	}
+	character:161268 = {
+		change_first_name = Headda
+	}
+	character:191 = {
+		change_first_name = Aswulf
+	}
+	character:190 = {
+		change_first_name = Audulf
+	}
+	character:161269 = {
+		change_first_name = Ealdgyd
+	}
+	character:193 = {
+		change_first_name = Elflaed
+	}
+	character:188 = {
+        add_to_global_variable_list = { name = Bold_byname target = this }
+	}
+	character:186 = {
+		change_first_name = Valthjof
+        dynasty_effect_ne = yes
+	}
+	character:7627 = {
+        add_to_global_variable_list = { name = Great_byname target = this }
+	}
+	character:7629 = {
+		change_first_name = Alfthryth
+	}
 	character:100 = {
 		change_first_name = Edward
         add_to_global_variable_list = { name = Elder_byname target = this }
