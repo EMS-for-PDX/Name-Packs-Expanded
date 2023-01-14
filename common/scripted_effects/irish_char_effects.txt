@@ -2049,6 +2049,47 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6205 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6206 }
 	}
+	character:82011.dynasty = { #Strathearn
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:82011 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:82012 }
+	}
+	character:131006.dynasty = { #Buchanan
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131006 }
+	}
+	character:6026.dynasty = { #Cetchathach
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6026 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6028 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6030 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6032 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166621 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166622 }
+	}
+	character:166621 = {
+		change_first_name = Olaf
+	}
+	character:6026 = {
+		change_first_name = Constantine
+	}
+	character:6032 = {
+		change_first_name = Constantine
+	}
+	character:6030 = {
+		change_first_name = Cuilen
+	}
+	character:6028 = {
+        add_to_global_variable_list = { name = Agressor_byname target = this }
+	}
+	character:131006 = {
+		change_first_name = Cinaed
+		dynasty_effect_ne = yes
+	}
+	character:82012 = {
+		change_first_name = Firbisig
+	}
+	character:82011 = {
+		change_first_name = Muiredach
+		dynasty_effect_ne = yes
+	}
 	character:6181 = {
 		change_first_name = Aed
 	}
