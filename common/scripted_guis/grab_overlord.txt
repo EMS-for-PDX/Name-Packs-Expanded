@@ -1,0 +1,72 @@
+﻿grab_overlord_house = {
+	scope = character
+	effect = {
+		save_scope_as = effect_root
+		if = {
+			limit = {
+				exists = house.var:name_founder
+				house.var:name_founder = {
+					save_temporary_scope_as = good_lad
+				}
+				NOT = {
+					root = scope:good_lad
+				}
+				dynasty = {
+					any_in_list = {
+						variable = name_pack_support_dynasty
+						this = scope:good_lad
+					}
+				}
+				top_liege = {
+					exists = house.var:name_founder
+					house.var:name_founder = {
+						save_temporary_scope_as = good_lad
+					}
+					NOT = {
+						root = scope:good_lad
+					}
+					dynasty = {
+						any_in_list = {
+							variable = name_pack_support_dynasty
+							this = scope:good_lad
+						}
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = grab_ol_house_house_sgui
+				subject = scope:effect_root
+				object = scope:effect_root.topliege
+			}
+		}
+		else_if = {
+			limit = {
+				exists = house.var:name_founder
+				house.var:name_founder = {
+					save_temporary_scope_as = good_lad
+				}
+				NOT = {
+					root = scope:good_lad
+				}
+				dynasty = {
+					any_in_list = {
+						variable = name_pack_support_dynasty
+						this = scope:good_lad
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = grab_ol_house_sgui
+				subject = scope:effect_root
+				object = scope:effect_root.topliege
+			}
+		}
+		else = {
+			custom_description_no_bullet = {
+				text = grab_ol_sgui
+				subject = scope:effect_root
+				object = scope:effect_root.topliege
+			}
+		}
+	}
+}
