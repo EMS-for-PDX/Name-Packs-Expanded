@@ -1,0 +1,150 @@
+867_norse_char_effect = {
+	add_to_global_variable_list = { name = name_pack_support_global target = character:306009 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:6836 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:306011 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:6839 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:306014 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:6872 }
+	character:194004.house = { #Sigurd
+		set_variable = {
+			name = name_founder
+			value = character:194004
+		}
+	}
+	character:163112.house = { #Halfdan
+		set_variable = {
+			name = name_founder
+			value = character:163112
+		}
+	}
+	character:163111.house = { #Ivar
+		set_variable = {
+			name = name_founder
+			value = character:163111
+		}
+	}
+	character:163119.house = { #Ubbi
+		set_variable = {
+			name = name_founder
+			value = character:163119
+		}
+	}
+	character:163108.house = { #Bjorn
+		set_variable = {
+			name = name_founder
+			value = character:163108
+		}
+	}
+	character:6811.house = { #Dyri
+		set_variable = {
+			name = name_founder
+			value = character:6811
+		}
+	}
+	character:163112.dynasty = { #Sigurd
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:163112 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168335 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168336 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:306010 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40607 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:163109 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:194004 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:194028 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:194030 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:194031 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:194032 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:163111 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6814 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40609 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40608 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6864 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168500 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:163119 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:163110 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101549 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:306012 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:306013 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:163108 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100500 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100501 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6863 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6811 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6871 }
+		add_to_variable_list = { name = dynasty_independent target = character:194032 }
+		add_to_variable_list = { name = dynasty_independent target = character:194031 }
+		add_to_variable_list = { name = dynasty_independent target = character:194030 }
+		add_to_variable_list = { name = dynasty_independent target = character:194029 }
+		add_to_variable_list = { name = dynasty_independent target = character:194028 }
+		add_to_variable_list = { name = dynasty_independent target = character:194004 }
+	}
+	character:6872 = {
+		change_first_name = Saehild
+	}
+	character:6811 = {
+		change_first_name = Dyr
+	}
+	character:6839 = {
+		change_first_name = Ingiey
+	}
+	character:100501 = {
+		change_first_name = Bjorn
+	}
+	character:100500 = {
+		change_first_name = Eric
+	}
+	character:163108 = {
+		change_first_name = Bjorn
+	}
+	character:306013 = {
+		change_first_name = Thora
+	}
+	character:101549 = {
+		change_first_name = Knut
+	}
+	character:163110 = {
+		change_first_name = Sigurd
+	}
+	character:163119 = {
+		change_first_name = Ubbi
+	}
+	character:168500 = {
+		change_first_name = Godfrey
+	}
+	character:40608 = {
+		change_first_name = Sigfrid
+	}
+	character:40609 = {
+		change_first_name = Sigfrid
+	}
+	character:306011 = {
+		change_first_name = Freydis
+	}
+	character:6814 = {
+		change_first_name = Bard
+	}
+	character:163111 = {
+		change_first_name = Olaf
+	}
+	character:194030 = {
+		change_first_name = Olaf
+	}
+	character:194004 = {
+		change_first_name = Sigurd
+		dynasty_effect_ne = yes
+	}
+	character:163109 = {
+		change_first_name = Ragnar
+	}
+	character:306009 = {
+		change_first_name = Ingigerd
+	}
+	character:40607 = {
+		change_first_name = Ragnar
+	}
+	character:168336 = {
+		change_first_name = Godfrey
+	}
+	character:168335 = {
+		change_first_name = Sigfrey
+	}
+}
