@@ -36,395 +36,424 @@
 			}
 			is_male = yes
 		}
-		random_list = {
-			0 = {
-				modifier = {
+		if = {
+			limit = {
+				OR = {
 					culture = {
-						has_name_list = name_list_alan
+						has_cultural_pillar = heritage_north_germanic
 					}
-					add = 1
+					faith = {
+						has_doctrine = tenet_ancestor_worship
+					}
 				}
-				alan_male_name_effect = yes
 			}
-			0 = {
-				modifier = {
-					OR = {
+			ancestor_male_name_effect = yes
+		}
+		else = {
+			random_list = {
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_alan
+						}
+						add = 1
+					}
+					alan_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
 						culture = {
 							OR = {
-								has_name_list = name_list_bedouin
-								has_name_list = name_list_levantine
-								has_name_list = name_list_egyptian
-								has_name_list = name_list_maghrebi
-								has_name_list = name_list_yemeni
-								has_name_list = name_list_andalusian
+								has_name_list = name_list_norse
+								has_name_list = name_list_swedish
+								has_name_list = name_list_norwegian
+								has_name_list = name_list_danish
 							}
 						}
-						AND = {
-							culture = { has_name_list = name_list_assyrian }
+						add = 1
+					}
+					norse_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						OR = {
+							culture = {
+								OR = {
+									has_name_list = name_list_bedouin
+									has_name_list = name_list_levantine
+									has_name_list = name_list_egyptian
+									has_name_list = name_list_maghrebi
+									has_name_list = name_list_yemeni
+									has_name_list = name_list_andalusian
+								}
+							}
+							AND = {
+								culture = { has_name_list = name_list_assyrian }
+								has_religion = religion:islam_religion
+							}
+						}
+						add = 1
+					}
+					arabic_male_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_anglo_saxon
+						}
+						add = 1
+					}
+					anglo_saxon_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_scottish
+						}
+						add = 1
+					}
+					scots_male_ancestor_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_english
+						}
+						add = 1
+					}
+					english_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_armenian
+						}
+						add = 1
+					}
+					armenian_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_georgian
+						}
+						add = 1
+					}
+					georgian_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_greek
+						}
+						add = 1
+					}
+					greek_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_irish
+								has_name_list = name_list_gaelic
+							}
+						}
+						add = 1
+					}
+					irish_male_ancestor_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_persian
+								has_name_list = name_list_kurdish
+								has_name_list = name_list_baloch
+								has_name_list = name_list_daylamite
+								has_name_list = name_list_tajik
+							}
+						}
+						has_religion = religion:islam_religion
+						add = 1
+					}
+					persian_islam_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_persian
+								has_name_list = name_list_kurdish
+								has_name_list = name_list_baloch
+								has_name_list = name_list_daylamite
+								has_name_list = name_list_tajik
+							}
+						}
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					persian_christian_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_persian
+								has_name_list = name_list_kurdish
+								has_name_list = name_list_baloch
+								has_name_list = name_list_daylamite
+								has_name_list = name_list_tajik
+							}
+						}
+						NOT = {
+							has_religion = religion:islam_religion
+							has_religion = religion:christianity_religion
+						}
+						add = 1
+					}
+					persian_fallback_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_khwarezmian
+								has_name_list = name_list_sogdian
+								has_name_list = name_list_saka
+								has_name_list = name_list_afghan
+								trigger_if = {
+									limit = {
+										exists = global_var:CE_is_loaded
+									}
+									has_name_list = name_list_hephthalite
+								}
+							}
+						}
+						has_religion = religion:islam_religion
+						add = 1
+					}
+					sogdian_islam_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_khwarezmian
+								has_name_list = name_list_sogdian
+								has_name_list = name_list_saka
+								has_name_list = name_list_afghan
+								trigger_if = {
+									limit = {
+										exists = global_var:CE_is_loaded
+									}
+									has_name_list = name_list_hephthalite
+								}
+							}
+						}
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					sogdian_christian_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_khwarezmian
+								has_name_list = name_list_sogdian
+								has_name_list = name_list_saka
+								has_name_list = name_list_afghan
+								trigger_if = {
+									limit = {
+										exists = global_var:CE_is_loaded
+									}
+									has_name_list = name_list_hephthalite
+								}
+							}
+						}
+						NOT = {
+							has_religion = religion:islam_religion
+							has_religion = religion:christianity_religion
+						}
+						add = 1
+					}
+					sogdian_default_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_assyrian
+						}
+						NOT = {
 							has_religion = religion:islam_religion
 						}
+						add = 1
 					}
-					add = 1
+					syriac_male_name_effect = yes
 				}
-				arabic_male_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_anglo_saxon
-					}
-					add = 1
-				}
-				anglo_saxon_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_scottish
-					}
-					add = 1
-				}
-				scots_male_ancestor_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_english
-					}
-					add = 1
-				}
-				english_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_armenian
-					}
-					add = 1
-				}
-				armenian_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_georgian
-					}
-					add = 1
-				}
-				georgian_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_greek
-					}
-					add = 1
-				}
-				greek_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_irish
-							has_name_list = name_list_gaelic
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_turkish
 						}
+						add = 1
 					}
-					add = 1
+					oghuz_male_name_effect = yes
 				}
-				irish_male_ancestor_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_persian
-							has_name_list = name_list_kurdish
-							has_name_list = name_list_baloch
-							has_name_list = name_list_daylamite
-							has_name_list = name_list_tajik
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_pecheneg
 						}
+						add = 1
 					}
-					has_religion = religion:islam_religion
-					add = 1
+					pecheneg_male_name_effect = yes
 				}
-				persian_islam_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_persian
-							has_name_list = name_list_kurdish
-							has_name_list = name_list_baloch
-							has_name_list = name_list_daylamite
-							has_name_list = name_list_tajik
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_karluk
 						}
+						add = 1
 					}
-					has_religion = religion:christianity_religion
-					add = 1
+					karluk_male_name_effect = yes
 				}
-				persian_christian_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_persian
-							has_name_list = name_list_kurdish
-							has_name_list = name_list_baloch
-							has_name_list = name_list_daylamite
-							has_name_list = name_list_tajik
-						}
-					}
-					NOT = {
-						has_religion = religion:islam_religion
-						has_religion = religion:christianity_religion
-					}
-					add = 1
-				}
-				persian_fallback_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_khwarezmian
-							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
-							has_name_list = name_list_afghan
-							trigger_if = {
-								limit = {
-									exists = global_var:CE_is_loaded
-								}
-								has_name_list = name_list_hephthalite
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_cuman
+								has_name_list = name_list_kipchak
+								has_name_list = name_list_kimek
+								has_name_list = name_list_bashkir
+								has_name_list = name_list_laktan
 							}
 						}
+						add = 1
 					}
-					has_religion = religion:islam_religion
-					add = 1
+					cuman_male_name_effect = yes
 				}
-				sogdian_islam_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_khwarezmian
-							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
-							has_name_list = name_list_afghan
-							trigger_if = {
-								limit = {
-									exists = global_var:CE_is_loaded
-								}
-								has_name_list = name_list_hephthalite
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_uyghur
+								has_name_list = name_list_yughur
+								has_name_list = name_list_uriankhai
+								has_name_list = name_list_kirghiz
 							}
 						}
+						add = 1
 					}
-					has_religion = religion:christianity_religion
-					add = 1
+					uyghur_male_name_effect = yes
 				}
-				sogdian_christian_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_khwarezmian
-							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
-							has_name_list = name_list_afghan
-							trigger_if = {
-								limit = {
-									exists = global_var:CE_is_loaded
-								}
-								has_name_list = name_list_hephthalite
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_khazar
+								has_name_list = name_list_bolghar
+								has_name_list = name_list_avar
+								has_name_list = name_list_chuvash
 							}
 						}
+						add = 1
 					}
-					NOT = {
-						has_religion = religion:islam_religion
-						has_religion = religion:christianity_religion
-					}
-					add = 1
+					oghur_male_name_effect = yes
 				}
-				sogdian_default_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_assyrian
-					}
-					NOT = {
-						has_religion = religion:islam_religion
-					}
-					add = 1
-				}
-				syriac_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_turkish
-					}
-					add = 1
-				}
-				oghuz_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_pecheneg
-					}
-					add = 1
-				}
-				pecheneg_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_karluk
-					}
-					add = 1
-				}
-				karluk_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_cuman
-							has_name_list = name_list_kipchak
-							has_name_list = name_list_kimek
-							has_name_list = name_list_bashkir
-							has_name_list = name_list_laktan
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_vlach
 						}
+						add = 1
 					}
-					add = 1
+					romanian_male_name_effect = yes
 				}
-				cuman_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_uyghur
-							has_name_list = name_list_yughur
-							has_name_list = name_list_uriankhai
-							has_name_list = name_list_kirghiz
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_croatian
 						}
-					}
-					add = 1
-				}
-				uyghur_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_khazar
-							has_name_list = name_list_bolghar
-							has_name_list = name_list_avar
-							has_name_list = name_list_chuvash
+						NOT = {
+							any_parent = {
+								is_ai = no
+							}
 						}
+						add = 1
 					}
-					add = 1
+					croatian_non_player_male_name_effect = yes
 				}
-				oghur_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_vlach
-					}
-					add = 1
-				}
-				romanian_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_croatian
-					}
-					NOT = {
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_croatian
+						}
 						any_parent = {
 							is_ai = no
 						}
+						add = 1
 					}
-					add = 1
+					croatian_player_male_name_effect = yes
 				}
-				croatian_non_player_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_croatian
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_bulgarian
+						}
+						NOT = {
+							any_parent = {
+								is_ai = no
+							}
+						}
+						add = 1
 					}
-					any_parent = {
-						is_ai = no
-					}
-					add = 1
+					bulgarian_non_player_male_name_effect = yes
 				}
-				croatian_player_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_bulgarian
-					}
-					NOT = {
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_bulgarian
+						}
 						any_parent = {
 							is_ai = no
 						}
+						add = 1
 					}
-					add = 1
+					bulgarian_player_male_name_effect = yes
 				}
-				bulgarian_non_player_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_bulgarian
-					}
-					any_parent = {
-						is_ai = no
-					}
-					add = 1
-				}
-				bulgarian_player_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_serbian
-							has_name_list = name_list_bosnian
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_serbian
+								has_name_list = name_list_bosnian
+							}
 						}
+						NOT = {
+							any_parent = {
+								is_ai = no
+							}
+						}
+						add = 1
 					}
-					NOT = {
+					serbian_non_player_male_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_serbian
+								has_name_list = name_list_bosnian
+							}
+						}
 						any_parent = {
 							is_ai = no
 						}
+						add = 1
 					}
-					add = 1
+					serbian_player_male_name_effect = yes
 				}
-				serbian_non_player_male_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_serbian
-							has_name_list = name_list_bosnian
-						}
-					}
-					any_parent = {
-						is_ai = no
-					}
-					add = 1
-				}
-				serbian_player_male_name_effect = yes
 			}
 		}
 	}
@@ -435,394 +464,423 @@
 			}
 			is_male = no
 		}
-		random_list = {
-			0 = {
-				modifier = {
+		if = {
+			limit = {
+				OR = {
 					culture = {
-						has_name_list = name_list_greek
+						has_cultural_pillar = heritage_north_germanic
 					}
-					add = 1
-				}
-				greek_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_alan
+					faith = {
+						has_doctrine = tenet_ancestor_worship
 					}
-					add = 1
 				}
-				alan_female_name_effect = yes
 			}
-			0 = {
-				modifier = {
-					OR = {
+			ancestor_female_name_effect = yes
+		}
+		else = {
+			random_list = {
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_greek
+						}
+						add = 1
+					}
+					greek_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
 						culture = {
 							OR = {
-								has_name_list = name_list_bedouin
-								has_name_list = name_list_levantine
-								has_name_list = name_list_egyptian
-								has_name_list = name_list_maghrebi
-								has_name_list = name_list_yemeni
+								has_name_list = name_list_norse
+								has_name_list = name_list_swedish
+								has_name_list = name_list_norwegian
+								has_name_list = name_list_danish
 							}
 						}
-						AND = {
-							culture = { has_name_list = name_list_assyrian }
+						add = 1
+					}
+					norse_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_alan
+						}
+						add = 1
+					}
+					alan_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						OR = {
+							culture = {
+								OR = {
+									has_name_list = name_list_bedouin
+									has_name_list = name_list_levantine
+									has_name_list = name_list_egyptian
+									has_name_list = name_list_maghrebi
+									has_name_list = name_list_yemeni
+								}
+							}
+							AND = {
+								culture = { has_name_list = name_list_assyrian }
+								has_religion = religion:islam_religion
+							}
+						}
+						add = 1
+					}
+					arabic_female_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_anglo_saxon
+						}
+						add = 1
+					}
+					anglo_saxon_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_scottish
+						}
+						add = 1
+					}
+					scots_female_ancestor_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_english
+						}
+						add = 1
+					}
+					english_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_armenian
+						}
+						add = 1
+					}
+					armenian_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_georgian
+						}
+						add = 1
+					}
+					georgian_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_irish
+								has_name_list = name_list_gaelic
+							}
+						}
+						add = 1
+					}
+					irish_female_ancestor_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_persian
+								has_name_list = name_list_kurdish
+								has_name_list = name_list_baloch
+								has_name_list = name_list_daylamite
+								has_name_list = name_list_tajik
+							}
+						}
+						has_religion = religion:islam_religion
+						add = 1
+					}
+					persian_islam_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_persian
+								has_name_list = name_list_kurdish
+								has_name_list = name_list_baloch
+								has_name_list = name_list_daylamite
+								has_name_list = name_list_tajik
+							}
+						}
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					persian_christian_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_persian
+								has_name_list = name_list_kurdish
+								has_name_list = name_list_baloch
+								has_name_list = name_list_daylamite
+								has_name_list = name_list_tajik
+							}
+						}
+						NOT = {
+							has_religion = religion:islam_religion
+							has_religion = religion:christianity_religion
+						}
+						add = 1
+					}
+					persian_fallback_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_khwarezmian
+								has_name_list = name_list_sogdian
+								has_name_list = name_list_saka
+								has_name_list = name_list_afghan
+								trigger_if = {
+									limit = {
+										exists = global_var:CE_is_loaded
+									}
+									has_name_list = name_list_hephthalite
+								}
+							}
+						}
+						has_religion = religion:islam_religion
+						add = 1
+					}
+					sogdian_islam_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_khwarezmian
+								has_name_list = name_list_sogdian
+								has_name_list = name_list_saka
+								has_name_list = name_list_afghan
+								trigger_if = {
+									limit = {
+										exists = global_var:CE_is_loaded
+									}
+									has_name_list = name_list_hephthalite
+								}
+							}
+						}
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					sogdian_christian_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_khwarezmian
+								has_name_list = name_list_sogdian
+								has_name_list = name_list_saka
+								has_name_list = name_list_afghan
+								trigger_if = {
+									limit = {
+										exists = global_var:CE_is_loaded
+									}
+									has_name_list = name_list_hephthalite
+								}
+							}
+						}
+						NOT = {
+							has_religion = religion:islam_religion
+							has_religion = religion:christianity_religion
+						}
+						add = 1
+					}
+					sogdian_fallback_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_assyrian
+						}
+						NOT = {
 							has_religion = religion:islam_religion
 						}
+						add = 1
 					}
-					add = 1
+					syriac_female_name_effect = yes
 				}
-				arabic_female_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_anglo_saxon
-					}
-					add = 1
-				}
-				anglo_saxon_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_scottish
-					}
-					add = 1
-				}
-				scots_female_ancestor_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_english
-					}
-					add = 1
-				}
-				english_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_armenian
-					}
-					add = 1
-				}
-				armenian_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_georgian
-					}
-					add = 1
-				}
-				georgian_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_irish
-							has_name_list = name_list_gaelic
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_turkish
 						}
+						add = 1
 					}
-					add = 1
+					oghuz_female_name_effect = yes
 				}
-				irish_female_ancestor_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_persian
-							has_name_list = name_list_kurdish
-							has_name_list = name_list_baloch
-							has_name_list = name_list_daylamite
-							has_name_list = name_list_tajik
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_pecheneg
 						}
+						add = 1
 					}
-					has_religion = religion:islam_religion
-					add = 1
+					pecheneg_female_name_effect = yes
 				}
-				persian_islam_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_persian
-							has_name_list = name_list_kurdish
-							has_name_list = name_list_baloch
-							has_name_list = name_list_daylamite
-							has_name_list = name_list_tajik
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_karluk
 						}
+						add = 1
 					}
-					has_religion = religion:christianity_religion
-					add = 1
+					karluk_female_name_effect = yes
 				}
-				persian_christian_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_persian
-							has_name_list = name_list_kurdish
-							has_name_list = name_list_baloch
-							has_name_list = name_list_daylamite
-							has_name_list = name_list_tajik
-						}
-					}
-					NOT = {
-						has_religion = religion:islam_religion
-						has_religion = religion:christianity_religion
-					}
-					add = 1
-				}
-				persian_fallback_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_khwarezmian
-							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
-							has_name_list = name_list_afghan
-							trigger_if = {
-								limit = {
-									exists = global_var:CE_is_loaded
-								}
-								has_name_list = name_list_hephthalite
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_cuman
+								has_name_list = name_list_kipchak
+								has_name_list = name_list_kimek
+								has_name_list = name_list_bashkir
+								has_name_list = name_list_laktan
 							}
 						}
+						add = 1
 					}
-					has_religion = religion:islam_religion
-					add = 1
+					cuman_female_name_effect = yes
 				}
-				sogdian_islam_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_khwarezmian
-							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
-							has_name_list = name_list_afghan
-							trigger_if = {
-								limit = {
-									exists = global_var:CE_is_loaded
-								}
-								has_name_list = name_list_hephthalite
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_uyghur
+								has_name_list = name_list_yughur
+								has_name_list = name_list_uriankhai
+								has_name_list = name_list_kirghiz
 							}
 						}
+						add = 1
 					}
-					has_religion = religion:christianity_religion
-					add = 1
+					uyghur_female_name_effect = yes
 				}
-				sogdian_christian_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_khwarezmian
-							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
-							has_name_list = name_list_afghan
-							trigger_if = {
-								limit = {
-									exists = global_var:CE_is_loaded
-								}
-								has_name_list = name_list_hephthalite
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_khazar
+								has_name_list = name_list_bolghar
+								has_name_list = name_list_avar
+								has_name_list = name_list_chuvash
 							}
 						}
+						add = 1
 					}
-					NOT = {
-						has_religion = religion:islam_religion
-						has_religion = religion:christianity_religion
-					}
-					add = 1
+					oghur_female_name_effect = yes
 				}
-				sogdian_fallback_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_assyrian
-					}
-					NOT = {
-						has_religion = religion:islam_religion
-					}
-					add = 1
-				}
-				syriac_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_turkish
-					}
-					add = 1
-				}
-				oghuz_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_pecheneg
-					}
-					add = 1
-				}
-				pecheneg_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_karluk
-					}
-					add = 1
-				}
-				karluk_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_cuman
-							has_name_list = name_list_kipchak
-							has_name_list = name_list_kimek
-							has_name_list = name_list_bashkir
-							has_name_list = name_list_laktan
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_vlach
 						}
+						add = 1
 					}
-					add = 1
+					romanian_female_name_effect = yes
 				}
-				cuman_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_uyghur
-							has_name_list = name_list_yughur
-							has_name_list = name_list_uriankhai
-							has_name_list = name_list_kirghiz
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_croatian
 						}
-					}
-					add = 1
-				}
-				uyghur_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_khazar
-							has_name_list = name_list_bolghar
-							has_name_list = name_list_avar
-							has_name_list = name_list_chuvash
+						NOT = {
+							any_parent = {
+								is_ai = no
+							}
 						}
+						add = 1
 					}
-					add = 1
+					croatian_non_player_female_name_effect = yes
 				}
-				oghur_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_vlach
-					}
-					add = 1
-				}
-				romanian_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_croatian
-					}
-					NOT = {
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_croatian
+						}
 						any_parent = {
 							is_ai = no
 						}
+						add = 1
 					}
-					add = 1
+					croatian_player_female_name_effect = yes
 				}
-				croatian_non_player_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_croatian
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_bulgarian
+						}
+						NOT = {
+							any_parent = {
+								is_ai = no
+							}
+						}
+						add = 1
 					}
-					any_parent = {
-						is_ai = no
-					}
-					add = 1
+					bulgarian_non_player_female_name_effect = yes
 				}
-				croatian_player_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_bulgarian
-					}
-					NOT = {
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = name_list_bulgarian
+						}
 						any_parent = {
 							is_ai = no
 						}
+						add = 1
 					}
-					add = 1
+					bulgarian_player_female_name_effect = yes
 				}
-				bulgarian_non_player_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						has_name_list = name_list_bulgarian
-					}
-					any_parent = {
-						is_ai = no
-					}
-					add = 1
-				}
-				bulgarian_player_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_serbian
-							has_name_list = name_list_bosnian
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_serbian
+								has_name_list = name_list_bosnian
+							}
 						}
+						NOT = {
+							any_parent = {
+								is_ai = no
+							}
+						}
+						add = 1
 					}
-					NOT = {
+					serbian_non_player_female_name_effect = yes
+				}
+				0 = {
+					modifier = {
+						culture = {
+							OR = {
+								has_name_list = name_list_serbian
+								has_name_list = name_list_bosnian
+							}
+						}
 						any_parent = {
 							is_ai = no
 						}
+						add = 1
 					}
-					add = 1
+					serbian_player_female_name_effect = yes
 				}
-				serbian_non_player_female_name_effect = yes
-			}
-			0 = {
-				modifier = {
-					culture = {
-						OR = {
-							has_name_list = name_list_serbian
-							has_name_list = name_list_bosnian
-						}
-					}
-					any_parent = {
-						is_ai = no
-					}
-					add = 1
-				}
-				serbian_player_female_name_effect = yes
 			}
 		}
 	}

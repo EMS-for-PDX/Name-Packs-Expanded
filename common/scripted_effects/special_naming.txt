@@ -1,0 +1,246 @@
+ancestor_male_name_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_trait = bastard
+			}
+			exists = father
+			father = {
+				is_alive = no
+			}
+		}
+		father = {
+			save_scope_as = male_ancestor
+		}
+		if = {
+			limit = {
+				father = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = name_pack_support_dynasty
+							this = scope:male_ancestor
+						}
+					}
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		else_if = {
+			limit = {
+				any_in_global_list = {
+					variable = name_pack_support_global
+					this = scope:male_ancestor
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		change_first_name = { template_character = scope:male_ancestor }
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_trait = bastard
+			}
+			exists = father
+			father = {
+				is_alive = yes
+				any_in_list = {
+					variable = male_ancestors
+					exists = this
+				}
+			}
+		}
+		father = {
+			random_in_list = {
+				variable = male_ancestors
+				save_scope_as = male_ancestor
+			}
+		}
+		if = {
+			limit = {
+				scope:male_ancestor = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = name_pack_support_dynasty
+							this = scope:male_ancestor
+						}
+					}
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		else_if = {
+			limit = {
+				any_in_global_list = {
+					variable = name_pack_support_global
+					this = scope:male_ancestor
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		change_first_name = { template_character = scope:male_ancestor }
+		father = {
+			remove_list_variable = { name = male_ancestors target = scope:male_ancestor }
+			every_close_family_member = {
+				remove_list_variable = { name = male_ancestors target = scope:male_ancestor }
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_trait = bastard
+			}
+			exists = mother
+			mother = {
+				is_alive = yes
+				any_in_list = {
+					variable = male_ancestors
+					exists = this
+				}
+			}
+		}
+		mother = {
+			random_in_list = {
+				variable = male_ancestors
+				save_scope_as = male_ancestor
+			}
+		}
+		if = {
+			limit = {
+				scope:male_ancestor = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = name_pack_support_dynasty
+							this = scope:male_ancestor
+						}
+					}
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		else_if = {
+			limit = {
+				any_in_global_list = {
+					variable = name_pack_support_global
+					this = scope:male_ancestor
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		change_first_name = { template_character = scope:male_ancestor }
+		mother = {
+			remove_list_variable = { name = male_ancestors target = scope:male_ancestor }
+			every_close_family_member = {
+				remove_list_variable = { name = male_ancestors target = scope:male_ancestor }
+			}
+		}
+	}
+}
+ancestor_female_name_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_trait = bastard
+			}
+			exists = father
+			father = {
+				is_alive = yes
+				any_in_list = {
+					variable = female_ancestors
+					exists = this
+				}
+			}
+		}
+		father = {
+			random_in_list = {
+				variable = female_ancestors
+				save_scope_as = female_ancestor
+			}
+		}
+		if = {
+			limit = {
+				scope:female_ancestor = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = name_pack_support_dynasty
+							this = scope:female_ancestor
+						}
+					}
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		else_if = {
+			limit = {
+				any_in_global_list = {
+					variable = name_pack_support_global
+					this = scope:female_ancestor
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		change_first_name = { template_character = scope:female_ancestor }
+		father = {
+			remove_list_variable = { name = female_ancestors target = scope:female_ancestor }
+			every_close_family_member = {
+				remove_list_variable = { name = female_ancestors target = scope:female_ancestor }
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_trait = bastard
+			}
+			exists = mother
+			mother = {
+				is_alive = yes
+				any_in_list = {
+					variable = female_ancestors
+					exists = this
+				}
+			}
+		}
+		mother = {
+			random_in_list = {
+				variable = female_ancestors
+				save_scope_as = female_ancestor
+			}
+		}
+		if = {
+			limit = {
+				scope:female_ancestor = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = name_pack_support_dynasty
+							this = scope:female_ancestor
+						}
+					}
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		else_if = {
+			limit = {
+				any_in_global_list = {
+					variable = name_pack_support_global
+					this = scope:female_ancestor
+				}
+			}
+			add_character_flag = name_pack_support
+		}
+		change_first_name = { template_character = scope:female_ancestor }
+		mother = {
+			remove_list_variable = { name = female_ancestors target = scope:female_ancestor }
+			every_close_family_member = {
+				remove_list_variable = { name = female_ancestors target = scope:female_ancestor }
+			}
+		}
+	}
+}
