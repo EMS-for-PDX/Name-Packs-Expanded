@@ -36,19 +36,6 @@
 			}
 			is_male = yes
 		}
-		if = {
-			limit = {
-				OR = {
-					culture = {
-						has_cultural_pillar = heritage_north_germanic
-					}
-					faith = {
-						has_doctrine = tenet_ancestor_worship
-					}
-				}
-			}
-			ancestor_male_name_effect = yes
-		}
 		else = {
 			random_list = {
 				0 = {
@@ -463,19 +450,6 @@
 				is_npe_supported_culture = yes
 			}
 			is_male = no
-		}
-		if = {
-			limit = {
-				OR = {
-					culture = {
-						has_cultural_pillar = heritage_north_germanic
-					}
-					faith = {
-						has_doctrine = tenet_ancestor_worship
-					}
-				}
-			}
-			ancestor_female_name_effect = yes
 		}
 		else = {
 			random_list = {
