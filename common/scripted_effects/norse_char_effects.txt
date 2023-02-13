@@ -77,6 +77,45 @@
 		add_to_variable_list = { name = dynasty_independent target = character:194028 }
 		add_to_variable_list = { name = dynasty_independent target = character:194004 }
 	}
+	character:186504.house = { #Naddod
+		set_variable = {
+			name = name_founder
+			value = character:186504
+		}
+	}
+	character:186504.dynasty = { #Naddod
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:186504 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:180776 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:180773 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:180772 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:180777 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:180778 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:180779 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:180771 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:180770 }
+	}
+	character:180771 = {
+		change_first_name = Romund
+	}
+	character:180779 = {
+		change_first_name = Hjorleif
+	}
+	character:180778 = {
+		change_first_name = Rodmar
+	}
+	character:180777 = {
+		change_first_name = Roald
+	}
+	character:180772 = {
+		change_first_name = Bjornulf
+	}
+	character:180773 = {
+		change_first_name = Arn
+	}
+	character:186504 = {
+		change_first_name = Ingolf
+		dynasty_name_ne = yes
+	}
 	character:6872 = {
 		change_first_name = Saehild
 	}
@@ -111,7 +150,7 @@
 		change_first_name = Godfrey
 	}
 	character:40608 = {
-		change_first_name = Sigfrid
+		change_first_name = Sigtrygg
 	}
 	character:40609 = {
 		change_first_name = Sigfrid
@@ -123,7 +162,7 @@
 		change_first_name = Bard
 	}
 	character:163111 = {
-		change_first_name = Olaf
+		change_first_name = Ivar
 	}
 	character:194030 = {
 		change_first_name = Olaf
@@ -145,6 +184,6 @@
 		change_first_name = Godfrey
 	}
 	character:168335 = {
-		change_first_name = Sigfrey
+		change_first_name = Sigfrid
 	}
 }
