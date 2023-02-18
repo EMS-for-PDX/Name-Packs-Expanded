@@ -240,7 +240,7 @@
 								change_first_name = Simon
 							}
 							1 = {
-								change_first_name = Stefan
+								change_first_name = Stephan
 							}
 							1 = {
 								change_first_name = Tomas
@@ -250,14 +250,11 @@
 					0 = {
 						modifier = {
 							has_religion = religion:germanic_religion 
-							add = 3
+							add = 2
 						}
 						random_list = {
 							1 = {
 								change_first_name = Thorbjorn
-							}
-							1 = {
-								change_first_name = Thorfred
 							}
 							1 = {
 								change_first_name = Thorgeir
@@ -328,10 +325,7 @@
 						change_first_name = Ulf
 					}
 					1 = {
-						change_first_name = Valdimar
-					}
-					1 = {
-						change_first_name = Vilhjalm
+						change_first_name = William
 					}
 					1 = {
 						change_first_name = Yngvar
@@ -377,7 +371,7 @@
 					}
 					0 = {
 						modifier = {
-							exists = culture:geat
+							exists = global_var:CE_is_loaded
 							culture = {
 								OR = {
 									this = culture:geat
@@ -386,7 +380,7 @@
 									}
 								}
 							}
-							add = 34
+							add = 32
 						}
 						random_list = {
 							1 = {
@@ -483,7 +477,7 @@
 					0 = {
 						modifier = {
 							has_religion = religion:germanic_religion 
-							add = 10
+							add = 9
 						}
 						random_list = {
 							1 = {
@@ -491,9 +485,6 @@
 							}
 							1 = {
 								change_first_name = Vibjorn
-							}
-							1 = {
-								change_first_name = Vigard
 							}
 							1 = {
 								change_first_name = Thorfinn
@@ -715,7 +706,7 @@
 					0 = {
 						modifier = {
 							has_religion = religion:germanic_religion 
-							add = 17
+							add = 16
 						}
 						random_list = {
 							1 = {
@@ -741,9 +732,6 @@
 							}
 							1 = {
 								change_first_name = Vimund
-							}
-							1 = {
-								change_first_name = Vistan
 							}
 							1 = {
 								change_first_name = Thorvald
@@ -817,7 +805,7 @@
 							NOT = {
 								exists = culture:geat
 							}
-							add = 17
+							add = 16
 						}
 						random_list = {
 							1 = {
@@ -1486,7 +1474,7 @@
 					0 = {
 						modifier = {
 							has_religion = religion:christianity_religion 
-							add = 2
+							add = 3
 						}
 						random_list = {
 							1 = {
@@ -1495,22 +1483,16 @@
 							1 = {
 								change_first_name = Kristrod
 							}
-							1 = {
-								change_first_name = Vinaman
-							}
 						}
 					}
 					0 = {
 						modifier = {
 							has_religion = religion:germanic_religion 
-							add = 11
+							add = 24
 						}
 						random_list = {
 							1 = {
 								change_first_name = Beinvid
-							}
-							1 = {
-								change_first_name = Vibrand
 							}
 							1 = {
 								change_first_name = Vidiarf
@@ -1528,12 +1510,6 @@
 								change_first_name = Vifuss
 							}
 							1 = {
-								change_first_name = Vigeir
-							}
-							1 = {
-								change_first_name = Vigest
-							}
-							1 = {
 								change_first_name = Vigrim
 							}
 							1 = {
@@ -1541,12 +1517,6 @@
 							}
 							1 = {
 								change_first_name = Vihjalm
-							}
-							1 = {
-								change_first_name = Viketil
-							}
-							1 = {
-								change_first_name = Vileif
 							}
 							1 = {
 								change_first_name = Viniut
@@ -1558,16 +1528,7 @@
 								change_first_name = Viurd
 							}
 							1 = {
-								change_first_name = Vithorm
-							}
-							1 = {
-								change_first_name = Vithorn
-							}
-							1 = {
 								change_first_name = Thorar
-							}
-							1 = {
-								change_first_name = Thorbein
 							}
 							1 = {
 								change_first_name = Thorbrand
@@ -1580,12 +1541,6 @@
 							}
 							1 = {
 								change_first_name = Thorhadd
-							}
-							1 = {
-								change_first_name = Thorhald
-							}
-							1 = {
-								change_first_name = Thorhrolf
 							}
 							1 = {
 								change_first_name = Thorleik
@@ -3102,12 +3057,6 @@
 						change_first_name = Skjoldulf
 					}
 					1 = {
-						change_first_name = Skolm
-					}
-					1 = {
-						change_first_name = Skorageir
-					}
-					1 = {
 						change_first_name = Skorri
 					}
 					1 = {
@@ -3120,15 +3069,6 @@
 						change_first_name = Slodi
 					}
 					1 = {
-						change_first_name = Snaekolf
-					}
-					1 = {
-						change_first_name = Snaekoll
-					}
-					1 = {
-						change_first_name = Snaerir
-					}
-					1 = {
 						change_first_name = Snaeulf
 					}
 					1 = {
@@ -3139,9 +3079,6 @@
 					}
 					1 = {
 						change_first_name = Sorli
-					}
-					1 = {
-						change_first_name = Spjallbodi
 					}
 					1 = {
 						change_first_name = Spraki
@@ -3162,13 +3099,7 @@
 						change_first_name = Steinbjorn
 					}
 					1 = {
-						change_first_name = Steinfast
-					}
-					1 = {
 						change_first_name = Steinfinn
-					}
-					1 = {
-						change_first_name = Steingisl
 					}
 					1 = {
 						change_first_name = Steinkel
@@ -3184,9 +3115,6 @@
 					}
 					1 = {
 						change_first_name = Stigandi
-					}
-					1 = {
-						change_first_name = Stiling
 					}
 					1 = {
 						change_first_name = Stilling
@@ -3205,9 +3133,6 @@
 					}
 					1 = {
 						change_first_name = Styfiald
-					}
-					1 = {
-						change_first_name = Stynbjorn
 					}
 					1 = {
 						change_first_name = Styrfast
@@ -3246,9 +3171,6 @@
 						change_first_name = Svarthofdi
 					}
 					1 = {
-						change_first_name = Sveingeir
-					}
-					1 = {
 						change_first_name = Svipdag
 					}
 					1 = {
@@ -3271,9 +3193,6 @@
 					}
 					1 = {
 						change_first_name = Torrad
-					}
-					1 = {
-						change_first_name = Trjon
 					}
 					1 = {
 						change_first_name = Trygg
@@ -3310,9 +3229,6 @@
 					}
 					1 = {
 						change_first_name = Ulfkel
-					}
-					1 = {
-						change_first_name = Ulfljot
 					}
 					1 = {
 						change_first_name = Ulfrek
@@ -3444,28 +3360,16 @@
 						change_first_name = Vilmund
 					}
 					1 = {
-						change_first_name = Visbur
-					}
-					1 = {
 						change_first_name = Vott
 					}
 					1 = {
 						change_first_name = Vrai
 					}
 					1 = {
-						change_first_name = Vreid
-					}
-					1 = {
-						change_first_name = Vreist
-					}
-					1 = {
 						change_first_name = Thangbrand
 					}
 					1 = {
 						change_first_name = Thengil
-					}
-					1 = {
-						change_first_name = Thettmar
 					}
 					1 = {
 						change_first_name = Thidrandi
@@ -3490,9 +3394,6 @@
 					}
 					1 = {
 						change_first_name = Thjostolf
-					}
-					1 = {
-						change_first_name = Thrassi
 					}
 					1 = {
 						change_first_name = Thottolf
@@ -3714,7 +3615,7 @@ norse_female_name_effect = {
 						change_first_name = Astrid
 					}
 					1 = {
-						change_first_name = Aud
+						change_first_name = Auda
 					}
 					1 = {
 						change_first_name = Bjorg

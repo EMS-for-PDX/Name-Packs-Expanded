@@ -10,7 +10,41 @@
         on_repub_death
         on_merc_death
         #on_monk_death
+		on_female_death
+		on_male_death
 	}
+}
+on_female_death = {
+    trigger = {
+		culture = {
+			is_npe_supported_culture = yes
+		}
+        is_male = no
+	}
+    effect = {
+        every_child = {
+           add_to_variable_list = { name = female_ancestors target = root }
+           every_child = {
+               add_to_variable_list = { name = female_ancestors target = root }
+           }
+        }
+    }
+}
+on_male_death = {
+    trigger = {
+		culture = {
+			is_npe_supported_culture = yes
+		}
+        is_male = yes
+	}
+    effect = {
+        every_child = {
+           add_to_variable_list = { name = male_ancestors target = root }
+           every_child = {
+               add_to_variable_list = { name = male_ancestors target = root }
+           }
+        }
+    }
 }
 #on_monk_death = {
 #    trigger = {

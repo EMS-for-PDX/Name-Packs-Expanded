@@ -1,0 +1,23 @@
+867_welsh_char_effect = {
+	character:159352.dynasty = { #Bleddri
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159352 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159353 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159354 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159361 }
+	}
+	character:159351.dynasty = { #Dyfed
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159351 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159350 }
+		add_to_variable_list = { name = dynasty_independent target = character:159350 }
+	}
+	character:159350 = {
+		change_first_anme = Eoin
+	}
+	character:159351 = {
+		change_first_anme = Tangwystl
+	}
+	character:159352 = {
+		change_first_anme = Bleddri
+		dynasty_effect_ne = yes
+	}
+}
