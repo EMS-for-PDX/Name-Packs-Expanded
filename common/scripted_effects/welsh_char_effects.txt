@@ -29,6 +29,109 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159802 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159801 }
 	}
+	character:159116.house = { #Morgannwg (named after Morgan the Old but whatever)
+		set_variable = {
+			name = name_founder
+			value = character:159116
+		}
+	}
+	character:160258.dynasty = { #Gwent
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:160258 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159111 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:160259 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:160260 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159110 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159109 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:160255 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159108 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:160256 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159112 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159113 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159114 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159115 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159116 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159835 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159833 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159832 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159834 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:205137 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159831 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159830 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159825 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159824 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159823 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159822 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159821 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159816 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159813 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159814 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159815 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159808 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159807 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159810 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159812 }
+		add_to_variable_list = { name = dynasty_independent target = character:159807 }
+		add_to_variable_list = { name = dynasty_independent target = character:159808 }
+		add_to_variable_list = { name = dynasty_independent target = character:159813 }
+		add_to_variable_list = { name = dynasty_independent target = character:159816 }
+		add_to_variable_list = { name = dynasty_independent target = character:159821 }
+		add_to_variable_list = { name = dynasty_independent target = character:159822 }
+		add_to_variable_list = { name = dynasty_independent target = character:159823 }
+		add_to_variable_list = { name = dynasty_independent target = character:159824 }
+		add_to_variable_list = { name = dynasty_independent target = character:159830 }
+		add_to_variable_list = { name = dynasty_independent target = character:159831 }
+		add_to_variable_list = { name = dynasty_independent target = character:159834 }
+		add_to_variable_list = { name = dynasty_independent target = character:159832 }
+		add_to_variable_list = { name = dynasty_independent target = character:159833 }
+		add_to_variable_list = { name = dynasty_independent target = character:159115 }
+		add_to_variable_list = { name = dynasty_independent target = character:159114 }
+		add_to_variable_list = { name = dynasty_independent target = character:159113 }
+		add_to_variable_list = { name = dynasty_independent target = character:159112 }
+		add_to_variable_list = { name = dynasty_independent target = character:159110 }
+		add_to_variable_list = { name = dynasty_independent target = character:159835 }
+	}
+	character:159830 = {
+		change_first_name = Urbanus
+	}
+	character:159812 = {
+		change_first_name = Constantine
+	}
+	character:159807 = {
+		change_first_name = Maximus
+        add_to_global_variable_list = { name = Great_byname target = this } #Magnus
+	}
+	character:159808 = {
+		change_first_name = Anwn
+        add_to_global_variable_list = { name = Black_byname target = this }
+	}
+	character:159814 = {
+		change_first_name = Theodore
+	}
+	character:159821 = {
+		change_first_name = Dyfnwallon
+	}
+	character:159822 = {
+		change_first_name = Honorius
+	}
+	character:159823 = {
+        add_to_global_variable_list = { name = GreatArm_byname target = this }
+	}
+	character:159832 = {
+		change_first_name = Theodore
+	}
+	character:159116 = {
+        add_to_global_variable_list = { name = Wealthy_byname target = this }
+	}
+	character:159115 = {
+		change_first_name = Iudhael
+	}
+	character:159108 = {
+		change_first_name = Eogan
+	}
+	character:159111 = {
+		change_first_name = Arthfael
+        add_to_global_variable_list = { name = Old_byname target = this }
+	}
 	character:159801 = {
 		change_first_name = Gwgon
 	}
@@ -39,7 +142,7 @@
 		change_first_name = Arthen #Real Name
 	}
 	character:159798 = {
-		dynasty_effect_ne = yes #county is named after him lol
+		dynasty_effect_ne = yes #petty kingdom is named after him lol
 	}
 	character:159027 = {
         add_to_global_variable_list = { name = Unjust_byname target = this }
