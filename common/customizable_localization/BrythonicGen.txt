@@ -1,0 +1,26 @@
+BrythonicNick = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Unjust_byname
+				this = root
+			}
+		}
+        localization_key = Unjust
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Great_byname
+				this = root
+			}
+		}
+        localization_key = Great
+	}
+	text = {
+		fallback = yes
+		localization_key = BlankNick
+	}
+}

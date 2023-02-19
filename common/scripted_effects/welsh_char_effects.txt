@@ -1,20 +1,57 @@
-867_welsh_char_effect = {
+﻿867_welsh_char_effect = {
 	character:159352.dynasty = { #Bleddri
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159352 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159353 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159354 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159361 }
 	}
-	character:159351.dynasty = { #Dyfed
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:159351 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:159350 }
-		add_to_variable_list = { name = dynasty_independent target = character:159350 }
+	character:81831.dynasty = { #Ebrauc
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:81831 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:81830 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159805 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:81824 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159803 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159375 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159804 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:138466 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:184089 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159027 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159026 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159028 }
+		add_to_variable_list = { name = dynasty_independent target = character:159026 }
+		add_to_variable_list = { name = dynasty_independent target = character:159027 }
 	}
-	character:159350 = {
-		change_first_anme = Eogan
+	character:159798.dynasty = { #Seisyllwg
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159798 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159799 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159806 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159800 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159802 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159801 }
 	}
-	character:159351 = {
-		change_first_anme = Tangwystl
+	character:159801 = {
+		change_first_anme = Gwgon
+	}
+	character:159806 = {
+		change_first_anme = Dyfnwallon
+	}
+	character:159799 = {
+		change_first_anme = Arthen #Real Name
+	}
+	character:159798 = {
+		dynasty_effect_ne = yes #county is named after him lol
+	}
+	character:159027 = {
+        add_to_global_variable_list = { name = Unjust_byname target = this }
+	}
+	character:159375 = {
+		change_first_anme = Helen
+	}
+	character:81831 = {
+        add_to_global_variable_list = { name = Great_byname target = this }
+	}
+	character:159353 = {
+		change_first_anme = Hyfaidd
 	}
 	character:159352 = {
 		change_first_anme = Blaiddri
