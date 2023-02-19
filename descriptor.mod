@@ -4,4 +4,4 @@ tags={
 	"Historical"
 }
 name="Name Pack Expanded"
-supported_version="1.8.0"
+supported_version="1.8.1"
