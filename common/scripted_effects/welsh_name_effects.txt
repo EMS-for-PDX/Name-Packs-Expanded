@@ -1281,3 +1281,762 @@ welsh_female_name_effect = {
 		}
 	}
 }
+welsh_nick_name_effect = {
+	save_scope_as = byname_target
+	add_character_flag = got_npe_nickname
+	random_list = {
+		0 = {
+			modifier = {
+				age > 55
+				add = 1
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Old_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Gray_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = BaldGray_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.05
+					multiply = prowess
+				}
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = GreatArm_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = MightyGrasp_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Soldier_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = BattleAxe_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = LongHand_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.01
+					multiply = gold
+				}
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Wealthy_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Luxurious_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.1
+					multiply = martial
+				}
+			}
+			random_list = {
+				1= {
+					add_to_global_variable_list = { name = BattleWinner_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = ProtectionMany_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.1
+					multiply = intrigue
+				}
+			}
+			random_list = {
+				1= {
+					add_to_global_variable_list = { name = Treacherous_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Schemer_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = CatEyed_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.1
+					multiply = learning
+				}
+			}
+			add_to_global_variable_list = { name = Wise_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_character_modifier = obese_modifier
+					has_character_modifier = gaining_weight_modifier
+				}
+				add = 10
+			}
+			random_list = {
+				1= {
+					add_to_global_variable_list = { name = Fat_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Large_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 1
+					multiply = prestige_level
+				}
+			}
+			random_list = {
+				1= {
+					add_to_global_variable_list = { name = Famous_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Valorous_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Great_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Magnanimous_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Illustrious_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				any_parent = {
+					culture = {
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+				add = 5
+			}
+			add_to_global_variable_list = { name = English_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				any_parent = {
+					culture = {
+						has_cultural_pillar = heritage_goidelic
+					}
+				}
+				add = 5
+			}
+			add_to_global_variable_list = { name = Irish_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.5
+					multiply = piety_level
+				}
+			}
+			add_to_global_variable_list = { name = Blessed_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = shy
+				add = 3
+			}
+			add_to_global_variable_list = { name = Shy_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = leper
+				add = 10
+			}
+			add_to_global_variable_list = { name = Leper_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = lisping
+					has_trait = stuttering
+				}
+				add = 10
+			}
+			add_to_global_variable_list = { name = Driveler_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = clubfooted
+					has_trait = hunchbacked
+					has_trait = wheezing
+					has_trait = spindly
+					has_trait = scaly
+				}
+				add = 10
+			}
+			add_to_global_variable_list = { name = Lame_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = hunchbacked
+				add = 5
+			}
+			add_to_global_variable_list = { name = Hunchback_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = forest_fighter
+				add = 5
+			}
+			add_to_global_variable_list = { name = RedWolf_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = dwarf
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Short_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Short2_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Small_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = giant
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Giant_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Tall_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Large_byname target = scope:byname_target }
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_trait = spindly
+							has_character_modifier = losing_weight_modifier
+							has_character_modifier = gaining_weight_modifier
+						}
+						add = 1
+					}
+					add_to_global_variable_list = { name = TallSkinny_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = spindly
+					has_character_modifier = losing_weight_modifier
+					has_character_modifier = gaining_weight_modifier
+				}
+				add = 10
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Skinny_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = beauty_good_1
+					has_trait = beauty_good_2
+					has_trait = beauty_good_3
+				}
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Handsome_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = FairNeck_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = weak
+				add = 5
+			}
+			add_to_global_variable_list = { name = Weak_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = dull
+					has_trait = intellect_bad_1
+					has_trait = intellect_bad_2
+					has_trait = intellect_bad_3
+				}
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Fool_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = scaly
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Coarse_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Scabby_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = scarred
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Scabby_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = BrokenNose_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.1
+					multiply = dread
+				}
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Traitor_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Harsh_byname target = scope:byname_target }
+				}
+			}
+		}
+		3 = {
+			modifier = {
+				add = {
+					value = -0.1
+					multiply = dread
+				}
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Kind_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = disfigured
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = BrokenNose_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = arrogant
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = ThickHeaded_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = BigHead_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Haughty_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Arrogant_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				age < 25
+				add = 0.5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Young_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Young2_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = aggressive_attacker
+				add = 5
+			}
+			add_to_global_variable_list = { name = Aggressive_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = organizer
+				add = 5
+			}
+			add_to_global_variable_list = { name = LightFoot_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = holy_warrior
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Zealous_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = fecund
+				is_male = no
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = BigBazokkas_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = craven
+				add = 3
+			}
+			add_to_global_variable_list = { name = Craven_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = blind
+				add = 5
+			}
+			add_to_global_variable_list = { name = Blind_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = one_legged
+					has_trait = clubfooted
+					has_trait = gout_ridden
+				}
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Crippled_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Clumsy_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = winter_soldier
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Wolf_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = poet
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Bard_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Poet_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = beauty_bad_1
+					has_trait = beauty_bad_2
+					has_trait = beauty_bad_3
+				}
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Ugly_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Hideous_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Unsightly_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = gallant
+				add = 5
+			}
+			add_to_global_variable_list = { name = Gallant_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = wrathful
+				add = 3
+			}
+			add_to_global_variable_list = { name = Wrathful_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = brave
+				add = 3
+			}
+			add_to_global_variable_list = { name = Brave_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = greedy
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Stingy_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Greedy_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = temperate
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name =  Temperate_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = unyielding_defender
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name =  Protector_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = ill
+					has_trait = infirm
+				}
+				add = 5
+			}
+			add_to_global_variable_list = { name =  DrowsyNose_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = lunatic_1
+					has_trait = lunatic_genetic
+					has_trait = possessed_1
+					has_trait = possessed_genetic
+				}
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name =  Mad_byname target = scope:byname_target }
+				}
+				0 = {
+					modifier = {
+						add = {
+							value = 0.1
+							multiply = martial
+						}
+					}
+					add_to_global_variable_list = { name =  WildKnight_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = just
+				add = 2
+			}
+			add_to_global_variable_list = { name =  Just_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = august
+				add = 25
+			}
+			add_to_global_variable_list = { name =  August_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = arbitrary
+				add = 2
+			}
+			add_to_global_variable_list = { name =  Unjust_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = hunter_1
+					has_trait = hunter_2
+					has_trait = hunter_3
+				}
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name =  Hunter_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = architect
+				add = 5
+			}
+			add_to_global_variable_list = { name =  Architect_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = humble
+				add = 3
+			}
+			add_to_global_variable_list = { name =  Humble_byname target = scope:byname_target }
+		}
+		1 = { #####
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Dear_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Red_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Proper_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Black_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Longshank_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Smirker_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = GoldHair_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = White_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = DeftHand_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Roebuck_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Bald_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Cat_byname target = scope:byname_target }
+				}
+			}
+		}
+	}
+	#if = {
+	#	limit = {
+	#		is_ai = no
+	#	}
+	#	random_courtier = {
+	#		limit = {
+	#			is_adult = yes
+	#			culture = {
+	#				has_cultural_pillar = language_norse
+	#			}
+	#		}
+	#		save_scope_as = nick_giver
+	#	}
+	#	random_courtier = {
+	#		limit = {
+	#			is_adult = yes
+	#			NOT = {
+	#				this = scope:nick_giver
+	#			}
+	#		}
+	#		save_scope_as = yeller
+	#	}
+	#	trigger_event = {
+	#		id = norsenamepack.001
+	#		days = -1
+	#	}
+	#}
+}
