@@ -267,6 +267,32 @@
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
+			OR = {
+				highest_held_title_tier = tier_empire
+				AND = {
+					OR = {
+						has_government = tribal_government
+						has_government = feudal_government
+						has_government = clan_government
+					}
+					highest_held_title_tier <= tier_duchy
+					highest_held_title_tier != tier_barony
+					is_independent_ruler = no
+				}
+				AND = {
+					has_government = republic_government
+					highest_held_title_tier <= tier_county
+				}
+			}
+		}
+		localization_key = Titled_First_Name_Mongol_Suffix
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
 		}
 		localization_key = Titled_First_Name_Mongol
 	}
@@ -507,6 +533,32 @@ TitledFirstNameNoTooltip = {
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Turkish
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
+			OR = {
+				highest_held_title_tier = tier_empire
+				AND = {
+					OR = {
+						has_government = tribal_government
+						has_government = feudal_government
+						has_government = clan_government
+					}
+					highest_held_title_tier <= tier_duchy
+					highest_held_title_tier != tier_barony
+					is_independent_ruler = no
+				}
+				AND = {
+					has_government = republic_government
+					highest_held_title_tier <= tier_county
+				}
+			}
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Mongol_Suffix
 	}
 	text = {
 		trigger = {
@@ -790,6 +842,32 @@ TitledFirstNamePossessive = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
+			OR = {
+				highest_held_title_tier = tier_empire
+				AND = {
+					OR = {
+						has_government = tribal_government
+						has_government = feudal_government
+						has_government = clan_government
+					}
+					highest_held_title_tier <= tier_duchy
+					highest_held_title_tier != tier_barony
+					is_independent_ruler = no
+				}
+				AND = {
+					has_government = republic_government
+					highest_held_title_tier <= tier_county
+				}
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_Mongol_Suffix
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
 		}
 		localization_key = Titled_First_Name_Possessive_Mongol
 	}
@@ -1059,6 +1137,32 @@ TitledFirstNamePossessiveNoTooltip = {
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_No_Tooltip_Turkish
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
+			OR = {
+				highest_held_title_tier = tier_empire
+				AND = {
+					OR = {
+						has_government = tribal_government
+						has_government = feudal_government
+						has_government = clan_government
+					}
+					highest_held_title_tier <= tier_duchy
+					highest_held_title_tier != tier_barony
+					is_independent_ruler = no
+				}
+				AND = {
+					has_government = republic_government
+					highest_held_title_tier <= tier_county
+				}
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Mongol_Suffix
 	}
 	text = {
 		trigger = {
@@ -1342,6 +1446,32 @@ TitledFirstNameNickName = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
+			OR = {
+				highest_held_title_tier = tier_empire
+				AND = {
+					OR = {
+						has_government = tribal_government
+						has_government = feudal_government
+						has_government = clan_government
+					}
+					highest_held_title_tier <= tier_duchy
+					highest_held_title_tier != tier_barony
+					is_independent_ruler = no
+				}
+				AND = {
+					has_government = republic_government
+					highest_held_title_tier <= tier_county
+				}
+			}
+		}
+		localization_key =  Titled_First_Name_Mongol_Suffix
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
 		}
 		localization_key = Titled_First_Name_Mongol
 	}
@@ -1611,6 +1741,32 @@ TitledFirstNameNickNoTooltip = {
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Turkish
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
+			OR = {
+				highest_held_title_tier = tier_empire
+				AND = {
+					OR = {
+						has_government = tribal_government
+						has_government = feudal_government
+						has_government = clan_government
+					}
+					highest_held_title_tier <= tier_duchy
+					highest_held_title_tier != tier_barony
+					is_independent_ruler = no
+				}
+				AND = {
+					has_government = republic_government
+					highest_held_title_tier <= tier_county
+				}
+			}
+		}
+		localization_key =  Titled_First_Name_No_Tooltip_Mongol_Suffix
 	}
 	text = {
 		trigger = {
@@ -1900,6 +2056,32 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
+			OR = {
+				highest_held_title_tier = tier_empire
+				AND = {
+					OR = {
+						has_government = tribal_government
+						has_government = feudal_government
+						has_government = clan_government
+					}
+					highest_held_title_tier <= tier_duchy
+					highest_held_title_tier != tier_barony
+					is_independent_ruler = no
+				}
+				AND = {
+					has_government = republic_government
+					highest_held_title_tier <= tier_county
+				}
+			}
+		}
+		localization_key =  Titled_First_Name_Possessive_No_Tooltip_Mongol_Suffix
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
 		}
 		localization_key =  Titled_First_Name_Possessive_No_Tooltip_Mongol
 	}
@@ -2175,6 +2357,32 @@ TitledFirstNameOrMe = {
 			}
 		}
 		localization_key = Titled_First_Name_Turkish
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
+			OR = {
+				highest_held_title_tier = tier_empire
+				AND = {
+					OR = {
+						has_government = tribal_government
+						has_government = feudal_government
+						has_government = clan_government
+					}
+					highest_held_title_tier <= tier_duchy
+					highest_held_title_tier != tier_barony
+					is_independent_ruler = no
+				}
+				AND = {
+					has_government = republic_government
+					highest_held_title_tier <= tier_county
+				}
+			}
+		}
+		localization_key =  Titled_First_Name_Mongol_Suffix
 	}
 	text = {
 		trigger = {
