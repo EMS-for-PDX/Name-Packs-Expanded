@@ -273,20 +273,40 @@
 					is_ruler = yes
 				}
 				AND = {
-					OR = {
-						has_government = tribal_government
-						has_government = feudal_government
-						has_government = clan_government
+					NOT = {
+						OR = {
+							AND = {
+								exists = father
+								father = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+						}
 					}
-					highest_held_title_tier <= tier_duchy
-					highest_held_title_tier != tier_barony
-					is_independent_ruler = no
-					is_ruler = yes
-				}
-				AND = {
-					is_ruler = yes
-					has_government = republic_government
-					highest_held_title_tier <= tier_county
+					OR = {
+						AND = {
+							OR = {
+								has_government = tribal_government
+								has_government = feudal_government
+								has_government = clan_government
+								has_government = byzantine_government
+							}
+							highest_held_title_tier <= tier_duchy
+							highest_held_title_tier != tier_barony
+							is_independent_ruler = no
+						}
+						AND = {
+							holds_landed_title = yes
+							has_government = republic_government
+							highest_held_title_tier <= tier_county
+						}
+					}
 				}
 			}
 		}
@@ -551,20 +571,40 @@ TitledFirstNameNoTooltip = {
 					is_ruler = yes
 				}
 				AND = {
-					OR = {
-						has_government = tribal_government
-						has_government = feudal_government
-						has_government = clan_government
+					NOT = {
+						OR = {
+							AND = {
+								exists = father
+								father = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+						}
 					}
-					highest_held_title_tier <= tier_duchy
-					highest_held_title_tier != tier_barony
-					is_independent_ruler = no
-					is_ruler = yes
-				}
-				AND = {
-					is_ruler = yes
-					has_government = republic_government
-					highest_held_title_tier <= tier_county
+					OR = {
+						AND = {
+							OR = {
+								has_government = tribal_government
+								has_government = feudal_government
+								has_government = clan_government
+								has_government = byzantine_government
+							}
+							highest_held_title_tier <= tier_duchy
+							highest_held_title_tier != tier_barony
+							is_independent_ruler = no
+						}
+						AND = {
+							holds_landed_title = yes
+							has_government = republic_government
+							highest_held_title_tier <= tier_county
+						}
+					}
 				}
 			}
 		}
@@ -858,20 +898,40 @@ TitledFirstNamePossessive = {
 					is_ruler = yes
 				}
 				AND = {
-					OR = {
-						has_government = tribal_government
-						has_government = feudal_government
-						has_government = clan_government
+					NOT = {
+						OR = {
+							AND = {
+								exists = father
+								father = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+						}
 					}
-					highest_held_title_tier <= tier_duchy
-					highest_held_title_tier != tier_barony
-					is_independent_ruler = no
-					is_ruler = yes
-				}
-				AND = {
-					is_ruler = yes
-					has_government = republic_government
-					highest_held_title_tier <= tier_county
+					OR = {
+						AND = {
+							OR = {
+								has_government = tribal_government
+								has_government = feudal_government
+								has_government = clan_government
+								has_government = byzantine_government
+							}
+							highest_held_title_tier <= tier_duchy
+							highest_held_title_tier != tier_barony
+							is_independent_ruler = no
+						}
+						AND = {
+							holds_landed_title = yes
+							has_government = republic_government
+							highest_held_title_tier <= tier_county
+						}
+					}
 				}
 			}
 		}
@@ -1165,20 +1225,40 @@ TitledFirstNamePossessiveNoTooltip = {
 					is_ruler = yes
 				}
 				AND = {
-					OR = {
-						has_government = tribal_government
-						has_government = feudal_government
-						has_government = clan_government
+					NOT = {
+						OR = {
+							AND = {
+								exists = father
+								father = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+						}
 					}
-					highest_held_title_tier <= tier_duchy
-					highest_held_title_tier != tier_barony
-					is_independent_ruler = no
-					is_ruler = yes
-				}
-				AND = {
-					is_ruler = yes
-					has_government = republic_government
-					highest_held_title_tier <= tier_county
+					OR = {
+						AND = {
+							OR = {
+								has_government = tribal_government
+								has_government = feudal_government
+								has_government = clan_government
+								has_government = byzantine_government
+							}
+							highest_held_title_tier <= tier_duchy
+							highest_held_title_tier != tier_barony
+							is_independent_ruler = no
+						}
+						AND = {
+							holds_landed_title = yes
+							has_government = republic_government
+							highest_held_title_tier <= tier_county
+						}
+					}
 				}
 			}
 		}
@@ -1472,20 +1552,40 @@ TitledFirstNameNickName = {
 					is_ruler = yes
 				}
 				AND = {
-					OR = {
-						has_government = tribal_government
-						has_government = feudal_government
-						has_government = clan_government
+					NOT = {
+						OR = {
+							AND = {
+								exists = father
+								father = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+						}
 					}
-					highest_held_title_tier <= tier_duchy
-					highest_held_title_tier != tier_barony
-					is_independent_ruler = no
-					is_ruler = yes
-				}
-				AND = {
-					is_ruler = yes
-					has_government = republic_government
-					highest_held_title_tier <= tier_county
+					OR = {
+						AND = {
+							OR = {
+								has_government = tribal_government
+								has_government = feudal_government
+								has_government = clan_government
+								has_government = byzantine_government
+							}
+							highest_held_title_tier <= tier_duchy
+							highest_held_title_tier != tier_barony
+							is_independent_ruler = no
+						}
+						AND = {
+							holds_landed_title = yes
+							has_government = republic_government
+							highest_held_title_tier <= tier_county
+						}
+					}
 				}
 			}
 		}
@@ -1779,20 +1879,40 @@ TitledFirstNameNickNoTooltip = {
 					is_ruler = yes
 				}
 				AND = {
-					OR = {
-						has_government = tribal_government
-						has_government = feudal_government
-						has_government = clan_government
+					NOT = {
+						OR = {
+							AND = {
+								exists = father
+								father = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+						}
 					}
-					highest_held_title_tier <= tier_duchy
-					highest_held_title_tier != tier_barony
-					is_independent_ruler = no
-					is_ruler = yes
-				}
-				AND = {
-					is_ruler = yes
-					has_government = republic_government
-					highest_held_title_tier <= tier_county
+					OR = {
+						AND = {
+							OR = {
+								has_government = tribal_government
+								has_government = feudal_government
+								has_government = clan_government
+								has_government = byzantine_government
+							}
+							highest_held_title_tier <= tier_duchy
+							highest_held_title_tier != tier_barony
+							is_independent_ruler = no
+						}
+						AND = {
+							holds_landed_title = yes
+							has_government = republic_government
+							highest_held_title_tier <= tier_county
+						}
+					}
 				}
 			}
 		}
@@ -2092,20 +2212,40 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 					is_ruler = yes
 				}
 				AND = {
-					OR = {
-						has_government = tribal_government
-						has_government = feudal_government
-						has_government = clan_government
+					NOT = {
+						OR = {
+							AND = {
+								exists = father
+								father = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+						}
 					}
-					highest_held_title_tier <= tier_duchy
-					highest_held_title_tier != tier_barony
-					is_independent_ruler = no
-					is_ruler = yes
-				}
-				AND = {
-					is_ruler = yes
-					has_government = republic_government
-					highest_held_title_tier <= tier_county
+					OR = {
+						AND = {
+							OR = {
+								has_government = tribal_government
+								has_government = feudal_government
+								has_government = clan_government
+								has_government = byzantine_government
+							}
+							highest_held_title_tier <= tier_duchy
+							highest_held_title_tier != tier_barony
+							is_independent_ruler = no
+						}
+						AND = {
+							holds_landed_title = yes
+							has_government = republic_government
+							highest_held_title_tier <= tier_county
+						}
+					}
 				}
 			}
 		}
@@ -2405,20 +2545,40 @@ TitledFirstNameOrMe = {
 					is_ruler = yes
 				}
 				AND = {
-					OR = {
-						has_government = tribal_government
-						has_government = feudal_government
-						has_government = clan_government
+					NOT = {
+						OR = {
+							AND = {
+								exists = father
+								father = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									highest_held_title_tier >= tier_kingdom
+								}
+							}
+						}
 					}
-					highest_held_title_tier <= tier_duchy
-					highest_held_title_tier != tier_barony
-					is_independent_ruler = no
-					is_ruler = yes
-				}
-				AND = {
-					is_ruler = yes
-					has_government = republic_government
-					highest_held_title_tier <= tier_county
+					OR = {
+						AND = {
+							OR = {
+								has_government = tribal_government
+								has_government = feudal_government
+								has_government = clan_government
+								has_government = byzantine_government
+							}
+							highest_held_title_tier <= tier_duchy
+							highest_held_title_tier != tier_barony
+							is_independent_ruler = no
+						}
+						AND = {
+							holds_landed_title = yes
+							has_government = republic_government
+							highest_held_title_tier <= tier_county
+						}
+					}
 				}
 			}
 		}
