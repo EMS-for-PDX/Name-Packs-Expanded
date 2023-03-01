@@ -12,261 +12,261 @@
 		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
 	}
 	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 40
+			}
+			random_list = {
+				1 = {
+					change_first_name = Abd-Allah
+				}
+				1 = {
+					change_first_name = Ahmad
+				}
+				1 = {
+					change_first_name = Ali
+				}
+				1 = {
+					change_first_name = Hasan
+				}
+				1 = {
+					change_first_name = Husayn
+				}
+				1 = {
+					change_first_name = Muhammad
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_religion = religion:islam_religion
+					has_religion = religion:christianity_religion
+				}
+				add = 10
+			}
+			random_list = {
+				1 = {
+					change_first_name = Musa
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 30
+			}
+			random_list = {
+				1 = {
+					change_first_name = Ibrahim
+				}
+				1 = {
+					change_first_name = Ilyas
+				}
+				1 = {
+					change_first_name = Ishaq
+				}
+				1 = {
+					change_first_name = Khwaja
+				}
+				1 = {
+					change_first_name = Mahmud
+				}
+				1 = {
+					change_first_name = Said
+				}
+				1 = {
+					change_first_name = Uways
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 30
+			}
+			random_list = {
+				1 = {
+					change_first_name = George
+				}
+				1 = {
+					change_first_name = John
+				}
+				1 = {
+					change_first_name = Marcus
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Abu-Bakr
+				}
+				1 = {
+					change_first_name = Abu-Said
+				}
+				1 = {
+					change_first_name = Maliktemur
+				}
+				1 = {
+					change_first_name = Masud
+				}
+				1 = {
+					change_first_name = Mubarak
+				}
+				1 = {
+					change_first_name = Nasir
+				}
+				1 = {
+					change_first_name = Sulayman
+				}
+				1 = {
+					change_first_name = Yunus
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 25
+			}
+			random_list = {
+				1 = {
+					change_first_name = Barsawma
+				}
+				1 = {
+					change_first_name = Constans
+				}
+				1 = {
+					change_first_name = Isaac
+				}
+				1 = {
+					change_first_name = Kyriakos
+				}
+				1 = {
+					change_first_name = Matthew
+				}
+				1 = {
+					change_first_name = Nicholas
+				}
+				1 = {
+					change_first_name = Sergius
+				}
+				1 = {
+					change_first_name = Solomon
+				}
+				1 = {
+					change_first_name = Thomas
+				}
+				1 = {
+					change_first_name = Yoshmut
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_faith = faith:lamaism_faith
+				add = 25
+			}
+			random_list = {
+				1 = {
+					change_first_name = Rdorje
+				}
+				1 = {
+					change_first_name = Rdorjedpal
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:buddhism_religion
+				add = 25
+			}
+			random_list = {
+				1 = {
+					change_first_name = Ananda
+				}
+				1 = {
+					change_first_name = Ayurparibhadra
+				}
+				1 = {
+					change_first_name = Ayushridhara
+				}
+				1 = {
+					change_first_name = Bhadra
+				}
+				1 = {
+					change_first_name = Budabala
+				}
+				1 = {
+					change_first_name = Budashri
+				}
+				1 = {
+					change_first_name = Buyan-Temur
+				}
+				1 = {
+					change_first_name = Buyanbuqa
+				}
+				1 = {
+					change_first_name = Buyanquli
+				}
+				1 = {
+					change_first_name = Buyantai
+				}
+				1 = {
+					change_first_name = Buyantash
+				}
+				1 = {
+					change_first_name = Dharmadala
+				}
+				1 = {
+					change_first_name = Dharmapala
+				}
+				1 = {
+					change_first_name = Dharmashri
+				}
+				1 = {
+					change_first_name = Gunashri
+				}
+				1 = {
+					change_first_name = Kushala
+				}
+				1 = {
+					change_first_name = Mangala
+				}
+				1 = {
+					change_first_name = Nom-Quli
+				}
+				1 = {
+					change_first_name = Punya
+				}
+				1 = {
+					change_first_name = Punyashri
+				}
+				1 = {
+					change_first_name = Ratnadhara
+				}
+				1 = {
+					change_first_name = Sanghapala
+				}
+				1 = {
+					change_first_name = Siddhipala
+				}
+				1 = {
+					change_first_name = Vajra
+				}
+				1 = {
+					change_first_name = Yanashri
+				}
+			}
+		}
 		20 = {
 			random_list = {
-				0 = {
-					modifier = {
-						has_religion = religion:islam_religion
-						add = 40
-					}
-					random_list = {
-						1 = {
-							change_first_name = Abd-Allah
-						}
-						1 = {
-							change_first_name = Ahmad
-						}
-						1 = {
-							change_first_name = Ali
-						}
-						1 = {
-							change_first_name = Hasan
-						}
-						1 = {
-							change_first_name = Husayn
-						}
-						1 = {
-							change_first_name = Muhammad
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						OR = {
-							has_religion = religion:islam_religion
-							has_religion = religion:christianity_religion
-						}
-						add = 10
-					}
-					random_list = {
-						1 = {
-							change_first_name = Musa
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						has_religion = religion:islam_religion
-						add = 30
-					}
-					random_list = {
-						1 = {
-							change_first_name = Ibrahim
-						}
-						1 = {
-							change_first_name = Ilyas
-						}
-						1 = {
-							change_first_name = Ishaq
-						}
-						1 = {
-							change_first_name = Khwaja
-						}
-						1 = {
-							change_first_name = Mahmud
-						}
-						1 = {
-							change_first_name = Said
-						}
-						1 = {
-							change_first_name = Uways
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						has_religion = religion:christianity_religion
-						add = 30
-					}
-					random_list = {
-						1 = {
-							change_first_name = George
-						}
-						1 = {
-							change_first_name = John
-						}
-						1 = {
-							change_first_name = Marcus
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						has_religion = religion:islam_religion
-						add = 20
-					}
-					random_list = {
-						1 = {
-							change_first_name = Abu-Bakr
-						}
-						1 = {
-							change_first_name = Abu-Said
-						}
-						1 = {
-							change_first_name = Maliktemur
-						}
-						1 = {
-							change_first_name = Masud
-						}
-						1 = {
-							change_first_name = Mubarak
-						}
-						1 = {
-							change_first_name = Nasir
-						}
-						1 = {
-							change_first_name = Sulayman
-						}
-						1 = {
-							change_first_name = Yunus
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						has_religion = religion:christianity_religion
-						add = 25
-					}
-					random_list = {
-						1 = {
-							change_first_name = Barsawma
-						}
-						1 = {
-							change_first_name = Constans
-						}
-						1 = {
-							change_first_name = Isaac
-						}
-						1 = {
-							change_first_name = Kyriakos
-						}
-						1 = {
-							change_first_name = Matthew
-						}
-						1 = {
-							change_first_name = Nicholas
-						}
-						1 = {
-							change_first_name = Sergius
-						}
-						1 = {
-							change_first_name = Solomon
-						}
-						1 = {
-							change_first_name = Thomas
-						}
-						1 = {
-							change_first_name = Yoshmut
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						has_faith = faith:lamaism_faith
-						add = 25
-					}
-					random_list = {
-						1 = {
-							change_first_name = Rdorje
-						}
-						1 = {
-							change_first_name = Rdorjedpal
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						has_religion = religion:buddhism_religion
-						add = 25
-					}
-					random_list = {
-						1 = {
-							change_first_name = Ananda
-						}
-						1 = {
-							change_first_name = Ayurparibhadra
-						}
-						1 = {
-							change_first_name = Ayushridhara
-						}
-						1 = {
-							change_first_name = Bhadra
-						}
-						1 = {
-							change_first_name = Budabala
-						}
-						1 = {
-							change_first_name = Budashri
-						}
-						1 = {
-							change_first_name = Buyan-Temur
-						}
-						1 = {
-							change_first_name = Buyanbuqa
-						}
-						1 = {
-							change_first_name = Buyanquli
-						}
-						1 = {
-							change_first_name = Buyantai
-						}
-						1 = {
-							change_first_name = Buyantash
-						}
-						1 = {
-							change_first_name = Dharmadala
-						}
-						1 = {
-							change_first_name = Dharmapala
-						}
-						1 = {
-							change_first_name = Dharmashri
-						}
-						1 = {
-							change_first_name = Gunashri
-						}
-						1 = {
-							change_first_name = Kushala
-						}
-						1 = {
-							change_first_name = Mangala
-						}
-						1 = {
-							change_first_name = Nom-Quli
-						}
-						1 = {
-							change_first_name = Punya
-						}
-						1 = {
-							change_first_name = Punyashri
-						}
-						1 = {
-							change_first_name = Ratnadhara
-						}
-						1 = {
-							change_first_name = Sanghapala
-						}
-						1 = {
-							change_first_name = Siddhipala
-						}
-						1 = {
-							change_first_name = Vajra
-						}
-						1 = {
-							change_first_name = Yanashri
-						}
-					}
-				}
 				1 = {
 					change_first_name = Abaqa
 				}
