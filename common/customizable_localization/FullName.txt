@@ -277,7 +277,9 @@
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = Full_Name_Mongol_Emperor
@@ -298,6 +300,7 @@
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -600,7 +603,9 @@ FullNameNoTooltip = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Mongol_Emperor
@@ -621,6 +626,7 @@ FullNameNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -923,7 +929,9 @@ FullNamePossessive = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = Full_Name_Possessive_Mongol_Emperor
@@ -944,6 +952,7 @@ FullNamePossessive = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -1247,7 +1256,9 @@ FullNamePossessiveNoTooltip = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = Full_Name_Possessive_No_Tooltip_Mongol_Emperor
@@ -1268,6 +1279,7 @@ FullNamePossessiveNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -1570,7 +1582,9 @@ FullNameNick = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = Full_Name_Mongol_Emperor
@@ -1591,6 +1605,7 @@ FullNameNick = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -1893,7 +1908,9 @@ FullNamePossessiveNick = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = Full_Name_Possessive_Mongol_Emperor
@@ -1914,6 +1931,7 @@ FullNamePossessiveNick = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -2216,7 +2234,9 @@ FullNameNickNoTooltip = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Mongol_Emperor
@@ -2237,6 +2257,7 @@ FullNameNickNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government

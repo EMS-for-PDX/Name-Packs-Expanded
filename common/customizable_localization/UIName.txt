@@ -285,7 +285,9 @@
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = UI_Name_Mongol_Emperor
@@ -306,6 +308,7 @@
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -606,7 +609,9 @@ UINameNotMeNoTooltip = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = UI_Name_No_Tooltip_Mongol_Emperor
@@ -627,6 +632,7 @@ UINameNotMeNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -927,7 +933,9 @@ UINameNotMePossessive = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = UI_Name_Possessive_Mongol_Emperor
@@ -948,6 +956,7 @@ UINameNotMePossessive = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -1248,7 +1257,9 @@ UINameNotMePossessiveNoTooltip = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = UI_Name_Possessive_No_Tooltip_Mongol_Emperor
@@ -1269,6 +1280,7 @@ UINameNotMePossessiveNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -1575,7 +1587,9 @@ UIName = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = UI_Name_Mongol_Emperor
@@ -1596,6 +1610,7 @@ UIName = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -1902,7 +1917,9 @@ UINameNoTooltip = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = UI_Name_No_Tooltip_Mongol_Emperor
@@ -1923,6 +1940,7 @@ UINameNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -2229,7 +2247,9 @@ UINamePossessive = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = UI_Name_Possessive_Mongol_Emperor
@@ -2250,6 +2270,7 @@ UINamePossessive = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government
@@ -2556,7 +2577,9 @@ UINamePossessiveNoTooltip = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
 		localization_key = UI_Name_Possessive_No_Tooltip_Mongol_Emperor
@@ -2577,6 +2600,7 @@ UINamePossessiveNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
 					has_government = republic_government

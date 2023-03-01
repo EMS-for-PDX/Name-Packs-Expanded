@@ -281,8 +281,20 @@
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			OR = {
+			AND = {
 				highest_held_title_tier = tier_empire
+				is_ruler = yes
+			}
+		}
+		localization_key = Window_Mongol_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
+			OR = {
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -292,14 +304,16 @@
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
 			}
 		}
-		localization_key = Window_Mongol_Emperor
+		localization_key = Window_Mongol_LowerTierFirst
 	}
 	text = {
 		trigger = {
@@ -592,10 +606,12 @@ WindowNameTT = {
 				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
-			highest_held_title_tier = tier_empire
+			AND = {
+				highest_held_title_tier = tier_empire
+				is_ruler = yes
 			}
 		}
-		localization_key = Window_Mongol_Emperor_TT
+		localization_key = Window_Mongol_Emperor
 	}
 	text = {
 		trigger = {
@@ -613,8 +629,10 @@ WindowNameTT = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}

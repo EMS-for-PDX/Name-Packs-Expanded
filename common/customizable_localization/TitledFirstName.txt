@@ -268,7 +268,10 @@
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -278,8 +281,10 @@
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -541,7 +546,10 @@ TitledFirstNameNoTooltip = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -551,8 +559,10 @@ TitledFirstNameNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -843,7 +853,10 @@ TitledFirstNamePossessive = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -853,8 +866,10 @@ TitledFirstNamePossessive = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -1145,7 +1160,10 @@ TitledFirstNamePossessiveNoTooltip = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -1155,8 +1173,10 @@ TitledFirstNamePossessiveNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -1447,7 +1467,10 @@ TitledFirstNameNickName = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -1457,8 +1480,10 @@ TitledFirstNameNickName = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -1749,7 +1774,10 @@ TitledFirstNameNickNoTooltip = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -1759,8 +1787,10 @@ TitledFirstNameNickNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -2057,7 +2087,10 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -2067,8 +2100,10 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -2365,7 +2400,10 @@ TitledFirstNameOrMe = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -2375,8 +2413,10 @@ TitledFirstNameOrMe = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}

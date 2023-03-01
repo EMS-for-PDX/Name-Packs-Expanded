@@ -260,7 +260,10 @@
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -270,8 +273,10 @@
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -572,7 +577,10 @@ ShortNameNotMeNoTooltip = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -582,8 +590,10 @@ ShortNameNotMeNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -875,7 +885,10 @@ ShortNameNotMePossessive = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -885,8 +898,10 @@ ShortNameNotMePossessive = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -1178,7 +1193,10 @@ ShortNameNotMePossessiveNoTooltip = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -1188,8 +1206,10 @@ ShortNameNotMePossessiveNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -1481,7 +1501,10 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -1491,8 +1514,10 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -1790,7 +1815,10 @@ ShortName = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -1800,8 +1828,10 @@ ShortName = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -2099,7 +2129,10 @@ ShortNameNoTooltip = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -2109,8 +2142,10 @@ ShortNameNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -2408,7 +2443,10 @@ ShortNamePossessive = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -2418,8 +2456,10 @@ ShortNamePossessive = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -2717,7 +2757,10 @@ ShortNamePossessiveNoTooltip = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -2727,8 +2770,10 @@ ShortNamePossessiveNoTooltip = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}
@@ -3026,7 +3071,10 @@ ShortNamePossessiveNoTooltipNoFormat = {
 				mongol_check = yes
 			}
 			OR = {
-				highest_held_title_tier = tier_empire
+				AND = {
+					highest_held_title_tier = tier_empire
+					is_ruler = yes
+				}
 				AND = {
 					OR = {
 						has_government = tribal_government
@@ -3036,8 +3084,10 @@ ShortNamePossessiveNoTooltipNoFormat = {
 					highest_held_title_tier <= tier_duchy
 					highest_held_title_tier != tier_barony
 					is_independent_ruler = no
+					is_ruler = yes
 				}
 				AND = {
+					is_ruler = yes
 					has_government = republic_government
 					highest_held_title_tier <= tier_county
 				}

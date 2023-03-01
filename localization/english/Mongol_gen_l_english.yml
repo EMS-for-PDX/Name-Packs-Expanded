@@ -11,10 +11,12 @@ TierSuffixEmperorA_male: " Qağan"
 TierSuffixDuke_male: " Noyan"
 TierSuffixCount_male: " Noyan"
 TierSuffixBaron_male: " Daruğači"
+TierSuffixlord_male: ""
 TierSuffixEmperorA_female: " Qatun"
 TierSuffixDuke_female: " Noyan"
 TierSuffixCount_female: " Noyan"
 TierSuffixBaron_female: " Daruğači"
+TierSuffixlord_female: ""
 
 First_Name_Mongol: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
 
@@ -89,9 +91,9 @@ UI_Name_No_Tooltip_Mongol_LowerTierFirst: "#high [ROOT.Char.Custom('CharacterTie
 
 UI_Name_Possessive_Mongol: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('MongolNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
 UI_Name_No_Tooltip_Mongol_Emperor: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('MongolNick'), ROOT.Char.Custom('CharacterCulture')))][Localize(Concatenate('TierSuffix',Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender'))))]#!"
-UI_Name_No_Tooltip_Mongol_LowerTierFirst: "#high [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('MongolNick'), ROOT.Char.Custom('CharacterCulture')))]#!"
+UI_Name_No_Tooltip_Mongol_LowerTierFirst: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('MongolNick'), ROOT.Char.Custom('CharacterCulture')))]#!"
 
-UI_Name_Possessive_No_Tooltip_Mongol: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('MongolNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
+UI_Name_Possessive_No_Tooltip_Mongol: "#high [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('MongolNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
 UI_Name_No_Tooltip_Mongol_Emperor: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('MongolNick'), ROOT.Char.Custom('CharacterCulture')))][Localize(Concatenate('TierSuffix',Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender'))))]#!"
 UI_Name_No_Tooltip_Mongol_LowerTierFirst: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('MongolNick'), ROOT.Char.Custom('CharacterCulture')))]#!"
 
