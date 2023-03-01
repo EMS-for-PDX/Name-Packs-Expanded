@@ -276,6 +276,25 @@
 		localization_key = Window_Turkish
 	}
 	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
+		}
+		localization_key = Window_Mongol
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Window_Mongol_Emperor
+	}
+	text = {
 		fallback = yes
 		localization_key = UI_Char_Name_Default
 	}
@@ -550,6 +569,25 @@ WindowNameTT = {
 			}
 		}
 		localization_key = Window_Turkish_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
+		}
+		localization_key = Window_Mongol_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				mongol_check = yes
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Window_Mongol_Emperor_TT
 	}
 	text = {
 		fallback = yes
