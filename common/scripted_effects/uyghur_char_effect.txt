@@ -32,6 +32,8 @@
 	character:166766.dynasty = { #Yughur
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166766 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166767 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:194384 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166768 }
         add_to_variable_list = { name = dynasty_independent target = character:166766 }
         add_to_variable_list = { name = dynasty_tribal target = character:166766 }
 	}
@@ -104,6 +106,70 @@
 	character:302995.dynasty = {
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:302995 }
 	}
+	character:302863.dynasty = { #Do these and below need tribal target?
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302863 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302865 }
+	}
+	character:302871.dynasty = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302871 }
+	}
+	character:302877.dynasty = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302877 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302878 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302879 }
+	}
+	character:302887.dynasty = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302887 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302889 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302890 }
+	}
+	character:302908.dynasty = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302908 }
+	}
+	character:302914.dynasty = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302914 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302915 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:302916 }
+	}
+	character:302914.dynasty = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166766 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:194384 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166767 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166768 }
+	}
+	character:194384 = {
+		change_first_name = Ay
+	}
+	character:166767 = {
+		change_first_name = Qutluq
+	}
+	character:166768 = {
+		change_first_name = Savindi
+	}
+	character:302914 = {
+		change_first_name = Menli
+		dynasty_effect_ne = yes
+	}
+	character:302915 = {
+		change_first_name = Aychichek
+	}
+	character:302916 = {
+		change_first_name = Abiq
+	}
+	character:302908 = {
+		change_first_name = Sunqur
+		dynasty_effect_ne = yes
+	}
+	character:302887 = {
+		change_first_name = Savinek
+		dynasty_effect_ne = yes
+	}
+	character:302889 = {
+		change_first_name = Sevinch
+	}
+	character:302890 = {
+		change_first_name = Archuq
+	}	
 	character:302995 = {
 		change_first_name = Sosok
 		dynasty_effect_ne = yes
@@ -155,7 +221,7 @@
 		change_first_name = Togana
 	}
 	character:303029 = {
-		change_first_name = Huda
+		change_first_name = Utmish
 	}
 	character:303045 = {
 		change_first_name = Min-Tamur
@@ -261,5 +327,26 @@
 	}
 	character:166766 = {
 		change_first_name = Bogu
+	}
+	character:302863 = {
+		change_first_name = Buturmish
+		dynasty_effect_ne = yes
+	}
+	character:302865 = {
+		change_first_name = Togan
+	}
+	character:302871 = {
+		change_first_name = Sari
+		dynasty_effect_ne = yes
+	}
+	character:302877 = {
+		change_first_name = Konchek
+		dynasty_effect_ne = yes
+	}
+	character:302878 = {
+		change_first_name = Sunqur
+	}
+	character:302879 = {
+		change_first_name = Bag-Bars
 	}
 }
