@@ -228,6 +228,22 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:303196 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:303180 }
 	}
+	character:217341.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbmongol025
+        }
+    }
+	character:217341.dynasty = { #Nergui
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbmongol025 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:217341 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:217342 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:217343 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:217344 }
+	}
+	character:217344 = {
+		change_first_name = Tarqutai
+	}
 	character:303250 = {
 		change_first_name = Alan
         add_to_global_variable_list = { name = Beautiful_byname target = this }
