@@ -418,8 +418,20 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144099 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144099 }
     }
+    character:248023.dynasty = { #Muhtajid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:248023 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:248024 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:248025 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:248024 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:248025 }
+    }
     character:144044.dynasty = { #Saltuk
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144044 }
+    }
+    character:93087.dynasty = { #Kocharid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:93087 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:93088 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93088 }
     }
     character:144107.dynasty = { #Qarahan
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144107 }
@@ -454,6 +466,22 @@
         add_to_variable_list = { name = dynasty_tribal target = character:3008 }
         add_to_variable_list = { name = dynasty_tribal target = character:144105 }
         add_to_variable_list = { name = dynasty_tribal target = character:3004 }
+    }
+	character:93087 = {
+        change_first_name = Kocheri
+    }
+	character:93088 = {
+        change_first_name = Etrek
+    }
+	character:248023 = {
+        change_first_name = Kunduz
+        dynasty_effect_ne = yes
+    }
+	character:248024 = {
+        change_first_name = Artuq
+    }
+	character:248025 = {
+        change_first_name = Ertegin
     }
     character:3004 = {
         change_first_name = Mansur
