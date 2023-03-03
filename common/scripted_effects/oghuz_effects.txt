@@ -467,8 +467,14 @@
         add_to_variable_list = { name = dynasty_tribal target = character:144105 }
         add_to_variable_list = { name = dynasty_tribal target = character:3004 }
     }
+    character:302642.dynasty = { #Shavgari
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:302647 }
+    }
+	character:302647 = {
+        change_first_name = Aybeg
+    }
 	character:93087 = {
-        change_first_name = Kocher
+        change_first_name = Togan
         dynasty_effect_ne = yes
     }
 	character:93088 = {
