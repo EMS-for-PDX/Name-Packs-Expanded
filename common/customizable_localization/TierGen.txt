@@ -954,6 +954,104 @@
     text = {
         trigger = {
             highest_held_title_tier = tier_county
+            top_liege = {
+                culture = {
+                    has_cultural_pillar = language_anglic
+                }
+            }
+            culture = {
+                earl_check = yes
+            }
+            has_government = fuedal_government
+        }
+        localization_key = Earl
+    }
+    text = {
+        trigger = {
+            culture = {
+                earl_check = yes
+            }
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                AND = {
+                    exists = dynasty
+                    dynasty = {
+                        OR = {
+                            any_in_list = {
+                                variable = dynasty_theocrats
+                                this = root
+                            }
+                            any_in_list = {
+                                variable = dynasty_HO
+                                this = root
+                            }
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_county
+                    OR = {
+                        AND = {
+                            top_liege = {
+                                culture = {
+                                    has_cultural_pillar = language_anglic
+                                }
+                            }
+                            culture = {
+                                earl_check = yes
+                            }
+                            has_government = feudal_government
+                        }
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                any_in_list = {
+                                    variable = dynasty_earl
+                                    this = scope:the_spouse
+                                }
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_county
+                    OR = {
+                        AND = {
+                            top_liege = {
+                                culture = {
+                                    has_cultural_pillar = language_anglic
+                                }
+                            }
+                            culture = {
+                                earl_check = yes
+                            }
+                            has_government = feudal_government
+                        }
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                any_in_list = {
+                                    variable = dynasty_earl
+                                    this = scope:the_spouse
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = Earl_consort
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_county
         }
         localization_key = Count
     }
