@@ -333,6 +333,24 @@
                                     variable = dynasty_independent
                                     this = root.father
                                 }
+                                NOT = {
+                                    any_in_list = {
+                                        variable = dynasty_byzantine
+                                        this = root.father
+                                    }
+                                }
+                            }
+                        }
+                        NOT = {
+                            has_government = feudal_government
+                            OR = {
+                                has_title = title:e_byzantium
+                                AND = {
+                                    exists = top_liege
+                                    top_liege = {
+                                        has_title = title:e_byzantium
+                                    }
+                                }
                             }
                         }
                         OR = {
@@ -367,6 +385,24 @@
                                 any_in_list = {
                                     variable = dynasty_independent
                                     this = root.mother
+                                }
+                                NOT = {
+                                    any_in_list = {
+                                        variable = dynasty_byzantine
+                                        this = root.mother
+                                    }
+                                }
+                            }
+                        }
+                        NOT = {
+                            has_government = feudal_government
+                            OR = {
+                                has_title = title:e_byzantium
+                                AND = {
+                                    exists = top_liege
+                                    top_liege = {
+                                        has_title = title:e_byzantium
+                                    }
                                 }
                             }
                         }
@@ -520,6 +556,24 @@
                                             variable = dynasty_tribe
                                             this = root.father
                                         }
+                                        NOT = {
+                                            any_in_list = {
+                                                variable = dynasty_byzantine
+                                                this = root.mother
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            NOT = {
+                                has_government = feudal_government
+                                OR = {
+                                    has_title = title:e_byzantium
+                                    AND = {
+                                        exists = top_liege
+                                        top_liege = {
+                                            has_title = title:e_byzantium
+                                        }
                                     }
                                 }
                             }
@@ -545,6 +599,24 @@
                                         any_in_list = {
                                             variable = dynasty_tribe
                                             this = root.mother
+                                        }
+                                        NOT = {
+                                            any_in_list = {
+                                                variable = dynasty_byzantine
+                                                this = root.mother
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            NOT = {
+                                has_government = feudal_government
+                                OR = {
+                                    has_title = title:e_byzantium
+                                    AND = {
+                                        exists = top_liege
+                                        top_liege = {
+                                            has_title = title:e_byzantium
                                         }
                                     }
                                 }
