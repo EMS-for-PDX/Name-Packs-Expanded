@@ -1,0 +1,150 @@
+﻿ASNick = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rus_byname
+				this = root
+			}
+		}
+        localization_key = Rus
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Bold_byname
+				this = root
+			}
+		}
+        localization_key = Bold
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Great_byname
+				this = root
+			}
+		}
+        localization_key = Great
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Elder_byname
+				this = root
+			}
+		}
+        localization_key = Elder
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Fair_byname
+				this = root
+			}
+		}
+        localization_key = Fair
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Peaceful_byname
+				this = root
+			}
+		}
+        localization_key = Peaceful
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Maytar_byname
+				this = root
+			}
+		}
+        localization_key = Maytar
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Unready_byname
+				this = root
+			}
+		}
+        localization_key = Unready
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Ironsides_byname
+				this = root
+			}
+		}
+        localization_key = Ironsides
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Confessor_byname
+				this = root
+			}
+		}
+        localization_key = Confessor
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Swanneck_byname
+				this = root
+			}
+		}
+        localization_key = Swanneck
+	}
+	text = {
+		fallback = yes
+		localization_key = BlankNick
+	}
+}
+CharacterHouseNickCheck = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = White_byname
+				this = root
+			}
+		}
+        localization_key = WhiteN
+	}
+	text = {
+		trigger = {
+			exists = house.var:name_founder
+			house.var:name_founder = {
+				save_temporary_scope_as = good_lad
+			}
+			NOT = {
+				root = scope:good_lad
+			}
+			dynasty = {
+				any_in_list = {
+					variable = name_pack_support_dynasty
+					this = scope:good_lad
+				}
+			}
+		}
+		localization_key = Supported_House
+	}
+	text = {
+		fallback = yes
+		localization_key = Gui_blank
+	}
+}
+CharacterHouseNickCheckAfter = {
+	parent = CharacterHouseNickCheck
+	suffix = "_After"
+}
+CharacterHouseNickCheckBefore = {
+	parent = CharacterHouseNickCheck
+	suffix = "_Before"
+}

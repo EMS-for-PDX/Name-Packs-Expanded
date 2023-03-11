@@ -107,6 +107,60 @@
 	text = {
 		trigger = {
 			culture = {
+				english_check = yes
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_west_germanic
+			}
+		}
+		localization_key = Window_English
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_goidelic
+					AND = {
+						has_cultural_pillar = language_goidelic
+						has_cultural_pillar = heritage_north_germanic
+					}
+				}
+			}
+		}
+		localization_key = Window_Irish
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_north_germanic
+
+			}
+		}
+		localization_key = Window_NG
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_west_germanic
+			}
+		}
+		localization_key = Window_AS
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_brythonic
+
+			}
+		}
+		localization_key = Window_Brythonic
+	}
+	text = {
+		trigger = {
+			culture = {
 				is_npe_supported_culture = yes
                 romanian_check = yes
 			}
@@ -331,6 +385,54 @@ WindowNameTT = {
 			}
 		}
 		localization_key = Window_Bulgarian_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				english_check = yes
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_west_germanic
+			}
+		}
+		localization_key = Window_English_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_north_germanic
+
+			}
+		}
+		localization_key = Window_NG_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_west_germanic
+			}
+		}
+		localization_key = Window_AS_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_brythonic
+
+			}
+		}
+		localization_key = Window_Brythonic_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_goidelic
+			}
+		}
+		localization_key = Window_Irish_TT
 	}
 	text = {
 		trigger = {

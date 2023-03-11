@@ -1,0 +1,253 @@
+﻿proper_title_english = {
+	scope = character
+	effect = {
+		save_scope_as = effect_root
+		hidden_effect = {
+			if = {
+				limit = {
+					has_council_position = councillor_court_chaplain
+					is_landed = no
+				}
+				liege_or_court_owner = {
+					save_scope_as = title_bearer
+				}
+			}
+			else_if = {
+				limit = {
+					exists = father
+					exists = mother
+					father = {
+						save_temporary_scope_as = the_father
+						highest_held_title_tier >= 4
+						OR = {
+							has_government = feudal_government
+							has_government = clan_government
+							has_government = tribal_government
+							AND = {
+								exists = dynasty
+								dynasty = {
+									OR = {
+										any_in_list = {
+											variable = dynasty_feudalclan
+											this = scope:the_father
+										}
+										any_in_list = {
+											variable = dynasty_byzantine
+											this = scope:the_father
+										}
+										any_in_list = {
+											variable = dynasty_tribe
+											this = scope:the_father
+										}
+									}
+								}
+							}
+						}
+					}
+					mother = {
+						save_temporary_scope_as = the_mother
+						highest_held_title_tier >= 4
+						OR = {
+							has_government = feudal_government
+							has_government = clan_government
+							has_government = tribal_government
+							AND = {
+								exists = dynasty
+								dynasty = {
+									OR = {
+										any_in_list = {
+											variable = dynasty_feudalclan
+											this = scope:the_mother
+										}
+										any_in_list = {
+											variable = dynasty_byzantine
+											this = scope:the_mother
+										}
+										any_in_list = {
+											variable = dynasty_tribe
+											this = scope:the_mother
+										}
+									}
+								}
+							}
+						}
+					}
+					trigger_if = {
+						limit = {
+							is_landed = yes
+						}
+						OR = {
+							father.primary_title.tier > root.primary_title.tier
+							mother.primary_title.tier > root.primary_title.tier
+						}
+					}
+				}
+				if = {
+					limit = {
+						father.primary_title.tier >= mother.primary_title.tier
+					}
+					father = {
+						save_scope_as = title_bearer
+					}
+				}
+				if = {
+					limit = {
+						mother.primary_title.tier >= father.primary_title.tier
+					}
+					father = {
+						save_scope_as = title_bearer
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = father
+					father = {
+						save_temporary_scope_as = the_father
+						highest_held_title_tier >= 4
+						OR = {
+							has_government = feudal_government
+							has_government = clan_government
+							has_government = tribal_government
+							AND = {
+								exists = dynasty
+								dynasty = {
+									OR = {
+										any_in_list = {
+											variable = dynasty_feudalclan
+											this = scope:the_father
+										}
+										any_in_list = {
+											variable = dynasty_byzantine
+											this = scope:the_father
+										}
+										any_in_list = {
+											variable = dynasty_tribe
+											this = scope:the_father
+										}
+									}
+								}
+							}
+						}
+					}
+					trigger_if = {
+						limit = {
+							is_landed = yes
+						}
+						father.primary_title.tier > root.primary_title.tier
+					}
+				}
+				father = {
+					save_scope_as = title_bearer
+				}
+			}
+			else_if = {
+				limit = {
+					exists = mother
+					mother = {
+						save_temporary_scope_as = the_mother
+						highest_held_title_tier >= 4
+						OR = {
+							has_government = feudal_government
+							has_government = clan_government
+							has_government = tribal_government
+							AND = {
+								exists = dynasty
+								dynasty = {
+									OR = {
+										any_in_list = {
+											variable = dynasty_feudalclan
+											this = scope:the_mother
+										}
+										any_in_list = {
+											variable = dynasty_byzantine
+											this = scope:the_mother
+										}
+										any_in_list = {
+											variable = dynasty_tribe
+											this = scope:the_mother
+										}
+									}
+								}
+							}
+						}
+					}
+					trigger_if = {
+						limit = {
+							is_landed = yes
+						}
+						mother.primary_title.tier > root.primary_title.tier
+					}
+				}
+				mother = {
+					save_scope_as = title_bearer
+				}
+			}
+			else_if = {
+				limit = {
+					exists = primary_spouse
+					primary_spouse = {
+						save_temporary_scope_as = the_spouse
+						is_landed = yes
+						OR = {
+							has_government = feudal_government
+							has_government = clan_government
+							has_government = tribal_government
+							AND = {
+								exists = dynasty
+								dynasty = {
+									OR = {
+										any_in_list = {
+											variable = dynasty_feudalclan
+											this = scope:the_spouse
+										}
+										any_in_list = {
+											variable = dynasty_byzantine
+											this = scope:the_spouse
+										}
+										any_in_list = {
+											variable = dynasty_tribe
+											this = scope:the_spouse
+										}
+									}
+								}
+							}
+						}
+					}
+					trigger_if = {
+						limit = {
+							is_landed = yes
+						}
+						primary_spouse.primary_title.tier > root.primary_title.tier
+					}
+				}
+				primary_spouse = {
+					save_scope_as = title_bearer
+				}
+			}
+			else_if = {
+				limit = {
+					is_landed = yes
+				}
+				save_scope_as = title_bearer
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:title_bearer
+			}
+			custom_description_no_bullet = {
+				text = proper_title_after_sgui
+				subject = scope:effect_root
+				object = scope:title_bearer
+			}
+		}
+		else = {
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_blank
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+	}
+}

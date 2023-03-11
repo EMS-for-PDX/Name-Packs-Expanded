@@ -1,6 +1,41 @@
 ﻿five_year_everyone_pulse = {
 	on_actions = {
 		turk_nick
+		welsh_nick
+	}
+}
+norse_nick = {
+	trigger = {
+		culture = {
+			is_npe_supported_culture = yes
+			has_cultural_pillar = heritage_north_germanic
+		}
+		NOT = {
+			has_character_flag = got_npe_nickname
+		}
+	}
+	effect = {
+		random = {
+			chance = 1
+			norse_nick_name_effect = yes
+		}
+	}
+}
+welsh_nick = {
+	trigger = {
+		culture = {
+			is_npe_supported_culture = yes
+			has_cultural_pillar = heritage_brythonic
+		}
+		NOT = {
+			has_character_flag = got_npe_nickname
+		}
+	}
+	effect = {
+		random = {
+			chance = 1
+			welsh_nick_name_effect = yes
+		}
 	}
 }
 turk_nick = {
@@ -14,7 +49,7 @@ turk_nick = {
 			}
 		}
 		NOT = {
-			has_character_flag = has_turk_nick
+			has_character_flag = got_npe_nickname
 		}
 	}
 	effect = {

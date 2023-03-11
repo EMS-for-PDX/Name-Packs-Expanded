@@ -1,0 +1,2042 @@
+﻿welsh_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		40 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = David
+						}
+						1 = {
+							change_first_name = John
+						}
+					}
+				}
+				1 = {
+					change_first_name = Conan
+				}
+				1 = {
+					change_first_name = Einion
+				}
+				1 = {
+					change_first_name = Gruffydd
+				}
+				1 = {
+					change_first_name = Hywel
+				}
+				1 = {
+					change_first_name = Llywelyn
+				}
+				1 = {
+					change_first_name = Madog
+				}
+				1 = {
+					change_first_name = Eogan
+				}
+				1 = {
+					change_first_name = Rhys
+				}
+			}
+		}
+		30 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 1
+					}
+					change_first_name = Jacob
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						exists = liege
+						liege.culture = {
+							any_parent_culture = {
+								has_cultural_pillar = language_french
+							}
+						}
+						add = 1
+					}
+					change_first_name = John
+				}
+				0 = {
+					modifier = {
+						exists = liege
+						liege.culture = {
+							OR = {
+								has_cultural_pillar = language_french
+								any_parent_culture = {
+									has_cultural_pillar = language_french
+								}
+							}
+						}
+						add = 1
+					}
+					change_first_name = William
+				}
+				1 = {
+					change_first_name = Cadell
+				}
+				1 = {
+					change_first_name = Cadwallon
+				}
+				1 = {
+					change_first_name = Cadwgon
+				}
+				1 = {
+					change_first_name = Cuhelyn
+				}
+				1 = {
+					change_first_name = Cyfnerth
+				}
+				1 = {
+					change_first_name = Cynwrig
+				}
+				1 = {
+					change_first_name = Gronwy
+				}
+				1 = {
+					change_first_name = Idwal
+				}
+				1 = {
+					change_first_name = Iorwerth
+				}
+				1 = {
+					change_first_name = Iudhael
+				}
+				1 = {
+					change_first_name = Maredudd
+				}
+				1 = {
+					change_first_name = Meurig
+				}
+				1 = {
+					change_first_name = Morgan
+				}
+				1 = {
+					change_first_name = Rhodri
+				}
+				1 = {
+					change_first_name = Rhydderch
+				}
+				1 = {
+					change_first_name = Seisyll
+				}
+				1 = {
+					change_first_name = Tegwared
+				}
+				1 = {
+					change_first_name = Theodore
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Adam
+						}
+						1 = {
+							change_first_name = Solomon
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Pasgen
+						}
+						1 = {
+							change_first_name = Thomas
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						exists = liege
+						liege.culture = {
+							OR = {
+								has_cultural_pillar = language_french
+								any_parent_culture = {
+									has_cultural_pillar = language_french
+								}
+							}
+						}
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Jenkin
+						}
+						1 = {
+							change_first_name = Richard
+						}
+						1 = {
+							change_first_name = Roger
+						}
+						1 = {
+							change_first_name = Walter
+						}
+					}
+				}
+				1 = {
+					change_first_name = Aeneas
+				}
+				1 = {
+					change_first_name = Aidan
+				}
+				1 = {
+					change_first_name = Anarawd
+				}
+				1 = {
+					change_first_name = Arthen
+				}
+				1 = {
+					change_first_name = Arthfael
+				}
+				1 = {
+					change_first_name = Athelstan
+				}
+				1 = {
+					change_first_name = Beli
+				}
+				1 = {
+					change_first_name = Blaidd
+				}
+				1 = {
+					change_first_name = Blaiddud
+				}
+				1 = {
+					change_first_name = Bleddyn
+				}
+				1 = {
+					change_first_name = Brochfael
+				}
+				1 = {
+					change_first_name = Cadafel
+				}
+				1 = {
+					change_first_name = Cadwaladr
+				}
+				1 = {
+					change_first_name = Caradog
+				}
+				1 = {
+					change_first_name = Carwed
+				}
+				1 = {
+					change_first_name = Caswallon
+				}
+				1 = {
+					change_first_name = Cathaearn
+				}
+				1 = {
+					change_first_name = Ceredig
+				}
+				1 = {
+					change_first_name = Clydog
+				}
+				1 = {
+					change_first_name = Constantine
+				}
+				1 = {
+					change_first_name = Cunedda
+				}
+				1 = {
+					change_first_name = Cynddelw
+				}
+				1 = {
+					change_first_name = Cynfelyn
+				}
+				1 = {
+					change_first_name = Cynfyn
+				}
+				1 = {
+					change_first_name = Cyngen
+				}
+				1 = {
+					change_first_name = Cynhyllin
+				}
+				1 = {
+					change_first_name = Cynin
+				}
+				1 = {
+					change_first_name = Cywrd
+				}
+				1 = {
+					change_first_name = Donald
+				}
+				1 = {
+					change_first_name = Dwywg
+				}
+				1 = {
+					change_first_name = Dyfrig
+				}
+				1 = {
+					change_first_name = Edgar
+				}
+				1 = {
+					change_first_name = Edmund
+				}
+				1 = {
+					change_first_name = Ednowain
+				}
+				1 = {
+					change_first_name = Ednyfed
+				}
+				1 = {
+					change_first_name = Edward
+				}
+				1 = {
+					change_first_name = Edwin
+				}
+				1 = {
+					change_first_name = Elwystl
+				}
+				1 = {
+					change_first_name = Gerontius
+				}
+				1 = {
+					change_first_name = Griffri
+				}
+				1 = {
+					change_first_name = Gwaithfoed
+				}
+				1 = {
+					change_first_name = Gwenwynwyn
+				}
+				1 = {
+					change_first_name = Gwion
+				}
+				1 = {
+					change_first_name = Gwrfan
+				}
+				1 = {
+					change_first_name = Gwrgan
+				}
+				1 = {
+					change_first_name = Gwrgenau
+				}
+				1 = {
+					change_first_name = Gwriad
+				}
+				1 = {
+					change_first_name = Gwyddelin
+				}
+				1 = {
+					change_first_name = Gwyn
+				}
+				1 = {
+					change_first_name = Heilyn
+				}
+				1 = {
+					change_first_name = Hoedlyw
+				}
+				1 = {
+					change_first_name = Idwallon
+				}
+				1 = {
+					change_first_name = Ifor
+				}
+				1 = {
+					change_first_name = Justin
+				}
+				1 = {
+					change_first_name = Llywarch
+				}
+				1 = {
+					change_first_name = Maelgwn
+				}
+				1 = {
+					change_first_name = Maenyrch
+				}
+				1 = {
+					change_first_name = Meilyr
+				}
+				1 = {
+					change_first_name = Meirion
+				}
+				1 = {
+					change_first_name = Merfyn
+				}
+				1 = {
+					change_first_name = Morgenau
+				}
+				1 = {
+					change_first_name = Morman
+				}
+				1 = {
+					change_first_name = Nynniaw
+				}
+				1 = {
+					change_first_name = Peredur
+				}
+				1 = {
+					change_first_name = Philip
+				}
+				1 = {
+					change_first_name = Rhain
+				}
+				1 = {
+					change_first_name = Rhiryd
+				}
+				1 = {
+					change_first_name = Rhiwallon
+				}
+				1 = {
+					change_first_name = Rhyfon
+				}
+				1 = {
+					change_first_name = Severus
+				}
+				1 = {
+					change_first_name = Sulien
+				}
+				1 = {
+					change_first_name = Trahaearn
+				}
+				1 = {
+					change_first_name = Triffyn
+				}
+				1 = {
+					change_first_name = Urien
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 8
+					}
+					random_list = {
+						1 = {
+							change_first_name = Aaron
+						}
+						1 = {
+							change_first_name = Abraham
+						}
+						1 = {
+							change_first_name = Daniel
+						}
+						1 = {
+							change_first_name = Elijah
+						}
+						1 = {
+							change_first_name = Job
+						}
+						1 = {
+							change_first_name = Jonas
+						}
+						1 = {
+							change_first_name = Nicholas
+						}
+						1 = {
+							change_first_name = Samuel
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 6
+					}
+					random_list = {
+						1 = {
+							change_first_name = Andrew
+						}
+						1 = {
+							change_first_name = Asser
+						}
+						1 = {
+							change_first_name = Benedict
+						}
+						1 = {
+							change_first_name = Laurence
+						}
+						1 = {
+							change_first_name = Maurice
+						}
+						1 = {
+							change_first_name = Peter
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						exists = liege
+						liege.culture = {
+							OR = {
+								has_cultural_pillar = language_french
+								any_parent_culture = {
+									has_cultural_pillar = language_french
+								}
+							}
+						}
+						add = 1
+					}
+					change_first_name = Robert
+				}
+				1 = {
+					change_first_name = Adda
+				}
+				1 = {
+					change_first_name = Aneirin
+				}
+				1 = {
+					change_first_name = Aneurin
+				}
+				1 = {
+					change_first_name = Anllech
+				}
+				1 = {
+					change_first_name = Artgal
+				}
+				1 = {
+					change_first_name = Arthfoddw
+				}
+				1 = {
+					change_first_name = Arthur
+				}
+				1 = {
+					change_first_name = Arthwyr
+				}
+				1 = {
+					change_first_name = Arthwys
+				}
+				1 = {
+					change_first_name = Arwystil
+				}
+				1 = {
+					change_first_name = Athrwys
+				}
+				1 = {
+					change_first_name = Awst
+				}
+				1 = {
+					change_first_name = Beda
+				}
+				1 = {
+					change_first_name = Benwyn
+				}
+				1 = {
+					change_first_name = Berthwyn
+				}
+				1 = {
+					change_first_name = Blaiddri
+				}
+				1 = {
+					change_first_name = Bledrus
+				}
+				1 = {
+					change_first_name = Blegwrd
+				}
+				1 = {
+					change_first_name = Blegywryd
+				}
+				1 = {
+					change_first_name = Cadfan
+				}
+				1 = {
+					change_first_name = Cadwared
+				}
+				1 = {
+					change_first_name = Caenog
+				}
+				1 = {
+					change_first_name = Casnodyn
+				}
+				1 = {
+					change_first_name = Celynm
+				}
+				1 = {
+					change_first_name = Cillyn
+				}
+				1 = {
+					change_first_name = Cloten
+				}
+				1 = {
+					change_first_name = Coel
+				}
+				1 = {
+					change_first_name = Corf
+				}
+				1 = {
+					change_first_name = Cudyn
+				}
+				1 = {
+					change_first_name = Cydifor
+				}
+				1 = {
+					change_first_name = Cyfeiliog
+				}
+				1 = {
+					change_first_name = Cynddrwyn
+				}
+				1 = {
+					change_first_name = Cynddylan
+				}
+				1 = {
+					change_first_name = Cynhaethwy
+				}
+				1 = {
+					change_first_name = Cynig
+				}
+				1 = {
+					change_first_name = Cynither
+				}
+				1 = {
+					change_first_name = Cynon
+				}
+				1 = {
+					change_first_name = Cynwallon
+				}
+				1 = {
+					change_first_name = Cywnerth
+				}
+				1 = {
+					change_first_name = Deheuwynt
+				}
+				1 = {
+					change_first_name = Deiniol
+				}
+				1 = {
+					change_first_name = Dogfael
+				}
+				1 = {
+					change_first_name = Drymbenog
+				}
+				1 = {
+					change_first_name = Dyfan
+				}
+				1 = {
+					change_first_name = Dyfnarth
+				}
+				1 = {
+					change_first_name = Dyfnwallon
+				}
+				1 = {
+					change_first_name = Eiludd
+				}
+				1 = {
+					change_first_name = Elfan
+				}
+				1 = {
+					change_first_name = Elfoddw
+				}
+				1 = {
+					change_first_name = Elfwin
+				}
+				1 = {
+					change_first_name = Eliau
+				}
+				1 = {
+					change_first_name = Elidir
+				}
+				1 = {
+					change_first_name = Elisedd
+				}
+				1 = {
+					change_first_name = Euddogwy
+				}
+				1 = {
+					change_first_name = Ffernfael
+				}
+				1 = {
+					change_first_name = Gawain
+				}
+				1 = {
+					change_first_name = Genillin
+				}
+				1 = {
+					change_first_name = Gwgon
+				}
+				1 = {
+					change_first_name = Gwogan
+				}
+				1 = {
+					change_first_name = Gwrfoddw
+				}
+				1 = {
+					change_first_name = Gwrgi
+				}
+				1 = {
+					change_first_name = Gwrwared
+				}
+				1 = {
+					change_first_name = Gwylog
+				}
+				1 = {
+					change_first_name = Gwynfardd
+				}
+				1 = {
+					change_first_name = Gwynnog
+				}
+				1 = {
+					change_first_name = Gwyrydr
+				}
+				1 = {
+					change_first_name = Haearnddur
+				}
+				1 = {
+					change_first_name = Heiddyn
+				}
+				1 = {
+					change_first_name = Heilewith
+				}
+				1 = {
+					change_first_name = Hodowain
+				}
+				1 = {
+					change_first_name = Honorius
+				}
+				1 = {
+					change_first_name = Hyfaidd
+				}
+				1 = {
+					change_first_name = Iarddur
+				}
+				1 = {
+					change_first_name = Iudnerth
+				}
+				1 = {
+					change_first_name = Iudris
+				}
+				1 = {
+					change_first_name = Libio
+				}
+				1 = {
+					change_first_name = Lifris
+				}
+				1 = {
+					change_first_name = Lles
+				}
+				1 = {
+					change_first_name = Llunwerth
+				}
+				1 = {
+					change_first_name = Llygad
+				}
+				1 = {
+					change_first_name = Madyn
+				}
+				1 = {
+					change_first_name = Manwgan
+				}
+				1 = {
+					change_first_name = Meirchion
+				}
+				1 = {
+					change_first_name = Membyr
+				}
+				1 = {
+					change_first_name = Mordaf
+				}
+				1 = {
+					change_first_name = Mordred
+				}
+				1 = {
+					change_first_name = Morfran
+				}
+				1 = {
+					change_first_name = Morfyw
+				}
+				1 = {
+					change_first_name = Moriddig
+				}
+				1 = {
+					change_first_name = Morog
+				}
+				1 = {
+					change_first_name = Neiniad
+				}
+				1 = {
+					change_first_name = Nowy
+				}
+				1 = {
+					change_first_name = Nudd
+				}
+				1 = {
+					change_first_name = Nyfys
+				}
+				1 = {
+					change_first_name = Rhun
+				}
+				1 = {
+					change_first_name = Rhygyfarch
+				}
+				1 = {
+					change_first_name = Tegonwy
+				}
+				1 = {
+					change_first_name = Teithfalch
+				}
+				1 = {
+					change_first_name = Theodoric
+				}
+				1 = {
+					change_first_name = Theodosios
+				}
+				1 = {
+					change_first_name = Tysilio
+				}
+				1 = {
+					change_first_name = Werestan
+				}
+			}
+		}
+	}
+}
+welsh_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		40 = {
+			random_list = {
+				1 = {
+					change_first_name = Angharad
+				}
+				1 = {
+					change_first_name = Gwenllian
+				}
+				1 = {
+					change_first_name = Gwladys
+				}
+				1 = {
+					change_first_name = Lucia
+				}
+			}
+		}
+		30 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 1
+					}
+					change_first_name = Eve
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Joanna
+						}
+						1 = {
+							change_first_name = Margaret
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						exists = liege
+						liege.culture = {
+							OR = {
+								has_cultural_pillar = language_french
+								any_parent_culture = {
+									has_cultural_pillar = language_french
+								}
+							}
+						}
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Catherine
+						}
+						1 = {
+							change_first_name = Edith
+						}
+						1 = {
+							change_first_name = Hawise
+						}
+					}
+				}
+				1 = {
+					change_first_name = Dyddgu
+				}
+				1 = {
+					change_first_name = Generys
+				}
+				1 = {
+					change_first_name = Guinevere
+				}
+				1 = {
+					change_first_name = Gwen
+				}
+				1 = {
+					change_first_name = Gwerful
+				}
+				1 = {
+					change_first_name = Hulyn
+				}
+				1 = {
+					change_first_name = Hunydd
+				}
+				1 = {
+					change_first_name = Morfydd
+				}
+				1 = {
+					change_first_name = Myfanwy
+				}
+				1 = {
+					change_first_name = Nest
+				}
+				1 = {
+					change_first_name = Tangwystl
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Christina
+						}
+						1 = {
+							change_first_name = Elizabeth
+						}
+						1 = {
+							change_first_name = Susan
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						exists = liege
+						liege.culture = {
+							OR = {
+								has_cultural_pillar = language_french
+								any_parent_culture = {
+									has_cultural_pillar = language_french
+								}
+							}
+						}
+						add = 1
+					}
+					change_first_name = Janet
+				}
+				0 = {
+					modifier = {
+						exists = liege
+						liege.culture = {
+							OR = {
+								has_cultural_pillar = language_french
+								any_parent_culture = {
+									has_cultural_pillar = language_french
+								}
+							}
+						}
+						add = 7
+					}
+					random_list = {
+						1 = {
+							change_first_name = Agnes
+						}
+						1 = {
+							change_first_name = Alice
+						}
+						1 = {
+							change_first_name = Cecilia
+						}
+						1 = {
+							change_first_name = Eleanor
+						}
+						1 = {
+							change_first_name = Isabel
+						}
+						1 = {
+							change_first_name = Mabel
+						}
+						1 = {
+							change_first_name = Maud
+						}
+					}
+				}
+				1 = {
+					change_first_name = Ardden
+				}
+				1 = {
+					change_first_name = Ardudfyl
+				}
+				1 = {
+					change_first_name = Branwen
+				}
+				1 = {
+					change_first_name = Crisli
+				}
+				1 = {
+					change_first_name = Ellyw
+				}
+				1 = {
+					change_first_name = Erdudfyl
+				}
+				1 = {
+					change_first_name = Geneth
+				}
+				1 = {
+					change_first_name = Genilles
+				}
+				1 = {
+					change_first_name = Gweirca
+				}
+				1 = {
+					change_first_name = Gwensi
+				}
+				1 = {
+					change_first_name = Gwerydd
+				}
+				1 = {
+					change_first_name = Gwledyr
+				}
+				1 = {
+					change_first_name = Haer
+				}
+				1 = {
+					change_first_name = Helen
+				}
+				1 = {
+					change_first_name = Honoria
+				}
+				1 = {
+					change_first_name = Isolde
+				}
+				1 = {
+					change_first_name = Iwerydd
+				}
+				1 = {
+					change_first_name = Madrun
+				}
+				1 = {
+					change_first_name = Matilda
+				}
+				1 = {
+					change_first_name = Meddefus
+				}
+				1 = {
+					change_first_name = Merinedd
+				}
+				1 = {
+					change_first_name = Morfyl
+				}
+				1 = {
+					change_first_name = Rhael
+				}
+				1 = {
+					change_first_name = Tudful
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 1
+					}
+					change_first_name = Anna
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Juliana
+						}
+						1 = {
+							change_first_name = Laura
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						exists = liege
+						liege.culture = {
+							OR = {
+								has_cultural_pillar = language_french
+								any_parent_culture = {
+									has_cultural_pillar = language_french
+								}
+							}
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Dionysia
+						}
+						1 = {
+							change_first_name = Felicia
+						}
+					}
+				}
+				1 = {
+					change_first_name = Alswn
+				}
+				1 = {
+					change_first_name = Ardsdyn
+				}
+				1 = {
+					change_first_name = Arianwen
+				}
+				1 = {
+					change_first_name = Bethin
+				}
+				1 = {
+					change_first_name = Callwen
+				}
+				1 = {
+					change_first_name = Ceindrych
+				}
+				1 = {
+					change_first_name = Ceinfryd
+				}
+				1 = {
+					change_first_name = Ceingar
+				}
+				1 = {
+					change_first_name = Ceinwen
+				}
+				1 = {
+					change_first_name = Celeinion
+				}
+				1 = {
+					change_first_name = Cerddych
+				}
+				1 = {
+					change_first_name = Cynheiddon
+				}
+				1 = {
+					change_first_name = Danhadlwen
+				}
+				1 = {
+					change_first_name = Diota
+				}
+				1 = {
+					change_first_name = Dulon
+				}
+				1 = {
+					change_first_name = Dwynwen
+				}
+				1 = {
+					change_first_name = Dwywai
+				}
+				1 = {
+					change_first_name = Dyfwn
+				}
+				1 = {
+					change_first_name = Eiliwedd
+				}
+				1 = {
+					change_first_name = Ethyllt
+				}
+				1 = {
+					change_first_name = Euronwy
+				}
+				1 = {
+					change_first_name = Gawdwen
+				}
+				1 = {
+					change_first_name = Goleuddydd
+				}
+				1 = {
+					change_first_name = Gwanas
+				}
+				1 = {
+					change_first_name = Gwenasedd
+				}
+				1 = {
+					change_first_name = Gwymarch
+				}
+				1 = {
+					change_first_name = Hawystl
+				}
+				1 = {
+					change_first_name = Hoen
+				}
+				1 = {
+					change_first_name = Llian
+				}
+				1 = {
+					change_first_name = Lliwelydd
+				}
+				1 = {
+					change_first_name = Lludd
+				}
+				1 = {
+					change_first_name = Marchell
+				}
+				1 = {
+					change_first_name = Morien
+				}
+				1 = {
+					change_first_name = Morwyl
+				}
+				1 = {
+					change_first_name = Nyfain
+				}
+				1 = {
+					change_first_name = Onbrawst
+				}
+				1 = {
+					change_first_name = Perwyr
+				}
+				1 = {
+					change_first_name = Prawst
+				}
+				1 = {
+					change_first_name = Rhiainfellt
+				}
+				1 = {
+					change_first_name = Rhybrawst
+				}
+				1 = {
+					change_first_name = Rymel
+				}
+				1 = {
+					change_first_name = Senana
+				}
+				1 = {
+					change_first_name = Tandreg
+				}
+				1 = {
+					change_first_name = Tanglwst
+				}
+				1 = {
+					change_first_name = Tangwre
+				}
+				1 = {
+					change_first_name = Tege
+				}
+				1 = {
+					change_first_name = Teili
+				}
+				1 = {
+					change_first_name = Tudwen
+				}
+				1 = {
+					change_first_name = Tudwystl
+				}
+			}
+		}
+	}
+}
+welsh_nick_name_effect = {
+	save_scope_as = byname_target
+	add_character_flag = got_npe_nickname
+	random_list = {
+		0 = {
+			modifier = {
+				age > 55
+				add = 1
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Old_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Gray_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = BaldGray_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.05
+					multiply = prowess
+				}
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = GreatArm_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = MightyGrasp_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Soldier_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = BattleAxe_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = LongHand_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.01
+					multiply = gold
+				}
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Wealthy_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Luxurious_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.1
+					multiply = martial
+				}
+			}
+			random_list = {
+				1= {
+					add_to_global_variable_list = { name = BattleWinner_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = ProtectionMany_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.1
+					multiply = intrigue
+				}
+			}
+			random_list = {
+				1= {
+					add_to_global_variable_list = { name = Treacherous_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Schemer_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = CatEyed_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.1
+					multiply = learning
+				}
+			}
+			add_to_global_variable_list = { name = Wise_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_character_modifier = obese_modifier
+					has_character_modifier = gaining_weight_modifier
+				}
+				add = 10
+			}
+			random_list = {
+				1= {
+					add_to_global_variable_list = { name = Fat_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Large_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 1
+					multiply = prestige_level
+				}
+			}
+			random_list = {
+				1= {
+					add_to_global_variable_list = { name = Famous_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Valorous_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Great_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Magnanimous_byname target = scope:byname_target }
+				}
+				1= {
+					add_to_global_variable_list = { name = Illustrious_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				any_parent = {
+					culture = {
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+				add = 5
+			}
+			add_to_global_variable_list = { name = English_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				any_parent = {
+					culture = {
+						has_cultural_pillar = heritage_goidelic
+					}
+				}
+				add = 5
+			}
+			add_to_global_variable_list = { name = Irish_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.5
+					multiply = piety_level
+				}
+			}
+			add_to_global_variable_list = { name = Blessed_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = shy
+				add = 3
+			}
+			add_to_global_variable_list = { name = Shy_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = leper
+				add = 10
+			}
+			add_to_global_variable_list = { name = Leper_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = lisping
+					has_trait = stuttering
+				}
+				add = 10
+			}
+			add_to_global_variable_list = { name = Driveler_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = clubfooted
+					has_trait = hunchbacked
+					has_trait = wheezing
+					has_trait = spindly
+					has_trait = scaly
+				}
+				add = 10
+			}
+			add_to_global_variable_list = { name = Lame_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = hunchbacked
+				add = 5
+			}
+			add_to_global_variable_list = { name = Hunchback_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = forest_fighter
+				add = 5
+			}
+			add_to_global_variable_list = { name = RedWolf_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = dwarf
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Short_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Short2_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Small_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = giant
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Giant_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Tall_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Large_byname target = scope:byname_target }
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_trait = spindly
+							has_character_modifier = losing_weight_modifier
+							has_character_modifier = gaining_weight_modifier
+						}
+						add = 1
+					}
+					add_to_global_variable_list = { name = TallSkinny_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = spindly
+					has_character_modifier = losing_weight_modifier
+					has_character_modifier = gaining_weight_modifier
+				}
+				add = 10
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Skinny_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = beauty_good_1
+					has_trait = beauty_good_2
+					has_trait = beauty_good_3
+				}
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Handsome_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = FairNeck_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = weak
+				add = 5
+			}
+			add_to_global_variable_list = { name = Weak_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = dull
+					has_trait = intellect_bad_1
+					has_trait = intellect_bad_2
+					has_trait = intellect_bad_3
+				}
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Fool_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = scaly
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Coarse_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Scabby_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = scarred
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Scabby_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = BrokenNose_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				add = {
+					value = 0.1
+					multiply = dread
+				}
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Traitor_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Harsh_byname target = scope:byname_target }
+				}
+			}
+		}
+		3 = {
+			modifier = {
+				add = {
+					value = -0.1
+					multiply = dread
+				}
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Kind_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = disfigured
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = BrokenNose_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = arrogant
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = ThickHeaded_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = BigHead_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Haughty_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Arrogant_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				age < 25
+				add = 0.5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Young_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Young2_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = aggressive_attacker
+				add = 5
+			}
+			add_to_global_variable_list = { name = Aggressive_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = organizer
+				add = 5
+			}
+			add_to_global_variable_list = { name = LightFoot_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = holy_warrior
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Zealous_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = fecund
+				is_male = no
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = BigBazokkas_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = craven
+				add = 3
+			}
+			add_to_global_variable_list = { name = Craven_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = blind
+				add = 5
+			}
+			add_to_global_variable_list = { name = Blind_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = one_legged
+					has_trait = clubfooted
+					has_trait = gout_ridden
+				}
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Crippled_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Clumsy_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = winter_soldier
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Wolf_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = poet
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Bard_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Poet_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = beauty_bad_1
+					has_trait = beauty_bad_2
+					has_trait = beauty_bad_3
+				}
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Ugly_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Hideous_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Unsightly_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = gallant
+				add = 5
+			}
+			add_to_global_variable_list = { name = Gallant_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = wrathful
+				add = 3
+			}
+			add_to_global_variable_list = { name = Wrathful_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = brave
+				add = 3
+			}
+			add_to_global_variable_list = { name = Brave_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = greedy
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Stingy_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Greedy_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = temperate
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name =  Temperate_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = unyielding_defender
+				add = 5
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name =  Protector_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = ill
+					has_trait = infirm
+				}
+				add = 5
+			}
+			add_to_global_variable_list = { name =  DrowsyNose_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = lunatic_1
+					has_trait = lunatic_genetic
+					has_trait = possessed_1
+					has_trait = possessed_genetic
+				}
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name =  Mad_byname target = scope:byname_target }
+				}
+				0 = {
+					modifier = {
+						add = {
+							value = 0.1
+							multiply = martial
+						}
+					}
+					add_to_global_variable_list = { name =  WildKnight_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = just
+				add = 2
+			}
+			add_to_global_variable_list = { name =  Just_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = august
+				add = 25
+			}
+			add_to_global_variable_list = { name =  August_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = arbitrary
+				add = 2
+			}
+			add_to_global_variable_list = { name =  Unjust_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = hunter_1
+					has_trait = hunter_2
+					has_trait = hunter_3
+				}
+				add = 3
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name =  Hunter_byname target = scope:byname_target }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = architect
+				add = 5
+			}
+			add_to_global_variable_list = { name =  Architect_byname target = scope:byname_target }
+		}
+		0 = {
+			modifier = {
+				has_trait = humble
+				add = 3
+			}
+			add_to_global_variable_list = { name =  Humble_byname target = scope:byname_target }
+		}
+		1 = { #####
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Dear_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Red_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Proper_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Black_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Longshank_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Smirker_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = GoldHair_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = White_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = DeftHand_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Roebuck_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Bald_byname target = scope:byname_target }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Cat_byname target = scope:byname_target }
+				}
+			}
+		}
+	}
+	#if = {
+	#	limit = {
+	#		is_ai = no
+	#	}
+	#	random_courtier = {
+	#		limit = {
+	#			is_adult = yes
+	#			culture = {
+	#				has_cultural_pillar = language_norse
+	#			}
+	#		}
+	#		save_scope_as = nick_giver
+	#	}
+	#	random_courtier = {
+	#		limit = {
+	#			is_adult = yes
+	#			NOT = {
+	#				this = scope:nick_giver
+	#			}
+	#		}
+	#		save_scope_as = yeller
+	#	}
+	#	trigger_event = {
+	#		id = norsenamepack.001
+	#		days = -1
+	#	}
+	#}
+}
