@@ -1,0 +1,1621 @@
+﻿mongol_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 40
+			}
+			random_list = {
+				1 = {
+					change_first_name = Abd-Allah
+				}
+				1 = {
+					change_first_name = Ahmad
+				}
+				1 = {
+					change_first_name = Ali
+				}
+				1 = {
+					change_first_name = Hasan
+				}
+				1 = {
+					change_first_name = Husayn
+				}
+				1 = {
+					change_first_name = Muhammad
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_religion = religion:islam_religion
+					has_religion = religion:christianity_religion
+				}
+				add = 5
+			}
+			random_list = {
+				1 = {
+					change_first_name = Musa
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 30
+			}
+			random_list = {
+				1 = {
+					change_first_name = Ibrahim
+				}
+				1 = {
+					change_first_name = Ilyas
+				}
+				1 = {
+					change_first_name = Ishaq
+				}
+				1 = {
+					change_first_name = Khwaja
+				}
+				1 = {
+					change_first_name = Mahmud
+				}
+				1 = {
+					change_first_name = Said
+				}
+				1 = {
+					change_first_name = Uways
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 25
+			}
+			random_list = {
+				1 = {
+					change_first_name = George
+				}
+				1 = {
+					change_first_name = John
+				}
+				1 = {
+					change_first_name = Marcus
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Abu-Bakr
+				}
+				1 = {
+					change_first_name = Abu-Said
+				}
+				1 = {
+					change_first_name = Maliktemur
+				}
+				1 = {
+					change_first_name = Masud
+				}
+				1 = {
+					change_first_name = Mubarak
+				}
+				1 = {
+					change_first_name = Nasir
+				}
+				1 = {
+					change_first_name = Sulayman
+				}
+				1 = {
+					change_first_name = Yunus
+				}
+				1 = {
+					change_first_name = Nawroz
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Barsawma
+				}
+				1 = {
+					change_first_name = Constans
+				}
+				1 = {
+					change_first_name = Isaac
+				}
+				1 = {
+					change_first_name = Kyriakos
+				}
+				1 = {
+					change_first_name = Matthew
+				}
+				1 = {
+					change_first_name = Nicholas
+				}
+				1 = {
+					change_first_name = Sergius
+				}
+				1 = {
+					change_first_name = Solomon
+				}
+				1 = {
+					change_first_name = Thomas
+				}
+				1 = {
+					change_first_name = Yoshmut
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_faith = faith:lamaism_faith
+				add = 3
+			}
+			random_list = {
+				1 = {
+					change_first_name = Rdorje
+				}
+				1 = {
+					change_first_name = Rdorjedpal
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:buddhism_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Ananda
+				}
+				1 = {
+					change_first_name = Ayurparibhadra
+				}
+				1 = {
+					change_first_name = Ayushridhara
+				}
+				1 = {
+					change_first_name = Bhadra
+				}
+				1 = {
+					change_first_name = Budabala
+				}
+				1 = {
+					change_first_name = Budashri
+				}
+				1 = {
+					change_first_name = Buyan-Temur
+				}
+				1 = {
+					change_first_name = Buyanbuqa
+				}
+				1 = {
+					change_first_name = Buyanquli
+				}
+				1 = {
+					change_first_name = Buyantai
+				}
+				1 = {
+					change_first_name = Buyantash
+				}
+				1 = {
+					change_first_name = Dharmadala
+				}
+				1 = {
+					change_first_name = Dharmapala
+				}
+				1 = {
+					change_first_name = Dharmashri
+				}
+				1 = {
+					change_first_name = Gunashri
+				}
+				1 = {
+					change_first_name = Kushala
+				}
+				1 = {
+					change_first_name = Mangala
+				}
+				1 = {
+					change_first_name = Nom-Quli
+				}
+				1 = {
+					change_first_name = Punya
+				}
+				1 = {
+					change_first_name = Punyashri
+				}
+				1 = {
+					change_first_name = Ratnadhara
+				}
+				1 = {
+					change_first_name = Sanghapala
+				}
+				1 = {
+					change_first_name = Siddhipala
+				}
+				1 = {
+					change_first_name = Vajra
+				}
+				1 = {
+					change_first_name = Yanashri
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				1 = {
+					change_first_name = Abaqa
+				}
+				1 = {
+					change_first_name = Alaq
+				}
+				1 = {
+					change_first_name = Alinaq
+				}
+				1 = {
+					change_first_name = Altun
+				}
+				1 = {
+					change_first_name = Altunbuga
+				}
+				1 = {
+					change_first_name = Ambaqai
+				}
+				1 = {
+					change_first_name = Anbarchi
+				}
+				1 = {
+					change_first_name = Aqbuga
+				}
+				1 = {
+					change_first_name = Argun
+				}
+				1 = {
+					change_first_name = Ariqboke
+				}
+				1 = {
+					change_first_name = Arslan
+				}
+				1 = {
+					change_first_name = Arslanchi
+				}
+				1 = {
+					change_first_name = Aruq
+				}
+				1 = {
+					change_first_name = Baaridai
+				}
+				1 = {
+					change_first_name = Baarin
+				}
+				1 = {
+					change_first_name = Baidu
+				}
+				1 = {
+					change_first_name = Baiju
+				}
+				1 = {
+					change_first_name = Balaqachi
+				}
+				1 = {
+					change_first_name = Bark
+				}
+				1 = {
+					change_first_name = Barsbuqa
+				}
+				1 = {
+					change_first_name = Bartan
+				}
+				1 = {
+					change_first_name = Batu
+				}
+				1 = {
+					change_first_name = Bayan
+				}
+				1 = {
+					change_first_name = Bayanmonke
+				}
+				1 = {
+					change_first_name = Bayigu
+				}
+				1 = {
+					change_first_name = Baysunqur
+				}
+				1 = {
+					change_first_name = Baytemir
+				}
+				1 = {
+					change_first_name = Bekter
+				}
+				1 = {
+					change_first_name = Belgeshi
+				}
+				1 = {
+					change_first_name = Belgunutei
+				}
+				1 = {
+					change_first_name = Belgutei
+				}
+				1 = {
+					change_first_name = Boal
+				}
+				1 = {
+					change_first_name = Bodonchar
+				}
+				1 = {
+					change_first_name = Boorchu
+				}
+				1 = {
+					change_first_name = Borachi
+				}
+				1 = {
+					change_first_name = Borachu
+				}
+				1 = {
+					change_first_name = Bori
+				}
+				1 = {
+					change_first_name = Boroldai
+				}
+				1 = {
+					change_first_name = Boroqul
+				}
+				1 = {
+					change_first_name = Bortoa
+				}
+				1 = {
+					change_first_name = Buga
+				}
+				1 = {
+					change_first_name = Bugidei
+				}
+				1 = {
+					change_first_name = Bugunutei
+				}
+				1 = {
+					change_first_name = Bukbuqa
+				}
+				1 = {
+					change_first_name = Bulat-Tamur
+				}
+				1 = {
+					change_first_name = Bultechu
+				}
+				1 = {
+					change_first_name = Buqa-Tamur
+				}
+				1 = {
+					change_first_name = Buqatai
+				}
+				1 = {
+					change_first_name = Buqatu
+				}
+				1 = {
+					change_first_name = Chagatai
+				}
+				1 = {
+					change_first_name = Chamtu
+				}
+				1 = {
+					change_first_name = Chaqurqan
+				}
+				1 = {
+					change_first_name = Charaqa
+				}
+				1 = {
+					change_first_name = Chaur
+				}
+				1 = {
+					change_first_name = Chigu
+				}
+				1 = {
+					change_first_name = Chilagun
+				}
+				1 = {
+					change_first_name = Chiledu
+				}
+				1 = {
+					change_first_name = Chilgutei
+				}
+				1 = {
+					change_first_name = Chimbai
+				}
+				1 = {
+					change_first_name = Ching-Tamur
+				}
+				1 = {
+					change_first_name = Choban
+				}
+				1 = {
+					change_first_name = Cormaqan
+				}
+				1 = {
+					change_first_name = Daaritai
+				}
+				1 = {
+					change_first_name = Dayir
+				}
+				1 = {
+					change_first_name = Ebugen
+				}
+				1 = {
+					change_first_name = Eljigedei
+				}
+				1 = {
+					change_first_name = Eltemir
+				}
+				1 = {
+					change_first_name = Esentemir
+				}
+				1 = {
+					change_first_name = Gaiqatu
+				}
+				1 = {
+					change_first_name = Gerei
+				}
+				1 = {
+					change_first_name = Hulaur
+				}
+				1 = {
+					change_first_name = Hulegu
+				}
+				1 = {
+					change_first_name = Husun
+				}
+				1 = {
+					change_first_name = Jajiradai
+				}
+				1 = {
+					change_first_name = Jamuqa
+				}
+				1 = {
+					change_first_name = Jaruq
+				}
+				1 = {
+					change_first_name = Jautu
+				}
+				1 = {
+					change_first_name = Jebe
+				}
+				1 = {
+					change_first_name = Jelme
+				}
+				1 = {
+					change_first_name = Jirqoadai
+				}
+				1 = {
+					change_first_name = Jochi
+				}
+				1 = {
+					change_first_name = Jumghur
+				}
+				1 = {
+					change_first_name = Kedbuqa
+				}
+				1 = {
+					change_first_name = Kingshu
+				}
+				1 = {
+					change_first_name = Kochu
+				}
+				1 = {
+					change_first_name = Koketemur
+				}
+				1 = {
+					change_first_name = Kokochu
+				}
+				1 = {
+					change_first_name = Koten
+				}
+				1 = {
+					change_first_name = Kuchuk
+				}
+				1 = {
+					change_first_name = Mamai
+				}
+				1 = {
+					change_first_name = Mangqutai
+				}
+				1 = {
+					change_first_name = Mangutemir
+				}
+				1 = {
+					change_first_name = Megetu
+				}
+				1 = {
+					change_first_name = Menggetu
+				}
+				1 = {
+					change_first_name = Mengu
+				}
+				1 = {
+					change_first_name = Mochi
+				}
+				1 = {
+					change_first_name = Moetuken
+				}
+				1 = {
+					change_first_name = Monglik
+				}
+				1 = {
+					change_first_name = Moroqa
+				}
+				1 = {
+					change_first_name = Nagachu
+				}
+				1 = {
+					change_first_name = Naqu
+				}
+				1 = {
+					change_first_name = Naqu
+				}
+				1 = {
+					change_first_name = Negubei
+				}
+				1 = {
+					change_first_name = Neguder
+				}
+				1 = {
+					change_first_name = Nekun
+				}
+				1 = {
+					change_first_name = Noqai
+				}
+				1 = {
+					change_first_name = Ogodei
+				}
+				1 = {
+					change_first_name = Ogoljin
+				}
+				1 = {
+					change_first_name = Oljeitu
+				}
+				1 = {
+					change_first_name = Orda
+				}
+				1 = {
+					change_first_name = Orugtemur
+				}
+				1 = {
+					change_first_name = Ozdemir
+				}
+				1 = {
+					change_first_name = Qaatai
+				}
+				1 = {
+					change_first_name = Qabul
+				}
+				1 = {
+					change_first_name = Qachi
+				}
+				1 = {
+					change_first_name = Qachiun
+				}
+				1 = {
+					change_first_name = Qadaan
+				}
+				1 = {
+					change_first_name = Qadan
+				}
+				1 = {
+					change_first_name = Qadaq
+				}
+				1 = {
+					change_first_name = Qaidu
+				}
+				1 = {
+					change_first_name = Qarabuga
+				}
+				1 = {
+					change_first_name = Qarachar
+				}
+				1 = {
+					change_first_name = Qasar
+				}
+				1 = {
+					change_first_name = Qashi
+				}
+				1 = {
+					change_first_name = Qoribuqa
+				}
+				1 = {
+					change_first_name = Qoriqacha
+				}
+				1 = {
+					change_first_name = Qorisu
+				}
+				1 = {
+					change_first_name = Qubilai
+				}
+				1 = {
+					change_first_name = Quldutemur
+				}
+				1 = {
+					change_first_name = Qurumishi
+				}
+				1 = {
+					change_first_name = Qutala
+				}
+				1 = {
+					change_first_name = Qutlugbuga
+				}
+				1 = {
+					change_first_name = Qutuqa
+				}
+				1 = {
+					change_first_name = Quyidu
+				}
+				1 = {
+					change_first_name = Sali
+				}
+				1 = {
+					change_first_name = Saricha
+				}
+				1 = {
+					change_first_name = Sartaq
+				}
+				1 = {
+					change_first_name = Seche
+				}
+				1 = {
+					change_first_name = Secheur
+				}
+				1 = {
+					change_first_name = Senggum
+				}
+				1 = {
+					change_first_name = Shiban
+				}
+				1 = {
+					change_first_name = Shuqur
+				}
+				1 = {
+					change_first_name = Sorqan
+				}
+				1 = {
+					change_first_name = Subeetei
+				}
+				1 = {
+					change_first_name = Subegei
+				}
+				1 = {
+					change_first_name = Sunqur
+				}
+				1 = {
+					change_first_name = Taachar
+				}
+				1 = {
+					change_first_name = Taiju
+				}
+				1 = {
+					change_first_name = Tamur-Buqa
+				}
+				1 = {
+					change_first_name = Taraqai
+				}
+				1 = {
+					change_first_name = Tarqutai
+				}
+				1 = {
+					change_first_name = Tayir
+				}
+				1 = {
+					change_first_name = Taytemur
+				}
+				1 = {
+					change_first_name = Teguder
+				}
+				1 = {
+					change_first_name = Telegetu
+				}
+				1 = {
+					change_first_name = Temegen
+				}
+				1 = {
+					change_first_name = Temuder
+				}
+				1 = {
+					change_first_name = Temuge
+				}
+				1 = {
+					change_first_name = Temujin
+				}
+				1 = {
+					change_first_name = Temur
+				}
+				1 = {
+					change_first_name = Todemonke
+				}
+				1 = {
+					change_first_name = Todoen
+				}
+				1 = {
+					change_first_name = Togan
+				}
+				1 = {
+					change_first_name = Togantemur
+				}
+				1 = {
+					change_first_name = Togustemur
+				}
+				1 = {
+					change_first_name = Tolui
+				}
+				1 = {
+					change_first_name = Tolun
+				}
+				1 = {
+					change_first_name = Toqoqan
+				}
+				1 = {
+					change_first_name = Toqta
+				}
+				1 = {
+					change_first_name = Toqtemir
+				}
+				1 = {
+					change_first_name = Toqto
+				}
+				1 = {
+					change_first_name = Toquchar
+				}
+				1 = {
+					change_first_name = Toretemur
+				}
+				1 = {
+					change_first_name = Torolchi
+				}
+				1 = {
+					change_first_name = Tubshin
+				}
+				1 = {
+					change_first_name = Tuge
+				}
+				1 = {
+					change_first_name = Tugel
+				}
+				1 = {
+					change_first_name = Tugrul
+				}
+				1 = {
+					change_first_name = Tugur
+				}
+				1 = {
+					change_first_name = Tumbinai
+				}
+				1 = {
+					change_first_name = Tuqachar
+				}
+				1 = {
+					change_first_name = Tuqu
+				}
+				1 = {
+					change_first_name = Turqaq
+				}
+				1 = {
+					change_first_name = Udur
+				}
+				1 = {
+					change_first_name = Ulaqchi
+				}
+				1 = {
+					change_first_name = Yisubuqa
+				}
+				1 = {
+					change_first_name = Yisuder
+				}
+				1 = {
+					change_first_name = Yisugei
+				}
+				1 = {
+					change_first_name = Yisumongke
+				}
+				1 = {
+					change_first_name = Yisun
+				}
+				1 = {
+					change_first_name = Yisungge
+				}
+				1 = {
+					change_first_name = Yisuntemur
+				}
+				1 = {
+					change_first_name = Yisuntoa
+				}
+				1 = {
+					change_first_name = Yuruqan
+				}
+			}
+		}
+	}
+}
+mongol_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 10
+			}
+			random_list = {
+				1 = {
+					change_first_name = Fatima
+				}
+				1 = {
+					change_first_name = Sultan
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_religion = religion:christianity_religion
+					has_religion = religion:islam_religion
+				}
+				add = 3
+			}
+			random_list = {
+				1 = {
+					change_first_name = Mary
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:buddhism_religion
+				add = 10
+			}
+			random_list = {
+				1 = {
+					change_first_name = Aratnabala
+				}
+				1 = {
+					change_first_name = Budashri
+				}
+				1 = {
+					change_first_name = Dharmashri
+				}
+				1 = {
+					change_first_name = Ratnashri
+				}
+				1 = {
+					change_first_name = Sugebala
+				}
+				1 = {
+					change_first_name = Buyankelmish
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				1 = {
+					change_first_name = Abish
+				}
+				1 = {
+					change_first_name = Alaltan
+				}
+				1 = {
+					change_first_name = Alaqa
+				}
+				1 = {
+					change_first_name = Alaqai
+				}
+				1 = {
+					change_first_name = Alaqud
+				}
+				1 = {
+					change_first_name = Alinaq
+				}
+				1 = {
+					change_first_name = Altun
+				}
+				1 = {
+					change_first_name = Araqutluq
+				}
+				1 = {
+					change_first_name = Arigach
+				}
+				1 = {
+					change_first_name = Ariqan
+				}
+				1 = {
+					change_first_name = Baba
+				}
+				1 = {
+					change_first_name = Baba
+				}
+				1 = {
+					change_first_name = Babaqal
+				}
+				1 = {
+					change_first_name = Babuqan
+				}
+				1 = {
+					change_first_name = Bayanqutuq
+				}
+				1 = {
+					change_first_name = Baytekin
+				}
+				1 = {
+					change_first_name = Begtutmish
+				}
+				1 = {
+					change_first_name = Boroqchin
+				}
+				1 = {
+					change_first_name = Borte
+				}
+				1 = {
+					change_first_name = Buchigen
+				}
+				1 = {
+					change_first_name = Buluqan
+				}
+				1 = {
+					change_first_name = Buyanaqa
+				}
+				1 = {
+					change_first_name = Chaalun
+				}
+				1 = {
+					change_first_name = Chaur
+				}
+				1 = {
+					change_first_name = Checheyigen
+				}
+				1 = {
+					change_first_name = Chichek
+				}
+				1 = {
+					change_first_name = Chichektu
+				}
+				1 = {
+					change_first_name = Chotan
+				}
+				1 = {
+					change_first_name = Dolandi
+				}
+				1 = {
+					change_first_name = Dondi
+				}
+				1 = {
+					change_first_name = Doquz
+				}
+				1 = {
+					change_first_name = Dorbejin
+				}
+				1 = {
+					change_first_name = Doregene
+				}
+				1 = {
+					change_first_name = Durain
+				}
+				1 = {
+					change_first_name = Elchiqmish
+				}
+				1 = {
+					change_first_name = Elqutluq
+				}
+				1 = {
+					change_first_name = Eltuzmish
+				}
+				1 = {
+					change_first_name = Emegen
+				}
+				1 = {
+					change_first_name = Eshil
+				}
+				1 = {
+					change_first_name = Gurbesu
+				}
+				1 = {
+					change_first_name = Guyuk
+				}
+				1 = {
+					change_first_name = Hoelun
+				}
+				1 = {
+					change_first_name = Hushijin
+				}
+				1 = {
+					change_first_name = Ibaqa
+				}
+				1 = {
+					change_first_name = Jamai
+				}
+				1 = {
+					change_first_name = Kelturmis
+				}
+				1 = {
+					change_first_name = Kobeguntei
+				}
+				1 = {
+					change_first_name = Kochu
+				}
+				1 = {
+					change_first_name = Kokochin
+				}
+				1 = {
+					change_first_name = Kokolun
+				}
+				1 = {
+					change_first_name = Kuchu
+				}
+				1 = {
+					change_first_name = Kuchuk
+				}
+				1 = {
+					change_first_name = Kul
+				}
+				1 = {
+					change_first_name = Kurduchin
+				}
+				1 = {
+					change_first_name = Lingqun
+				}
+				1 = {
+					change_first_name = Menggugen
+				}
+				1 = {
+					change_first_name = Moge
+				}
+				1 = {
+					change_first_name = Nambui
+				}
+				1 = {
+					change_first_name = Naran
+				}
+				1 = {
+					change_first_name = Nayan
+				}
+				1 = {
+					change_first_name = Nogachin
+				}
+				1 = {
+					change_first_name = Nubqus
+				}
+				1 = {
+					change_first_name = Ogul-Tutmish
+				}
+				1 = {
+					change_first_name = Oki
+				}
+				1 = {
+					change_first_name = Oljei
+				}
+				1 = {
+					change_first_name = Orbei
+				}
+				1 = {
+					change_first_name = Orqina
+				}
+				1 = {
+					change_first_name = Orqutaq
+				}
+				1 = {
+					change_first_name = Orug
+				}
+				1 = {
+					change_first_name = Qadaan
+				}
+				1 = {
+					change_first_name = Qaitmish
+				}
+				1 = {
+					change_first_name = Qaraqchin
+				}
+				1 = {
+					change_first_name = Qoaqchin
+				}
+				1 = {
+					change_first_name = Qojin
+				}
+				1 = {
+					change_first_name = Qolui
+				}
+				1 = {
+					change_first_name = Qoluiqan
+				}
+				1 = {
+					change_first_name = Qorijin
+				}
+				1 = {
+					change_first_name = Qoruqchin
+				}
+				1 = {
+					change_first_name = Qulan
+				}
+				1 = {
+					change_first_name = Qutadmish
+				}
+				1 = {
+					change_first_name = Qutlug
+				}
+				1 = {
+					change_first_name = Qutluqqan
+				}
+				1 = {
+					change_first_name = Qutui
+				}
+				1 = {
+					change_first_name = Qutulun
+				}
+				1 = {
+					change_first_name = Qutuqai
+				}
+				1 = {
+					change_first_name = Qutuqi
+				}
+				1 = {
+					change_first_name = Qutuqui
+				}
+				1 = {
+					change_first_name = Quurcin
+				}
+				1 = {
+					change_first_name = Sailun
+				}
+				1 = {
+					change_first_name = Sarqan
+				}
+				1 = {
+					change_first_name = Saruq
+				}
+				1 = {
+					change_first_name = Sati
+				}
+				1 = {
+					change_first_name = Sevinch
+				}
+				1 = {
+					change_first_name = Soqatai
+				}
+				1 = {
+					change_first_name = Sorqaqtani
+				}
+				1 = {
+					change_first_name = Taji
+				}
+				1 = {
+					change_first_name = Tegulun
+				}
+				1 = {
+					change_first_name = Temulun
+				}
+				1 = {
+					change_first_name = Togen
+				}
+				1 = {
+					change_first_name = Toqonchuq
+				}
+				1 = {
+					change_first_name = Tolun
+				}
+				1 = {
+					change_first_name = Torequtluq
+				}
+				1 = {
+					change_first_name = Tumelun
+				}
+				1 = {
+					change_first_name = Ulaqutluq
+				}
+				1 = {
+					change_first_name = Yelmish
+				}
+				1 = {
+					change_first_name = Yeshichin
+				}
+				1 = {
+					change_first_name = Yisuer
+				}
+				1 = {
+					change_first_name = Yisugen
+				}
+				1 = {
+					change_first_name = Yisui
+				}
+				1 = {
+					change_first_name = Yisulun
+				}
+				1 = {
+					change_first_name = Yisunchin
+				}
+			}
+		}
+	}
+}
+mongol_nicks = {
+	save_scope_as = nick_reciever
+	add_character_flag = got_npe_nickname
+	random_list = {
+		0 = {
+			modifier = {
+				dread >= 25
+				add = 1
+			}
+			modifier = {
+				dread >= 50
+				add = 1
+			}
+			modifier = {
+				dread >= 75
+				add = 1
+			}
+			modifier = {
+				dread >= 100
+				add = 1
+			}
+			modifier = {
+				has_trait = cruel
+				add = 2
+			}
+			modifier = {
+				has_trait = reaver
+				add = 1
+			}
+			modifier = {
+				has_trait = sadistic
+				add = 1
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Fierce_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = beauty_good_1
+				add = 1
+			}
+			modifier = {
+				has_trait = beauty_good_2
+				add = 1
+			}
+			modifier = {
+				has_trait = beauty_good_3
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Beautiful_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_character_modifier = obese_modifier
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_1
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_2
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_3
+				add = 2
+			}
+			modifier = {
+				has_trait = giant
+				add = 3
+			}
+			add_to_global_variable_list = { name = Large_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_trait = stuttering
+					has_trait = lisping
+				}
+				add = 3
+			}
+			add_to_global_variable_list = { name = Stammerer_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				has_trait = brave
+				add = 1
+			}
+			add_to_global_variable_list = { name = Bagatur_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				has_trait = blind
+				add = 5
+			}
+			add_to_global_variable_list = { name = Blind_byname target = scope:nick_reciever }
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = physique_good_1
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_2
+				add = 1
+			}
+			modifier = {
+				has_trait = physique_good_3
+				add = 2
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Strong_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = brave
+				add = 3
+			}
+			add_to_global_variable_list = { name = Hero_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				prowess >= 5
+				add = 1
+			}
+			modifier = {
+				prowess >= 10
+				add = 1
+			}
+			modifier = {
+				prowess >= 15
+				add = 2
+			}
+			modifier = {
+				prowess >= 20
+				add = 4
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Skillful_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Hero_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Strong_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_character_modifier = obese_modifier
+				add = 3
+			}
+			add_to_global_variable_list = { name = Fat_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				age >= 50
+				add = 1
+			}
+			modifier = {
+				age >= 60
+				add = 1
+			}
+			modifier = {
+				age >= 70
+				add = 2
+			}
+			modifier = {
+				age >= 80
+				add = 4
+			}
+			modifier = {
+				age >= 90
+				add = 8
+			}
+			add_to_global_variable_list = { name = Old_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				age <= 20
+				add = 1
+			}
+			add_to_global_variable_list = { name = Young_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				gold >= 1000
+				add = 2
+			}
+			modifier = {
+				gold >= 2000
+				add = 2
+			}
+			modifier = {
+				gold >= 3000
+				add = 2
+			}
+			modifier = {
+				gold >= 4000
+				add = 2
+			}
+			modifier = {
+				gold >= 5000
+				add = 2
+			}
+			add_to_global_variable_list = { name = Rich_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				has_trait = dwarf
+				add = 6
+			}
+			add_to_global_variable_list = { name = Small_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				has_trait = dwarf
+				add = 3
+			}
+			modifier = {
+				has_trait = spindly
+				add = 3
+			}
+			add_to_global_variable_list = { name = Small_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				has_trait = giant
+				add = 6
+			}
+			random_list = {
+				1 = {
+					add_to_global_variable_list = { name = Tall_byname target = scope:nick_reciever }
+				}
+				1 = {
+					add_to_global_variable_list = { name = Big_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				martial >= 5
+				add = 1
+			}
+			modifier = {
+				martial >= 10
+				add = 1
+			}
+			modifier = {
+				martial >= 15
+				add = 2
+			}
+			modifier = {
+				martial >= 20
+				add = 4
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_trait = brave
+						add = 2
+					}
+					add_to_global_variable_list = { name = Bagatur_byname target = scope:nick_reciever }
+				}
+				1 = {
+					modifier = {
+						has_trait = reckless
+						add = 3
+					}
+					add_to_global_variable_list = { name = Reckless_byname target = scope:nick_reciever }
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				learning >= 5
+				add = 1
+			}
+			modifier = {
+				learning >= 10
+				add = 1
+			}
+			modifier = {
+				learning >= 15
+				add = 2
+			}
+			modifier = {
+				learning >= 20
+				add = 4
+			}
+			add_to_global_variable_list = { name = Wise_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				has_trait = hunter_1
+				add = 1
+			}
+			modifier = {
+				has_trait = hunter_2
+				add = 1
+			}
+			modifier = {
+				has_trait = hunter_3
+				add = 2
+			}
+			1 = {
+				add_to_global_variable_list = { name = Hunter_byname target = scope:nick_reciever }
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = stubborn
+				add = 1
+			}
+			1 = {
+				add_to_global_variable_list = { name = Stubborn_byname target = scope:nick_reciever }
+			}
+		}
+		0 = {
+			modifier = {
+				has_trait = intellect_bad_1
+				add = 1
+			}
+			modifier = {
+				has_trait = intellect_bad_2
+				add = 1
+			}
+			modifier = {
+				has_trait = intellect_bad_3
+				add = 2
+			}
+			add_to_global_variable_list = { name = Foolish_byname target = scope:nick_reciever }
+		}
+		0 = {
+			modifier = {
+				has_trait = callous
+				add = 1
+			}
+			add_to_global_variable_list = { name = Harsh_byname target = scope:nick_reciever }
+		}
+	}
+}

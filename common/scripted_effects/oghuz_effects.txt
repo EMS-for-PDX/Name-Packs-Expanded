@@ -313,7 +313,7 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:3030 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:3038 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:3040 }
-        add_to_variable_list = { name = pre_laqab_dynasty target = character:3040 }
+		#add_to_variable_list = { name = pre_laqab_dynasty target = character:3040 }
         add_to_variable_list = { name = dynasty_independent target = character:3038 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:3038 }
     }
@@ -418,8 +418,20 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144099 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144099 }
     }
+    character:248023.dynasty = { #Muhtajid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:248023 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:248024 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:248025 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:248024 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:248025 }
+    }
     character:144044.dynasty = { #Saltuk
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144044 }
+    }
+    character:93087.dynasty = { #Kocharid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:93087 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:93088 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93088 }
     }
     character:144107.dynasty = { #Qarahan
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144107 }
@@ -454,6 +466,29 @@
         add_to_variable_list = { name = dynasty_tribal target = character:3008 }
         add_to_variable_list = { name = dynasty_tribal target = character:144105 }
         add_to_variable_list = { name = dynasty_tribal target = character:3004 }
+    }
+    character:302642.dynasty = { #Shavgari
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:302647 }
+    }
+	character:302647 = {
+        change_first_name = Aybak
+    }
+	character:93087 = {
+        change_first_name = Togan
+        dynasty_effect_ne = yes
+    }
+	character:93088 = {
+        change_first_name = Etrek
+    }
+	character:248023 = {
+        change_first_name = Kunduz
+        dynasty_effect_ne = yes
+    }
+	character:248024 = {
+        change_first_name = Artuq
+    }
+	character:248025 = {
+        change_first_name = Ertegin
     }
     character:3004 = {
         change_first_name = Mansur
@@ -576,9 +611,10 @@
         add_to_global_variable_list = { name = Alpsungqur_byname target = this } 
     }
     character:3038 = { #Tugrul-Beg
-        change_first_name = Muhammad
+		#change_first_name = Muhammad # Better known as this
+        change_first_name = Tugrul-Beg
         add_to_global_variable_list = { name = Rukn_ad_Dawla target = this }
-        add_to_global_variable_list = { name = Tugrul_Beg_byname target = this }
+        add_to_global_variable_list = { name = MuhammadN_byname target = this }
     }
     character:turkish0002 = {
         change_first_name = Togan-Shah
@@ -611,8 +647,10 @@
         change_first_name = Turanshah
     }
     character:3041 = { #Qavurt
-        change_first_name = Ahmad
-        add_to_global_variable_list = { name = QavurtN_byname target = this }
+        #change_first_name = Ahmad # His children's nasabs name him as Qavurt rather than Ahmad
+		#add_to_global_variable_list = { name = QavurtN_byname target = this }
+        change_first_name = Qavurt
+        add_to_global_variable_list = { name = AhmadN_byname target = this }
     }
     character:1229957 = {
         change_first_name = Sulayman
@@ -683,11 +721,13 @@
     character:3045 = {
         change_first_name = Terken
     }
-    character:3040 = { #Alp-Arslan
-        change_first_name = Muhammad
+    character:3040 = { #Alp-Arslan 
+		#change_first_name = Muhammad # His children's nasabs name him as Alp Arslan rather than Muhammad
+        change_first_name = Alp-Arslan 
         add_to_global_variable_list = { name = Adud_ad_Dawla target = this }
-        add_to_global_variable_list = { name = al_Muazzam target = this } #don't believe this was a laqab
-        add_to_global_variable_list = { name = Alp_ArslanN_byname target = this }
+		#add_to_global_variable_list = { name = al_Muazzam target = this } #don't believe this was a laqab but part of his title (Sultan al-Muazzam)
+		#add_to_global_variable_list = { name = Alp_ArslanN_byname target = this }
+        add_to_global_variable_list = { name = MuhammadN_byname target = this }
 		add_character_flag = has_reg_laqab
     }
 }

@@ -13,6 +13,24 @@
 	text = {
 		trigger = {
 			any_in_global_list = {
+				variable = MuhammadN_byname
+				this = root
+			}
+		}
+        localization_key = MuhammadN
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = AhmadN_byname
+				this = root
+			}
+		}
+        localization_key = AhmadN
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
 				variable = Chagri_Beg_byname
 				this = root
 			}
@@ -1183,5 +1201,59 @@ KarlukRegnal = {
 	text = {
 		fallback = yes
 		localization_key = BlankNick_karluk
+	}
+}
+
+BulgharHistorical = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Moskha_surname
+				this = root
+			}
+		}
+        localization_key = Moskha
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Mumin_surname
+				this = root
+			}
+		}
+        localization_key = Mumin
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Yalkau_surname
+				this = root
+			}
+		}
+        localization_key = Yalkau
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Baluq_surname
+				this = root
+			}
+		}
+        localization_key = Baluq
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Kolyn_surname
+				this = root
+			}
+		}
+        localization_key = Kolyn
+	}
+	text = {
+		fallback = yes
+		localization_key = BlankNick
 	}
 }

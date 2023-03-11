@@ -10,6 +10,7 @@
 		has_cultural_pillar = heritage_west_germanic
 		has_cultural_pillar = heritage_north_germanic
 		has_cultural_pillar = heritage_brythonic
+		has_cultural_pillar = heritage_mongolic
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -44,6 +45,7 @@
 		has_cultural_pillar = language_anglic
 		has_cultural_pillar = language_norse
 		has_cultural_pillar = language_brythonic
+		has_cultural_pillar = language_mongolic
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -106,6 +108,16 @@ kipchak_check = {
 		has_name_list = name_list_kimek
 		has_name_list = name_list_laktan
 		has_name_list = name_list_bashkir
+	}
+}
+mongol_check = {
+	has_cultural_pillar = language_mongolic
+	OR = {
+		has_name_list = name_list_mongol
+		has_name_list = name_list_naiman
+		has_name_list = name_list_buryat
+		has_name_list = name_list_kerait
+		has_name_list = name_list_oirat
 	}
 }
 kurdish_lang_check = {
