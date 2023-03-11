@@ -1,0 +1,26 @@
+TamilRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rajasekaran_regnal
+				this = root
+			}
+		}
+        localization_key = Rajasekaran
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Kulasekaran_regnal
+				this = root
+			}
+		}
+        localization_key = Kulasekaran
+	}
+	text = {
+		fallback = yes
+		localization_key = BlankNick
+	}
+}

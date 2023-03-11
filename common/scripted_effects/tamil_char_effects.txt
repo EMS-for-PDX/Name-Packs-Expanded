@@ -1,0 +1,85 @@
+867_tamil_char_effect = {
+	#character:175100.house = { #Chera (Successors)
+		#set_variable = {
+		#	name = name_founder
+		#	value = character:npedbpecheneg006
+		#}
+	#}
+	character:175100.dynasty = { #Chera
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:175100 } #This should be real Kulasekara
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189049 } #Rama is next in line, but not a son idk
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189048 } #fictional Rama before Kulasekara for some reason
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189411 } #fictional?
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189412 } #fictional?
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189410 } #fictional?
+		add_to_variable_list = { name = dynasty_independent target = character:189048 }
+	}
+	#character:189407.house = { #Ay (Kupaka)
+		#set_variable = {
+		#	name = name_founder
+		#	value = character:npedbpecheneg006
+		#}
+	#}
+	character:189407.dynasty = { #Ay
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189407 } #Karunandadakkan
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189408 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189406 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189405 }
+	}
+	#character:175090.house = { #Pandya
+		#set_variable = {
+		#	name = name_founder
+		#	value = character:npedbpecheneg006
+		#}
+	#}
+	character:175090.dynasty = { #Pandya
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:175090 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189069 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189070 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189068 }
+	}
+	character:189070 = {
+		change_first_name = Rajasimha #also Maravarman
+	}
+	character:189069 = {
+		change_first_name = Parantaka #also Viranarayana
+	}
+	character:175090 = {
+		change_first_name = Varaguna #Varagunavarman (could be Varatungarama)
+	}
+	character:189405 = {
+		change_first_name = Jatila
+	}
+	character:189406 = {
+		change_first_name = Karunandan
+	}
+	character:189407 = {
+		change_first_name = Shrivalluvar
+	}
+	character:189408 = {
+		change_first_name = Vikramaditya
+	}
+	character:189410 = {
+		change_first_name = Virarajendra #Just assign a name
+	}
+	character:189412 = {
+		change_first_name = Maranjadaiyan #Just assign a name
+	}
+	character:189411 = {
+		change_first_name = Shiraman #Just assign a name
+	}
+	character:189411 = {
+		change_first_name = Shiraman #Just assign a name
+	}
+	character:189048 = {
+		change_first_name = Ayyan #Just assign a name
+        add_to_global_variable_list = { name = Rajasekaran_regnal target = this } #needs Regnal
+	}
+	character:189049 = {
+		change_first_name = Rama
+	}
+	character:175100 = {
+		change_first_name = Tanu-Ravi
+        add_to_global_variable_list = { name = Kulasekaran_regnal target = this }
+	}
+}
