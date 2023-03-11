@@ -1,0 +1,19 @@
+﻿l_english:
+Window_Tamil: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!"
+Window_Tamil_Low_Noble: "#high [Localize(Concatenate('TamilLowNoblePre',ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] āṉa [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheck')]#!"
+Window_Tamil_Duke_Dep: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] āṉa [GetScriptedGui('grab_overlord_house').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]#!"
+Window_Tamil_Duke_Indep: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][CHARACTER.Custom('CharacterHouseCheckAfter')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]#!"
+Window_Tamil_Prince: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')]Śrī-[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('PrinceSuf',ROOT.Char.Custom('CharacterGender')))]#!"
+Window_Tamil_King: "#high [ROOT.Char.Custom('CharacterTierCheck')]-[ROOT.Char.Custom('TamilRegnal')] āṉa Uḍaiyār Śrī-[ROOT.Char.Custom('CharacterNameCheck')][CHARACTER.Custom('CharacterHouseCheckAfter')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]#!"
+Window_Tamil_Emperor: "#high Kō-[ROOT.Char.Custom('TamilRegnal')] āṉa [ROOT.Char.Custom('CharacterTierCheckBefore')]Śrī-[ROOT.Char.Custom('CharacterNameCheck')][CHARACTER.Custom('CharacterHouseCheckAfter')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]#!"
+
+TamilLowNoblePre_male: "Araiyaṉ "
+TamilLowNoblePre_female: "Arāsi "
+DevaSuf_male: "dēvar"
+DevaSuf_female: "dēviyār"
+PrinceSuf_male: "dēvar"
+PrinceSuf_female: "-piṟattiyār"
+
+grab_ol_house_house: "[TARGET_CHARACTER.Custom('TamilRegnal')]-[TARGET_CHARACTER.Custom('CharacterHouseCheck')]-[CHARACTER.Custom('CharacterHouseCheck')]"
+grab_ol_house: "[TARGET_CHARACTER.Custom('TamilRegnal')]-[CHARACTER.Custom('CharacterHouseCheck')]"
+grab_ol: "[TARGET_CHARACTER.Custom('TamilRegnal')]"

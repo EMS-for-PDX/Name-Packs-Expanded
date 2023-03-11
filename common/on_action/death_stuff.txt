@@ -2,6 +2,7 @@
 	on_actions = {
 		on_theo_death
 		on_HO_death
+		on_earl_death
 		on_feudalclan_death
 		on_tribe_death
         on_independent_death
@@ -12,6 +13,25 @@
         #on_monk_death
 		on_female_death
 		on_male_death
+	}
+}
+on_earl_death = {
+	trigger = {
+        culture = {
+			is_npe_supported_culture = yes
+			earl_check = yes
+		}
+		has_government = feudal_government
+		exists = dynasty
+		exists = top_liege
+		top_liege = {
+			culture = {
+				has_cultural_pillar = language_anglic
+			}
+		}
+	}
+	effect = {
+		dynasty = { add_to_variable_list = { name = dynasty_earl target = root} }
 	}
 }
 on_female_death = {
