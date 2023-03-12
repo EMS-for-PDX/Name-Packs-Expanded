@@ -67,6 +67,24 @@
 			0 = {
 				modifier = {
 					culture = {
+						has_name_list = name_list_telugu
+					}
+					add = 1
+				}
+				telugu_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_tamil
+					}
+					add = 1
+				}
+				tamil_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
 						OR = {
 							has_name_list = name_list_norse
 							has_name_list = name_list_swedish
@@ -77,6 +95,67 @@
 					add = 1
 				}
 				norse_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_bengali
+							has_name_list = name_list_oriya
+							has_name_list = name_list_assamese
+							has_name_list = name_list_hindustani
+							has_name_list = name_list_gujarati
+							has_name_list = name_list_punjabi
+							has_name_list = name_list_rajput
+							has_name_list = name_list_malvi
+							has_name_list = name_list_sindhi
+							has_name_list = name_list_marathi
+							has_name_list = name_list_kashmiri
+							has_name_list = name_list_nepali
+							has_name_list = name_list_sinhala
+						}
+					}
+					has_religion = religion:islam_religion
+					add = 1
+				}
+				indo_aryan_muslim_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_sinhala
+					}
+					NOT = {
+						has_religion = religion:islam_religion
+					}
+					add = 1
+				}
+				sinhala_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_bengali
+							has_name_list = name_list_oriya
+							has_name_list = name_list_assamese
+							has_name_list = name_list_hindustani
+							has_name_list = name_list_gujarati
+							has_name_list = name_list_punjabi
+							has_name_list = name_list_rajput
+							has_name_list = name_list_malvi
+							has_name_list = name_list_sindhi
+							has_name_list = name_list_marathi
+							has_name_list = name_list_kashmiri
+							has_name_list = name_list_nepali
+						}
+					}
+					NOT = {
+						has_religion = religion:islam_religion
+					}
+					add = 1
+				}
+				indo_aryan_male_name_effect = yes
 			}
 			0 = {
 				modifier = {
@@ -173,9 +252,9 @@
 							has_name_list = name_list_baranis
 							has_name_list = name_list_guanches
 							has_name_list = name_list_butr
-							has_name_list = name_list_zaghawa
 						}
 					}
+					add = 1
 				}
 				berber_male_name_effect = yes
 			}
@@ -548,6 +627,85 @@
 			}
 			0 = {
 				modifier = {
+					culture = {
+						has_name_list = name_list_telugu
+					}
+					add = 1
+				}
+				telugu_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_tamil
+					}
+					add = 1
+				}
+				tamil_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_bengali
+							has_name_list = name_list_oriya
+							has_name_list = name_list_assamese
+							has_name_list = name_list_hindustani
+							has_name_list = name_list_gujarati
+							has_name_list = name_list_punjabi
+							has_name_list = name_list_rajput
+							has_name_list = name_list_malvi
+							has_name_list = name_list_sindhi
+							has_name_list = name_list_marathi
+							has_name_list = name_list_kashmiri
+							has_name_list = name_list_nepali
+							has_name_list = name_list_sinhala
+						}
+					}
+					has_religion = religion:islam_religion
+					add = 1
+				}
+				indo_aryan_muslim_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_sinhala
+					}
+					NOT = {
+						has_religion = religion:islam_religion
+					}
+					add = 1
+				}
+				sinhala_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_bengali
+							has_name_list = name_list_oriya
+							has_name_list = name_list_assamese
+							has_name_list = name_list_hindustani
+							has_name_list = name_list_gujarati
+							has_name_list = name_list_punjabi
+							has_name_list = name_list_rajput
+							has_name_list = name_list_malvi
+							has_name_list = name_list_sindhi
+							has_name_list = name_list_marathi
+							has_name_list = name_list_kashmiri
+							has_name_list = name_list_nepali
+						}
+					}
+					NOT = {
+						has_religion = religion:islam_religion
+					}
+					add = 1
+				}
+				indo_aryan_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
 					OR = {
 						culture = {
 							OR = {
@@ -633,6 +791,7 @@
 							has_name_list = name_list_butr
 						}
 					}
+					add = 1
 				}
 				berber_female_name_effect = yes
 			}

@@ -1945,16 +1945,7 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                OR = {
-                    has_cultural_pillar = language_berber
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        has_cultural_pillar = language_haratine
-                    }
-                }
-            
+                has_cultural_pillar = language_berber
 			}
 		}
 		localization_key = _berber
