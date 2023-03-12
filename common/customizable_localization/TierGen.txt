@@ -1946,6 +1946,23 @@ CharacterCulture = {
 		trigger = {
 			culture = {
                 OR = {
+                    has_cultural_pillar = language_berber
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_haratine
+                    }
+                }
+            
+			}
+		}
+		localization_key = _berber
+	}
+	text = {
+		trigger = {
+			culture = {
+                OR = {
                     AND = {
                         has_cultural_pillar = language_scythian
                         has_name_list = name_list_khwarezmian

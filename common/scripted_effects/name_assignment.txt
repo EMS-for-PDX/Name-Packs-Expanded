@@ -170,6 +170,19 @@
 				modifier = {
 					culture = {
 						OR = {
+							has_name_list = name_list_baranis
+							has_name_list = name_list_guanches
+							has_name_list = name_list_butr
+							has_name_list = name_list_zaghawa
+						}
+					}
+				}
+				berber_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
 							has_name_list = name_list_persian
 							has_name_list = name_list_kurdish
 							has_name_list = name_list_baloch
@@ -610,6 +623,18 @@
 					add = 1
 				}
 				irish_female_ancestor_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						OR = {
+							has_name_list = name_list_baranis
+							has_name_list = name_list_guanches
+							has_name_list = name_list_butr
+						}
+					}
+				}
+				berber_female_name_effect = yes
 			}
 			0 = {
 				modifier = {

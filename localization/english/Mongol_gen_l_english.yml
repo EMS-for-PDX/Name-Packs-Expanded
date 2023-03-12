@@ -32,8 +32,8 @@ Full_Name_Mongol_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACT
 Full_Name_Mongol_LowerTierFirst: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
 
 Full_Name_No_Tooltip_Mongol: "[ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
-Full_Name_No_Tooltip_Mongol_Emperor: [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('TierSuffix',Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender'))))]"
-Full_Name_No_Tooltip_Mongol_LowerTierFirst: [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
+Full_Name_No_Tooltip_Mongol_Emperor: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('TierSuffix',Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender'))))]"
+Full_Name_No_Tooltip_Mongol_LowerTierFirst: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
 
 Full_Name_Possessive_Mongol: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
 Full_Name_Possessive_Mongol_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('TierSuffix',Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender'))))]'s#!#!#!"
