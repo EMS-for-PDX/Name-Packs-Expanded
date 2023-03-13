@@ -2237,6 +2237,73 @@ CharacterReligion = {
     }
     text = {
         trigger = {
+            has_faith = faith:vaishnavism
+        }
+        localization_key = _vaish
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_faith = faith:advaitism
+                has_faith = faith:smartism
+            }
+        }
+        localization_key = _advait
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_faith = faith:shaivism
+                has_faith = faith:kalikula_shaktism
+                has_faith = faith:srikula_shaktism
+            }
+        }
+        localization_key = _shaiv
+    }
+    text = {
+        trigger = {
+            has_faith = faith:krishnaism
+        }
+        localization_key = _krishna
+    }
+    text = {
+        trigger = {
+            has_faith = faith:digambara
+        }
+        localization_key = _digambara
+    }
+    text = {
+        trigger = {
+            has_religion = religion:hinduism_religion
+        }
+        localization_key = _hindu
+    }
+    text = {
+        trigger = {
+            has_religion = religion:jainism_religion
+        }
+        localization_key = _svetambara
+    }
+    text = {
+        trigger = {
+            has_faith = faith:theravada
+        }
+        localization_key = _theravada
+    }
+    text = {
+        trigger = {
+            has_faith = faith:mahayana
+        }
+        localization_key = _mahayana
+    }
+    text = {
+        trigger = {
+            has_faith = faith:vajrayana
+        }
+        localization_key = _vajrayana
+    }
+    text = {
+        trigger = {
             has_religion = religion:buddhism_religion
         }
         localization_key = _buddism
