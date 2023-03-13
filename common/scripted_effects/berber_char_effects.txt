@@ -134,6 +134,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:1228838 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:1228839 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:1228840 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1228834 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1228835 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1228841 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1228838 }
@@ -169,6 +170,135 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273106 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273097 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273080 }
+	}
+	character:butr0015.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber011
+        }
+    }
+	character:butr0015.dynasty = { # Righa
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbberber011 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:butr0015 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:butr0014 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1228238 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1228239 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1228239 }
+	}
+	character:1228830.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber012
+        }
+    }
+	character:1228830.dynasty = { # Musab
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbberber012 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1228830 }
+	}
+	character:273081.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber013
+        }
+    }
+	character:273081.dynasty = { # Lamtuna
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbberber013 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273081 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273095 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273070 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273071 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273072 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273073 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273095 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273070 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273072 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273073 }
+	}
+	character:273101.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber014
+        }
+    }
+	character:273101.dynasty = { # Guddala
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbberber014 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273101 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273102 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273074 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273074 }
+	}
+	character:273112.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber015
+        }
+    }
+	character:273112.dynasty = { # Massufa
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbberber015 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273112 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273110 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273113 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273114 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:273111 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273110 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:273111 }
+	}
+	character:baranis0063.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber016
+        }
+    }
+	character:baranis0063.dynasty = { # Dhunnunid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbberber016 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0063 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0053 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:baranis0053 }
+	}
+	character:baranis0063 ={
+		change_first_name = Sulayman
+	}
+	character:273114 ={
+		change_first_name = Messala
+	}
+	character:273113 ={
+		change_first_name = Tasafut
+	}
+	character:273111 ={
+		change_first_name = Yaleddes
+	}
+	character:273110 ={
+		change_first_name = Awafu
+	}
+	character:273102 ={
+		change_first_name = Tamayast
+	}
+	character:273101 ={
+		change_first_name = Wattas
+	}
+	character:273072 ={
+		change_first_name = Athir
+	}
+	character:273071 ={
+		change_first_name = Batin
+	}
+	character:273095 ={
+		change_first_name = Tiklan
+	}
+	character:1228830 ={
+		change_first_name = Atiya
+	}
+	character:1228239 ={
+		change_first_name = Saida
+	}
+	character:1228238 ={
+		change_first_name = Yaghmur
+	}
+	character:butr0014 ={
+		change_first_name = Zegig
+	}
+	character:butr0015 ={
+		change_first_name = Medrar
 	}
 	character:273107 ={
 		change_first_name = Waggag
