@@ -1,4 +1,5 @@
 ﻿867_berbe_char_effect = {
+	add_to_global_variable_list = { name = name_pack_support_global target = character:khali0008 }
 	character:168254.dynasty = { #Salihids
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168254 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168253 }
@@ -254,6 +255,96 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0063 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0053 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:baranis0053 }
+	}
+	character:danis0000.house = {
+        set_variable = {
+            name = name_founder
+            value = character:danis0002
+        }
+    }
+	character:danis0000.dynasty = { # Awsaga
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbberber017 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0000 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0003 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0004 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0012 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0013 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:danis0002 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:danis0004 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:danis0012 }
+	}
+	character:danis0005.dynasty = { # Banu Danis
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0005 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0015 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0016 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0014 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0008 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0009 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:danis0010 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:danis0005 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:danis0009 }
+	}
+	character:khali0001.dynasty = { # Banu Khali
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:khali0001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:khali0002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:khali0003 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:khali0004 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:khali0005 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:khali0006 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:khali0007 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:khali0009 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:khali0001 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:khali0002 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:khali0003 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:khali0004 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:khali0009 }
+	}
+	character:khali0008 ={
+		change_first_name = Zaynab
+	}
+	character:khali0001 ={
+        dynasty_effect_ne = yes
+	}
+	character:khali0006 ={
+		change_first_name = Muizz
+	}
+	character:khali0007 ={
+		change_first_name = Nadiya
+	}
+	character:danis0015 ={
+		change_first_name = Ajisa
+	}
+	character:danis0016 ={
+		change_first_name = Amina
+	}
+	character:danis0014 ={
+		change_first_name = Habiba
+	}
+	character:danis0008 ={
+		change_first_name = Khalida
+	}
+	character:danis0009 ={
+		change_first_name = Masud
+	}
+	character:danis0005 ={
+        dynasty_effect_ne = yes
+	}
+	character:danis0000 ={
+		change_first_name = Amghar
+	}
+	character:danis0001 ={
+		change_first_name = Abdal-Aziz
+	}
+	character:danis0004 ={
+		change_first_name = Yahya
+	}
+	character:danis0012 ={
+		change_first_name = Ifam
+	}
+	character:danis0013 ={
+		change_first_name = Daniya
 	}
 	character:baranis0063 ={
 		change_first_name = Sulayman
