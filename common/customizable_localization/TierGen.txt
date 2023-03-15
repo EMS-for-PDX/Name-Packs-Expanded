@@ -1461,15 +1461,7 @@ CharacterGov = {
                         OR = {
                             AND = {
                                 has_government = feudal_government
-                                OR = {
-                                    has_title = title:e_byzantium
-                                    AND = {
-                                        exists = top_liege
-                                        top_liege = {
-                                            has_title = title:e_byzantium
-                                        }
-                                    }
-                                }
+                                has_title = title:e_byzantium
                             }
                             AND = {
                                 exists = dynasty
@@ -1479,6 +1471,7 @@ CharacterGov = {
                                         this = root.father
                                     }
                                 }
+                                has_title = title:e_byzantium
                             }
                         }
                     }
@@ -1489,15 +1482,7 @@ CharacterGov = {
                         OR = {
                             AND = {
                                 has_government = feudal_government
-                                OR = {
-                                    has_title = title:e_byzantium
-                                    AND = {
-                                        exists = top_liege
-                                        top_liege = {
-                                            has_title = title:e_byzantium
-                                        }
-                                    }
-                                }
+                                has_title = title:e_byzantium
                             }
                             AND = {
                                 exists = dynasty
@@ -1507,6 +1492,7 @@ CharacterGov = {
                                         this = root.mother
                                     }
                                 }
+                                has_title = title:e_byzantium
                             }
                         }
                     }
