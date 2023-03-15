@@ -372,6 +372,15 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_berber
+			}
+		}
+		localization_key = First_Name_No_Tooltip_Berber
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 			}
 			OR = {
 				culture = {
@@ -650,6 +659,15 @@ FirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_berber
+			}
+		}
+		localization_key = First_Name_Possessive_Berber
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 			}
 			OR = {
 				culture = {
@@ -912,7 +930,7 @@ FirstNamePossessiveNoTooltip = {
 				}
 			}
 		}
-		localization_key = First_Name_Possessive_Turkish_Muslim
+		localization_key = First_Name_Possessive_No_Tooltip_Turkish_Muslim
 	}
 	text = {
 		trigger = {
@@ -922,7 +940,16 @@ FirstNamePossessiveNoTooltip = {
 			}
 			has_religion = religion:islam_religion
 		}
-		localization_key = First_Name_Possessive_Turkish_Muslim
+		localization_key = First_Name_Possessive_No_Tooltip_Turkish_Muslim
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_berber
+			}
+		}
+		localization_key = First_Name_Possessive_No_Tooltip_Berber
 	}
 	text = {
 		trigger = {
@@ -1070,7 +1097,7 @@ FirstNamePossessiveNoTooltip = {
 			is_independent_ruler = yes
 			highest_held_title_tier = tier_empire
 		}
-		localization_key = First_Name_Possessive_Uyghur
+		localization_key = First_Name_Possessive_No_Tooltip_Uyghur
 	}
 	text = {
 		trigger = {
@@ -1094,7 +1121,7 @@ FirstNamePossessiveNoTooltip = {
 			is_independent_ruler = yes
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = First_Name_Possessive_Turkish
+		localization_key = First_Name_Possessive_No_Tooltip_Turkish
 	}
 	text = {
 		trigger = {
@@ -1201,6 +1228,15 @@ FirstNameNicknamed = {
 			has_religion = religion:islam_religion
 		}
 		localization_key = First_Name_Turkish_Muslim
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_berber
+			}
+		}
+		localization_key = First_Name_Berber
 	}
 	text = {
 		trigger = {
