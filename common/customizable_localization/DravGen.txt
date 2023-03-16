@@ -69,3 +69,94 @@ TamilRegnal = {
 		localization_key = BlankNick
 	}
 }
+TamilRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rajasekaran_regnal
+				this = root
+			}
+		}
+        localization_key = Adrirajendiran
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rajasekaran_regnal
+				this = root
+			}
+		}
+        localization_key = Ahavamallan
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rajasekaran_regnal
+				this = root
+			}
+		}
+        localization_key = Alaganperumal
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rajasekaran_regnal
+				this = root
+			}
+		}
+        localization_key = Alagiyapallavan
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rajasekaran_regnal
+				this = root
+			}
+		}
+        localization_key = Alagiyasiyan
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rajasekaran_regnal
+				this = root
+			}
+		}
+        localization_key = Rajasekaran
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Kulasekaran_regnal
+				this = root
+			}
+		}
+        localization_key = Kulasekaran
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+                    exists = dynasty
+                    dynasty = {
+                        any_in_list = {
+                            variable = name_pack_support_dynasty
+                            this = root
+                        }
+                    }
+                }
+                any_in_global_list = {
+                    variable = name_pack_support_global
+                    this = root
+                }
+			}
+		}
+		localization_key = Supported_Name_Tamil
+	}
+    text = {
+        fallback = yes
+		localization_key = Nonsupported_Name
+    }
+}
