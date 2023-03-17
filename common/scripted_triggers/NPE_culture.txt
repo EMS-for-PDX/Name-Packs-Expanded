@@ -12,6 +12,7 @@
 		has_cultural_pillar = heritage_brythonic
 		has_cultural_pillar = heritage_mongolic
 		has_cultural_pillar = heritage_berber
+		has_cultural_pillar = heritage_indoaryan
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -48,6 +49,11 @@
 		has_cultural_pillar = language_brythonic
 		has_cultural_pillar = language_mongolic
 		has_cultural_pillar = language_berber
+		has_cultural_pillar = language_magadhi
+		has_cultural_pillar = language_marathi
+		has_cultural_pillar = language_pahari
+		has_cultural_pillar = language_vrachada
+		has_cultural_pillar = language_gurjar
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -70,6 +76,24 @@ earl_check = {
 		has_cultural_pillar = language_norse
 		has_cultural_pillar = language_brythonic
 		has_cultural_pillar = language_goidelic
+	}
+}
+indoaryan_check = {
+	has_cultural_pillar = heritage_indoaryan
+	OR = {
+		has_name_list = name_list_bengali
+		has_name_list = name_list_oriya
+		has_name_list = name_list_assamese
+		has_name_list = name_list_hindustani
+		has_name_list = name_list_gujarati
+		has_name_list = name_list_punjabi
+		has_name_list = name_list_rajput
+		has_name_list = name_list_malvi
+		has_name_list = name_list_sindhi
+		has_name_list = name_list_marathi
+		has_name_list = name_list_kashmiri
+		has_name_list = name_list_nepali
+		has_name_list = name_list_gond
 	}
 }
 romanian_check = {

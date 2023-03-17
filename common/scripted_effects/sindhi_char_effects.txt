@@ -82,14 +82,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:178015 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188557 }
 	}
-	character:188562.house = {
-		set_variable = {
-			name = name_founder
-			value = character:npedbhind057
-		}
-	}
 	character:188562.dynasty = { #Khetpal 
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind057 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:178013 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188562 }
 	}
@@ -124,7 +117,8 @@
         change_first_name = Dodo
 	}
 	character:178013 ={
-        change_first_name = Abdar-Rashid
+        change_first_name = Hamid
+		dynasty_effect_ne = yes
 	}
 	character:188557 ={
         change_first_name = Alexander

@@ -109,6 +109,18 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				indoaryan_check = yes
+			}
+			NOT = {
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = Window_Indoaryan
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
 			AND = {
