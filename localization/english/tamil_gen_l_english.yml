@@ -1,33 +1,76 @@
 ﻿l_english:
 Window_Tamil: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!"
-Window_Tamil_Priest: "#high [ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckBefore')]#!"
+Window_Tamil_Priest: "#high [ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
 Window_Tamil_Low_Noble: "#high [Localize(Concatenate('TamilLowNoblePre',ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] āṉa [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheck')]#!"
-Window_Tamil_Duke_Dep: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] āṉa [GetScriptedGui('grab_overlord_house').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]#!"
+Window_Tamil_Duke_Dep: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] āṉa [GetScriptedGui('grab_overlord_house').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]-[CHARACTER.Custom('CharacterHouseCheck')]#!"
 Window_Tamil_Duke_Indep: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][CHARACTER.Custom('CharacterHouseCheckAfter')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]#!"
 Window_Tamil_Prince: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')]Śrī-[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('PrinceSuf',ROOT.Char.Custom('CharacterGender')))]#!"
 Window_Tamil_King: "#high [ROOT.Char.Custom('CharacterTierCheck')]-[ROOT.Char.Custom('TamilRegnal')] āṉa Uḍaiyār Śrī-[ROOT.Char.Custom('CharacterNameCheck')][CHARACTER.Custom('CharacterHouseCheckAfter')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]#!"
 Window_Tamil_Emperor: "#high Kō-[ROOT.Char.Custom('TamilRegnal')] āṉa [ROOT.Char.Custom('CharacterTierCheckBefore')]Śrī-[ROOT.Char.Custom('CharacterNameCheck')][CHARACTER.Custom('CharacterHouseCheckAfter')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]#!"
+Window_Tamil_Spouse: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] āṉa [ROOT.Char.Custom('CharacterSpouseHouseCheck')][Localize(Concatenate('SpouseSuf',ROOT.Char.Custom('CharacterGender')))]#!"
+Window_Tamil_Spouse_HighBorn: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')]Śrī-[ROOT.Char.Custom('CharacterPatCheckBefore')]Śrī-[ROOT.Char.Custom('CharacterNameCheck')] āṉa Śrī-[ROOT.Char.Custom('TamilRegnal')]#!" 
+
+#lock the Sri with CusLoc for house and pat Sri(s), Finish Sgui/script for pulling house
 
 Window_Tamil_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue [ROOT.Char.Custom('CharacterPatCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!"
 Window_Tamil_Priest_TT: "#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue [ROOT.Char.Custom('CharacterPatCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!"
 Window_Tamil_Low_Noble_TT: "[Localize(Concatenate('TamilLowNoblePre',ROOT.Char.Custom('CharacterGender')))]#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue [ROOT.Char.Custom('CharacterPatCheckBefore')]#!#![ROOT.Char.Custom('CharacterNameCheck')] āṉa #TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheck')]#!#!"
-Window_Tamil_Duke_Dep_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#! āṉa [GetScriptedGui('grab_overlord_house').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]#!"
+Window_Tamil_Duke_Dep_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#! āṉa [GetScriptedGui('grab_overlord_house').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]-[CHARACTER.Custom('CharacterHouseCheck')]#!"
 Window_Tamil_Duke_Indep_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,surname #color_red [CHARACTER.Custom('CharacterHouseCheckAfter')]#!#![Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]#!"
 Window_Tamil_Prince_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!Śrī-#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#![Localize(Concatenate('PrinceSuf',ROOT.Char.Custom('CharacterGender')))]#!"
 Window_Tamil_King_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheck')]#!#!-#TOOLTIP:GAME_CONCEPT,regnal_name #color_blue_gray [ROOT.Char.Custom('TamilRegnal')]#!#! āṉa Uḍaiyār Śrī-#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,surname #color_red [CHARACTER.Custom('CharacterHouseCheckAfter')]#!#![Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]#!"
 Window_Tamil_Emperor_TT: "#TOOLTIP:GAME_CONCEPT,regnal_name #color_blue_gray Kō-[ROOT.Char.Custom('TamilRegnal')]#!#! āṉa #TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!Śrī-#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,surname #color_red [CHARACTER.Custom('CharacterHouseCheckAfter')]#!#![Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]#!"
+Window_Tamil_Spouse_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue [ROOT.Char.Custom('CharacterPatCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#! āṉa #TOOLTIP:GAME_CONCEPT,surname #color_red [ROOT.Char.Custom('CharacterSpouseHouseCheck')][Localize(Concatenate('SpouseSuf',ROOT.Char.Custom('CharacterGender')))]#!#!"
+Window_Tamil_Spouse_HighBorn: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue Śrī-[ROOT.Char.Custom('CharacterPatCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high Śrī-[ROOT.Char.Custom('CharacterNameCheck')]#!#! āṉa #TOOLTIP:GAME_CONCEPT,regnal_name #color_blue_gray Śrī-[ROOT.Char.Custom('TamilRegnal')]#!#!" 
 
 First_Name_Tamil: "[ROOT.Char.Custom('CharacterNameCheck')]"
 First_Name_Tamil_Highborn: "[ROOT.Char.Custom('TamilRegnalOrName')]"
 
+Titled_First_Name_Tamil: "[ROOT.Char.Custom('CharacterNameCheck')]"
+First_Name_Tamil_Highborn: "[ROOT.Char.Custom('TamilRegnalOrName')]"
+
+First_Name_Tamil: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
+First_Name_Tamil_Priest: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+First_Name_Tamil_Prince: "[ROOT.Char.Custom('CharacterTierCheckBefore')]Śrī-[ROOT.Char.Custom('CharacterNameCheck')]"
+First_Name_Tamil_King: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('TamilRegnalOrName')]" #Simple
+First_Name_Tamil_Emperor: "[ROOT.Char.Custom('TamilRegnal')] āṉa [ROOT.Char.Custom('CharacterTierCheck')]" #Simple
+
+Full_Name_Tamil: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
+Full_Name_Tamil_Priest: "[ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+Full_Name_Tamil_Low_Noble: "[Localize(Concatenate('TamilLowNoblePre',ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] āṉa [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheck')]"
+Full_Name_Tamil_Duke_Dep: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] āṉa [GetScriptedGui('grab_overlord_house').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]-[CHARACTER.Custom('CharacterHouseCheck')]"
+Full_Name_Tamil_Duke_Indep: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][CHARACTER.Custom('CharacterHouseCheckAfter')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]"
+Full_Name_Tamil_Prince: "[ROOT.Char.Custom('CharacterTierCheckBefore')]Śrī-[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('PrinceSuf',ROOT.Char.Custom('CharacterGender')))]"
+Full_Name_Tamil_King: "[ROOT.Char.Custom('CharacterTierCheck')]-[ROOT.Char.Custom('TamilRegnal')] āṉa Uḍaiyār Śrī-[ROOT.Char.Custom('CharacterNameCheck')][CHARACTER.Custom('CharacterHouseCheckAfter')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]"
+Full_Name_Tamil_Emperor: "Kō-[ROOT.Char.Custom('TamilRegnal')] āṉa [ROOT.Char.Custom('CharacterTierCheckBefore')]Śrī-[ROOT.Char.Custom('CharacterNameCheck')][CHARACTER.Custom('CharacterHouseCheckAfter')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]"
+
+Name_Tamil: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
+Name_Tamil_Priest: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+Name_Tamil_Low_Noble: "[ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
+Name_Tamil_Duke_Dep: "[GetScriptedGui('grab_overlord_house').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)]-[CHARACTER.Custom('CharacterHouseCheck')]"
+Name_Tamil_HighBorn: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]"
+Name_Tamil_Spouse: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterSpouseHouseCheck')][Localize(Concatenate('SpouseSuf',ROOT.Char.Custom('CharacterGender')))]"
+Name_Tamil_Spouse_HighBorn: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('SpouseSuf',ROOT.Char.Custom('CharacterGender')))]"
+
+Short_Name_Tamil: "[ROOT.Char.Custom('CharacterNameCheck')]" #Theorectically Priest would have spirtual names anyways
+Short_Name_Low_Noble: "[ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheck')]"
+Short_Name_Duke_Dep: "[CHARACTER.Custom('CharacterHouseCheck')]"
+Short_Name_HighBorn: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('DevaSuf',ROOT.Char.Custom('CharacterGender')))]"
+Short_Name_King: "[ROOT.Char.Custom('CharacterTierCheck')]-[ROOT.Char.Custom('TamilRegnal')]"
+Short_Name_Emperor: "Kō-[ROOT.Char.Custom('TamilRegnal')]"
+Short_Name_Spouse: "[ROOT.Char.Custom('CharacterSpouseHouseCheck')][Localize(Concatenate('SpouseSuf',ROOT.Char.Custom('CharacterGender')))]"
+Short_Name_Spouse_HighBorn: "[ROOT.Char.Custom('TamilRegnalOrName')]" #fallback that shit
+
 Supported_Name_Tamil: "Śrī-[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
 
-TamilLowNoblePre_male: "Araiyaṉ "
+TamilLowNoblePre_male: "Araiyaṉ " #Will want language
 TamilLowNoblePre_female: "Arāsi "
 DevaSuf_male: "dēvar"
 DevaSuf_female: "dēviyār"
 PrinceSuf_male: "dēvar"
 PrinceSuf_female: "-piṟattiyār"
+SpouseSuf_male: "-mādēvar"
+SpouseSuf_female: "-mādēviyār"
 
 grab_ol_house_house: "[TARGET_CHARACTER.Custom('TamilRegnal')]-[TARGET_CHARACTER.Custom('CharacterHouseCheck')]-[CHARACTER.Custom('CharacterHouseCheck')]"
 grab_ol_house: "[TARGET_CHARACTER.Custom('TamilRegnal')]-[CHARACTER.Custom('CharacterHouseCheck')]"
