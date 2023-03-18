@@ -1,0 +1,97 @@
+DevaRemovalSuf = { #for IA and Drav
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			exists = dynasty
+			dynasty = {
+				any_in_list = {
+					variable = deva_removal
+					this = root
+				}
+			}
+		}
+        localization_key = Blank
+	}
+	text = {
+		fallback = yes
+		localization_key = DevaSuf
+	}
+}
+DevaRemovalPrince = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			is_male = yes
+			exists = dynasty
+			dynasty = {
+				any_in_list = {
+					variable = deva_removal
+					this = root
+				}
+			}
+		}
+        localization_key = Blank
+	}
+	text = {
+		fallback = yes
+		localization_key = PrinceSuf
+	}
+}
+ShriPatCheck = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			exists = father
+		}
+        localization_key = Shri
+	}
+	text = {
+		fallback = yes
+		localization_key = Blank
+	}
+}
+CharacterIndiaCulture = { #for deva
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_tamil
+			}
+		}
+        localization_key = _tamil
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_kannada
+			}
+		}
+        localization_key = _kannada
+	}
+	text = {
+		trigger = {
+			culture = {
+				OR = {
+					indoaryan_check = yes
+					AND = {
+						has_cultural_pillar = language_telugu
+						has_name_list = name_list_gond
+					}
+				}
+			}
+		}
+        localization_key = _kannada
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_telugu
+			}
+		}
+        localization_key = _telugu
+	}
+}
