@@ -14,8 +14,13 @@ indo_aryan_male_name_effect = {
 	}
 	if = {
 		limit = {
-			is_landed = yes
-			has_government = theocracy_government
+			any_parent = {
+				OR = {
+					has_trait = devoted
+					has_council_position = councillor_court_chaplain
+					has_government = theocracy_government
+				}
+			}
 		}
 		sharma_male_name_effect = yes
 	}
@@ -2645,6 +2650,758 @@ sena_male_name_effect = {
         }
     }
 }
+hinduism_male_name_effect = {
+    random_list = {
+		0 = {
+			modifier = {
+				OR = {
+					has_faith = faith:shaivism
+					has_faith = faith:srikula_shaktism
+                    has_faith = faith:kalikula_shaktism
+					has_faith = faith:vaishnavism
+					has_faith = faith:krishnaism
+				}
+				add = 40
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:shaivism
+						add = 11
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Mahadeva
+                        }
+                        1 = {
+                            change_first_name = Rudradeva
+                        }
+                        1 = {
+                            change_first_name = Shivadeva
+                        }
+                        1 = {
+                            change_first_name = Ganapati
+                        }
+                        1 = {
+                            change_first_name = Ishvara
+                        }
+                        1 = {
+                            change_first_name = Kumara
+                        }
+                        1 = {
+                            change_first_name = Nandi
+                        }
+                        1 = {
+                            change_first_name = Rameshvara
+                        }
+                        1 = {
+                            change_first_name = Rudra
+                        }
+                        1 = {
+                            change_first_name = Sadashiva
+                        }
+                        1 = {
+                            change_first_name = Someshvara
+                        }
+                    }
+				}
+				0 = {
+					modifier = {
+						OR = {
+                            has_faith = faith:srikula_shaktism
+                            has_faith = faith:kalikula_shaktism
+                        }
+						add = 4
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Shripala
+                        }
+                        1 = {
+                            change_first_name = Prithviraja
+                        }
+                        1 = {
+                            change_first_name = Shriraja
+                        }
+                        1 = {
+                            change_first_name = Shriharsha
+                        }
+                    }
+				}
+				0 = {
+					modifier = {
+						OR = {
+                            has_faith = faith:vaishnavism
+                            has_faith = faith:krishnaism
+                        }
+						add = 15
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Anantadeva
+                        }
+                        1 = {
+                            change_first_name = Krishnadeva
+                        }
+                        1 = {
+                            change_first_name = Vasudeva
+                        }
+                        1 = {
+                            change_first_name = Gopala
+                        }
+                        1 = {
+                            change_first_name = Govindaraja
+                        }
+                        1 = {
+                            change_first_name = Narasimha
+                        }
+                        1 = {
+                            change_first_name = Harivarma
+                        }
+                        1 = {
+                            change_first_name = Gadadhara
+                        }
+                        1 = {
+                            change_first_name = Govinda
+                        }
+                        1 = {
+                            change_first_name = Madhusudana
+                        }
+                        1 = {
+                            change_first_name = Mahidhara
+                        }
+                        1 = {
+                            change_first_name = Narayana
+                        }
+                        1 = {
+                            change_first_name = Shridhara
+                        }
+                        1 = {
+                            change_first_name = Shripati
+                        }
+                        1 = {
+                            change_first_name = Vamana
+                        }
+                    }
+				}
+			}
+		}
+        30 = {
+            random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:shaivism
+						add = 26
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Shivaditya
+                        }
+                        1 = {
+                            change_first_name = Shivadatta
+                        }
+                        1 = {
+                            change_first_name = Ishanadeva
+                        }
+                        1 = {
+                            change_first_name = Shankaradeva
+                        }
+                        1 = {
+                            change_first_name = Skandagupta
+                        }
+                        1 = {
+                            change_first_name = Harapala
+                        }
+                        1 = {
+                            change_first_name = Rudrapala
+                        }
+                        1 = {
+                            change_first_name = Kumarasena
+                        }
+                        1 = {
+                            change_first_name = Mahasena
+                        }
+                        1 = {
+                            change_first_name = Rudrasena
+                        }
+                        1 = {
+                            change_first_name = Devasimha
+                        }
+                        1 = {
+                            change_first_name = Ishvaravarma
+                        }
+                        1 = {
+                            change_first_name = Shankaravarma
+                        }
+                        1 = {
+                            change_first_name = Sharvavarma
+                        }
+                        1 = {
+                            change_first_name = Skandavarma
+                        }
+                        1 = {
+                            change_first_name = Bhairava
+                        }
+                        1 = {
+                            change_first_name = Candeshvara
+                        }
+                        1 = {
+                            change_first_name = Lakulisha
+                        }
+                        1 = {
+                            change_first_name = Mallikarjuna
+                        }
+                        1 = {
+                            change_first_name = Nilakantha
+                        }
+                        1 = {
+                            change_first_name = Shaktikumara
+                        }
+                        1 = {
+                            change_first_name = Sharvata
+                        }
+                        1 = {
+                            change_first_name = Shivadasa
+                        }
+                        1 = {
+                            change_first_name = Shivanatha
+                        }
+                        1 = {
+                            change_first_name = Shivaprasada
+                        }
+                        1 = {
+                            change_first_name = Shulapani
+                        }
+                    }
+				}
+				0 = {
+					modifier = {
+						OR = {
+                            has_faith = faith:srikula_shaktism
+                            has_faith = faith:kalikula_shaktism
+                        }
+						add = 6
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Lalitaditya
+                        }
+                        1 = {
+                            change_first_name = Prithvideva
+                        }
+                        1 = {
+                            change_first_name = Prithvipala
+                        }
+                        1 = {
+                            change_first_name = Shrivardhana
+                        }
+                        1 = {
+                            change_first_name = Lakshmivarma
+                        }
+                        1 = {
+                            change_first_name = Lakshmidasa
+                        }
+                    }
+				}
+				0 = {
+					modifier = {
+						OR = {
+                            has_faith = faith:vaishnavism
+                            has_faith = faith:krishnaism
+                        }
+						add = 31
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Gopalacandra
+                        }
+                        1 = {
+                            change_first_name = Govindacandra
+                        }
+                        1 = {
+                            change_first_name = Govindadatta
+                        }
+                        1 = {
+                            change_first_name = Haridatta
+                        }
+                        1 = {
+                            change_first_name = Krishnadatta
+                        }
+                        1 = {
+                            change_first_name = Vishnudatta
+                        }
+                        1 = {
+                            change_first_name = Damodaragupta
+                        }
+                        1 = {
+                            change_first_name = Narayanagupta
+                        }
+                        1 = {
+                            change_first_name = Vishnugupta
+                        }
+                        1 = {
+                            change_first_name = Vamanapala
+                        }
+                        1 = {
+                            change_first_name = Madhavaraja
+                        }
+                        1 = {
+                            change_first_name = Varaharaja
+                        }
+                        1 = {
+                            change_first_name = Harishena
+                        }
+                        1 = {
+                            change_first_name = Narayanasimha
+                        }
+                        1 = {
+                            change_first_name = Govardhana
+                        }
+                        1 = {
+                            change_first_name = Vishnuvardhana
+                        }
+                        1 = {
+                            change_first_name = Gopalavarma
+                        }
+                        1 = {
+                            change_first_name = Naravarma
+                        }
+                        1 = {
+                            change_first_name = Narayanavarma
+                        }
+                        1 = {
+                            change_first_name = Cakrapani
+                        }
+                        1 = {
+                            change_first_name = Haladhara
+                        }
+                        1 = {
+                            change_first_name = Halayudha
+                        }
+                        1 = {
+                            change_first_name = Hari
+                        }
+                        1 = {
+                            change_first_name = Hariprasada
+                        }
+                        1 = {
+                            change_first_name = Janardana
+                        }
+                        1 = {
+                            change_first_name = Padmanabha
+                        }
+                        1 = {
+                            change_first_name = Subhadra
+                        }
+                        1 = {
+                            change_first_name = Upendra
+                        }
+                        1 = {
+                            change_first_name = Viranarayana
+                        }
+                        1 = {
+                            change_first_name = Vithoba
+                        }
+                        1 = {
+                            change_first_name = Vitthala
+                        }
+                    }
+				}
+                0 = {
+                    modifier = {
+                        NOT = {
+                            has_faith = faith:shaivism
+                            has_religion = religion:buddhism_religion
+                            has_religion = religion:jainism_religion
+                        }
+                        add = 3
+                    }
+                    random_list = {
+                        1 = {
+                            change_first_name = Govindasharma
+                        }
+                        1 = {
+                            change_first_name = Harisharma
+                        }
+                        1 = {
+                            change_first_name = Vishnusharma
+                        }
+                    }
+                }
+                0 = {
+                    modifier = {
+                        NOT = {
+                            has_faith = faith:vaishnavism
+                            has_faith = faith:krishnaism
+                            has_religion = religion:buddhism_religion
+                            has_religion = religion:jainism_religion
+                        }
+                        add = 1
+                    }
+                    change_first_name = Rudrasharma
+                }
+                0 = {
+                    modifier = {
+                        NOT = {
+                            has_faith = faith:vaishnavism
+                            has_faith = faith:krishnaism
+                            AND = {
+                                has_religion = religion:buddhism_religion
+                                NOT = {
+                                    has_faith = faith:vajrayana
+                                }
+                            }
+                        }
+                        add = 1
+                    }
+                    change_first_name = Shivasharma
+                }
+                1 = {
+                    change_first_name = Adityasharma
+                }
+                1 = {
+                    change_first_name = Candrasharma
+                }
+                1 = {
+                    change_first_name = Devasharma
+                }
+                1 = {
+                    change_first_name = Somasharma
+                }
+            }
+        }
+        20 = {
+            random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:shaivism
+						add = 30
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Rudraditya
+                        }
+                        1 = {
+                            change_first_name = Ugraditya
+                        }
+                        1 = {
+                            change_first_name = Ishanacandra
+                        }
+                        1 = {
+                            change_first_name = Ishvaracandra
+                        }
+                        1 = {
+                            change_first_name = Kumaracandra
+                        }
+                        1 = {
+                            change_first_name = Haradatta
+                        }
+                        1 = {
+                            change_first_name = Kumaradatta
+                        }
+                        1 = {
+                            change_first_name = Rudradatta
+                        }
+                        1 = {
+                            change_first_name = Haragupta
+                        }
+                        1 = {
+                            change_first_name = Kumaragupta
+                        }
+                        1 = {
+                            change_first_name = Mahasenagupta
+                        }
+                        1 = {
+                            change_first_name = Nandigupta
+                        }
+                        1 = {
+                            change_first_name = Shivagupta
+                        }
+                        1 = {
+                            change_first_name = Kumarasimha
+                        }
+                        1 = {
+                            change_first_name = Shankaravardhana
+                        }
+                        1 = {
+                            change_first_name = Ganeshavarma
+                        }
+                        1 = {
+                            change_first_name = Ishanavarma
+                        }
+                        1 = {
+                            change_first_name = Ishanashiva
+                        }
+                        1 = {
+                            change_first_name = Ishvaragosha
+                        }
+                        1 = {
+                            change_first_name = Ishvarashiva
+                        }
+                        1 = {
+                            change_first_name = Rudrashakti
+                        }
+                        1 = {
+                            change_first_name = Rudrashiva
+                        }
+                        1 = {
+                            change_first_name = Shaktishiva
+                        }
+                        1 = {
+                            change_first_name = Shankaragana
+                        }
+                        1 = {
+                            change_first_name = Shivanaga
+                        }
+                        1 = {
+                            change_first_name = Shivashakti
+                        }
+                        1 = {
+                            change_first_name = Skandabhata
+                        }
+                        1 = {
+                            change_first_name = Unmattavanti
+                        }
+                        1 = {
+                            change_first_name = Varmashiva
+                        }
+                        1 = {
+                            change_first_name = Vimalashiva
+                        }
+                    }
+				}
+				0 = {
+					modifier = {
+						OR = {
+                            has_faith = faith:srikula_shaktism
+                            has_faith = faith:kalikula_shaktism
+                        }
+						add = 12
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Lalitacandra
+                        }
+                        1 = {
+                            change_first_name = Prithvicandra
+                        }
+                        1 = {
+                            change_first_name = Devidatta
+                        }
+                        1 = {
+                            change_first_name = Durgadatta
+                        }
+                        1 = {
+                            change_first_name = Lakshmidatta
+                        }
+                        1 = {
+                            change_first_name = Lalitagupta
+                        }
+                        1 = {
+                            change_first_name = Prithvimalla
+                        }
+                        1 = {
+                            change_first_name = Prithvisena
+                        }
+                        1 = {
+                            change_first_name = Lalitavarma
+                        }
+                        1 = {
+                            change_first_name = Prithvivarma
+                        }
+                        1 = {
+                            change_first_name = Lakshmikarna
+                        }
+                        1 = {
+                            change_first_name = Prithviyapida
+                        }
+                    }
+				}
+				0 = {
+					modifier = {
+						OR = {
+                            has_faith = faith:vaishnavism
+                            has_faith = faith:krishnaism
+                        }
+						add = 18
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Krishnaditya
+                        }
+                        1 = {
+                            change_first_name = Govindagupta
+                        }
+                        1 = {
+                            change_first_name = Harigupta
+                        }
+                        1 = {
+                            change_first_name = Krishnagupta
+                        }
+                        1 = {
+                            change_first_name = Madhavagupta
+                        }
+                        1 = {
+                            change_first_name = Narasimhagupta
+                        }
+                        1 = {
+                            change_first_name = Upendragupta
+                        }
+                        1 = {
+                            change_first_name = Damodarapala
+                        }
+                        1 = {
+                            change_first_name = Narayanapala
+                        }
+                        1 = {
+                            change_first_name = Damodarasena
+                        }
+                        1 = {
+                            change_first_name = Keshavasena
+                        }
+                        1 = {
+                            change_first_name = Vishvarupasena
+                        }
+                        1 = {
+                            change_first_name = Krishnasimha
+                        }
+                        1 = {
+                            change_first_name = Harivardhana
+                        }
+                        1 = {
+                            change_first_name = Madhavavarma
+                        }
+                        1 = {
+                            change_first_name = Narasimharjuna
+                        }
+                        1 = {
+                            change_first_name = Panduranga
+                        }
+                        1 = {
+                            change_first_name = Shridharadasa
+                        }
+                    }
+				}
+                1 = {
+                    change_first_name = Balasarm
+                }
+                1 = {
+                    change_first_name = Bhavasharma
+                }
+                1 = {
+                    change_first_name = Dharmasharma
+                }
+                1 = {
+                    change_first_name = Indrasharma
+                }
+                1 = {
+                    change_first_name = Jayasharma
+                }
+                1 = {
+                    change_first_name = Nagasharma
+                }
+                1 = {
+                    change_first_name = Ishvarasharma
+                }
+            }
+        }
+		0 = {
+			modifier = {
+				OR = {
+					has_faith = faith:shaivism
+					has_faith = faith:srikula_shaktism
+                    has_faith = faith:kalikula_shaktism
+					has_faith = faith:vaishnavism
+					has_faith = faith:krishnaism
+				}
+				add = 10
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:shaivism
+						add = 10
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Ciratadatta
+                        }
+                        1 = {
+                            change_first_name = Shavaradatta
+                        }
+                        1 = {
+                            change_first_name = Trilocanapala
+                        }
+                        1 = {
+                            change_first_name = Keshavarudra
+                        }
+                        1 = {
+                            change_first_name = Kirtishiva
+                        }
+                        1 = {
+                            change_first_name = Murtigana
+                        }
+                        1 = {
+                            change_first_name = Rudrarashi
+                        }
+                        1 = {
+                            change_first_name = Rudrashikhara
+                        }
+                        1 = {
+                            change_first_name = Shivanandi
+                        }
+                        1 = {
+                            change_first_name = Shivasvami
+                        }
+                    }
+				}
+				0 = {
+					modifier = {
+						OR = {
+                            has_faith = faith:srikula_shaktism
+                            has_faith = faith:kalikula_shaktism
+                        }
+						add = 4
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Lalitabhara
+                        }
+                        1 = {
+                            change_first_name = Lalitahara
+                        }
+                        1 = {
+                            change_first_name = Prithvimula
+                        }
+                        1 = {
+                            change_first_name = Prithvivigraha
+                        }
+                    }
+				}
+				0 = {
+					modifier = {
+						OR = {
+                            has_faith = faith:vaishnavism
+                            has_faith = faith:krishnaism
+                        }
+						add = 3
+					}
+                    random_list = {
+                        1 = {
+                            change_first_name = Hiradatta
+                        }
+                        1 = {
+                            change_first_name = Dayitavishnu
+                        }
+                        1 = {
+                            change_first_name = Harikala
+                        }
+                    }
+				}
+			}
+		}
+    }
+}
 sharma_male_name_effect = {
     random_list = {
         30 = {
@@ -3453,10 +4210,10 @@ regnal_male_indo_aryan_name_effect = {
 						add = 6
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Gangadhara
 						}
-						1= {
+						1 = {
 							change_first_name = Maheshvara
 						}
 						1 = {
@@ -3483,13 +4240,13 @@ regnal_male_indo_aryan_name_effect = {
 						add = 3
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Gadadhara
 						}
-						1= {
+						1 = {
 							change_first_name = Madhusudana
 						}
-						1= {
+						1 = {
 							change_first_name = Vamana
 						}
 					}
@@ -3591,19 +4348,19 @@ regnal_male_indo_aryan_name_effect = {
 						add = 24
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Jinabhadra
 						}
-						1= {
+						1 = {
 							change_first_name = Vardhamana
 						}
-						1= {
+						1 = {
 							change_first_name = Candrakirti
 						}
-						1= {
+						1 = {
 							change_first_name = Haribhadra
 						}
-						1= {
+						1 = {
 							change_first_name = Jayashekhara
 						}
 						1 = {
@@ -3674,82 +4431,82 @@ regnal_male_indo_aryan_name_effect = {
 					}
 					change_first_name = Jagannatha
 				}
-				1= {
+				1 = {
 					change_first_name = Arjuna
 				}
-				1= {
+				1 = {
 					change_first_name = Ashoka
 				}
-				1= {
+				1 = {
 					change_first_name = Balabhadra
 				}
-				1= {
+				1 = {
 					change_first_name = Bhoja
 				}
-				1= {
+				1 = {
 					change_first_name = Candraprabha
 				}
-				1= {
+				1 = {
 					change_first_name = Dasharatha
 				}
-				1= {
+				1 = {
 					change_first_name = Devendra
 				}
-				1= {
+				1 = {
 					change_first_name = Dharanidhara
 				}
-				1= {
+				1 = {
 					change_first_name = Ganapati
 				}
-				1= {
+				1 = {
 					change_first_name = Govinda
 				}
-				1= {
+				1 = {
 					change_first_name = Harsha
 				}
-				1= {
+				1 = {
 					change_first_name = Ishvara
 				}
-				1= {
+				1 = {
 					change_first_name = Kumara
 				}
-				1= {
+				1 = {
 					change_first_name = Lakshmana
 				}
-				1= {
+				1 = {
 					change_first_name = Mahendra
 				}
-				1= {
+				1 = {
 					change_first_name = Mahidhara
 				}
-				1= {
+				1 = {
 					change_first_name = Narendra
 				}
-				1= {
+				1 = {
 					change_first_name = Raghava
 				}
-				1= {
+				1 = {
 					change_first_name = Raghunatha
 				}
-				1= {
+				1 = {
 					change_first_name = Rajendra
 				}
-				1= {
+				1 = {
 					change_first_name = Ramabhadra
 				}
-				1= {
+				1 = {
 					change_first_name = Shridhara
 				}
-				1= {
+				1 = {
 					change_first_name = Shriharsha
 				}
-				1= {
+				1 = {
 					change_first_name = Shripati
 				}
-				1= {
+				1 = {
 					change_first_name = Vidyadhara
 				}
-				1= {
+				1 = {
 					change_first_name = Yashodhara
 				}
 				1 = {
@@ -4006,22 +4763,22 @@ regnal_male_indo_aryan_name_effect = {
 						add = 6
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Cakrapani
 						}
-						1= {
+						1 = {
 							change_first_name = Halayudha
 						}
-						1= {
+						1 = {
 							change_first_name = Hariprasada
 						}
-						1= {
+						1 = {
 							change_first_name = Janardana
 						}
-						1= {
+						1 = {
 							change_first_name = Padmanabha
 						}
-						1= {
+						1 = {
 							change_first_name = Viranarayana
 						}
 					}
@@ -4039,10 +4796,10 @@ regnal_male_indo_aryan_name_effect = {
 						add = 2
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Vithoba
 						}
-						1= {
+						1 = {
 							change_first_name = Vitthala
 						}
 					}
@@ -4096,10 +4853,10 @@ regnal_male_indo_aryan_name_effect = {
 						add = 2
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Mallikarjuna
 						}
-						1= {
+						1 = {
 							change_first_name = Shulapani
 						}
 					}
@@ -4119,16 +4876,16 @@ regnal_male_indo_aryan_name_effect = {
 						add = 4
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Bhairava
 						}
-						1= {
+						1 = {
 							change_first_name = Shivadasa
 						}
-						1= {
+						1 = {
 							change_first_name = Shivanatha
 						}
-						1= {
+						1 = {
 							change_first_name = Shivaprasada
 						}
 					}
@@ -4153,10 +4910,10 @@ regnal_male_indo_aryan_name_effect = {
 						add = 2
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Shantikara
 						}
-						1= {
+						1 = {
 							change_first_name = Shilabhadra
 						}
 					}
@@ -4167,16 +4924,16 @@ regnal_male_indo_aryan_name_effect = {
 						add = 6
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Jinaprabha
 						}
-						1= {
+						1 = {
 							change_first_name = Jinaratna
 						}
-						1= {
+						1 = {
 							change_first_name = Jineshvara
 						}
-						1= {
+						1 = {
 							change_first_name = Amaraprabha
 						}
 						1 = {
@@ -4193,16 +4950,16 @@ regnal_male_indo_aryan_name_effect = {
 						add = 4
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Bodhidharma
 						}
-						1= {
+						1 = {
 							change_first_name = Mahanama
 						}
-						1= {
+						1 = {
 							change_first_name = Dharmarakshita
 						}
-						1= {
+						1 = {
 							change_first_name = Sanghamitra
 						}
 					}
@@ -4253,10 +5010,10 @@ regnal_male_indo_aryan_name_effect = {
 						add = 2
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Nilakantha
 						}
-						1= {
+						1 = {
 							change_first_name = Shaktikumara
 						}
 					}
@@ -4289,25 +5046,25 @@ regnal_male_indo_aryan_name_effect = {
 						add = 7
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Ambaprasada
 						}
-						1= {
+						1 = {
 							change_first_name = Amraprasada
 						}
-						1= {
+						1 = {
 							change_first_name = Bhartripatta
 						}
-						1= {
+						1 = {
 							change_first_name = Dhrubhata
 						}
-						1= {
+						1 = {
 							change_first_name = Lavanaprasada
 						}
-						1= {
+						1 = {
 							change_first_name = Nagabhata
 						}
-						1= {
+						1 = {
 							change_first_name = Vagbhata
 						}
 					}
@@ -4323,16 +5080,16 @@ regnal_male_indo_aryan_name_effect = {
 						add = 4
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Jayapida
 						}
-						1= {
+						1 = {
 							change_first_name = Sahila
 						}
-						1= {
+						1 = {
 							change_first_name = Uccala
 						}
-						1= {
+						1 = {
 							change_first_name = Utkarsha
 						}
 					}
@@ -4345,16 +5102,16 @@ regnal_male_indo_aryan_name_effect = {
 						add = 6
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Ayashobhita
 						}
-						1= {
+						1 = {
 							change_first_name = Jayastambha
 						}
-						1= {
+						1 = {
 							change_first_name = Kamarnava
 						}
-						1= {
+						1 = {
 							change_first_name = Ranastambha
 						}
 						1 = {
@@ -4373,13 +5130,13 @@ regnal_male_indo_aryan_name_effect = {
 						add = 12
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Candrakirti
 						}
-						1= {
+						1 = {
 							change_first_name = Haribhadra
 						}
-						1= {
+						1 = {
 							change_first_name = Jayashekhara
 						}
 						1 = {
@@ -4430,10 +5187,10 @@ regnal_male_indo_aryan_name_effect = {
 						add = 5
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Gangadhara
 						}
-						1= {
+						1 = {
 							change_first_name = Maheshvara
 						}
 						1 = {
@@ -4456,13 +5213,13 @@ regnal_male_indo_aryan_name_effect = {
 						add = 7
 					}
 					random_list = {
-						1= {
+						1 = {
 							change_first_name = Keshava
 						}
-						1= {
+						1 = {
 							change_first_name = Lakshmidhara
 						}
-						1= {
+						1 = {
 							change_first_name = Madhava
 						}
 						1 = {
@@ -4494,175 +5251,175 @@ regnal_male_indo_aryan_name_effect = {
 					}
 					change_first_name = Vyaghramukha
 				}
-				1= {
+				1 = {
 					change_first_name = Abhimanyu
 				}
-				1= {
+				1 = {
 					change_first_name = Aniruddha
 				}
-				1= {
+				1 = {
 					change_first_name = Aparajita
 				}
-				1= {
+				1 = {
 					change_first_name = Brihaspati
 				}
-				1= {
+				1 = {
 					change_first_name = Devaprasada
 				}
-				1= {
+				1 = {
 					change_first_name = Dharanivaraha
 				}
-				1= {
+				1 = {
 					change_first_name = Dharmadasa
 				}
-				1= {
+				1 = {
 					change_first_name = Dharmakirti
 				}
-				1= {
+				1 = {
 					change_first_name = Dharmaruci
 				}
-				1= {
+				1 = {
 					change_first_name = Gajapati
 				}
-				1= {
+				1 = {
 					change_first_name = Haladhara
 				}
-				1= {
+				1 = {
 					change_first_name = Indrajit
 				}
-				1= {
+				1 = {
 					change_first_name = Indraratha
 				}
-				1= {
+				1 = {
 					change_first_name = Jayadhara
 				}
-				1= {
+				1 = {
 					change_first_name = Jayakirti
 				}
-				1= {
+				1 = {
 					change_first_name = Jnaneshvara
 				}
-				1= {
+				1 = {
 					change_first_name = Lakshmidasa
 				}
-				1= {
+				1 = {
 					change_first_name = Lokanatha
 				}
-				1= {
+				1 = {
 					change_first_name = Maharatha
 				}
-				1= {
+				1 = {
 					change_first_name = Mahavira
 				}
-				1= {
+				1 = {
 					change_first_name = Manava
 				}
-				1= {
+				1 = {
 					change_first_name = Mandalika
 				}
-				1= {
+				1 = {
 					change_first_name = Manoratha
 				}
-				1= {
+				1 = {
 					change_first_name = Nagarjuna
 				}
-				1= {
+				1 = {
 					change_first_name = Naravahana
 				}
-				1= {
+				1 = {
 					change_first_name = Padmaprabha
 				}
-				1= {
+				1 = {
 					change_first_name = Parashurama
 				}
-				1= {
+				1 = {
 					change_first_name = Pradyumna
 				}
-				1= {
+				1 = {
 					change_first_name = Rajeshvara
 				}
-				1= {
+				1 = {
 					change_first_name = Ratnaprabha
 				}
-				1= {
+				1 = {
 					change_first_name = Ravindra
 				}
-				1= {
+				1 = {
 					change_first_name = Sahadeva
 				}
-				1= {
+				1 = {
 					change_first_name = Sanjaya
 				}
-				1= {
+				1 = {
 					change_first_name = Shalivahana
 				}
-				1= {
+				1 = {
 					change_first_name = Shashanka
 				}
-				1= {
+				1 = {
 					change_first_name = Shrutakirti
 				}
-				1= {
+				1 = {
 					change_first_name = Shubhakirti
 				}
-				1= {
+				1 = {
 					change_first_name = Shudraka
 				}
-				1= {
+				1 = {
 					change_first_name = Shurabala
 				}
-				1= {
+				1 = {
 					change_first_name = Shuravira
 				}
-				1= {
+				1 = {
 					change_first_name = Siddhartha
 				}
-				1= {
+				1 = {
 					change_first_name = Somaprabha
 				}
-				1= {
+				1 = {
 					change_first_name = Subhadra
 				}
-				1= {
+				1 = {
 					change_first_name = Subhata
 				}
-				1= {
+				1 = {
 					change_first_name = Sulakshana
 				}
-				1= {
+				1 = {
 					change_first_name = Sureshvara
 				}
-				1= {
+				1 = {
 					change_first_name = Uddharana
 				}
-				1= {
+				1 = {
 					change_first_name = Vajrahasta
 				}
-				1= {
+				1 = {
 					change_first_name = Vajrayudha
 				}
-				1= {
+				1 = {
 					change_first_name = Vakpati
 				}
-				1= {
+				1 = {
 					change_first_name = Vindhyashakti
 				}
-				1= {
+				1 = {
 					change_first_name = Viranatha
 				}
-				1= {
+				1 = {
 					change_first_name = Virayasha
 				}
-				1= {
+				1 = {
 					change_first_name = Yashobhata
 				}
-				1= {
+				1 = {
 					change_first_name = Yayati
 				}
-				1= {
+				1 = {
 					change_first_name = Yogeshvara
 				}
-				1= {
+				1 = {
 					change_first_name = Yudhishthira
 				}
 				1 = {

@@ -35,6 +35,21 @@
 				is_npe_supported_culture = yes
 			}
 			is_male = yes
+			has_religion = religion:hinduism_religion
+			OR = {
+				has_trait = devoted
+				has_council_position = councillor_court_chaplain
+				has_government = theocracy_government
+			}
+		}
+		hinduism_male_name_effect = yes
+	}
+	else_if = {
+		limit = {
+			culture = {
+				is_npe_supported_culture = yes
+			}
+			is_male = yes
 		}
 		random_list = {
 			0 = {
