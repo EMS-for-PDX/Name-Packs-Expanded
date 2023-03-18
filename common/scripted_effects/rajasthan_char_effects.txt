@@ -115,6 +115,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188068 }
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:188070 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188072 }
+		add_to_variable_list = { name = deva_removal target = character:188070 }
 	}
 	character:191672.house = {
 		set_variable = {
@@ -173,6 +174,26 @@
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:188331 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188332 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188333 }
+	}
+	character:191818.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbhind090
+		}
+	}
+	character:188208.dynasty = { #Nagil
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind090 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188208 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:188209 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188210 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188211 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188212 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188213 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188215 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188216 }
+	}
+	character:188208 ={
+        change_first_name = Satyaraja
 	}
 	character:188147 ={
         change_first_name = Gangh
@@ -379,6 +400,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188091 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:191800 }
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:paramara_branch_off_spouse }
+		add_to_variable_list = { name = deva_removal target = character:188089 }
 	}
 	character:191680.house = {
 		set_variable = {
@@ -440,15 +462,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:191818 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:191819 }
 	}
-	character:191818.house = {
-		set_variable = {
-			name = name_founder
-			value = character:npedbhind090
-		}
-	}
 	character:188208.dynasty = { #Nagil
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind090 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:188208 }
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:188209 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188210 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188211 }
@@ -459,9 +473,6 @@
 	}
 	character:191949 ={
         change_first_name = Cacca
-	}
-	character:188208 ={
-        change_first_name = Satyaraja
 	}
 	character:188210 ={
         change_first_name = Satyaraja
