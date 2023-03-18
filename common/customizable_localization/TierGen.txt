@@ -1763,6 +1763,21 @@ CharacterCulture = {
     log_loc_errors = no
 	text = {
 		trigger = {
+            has_religion = religion:islam_religion
+			culture = {
+				OR = {
+					indoaryan_check = yes
+					AND = {
+						has_cultural_pillar = language_telugu
+						has_name_list = name_list_gond
+					}
+				}
+			}
+		}
+		localization_key = _iamuslim
+	}
+	text = {
+		trigger = {
 			culture = {
 				OR = {
 					indoaryan_check = yes
