@@ -1,5 +1,5 @@
 ﻿l_english:
-Window_Indoaryan: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!" #tier for possible unlanded 'highborns'
+Window_Indoaryan: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!"
 Window_Indoaryan_Landed: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')]#!"
 Window_Indoaryan_HB: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]#!"
 Window_Indoaryan_King: "#high [Localize(Concatenate(Concatenate(ROOT.Char.Custom('KingPreIA'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]#!"
@@ -8,7 +8,7 @@ First_Name_Indoaryan: "[ROOT.Char.Custom('CharacterNameCheck')]"
 
 Titled_First_Name_Indoaryan: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
 
-Full_Name_Indoaryan: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]" #tier for possible unlanded 'highborns'
+Full_Name_Indoaryan: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
 Full_Name_Indoaryan_Landed: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')]"
 Full_Name_Indoaryan_HB: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
 Full_Name_Indoaryan_King: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('KingPreIA'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
@@ -16,9 +16,7 @@ Full_Name_Indoaryan_King: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('K
 Name_Indoaryan: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
 Name_Indoaryan_HB: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
 
-
-Short_Name_Indoaryan: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!" #for testing, delete
-#Short_Name_Indoaryan: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+Short_Name_Indoaryan: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
 
 #_hindumara is hindustani for now
 IndiaKing_male_hindumara: "Paraṽabhaṭāra "
@@ -66,7 +64,7 @@ PatSuffix_iamuslim_female: ""
 
 TekPrefix_iamuslim_male: "Abū "
 TekSuffix_iamuslim_male: ""
-TekPrefix_iamuslim_female: "Umm"
+TekPrefix_iamuslim_female: "Umm "
 TekSuffix_iamuslim_female: ""
 
 IndiaKing_male_benoriya: "Paraṽabhaṭāra "
