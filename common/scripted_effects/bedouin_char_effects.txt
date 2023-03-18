@@ -355,6 +355,31 @@
 	character:74044.dynasty = {
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:74044 }
 	}
+	character:218008 = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:218008 }
+	}
+	character:bedouin0085.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic033
+		}
+	}
+	character:bedouin0118 = { # Juhayna
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0118 }
+	}
+	character:34507 = {
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:34507 }
+	}
+	character:34507 = {
+		dynasty_effect_ne = yes
+	}
+	character:bedouin0118 = {
+		change_first_name = Muttalib #fictional
+	}
+	character:218008 = {
+		change_first_name = Abid #fictional
+		dynasty_effect_ne = yes
+	}
 	character:74044 = {
 		change_first_name = Nizar
 		dynasty_effect_ne = yes
