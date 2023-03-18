@@ -88,16 +88,63 @@ CharacterIndiaCulture = { #for deva
 	text = {
 		trigger = {
 			culture = {
+				has_cultural_pillar = language_rajasthani
+			}
+		}
+		localization_key = _gujaraj
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_kashmiri
+			}
+		}
+		localization_key = _kashmiri
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_vrachada
+                has_name_list = name_list_sindhi
+			}
+		}
+		localization_key = _sindhi
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_vrachada
+			}
+		}
+		localization_key = _punjab
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_magadhan
+                has_name_list = name_list_assamese
+			}
+		}
+		localization_key = _assamese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_magadhan
+			}
+		}
+		localization_key = _benoriya
+	}
+	text = {
+		trigger = {
+			culture = {
 				OR = {
-					indoaryan_check = yes
-					AND = {
-						has_cultural_pillar = language_telugu
-						has_name_list = name_list_gond
-					}
+					has_cultural_pillar = language_marathi
+					has_cultural_pillar = language_sauraseni
 				}
 			}
 		}
-        localization_key = _hindumara
+		localization_key = _hindumara
 	}
 	text = {
 		trigger = {
