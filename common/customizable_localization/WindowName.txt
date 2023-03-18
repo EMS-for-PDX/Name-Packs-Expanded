@@ -109,18 +109,6 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				indoaryan_check = yes
-			}
-			NOT = {
-				has_religion = religion:islam_religion
-			}
-		}
-		localization_key = Window_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
 			AND = {
@@ -200,6 +188,73 @@
 			}
 		}
 		localization_key = Window_Arabic
+	}
+	#Everything after here doesn't need an islam check
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				indoaryan_check = yes
+			}
+			OR = {
+				AND = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Window_Indoaryan_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				indoaryan_check = yes
+			}
+			OR = {
+				AND = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_county
+				}
+				any_spouse = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_county
+				}
+				any_parent = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Window_Indoaryan_HB
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				indoaryan_check = yes
+			}
+			OR = {
+				is_landed = yes
+				any_spouse = {
+					is_landed = yes
+				}
+			}
+		}
+		localization_key = Window_Indoaryan_Landed
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				indoaryan_check = yes
+			}
+		}
+		localization_key = Window_Indoaryan
 	}
 	text = {
 		trigger = {
