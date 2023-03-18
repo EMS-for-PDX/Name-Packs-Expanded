@@ -326,6 +326,16 @@
 	character:1228199.dynasty = {
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:1228199 }
     }
+    character:175060.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbpersian011
+		}
+	}
+	character:175060.dynasty = { #Shahi
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbpersian011 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:175060 }
+    }
     character:1228199 = {
         dynasty_effect_ne = yes
     }
@@ -767,6 +777,16 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93020 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93022 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93023 }
+    }
+    character:ghaznavid_vassal_3.house = { #Shaybanids of Punjab
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic013
+		}
+	}
+	character:ghaznavid_vassal_3.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic013 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:ghaznavid_vassal_3 }
     }
 	character:146098 = {
         change_first_name = Qabad

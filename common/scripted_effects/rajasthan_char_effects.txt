@@ -379,6 +379,19 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:191800 }
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:paramara_branch_off_spouse }
 	}
+	character:191680.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbhind047
+		}
+	}
+	character:191680.dynasty = { #Solankis of Lata
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind047 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:191681 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:chalukyas_of_lata_1 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:chalukyas_of_lata_2 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:chalukyas_of_lata_3 }
+	}
 	character:188167.house = {
 		set_variable = {
 			name = name_founder
@@ -395,7 +408,23 @@
 			value = character:npedbhind049
 		}
 	}
-	character:191771.dynasty = { #Dahiya
+	character:191948.dynasty = { #Dahiya
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind049 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:191948 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:191959 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:191949 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:191950 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:191951 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:191952 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:191953 }
+	}
+	character:191771.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbhind049
+		}
+	}
+	character:191771.dynasty = { #OTHER Dahiya
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind049 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:191771 }
 	}
@@ -409,6 +438,50 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind050 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:191818 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:191819 }
+	}
+	character:191818.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbhind090
+		}
+	}
+	character:188208.dynasty = { #Nagil
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind090 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188208 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:188209 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188210 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188211 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188212 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188213 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188215 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188216 }
+	}
+	character:191949 ={
+        change_first_name = Cacca
+	}
+	character:188208 ={
+        change_first_name = Satyaraja
+	}
+	character:188210 ={
+        change_first_name = Satyaraja
+	}
+	character:188211 ={
+        change_first_name = Simharaja
+	}
+	character:188212 ={
+        change_first_name = Sanghapala
+	}
+	character:188213 ={
+        change_first_name = Satyaraja
+	}
+	character:188216 ={
+        change_first_name = Satyaraja
+	}
+	character:191681 ={
+        change_first_name = Goggiraja
+	}
+	character:chalukyas_of_lata_3 ={
+        change_first_name = Trilocanapala
 	}
 	character:191725 ={
         change_first_name = Alhanadevi

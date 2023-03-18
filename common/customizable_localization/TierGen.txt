@@ -1764,6 +1764,17 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+				OR = {
+					indoaryan_check = yes
+					has_name_list = gond
+				}
+			}
+		}
+		localization_key = _indoaryan
+	}
+	text = {
+		trigger = {
+			culture = {
                 OR = {
                     this = culture:english
                     any_parent_culture_or_above = {
