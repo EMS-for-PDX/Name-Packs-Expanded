@@ -1,14 +1,45 @@
 ﻿l_english:
+Window_Indoaryan: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!" #for testing, delete
+#Window_Indoaryan: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!" #tier for possible unlanded 'highborns'
+Window_Indoaryan_Landed: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')]#!"
+Window_Indoaryan_HB: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]#!"
+Window_Indoaryan_King: "#high [Localize(Concatenate(Concatenate(ROOT.Char.Custom('KingPreIA'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]#!"
 
-Window_Indoaryan: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!"
-Short_Name_Indoaryan: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!"
+First_Name_Indoaryan: "[ROOT.Char.Custom('CharacterNameCheck')]"
 
-PatPrefix_Indoaryan_male: ""
-PatSuffix_Indoaryan_male: ""
-PatPrefix_Indoaryan_female: ""
-PatSuffix_Indoaryan_female: ""
+Titled_First_Name_Indoaryan: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
 
-TekPrefix_Indoaryan_male: ""
-TekSuffix_Indoaryan_male: ""
-TekPrefix_Indoaryan_female: ""
-TekSuffix_Indoaryan_female: ""
+Full_Name_Indoaryan: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]" #tier for possible unlanded 'highborns'
+Full_Name_Indoaryan_Landed: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')]"
+Full_Name_Indoaryan_HB: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
+Full_Name_Indoaryan_King: "[Localize(Concatenate(Concatenate(ROOT.Char.Custom('KingPreIA'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate('Shri',ROOT.Char.Custom('CharacterIndiaCulture')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
+
+Name_Indoaryan: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
+Name_Indoaryan_HB: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
+
+
+Short_Name_Indoaryan: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!" #for testing, delete
+#Short_Name_Indoaryan: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+
+#_indoaryan is hindustani for now
+IndiaKing_male_indoaryan: "Paraṽabhaṭāra "
+IndiaKing_female_indoaryan: "Paraṽabhaṭārī "
+IndiaKingSpouse_male_indoaryan: "Paṭamahādeva "
+IndiaKingSpouse_female_indoaryan: "Paṭamahādevī "
+DevaSuf_male_indoaryan: "deva"
+DevaSuf_female_indoaryan: "devī"
+PrinceSuf_male_indoaryan: "deva"
+PrinceSuf_female_indoaryan: "devī"
+SpouseSuf_male_indoaryan: "deva"
+SpouseSuf_female_indoaryan: "mahādevī"
+Shri_indoaryan: "Sirī-"
+
+PatPrefix_indoaryan_male: ""
+PatSuffix_indoaryan_male: ""
+PatPrefix_indoaryan_female: ""
+PatSuffix_indoaryan_female: ""
+
+TekPrefix_indoaryan_male: ""
+TekSuffix_indoaryan_male: ""
+TekPrefix_indoaryan_female: ""
+TekSuffix_indoaryan_female: ""

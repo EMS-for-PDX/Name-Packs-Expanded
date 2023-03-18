@@ -36,10 +36,10 @@ Name_Telugu_King: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate
 Name_Telugu_Emp: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
 Name_Telugu_HB_Spouse: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate('SpouseSuf',ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
 #Short Names should Have Tier Theorectically
-Short_Name_Telugu: "[ROOT.Char.Custom('CharacterNameCheck')]"
-Short_Name_Telugu_Highborn: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
-Short_Name_Telugu_Spouse: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
-Short_Name_Telugu_HB_Spouse: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate('SpouseSuf',ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
+Short_Name_Telugu: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+Short_Name_Telugu_Highborn: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]#!#!#!"
+Short_Name_Telugu_Spouse: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+Short_Name_Telugu_HB_Spouse: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate('SpouseSuf',ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]#!#!#!"
 
 
 DevaSuf_male_telugu: "dēva"

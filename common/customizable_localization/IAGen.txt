@@ -18,12 +18,25 @@ DevaRemovalSuf = { #for IA and Drav
 		localization_key = DevaSuf
 	}
 }
+KingPreIA = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			highest_held_title_tier = tier_kingdom
+		}
+        localization_key = IndiaKing
+	}
+	text = {
+		fallback = yes
+		localization_key = IndiaKingSpouse
+	}
+}
 DevaRemovalPrince = {
 	type = character
 	log_loc_errors = no
 	text = {
 		trigger = {
-			is_male = yes
 			exists = dynasty
 			dynasty = {
 				any_in_list = {
