@@ -160,3 +160,42 @@ TamilRegnalOrName = {
 		localization_key = Nonsupported_Name
     }
 }
+PriestSuf = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			highest_held_title_tier =< tier_county
+			OR = {
+				has_faith = faith:krishnaism
+				has_faith = faith:vaishnavism
+			}
+		}
+        localization_key = Nambi
+	}
+	text = {
+		trigger = {
+			highest_held_title_tier =< tier_county
+			OR = {
+                has_faith = faith:shaivism
+                has_faith = faith:kalikula_shaktism
+                has_faith = faith:srikula_shaktism
+            }
+		}
+        localization_key = Aiyar
+	}
+	text = {
+		trigger = {
+			highest_held_title_tier =< tier_county
+			OR = {
+                has_faith = faith:digambara
+                has_religion = religion:jainism_religion
+            }
+		}
+        localization_key = Pattar
+	}
+	text = {
+		fallback = yes
+		localization_key = Blank
+	}
+}
