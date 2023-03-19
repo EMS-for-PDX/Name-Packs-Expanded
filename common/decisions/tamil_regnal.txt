@@ -1,0 +1,39 @@
+﻿tamil_regnal = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+	desc = tamil_regnal_desc
+	selection_tooltip = tamil_regnal_tooltip
+	is_shown = {
+		culture = {
+			has_cultural_pillar = heritage_dravidian
+			has_cultural_pillar = language_tamil
+		}
+		NOT = {
+			has_character_flag = tamil_regnal_assigned #living historical chars will need this flag BTW
+		}
+	}
+    is_valid = {
+        NOT = {
+			religion = religion:islam_religion
+		}
+		highest_held_title_tier >= tier_kingdom
+    }
+	effect = {
+		add_character_flag = tamil_regnal_assigned
+		if = {
+			limit = {
+				is_male = no
+			}
+			tamil_regnal_female_effect = yes
+		}
+		else = {
+			tamil_regnal_male_effect
+		}
+	}
+
+    ai_will_do = {
+        base = 100
+    }
+
+    ai_goal = yes
+}
