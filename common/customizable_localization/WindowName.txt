@@ -194,7 +194,7 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				indoaryan_check = yes
+				has_cultural_pillar = heritage_indoaryan
 			}
 			OR = {
 				AND = {
@@ -213,7 +213,7 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				indoaryan_check = yes
+				has_cultural_pillar = heritage_indoaryan
 			}
 			OR = {
 				AND = {
@@ -236,7 +236,7 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				indoaryan_check = yes
+				has_cultural_pillar = heritage_indoaryan
 			}
 			OR = {
 				is_landed = yes
@@ -251,7 +251,7 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				indoaryan_check = yes
+				has_cultural_pillar = heritage_indoaryan
 			}
 		}
 		localization_key = Window_Indoaryan
@@ -623,6 +623,72 @@ WindowNameTT = {
 			}
 		}
 		localization_key = Window_Arabic_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+			}
+			OR = {
+				AND = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Window_Indoaryan_King_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+			}
+			OR = {
+				AND = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_county
+				}
+				any_spouse = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_county
+				}
+				any_parent = {
+					has_government = feudal_government
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Window_Indoaryan_HB_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+			}
+			OR = {
+				is_landed = yes
+				any_spouse = {
+					is_landed = yes
+				}
+			}
+		}
+		localization_key = Window_Indoaryan_Landed_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+			}
+		}
+		localization_key = Window_Indoaryan_TT
 	}
 	text = {
 		trigger = {
