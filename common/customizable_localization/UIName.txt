@@ -197,11 +197,35 @@
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -216,15 +240,52 @@
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_parent = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_parent
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_parent
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -643,11 +704,35 @@ UINameNotMeNoTooltip = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -662,15 +747,52 @@ UINameNotMeNoTooltip = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_parent = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_parent
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_parent
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -1079,11 +1201,35 @@ UINameNotMePossessive = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -1098,15 +1244,52 @@ UINameNotMePossessive = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_parent = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_parent
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_parent
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -1515,11 +1698,35 @@ UINameNotMePossessiveNoTooltip = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -1534,15 +1741,52 @@ UINameNotMePossessiveNoTooltip = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_parent = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_parent
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_parent
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -1957,11 +2201,35 @@ UIName = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -1976,15 +2244,52 @@ UIName = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_parent = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_parent
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_parent
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -2399,11 +2704,35 @@ UINameNoTooltip = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -2418,15 +2747,52 @@ UINameNoTooltip = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_parent = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_parent
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_parent
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -2841,11 +3207,35 @@ UINamePossessive = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -2860,15 +3250,52 @@ UINamePossessive = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_parent = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_parent
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_parent
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -3283,11 +3710,35 @@ UINamePossessiveNoTooltip = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
@@ -3302,15 +3753,52 @@ UINamePossessiveNoTooltip = {
 			}
 			OR = {
 				AND = {
-					has_government = feudal_government
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_spouse = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_county
 				}
 				any_parent = {
-					has_government = feudal_government
+					even_if_dead = yes
+                    save_temporary_scope_as = the_parent
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_parent
+								}
+							}
+						}
+					}
 					highest_held_title_tier >= tier_kingdom
 				}
 			}
