@@ -16,7 +16,16 @@
         NOT = {
 			religion = religion:islam_religion
 		}
-		highest_held_title_tier >= tier_kingdom
+		OR = {
+			AND = {
+				highest_held_title_tier >= tier_kingdom
+				has_government = feudal_government
+			}
+			any_spouse = {
+				highest_held_title_tier >= tier_kingdom
+				has_government = feudal_government
+			}
+		}
     }
 	effect = {
 		add_character_flag = tamil_regnal_assigned
