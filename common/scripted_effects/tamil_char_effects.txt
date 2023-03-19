@@ -1,11 +1,12 @@
 867_tamil_char_effect = {
-	#character:175100.house = { #Chera (Successors)
-		#set_variable = {
-		#	name = name_founder
-		#	value = character:npedbpecheneg006
-		#}
-	#}
+	character:175100.house = { #Chera (Successors)
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil001
+		}
+	}
 	character:175100.dynasty = { #Chera
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil001 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:175100 } #This should be real Kulasekara
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189049 } #Rama is next in line, but not a son idk
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189048 } #fictional Rama before Kulasekara for some reason
@@ -14,29 +15,77 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189410 } #fictional?
 		add_to_variable_list = { name = dynasty_independent target = character:189048 }
 	}
-	#character:189407.house = { #Ay (Kupaka)
-		#set_variable = {
-		#	name = name_founder
-		#	value = character:npedbpecheneg006
-		#}
-	#}
+	character:189407.house = { #Ay (Kupaka)
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil002
+		}
+	}
 	character:189407.dynasty = { #Ay
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil002 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189407 } #Karunandadakkan
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189408 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189406 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189405 }
 	}
-	#character:175090.house = { #Pandya
-		#set_variable = {
-		#	name = name_founder
-		#	value = character:npedbpecheneg006
-		#}
-	#}
+	character:175090.house = { #Pandya
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil003
+		}
+	}
 	character:175090.dynasty = { #Pandya
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil003 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:175090 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189069 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189070 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189068 }
+		add_to_variable_list = { name = dynasty_independent target = character:189065 }
+	}
+	character:189073.house = { #Pallava
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil004
+		}
+	}
+	character:189073.dynasty = { #Pallava
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil004 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:175070 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189071 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189072 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189073 }
+		add_to_variable_list = { name = dynasty_independent target = character:175070 }
+		add_to_variable_list = { name = dynasty_independent target = character:189071 }
+		add_to_variable_list = { name = dynasty_independent target = character:189072 }
+		add_to_variable_list = { name = dynasty_independent target = character:189073 }
+	}
+	character:189400.house = { #Cola
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil005
+		}
+	}
+	character:189400.dynasty = { #Cola
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil005 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189400 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189401 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189402 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189403 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:175080 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189032 }
+	}
+	character:189400 = {
+		change_first_name = Karikala # Made up name
+        add_to_global_variable_list = { name = Rajasekaran_regnal target = this } #needs Regnal
+	}
+	character:175070 = {
+		change_first_name = Nandivarma
+	}
+	character:189071 = {
+		change_first_name = Aparajita
+	}
+	character:189072 = {
+		change_first_name = Nandivarma
 	}
 	character:189070 = {
 		change_first_name = Rajasimha #also Maravarman
@@ -81,5 +130,217 @@
 	character:175100 = {
 		change_first_name = Tanu-Ravi
         add_to_global_variable_list = { name = Kulasekaran_regnal target = this }
+	}
+}
+1066_tamil_char_effect = {
+	character:175100.dynasty = { #Chera
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189050 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189051 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189052 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189053 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189054 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189055 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189056 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189057 }
+	}
+	character:175090.dynasty = { #Pandya
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74605 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189109 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189110 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189111 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189112 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189113 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189114 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189115 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189116 }
+	}
+	character:189400.dynasty = { #Cola
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74780 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189033 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189034 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189035 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189036 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189037 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189038 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189039 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189040 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189041 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189042 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189043 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189044 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189045 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189046 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189047 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:additional_cholas_4 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:chola_daughters_1 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:chola_daughters_2 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:chola_daughters_3 }
+		add_to_variable_list = { name = dynasty_independent target = character:189034 }
+		add_to_variable_list = { name = dynasty_independent target = character:189035 }
+		add_to_variable_list = { name = dynasty_independent target = character:189036 }
+		add_to_variable_list = { name = dynasty_independent target = character:189037 }
+		add_to_variable_list = { name = dynasty_independent target = character:189038 }
+		add_to_variable_list = { name = dynasty_independent target = character:189039 }
+		add_to_variable_list = { name = dynasty_independent target = character:189040 }
+		add_to_variable_list = { name = dynasty_independent target = character:189041 }
+		add_to_variable_list = { name = dynasty_independent target = character:189042 }
+	}
+	character:189400.house = { #Musika
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil006
+		}
+	}
+	character:189400.dynasty = { #Musika
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil006 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:malabari_Vassal02 }
+	}
+	character:189400.house = { #Manaviyan
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil007
+		}
+	}
+	character:189400.dynasty = { #Manaviyan
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil007 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:malabari_vassal01 }
+	}
+	character:189400.house = { #Venadi
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil008
+		}
+	}
+	character:189400.dynasty = { #Venadi
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil008 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:malabari_vassal03 }
+	}
+	character:189400.house = { #Chalukya Chola
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil009
+		}
+	}
+	character:189400.dynasty = { #Chalukya Chola
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil009 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:malabari_vassal01 }
+	}
+	character:189400.house = { #Kariyar
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil005
+		}
+	}
+	character:189400.dynasty = { #Kariyar
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil010 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:malabari_vassal03 }
+	}
+	character:189400.house = { #Kariyar
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil011
+		}
+	}
+	character:189400.dynasty = { #Mukkuvar
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil011 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:malabari_vassal03 }
+	}
+	character:malabari_vassal03 = {
+		change_first_name = Martanda
+	}
+	character:189050 = {
+		change_first_name = Kota-Kota
+	}
+	character:189051 = {
+		change_first_name = Indu-Kota
+	}
+	character:189053 = {
+		change_first_name = Rajasimha
+	}
+	character:189054 = {
+		change_first_name = Rajaraja
+	}
+	character:189055 = {
+		change_first_name = Rajaditya
+	}
+	character:189056 = {
+		change_first_name = Ranaditya
+	}
+	character:189109 = {
+		change_first_name = Sundara-Pandya
+	}
+	character:189110 = {
+		change_first_name = Vira-Pandya
+	}
+	character:189111 = {
+		change_first_name = Vira-Pandya
+	}
+	character:189112 = {
+		change_first_name = Amarabhujanga
+	}
+	character:189113 = {
+		change_first_name = Sundara-Pandya
+	}
+	character:189114 = {
+		change_first_name = Vikrama
+	}
+	character:189115 = {
+		change_first_name = Parakrama
+	}
+	character:189116 = {
+		change_first_name = Jatila
+	}
+	character:189033 = {
+		change_first_name = Parantaka
+	}
+	character:189034 = {
+		change_first_name = Gandaraditya
+        add_to_global_variable_list = { name = Rajakesari_regnal target = this }
+	}
+	character:189035 = {
+        add_to_global_variable_list = { name = Parakesari_regnal target = this }
+	}
+	character:189036 = {
+		change_first_name = Arinjigai
+        add_to_global_variable_list = { name = Parakesari_regnal target = this }
+	}
+	character:189037 = {
+		change_first_name = Sundara
+        add_to_global_variable_list = { name = Rajakesari_regnal target = this }
+	}
+	character:189038 = {
+		change_first_name = Rajaraja
+        add_to_global_variable_list = { name = Rajakesari_regnal target = this }
+	}
+	character:189039 = {
+		change_first_name = Rajendra
+        add_to_global_variable_list = { name = Parakesari_regnal target = this }
+	}
+	character:189040 = {
+		change_first_name = Rajadhiraja
+        add_to_global_variable_list = { name = Rajakesari_regnal target = this }
+	}
+	character:189041 = {
+		change_first_name = Rajendra
+        add_to_global_variable_list = { name = Parakesari_regnal target = this }
+	}
+	character:189042 = {
+		change_first_name = Virarajendra
+        add_to_global_variable_list = { name = Rajakesari_regnal target = this }
+	}
+	character:189043 = {
+		change_first_name = Adhirajendra
+	}
+	character:189044 = {
+		change_first_name = Arinjaya
+	}
+	character:189045 = {
+		change_first_name = Aditya
+	}
+	character:189047 = {
+		change_first_name = Uttama
+	}
+	character:chola_daughters_2 = {
+		change_first_name = Ammangai
 	}
 }
