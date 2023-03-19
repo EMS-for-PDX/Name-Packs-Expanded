@@ -4783,3 +4783,231 @@ kannada_female_name_effect = {
 		}
 	}
 }
+tamil_regnal_male_effect = {
+	random_list = {
+		1 = {
+			add_to_global_variable_list = { name = Adrirajendiran_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Ahavamallan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Alaganperumal_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Alagiyapallavan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Alagiyasiyan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Alappirandan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Anapayan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Arikulakesari_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Attimallan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Attiyandan_regnal target = root }
+		}
+		0 = {
+			modifier = {
+				has_faith = faith:vaishnavism
+				add = 1
+			}
+			add_to_global_variable_list = { name = Avaninarayanan_regnal target = root }
+		}
+		1 = {
+			modifier = {
+				has_dynasty = dynasty:175090
+				add = 99
+			}
+			modifier = {
+				has_dynasty = dynasty:175090
+				any_parent = {
+					save_temporary_scope_as = the_parent
+					any_in_global_list = {
+						variable = Marapanmar_regnal
+						this = scope:the_parent
+					}
+				}
+				add = 9999
+			}
+			add_to_global_variable_list = { name = Cadaiyapanmar_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Danatunga_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Duttargandan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Edirili_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Kandan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Indrasingan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Irumadi_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Irumudi_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Jayankondan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Jayaragan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Kalikadinda_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Kaliyugameyyan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Karikalan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Kulantakan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Kulasekaran_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Kumaramattandan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Madurantakan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Mamallan_regnal target = root }
+		}
+		1 = {
+			modifier = {
+				has_dynasty = dynasty:175090
+				add = 99
+			}
+			modifier = {
+				has_dynasty = dynasty:175090
+				any_parent = {
+					save_temporary_scope_as = the_parent
+					any_in_global_list = {
+						variable = Cadaiyapanmar_regnal
+						this = scope:the_parent
+					}
+				}
+				add = 9999
+			}
+			add_to_global_variable_list = { name = Marapanmar_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Mudivalangu_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Mummadi_regnal target = root }
+		}
+		0 = {
+			modifier = {
+				has_title = title:k_tamil_nadu
+				add = 1
+			}
+			add_to_global_variable_list = { name = Mummudi_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Neranmaikondan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Neriyudai_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Nigarili_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Noninmaikondan_regnal target = root }
+		}
+		1 = {
+			modifier = {
+				has_dynasty = dynasty:1043008
+				add = 99
+			}
+			modifier = {
+				has_dynasty = dynasty:1043008
+				any_parent = {
+					save_temporary_scope_as = the_parent
+					any_in_global_list = {
+						variable = Rajakesari_regnal
+						this = scope:the_parent
+					}
+				}
+				add = 9999
+			}
+			add_to_global_variable_list = { name = Parakesari_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Pararajasekharan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Pararajasingan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Parthivasekaran_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Parthivendiran_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Periyadevar_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Ponmeynda_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Ponninperumal_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Ponparappinan_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Pottappi_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Rajagambiran_regnal target = root }
+		}
+		1 = {
+			modifier = {
+				has_dynasty = dynasty:1043008
+				add = 99
+			}
+			modifier = {
+				has_dynasty = dynasty:1043008
+				any_parent = {
+					save_temporary_scope_as = the_parent
+					any_in_global_list = {
+						variable = Parakesari_regnal
+						this = scope:the_parent
+					}
+				}
+				add = 9999
+			}
+			add_to_global_variable_list = { name = Rajakesari_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Rajamahendiran_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Rajasekaran_regnal target = root }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Ranadiccan_regnal target = root }
+		}
+	}
+}
