@@ -55,148 +55,148 @@ indo_aryan_male_name_effect = {
 			exists = dynasty.var:ia_dynasty_suffix
 		}
 		random_list = {
-			25 = {
-				modifier = {
-					OR = {
-						AND = {
-							exists = father
-							dynasty = father.dynasty
-							NOT = {
-								father = {
-									has_character_flag = had_second_son
-								}
-							}
-						}
-						AND = {
-							exists = mother
-							dynasty = mother.dynasty
-							NOT = {
-								mother = {
-									has_character_flag = had_second_son
-								}
-							}
-						}
-					}
-					add = 25
-				}
-				modifier = {
-					OR = {
-						AND = {
-							exists = father
-							dynasty = father.dynasty
-							NOT = {
-								father = {
-									has_character_flag = had_third_son
-								}
-							}
-						}
-						AND = {
-							exists = mother
-							dynasty = mother.dynasty
-							NOT = {
-								mother = {
-									has_character_flag = had_third_son
-								}
-							}
-						}
-					}
-					add = 25
-				}
-				modifier = {
-					OR = {
-						AND = {
-							exists = father
-							dynasty = father.dynasty
-							NOT = {
-								father = {
-									has_character_flag = had_fourth_son
-								}
-							}
-						}
-						AND = {
-							exists = mother
-							dynasty = mother.dynasty
-							NOT = {
-								mother = {
-									has_character_flag = had_fourth_son
-								}
-							}
-						}
-					}
-					add = 25
-				}
+			30 = {
+#				modifier = {
+#					OR = {
+#						AND = {
+#							exists = father
+#							dynasty = father.dynasty
+#							NOT = {
+#								father = {
+#									has_character_flag = had_second_son
+#								}
+#							}
+#						}
+#						AND = {
+#							exists = mother
+#							dynasty = mother.dynasty
+#							NOT = {
+#								mother = {
+#									has_character_flag = had_second_son
+#								}
+#							}
+#						}
+#					}
+#					add = 25
+#				}
+#				modifier = {
+#					OR = {
+#						AND = {
+#							exists = father
+#							dynasty = father.dynasty
+#							NOT = {
+#								father = {
+#									has_character_flag = had_third_son
+#								}
+#							}
+#						}
+#						AND = {
+#							exists = mother
+#							dynasty = mother.dynasty
+#							NOT = {
+#								mother = {
+#									has_character_flag = had_third_son
+#								}
+#							}
+#						}
+#					}
+#					add = 25
+#				}
+#				modifier = {
+#					OR = {
+#						AND = {
+#							exists = father
+#							dynasty = father.dynasty
+#							NOT = {
+#								father = {
+#									has_character_flag = had_fourth_son
+#								}
+#							}
+#						}
+#						AND = {
+#							exists = mother
+#							dynasty = mother.dynasty
+#							NOT = {
+#								mother = {
+#									has_character_flag = had_fourth_son
+#								}
+#							}
+#						}
+#					}
+#					add = 25
+#				}
 				name_ia_roll_male = yes
 			}
-			75 = {
-				modifier = {
-					OR = {
-						AND = {
-							exists = father
-							dynasty = father.dynasty
-							NOT = {
-								father = {
-									has_character_flag = had_second_son
-								}
-							}
-						}
-						AND = {
-							exists = mother
-							dynasty = mother.dynasty
-							NOT = {
-								mother = {
-									has_character_flag = had_second_son
-								}
-							}
-						}
-					}
-					add = -25
-				}
-				modifier = {
-					OR = {
-						AND = {
-							exists = father
-							dynasty = father.dynasty
-							NOT = {
-								father = {
-									has_character_flag = had_third_son
-								}
-							}
-						}
-						AND = {
-							exists = mother
-							dynasty = mother.dynasty
-							NOT = {
-								mother = {
-									has_character_flag = had_third_son
-								}
-							}
-						}
-					}
-					add = -25
-				}
-				modifier = {
-					OR = {
-						AND = {
-							exists = father
-							dynasty = father.dynasty
-							NOT = {
-								father = {
-									has_character_flag = had_fourth_son
-								}
-							}
-						}
-						AND = {
-							exists = mother
-							dynasty = mother.dynasty
-							NOT = {
-								mother = {
-									has_character_flag = had_fourth_son
-								}
-							}
-						}
-					}
-					add = -25
-				}
+			70 = {
+#				modifier = {
+#					OR = {
+#						AND = {
+#							exists = father
+#							dynasty = father.dynasty
+#							NOT = {
+#								father = {
+#									has_character_flag = had_second_son
+#								}
+#							}
+#						}
+#						AND = {
+#							exists = mother
+#							dynasty = mother.dynasty
+#							NOT = {
+#								mother = {
+#									has_character_flag = had_second_son
+#								}
+#							}
+#						}
+#					}
+#					add = -25
+#				}
+#				modifier = {
+#					OR = {
+#						AND = {
+#							exists = father
+#							dynasty = father.dynasty
+#							NOT = {
+#								father = {
+#									has_character_flag = had_third_son
+#								}
+#							}
+#						}
+#						AND = {
+#							exists = mother
+#							dynasty = mother.dynasty
+#							NOT = {
+#								mother = {
+#									has_character_flag = had_third_son
+#								}
+#							}
+#						}
+#					}
+#					add = -25
+#				}
+#				modifier = {
+#					OR = {
+#						AND = {
+#							exists = father
+#							dynasty = father.dynasty
+#							NOT = {
+#								father = {
+#									has_character_flag = had_fourth_son
+#								}
+#							}
+#						}
+#						AND = {
+#							exists = mother
+#							dynasty = mother.dynasty
+#							NOT = {
+#								mother = {
+#									has_character_flag = had_fourth_son
+#								}
+#							}
+#						}
+#					}
+#					add = -25
+#				}
 				suffix_ia_roll_male = yes
 			}
 		}
@@ -2672,12 +2672,36 @@ hinduism_male_name_effect = {
                     random_list = {
                         1 = {
                             change_first_name = Mahadeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
                         }
                         1 = {
                             change_first_name = Rudradeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
                         }
                         1 = {
                             change_first_name = Shivadeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
                         }
                         1 = {
                             change_first_name = Ganapati
@@ -2739,12 +2763,36 @@ hinduism_male_name_effect = {
                     random_list = {
                         1 = {
                             change_first_name = Anantadeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
                         }
                         1 = {
                             change_first_name = Krishnadeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
                         }
                         1 = {
                             change_first_name = Vasudeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
                         }
                         1 = {
                             change_first_name = Gopala
@@ -2802,9 +2850,25 @@ hinduism_male_name_effect = {
                         }
                         1 = {
                             change_first_name = Ishanadeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
                         }
                         1 = {
                             change_first_name = Shankaradeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
                         }
                         1 = {
                             change_first_name = Skandagupta
@@ -2888,6 +2952,14 @@ hinduism_male_name_effect = {
                         }
                         1 = {
                             change_first_name = Prithvideva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
                         }
                         1 = {
                             change_first_name = Prithvipala
@@ -4368,6 +4440,14 @@ regnal_male_indo_aryan_name_effect = {
 						}
 						1 = {
 							change_first_name = Abhayadeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
 						}
 						1 = {
 							change_first_name = Amaracandra
@@ -4544,63 +4624,223 @@ regnal_male_indo_aryan_name_effect = {
 				}
 				1 = {
 					change_first_name = Anantadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Baladeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Bhavadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Bhimadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Bhojadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Brahmadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Indradeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Jayadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Krishnadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Mahadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Malladeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Nagadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Rajadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Ramadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Rudradeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Shivadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Somadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Vasudeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Vijayadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Yashodeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Candragupta
@@ -5141,6 +5381,14 @@ regnal_male_indo_aryan_name_effect = {
 						}
 						1 = {
 							change_first_name = Abhayadeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
 						}
 						1 = {
 							change_first_name = Amaracandra
@@ -5346,6 +5594,14 @@ regnal_male_indo_aryan_name_effect = {
 				}
 				1 = {
 					change_first_name = Sahadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Sanjaya
@@ -5526,63 +5782,223 @@ regnal_male_indo_aryan_name_effect = {
 				}
 				1 = {
 					change_first_name = Ajayadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Anandadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Bhaskaradeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Candradeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Gangeyadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Ishanadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Jinadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Kamadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Karnadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Manadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Muladeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Pratapadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Prithvideva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Sangramadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Sarvadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Shankaradeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Shantideva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Udayadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Vikramadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Viradeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Brahmagupta
@@ -6697,60 +7113,212 @@ regnal_male_indo_aryan_name_effect = {
 				}
 				1 = {
 					change_first_name = Amritadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Bhanudeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Bodhideva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Buddhadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Gangadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Jagaddeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Jnanadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Parshvadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Pushyadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Rajyadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Ratnadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Samantadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Vaidyadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Vajradeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Vallabhadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Viramadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Vyaghradeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Yogadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Yuddhadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Adityagupta
@@ -7344,15 +7912,47 @@ regnal_male_indo_aryan_name_effect = {
 				}
 				1 = {
 					change_first_name = Kusumadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Nanyadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Rishabhadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Stambhadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
 				}
 				1 = {
 					change_first_name = Jivitagupta
