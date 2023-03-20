@@ -18,6 +18,20 @@
 		localization_key = DevaSuf
 	}
 }
+SinhalEmpEnd = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			highest_held_title_tier = tier_empire
+		}
+        localization_key = SinhalLandEnd
+	}
+	text = {
+		fallback = yes
+		localization_key = SinhalUnlandEnd
+	}
+}
 KingPreIA = {
 	type = character
 	log_loc_errors = no
