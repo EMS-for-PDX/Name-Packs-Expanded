@@ -5,6 +5,7 @@
 		if = {
 			limit = {
 				exists = house.var:name_founder
+				exists = top_liege
 				house.var:name_founder = {
 					save_temporary_scope_as = good_lad
 				}
@@ -45,6 +46,7 @@
 		else_if = {
 			limit = {
 				exists = house.var:name_founder
+				exists = top_liege
 				house.var:name_founder = {
 					save_temporary_scope_as = good_lad
 				}
@@ -67,11 +69,46 @@
 				object = scope:the_liege
 			}
 		}
-		else = {
+		else_if = {
+			limit = {
+				exists = top_liege
+			}
+			top_liege = {
+				save_scope_as = the_liege
+			}
 			custom_description_no_bullet = {
 				text = grab_ol_sgui
 				subject = scope:effect_root
-				object = scope:effect_root.topliege
+				object = scope:the_liege
+			}
+		}
+		else_if = {
+			limt = {
+				exists = house.var:name_founder
+				house.var:name_founder = {
+					save_temporary_scope_as = good_lad
+				}
+				NOT = {
+					root = scope:good_lad
+				}
+				dynasty = {
+					any_in_list = {
+						variable = name_pack_support_dynasty
+						this = scope:good_lad
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = grab_house_sgui
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+		else = {
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_blank
+				subject = scope:effect_root
+				object = scope:effect_root
 			}
 		}
 	}
