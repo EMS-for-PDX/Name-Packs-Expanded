@@ -33,10 +33,13 @@
 					}
 				}
 			}
+			top_liege = {
+				save_scope_as = the_liege
+			}
 			custom_description_no_bullet = {
 				text = grab_ol_house_house_sgui
 				subject = scope:effect_root
-				object = scope:effect_root.topliege
+				object = scope:the_liege
 			}
 		}
 		else_if = {
@@ -55,10 +58,13 @@
 					}
 				}
 			}
+			top_liege = {
+				save_scope_as = the_liege
+			}
 			custom_description_no_bullet = {
 				text = grab_ol_house_sgui
 				subject = scope:effect_root
-				object = scope:effect_root.topliege
+				object = scope:the_liege
 			}
 		}
 		else = {
