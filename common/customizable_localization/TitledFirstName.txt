@@ -186,6 +186,121 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			has_government = theocracy_government
+		}
+		localization_key = Titled_First_Name_Tamil_Priest
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Titled_First_Name_Tamil_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					even_if_dead = yes
+					save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Titled_First_Name_Tamil_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Titled_First_Name_Tamil_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+		}
+		localization_key = Titled_First_Name_Tamil
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_indo_aryan
 			}
 		}
@@ -550,6 +665,121 @@ TitledFirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			has_government = theocracy_government
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil_Priest
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					even_if_dead = yes
+					save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_indo_aryan
 			}
 		}
@@ -879,6 +1109,121 @@ TitledFirstNamePossessive = {
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			has_government = theocracy_government
+		}
+		localization_key = Titled_First_Name_Possessive_Tamil_Priest
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Titled_First_Name_Possessive_Tamil_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					even_if_dead = yes
+					save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_Tamil_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_Tamil_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_Tamil
 	}
 	text = {
 		trigger = {
@@ -1247,6 +1592,121 @@ TitledFirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			has_government = theocracy_government
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil_Priest
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					even_if_dead = yes
+					save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_indo_aryan
 			}
 		}
@@ -1610,6 +2070,121 @@ TitledFirstNameNickName = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			has_government = theocracy_government
+		}
+		localization_key = Titled_First_Name_Tamil_Priest
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Titled_First_Name_Tamil_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					even_if_dead = yes
+					save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Titled_First_Name_Tamil_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Titled_First_Name_Tamil_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+		}
+		localization_key = Titled_First_Name_Tamil
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_indo_aryan
 			}
 		}
@@ -1968,6 +2543,121 @@ TitledFirstNameNickNoTooltip = {
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			has_government = theocracy_government
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil_Priest
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					even_if_dead = yes
+					save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+		}
+		localization_key = Titled_First_Name_No_Tooltip_Tamil
 	}
 	text = {
 		trigger = {
@@ -2342,6 +3032,121 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			has_government = theocracy_government
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil_Priest
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					even_if_dead = yes
+					save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+		}
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Tamil
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_indo_aryan
 			}
 		}
@@ -2706,6 +3511,121 @@ TitledFirstNameOrMe = {
 			}
 		}
 		localization_key = Titled_First_Name_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			has_government = theocracy_government
+		}
+		localization_key = Titled_First_Name_Tamil_Priest
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Titled_First_Name_Tamil_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = root
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_spouse = {
+					even_if_dead = yes
+					save_temporary_scope_as = the_spouse
+					OR = {
+						has_government = feudal_government
+						AND = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Titled_First_Name_Tamil_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Titled_First_Name_Tamil_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+		}
+		localization_key = Titled_First_Name_Tamil
 	}
 	text = {
 		trigger = {

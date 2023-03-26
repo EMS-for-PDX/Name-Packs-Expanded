@@ -869,6 +869,186 @@ WindowNameTT = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			has_government = theocracy_government
+		}
+		localization_key = Window_Tamil_Priest_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = Window_Tamil_Emperor_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Window_Tamil_King_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_spouse = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_spouse
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_spouse
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Window_Tamil_Spouse_HighBorn_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Window_Tamil_Prince_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			OR = {
+				is_independent_ruler = yes
+				AND = {
+					exists = dynasty
+					dynasty = {
+						any_in_list = {
+							variable = dynasty_independent
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Window_Tamil_Duke_Indep_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Window_Tamil_Duke_Dep_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			is_landed = yes
+		}
+		localization_key = Window_Tamil_Low_Noble_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+			any_spouse = {
+				even_if_dead = yes
+				is_landed = yes
+			}
+		}
+		localization_key = Window_Tamil_Spouse_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = language_tamil
+			}
+		}
+		localization_key = Window_Tamil_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_indo_aryan
 			}
 			OR = {
