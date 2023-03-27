@@ -93,9 +93,54 @@
 					culture = {
 						has_name_list = name_list_tamil
 					}
+					NOT = {
+						any_parent = {
+							even_if_dead = yes
+							save_temporary_scope_as = the_parent
+							OR = {
+								has_government = feudal_government
+								AND = {
+									exists = dynasty
+									dynasty = {
+										any_in_list = {
+											variable = dynasty_feudalclan
+											this = scope:the_parent
+										}
+									}
+								}
+							}
+							highest_held_title_tier >= tier_kingdom
+						}
+					}
 					add = 1
 				}
 				tamil_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_tamil
+					}
+					any_parent = {
+						even_if_dead = yes
+						save_temporary_scope_as = the_parent
+						OR = {
+							has_government = feudal_government
+							AND = {
+								exists = dynasty
+								dynasty = {
+									any_in_list = {
+										variable = dynasty_feudalclan
+										this = scope:the_parent
+									}
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+					add = 1
+				}
+				tamil_royal_male_name_effect = yes
 			}
 			0 = {
 				modifier = {
