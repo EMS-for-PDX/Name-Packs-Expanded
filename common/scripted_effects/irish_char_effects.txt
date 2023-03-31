@@ -1942,19 +1942,9 @@
 			value = character:83210
 		}
 	}
-	character:166054.dynasty = { #Dal Birn
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:83210 }
+	character:166054.dynasty = { #Dal Birn # Ancestors of Gilla Padraic, not sure what to do here
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166054 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166053 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:83211 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:83220 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:83221 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:83222 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:83212 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:83213 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:1020 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:1022 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:1023 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166051 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166052 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166034 }
@@ -1964,6 +1954,24 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166046 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166049 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166050 }
+	}
+	character:83210.house = {
+		set_variable = {
+			name = name_founder
+			value = character:83210
+		}
+	}
+	character:83210.dynasty = { #Ua Gilla Patraic
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:83210 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:83211 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:83220 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:83221 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:83222 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:83212 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:83213 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1020 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1022 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1023 }
 	}
 	character:951.dynasty = { #Cennsalaig
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:951 }
@@ -2132,39 +2140,36 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:83114 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:929 }
 	}
+	character:131505 = {
+		change_first_name = MaelSechnaill
+	}
+	character:929 = {
+		change_first_name = Aed
+	}
+	character:83114 = {
+		change_first_name = Neil
+	}
+	character:83537 = {
+		change_first_name = Aed
+	}
+	character:1000 = {
+		change_first_name = Aed
+	}
+	character:214024 = {
+		change_first_name = Aed
+	}
+	character:1003 = {
+		change_first_name = Tigernan
+	}
+	character:1022 = {
+		change_first_name = Neil
+	}
 	character:6119 = {
 		change_first_name = MaelSechlainn
 	}
 	character:939 = {
 		change_first_name = MaelSechnaill
 	}
-	character:6026 = {
-		change_first_name = Constantine
-	}
-	character:6032 = {
-		change_first_name = Constantine
-	}
-	character:6030 = {
-		change_first_name = Cuilen
-	}
-	character:6028 = {
-        add_to_global_variable_list = { name = Agressor_byname target = this }
-	}
-	character:131006 = {
-		change_first_name = Cinaed
-		dynasty_effect_ne = yes
-	}
-	character:82012 = {
-		change_first_name = Firbisig
-	}
-	character:82011 = {
-		change_first_name = Muiredach
-		dynasty_effect_ne = yes
-	}
-	character:6181 = {
-		change_first_name = Aed
-	}
-	
 	character:166621 = {
 		change_first_name = Olaf
 	}
