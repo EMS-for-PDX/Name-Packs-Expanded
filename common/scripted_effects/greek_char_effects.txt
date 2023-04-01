@@ -1499,7 +1499,7 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:90090 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:232531 }
     }
-    character:90089.house = {
+    character:20518.house = {
         set_variable = {
             name = name_founder
             value = character:npedbgreek081
@@ -1536,6 +1536,7 @@
             name = name_founder
             value = character:npedbgreek084
         }
+        set_house_name_from_dynasty = dynasty:20563
     }
 	character:20563.dynasty = { #Pegonites #actual Pleures
         add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbgreek084 }
@@ -1605,7 +1606,7 @@
             value = character:npedbgreek090
         }
     }
-	character:20512.dynasty = { #Branas
+	character:20512.dynasty = { #Pleustes
         add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbgreek090 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:20512 }
     }
@@ -1653,6 +1654,9 @@
     }
     character:2052700 = {
         change_first_name = Alexander
+    }
+    character:20511 = {
+        change_first_name = John
     }
     character:90090 = {
         change_first_name = John
