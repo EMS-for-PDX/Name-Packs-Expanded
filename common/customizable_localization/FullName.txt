@@ -88,6 +88,29 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_berber
+			}
+		}
+		localization_key = Full_Name_Berber
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+			}
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
+		}
+		localization_key = Full_Name_Arabic
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				mongol_check = yes
 			}
 			AND = {
@@ -112,9 +135,6 @@
 				mongol_check = yes
 			}
 			AND = {
-				NOT = {
-					has_religion = religion:islam_religion
-				}
 				NOT = {
 					OR = {
 						AND = {
@@ -180,29 +200,6 @@
 			}
 		}
 		localization_key = Full_Name_Mongol
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_berber
-			}
-		}
-		localization_key = Full_Name_Berber
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-			}
-			OR = {
-				culture = {
-					has_cultural_pillar = heritage_arabic
-				}
-				has_religion = religion:islam_religion
-			}
-		}
-		localization_key = Full_Name_Arabic
 	}
 	text = {
 		trigger = {
