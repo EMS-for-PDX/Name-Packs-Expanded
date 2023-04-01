@@ -113,6 +113,9 @@
 			}
 			AND = {
 				NOT = {
+					has_religion:islam_religion
+				}
+				NOT = {
 					OR = {
 						AND = {
 							exists = father
@@ -131,16 +134,28 @@
 				OR = {
 					AND = {
 						OR = {
-							has_government = tribal_government
-							has_government = feudal_government
-							has_government = clan_government
-						}
-						OR = {
-							is_independent_ruler = no
+							AND = {
+								is_landed = yes
+								is_independent_ruler = no
+							}
 							dynasty = {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root
+								AND = {
+									OR = {
+										any_in_list = {
+											variable = dynasty_feudalclan
+											this = root
+										}
+										any_in_list = {
+											variable = dynasty_tribe
+											this = root
+										}
+									}
+									NOT = {
+										any_in_list = {
+											variable = dynasty_independent
+											this = root
+										}
+									}
 								}
 							}
 						}
@@ -787,7 +802,7 @@ WindowNameTT = {
 				highest_held_title_tier = tier_empire
 				}
 			}
-		localization_key = Window_Mongol_Emperor
+		localization_key = Window_Mongol_Emperor_TT
 	}
 	text = {
 		trigger = {
@@ -796,6 +811,9 @@ WindowNameTT = {
 				mongol_check = yes
 			}
 			AND = {
+				NOT = {
+					has_religion:islam_religion
+				}
 				NOT = {
 					OR = {
 						AND = {
@@ -815,13 +833,33 @@ WindowNameTT = {
 				OR = {
 					AND = {
 						OR = {
-							has_government = tribal_government
-							has_government = feudal_government
-							has_government = clan_government
+							AND = {
+								is_landed = yes
+								is_independent_ruler = no
+							}
+							dynasty = {
+								AND = {
+									OR = {
+										any_in_list = {
+											variable = dynasty_feudalclan
+											this = root
+										}
+										any_in_list = {
+											variable = dynasty_tribe
+											this = root
+										}
+									}
+									NOT = {
+										any_in_list = {
+											variable = dynasty_independent
+											this = root
+										}
+									}
+								}
+							}
 						}
 						highest_held_title_tier <= tier_duchy
 						highest_held_title_tier != tier_barony
-						is_independent_ruler = no
 					}
 					AND = {
 						holds_landed_title = yes

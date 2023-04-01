@@ -106,6 +106,9 @@
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -124,16 +127,28 @@
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
@@ -635,6 +650,9 @@ ShortNameNotMeNoTooltip = {
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -653,16 +671,28 @@ ShortNameNotMeNoTooltip = {
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
@@ -1164,6 +1194,9 @@ ShortNameNotMePossessive = {
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -1182,16 +1215,28 @@ ShortNameNotMePossessive = {
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
@@ -1693,6 +1738,9 @@ ShortNameNotMePossessiveNoTooltip = {
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -1711,16 +1759,28 @@ ShortNameNotMePossessiveNoTooltip = {
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
@@ -2222,6 +2282,9 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -2240,16 +2303,28 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
@@ -2757,6 +2832,9 @@ ShortName = {
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -2775,16 +2853,28 @@ ShortName = {
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
@@ -3292,6 +3382,9 @@ ShortNameNoTooltip = {
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -3310,16 +3403,28 @@ ShortNameNoTooltip = {
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
@@ -3827,6 +3932,9 @@ ShortNamePossessive = {
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -3845,16 +3953,28 @@ ShortNamePossessive = {
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
@@ -4352,6 +4472,9 @@ ShortNamePossessiveNoTooltip = {
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -4370,16 +4493,28 @@ ShortNamePossessiveNoTooltip = {
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
@@ -4887,6 +5022,9 @@ ShortNamePossessiveNoTooltipNoFormat = {
 				}
 				AND = {
 					NOT = {
+						has_religion:islam_religion
+					}
+					NOT = {
 						OR = {
 							AND = {
 								exists = father
@@ -4905,16 +5043,28 @@ ShortNamePossessiveNoTooltipNoFormat = {
 					OR = {
 						AND = {
 							OR = {
-								has_government = tribal_government
-								has_government = feudal_government
-								has_government = clan_government
-							}
-							OR = {
-								is_independent_ruler = no
+								AND = {
+									is_landed = yes
+									is_independent_ruler = no
+								}
 								dynasty = {
-									any_in_list = {
-										variable = dynasty_independent
-										this = root
+									AND = {
+										OR = {
+											any_in_list = {
+												variable = dynasty_feudalclan
+												this = root
+											}
+											any_in_list = {
+												variable = dynasty_tribe
+												this = root
+											}
+										}
+										NOT = {
+											any_in_list = {
+												variable = dynasty_independent
+												this = root
+											}
+										}
 									}
 								}
 							}
