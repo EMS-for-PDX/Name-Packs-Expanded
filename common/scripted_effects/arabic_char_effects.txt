@@ -323,9 +323,20 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:159387 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:159386 }
 	}
+	character:145968.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic040
+		}
+	}
 	character:145968.dynasty = { #Shirazids
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic040 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145968 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145969 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:167712 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167709 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167711 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167710 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:167711 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:167710 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:167709 }
