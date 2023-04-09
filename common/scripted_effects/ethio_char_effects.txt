@@ -11,13 +11,18 @@ ethiopian_867_char_effect = {
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145988 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145986 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145984 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145983 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145987 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167707 }
 	}
 	character:183508.dynasty = { #Merkourios
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:183508 }
 	}
-	character:145977.dynasty = { #Desta?
+	character:145976.dynasty = { #Desta (all fictional)
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145976 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145977 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145978 } #PDX gave Hakim
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:183510 }
 	}
 	character:145642.dynasty = { #Gideon
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145642 }
@@ -27,21 +32,40 @@ ethiopian_867_char_effect = {
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145646 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145647 }
 	}
-	#character:145979.dynasty = { #Zagwe?????
+	character:145979.dynasty = { #Zagwe # Only Mara Tekla Hayamanot is historical
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:145979 }
-	#}
-	#character:145633.dynasty = { #Dahnay?
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:145633 }
-	#}
-	#character:183507.dynasty = { #Yostos?
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:183507 }
-	#}
-	#character:183506.dynasty = { #Na'akuelo?
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:183506 }
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:145972 }
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:145971 }
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:145970 }
-	#}
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32227 }
+	}
+	character:145633.dynasty = { #Dahnay (all fictional)
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145633 }
+	}
+	character:183506.dynasty = { #Yostos (all fictional)
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:183507 }
+	}
+	character:183506.dynasty = { #Na'akuelo (all fictional)
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145970 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145971 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145972 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:183506 }
+	}
+	character:183507 = {
+		change_first_name = Justus
+		dynasty_effect_ne = yes
+	}
+	character:145983 = {
+		change_first_name = Degna-Mikael
+	}
+	character:32227 = {
+		change_first_name = Marari
+		add_to_global_variable_list = { name = Takla-Haymanot_regnal target = root }
+	}
+	character:167707 = {
+		change_first_name = Degnazan
+	}
+	character:145633 = {
+		change_first_name = Aziz
+		dynasty_effect_ne = yes
+	}
 	character:145646 = {
 		change_first_name = David
 	}
@@ -79,6 +103,109 @@ ethiopian_867_char_effect = {
 	}
 	character:167708 = {
 		change_first_name = Anbasa-Wedem
+	}
+}
+1066_ethiopian_char_effect = {
+	character:145983.dynasty = { #Solomonid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32226 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32238 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32239 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32240 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32241 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32242 }
+	}
+	character:145979.dynasty = { #Zagwe
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32228 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32229 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32230 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32231 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:32232 }
+	}
+	character:145642.dynasty = { #Gideonid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145648 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145649 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145650 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145651 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145652 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145653 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145654 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145655 }
+	}
+	character:145746.dynasty = { #Mangesha (all fictional)
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145746 }
+	}
+	character:145756.dynasty = { #Teka (all fictional)
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145756 }
+	}
+	character:145634.dynasty = { #Makhzumi #Real dynasty, fictional characters
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145634 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145635 }
+	}
+	character:145756 = {
+		change_first_name = Stephen
+		dynasty_effect_ne = yes
+	}
+	character:145634 = {
+		change_first_name = Umar #randomized from historical member of house
+	}
+	character:145635 = {
+		change_first_name = Husayn #randomized from historical member of house
+	}
+	character:145648 = {
+		change_first_name = Caleb
+	}
+	character:145650 = {
+		change_first_name = Judith
+	}
+	character:145652 = {
+		change_first_name = Joram
+	}
+	character:145653 = {
+		change_first_name = Jeremiah
+	}
+	character:145654 = {
+		change_first_name = David
+	}
+	character:145655 = {
+		change_first_name = David
+	}
+	character:145746 = {
+		change_first_name = John
+		dynasty_effect_ne = yes
+	}
+	character:32228 = {
+		change_first_name = Tantawedem
+		add_to_global_variable_list = { name = Solomon_regnal target = root }
+	}
+	character:32229 = {
+		change_first_name = Zan-Seyyum
+	}
+	character:32230 = {
+		change_first_name = Gerwa-Seyyum
+	}
+	character:32231 = {
+		change_first_name = Yemrehanna-Krestos
+	}
+	character:32232 = {
+		change_first_name = Qeddus-Harbay
+	}
+	character:32226 = {
+		change_first_name = Masoba-Warq
+	}
+	character:32238 = {
+		change_first_name = Mahebara-Wedem
+	}
+	character:32239 = {
+		change_first_name = Agbea-Seyon
+	}
+	character:32240 = {
+		change_first_name = Senfa-Arad
+	}
+	character:32241 = {
+		change_first_name = Nagash-Zare
+	}
+	character:32242 = {
+		change_first_name = Asfeh
 	}
 }
 nubian_867_char_effect = {
