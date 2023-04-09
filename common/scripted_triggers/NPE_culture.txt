@@ -14,6 +14,7 @@
 		has_cultural_pillar = heritage_berber
 		has_cultural_pillar = heritage_indo_aryan
 		has_cultural_pillar = heritage_dravidian
+		has_cultural_pillar = heritage_east_african
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -32,6 +33,7 @@
 		}
 	}
 	OR = {
+		has_cultural_pillar = language_sudanic
 		has_cultural_pillar = language_turkic
 		has_cultural_pillar = language_oghur
 		has_cultural_pillar = language_arabic
