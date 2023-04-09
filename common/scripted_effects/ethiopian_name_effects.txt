@@ -1,0 +1,1511 @@
+﻿ethiopian_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				religion = {
+					is_in_family = rf_abrahamic
+				}
+				add = 40
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:judaism_religion
+						}
+						add = 1
+					}
+					change_first_name = David
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = John
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = Ahmad
+						}
+						1 = {
+							change_first_name = Ali
+						}
+						1 = {
+							change_first_name = Hassan
+						}
+						1 = {
+							change_first_name = Muhammad
+						}
+						1 = {
+							change_first_name = Yusuf
+						}
+					}
+				}
+				1 = {
+					change_first_name = Isaac
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				religion = {
+					is_in_family = rf_abrahamic
+				}
+				add = 30
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:judaism_religion
+						}
+						add = 13
+					}
+					random_list = {
+						1 = {
+							change_first_name = Amda-Mikael
+						}
+						1 = {
+							change_first_name = Amda-Seyon
+						}
+						1 = {
+							change_first_name = Gabra-Mikael
+						}
+						1 = {
+							change_first_name = Gabriel
+						}
+						1 = {
+							change_first_name = Joseph
+						}
+						1 = {
+							change_first_name = Kefla-Mikael
+						}
+						1 = {
+							change_first_name = Michael
+						}
+						1 = {
+							change_first_name = Solomon
+						}
+						1 = {
+							change_first_name = Takla-Gabreel
+						}
+						1 = {
+							change_first_name = Tasfa-Mikael
+						}
+						1 = {
+							change_first_name = Tasfa-Seyon
+						}
+						1 = {
+							change_first_name = Zara-Abraham
+						}
+						1 = {
+							change_first_name = Zara-Yaqob
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:judaism_religion
+						add = 11
+					}
+					change_first_name = Gideon
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 40
+					}
+					random_list = {
+						1 = {
+							change_first_name = Alexander
+						}
+						1 = {
+							change_first_name = Amda-Iyasus
+						}
+						1 = {
+							change_first_name = Amda-Maryam
+						}
+						1 = {
+							change_first_name = Amda-Masqal
+						}
+						1 = {
+							change_first_name = Andrew
+						}
+						1 = {
+							change_first_name = Ba-Hayla-Maryam
+						}
+						1 = {
+							change_first_name = Ba-Hayla-Masqal
+						}
+						1 = {
+							change_first_name = Ba-Hayla-Mikael
+						}
+						1 = {
+							change_first_name = Basilides
+						}
+						1 = {
+							change_first_name = Claudius
+						}
+						1 = {
+							change_first_name = Cyril
+						}
+						1 = {
+							change_first_name = Gabra-Iyasus
+						}
+						1 = {
+							change_first_name = Gabra-Krestos
+						}
+						1 = {
+							change_first_name = Gabra-Maryam
+						}
+						1 = {
+							change_first_name = Gabra-Masqal
+						}
+						1 = {
+							change_first_name = George
+						}
+						1 = {
+							change_first_name = Jesus
+						}
+						1 = {
+							change_first_name = Justus
+						}
+						1 = {
+							change_first_name = Kefla-Maryam
+						}
+						1 = {
+							change_first_name = Kefla-Yohannes
+						}
+						1 = {
+							change_first_name = Krestos-Moa
+						}
+						1 = {
+							change_first_name = Menas
+						}
+						1 = {
+							change_first_name = Newaya-Maryam
+						}
+						1 = {
+							change_first_name = Sisinnios
+						}
+						1 = {
+							change_first_name = Takla-Giyorgis
+						}
+						1 = {
+							change_first_name = Takla-Maryam
+						}
+						1 = {
+							change_first_name = Takla-Yohannes
+						}
+						1 = {
+							change_first_name = Tasfa-Iyasus
+						}
+						1 = {
+							change_first_name = Thaddeus
+						}
+						1 = {
+							change_first_name = Theodoros
+						}
+						1 = {
+							change_first_name = Walda-Giyorgis
+						}
+						1 = {
+							change_first_name = Walda-Krestos
+						}
+						1 = {
+							change_first_name = Za-Dengel
+						}
+						1 = {
+							change_first_name = Za-Iyasus
+						}
+						1 = {
+							change_first_name = Za-Krestos
+						}
+						1 = {
+							change_first_name = Za-Maryam
+						}
+						1 = {
+							change_first_name = Za-Mikael
+						}
+						1 = {
+							change_first_name = Zara-Krestos
+						}
+						1 = {
+							change_first_name = Zara-Maryam
+						}
+						1 = {
+							change_first_name = Zara-Yohannes
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 36
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abbas
+						}
+						1 = {
+							change_first_name = Abdal-Aziz
+						}
+						1 = {
+							change_first_name = Abdal-Hakim
+						}
+						1 = {
+							change_first_name = Abdal-Hamid
+						}
+						1 = {
+							change_first_name = Abdal-Haqq
+						}
+						1 = {
+							change_first_name = Abdal-Jalil
+						}
+						1 = {
+							change_first_name = Abdal-Karim
+						}
+						1 = {
+							change_first_name = Abdal-Majid
+						}
+						1 = {
+							change_first_name = Abdal-Malik
+						}
+						1 = {
+							change_first_name = Abdal-Wahab
+						}
+						1 = {
+							change_first_name = Abdar-Rahim
+						}
+						1 = {
+							change_first_name = Abdar-Rashid
+						}
+						1 = {
+							change_first_name = Abdullah
+						}
+						1 = {
+							change_first_name = Abu-Bakr
+						}
+						1 = {
+							change_first_name = Amir
+						}
+						1 = {
+							change_first_name = Aziz
+						}
+						1 = {
+							change_first_name = Dawud
+						}
+						1 = {
+							change_first_name = Fadl
+						}
+						1 = {
+							change_first_name = Habib
+						}
+						1 = {
+							change_first_name = Hamid
+						}
+						1 = {
+							change_first_name = Hamza
+						}
+						1 = {
+							change_first_name = Haydar
+						}
+						1 = {
+							change_first_name = Husayn
+						}
+						1 = {
+							change_first_name = Ibrahim
+						}
+						1 = {
+							change_first_name = Jafar
+						}
+						1 = {
+							change_first_name = Jibrail
+						}
+						1 = {
+							change_first_name = Mubarak
+						}
+						1 = {
+							change_first_name = Mustafa
+						}
+						1 = {
+							change_first_name = Qasim
+						}
+						1 = {
+							change_first_name = Ramadan
+						}
+						1 = {
+							change_first_name = Rashid
+						}
+						1 = {
+							change_first_name = Said
+						}
+						1 = {
+							change_first_name = Sulayman
+						}
+						1 = {
+							change_first_name = Talha
+						}
+						1 = {
+							change_first_name = Umar
+						}
+						1 = {
+							change_first_name = Uthman
+						}
+					}
+				}
+				1 = {
+					change_first_name = Jacob
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 7
+					}
+					random_list = {
+						1 = {
+							change_first_name = Adam
+						}
+						1 = {
+							change_first_name = Benjamin
+						}
+						1 = {
+							change_first_name = Daniel
+						}
+						1 = {
+							change_first_name = Ismail
+						}
+						1 = {
+							change_first_name = Noah
+						}
+						1 = {
+							change_first_name = Samuel
+						}
+						1 = {
+							change_first_name = Zachary
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:judaism_religion
+						}
+						add = 19
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abraham
+						}
+						1 = {
+							change_first_name = Amha-Seyon
+						}
+						1 = {
+							change_first_name = Ammeha-Seyon
+						}
+						1 = {
+							change_first_name = Anbasa-Dawit
+						}
+						1 = {
+							change_first_name = Batra-Seyon
+						}
+						1 = {
+							change_first_name = Caleb
+						}
+						1 = {
+							change_first_name = Ezra
+						}
+						1 = {
+							change_first_name = Fere-Seyon
+						}
+						1 = {
+							change_first_name = Habta-Seyon
+						}
+						1 = {
+							change_first_name = Hezekiah
+						}
+						1 = {
+							change_first_name = Isaiah
+						}
+						1 = {
+							change_first_name = Joel
+						}
+						1 = {
+							change_first_name = Joshua
+						}
+						1 = {
+							change_first_name = Sarsa-Mikael
+						}
+						1 = {
+							change_first_name = Simon
+						}
+						1 = {
+							change_first_name = Yagba-Seyon
+						}
+						1 = {
+							change_first_name = Yebqea-La-Seyon
+						}
+						1 = {
+							change_first_name = Zara-Nabiyat
+						}
+						1 = {
+							change_first_name = Zara-Sanbat
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 72
+					}
+					random_list = {
+						1 = {
+							change_first_name = Akala-Krestos
+						}
+						1 = {
+							change_first_name = Amha-Iyasus
+						}
+						1 = {
+							change_first_name = Amsala-Krestos
+						}
+						1 = {
+							change_first_name = Anastasios
+						}
+						1 = {
+							change_first_name = Asrata-Maryam
+						}
+						1 = {
+							change_first_name = Athanasios
+						}
+						1 = {
+							change_first_name = Ba-Hayla-Giyorgis
+						}
+						1 = {
+							change_first_name = Ba-Sena-Maryam
+						}
+						1 = {
+							change_first_name = Baeda-Maryam
+						}
+						1 = {
+							change_first_name = Bakimos
+						}
+						1 = {
+							change_first_name = Bartholomew
+						}
+						1 = {
+							change_first_name = Basil
+						}
+						1 = {
+							change_first_name = Batargela-Maryam
+						}
+						1 = {
+							change_first_name = Batra-Giyorgis
+						}
+						1 = {
+							change_first_name = Beela-Krestos
+						}
+						1 = {
+							change_first_name = Constantine
+						}
+						1 = {
+							change_first_name = Damian
+						}
+						1 = {
+							change_first_name = Eda-Krestos
+						}
+						1 = {
+							change_first_name = Eustathios
+						}
+						1 = {
+							change_first_name = Gregory
+						}
+						1 = {
+							change_first_name = Habla-Sellase
+						}
+						1 = {
+							change_first_name = Habta-Maryam
+						}
+						1 = {
+							change_first_name = Hafa-Krestos
+						}
+						1 = {
+							change_first_name = Hamalmal
+						}
+						1 = {
+							change_first_name = Iyasus-Moa
+						}
+						1 = {
+							change_first_name = Justin
+						}
+						1 = {
+							change_first_name = Kefla-Samat
+						}
+						1 = {
+							change_first_name = Krestos-Kebrena
+						}
+						1 = {
+							change_first_name = Krestos-Tasfana
+						}
+						1 = {
+							change_first_name = Kyriakos
+						}
+						1 = {
+							change_first_name = Laeka-Maryam
+						}
+						1 = {
+							change_first_name = Lebna-Dengel
+						}
+						1 = {
+							change_first_name = Lesana-Krestos
+						}
+						1 = {
+							change_first_name = Longinus
+						}
+						1 = {
+							change_first_name = Luke
+						}
+						1 = {
+							change_first_name = Mahaymena-Krestos
+						}
+						1 = {
+							change_first_name = Makarios
+						}
+						1 = {
+							change_first_name = Malkea-Krestos
+						}
+						1 = {
+							change_first_name = Marcus
+						}
+						1 = {
+							change_first_name = Matthew
+						}
+						1 = {
+							change_first_name = Merkourios
+						}
+						1 = {
+							change_first_name = Nagada-Iyasus
+						}
+						1 = {
+							change_first_name = Newaya-Krestos
+						}
+						1 = {
+							change_first_name = Paul
+						}
+						1 = {
+							change_first_name = Peter
+						}
+						1 = {
+							change_first_name = Phillip
+						}
+						1 = {
+							change_first_name = Qeba-Krestos
+						}
+						1 = {
+							change_first_name = Sabala-Mikael
+						}
+						1 = {
+							change_first_name = Sagga-Krestos
+						}
+						1 = {
+							change_first_name = Samra-Krestos
+						}
+						1 = {
+							change_first_name = Sarewa-Iyesus
+						}
+						1 = {
+							change_first_name = Sarsa-Dengel
+						}
+						1 = {
+							change_first_name = Sarsa-Krestos
+						}
+						1 = {
+							change_first_name = Seela-Krestos
+						}
+						1 = {
+							change_first_name = Shenoute
+						}
+						1 = {
+							change_first_name = Stephen
+						}
+						1 = {
+							change_first_name = Tansea-Krestos
+						}
+						1 = {
+							change_first_name = Tasfa-Giyorgis
+						}
+						1 = {
+							change_first_name = Tasfa-Masqal
+						}
+						1 = {
+							change_first_name = Tazkara-Dengel
+						}
+						1 = {
+							change_first_name = Theodosios
+						}
+						1 = {
+							change_first_name = Thomas
+						}
+						1 = {
+							change_first_name = Victor
+						}
+						1 = {
+							change_first_name = Yamana-Krestos
+						}
+						1 = {
+							change_first_name = Yemrehanna-Krestos
+						}
+						1 = {
+							change_first_name = Yerdeanna-Krestos
+						}
+						1 = {
+							change_first_name = Za-Hawaryat
+						}
+						1 = {
+							change_first_name = Za-Krestos-Tasfana
+						}
+						1 = {
+							change_first_name = Za-Sellase
+						}
+						1 = {
+							change_first_name = Zena-Krestos
+						}
+						1 = {
+							change_first_name = Zena-Marqos
+						}
+						1 = {
+							change_first_name = Zena-Maryam
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abdas-Shakur
+						}
+						1 = {
+							change_first_name = Khalaf
+						}
+						1 = {
+							change_first_name = Mutahhar
+						}
+					}
+				}
+				1 = {
+					change_first_name = Amlak-Bena
+				}
+				1 = {
+					change_first_name = Amlak-Moa
+				}
+				1 = {
+					change_first_name = Anbasa-Wedem
+				}
+				1 = {
+					change_first_name = Anda-Hayamanot
+				}
+				1 = {
+					change_first_name = Asnaf-Samra
+				}
+				1 = {
+					change_first_name = Ba-Haymanot
+				}
+				1 = {
+					change_first_name = Badel-Kaffata
+				}
+				1 = {
+					change_first_name = Badel-Wani
+				}
+				1 = {
+					change_first_name = Bahra-Sagad
+				}
+				1 = {
+					change_first_name = Bakaffa
+				}
+				1 = {
+					change_first_name = Belen-Sagad
+				}
+				1 = {
+					change_first_name = Belul-Zan
+				}
+				1 = {
+					change_first_name = Berhana-Khirut
+				}
+				1 = {
+					change_first_name = Degnazan
+				}
+				1 = {
+					change_first_name = Del-Hagaba
+				}
+				1 = {
+					change_first_name = Del-Naod
+				}
+				1 = {
+					change_first_name = Engeda-Egzi
+				}
+				1 = {
+					change_first_name = Engeda-Zan
+				}
+				1 = {
+					change_first_name = Fequra-Egzi
+				}
+				1 = {
+					change_first_name = Fere-Kahen
+				}
+				1 = {
+					change_first_name = Gabra-Amlak
+				}
+				1 = {
+					change_first_name = Geda-Zan
+				}
+				1 = {
+					change_first_name = Hagara-Wedem
+				}
+				1 = {
+					change_first_name = Harb-Saggad
+				}
+				1 = {
+					change_first_name = Harbay
+				}
+				1 = {
+					change_first_name = Kafar-Wedem
+				}
+				1 = {
+					change_first_name = Kefla-Wahed
+				}
+				1 = {
+					change_first_name = Lalibala
+				}
+				1 = {
+					change_first_name = Maat-Gone
+				}
+				1 = {
+					change_first_name = Madhanina-Egzi
+				}
+				1 = {
+					change_first_name = Maeqaba-Egzi
+				}
+				1 = {
+					change_first_name = Mangaday
+				}
+				1 = {
+					change_first_name = Melchizedek
+				}
+				1 = {
+					change_first_name = Menelik
+				}
+				1 = {
+					change_first_name = Meslena-Egzi
+				}
+				1 = {
+					change_first_name = Naakkweto-Laab
+				}
+				1 = {
+					change_first_name = Naod
+				}
+				1 = {
+					change_first_name = Neway
+				}
+				1 = {
+					change_first_name = Reesa-Haymanot
+				}
+				1 = {
+					change_first_name = Salama
+				}
+				1 = {
+					change_first_name = Saraqa-Berhan
+				}
+				1 = {
+					change_first_name = Sarsa
+				}
+				1 = {
+					change_first_name = Sebhat-Laab
+				}
+				1 = {
+					change_first_name = Takasta-Berhan
+				}
+				1 = {
+					change_first_name = Tantawedem
+				}
+				1 = {
+					change_first_name = Tasfana-Egzi
+				}
+				1 = {
+					change_first_name = Tawalda-Madkhen
+				}
+				1 = {
+					change_first_name = Walda-Amlak
+				}
+				1 = {
+					change_first_name = Walda-Berhan
+				}
+				1 = {
+					change_first_name = Wedem
+				}
+				1 = {
+					change_first_name = Wedem-Raad
+				}
+				1 = {
+					change_first_name = Ya-Darabaya
+				}
+				1 = {
+					change_first_name = Yaebika-Egzi
+				}
+				1 = {
+					change_first_name = Yafqerenne-Egzi
+				}
+				1 = {
+					change_first_name = Yagba
+				}
+				1 = {
+					change_first_name = Yekunno-Amlak
+				}
+				1 = {
+					change_first_name = Yemrehanna-Egzi
+				}
+				1 = {
+					change_first_name = Yeqabanna
+				}
+				1 = {
+					change_first_name = Yetbarak
+				}
+				1 = {
+					change_first_name = Zan-Seyyum
+				}
+				1 = {
+					change_first_name = Zela-Reed
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:judaism_religion
+						}
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Asahel
+						}
+						1 = {
+							change_first_name = Bara-Seyon
+						}
+						1 = {
+							change_first_name = Phanuel
+						}
+						1 = {
+							change_first_name = Yonael
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 11
+					}
+					random_list = {
+						1 = {
+							change_first_name = Arqanos
+						}
+						1 = {
+							change_first_name = Caustus
+						}
+						1 = {
+							change_first_name = Cyrus
+						}
+						1 = {
+							change_first_name = Egardos
+						}
+						1 = {
+							change_first_name = Eleutherios
+						}
+						1 = {
+							change_first_name = Eusebios
+						}
+						1 = {
+							change_first_name = Julius
+						}
+						1 = {
+							change_first_name = Kyrikos
+						}
+						1 = {
+							change_first_name = Philotheos
+						}
+						1 = {
+							change_first_name = Qalayoppa
+						}
+						1 = {
+							change_first_name = Theologos
+						}
+					}
+				}
+				1 = {
+					change_first_name = Alel
+				}
+				1 = {
+					change_first_name = Anab
+				}
+				1 = {
+					change_first_name = Asgwa
+				}
+				1 = {
+					change_first_name = Bachi
+				}
+				1 = {
+					change_first_name = Barut
+				}
+				1 = {
+					change_first_name = Bayani
+				}
+				1 = {
+					change_first_name = Beshle
+				}
+				1 = {
+					change_first_name = Bihono
+				}
+				1 = {
+					change_first_name = Buruk
+				}
+				1 = {
+					change_first_name = Dagalhan
+				}
+				1 = {
+					change_first_name = Gudamo
+				}
+				1 = {
+					change_first_name = Habtu
+				}
+				1 = {
+					change_first_name = Hadara
+				}
+				1 = {
+					change_first_name = Harayo
+				}
+				1 = {
+					change_first_name = Kefla
+				}
+				1 = {
+					change_first_name = Keflet
+				}
+				1 = {
+					change_first_name = Muso
+				}
+				1 = {
+					change_first_name = Qabaro
+				}
+				1 = {
+					change_first_name = Qerub
+				}
+				1 = {
+					change_first_name = Radeet
+				}
+				1 = {
+					change_first_name = Sawel
+				}
+				1 = {
+					change_first_name = Tazena
+				}
+				1 = {
+					change_first_name = Tige
+				}
+				1 = {
+					change_first_name = Wasan-Sagad
+				}
+			}
+		}
+	}
+}
+ethiopian_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 40
+			}
+			random_list = {
+				1 = {
+					change_first_name = Aisha
+				}
+				1 = {
+					change_first_name = Fatima
+				}
+				1 = {
+					change_first_name = Khadija
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				religion = {
+					is_in_family = rf_abrahamic
+				}
+				add = 30
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:judaism_religion
+						}
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Judith
+						}
+						1 = {
+							change_first_name = Walatta-Israel
+						}
+						1 = {
+							change_first_name = Walatta-Seyon
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:islam_religion
+						}
+						add = 1
+					}
+					change_first_name = Maryam
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 25
+					}
+					random_list = {
+						1 = {
+							change_first_name = Amata-Dengel
+						}
+						1 = {
+							change_first_name = Amata-Giyorgis
+						}
+						1 = {
+							change_first_name = Amata-Krestos
+						}
+						1 = {
+							change_first_name = Amata-Mesih
+						}
+						1 = {
+							change_first_name = Amata-Mikael
+						}
+						1 = {
+							change_first_name = Amata-Petros
+						}
+						1 = {
+							change_first_name = Amata-Seyon
+						}
+						1 = {
+							change_first_name = Amata-Wangel
+						}
+						1 = {
+							change_first_name = Helen
+						}
+						1 = {
+							change_first_name = Krestos-Samra
+						}
+						1 = {
+							change_first_name = Krestosawit
+						}
+						1 = {
+							change_first_name = Maryam-Kebra
+						}
+						1 = {
+							change_first_name = Maryam-Samra
+						}
+						1 = {
+							change_first_name = Maryamawit
+						}
+						1 = {
+							change_first_name = Masihawit
+						}
+						1 = {
+							change_first_name = Sophia
+						}
+						1 = {
+							change_first_name = Walatta-Dengel
+						}
+						1 = {
+							change_first_name = Walatta-Giyorgis
+						}
+						1 = {
+							change_first_name = Walatta-Iyasus
+						}
+						1 = {
+							change_first_name = Walatta-Krestos
+						}
+						1 = {
+							change_first_name = Walatta-Maryam
+						}
+						1 = {
+							change_first_name = Walatta-Masih
+						}
+						1 = {
+							change_first_name = Walatta-Mikael
+						}
+						1 = {
+							change_first_name = Walatta-Petros
+						}
+						1 = {
+							change_first_name = Walatta-Sellase
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 7
+					}
+					random_list = {
+						1 = {
+							change_first_name = Amina
+						}
+						1 = {
+							change_first_name = Amira
+						}
+						1 = {
+							change_first_name = Aziza
+						}
+						1 = {
+							change_first_name = Habiba
+						}
+						1 = {
+							change_first_name = Jamila
+						}
+						1 = {
+							change_first_name = Saida
+						}
+						1 = {
+							change_first_name = Zubayda
+						}
+					}
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Rachel
+						}
+						1 = {
+							change_first_name = Rebecca
+						}
+						1 = {
+							change_first_name = Sarah
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:judaism_religion
+						}
+						add = 9
+					}
+					random_list = {
+						1 = {
+							change_first_name = Edna
+						}
+						1 = {
+							change_first_name = Elizabeth
+						}
+						1 = {
+							change_first_name = Esraelawit
+						}
+						1 = {
+							change_first_name = Esther
+						}
+						1 = {
+							change_first_name = Seyon-Mangasa
+						}
+						1 = {
+							change_first_name = Susan
+						}
+						1 = {
+							change_first_name = Walatta-Hanna
+						}
+						1 = {
+							change_first_name = Walatta-Nabiyat
+						}
+						1 = {
+							change_first_name = Zion
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 33
+					}
+					random_list = {
+						1 = {
+							change_first_name = Barbara
+						}
+						1 = {
+							change_first_name = Ekheta-Krestos
+						}
+						1 = {
+							change_first_name = Esate-Maryam
+						}
+						1 = {
+							change_first_name = Eskenderawit
+						}
+						1 = {
+							change_first_name = Eupraxia
+						}
+						1 = {
+							change_first_name = Feqerta-Krestos
+						}
+						1 = {
+							change_first_name = Fere-Maryam
+						}
+						1 = {
+							change_first_name = Galilawit
+						}
+						1 = {
+							change_first_name = Hamalmalawit
+						}
+						1 = {
+							change_first_name = Hilaria
+						}
+						1 = {
+							change_first_name = Joanna
+						}
+						1 = {
+							change_first_name = Justina
+						}
+						1 = {
+							change_first_name = Krestos-Ebaya
+						}
+						1 = {
+							change_first_name = Krestos-Senna
+						}
+						1 = {
+							change_first_name = Labasita-Krestos
+						}
+						1 = {
+							change_first_name = Magdalawit
+						}
+						1 = {
+							change_first_name = Marta-Wangel
+						}
+						1 = {
+							change_first_name = Martha
+						}
+						1 = {
+							change_first_name = Maryam-Sana
+						}
+						1 = {
+							change_first_name = Maryam-Sena
+						}
+						1 = {
+							change_first_name = Maryam-Zamada
+						}
+						1 = {
+							change_first_name = Masqal-Ebaya
+						}
+						1 = {
+							change_first_name = Masqal-Kebra
+						}
+						1 = {
+							change_first_name = Nazrawit
+						}
+						1 = {
+							change_first_name = Qeddesta-Krestos
+						}
+						1 = {
+							change_first_name = Sabala-Maryam
+						}
+						1 = {
+							change_first_name = Sabana-Giyorgis
+						}
+						1 = {
+							change_first_name = Sabla-Wangel
+						}
+						1 = {
+							change_first_name = Tehreyanna-Maryam
+						}
+						1 = {
+							change_first_name = Theodora
+						}
+						1 = {
+							change_first_name = Walatta-Hawaryat
+						}
+						1 = {
+							change_first_name = Walatta-Qeddusan
+						}
+						1 = {
+							change_first_name = Wangelawit
+						}
+					}
+				}
+				1 = {
+					change_first_name = Amata-Leul
+				}
+				1 = {
+					change_first_name = Amlakawit
+				}
+				1 = {
+					change_first_name = Angato
+				}
+				1 = {
+					change_first_name = Asnaf-Samera
+				}
+				1 = {
+					change_first_name = Bahero
+				}
+				1 = {
+					change_first_name = Baynan
+				}
+				1 = {
+					change_first_name = Belen-Saba
+				}
+				1 = {
+					change_first_name = Berhan-Madkhanitu
+				}
+				1 = {
+					change_first_name = Berhan-Zamada
+				}
+				1 = {
+					change_first_name = Del-Mangasa
+				}
+				1 = {
+					change_first_name = Del-Mangesa
+				}
+				1 = {
+					change_first_name = Del-Samera
+				}
+				1 = {
+					change_first_name = Del-Wambara
+				}
+				1 = {
+					change_first_name = Egzi-Kebra
+				}
+				1 = {
+					change_first_name = Egzi-Kharaya
+				}
+				1 = {
+					change_first_name = Gaewa
+				}
+				1 = {
+					change_first_name = Hamalmal-Warq
+				}
+				1 = {
+					change_first_name = Harago
+				}
+				1 = {
+					change_first_name = Haymanotawit
+				}
+				1 = {
+					change_first_name = Lazab-Warqa
+				}
+				1 = {
+					change_first_name = Madkhen-Zamada
+				}
+				1 = {
+					change_first_name = Malakotawit
+				}
+				1 = {
+					change_first_name = Masoba-Warq
+				}
+				1 = {
+					change_first_name = Mentewab
+				}
+				1 = {
+					change_first_name = Muzit
+				}
+				1 = {
+					change_first_name = Qeddesta-Kesos
+				}
+				1 = {
+					change_first_name = Qeddeste
+				}
+				1 = {
+					change_first_name = Rom-Ganayala
+				}
+				1 = {
+					change_first_name = Romana-Warq
+				}
+				1 = {
+					change_first_name = Romna
+				}
+				1 = {
+					change_first_name = Sellus-Hayla
+				}
+				1 = {
+					change_first_name = Sena-Heyway
+				}
+				1 = {
+					change_first_name = Shih-Mangasa
+				}
+				1 = {
+					change_first_name = Terda-Gabaz
+				}
+				1 = {
+					change_first_name = Walatta-Nagast
+				}
+				1 = {
+					change_first_name = Walatta-Negus
+				}
+			}
+		}
+	}
+}
