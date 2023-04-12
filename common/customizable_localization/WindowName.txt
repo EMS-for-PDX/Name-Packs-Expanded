@@ -204,6 +204,7 @@
 		}
 		localization_key = Window_Arabic
 	}
+	#Everything after here doesn't need an islam check
 	text = {
 		trigger = {
 			culture = {
@@ -216,7 +217,18 @@
 		}
 		localization_key = Window_Nubian
 	}
-	#Everything after here doesn't need an islam check
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+			}
+			culture = {
+				has_cultural_pillar = language_ethiopic
+				has_cultural_pillar = heritage_east_african
+			}
+		}
+		localization_key = Window_Ethiopian
+	}
 	text = {
 		trigger = {
 			culture = {
@@ -926,6 +938,18 @@ WindowNameTT = {
 			}
 		}
 		localization_key = Window_Nubian_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+			}
+			culture = {
+				has_cultural_pillar = language_ethiopic
+				has_cultural_pillar = heritage_east_african
+			}
+		}
+		localization_key = Window_Ethiopian_TT
 	}
 	text = {
 		trigger = {
