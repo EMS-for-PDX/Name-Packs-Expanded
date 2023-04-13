@@ -313,6 +313,12 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:khali0004 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:khali0009 }
 	}
+	character:163094.dynasty = { # Sawdanids
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:163094 }
+	}
+	character:163094 ={
+		dynasty_effect_ne = yes
+	}
 	character:khali0008 ={
 		change_first_name = Zaynab
 	}

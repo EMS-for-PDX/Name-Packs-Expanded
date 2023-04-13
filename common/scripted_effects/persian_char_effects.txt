@@ -311,6 +311,18 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:216908 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:216907 }
     }
+	character:216023.dynasty = { #Dabuyids
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:216023 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:216021 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:216020 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:216022 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:1059970 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:216013 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:216014 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:216015 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:216019 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:216018 }
+    }
 	character:6910.dynasty = {
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6910 }
     }
@@ -335,6 +347,30 @@
 	character:175060.dynasty = { #Shahi
         add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbpersian011 }
         #add_to_variable_list = { name = name_pack_support_dynasty target = character:175060 }
+    }
+    character:216023 = {
+        change_first_name = Daboe
+    }
+    character:216021 = {
+        change_first_name = Farrokhan
+    }
+    character:216020 = {
+        change_first_name = Dadburzmihr
+    }
+    character:216022 = {
+        change_first_name = Farrokhan
+    }
+    character:1059970 = {
+        change_first_name = Windad
+    }
+    character:216013 = {
+        change_first_name = Khurshid
+    }
+    character:216019 = {
+        change_first_name = Ohrmazd
+    }
+    character:216018 = {
+        change_first_name = Windad-Ohrmazd
     }
     character:1228199 = {
         dynasty_effect_ne = yes
@@ -467,6 +503,7 @@
     }
     character:160309 = {
         change_first_name = Karen
+		dynasty_effect_ne = yes
     }
     character:1230311 = {
         change_first_name = Banafsha
