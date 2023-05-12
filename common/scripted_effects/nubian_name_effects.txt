@@ -12,6 +12,20 @@
 		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
 	}
 	random_list = {
+		0 = {
+			random_list = {
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:judaism_religion
+						}
+						add = 15
+					}
+					change_first_name = Michael
+				}
+			}
+		}
 		40 = {
 			random_list = {
 				0 = {
@@ -32,16 +46,6 @@
 							change_first_name = Joseph
 						}
 					}
-				}
-				0 = {
-					modifier = {
-						OR = {
-							has_religion = religion:christianity_religion
-							has_religion = religion:judaism_religion
-						}
-						add = 1
-					}
-					change_first_name = Michael
 				}
 				0 = {
 					modifier = {
