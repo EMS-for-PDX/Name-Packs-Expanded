@@ -1,0 +1,1622 @@
+somali_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 25
+			}
+			change_first_name = Muhammad
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 25
+			}
+			change_first_name = John
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 40
+			}
+			random_list = {
+				1 = {
+					change_first_name = Abdallah
+				}
+				1 = {
+					change_first_name = Abdi
+				}
+				1 = {
+					change_first_name = Ahmad
+				}
+				1 = {
+					change_first_name = Ali
+				}
+				1 = {
+					change_first_name = Faarah
+				}
+				1 = {
+					change_first_name = Hasan
+				}
+				1 = {
+					change_first_name = Umar
+				}
+			}
+		}
+		30 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 8
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abdar-Rahman
+						}
+						1 = {
+							change_first_name = Husayn
+						}
+						1 = {
+							change_first_name = Jama
+						}
+						1 = {
+							change_first_name = Mahmud
+						}
+						1 = {
+							change_first_name = Nur
+						}
+						1 = {
+							change_first_name = Said
+						}
+						1 = {
+							change_first_name = Salah
+						}
+						1 = {
+							change_first_name = Uthman
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 9
+					}
+					random_list = {
+						1 = {
+							change_first_name = Adam
+						}
+						1 = {
+							change_first_name = Ibrahim
+						}
+						1 = {
+							change_first_name = Isa
+						}
+						1 = {
+							change_first_name = Ishaq
+						}
+						1 = {
+							change_first_name = Ismail
+						}
+						1 = {
+							change_first_name = Michael
+						}
+						1 = {
+							change_first_name = Musa
+						}
+						1 = {
+							change_first_name = Yunus
+						}
+						1 = {
+							change_first_name = Yusuf
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = afar_name_list
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Canfaxe
+						}
+						1 = {
+							change_first_name = Kaxxafo
+						}
+					}
+				}
+				1 = {
+					change_first_name = Diiriye
+				}
+				1 = {
+					change_first_name = Guuleed
+				}
+				1 = {
+					change_first_name = Liibaan
+				}
+				1 = {
+					change_first_name = Rooble
+				}
+				1 = {
+					change_first_name = Samatar
+				}
+				1 = {
+					change_first_name = Shirdoon
+				}
+				1 = {
+					change_first_name = Warfaa
+				}
+				1 = {
+					change_first_name = Warsame
+				}
+				1 = {
+					change_first_name = Xirsi
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 37
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abbas
+						}
+						1 = {
+							change_first_name = Abdal-Aziz
+						}
+						1 = {
+							change_first_name = Abdal-Qadir
+						}
+						1 = {
+							change_first_name = Abdal-Waaq
+						}
+						1 = {
+							change_first_name = Abdal-Wahid
+						}
+						1 = {
+							change_first_name = Abu-Bakr
+						}
+						1 = {
+							change_first_name = Alama
+						}
+						1 = {
+							change_first_name = Amin
+						}
+						1 = {
+							change_first_name = Amir
+						}
+						1 = {
+							change_first_name = Awad
+						}
+						1 = {
+							change_first_name = Barakat
+						}
+						1 = {
+							change_first_name = Burhan
+						}
+						1 = {
+							change_first_name = Hamud
+						}
+						1 = {
+							change_first_name = Haqq
+						}
+						1 = {
+							change_first_name = Harun
+						}
+						1 = {
+							change_first_name = Hashim
+						}
+						1 = {
+							change_first_name = Islam
+						}
+						1 = {
+							change_first_name = Jamal
+						}
+						1 = {
+							change_first_name = Job
+						}
+						1 = {
+							change_first_name = Khalid
+						}
+						1 = {
+							change_first_name = Khayr
+						}
+						1 = {
+							change_first_name = Mansur
+						}
+						1 = {
+							change_first_name = Mujahid
+						}
+						1 = {
+							change_first_name = Muqri
+						}
+						1 = {
+							change_first_name = Musaid
+						}
+						1 = {
+							change_first_name = Nasir
+						}
+						1 = {
+							change_first_name = Rahman
+						}
+						1 = {
+							change_first_name = Rashid
+						}
+						1 = {
+							change_first_name = Rasul
+						}
+						1 = {
+							change_first_name = Sadiq
+						}
+						1 = {
+							change_first_name = Sharif
+						}
+						1 = {
+							change_first_name = Talha
+						}
+						1 = {
+							change_first_name = Uways
+						}
+						1 = {
+							change_first_name = Yahya
+						}
+						1 = {
+							change_first_name = Yasin
+						}
+						1 = {
+							change_first_name = Zakariya
+						}
+						1 = {
+							change_first_name = Zubayr
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 6
+					}
+					random_list = {
+						1 = {
+							change_first_name = Dawud
+						}
+						1 = {
+							change_first_name = Elijah
+						}
+						1 = {
+							change_first_name = Jibrail
+						}
+						1 = {
+							change_first_name = Nuh
+						}
+						1 = {
+							change_first_name = Sulayman
+						}
+						1 = {
+							change_first_name = Yaqub
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = Thomas
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = afar_name_list
+						}
+						add = 6
+					}
+					random_list = {
+						1 = {
+							change_first_name = Aydacis
+						}
+						1 = {
+							change_first_name = Boddayya
+						}
+						1 = {
+							change_first_name = Gaas
+						}
+						1 = {
+							change_first_name = Hafo
+						}
+						1 = {
+							change_first_name = Hindiwaan
+						}
+						1 = {
+							change_first_name = Qasso
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_name_list = somali_name_list
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Baalle
+						}
+						1 = {
+							change_first_name = Yabaall
+						}
+					}
+				}
+				1 = {
+					change_first_name = Aarwaaq
+				}
+				1 = {
+					change_first_name = Aawe
+				}
+				1 = {
+					change_first_name = Abaadir
+				}
+				1 = {
+					change_first_name = Abgaal
+				}
+				1 = {
+					change_first_name = Abram
+				}
+				1 = {
+					change_first_name = Absame
+				}
+				1 = {
+					change_first_name = Abshir
+				}
+				1 = {
+					change_first_name = Abuud
+				}
+				1 = {
+					change_first_name = Abuun
+				}
+				1 = {
+					change_first_name = Adeer
+				}
+				1 = {
+					change_first_name = Adke
+				}
+				1 = {
+					change_first_name = Ajuuraan
+				}
+				1 = {
+					change_first_name = Amaan
+				}
+				1 = {
+					change_first_name = Amaansame
+				}
+				1 = {
+					change_first_name = Amartiwaaq
+				}
+				1 = {
+					change_first_name = Awal
+				}
+				1 = {
+					change_first_name = Awrtable
+				}
+				1 = {
+					change_first_name = Awsame
+				}
+				1 = {
+					change_first_name = Ayaansame
+				}
+				1 = {
+					change_first_name = Baadlaay
+				}
+				1 = {
+					change_first_name = Bahdoon
+				}
+				1 = {
+					change_first_name = Balaad
+				}
+				1 = {
+					change_first_name = Barwaaq
+				}
+				1 = {
+					change_first_name = Bastar
+				}
+				1 = {
+					change_first_name = Biddewaaq
+				}
+				1 = {
+					change_first_name = Cadaadshe
+				}
+				1 = {
+					change_first_name = Cawaale
+				}
+				1 = {
+					change_first_name = Caynaashe
+				}
+				1 = {
+					change_first_name = Cigaal
+				}
+				1 = {
+					change_first_name = Ciqwaaq
+				}
+				1 = {
+					change_first_name = Colaad
+				}
+				1 = {
+					change_first_name = Cumarow
+				}
+				1 = {
+					change_first_name = Dabare
+				}
+				1 = {
+					change_first_name = Dagaale
+				}
+				1 = {
+					change_first_name = Dashiishe
+				}
+				1 = {
+					change_first_name = Dayle
+				}
+				1 = {
+					change_first_name = Dhakaar
+				}
+				1 = {
+					change_first_name = Dhiidhin
+				}
+				1 = {
+					change_first_name = Dhulbahante
+				}
+				1 = {
+					change_first_name = Diimaale
+				}
+				1 = {
+					change_first_name = Diintawaaq
+				}
+				1 = {
+					change_first_name = Dilgaamis
+				}
+				1 = {
+					change_first_name = Dilmarraah
+				}
+				1 = {
+					change_first_name = Dirir
+				}
+				1 = {
+					change_first_name = Doolaal
+				}
+				1 = {
+					change_first_name = Elmi
+				}
+				1 = {
+					change_first_name = Gabdoon
+				}
+				1 = {
+					change_first_name = Gareen
+				}
+				1 = {
+					change_first_name = Gedir
+				}
+				1 = {
+					change_first_name = Geedi
+				}
+				1 = {
+					change_first_name = Gumarwaaq
+				}
+				1 = {
+					change_first_name = Guudwaaq
+				}
+				1 = {
+					change_first_name = Habarwa
+				}
+				1 = {
+					change_first_name = Hamar
+				}
+				1 = {
+					change_first_name = Hantaale
+				}
+				1 = {
+					change_first_name = Harti
+				}
+				1 = {
+					change_first_name = Hawiye
+				}
+				1 = {
+					change_first_name = Hilowle
+				}
+				1 = {
+					change_first_name = Hurtuuba
+				}
+				1 = {
+					change_first_name = Irir
+				}
+				1 = {
+					change_first_name = Jidati
+				}
+				1 = {
+					change_first_name = Jidwaaq
+				}
+				1 = {
+					change_first_name = Jijeele
+				}
+				1 = {
+					change_first_name = Kaariye
+				}
+				1 = {
+					change_first_name = Kablalax
+				}
+				1 = {
+					change_first_name = Kalmuge
+				}
+				1 = {
+					change_first_name = Karanle
+				}
+				1 = {
+					change_first_name = Kasaanle
+				}
+				1 = {
+					change_first_name = Koombe
+				}
+				1 = {
+					change_first_name = Kuumade
+				}
+				1 = {
+					change_first_name = Lipaax
+				}
+				1 = {
+					change_first_name = Looyaan
+				}
+				1 = {
+					change_first_name = Maadow
+				}
+				1 = {
+					change_first_name = Maaliim
+				}
+				1 = {
+					change_first_name = Maalzarrah
+				}
+				1 = {
+					change_first_name = Madar
+				}
+				1 = {
+					change_first_name = Majeerteen
+				}
+				1 = {
+					change_first_name = Murursade
+				}
+				1 = {
+					change_first_name = Nabadshe
+				}
+				1 = {
+					change_first_name = Naxariiswaaq
+				}
+				1 = {
+					change_first_name = Naxwi
+				}
+				1 = {
+					change_first_name = Ogaadeen
+				}
+				1 = {
+					change_first_name = Raamwaaq
+				}
+				1 = {
+					change_first_name = Riighaye
+				}
+				1 = {
+					change_first_name = Samaad
+				}
+				1 = {
+					change_first_name = Samaale
+				}
+				1 = {
+					change_first_name = Samaane
+				}
+				1 = {
+					change_first_name = Samakaab
+				}
+				1 = {
+					change_first_name = Samatalis
+				}
+				1 = {
+					change_first_name = Sharmarke
+				}
+				1 = {
+					change_first_name = Shirshore
+				}
+				1 = {
+					change_first_name = Shirwa
+				}
+				1 = {
+					change_first_name = Siinwaaq
+				}
+				1 = {
+					change_first_name = Subaan
+				}
+				1 = {
+					change_first_name = Sugulle
+				}
+				1 = {
+					change_first_name = Tabale
+				}
+				1 = {
+					change_first_name = Tagaalwaaq
+				}
+				1 = {
+					change_first_name = Talamuge
+				}
+				1 = {
+					change_first_name = Talasame
+				}
+				1 = {
+					change_first_name = Tanade
+				}
+				1 = {
+					change_first_name = Udke
+				}
+				1 = {
+					change_first_name = Ugaaryahan
+				}
+				1 = {
+					change_first_name = Waalmuge
+				}
+				1 = {
+					change_first_name = Waaqjire
+				}
+				1 = {
+					change_first_name = Waaqlajire
+				}
+				1 = {
+					change_first_name = Waaqle
+				}
+				1 = {
+					change_first_name = Waaqmahadle
+				}
+				1 = {
+					change_first_name = Waaqsheen
+				}
+				1 = {
+					change_first_name = Warwaaq
+				}
+				1 = {
+					change_first_name = Warwaaqsame
+				}
+				1 = {
+					change_first_name = Xamarwaaq
+				}
+			}
+		}
+	}
+}
+somali_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 40
+			}
+			random_list = {
+				1 = {
+					change_first_name = Fatima
+				}
+				1 = {
+					change_first_name = Halima
+				}
+				1 = {
+					change_first_name = Khadija
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				religion = {
+					is_in_family = rf_abrahamic
+				}
+				add = 30
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = Aisha
+						}
+						1 = {
+							change_first_name = Amina
+						}
+						1 = {
+							change_first_name = Farah
+						}
+						1 = {
+							change_first_name = Habiba
+						}
+						1 = {
+							change_first_name = Zahra
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:islam_religion
+							has_religion = religion:christianity_religion
+						}
+						add = 1
+					}
+					change_first_name = Maryam
+				}
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 1
+					}
+					change_first_name = Eve
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 10
+					}
+					random_list = {
+						1 = {
+							change_first_name = Asma
+						}
+						1 = {
+							change_first_name = Imana
+						}
+						1 = {
+							change_first_name = Layla
+						}
+						1 = {
+							change_first_name = Mumina
+						}
+						1 = {
+							change_first_name = Nura
+						}
+						1 = {
+							change_first_name = Raqiya
+						}
+						1 = {
+							change_first_name = Safiya
+						}
+						1 = {
+							change_first_name = Samira
+						}
+						1 = {
+							change_first_name = Zaynab
+						}
+						1 = {
+							change_first_name = Zulaykha
+						}
+					}
+				}
+				1 = {
+					change_first_name = Aragsan
+				}
+				1 = {
+					change_first_name = Arro
+				}
+				1 = {
+					change_first_name = Asli
+				}
+				1 = {
+					change_first_name = Astur
+				}
+				1 = {
+					change_first_name = Awraleh
+				}
+				1 = {
+					change_first_name = Ayaan
+				}
+				1 = {
+					change_first_name = Barni
+				}
+				1 = {
+					change_first_name = Barwaaqo
+				}
+				1 = {
+					change_first_name = Basla
+				}
+				1 = {
+					change_first_name = Baxsan
+				}
+				1 = {
+					change_first_name = Buuxo
+				}
+				1 = {
+					change_first_name = Carro
+				}
+				1 = {
+					change_first_name = Cawo
+				}
+				1 = {
+					change_first_name = Dahabo
+				}
+				1 = {
+					change_first_name = Deeqa
+				}
+				1 = {
+					change_first_name = Degmo
+				}
+				1 = {
+					change_first_name = Doombira
+				}
+				1 = {
+					change_first_name = Ebleh
+				}
+				1 = {
+					change_first_name = Egalo
+				}
+				1 = {
+					change_first_name = Faarow
+				}
+				1 = {
+					change_first_name = Faaya
+				}
+				1 = {
+					change_first_name = Falagsato
+				}
+				1 = {
+					change_first_name = Filsan
+				}
+				1 = {
+					change_first_name = Garhajis
+				}
+				1 = {
+					change_first_name = Hibaaq
+				}
+				1 = {
+					change_first_name = Hoodo
+				}
+				1 = {
+					change_first_name = Ladan
+				}
+				1 = {
+					change_first_name = Libin
+				}
+				1 = {
+					change_first_name = Madedo
+				}
+				1 = {
+					change_first_name = Mardal 
+				}
+				1 = {
+					change_first_name = Maro
+				}
+				1 = {
+					change_first_name = Mun
+				}
+				1 = {
+					change_first_name = Nasteexo
+				}
+				1 = {
+					change_first_name = Nurto
+				}
+				1 = {
+					change_first_name = Saado
+				}
+				1 = {
+					change_first_name = Shaqlan
+				}
+				1 = {
+					change_first_name = Ubax
+				}
+				1 = {
+					change_first_name = Ugaaso
+				}
+				1 = {
+					change_first_name = Warsan
+				}
+				1 = {
+					change_first_name = Xiddig
+				}
+			}
+		}
+	}
+}
+beja_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				religion = {
+					is_in_family = rf_abrahamic
+				}
+				add = 30
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 20
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abd-Allah
+						}
+						1 = {
+							change_first_name = Abdar-Rahman
+						}
+						1 = {
+							change_first_name = Ahmad
+						}
+						1 = {
+							change_first_name = Ali
+						}
+						1 = {
+							change_first_name = Ashraf
+						}
+						1 = {
+							change_first_name = Dawud
+						}
+						1 = {
+							change_first_name = Hammad
+						}
+						1 = {
+							change_first_name = Hasan
+						}
+						1 = {
+							change_first_name = Hashim
+						}
+						1 = {
+							change_first_name = Husayn
+						}
+						1 = {
+							change_first_name = Isa
+						}
+						1 = {
+							change_first_name = Kamal
+						}
+						1 = {
+							change_first_name = Mahmud
+						}
+						1 = {
+							change_first_name = Muhammad
+						}
+						1 = {
+							change_first_name = Mustafa
+						}
+						1 = {
+							change_first_name = Salih
+						}
+						1 = {
+							change_first_name = Umar
+						}
+						1 = {
+							change_first_name = Uthman
+						}
+						1 = {
+							change_first_name = Yahya
+						}
+						1 = {
+							change_first_name = Yaqub
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = David
+						}
+						1 = {
+							change_first_name = Jacob
+						}
+						1 = {
+							change_first_name = John
+						}
+						1 = {
+							change_first_name = Paul
+						}
+						1 = {
+							change_first_name = Simon
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = Adam
+						}
+						1 = {
+							change_first_name = Ibrahim
+						}
+						1 = {
+							change_first_name = Ismail
+						}
+						1 = {
+							change_first_name = Musa
+						}
+						1 = {
+							change_first_name = Yusuf
+						}
+					}
+				}
+				1 = {
+					change_first_name = Diiriye
+				}
+				1 = {
+					change_first_name = Guuleed
+				}
+				1 = {
+					change_first_name = Liibaan
+				}
+				1 = {
+					change_first_name = Rooble
+				}
+				1 = {
+					change_first_name = Samatar
+				}
+				1 = {
+					change_first_name = Shirdoon
+				}
+				1 = {
+					change_first_name = Warfaa
+				}
+				1 = {
+					change_first_name = Warsame
+				}
+				1 = {
+					change_first_name = Xirsi
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 24
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abdal-Aziz
+						}
+						1 = {
+							change_first_name = Abdal-Hamid
+						}
+						1 = {
+							change_first_name = Abdar-Rahim
+						}
+						1 = {
+							change_first_name = Amil
+						}
+						1 = {
+							change_first_name = Amir
+						}
+						1 = {
+							change_first_name = Ashhab
+						}
+						1 = {
+							change_first_name = Awad
+						}
+						1 = {
+							change_first_name = Badri
+						}
+						1 = {
+							change_first_name = Bashar
+						}
+						1 = {
+							change_first_name = Bilal
+						}
+						1 = {
+							change_first_name = Burhan
+						}
+						1 = {
+							change_first_name = Fadl
+						}
+						1 = {
+							change_first_name = Hajjaj
+						}
+						1 = {
+							change_first_name = Hamdan
+						}
+						1 = {
+							change_first_name = Hamid
+						}
+						1 = {
+							change_first_name = Jafar
+						}
+						1 = {
+							change_first_name = Martad
+						}
+						1 = {
+							change_first_name = Nur
+						}
+						1 = {
+							change_first_name = Said
+						}
+						1 = {
+							change_first_name = Salim
+						}
+						1 = {
+							change_first_name = Shakur
+						}
+						1 = {
+							change_first_name = Shaykh
+						}
+						1 = {
+							change_first_name = Uqayl
+						}
+						1 = {
+							change_first_name = Zubayd
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 10
+					}
+					random_list = {
+						1 = {
+							change_first_name = Elijah
+						}
+						1 = {
+							change_first_name = Harun
+						}
+						1 = {
+							change_first_name = Ishaq
+						}
+						1 = {
+							change_first_name = Israel
+						}
+						1 = {
+							change_first_name = Joachim
+						}
+						1 = {
+							change_first_name = Job
+						}
+						1 = {
+							change_first_name = Kanon
+						}
+						1 = {
+							change_first_name = Nuh
+						}
+						1 = {
+							change_first_name = Salama
+						}
+						1 = {
+							change_first_name = Sulayman
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 6
+					}
+					random_list = {
+						1 = {
+							change_first_name = Jesus
+						}
+						1 = {
+							change_first_name = Marcus
+						}
+						1 = {
+							change_first_name = Nicholas
+						}
+						1 = {
+							change_first_name = Peter
+						}
+						1 = {
+							change_first_name = Philip
+						}
+						1 = {
+							change_first_name = Stephen
+						}
+					}
+				}
+				1 = {
+					change_first_name = Aamar
+				}
+				1 = {
+					change_first_name = Abdak
+				}
+				1 = {
+					change_first_name = Adaroob
+				}
+				1 = {
+					change_first_name = Adidan
+				}
+				1 = {
+					change_first_name = Ageeb
+				}
+				1 = {
+					change_first_name = Anakw
+				}
+				1 = {
+					change_first_name = Ankar
+				}
+				1 = {
+					change_first_name = Arfoy
+				}
+				1 = {
+					change_first_name = Arfu
+				}
+				1 = {
+					change_first_name = Arteeq
+				}
+				1 = {
+					change_first_name = Atmaan
+				}
+				1 = {
+					change_first_name = Baakaash
+				}
+				1 = {
+					change_first_name = Baakwoori
+				}
+				1 = {
+					change_first_name = Baamkaar
+				}
+				1 = {
+					change_first_name = Baarakwiit
+				}
+				1 = {
+					change_first_name = Baasbaar
+				}
+				1 = {
+					change_first_name = Baashariik
+				}
+				1 = {
+					change_first_name = Barakwin
+				}
+				1 = {
+					change_first_name = Batran
+				}
+				1 = {
+					change_first_name = Daayi
+				}
+				1 = {
+					change_first_name = Ejilaan
+				}
+				1 = {
+					change_first_name = Gabsa
+				}
+				1 = {
+					change_first_name = Gwilaay
+				}
+				1 = {
+					change_first_name = Habnaab
+				}
+				1 = {
+					change_first_name = Hadhaab
+				}
+				1 = {
+					change_first_name = Hadhaar
+				}
+				1 = {
+					change_first_name = Hakwol
+				}
+				1 = {
+					change_first_name = Hassay
+				}
+				1 = {
+					change_first_name = Hayyaaf
+				}
+				1 = {
+					change_first_name = Ijilaan
+				}
+				1 = {
+					change_first_name = Isheeb
+				}
+				1 = {
+					change_first_name = Johaa
+				}
+				1 = {
+					change_first_name = Kamhat
+				}
+				1 = {
+					change_first_name = Karaar
+				}
+				1 = {
+					change_first_name = Kharakhin
+				}
+				1 = {
+					change_first_name = Kilit
+				}
+				1 = {
+					change_first_name = Kurb
+				}
+				1 = {
+					change_first_name = Kuuka
+				}
+				1 = {
+					change_first_name = Kuwk
+				}
+				1 = {
+					change_first_name = Kwaaya
+				}
+				1 = {
+					change_first_name = Kwirib
+				}
+				1 = {
+					change_first_name = Lais
+				}
+				1 = {
+					change_first_name = Lamluum
+				}
+				1 = {
+					change_first_name = Manuufal
+				}
+				1 = {
+					change_first_name = Minni
+				}
+				1 = {
+					change_first_name = Mohgin
+				}
+				1 = {
+					change_first_name = Moorghum
+				}
+				1 = {
+					change_first_name = Muuna
+				}
+				1 = {
+					change_first_name = Nafir
+				}
+				1 = {
+					change_first_name = Oolbaab
+				}
+				1 = {
+					change_first_name = Samaara
+				}
+				1 = {
+					change_first_name = Shaadin
+				}
+				1 = {
+					change_first_name = Shaf
+				}
+				1 = {
+					change_first_name = Taha
+				}
+				1 = {
+					change_first_name = Taman
+				}
+				1 = {
+					change_first_name = Timiini
+				}
+				1 = {
+					change_first_name = Wiilabay
+				}
+				1 = {
+					change_first_name = Winnaab
+				}
+				1 = {
+					change_first_name = Yahatak
+				}
+				1 = {
+					change_first_name = Yasatak
+				}
+			}
+		}
+	}
+}
+beja_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				religion = {
+					is_in_family = rf_abrahamic
+				}
+				add = 30
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = Adila
+						}
+						1 = {
+							change_first_name = Amina
+						}
+						1 = {
+							change_first_name = Fatima
+						}
+						1 = {
+							change_first_name = Khadija
+						}
+						1 = {
+							change_first_name = Zaynab
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Maryam
+						}
+						1 = {
+							change_first_name = Sarah
+						}
+					}
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 7
+					}
+					random_list = {
+						1 = {
+							change_first_name = Asha
+						}
+						1 = {
+							change_first_name = Dunya
+						}
+						1 = {
+							change_first_name = Halima
+						}
+						1 = {
+							change_first_name = Madina
+						}
+						1 = {
+							change_first_name = Nafisa
+						}
+						1 = {
+							change_first_name = Sitta
+						}
+						1 = {
+							change_first_name = Zahara
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Anna
+						}
+						1 = {
+							change_first_name = Rachel
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = Martha
+				}
+				1 = {
+					change_first_name = Aamna
+				}
+				1 = {
+					change_first_name = Angrun
+				}
+				1 = {
+					change_first_name = Baakiraar
+				}
+				1 = {
+					change_first_name = Balandaba
+				}
+				1 = {
+					change_first_name = Dirfa
+				}
+				1 = {
+					change_first_name = Hadhaat
+				}
+				1 = {
+					change_first_name = Huwa
+				}
+				1 = {
+					change_first_name = Keileet
+				}
+				1 = {
+					change_first_name = Nahad
+				}
+				1 = {
+					change_first_name = Nasritor
+				}
+				1 = {
+					change_first_name = Raahoot
+				}
+				1 = {
+					change_first_name = Rayaneet
+				}
+				1 = {
+					change_first_name = Shaghaba
+				}
+				1 = {
+					change_first_name = Sindiritor
+				}
+				1 = {
+					change_first_name = Tibbuus
+				}
+			}
+		}
+	}
+}
