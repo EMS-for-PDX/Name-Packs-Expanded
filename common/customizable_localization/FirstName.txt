@@ -21,11 +21,10 @@
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
-							dynasty = {
+							dynasty ?= {
 								any_in_list = {
 									variable = dynasty_independent
 									this = root.primary_spouse
@@ -37,8 +36,7 @@
 				}
 				AND = {
 					is_male = yes
-					exists = father
-					father = {
+					father ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -53,8 +51,7 @@
 				}
 				AND = {
 					is_male = yes
-					exists = mother
-					mother = {
+					mother ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -125,8 +122,7 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
-					dynasty = {
+					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
 							this = root
@@ -150,8 +146,7 @@
 					OR = {
 						has_government = feudal_government
 						AND = {
-							exists = dynasty
-							dynasty = {
+							dynasty ?= {
 								any_in_list = {
 									variable = dynasty_feudalclan
 									this = root
@@ -167,8 +162,7 @@
 					OR = {
 						has_government = feudal_government
 						AND = {
-							exists = dynasty
-							dynasty = {
+							dynasty ?= {
 								any_in_list = {
 									variable = dynasty_feudalclan
 									this = scope:the_spouse
@@ -195,8 +189,7 @@
 				OR = {
 					has_government = feudal_government
 					AND = {
-						exists = dynasty
-						dynasty = {
+						dynasty ?= {
 							any_in_list = {
 								variable = dynasty_feudalclan
 								this = scope:the_parent
@@ -432,11 +425,10 @@ FirstNameNoTooltip = {
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
-							dynasty = {
+							dynasty ?= {
 								any_in_list = {
 									variable = dynasty_independent
 									this = root.primary_spouse
@@ -448,8 +440,7 @@ FirstNameNoTooltip = {
 				}
 				AND = {
 					is_male = yes
-					exists = father
-					father = {
+					father ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -464,8 +455,7 @@ FirstNameNoTooltip = {
 				}
 				AND = {
 					is_male = yes
-					exists = mother
-					mother = {
+					mother ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -536,8 +526,7 @@ FirstNameNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
-					dynasty = {
+					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
 							this = root
@@ -560,13 +549,10 @@ FirstNameNoTooltip = {
 				AND = {
 					OR = {
 						has_government = feudal_government
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_feudalclan
-									this = root
-								}
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = root
 							}
 						}
 					}
@@ -577,13 +563,10 @@ FirstNameNoTooltip = {
 					save_temporary_scope_as = the_spouse
 					OR = {
 						has_government = feudal_government
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_feudalclan
-									this = scope:the_spouse
-								}
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_spouse
 							}
 						}
 					}
@@ -605,13 +588,10 @@ FirstNameNoTooltip = {
 				save_temporary_scope_as = the_parent
 				OR = {
 					has_government = feudal_government
-					AND = {
-						exists = dynasty
-						dynasty = {
-							any_in_list = {
-								variable = dynasty_feudalclan
-								this = scope:the_parent
-							}
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
 						}
 					}
 				}
@@ -842,25 +822,21 @@ FirstNamePossessive = {
 					}
 					highest_held_title_tier >= tier_kingdom
 				}
-				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
-						OR = {
-							is_independent_ruler = yes
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.primary_spouse
-								}
+				primary_spouse ?= {
+					OR = {
+						is_independent_ruler = yes
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root.primary_spouse
 							}
 						}
-						highest_held_title_tier >= tier_kingdom
 					}
+					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
 					is_male = yes
-					exists = father
-					father = {
+					father ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -875,8 +851,7 @@ FirstNamePossessive = {
 				}
 				AND = {
 					is_male = yes
-					exists = mother
-					mother = {
+					mother ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -946,13 +921,10 @@ FirstNamePossessive = {
 			}
 			OR = {
 				has_government = feudal_government
-				AND = {
-					exists = dynasty
-					dynasty = {
-						any_in_list = {
-							variable = dynasty_feudalclan
-							this = root
-						}
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_feudalclan
+						this = root
 					}
 				}
 			}
@@ -971,13 +943,10 @@ FirstNamePossessive = {
 				AND = {
 					OR = {
 						has_government = feudal_government
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_feudalclan
-									this = root
-								}
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = root
 							}
 						}
 					}
@@ -988,13 +957,10 @@ FirstNamePossessive = {
 					save_temporary_scope_as = the_spouse
 					OR = {
 						has_government = feudal_government
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_feudalclan
-									this = scope:the_spouse
-								}
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_spouse
 							}
 						}
 					}
@@ -1016,13 +982,10 @@ FirstNamePossessive = {
 				save_temporary_scope_as = the_parent
 				OR = {
 					has_government = feudal_government
-					AND = {
-						exists = dynasty
-						dynasty = {
-							any_in_list = {
-								variable = dynasty_feudalclan
-								this = scope:the_parent
-							}
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
 						}
 					}
 				}
@@ -1253,25 +1216,21 @@ FirstNamePossessiveNoTooltip = {
 					}
 					highest_held_title_tier >= tier_kingdom
 				}
-				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
-						OR = {
-							is_independent_ruler = yes
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.primary_spouse
-								}
+				primary_spouse ?= {
+					OR = {
+						is_independent_ruler = yes
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root.primary_spouse
 							}
 						}
-						highest_held_title_tier >= tier_kingdom
 					}
+					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
 					is_male = yes
-					exists = father
-					father = {
+					father ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -1286,8 +1245,7 @@ FirstNamePossessiveNoTooltip = {
 				}
 				AND = {
 					is_male = yes
-					exists = mother
-					mother = {
+					mother ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -1357,13 +1315,10 @@ FirstNamePossessiveNoTooltip = {
 			}
 			OR = {
 				has_government = feudal_government
-				AND = {
-					exists = dynasty
-					dynasty = {
-						any_in_list = {
-							variable = dynasty_feudalclan
-							this = root
-						}
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_feudalclan
+						this = root
 					}
 				}
 			}
@@ -1382,13 +1337,10 @@ FirstNamePossessiveNoTooltip = {
 				AND = {
 					OR = {
 						has_government = feudal_government
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_feudalclan
-									this = root
-								}
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = root
 							}
 						}
 					}
@@ -1399,13 +1351,10 @@ FirstNamePossessiveNoTooltip = {
 					save_temporary_scope_as = the_spouse
 					OR = {
 						has_government = feudal_government
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_feudalclan
-									this = scope:the_spouse
-								}
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_spouse
 							}
 						}
 					}
@@ -1427,13 +1376,10 @@ FirstNamePossessiveNoTooltip = {
 				save_temporary_scope_as = the_parent
 				OR = {
 					has_government = feudal_government
-					AND = {
-						exists = dynasty
-						dynasty = {
-							any_in_list = {
-								variable = dynasty_feudalclan
-								this = scope:the_parent
-							}
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
 						}
 					}
 				}
@@ -1664,25 +1610,21 @@ FirstNameNicknamed = {
 					}
 					highest_held_title_tier >= tier_kingdom
 				}
-				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
-						OR = {
-							is_independent_ruler = yes
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.primary_spouse
-								}
+				primary_spouse ?= {
+					OR = {
+						is_independent_ruler = yes
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_independent
+								this = root.primary_spouse
 							}
 						}
-						highest_held_title_tier >= tier_kingdom
 					}
+					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
 					is_male = yes
-					exists = father
-					father = {
+					father ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -1697,8 +1639,7 @@ FirstNameNicknamed = {
 				}
 				AND = {
 					is_male = yes
-					exists = mother
-					mother = {
+					mother ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty = {
@@ -1768,13 +1709,10 @@ FirstNameNicknamed = {
 			}
 			OR = {
 				has_government = feudal_government
-				AND = {
-					exists = dynasty
-					dynasty = {
-						any_in_list = {
-							variable = dynasty_feudalclan
-							this = root
-						}
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_feudalclan
+						this = root
 					}
 				}
 			}
@@ -1793,13 +1731,10 @@ FirstNameNicknamed = {
 				AND = {
 					OR = {
 						has_government = feudal_government
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_feudalclan
-									this = root
-								}
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = root
 							}
 						}
 					}
@@ -1810,13 +1745,10 @@ FirstNameNicknamed = {
 					save_temporary_scope_as = the_spouse
 					OR = {
 						has_government = feudal_government
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = dynasty_feudalclan
-									this = scope:the_spouse
-								}
+						dynasty ?= {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_spouse
 							}
 						}
 					}
@@ -1838,13 +1770,10 @@ FirstNameNicknamed = {
 				save_temporary_scope_as = the_parent
 				OR = {
 					has_government = feudal_government
-					AND = {
-						exists = dynasty
-						dynasty = {
-							any_in_list = {
-								variable = dynasty_feudalclan
-								this = scope:the_parent
-							}
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
 						}
 					}
 				}

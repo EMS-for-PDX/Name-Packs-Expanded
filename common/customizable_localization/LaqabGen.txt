@@ -4,15 +4,12 @@
 	text = {
 		trigger = {
 			OR = {
-				AND = {
-                    exists = dynasty
-                    dynasty = {
-                        any_in_list = {
-                            variable = pre_laqab_dynasty
-                            this = root
-                        }
-                    }
-                }
+				dynasty ?= {
+					any_in_list = {
+						variable = pre_laqab_dynasty
+						this = root
+					}
+				}
                 any_in_global_list = {
                     variable = pre_laqab_global
                     this = root
@@ -432,15 +429,12 @@ LaqabCheck = {
 	text = {
 		trigger = {
 			OR = {
-				AND = {
-                    exists = dynasty
-                    dynasty = {
-                        any_in_list = {
-                            variable = regular_laqab_dynasty
-                            this = root
-                        }
-                    }
-                }
+				dynasty ?= {
+					any_in_list = {
+						variable = regular_laqab_dynasty
+						this = root
+					}
+				}
                 any_in_global_list = {
                     variable = regular_laqab_global
                     this = root
@@ -460,15 +454,12 @@ LaqabNameCheck = {
 	text = {
 		trigger = {
 			OR = {
-				AND = {
-                    exists = dynasty
-                    dynasty = {
-                        any_in_list = {
-                            variable = regular_laqab_dynasty
-                            this = root
-                        }
-                    }
-                }
+				dynasty ?= {
+					any_in_list = {
+						variable = regular_laqab_dynasty
+						this = root
+					}
+				}
                 any_in_global_list = {
                     variable = regular_laqab_global
                     this = root
@@ -480,15 +471,12 @@ LaqabNameCheck = {
 	text = {
 		trigger = {
 			OR = {
-				AND = {
-                    exists = dynasty
-                    dynasty = {
-                        any_in_list = {
-                            variable = name_pack_support_dynasty
-                            this = root
-                        }
-                    }
-                }
+				dynasty ?= {
+					any_in_list = {
+						variable = name_pack_support_dynasty
+						this = root
+					}
+				}
                 any_in_global_list = {
                     variable = name_pack_support_global
                     this = root

@@ -9,8 +9,7 @@
 	}
 	text = {
 		trigger = {
-			exists = house.var:name_founder
-			house.var:name_founder = {
+			house.var:name_founder ?= {
 				save_temporary_scope_as = good_lad
 			}
 			NOT = {
@@ -49,12 +48,10 @@ ArabicPatCheck = {
 	}
 	text = {
 		trigger = {
-			exists = father
-            father = {
+            father ?= {
                 OR = {
                     AND = {
-                        exists = dynasty
-                        dynasty = {
+                        dynasty ?= {
                             any_in_list = {
                                 variable = name_pack_support_dynasty
                                 this = root.father

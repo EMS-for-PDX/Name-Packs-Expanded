@@ -68,8 +68,7 @@ on_son_father_birth = {
 			has_trait = bastard
 		}
 		is_male = yes
-		exists = father
-		father = {
+		father ?= {
 			is_alive = yes
 			NOT = {
 				has_character_flag = had_eldest_son
@@ -81,13 +80,8 @@ on_son_father_birth = {
 		father = {
 			add_character_flag = had_eldest_son
 		}
-		if = {
-			limit = {
-				exists = father.dynasty
-			}
-			father.dynasty = {
-				add_to_variable_list = { name = dynasty_list_ctp_sons target = scope:the_child }
-			}
+		father.dynasty ?= {
+			add_to_variable_list = { name = dynasty_list_ctp_sons target = scope:the_child }
 		}
 		if = {
 			limit = {
@@ -105,8 +99,7 @@ on_son_mother_birth = {
 			has_trait = bastard
 		}
 		is_male = yes
-		exists = mother
-		mother = {
+		mother ?= {
 			is_alive = yes
 			NOT = {
 				has_character_flag = had_eldest_son
@@ -118,13 +111,8 @@ on_son_mother_birth = {
 		mother = {
 			add_character_flag = had_eldest_son
 		}
-		if = {
-			limit = {
-				exists = mother.dynasty
-			}
-			mother.dynasty = {
-				add_to_variable_list = { name = dynasty_list_ctp_sons target = scope:the_child }
-			}
+		mother.dynasty ?= {
+			add_to_variable_list = { name = dynasty_list_ctp_sons target = scope:the_child }
 		}
 		if = {
 			limit = {
@@ -142,8 +130,7 @@ on_daughter_father_birth = {
 			has_trait = bastard
 		}
 		is_male = yes
-		exists = father
-		father = {
+		father ?= {
 			is_alive = yes
 			NOT = {
 				has_character_flag = had_eldest_daughter
@@ -155,13 +142,8 @@ on_daughter_father_birth = {
 		father = {
 			add_character_flag = had_eldest_daughter
 		}
-		if = {
-			limit = {
-				exists = father.dynasty
-			}
-			father.dynasty = {
-				add_to_variable_list = { name = dynasty_list_ctp_daughters target = scope:the_child }
-			}
+		father.dynasty ?= {
+			add_to_variable_list = { name = dynasty_list_ctp_daughters target = scope:the_child }
 		}
 		if = {
 			limit = {
@@ -179,8 +161,7 @@ on_daughter_mother_birth = {
 			has_trait = bastard
 		}
 		is_male = yes
-		exists = mother
-		mother = {
+		mother ?= {
 			is_alive = yes
 			NOT = {
 				has_character_flag = had_eldest_daughter
@@ -192,13 +173,8 @@ on_daughter_mother_birth = {
 		mother = {
 			add_character_flag = had_eldest_daughter
 		}
-		if = {
-			limit = {
-				exists = mother.dynasty
-			}
-			mother.dynasty = {
-				add_to_variable_list = { name = dynasty_list_ctp_daughters target = scope:the_child }
-			}
+		mother.dynasty ?= {
+			add_to_variable_list = { name = dynasty_list_ctp_daughters target = scope:the_child }
 		}
 		if = {
 			limit = {

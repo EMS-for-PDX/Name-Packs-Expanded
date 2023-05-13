@@ -23,8 +23,7 @@ on_earl_death = {
 		}
 		has_government = feudal_government
 		exists = dynasty
-		exists = top_liege
-		top_liege = {
+		top_liege ?= {
 			culture = {
 				has_cultural_pillar = language_anglic
 			}
