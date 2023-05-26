@@ -547,3 +547,64 @@ scripted_gui_tek = {
 		}
 	}
 }
+scripted_gui_laqab_name = {
+	scope = character
+	effect = {
+		save_scope_as = effect_root
+		IF = {
+			limit = {
+				OR = {
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = regular_laqab_dynasty
+								this = scope:effect_root
+							}
+						}
+					}
+					any_in_global_list = {
+						variable = regular_laqab_global
+						this = scope:effect_root
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = trigger_reg_laqab_gen_from_sgui
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						exists = dynasty
+						dynasty = {
+							any_in_list = {
+								variable = name_pack_support_dynasty
+								this = scope:effect_root
+							}
+						}
+					}
+					any_in_global_list = {
+						variable = name_pack_support_global
+						this = scope:effect_root
+					}
+				}
+			}
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_name_support
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+		else = {
+			custom_description_no_bullet = {
+				text = scripted_gui_trigger_name_non_support
+				subject = scope:effect_root
+				object = scope:effect_root
+			}
+		}
+	}
+}

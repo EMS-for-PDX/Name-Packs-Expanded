@@ -91,14 +91,20 @@
 			0 = {
 				modifier = {
 					culture = {
-						OR = {
-							has_name_list = name_list_somali
-							has_name_list = name_list_afar
-						}
+						has_name_list = name_list_somali
 					}
 					add = 1
 				}
 				somali_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_afar
+					}
+					add = 1
+				}
+				afar_male_name_effect = yes
 			}
 			0 = {
 				modifier = {
@@ -745,14 +751,20 @@
 			0 = {
 				modifier = {
 					culture = {
-						OR = {
-							has_name_list = name_list_somali
-							has_name_list = name_list_afar
-						}
+						has_name_list = name_list_somali
 					}
 					add = 1
 				}
 				somali_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_afar
+					}
+					add = 1
+				}
+				afar_female_name_effect = yes
 			}
 			0 = {
 				modifier = {
