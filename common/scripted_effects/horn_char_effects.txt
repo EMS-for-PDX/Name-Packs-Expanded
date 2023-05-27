@@ -1,7 +1,5 @@
 ﻿867_horn_char_effect = {
-    add_to_global_variable_list = { name = global_list_dead_hofs target = character:34010 }
-    add_to_global_variable_list = { name = name_pack_support_global target = character:levantine000005 }
-	character:somali0109.house = {
+    character:somali0109.house = {
 		set_variable = {
 			name = name_founder
 			value = character:somali0109
@@ -301,5 +299,119 @@
     }
     character:somali0104 = {
         change_first_name = Doombira
+    }
+}
+1066_horn_char_effect = {
+    character:somali0098.house = {
+		set_variable = {
+			name = name_founder
+			value = character:somali0098
+		}
+	}
+	character:somali0098.dynasty = { #Dir
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0098 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0099 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0096 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0097 }
+	}
+	character:somali0147.dynasty = { #Warsangali
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0147 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0148 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:somali0148 }
+	}
+	character:somali0141.dynasty = { #Darood
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0142 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0140 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0139 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0138 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:somali0138 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:somali0139 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:somali0140 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:somali0141 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:somali0142 }
+	}
+	character:somali0124.dynasty = { #Laylkase
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0124 }
+	}
+	character:somali0111.dynasty = { #Majeerteen
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0111 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0112 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0113 }
+	}
+	character:somali0119.dynasty = { #Mareexaan
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0119 }
+	}
+	character:somali0132.dynasty = { #Abgaal
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0132 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0131 }
+	}
+	character:somali0092.dynasty = { #Hawiye
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0092 }
+	}
+	character:somali0020.dynasty = { #Muqri
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0020 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0022 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0023 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0025 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0026 }
+	}
+	character:somali0158.dynasty = { #Reer Jamaal
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0158 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0159 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0166 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0167 }
+	}
+	character:somali0177.dynasty = { #Reer Khaalid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0177 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0178 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0179 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0180 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0181 }
+	}
+    character:somali0181 = {
+        change_first_name = Yahya
+    }
+    character:somali0180 = {
+        change_first_name = Said
+    }
+    character:somali0179 = {
+        change_first_name = Harun
+    }
+    character:somali0178 = {
+        change_first_name = Barakat
+    }
+    character:somali0177 = {
+        change_first_name = Balaad
+    }
+    character:somali0166 = {
+        change_first_name = Awraleh
+    }
+    character:somali0158 = {
+        change_first_name = Abaadir
+    }
+    character:somali0025 = {
+        change_first_name = Kaariye
+    }
+    character:somali0092 = {
+        change_first_name = Murursade
+    }
+    character:somali0131 = {
+        change_first_name = Abgaal
+		dynasty_effect_ne = yes
+    }
+    character:somali0132 = {
+        change_first_name = Balaad
+    }
+    character:somali0119 = {
+        change_first_name = Hantaale
+    }
+    character:somali0112 = {
+        change_first_name = Kuumade
+    }
+    character:somali0139 = {
+        change_first_name = Isa
+    }
+    character:somali0140 = {
+        change_first_name = Samatalis
     }
 }
