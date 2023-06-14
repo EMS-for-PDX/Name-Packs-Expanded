@@ -1764,6 +1764,44 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+                has_name_list = name_list_visigothic
+				has_cultural_pillar = language_iberian
+			}
+		}
+		localization_key = _visgothic
+	}
+	text = {
+		trigger = {
+			culture = {
+                OR = {
+                    has_name_list = name_list_galician
+                    has_name_list = name_list_portuguese
+                }
+				has_cultural_pillar = language_iberian
+			}
+		}
+		localization_key = _portuguese
+	}
+	text = {
+		trigger = {
+			culture = {
+                has_name_list = name_list_aragonese
+				has_cultural_pillar = language_iberian
+			}
+		}
+		localization_key = _aragonese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_iberian
+			}
+		}
+		localization_key = _castillian
+	}
+	text = {
+		trigger = {
+			culture = {
 				has_cultural_pillar = language_cushitic
                 has_name_list = name_list_afar
 			}

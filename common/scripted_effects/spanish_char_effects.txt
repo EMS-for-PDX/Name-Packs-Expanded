@@ -1,0 +1,29 @@
+867_spanish_char_effect = {
+    add_to_global_variable_list = { name = name_pack_support_global target = character:70016 }
+	character:70019.dynasty = {
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70019 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70017 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70015 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70003 }
+        add_to_variable_list = { name = dynasty_fuedal target = character:70017 }
+        add_to_variable_list = { name = dynasty_fuedal target = character:70015 }
+        add_to_variable_list = { name = dynasty_fuedal target = character:70003 }
+    }
+    character:70003 = {
+        change_first_name = Alfons
+		dynasty_effect_ne = yes
+    }
+    character:70015 = {
+        change_first_name = Ramiro
+    }
+    character:70016 = {
+        change_first_name = Urraca
+    }
+    character:70017 = {
+        change_first_name = Ordono
+    }
+    character:70019 = {
+        change_first_name = Alfons
+		add_to_global_variable_list = { name = Great_byname target = this }
+    }
+}
