@@ -159,12 +159,22 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1228767 }
 		add_to_variable_list = { name = dynasty_independent target = character:1228760 }
 	}
+	character:beja0002.dynasty = { #Almada
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0014 }
+	}
+	character:beja0002 ={
+        change_first_name = Shaf
+	}
+	character:beja0014 ={
+        change_first_name = Aamar
+	}
     character:1228767 = {
         change_first_name = Kanon
 		dynasty_effect_ne = yes
     }
     character:1228761 = {
-        change_first_name = Abdal-Aziz
+        change_first_name = Oolbaab
     }
     character:1228760 = {
         change_first_name = Kanon
@@ -213,16 +223,8 @@
         change_first_name = Ardaytu
         dynasty_effect_ne = yes
     }
-    character:afar0001 = {
-        change_first_name = Ardaytu
-        dynasty_effect_ne = yes
-    }
     character:145665 = {
         change_first_name = Roobito
-        dynasty_effect_ne = yes
-    }
-    character:somali0175 = {
-        change_first_name = Khalid
         dynasty_effect_ne = yes
     }
     character:somali0175 = {
@@ -248,7 +250,7 @@
         change_first_name = Waaqmahadle
     }
     character:somali0077 = {
-        change_first_name = Awal
+        change_first_name = Awl
     }
     character:somali0076 = {
         change_first_name = Helay
@@ -275,7 +277,7 @@
         change_first_name = Hawiye
     }
     character:somali0108 = {
-        change_first_name = Yabaall #Yuusuf (not muslim)
+        change_first_name = Awrtable #Yuusuf (not muslim)
     }
     character:somali0062 = {
         change_first_name = Doombira
@@ -284,7 +286,7 @@
         change_first_name = Dagaale
     }
     character:somali0105 = {
-        change_first_name = Siinwaaq #Sede
+        change_first_name = Sade #Sede
 		#set house name Marehan/Mareexaan
     }
     character:somali0063 = {
@@ -367,6 +369,149 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0179 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0180 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0181 }
+	}
+	character:somali0168.dynasty = { #Gidaya
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0171 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0172 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0173 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0174 }
+	}
+	character:somali0043.dynasty = { #Jidati
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0045 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0046 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0047 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0048 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0049 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0050 }
+	}
+	character:somali0031.dynasty = { #Garen
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0033 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0034 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0035 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0036 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0037 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0038 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0039 }
+	}
+	character:1228760.dynasty = { #Hadariba
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:1228763 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0034 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:1228768 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:1228769 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:1228770 }
+	}
+	character:beja0001.dynasty = { #Zanafig
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0006 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0007 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0008 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0009 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1228784 }
+	}
+	character:beja0002.dynasty = { #Almada
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0015 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0016 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0017 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0018 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0019 }
+	}
+	character:beja0002.dynasty = { #Kelou
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0025 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0026 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0027 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0028 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0029 }
+	}
+	character:beja0002.dynasty = { #Besharin
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1231657 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1231656 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:1231655 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1231654 }
+	}
+	character:145666.dynasty = { #Afari
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145666 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145667 }
+	}
+	character:afar0002.dynasty = { #Danakil
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:afar0002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:afar0003 }
+	}
+	character:afar0002 ={
+        change_first_name = Ali
+	}
+	character:afar0003 ={
+        change_first_name = Canfaxe
+	}
+	character:145666 ={
+        change_first_name = Aydacis
+	}
+	character:145667 ={
+        change_first_name = Talha
+	}
+	character:1231657 ={
+        change_first_name = Bishar
+	}
+	character:beja0016 ={
+        change_first_name = Isheeb
+	}
+	character:beja0018 ={
+        change_first_name = Hadhaab
+	}
+	character:beja0025 ={
+        change_first_name = Hadhaab
+	}
+	character:beja0026 ={
+        change_first_name = Ankar # Angrun is female name
+	}
+	character:beja0027 ={
+        change_first_name = Ageeb
+	}
+	character:beja0028 ={
+        change_first_name = Hadhaab
+	}
+	character:beja0029 ={
+        change_first_name = Ageeb
+	}
+	character:beja0007 ={
+        change_first_name = Hadhaab
+	}
+	character:beja0034 ={
+        change_first_name = Uthman
+	}
+	character:somali0039 ={
+        change_first_name = Ogaadeen
+	}
+	character:somali0038 ={
+        change_first_name = Gareen
+	}
+	character:somali0036 ={
+        change_first_name = Ogaadeen
+	}
+	character:somali0035 ={
+        change_first_name = Ogaadeen
+	}
+	character:somali0033 ={
+        change_first_name = Habarwa
+	}
+	character:somali0050 ={
+        change_first_name = Barakat
+	}
+	character:somali0049 ={
+        change_first_name = Jidati
+	}
+	character:somali0046 ={
+        change_first_name = Hantaale
+	}
+	character:somali0048 ={
+        change_first_name = Barakat
+	}
+	character:somali0173 ={
+        change_first_name = Muhammad
+	}
+	character:somali0172 ={
+        change_first_name = Naxwi
+	}
+	character:somali0171 ={
+        change_first_name = Liibaan
 	}
     character:somali0181 = {
         change_first_name = Yahya
