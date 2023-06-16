@@ -1,13 +1,93 @@
 867_spanish_char_effect = {
     add_to_global_variable_list = { name = name_pack_support_global target = character:70016 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:73756 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:70016 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:73879 }
+	character:70018.dynasty = { #Bierzo (needs db)
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70018 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0350 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:73755 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73759 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73757 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73758 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73760 }
+    }
 	character:70019.dynasty = {
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70019 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70017 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70015 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70003 }
-        add_to_variable_list = { name = dynasty_fuedal target = character:70017 }
-        add_to_variable_list = { name = dynasty_fuedal target = character:70015 }
-        add_to_variable_list = { name = dynasty_fuedal target = character:70003 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73750 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73754 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73751 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73752 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73753 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0411 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73762 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70015 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73875 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73876 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73878 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:142006 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:142005 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0354 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70013 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70011 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:70017 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:70015 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:70003 }
+    }
+    character:70011 = {
+        change_first_name = Fruela
+    }
+    character:70013 = {
+        change_first_name = Vermund
+		#add_to_global_variable_list = { name = Monk_byname target = this }
+    }
+    character:73879 = {
+        change_first_name = Thrudhild
+    }
+    character:142006 = {
+        dynasty_effect_ne = yes
+    }
+    character:galician0354 = {
+        change_first_name = Audivia #Literally mixed letter paradox...
+    }
+    character:73876 = {
+        change_first_name = Ermengild
+    }
+    character:asturleonese0411 = {
+        change_first_name = Garcia
+    }
+    character:73760 = {
+        change_first_name = Paterna
+    }
+    character:73758 = {
+        change_first_name = Salvator
+    }
+    character:73757 = {
+        change_first_name = Vermund
+    }
+    character:73759 = {
+        change_first_name = Ermesind
+    }
+    #character:73755 = {
+        #change_first_name = Gaston
+    #}
+    character:70018 = {
+        change_first_name = Muniadona
+    }
+    character:73753 = {
+        change_first_name = Osorio
+    }
+    character:73752 = {
+        change_first_name = Vermund
+    }
+    character:73751 = {
+        change_first_name = Nuno
+    }
+    character:73754 = {
+        change_first_name = Leodegunda
     }
     character:70003 = {
         change_first_name = Alfons
