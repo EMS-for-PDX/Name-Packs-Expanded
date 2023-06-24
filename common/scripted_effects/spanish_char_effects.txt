@@ -3,6 +3,9 @@
     add_to_global_variable_list = { name = name_pack_support_global target = character:73756 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:70016 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:73879 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:andalusian0146 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:andalusian0136 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:andalusian0143 }
 	character:70018.dynasty = { #Bierzo (needs db)
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70018 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0350 }
@@ -36,6 +39,55 @@
         add_to_variable_list = { name = dynasty_feudalclan target = character:70017 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:70015 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:70003 }
+    }
+	character:200215.dynasty = { #Burgusid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:200215 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0147 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0148 }
+    }
+	character:73989.dynasty = { #Salamanqid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73989 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0137 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0138 }
+    }
+	character:200156.dynasty = { #Ramlid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:200156 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0144 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0145 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:andalusian0144 }
+    }
+    character:andalusian0143 = {
+        change_first_name = Susan
+    }
+    character:andalusian0144 = {
+        change_first_name = Roderick
+    }
+    character:200156 = {
+        change_first_name = Julian
+        dynasty_effect_ne = yes
+    }
+    character:andalusian0136 = {
+        change_first_name = Eve
+    }
+    character:andalusian0138 = {
+        change_first_name = Mary
+    }
+    character:andalusian0137 = {
+        change_first_name = Toda
+    }
+    character:73989 = {
+        change_first_name = Pedro
+        dynasty_effect_ne = yes
+    }
+    character:andalusian0148 = {
+        change_first_name = Muniadona
+    }
+    character:andalusian0146 = {
+        change_first_name = Egilona
+    }
+    character:200215 = {
+        change_first_name = Lope
+        dynasty_effect_ne = yes
     }
     character:70011 = {
         change_first_name = Fruela
