@@ -667,6 +667,18 @@ spanish_female_name_effect = {
 				}
 				change_first_name = Andregoto
 			}
+			0 = {
+				modifer = {
+					culture = {
+						OR = {
+							has_name_list = name_list_galician
+							has_name_list = name_list_portuguese
+						}
+					}
+					add = 1
+				}
+				change_first_name = Thrudhild
+			}
 			1 = {
 				change_first_name = Argilo
 			}
@@ -832,6 +844,17 @@ spanish_female_name_effect = {
 			}
 		}
 		1 = {
+			0 = {
+				modifer = {
+					culture = {
+						NOT = {
+							has_name_list = name_list_aragonese
+						}
+					}
+					add = 1
+				}
+				change_first_name = Thrudhild
+			}
 			1 = {
 				change_first_name = Ardio
 			}
@@ -882,9 +905,6 @@ spanish_female_name_effect = {
 			}
 			1 = {
 				change_first_name = Sendina
-			}
-			1 = {
-				change_first_name = Thrudhild
 			}
 		}
 	}
