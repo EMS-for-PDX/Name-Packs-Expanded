@@ -6,6 +6,11 @@
     add_to_global_variable_list = { name = name_pack_support_global target = character:andalusian0146 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:andalusian0136 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:andalusian0143 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:73764 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:200068 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0246 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:73856 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:73915 }
 	character:70018.dynasty = { #Bierzo (needs db)
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70018 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0350 }
@@ -55,6 +60,124 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0144 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0145 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:andalusian0144 }
+    }
+	character:73761.dynasty = { #Castella
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73761 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0243 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73763 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73765 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73767 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73766 }
+    }
+	character:200067.dynasty = { #Brannosera
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:200067 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:200066 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73768 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:visigothic0001 }
+    }
+	character:castilian0244.dynasty = { #Venigomez
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0244 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0245 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0247 }
+    }
+	character:200073.dynasty = { #Pedernales
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:200073 }
+    }
+	character:72548.dynasty = { #Ansurez
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:72548 }
+    }
+	character:73857.dynasty = { #Menedez
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73857 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73893 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73855 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73858 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73859 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0351 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73854 }
+    }
+	character:galician0352.dynasty = { #Fernandez
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0352 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0355 }
+    }
+	#character:galician0358.dynasty = { #Lugo
+    #    add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0358 } #Flacidio Real Guy
+    #}
+	#character:galician0353.dynasty = { #Slamirez
+    #    add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0353 } #Salamiro No Ed
+    #}
+	character:73912.dynasty = { #Hayyunids
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73912 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73913 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73914 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73913 }
+    }
+	character:andalusian0153.dynasty = { #Ulmetid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0153 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0142 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73914 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73913 }
+    }
+    character:andalusian0153 = {
+        change_first_name = Alfons
+        dynasty_effect_ne = yes
+    }
+    character:andalusian0147 = {
+        change_first_name = Amatan-Nur
+    }
+    character:73913 = {
+        change_first_name = Abal-Aziz
+    }
+    character:73912 = {
+        change_first_name = Zakariya
+        dynasty_effect_ne = yes
+    }
+    character:galician0352 = {
+        change_first_name = Ferdinand
+        dynasty_effect_ne = yes
+    }
+    character:73854 = {
+        change_first_name = Menendo
+        dynasty_effect_ne = yes
+    }
+    character:73858 = {
+        change_first_name = Alvito
+    }
+    character:73855 = {
+        change_first_name = Walter
+    }
+    character:73857 = {
+        change_first_name = Ermengild
+    }
+    character:72548 = {
+        dynasty_effect_ne = yes
+    }
+    character:200073 = {
+        dynasty_effect_ne = yes
+    }
+    character:castilian0244 = {
+        change_first_name = Gomez
+        dynasty_effect_ne = yes
+    }
+    character:visigothic0001 = {
+        change_first_name = Munio
+    }
+    character:73768 = {
+        change_first_name = Ferdinand
+    }
+    character:200067 = {
+        change_first_name = Nuno
+    }
+    character:73766 = {
+        change_first_name = Ermesind
+    }
+    character:73764 = {
+        change_first_name = Egilona
+    }
+    character:73763 = {
+        change_first_name = Roderick
+    }
+    character:castilian0243 = {
+        dynasty_effect_ne = yes
     }
     character:andalusian0143 = {
         change_first_name = Susan

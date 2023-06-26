@@ -13,598 +13,608 @@ spanish_male_name_effect = {
 	}
 	random_list = {
 		40 = {
-			0 = {
-				modifer = {
-					has_religion = religion:christianity_religion
-					add = 1
+			random_list = {
+				0 = {
+					modifer = {
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = Pedro
 				}
-				change_first_name = Pedro
-			}
-			1 = {
-				change_first_name = Ferdinand
-			}
-			1 = {
-				change_first_name = Roderick
+				1 = {
+					change_first_name = Ferdinand
+				}
+				1 = {
+					change_first_name = Roderick
+				}
 			}
 		}
 		30 = {
-			0 = {
-				modifer = {
-					culture = {
-						NOT = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+			random_list = {
+				0 = {
+					modifer = {
+						culture = {
+							NOT = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+							}
+						}
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Garcia
+						}
+						1 = {
+							change_first_name = Gomez
+						}
+						1 = {
+							change_first_name = Sancho
 						}
 					}
-					add = 3
 				}
-				random_list = {
-					1 = {
-						change_first_name = Garcia
-					}
-					1 = {
-						change_first_name = Gomez
-					}
-					1 = {
-						change_first_name = Sancho
-					}
-				}
-			}
-			0 = {
-				modifer = {
-					culture = {
-						OR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+				0 = {
+					modifer = {
+						culture = {
+							OR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+							}
 						}
+						has_religion = religion:christianity_religion
+						add = 1
 					}
-					has_religion = religion:christianity_religion
-					add = 1
+					change_first_name = Martin
 				}
-				change_first_name = Martin
-			}
-			0 = {
-				modifer = {
-					culture = {
-						OR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
-							has_name_list = name_list_asturleonese
+				0 = {
+					modifer = {
+						culture = {
+							OR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+								has_name_list = name_list_asturleonese
+							}
 						}
+						add = 1
 					}
-					add = 1
+					change_first_name = Ordono
 				}
-				change_first_name = Ordono
-			}
-			0 = {
-				modifer = {
-					culture = {
-						has_name_list = name_list_aragonese
+				0 = {
+					modifer = {
+						culture = {
+							has_name_list = name_list_aragonese
+						}
+						add = 1
 					}
-					add = 1
+					change_first_name = Lope
 				}
-				change_first_name = Lope
-			}
-			1 = {
-				change_first_name = Alfar
-			}
-			1 = {
-				change_first_name = Alfons
-			}
-			1 = {
-				change_first_name = Diego
-			}
-			1 = {
-				change_first_name = Gonzalo
+				1 = {
+					change_first_name = Alfar
+				}
+				1 = {
+					change_first_name = Alfons
+				}
+				1 = {
+					change_first_name = Diego
+				}
+				1 = {
+					change_first_name = Gonzalo
+				}
 			}
 		}
 		20 = {
-			0 = {
-				modifer = {
-					culture = {
-						has_name_list = name_list_asturleonese
-					}
-					add = 1
-				}
-				change_first_name = Oveco
-			}
-			0 = {
-				modifer = {
-					culture = {
-						has_name_list = name_list_aragonese
-					}
-					add = 5
-				}
-				random_list = {
-					1 = {
-						change_first_name = Ansur
-					}
-					1 = {
-						change_first_name = Aznar
-					}
-					1 = {
-						change_first_name = Galindo
-					}
-					1 = {
-						change_first_name = Inge
-					}
-					1 = {
-						change_first_name = Jimeno
-					}
-				}
-			}
-			0 = {
-				modifer = {
-					has_religion = religion:christianity_religion
-					add = 1
-				}
-				change_first_name = John
-			}
-			0 = {
-				modifer = {
-					culture = {
-						NOR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
-						}
-					}
-					has_religion = religion:christianity_religion
-					add = 1
-				}
-				change_first_name = Martin
-			}
-			0 = {
-				modifer = {
-					culture = {
-						NOR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+			random_list = {
+				0 = {
+					modifer = {
+						culture = {
 							has_name_list = name_list_asturleonese
 						}
+						add = 1
 					}
-					add = 1
+					change_first_name = Oveco
 				}
-				change_first_name = Ordono
-			}
-			0 = {
-				modifer = {
-					culture = {
-						NOT = {
+				0 = {
+					modifer = {
+						culture = {
 							has_name_list = name_list_aragonese
 						}
+						add = 5
 					}
-					add = 1
-				}
-				change_first_name = Lope
-			}
-			0 = {
-				modifer = {
-					culture = {
-						OR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+					random_list = {
+						1 = {
+							change_first_name = Ansur
+						}
+						1 = {
+							change_first_name = Aznar
+						}
+						1 = {
+							change_first_name = Galindo
+						}
+						1 = {
+							change_first_name = Inge
+						}
+						1 = {
+							change_first_name = Jimeno
 						}
 					}
-					add = 1
 				}
-				change_first_name = Egas
-			}
-			0 = {
-				modifer = {
-					culture = {
-						OR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+				0 = {
+					modifer = {
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = John
+				}
+				0 = {
+					modifer = {
+						culture = {
+							NOR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+							}
+						}
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = Martin
+				}
+				0 = {
+					modifer = {
+						culture = {
+							NOR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+								has_name_list = name_list_asturleonese
+							}
+						}
+						add = 1
+					}
+					change_first_name = Ordono
+				}
+				0 = {
+					modifer = {
+						culture = {
+							NOT = {
+								has_name_list = name_list_aragonese
+							}
+						}
+						add = 1
+					}
+					change_first_name = Lope
+				}
+				0 = {
+					modifer = {
+						culture = {
+							OR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+							}
+						}
+						add = 1
+					}
+					change_first_name = Egas
+				}
+				0 = {
+					modifer = {
+						culture = {
+							OR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+								has_name_list = name_list_asturleonese
+							}
+						}
+						add = 1
+					}
+					change_first_name = Gudesteo
+				}
+				0 = {
+					modifer = {
+						culture = {
 							has_name_list = name_list_asturleonese
 						}
+						add = 1
 					}
-					add = 1
-				}
-				change_first_name = Gudesteo
-			}
-			0 = {
-				modifer = {
-					culture = {
-						has_name_list = name_list_asturleonese
-					}
-					add = 1
-				}
-				random_list = {
-					1 = {
-						change_first_name = Frunimio
-					}
-					1 = {
-						change_first_name = Piniolo
+					random_list = {
+						1 = {
+							change_first_name = Frunimio
+						}
+						1 = {
+							change_first_name = Piniolo
+						}
 					}
 				}
-			}
-			1 = {
-				change_first_name = Aegidius
-			}
-			1 = {
-				change_first_name = Arias
-			}
-			1 = {
-				change_first_name = Bernhard
-			}
-			1 = {
-				change_first_name = Fagundo
-			}
-			1 = {
-				change_first_name = Fortun
-			}
-			1 = {
-				change_first_name = Fruela
-			}
-			1 = {
-				change_first_name = Menendo
-			}
-			1 = {
-				change_first_name = Munio
-			}
-			1 = {
-				change_first_name = Nuno
-			}
-			1 = {
-				change_first_name = Pelagius
-			}
-			1 = {
-				change_first_name = Ramiro
-			}
-			1 = {
-				change_first_name = Raymond
-			}
-			1 = {
-				change_first_name = Ruy
-			}
-			1 = {
-				change_first_name = Suero
-			}
-			1 = {
-				change_first_name = Tello
-			}
-			1 = {
-				change_first_name = Vela
-			}
-			1 = {
-				change_first_name = Velasco
-			}
-			1 = {
-				change_first_name = Vellido
-			}
-			1 = {
-				change_first_name = Vermund
-			}
-			1 = {
-				change_first_name = Walter
+				1 = {
+					change_first_name = Aegidius
+				}
+				1 = {
+					change_first_name = Arias
+				}
+				1 = {
+					change_first_name = Bernhard
+				}
+				1 = {
+					change_first_name = Fagundo
+				}
+				1 = {
+					change_first_name = Fortun
+				}
+				1 = {
+					change_first_name = Fruela
+				}
+				1 = {
+					change_first_name = Menendo
+				}
+				1 = {
+					change_first_name = Munio
+				}
+				1 = {
+					change_first_name = Nuno
+				}
+				1 = {
+					change_first_name = Pelagius
+				}
+				1 = {
+					change_first_name = Ramiro
+				}
+				1 = {
+					change_first_name = Raymond
+				}
+				1 = {
+					change_first_name = Ruy
+				}
+				1 = {
+					change_first_name = Suero
+				}
+				1 = {
+					change_first_name = Tello
+				}
+				1 = {
+					change_first_name = Vela
+				}
+				1 = {
+					change_first_name = Velasco
+				}
+				1 = {
+					change_first_name = Vellido
+				}
+				1 = {
+					change_first_name = Vermund
+				}
+				1 = {
+					change_first_name = Walter
+				}
 			}
 		}
 		10 = {
-			0 = {
-				modifer = {
-					has_religion = religion:christianity_religion
-					add = 7
+			random_list = {
+				0 = {
+					modifer = {
+						has_religion = religion:christianity_religion
+						add = 7
+					}
+					random_list = {
+						1 = {
+							change_first_name = Andrew
+						}
+						1 = {
+							change_first_name = Dominic
+						}
+						1 = {
+							change_first_name = Manuel
+						}
+						1 = {
+							change_first_name = Miguel
+						}
+						1 = {
+							change_first_name = Nicholas
+						}
+						1 = {
+							change_first_name = Sebastian
+						}
+						1 = {
+							change_first_name = Stephen
+						}
+					}
 				}
-				random_list = {
-					1 = {
-						change_first_name = Andrew
+				0 = {
+					modifer = {
+						culture = {
+							OR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+								has_name_list = name_list_asturleonese
+							}
+						}
+						add = 1
 					}
-					1 = {
-						change_first_name = Dominic
+					change_first_name = Vimara
+				}
+				0 = {
+					modifer = {
+						culture = {
+							OR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+							}
+						}
+						add = 2
 					}
-					1 = {
-						change_first_name = Manuel
-					}
-					1 = {
-						change_first_name = Miguel
-					}
-					1 = {
-						change_first_name = Nicholas
-					}
-					1 = {
-						change_first_name = Sebastian
-					}
-					1 = {
-						change_first_name = Stephen
+					random_list = {
+						1 = {
+							change_first_name = Ero
+						}
+						1 = {
+							change_first_name = Trudesendo
+						}
 					}
 				}
-			}
-			0 = {
-				modifer = {
-					culture = {
-						OR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+				0 = {
+					modifer = {
+						culture = {
 							has_name_list = name_list_asturleonese
 						}
+						add = 1
 					}
-					add = 1
+					change_first_name = Dulcidius
 				}
-				change_first_name = Vimara
-			}
-			0 = {
-				modifer = {
-					culture = {
-						OR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+				0 = {
+					modifer = {
+						culture = {
+							NOT = {
+								has_name_list = name_list_asturleonese
+							}
 						}
+						add = 1
 					}
-					add = 2
+					change_first_name = Oveco
 				}
-				random_list = {
-					1 = {
-						change_first_name = Ero
-					}
-					1 = {
-						change_first_name = Trudesendo
-					}
-				}
-			}
-			0 = {
-				modifer = {
-					culture = {
-						has_name_list = name_list_asturleonese
-					}
-					add = 1
-				}
-				change_first_name = Dulcidius
-			}
-			0 = {
-				modifer = {
-					culture = {
-						NOT = {
-							has_name_list = name_list_asturleonese
-						}
-					}
-					add = 1
-				}
-				change_first_name = Oveco
-			}
-			0 = {
-				modifer = {
-					culture = {
-						has_name_list = name_list_aragonese
-					}
-					add = 4
-				}
-				random_list = {
-					1 = {
-						change_first_name = Ato
-					}
-					1 = {
-						change_first_name = Dato
-					}
-					1 = {
-						change_first_name = Ladron
-					}
-					1 = {
-						change_first_name = Mancio
-					}
-				}
-			}
-			0 = {
-				modifer = {
-					culture = {
-						NOT = {
+				0 = {
+					modifer = {
+						culture = {
 							has_name_list = name_list_aragonese
 						}
+						add = 4
 					}
-					add = 5
-				}
-				random_list = {
-					1 = {
-						change_first_name = Ansur
-					}
-					1 = {
-						change_first_name = Aznar
-					}
-					1 = {
-						change_first_name = Galindo
-					}
-					1 = {
-						change_first_name = Inge
-					}
-					1 = {
-						change_first_name = Jimeno
+					random_list = {
+						1 = {
+							change_first_name = Ato
+						}
+						1 = {
+							change_first_name = Dato
+						}
+						1 = {
+							change_first_name = Ladron
+						}
+						1 = {
+							change_first_name = Mancio
+						}
 					}
 				}
-			}
-			1 = {
-				change_first_name = Alvito
-			}
-			1 = {
-				change_first_name = Aurelius
-			}
-			1 = {
-				change_first_name = Aymeric
-			}
-			1 = {
-				change_first_name = Berengar
-			}
-			1 = {
-				change_first_name = Ermengild
-			}
-			1 = {
-				change_first_name = Favila
-			}
-			1 = {
-				change_first_name = Flain
-			}
-			1 = {
-				change_first_name = Gundemar
-			}
-			1 = {
-				change_first_name = Henry
-			}
-			1 = {
-				change_first_name = Julian
-			}
-			1 = {
-				change_first_name = Laurence
-			}
-			1 = {
-				change_first_name = Lucidio
-			}
-			1 = {
-				change_first_name = Manrique
-			}
-			1 = {
-				change_first_name = Melendo
-			}
-			1 = {
-				change_first_name = Nepociano
-			}
-			1 = {
-				change_first_name = Osmund
-			}
-			1 = {
-				change_first_name = Osorio
-			}
-			1 = {
-				change_first_name = Pontius
-			}
-			1 = {
-				change_first_name = Roman
-			}
-			1 = {
-				change_first_name = Rosendo
-			}
-			1 = {
-				change_first_name = Salvator
-			}
-			1 = {
-				change_first_name = Sayyid
-			}
-			1 = {
-				change_first_name = Shabb
-			}
-			1 = {
-				change_first_name = Sisnando
-			}
-			1 = {
-				change_first_name = Vincent
-			}
-			1 = {
-				change_first_name = William
+				0 = {
+					modifer = {
+						culture = {
+							NOT = {
+								has_name_list = name_list_aragonese
+							}
+						}
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = Ansur
+						}
+						1 = {
+							change_first_name = Aznar
+						}
+						1 = {
+							change_first_name = Galindo
+						}
+						1 = {
+							change_first_name = Inge
+						}
+						1 = {
+							change_first_name = Jimeno
+						}
+					}
+				}
+				1 = {
+					change_first_name = Alvito
+				}
+				1 = {
+					change_first_name = Aurelius
+				}
+				1 = {
+					change_first_name = Aymeric
+				}
+				1 = {
+					change_first_name = Berengar
+				}
+				1 = {
+					change_first_name = Ermengild
+				}
+				1 = {
+					change_first_name = Favila
+				}
+				1 = {
+					change_first_name = Flain
+				}
+				1 = {
+					change_first_name = Gundemar
+				}
+				1 = {
+					change_first_name = Henry
+				}
+				1 = {
+					change_first_name = Julian
+				}
+				1 = {
+					change_first_name = Laurence
+				}
+				1 = {
+					change_first_name = Lucidio
+				}
+				1 = {
+					change_first_name = Manrique
+				}
+				1 = {
+					change_first_name = Melendo
+				}
+				1 = {
+					change_first_name = Nepociano
+				}
+				1 = {
+					change_first_name = Osmund
+				}
+				1 = {
+					change_first_name = Osorio
+				}
+				1 = {
+					change_first_name = Pontius
+				}
+				1 = {
+					change_first_name = Roman
+				}
+				1 = {
+					change_first_name = Rosendo
+				}
+				1 = {
+					change_first_name = Salvator
+				}
+				1 = {
+					change_first_name = Sayyid
+				}
+				1 = {
+					change_first_name = Shabb
+				}
+				1 = {
+					change_first_name = Sisnando
+				}
+				1 = {
+					change_first_name = Vincent
+				}
+				1 = {
+					change_first_name = William
+				}
 			}
 		}
 		1 = {
-			0 = {
-				modifer = {
-					has_religion = religion:christianity_religion
-					add = 11
+			random_list = {
+				0 = {
+					modifer = {
+						has_religion = religion:christianity_religion
+						add = 11
+					}
+					random_list = {
+						1 = {
+							change_first_name = Anthony
+						}
+						1 = {
+							change_first_name = Bartholomew
+						}
+						1 = {
+							change_first_name = Christopher
+						}
+						1 = {
+							change_first_name = Cyprian
+						}
+						1 = {
+							change_first_name = George
+						}
+						1 = {
+							change_first_name = Isidore
+						}
+						1 = {
+							change_first_name = Luke
+						}
+						1 = {
+							change_first_name = Nazareno
+						}
+						1 = {
+							change_first_name = Pascacio
+						}
+						1 = {
+							change_first_name = Pascal
+						}
+						1 = {
+							change_first_name = Simon
+						}
+					}
 				}
-				random_list = {
-					1 = {
-						change_first_name = Anthony
+				0 = {
+					modifer = {
+						culture = {
+							OR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+								has_name_list = name_list_asturleonese
+							}
+						}
+						add = 1
 					}
-					1 = {
-						change_first_name = Bartholomew
+					change_first_name = Vimarano
+				}
+				0 = {
+					modifer = {
+						culture = {
+							OR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+							}
+						}
+						add = 2
 					}
-					1 = {
-						change_first_name = Christopher
-					}
-					1 = {
-						change_first_name = Cyprian
-					}
-					1 = {
-						change_first_name = George
-					}
-					1 = {
-						change_first_name = Isidore
-					}
-					1 = {
-						change_first_name = Luke
-					}
-					1 = {
-						change_first_name = Nazareno
-					}
-					1 = {
-						change_first_name = Pascacio
-					}
-					1 = {
-						change_first_name = Pascal
-					}
-					1 = {
-						change_first_name = Simon
+					random_list = {
+						1 = {
+							change_first_name = Lovesendo
+						}
+						1 = {
+							change_first_name = Trastamiro
+						}
 					}
 				}
-			}
-			0 = {
-				modifer = {
-					culture = {
-						OR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+				0 = {
+					modifer = {
+						culture = {
 							has_name_list = name_list_asturleonese
 						}
+						add = 2
 					}
-					add = 1
-				}
-				change_first_name = Vimarano
-			}
-			0 = {
-				modifer = {
-					culture = {
-						OR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+					random_list = {
+						1 = {
+							change_first_name = Aresindo
+						}
+						1 = {
+							change_first_name = Olmundo
 						}
 					}
-					add = 2
 				}
-				random_list = {
-					1 = {
-						change_first_name = Lovesendo
-					}
-					1 = {
-						change_first_name = Trastamiro
-					}
+				1 = {
+					change_first_name = Alaric
 				}
-			}
-			0 = {
-				modifer = {
-					culture = {
-						has_name_list = name_list_asturleonese
-					}
-					add = 2
+				1 = {
+					change_first_name = Antolino
 				}
-				random_list = {
-					1 = {
-						change_first_name = Aresindo
-					}
-					1 = {
-						change_first_name = Olmundo
-					}
+				1 = {
+					change_first_name = Armentarius
 				}
-			}
-			1 = {
-				change_first_name = Alaric
-			}
-			1 = {
-				change_first_name = Antolino
-			}
-			1 = {
-				change_first_name = Armentarius
-			}
-			1 = {
-				change_first_name = Athalwulf
-			}
-			1 = {
-				change_first_name = Cresconius
-			}
-			1 = {
-				change_first_name = Emilian
-			}
-			1 = {
-				change_first_name = Sarracin
-			}
-			1 = {
-				change_first_name = Theodoric
-			}
-			1 = {
-				change_first_name = Vitalis
+				1 = {
+					change_first_name = Athalwulf
+				}
+				1 = {
+					change_first_name = Cresconius
+				}
+				1 = {
+					change_first_name = Emilian
+				}
+				1 = {
+					change_first_name = Sarracin
+				}
+				1 = {
+					change_first_name = Theodoric
+				}
+				1 = {
+					change_first_name = Vitalis
+				}
 			}
 		}
 	}
@@ -624,287 +634,295 @@ spanish_female_name_effect = {
 	}
 	random_list = {
 		40 = {
-			1 = {
-				change_first_name = Elvira
+			random_list = {
+				1 = {
+					change_first_name = Elvira
+				}
+				1 = {
+					change_first_name = Mary
+				}
+				1 = {
+					change_first_name = Sancha
+				}
+				1 = {
+					change_first_name = Theresa
+				}
+				1 = {
+					change_first_name = Urraca
+				}
 			}
-			1 = {
-				change_first_name = Mary
-			}
-			1 = {
-				change_first_name = Sancha
-			}
-			1 = {
-				change_first_name = Theresa
-			}
-			1 = {
-				change_first_name = Urraca
-			}
-		}
-		30 = {
-			1 = {
-				change_first_name = Agnes
-			}
-			1 = {
-				change_first_name = Aldonza
-			}
-			1 = {
-				change_first_name = Majora
-			}
-			1 = {
-				change_first_name = Marina
-			}
-			1 = {
-				change_first_name = Stephania
+			30 = {
+				1 = {
+					change_first_name = Agnes
+				}
+				1 = {
+					change_first_name = Aldonza
+				}
+				1 = {
+					change_first_name = Majora
+				}
+				1 = {
+					change_first_name = Marina
+				}
+				1 = {
+					change_first_name = Stephania
+				}
 			}
 		}
 		20 = {
-			0 = {
-				modifer = {
-					culture = {
-						has_name_list = name_list_aragonese
-					}
-					add = 1
-				}
-				change_first_name = Andregoto
-			}
-			0 = {
-				modifer = {
-					culture = {
-						OR = {
-							has_name_list = name_list_galician
-							has_name_list = name_list_portuguese
+			random_list = {
+				0 = {
+					modifer = {
+						culture = {
+							has_name_list = name_list_aragonese
 						}
+						add = 1
 					}
-					add = 1
+					change_first_name = Andregoto
 				}
-				change_first_name = Thrudhild
-			}
-			1 = {
-				change_first_name = Argilo
-			}
-			1 = {
-				change_first_name = Beatris
-			}
-			1 = {
-				change_first_name = Berengaria
-			}
-			1 = {
-				change_first_name = Constantia
-			}
-			1 = {
-				change_first_name = Egilona
-			}
-			1 = {
-				change_first_name = Eleanor
-			}
-			1 = {
-				change_first_name = Ermesind
-			}
-			1 = {
-				change_first_name = Fronilda
-			}
-			1 = {
-				change_first_name = Goda
-			}
-			1 = {
-				change_first_name = Gunnthrud
-			}
-			1 = {
-				change_first_name = Inga
-			}
-			1 = {
-				change_first_name = Isabel
-			}
-			1 = {
-				change_first_name = Jimena
-			}
-			1 = {
-				change_first_name = Joanna
-			}
-			1 = {
-				change_first_name = Marquesa
-			}
-			1 = {
-				change_first_name = Mencia
-			}
-			1 = {
-				change_first_name = Milia
-			}
-			1 = {
-				change_first_name = Muniadona
-			}
-			1 = {
-				change_first_name = Sol
-			}
-			1 = {
-				change_first_name = Tegridia
-			}
-			1 = {
-				change_first_name = Toda
-			}
-			1 = {
-				change_first_name = Totilda
-			}
-			1 = {
-				change_first_name = Velasquita
+				0 = {
+					modifer = {
+						culture = {
+							OR = {
+								has_name_list = name_list_galician
+								has_name_list = name_list_portuguese
+							}
+						}
+						add = 1
+					}
+					change_first_name = Thrudhild
+				}
+				1 = {
+					change_first_name = Argilo
+				}
+				1 = {
+					change_first_name = Beatris
+				}
+				1 = {
+					change_first_name = Berengaria
+				}
+				1 = {
+					change_first_name = Constantia
+				}
+				1 = {
+					change_first_name = Egilona
+				}
+				1 = {
+					change_first_name = Eleanor
+				}
+				1 = {
+					change_first_name = Ermesind
+				}
+				1 = {
+					change_first_name = Fronilda
+				}
+				1 = {
+					change_first_name = Goda
+				}
+				1 = {
+					change_first_name = Gunnthrud
+				}
+				1 = {
+					change_first_name = Inga
+				}
+				1 = {
+					change_first_name = Isabel
+				}
+				1 = {
+					change_first_name = Jimena
+				}
+				1 = {
+					change_first_name = Joanna
+				}
+				1 = {
+					change_first_name = Marquesa
+				}
+				1 = {
+					change_first_name = Mencia
+				}
+				1 = {
+					change_first_name = Milia
+				}
+				1 = {
+					change_first_name = Muniadona
+				}
+				1 = {
+					change_first_name = Sol
+				}
+				1 = {
+					change_first_name = Tegridia
+				}
+				1 = {
+					change_first_name = Toda
+				}
+				1 = {
+					change_first_name = Totilda
+				}
+				1 = {
+					change_first_name = Velasquita
+				}
 			}
 		}
 		10 = {
-			0 = {
-				modifer = {
-					culture = {
-						NOT = {
-							has_name_list = name_list_aragonese
+			random_list = {
+				0 = {
+					modifer = {
+						culture = {
+							NOT = {
+								has_name_list = name_list_aragonese
+							}
 						}
+						add = 1
 					}
-					add = 1
+					change_first_name = Andregoto
 				}
-				change_first_name = Andregoto
-			}
-			1 = {
-				change_first_name = Adosinda
-			}
-			1 = {
-				change_first_name = Anderquina
-			}
-			1 = {
-				change_first_name = Aragonta
-			}
-			1 = {
-				change_first_name = Aurea
-			}
-			1 = {
-				change_first_name = Auro
-			}
-			1 = {
-				change_first_name = Aurobita
-			}
-			1 = {
-				change_first_name = Benedicta
-			}
-			1 = {
-				change_first_name = Bertha
-			}
-			1 = {
-				change_first_name = Christina
-			}
-			1 = {
-				change_first_name = Dominica
-			}
-			1 = {
-				change_first_name = Elo
-			}
-			1 = {
-				change_first_name = Ermengard
-			}
-			1 = {
-				change_first_name = Eulalia
-			}
-			1 = {
-				change_first_name = Ildaria
-			}
-			1 = {
-				change_first_name = Ilduara
-			}
-			1 = {
-				change_first_name = Juliana
-			}
-			1 = {
-				change_first_name = Justa
-			}
-			1 = {
-				change_first_name = Leodegunda
-			}
-			1 = {
-				change_first_name = Loba
-			}
-			1 = {
-				change_first_name = Margaret
-			}
-			1 = {
-				change_first_name = Mathilda
-			}
-			1 = {
-				change_first_name = Melia
-			}
-			1 = {
-				change_first_name = Oroana
-			}
-			1 = {
-				change_first_name = Otrosia
-			}
-			1 = {
-				change_first_name = Petronilla
-			}
-			1 = {
-				change_first_name = Thekla
-			}
-			1 = {
-				change_first_name = Yolanda
+				1 = {
+					change_first_name = Adosinda
+				}
+				1 = {
+					change_first_name = Anderquina
+				}
+				1 = {
+					change_first_name = Aragonta
+				}
+				1 = {
+					change_first_name = Aurea
+				}
+				1 = {
+					change_first_name = Auro
+				}
+				1 = {
+					change_first_name = Aurobita
+				}
+				1 = {
+					change_first_name = Benedicta
+				}
+				1 = {
+					change_first_name = Bertha
+				}
+				1 = {
+					change_first_name = Christina
+				}
+				1 = {
+					change_first_name = Dominica
+				}
+				1 = {
+					change_first_name = Elo
+				}
+				1 = {
+					change_first_name = Ermengard
+				}
+				1 = {
+					change_first_name = Eulalia
+				}
+				1 = {
+					change_first_name = Ildaria
+				}
+				1 = {
+					change_first_name = Ilduara
+				}
+				1 = {
+					change_first_name = Juliana
+				}
+				1 = {
+					change_first_name = Justa
+				}
+				1 = {
+					change_first_name = Leodegunda
+				}
+				1 = {
+					change_first_name = Loba
+				}
+				1 = {
+					change_first_name = Margaret
+				}
+				1 = {
+					change_first_name = Mathilda
+				}
+				1 = {
+					change_first_name = Melia
+				}
+				1 = {
+					change_first_name = Oroana
+				}
+				1 = {
+					change_first_name = Otrosia
+				}
+				1 = {
+					change_first_name = Petronilla
+				}
+				1 = {
+					change_first_name = Thekla
+				}
+				1 = {
+					change_first_name = Yolanda
+				}
 			}
 		}
 		1 = {
-			0 = {
-				modifer = {
-					culture = {
-						NOT = {
-							has_name_list = name_list_aragonese
+			radnom_list = {
+				0 = {
+					modifer = {
+						culture = {
+							NOT = {
+								has_name_list = name_list_aragonese
+							}
 						}
+						add = 1
 					}
-					add = 1
+					change_first_name = Thrudhild
 				}
-				change_first_name = Thrudhild
-			}
-			1 = {
-				change_first_name = Ardio
-			}
-			1 = {
-				change_first_name = Azenda
-			}
-			1 = {
-				change_first_name = Brynhild
-			}
-			1 = {
-				change_first_name = Endulcia
-			}
-			1 = {
-				change_first_name = Euphemia
-			}
-			1 = {
-				change_first_name = Flamula
-			}
-			1 = {
-				change_first_name = Flora
-			}
-			1 = {
-				change_first_name = Froilo
-			}
-			1 = {
-				change_first_name = Froiloba
-			}
-			1 = {
-				change_first_name = Gaudiosa
-			}
-			1 = {
-				change_first_name = Godina
-			}
-			1 = {
-				change_first_name = Melisende
-			}
-			1 = {
-				change_first_name = Nicor
-			}
-			1 = {
-				change_first_name = Nunila
-			}
-			1 = {
-				change_first_name = Paterna
-			}
-			1 = {
-				change_first_name = Sarracina
-			}
-			1 = {
-				change_first_name = Sendina
+				1 = {
+					change_first_name = Ardio
+				}
+				1 = {
+					change_first_name = Azenda
+				}
+				1 = {
+					change_first_name = Brynhild
+				}
+				1 = {
+					change_first_name = Endulcia
+				}
+				1 = {
+					change_first_name = Euphemia
+				}
+				1 = {
+					change_first_name = Flamula
+				}
+				1 = {
+					change_first_name = Flora
+				}
+				1 = {
+					change_first_name = Froilo
+				}
+				1 = {
+					change_first_name = Froiloba
+				}
+				1 = {
+					change_first_name = Gaudiosa
+				}
+				1 = {
+					change_first_name = Godina
+				}
+				1 = {
+					change_first_name = Melisende
+				}
+				1 = {
+					change_first_name = Nicor
+				}
+				1 = {
+					change_first_name = Nunila
+				}
+				1 = {
+					change_first_name = Paterna
+				}
+				1 = {
+					change_first_name = Sarracina
+				}
+				1 = {
+					change_first_name = Sendina
+				}
 			}
 		}
 	}
