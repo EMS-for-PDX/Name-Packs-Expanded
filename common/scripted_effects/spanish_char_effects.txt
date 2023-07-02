@@ -11,6 +11,8 @@
     add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0246 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:73856 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:73915 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:basque0030 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:73814 }
 	character:70018.dynasty = { #Bierzo (needs db)
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70018 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0350 }
@@ -117,9 +119,117 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73914 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73913 }
     }
-    character:andalusian0153 = {
-        change_first_name = Alfons
+	character:70292.dynasty = { #Iniga
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70292 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70291 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70290 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70293 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70294 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70295 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70299 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73772 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73778 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70296 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:basque0026 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73777 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73775 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73774 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73776 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73775 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:70296 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:70293 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73686 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73813 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:70291 }
+    }
+	character:73812.dynasty = { #Banu Musa/Qasi
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73812 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73813 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73783 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73815 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73816 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73817 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73818 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73820 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73822 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73824 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73825 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73825 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73820 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73815 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73813 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:73812 }
+    }
+    character:73825 = {
+        change_first_name = Muhammad
+    }
+    character:73824 = {
+        change_first_name = Mutarrif
+    }
+    character:73820 = {
+        change_first_name = Musa
+    }
+    character:73817 = {
+        change_first_name = Mutarrif
+    }
+    character:73815 = {
+        change_first_name = Muhammad
+    }
+    character:73783 = {
+        change_first_name = Aurea
+    }
+    character:73813 = {
+        change_first_name = Lope
+    }
+    character:73812 = {
+        change_first_name = Musa
         dynasty_effect_ne = yes
+    }
+    character:73776 = {
+        change_first_name = Ayshuna
+    }
+    character:73775 = {
+        change_first_name = Musa
+    }
+    character:73774 = {
+        change_first_name = Galindo
+        dynasty_effect_ne = yes
+    }
+    character:basque0030 = {
+        change_first_name = Toda
+    }
+    character:70296 = {
+        change_first_name = Aznar
+    }
+    character:73778 = {
+        change_first_name = Velasquita
+    }
+    character:73772 = {
+        change_first_name = Jimena
+    }
+    character:70299 = {
+        change_first_name = Inga
+    }
+    character:70295 = {
+        change_first_name = Sancho
+    }#Durr was a posthumorous andalusian nickname
+    character:70294 = { 
+        change_first_name = Inga
+    }
+    character:70293 = {
+        change_first_name = Fortun
+		add_to_global_variable_list = { name = One-Eyed_byname target = this }
+    }
+    character:70290 = {
+        change_first_name = Jimeno
+    }
+    character:70291 = {
+        change_first_name = Inge
+		add_to_global_variable_list = { name = Oak_byname target = this }
+        dynasty_effect_ne = yes
+    }
+    character:70292 = {
+        change_first_name = Garcia
     }
     character:andalusian0147 = {
         change_first_name = Amatan-Nur

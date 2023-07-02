@@ -117,8 +117,175 @@ spanish_male_name_effect = {
 				add_character_flag = father_name
 			}
 		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = brother_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			mother = {
+				add_character_flag = brother_name
+			}
+		}
+		0 = {
+			modifer = {
+				has_religion = religion:islam_religion
+				add = 25
+			}
+			change_first_name = Muhammad
+		}
 		40 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 12
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abd-Allah
+						}
+						1 = {
+							change_first_name = Abdal-Aziz
+						}
+						1 = {
+							change_first_name = Abdar-Rahman
+						}
+						1 = {
+							change_first_name = Ahmad
+						}
+						1 = {
+							change_first_name = Ali
+						}
+						1 = {
+							change_first_name = Hasan
+						}
+						1 = {
+							change_first_name = Husayn
+						}
+						1 = {
+							change_first_name = Jafar
+						}
+						1 = {
+							change_first_name = Musa
+						}
+						1 = {
+							change_first_name = Umar
+						}
+						1 = {
+							change_first_name = Uthman
+						}
+						1 = {
+							change_first_name = Yahya
+						}
+					}
+				}
 				0 = {
 					modifer = {
 						has_religion = religion:christianity_religion
@@ -136,6 +303,80 @@ spanish_male_name_effect = {
 		}
 		30 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 22
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abbas
+						}
+						1 = {
+							change_first_name = Abdal-Malik
+						}
+						1 = {
+							change_first_name = Amr
+						}
+						1 = {
+							change_first_name = Ayyub
+						}
+						1 = {
+							change_first_name = Dawud
+						}
+						1 = {
+							change_first_name = Fadl
+						}
+						1 = {
+							change_first_name = Fath
+						}
+						1 = {
+							change_first_name = Harun
+						}
+						1 = {
+							change_first_name = Ibrahim
+						}
+						1 = {
+							change_first_name = Idris
+						}
+						1 = {
+							change_first_name = Isa
+						}
+						1 = {
+							change_first_name = Ishaq
+						}
+						1 = {
+							change_first_name = Ismail
+						}
+						1 = {
+							change_first_name = Khalid
+						}
+						1 = {
+							change_first_name = Marwan
+						}
+						1 = {
+							change_first_name = Maslama
+						}
+						1 = {
+							change_first_name = Muawiya
+						}
+						1 = {
+							change_first_name = Qasim
+						}
+						1 = {
+							change_first_name = Said
+						}
+						1 = {
+							change_first_name = Yazid
+						}
+						1 = {
+							change_first_name = Yunus
+						}
+						1 = {
+							change_first_name = Yusuf
+						}
+					}
+				}
 				0 = {
 					modifer = {
 						culture = {
@@ -209,6 +450,104 @@ spanish_male_name_effect = {
 		}
 		20 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 30
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abdal-Hamid
+						}
+						1 = {
+							change_first_name = Abdal-Haqq
+						}
+						1 = {
+							change_first_name = Abdal-Karim
+						}
+						1 = {
+							change_first_name = Abdal-Qadir
+						}
+						1 = {
+							change_first_name = Badr
+						}
+						1 = {
+							change_first_name = Hafs
+						}
+						1 = {
+							change_first_name = Hakam
+						}
+						1 = {
+							change_first_name = Hamdan
+						}
+						1 = {
+							change_first_name = Hamid
+						}
+						1 = {
+							change_first_name = Harith
+						}
+						1 = {
+							change_first_name = Haytham
+						}
+						1 = {
+							change_first_name = Hisham
+						}
+						1 = {
+							change_first_name = Khalil
+						}
+						1 = {
+							change_first_name = Khattab
+						}
+						1 = {
+							change_first_name = Khayr
+						}
+						1 = {
+							change_first_name = Mahdi
+						}
+						1 = {
+							change_first_name = Malik
+						}
+						1 = {
+							change_first_name = Mansur
+						}
+						1 = {
+							change_first_name = Nasir
+						}
+						1 = {
+							change_first_name = Numan
+						}
+						1 = {
+							change_first_name = Rashid
+						}
+						1 = {
+							change_first_name = Ridwan
+						}
+						1 = {
+							change_first_name = Salim
+						}
+						1 = {
+							change_first_name = Tariq
+						}
+						1 = {
+							change_first_name = Tayyib
+						}
+						1 = {
+							change_first_name = Walid
+						}
+						1 = {
+							change_first_name = Yaqub
+						}
+						1 = {
+							change_first_name = Zakariya
+						}
+						1 = {
+							change_first_name = Ziyad
+						}
+						1 = {
+							change_first_name = Zubayr
+						}
+					}
+				}
 				0 = {
 					modifer = {
 						culture = {
@@ -392,6 +731,71 @@ spanish_male_name_effect = {
 		}
 		10 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 19
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abbad
+						}
+						1 = {
+							change_first_name = Abdal-Azim
+						}
+						1 = {
+							change_first_name = Abdal-Ghani
+						}
+						1 = {
+							change_first_name = Abdal-Jabbar
+						}
+						1 = {
+							change_first_name = Abdal-Jalil
+						}
+						1 = {
+							change_first_name = Abdal-Majid
+						}
+						1 = {
+							change_first_name = Abdal-Qawi
+						}
+						1 = {
+							change_first_name = Abdal-Wahhab
+						}
+						1 = {
+							change_first_name = Abdal-Wahid
+						}
+						1 = {
+							change_first_name = Abdan-Nur
+						}
+						1 = {
+							change_first_name = Abdar-Rahim
+						}
+						1 = {
+							change_first_name = Abdar-Razzaq
+						}
+						1 = {
+							change_first_name = Abu-Bakr
+						}
+						1 = {
+							change_first_name = Adil
+						}
+						1 = {
+							change_first_name = Ghassan
+						}
+						1 = {
+							change_first_name = Mahmud
+						}
+						1 = {
+							change_first_name = Mundhir
+						}
+						1 = {
+							change_first_name = Thabit
+						}
+						1 = {
+							change_first_name = Ubayd
+						}
+					}
+				}
 				0 = {
 					modifer = {
 						has_religion = religion:christianity_religion
@@ -604,6 +1008,239 @@ spanish_male_name_effect = {
 		}
 		1 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 75
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abdal-Mumin
+						}
+						1 = {
+							change_first_name = Amir
+						}
+						1 = {
+							change_first_name = Asad
+						}
+						1 = {
+							change_first_name = Asim
+						}
+						1 = {
+							change_first_name = Ata
+						}
+						1 = {
+							change_first_name = Azim
+						}
+						1 = {
+							change_first_name = Badis
+						}
+						1 = {
+							change_first_name = Bahlul
+						}
+						1 = {
+							change_first_name = Bakr
+						}
+						1 = {
+							change_first_name = Balj
+						}
+						1 = {
+							change_first_name = Bashir
+						}
+						1 = {
+							change_first_name = Bishr
+						}
+						1 = {
+							change_first_name = Enoch
+						}
+						1 = {
+							change_first_name = Faris
+						}
+						1 = {
+							change_first_name = Ghalib
+						}
+						1 = {
+							change_first_name = Habbus
+						}
+						1 = {
+							change_first_name = Habib
+						}
+						1 = {
+							change_first_name = Habus
+						}
+						1 = {
+							change_first_name = Hadra
+						}
+						1 = {
+							change_first_name = Hamad
+						}
+						1 = {
+							change_first_name = Hammu
+						}
+						1 = {
+							change_first_name = Hansa
+						}
+						1 = {
+							change_first_name = Hazm
+						}
+						1 = {
+							change_first_name = Hud
+						}
+						1 = {
+							change_first_name = Hurr
+						}
+						1 = {
+							change_first_name = Jabir
+						}
+						1 = {
+							change_first_name = Jahhaf
+						}
+						1 = {
+							change_first_name = Jamil
+						}
+						1 = {
+							change_first_name = Jubayr
+						}
+						1 = {
+							change_first_name = Khalaf
+						}
+						1 = {
+							change_first_name = Khaldun
+						}
+						1 = {
+							change_first_name = Khalifa
+						}
+						1 = {
+							change_first_name = Khayran
+						}
+						1 = {
+							change_first_name = Mahbub
+						}
+						1 = {
+							change_first_name = Masud
+						}
+						1 = {
+							change_first_name = Maymun
+						}
+						1 = {
+							change_first_name = Mubarak
+						}
+						1 = {
+							change_first_name = Mujahid
+						}
+						1 = {
+							change_first_name = Mukhtar
+						}
+						1 = {
+							change_first_name = Musab
+						}
+						1 = {
+							change_first_name = Muzaffar
+						}
+						1 = {
+							change_first_name = Nafi
+						}
+						1 = {
+							change_first_name = Nasr
+						}
+						1 = {
+							change_first_name = Nusayr
+						}
+						1 = {
+							change_first_name = Rabi
+						}
+						1 = {
+							change_first_name = Rafi
+						}
+						1 = {
+							change_first_name = Ramadan
+						}
+						1 = {
+							change_first_name = Rushd
+						}
+						1 = {
+							change_first_name = Sad
+						}
+						1 = {
+							change_first_name = Sadun
+						}
+						1 = {
+							change_first_name = Sahl
+						}
+						1 = {
+							change_first_name = Salama
+						}
+						1 = {
+							change_first_name = Salih
+						}
+						1 = {
+							change_first_name = Salt
+						}
+						1 = {
+							change_first_name = Shaddad
+						}
+						1 = {
+							change_first_name = Shahid
+						}
+						1 = {
+							change_first_name = Sharaf
+						}
+						1 = {
+							change_first_name = Sufyan
+						}
+						1 = {
+							change_first_name = Sulayma
+						}
+						1 = {
+							change_first_name = Sulayman
+						}
+						1 = {
+							change_first_name = Tahir
+						}
+						1 = {
+							change_first_name = Talha
+						}
+						1 = {
+							change_first_name = Talib
+						}
+						1 = {
+							change_first_name = Tamin
+						}
+						1 = {
+							change_first_name = Tammam
+						}
+						1 = {
+							change_first_name = Tarif
+						}
+						1 = {
+							change_first_name = Tashfin
+						}
+						1 = {
+							change_first_name = Tumert
+						}
+						1 = {
+							change_first_name = Umayya
+						}
+						1 = {
+							change_first_name = Uqba
+						}
+						1 = {
+							change_first_name = Yaghmurasen
+						}
+						1 = {
+							change_first_name = Zahir
+						}
+						1 = {
+							change_first_name = Zayd
+						}
+						1 = {
+							change_first_name = Zaydan
+						}
+						1 = {
+							change_first_name = Zennun
+						}
+					}
+				}
 				0 = {
 					modifer = {
 						has_religion = religion:christianity_religion
@@ -843,6 +1480,122 @@ spanish_female_name_effect = {
 				add_character_flag = mother_name
 			}
 		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			father = {
+				add_character_flag = sister_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = sister_name
+			}
+		}
 		40 = {
 			random_list = {
 				1 = {
@@ -861,7 +1614,9 @@ spanish_female_name_effect = {
 					change_first_name = Urraca
 				}
 			}
-			30 = {
+		}
+		30 = {
+			random_list = {
 				1 = {
 					change_first_name = Agnes
 				}
@@ -881,6 +1636,71 @@ spanish_female_name_effect = {
 		}
 		20 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 19
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abida
+						}
+						1 = {
+							change_first_name = Afiya
+						}
+						1 = {
+							change_first_name = Aisha
+						}
+						1 = {
+							change_first_name = Amira
+						}
+						1 = {
+							change_first_name = Asma
+						}
+						1 = {
+							change_first_name = Ayshuna
+						}
+						1 = {
+							change_first_name = Aziza
+						}
+						1 = {
+							change_first_name = Fatima
+						}
+						1 = {
+							change_first_name = Ghaniya
+						}
+						1 = {
+							change_first_name = Jawhar
+						}
+						1 = {
+							change_first_name = Khadija
+						}
+						1 = {
+							change_first_name = Layla
+						}
+						1 = {
+							change_first_name = Maryam
+						}
+						1 = {
+							change_first_name = Saada
+						}
+						1 = {
+							change_first_name = Shams
+						}
+						1 = {
+							change_first_name = Zahra
+						}
+						1 = {
+							change_first_name = Zaynab
+						}
+						1 = {
+							change_first_name = Zubayda
+						}
+						1 = {
+							change_first_name = Zuhra
+						}
+					}
+				}
 				0 = {
 					modifer = {
 						culture = {
@@ -1256,8 +2076,175 @@ basque_male_name_effect = {
 				add_character_flag = father_name
 			}
 		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = brother_name
+			}
+		}
+		0 = {
+			modifer = {
+				has_religion = religion:islam_religion
+				add = 25
+			}
+			change_first_name = Muhammad
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			mother = {
+				add_character_flag = brother_name
+			}
+		}
 		40 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 12
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abd-Allah
+						}
+						1 = {
+							change_first_name = Abdal-Aziz
+						}
+						1 = {
+							change_first_name = Abdar-Rahman
+						}
+						1 = {
+							change_first_name = Ahmad
+						}
+						1 = {
+							change_first_name = Ali
+						}
+						1 = {
+							change_first_name = Hasan
+						}
+						1 = {
+							change_first_name = Husayn
+						}
+						1 = {
+							change_first_name = Jafar
+						}
+						1 = {
+							change_first_name = Musa
+						}
+						1 = {
+							change_first_name = Umar
+						}
+						1 = {
+							change_first_name = Uthman
+						}
+						1 = {
+							change_first_name = Yahya
+						}
+					}
+				}
 				1 = {
 					change_first_name = Fortun
 				}
@@ -1274,6 +2261,80 @@ basque_male_name_effect = {
 		}
 		30 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 22
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abbas
+						}
+						1 = {
+							change_first_name = Abdal-Malik
+						}
+						1 = {
+							change_first_name = Amr
+						}
+						1 = {
+							change_first_name = Ayyub
+						}
+						1 = {
+							change_first_name = Dawud
+						}
+						1 = {
+							change_first_name = Fadl
+						}
+						1 = {
+							change_first_name = Fath
+						}
+						1 = {
+							change_first_name = Harun
+						}
+						1 = {
+							change_first_name = Ibrahim
+						}
+						1 = {
+							change_first_name = Idris
+						}
+						1 = {
+							change_first_name = Isa
+						}
+						1 = {
+							change_first_name = Ishaq
+						}
+						1 = {
+							change_first_name = Ismail
+						}
+						1 = {
+							change_first_name = Khalid
+						}
+						1 = {
+							change_first_name = Marwan
+						}
+						1 = {
+							change_first_name = Maslama
+						}
+						1 = {
+							change_first_name = Muawiya
+						}
+						1 = {
+							change_first_name = Qasim
+						}
+						1 = {
+							change_first_name = Said
+						}
+						1 = {
+							change_first_name = Yazid
+						}
+						1 = {
+							change_first_name = Yunus
+						}
+						1 = {
+							change_first_name = Yusuf
+						}
+					}
+				}
 				1 = {
 					change_first_name = Aznar
 				}
@@ -1290,6 +2351,104 @@ basque_male_name_effect = {
 		}
 		20 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 30
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abdal-Hamid
+						}
+						1 = {
+							change_first_name = Abdal-Haqq
+						}
+						1 = {
+							change_first_name = Abdal-Karim
+						}
+						1 = {
+							change_first_name = Abdal-Qadir
+						}
+						1 = {
+							change_first_name = Badr
+						}
+						1 = {
+							change_first_name = Hafs
+						}
+						1 = {
+							change_first_name = Hakam
+						}
+						1 = {
+							change_first_name = Hamdan
+						}
+						1 = {
+							change_first_name = Hamid
+						}
+						1 = {
+							change_first_name = Harith
+						}
+						1 = {
+							change_first_name = Haytham
+						}
+						1 = {
+							change_first_name = Hisham
+						}
+						1 = {
+							change_first_name = Khalil
+						}
+						1 = {
+							change_first_name = Khattab
+						}
+						1 = {
+							change_first_name = Khayr
+						}
+						1 = {
+							change_first_name = Mahdi
+						}
+						1 = {
+							change_first_name = Malik
+						}
+						1 = {
+							change_first_name = Mansur
+						}
+						1 = {
+							change_first_name = Nasir
+						}
+						1 = {
+							change_first_name = Numan
+						}
+						1 = {
+							change_first_name = Rashid
+						}
+						1 = {
+							change_first_name = Ridwan
+						}
+						1 = {
+							change_first_name = Salim
+						}
+						1 = {
+							change_first_name = Tariq
+						}
+						1 = {
+							change_first_name = Tayyib
+						}
+						1 = {
+							change_first_name = Walid
+						}
+						1 = {
+							change_first_name = Yaqub
+						}
+						1 = {
+							change_first_name = Zakariya
+						}
+						1 = {
+							change_first_name = Ziyad
+						}
+						1 = {
+							change_first_name = Zubayr
+						}
+					}
+				}
 				1 = {
 					change_first_name = Aita
 				}
@@ -1354,6 +2513,71 @@ basque_male_name_effect = {
 		}
 		10 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 19
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abbad
+						}
+						1 = {
+							change_first_name = Abdal-Azim
+						}
+						1 = {
+							change_first_name = Abdal-Ghani
+						}
+						1 = {
+							change_first_name = Abdal-Jabbar
+						}
+						1 = {
+							change_first_name = Abdal-Jalil
+						}
+						1 = {
+							change_first_name = Abdal-Majid
+						}
+						1 = {
+							change_first_name = Abdal-Qawi
+						}
+						1 = {
+							change_first_name = Abdal-Wahhab
+						}
+						1 = {
+							change_first_name = Abdal-Wahid
+						}
+						1 = {
+							change_first_name = Abdan-Nur
+						}
+						1 = {
+							change_first_name = Abdar-Rahim
+						}
+						1 = {
+							change_first_name = Abdar-Razzaq
+						}
+						1 = {
+							change_first_name = Abu-Bakr
+						}
+						1 = {
+							change_first_name = Adil
+						}
+						1 = {
+							change_first_name = Ghassan
+						}
+						1 = {
+							change_first_name = Mahmud
+						}
+						1 = {
+							change_first_name = Mundhir
+						}
+						1 = {
+							change_first_name = Thabit
+						}
+						1 = {
+							change_first_name = Ubayd
+						}
+					}
+				}
 				1 = {
 					change_first_name = Aitabita
 				}
@@ -1394,6 +2618,239 @@ basque_male_name_effect = {
 		}
 		1 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 75
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abdal-Mumin
+						}
+						1 = {
+							change_first_name = Amir
+						}
+						1 = {
+							change_first_name = Asad
+						}
+						1 = {
+							change_first_name = Asim
+						}
+						1 = {
+							change_first_name = Ata
+						}
+						1 = {
+							change_first_name = Azim
+						}
+						1 = {
+							change_first_name = Badis
+						}
+						1 = {
+							change_first_name = Bahlul
+						}
+						1 = {
+							change_first_name = Bakr
+						}
+						1 = {
+							change_first_name = Balj
+						}
+						1 = {
+							change_first_name = Bashir
+						}
+						1 = {
+							change_first_name = Bishr
+						}
+						1 = {
+							change_first_name = Enoch
+						}
+						1 = {
+							change_first_name = Faris
+						}
+						1 = {
+							change_first_name = Ghalib
+						}
+						1 = {
+							change_first_name = Habbus
+						}
+						1 = {
+							change_first_name = Habib
+						}
+						1 = {
+							change_first_name = Habus
+						}
+						1 = {
+							change_first_name = Hadra
+						}
+						1 = {
+							change_first_name = Hamad
+						}
+						1 = {
+							change_first_name = Hammu
+						}
+						1 = {
+							change_first_name = Hansa
+						}
+						1 = {
+							change_first_name = Hazm
+						}
+						1 = {
+							change_first_name = Hud
+						}
+						1 = {
+							change_first_name = Hurr
+						}
+						1 = {
+							change_first_name = Jabir
+						}
+						1 = {
+							change_first_name = Jahhaf
+						}
+						1 = {
+							change_first_name = Jamil
+						}
+						1 = {
+							change_first_name = Jubayr
+						}
+						1 = {
+							change_first_name = Khalaf
+						}
+						1 = {
+							change_first_name = Khaldun
+						}
+						1 = {
+							change_first_name = Khalifa
+						}
+						1 = {
+							change_first_name = Khayran
+						}
+						1 = {
+							change_first_name = Mahbub
+						}
+						1 = {
+							change_first_name = Masud
+						}
+						1 = {
+							change_first_name = Maymun
+						}
+						1 = {
+							change_first_name = Mubarak
+						}
+						1 = {
+							change_first_name = Mujahid
+						}
+						1 = {
+							change_first_name = Mukhtar
+						}
+						1 = {
+							change_first_name = Musab
+						}
+						1 = {
+							change_first_name = Muzaffar
+						}
+						1 = {
+							change_first_name = Nafi
+						}
+						1 = {
+							change_first_name = Nasr
+						}
+						1 = {
+							change_first_name = Nusayr
+						}
+						1 = {
+							change_first_name = Rabi
+						}
+						1 = {
+							change_first_name = Rafi
+						}
+						1 = {
+							change_first_name = Ramadan
+						}
+						1 = {
+							change_first_name = Rushd
+						}
+						1 = {
+							change_first_name = Sad
+						}
+						1 = {
+							change_first_name = Sadun
+						}
+						1 = {
+							change_first_name = Sahl
+						}
+						1 = {
+							change_first_name = Salama
+						}
+						1 = {
+							change_first_name = Salih
+						}
+						1 = {
+							change_first_name = Salt
+						}
+						1 = {
+							change_first_name = Shaddad
+						}
+						1 = {
+							change_first_name = Shahid
+						}
+						1 = {
+							change_first_name = Sharaf
+						}
+						1 = {
+							change_first_name = Sufyan
+						}
+						1 = {
+							change_first_name = Sulayma
+						}
+						1 = {
+							change_first_name = Sulayman
+						}
+						1 = {
+							change_first_name = Tahir
+						}
+						1 = {
+							change_first_name = Talha
+						}
+						1 = {
+							change_first_name = Talib
+						}
+						1 = {
+							change_first_name = Tamin
+						}
+						1 = {
+							change_first_name = Tammam
+						}
+						1 = {
+							change_first_name = Tarif
+						}
+						1 = {
+							change_first_name = Tashfin
+						}
+						1 = {
+							change_first_name = Tumert
+						}
+						1 = {
+							change_first_name = Umayya
+						}
+						1 = {
+							change_first_name = Uqba
+						}
+						1 = {
+							change_first_name = Yaghmurasen
+						}
+						1 = {
+							change_first_name = Zahir
+						}
+						1 = {
+							change_first_name = Zayd
+						}
+						1 = {
+							change_first_name = Zaydan
+						}
+						1 = {
+							change_first_name = Zennun
+						}
+					}
+				}
 				1 = {
 					change_first_name = Armentarius
 				}
@@ -1547,6 +3004,122 @@ basque_female_name_effect = {
 				add_character_flag = mother_name
 			}
 		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			father = {
+				add_character_flag = sister_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = sister_name
+			}
+		}
 		40 = {
 			random_list = {
 				1 = {
@@ -1556,7 +3129,9 @@ basque_female_name_effect = {
 					change_first_name = Sancha
 				}
 			}
-			30 = {
+		}
+		30 = {
+			random_list = {
 				1 = {
 					change_first_name = Inga
 				}
@@ -1573,6 +3148,71 @@ basque_female_name_effect = {
 		}
 		20 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 19
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abida
+						}
+						1 = {
+							change_first_name = Afiya
+						}
+						1 = {
+							change_first_name = Aisha
+						}
+						1 = {
+							change_first_name = Amira
+						}
+						1 = {
+							change_first_name = Asma
+						}
+						1 = {
+							change_first_name = Ayshuna
+						}
+						1 = {
+							change_first_name = Aziza
+						}
+						1 = {
+							change_first_name = Fatima
+						}
+						1 = {
+							change_first_name = Ghaniya
+						}
+						1 = {
+							change_first_name = Jawhar
+						}
+						1 = {
+							change_first_name = Khadija
+						}
+						1 = {
+							change_first_name = Layla
+						}
+						1 = {
+							change_first_name = Maryam
+						}
+						1 = {
+							change_first_name = Saada
+						}
+						1 = {
+							change_first_name = Shams
+						}
+						1 = {
+							change_first_name = Zahra
+						}
+						1 = {
+							change_first_name = Zaynab
+						}
+						1 = {
+							change_first_name = Zubayda
+						}
+						1 = {
+							change_first_name = Zuhra
+						}
+					}
+				}
 				1 = {
 					change_first_name = Aldonza
 				}
@@ -1773,8 +3413,175 @@ catalan_male_name_effect = {
 				add_character_flag = father_name
 			}
 		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = brother_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			mother = {
+				add_character_flag = brother_name
+			}
+		}
+		0 = {
+			modifer = {
+				has_religion = religion:islam_religion
+				add = 25
+			}
+			change_first_name = Muhammad
+		}
 		40 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 12
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abd-Allah
+						}
+						1 = {
+							change_first_name = Abdal-Aziz
+						}
+						1 = {
+							change_first_name = Abdar-Rahman
+						}
+						1 = {
+							change_first_name = Ahmad
+						}
+						1 = {
+							change_first_name = Ali
+						}
+						1 = {
+							change_first_name = Hasan
+						}
+						1 = {
+							change_first_name = Husayn
+						}
+						1 = {
+							change_first_name = Jafar
+						}
+						1 = {
+							change_first_name = Musa
+						}
+						1 = {
+							change_first_name = Umar
+						}
+						1 = {
+							change_first_name = Uthman
+						}
+						1 = {
+							change_first_name = Yahya
+						}
+					}
+				}
 				1 = {
 					change_first_name = Bernhard
 				}
@@ -1791,6 +3598,80 @@ catalan_male_name_effect = {
 		}
 		30 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 22
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abbas
+						}
+						1 = {
+							change_first_name = Abdal-Malik
+						}
+						1 = {
+							change_first_name = Amr
+						}
+						1 = {
+							change_first_name = Ayyub
+						}
+						1 = {
+							change_first_name = Dawud
+						}
+						1 = {
+							change_first_name = Fadl
+						}
+						1 = {
+							change_first_name = Fath
+						}
+						1 = {
+							change_first_name = Harun
+						}
+						1 = {
+							change_first_name = Ibrahim
+						}
+						1 = {
+							change_first_name = Idris
+						}
+						1 = {
+							change_first_name = Isa
+						}
+						1 = {
+							change_first_name = Ishaq
+						}
+						1 = {
+							change_first_name = Ismail
+						}
+						1 = {
+							change_first_name = Khalid
+						}
+						1 = {
+							change_first_name = Marwan
+						}
+						1 = {
+							change_first_name = Maslama
+						}
+						1 = {
+							change_first_name = Muawiya
+						}
+						1 = {
+							change_first_name = Qasim
+						}
+						1 = {
+							change_first_name = Said
+						}
+						1 = {
+							change_first_name = Yazid
+						}
+						1 = {
+							change_first_name = Yunus
+						}
+						1 = {
+							change_first_name = Yusuf
+						}
+					}
+				}
 				1 = {
 					change_first_name = Alfons
 				}
@@ -1816,6 +3697,104 @@ catalan_male_name_effect = {
 		}
 		20 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 30
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abdal-Hamid
+						}
+						1 = {
+							change_first_name = Abdal-Haqq
+						}
+						1 = {
+							change_first_name = Abdal-Karim
+						}
+						1 = {
+							change_first_name = Abdal-Qadir
+						}
+						1 = {
+							change_first_name = Badr
+						}
+						1 = {
+							change_first_name = Hafs
+						}
+						1 = {
+							change_first_name = Hakam
+						}
+						1 = {
+							change_first_name = Hamdan
+						}
+						1 = {
+							change_first_name = Hamid
+						}
+						1 = {
+							change_first_name = Harith
+						}
+						1 = {
+							change_first_name = Haytham
+						}
+						1 = {
+							change_first_name = Hisham
+						}
+						1 = {
+							change_first_name = Khalil
+						}
+						1 = {
+							change_first_name = Khattab
+						}
+						1 = {
+							change_first_name = Khayr
+						}
+						1 = {
+							change_first_name = Mahdi
+						}
+						1 = {
+							change_first_name = Malik
+						}
+						1 = {
+							change_first_name = Mansur
+						}
+						1 = {
+							change_first_name = Nasir
+						}
+						1 = {
+							change_first_name = Numan
+						}
+						1 = {
+							change_first_name = Rashid
+						}
+						1 = {
+							change_first_name = Ridwan
+						}
+						1 = {
+							change_first_name = Salim
+						}
+						1 = {
+							change_first_name = Tariq
+						}
+						1 = {
+							change_first_name = Tayyib
+						}
+						1 = {
+							change_first_name = Walid
+						}
+						1 = {
+							change_first_name = Yaqub
+						}
+						1 = {
+							change_first_name = Zakariya
+						}
+						1 = {
+							change_first_name = Ziyad
+						}
+						1 = {
+							change_first_name = Zubayr
+						}
+					}
+				}
 				1 = {
 					change_first_name = Alfar
 				}
@@ -1838,7 +3817,7 @@ catalan_male_name_effect = {
 					change_first_name = Fulk
 				}
 				1 = {
-					change_first_name = Galceran
+					change_first_name = Walram
 				}
 				1 = {
 					change_first_name = Gundobald
@@ -1868,6 +3847,71 @@ catalan_male_name_effect = {
 		}
 		10 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 19
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abbad
+						}
+						1 = {
+							change_first_name = Abdal-Azim
+						}
+						1 = {
+							change_first_name = Abdal-Ghani
+						}
+						1 = {
+							change_first_name = Abdal-Jabbar
+						}
+						1 = {
+							change_first_name = Abdal-Jalil
+						}
+						1 = {
+							change_first_name = Abdal-Majid
+						}
+						1 = {
+							change_first_name = Abdal-Qawi
+						}
+						1 = {
+							change_first_name = Abdal-Wahhab
+						}
+						1 = {
+							change_first_name = Abdal-Wahid
+						}
+						1 = {
+							change_first_name = Abdan-Nur
+						}
+						1 = {
+							change_first_name = Abdar-Rahim
+						}
+						1 = {
+							change_first_name = Abdar-Razzaq
+						}
+						1 = {
+							change_first_name = Abu-Bakr
+						}
+						1 = {
+							change_first_name = Adil
+						}
+						1 = {
+							change_first_name = Ghassan
+						}
+						1 = {
+							change_first_name = Mahmud
+						}
+						1 = {
+							change_first_name = Mundhir
+						}
+						1 = {
+							change_first_name = Thabit
+						}
+						1 = {
+							change_first_name = Ubayd
+						}
+					}
+				}
 				1 = {
 					change_first_name = Albert
 				}
@@ -1929,6 +3973,239 @@ catalan_male_name_effect = {
 		}
 		1 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 75
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abdal-Mumin
+						}
+						1 = {
+							change_first_name = Amir
+						}
+						1 = {
+							change_first_name = Asad
+						}
+						1 = {
+							change_first_name = Asim
+						}
+						1 = {
+							change_first_name = Ata
+						}
+						1 = {
+							change_first_name = Azim
+						}
+						1 = {
+							change_first_name = Badis
+						}
+						1 = {
+							change_first_name = Bahlul
+						}
+						1 = {
+							change_first_name = Bakr
+						}
+						1 = {
+							change_first_name = Balj
+						}
+						1 = {
+							change_first_name = Bashir
+						}
+						1 = {
+							change_first_name = Bishr
+						}
+						1 = {
+							change_first_name = Enoch
+						}
+						1 = {
+							change_first_name = Faris
+						}
+						1 = {
+							change_first_name = Ghalib
+						}
+						1 = {
+							change_first_name = Habbus
+						}
+						1 = {
+							change_first_name = Habib
+						}
+						1 = {
+							change_first_name = Habus
+						}
+						1 = {
+							change_first_name = Hadra
+						}
+						1 = {
+							change_first_name = Hamad
+						}
+						1 = {
+							change_first_name = Hammu
+						}
+						1 = {
+							change_first_name = Hansa
+						}
+						1 = {
+							change_first_name = Hazm
+						}
+						1 = {
+							change_first_name = Hud
+						}
+						1 = {
+							change_first_name = Hurr
+						}
+						1 = {
+							change_first_name = Jabir
+						}
+						1 = {
+							change_first_name = Jahhaf
+						}
+						1 = {
+							change_first_name = Jamil
+						}
+						1 = {
+							change_first_name = Jubayr
+						}
+						1 = {
+							change_first_name = Khalaf
+						}
+						1 = {
+							change_first_name = Khaldun
+						}
+						1 = {
+							change_first_name = Khalifa
+						}
+						1 = {
+							change_first_name = Khayran
+						}
+						1 = {
+							change_first_name = Mahbub
+						}
+						1 = {
+							change_first_name = Masud
+						}
+						1 = {
+							change_first_name = Maymun
+						}
+						1 = {
+							change_first_name = Mubarak
+						}
+						1 = {
+							change_first_name = Mujahid
+						}
+						1 = {
+							change_first_name = Mukhtar
+						}
+						1 = {
+							change_first_name = Musab
+						}
+						1 = {
+							change_first_name = Muzaffar
+						}
+						1 = {
+							change_first_name = Nafi
+						}
+						1 = {
+							change_first_name = Nasr
+						}
+						1 = {
+							change_first_name = Nusayr
+						}
+						1 = {
+							change_first_name = Rabi
+						}
+						1 = {
+							change_first_name = Rafi
+						}
+						1 = {
+							change_first_name = Ramadan
+						}
+						1 = {
+							change_first_name = Rushd
+						}
+						1 = {
+							change_first_name = Sad
+						}
+						1 = {
+							change_first_name = Sadun
+						}
+						1 = {
+							change_first_name = Sahl
+						}
+						1 = {
+							change_first_name = Salama
+						}
+						1 = {
+							change_first_name = Salih
+						}
+						1 = {
+							change_first_name = Salt
+						}
+						1 = {
+							change_first_name = Shaddad
+						}
+						1 = {
+							change_first_name = Shahid
+						}
+						1 = {
+							change_first_name = Sharaf
+						}
+						1 = {
+							change_first_name = Sufyan
+						}
+						1 = {
+							change_first_name = Sulayma
+						}
+						1 = {
+							change_first_name = Sulayman
+						}
+						1 = {
+							change_first_name = Tahir
+						}
+						1 = {
+							change_first_name = Talha
+						}
+						1 = {
+							change_first_name = Talib
+						}
+						1 = {
+							change_first_name = Tamin
+						}
+						1 = {
+							change_first_name = Tammam
+						}
+						1 = {
+							change_first_name = Tarif
+						}
+						1 = {
+							change_first_name = Tashfin
+						}
+						1 = {
+							change_first_name = Tumert
+						}
+						1 = {
+							change_first_name = Umayya
+						}
+						1 = {
+							change_first_name = Uqba
+						}
+						1 = {
+							change_first_name = Yaghmurasen
+						}
+						1 = {
+							change_first_name = Zahir
+						}
+						1 = {
+							change_first_name = Zayd
+						}
+						1 = {
+							change_first_name = Zaydan
+						}
+						1 = {
+							change_first_name = Zennun
+						}
+					}
+				}
 				1 = {
 					change_first_name = Artal
 				}
@@ -2100,6 +4377,122 @@ catalan_female_name_effect = {
 				add_character_flag = mother_name
 			}
 		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			father = {
+				add_character_flag = sister_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = sister_name
+			}
+		}
 		40 = {
 			random_list = {
 				1 = {
@@ -2115,7 +4508,9 @@ catalan_female_name_effect = {
 					change_first_name = Sibyl
 				}
 			}
-			30 = {
+		}
+		30 = {
+			random_list = {
 				1 = {
 					change_first_name = Adelheid
 				}
@@ -2141,6 +4536,71 @@ catalan_female_name_effect = {
 		}
 		20 = {
 			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:islam_religion
+						add = 19
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abida
+						}
+						1 = {
+							change_first_name = Afiya
+						}
+						1 = {
+							change_first_name = Aisha
+						}
+						1 = {
+							change_first_name = Amira
+						}
+						1 = {
+							change_first_name = Asma
+						}
+						1 = {
+							change_first_name = Ayshuna
+						}
+						1 = {
+							change_first_name = Aziza
+						}
+						1 = {
+							change_first_name = Fatima
+						}
+						1 = {
+							change_first_name = Ghaniya
+						}
+						1 = {
+							change_first_name = Jawhar
+						}
+						1 = {
+							change_first_name = Khadija
+						}
+						1 = {
+							change_first_name = Layla
+						}
+						1 = {
+							change_first_name = Maryam
+						}
+						1 = {
+							change_first_name = Saada
+						}
+						1 = {
+							change_first_name = Shams
+						}
+						1 = {
+							change_first_name = Zahra
+						}
+						1 = {
+							change_first_name = Zaynab
+						}
+						1 = {
+							change_first_name = Zubayda
+						}
+						1 = {
+							change_first_name = Zuhra
+						}
+					}
+				}
 				1 = {
 					change_first_name = Agnes
 				}
