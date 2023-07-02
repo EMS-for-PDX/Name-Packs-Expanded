@@ -54,6 +54,197 @@
 		random_list = {
 			0 = {
 				modifier = {
+					father ?= {
+						OR = {
+							primary_title = title:k_france
+							primary_title = title:e_france
+						}
+						exists = dynasty.var:Capet
+						has_character_flag = this_is_phillipe
+						has_character_flag = living_duo
+						NOT = {
+							has_character_flag = first_born
+						}
+					}
+					add = 1000
+				}
+				change_first_name = Louis
+				add_character_flag = this_is_louis
+				add_character_flag = living_duo
+				father = {
+					add_character_flag = first_born
+				}
+			}
+			0 = {
+				modifier = {
+					father ?= {
+						OR = {
+							primary_title = title:k_france
+							primary_title = title:e_france
+						}
+						exists = dynasty.var:Capet
+						has_character_flag = this_is_louis
+						has_character_flag = living_duo
+						NOT = {
+							has_character_flag = first_born
+						}
+					}
+					add = 1000
+				}
+				change_first_name = Phillip
+				add_character_flag = this_is_phillipe
+				add_character_flag = living_duo
+				father = {
+					add_character_flag = first_born
+				}
+			}
+			0 = {
+				modifier = {
+					father ?= {
+						OR = {
+							primary_title = title:k_france
+							primary_title = title:e_france
+						}
+						exists = dynasty.var:Capet
+						has_character_flag = this_is_phillipe
+						has_character_flag = living_duo
+						has_character_flag = first_born
+					}
+					add = 1000
+				}
+				change_first_name = Phillip
+				add_character_flag = this_is_phillipe
+				add_character_flag = living_duo
+				father = {
+					add_character_flag = second_born
+				}
+			}
+			0 = {
+				modifier = {
+					father ?= {
+						OR = {
+							primary_title = title:k_france
+							primary_title = title:e_france
+						}
+						exists = dynasty.var:Capet
+						has_character_flag = this_is_louis
+						has_character_flag = living_duo
+						has_character_flag = first_born
+					}
+					add = 1000
+				}
+				change_first_name = Louis
+				add_character_flag = this_is_louis
+				add_character_flag = living_duo
+				father = {
+					add_character_flag = second_born
+				}
+			}
+			0 = {
+				modifier = {
+					father ?= {
+						OR = {
+							primary_title = title:k_france
+							primary_title = title:e_france
+						}
+						exists = dynasty.var:Capet
+						NOR = {
+							has_character_flag = living_duo
+							has_character_flag = first_born
+						}
+					}
+					add = 1000
+				}
+				change_first_name = Louis
+				add_character_flag = this_is_louis
+				add_character_flag = living_duo
+				father = {
+					add_character_flag = first_born
+				}
+			}
+			0 = {
+				modifier = {
+					father ?= {
+						OR = {
+							primary_title = title:k_france
+							primary_title = title:e_france
+						}
+						exists = dynasty.var:Capet
+						has_character_flag = first_born
+						NOT = {
+							has_character_flag = living_duo
+						}
+					}
+					add = 1000
+				}
+				change_first_name = Phillip
+				add_character_flag = this_is_phillipe
+				add_character_flag = living_duo
+				father = {
+					add_character_flag = second_born
+				}
+			}
+			0 = {
+				modifier = {
+					father ?= {
+						OR = {
+							primary_title = title:k_france
+							primary_title = title:e_france
+						}
+						exists = dynasty.var:Capet
+						has_character_flag = second_born
+						NOT = {
+							has_character_flag = third_born
+						}
+					}
+					add = 1000
+				}
+				change_first_name = Charles
+				father = {
+					add_character_flag = third_born
+				}
+			}
+			0 = {
+				modifier = {
+					father ?= {
+						OR = {
+							primary_title = title:k_france
+							primary_title = title:e_france
+						}
+						exists = dynasty.var:Capet
+						has_character_flag = third_born
+						NOT = {
+							has_character_flag = forth_born
+						}
+					}
+					add = 1000
+				}
+				change_first_name = Robert
+				father = {
+					add_character_flag = forth_born
+				}
+			}
+			0 = {
+				modifier = {
+					father ?= {
+						has_title = title:c_urgell
+						exists = house.var:Ermengol
+						NOT = {
+							has_character_flag = u_got_ermengolled
+						}
+					}
+					add = 1000
+				}
+				change_first_name = Ermengaud
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = root }
+				}
+				father = {
+					add_character_flag = u_got_ermengolled
+				}
+			}
+			0 = {
+				modifier = {
 					culture = {
 						has_name_list = name_list_alan
 					}
