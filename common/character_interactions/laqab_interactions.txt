@@ -166,7 +166,9 @@ assign_faith_laqab = {
             has_religion = religion:islam_religion
             is_independent_ruler = yes
             highest_held_title_tier >= tier_kingdom
-            current_year >= 1050
+            culture = {
+                has_cultural_era_or_later = culture_era_high_medieval
+            }
         }
         scope:recipient = {
             has_religion = religion:islam_religion
@@ -193,7 +195,9 @@ assign_faith_laqab = {
                     value >= 30
                 }
             }
-            current_year >= 1050
+            culture = {
+                has_cultural_era_or_later = culture_era_high_medieval
+            }
         }
         scope:recipient = {
             has_religion = religion:islam_religion

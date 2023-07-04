@@ -44,9 +44,9 @@ get_regnal_laqab = {
     is_shown = {
         culture = {
             is_npe_supported_culture = yes
+            has_cultural_era_or_later = culture_era_high_medieval
         }
         is_independent_ruler = yes
-        current_year >= 1050
         OR = {
             any_county_in_region = {
                 region = world_middle_east
@@ -103,8 +103,8 @@ get_ducal_laqab = {
     is_shown = {
         culture = {
             is_npe_supported_culture = yes
+            has_cultural_era_or_later = culture_era_high_medieval
         }
-        current_year >= 1050
         is_independent_ruler = yes
         OR = {
             any_county_in_region = {
