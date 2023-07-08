@@ -116,7 +116,10 @@
 				is_npe_supported_culture = yes
 			}
 			culture = {
-				has_cultural_pillar = heritage_iberian
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+				}
 			}
 		}
 		localization_key = First_Name_Spain
@@ -540,7 +543,10 @@ FirstNameNoTooltip = {
 				is_npe_supported_culture = yes
 			}
 			culture = {
-				has_cultural_pillar = heritage_iberian
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+				}
 			}
 		}
 		localization_key = First_Name_No_Tooltip_Spain
@@ -956,7 +962,10 @@ FirstNamePossessive = {
 				is_npe_supported_culture = yes
 			}
 			culture = {
-				has_cultural_pillar = heritage_iberian
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+				}
 			}
 		}
 		localization_key = First_Name_Possessive_Spain
@@ -1370,7 +1379,10 @@ FirstNamePossessiveNoTooltip = {
 				is_npe_supported_culture = yes
 			}
 			culture = {
-				has_cultural_pillar = heritage_iberian
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+				}
 			}
 		}
 		localization_key = First_Name_Possessive_No_Tooltip_Spain
@@ -1784,7 +1796,10 @@ FirstNameNicknamed = {
 				is_npe_supported_culture = yes
 			}
 			culture = {
-				has_cultural_pillar = heritage_iberian
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+				}
 			}
 		}
 		localization_key = First_Name_Spain

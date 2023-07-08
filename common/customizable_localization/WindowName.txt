@@ -220,7 +220,10 @@
 				is_npe_supported_culture = yes
 			}
 			culture = {
-				has_cultural_pillar = heritage_iberian
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+				}
 			}
 		}
 		localization_key = Window_Spain
@@ -962,7 +965,10 @@ WindowNameTT = {
 				is_npe_supported_culture = yes
 			}
 			culture = {
-				has_cultural_pillar = heritage_iberian
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+				}
 			}
 		}
 		localization_key = Window_Spain_TT
