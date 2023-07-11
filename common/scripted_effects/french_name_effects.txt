@@ -271,8 +271,8 @@
 				0 = {
 					modifier = {
 						OR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:d_upper_burgundy
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:d_upper_burgundy
 						}
 						add = 1
 					}
@@ -281,8 +281,8 @@
 				0 = {
 					modifier = {
 						OR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:k_burgundy
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:k_burgundy
 						}
 						has_religion = religion:christianity_religion
 						add = 1
@@ -292,8 +292,8 @@
 				0 = {
 					modifier = {
 						OR = {
-							location.duchy = title:d_flanders
-							location.kingdom = title:d_champagne
+							location.duchy ?= title:d_flanders
+							location.kingdom ?= title:d_champagne
 						}
 						has_religion = religion:christianity_religion
 						add = 1
@@ -325,8 +325,8 @@
 				0 = {
 					modifier = {
 						OR = {
-							location.duchy = title:d_berry
-							location.kingdom = title:k_burgundy
+							location.duchy ?= title:d_berry
+							location.kingdom ?= title:k_burgundy
 						}
 						add = 2
 					}
@@ -342,8 +342,8 @@
 				0 = {
 					modifier = {
 						OR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:k_burgundy
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:k_burgundy
 						}
 						add = 1
 					}
@@ -351,7 +351,7 @@
 				}
 				0 = {
 					modifier = {
-						location.duchy = title:d_flanders
+						location.duchy ?= title:d_flanders
 						add = 2
 					}
 					random_list = {
@@ -403,8 +403,8 @@
 				0 = {
 					modifier = {
 						OR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:d_poitou
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:d_poitou
 						}
 						add = 1
 					}
@@ -412,14 +412,14 @@
 				}
 				0 = {
 					modifier = {
-						location.kingdom = title:d_dauphine
+						location.kingdom ?= title:d_dauphine
 						add = 1
 					}
 					change_first_name = Guigo
 				}
 				0 = {
 					modifier = {
-						location.kingdom = title:d_flanders
+						location.kingdom ?= title:d_flanders
 						has_religion = religion:christianity_religion
 						add = 1
 					}
@@ -427,14 +427,14 @@
 				}
 				0 = {
 					modifier = {
-						location.kingdom = title:k_burgundy
+						location.kingdom ?= title:k_burgundy
 						add = 1
 					}
 					change_first_name = Rudolf
 				}
 				0 = {
 					modifier = {
-						location.duchy = title:d_poitou
+						location.duchy ?= title:d_poitou
 						add = 2
 					}
 					random_list = {
@@ -449,10 +449,10 @@
 				0 = {
 					modifier = {
 						OR = {
-							location.duchy = title:d_berry
-							location.duchy = title:d_poitou
-							location.duchy = title:d_burgundy
-							location.duchy = title:d_dauphine
+							location.duchy ?= title:d_berry
+							location.duchy ?= title:d_poitou
+							location.duchy ?= title:d_burgundy
+							location.duchy ?= title:d_dauphine
 						}
 						add = 1
 						has_religion = religion:christianity_religion
@@ -461,7 +461,7 @@
 				}
 				0 = {
 					modifier = {
-						location.duchy = title:d_berry
+						location.duchy ?= title:d_berry
 						add = 1
 					}
 					change_first_name = Archibald
@@ -469,8 +469,8 @@
 				0 = {
 					modifier = {
 						OR = {
-							location.duchy = title:d_berry
-							location.duchy = title:d_poitou
+							location.duchy ?= title:d_berry
+							location.duchy ?= title:d_poitou
 						}
 						add = 1
 					}
@@ -478,7 +478,7 @@
 				}
 				0 = {
 					modifier = {
-						location.duchy = title:d_flanders
+						location.duchy ?= title:d_flanders
 						add = 3
 					}
 					random_list = {
@@ -496,8 +496,8 @@
 				0 = {
 					modifier = {
 						NOR = {
-							location.duchy = title:d_berry
-							location.kingdom = title:k_burgundy
+							location.duchy ?= title:d_berry
+							location.kingdom ?= title:k_burgundy
 						}
 						add = 2
 					}
@@ -513,8 +513,8 @@
 				0 = {
 					modifier = {
 						NOR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:k_burgundy
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:k_burgundy
 						}
 						add = 1
 					}
@@ -523,7 +523,7 @@
 				0 = {
 					modifier = {
 						NOT = {
-							location.duchy = title:d_flanders
+							location.duchy ?= title:d_flanders
 						}
 						add = 2
 					}
@@ -700,7 +700,7 @@
 			random_list = {
 				0 = {
 					modifier = {
-						location.kingdom = title:d_burgundy
+						location.kingdom ?= title:d_burgundy
 						has_religion = religion:christianity_religion
 						add = 1
 					}
@@ -709,8 +709,8 @@
 				0 = {
 					modifier = {
 						NOR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:d_upper_burgundy
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:d_upper_burgundy
 						}
 						add = 1
 					}
@@ -719,8 +719,8 @@
 				0 = {
 					modifier = {
 						NOR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:k_burgundy
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:k_burgundy
 						}
 						has_religion = religion:christianity_religion
 						add = 1
@@ -730,8 +730,8 @@
 				0 = {
 					modifier = {
 						NOR = {
-							location.duchy = title:d_flanders
-							location.kingdom = title:d_champagne
+							location.duchy ?= title:d_flanders
+							location.kingdom ?= title:d_champagne
 						}
 						has_religion = religion:christianity_religion
 						add = 1
@@ -741,7 +741,7 @@
 				0 = {
 					modifier = {
 						NOT = {
-							location.duchy = title:d_berry
+							location.duchy ?= title:d_berry
 						}
 						add = 1
 					}
@@ -750,8 +750,8 @@
 				0 = {
 					modifier = {
 						NOR = {
-							location.duchy = title:d_berry
-							location.duchy = title:d_poitou
+							location.duchy ?= title:d_berry
+							location.duchy ?= title:d_poitou
 						}
 						add = 1
 					}
@@ -760,7 +760,7 @@
 				0 = {
 					modifier = {
 						NOT = {
-							location.duchy = title:d_flanders
+							location.duchy ?= title:d_flanders
 						}
 						add = 3
 					}
@@ -779,10 +779,10 @@
 				0 = {
 					modifier = {
 						NOR = {
-							location.duchy = title:d_berry
-							location.duchy = title:d_poitou
-							location.duchy = title:d_burgundy
-							location.duchy = title:d_dauphine
+							location.duchy ?= title:d_berry
+							location.duchy ?= title:d_poitou
+							location.duchy ?= title:d_burgundy
+							location.duchy ?= title:d_dauphine
 						}
 						has_religion = religion:christianity_religion
 						add = 1
@@ -792,7 +792,7 @@
 				0 = {
 					modifier = {
 						NOT = {
-							location.duchy = title:d_poitou
+							location.duchy ?= title:d_poitou
 						}
 						add = 2
 					}
@@ -953,7 +953,7 @@
 				0 = {
 					modifier = {
 						NOT = {
-							location.kingdom = title:d_burgundy
+							location.kingdom ?= title:d_burgundy
 						}
 						has_religion = religion:christianity_religion
 						add = 1
@@ -963,8 +963,8 @@
 				0 = {
 					modifier = {
 						NOR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:d_poitou
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:d_poitou
 						}
 						add = 1
 					}
@@ -973,7 +973,7 @@
 				0 = {
 					modifier = {
 						NOT = {
-							location.kingdom = title:d_dauphine
+							location.kingdom ?= title:d_dauphine
 						}
 						add = 1
 					}
@@ -982,7 +982,7 @@
 				0 = {
 					modifier = {
 						NOT = {
-							location.kingdom = title:d_flanders
+							location.kingdom ?= title:d_flanders
 						}
 						has_religion = religion:christianity_religion
 						add = 1
@@ -992,7 +992,7 @@
 				0 = {
 					modifier = {
 						NOT = {
-							location.kingdom = title:k_burgundy
+							location.kingdom ?= title:k_burgundy
 						}
 						add = 1
 					}
@@ -1448,9 +1448,9 @@ french_female_name_effect = {
 				0 = {
 					modifier = {
 						OR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:d_upper_burgundy
-							location.duchy = title:d_flanders
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:d_upper_burgundy
+							location.duchy ?= title:d_flanders
 						}
 						add = 1
 					}
@@ -1677,9 +1677,9 @@ french_female_name_effect = {
 				0 = {
 					modifier = {
 						NOR = {
-							location.duchy = title:d_burgundy
-							location.kingdom = title:d_upper_burgundy
-							location.duchy = title:d_flanders
+							location.duchy ?= title:d_burgundy
+							location.kingdom ?= title:d_upper_burgundy
+							location.duchy ?= title:d_flanders
 						}
 						add = 1
 					}
@@ -2202,7 +2202,7 @@ occitan_male_name_effect = {
 			random_list = {
 				0 = {
 					modifer = {
-						location.duchy = title:d_gascony
+						location.duchy ?= title:d_gascony
 						add = 6
 					}
 					random_list = {
@@ -2392,7 +2392,7 @@ occitan_male_name_effect = {
 				0 = {
 					modifer = {
 						NOT = {
-							location.duchy = title:d_gascony
+							location.duchy ?= title:d_gascony
 						}
 						add = 6
 					}
