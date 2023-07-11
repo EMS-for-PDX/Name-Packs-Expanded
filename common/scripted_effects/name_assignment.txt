@@ -1609,3 +1609,26 @@ dynasty_effect_ne = {
 		remove_global_variable = temp_head
 	}
 }
+house_effect_ne = {
+	if = {
+		limit = {
+			exists = house
+			NOT = {
+				exists = house.var:name_founder
+			}
+		}
+		save_scope_as = thebaron
+		set_global_variable = {
+			name = temp_head
+			value = scope:thebaron
+		}
+		scope:thebaron.house = {
+			set_house_name = "[Localize(Concatenate(Concatenate(GetGlobalVariable('temp_head').Char.GetFirstNameNoTooltip, GetGlobalVariable('temp_head').Char.Custom('CharacterCulture')), '_set_house'))]"
+			set_variable = {
+				name = name_founder
+				value = scope:thebaron
+			}
+		}
+		remove_global_variable = temp_head
+	}
+}
