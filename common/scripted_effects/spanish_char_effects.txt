@@ -97,6 +97,12 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0351 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73854 }
     }
+	character:galician0352.house = {
+		set_variable = {
+			name = name_founder
+			value = character:galician0352
+		}
+	}
 	character:galician0352.dynasty = { #Fernandez
         add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0352 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:galician0355 }
@@ -175,6 +181,12 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73999 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73995 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0081 }
+    }
+	character:visigothic0022.dynasty = { #Empuries
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:visigothic0022 }
+    }
+    character:visigothic0022 = {
+        change_first_name = Sunyer
     }
     character:73999 = {
         change_first_name = Ermesind
@@ -274,7 +286,6 @@
     }
     character:galician0352 = {
         change_first_name = Ferdinand
-        dynasty_effect_ne = yes
     }
     character:73854 = {
         change_first_name = Menendo
@@ -443,6 +454,21 @@
 	add_to_global_variable_list = { name = name_pack_support_global target = character:70268 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:71584 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:70164 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:70068 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0008 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0074 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0092 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0101 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0108 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0114 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0118 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0127 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0155 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0157 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0160 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0168 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0171 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:castilian0183 }
     character:110550.house = {
         set_variable = {
             name = Ermengol
@@ -702,6 +728,12 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0295 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0296 }
     }
+	character:70250.house = {
+		set_variable = {
+			name = name_founder
+			value = character:70250
+		}
+	}
 	character:70250.dynasty = { #Salvadorez
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70250 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70252 }
@@ -802,6 +834,7 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0118 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0119 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0120 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70160 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70163 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70165 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70166 }
@@ -815,16 +848,33 @@
         add_to_variable_list = { name = dynasty_feudalclan target = character:occitan0120 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:occitan0118 }
     }
-	#character:visigothic0022.dynasty = { #Empuries To do
-        #add_to_variable_list = { name = name_pack_support_dynasty target = character:visigothic0022 }
-    #}
+	character:visigothic0022.dynasty = { #Empuries
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70287 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0130 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110580 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110581 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110582 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110584 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110585 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110586 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110587 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110588 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110589 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110590 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110592 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0066 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0067 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0071 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0072 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:110616 }
+    }
 	character:catalan0130.dynasty = { #Milany
         add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0130 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0120 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70200 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70201 }
     }
-	character:catalan0089.dynasty = { #Cardona (why are they dynastic named?
+	character:catalan0089.dynasty = { #Cardona why are they dynastic named?
         add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0089 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:72300 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0090 }
@@ -832,11 +882,91 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0091 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:72303 }
     }
-	#character:castilian0244.dynasty = { #Venigomez To do
-        #add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0244 }
-        #add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0245 }
-        #add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0247 }
-    #}
+	character:castilian0244.dynasty = { #Venigomez
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:72836 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:107640 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:107642 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:107643 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:107689 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:200076 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:200079 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0005 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0006 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0007 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0009 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0010 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0012 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0013 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0014 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0015 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0016 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0017 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0018 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0019 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0020 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0021 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0022 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0023 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0058 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0059 } Odoario
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0060 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0064 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0065 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0066 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0067 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0068 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0069 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0070 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0071 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0072 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0073 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0075 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0076 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0077 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0079 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0080 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0081 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0082 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0083 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0084 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0085 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0086 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0087 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0088 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0090 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0091 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0093 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0094 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0095 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0096 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0097 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0099 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0100 } Palla
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0102 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0106 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0107 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0109 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0110 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0111 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0112 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0113 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0117 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0120 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0121 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0122 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0123 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0124 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0125 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0126 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0128 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0129 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0244 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0245 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0247 } #finally
+        add_to_variable_list = { name = dynasty_feudalclan target = character:200076 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:castilian0058 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:castilian0085 }
+    }
 	character:catalan0165.dynasty = { #Berga 
         #add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0165 } Bardina
         add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0160 }
@@ -898,12 +1028,274 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:72304 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:72236 }
     }
-	#character:castilian0153.dynasty = { #Alvarez # needs DB To do
-       # add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0153 }
-    #}
-	#character:71923.dynasty = { #Oca To do
-      #  add_to_variable_list = { name = name_pack_support_dynasty target = character:71923 }
-    #}
+	character:castilian0153.dynasty = { #Alvarez # needs DB
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0153 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0154 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0156 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0158 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0159 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0161 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0164 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0167 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0169 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0170 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0172 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0173 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0178 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0180 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0181 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0182 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:71355 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:107571 }
+    }
+	character:71923.dynasty = { #Oca
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70069 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70070 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70071 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70072 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70253 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:71923 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:71924 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:71925 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0130 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0131 }
+    }
+	character:catalan0074.dynasty = { #Palafols
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:catalan0074 }
+    }
+	character:73009.dynasty = { #Guzman
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73009 }
+    }
+	character:castilian0232.dynasty = { #Carrion
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0232 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0234 }
+    }
+	character:72961.dynasty = { #Carrion
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:72961 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0226 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:72969 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:72962 }
+    }
+	character:107600.dynasty = { #Vivar
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:107600 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:107590 }
+    }
+	character:castilian0078.dynasty = { #Amaya
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0078 } Paterno
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0104 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:castilian0105 }
+    }
+    character:castilian0104 = {
+        change_first_name = Mary
+    }
+    character:107590 = {
+        change_first_name = Rui
+    }
+    character:castilian0226 = {
+        change_first_name = Alfons
+    }
+    character:72962 = {
+        change_first_name = Ferdinand
+    }
+    character:catalan0074 = {
+        change_first_name = Bernhard
+    }
+    character:castilian0006 = {
+        change_first_name = Vermund
+    }
+    character:71925 = {
+        change_first_name = Nuno
+    }
+    character:71925 = {
+        change_first_name = Thekla
+    }
+    character:70072 = {
+        change_first_name = Ordono
+    }
+    character:70071 = {
+        change_first_name = Garcia
+    }
+    character:70069 = {
+        change_first_name = Alfar
+    }
+    character:107571 = {
+        change_first_name = Godo
+    }
+    character:castilian0182 = {
+        change_first_name = Fortun
+    }
+    character:castilian0180 = {
+        change_first_name = Alfar
+		dynasty_effect_ne = yes
+    }
+    character:castilian0178 = {
+        change_first_name = Walter
+    }
+    character:castilian0173 = {
+        change_first_name = Roderick
+    }
+    character:castilian0172 = {
+        change_first_name = Martin
+    }
+    character:castilian0171 = {
+        change_first_name = Majora
+    }
+    character:castilian0160 = {
+        change_first_name = Flamula
+    }
+    character:castilian0159 = {
+        change_first_name = Muno
+    }
+    character:castilian0156 = {
+        change_first_name = Alfar
+    }
+    character:castilian0155 = {
+        change_first_name = Theresa
+    }
+    character:castilian0244 = {
+        change_first_name = Gomez
+    }
+    character:castilian0124 = {
+        change_first_name = Mary
+    }
+    character:castilian0123 = {
+        change_first_name = Garcia
+    }
+    character:castilian0122 = {
+        change_first_name = Ferdinand
+    }
+    character:castilian0121 = {
+        change_first_name = Ferdinand
+    }
+    character:castilian0114 = {
+        change_first_name = Fronilda
+    }
+    character:castilian0111 = {
+        change_first_name = Emilian
+    }
+    character:castilian0109 = {
+        change_first_name = Ferdinand
+    }
+    character:castilian0107 = {
+        change_first_name = Anderquina
+    }
+    character:castilian0106 = {
+        change_first_name = Ordono
+    }
+    character:castilian0102 = {
+        change_first_name = Theresa
+    }
+    character:castilian0096 = {
+        change_first_name = Alfons
+    }
+    character:castilian0095 = {
+        change_first_name = John
+    }
+    character:castilian0090 = {
+        change_first_name = Nuno
+    }
+    character:castilian0088 = {
+        change_first_name = Theresa
+    }
+    character:castilian0086 = {
+        change_first_name = Mary
+    }
+    character:castilian0085 = {
+        change_first_name = John
+    }
+    character:castilian0082 = {
+        change_first_name = Gomez
+    }
+    character:castilian0079 = {
+        change_first_name = Theresa
+    }
+    character:castilian0074 = {
+        change_first_name = Mary
+    }
+    character:castilian0069 = {
+        change_first_name = Nuno
+    }
+    character:castilian0060 = {
+        change_first_name = Gunnthrud
+    }
+    character:castilian0058 = {
+        change_first_name = Gomez
+    }
+    character:castilian0021 = {
+        change_first_name = Gomez
+    }
+    character:castilian0018 = {
+        change_first_name = Favila
+    }
+    character:castilian0017 = {
+        change_first_name = Ferdinand
+    }
+    character:castilian0014 = {
+        change_first_name = Ferdinand
+    }
+    character:castilian0010 = {
+        change_first_name = Gomez
+    }
+    character:castilian0007 = {
+        change_first_name = Gomez
+    }
+    character:200076 = {
+        change_first_name = Gomez
+    }
+    character:110616 = {
+        change_first_name = Peter
+    }
+    character:72836 = {
+        change_first_name = Pelagius
+    }
+    character:70100 = {
+        change_first_name = Ferdinand
+    }
+    character:110616 = {
+        change_first_name = Peter
+    }
+    character:catalan0071 = {
+        change_first_name = Gilbert
+    }
+    character:catalan0067 = {
+        change_first_name = Gisela
+    }
+    character:110592 = {
+        change_first_name = Raymond
+    }
+    character:110590 = {
+        change_first_name = Hugh
+    }
+    character:110589 = {
+        change_first_name = Ermesind
+    }
+    character:110588 = {
+        change_first_name = Gisela
+    }
+    character:110587 = {
+        change_first_name = Peter
+    }
+    character:110586 = {
+        change_first_name = Ermengaud
+    }
+    character:110585 = {
+        change_first_name = Ragnhard
+    }
+    character:110584 = {
+        change_first_name = Dalmatius
+    }
+    character:110582 = {
+        change_first_name = Berengar
+    }
+    character:110581 = {
+        change_first_name = Hugh
+    }
+    character:110580 = {
+        change_first_name = Pontios
+    }
+    character:70287 = {
+        change_first_name = Ermengard
+    }
     character:catalan0034 = {
         change_first_name = Raymond
     }
@@ -959,7 +1351,7 @@
         change_first_name = Berengar
     }
     character:72153 = {
-        change_first_name = Pontius
+        change_first_name = Pontios
     }
     character:72152 = {
         change_first_name = Gerald
@@ -1068,9 +1460,6 @@
     }
     character:70160 = {
         change_first_name = Wilfred
-    }
-    character:occitan0120 = {
-        change_first_name = Miro
     }
     character:occitan0087 = {
         change_first_name = Sisnanda
@@ -1260,7 +1649,6 @@
     }
     character:70250 = {
         change_first_name = Salvator
-		dynasty_effect_ne = yes
     }
     character:70255 = {
         change_first_name = Goda
@@ -1555,9 +1943,6 @@
     character:107670 = {
         change_first_name = Garcia
     }
-    #character:107660 = {
-        #nickname = lawgiver 
-    #}
     character:70286 = {
         change_first_name = Garcia
     }
