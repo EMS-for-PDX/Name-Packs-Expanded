@@ -370,11 +370,24 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_welsh
+						OR = {
+							has_name_list = name_list_welsh
+							has_name_list = name_list_pictish #ded
+							has_name_list = name_list_cumbrian #ded
+						}
 					}
 					add = 1
 				}
 				welsh_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_breton
+					}
+					add = 1
+				}
+				breton_male_name_effect = yes
 			}
 			0 = {
 				modifier = {
@@ -1082,11 +1095,24 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_welsh
+						OR = {
+							has_name_list = name_list_welsh
+							has_name_list = name_list_pictish #ded
+							has_name_list = name_list_cumbrian #ded
+						}
 					}
 					add = 1
 				}
 				welsh_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_breton
+					}
+					add = 1
+				}
+				breton_female_name_effect = yes
 			}
 			0 = {
 				modifier = {

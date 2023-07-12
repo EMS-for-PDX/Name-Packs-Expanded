@@ -1,0 +1,1361 @@
+breton_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		40 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Daniel
+						}
+						1 = {
+							change_first_name = John
+						}
+					}
+				}
+				1 = {
+					change_first_name = Alan
+				}
+				1 = {
+					change_first_name = Bernhard
+				}
+				1 = {
+					change_first_name = Conan
+				}
+				1 = {
+					change_first_name = Eogan
+				}
+				1 = {
+					change_first_name = Geoffrey
+				}
+				1 = {
+					change_first_name = Guezenoc
+				}
+				1 = {
+					change_first_name = Guihovarch
+				}
+				1 = {
+					change_first_name = Guion
+				}
+				1 = {
+					change_first_name = Haerviu
+				}
+				1 = {
+					change_first_name = Herve
+				}
+				1 = {
+					change_first_name = Iudhael
+				}
+				1 = {
+					change_first_name = Iudicael
+				}
+				1 = {
+					change_first_name = Ivo
+				}
+				1 = {
+					change_first_name = Morfan
+				}
+				1 = {
+					change_first_name = Odo
+				}
+				1 = {
+					change_first_name = Oliver
+				}
+				1 = {
+					change_first_name = Rhiwallon
+				}
+				1 = {
+					change_first_name = William
+				}
+			}
+		}
+		30 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = David
+						}
+						1 = {
+							change_first_name = Solomon
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = Peter
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:judaism_religion
+						}
+						add = 1
+					}
+					change_first_name = Samson
+				}
+				1 = {
+					change_first_name = Aldvrit
+				}
+				1 = {
+					change_first_name = Alworet
+				}
+				1 = {
+					change_first_name = Arthur
+				}
+				1 = {
+					change_first_name = Arzwiu
+				}
+				1 = {
+					change_first_name = Bili
+				}
+				1 = {
+					change_first_name = Bran
+				}
+				1 = {
+					change_first_name = Branoc
+				}
+				1 = {
+					change_first_name = Brient
+				}
+				1 = {
+					change_first_name = Budic
+				}
+				1 = {
+					change_first_name = Budworet
+				}
+				1 = {
+					change_first_name = Cadneved
+				}
+				1 = {
+					change_first_name = Cadwallon
+				}
+				1 = {
+					change_first_name = Cadwared
+				}
+				1 = {
+					change_first_name = Cadwezen
+				}
+				1 = {
+					change_first_name = Cadwodal
+				}
+				1 = {
+					change_first_name = Cathaearn
+				}
+				1 = {
+					change_first_name = Catloiant
+				}
+				1 = {
+					change_first_name = Catlouuen
+				}
+				1 = {
+					change_first_name = Deurhoiarn
+				}
+				1 = {
+					change_first_name = Drogo
+				}
+				1 = {
+					change_first_name = Dyfnwallon
+				}
+				1 = {
+					change_first_name = Erispoe
+				}
+				1 = {
+					change_first_name = Gleuvarchoc
+				}
+				1 = {
+					change_first_name = Gradlon
+				}
+				1 = {
+					change_first_name = Guiuvarch
+				}
+				1 = {
+					change_first_name = Guorvaelon
+				}
+				1 = {
+					change_first_name = Haeldedwid
+				}
+				1 = {
+					change_first_name = Haelhoiarn
+				}
+				1 = {
+					change_first_name = Haelwogan
+				}
+				1 = {
+					change_first_name = Haimo
+				}
+				1 = {
+					change_first_name = Hoiarnscoet
+				}
+				1 = {
+					change_first_name = Iarnheden
+				}
+				1 = {
+					change_first_name = Iarnhoen
+				}
+				1 = {
+					change_first_name = Iarnwogon
+				}
+				1 = {
+					change_first_name = Idwal
+				}
+				1 = {
+					change_first_name = Idwallon
+				}
+				1 = {
+					change_first_name = Jocelyn
+				}
+				1 = {
+					change_first_name = Justin
+				}
+				1 = {
+					change_first_name = Meven
+				}
+				1 = {
+					change_first_name = Nominoe
+				}
+				1 = {
+					change_first_name = Pagan
+				}
+				1 = {
+					change_first_name = Paskwezen
+				}
+				1 = {
+					change_first_name = Rihoen
+				}
+				1 = {
+					change_first_name = Riu
+				}
+				1 = {
+					change_first_name = Robert
+				}
+				1 = {
+					change_first_name = Roenwallon
+				}
+				1 = {
+					change_first_name = Rudalt
+				}
+				1 = {
+					change_first_name = Tangi
+				}
+				1 = {
+					change_first_name = Tudwal
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						religion = {
+							is_in_family = rf_abrahamic
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Abraham
+						}
+						1 = {
+							change_first_name = Jacob
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Nicholas
+						}
+						1 = {
+							change_first_name = Stephen
+						}
+					}
+				}
+				1 = {
+					change_first_name = Anaugen
+				}
+				1 = {
+					change_first_name = Anauhoiarn
+				}
+				1 = {
+					change_first_name = Arthfael
+				}
+				1 = {
+					change_first_name = Blenliwet
+				}
+				1 = {
+					change_first_name = Breselan
+				}
+				1 = {
+					change_first_name = Breseloc
+				}
+				1 = {
+					change_first_name = Brian
+				}
+				1 = {
+					change_first_name = Budhoiarn
+				}
+				1 = {
+					change_first_name = Budwezen
+				}
+				1 = {
+					change_first_name = Cadog
+				}
+				1 = {
+					change_first_name = Cadvut
+				}
+				1 = {
+					change_first_name = Cadwaladyr
+				}
+				1 = {
+					change_first_name = Cadwovri
+				}
+				1 = {
+					change_first_name = Caradog
+				}
+				1 = {
+					change_first_name = Carantgar
+				}
+				1 = {
+					change_first_name = Catlon
+				}
+				1 = {
+					change_first_name = Conwal
+				}
+				1 = {
+					change_first_name = Coriu
+				}
+				1 = {
+					change_first_name = Corwezen
+				}
+				1 = {
+					change_first_name = Cumdelu
+				}
+				1 = {
+					change_first_name = Dalav
+				}
+				1 = {
+					change_first_name = Dalidoc
+				}
+				1 = {
+					change_first_name = Doinerz
+				}
+				1 = {
+					change_first_name = Dreloen
+				}
+				1 = {
+					change_first_name = Drewalloe
+				}
+				1 = {
+					change_first_name = Drewallon
+				}
+				1 = {
+					change_first_name = Dreworet
+				}
+				1 = {
+					change_first_name = Druniu
+				}
+				1 = {
+					change_first_name = Drunwalloe
+				}
+				1 = {
+					change_first_name = Dunwaladr
+				}
+				1 = {
+					change_first_name = Dunworet
+				}
+				1 = {
+					change_first_name = Dyfnwal
+				}
+				1 = {
+					change_first_name = Edward
+				}
+				1 = {
+					change_first_name = Etwal
+				}
+				1 = {
+					change_first_name = Euhoiarn
+				}
+				1 = {
+					change_first_name = Finitwezen
+				}
+				1 = {
+					change_first_name = Framwal
+				}
+				1 = {
+					change_first_name = Freoc
+				}
+				1 = {
+					change_first_name = Gleuvonoc
+				}
+				1 = {
+					change_first_name = Guallon
+				}
+				1 = {
+					change_first_name = Gueroc
+				}
+				1 = {
+					change_first_name = Guingant
+				}
+				1 = {
+					change_first_name = Guinhael
+				}
+				1 = {
+					change_first_name = Guoedhoiarn
+				}
+				1 = {
+					change_first_name = Guoledec
+				}
+				1 = {
+					change_first_name = Guorgum
+				}
+				1 = {
+					change_first_name = Guorheder
+				}
+				1 = {
+					change_first_name = Guorvonoc
+				}
+				1 = {
+					change_first_name = Guovrian
+				}
+				1 = {
+					change_first_name = Gwyn
+				}
+				1 = {
+					change_first_name = Gwynnog
+				}
+				1 = {
+					change_first_name = Haelgonvarch
+				}
+				1 = {
+					change_first_name = Haelwallon
+				}
+				1 = {
+					change_first_name = Haelworet
+				}
+				1 = {
+					change_first_name = Hingonan
+				}
+				1 = {
+					change_first_name = Hinwaladr
+				}
+				1 = {
+					change_first_name = Hoen
+				}
+				1 = {
+					change_first_name = Hogar
+				}
+				1 = {
+					change_first_name = Hogonan
+				}
+				1 = {
+					change_first_name = Hoiarn
+				}
+				1 = {
+					change_first_name = Howoret
+				}
+				1 = {
+					change_first_name = Howri
+				}
+				1 = {
+					change_first_name = Hugh
+				}
+				1 = {
+					change_first_name = Hywel
+				}
+				1 = {
+					change_first_name = Iarnvut
+				}
+				1 = {
+					change_first_name = Iudwogon
+				}
+				1 = {
+					change_first_name = Iungovarch
+				}
+				1 = {
+					change_first_name = Iunvonoc
+				}
+				1 = {
+					change_first_name = Kenvarchoc
+				}
+				1 = {
+					change_first_name = Liosoc
+				}
+				1 = {
+					change_first_name = Loieshoiarn
+				}
+				1 = {
+					change_first_name = Madworet
+				}
+				1 = {
+					change_first_name = Maeloc
+				}
+				1 = {
+					change_first_name = Maelogon
+				}
+				1 = {
+					change_first_name = Maelscoet
+				}
+				1 = {
+					change_first_name = Maenfinit
+				}
+				1 = {
+					change_first_name = Maenhoiarn
+				}
+				1 = {
+					change_first_name = Maenworet
+				}
+				1 = {
+					change_first_name = Meangi
+				}
+				1 = {
+					change_first_name = Morgan
+				}
+				1 = {
+					change_first_name = Morwezen
+				}
+				1 = {
+					change_first_name = Ninan
+				}
+				1 = {
+					change_first_name = Ninoe
+				}
+				1 = {
+					change_first_name = Nodhoiarn
+				}
+				1 = {
+					change_first_name = Orscant
+				}
+				1 = {
+					change_first_name = Pordidoe
+				}
+				1 = {
+					change_first_name = Ralph
+				}
+				1 = {
+					change_first_name = Retwaladr
+				}
+				1 = {
+					change_first_name = Retworet
+				}
+				1 = {
+					change_first_name = Richard
+				}
+				1 = {
+					change_first_name = Rigun
+				}
+				1 = {
+					change_first_name = Riwaladr
+				}
+				1 = {
+					change_first_name = Riwalt
+				}
+				1 = {
+					change_first_name = Riwezen
+				}
+				1 = {
+					change_first_name = Riwogon
+				}
+				1 = {
+					change_first_name = Roenwolou
+				}
+				1 = {
+					change_first_name = Sulhael
+				}
+				1 = {
+					change_first_name = Sulvonoc
+				}
+				1 = {
+					change_first_name = Tanedwoion
+				}
+				1 = {
+					change_first_name = Vortigern
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				1 = {
+					change_first_name = Alunoc
+				}
+				1 = {
+					change_first_name = Anarawd
+				}
+				1 = {
+					change_first_name = Anauhedr
+				}
+				1 = {
+					change_first_name = Anauhoel
+				}
+				1 = {
+					change_first_name = Anauhogar
+				}
+				1 = {
+					change_first_name = Anauvonoc
+				}
+				1 = {
+					change_first_name = Anauvut
+				}
+				1 = {
+					change_first_name = Anawezen
+				}
+				1 = {
+					change_first_name = Argantloen
+				}
+				1 = {
+					change_first_name = Argantvonoc
+				}
+				1 = {
+					change_first_name = Arnoc
+				}
+				1 = {
+					change_first_name = Arzviu
+				}
+				1 = {
+					change_first_name = Berzwalt
+				}
+				1 = {
+					change_first_name = Bidvonoc
+				}
+				1 = {
+					change_first_name = Bleidvara
+				}
+				1 = {
+					change_first_name = Branhugar
+				}
+				1 = {
+					change_first_name = Branvar
+				}
+				1 = {
+					change_first_name = Breselgar
+				}
+				1 = {
+					change_first_name = Breselgonan
+				}
+				1 = {
+					change_first_name = Breselgugant
+				}
+				1 = {
+					change_first_name = Breselueu
+				}
+				1 = {
+					change_first_name = Breselvarchoc
+				}
+				1 = {
+					change_first_name = Brithael
+				}
+				1 = {
+					change_first_name = Broch
+				}
+				1 = {
+					change_first_name = Brochfael
+				}
+				1 = {
+					change_first_name = Budoc
+				}
+				1 = {
+					change_first_name = Budwal
+				}
+				1 = {
+					change_first_name = Budwere
+				}
+				1 = {
+					change_first_name = Cadarvan
+				}
+				1 = {
+					change_first_name = Cadnu
+				}
+				1 = {
+					change_first_name = Cadvonoc
+				}
+				1 = {
+					change_first_name = Cantwezen
+				}
+				1 = {
+					change_first_name = Carantnu
+				}
+				1 = {
+					change_first_name = Clodoan
+				}
+				1 = {
+					change_first_name = Clodwoion
+				}
+				1 = {
+					change_first_name = Convarch
+				}
+				1 = {
+					change_first_name = Conwoion
+				}
+				1 = {
+					change_first_name = Deuroc
+				}
+				1 = {
+					change_first_name = Dreanau
+				}
+				1 = {
+					change_first_name = Dreglur
+				}
+				1 = {
+					change_first_name = Drevonoc
+				}
+				1 = {
+					change_first_name = Drewovri
+				}
+				1 = {
+					change_first_name = Eudanet
+				}
+				1 = {
+					change_first_name = Euhogar
+				}
+				1 = {
+					change_first_name = Gaelwovri
+				}
+				1 = {
+					change_first_name = Gleugonvarch
+				}
+				1 = {
+					change_first_name = Gleuhedr
+				}
+				1 = {
+					change_first_name = Gleuloen
+				}
+				1 = {
+					change_first_name = Gleuvidoe
+				}
+				1 = {
+					change_first_name = Guezengar
+				}
+				1 = {
+					change_first_name = Guezengloeu
+				}
+				1 = {
+					change_first_name = Guezengor
+				}
+				1 = {
+					change_first_name = Guinien
+				}
+				1 = {
+					change_first_name = Guinwaloe
+				}
+				1 = {
+					change_first_name = Guoedadoe
+				}
+				1 = {
+					change_first_name = Guoedanau
+				}
+				1 = {
+					change_first_name = Guoednu
+				}
+				1 = {
+					change_first_name = Guoriunet
+				}
+				1 = {
+					change_first_name = Guorloen
+				}
+				1 = {
+					change_first_name = Guorloies
+				}
+				1 = {
+					change_first_name = Guornu
+				}
+				1 = {
+					change_first_name = Guorvael
+				}
+				1 = {
+					change_first_name = Guorvaeloc
+				}
+				1 = {
+					change_first_name = Guorwant
+				}
+				1 = {
+					change_first_name = Haeloc
+				}
+				1 = {
+					change_first_name = Haelwezen
+				}
+				1 = {
+					change_first_name = Haervael
+				}
+				1 = {
+					change_first_name = Haerwezen
+				}
+				1 = {
+					change_first_name = Haerwiu
+				}
+				1 = {
+					change_first_name = Iarndanet
+				}
+				1 = {
+					change_first_name = Iscovarch
+				}
+				1 = {
+					change_first_name = Iudoc
+				}
+				1 = {
+					change_first_name = Karvonoc
+				}
+				1 = {
+					change_first_name = Kenvunoc
+				}
+				1 = {
+					change_first_name = Kenwezen
+				}
+				1 = {
+					change_first_name = Leuhemel
+				}
+				1 = {
+					change_first_name = Loenhoiarn
+				}
+				1 = {
+					change_first_name = Loes
+				}
+				1 = {
+					change_first_name = Loiesloen
+				}
+				1 = {
+					change_first_name = Loiesvidoe
+				}
+				1 = {
+					change_first_name = Loieswallon
+				}
+				1 = {
+					change_first_name = Lowenan
+				}
+				1 = {
+					change_first_name = Luhedhoiarn
+				}
+				1 = {
+					change_first_name = Luhedoc
+				}
+				1 = {
+					change_first_name = Machlou
+				}
+				1 = {
+					change_first_name = Madog
+				}
+				1 = {
+					change_first_name = Maduedoi
+				}
+				1 = {
+					change_first_name = Madvidoe
+				}
+				1 = {
+					change_first_name = Madvunoc
+				}
+				1 = {
+					change_first_name = Mael
+				}
+				1 = {
+					change_first_name = Maelgat
+				}
+				1 = {
+					change_first_name = Maelwin
+				}
+				1 = {
+					change_first_name = Maengar
+				}
+				1 = {
+					change_first_name = Marchoc
+				}
+				1 = {
+					change_first_name = Marchoiarn
+				}
+				1 = {
+					change_first_name = Marchowezen
+				}
+				1 = {
+					change_first_name = Marchwallon
+				}
+				1 = {
+					change_first_name = Mordiern
+				}
+				1 = {
+					change_first_name = Morgondelu
+				}
+				1 = {
+					change_first_name = Morwan
+				}
+				1 = {
+					change_first_name = Ninogan
+				}
+				1 = {
+					change_first_name = Ninvon
+				}
+				1 = {
+					change_first_name = Nodethael
+				}
+				1 = {
+					change_first_name = Nodiunet
+				}
+				1 = {
+					change_first_name = Nodworet
+				}
+				1 = {
+					change_first_name = Nynniaw
+				}
+				1 = {
+					change_first_name = Pritvael
+				}
+				1 = {
+					change_first_name = Pritvarchoc
+				}
+				1 = {
+					change_first_name = Rivonoc
+				}
+				1 = {
+					change_first_name = Roenhael
+				}
+				1 = {
+					change_first_name = Roenhoiarn
+				}
+				1 = {
+					change_first_name = Suldiern
+				}
+				1 = {
+					change_first_name = Sulgar
+				}
+				1 = {
+					change_first_name = Sulhoiarn
+				}
+				1 = {
+					change_first_name = Tanedgar
+				}
+				1 = {
+					change_first_name = Tanedloen
+				}
+				1 = {
+					change_first_name = Tanedvidoe
+				}
+				1 = {
+					change_first_name = Tanedviu
+				}
+				1 = {
+					change_first_name = Tanedwezen
+				}
+				1 = {
+					change_first_name = Tanhoiarn
+				}
+				1 = {
+					change_first_name = Tiernan
+				}
+				1 = {
+					change_first_name = Tiernoc
+				}
+				1 = {
+					change_first_name = Tiernvael
+				}
+			}
+		}
+	}
+}
+breton_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		30 = {
+			random_list = {
+				1 = {
+					change_first_name = Alice
+				}
+				1 = {
+					change_first_name = Constantia
+				}
+				1 = {
+					change_first_name = Eleanor
+				}
+				1 = {
+					change_first_name = Hawise
+				}
+				1 = {
+					change_first_name = Hodierne
+				}
+				1 = {
+					change_first_name = Maud
+				}
+				1 = {
+					change_first_name = Onwen
+				}
+				1 = {
+					change_first_name = Orwen
+				}
+				1 = {
+					change_first_name = Teresa
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 7
+					}
+					random_list = {
+						1 = {
+							change_first_name = Agatha
+						}
+						1 = {
+							change_first_name = Agnes
+						}
+						1 = {
+							change_first_name = Catherine
+						}
+						1 = {
+							change_first_name = Janet
+						}
+						1 = {
+							change_first_name = Magali
+						}
+						1 = {
+							change_first_name = Margaret
+						}
+						1 = {
+							change_first_name = Theophano
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:judaism_religion
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Anna
+						}
+						1 = {
+							change_first_name = Judith
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_religion = religion:christianity_religion
+							has_religion = religion:islam_religion
+						}
+						add = 1
+					}
+					change_first_name = Mary
+				}
+				1 = {
+					change_first_name = Aanor
+				}
+				1 = {
+					change_first_name = Adele
+				}
+				1 = {
+					change_first_name = Adelind
+				}
+				1 = {
+					change_first_name = Adeltrud
+				}
+				1 = {
+					change_first_name = Aguez
+				}
+				1 = {
+					change_first_name = Alarun
+				}
+				1 = {
+					change_first_name = Ama
+				}
+				1 = {
+					change_first_name = Amy
+				}
+				1 = {
+					change_first_name = Anwant
+				}
+				1 = {
+					change_first_name = Aourgen
+				}
+				1 = {
+					change_first_name = Argant
+				}
+				1 = {
+					change_first_name = Argantaela
+				}
+				1 = {
+					change_first_name = Argantan
+				}
+				1 = {
+					change_first_name = Argantgen
+				}
+				1 = {
+					change_first_name = Argantlon
+				}
+				1 = {
+					change_first_name = Avan
+				}
+				1 = {
+					change_first_name = Avice
+				}
+				1 = {
+					change_first_name = Bernegarda
+				}
+				1 = {
+					change_first_name = Bertha
+				}
+				1 = {
+					change_first_name = Blanca
+				}
+				1 = {
+					change_first_name = Blodwen
+				}
+				1 = {
+					change_first_name = Bronwen
+				}
+				1 = {
+					change_first_name = Cleroc
+				}
+				1 = {
+					change_first_name = Deroch
+				}
+				1 = {
+					change_first_name = Dinoi
+				}
+				1 = {
+					change_first_name = Drigen
+				}
+				1 = {
+					change_first_name = Duetvat
+				}
+				1 = {
+					change_first_name = Ennowent
+				}
+				1 = {
+					change_first_name = Erell
+				}
+				1 = {
+					change_first_name = Ermengarde
+				}
+				1 = {
+					change_first_name = Foeonen
+				}
+				1 = {
+					change_first_name = Glanuon
+				}
+				1 = {
+					change_first_name = Glanwon
+				}
+				1 = {
+					change_first_name = Gloegun
+				}
+				1 = {
+					change_first_name = Gloewen
+				}
+				1 = {
+					change_first_name = Guagelina
+				}
+				1 = {
+					change_first_name = Guascelina
+				}
+				1 = {
+					change_first_name = Guelloz
+				}
+				1 = {
+					change_first_name = Guenanau
+				}
+				1 = {
+					change_first_name = Guenargant
+				}
+				1 = {
+					change_first_name = Gueniht
+				}
+				1 = {
+					change_first_name = Guenlodoe
+				}
+				1 = {
+					change_first_name = Guenocdon
+				}
+				1 = {
+					change_first_name = Guenoedon
+				}
+				1 = {
+					change_first_name = Guenserch
+				}
+				1 = {
+					change_first_name = Guenvent
+				}
+				1 = {
+					change_first_name = Guenvez
+				}
+				1 = {
+					change_first_name = Guenvriz
+				}
+				1 = {
+					change_first_name = Guenwen
+				}
+				1 = {
+					change_first_name = Guenwistl
+				}
+				1 = {
+					change_first_name = Guenwoial
+				}
+				1 = {
+					change_first_name = Guenworet
+				}
+				1 = {
+					change_first_name = Guielderch
+				}
+				1 = {
+					change_first_name = Gulwen
+				}
+				1 = {
+					change_first_name = Gwen
+				}
+				1 = {
+					change_first_name = Haelhoiarn
+				}
+				1 = {
+					change_first_name = Hamelina
+				}
+				1 = {
+					change_first_name = Hoiarnwen
+				}
+				1 = {
+					change_first_name = Iarna
+				}
+				1 = {
+					change_first_name = Iedgar
+				}
+				1 = {
+					change_first_name = Ignowen
+				}
+				1 = {
+					change_first_name = Imogen
+				}
+				1 = {
+					change_first_name = Iunargant
+				}
+				1 = {
+					change_first_name = Iunharchant
+				}
+				1 = {
+					change_first_name = Iunou
+				}
+				1 = {
+					change_first_name = Latvoet
+				}
+				1 = {
+					change_first_name = Lewened
+				}
+				1 = {
+					change_first_name = Lodoe
+				}
+				1 = {
+					change_first_name = Mabel
+				}
+				1 = {
+					change_first_name = Maderron
+				}
+				1 = {
+					change_first_name = Maen
+				}
+				1 = {
+					change_first_name = Maginsin
+				}
+				1 = {
+					change_first_name = Marvohec
+				}
+				1 = {
+					change_first_name = Meangi
+				}
+				1 = {
+					change_first_name = Meneduc
+				}
+				1 = {
+					change_first_name = Morliwet
+				}
+				1 = {
+					change_first_name = Odana
+				}
+				1 = {
+					change_first_name = Odelina
+				}
+				1 = {
+					change_first_name = Omnio
+				}
+				1 = {
+					change_first_name = Oregen
+				}
+				1 = {
+					change_first_name = Orgelenn
+				}
+				1 = {
+					change_first_name = Orlodoe
+				}
+				1 = {
+					change_first_name = Ouregon
+				}
+				1 = {
+					change_first_name = Prostgen
+				}
+				1 = {
+					change_first_name = Prostlon
+				}
+				1 = {
+					change_first_name = Prostworet
+				}
+				1 = {
+					change_first_name = Rivoet
+				}
+				1 = {
+					change_first_name = Roaintgen
+				}
+				1 = {
+					change_first_name = Sulwen
+				}
+				1 = {
+					change_first_name = Tehwiu
+				}
+				1 = {
+					change_first_name = Tella
+				}
+			}
+		}
+	}
+}

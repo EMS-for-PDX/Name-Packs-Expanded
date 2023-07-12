@@ -27,13 +27,13 @@ Full_Name_Possessive_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:C
 
 Full_Name_Possessive_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
 
-Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('BrythonicNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('BrythonicNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 
-Name_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('BrythonicNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+Name_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('BrythonicNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]"
 
-Name_Possessive_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('BrythonicNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+Name_Possessive_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('BrythonicNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
 
-Name_Possessive_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('BrythonicNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Name_Possessive_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('BrythonicNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
 
 Short_Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(ROOT.Char.Custom('BrythonicNick'), ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
 
@@ -81,3 +81,13 @@ TekPrefix_cornish_male: "Tat "
 TekSuffix_cornish_male: ""
 TekPrefix_cornish_female: "Mam "
 TekSuffix_cornish_female: ""
+
+PatPrefix_breton_male: "map "
+PatSuffix_breton_male: ""
+PatPrefix_breton_female: "ferch "
+PatSuffix_breton_female: ""
+
+TekPrefix_breton_male: "Tat "
+TekSuffix_breton_male: ""
+TekPrefix_breton_female: "Mam "
+TekSuffix_breton_female: ""
