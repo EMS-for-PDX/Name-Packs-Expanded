@@ -73,12 +73,6 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:91122 } #Waldrade
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:303423 }
 	}
-	character:70722.house = {
-		set_variable = {
-			name = name_founder
-			value = character:70722
-		}
-	}
 	character:163060.dynasty = { #Vasconia
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:163060 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:7563 }
@@ -262,6 +256,9 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168090 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168091 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:190504 }
+	}
+	character:70722 = {
+		house_effect_ne = yes
 	}
 	character:168040 = {
 		change_first_name = Herve
@@ -678,6 +675,159 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:1077 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:1078 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:138160 }
+	}
+	character:163065.dynasty = { #Robertines
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6443 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6444 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6445 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:91006 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:91007 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:11009 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:91006 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:6444 }
+	}
+	character:200.dynasty = { #Capetians
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:200 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:91012 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:10027 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:203 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:205 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:206 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:208 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:210 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:213 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:214 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:216 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:200 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:208 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:206 }
+	}
+	character:210.dynasty = { #de Burgundy
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:210 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:218 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:219 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:220 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:221 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:222 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:224 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:225 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:226 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6530 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:6532 } Helie
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6533 }
+	}
+	character:242.dynasty = { #de Normandy #may as well
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:242 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:140 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:141 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:142 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:143 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:144 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:146 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:147 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:160403 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:243 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:244 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:246 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:248 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:250 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:251 } Adelis
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:252 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:253 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:255 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:257 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:259 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40279 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:246 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:248 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:252 }
+	}
+	character:6448 = {
+		change_first_name = Odo
+	}
+	character:91007 = {
+		change_first_name = Henry
+	}
+	character:208 = {
+		change_first_name = Henry
+	}
+	character:242 = {
+		change_first_name = Rudulf
+	}
+	character:40279 = {
+		change_first_name = Beatris
+	}
+	character:257 = {
+		change_first_name = Hedwig
+	}
+	character:255 = {
+		change_first_name = Adelheid
+	}
+	character:253 = {
+		change_first_name = Eleanor
+	}
+	character:143 = {
+		change_first_name = Constantia
+	}
+	character:141 = {
+		change_first_name = Agatha
+	}
+	character:6533 = {
+		change_first_name = Beatris
+	}
+	character:6530 = {
+		change_first_name = Ragnvald
+	}
+	character:225 = {
+		change_first_name = Odo
+	}
+	character:224 = {
+		change_first_name = Hugh
+	}
+	character:221 = {
+		change_first_name = Hildegard
+	}
+	character:219 = {
+		change_first_name = Constantia
+	}
+	character:218 = {
+		change_first_name = Henry
+	}
+	character:10027 = {
+		change_first_name = Hedwig
+	}
+	character:203 = {
+		change_first_name = Hedwig
+	}
+	character:216 = {
+		change_first_name = Hugh
+	}
+	character:214 = {
+		change_first_name = Philip
+	}
+	character:213 = {
+		change_first_name = Adela
+	}
+	character:205 = {
+		change_first_name = Gisela
+	}
+	character:200 = {
+		change_first_name = Hugh
+	}
+	character:11009 = {
+		change_first_name = Beatris
+	}
+	character:91007 = {
+		change_first_name = Hugh
+	}
+	character:91006 = {
+		change_first_name = Otto
+	}
+	character:6445 = {
+		change_first_name = Adela
+	}
+	character:6444 = {
+		change_first_name = Hugh
 	}
 	character:335 = {
 		change_first_name = Hildegard
