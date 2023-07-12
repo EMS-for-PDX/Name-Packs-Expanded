@@ -1,0 +1,102 @@
+﻿has_tier_check = {
+	scope = character
+	is_shown = {
+		save_temporary_scope_as = root_char
+		OR = {
+			exists = primary_title
+            has_council_position = councillor_court_chaplain
+			has_trait = sayyid
+			any_spouse = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_spouse
+				highest_held_title_tier >= tier_barony
+				OR = {
+					has_government = feudal_government
+					has_government = clan_government
+					has_government = tribal_government
+					dynasty ?= {
+						OR = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_spouse
+							}
+							any_in_list = {
+								variable = dynasty_byzantine
+								this = scope:the_spouse
+							}
+							any_in_list = {
+								variable = dynasty_tribe
+								this = scope:the_spouse
+							}
+						}
+					}
+				}
+			}
+			AND = {
+				exists = primary_spouse
+				any_former_spouse = {
+					even_if_dead = yes
+					save_temporary_scope_as = the_spouse
+					highest_held_title_tier >= tier_barony
+					OR = {
+						has_government = feudal_government
+						has_government = clan_government
+						has_government = tribal_government
+						dynasty ?= {
+							OR = {
+								any_in_list = {
+									variable = dynasty_feudalclan
+									this = scope:the_spouse
+								}
+								any_in_list = {
+									variable = dynasty_byzantine
+									this = scope:the_spouse
+								}
+								any_in_list = {
+									variable = dynasty_tribe
+									this = scope:the_spouse
+								}
+							}
+						}
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				highest_held_title_tier >= tier_kingdom
+				OR = {
+					has_government = feudal_government
+					has_government = clan_government
+					has_government = tribal_government
+					dynasty ?= {
+						OR = {
+							any_in_list = {
+								variable = dynasty_feudalclan
+								this = scope:the_parent
+							}
+							any_in_list = {
+								variable = dynasty_byzantine
+								this = scope:the_parent
+							}
+							any_in_list = {
+								variable = dynasty_tribe
+								this = scope:the_parent
+							}
+						}
+					}
+				}
+			}
+			AND = {
+				is_lowborn
+				culture = {
+					OR = {
+						has_cultural_pillar = language_iberian
+						has_cultural_pillar = language_basque
+						has_cultural_pillar = language_occitano_romance
+					}
+				}
+			}
+		}
+	}
+}
