@@ -322,7 +322,9 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:somali0148 }
 	}
 	character:somali0141.dynasty = { #Darood
+
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0142 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0141 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0140 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0139 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0138 }
@@ -434,6 +436,9 @@
 	character:afar0002.dynasty = { #Danakil
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:afar0002 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:afar0003 }
+	}
+	character:somali0141 ={
+        change_first_name = Isa
 	}
 	character:afar0002 ={
         change_first_name = Ali
