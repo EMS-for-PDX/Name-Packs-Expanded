@@ -1429,7 +1429,7 @@
 	character:70076.dynasty = { #Amaya
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70076 }
     }
-	character:106018.dynasty = { #Navarra
+	character:106018.dynasty = { #Navarra #Renamed after Founder
         add_to_variable_list = { name = name_pack_support_dynasty target = character:106018 }
     }
 	character:200086.dynasty = { #Gundemariz
@@ -1538,7 +1538,7 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73042 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:71939 }
     }
-	character:70021.dynasty = { #Leon
+	character:70021.dynasty = { #Leon # renamed after founder
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70021 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70023 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70024 }
@@ -1937,19 +1937,6 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70062 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:72837 }
     }
-	character:asturleonese0056.dynasty = { #Gudeosteo Diaz
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0056 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0057 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0058 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0059 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0060 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0061 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0063 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0064 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0065 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0066 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0067 }
-    }
 	character:asturleonese0388.dynasty = { #Toro
         add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0388 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:asturleonese0390 }
@@ -2297,7 +2284,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:106019 }
 	}
 	character:107660 = {
-		add_nickname = nick_the_lawgiver
+		give_nickname = nick_the_lawgiver
 	}
 	character:106019 = {
 		change_first_name = Constantia
@@ -2881,6 +2868,7 @@
 	}
 	character:200088 = {
 		change_first_name = Roman
+		dynasty_effect_ne = yes
 	}
 	character:galician0018 = {
 		change_first_name = Ermesind
@@ -3447,6 +3435,7 @@
 	}
 	character:70021 = {
 		change_first_name = Ordono
+		house_effect_ne = yes
 	}
 	character:73042 = {
 		house_effect_ne = yes
@@ -3547,36 +3536,9 @@
 	character:asturleonese0308 = {
 		change_first_name = Munio
 	}
-	character:asturleonese0065 = {
-		change_first_name = Gunnthrud
-	}
-	character:asturleonese0064 = {
-		change_first_name = Diego
-	}
-	character:asturleonese0063 = {
-		change_first_name = Philip
-	}
-	character:asturleonese0062 = {
-		change_first_name = Mary
-	}
-	character:asturleonese0061 = {
-		change_first_name = Munio
-	}
-	character:asturleonese0060 = {
-		change_first_name = Godina
-	}
-	character:asturleonese0059 = {
-		change_first_name = Diego
-	}
-	character:asturleonese0057 = {
-		change_first_name = Gudesteo
-		dynasty_effect_ne = yes
-	}
-	character:asturleonese0056 = {
-		change_first_name = Diego
-	}
 	character:106018 = {
 		change_first_name = Sancho
+		house_effect_ne = yes
 	}
 	character:asturleonese0115 = {
 		change_first_name = Oveco
@@ -4050,6 +4012,7 @@
     }
     character:catalan0058 = {
         change_first_name = Humbert
+		dynasty_effect_ne = yes
     }
     character:castilian0104 = {
         change_first_name = Mary
@@ -4552,7 +4515,7 @@
     }
     character:110530 = {
         change_first_name = Berengar
-		add_nickname = nick_the_hunchback
+		give_nickname = nick_the_hunchback
     }
     character:110540 = {
         change_first_name = Raymond
