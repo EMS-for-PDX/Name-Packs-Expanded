@@ -1,0 +1,4 @@
+﻿l_english:
+Window_TriaNomina_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,surname #color_red [ROOT.Char.Custom('TriaNominaDynastyCheckAfter')]#!#!#TOOLTIP:GAME_CONCEPT,nickname #color_green [ROOT.Char.Custom('TriaNominaHouseCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))]#!#!"
+
+Window_TriaNomina: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('TriaNominaDynastyCheckAfter')][ROOT.Char.Custom('TriaNominaHouseCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))]#!"

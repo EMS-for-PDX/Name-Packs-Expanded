@@ -1,0 +1,71 @@
+roman_char_effect = {
+	character:145290.dynasty = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbroman001 #Augustus
+		}
+	}
+	character:145290.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbroman002 #Octavianus
+		}
+		set_variable = {
+			name = roman
+			value = yes
+		}
+	}
+	character:145290.dynasty = { #gens Octavianus
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbroman001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbroman002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145290 }
+		add_to_variable_list = { name = dynasty_fuedalclan target = character:145290 }
+	}
+	character:145075.dynasty = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbroman001 #Augustus
+		}
+	}
+	character:145075.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbroman003 #Claudia
+		}
+		set_variable = {
+			name = roman
+			value = yes
+		}
+	}
+	character:145075.dynasty = { #gens Claudia
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbroman001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbroman002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145075 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145288 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145289 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:145287 }
+		add_to_variable_list = { name = dynasty_fuedalclan target = character:145287 }
+		add_to_variable_list = { name = dynasty_fuedalclan target = character:145289 }
+		add_to_variable_list = { name = dynasty_fuedalclan target = character:145288 }
+		add_to_variable_list = { name = dynasty_fuedalclan target = character:145075 }
+	}
+	character:145287 ={
+        change_first_name = NeroLuciusDomitiusCaesar
+		add_to_global_variable_list = { name = GermanDomitiusAhenobarbus_byname target = this }
+	}
+	character:145289 ={
+        change_first_name = GaiussCaesar
+		add_to_global_variable_list = { name = GermanCaligula_byname target = this }
+	}
+	character:145288 ={
+        change_first_name = TiberiusCaesar
+		give_nickname = nick_the_german
+	}
+	character:145075 ={
+        change_first_name = TiberiusJuliusCaesar
+		add_to_global_variable_list = { name = Nero_byname target = this }
+	}
+	character:145290 ={
+        change_first_name = GaiusJuliusCaesar
+	}
+}
