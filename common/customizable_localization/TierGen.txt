@@ -1403,17 +1403,13 @@ CharacterGov = {
                     has_government = feudal_government
                     OR = {
                         has_title = title:e_byzantium
-                        AND = {
-                            exists = top_liege
-                            top_liege = {
-                                has_title = title:e_byzantium
-                            }
+                        top_liege ?= {
+                            has_title = title:e_byzantium
                         }
                     }
                 }
                 AND = {
-                    exists = dynasty
-                    dynasty = {
+                    dynasty ?= {
                         any_in_list = {
                             variable = dynasty_byzantine
                             this = root
@@ -1435,17 +1431,13 @@ CharacterGov = {
                                 has_government = feudal_government
                                 OR = {
                                     has_title = title:e_byzantium
-                                    AND = {
-                                        exists = top_liege
-                                        top_liege = {
-                                            has_title = title:e_byzantium
-                                        }
+                                    top_liege ?= {
+                                        has_title = title:e_byzantium
                                     }
                                 }
                             }
                             AND = {
-                                exists = dynasty
-                                dynasty = {
+                                dynasty ?= {
                                     any_in_list = {
                                         variable = dynasty_byzantine
                                         this = scope:the_spouse
@@ -1456,16 +1448,14 @@ CharacterGov = {
                     }
                 }
                 AND = {
-                    exists = father
-                    father = {
+                    father ?= {
                         OR = {
                             AND = {
                                 has_government = feudal_government
                                 has_title = title:e_byzantium
                             }
                             AND = {
-                                exists = dynasty
-                                dynasty = {
+                                dynasty ?= {
                                     any_in_list = {
                                         variable = dynasty_byzantine
                                         this = root.father
@@ -1477,16 +1467,14 @@ CharacterGov = {
                     }
                 }
                 AND = {
-                    exists = mother
-                    mother = {
+                    mother ?= {
                         OR = {
                             AND = {
                                 has_government = feudal_government
                                 has_title = title:e_byzantium
                             }
                             AND = {
-                                exists = dynasty
-                                dynasty = {
+                                dynasty ?= {
                                     any_in_list = {
                                         variable = dynasty_byzantine
                                         this = root.mother
