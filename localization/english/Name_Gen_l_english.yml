@@ -22,8 +22,10 @@ Tier_Gen_Default: "[ROOT.Char.GetTitleTierName]"
 Tier_Gen_Default_After: " [ROOT.Char.GetTitleTierName]"
 Tier_Gen_Default_Before: "[ROOT.Char.GetTitleTierName] "
 Tier_Gen_NPE: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')))]"
-Tier_Gen_NPE_After: " [Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')))]"
-Tier_Gen_NPE_Before: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')))] "
+Tier_Gen_NPE_test_after: " [Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')))]"
+Tier_Gen_NPE_test_before: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')))] "
+Tier_Gen_NPE_After: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_after'))]"
+Tier_Gen_NPE_Before: "[Localize(Concatenate(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterReligion')),'_before'))]"
 
 #House stuff
 Supported_Dynasty: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetDynasty.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, ROOT.Char.Custom('CharacterCulture')), '_house'), ROOT.Char.Custom('CharacterGender')))]"
