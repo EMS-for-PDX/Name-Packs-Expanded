@@ -240,6 +240,7 @@ italian_male_name_effect = {
 					modifier = {
 						has_religion = religion:christianity_religion
 						OR = {
+							has_government = republic_government
 							any_parent = {
 								OR = {
 									piety_level = 4
@@ -291,6 +292,7 @@ italian_male_name_effect = {
 					modifier = {
 						has_religion = religion:christianity_religion
 						OR = {
+							has_government = republic_government
 							any_parent = {
 								OR = {
 									piety_level = 4
@@ -342,8 +344,11 @@ italian_male_name_effect = {
 				0 = {
 					modifier = {
 						has_religion = religion:christianity_religion
-						any_parent = {
+						OR = {
 							has_government = republic_government
+							any_parent = {
+								has_government = republic_government
+							}
 						}
 						location.duchy ?= title:d_tuscany
 						add = 1
@@ -353,8 +358,11 @@ italian_male_name_effect = {
 				0 = {
 					modifier = {
 						has_religion = religion:christianity_religion
-						any_parent = {
+						OR = {
 							has_government = republic_government
+							any_parent = {
+								has_government = republic_government
+							}
 						}
 						add = 1
 					}
@@ -386,6 +394,7 @@ italian_male_name_effect = {
 					modifier = {
 						has_religion = religion:christianity_religion
 						OR = {
+							has_government = republic_government
 							any_parent = {
 								OR = {
 									piety_level = 4
@@ -432,6 +441,7 @@ italian_male_name_effect = {
 					modifier = {
 						has_religion = religion:christianity_religion
 						OR = {
+							has_government = republic_government
 							any_parent = {
 								OR = {
 									piety_level = 4
@@ -540,6 +550,7 @@ italian_male_name_effect = {
 				0 = {
 					modifier = {
 						OR = {
+							has_government = republic_government
 							any_parent = {
 								has_government = republic_government
 							}
@@ -563,8 +574,11 @@ italian_male_name_effect = {
 				}
 				0 = {
 					modifier = {
-						any_parent = {
+						OR = {
 							has_government = republic_government
+							any_parent = {
+								has_government = republic_government
+							}
 						}
 						add = 1
 					}
@@ -764,8 +778,11 @@ italian_male_name_effect = {
 					modifier = {
 						has_religion = religion:christianity_religion
 						NAND = {
-							any_parent = {
+							OR = {
 								has_government = republic_government
+								any_parent = {
+									has_government = republic_government
+								}
 							}
 							location.duchy ?= title:d_tuscany
 						}
@@ -776,8 +793,9 @@ italian_male_name_effect = {
 				0 = {
 					modifier = {
 						has_religion = religion:christianity_religion
-						any_parent = {
-							NOT = {
+						NOT = {
+							has_government = republic_government
+							any_parent = {
 								has_government = republic_government
 							}
 						}
@@ -787,8 +805,9 @@ italian_male_name_effect = {
 				}
 				0 = {
 					modifier = {
-						any_parent = {
-							NOT = {
+						NOT = {
+							has_government = republic_government
+							any_parent = {
 								has_government = republic_government
 							}
 						}
@@ -799,6 +818,7 @@ italian_male_name_effect = {
 				0 = {
 					modifier = {
 						NOR = {
+							has_government = republic_government
 							any_parent = {
 								has_government = republic_government
 							}
@@ -1737,7 +1757,7 @@ italian_female_name_effect = {
 							change_first_name = Alasia
 						}
 						1 = {
-							change_first_name = Argentina 
+							change_first_name = Argentina
 						}
 						1 = {
 							change_first_name = Eleanor
