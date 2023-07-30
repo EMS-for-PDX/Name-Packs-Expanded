@@ -114,12 +114,14 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -244,16 +246,6 @@
 			}
 		}
 		localization_key = First_Name_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = First_Name_English
 	}
 	text = {
 		trigger = {
@@ -542,12 +534,14 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -666,16 +660,6 @@ FirstNameNoTooltip = {
 			}
 		}
 		localization_key = First_Name_No_Tooltip_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = First_Name_No_Tooltip_English
 	}
 	text = {
 		trigger = {
@@ -962,12 +946,14 @@ FirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -1084,16 +1070,6 @@ FirstNamePossessive = {
 			}
 		}
 		localization_key = First_Name_Possessive_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = First_Name_Possessive_English
 	}
 	text = {
 		trigger = {
@@ -1380,12 +1356,14 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -1502,16 +1480,6 @@ FirstNamePossessiveNoTooltip = {
 			}
 		}
 		localization_key = First_Name_Possessive_No_Tooltip_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_English
 	}
 	text = {
 		trigger = {
@@ -1798,12 +1766,14 @@ FirstNameNicknamed = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -1920,16 +1890,6 @@ FirstNameNicknamed = {
 			}
 		}
 		localization_key = First_Name_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = First_Name_English
 	}
 	text = {
 		trigger = {

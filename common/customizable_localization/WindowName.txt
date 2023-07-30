@@ -236,12 +236,32 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
+				has_cultural_era_or_later = culture_era_late_medieval
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+			}
+		}
+		localization_key = Window_Western_Euro_LM
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -586,16 +606,6 @@
 			}
 		}
 		localization_key = Window_Bulgarian
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = Window_English
 	}
 	text = {
 		trigger = {
@@ -994,12 +1004,32 @@ WindowNameTT = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
+				has_cultural_era_or_later = culture_era_late_medieval
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+			}
+		}
+		localization_key = Window_Western_Euro_LM_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -1350,16 +1380,6 @@ WindowNameTT = {
 			}
 		}
 		localization_key = Window_Bulgarian_TT
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = Window_English_TT
 	}
 	text = {
 		trigger = {

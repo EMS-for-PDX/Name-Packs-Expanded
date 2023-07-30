@@ -217,12 +217,32 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
+				has_cultural_era_or_later = culture_era_late_medieval
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Western_Euro_LM
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -543,16 +563,6 @@
 			}
 		}
 		localization_key = Full_Name_Bulgarian
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = Full_Name_English
 	}
 	text = {
 		trigger = {
@@ -935,12 +945,32 @@ FullNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
+				has_cultural_era_or_later = culture_era_late_medieval
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Western_Euro_LM
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -1261,16 +1291,6 @@ FullNameNoTooltip = {
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Bulgarian
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = Full_Name_No_Tooltip_English
 	}
 	text = {
 		trigger = {
@@ -1653,12 +1673,32 @@ FullNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
+				has_cultural_era_or_later = culture_era_late_medieval
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Western_Euro_LM
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -1979,16 +2019,6 @@ FullNamePossessive = {
 			}
 		}
 		localization_key = Full_Name_Possessive_Bulgarian
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = Full_Name_Possessive_English
 	}
 	text = {
 		trigger = {
@@ -2371,12 +2401,32 @@ FullNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
+				has_cultural_era_or_later = culture_era_late_medieval
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Western_Euro_LM
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -2697,16 +2747,6 @@ FullNamePossessiveNoTooltip = {
 			}
 		}
 		localization_key = Full_Name_Possessive_No_Tooltip_Bulgarian
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = Full_Name_Possessive_No_Tooltip_English
 	}
 	text = {
 		trigger = {
@@ -3090,12 +3130,32 @@ FullNameNick = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
+				has_cultural_era_or_later = culture_era_late_medieval
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Western_Euro_LM
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -3416,16 +3476,6 @@ FullNameNick = {
 			}
 		}
 		localization_key = Full_Name_Bulgarian
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = Full_Name_English
 	}
 	text = {
 		trigger = {
@@ -3808,12 +3858,32 @@ FullNamePossessiveNick = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
+				has_cultural_era_or_later = culture_era_late_medieval
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Western_Euro_LM
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -4134,16 +4204,6 @@ FullNamePossessiveNick = {
 			}
 		}
 		localization_key = Full_Name_Possessive_Bulgarian
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = Full_Name_Possessive_English
 	}
 	text = {
 		trigger = {
@@ -4526,12 +4586,32 @@ FullNameNickNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
+				has_cultural_era_or_later = culture_era_late_medieval
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
 					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Western_Euro_LM
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				OR = {
+					has_cultural_pillar = heritage_iberian
+					has_cultural_pillar = heritage_frankish
+					has_cultural_pillar = heritage_latin
+					AND = {
+						english_check = yes
+						has_cultural_pillar = heritage_west_germanic
+					}
 				}
 			}
 		}
@@ -4852,16 +4932,6 @@ FullNameNickNoTooltip = {
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Bulgarian
-	}
-	text = {
-		trigger = {
-			culture = {
-				english_check = yes
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_west_germanic
-			}
-		}
-		localization_key = Full_Name_No_Tooltip_English
 	}
 	text = {
 		trigger = {
