@@ -89,6 +89,48 @@ earl_check = {
 		has_cultural_pillar = language_goidelic
 	}
 }
+hre_prince_elector_check = {
+	liege.primary_title ?= {
+		has_title_law = princely_elective_succession_law
+		any_elector = {
+			this = root
+		}
+	}
+}
+hre_prince_check = {
+	liege.primary_title ?= {
+		has_title_law = princely_elective_succession_law
+	}
+	OR = {
+		AND = {
+			has_realm_law = crown_authority_1
+			liege = {
+				NOR = {
+					has_realm_law = crown_authority_1
+					has_realm_law = crown_authority_2
+					has_realm_law = crown_authority_3
+				}
+			}
+		}
+		AND = {
+			has_realm_law = crown_authority_2
+			liege = {
+				NOR = {
+					has_realm_law = crown_authority_2
+					has_realm_law = crown_authority_3
+				}
+			}
+		}
+		AND = {
+			has_realm_law = crown_authority_3
+			liege = {
+				NOT = {
+					has_realm_law = crown_authority_3
+				}
+			}
+		}
+	}
+}
 indoaryan_check = { #deprieated
 	has_cultural_pillar = heritage_indo_aryan
 	OR = {

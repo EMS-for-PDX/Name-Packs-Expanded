@@ -360,61 +360,6 @@
     }
     text = {
         trigger = {
-            NOT = {
-                has_government = theocracy_government
-                has_government = holy_order_government
-                dynasty ?= {
-                    OR = {
-                        any_in_list = {
-                            variable = dynasty_theocrats
-                            this = root
-                        }
-                        any_in_list = {
-                            variable = dynasty_HO
-                            this = root
-                        }
-                    }
-                }
-            }
-            any_parent = {
-                even_if_dead = yes
-                highest_held_title_tier = tier_kingdom
-                save_temporary_scope_as = the_parent
-                OR = {
-                    has_government = feudal_government
-                    has_government = clan_government
-                    has_government = tribal_government
-                    dynasty ?= {
-                        OR = {
-                            any_in_list = {
-                                variable = dynasty_feudalclan
-                                this = scope:the_parent
-                            }
-                            any_in_list = {
-                                variable = dynasty_tribe
-                                this = scope:the_parent
-                            }
-                            NOT = {
-                                any_in_list = {
-                                    variable = dynasty_byzantine
-                                    this = scope:the_parent
-                                }
-                            }
-                        }
-                    }
-                    NOT = {
-                        has_government = feudal_government
-                        top_liege ?= {
-                            has_title = title:e_byzantium
-                        }
-                    }
-                }
-            }
-        }
-        localization_key = King_prince
-    }
-    text = {
-        trigger = {
             has_council_position = councillor_court_chaplain
             is_landed = no
             liege_or_court_owner = {
@@ -522,6 +467,289 @@
             }
         }
         localization_key = independent_duke_consort
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = feudal_government
+                has_government = theocracy_government
+            }
+            OR = {
+                liege.primary_title ?= {
+                    has_title_law = princely_elective_succession_law
+                    any_elector = {
+                        this = root
+                    }
+                }
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_hre_prince_elector
+                        this = root
+                    }
+                }
+            }
+        }
+        localization_key = HRE_prince_elector
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                dynasty ?= {
+                    OR = {
+                        any_in_list = {
+                            variable = dynasty_theocrats
+                            this = root
+                        }
+                        any_in_list = {
+                            variable = dynasty_HO
+                            this = root
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    has_government = feudal_government
+                    OR = {
+                        liege.primary_title ?= {
+                            has_title_law = princely_elective_succession_law
+                            any_elector = {
+                                this = scope:the_spouse
+                            }
+                        }
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_hre_prince_elector
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_duchy
+                    has_government = feudal_government
+                    OR = {
+                        liege.primary_title ?= {
+                            has_title_law = princely_elective_succession_law
+                            any_elector = {
+                                this = scope:the_spouse
+                            }
+                        }
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_hre_prince_elector
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = HRE_prince_elector_consort
+    }
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_march
+                        this = root
+                    }
+                }
+            }
+        }
+        localization_key = Marquess
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                dynasty ?= {
+                    OR = {
+                        any_in_list = {
+                            variable = dynasty_theocrats
+                            this = root
+                        }
+                        any_in_list = {
+                            variable = dynasty_HO
+                            this = root
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    OR = {
+                        vassal_contract_has_flag = has_march_contract
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_march
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    OR = {
+                        vassal_contract_has_flag = has_march_contract
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_march
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = Marquess_consort
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_duchy
+            OR = {
+                vassal_contract_has_flag = has_palatinate_contract
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_palatinate
+                        this = root
+                    }
+                }
+            }
+        }
+        localization_key = Duke_Palatin
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                dynasty ?= {
+                    OR = {
+                        any_in_list = {
+                            variable = dynasty_theocrats
+                            this = root
+                        }
+                        any_in_list = {
+                            variable = dynasty_HO
+                            this = root
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_duchy
+                    OR = {
+                        vassal_contract_has_flag = has_palatinate_contract
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_palatinate
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_duchy
+                    OR = {
+                        vassal_contract_has_flag = has_palatinate_contract
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_palatinate
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = Duke_Palatin_consort
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = feudal_government
+                has_government = theocracy_government
+            }
+            OR = {
+                hre_prince_check = yes
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_hre_prince
+                        this = root
+                    }
+                }
+            }
+        }
+        localization_key = HRE_prince
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                dynasty ?= {
+                    OR = {
+                        any_in_list = {
+                            variable = dynasty_theocrats
+                            this = root
+                        }
+                        any_in_list = {
+                            variable = dynasty_HO
+                            this = root
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    has_government = feudal_government
+                    OR = {
+                        hre_prince_check = yes
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_hre_prince
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    has_government = feudal_government
+                    OR = {
+                        hre_prince_check = yes
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_hre_prince
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = HRE_prince_consort
     }
     text = {
         trigger = {
@@ -705,6 +933,72 @@
             }
         }
         localization_key = independent_count_consort
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_county
+            OR = {
+                vassal_contract_has_flag = has_palatinate_contract
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_palatinate
+                        this = root
+                    }
+                }
+            }
+        }
+        localization_key = Count_Palatin
+    }
+    text = {
+        trigger = {
+            NOT = {
+                has_government = theocracy_government
+                has_government = holy_order_government
+                dynasty ?= {
+                    OR = {
+                        any_in_list = {
+                            variable = dynasty_theocrats
+                            this = root
+                        }
+                        any_in_list = {
+                            variable = dynasty_HO
+                            this = root
+                        }
+                    }
+                }
+            }
+            OR = {
+                any_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_county
+                    OR = {
+                        vassal_contract_has_flag = has_palatinate_contract
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_palatinate
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+                any_former_spouse = {
+                    even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    highest_held_title_tier = tier_county
+                    OR = {
+                        vassal_contract_has_flag = has_palatinate_contract
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_palatinate
+                                this = scope:the_spouse
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = Count_Palatin_consort
     }
     text = {
         trigger = {
@@ -1146,73 +1440,6 @@ CharacterGov = {
             }
         }
         localization_key = _theme
-    }
-    text = {
-        trigger = {
-            OR = {
-                AND = {
-                    OR = {
-                        has_government = feudal_government
-                        has_government = theocracy_government
-                    }
-                    OR = {
-                        has_title = title:e_hre
-                        top_liege ?= {
-                            has_title = title:e_hre
-                        }
-                    }
-                }
-                AND = {
-                    dynasty ?= {
-                        any_in_list = {
-                            variable = dynasty_hre
-                            this = root
-                        }
-                    }
-                }
-                any_spouse = {
-                    even_if_dead = yes
-                    save_temporary_scope_as = the_spouse
-                    OR = {
-                        AND = {
-                            has_government = feudal_government
-                            OR = {
-                                has_title = title:e_hre
-                                top_liege ?= {
-                                    has_title = title:e_hre
-                                }
-                            }
-                        }
-                        dynasty ?= {
-                            any_in_list = {
-                                variable = dynasty_hre
-                                this = scope:the_spouse
-                            }
-                        }
-                    }
-                }
-                any_parent = {
-                    even_if_dead = yes
-                    save_temporary_scope_as = the_parent
-                    OR = {
-                        AND = {
-                            has_government = feudal_government
-                            has_title = title:e_hre
-                        }
-                        AND = {
-                            dynasty ?= {
-                                any_in_list = {
-                                    variable = dynasty_hre
-                                    this = scope:the_parent
-                                }
-                            }
-                            has_title = title:e_hre
-                        }
-                    }
-                }
-            }
-        }
-        localization_key = _hre
     }
     text = {
         trigger = {
