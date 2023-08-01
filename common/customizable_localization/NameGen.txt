@@ -23,9 +23,97 @@ CharacterTierCheck = {
 		localization_key = Tier_Gen_Default
 	}
 	text = {
-		fallback = yes
+		trigger = {
+			OR = {
+				is_ruler = yes
+				any_spouse = {
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+				}
+				any_former_spouse = {
+					even_if_dead = yes
+                    save_temporary_scope_as = the_spouse
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_spouse
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_spouse
+                                    }
+                                }
+                            }
+                        }
+                    }
+				}
+				any_parent = {
+					even_if_dead = yes
+                    save_temporary_scope_as = the_parent
+					is_independent_ruler = yes
+					highest_held_title_tier >= tier_kingdom
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                        has_government = tribal_government
+                        AND = {
+                            exists = dynasty
+                            dynasty = {
+                                OR = {
+                                    any_in_list = {
+                                        variable = dynasty_feudalclan
+                                        this = scope:the_parent
+                                    }
+                                    any_in_list = {
+                                        variable = dynasty_tribe
+                                        this = scope:the_parent
+                                    }
+                                }
+								any_in_list = {
+									variable = dynasty_independent
+									this = scope:the_parent
+								}
+                            }
+                        }
+                    }
+				}
+				is_lowborn = no
+				has_council_position = councillor_court_chaplain
+			}
+		}
 		localization_key = Tier_Gen_NPE
 	}
+    text = {
+        fallback = yes
+		localization_key = Tier_Gen_Default
+    }
 }
 CharacterTierCheckAfter = {
 	parent = CharacterTierCheck
