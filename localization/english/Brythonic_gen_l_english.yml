@@ -1,67 +1,67 @@
 ﻿l_english:
-Window_Brythonic_TT: "#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,nickname #color_green [Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))]#!#!#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue [ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!"
+Window_OldBriton_TT: "#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,nickname #color_green [Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))]#!#!#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue [ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!"
 
-Window_Brythonic: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')] #!"
+Window_OldBriton: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')] #!"
 
-First_Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+First_Name_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
 
-First_Name_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')]"
+First_Name_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')]"
 
-First_Name_Possessive_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
+First_Name_Possessive_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
 
-First_Name_Possessive_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
+First_Name_Possessive_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
 
-Titled_First_Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+Titled_First_Name_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 
-Titled_First_Name_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+Titled_First_Name_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
 
-Titled_First_Name_Possessive_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+Titled_First_Name_Possessive_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
 
-Titled_First_Name_Possessive_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Titled_First_Name_Possessive_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
 
 
-Full_Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
+Full_Name_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
 
-Full_Name_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')] "
+Full_Name_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')] "
 
-Full_Name_Possessive_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+Full_Name_Possessive_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
 
-Full_Name_Possessive_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Full_Name_Possessive_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
 
-Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+Name_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 
-Name_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+Name_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]"
 
-Name_Possessive_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+Name_Possessive_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
 
-Name_Possessive_No_Tooltip_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Name_Possessive_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
 
-Short_Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
+Short_Name_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
 
-Short_Name_No_Tooltip_Brythonic: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
+Short_Name_No_Tooltip_OldBriton: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
 
-Short_Name_Possessive_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
+Short_Name_Possessive_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
 
-Short_Name_Possessive_No_Tooltip_Brythonic: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
+Short_Name_Possessive_No_Tooltip_OldBriton: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
 
-Short_Name_Possessive_No_Tooltip_No_Format_Brythonic: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Short_Name_Possessive_No_Tooltip_No_Format_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
 
-UI_Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!"
+UI_Name_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!"
 
-UI_Name_No_Tooltip_Brythonic: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')] #!"
+UI_Name_No_Tooltip_OldBriton: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')] #!"
 
-UI_Name_Possessive_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
+UI_Name_Possessive_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
 
-UI_Name_Possessive_No_Tooltip_Brythonic: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
+UI_Name_Possessive_No_Tooltip_OldBriton: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
 
-SNAT_First_Brythonic: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))]#!"
+SNAT_First_OldBriton: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))]#!"
 
-SNAT_First_Last_Brythonic: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')]#!"
+SNAT_First_Last_OldBriton: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')]#!"
 
-Title_As_Name_Brythonic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheck')]#!#!#!#!"
-Title_As_Name_No_Tooltip_Brythonic: "#high [ROOT.Char.Custom('CharacterTierCheck')]#!"
-Title_Tier_Name_Brythonic: "[ROOT.Char.Custom('CharacterTierCheck')]"
-Title_Tier_Name_Possessive_Brythonic: "[ROOT.Char.Custom('CharacterTierCheck')]'s"
+Title_As_Name_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheck')]#!#!#!#!"
+Title_As_Name_No_Tooltip_OldBriton: "#high [ROOT.Char.Custom('CharacterTierCheck')]#!"
+Title_Tier_Name_OldBriton: "[ROOT.Char.Custom('CharacterTierCheck')]"
+Title_Tier_Name_Possessive_OldBriton: "[ROOT.Char.Custom('CharacterTierCheck')]'s"
 
 PatPrefix_welsh_male: "map "
 PatSuffix_welsh_male: ""
