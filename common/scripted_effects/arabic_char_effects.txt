@@ -81,6 +81,8 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188612 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188670 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:34015 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:33901 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:34002 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34015 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:188670 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:188612 }
@@ -174,6 +176,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:146079 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:146080 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:146081 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:146081 } Gabuloc real
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:146081 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:146079 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:159732 }
@@ -353,6 +356,19 @@
 	character:218007.dynasty = { #Muslihiddinids
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:218007 }
 	}
+	character:159195.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic041
+		}
+	}
+	character:159195.dynasty = { #Banu Kalb
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic041 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159195 }
+	}
+    character:33901 = {
+        change_first_name = Abd-Allah
+    }
     character:218007 = {
         change_first_name = Musab
         dynasty_effect_ne = yes
@@ -389,9 +405,6 @@
     }
     character:73979 = {
         change_first_name = Salim
-    }
-    character:73976 = {
-        change_first_name = Abd-Allah
     }
     character:levantine000006 = {
         change_first_name = Zayd
@@ -455,7 +468,7 @@
         change_first_name = Hamdan
     }
     character:188692 = {
-        change_first_name = Saad
+        change_first_name = Sad
     }
     character:188672 = {
         change_first_name = Lubaba

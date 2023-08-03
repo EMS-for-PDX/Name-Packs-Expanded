@@ -544,6 +544,19 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73965 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73966 }
     }
+	character:73949.dynasty = { #Masarrids
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73949 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73950 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73951 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73950 }
+    }
+    character:73951 = {
+        change_first_name = Abd-Allah
+    }
+    character:73949 = {
+        change_first_name = Masnsen
+        dynasty_effect_ne = yes
+    }
     character:73985 = {
         change_first_name = Nadiya
     }
@@ -582,6 +595,9 @@
     }
     character:73986 = {
         change_first_name = Job
+    }
+    character:73977 = {
+        change_first_name = Hiaccut
     }
     character:73984 = {
         change_first_name = Sulayman
