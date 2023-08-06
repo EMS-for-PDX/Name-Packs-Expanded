@@ -11,16 +11,11 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0096 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0097 }
 	}
-	character:somali0060.house = {
-		set_variable = {
-			name = name_founder
-			value = character:somali0060
-		}
-	}
 	character:somali0060.dynasty = { #Darood
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0060 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0062 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0106 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0107 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0123 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:somali0108 }
 	}
@@ -162,6 +157,12 @@
 	character:beja0002.dynasty = { #Almada
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0002 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:beja0014 }
+	}
+	character:somali0060 ={
+		dynasty_effect_ne = yes
+	}
+	character:somali0107 ={
+        change_first_name = Isa
 	}
 	character:beja0002 ={
         change_first_name = Shaf
@@ -437,8 +438,14 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:afar0002 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:afar0003 }
 	}
+	character:somali0049 ={
+        change_first_name = Jidati
+	}
 	character:somali0141 ={
         change_first_name = Isa
+	}
+	character:somali0111 ={
+        change_first_name = Majeerteen
 	}
 	character:afar0002 ={
         change_first_name = Ali

@@ -17,6 +17,13 @@ Nonsupported_Patronym: "[Localize(Concatenate(Concatenate('PatPrefix', ROOT.Char
 Nonsupported_Patronym_After: " [Localize(Concatenate(Concatenate('PatPrefix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))][ROOT.Char.GetFather.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('PatSuffix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))]"
 Nonsupported_Patronym_Before: "[Localize(Concatenate(Concatenate('PatPrefix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))][ROOT.Char.GetFather.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('PatSuffix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))] "
 
+Supported_Grandpatronym: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetFather.GetFather.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')),'_pat_dad'),ROOT.Char.Custom('CharacterGender')))]"
+Supported_Grandpatronym_After: " [Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetFather.GetFather.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')),'_pat_dad'),ROOT.Char.Custom('CharacterGender')))]"
+Supported_Grandpatronym_Before: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetFather.GetFather.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')),'_pat_dad'),ROOT.Char.Custom('CharacterGender')))] "
+Nonsupported_Grandpatronym: "[Localize(Concatenate(Concatenate('PatPrefix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))][ROOT.Char.GetFather.GetFather.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('PatSuffix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))]"
+Nonsupported_Grandpatronym_After: " [Localize(Concatenate(Concatenate('PatPrefix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))][ROOT.Char.GetFather.GetFather.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('PatSuffix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))]"
+Nonsupported_Grandpatronym_Before: "[Localize(Concatenate(Concatenate('PatPrefix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))][ROOT.Char.GetFather.GetFather.GetFirstNameNoTooltip][Localize(Concatenate(Concatenate('PatSuffix', ROOT.Char.Custom('CharacterCulture')),ROOT.Char.Custom('CharacterGender')))] "
+
 #Tier Gen
 Tier_Gen_Default: "[ROOT.Char.GetTitleTierName]"
 Tier_Gen_Default_After: " [ROOT.Char.GetTitleTierName]"

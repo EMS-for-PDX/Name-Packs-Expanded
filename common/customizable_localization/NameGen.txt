@@ -196,6 +196,49 @@ CharacterPatCheckBefore = {
 	parent = CharacterPatCheck
 	suffix = "_Before"
 }
+CharacterGrandpaPatCheck = {
+	type = character
+	text = {
+		trigger = {
+            father.father ?= {
+                OR = {
+                    AND = {
+                        exists = dynasty
+                        dynasty = {
+                            any_in_list = {
+                                variable = name_pack_support_dynasty
+                                this = root.father.father
+                            }
+                        }
+                    }
+                    any_in_global_list = {
+                        variable = name_pack_support_global
+                        this = root.father.father
+                    }
+                }
+            }
+		}
+		localization_key = Supported_Grandpatronym
+	}
+    text = {
+        trigger = {
+            exists = father.father
+        }
+        localization_key = Nonsupported_Grandpatronym
+    }
+	text = {
+		fallback = yes
+		localization_key = Gui_blank
+	}
+}
+CharacterGrandpaPatCheckAfter = {
+	parent = CharacterGrandpaPatCheck
+	suffix = "_After"
+}
+CharacterGrandpaPatCheckBefore = {
+	parent = CharacterGrandpaPatCheck
+	suffix = "_Before"
+}
 TriaNominaHouseCheck = {
 	type = character
 	text = {
