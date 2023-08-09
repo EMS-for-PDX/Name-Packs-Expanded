@@ -6,6 +6,7 @@
 		}
 	}
 	character:74412.dynasty = { # Rashtrakuta
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbkannada001 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:74409 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:74410 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:74412 }
@@ -182,11 +183,43 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:191999 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:192000 }
 	}
+	character:74412.dynasty = { # Rashtrakuta
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74421 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74424 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74422 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74423 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74425 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74426 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74428 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74427 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:74429 }
+		add_to_variable_list = { name = dynasty_independent target = character:74421 }
+		add_to_variable_list = { name = dynasty_independent target = character:74424 }
+		add_to_variable_list = { name = dynasty_independent target = character:74422 }
+		add_to_variable_list = { name = dynasty_independent target = character:74425 }
+		add_to_variable_list = { name = dynasty_independent target = character:74426 }
+		add_to_variable_list = { name = dynasty_independent target = character:74428 }
+		add_to_variable_list = { name = dynasty_independent target = character:74429 }
+	}
+	character:74428 ={
+        change_first_name = Kakkala
+        add_to_global_variable_list = { name = Amoghavarsha_regnal target = this }
+	}
+	character:74426 ={
+        add_to_global_variable_list = { name = Nityavarsha_regnal target = this }
+	}
+	character:74425 ={
+        add_to_global_variable_list = { name = Akalavarsha_regnal target = this }
+	}
+	character:74422 ={
+        change_first_name = Baddiga
+        add_to_global_variable_list = { name = Amoghavarsha_regnal target = this }
+	}
 	character:74431 ={
         change_first_name = Kakkala
 	}
 	character:74413 ={
-        add_to_global_variable_list = { name = Akalavasha_regnal target = this }
+        add_to_global_variable_list = { name = Akalavarsha_regnal target = this }
 	}
 	character:74414 ={
         add_to_global_variable_list = { name = Prabhutavarsha_regnal target = this }
@@ -315,7 +348,7 @@
 	}
 	character:74441 ={
         change_first_name = Someshvara
-        add_to_global_variable_list = { name = Trailokyaamalla_regnal target = this }
+        add_to_global_variable_list = { name = Trailokyamalla_regnal target = this }
 	}
 	character:74442 ={
         change_first_name = Someshvara
