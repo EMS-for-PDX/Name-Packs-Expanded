@@ -339,6 +339,39 @@ CharacterHouseCheckBefore = {
 	parent = CharacterHouseCheck
 	suffix = "_Before"
 }
+TamilCharacterHouseCheck = {
+	type = character
+	text = {
+		trigger = {
+			exists = house.var:name_founder
+			house.var:name_founder = {
+				save_temporary_scope_as = good_lad
+			}
+			NOT = {
+				root = scope:good_lad
+			}
+			dynasty = {
+				any_in_list = {
+					variable = name_pack_support_dynasty
+					this = scope:good_lad
+				}
+			}
+		}
+		localization_key = Tamil_King_House
+	}
+	text = {
+		fallback = yes
+		localization_key = Gui_blank
+	}
+}
+TamilCharacterHouseCheckAfter = {
+	parent = TamilCharacterHouseCheck
+	suffix = "_After"
+}
+TamilCharacterHouseCheckBefore = {
+	parent = TamilCharacterHouseCheck
+	suffix = "_Before"
+}
 CharacterSpouseHouseCheck = {
 	type = character
 	text = {
