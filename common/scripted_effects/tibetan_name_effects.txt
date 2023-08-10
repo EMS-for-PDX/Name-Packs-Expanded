@@ -1,0 +1,2264 @@
+﻿tibetan_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				has_faith = faith:old_bon
+				add = 14
+			}
+			random_list = {
+				1 = {
+					change_first_name = Dezhin-Shekpa
+				}
+				1 = {
+					change_first_name = Jampe-Sengge
+				}
+				1 = {
+					change_first_name = Sanggye-Pel
+				}
+				1 = {
+					change_first_name = Sanggye-Phel
+				}
+				1 = {
+					change_first_name = Sanggye-Yeshe
+				}
+				1 = {
+					change_first_name = Shakya-Drakpa
+				}
+				1 = {
+					change_first_name = Shakya-Gon
+				}
+				1 = {
+					change_first_name = Shakya-Gyeltsen
+				}
+				1 = {
+					change_first_name = Shakya-O
+				}
+				1 = {
+					change_first_name = Shakya-Pel
+				}
+				1 = {
+					change_first_name = Shakya-Rinchen
+				}
+				1 = {
+					change_first_name = Shakya-Rinpa
+				}
+				1 = {
+					change_first_name = Shakya-Zangpo
+				}
+				1 = {
+					change_first_name = Tsuktor-Kyap
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_religion = religion:buddhism_religion
+					has_faith = faith:bon
+				}
+				add = 14
+			}
+			random_list = {
+				1 = {
+					change_first_name = Dezhin-Shekpa
+				}
+				1 = {
+					change_first_name = Jampe-Sengge
+				}
+				1 = {
+					change_first_name = Sanggye-Pel
+				}
+				1 = {
+					change_first_name = Sanggye-Phel
+				}
+				1 = {
+					change_first_name = Sanggye-Yeshe
+				}
+				1 = {
+					change_first_name = Shakya-Drakpa
+				}
+				1 = {
+					change_first_name = Shakya-Gon
+				}
+				1 = {
+					change_first_name = Shakya-Gyeltsen
+				}
+				1 = {
+					change_first_name = Shakya-O
+				}
+				1 = {
+					change_first_name = Shakya-Pel
+				}
+				1 = {
+					change_first_name = Shakya-Rinchen
+				}
+				1 = {
+					change_first_name = Shakya-Rinpa
+				}
+				1 = {
+					change_first_name = Shakya-Zangpo
+				}
+				1 = {
+					change_first_name = Tsuktor-Kyap
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_religion = religion:buddhism_religion
+					has_religion = religion:hinduism_religion
+					has_religion = religion:jainism_religion
+					has_faith = faith:bon
+				}
+				add = 194
+			}
+			random_list = {
+				1 = {
+					change_first_name = Chakna-Dorje
+				}
+				1 = {
+					change_first_name = Cho-Pel
+				}
+				1 = {
+					change_first_name = Cho-Phel
+				}
+				1 = {
+					change_first_name = Chodrak-Pel
+				}
+				1 = {
+					change_first_name = Chokyi
+				}
+				1 = {
+					change_first_name = Chokyi-Dawa
+				}
+				1 = {
+					change_first_name = Chokyi-Gyatso
+				}
+				1 = {
+					change_first_name = Chokyi-Gyelpo
+				}
+				1 = {
+					change_first_name = Chokyi-Gyeltsen
+				}
+				1 = {
+					change_first_name = Chokyi-Kawa
+				}
+				1 = {
+					change_first_name = Chokyi-Lodro
+				}
+				1 = {
+					change_first_name = Chokyi-Sengge
+				}
+				1 = {
+					change_first_name = Chokyi-Shenyen
+				}
+				1 = {
+					change_first_name = Chokyi-Wangchuk
+				}
+				1 = {
+					change_first_name = Chokyi-Zangpo
+				}
+				1 = {
+					change_first_name = Chola
+				}
+				1 = {
+					change_first_name = Dawa-Gyeltsen
+				}
+				1 = {
+					change_first_name = Dawa-Sengge
+				}
+				1 = {
+					change_first_name = Dondrup
+				}
+				1 = {
+					change_first_name = Dondrup-Gyelpo
+				}
+				1 = {
+					change_first_name = Dondrup-Gyeltsen
+				}
+				1 = {
+					change_first_name = Dondrup-Pel
+				}
+				1 = {
+					change_first_name = Dondrup-Pelba
+				}
+				1 = {
+					change_first_name = Donyo-Gyeltsen
+				}
+				1 = {
+					change_first_name = Donyo-Pel
+				}
+				1 = {
+					change_first_name = Dorje-Gyelpo
+				}
+				1 = {
+					change_first_name = Dorje-Gyeltsen
+				}
+				1 = {
+					change_first_name = Dorje-Pak
+				}
+				1 = {
+					change_first_name = Dorje-Pel
+				}
+				1 = {
+					change_first_name = Dorje-Rinchen
+				}
+				1 = {
+					change_first_name = Dorje-Sengge
+				}
+				1 = {
+					change_first_name = Dorje-Ten
+				}
+				1 = {
+					change_first_name = Dorje-Tsen
+				}
+				1 = {
+					change_first_name = Dorje-Wangchuk
+				}
+				1 = {
+					change_first_name = Drakpa
+				}
+				1 = {
+					change_first_name = Drakpa-De
+				}
+				1 = {
+					change_first_name = Drakpa-Gyelpo
+				}
+				1 = {
+					change_first_name = Drakpa-Gyeltsen
+				}
+				1 = {
+					change_first_name = Drakpa-Jangchup
+				}
+				1 = {
+					change_first_name = Drakpa-Ozer
+				}
+				1 = {
+					change_first_name = Drakpa-Sengge
+				}
+				1 = {
+					change_first_name = Druppe-Dorje
+				}
+				1 = {
+					change_first_name = Dutsi-Gyeltsen
+				}
+				1 = {
+					change_first_name = Ganden-Jangchup
+				}
+				1 = {
+					change_first_name = Gawe-Lodro
+				}
+				1 = {
+					change_first_name = Gongdzo
+				}
+				1 = {
+					change_first_name = Gonpo-Dorje
+				}
+				1 = {
+					change_first_name = Gyatso
+				}
+				1 = {
+					change_first_name = Gyeltsen
+				}
+				1 = {
+					change_first_name = Gyeltsen-Bum
+				}
+				1 = {
+					change_first_name = Gyelwa-O
+				}
+				1 = {
+					change_first_name = Jangchup-Gyatso
+				}
+				1 = {
+					change_first_name = Jangchup-Gyeltsen
+				}
+				1 = {
+					change_first_name = Jangchup-O
+				}
+				1 = {
+					change_first_name = Jangchup-Pel
+				}
+				1 = {
+					change_first_name = Jangchup-Rinchen
+				}
+				1 = {
+					change_first_name = Khenpo
+				}
+				1 = {
+					change_first_name = Konchok-Gyelpo
+				}
+				1 = {
+					change_first_name = Kunga-Dondrup
+				}
+				1 = {
+					change_first_name = Kunga-Dorje
+				}
+				1 = {
+					change_first_name = Kunga-Drakpa
+				}
+				1 = {
+					change_first_name = Kunga-Gyeltsen
+				}
+				1 = {
+					change_first_name = Kunga-Lekpa
+				}
+				1 = {
+					change_first_name = Kunga-Ozer
+				}
+				1 = {
+					change_first_name = Kunga-Rinchen
+				}
+				1 = {
+					change_first_name = Kunga-Zangpo
+				}
+				1 = {
+					change_first_name = Kunzang-Gyeltsen
+				}
+				1 = {
+					change_first_name = Kunzang-Pel
+				}
+				1 = {
+					change_first_name = Lekpe-Sherap
+				}
+				1 = {
+					change_first_name = Lodro
+				}
+				1 = {
+					change_first_name = Lodro-Gyeltsen
+				}
+				1 = {
+					change_first_name = Lodro-Pel
+				}
+				1 = {
+					change_first_name = Lodro-Sengge
+				}
+				1 = {
+					change_first_name = Lodro-Wangchuk
+				}
+				1 = {
+					change_first_name = Lodro-Zangpo
+				}
+				1 = {
+					change_first_name = Namkha
+				}
+				1 = {
+					change_first_name = Namkha-Gyelpo
+				}
+				1 = {
+					change_first_name = Namkha-Gyeltsen
+				}
+				1 = {
+					change_first_name = Namkha-O
+				}
+				1 = {
+					change_first_name = Namkha-Sengge
+				}
+				1 = {
+					change_first_name = Namkha-Yeshe
+				}
+				1 = {
+					change_first_name = Ngodrup-Gyeltsen
+				}
+				1 = {
+					change_first_name = Norbu-Zangpo
+				}
+				1 = {
+					change_first_name = Nyima-De
+				}
+				1 = {
+					change_first_name = Nyima-Drakpa
+				}
+				1 = {
+					change_first_name = Nyima-Gyelpo
+				}
+				1 = {
+					change_first_name = Nyima-Gyeltsen
+				}
+				1 = {
+					change_first_name = Nyima-Pel
+				}
+				1 = {
+					change_first_name = Nyima-Sengge
+				}
+				1 = {
+					change_first_name = Okyi-Gyeltsen
+				}
+				1 = {
+					change_first_name = Ozer-Pel
+				}
+				1 = {
+					change_first_name = Ozer-Sengge
+				}
+				1 = {
+					change_first_name = Pakpa-Kyap
+				}
+				1 = {
+					change_first_name = Pelgyi
+				}
+				1 = {
+					change_first_name = Pelgyi-Dorje
+				}
+				1 = {
+					change_first_name = Pelgyi-Gon
+				}
+				1 = {
+					change_first_name = Pelgyi-Gyeltsen
+				}
+				1 = {
+					change_first_name = Pelgyi-Sengge
+				}
+				1 = {
+					change_first_name = Pelgyi-Sherap
+				}
+				1 = {
+					change_first_name = Pelgyi-Wangchuk
+				}
+				1 = {
+					change_first_name = Pelgyi-Yonten
+				}
+				1 = {
+					change_first_name = Pema-Dorje
+				}
+				1 = {
+					change_first_name = Pema-Wanggyel
+				}
+				1 = {
+					change_first_name = Penden-Zangpo
+				}
+				1 = {
+					change_first_name = Rangjung-Dorje
+				}
+				1 = {
+					change_first_name = Ratna-Lingpa
+				}
+				1 = {
+					change_first_name = Rikpa-Gon
+				}
+				1 = {
+					change_first_name = Rinchen-Chogyel
+				}
+				1 = {
+					change_first_name = Rinchen-Gyelpo
+				}
+				1 = {
+					change_first_name = Rinchen-Gyeltsen
+				}
+				1 = {
+					change_first_name = Rinchen-Jangchup
+				}
+				1 = {
+					change_first_name = Rinchen-O
+				}
+				1 = {
+					change_first_name = Rinchen-Pel
+				}
+				1 = {
+					change_first_name = Rinchen-Tsultrim
+				}
+				1 = {
+					change_first_name = Rinchen-Wanggyel
+				}
+				1 = {
+					change_first_name = Rinchen-Zangpo
+				}
+				1 = {
+					change_first_name = Samdrup
+				}
+				1 = {
+					change_first_name = Sengge-Gyeltsen
+				}
+				1 = {
+					change_first_name = Sengge-Pel
+				}
+				1 = {
+					change_first_name = Shakya-Wangchuk
+				}
+				1 = {
+					change_first_name = Sherap-Dawa
+				}
+				1 = {
+					change_first_name = Sherap-Gyeltsen
+				}
+				1 = {
+					change_first_name = Sherap-Sengge
+				}
+				1 = {
+					change_first_name = Sherap-Tsultrim
+				}
+				1 = {
+					change_first_name = Sherap-Zangpo
+				}
+				1 = {
+					change_first_name = Sonam
+				}
+				1 = {
+					change_first_name = Sonam-De
+				}
+				1 = {
+					change_first_name = Sonam-Gyatso
+				}
+				1 = {
+					change_first_name = Sonam-Gyeltsen
+				}
+				1 = {
+					change_first_name = Sonam-Lodro
+				}
+				1 = {
+					change_first_name = Sonam-O
+				}
+				1 = {
+					change_first_name = Sonam-Pel
+				}
+				1 = {
+					change_first_name = Sonam-Rinchen
+				}
+				1 = {
+					change_first_name = Sonam-Sengge
+				}
+				1 = {
+					change_first_name = Sonam-Sherap
+				}
+				1 = {
+					change_first_name = Sonam-Wangchuk
+				}
+				1 = {
+					change_first_name = Tingngedzin
+				}
+				1 = {
+					change_first_name = Trashi-De
+				}
+				1 = {
+					change_first_name = Trashi-Drakpa
+				}
+				1 = {
+					change_first_name = Trashi-Gon
+				}
+				1 = {
+					change_first_name = Trashi-Gyeltsen
+				}
+				1 = {
+					change_first_name = Trashi-O
+				}
+				1 = {
+					change_first_name = Trashi-Pel
+				}
+				1 = {
+					change_first_name = Trashi-Rinchen
+				}
+				1 = {
+					change_first_name = Trashi-Sengge
+				}
+				1 = {
+					change_first_name = Trashi-Tsen
+				}
+				1 = {
+					change_first_name = Trashi-Tsultrim
+				}
+				1 = {
+					change_first_name = Tsultrim
+				}
+				1 = {
+					change_first_name = Tsultrim-Gyelpo
+				}
+				1 = {
+					change_first_name = Tsultrim-Gyeltsen
+				}
+				1 = {
+					change_first_name = Tsultrim-Pel
+				}
+				1 = {
+					change_first_name = Tsultrim-Rinchen
+				}
+				1 = {
+					change_first_name = Tsultrim-Zangpo
+				}
+				1 = {
+					change_first_name = Tukkyi-Dorje
+				}
+				1 = {
+					change_first_name = Wangchuk
+				}
+				1 = {
+					change_first_name = Wangchuk-Drakpa
+				}
+				1 = {
+					change_first_name = Wangchuk-Gyelpo
+				}
+				1 = {
+					change_first_name = Wangchuk-Gyeltsen
+				}
+				1 = {
+					change_first_name = Wangchuk-Pel
+				}
+				1 = {
+					change_first_name = Wangchuk-Rinchen
+				}
+				1 = {
+					change_first_name = Yeshe
+				}
+				1 = {
+					change_first_name = Yeshe-Gyeltsen
+				}
+				1 = {
+					change_first_name = Yeshe-Lodro
+				}
+				1 = {
+					change_first_name = Yeshe-O
+				}
+				1 = {
+					change_first_name = Yeshe-Pel
+				}
+				1 = {
+					change_first_name = Yeshe-Rinchen
+				}
+				1 = {
+					change_first_name = Yeshe-Tang
+				}
+				1 = {
+					change_first_name = Yeshe-Tsultrim
+				}
+				1 = {
+					change_first_name = Yeshe-Wangchuk
+				}
+				1 = {
+					change_first_name = Yeshe-Wangpo
+				}
+				1 = {
+					change_first_name = Yungdrung-Gyeltsen
+				}
+				1 = {
+					change_first_name = Yungdrung-Lingpa
+				}
+				1 = {
+					change_first_name = Yungdrung-Nyingpo
+				}
+				1 = {
+					change_first_name = Yungdrung-Wangchuk
+				}
+				1 = {
+					change_first_name = Yungdrung-Wanggyel
+				}
+				1 = {
+					change_first_name = Zangpo-Pel
+				}
+				1 = {
+					change_first_name = Zhiwa-O
+				}
+				1 = {
+					change_first_name = Zhonnu-Gyeltsen
+				}
+				1 = {
+					change_first_name = Zhonnu-Lodro
+				}
+				1 = {
+					change_first_name = Zhonnu-Nyingpo
+				}
+				1 = {
+					change_first_name = Zhonnu-O
+				}
+				1 = {
+					change_first_name = Zhonnu-Pel
+				}
+				1 = {
+					change_first_name = Zhonnu-Wangchuk
+				}
+				1 = {
+					change_first_name = Dawa
+				}
+				1 = {
+					change_first_name = Dorje
+				}
+				1 = {
+					change_first_name = Kunga
+				}
+				1 = {
+					change_first_name = Norbu
+				}
+				1 = {
+					change_first_name = Nyima
+				}
+				1 = {
+					change_first_name = Pakpa
+				}
+				1 = {
+					change_first_name = Rinchen
+				}
+				1 = {
+					change_first_name = Sherap
+				}
+				1 = {
+					change_first_name = Simha
+				}
+				1 = {
+					change_first_name = Trashi
+				}
+				1 = {
+					change_first_name = Zangpo
+				}
+			}
+		}
+		1 = {
+			change_first_name = Adar
+		}
+		1 = {
+			change_first_name = Ayulwa
+		}
+		1 = {
+			change_first_name = Bekchung
+		}
+		1 = {
+			change_first_name = Burchung
+		}
+		1 = {
+			change_first_name = Chelep
+		}
+		1 = {
+			change_first_name = Chi-Detsen
+		}
+		1 = {
+			change_first_name = Chototak
+		}
+		1 = {
+			change_first_name = Chukdu
+		}
+		1 = {
+			change_first_name = Dagong
+		}
+		1 = {
+			change_first_name = Damepa
+		}
+		1 = {
+			change_first_name = Darma
+		}
+		1 = {
+			change_first_name = Dazang
+		}
+		1 = {
+			change_first_name = Dazher
+		}
+		1 = {
+			change_first_name = Desong
+		}
+		1 = {
+			change_first_name = Detsen
+		}
+		1 = {
+			change_first_name = Detsuk
+		}
+		1 = {
+			change_first_name = Doklhano
+		}
+		1 = {
+			change_first_name = Dolo
+		}
+		1 = {
+			change_first_name = Dombu
+		}
+		1 = {
+			change_first_name = Donggang
+		}
+		1 = {
+			change_first_name = Dongkong
+		}
+		1 = {
+			change_first_name = Dongtsap
+		}
+		1 = {
+			change_first_name = Dongtsen
+		}
+		1 = {
+			change_first_name = Dongzhi
+		}
+		1 = {
+			change_first_name = Dotsen
+		}
+		1 = {
+			change_first_name = Drigangpa
+		}
+		1 = {
+			change_first_name = Druklek
+		}
+		1 = {
+			change_first_name = Du-Pel
+		}
+		1 = {
+			change_first_name = Dukong
+		}
+		1 = {
+			change_first_name = Dukye
+		}
+		1 = {
+			change_first_name = Duma
+		}
+		1 = {
+			change_first_name = Dusong
+		}
+		1 = {
+			change_first_name = Dutsen
+		}
+		1 = {
+			change_first_name = Gajaktak
+		}
+		1 = {
+			change_first_name = Gake
+		}
+		1 = {
+			change_first_name = Ge-Pel
+		}
+		1 = {
+			change_first_name = Gelek
+		}
+		1 = {
+			change_first_name = Genkol
+		}
+		1 = {
+			change_first_name = Geten
+		}
+		1 = {
+			change_first_name = Getsen
+		}
+		1 = {
+			change_first_name = Getsuk
+		}
+		1 = {
+			change_first_name = Gonchen
+		}
+		1 = {
+			change_first_name = Gungton
+		}
+		1 = {
+			change_first_name = Gungtsen
+		}
+		1 = {
+			change_first_name = Gyagong
+		}
+		1 = {
+			change_first_name = Gyelgyung
+		}
+		1 = {
+			change_first_name = Gyellep
+		}
+		1 = {
+			change_first_name = Gyeltsukru
+		}
+		1 = {
+			change_first_name = Gyelzang
+		}
+		1 = {
+			change_first_name = Gyuchen
+		}
+		1 = {
+			change_first_name = Hapken
+		}
+		1 = {
+			change_first_name = Jang-Gyelwa
+		}
+		1 = {
+			change_first_name = Jayulwa
+		}
+		1 = {
+			change_first_name = Jechung
+		}
+		1 = {
+			change_first_name = Jetsang
+		}
+		1 = {
+			change_first_name = Jinjin
+		}
+		1 = {
+			change_first_name = Jopel
+		}
+		1 = {
+			change_first_name = Jopen
+		}
+		1 = {
+			change_first_name = Khandro
+		}
+		1 = {
+			change_first_name = Khartsi
+		}
+		1 = {
+			change_first_name = Khonetsen
+		}
+		1 = {
+			change_first_name = Khongge
+		}
+		1 = {
+			change_first_name = Khonglo
+		}
+		1 = {
+			change_first_name = Khongto
+		}
+		1 = {
+			change_first_name = Khongtri
+		}
+		1 = {
+			change_first_name = Khongzung
+		}
+		1 = {
+			change_first_name = Khorre
+		}
+		1 = {
+			change_first_name = Khyibel
+		}
+		1 = {
+			change_first_name = Khyibu
+		}
+		1 = {
+			change_first_name = Khyichung
+		}
+		1 = {
+			change_first_name = Khyikyu
+		}
+		1 = {
+			change_first_name = Khyimare
+		}
+		1 = {
+			change_first_name = Khyinyuk
+		}
+		1 = {
+			change_first_name = Khyitsen
+		}
+		1 = {
+			change_first_name = Khyituk
+		}
+		1 = {
+			change_first_name = Khyungtang
+		}
+		1 = {
+			change_first_name = Kya-Ponlek
+		}
+		1 = {
+			change_first_name = Kyide
+		}
+		1 = {
+			change_first_name = Kyizung
+		}
+		1 = {
+			change_first_name = Lagong
+		}
+		1 = {
+			change_first_name = Lekdu
+		}
+		1 = {
+			change_first_name = Lekkong
+		}
+		1 = {
+			change_first_name = Leklek
+		}
+		1 = {
+			change_first_name = Leknang
+		}
+		1 = {
+			change_first_name = Lekpo
+		}
+		1 = {
+			change_first_name = Leksum
+		}
+		1 = {
+			change_first_name = Lektsen
+		}
+		1 = {
+			change_first_name = Lekzher
+		}
+		1 = {
+			change_first_name = Lekzik
+		}
+		1 = {
+			change_first_name = Lha-Botsen
+		}
+		1 = {
+			change_first_name = Lha-Dringtsen
+		}
+		1 = {
+			change_first_name = Lha-Khortsen
+		}
+		1 = {
+			change_first_name = Lhachen
+		}
+		1 = {
+			change_first_name = Lhade
+		}
+		1 = {
+			change_first_name = Lhadra
+		}
+		1 = {
+			change_first_name = Lhaga
+		}
+		1 = {
+			change_first_name = Lhagong
+		}
+		1 = {
+			change_first_name = Lhagyel
+		}
+		1 = {
+			change_first_name = Lhakye
+		}
+		1 = {
+			change_first_name = Lhalek
+		}
+		1 = {
+			change_first_name = Lhalho
+		}
+		1 = {
+			change_first_name = Lhalo
+		}
+		1 = {
+			change_first_name = Lhanang
+		}
+		1 = {
+			change_first_name = Lhanyen
+		}
+		1 = {
+			change_first_name = Lhasde
+		}
+		1 = {
+			change_first_name = Lhaten
+		}
+		1 = {
+			change_first_name = Lhaton
+		}
+		1 = {
+			change_first_name = Lhatong
+		}
+		1 = {
+			change_first_name = Lhatri
+		}
+		1 = {
+			change_first_name = Lhatsen
+		}
+		1 = {
+			change_first_name = Lhatsuk
+		}
+		1 = {
+			change_first_name = Lhazang
+		}
+		1 = {
+			change_first_name = Lhazik
+		}
+		1 = {
+			change_first_name = Lhazung
+		}
+		1 = {
+			change_first_name = Lhejin
+		}
+		1 = {
+			change_first_name = Lhetse
+		}
+		1 = {
+			change_first_name = Lhogong
+		}
+		1 = {
+			change_first_name = Lonang
+		}
+		1 = {
+			change_first_name = Lonkol
+		}
+		1 = {
+			change_first_name = Lontsen
+		}
+		1 = {
+			change_first_name = Lotsen
+		}
+		1 = {
+			change_first_name = Lu-Pel
+		}
+		1 = {
+			change_first_name = Ludrup
+		}
+		1 = {
+			change_first_name = Ludu
+		}
+		1 = {
+			change_first_name = Luging
+		}
+		1 = {
+			change_first_name = Lugong
+		}
+		1 = {
+			change_first_name = Lugyel
+		}
+		1 = {
+			change_first_name = Lulek
+		}
+		1 = {
+			change_first_name = Lumen
+		}
+		1 = {
+			change_first_name = Lupel
+		}
+		1 = {
+			change_first_name = Lurten
+		}
+		1 = {
+			change_first_name = Luten
+		}
+		1 = {
+			change_first_name = Lutsen
+		}
+		1 = {
+			change_first_name = Malek
+		}
+		1 = {
+			change_first_name = Mangchung
+		}
+		1 = {
+			change_first_name = Mangtsen
+		}
+		1 = {
+			change_first_name = Menchung
+		}
+		1 = {
+			change_first_name = Monchung
+		}
+		1 = {
+			change_first_name = Montsen
+		}
+		1 = {
+			change_first_name = Monzung
+		}
+		1 = {
+			change_first_name = Muchung
+		}
+		1 = {
+			change_first_name = Museng
+		}
+		1 = {
+			change_first_name = Mutsutsen
+		}
+		1 = {
+			change_first_name = Namlek
+		}
+		1 = {
+			change_first_name = Nangtsap
+		}
+		1 = {
+			change_first_name = Neshak
+		}
+		1 = {
+			change_first_name = Netang
+		}
+		1 = {
+			change_first_name = Netsen
+		}
+		1 = {
+			change_first_name = Nganyi
+		}
+		1 = {
+			change_first_name = Ngennang
+		}
+		1 = {
+			change_first_name = Ngotsen
+		}
+		1 = {
+			change_first_name = Nyakye
+		}
+		1 = {
+			change_first_name = Nyalep
+		}
+		1 = {
+			change_first_name = Nyato
+		}
+		1 = {
+			change_first_name = Nyelde
+		}
+		1 = {
+			change_first_name = Nyema
+		}
+		1 = {
+			change_first_name = Nyenang
+		}
+		1 = {
+			change_first_name = Nyenlo
+		}
+		1 = {
+			change_first_name = Nyetong
+		}
+		1 = {
+			change_first_name = Ode
+		}
+		1 = {
+			change_first_name = Okyibar
+		}
+		1 = {
+			change_first_name = Ombar
+		}
+		1 = {
+			change_first_name = Ombar-De
+		}
+		1 = {
+			change_first_name = Ormang
+		}
+		1 = {
+			change_first_name = Osung
+		}
+		1 = {
+			change_first_name = Peklha
+		}
+		1 = {
+			change_first_name = Pel-Khortsen
+		}
+		1 = {
+			change_first_name = Pelde
+		}
+		1 = {
+			change_first_name = Peldu
+		}
+		1 = {
+			change_first_name = Pellek
+		}
+		1 = {
+			change_first_name = Pelston
+		}
+		1 = {
+			change_first_name = Pelton
+		}
+		1 = {
+			change_first_name = Pengang
+		}
+		1 = {
+			change_first_name = Pengyel
+		}
+		1 = {
+			change_first_name = Penlek
+		}
+		1 = {
+			change_first_name = Pepo
+		}
+		1 = {
+			change_first_name = Peto
+		}
+		1 = {
+			change_first_name = Petsen
+		}
+		1 = {
+			change_first_name = Pokye
+		}
+		1 = {
+			change_first_name = Putsap
+		}
+		1 = {
+			change_first_name = Ramshak
+		}
+		1 = {
+			change_first_name = Rinao
+		}
+		1 = {
+			change_first_name = Ritsap
+		}
+		1 = {
+			change_first_name = Rizung
+		}
+		1 = {
+			change_first_name = Sengdrak
+		}
+		1 = {
+			change_first_name = Sertok
+		}
+		1 = {
+			change_first_name = Shatri
+		}
+		1 = {
+			change_first_name = Shuteng
+		}
+		1 = {
+			change_first_name = Song-Detsen
+		}
+		1 = {
+			change_first_name = Songnge
+		}
+		1 = {
+			change_first_name = Songrtsen
+		}
+		1 = {
+			change_first_name = Songtsen
+		}
+		1 = {
+			change_first_name = Soten
+		}
+		1 = {
+			change_first_name = Sumnang
+		}
+		1 = {
+			change_first_name = Takchung
+		}
+		1 = {
+			change_first_name = Takchupa
+		}
+		1 = {
+			change_first_name = Takkye
+		}
+		1 = {
+			change_first_name = Taklatsen
+		}
+		1 = {
+			change_first_name = Taklek
+		}
+		1 = {
+			change_first_name = Taklep
+		}
+		1 = {
+			change_first_name = Taklo
+		}
+		1 = {
+			change_first_name = Taknang
+		}
+		1 = {
+			change_first_name = Taknya
+		}
+		1 = {
+			change_first_name = Takten
+		}
+		1 = {
+			change_first_name = Taktsap
+		}
+		1 = {
+			change_first_name = Taktsen
+		}
+		1 = {
+			change_first_name = Tangla-Ga
+		}
+		1 = {
+			change_first_name = Tendra
+		}
+		1 = {
+			change_first_name = Tenkong
+		}
+		1 = {
+			change_first_name = Tok-Pel
+		}
+		1 = {
+			change_first_name = Tompo
+		}
+		1 = {
+			change_first_name = Tongpo
+		}
+		1 = {
+			change_first_name = Topa-Ga
+		}
+		1 = {
+			change_first_name = Tregong
+		}
+		1 = {
+			change_first_name = Trichung
+		}
+		1 = {
+			change_first_name = Tridarma
+		}
+		1 = {
+			change_first_name = Trigong
+		}
+		1 = {
+			change_first_name = Trikyiding
+		}
+		1 = {
+			change_first_name = Trilek
+		}
+		1 = {
+			change_first_name = Trilep
+		}
+		1 = {
+			change_first_name = Trinamde
+		}
+		1 = {
+			change_first_name = Tritok
+		}
+		1 = {
+			change_first_name = Tritsen
+		}
+		1 = {
+			change_first_name = Tritsuk
+		}
+		1 = {
+			change_first_name = Trizang
+		}
+		1 = {
+			change_first_name = Trizung
+		}
+		1 = {
+			change_first_name = Tromtak
+		}
+		1 = {
+			change_first_name = Tromzher
+		}
+		1 = {
+			change_first_name = Trulzhikpa
+		}
+		1 = {
+			change_first_name = Tsanglo
+		}
+		1 = {
+			change_first_name = Tsangma
+		}
+		1 = {
+			change_first_name = Tsangten
+		}
+		1 = {
+			change_first_name = Tsangzhar
+		}
+		1 = {
+			change_first_name = Tsebartsen
+		}
+		1 = {
+			change_first_name = Tsede
+		}
+		1 = {
+			change_first_name = Tsende
+		}
+		1 = {
+			change_first_name = Tsendro
+		}
+		1 = {
+			change_first_name = Tsenkong
+		}
+		1 = {
+			change_first_name = Tsenlek
+		}
+		1 = {
+			change_first_name = Tsenpo-Pellek
+		}
+		1 = {
+			change_first_name = Tsensong
+		}
+		1 = {
+			change_first_name = Tsenzik
+		}
+		1 = {
+			change_first_name = Tsongpon-Khamtar
+		}
+		1 = {
+			change_first_name = Tsotsen
+		}
+		1 = {
+			change_first_name = Tsuklek
+		}
+		1 = {
+			change_first_name = Tsuklon
+		}
+		1 = {
+			change_first_name = U-Dumten
+		}
+		1 = {
+			change_first_name = Wangde
+		}
+		1 = {
+			change_first_name = Wangpo-De
+		}
+		1 = {
+			change_first_name = Yaplak
+		}
+		1 = {
+			change_first_name = Yitsap
+		}
+		1 = {
+			change_first_name = Yuchen
+		}
+		1 = {
+			change_first_name = Yula-Kye
+		}
+		1 = {
+			change_first_name = Yuljin
+		}
+		1 = {
+			change_first_name = Yulsung
+		}
+		1 = {
+			change_first_name = Yutsen
+		}
+		1 = {
+			change_first_name = Zangkong
+		}
+		1 = {
+			change_first_name = Zhanglek
+		}
+		1 = {
+			change_first_name = Zhangnang
+		}
+		1 = {
+			change_first_name = Zhangnyen
+		}
+		1 = {
+			change_first_name = Zhangtsen
+		}
+		1 = {
+			change_first_name = Zhangyen
+		}
+		1 = {
+			change_first_name = Zhangzik
+		}
+		1 = {
+			change_first_name = Zhitsen
+		}
+		1 = {
+			change_first_name = Zutsen
+		}
+	}
+}
+tibetan_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				has_faith = faith:old_bon
+				add = 3
+			}
+			random_list = {
+				1 = {
+					change_first_name = Kargyen
+				}
+				1 = {
+					change_first_name = Karmo-Gyel
+				}
+				1 = {
+					change_first_name = Zangkarza
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				OR = {
+					has_religion = religion:buddhism_religion
+					has_faith = faith:bon
+				}
+				add = 122
+			}
+			random_list = {
+				1 = {
+					change_first_name = Choden
+				}
+				1 = {
+					change_first_name = Chokyap-Bum
+				}
+				1 = {
+					change_first_name = Chokyi
+				}
+				1 = {
+					change_first_name = Chokyi-Dronma
+				}
+				1 = {
+					change_first_name = Chokyi-Ge
+				}
+				1 = {
+					change_first_name = Chokyi-Pelmo
+				}
+				1 = {
+					change_first_name = Chokyong-Zangmo
+				}
+				1 = {
+					change_first_name = Chopel
+				}
+				1 = {
+					change_first_name = Chotong
+				}
+				1 = {
+					change_first_name = Chotsen
+				}
+				1 = {
+					change_first_name = Chotso
+				}
+				1 = {
+					change_first_name = Dechok-Cham
+				}
+				1 = {
+					change_first_name = Dode
+				}
+				1 = {
+					change_first_name = Dode-Gyelmo
+				}
+				1 = {
+					change_first_name = Dondrup-Drolma
+				}
+				1 = {
+					change_first_name = Dondrup-Gyelmo
+				}
+				1 = {
+					change_first_name = Dondrup-Kyi
+				}
+				1 = {
+					change_first_name = Dondrup-Zangmo
+				}
+				1 = {
+					change_first_name = Dorje-Cham
+				}
+				1 = {
+					change_first_name = Dorje-Drolma
+				}
+				1 = {
+					change_first_name = Dorje-Kyi
+				}
+				1 = {
+					change_first_name = Dorje-Tso
+				}
+				1 = {
+					change_first_name = Drolma
+				}
+				1 = {
+					change_first_name = Drolma-Bum
+				}
+				1 = {
+					change_first_name = Drolma-Butri
+				}
+				1 = {
+					change_first_name = Drolma-Kyi
+				}
+				1 = {
+					change_first_name = Drolma-Mtso
+				}
+				1 = {
+					change_first_name = Drolma-Tso
+				}
+				1 = {
+					change_first_name = Dronme-Peldzom
+				}
+				1 = {
+					change_first_name = Drowa-Zangmo
+				}
+				1 = {
+					change_first_name = Druptop-Zangmo
+				}
+				1 = {
+					change_first_name = Dzamling
+				}
+				1 = {
+					change_first_name = Dzamling-Gyen
+				}
+				1 = {
+					change_first_name = Gendun-Bum
+				}
+				1 = {
+					change_first_name = Gewa-Bum
+				}
+				1 = {
+					change_first_name = Gonpo-Pel
+				}
+				1 = {
+					change_first_name = Jangchup
+				}
+				1 = {
+					change_first_name = Jangchup-Drolma
+				}
+				1 = {
+					change_first_name = Jangchup-Dron
+				}
+				1 = {
+					change_first_name = Jangchup-Pelmo
+				}
+				1 = {
+					change_first_name = Khyidren-Pel
+				}
+				1 = {
+					change_first_name = Konchok-Gyelmo
+				}
+				1 = {
+					change_first_name = Konchok-Gyen
+				}
+				1 = {
+					change_first_name = Kunga-Bum
+				}
+				1 = {
+					change_first_name = Kunga-Drolma
+				}
+				1 = {
+					change_first_name = Kunga-Dzom
+				}
+				1 = {
+					change_first_name = Kunga-Gyelmo
+				}
+				1 = {
+					change_first_name = Kunga-Kyi
+				}
+				1 = {
+					change_first_name = Kunga-Peldzom
+				}
+				1 = {
+					change_first_name = Kunga-Zangmo
+				}
+				1 = {
+					change_first_name = Lama-Drom
+				}
+				1 = {
+					change_first_name = Lapdron
+				}
+				1 = {
+					change_first_name = Lhakyi-Peldzom
+				}
+				1 = {
+					change_first_name = Lhamo-Bum
+				}
+				1 = {
+					change_first_name = Lhamo-Cham
+				}
+				1 = {
+					change_first_name = Lhamo-Dronma
+				}
+				1 = {
+					change_first_name = Lhamo-Kyi
+				}
+				1 = {
+					change_first_name = Lhamo-Mtso
+				}
+				1 = {
+					change_first_name = Lhamo-Pel
+				}
+				1 = {
+					change_first_name = Lhamo-Tso
+				}
+				1 = {
+					change_first_name = Machik-Zhangmo
+				}
+				1 = {
+					change_first_name = Namkha-Drolma
+				}
+				1 = {
+					change_first_name = Namkha-Gyelmo
+				}
+				1 = {
+					change_first_name = Namkha-Kyong
+				}
+				1 = {
+					change_first_name = Nyendrak-Zangmo
+				}
+				1 = {
+					change_first_name = Nyenmo-Yangkyi
+				}
+				1 = {
+					change_first_name = Nyima-Drolma
+				}
+				1 = {
+					change_first_name = Nyima-Dron
+				}
+				1 = {
+					change_first_name = Nyima-Lhamo
+				}
+				1 = {
+					change_first_name = Nyima-Rinchen
+				}
+				1 = {
+					change_first_name = Nyima-Tso
+				}
+				1 = {
+					change_first_name = Pelgyi-Ngangtsul
+				}
+				1 = {
+					change_first_name = Pelmo
+				}
+				1 = {
+					change_first_name = Pelmo-Kyi
+				}
+				1 = {
+					change_first_name = Pema-Dronma
+				}
+				1 = {
+					change_first_name = Pema-Peldzom
+				}
+				1 = {
+					change_first_name = Pema-Tsel
+				}
+				1 = {
+					change_first_name = Pema-Tsokyi
+				}
+				1 = {
+					change_first_name = Penden-Drolma
+				}
+				1 = {
+					change_first_name = Penden-Dzom
+				}
+				1 = {
+					change_first_name = Penden-Lhamo
+				}
+				1 = {
+					change_first_name = Rinchen-Drolma
+				}
+				1 = {
+					change_first_name = Rinchen-Gyen
+				}
+				1 = {
+					change_first_name = Rinchen-Kyi
+				}
+				1 = {
+					change_first_name = Rinchen-Men
+				}
+				1 = {
+					change_first_name = Rinchen-Pelmo
+				}
+				1 = {
+					change_first_name = Rinchen-Tso
+				}
+				1 = {
+					change_first_name = Rindzin-Drolma
+				}
+				1 = {
+					change_first_name = Sherap-Drolma
+				}
+				1 = {
+					change_first_name = Sherap-Gyen
+				}
+				1 = {
+					change_first_name = Sitar-Kyi
+				}
+				1 = {
+					change_first_name = Sonam
+				}
+				1 = {
+					change_first_name = Sonam-Bum
+				}
+				1 = {
+					change_first_name = Sonam-Drolma
+				}
+				1 = {
+					change_first_name = Sonam-Gyelmo
+				}
+				1 = {
+					change_first_name = Sonam-Gyen
+				}
+				1 = {
+					change_first_name = Sonam-Kyi
+				}
+				1 = {
+					change_first_name = Sonam-Lhamo
+				}
+				1 = {
+					change_first_name = Sonam-Mtso
+				}
+				1 = {
+					change_first_name = Sonam-Pel
+				}
+				1 = {
+					change_first_name = Sonam-Tso
+				}
+				1 = {
+					change_first_name = Sonam-Zangmo
+				}
+				1 = {
+					change_first_name = Trashi-Bum
+				}
+				1 = {
+					change_first_name = Trashi-Drolma
+				}
+				1 = {
+					change_first_name = Trashi-Gyelmo
+				}
+				1 = {
+					change_first_name = Trashi-Kyi
+				}
+				1 = {
+					change_first_name = Trashi-Lhamo
+				}
+				1 = {
+					change_first_name = Trashi-Mtso
+				}
+				1 = {
+					change_first_name = Trashi-Tso
+				}
+				1 = {
+					change_first_name = Trashi-Zangmo
+				}
+				1 = {
+					change_first_name = Tsewang-Dzom
+				}
+				1 = {
+					change_first_name = Tsultrim-Gyen
+				}
+				1 = {
+					change_first_name = Tsultrim-Pelmo
+				}
+				1 = {
+					change_first_name = Yeshe-Chok
+				}
+				1 = {
+					change_first_name = Yeshe-Drolma
+				}
+				1 = {
+					change_first_name = Yeshe-Dron
+				}
+				1 = {
+					change_first_name = Yeshe-Zangmo
+				}
+				1 = {
+					change_first_name = Yungdrung-Drolma
+				}
+				1 = {
+					change_first_name = Yungdrung-Tso
+				}
+				1 = {
+					change_first_name = Dorje
+				}
+				1 = {
+					change_first_name = Lhamo
+				}
+				1 = {
+					change_first_name = Trashi
+				}
+			}
+		}
+		1 = {
+			change_first_name = Abum
+		}
+		1 = {
+			change_first_name = Achok
+		}
+		1 = {
+			change_first_name = Agoza
+		}
+		1 = {
+			change_first_name = Alak
+		}
+		1 = {
+			change_first_name = Bare
+		}
+		1 = {
+			change_first_name = Barza
+		}
+		1 = {
+			change_first_name = Bomulu
+		}
+		1 = {
+			change_first_name = Bumcham
+		}
+		1 = {
+			change_first_name = Bume
+		}
+		1 = {
+			change_first_name = Butri
+		}
+		1 = {
+			change_first_name = Cham-Mingdren
+		}
+		1 = {
+			change_first_name = Chambu
+		}
+		1 = {
+			change_first_name = Chammi
+		}
+		1 = {
+			change_first_name = Checham
+		}
+		1 = {
+			change_first_name = Chenmo
+		}
+		1 = {
+			change_first_name = Dakmema
+		}
+		1 = {
+			change_first_name = Damdze
+		}
+		1 = {
+			change_first_name = Dardze
+		}
+		1 = {
+			change_first_name = Darma
+		}
+		1 = {
+			change_first_name = Dechok
+		}
+		1 = {
+			change_first_name = Delek
+		}
+		1 = {
+			change_first_name = Donkar
+		}
+		1 = {
+			change_first_name = Dremo
+		}
+		1 = {
+			change_first_name = Dringmatok
+		}
+		1 = {
+			change_first_name = Drokmo
+		}
+		1 = {
+			change_first_name = Drokne
+		}
+		1 = {
+			change_first_name = Dronkyi
+		}
+		1 = {
+			change_first_name = Dronma
+		}
+		1 = {
+			change_first_name = Dronmalo
+		}
+		1 = {
+			change_first_name = Dronne-Cham
+		}
+		1 = {
+			change_first_name = Dukgema
+		}
+		1 = {
+			change_first_name = Dzeden
+		}
+		1 = {
+			change_first_name = Gego
+		}
+		1 = {
+			change_first_name = Getso
+		}
+		1 = {
+			change_first_name = Gonkyi
+		}
+		1 = {
+			change_first_name = Gonmo-Kyi
+		}
+		1 = {
+			change_first_name = Gumril
+		}
+		1 = {
+			change_first_name = Gungdruk
+		}
+		1 = {
+			change_first_name = Gyamahor
+		}
+		1 = {
+			change_first_name = Gyelme
+		}
+		1 = {
+			change_first_name = Gyelmo-Tsen
+		}
+		1 = {
+			change_first_name = Gyimpangma
+		}
+		1 = {
+			change_first_name = Gyugu-Cham
+		}
+		1 = {
+			change_first_name = Joge
+		}
+		1 = {
+			change_first_name = Jomo-Bumme
+		}
+		1 = {
+			change_first_name = Jomo-Gyen
+		}
+		1 = {
+			change_first_name = Khandro-Bum
+		}
+		1 = {
+			change_first_name = Kharchenza
+		}
+		1 = {
+			change_first_name = Khorkyon
+		}
+		1 = {
+			change_first_name = Khyedren-Bum
+		}
+		1 = {
+			change_first_name = Kyibum
+		}
+		1 = {
+			change_first_name = Kyima
+		}
+		1 = {
+			change_first_name = Kyurmoza
+		}
+		1 = {
+			change_first_name = Lekje
+		}
+		1 = {
+			change_first_name = Lekse
+		}
+		1 = {
+			change_first_name = Lenchikma
+		}
+		1 = {
+			change_first_name = Lenchung-Ma
+		}
+		1 = {
+			change_first_name = Lhamdze
+		}
+		1 = {
+			change_first_name = Lhapang
+		}
+		1 = {
+			change_first_name = Lhe-Metok
+		}
+		1 = {
+			change_first_name = Lhengye
+		}
+		1 = {
+			change_first_name = Mangkyi
+		}
+		1 = {
+			change_first_name = Mangpang
+		}
+		1 = {
+			change_first_name = Mejeteu
+		}
+		1 = {
+			change_first_name = Menmo
+		}
+		1 = {
+			change_first_name = Monre
+		}
+		1 = {
+			change_first_name = Namlang-Butri
+		}
+		1 = {
+			change_first_name = Nechungma
+		}
+		1 = {
+			change_first_name = Ngangring
+		}
+		1 = {
+			change_first_name = Nokdang
+		}
+		1 = {
+			change_first_name = Nyamoteng
+		}
+		1 = {
+			change_first_name = Oden
+		}
+		1 = {
+			change_first_name = Pel-Dron
+		}
+		1 = {
+			change_first_name = Pelle
+		}
+		1 = {
+			change_first_name = Purmo
+		}
+		1 = {
+			change_first_name = Samme
+		}
+		1 = {
+			change_first_name = Semarkar
+		}
+		1 = {
+			change_first_name = Sengkarma
+		}
+		1 = {
+			change_first_name = Sungkyi
+		}
+		1 = {
+			change_first_name = Takgi-Bum
+		}
+		1 = {
+			change_first_name = Takzikza
+		}
+		1 = {
+			change_first_name = Tangmo
+		}
+		1 = {
+			change_first_name = Tingguk
+		}
+		1 = {
+			change_first_name = Toktokteng
+		}
+		1 = {
+			change_first_name = Tongtsun
+		}
+		1 = {
+			change_first_name = Tribang
+		}
+		1 = {
+			change_first_name = Tricham
+		}
+		1 = {
+			change_first_name = Trimalo
+		}
+		1 = {
+			change_first_name = Trimolek
+		}
+		1 = {
+			change_first_name = Trimonyen
+		}
+		1 = {
+			change_first_name = Trimoteng
+		}
+		1 = {
+			change_first_name = Triteng
+		}
+		1 = {
+			change_first_name = Tritsun
+		}
+		1 = {
+			change_first_name = Trompa-Gyen
+		}
+		1 = {
+			change_first_name = Trulgyur
+		}
+		1 = {
+			change_first_name = Tsacham
+		}
+		1 = {
+			change_first_name = Tsecham
+		}
+		1 = {
+			change_first_name = Tsenma-Tok
+		}
+		1 = {
+			change_first_name = Tsenmo-Pen
+		}
+		1 = {
+			change_first_name = Tsocham
+		}
+		1 = {
+			change_first_name = Tsogyel
+		}
+		1 = {
+			change_first_name = Tsunne
+		}
+		1 = {
+			change_first_name = Wangmo
+		}
+		1 = {
+			change_first_name = Wonmo-Khandro
+		}
+		1 = {
+			change_first_name = Yemo-Peldren
+		}
+		1 = {
+			change_first_name = Yoza-Chamme
+		}
+		1 = {
+			change_first_name = Yu-Dronma
+		}
+		1 = {
+			change_first_name = Yum-Chenmo
+		}
+		1 = {
+			change_first_name = Yum-Lhamo
+		}
+		1 = {
+			change_first_name = Yumo-Pel
+		}
+		1 = {
+			change_first_name = Zache-Cham
+		}
+		1 = {
+			change_first_name = Zangkhama
+		}
+		1 = {
+			change_first_name = Zhangmo
+		}
+		1 = {
+			change_first_name = Zhikmo
+		}
+		1 = {
+			change_first_name = Zhiteng
+		}
+	}
+}

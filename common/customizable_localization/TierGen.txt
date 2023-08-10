@@ -2000,6 +2000,14 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+                has_cultural_pillar = language_tibetan
+			}
+		}
+		localization_key = _tibetan
+	}
+	text = {
+		trigger = {
+			culture = {
                 OR = {
                     AND = {
                         has_cultural_pillar = language_scythian
@@ -2230,7 +2238,7 @@ CharacterReligion = {
     }
     text = {
         trigger = {
-            has_religion = religion:bon_religion
+            has_faith = faith:old_bon
         }
         localization_key = _bon
     }
@@ -2351,7 +2359,10 @@ CharacterReligion = {
     }
     text = {
         trigger = {
-            has_religion = religion:buddhism_religion
+			OR = {
+				has_religion = religion:buddhism_religion
+				has_faith = faith:bon
+			}
         }
         localization_key = _buddism
     }
