@@ -1,5 +1,5 @@
 ﻿867_telugu_char_effect = {
-	character:247408.house = {
+	character:189074.house = {
 		set_variable = {
 			name = name_founder
 			value = character:npedbtelugu001
@@ -258,8 +258,30 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:mudigonda_chalukya_15 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:mudigonda_chalukya_16 }
 	}
+	character:velanati_chodas_1.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbtelugu011
+		}
+	}
+	character:velanati_chodas_1.dynasty = { #Velanati Chodas
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtelugu011 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:velanati_chodas_1 }
+	}
+	character:189229 ={
+        change_first_name = Beta
+	}
+	character:velanati_chodas_1 ={
+        change_first_name = Gonkaya
+	}
+	character:natavadi_1 ={
+        change_first_name = Beta-Kshanipalaka
+	}
 	character:189086 ={
         change_first_name = Yuddhamalla
+	}
+	character:narayanavanam_yadava_ruler ={
+        change_first_name = Narasimha
 	}
 	character:189094 ={
         change_first_name = Yuddhamalla
