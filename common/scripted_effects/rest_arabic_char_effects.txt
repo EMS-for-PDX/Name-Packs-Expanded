@@ -356,6 +356,26 @@
         add_to_variable_list = { name = pre_laqab_dynasty target = character:159401 }
         add_to_variable_list = { name = pre_laqab_dynasty target = character:159400 }
 	}
+	character:20775.dynasty = { #Alivid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20775 }
+	}
+	character:20777.dynasty = { #Haqid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20777 }
+	}
+	character:20784.dynasty = { #Najjarid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20784 }
+	}
+	character:20784 = {
+		change_first_name = Zakariya
+		dynasty_effect_ne = yes
+	}
+	character:20777 = {
+		change_first_name = Abdal-Haqq
+		dynasty_effect_ne = yes
+	}
+	character:20775 = {
+		dynasty_effect_ne = yes
+	}
 	character:159400 = {
 		change_first_name = Muhammad
         add_to_global_variable_list = { name = al_Murtada target = this }

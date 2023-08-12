@@ -17,6 +17,7 @@
 	}
 }
 1066_egyptian_char_effect = {
+    add_to_global_variable_list = { name = name_pack_support_global target = character:35001 } #Christodolos, Coptic Pope
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:3094 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:3092 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:3090 }
@@ -184,9 +185,19 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0025 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0020 }
 	}
+	character:161491.dynasty = { #Kyrilids
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:161491 }
+	}
 	character:34700 = { #This is Iftikhar ad-Dawla no known given name
 		change_first_name = Nafi
 		dynasty_effect_ne = yes
+	}
+	character:161491 = {
+		change_first_name = Cyril
+		dynasty_effect_ne = yes
+	}
+	character:35001 = {
+		change_first_name = Christodoulos
 	}
 	character:bedouin0020 = {
 		change_first_name = Numayr
