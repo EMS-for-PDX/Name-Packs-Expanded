@@ -1293,6 +1293,7 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1764 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:34437 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:34438 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:42014 }
     }
     character:90091.house = {
         set_variable = {
@@ -1628,6 +1629,18 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70417 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70418 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:4511 }
+    }
+    character:90033.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbgreek089
+        }
+    }
+	character:90033.dynasty = { #Botaneiates
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbgreek089 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:90033 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:90034 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:1740 }
     }
     character:20463 = {
         change_first_name = Theodore

@@ -592,14 +592,28 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:70631 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:180193 }
 	}
+	character:20325.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbsard003
+        }
+    }
 	character:20325.dynasty = { #Lacon-Zori
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbsard003 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:20325 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144527 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144528 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:235140 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:235141 }
 	}
+	character:20326.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbsard004
+        }
+    }
 	character:20326.dynasty = { #Gunale
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbsard004 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:20326 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:235106 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:235107 }
@@ -616,7 +630,14 @@
 		add_to_variable_list = { name = dynasty_independent target = character:235107 }
 		add_to_variable_list = { name = dynasty_independent target = character:235106 }
 	}
+	character:235129.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbsard002
+        }
+    }
 	character:235129.dynasty = { #Torres
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbsard002 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:235129 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:235132 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:235136 }
@@ -633,6 +654,7 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:235118 }
 	}
 	character:75006.dynasty = { #Torchitoriu
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbsard005 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:235096 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:235097 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:235098 }
@@ -688,7 +710,20 @@
 		add_to_variable_list = { name = dynasty_independent target = character:75000 }
 		add_to_variable_list = { name = dynasty_independent target = character:75002 }
 	}
+	character:235126.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbsard005
+        }
+    }
+	character:235206.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbsard001
+        }
+    }
 	character:235206.dynasty = { #Zori
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbsard001 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:235206 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:235207 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:235208 }
