@@ -1,0 +1,1494 @@
+﻿dutch_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				exists = father.father
+				NOT = {
+					has_trait = bastard
+					father = {
+						has_character_flag = father_father_name
+					}
+				}
+				add = 40 #freq
+			}
+			father.father = {
+				save_scope_as = the_guy
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = father_father_name
+			}
+		}
+		0 = {
+			modifier = {
+				father ?= {
+					OR = {
+						has_character_flag = father_father_name
+						NOT = {
+							exists = father
+						}
+					}
+					NOT = {
+						has_character_flag = father_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 20 #common
+			}
+			father = {
+				save_scope_as = the_guy
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = father_name
+			}
+		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = brother_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			mother = {
+				add_character_flag = brother_name
+			}
+		}
+		40 = {
+			random_list = {
+				0 = {
+					modifier = {
+						culture = {
+							has_cultural_era_or_later = culture_era_late_medieval
+						}
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = John
+				}
+				1 = {
+					change_first_name = Arnold
+				}
+				1 = {
+					change_first_name = Gerhard
+				}
+				1 = {
+					change_first_name = Henry
+				}
+				1 = {
+					change_first_name = Theodoric
+				}
+				1 = {
+					change_first_name = William
+				}
+			}
+		}
+		30 = {
+			random_list = {
+				0 = {
+					modifier = {
+						culture = {
+							NOT = {
+								has_cultural_era_or_later = culture_era_late_medieval
+							}
+						}
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = John
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_cultural_era_or_later = culture_era_late_medieval
+						}
+						has_religion = religion:christianity_religion
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Jacob
+						}
+						1 = {
+							change_first_name = Nicholas
+						}
+						1 = {
+							change_first_name = Peter
+						}
+						1 = {
+							change_first_name = Simon
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						location.duchy ?= title:d_flanders
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = Eustace
+				}
+				1 = {
+					change_first_name = Albert
+				}
+				1 = {
+					change_first_name = Baldwin
+				}
+				1 = {
+					change_first_name = Gauswin
+				}
+				1 = {
+					change_first_name = Gilbert
+				}
+				1 = {
+					change_first_name = Godfrey
+				}
+				1 = {
+					change_first_name = Herman
+				}
+				1 = {
+					change_first_name = Hugh
+				}
+				1 = {
+					change_first_name = Lambert
+				}
+				1 = {
+					change_first_name = Ragnar
+				}
+				1 = {
+					change_first_name = Robert
+				}
+				1 = {
+					change_first_name = Rudolf
+				}
+				1 = {
+					change_first_name = Walter
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						culture = {
+							NOT = {
+								has_cultural_era_or_later = culture_era_late_medieval
+							}
+						}
+						has_religion = religion:christianity_religion
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Jacob
+						}
+						1 = {
+							change_first_name = Nicholas
+						}
+						1 = {
+							change_first_name = Peter
+						}
+						1 = {
+							change_first_name = Simon
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						culture = {
+							has_cultural_era_or_later = culture_era_late_medieval
+						}
+						has_religion = religion:christianity_religion
+						add = 6
+					}
+					random_list = {
+						1 = {
+							change_first_name = Daniel
+						}
+						1 = {
+							change_first_name = Martin
+						}
+						1 = {
+							change_first_name = Matthew
+						}
+						1 = {
+							change_first_name = Michael
+						}
+						1 = {
+							change_first_name = Paul
+						}
+						1 = {
+							change_first_name = Thomas
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = Adam
+						}
+						1 = {
+							change_first_name = Aegidius
+						}
+						1 = {
+							change_first_name = Florentius
+						}
+						1 = {
+							change_first_name = Philip
+						}
+						1 = {
+							change_first_name = Stephen
+						}
+					}
+				}
+				1 = {
+					change_first_name = Arnwulf
+				}
+				1 = {
+					change_first_name = Athelhard
+				}
+				1 = {
+					change_first_name = Bernhard
+				}
+				1 = {
+					change_first_name = Conrad
+				}
+				1 = {
+					change_first_name = Eberhard
+				}
+				1 = {
+					change_first_name = Egbert
+				}
+				1 = {
+					change_first_name = Engelbert
+				}
+				1 = {
+					change_first_name = Erembold
+				}
+				1 = {
+					change_first_name = Folkbert
+				}
+				1 = {
+					change_first_name = Folkhard
+				}
+				1 = {
+					change_first_name = Frank
+				}
+				1 = {
+					change_first_name = Frederick
+				}
+				1 = {
+					change_first_name = Gerald
+				}
+				1 = {
+					change_first_name = Gerulf
+				}
+				1 = {
+					change_first_name = Gottschalk
+				}
+				1 = {
+					change_first_name = Hubert
+				}
+				1 = {
+					change_first_name = Liudbert
+				}
+				1 = {
+					change_first_name = Ludolf
+				}
+				1 = {
+					change_first_name = Oliver
+				}
+				1 = {
+					change_first_name = Otto
+				}
+				1 = {
+					change_first_name = Ragnvald
+				}
+				1 = {
+					change_first_name = Razo
+				}
+				1 = {
+					change_first_name = Reginbald
+				}
+				1 = {
+					change_first_name = Reginfrid
+				}
+				1 = {
+					change_first_name = Reginhard
+				}
+				1 = {
+					change_first_name = Ricward
+				}
+				1 = {
+					change_first_name = Roger
+				}
+				1 = {
+					change_first_name = Sigher
+				}
+				1 = {
+					change_first_name = Theobald
+				}
+				1 = {
+					change_first_name = Tieleman
+				}
+				1 = {
+					change_first_name = Wernbald
+				}
+				1 = {
+					change_first_name = Wolfhard
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						NOT = {
+							location.duchy ?= title:d_flanders
+						}
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = Eustace
+				}
+				0 = {
+					modifier = {
+						culture = {
+							NOT = {
+								has_cultural_era_or_later = culture_era_late_medieval
+							}
+						}
+						has_religion = religion:christianity_religion
+						add = 6
+					}
+					random_list = {
+						1 = {
+							change_first_name = Daniel
+						}
+						1 = {
+							change_first_name = Martin
+						}
+						1 = {
+							change_first_name = Matthew
+						}
+						1 = {
+							change_first_name = Michael
+						}
+						1 = {
+							change_first_name = Paul
+						}
+						1 = {
+							change_first_name = Thomas
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Bartholomew
+						}
+						1 = {
+							change_first_name = Christian
+						}
+						1 = {
+							change_first_name = Laurence
+						}
+						1 = {
+							change_first_name = Maurice
+						}
+					}
+				}
+				1 = {
+					change_first_name = Adelbero
+				}
+				1 = {
+					change_first_name = Adolf
+				}
+				1 = {
+					change_first_name = Alfric
+				}
+				1 = {
+					change_first_name = Alvin
+				}
+				1 = {
+					change_first_name = Anselm
+				}
+				1 = {
+					change_first_name = Ansfrid
+				}
+				1 = {
+					change_first_name = Athelbald
+				}
+				1 = {
+					change_first_name = Athelhelm
+				}
+				1 = {
+					change_first_name = Baldric
+				}
+				1 = {
+					change_first_name = Berthold
+				}
+				1 = {
+					change_first_name = Bertwulf
+				}
+				1 = {
+					change_first_name = Bruno
+				}
+				1 = {
+					change_first_name = Burchard
+				}
+				1 = {
+					change_first_name = Charles
+				}
+				1 = {
+					change_first_name = Cuno
+				}
+				1 = {
+					change_first_name = Edgar
+				}
+				1 = {
+					change_first_name = Eghard
+				}
+				1 = {
+					change_first_name = Eogan
+				}
+				1 = {
+					change_first_name = Erhard
+				}
+				1 = {
+					change_first_name = Fastrad
+				}
+				1 = {
+					change_first_name = Folkwin
+				}
+				1 = {
+					change_first_name = Gebhard
+				}
+				1 = {
+					change_first_name = Gerbert
+				}
+				1 = {
+					change_first_name = Gerbrand
+				}
+				1 = {
+					change_first_name = Gerlac
+				}
+				1 = {
+					change_first_name = Godhard
+				}
+				1 = {
+					change_first_name = Godric
+				}
+				1 = {
+					change_first_name = Godward
+				}
+				1 = {
+					change_first_name = Guy
+				}
+				1 = {
+					change_first_name = Hatto
+				}
+				1 = {
+					change_first_name = IJsebrand
+				}
+				1 = {
+					change_first_name = Immo
+				}
+				1 = {
+					change_first_name = Ingram
+				}
+				1 = {
+					change_first_name = Louis
+				}
+				1 = {
+					change_first_name = Meinhard
+				}
+				1 = {
+					change_first_name = Poppo
+				}
+				1 = {
+					change_first_name = Radbod
+				}
+				1 = {
+					change_first_name = Reginbert
+				}
+				1 = {
+					change_first_name = Richard
+				}
+				1 = {
+					change_first_name = Sigbert
+				}
+				1 = {
+					change_first_name = Sigfried
+				}
+				1 = {
+					change_first_name = Sighard
+				}
+				1 = {
+					change_first_name = Thankhard
+				}
+				1 = {
+					change_first_name = Udalric
+				}
+				1 = {
+					change_first_name = Waldger
+				}
+				1 = {
+					change_first_name = Walram
+				}
+				1 = {
+					change_first_name = Wenemar
+				}
+				1 = {
+					change_first_name = Werner
+				}
+				1 = {
+					change_first_name = Widuric
+				}
+				1 = {
+					change_first_name = Wigbald
+				}
+				1 = {
+					change_first_name = Wigher
+				}
+				1 = {
+					change_first_name = Wigman
+				}
+				1 = {
+					change_first_name = Wigric
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = Anthony
+						}
+						1 = {
+							change_first_name = Augustine
+						}
+						1 = {
+							change_first_name = Emilian
+						}
+						1 = {
+							change_first_name = George
+						}
+						1 = {
+							change_first_name = Leo
+						}
+					}
+				}
+				1 = {
+					change_first_name = Alexander
+				}
+				1 = {
+					change_first_name = Amalric
+				}
+				1 = {
+					change_first_name = Athelgar
+				}
+				1 = {
+					change_first_name = Athelvald
+				}
+				1 = {
+					change_first_name = Bertram
+				}
+				1 = {
+					change_first_name = Berwald
+				}
+				1 = {
+					change_first_name = Boson
+				}
+				1 = {
+					change_first_name = Bovo
+				}
+				1 = {
+					change_first_name = Dodo
+				}
+				1 = {
+					change_first_name = Eberhelm
+				}
+				1 = {
+					change_first_name = Eberwin
+				}
+				1 = {
+					change_first_name = Erenfrid
+				}
+				1 = {
+					change_first_name = Ernest
+				}
+				1 = {
+					change_first_name = Folkmar
+				}
+				1 = {
+					change_first_name = Fridbert
+				}
+				1 = {
+					change_first_name = Fridhard
+				}
+				1 = {
+					change_first_name = Gerbod
+				}
+				1 = {
+					change_first_name = Geric
+				}
+				1 = {
+					change_first_name = Godbald
+				}
+				1 = {
+					change_first_name = Godbert
+				}
+				1 = {
+					change_first_name = Gozelo
+				}
+				1 = {
+					change_first_name = Gunther
+				}
+				1 = {
+					change_first_name = Hardwin
+				}
+				1 = {
+					change_first_name = Harold
+				}
+				1 = {
+					change_first_name = Hartbern
+				}
+				1 = {
+					change_first_name = Herbert
+				}
+				1 = {
+					change_first_name = Herbrand
+				}
+				1 = {
+					change_first_name = Hildebald
+				}
+				1 = {
+					change_first_name = Joscelin
+				}
+				1 = {
+					change_first_name = Meginher
+				}
+				1 = {
+					change_first_name = Meingod
+				}
+				1 = {
+					change_first_name = Radulf
+				}
+				1 = {
+					change_first_name = Reginbrand
+				}
+				1 = {
+					change_first_name = Reginger
+				}
+				1 = {
+					change_first_name = Regingod
+				}
+				1 = {
+					change_first_name = Richer
+				}
+				1 = {
+					change_first_name = Ricwald
+				}
+				1 = {
+					change_first_name = Sigbrand
+				}
+				1 = {
+					change_first_name = Wigbert
+				}
+				1 = {
+					change_first_name = Wighard
+				}
+				1 = {
+					change_first_name = Wulfram
+				}
+				1 = {
+					change_first_name = Zweder
+				}
+			}
+		}
+	}
+}
+dutch_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				exists = mother.mother
+				NOT = {
+					has_trait = bastard
+					mother = {
+						has_character_flag = mother_mother_name
+					}
+				}
+				add = 40 #freq
+			}
+			mother.mother = {
+				save_scope_as = the_lady
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = mother_mother_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					OR = {
+						has_character_flag = mother_mother_name
+						NOT = {
+							exists = mother
+						}
+					}
+					NOT = {
+						has_character_flag = mother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 20 #common
+			}
+			mother = {
+				save_scope_as = the_lady
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = mother_name
+			}
+		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			father = {
+				add_character_flag = sister_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 5 #uncommon /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = sister_name
+			}
+		}
+		0 = {
+			modifier = {
+				culture = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+				has_religion = religion:christianity_religion
+				add = 40
+			}
+			random_list = {
+				1 = {
+					change_first_name = Catherine
+				}
+				1 = {
+					change_first_name = Elisabeth
+				}
+				1 = {
+					change_first_name = Margaret
+				}
+				1 = {
+					change_first_name = Mary
+				}
+			}
+		}
+		30 = {
+			random_list = {
+				0 = {
+					modifier = {
+						culture = {
+							NOT = {
+								has_cultural_era_or_later = culture_era_late_medieva}
+						}
+						has_religion = religion:christianity_religion
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Catherine
+						}
+						1 = {
+							change_first_name = Elisabeth
+						}
+						1 = {
+							change_first_name = Margaret
+						}
+					}
+				}
+				1 = {
+					change_first_name = Adelheid
+				}
+				1 = {
+					change_first_name = Bertha
+				}
+				1 = {
+					change_first_name = Gertrude
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						culture = {
+							NOT = {
+								has_cultural_era_or_later = culture_era_late_medieval
+							}
+						}
+						has_religion = religion:christianity_religion
+						add = 1
+					}
+					change_first_name = Mary
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 9
+					}
+					random_list = {
+						1 = {
+							change_first_name = Agatha
+						}
+						1 = {
+							change_first_name = Agnes
+						}
+						1 = {
+							change_first_name = Anna
+						}
+						1 = {
+							change_first_name = Beatris
+						}
+						1 = {
+							change_first_name = Ghele
+						}
+						1 = {
+							change_first_name = Isabel
+						}
+						1 = {
+							change_first_name = Joanna
+						}
+						1 = {
+							change_first_name = Magdalena
+						}
+						1 = {
+							change_first_name = Sophia
+						}
+					}
+				}
+				1 = {
+					change_first_name = Adela
+				}
+				1 = {
+					change_first_name = Ava
+				}
+				1 = {
+					change_first_name = Avesoete
+				}
+				1 = {
+					change_first_name = Berthild
+				}
+				1 = {
+					change_first_name = Eadgifu
+				}
+				1 = {
+					change_first_name = Emma
+				}
+				1 = {
+					change_first_name = Ermengard
+				}
+				1 = {
+					change_first_name = Gisela
+				}
+				1 = {
+					change_first_name = Heila
+				}
+				1 = {
+					change_first_name = Heilesoete
+				}
+				1 = {
+					change_first_name = Heilewijf
+				}
+				1 = {
+					change_first_name = Heilswith
+				}
+				1 = {
+					change_first_name = Heilwig
+				}
+				1 = {
+					change_first_name = Hildegard
+				}
+				1 = {
+					change_first_name = Ida
+				}
+				1 = {
+					change_first_name = Immesoete
+				}
+				1 = {
+					change_first_name = Judith
+				}
+				1 = {
+					change_first_name = Liutgard
+				}
+				1 = {
+					change_first_name = Mabel
+				}
+				1 = {
+					change_first_name = Magin
+				}
+				1 = {
+					change_first_name = Matilda
+				}
+				1 = {
+					change_first_name = Oda
+				}
+				1 = {
+					change_first_name = Odilia
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = Christina
+						}
+						1 = {
+							change_first_name = Martha
+						}
+						1 = {
+							change_first_name = Petronilla
+						}
+						1 = {
+							change_first_name = Sibyl
+						}
+						1 = {
+							change_first_name = Yolanda
+						}
+					}
+				}
+				1 = {
+					change_first_name = Alberada
+				}
+				1 = {
+					change_first_name = Amalburg
+				}
+				1 = {
+					change_first_name = Clementia
+				}
+				1 = {
+					change_first_name = Cunigund
+				}
+				1 = {
+					change_first_name = Ebergard
+				}
+				1 = {
+					change_first_name = Ermentrude
+				}
+				1 = {
+					change_first_name = Ermesind
+				}
+				1 = {
+					change_first_name = Frideswith
+				}
+				1 = {
+					change_first_name = Godhild
+				}
+				1 = {
+					change_first_name = Hadewijf
+				}
+				1 = {
+					change_first_name = Hedwig
+				}
+				1 = {
+					change_first_name = Heloise
+				}
+				1 = {
+					change_first_name = Hildegund
+				}
+				1 = {
+					change_first_name = Meginswith
+				}
+				1 = {
+					change_first_name = Regingard
+				}
+				1 = {
+					change_first_name = Reginswith
+				}
+				1 = {
+					change_first_name = Reinwijf
+				}
+				1 = {
+					change_first_name = Richild
+				}
+				1 = {
+					change_first_name = Richiza
+				}
+				1 = {
+					change_first_name = Riclind
+				}
+				1 = {
+					change_first_name = Sigeburg
+				}
+				1 = {
+					change_first_name = Soete
+				}
+				1 = {
+					change_first_name = Swane
+				}
+				1 = {
+					change_first_name = Wandelmode
+				}
+				1 = {
+					change_first_name = Wulfgard
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Cecilia
+						}
+						1 = {
+							change_first_name = Helen
+						}
+						1 = {
+							change_first_name = Lucia
+						}
+						1 = {
+							change_first_name = Sara
+						}
+					}
+				}
+				1 = {
+					change_first_name = Adelina
+				}
+				1 = {
+					change_first_name = Alice
+				}
+				1 = {
+					change_first_name = Bertrada
+				}
+				1 = {
+					change_first_name = Dierwijf
+				}
+				1 = {
+					change_first_name = Erlinda
+				}
+				1 = {
+					change_first_name = Gerberge
+				}
+				1 = {
+					change_first_name = Gundrada
+				}
+				1 = {
+					change_first_name = Hereswith
+				}
+				1 = {
+					change_first_name = Lietwif
+				}
+				1 = {
+					change_first_name = Liuthild
+				}
+				1 = {
+					change_first_name = Marsoete
+				}
+				1 = {
+					change_first_name = Odelinde
+				}
+				1 = {
+					change_first_name = Richarda
+				}
+				1 = {
+					change_first_name = Swanhild
+				}
+				1 = {
+					change_first_name = Wandegisl
+				}
+				1 = {
+					change_first_name = Wilburg
+				}
+				1 = {
+					change_first_name = Wilgard
+				}
+			}
+		}
+	}
+}

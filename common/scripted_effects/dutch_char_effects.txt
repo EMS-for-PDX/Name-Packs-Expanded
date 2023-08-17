@@ -1,0 +1,134 @@
+
+867_dutch_char_effect = {
+    add_to_global_variable_list = { name = name_pack_support_global target = character:167706 }
+	character:167788.dynasty = { #Teisterbant
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167788 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167789 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168213 }
+	}
+	character:7815.dynasty = { #Reginar
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7815 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7812 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:144994 }
+	}
+	character:167701.dynasty = { #Folcwaldings
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:31060 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167701 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167703 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168629 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:106551 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167702 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168628 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167705 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168627 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:167704 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168314 }
+	}
+	character:90109.dynasty = { #Flanders/Baldwins
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:90109 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168235 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:90108 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168236 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168237 }
+	}
+	character:168237 = {
+		change_first_name = Gunnhild
+	}
+	character:90108 = {
+		change_first_name = Baldwin
+	}
+	character:168235 = {
+		change_first_name = Charles
+	}
+	character:90109 = {
+		change_first_name = Baldwin
+		#Nick Iron Arm
+		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
+		dynasty_effect_ne = yes
+	}
+	character:167704 = {
+		change_first_name = Gunther
+	}
+	character:168628 = {
+		change_first_name = Radbod
+	}
+	character:167702 = {
+		change_first_name = Theodoric
+	}
+	character:106551 = {
+		change_first_name = Theodoric
+	}
+	character:168629 = {
+		change_first_name = Adela
+	}
+	character:167703 = {
+		change_first_name = Gerhard
+	}
+	character:167701 = {
+		house_effect_ne = yes
+	}
+	character:144994 = {
+		change_first_name = Albert #More likely actual name
+	}
+	character:7812 = {
+		change_first_name = Ragnar
+		#Add Nickname "LongNeck"
+		dynasty_effect_ne = yes
+	}
+	character:167788 = {
+		change_first_name = Ansfrid
+		dynasty_effect_ne = yes
+	}
+	character:167706 = {
+		change_first_name = Athelbald
+	}
+}
+1066_dutch_char_effect = {
+	character:30055.dynasty = { #Flamens
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:30055 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:30053 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:106530 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:106542 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:41718 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:41720 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:41719 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:106540 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:106544 }
+	}
+	character:90109.dynasty = { #Flanders/Baldwins
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:358 }
+		add_to_variable_list = { name = dynasty_march target = character:90109 }
+		add_to_variable_list = { name = dynasty_march target = character:90108 }
+	}
+	character:358 = {
+		change_first_name = Arnwulf
+	}
+	character:106544 = {
+		change_first_name = Goswin
+	}
+	character:106540 = {
+		change_first_name = Theodoric
+	}
+	character:41719 = {
+		change_first_name = Henry
+	}
+	character:41720 = {
+		change_first_name = Gerhard
+	}
+	character:41718 = {
+		change_first_name = Gerhard
+	}
+	character:106542 = {
+		change_first_name = Gerhard
+	}
+	character:106530 = {
+		change_first_name = William
+	}
+	character:30053 = {
+		change_first_name = Gerhard
+	}
+	character:30055 = {
+		change_first_name = Roger
+		dynasty_effect_ne = yes
+	}
+}
