@@ -1337,13 +1337,10 @@ CharacterGov = {
         trigger = {
             OR = {
                 has_government = theocracy_government
-                AND = {
-                    exists = dynasty
-                    dynasty = {
-                        any_in_list = {
-                            variable = dynasty_theocrats
-                            this = root
-                        }
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_theocrats
+                        this = root
                     }
                 }
             }
@@ -1358,13 +1355,10 @@ CharacterGov = {
                 #    exists = global_var:KoH_is_loaded
                 #    has_government = holy_order_county_government
                 #}
-                AND = {
-                    exists = dynasty
-                    dynasty = {
-                        any_in_list = {
-                            variable = dynasty_HO
-                            this = root
-                        }
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_HO
+                        this = root
                     }
                 }
             }
@@ -1383,12 +1377,10 @@ CharacterGov = {
                         }
                     }
                 }
-                AND = {
-                    dynasty ?= {
-                        any_in_list = {
-                            variable = dynasty_byzantine
-                            this = root
-                        }
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_byzantine
+                        this = root
                     }
                 }
                 any_spouse = {
@@ -1439,6 +1431,13 @@ CharacterGov = {
         trigger = {
             OR = {
                 has_government = feudal_government
+                has_government = clan_government
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_feudalclan
+                        this = root
+                    }
+                }
                 any_spouse = {
                     even_if_dead = yes
                     save_temporary_scope_as = the_spouse
@@ -1475,6 +1474,12 @@ CharacterGov = {
         trigger = {
             OR = {
                 has_government = tribal_government
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_tribal
+                        this = root
+                    }
+                }
                 any_spouse = {
                     even_if_dead = yes
                     save_temporary_scope_as = the_spouse
@@ -1512,7 +1517,7 @@ CharacterGov = {
                 dynasty ?= {
                     any_in_list = {
                         variable = dynasty_repub
-                        this = root.mother
+                        this = root
                     }
                 }
             }
@@ -1526,7 +1531,7 @@ CharacterGov = {
                 dynasty ?= {
                     any_in_list = {
                         variable = dynasty_merc
-                        this = root.mother
+                        this = root
                     }
                 }
             }
@@ -1541,6 +1546,14 @@ CharacterGov = {
 CharacterCulture = {
     type = character
     log_loc_errors = no
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_saxon
+			}
+		}
+		localization_key = _saxon
+	}
 	text = {
 		trigger = {
 			culture = {
