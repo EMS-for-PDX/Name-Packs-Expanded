@@ -75,8 +75,10 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_west_germanic
+				OR = {
+					has_cultural_pillar = heritage_north_germanic
+					has_cultural_pillar = heritage_west_germanic
+				}
 			}
 		}
 		localization_key = Title_As_Name_North
@@ -271,8 +273,10 @@ TitleAsNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_west_germanic
+				OR = {
+					has_cultural_pillar = heritage_north_germanic
+					has_cultural_pillar = heritage_west_germanic
+				}
 			}
 		}
 		localization_key = Title_As_Name_No_Tooltip_North
@@ -419,8 +423,10 @@ TitleTierName = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_west_germanic
+				OR = {
+					has_cultural_pillar = heritage_north_germanic
+					has_cultural_pillar = heritage_west_germanic
+				}
 			}
 		}
 		localization_key = Title_Tier_Name_North
@@ -567,8 +573,10 @@ TitleTierNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_west_germanic
+				OR = {
+					has_cultural_pillar = heritage_north_germanic
+					has_cultural_pillar = heritage_west_germanic
+				}
 			}
 		}
 		localization_key = Title_Tier_Name_Possessive_North

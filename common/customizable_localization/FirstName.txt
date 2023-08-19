@@ -282,8 +282,10 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_west_germanic
+				OR = {
+					has_cultural_pillar = heritage_north_germanic
+					has_cultural_pillar = heritage_west_germanic
+				}
 			}
 		}
 		localization_key = First_Name_North
@@ -716,8 +718,10 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_west_germanic
+				OR = {
+					has_cultural_pillar = heritage_north_germanic
+					has_cultural_pillar = heritage_west_germanic
+				}
 			}
 		}
 		localization_key = First_Name_No_Tooltip_North
@@ -1146,8 +1150,10 @@ FirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_west_germanic
+				OR = {
+					has_cultural_pillar = heritage_north_germanic
+					has_cultural_pillar = heritage_west_germanic
+				}
 			}
 		}
 		localization_key = First_Name_Possessive_North
@@ -1576,8 +1582,10 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_west_germanic
+				OR = {
+					has_cultural_pillar = heritage_north_germanic
+					has_cultural_pillar = heritage_west_germanic
+				}
 			}
 		}
 		localization_key = First_Name_Possessive_No_Tooltip_North
@@ -2006,8 +2014,10 @@ FirstNameNicknamed = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_west_germanic
+				OR = {
+					has_cultural_pillar = heritage_north_germanic
+					has_cultural_pillar = heritage_west_germanic
+				}
 			}
 		}
 		localization_key = First_Name_North
