@@ -132,6 +132,8 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:200142 } #Aleram
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:91122 } #Waldrade
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:303423 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:200142 }
+		add_to_variable_list = { name = dynasty_march target = character:200142 }
 	}
 	character:163060.dynasty = { #Vasconia
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:163060 }
@@ -199,6 +201,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168135 } #Adalelm
 		add_to_variable_list = { name = dynasty_feudalclan target = character:163063 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:73784 }
+		add_to_variable_list = { name = dynasty_march target = character:163063 }
 	}
 	character:168027.dynasty = { #Rorgonids
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:91503 }
@@ -251,6 +254,7 @@
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:6447 } Regelinda
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6442 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:6440 }
+		add_to_variable_list = { name = dynasty_march target = character:6440 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:91005 }
 	}
 	character:303408.dynasty = { #Bissy fake
@@ -523,6 +527,25 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168082 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:7976 }
 	}
+	character:200141.dynasty = { #Ramponing
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:200141 } Rampon
+		add_to_variable_list = { name = dynasty_feudalclan target = character:200141 }
+		add_to_variable_list = { name = dynasty_march target = character:200141 }
+	}
+	character:200144.dynasty = { #Saissac
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:200144 } Isembard
+		add_to_variable_list = { name = dynasty_feudalclan target = character:200144 }
+		add_to_variable_list = { name = dynasty_march target = character:200144 }
+	}
+	character:168027 = {
+		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
+	}
+	character:200141 = {
+		#dynasty_effect_ne
+	}
+	#character:6440 = {
+		#Nick Strong
+	#}
 	character:144999 = {
 		change_first_name = Carloman
 	}
@@ -1970,6 +1993,9 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:7561 }
 		add_to_variable_list = { name = dynasty_independent target = character:167000 }
 		add_to_variable_list = { name = dynasty_independent target = character:7923 }
+		add_to_variable_list = { name = dynasty_march target = character:7925 }
+		add_to_variable_list = { name = dynasty_march target = character:7924 }
+		add_to_variable_list = { name = dynasty_march target = character:7980 }
 	}
 	character:168059.dynasty = { #Anjou
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:127009 }
@@ -2619,6 +2645,7 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:168167 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:168168 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:1164 }
+		add_to_variable_list = { name = dynasty_march target = character:168167 }
 	}
 	character:161385.dynasty = { #Coucy
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:161385 }
@@ -2670,6 +2697,9 @@
 	character:91149.dynasty = { #Chalon
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:91149 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:205691 }
+	}
+	character:420 = {
+		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
 	}
 	character:npedbfrench047 = {
 		dynasty_effect_ne = yes

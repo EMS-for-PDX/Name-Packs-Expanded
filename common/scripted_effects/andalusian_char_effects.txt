@@ -550,6 +550,9 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73951 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73950 }
     }
+    character:levantine0008 = {
+		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
+    }
     character:73951 = {
         change_first_name = Abd-Allah
     }
@@ -580,6 +583,7 @@
     }
     character:73931 = {
         dynasty_effect_ne = yes
+		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
     }
     character:73887 = {
         change_first_name = Shajar

@@ -325,8 +325,14 @@
 	#character:155116.dynasty = { #Imegrawen
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:155116 } Khazer
 	#}
+	character:danis0005.dynasty = 
+	add_to_variable_list = { name = name_pack_support_dynasty target = character:163094 }
+}
 	character:163094.dynasty = { # Sawdanids
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:163094 }
+	}
+	character:danis0005.dynasty = {
+		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
 	}
 	character:163094 ={
 		dynasty_effect_ne = yes

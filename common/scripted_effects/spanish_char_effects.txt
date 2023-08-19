@@ -57,6 +57,10 @@
         add_to_variable_list = { name = dynasty_independent target = character:70015 }
         add_to_variable_list = { name = dynasty_independent target = character:70003 }
         add_to_variable_list = { name = dynasty_independent target = character:70020 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:142006 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:142005 }
+        add_to_variable_list = { name = dynasty_march target = character:142005 }
+        add_to_variable_list = { name = dynasty_march target = character:142006 }
     }
 	character:200215.dynasty = { #Burgusid
         add_to_variable_list = { name = name_pack_support_dynasty target = character:200215 }
@@ -172,6 +176,7 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73815 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73813 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:73812 }
+        add_to_variable_list = { name = dynasty_march target = character:73812 }
     }
 	character:visigothic0006.dynasty = { #Barcelona
         #add_to_variable_list = { name = name_pack_support_dynasty target = character:visigothic0006 } Borell
@@ -186,6 +191,8 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73999 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73995 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0081 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:73785 }
+        add_to_variable_list = { name = dynasty_march target = character:73785 }
     }
 	character:visigothic0022.dynasty = { #Empuries
         add_to_variable_list = { name = name_pack_support_dynasty target = character:visigothic0022 }
@@ -1739,6 +1746,9 @@
         add_to_variable_list = { name = dynasty_feudalclan target = character:109601 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:109603 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:109604 }
+        add_to_variable_list = { name = dynasty_march target = character:109601 }
+        add_to_variable_list = { name = dynasty_march target = character:109603 }
+        add_to_variable_list = { name = dynasty_march target = character:109604 }
     }
 	character:70249.dynasty = { #Mendes
         add_to_variable_list = { name = name_pack_support_dynasty target = character:109622 }
@@ -1773,6 +1783,11 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:109620 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:109622 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:108591 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:70249 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:109620 }
+        add_to_variable_list = { name = dynasty_march target = character:109622 }
+        add_to_variable_list = { name = dynasty_march target = character:109620 }
+        add_to_variable_list = { name = dynasty_march target = character:70249 }
     }
 	character:73857.dynasty = { #Menedez
         add_to_variable_list = { name = name_pack_support_dynasty target = character:menendez.0003 }
@@ -2307,6 +2322,9 @@
 	character:70136.dynasty = { #Estella
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:70136 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:106019 }
+	}
+	character:109607 = {
+		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
 	}
 	character:107660 = {
 		give_nickname = nick_the_lawgiver

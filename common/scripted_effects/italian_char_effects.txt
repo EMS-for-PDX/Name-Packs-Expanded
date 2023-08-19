@@ -105,6 +105,8 @@
 	}
 	character:167806.dynasty = { #Friuli
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:167806 } #Vilfredo
+		add_to_variable_list = { name = dynasty_feudalclan target = character:167806 }
+		add_to_variable_list = { name = dynasty_march target = character:167806 }
 	}
 	character:167975.dynasty = { #Milano
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:167975 }
@@ -430,6 +432,8 @@
         add_to_variable_list = { name = dynasty_feudalclan target = character:7758 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:7926 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:260622 }
+        add_to_variable_list = { name = dynasty_march target = character:7758 }
+        add_to_variable_list = { name = dynasty_march target = character:7756 }
 	}
 	character:190544.dynasty = { #Bosonids of Italy
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:190544 }
@@ -578,6 +582,7 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:167982 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:167981 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:167976 }
+		add_to_variable_list = { name = dynasty_march target = character:167987 }
 	}
 	character:70631.dynasty = { #Massa
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70631 }
@@ -920,6 +925,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:180254 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:180255 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:180251 }
+		add_to_variable_list = { name = dynasty_march target = character:180251 }
 	}
 	character:167955.dynasty = { #Ardoinici
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:167953 }
@@ -1034,6 +1040,9 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:cisalpine0236 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:cisalpine0237 } 
 	}
+    character:7757 = {
+		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
+    }
     character:496 = {
         change_first_name = Otto
     }
