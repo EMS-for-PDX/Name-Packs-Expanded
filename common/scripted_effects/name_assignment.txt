@@ -245,6 +245,24 @@
 			}
 			0 = {
 				modifier = {
+					father ?= {
+						exists = house.var:Otakar
+						NOT = {
+							has_character_flag = u_got_otakard
+						}
+					}
+					add = 1000
+				}
+				change_first_name = Odovacer
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = root }
+				}
+				father = {
+					add_character_flag = u_got_otakard
+				}
+			}
+			0 = {
+				modifier = {
 					culture = {
 						has_name_list = name_list_alan
 					}
