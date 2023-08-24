@@ -101,6 +101,7 @@ on_1066_start = {
 		1066_mashriqi_char_effect = yes
 		1066_persian_char_effect = yes
 		1066_egyptian_char_effect = yes
+		1066_bedouin_char_effect = yes
 		1066_khazar_char_effect = yes
 		1066_kipchak_char_effect = yes
 		1066_karluk_effect = yes
@@ -204,7 +205,20 @@ courtier_effect = {
 			limit = {
 				save_temporary_scope_as = thebarontemp
 				highest_held_title_tier = tier_barony
-				is_lowborn = no
+				OR = {
+					AND = {
+						is_lowborn = yes
+						is_landed = yes
+						has_government = republican_government
+					}
+					NAND = {
+						is_lowborn = no
+						OR = {
+							exists = father
+							exists = mother #Should exclude historical characters with ancestors while letting rando barons get names
+						}
+					}
+				}
 				culture = {
 					is_npe_supported_culture = yes
 				}
@@ -241,6 +255,32 @@ courtier_effect = {
 				}
 				remove_global_variable = temp_head
 			}
+		}
+		every_living_character = {
+			limit = {
+				save_temporary_scope_as = themerctemp
+				has_government = mercenary_government
+				OR = {
+					is_lowborn = yes
+					NAND = {
+						is_lowborn = no
+						OR = {
+							exists = father
+							exists = mother
+						}
+					}
+				}
+				culture = {
+					is_npe_supported_culture = yes
+				}
+				NOT = {
+					any_in_global_list = {
+						variable = name_pack_support_global
+						this = scope:themerctemp
+					}
+				}
+			}
+			name_gen_effect = yes
 		}
 	}
 }
