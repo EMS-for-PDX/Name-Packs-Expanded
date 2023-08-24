@@ -997,7 +997,7 @@
     text = {
         trigger = {
             highest_held_title_tier = tier_county
-            top_liege = {
+            top_liege ?= {
                 culture = {
                     has_cultural_pillar = language_anglic
                 }
@@ -1037,7 +1037,7 @@
                     highest_held_title_tier = tier_county
                     OR = {
                         AND = {
-                            top_liege = {
+                            top_liege ?= {
                                 culture = {
                                     has_cultural_pillar = language_anglic
                                 }
@@ -1061,7 +1061,7 @@
                     highest_held_title_tier = tier_county
                     OR = {
                         AND = {
-                            top_liege = {
+                            top_liege ?= {
                                 culture = {
                                     has_cultural_pillar = language_anglic
                                 }
@@ -2081,6 +2081,10 @@ CharacterCulture = {
 			culture = {
                 OR = {
                     has_cultural_pillar = language_iranian
+					AND = {
+						has_cultural_pillar = language_scythian
+						has_name_list = name_list_afghan
+						}
                     AND = {
                         exists = global_var:CE_is_loaded
                         OR = {
