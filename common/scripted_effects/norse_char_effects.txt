@@ -145,6 +145,13 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6867 }
 		add_to_variable_list = { name = dynasty_independent target = character:6866 }
 	}
+	character:40605.dynasty = { #Rurikovich
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40605 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40606 }
+	}
+	character:40606 = {
+		dynasty_effect_ne = yes
+	}
 	character:6867 = {
 		change_first_name = Hekja
 	}
