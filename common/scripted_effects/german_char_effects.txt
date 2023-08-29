@@ -687,6 +687,7 @@
     add_to_global_variable_list = { name = name_pack_support_global target = character:fox_4 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:20312 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:20259 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:33109 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:1318 }
 	character:1416.dynasty = { #Billung
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:1416 }
@@ -1039,6 +1040,141 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:33464 }
 		add_to_variable_list = { name = dynasty_march target = character:33464 }
 	}
+	character:161471.dynasty = { #Etichonen
+		#Zahringer
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1610 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:10087 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20245 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1611 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:70611 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:10088 }
+		#Habsburg
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:11006 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20289 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:11010 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:11011 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:11006 }
+		#Hupoldinger
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7642 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7641 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7640 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40570 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20286 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:33612 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20213 }
+	}
+	character:20287.dynasty = { #Lenzburg
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20287 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40702 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40700 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40701 }
+	}
+	character:20287.dynasty = { #Hohenzollern
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40550 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:212395 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:40550 }
+	}
+	character:30750.dynasty = { #Hohenstaufen
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:30750 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:30751 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7053 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7054 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131706 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131705 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131709 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131708 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131707 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:30750 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:30751 }
+	}
+	character:20240.dynasty = { #Calw
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20240 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20237 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:70619 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:70613 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7589 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7592 }
+	}
+	character:70825.dynasty = { #Beilstein
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:70825 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:7702 }
+	}
+	character:260055.dynasty = { #Abensberg
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:260055 }
+	}
+	character:70825 = {
+		dynasty_effect_ne = yes
+	}
+	character:260055 = {
+		dynasty_effect_ne = yes
+	}
+	character:31513 = {
+		change_first_name = Theobald
+	}
+	character:33109 = {
+		change_first_name = Odo
+	}
+	character:20240 = {
+		change_first_name = Albert
+	}
+	character:20237 = {
+		change_first_name = Albert
+	}
+	character:7589 = {
+		change_first_name = Albert
+	}
+	character:7592 = {
+		change_first_name = Godfrey
+	}
+	character:30750 = {
+		change_first_name = Frederick
+	}
+	character:30751 = {
+		change_first_name = Frederick
+	}
+	character:7054 = {
+		change_first_name = Frederick
+	}
+	character:131706 = {
+		change_first_name = Louis
+	}
+	character:131708 = {
+		change_first_name = Conrad
+	}
+	character:131707 = {
+		change_first_name = Walter
+	}
+	character:212395 = {
+		change_first_name = Frederick
+	}
+	character:7642 = {
+		change_first_name = Hubald
+		house_effect_ne = yes
+	}
+	character:7640 = {
+		change_first_name = Hubald
+	}
+	character:40570 = {
+		change_first_name = Hubald
+	}
+	character:20286 = {
+		change_first_name = Hardman
+	}
+	character:20213 = {
+		change_first_name = Heilwig
+	}
+	character:11006 = {
+		change_first_name = Radbod
+	}
+	character:10088 = {
+		change_first_name = Liutgard
+	}
+	character:70611 = {
+		change_first_name = Richiza
+	}
+	character:10087 = {
+		change_first_name = Herman
+	}
 	character:1435 = {
 		change_first_name = Helga
 	}
@@ -1119,6 +1255,7 @@
 	}
 	character:31524 = {
 		change_first_name = Radbod
+		dynasty_effect_ne = yes
 	}
 	character:212388 = {
 		change_first_name = Conrad
