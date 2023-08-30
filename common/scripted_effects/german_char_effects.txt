@@ -814,7 +814,7 @@
 	}
 	character:20269.dynasty = { #Askanien
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20269 }
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:20267 } Esiko Founder
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20267 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20266 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20271 }
 	}
@@ -1245,6 +1245,9 @@
 	character:260016.dynasty = { #Steyer
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:260016 }
 	}
+	character:33175.dynasty = { #Berg
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:33175 }
+	}
 	character:260007.dynasty = { #Polheim
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:260007 }
 	}
@@ -1276,6 +1279,7 @@
 	}
 	character:20233.dynasty = { #Ludovinger
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20233 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20234 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20231 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:33372 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20229 }
@@ -1299,6 +1303,10 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:10082 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:106512 }
 	}
+	character:33175 = {
+		change_first_name = Athelwulf
+		dynasty_effect_ne = yes
+	}
 	character:30248 = {
 		change_first_name = Theodoric
 	}
@@ -1312,7 +1320,6 @@
 		change_first_name = Egbert
 	}
 	character:10082 = {
-		change_first_name = Egbert
 		house_effect_ne = yes
 	}
 	character:20233 = {
