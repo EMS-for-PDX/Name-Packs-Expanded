@@ -58,7 +58,7 @@
  artifact_pedestal_religious_head_letter_name: "Letter from [compliment_receiver.Custom('TitledFirstNameNoTooltip')]"
  artifact_pedestal_religious_head_letter_description: "It reads: "$learning_theology.3022.desc$"\n\nThe letter is dedicated to [letter_receiver.Custom('TitledFirstName')], and signed by [compliment_receiver.Custom('TitledFirstName')]."
 
- artifact_pedestal_human_skull_name: "[killed.Custom('TitledFirstName')PossessiveNoTooltip] Skull"
+ artifact_pedestal_human_skull_name: "[killed.Custom('TitledFirstNamePossessiveNoTooltip')] Skull"
  artifact_pedestal_human_skull_description: "A clean and perfectly preserved human skull belonging to [killed.Custom('TitledFirstNameNoTooltip')], killed by [owner.Custom('TitledFirstNameNoTooltip')]."
  artifact_pedestal_human_skull_specific_description: "A clean and perfectly preserved human skull belonging to [killed.GetFullName]. Allegedly."
  artifact_pedestal_skull_of_the_enemy_description: "A clean and perfectly preserved human skull once belonging to [rival.Custom('TitledFirstNameNoTooltip')], surgically removed due to personal slights against [owner.Custom('TitledFirstNameNoTooltip')]."
@@ -86,7 +86,7 @@
  feature_book_topic_nemesis: "[Artifact.GetOwner.Custom('ArtifactArticleWealth')|U] manuscript [Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')] conveying the hatred [Artifact.GetOwner.Custom('TitleAsName')] feels for [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('TitledFirstName')] – naming [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.GetHerHim] [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('InsultAdjectiveArticle')] [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('InsultNoun')] among many other things. The text is painstakingly illustrated to portray the [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.GetWomanMan] in as many unflattering situations as possible."
  
 # mystical animal
- feature_book_topic_mystical_animal: "[Artifact.GetOwner.Custom('ArtifactArticleWealth')|U] manuscript gathering all local legends about the [Artifact.GetOwner.Custom('LocalAnimalDesc')] white [Artifact.GetOwner.Custom('LocalAnimal')] felled by [Artifact.GetOwner.Custom('TitledFirstName')]. The lettering is [Artifact.GetOwner.Custom('ArtifactBookContentQuality')] and the might of the [Artifact.GetOwner.Custom('TitleAsNameNoTooltip')NoTooltip] unquestionable."
+ feature_book_topic_mystical_animal: "[Artifact.GetOwner.Custom('ArtifactArticleWealth')|U] manuscript gathering all local legends about the [Artifact.GetOwner.Custom('LocalAnimalDesc')] white [Artifact.GetOwner.Custom('LocalAnimal')] felled by [Artifact.GetOwner.Custom('TitledFirstName')]. The lettering is [Artifact.GetOwner.Custom('ArtifactBookContentQuality')] and the might of the [Artifact.GetOwner.Custom('TitleAsNameNoTooltipNoTooltip')] unquestionable."
 
 # animals
  feature_book_topic_animals_your_cat_no_name: "This book contains [Artifact.GetOwner.Custom('ArtifactBookContentQuality')] ruminations on the nature of [Artifact.GetFeatureText( 'book_subject' )] and details the life of a feline beloved by [Artifact.GetOwner.Custom('TitledFirstName')]. It is [Artifact.GetOwner.Custom('ArtifactAdverbWealth')] illuminated and illustrated."
