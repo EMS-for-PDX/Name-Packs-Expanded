@@ -76,6 +76,16 @@ demanding_poet_diplomacy_character = {
 	random_traits = no
 	after_creation = {
 		if = {
+			limit = { has_dlc = tours_and_tournaments }
+			add_trait = tourney_participant
+			add_random_tiered_trait_track_xp_effect = {
+				TRAIT = tourney_participant
+				TRACK = wit
+				LEVEL_1 = yes
+				LEVEL_3 = no
+			}		  
+		}
+		if = {
 			limit = {
 				culture = {
 					is_npe_supported_culture = yes
@@ -135,6 +145,16 @@ demanding_poet_martial_character = {
 	martial = 13
 	random_traits = no
 	after_creation = {
+		if = {
+			limit = { has_dlc = tours_and_tournaments }
+			add_trait = tourney_participant
+			add_random_tiered_trait_track_xp_effect = {
+				TRAIT = tourney_participant
+				TRACK = wit
+				LEVEL_1 = yes
+				LEVEL_3 = no
+			}			  
+		}
 		if = {
 			limit = {
 				culture = {
