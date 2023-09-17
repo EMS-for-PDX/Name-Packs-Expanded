@@ -1900,6 +1900,27 @@ CharacterCulture = {
 		trigger = {
 			culture = {
                 has_cultural_pillar = language_norse
+                OR = {
+                    has_name_list = name_list_swedish
+                    has_name_list = name_list_danish
+                }
+			}
+		}
+		localization_key = _swedan
+	}
+	text = {
+		trigger = {
+			culture = {
+                has_cultural_pillar = language_norse
+                has_name_list = name_list_norwegian
+			}
+		}
+		localization_key = _norweg
+	}
+	text = {
+		trigger = {
+			culture = {
+                has_cultural_pillar = language_norse
 			}
 		}
 		localization_key = _norse
