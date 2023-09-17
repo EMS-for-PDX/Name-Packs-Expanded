@@ -23,10 +23,10 @@ on_birth_child_ne = {
 on_player_baptismal = {
 	trigger = {
 		OR = {
-			father = {
+			father ?= {
 				is_ai = no
 			}
-			mother = {
+			mother ?= {
 				is_ai = no
 			}
 		}
@@ -41,7 +41,7 @@ on_player_baptismal = {
 		save_scope_as = the_child
 		if = {
 			limit = {
-				father = {
+				father ?= {
 					is_ai = no
 				}
 			}
