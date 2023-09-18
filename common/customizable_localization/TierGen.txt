@@ -1476,7 +1476,7 @@ CharacterGov = {
                 has_government = tribal_government
                 dynasty ?= {
                     any_in_list = {
-                        variable = dynasty_tribal
+                        variable = dynasty_tribe
                         this = root
                     }
                 }
@@ -1487,7 +1487,7 @@ CharacterGov = {
                         has_government = tribal_government
                         dynasty ?= {
                             any_in_list = {
-                                variable = dynasty_tribal
+                                variable = dynasty_tribe
                                 this = scope:the_spouse
                             }
                         }
@@ -1500,7 +1500,7 @@ CharacterGov = {
                         has_government = tribal_government
                         dynasty ?= {
                             any_in_list = {
-                                variable = dynasty_tribal
+                                variable = dynasty_tribe
                                 this = scope:the_parnet
                             }
                         }
