@@ -1,16 +1,5 @@
 ﻿spanish_male_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		0 = {
 			modifier = {
@@ -234,6 +223,17 @@
 			}
 		}
 		0 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			modifier = {
 				has_religion = religion:islam_religion
 				add = 25
@@ -241,6 +241,17 @@
 			change_first_name = Muhammad
 		}
 		40 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -302,6 +313,17 @@
 			}
 		}
 		30 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -449,6 +471,17 @@
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -730,6 +763,17 @@
 			}
 		}
 		10 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1010,6 +1054,17 @@
 			}
 		}
 		1 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1366,17 +1421,6 @@
 }
 spanish_female_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		0 = {
 			modifier = {
@@ -1600,6 +1644,17 @@ spanish_female_name_effect = {
 			}
 		}
 		40 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Elvira
@@ -1619,6 +1674,17 @@ spanish_female_name_effect = {
 			}
 		}
 		30 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Agnes
@@ -1638,6 +1704,17 @@ spanish_female_name_effect = {
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1797,6 +1874,17 @@ spanish_female_name_effect = {
 			}
 		}
 		10 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1893,6 +1981,17 @@ spanish_female_name_effect = {
 			}
 		}
 		1 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1962,17 +2061,6 @@ spanish_female_name_effect = {
 }
 basque_male_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		0 = {
 			modifier = {
@@ -2203,6 +2291,17 @@ basque_male_name_effect = {
 			}
 		}
 		40 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2263,6 +2362,17 @@ basque_male_name_effect = {
 			}
 		}
 		30 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2353,6 +2463,17 @@ basque_male_name_effect = {
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2515,6 +2636,17 @@ basque_male_name_effect = {
 			}
 		}
 		10 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2620,6 +2752,17 @@ basque_male_name_effect = {
 			}
 		}
 		1 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2890,17 +3033,6 @@ basque_male_name_effect = {
 }
 basque_female_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		0 = {
 			modifier = {
@@ -3124,6 +3256,17 @@ basque_female_name_effect = {
 			}
 		}
 		40 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Maria
@@ -3134,6 +3277,17 @@ basque_female_name_effect = {
 			}
 		}
 		30 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Inga
@@ -3150,6 +3304,17 @@ basque_female_name_effect = {
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3249,6 +3414,17 @@ basque_female_name_effect = {
 			}
 		}
 		10 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Anderazu
@@ -3277,6 +3453,17 @@ basque_female_name_effect = {
 			}
 		}
 		1 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Aiora
@@ -3299,17 +3486,6 @@ basque_female_name_effect = {
 }
 catalan_male_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		0 = {
 			modifier = {
@@ -3533,6 +3709,17 @@ catalan_male_name_effect = {
 			}
 		}
 		0 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			modifier = {
 				has_religion = religion:islam_religion
 				add = 25
@@ -3540,6 +3727,17 @@ catalan_male_name_effect = {
 			change_first_name = Muhammad
 		}
 		40 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3600,6 +3798,17 @@ catalan_male_name_effect = {
 			}
 		}
 		30 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3699,6 +3908,17 @@ catalan_male_name_effect = {
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3849,6 +4069,17 @@ catalan_male_name_effect = {
 			}
 		}
 		10 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3981,6 +4212,17 @@ catalan_male_name_effect = {
 			}
 		}
 		1 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -4278,17 +4520,6 @@ catalan_male_name_effect = {
 }
 catalan_female_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		0 = {
 			modifier = {
@@ -4512,6 +4743,17 @@ catalan_female_name_effect = {
 			}
 		}
 		40 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Beatris
@@ -4528,6 +4770,17 @@ catalan_female_name_effect = {
 			}
 		}
 		30 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Adelheid
@@ -4553,6 +4806,17 @@ catalan_female_name_effect = {
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -4676,6 +4940,17 @@ catalan_female_name_effect = {
 			}
 		}
 		10 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Alemanda
@@ -4731,6 +5006,17 @@ catalan_female_name_effect = {
 			}
 		}
 		1 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Alemanya
