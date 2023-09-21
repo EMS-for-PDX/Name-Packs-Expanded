@@ -218,6 +218,15 @@ pool_repopulate_diplomacy = {
 	}
 	dynasty = none
 	after_creation = {
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 		random = {
 			chance = 1
 			
@@ -254,15 +263,6 @@ pool_repopulate_diplomacy = {
 			LEVEL_1 = yes
 			LEVEL_3 = no
 		}
-		if = {
-			limit = {
-				culture = {
-					is_npe_supported_culture = yes
-				}
-			}
-			name_gen_effect = yes
-			dynasty_effect_ne = yes
-		}
 	}
 }
 
@@ -293,6 +293,15 @@ pool_repopulate_martial = {
 	}
 	dynasty = none
 	after_creation = {
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
 		if = {
 			limit = {
 				OR = {
@@ -411,15 +420,6 @@ pool_repopulate_martial = {
 			TRACK = wit
 			LEVEL_1 = yes
 			LEVEL_3 = no
-		}
-		if = {
-			limit = {
-				culture = {
-					is_npe_supported_culture = yes
-				}
-			}
-			name_gen_effect = yes
-			dynasty_effect_ne = yes
 		}
 	}
 }

@@ -1508,17 +1508,6 @@ anglo_saxon_female_name_effect = {
 }
 english_male_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		0 = {
 			modifier = {
@@ -1638,7 +1627,7 @@ english_male_name_effect = {
 				NOT = {
 					has_trait = bastard
 				}
-				add = 5 #uncommon /2
+				add = 10 #uncommon /2
 			}
 			father = {
 				random_sibling = {
@@ -1696,7 +1685,7 @@ english_male_name_effect = {
 				NOT = {
 					has_trait = bastard
 				}
-				add = 5 #uncommon /2
+				add = 10 #uncommon /2
 			}
 			mother = {
 				random_sibling = {
@@ -1742,9 +1731,31 @@ english_male_name_effect = {
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			change_first_name = William
 		}
 		30 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1767,6 +1778,17 @@ english_male_name_effect = {
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1793,6 +1815,17 @@ english_male_name_effect = {
 			}
 		}
 		15 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1889,6 +1922,17 @@ english_male_name_effect = {
 			}
 		}
 		10 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2013,6 +2057,17 @@ english_male_name_effect = {
 			}
 		}
 		5 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2170,17 +2225,6 @@ english_male_name_effect = {
 }
 english_female_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		0 = {
 			modifier = {
@@ -2300,7 +2344,7 @@ english_female_name_effect = {
 				NOT = {
 					has_trait = bastard
 				}
-				add = 5 #uncommon /2
+				add = 10 #common /2
 			}
 			father = {
 				random_sibling = {
@@ -2358,7 +2402,7 @@ english_female_name_effect = {
 				NOT = {
 					has_trait = bastard
 				}
-				add = 5 #uncommon /2
+				add = 10 #common /2
 			}
 			mother = {
 				random_sibling = {
@@ -2404,6 +2448,17 @@ english_female_name_effect = {
 			}
 		}
 		35 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Alice
@@ -2414,6 +2469,17 @@ english_female_name_effect = {
 			}
 		}
 		25 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2457,6 +2523,17 @@ english_female_name_effect = {
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2566,6 +2643,17 @@ english_female_name_effect = {
 			}
 		}
 		15 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2651,6 +2739,17 @@ english_female_name_effect = {
 			}
 		}
 		5 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2730,689 +2829,910 @@ english_female_name_effect = {
 		}
 	}
 }
-scots_male_ancestor_effect = {
-	save_scope_as = thechar
-	if = {
-        limit = {
-            exists = father.father
-            father = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = father_father_name
-                }
-            }
-        }
-        father.father = {
-            save_scope_as = the_guy
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_guy = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_guy
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_guy
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_guy }
-        father = {
-            add_character_flag = father_father_name
-        }
-    }
-    else_if = {
-        limit = {
-            exists = mother.father
-            mother = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = mother_father_name
-                }
-            }
-        }
-        mother.father = {
-            save_scope_as = the_guy
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_guy = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_guy
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_guy
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_guy }
-        mother = {
-            add_character_flag = mother_father_name
-        }
-    }
-    else_if = {
-        limit = {
-            exists = father
-            father = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = father_name
-                }
-            }
-        }
-        father = {
-            save_scope_as = the_guy
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_guy = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_guy
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_guy
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_guy }
-        father = {
-            add_character_flag = father_name
-        }
-    }
-    else_if = {
-        limit = {
-            exists = father
-            father = {
-                any_sibling = {
-                    is_male = yes
-                    NOT = {
-                        this = root.father
-                    }
-                    exists = this
-                }
-            }
-            father = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = brother_name
-                }
-            }
-        }
-        father = {
-            save_scope_as = the_guy
-            ordered_sibling = {
-                limit = {
-                    is_male = yes
-                    NOT = {
-                        this = scope:the_guy
-                    }
-                }
-                order_by = age
-                position = 0
-                save_scope_as = the_brother
-            }
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_brother = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_brother
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_brother
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_brother }
-        father = {
-            add_character_flag = brother_name
-        }
-    }
-    else_if = {
-        limit = {
-            exists = mother
-            mother = {
-                any_sibling = {
-                    is_male = yes
-                    exists = this
-                }
-            }
-            mother = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = brother_name
-                }
-            }
-        }
-        mother = {
-            ordered_sibling = {
-                limit = {
-                    is_male = yes
-                }
-                order_by = age
-                position = 0
-                save_scope_as = the_brother
-            }
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_brother = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_brother
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_brother
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_brother }
-        mother = {
-            add_character_flag = brother_name
-        }
-    }
-    else_if = {
-        limit = {
-            any_ancestor = {
-                NOR = {
-                    this = root.father
-                    this = root.father.father
-                    this = root.mother.father
-                }
-                is_male = yes
-                exists = this
-            }
-        }
-        random_ancestor = {
-            limit = {
-                NOR = {
-                    this = root.father
-                    this = root.father.father
-                    this = root.mother.father
-                }
-                is_male = yes
-            }
-            save_scope_as = the_ancestor
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_ancestor = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_ancestor
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_ancestor
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_ancestor }
-    }
-    else = {
-        scots_male_name_effect = yes
-    }
-}
-scots_female_ancestor_effect = {
-	save_scope_as = thechar
-	if = {
-        limit = {
-            exists = mother.mother
-            mother = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = mother_mother_name
-                }
-            }
-        }
-        mother.mother = {
-            save_scope_as = the_lady
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_lady = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_lady
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_lady
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_lady }
-        mother = {
-            add_character_flag = mother_mother_name
-        }
-    }
-    else_if = {
-        limit = {
-            exists = father.mother
-            father = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = father_mother_name
-                }
-            }
-        }
-        father.mother = {
-            save_scope_as = the_lady
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_lady = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_lady
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_lady
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_lady }
-        father = {
-            add_character_flag = father_mother_name
-        }
-    }
-    else_if = {
-        limit = {
-            exists = mother
-            mother = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = mother_name
-                }
-            }
-        }
-        mother = {
-            save_scope_as = the_lady
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_lady = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_lady
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_lady
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_lady }
-        mother = {
-            add_character_flag = mother_name
-        }
-    }
-    else_if = {
-        limit = {
-            exists = mother
-            mother = {
-                any_sibling = {
-                    is_male = no
-                    NOT = {
-                        this = root.mother
-                    }
-                    exists = this
-                }
-            }
-            mother = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = sister_name
-                }
-            }
-        }
-        mother = {
-            save_scope_as = the_lady
-            ordered_sibling = {
-                limit = {
-                    is_male = no
-                    NOT = {
-                        this = scope:the_lady
-                    }
-                }
-                order_by = age
-                position = 0
-                save_scope_as = the_sister
-            }
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_sister = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_sister
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_sister
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_sister }
-        mother = {
-            add_character_flag = sister_name
-        }
-    }
-    else_if = {
-        limit = {
-            exists = father
-            father = {
-                any_sibling = {
-                    is_male = no
-                    exists = this
-                }
-            }
-            father = {
-                is_alive = yes
-                NOT = {
-                    has_character_flag = sister_name
-                }
-            }
-        }
-        father = {
-            ordered_sibling = {
-                limit = {
-                    is_male = no
-                }
-                order_by = age
-                position = 0
-                save_scope_as = the_sister
-            }
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_sister = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_sister
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_sister
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_sister }
-        father = {
-            add_character_flag = sister_name
-        }
-    }
-    else_if = {
-        limit = {
-            any_ancestor = {
-                NOR = {
-                    this = root.mother.mother
-                    this = root.father.mother
-                    this = root.mother
-                }
-                is_male = no
-                exists = this
-            }
-        }
-        random_ancestor = {
-            limit = {
-                NOR = {
-                    this = root.mother.mother
-                    this = root.father.mother
-                    this = root.mother
-                }
-                is_male = no
-            }
-            save_scope_as = the_ancestor
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_ancestor = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_ancestor
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_ancestor
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
-        change_first_name = { template_character = scope:the_ancestor }
-    }
-    else = {
-        scots_female_name_effect = yes
-    }
-}
+#scots_male_ancestor_effect = {
+#	save_scope_as = thechar
+#	if = {
+#        limit = {
+#            exists = father.father
+#            father = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = father_father_name
+#                }
+#            }
+#        }
+#        father.father = {
+#            save_scope_as = the_guy
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_guy = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_guy
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_guy
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_guy }
+#        father = {
+#            add_character_flag = father_father_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            exists = mother.father
+#            mother = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = mother_father_name
+#                }
+#            }
+#        }
+#        mother.father = {
+#            save_scope_as = the_guy
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_guy = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_guy
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_guy
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_guy }
+#        mother = {
+#            add_character_flag = mother_father_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            exists = father
+#            father = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = father_name
+#                }
+#            }
+#        }
+#        father = {
+#            save_scope_as = the_guy
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_guy = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_guy
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_guy
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_guy }
+#        father = {
+#            add_character_flag = father_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            exists = father
+#            father = {
+#                any_sibling = {
+#                    is_male = yes
+#                    NOT = {
+#                        this = root.father
+#                    }
+#                    exists = this
+#                }
+#            }
+#            father = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = brother_name
+#                }
+#            }
+#        }
+#        father = {
+#            save_scope_as = the_guy
+#            ordered_sibling = {
+#                limit = {
+#                    is_male = yes
+#                    NOT = {
+#                        this = scope:the_guy
+#                    }
+#                }
+#                order_by = age
+#                position = 0
+#                save_scope_as = the_brother
+#            }
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_brother = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_brother
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_brother
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_brother }
+#        father = {
+#            add_character_flag = brother_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            exists = mother
+#            mother = {
+#                any_sibling = {
+#                    is_male = yes
+#                    exists = this
+#                }
+#            }
+#            mother = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = brother_name
+#                }
+#            }
+#        }
+#        mother = {
+#            ordered_sibling = {
+#                limit = {
+#                    is_male = yes
+#                }
+#                order_by = age
+#                position = 0
+#                save_scope_as = the_brother
+#            }
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_brother = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_brother
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_brother
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_brother }
+#        mother = {
+#            add_character_flag = brother_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            any_ancestor = {
+#                NOR = {
+#                    this = root.father
+#                    this = root.father.father
+#                    this = root.mother.father
+#                }
+#                is_male = yes
+#                exists = this
+#            }
+#        }
+#        random_ancestor = {
+#            limit = {
+#                NOR = {
+#                    this = root.father
+#                    this = root.father.father
+#                    this = root.mother.father
+#                }
+#                is_male = yes
+#            }
+#            save_scope_as = the_ancestor
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_ancestor = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_ancestor
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_ancestor
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_ancestor }
+#    }
+#    else = {
+#        scots_male_name_effect = yes
+#    }
+#}
+#scots_female_ancestor_effect = {
+#	save_scope_as = thechar
+#	if = {
+#        limit = {
+#            exists = mother.mother
+#            mother = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = mother_mother_name
+#                }
+#            }
+#        }
+#        mother.mother = {
+#            save_scope_as = the_lady
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_lady = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_lady
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_lady
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_lady }
+#        mother = {
+#            add_character_flag = mother_mother_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            exists = father.mother
+#            father = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = father_mother_name
+#                }
+#            }
+#        }
+#        father.mother = {
+#            save_scope_as = the_lady
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_lady = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_lady
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_lady
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_lady }
+#        father = {
+#            add_character_flag = father_mother_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            exists = mother
+#            mother = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = mother_name
+#                }
+#            }
+#        }
+#        mother = {
+#            save_scope_as = the_lady
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_lady = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_lady
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_lady
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_lady }
+#        mother = {
+#            add_character_flag = mother_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            exists = mother
+#            mother = {
+#                any_sibling = {
+#                    is_male = no
+#                    NOT = {
+#                        this = root.mother
+#                    }
+#                    exists = this
+#                }
+#            }
+#            mother = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = sister_name
+#                }
+#            }
+#        }
+#        mother = {
+#            save_scope_as = the_lady
+#            ordered_sibling = {
+#                limit = {
+#                    is_male = no
+#                    NOT = {
+#                        this = scope:the_lady
+#                    }
+#                }
+#                order_by = age
+#                position = 0
+#                save_scope_as = the_sister
+#            }
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_sister = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_sister
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_sister
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_sister }
+#        mother = {
+#            add_character_flag = sister_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            exists = father
+#            father = {
+#                any_sibling = {
+#                    is_male = no
+#                    exists = this
+#                }
+#            }
+#            father = {
+#                is_alive = yes
+#                NOT = {
+#                    has_character_flag = sister_name
+#                }
+#            }
+#        }
+#        father = {
+#            ordered_sibling = {
+#                limit = {
+#                    is_male = no
+#                }
+#                order_by = age
+#                position = 0
+#                save_scope_as = the_sister
+#            }
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_sister = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_sister
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_sister
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_sister }
+#        father = {
+#            add_character_flag = sister_name
+#        }
+#    }
+#    else_if = {
+#        limit = {
+#            any_ancestor = {
+#                NOR = {
+#                    this = root.mother.mother
+#                    this = root.father.mother
+#                    this = root.mother
+#                }
+#                is_male = no
+#                exists = this
+#            }
+#        }
+#        random_ancestor = {
+#            limit = {
+#                NOR = {
+#                    this = root.mother.mother
+#                    this = root.father.mother
+#                    this = root.mother
+#                }
+#                is_male = no
+#            }
+#            save_scope_as = the_ancestor
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    scope:the_ancestor = {
+#                        exists = dynasty
+#                        dynasty = {
+#                            any_in_list = {
+#                                variable = name_pack_support_dynasty
+#                                this = scope:the_ancestor
+#                            }
+#                        }
+#                    }
+#                    any_in_global_list = {
+#                        variable = name_pack_support_global
+#                        this = scope:the_ancestor
+#                    }
+#                }
+#            }
+#			if = {
+#				limit = {
+#					exists = dynasty
+#				}
+#				dynasty = {
+#					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+#				}
+#			}
+#			else = {
+#				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+#			}
+#        }
+#        change_first_name = { template_character = scope:the_ancestor }
+#    }
+#    else = {
+#        scots_female_name_effect = yes
+#    }
+#}
 scots_male_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		0 = {
+			modifier = {
+				exists = father.father
+				NOT = {
+					has_trait = bastard
+					father = {
+						has_character_flag = father_father_name
+					}
+				}
+				add = 40 #freq
+			}
+			father.father = {
+				save_scope_as = the_guy
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = father_father_name
+			}
+		}
+		0 = {
+			modifier = {
+				father ?= {
+					OR = {
+						has_character_flag = father_father_name
+						NOT = {
+							exists = father
+						}
+					}
+					NOT = {
+						has_character_flag = father_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 20 #common
+			}
+			father = {
+				save_scope_as = the_guy
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = father_name
+			}
+		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 10 #uncommon /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = brother_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 10 #uncommon /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_guy = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_guy
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_guy
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			mother = {
+				add_character_flag = brother_name
+			}
+		}
+		0 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			modifier = {
 				OR = {
 					has_religion = religion:christianity_religion
@@ -3423,6 +3743,17 @@ scots_male_name_effect = {
 			change_first_name = John
 		}
 		30 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3443,6 +3774,17 @@ scots_male_name_effect = {
 			}
 		}
 		25 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3476,6 +3818,17 @@ scots_male_name_effect = {
 			}
 		}
 		15 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list ={
 				0 = {
 					modifier = {
@@ -3521,6 +3874,17 @@ scots_male_name_effect = {
 			}
 		}
 		10 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3612,6 +3976,17 @@ scots_male_name_effect = {
 			}
 		}
 		5 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3678,19 +4053,240 @@ scots_male_name_effect = {
 }
 scots_female_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
+		0 = {
+			modifier = {
+				exists = mother.mother
+				NOT = {
+					has_trait = bastard
+					mother = {
+						has_character_flag = mother_mother_name
+					}
+				}
+				add = 40 #freq
+			}
+			mother.mother = {
+				save_scope_as = the_lady
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = mother_mother_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					OR = {
+						has_character_flag = mother_mother_name
+						NOT = {
+							exists = mother
+						}
+					}
+					NOT = {
+						has_character_flag = mother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 20 #common
+			}
+			mother = {
+				save_scope_as = the_lady
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = mother_name
+			}
+		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 10 #common /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			father = {
+				add_character_flag = sister_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 10 #common /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:the_lady = {
+							exists = dynasty
+							dynasty = {
+								any_in_list = {
+									variable = name_pack_support_dynasty
+									this = scope:the_lady
+								}
+							}
+						}
+						any_in_global_list = {
+							variable = name_pack_support_global
+							this = scope:the_lady
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = dynasty
+					}
+					dynasty = {
+						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+					}
+				}
+				else = {
+					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = sister_name
+			}
+		}
 		35 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {		
 				0 = {
 					modifier = {
@@ -3715,6 +4311,17 @@ scots_female_name_effect = {
 			}
 		}
 		25 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {		
 				0 = {
 					modifier = {
@@ -3755,6 +4362,17 @@ scots_female_name_effect = {
 			}
 		}
 		20 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {		
 				0 = {
 					modifier = {
@@ -3795,6 +4413,17 @@ scots_female_name_effect = {
 			}
 		}
 		15 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {		
 				0 = {
 					modifier = {
@@ -3844,6 +4473,17 @@ scots_female_name_effect = {
 			}
 		}
 		5 = {
+			if = {
+				limit = {
+					exists = dynasty
+				}
+				dynasty = {
+					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+				}
+			}
+			else = {
+				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+			}
 			random_list = {
 				1 = {
 					change_first_name = Athelreda
