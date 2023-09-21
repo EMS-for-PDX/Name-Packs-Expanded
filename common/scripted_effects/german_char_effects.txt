@@ -256,9 +256,9 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:161746 }
 	}
 	character:swabian0001.dynasty = { #Konstanz
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:swabian0001 } Solomon
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:swabian0003 } Solomon
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:swabian0004 } Solomon
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:swabian0001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:swabian0003 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:swabian0004 }
 	}
 	character:31702.dynasty = { #Chastenois
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:31702 }
@@ -863,7 +863,7 @@
 	character:2015.dynasty = { #Roma weird family
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:2015 }
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:2016 } Maginulf
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:2014 } Raineri
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:2014 }
 	}
 	character:1620.dynasty = { #Otakeren
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:1620 }
@@ -1420,6 +1420,9 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:165022 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:165025 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:161981 }
+	}
+	character:2014 = {
+		change_first_name = Ragnar
 	}
 	character:7054 = {
 		change_first_name = Frederick
