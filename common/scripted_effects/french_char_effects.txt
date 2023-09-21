@@ -520,6 +520,12 @@
 	character:194171.dynasty = { #Friesland
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:194171 }
 	}
+	character:31700.house = { #Habsburg
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench051
+		}
+	}
 	character:31700.dynasty = { #Chatenois
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:31700 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168079 }
@@ -1400,6 +1406,7 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:258 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:41012 }
 		#d'Evreux
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbfrench050 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:260 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20112 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:10021 }
