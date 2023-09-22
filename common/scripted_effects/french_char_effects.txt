@@ -2770,11 +2770,18 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:91149 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:205691 }
 	}
-	character:42006.dynasty = { #Mortain NORMAN
+	character:42006.dynasty = { #Mortain
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:42006 } Armand
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:42007 }
 	}
-	character:1120.dynasty = { #de Hauteville NORMAN  #needs DB
+	character:1120.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench052
+		}
+	}
+	character:1120.dynasty = { #de Hauteville
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbfrench052 }
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:11351 } Rocca
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:161113 } Eria
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:85014 }
@@ -2827,7 +2834,14 @@
 		add_to_variable_list = { name = dynasty_independent target = character:1126 }
 		add_to_variable_list = { name = dynasty_independent target = character:1124 }
 	}
-	character:171154.dynasty = { #Conversano #needs DB
+	character:171154.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench053
+		}
+	}
+	character:171154.dynasty = { #Conversano
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbfrench053 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:171154 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:171155 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:42011 }
@@ -2837,7 +2851,14 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:171159 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:171162 }
 	}
-	character:73272.dynasty = { #Lecce #needs DB
+	character:73272.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench054
+		}
+	}
+	character:73272.dynasty = { #Lecce
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbfrench054 }
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:73272 } Acciard
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:73270 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:73276 }
@@ -2845,7 +2866,14 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:73274 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:73275 }
 	}
-	character:30826.dynasty = { #Drengot #needs DB
+	character:30826.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench055
+		}
+	}
+	character:30826.dynasty = { #Drengot
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbfrench055 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:30826 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:30827 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:144703 }
@@ -2862,7 +2890,14 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:144701 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:144702 }
 	}
-	character:40999.dynasty = { #Conteville #needs DB
+	character:40999.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench056
+		}
+	}
+	character:40999.dynasty = { #Conteville
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbfrench056 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:40999 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41000 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:148 }
@@ -2873,7 +2908,14 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:183014 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:7624 }
 	}
-	character:41255.dynasty = { #Avranches #needs DB
+	character:41255.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench057
+		}
+	}
+	character:41255.dynasty = { #Avranches
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbfrench057 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41255 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41250 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41252 }
