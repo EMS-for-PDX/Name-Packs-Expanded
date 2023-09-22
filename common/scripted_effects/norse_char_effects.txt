@@ -213,3 +213,198 @@
 		dynasty_effect_ne = yes
 	}
 }
+1066_norse_char_effect = {
+	add_to_global_variable_list = { name = name_pack_support_global target = character:100510 }
+	character:194004.dynasty = { #Sigurding dynasty
+		#Bjorningar
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101518 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101536 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101537 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:161425 }
+		#Estrid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101515 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101516 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101517 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101519 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101520 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101521 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101522 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101523 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101524 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101525 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101526 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101527 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101528 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101529 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101530 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101533 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:101553 }
+	}
+	character:100517.dynasty = { #Skogla semi-real
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100517 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100518 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100519 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100521 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102542 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102543 }
+		add_to_variable_list = { name = dynasty_independent target = character:100517 }
+		add_to_variable_list = { name = dynasty_independent target = character:100518 }
+		add_to_variable_list = { name = dynasty_independent target = character:100521 }
+		#Stenkiling
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100522 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100525 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100523 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100524 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100526 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:100522 }
+		add_to_variable_list = { name = dynasty_independent target = character:100522 }
+	}
+	character:100529.dynasty = { #Sverker #Same names as purported family of Blot-Sweyn, not sure if they're the same as the actual Sverker dynasty but they're real
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:100529 } Kol
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100530 }
+	}
+	character:100527.dynasty = { #Halsingland fake
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100527 }
+	}
+	character:100544.dynasty = { #Roden
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:100544 } #Tolir real person
+	}
+	character:20013.dynasty = { #Ekeblad
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20013 }
+	}
+	character:20007.dynasty = { #Slatte
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20007 } #Tyke
+	}
+	character:20006.dynasty = { #Gren
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20006 }
+	}
+	character:20005.dynasty = { #Hiort
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20005 }
+	}
+	character:20020.dynasty = { #Vaerending
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20020 }
+	}
+	character:20014.dynasty = { #Eketra
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20014 }
+	}
+	character:20008.dynasty = { #Galta
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20008 }
+	}
+	character:101518 = {
+		change_first_name = Margaret
+	}
+	character:101527 = {
+		change_first_name = Sigfridr
+	}
+	character:101537 = {
+		change_first_name = Signi
+	}
+	character:101536 = {
+		change_first_name = Asbjorn
+	}
+	character:161425 = {
+		change_first_name = Bjorn
+	}
+	character:101553 = {
+		change_first_name = Svein
+	}
+	character:101530 = {
+		change_first_name = Nicholas
+	}
+	character:101525 = {
+		change_first_name = Bjorn
+	}
+	character:101529 = {
+		change_first_name = Thorgisl
+	}
+	character:101526 = {
+		change_first_name = Svein
+	}
+	character:101521 = {
+		change_first_name = Eric
+	}
+	character:101533 = {
+		change_first_name = Svein
+	}
+	character:101523 = {
+		change_first_name = Benedict
+	}
+	character:101528 = {
+		change_first_name = Knut
+	}
+	character:101517 = {
+		change_first_name = Harold
+	}
+	character:101515 = {
+		change_first_name = Svein
+	}
+	character:20008 = {
+		change_first_name = Fastar #originally Fasti
+		dynasty_effect_ne = yes
+	}
+	character:100530 = {
+		change_first_name = Svein
+	}
+	character:20014 = {
+		dynasty_effect_ne = yes
+	}
+	character:20020 = {
+		change_first_name = Thorketil #originally Toki, which might be a hypocoristic
+		dynasty_effect_ne = yes
+	}
+	character:20005 = {
+		change_first_name = Gudmund #Tjudmund fictional
+		dynasty_effect_ne = yes
+	}
+	character:20006 = {
+		dynasty_effect_ne = yes
+	}
+	character:20007 = {
+		change_first_name = Tolk
+		dynasty_effect_ne = yes
+	}
+	character:20013 = {
+		change_first_name = Kolbjorn
+		dynasty_effect_ne = yes
+	}
+	character:100544 = {
+		change_first_name = Thorleifr #originally Tolir, which might be a hypocoristic
+		dynasty_effect_ne = yes
+	}
+	character:100527 = {
+		change_first_name = Bjorn
+		dynasty_effect_ne = yes
+	}
+	character:100524 = {
+		change_first_name = Ingi
+	}
+	character:100526 = {
+		change_first_name = Hakon
+	}
+	character:100523 = {
+		change_first_name = Hallstan
+	}
+	character:100525 = {
+		change_first_name = Eric
+	}
+	character:100522 = {
+		change_first_name = Steinkel
+		house_effect_ne = yes
+	}
+	character:102543 = {
+		change_first_name = Eileif
+	}
+	character:100521 = {
+		change_first_name = Ragnvald
+	}
+	character:100519 = {
+		change_first_name = Sigfridr
+	}
+	character:100518 = {
+		change_first_name = Ulf
+	}
+	character:100517 = {
+		change_first_name = Tosti
+		dynasty_effect_ne = yes
+	}
+}
