@@ -701,6 +701,8 @@
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:159334 } #Corb
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:159335 } #Mes Gegra
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:159336 } #Mes Corb
+		add_to_variable_list = { name = dynasty_independent target = character:6018 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:6018 }
 	}
 	character:83160.house = {
 		set_variable = {
@@ -1912,6 +1914,7 @@
 1066_irish_char_effect = {
     add_to_global_variable_list = { name = name_pack_support_global target = character:1021 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:925 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:1016 }
 	character:83251.house = {
 		set_variable = {
 			name = name_founder
@@ -2071,6 +2074,17 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6032 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166621 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166622 }
+		#Argyll
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131101 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131102 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131103 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131104 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131105 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:131106 }
+		#Flaithbertach
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1015 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1017 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:1018 }
 	}
 	character:910.house = {
 		set_variable = {
@@ -2143,6 +2157,8 @@
 	}
 	character:6020.dynasty = { #Lads continued
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:974 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:976 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:978 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:980 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:981 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:5996 }
@@ -2150,8 +2166,50 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:5998 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6000 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6004 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6008 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:83587 }
+		add_to_variable_list = { name = dynasty_independent target = character:976 }
+		add_to_variable_list = { name = dynasty_independent target = character:974 }
+		add_to_variable_list = { name = dynasty_independent target = character:980 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:976 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:974 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:980 }
+	}
+	character:978 = {
+		change_first_name = Dub
+	}
+	character:6004 = {
+		change_first_name = Cinaed
+	}
+	character:131106 = {
+		change_first_name = Slane
+	}
+	character:131106 = {
+		change_first_name = Sumarlidi
+		house_effect_ne = yes #Clann Somhairle
+	}
+	character:131105 = {
+		change_first_name = Fergus
+	}
+	character:131104 = {
+		change_first_name = GillaBrigde
+	}
+	character:131103 = {
+		change_first_name = GillaAdomnain
+	}
+	character:131102 = {
+		change_first_name = Solomon
+	}
+	character:1018 = {
+		change_first_name = Flaithbertach
+		house_effect_ne = yes
+	}
+	character:1017 = {
+		change_first_name = Aed
+	}
+	character:1015 = {
+		change_first_name = Aed
 	}
 	character:5998 = {
 		change_first_name = Ruaidri
