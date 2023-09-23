@@ -220,6 +220,7 @@
 	add_to_global_variable_list = { name = name_pack_support_global target = character:100510 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:101544 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:242505 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:102549 }
 	character:101515.house = {
 		set_variable = {
 			name = name_founder
@@ -262,6 +263,11 @@
 		add_to_variable_list = { name = dynasty_independent target = character:100506 }
 		add_to_variable_list = { name = dynasty_independent target = character:100508 }
 		add_to_variable_list = { name = dynasty_independent target = character:100509 }
+		add_to_variable_list = { name = dynasty_independent target = character:163108 }
+		add_to_variable_list = { name = dynasty_independent target = character:100500 }
+		add_to_variable_list = { name = dynasty_independent target = character:100501 }
+		add_to_variable_list = { name = dynasty_independent target = character:163106 }
+		add_to_variable_list = { name = dynasty_independent target = character:163107 }
 		#Ivarings
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:5789 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:5790 }
@@ -275,6 +281,10 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:131524 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:131525 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:131526 }
+		add_to_variable_list = { name = dynasty_independent target = character:163111 }
+		add_to_variable_list = { name = dynasty_independent target = character:40608 }
+		add_to_variable_list = { name = dynasty_independent target = character:6814 }
+		add_to_variable_list = { name = dynasty_independent target = character:40609 }
 		#Lywel
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159292 }
 		#Halfdanings
@@ -284,6 +294,8 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168340 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168341 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168342 }
+		add_to_variable_list = { name = dynasty_independent target = character:163112 }
+		add_to_variable_list = { name = dynasty_independent target = character:168336 }
 		#Knytlings
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:101510 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:101511 }
@@ -386,9 +398,6 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:100521 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:102542 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:102543 }
-		add_to_variable_list = { name = dynasty_independent target = character:100517 }
-		add_to_variable_list = { name = dynasty_independent target = character:100518 }
-		add_to_variable_list = { name = dynasty_independent target = character:100521 }
 		#Stenkiling
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:100522 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:100525 }
@@ -414,7 +423,51 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:101542 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:151000 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:101548 }
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:34158 } Assur/ Ozur
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:34158 }
+	}
+	character:102559.dynasty = { #Aurland real family
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102559 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102560 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102563 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102561 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102562 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102564 }
+	}
+	character:102546.dynasty = { #Hagalin Eilifingar
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102546 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102547 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102548 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:103905 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102562 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102564 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:144248 }
+	}
+	character:102523.dynasty = { #Stibolt real
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102523 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102522 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102521 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102524 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102525 }
+	}
+	character:102565.dynasty = { #Sola Erlingar
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102565 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102566 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102567 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102568 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102569 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102580 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102571 }
+	}
+	character:102548.dynasty = { #Gisking real
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102548 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102550 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102552 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102551 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102553 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102558 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:183902 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:183903 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:183904 }
 	}
 	character:101543.dynasty = { #Slaweka
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:101543 }
@@ -424,6 +477,11 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:101538 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:101539 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:201530 }
+	}
+	character:102505.dynasty = { #Alfing
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102504 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102505 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:102506 }
 	}
 	character:100529.dynasty = { #Sverker #Same names as purported family of Blot-Sweyn, not sure if they're the same as the actual Sverker dynasty but they're real
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:100529 }
@@ -471,6 +529,90 @@
 	}
 	character:20019.dynasty = { #And fake
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20019 }
+	}
+	character:20017.dynasty = { #Blixen fake
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20017 }
+	}
+	character:20016.dynasty = { #Lodin fake
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20016 }
+	}
+	character:144248 = {
+		change_first_name = Agmund
+	}
+	character:102571 = {
+		change_first_name = Knut
+	}
+	character:102550 = {
+		change_first_name = Thorbjorg
+	}
+	character:183902 = {
+		change_first_name = Agmund
+	}
+	character:102552 = {
+		change_first_name = Agmund
+	}
+	character:102548 = {
+		change_first_name = Arn
+	}
+	character:102549 = {
+		change_first_name = Thora
+	}
+	character:102580 = {
+		change_first_name = Ingibjorg
+	}
+	character:102567 = {
+		change_first_name = Asleik
+	}
+	character:102565 = {
+		dynasty_effect_ne = yes
+	}
+	character:102522 = {
+		give_nickname = nick_the_white
+	}
+	character:102566 = {
+		change_first_name = Ragnhild
+	}
+	character:102525 = {
+		change_first_name = Sunniva
+	}
+	character:102523 = {
+		change_first_name = Hakon
+	}
+	character:102521 = {
+		change_first_name = Skagi
+		dynasty_effect_ne = yes
+	}
+	character:102547 = {
+		change_first_name = Ormr
+	}
+	character:102546 = {
+		dynasty_effect_ne = yes
+	}
+	character:102560 = {
+		dynasty_effect_ne = yes
+	}
+	character:102561 = {
+		change_first_name = Thord
+	}
+	character:20016 = {
+		change_first_name = Lodmund
+		dynasty_effect_ne = yes
+	}
+	character:20019 = {
+		dynasty_effect_ne = yes
+	}
+	character:102504 = {
+		dynasty_effect_ne = yes
+	}
+	character:20017 = {
+		change_first_name = John
+		dynasty_effect_ne = yes
+	}
+	character:102505 = {
+		change_first_name = Ingibjorg
+	}
+	character:102506 = {
+		change_first_name = Sigfridr
 	}
 	character:102532 = {
 		change_first_name = Bjorn
@@ -534,11 +676,12 @@
 		dynasty_effect_ne = yes
 	}
 	character:20015 = {
+		change_first_name = Bodolf
 		dynasty_effect_ne = yes
 	}
 	character:200519 = {
 		change_first_name = Ingivald
-		dynasty_effect_ne = yes #they're also named after his son Folk, who isn't born year
+		dynasty_effect_ne = yes #they're also named after his son Folk, who isn't born yet
 	}
 	character:5789 = {
 		change_first_name = Sigtrygg
@@ -721,9 +864,11 @@
 	}
 	character:100509 = {
 		change_first_name = Eymund
+		give_nickname = nick_the_old
 	}
 	character:100508 = {
 		change_first_name = Anund
+		give_nickname = nick_the_burner_of_ash
 	}	
 	character:100506 = {
 		change_first_name = Olaf
