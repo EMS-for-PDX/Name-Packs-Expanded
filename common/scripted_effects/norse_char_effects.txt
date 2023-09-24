@@ -536,6 +536,24 @@
 	character:20016.dynasty = { #Lodin fake
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20016 }
 	}
+	character:20580.dynasty = { #Oddi
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20580 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20581 }
+	}
+	character:20579.dynasty = { #Haukadaulur
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20579 }
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:144632 } Teitur
+	}
+	character:20579 = {
+		dynasty_effect_ne = yes
+	}
+	character:20581 = {
+		change_first_name = Saemund
+	}
+	character:20580 = {
+		change_first_name = Sigfuss
+		dynasty_effect_ne = yes
+	}
 	character:144248 = {
 		change_first_name = Agmund
 	}
@@ -947,6 +965,7 @@
 		change_first_name = Svein
 	}
 	character:20008 = {
+		change_first_name = Fasti
 		dynasty_effect_ne = yes
 	}
 	character:100530 = {
