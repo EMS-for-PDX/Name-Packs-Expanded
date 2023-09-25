@@ -975,7 +975,10 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_croatian
+						OR = {
+							has_name_list = name_list_croatian
+							has_name_list = name_list_carantanian
+						}
 					}
 					NOT = {
 						any_parent = {
@@ -989,7 +992,10 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_croatian
+						OR = {
+							has_name_list = name_list_croatian
+							has_name_list = name_list_carantanian
+						}
 					}
 					any_parent = {
 						is_ai = no
@@ -1710,7 +1716,10 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_croatian
+						OR = {
+							has_name_list = name_list_croatian
+							has_name_list = name_list_carantanian
+						}
 					}
 					NOT = {
 						any_parent = {
@@ -1724,7 +1733,10 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_croatian
+						OR = {
+							has_name_list = name_list_croatian
+							has_name_list = name_list_carantanian
+						}
 					}
 					any_parent = {
 						is_ai = no

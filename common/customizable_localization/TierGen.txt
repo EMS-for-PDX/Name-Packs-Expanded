@@ -1995,7 +1995,10 @@ CharacterCulture = {
 		trigger = {
 			culture = {
                 has_cultural_pillar = language_south_slavic
-                has_name_list = name_list_croatian
+				OR = {
+					has_name_list = name_list_croatian
+					has_name_list = name_list_carantanian
+				}
 			}
 		}
 		localization_key = _croatian
@@ -2091,6 +2094,9 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+				NOT = {
+					has_name_list = name_list_afghan
+				}
                 OR = {
                     has_cultural_pillar = language_scythian
                     AND = {
@@ -2114,7 +2120,7 @@ CharacterCulture = {
 					AND = {
 						has_cultural_pillar = language_scythian
 						has_name_list = name_list_afghan
-						}
+					}
                     AND = {
                         exists = global_var:CE_is_loaded
                         OR = {
