@@ -2536,7 +2536,14 @@ irish_female_name_effect = {
 						has_religion = religion:christianity_religion
 						add = 1
 					}
-					change_first_name = Mary
+					random_list = {
+						1 = {
+							change_first_name = Mary
+						}
+						1 = {
+							change_first_name = Cecilia
+						}
+					}
 				}
 				0 = {
 					modifier = {
@@ -2561,9 +2568,6 @@ irish_female_name_effect = {
 				}
 				1 = {
 					change_first_name = Nuala
-				}
-				1 = {
-					change_first_name = Sile
 				}
 				1 = {
 					change_first_name = Sioban
