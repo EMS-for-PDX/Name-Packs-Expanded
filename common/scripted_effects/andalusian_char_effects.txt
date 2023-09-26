@@ -550,8 +550,40 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:73951 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73950 }
     }
+	character:73990.dynasty = { #Siqubiyyahi
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73990 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0140 }
+    }
+	character:73988.dynasty = { #Castallid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73988 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0135 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0134 }
+    }
+	character:73991.dynasty = { #Olmedo
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73991 }
+    }
     character:levantine0008 = {
 		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
+    }
+    character:andalusian0134 = {
+        change_first_name = Aurea
+    }
+    character:andalusian0140 = {
+        change_first_name = Mary
+    }
+    character:73991 = {
+        change_first_name = Sibyl
+    }
+    character:andalusian0135 = {
+        change_first_name = Velasco
+    }
+    character:73988 = {
+        change_first_name = Ordono
+		dynasty_effect_ne = yes
+    }
+    character:73990 = {
+        change_first_name = Savaric
+		dynasty_effect_ne = yes
     }
     character:73951 = {
         change_first_name = Abd-Allah
