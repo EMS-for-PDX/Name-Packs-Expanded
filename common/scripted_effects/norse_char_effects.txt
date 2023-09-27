@@ -236,7 +236,7 @@
 	}
 	character:167777 = {
 		change_first_name = Harold
-		#give nick Klak
+		add_to_global_variable_list = { name = Klak_byname target = this }
 	}
 	character:168330 = {
 		change_first_name = Olaf
@@ -273,9 +273,14 @@
 	}
 	character:168322 = {
 		change_first_name = Ragnvald
+		give_nickname = nick_the_glorious
 	}
 	character:168321 = {
 		change_first_name = Olaf
+		add_to_global_variable_list = { name = GeirstadElf_byname target = this }
+	}
+	character:168323 = {
+		give_nickname = nick_the_black
 	}
 	character:144000 = {
 		change_first_name = Harold
@@ -292,6 +297,13 @@
 	}
 	character:168320 = {
 		change_first_name = Godfrey
+		give_nickname =  nick_the_hunter
+	}
+	character:168319 = {
+		give_nickname =  nick_the_kind
+	}
+	character:168316 = {
+		add_to_global_variable_list = { name = Whitebone_byname target = this }
 	}
 	character:168317 = {
 		change_first_name = Eystan

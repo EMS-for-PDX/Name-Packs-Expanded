@@ -2288,10 +2288,17 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:83368 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:83369 }
 	}
+	character:83368.dynasty = { #Aeda
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6010 }
+	}
+	character:6010 = {
+		change_first_name = Aed
+		dynasty_effect_ne = yes
+	}
 	character:6212 = {
 		change_first_name = Aine
 	}
-	character:6210 = {
+	character:914 = {
 		change_first_name = Derbail
 	}
 	character:6121 = {
