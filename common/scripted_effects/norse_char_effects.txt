@@ -5,9 +5,8 @@
 	add_to_global_variable_list = { name = name_pack_support_global target = character:6836 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:6872 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:6862 }
-	add_to_global_variable_list = { name = name_pack_support_global target = character:6873 } Alfrid
-	add_to_global_variable_list = { name = name_pack_support_global target = character:167720 } Ingfrid
-	add_to_global_variable_list = { name = name_pack_support_global target = character:167720 } Ingfrid
+	add_to_global_variable_list = { name = name_pack_support_global target = character:6873 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:167720 }
 	character:194004.dynasty = { #Sigurd Semi-Legendary
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:194004 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:194028 }
@@ -223,11 +222,12 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6866 }
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:163113 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6867 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6865 }
 	}
 	character:41267.dynasty = { #Gute ???
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41267 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:194048 }
-		$add_to_variable_list = { name = name_pack_support_dynasty target = character:194047 } Frodi
+		#add_to_variable_list = { name = name_pack_support_dynasty target = character:194047 } Frodi
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:194046 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:194007 }
 	}
@@ -239,6 +239,15 @@
 	}
 	character:303404.dynasty = { #Nantes
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:303404 }
+	}
+	character:6865 = {
+		change_first_name = Frederick
+	}
+	character:6873 = {
+		change_first_name = Alfrid
+	}
+	character:167720 = {
+		change_first_name = Ingfrid
 	}
 	character:303404 = {
 		change_first_name = Olaf
@@ -270,6 +279,7 @@
 	}
 	character:6866 = {
 		change_first_name = Eric
+		dynasty_effect_ne = yes
 	}
 	character:41258 = {
 		change_first_name = Rani
