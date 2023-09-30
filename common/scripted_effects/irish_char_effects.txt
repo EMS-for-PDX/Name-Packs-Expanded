@@ -2291,6 +2291,17 @@
 	character:83368.dynasty = { #Aeda
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6010 }
 	}
+	character:6005.dynasty = { #Aengusa
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6005 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6007 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20071 }
+	}
+	character:20071 = {
+		change_first_name = MaelPedair
+	}
+	character:6007 = {
+		change_first_name = Finnguala
+	}
 	character:6010 = {
 		change_first_name = Aed
 		dynasty_effect_ne = yes
