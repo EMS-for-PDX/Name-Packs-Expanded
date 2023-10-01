@@ -1,97 +1,97 @@
-﻿SpainNick = {
-	text = {
-		trigger = {
-			any_in_global_list = {
-				variable = One-Eyed_byname
-				this = root
-			}
-		}
-        localization_key = One-Eyed
-	}
-	text = {
-		trigger = {
-			any_in_global_list = {
-				variable = WhiteHands_byname
-				this = root
-			}
-		}
-        localization_key = WhiteHands
-	}
-	text = {
-		trigger = {
-			any_in_global_list = {
-				variable = Oak_byname
-				this = root
-			}
-		}
-        localization_key = Oak
-	}
-	text = {
-		trigger = {
-			any_in_global_list = {
-				variable = Great_byname
-				this = root
-			}
-		}
-        localization_key = Great
-	}
-	text = {
-		fallback = yes
-        localization_key = BlankNick
-	}
-}
-SpainCult = {
-	text = {
-		trigger = {
-			culture = {
-                has_name_list = name_list_aragonese
-				OR = {
-                    has_cultural_pillar = language_iberian
-                    has_cultural_pillar = language_occitano_romance
-                }
-			}
-		}
-		localization_key = _aragonese
-	}
-	text = {
-		trigger = {
-			culture = {
-				has_cultural_pillar = language_basque
-			}
-		}
-		localization_key = _basque
-	}
-	text = {
-		trigger = {
-			culture = {
-				has_cultural_pillar = language_occitano_romance
-			}
-		}
-		localization_key = _catalan
-	}
-	text = {
-		trigger = {
-			culture = {
-                has_name_list = name_list_visigothic
-				has_cultural_pillar = language_iberian
-			}
-		}
-		localization_key = _visgothic
-	}
-	text = {
-		trigger = {
-			culture = {
-                OR = {
-                    has_name_list = name_list_galician
-                    has_name_list = name_list_portuguese
-                }
-				has_cultural_pillar = language_iberian
-			}
-		}
-		localization_key = _portuguese
-	}
-	text = {
-		fallback = yes
-        localization_key = _castillian
-	}
-}
+﻿#SpainNick = {
+#	text = {
+#		trigger = {
+#			any_in_global_list = {
+#				variable = One-Eyed_byname
+#				this = root
+#			}
+#		}
+#        localization_key = One-Eyed
+#	}
+#	text = {
+#		trigger = {
+#			any_in_global_list = {
+#				variable = WhiteHands_byname
+#				this = root
+#			}
+#		}
+#        localization_key = WhiteHands
+#	}
+#	text = {
+#		trigger = {
+#			any_in_global_list = {
+#				variable = Oak_byname
+#				this = root
+#			}
+#		}
+#        localization_key = Oak
+#	}
+#	text = {
+#		trigger = {
+#			any_in_global_list = {
+#				variable = Great_byname
+#				this = root
+#			}
+#		}
+#        localization_key = Great
+#	}
+#	text = {
+#		fallback = yes
+#        localization_key = BlankNick
+#	}
+#}
+#SpainCult = {
+#	text = {
+#		trigger = {
+#			culture = {
+#                has_name_list = name_list_aragonese
+#				OR = {
+#                    has_cultural_pillar = language_iberian
+#                    has_cultural_pillar = language_occitano_romance
+#                }
+#			}
+#		}
+#		localization_key = _aragonese
+#	}
+#	text = {
+#		trigger = {
+#			culture = {
+#				has_cultural_pillar = language_basque
+#			}
+#		}
+#		localization_key = _basque
+#	}
+#	text = {
+#		trigger = {
+#			culture = {
+#				has_cultural_pillar = language_occitano_romance
+#			}
+#		}
+#		localization_key = _catalan
+#	}
+#	text = {
+#		trigger = {
+#			culture = {
+#                has_name_list = name_list_visigothic
+#				has_cultural_pillar = language_iberian
+#			}
+#		}
+#		localization_key = _visgothic
+#	}
+#	text = {
+#		trigger = {
+#			culture = {
+#                OR = {
+#                    has_name_list = name_list_galician
+#                    has_name_list = name_list_portuguese
+#                }
+#				has_cultural_pillar = language_iberian
+#			}
+#		}
+#		localization_key = _portuguese
+#	}
+#	text = {
+#		fallback = yes
+#        localization_key = _castillian
+#	}
+#}
