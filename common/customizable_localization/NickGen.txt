@@ -1,5 +1,114 @@
 ﻿NPENick = {
+	log_loc_errors = no
 	#NPE Historic
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Lingqu_byname
+				this = root
+			}
+		}
+        localization_key = Lingqu
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = SplinteredSpear_byname
+				this = root
+			}
+		}
+        localization_key = SplinteredSpear
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rock_byname
+				this = root
+			}
+		}
+        localization_key = Rock
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Hosts_byname
+				this = root
+			}
+		}
+        localization_key = Hosts
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Dyfnallt_byname
+				this = root
+			}
+		}
+        localization_key = Dyfnallt
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Rus_byname
+				this = root
+			}
+		}
+        localization_key = Rus
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Salji_byname
+				this = root
+			}
+		}
+        localization_key = Salji
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = BulgarSlayer_byname
+				this = root
+			}
+		}
+        localization_key = BulgarSlayer
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Stammerer2_byname
+				this = root
+			}
+		}
+        localization_key = Stammerer2
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = SlitNosed_byname
+				this = root
+			}
+		}
+        localization_key = SlitNosed
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = Logos_byname
+				this = root
+			}
+		}
+        localization_key = Logos
+	}
+	text = {
+		trigger = {
+			any_in_global_list = {
+				variable = KhazarB_byname
+				this = root
+			}
+		}
+        localization_key = KhazarB
+	}
 	text = {
 		trigger = {
 			any_in_global_list = {
@@ -291,12 +400,27 @@
 	}
 	text = {
 		trigger = {
+			has_nickname = nick_the_younger
+			culture = {
+				OR = {
+					has_cultural_pillar = language_high_german
+					has_cultural_pillar = language_low_german
+				}
+			}
+		}
+        localization_key = Younger
+	}
+	text = {
+		trigger = {
 			OR = {
 				has_nickname = nick_the_german
 				has_nickname = nick_the_german_post_mortem
 			}
 			culture = {
-				has_cultural_pillar = language_central_germanic
+				OR = {
+					has_cultural_pillar = language_high_german
+					has_cultural_pillar = language_low_german
+				}
 			}
 		}
         localization_key = German

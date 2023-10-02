@@ -1,0 +1,49 @@
+﻿kannada_regnal = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+	desc = kannada_regnal_desc
+	selection_tooltip = kannada_regnal_tooltip
+	is_shown = {
+		culture = {
+			is_npe_supported_culture = yes
+			has_cultural_pillar = heritage_dravidian
+			has_cultural_pillar = language_kannada
+		}
+		NOT = {
+			has_character_flag = kannada_regnal_assigned #living historical chars will need this flag BTW
+		}
+	}
+    is_valid = {
+        NOT = {
+			religion = religion:islam_religion
+		}
+		OR = {
+			AND = {
+				highest_held_title_tier >= tier_kingdom
+				has_government = feudal_government
+			}
+			any_spouse = {
+				highest_held_title_tier >= tier_kingdom
+				has_government = feudal_government
+			}
+		}
+    }
+	effect = {
+		add_character_flag = kannada_regnal_assigned
+		if = {
+			limit = {
+				is_male = no
+			}
+			kannada_regnal_female_effect = yes
+		}
+		else = {
+			kannada_regnal_male_effect = yes
+		}
+	}
+
+    ai_will_do = {
+        base = 100
+    }
+
+    ai_goal = yes
+}

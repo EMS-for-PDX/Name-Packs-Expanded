@@ -148,7 +148,6 @@
 	character:168648.dynasty = { #Hjort Legendary
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168648 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168649 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:168368 }
 	}
 	character:194005.house = {
 		set_variable = {
@@ -185,8 +184,8 @@
 	character:6842.dynasty = { #Bleik Fake
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6842 }
 	}
-	character:186013.dynasty = { #Hejarskinn real?
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:186013 }
+	character:186014.dynasty = { #Hejarskinn real?
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:186014 }
 	}
 	character:167776.dynasty = { #Akra Real/Semi-Legendary
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:168635 }
@@ -240,6 +239,17 @@
 	}
 	character:303404.dynasty = { #Nantes
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:303404 }
+	}
+	character:6878.dynasty = { #Haesteinning
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6878 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:6880 }
+	}
+	character:6880 = {
+		change_first_name = Ragnar
+	}
+	character:6878 = {
+		change_first_name = Hastein
+		dynasty_effect_ne = yes
 	}
 	character:6865 = {
 		change_first_name = Frederick
@@ -417,7 +427,7 @@
 	character:168368 = {
 		change_first_name = Rurik
 	}
-	character:168014 = {
+	character:186014 = {
 		change_first_name = Geirmund #real name
 		dynasty_effect_ne = yes
 		#give nick Heljarskinn

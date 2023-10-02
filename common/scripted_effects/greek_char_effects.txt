@@ -812,6 +812,9 @@
 	character:1706 = {
 		change_first_name = Romanus
 	}
+	character:70510 = {
+		change_first_name = Maurice
+	}
 	character:145204 = {
 		change_first_name = Stephenia
 	}
@@ -896,11 +899,11 @@
 	}
 	character:70508 = {
 		change_first_name = Constans
-		add_to_global_variable_list = { name = Bearded_byname target = character:70506 }
+		give_nickname = nick_the_bearded
 	}
 	character:70507 = {
 		change_first_name = Constantine
-		add_to_global_variable_list = { name = Bearded_byname target = character:70506 }
+		give_nickname = nick_the_bearded
 	}
 	character:70506 = {
 		change_first_name = Justinian
@@ -924,10 +927,10 @@
 	}
 	character:70501 = {
 		change_first_name = Constantine
-		add_to_global_variable_list = { name = DungNamed_byname target = character:70501 }
+		give_nickname = nick_the_dung_named
 	}
 	character:70500 = {
-		add_to_global_variable_list = { name = Khazar_byname target = character:70500 }
+		add_to_global_variable_list = { name = KhazarB_byname target = character:70500 }
 	}
 	character:70499 = {
 		change_first_name = Constantine
@@ -952,7 +955,7 @@
 		add_to_global_variable_list = { name = Stammerer2_byname target = character:70492 }
 	}
 	character:70490 = {
-		add_to_global_variable_list = { name = Drunkard_byname target = character:70490 }
+		give_nickname = nick_the_drunkard
 	}
 	character:145114 = {
 		name_gen_effect = yes
@@ -1783,7 +1786,7 @@
         change_first_name = Stephen
     }
     character:1702 = {
-		add_to_global_variable_list = { name = Wise_byname target = character:1702 }
+		give_nickname = nick_the_wise
     }
     character:1708 = {
         change_first_name = Constantine
@@ -1802,7 +1805,7 @@
         change_first_name = Romanus
     }
     character:70432 = {
-		add_to_global_variable_list = { name = Warlike_byname target = character:70432 }
+		give_nickname = nick_the_quarrelsome
     }
     character:20481 = {
         change_first_name = John

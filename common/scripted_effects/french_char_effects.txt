@@ -555,9 +555,9 @@
 	character:200141 = {
 		#dynasty_effect_ne
 	}
-	#character:6440 = {
-		#Nick Strong
-	#}
+	character:6440 = {
+		give_nickname = nick_the_strong
+	}
 	character:131714 = {
 		change_first_name = Sigbert
 	}
@@ -1160,7 +1160,7 @@
     add_to_global_variable_list = { name = name_pack_support_global target = character:138048 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:90048 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:90052 }
-	add_to_global_variable_list = { name = name_pack_support_global target = character:60542 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:40542 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:41242 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:73271 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:204577 }
@@ -1403,7 +1403,6 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41012 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41013 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41014 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:41212 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:204792 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41017 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:41260 }
@@ -4591,7 +4590,7 @@
 	}
 	character:382 = {
 		change_first_name = Theobald 
-		#nick - the traitor
+		give_nickname = nick_the_traitor
 	}
 	character:205897 = {
 		change_first_name = Stephen
