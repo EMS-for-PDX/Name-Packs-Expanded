@@ -30,15 +30,7 @@
     }
 	effect = {
 		add_character_flag = kannada_regnal_assigned
-		if = {
-			limit = {
-				is_male = no
-			}
-			kannada_regnal_female_effect = yes
-		}
-		else = {
-			kannada_regnal_male_effect = yes
-		}
+		kannada_regnal_name_effect = yes
 	}
 
     ai_will_do = {

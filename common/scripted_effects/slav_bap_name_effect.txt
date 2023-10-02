@@ -1871,6 +1871,12 @@
 	}
 	else_if = {
 		limit = {
+				this.var:slav_name = flag:Danica
+		}
+		add_to_global_variable_list = { name = Danica_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
 				this.var:slav_name = flag:Deva
 		}
 		add_to_global_variable_list = { name = Deva_slav target = scope:thechar }
@@ -1898,6 +1904,12 @@
 				this.var:slav_name = flag:Domaslava
 		}
 		add_to_global_variable_list = { name = Domaslava_slav target = scope:thechar }
+	}
+	else_if = {
+		limit = {
+				this.var:slav_name = flag:Doroslava
+		}
+		add_to_global_variable_list = { name = Doroslava_slav target = scope:thechar }
 	}
 	else_if = {
 		limit = {
