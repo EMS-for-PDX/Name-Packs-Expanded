@@ -180,6 +180,7 @@ uyghur_check = {
 		has_name_list = name_list_yughur
 		has_name_list = name_list_kirghiz
 		has_name_list = name_list_uriankhai
+		has_name_list = name_list_ongut
 	}
 }
 karluk_check = {
@@ -197,13 +198,15 @@ kipchak_check = {
 	}
 }
 mongol_check = {
-	has_cultural_pillar = language_mongolic
-	OR = {
-		has_name_list = name_list_mongol
-		has_name_list = name_list_naiman
-		has_name_list = name_list_buryat
-		has_name_list = name_list_kerait
-		has_name_list = name_list_oirat
+	has_cultural_pillar = heritage_mongolic
+	NOT = {
+		AND = {
+			has government = tribal_government
+			OR = {
+				has_name_list = name_list_tuyuhun
+				has_name_list = name_list_khitan
+			}
+		}
 	}
 }
 kurdish_lang_check = {
