@@ -198,9 +198,10 @@ kipchak_check = {
 	}
 }
 mongol_check = {
-	has_cultural_pillar = heritage_mongolic
-	NOT = {
+	OR = {
+		has_cultural_pillar = heritage_mongolic
 		AND = {
+			has_cultural_pillar = heritage_mongolic
 			has government = tribal_government
 			OR = {
 				has_name_list = name_list_tuyuhun
