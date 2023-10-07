@@ -164,7 +164,13 @@ bulgarian_check = {
 	has_cultural_pillar = language_slavonic
 }
 south_slav_check = {
-	has_cultural_pillar = heritage_south_slavic
+	OR = {
+		has_cultural_pillar = heritage_south_slavic
+		AND = {
+			has_cultural_pillar = heritage_west_slavic
+			has_cultural_pillar = language_south_slavic
+		}
+	}
 }
 turkish_check = {
 	has_cultural_pillar = heritage_turkic
