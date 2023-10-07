@@ -310,6 +310,92 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier = tier_emperor
+		}
+		localization_key = Window_Sinhala_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Window_Sinhala_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+		}
+		localization_key = Window_Sinhala_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Window_Sinhala_Dep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+		}
+		localization_key = Window_Sinhala
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				has_cultural_pillar = language_telugu
 			}
@@ -1375,6 +1461,92 @@ WindowNameTT = {
 			}
 		}
 		localization_key = Window_Ethiopian_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier = tier_emperor
+		}
+		localization_key = Window_Sinhala_Emperor_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+			OR = {
+				has_government = feudal_government
+				AND = {
+					exists = dynasty
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = root
+						}
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Window_Sinhala_King_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+		}
+		localization_key = Window_Sinhala_Indep_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Window_Sinhala_Dep_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_indoaryan
+				has_cultural_pillar = language_sinhalese
+			}
+		}
+		localization_key = Window_Sinhala_TT
 	}
 	text = {
 		trigger = {
