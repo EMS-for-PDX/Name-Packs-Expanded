@@ -17,6 +17,54 @@
 		localization_key = DevaSuf
 	}
 }
+SinhalaRegnal = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			dynasty ?= {
+				any_in_list = {
+					variable = SalamevanReg
+					this = root
+				}
+			}
+		}
+        localization_key = SalamevanReg
+	}
+	text = {
+		trigger = {
+			dynasty ?= {
+				any_in_list = {
+					variable = SangboReg
+					this = root
+				}
+			}
+		}
+        localization_key = SangboReg
+	}
+	text = {
+		trigger = {
+			is_male = yes
+			primary_spouse ?= {
+				highest_held_title_tier = tier_empire
+			}
+		}
+		localization_key = SinhalUnlandRegm
+	}
+	text = {
+		trigger = {
+			is_male = no
+			primary_spouse ?= {
+				highest_held_title_tier = tier_empire
+			}
+		}
+		localization_key = SinhalUnlandReg
+	}
+	text = {
+		fallback = yes
+		localization_key = Gui_Blank
+	}
+}
 SinhalEmpEnd = {
 	type = character
 	log_loc_errors = no
