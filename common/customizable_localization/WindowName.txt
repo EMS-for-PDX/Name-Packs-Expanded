@@ -325,7 +325,12 @@
 					}
 				}
 			}
-			highest_held_title_tier = tier_emperor
+			OR = {
+				highest_held_title_tier = tier_emperor
+				primary_spouse ?= {
+					highest_held_title_tier = tier_emperor
+				}
+			}
 		}
 		localization_key = Window_Sinhala_Emperor
 	}
@@ -348,7 +353,15 @@
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Window_Sinhala_King
 	}
