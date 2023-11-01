@@ -1668,6 +1668,24 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbgreek093 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:41305 }
     }
+    character:41305.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbgreek094
+        }
+    }
+	character:41305.dynasty = { #Tornikes
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbgreek094 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:70435 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:20561 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:93452 }
+    }
+    character:93452 = {
+        change_first_name = Niketas
+    }
+    character:20561 = {
+        change_first_name = Peter
+    }
     character:1781 = {
         change_first_name = John
     }
