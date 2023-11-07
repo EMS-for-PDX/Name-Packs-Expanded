@@ -1,8 +1,8 @@
 ﻿l_english:
 
- KNIGHTS_VIEW_FORCE:0 "Force"
- KNIGHTS_VIEW_ALLOW:0 "Allow"
- KNIGHTS_VIEW_FORBID:0 "Forbid"
+ KNIGHTS_VIEW_FORCE: "Force"
+ KNIGHTS_VIEW_ALLOW: "Allow"
+ KNIGHTS_VIEW_FORBID: "Forbid"
  KNIGHTS_VIEW_TITLE: "$knight_culture_player_plural_no_tooltip$"
  MAX_KNIGHT_COUNT: "$knight_culture_player_plural_no_tooltip$: #high [GetKnightCount( GetPlayer.Self )]/[GetKnightLimit( GetPlayer.Self )]#!"
  MAX_KNIGHT_TOOLTIP: "#T Maximum Number of $knight_culture_player_plural_no_tooltip$: [knight_i][GetKnightLimit( GetPlayer.Self )|V]#!\n[GetKnightLimitBreakdown( GetPlayer.Self )]"
@@ -11,5 +11,5 @@
  KNIGHTS_VIEW_TITLE_FORBID_TT: "#T Forbid [Character.Custom('ShortName')] from being a $knight_culture_player$#!\n\n[Character.Custom('ShortName')] may #emphasis never#! join your [armies|E] as a $knight_culture_player_no_tooltip$. This keeps [Character.GetHerHim] safe from dying in [battle|E]."
  KNIGHTS_VIEW_TITLE_BY_PROWESS_TT: "#T Allow [Character.Custom('ShortName')] to be a $knight_culture_player$#!\n\n[Character.Custom('ShortName')] may join your [armies|E] as a $knight_culture_player_no_tooltip$ if [Character.GetHerHis] [prowess|E] is one of the highest in the [realm|E]"
  KNIGHTS_VIEW_TITLE_FORCE_TT: "#T Force [Character.Custom('ShortName')] to be a $knight_culture_player$#!\n\n[Character.Custom('ShortName')] #emphasis must#! join your [armies|E] as a $knight_culture_player_no_tooltip$, regardless of [Character.GetHerHis] [prowess|E]. [Character.GetSheHe|U] may take the place of a $knight_culture_player_no_tooltip$ with higher Prowess."
- KNIGHTS_CURRENT_MAX:0 "[GetKnightCount( GetPlayer.Self )|V]/[GetKnightLimit( GetPlayer.Self )|V]"
- KNIGHTS_SUBHEADER:0 "Eligible [courtiers|E] and [vassals|E]"
+ KNIGHTS_CURRENT_MAX: "[GetKnightCount( GetPlayer.Self )|V]/[GetKnightLimit( GetPlayer.Self )|V]"
+ KNIGHTS_SUBHEADER: "Eligible [courtiers|E] and [vassals|E]"
