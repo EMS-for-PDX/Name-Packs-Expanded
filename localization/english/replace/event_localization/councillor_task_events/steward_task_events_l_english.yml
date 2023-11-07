@@ -37,11 +37,11 @@
  steward_task.1003.notification:0 "No Sheriffs Appointed"
 
  steward_task.1004.end:0 "\n\nWith the new tolls introduced in the [county.GetName], more and more people are turning to smuggling instead of legal trade!"
- steward_task.1004.a:0 "They are practically stealing from the [ROOT.Char.GetTitleTierName]'s pockets!"
+ steward_task.1004.a:0 "They are practically stealing from the [ROOT.Char.Custom('TitleTierName')]'s pockets!"
  steward_task.1004.notification:0 "Excessive Tariffs"
 
  steward_task.2001.t:0 "Lack of Workers"
- steward_task.2001.desc:0 "The peasants are complaining about the interference of my [councillor.GetCouncilTitle] in the [county.GetName]! [councillor.Custom('TitledFirstNamePossessive')] diversion of workers from all over the [county.GetTitleTierName] means that other construction projects already under way are rarely finished."
+ steward_task.2001.desc:0 "The peasants are complaining about the interference of my [councillor.GetCouncilTitle] in the [county.GetName]! [councillor.Custom('TitledFirstNamePossessive')] diversion of workers from all over the [county.Custom('TitleTierName')] means that other construction projects already under way are rarely finished."
  steward_task.2001.a:0 "You cannot sacrifice everything for this task, [councillor.Custom('FirstNameNoTooltip')]!"
  steward_task.2001.notification:0 "Mismanaged Development"
 
@@ -50,7 +50,7 @@
  steward_task.2002.notification:0 "Mismanaged Population"
 
  steward_task.2003.t:0 "Loss of Control"
- steward_task.2003.desc:0 "For all the good efforts of my [councillor.GetCouncilTitle] to settle new fiefs in the [county.GetName], things seem to have gotten out of hand. With so much movement of people, [councillor.Custom('TitledFirstName')] does not seem to know which parts of the [county.GetTitleTierName] are already settled, and which ones are planned for land clearance. Indeed, it seems as though nobody knows!"
+ steward_task.2003.desc:0 "For all the good efforts of my [councillor.GetCouncilTitle] to settle new fiefs in the [county.GetName], things seem to have gotten out of hand. With so much movement of people, [councillor.Custom('TitledFirstName')] does not seem to know which parts of the [county.Custom('TitleTierName')] are already settled, and which ones are planned for land clearance. Indeed, it seems as though nobody knows!"
  steward_task.2003.a:0 "Get the situation under control, [councillor.Custom('FirstNameNoTooltip')]!"
  steward_task.2003.notification:0 "Loss of Control"
 
@@ -60,8 +60,8 @@
  steward_task.2101.notification:0 "Efficient County Taxes"
 
  steward_task.2102.t:0 "Increased Control"
- steward_task.2102.desc:0 "Guiding the settlement of new fiefs in the [county.GetName] requires my [councillor.GetCouncilTitle] to exercise a greater degree of control than what has been traditional for the people there.\n\nThankfully [councillor.Custom('TitledFirstName')] commands great respect, and the strengthened administration in the [county.GetTitleTierName] benefits me in more ways than one."
- steward_task.2102.a:0 "Remind them all of the [ROOT.Char.GetTitleTierName] who rules them."
+ steward_task.2102.desc:0 "Guiding the settlement of new fiefs in the [county.GetName] requires my [councillor.GetCouncilTitle] to exercise a greater degree of control than what has been traditional for the people there.\n\nThankfully [councillor.Custom('TitledFirstName')] commands great respect, and the strengthened administration in the [county.Custom('TitleTierName')] benefits me in more ways than one."
+ steward_task.2102.a:0 "Remind them all of the [ROOT.Char.Custom('TitleTierName')] who rules them."
  steward_task.2102.notification:0 "Increased Control"
 
  steward_task.3001.t:0 "Resistance to Settlers"
@@ -80,7 +80,7 @@
  steward_task.3101.notification:0 "[ROOT.Char.GetCulture] Administration Welcomed"
 
  steward_task.3102.t:0 "Appreciated Management"
- steward_task.3102.desc:1 "My [councillor.GetCouncilTitle], [councillor.Custom('TitledFirstName')], has been working to improve the administration of the [county.GetName] by introducing ideas based on [ROOT.Char.GetCulture.GetName] traditions.\n\nWith deft management of the [county.GetTitleTierName], the local landholders do not seem to mind a slight increase in taxes."
+ steward_task.3102.desc:1 "My [councillor.GetCouncilTitle], [councillor.Custom('TitledFirstName')], has been working to improve the administration of the [county.GetName] by introducing ideas based on [ROOT.Char.GetCulture.GetName] traditions.\n\nWith deft management of the [county.Custom('TitleTierName')], the local landholders do not seem to mind a slight increase in taxes."
  steward_task.3102.a:0 "More gold in the coffers is always good!"
  steward_task.3102.notification:0 "[ROOT.Char.GetCulture] Administration"
 

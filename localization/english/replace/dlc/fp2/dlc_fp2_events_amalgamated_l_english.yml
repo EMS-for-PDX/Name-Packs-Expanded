@@ -237,7 +237,7 @@
  fp2_struggle.1001.c:0 "They can come stay at my court! We have food in abundance!"
  fp2_struggle.1001.c.tt:0 "You invite all poor single mothers in your realm to stay at your court."
  fp2_struggle.1001.d:0 "Surely, my benevolent vassals can help fund this."
- fp2_struggle.1001.e:0 "I am your [ROOT.Char.GetTitleTierName], not a wet nurse!"
+ fp2_struggle.1001.e:0 "I am your [ROOT.Char.Custom('TitleTierName')], not a wet nurse!"
  fp2_struggle.1001.specialdescpositive:0 "Vassals who are happy to pay gain #positive_value 10#! #color_light_blue Opinion#! of you"
  fp2_struggle.1001.specialdescnegative:0 "Vassals who are not happy to pay lose #negative_value 10#! #color_light_blue Opinion#! of you"
  
@@ -425,11 +425,11 @@
  fp2_flavor.8001_vassal_opinion:0 "Vassals who are protective of their privilege will dislike this"
 
  fp2_yearly.8000.t:0 "Burning the Vineyards"
- fp2_yearly.8000.desc_muslim_opening:0 "The fine wine made in Iberia has long been enjoyed by the faithful who settled here. Yet the [vinoclast_caliph.GetTitleTierName] [vinoclast_caliph.Custom('FirstName')] has now decided that this shall come to an end.\n\n"Wine", [vinoclast_caliph.GetHerHis] envoy [hof_emissary.Custom('TitledFirstName')] declares, "is certainly #italic haram#!, and neither its production nor consumption can be tolerated any longer. You must therefore put the vineyards in the [vineyard_county.GetName] to the torch."
- fp2_yearly.8000.desc_jewish_opening:0 "The fine wine made in Iberia has long been enjoyed by our ancestors who settled here. Yet the [vinoclast_caliph.GetTitleTierName] [vinoclast_caliph.Custom('FirstName')] has now decided that this shall come to an end.\n\n"Wine", [vinoclast_caliph.GetHerHis] envoy [hof_emissary.Custom('TitledFirstName')] declares, "is certainly not kosher, and neither its production nor consumption can be tolerated any longer. You must therefore put the vineyards in the [vineyard_county.GetName] to the torch."
- fp2_yearly.8000.desc_jerez:0 "But since your city of [jerez_vineyards.GetNameNoTier] has the greatest vineyards in all of Iberia, we do understand the gravity of your sacrifice, and the [vinoclast_caliph.GetTitleTierName] will not forget it. Still, the vineyards must burn!""
- fp2_yearly.8000.desc_not_jerez:0 "The [vinoclast_caliph.GetTitleTierName] do understand the anguish this may cause for your wine farmers, but think of all the land you will free up for better, more righteous purposes! The vineyards must be destroyed.""
- fp2_yearly.8000.a:0 "Destroying fine wine? Has the [vinoclast_caliph.GetTitleTierName] gone insane?"
+ fp2_yearly.8000.desc_muslim_opening:0 "The fine wine made in Iberia has long been enjoyed by the faithful who settled here. Yet the [vinoclast_caliph.Custom('TitleTierName')] [vinoclast_caliph.Custom('FirstName')] has now decided that this shall come to an end.\n\n"Wine", [vinoclast_caliph.GetHerHis] envoy [hof_emissary.Custom('TitledFirstName')] declares, "is certainly #italic haram#!, and neither its production nor consumption can be tolerated any longer. You must therefore put the vineyards in the [vineyard_county.GetName] to the torch."
+ fp2_yearly.8000.desc_jewish_opening:0 "The fine wine made in Iberia has long been enjoyed by our ancestors who settled here. Yet the [vinoclast_caliph.Custom('TitleTierName')] [vinoclast_caliph.Custom('FirstName')] has now decided that this shall come to an end.\n\n"Wine", [vinoclast_caliph.GetHerHis] envoy [hof_emissary.Custom('TitledFirstName')] declares, "is certainly not kosher, and neither its production nor consumption can be tolerated any longer. You must therefore put the vineyards in the [vineyard_county.GetName] to the torch."
+ fp2_yearly.8000.desc_jerez:0 "But since your city of [jerez_vineyards.GetNameNoTier] has the greatest vineyards in all of Iberia, we do understand the gravity of your sacrifice, and the [vinoclast_caliph.Custom('TitleTierName')] will not forget it. Still, the vineyards must burn!""
+ fp2_yearly.8000.desc_not_jerez:0 "The [vinoclast_caliph.Custom('TitleTierName')] do understand the anguish this may cause for your wine farmers, but think of all the land you will free up for better, more righteous purposes! The vineyards must be destroyed.""
+ fp2_yearly.8000.a:0 "Destroying fine wine? Has the [vinoclast_caliph.Custom('TitleTierName')] gone insane?"
  fp2_yearly.8000.b:0 "I shall burn them to cinders!"
  fp2_yearly.8000.c:0 "No, I must protect the wine farmers."
 

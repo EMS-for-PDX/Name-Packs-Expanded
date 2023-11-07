@@ -13,7 +13,7 @@
  
  court_chaplain_task.0311.t:0 "A Claim on [county.GetNameNoTierNoTooltip]!"
  court_chaplain_task.0311.opening:0 "For months, [councillor.Custom('TitledFirstName')], [councillor_liege.Custom('TitledFirstNamePossessive')] [councillor.GetCouncilTitle], has been digging up spurious contracts and fabricated histories."
- court_chaplain_task.0311.end:0 "\n\nNow [councillor_liege.GetTitleTierName] [councillor_liege.Custom('FirstName')] dares act as if it all amounts to a legitimate claim on the [county.GetName]!"
+ court_chaplain_task.0311.end:0 "\n\nNow [councillor_liege.Custom('TitleTierName')] [councillor_liege.Custom('FirstName')] dares act as if it all amounts to a legitimate claim on the [county.GetName]!"
  court_chaplain_task.0311.a:0 "Lies and more lies!"
 
  court_chaplain_task.0312.a:0 "Does [councillor_liege.Custom('FirstNameNoTooltip')] have no shame?!"
@@ -29,12 +29,12 @@
  court_chaplain_task.2103.notification:0 "Fresh Converts Volunteer"
 
  court_chaplain_task.3001.t:0 "Undermining Order"
- court_chaplain_task.3001.desc:1 "My [councillor.GetCouncilTitle], [councillor.Custom('FirstName')], seems deeply concerned when [councillor.GetSheHe] comes to me.\n\n"It has come to light that I am... investigating the existence of a just and rightful claim for you on the [county.GetName]. Suffice to say, many of your vassals are upset that their [ROOT.Char.GetTitleTierName] would ignore their loyalty and act against them like this.""
+ court_chaplain_task.3001.desc:1 "My [councillor.GetCouncilTitle], [councillor.Custom('FirstName')], seems deeply concerned when [councillor.GetSheHe] comes to me.\n\n"It has come to light that I am... investigating the existence of a just and rightful claim for you on the [county.GetName]. Suffice to say, many of your vassals are upset that their [ROOT.Char.Custom('TitleTierName')] would ignore their loyalty and act against them like this.""
  court_chaplain_task.3001.a:0 "How could you let them catch you?!"
  court_chaplain_task.3002.notification:0 "Accused of Claim Fabrication"
 
  court_chaplain_task.3003.opening:0 "[vassal.Custom2('AppropriateGreeting', ROOT.Char)]"
- court_chaplain_task.3003.desc:0 "It has come to my attention that your [councillor.GetCouncilTitle], [councillor.Custom('FirstName')], is working to fabricate a spurious claim on the [county.GetName]. I implore you to remember that you are [ROOT.Char.GetTitleTierName] by right, not by greed."
+ court_chaplain_task.3003.desc:0 "It has come to my attention that your [councillor.GetCouncilTitle], [councillor.Custom('FirstName')], is working to fabricate a spurious claim on the [county.GetName]. I implore you to remember that you are [ROOT.Char.Custom('TitleTierName')] by right, not by greed."
  court_chaplain_task.3003.a:0 "I know what I am doing, [vassal.Custom('FirstNameNoTooltip')]."
  court_chaplain_task.3003.b:0 "Learn your place, [vassal.Custom('TitledFirstNameNoTooltip')]."
 

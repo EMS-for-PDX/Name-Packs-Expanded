@@ -1,16 +1,16 @@
 ﻿l_english:
  # # Stifled Commerce
  hold_court.8001.t:0 "Stifled Commerce"
- hold_court.8001.desc:0 "A provincial merchant steps forward, clearly out of [merchant.GetHerHis] element in my rich halls. I beckon, "Come [merchant.GetWomanMan], we don't have all day." \n\n"Y-yes my [ROOT.Char.GetLadyLord]!", [merchant.GetSheHe] stammers, "I am [merchant.Custom('FirstName')], representing the disgruntled traders and freemen of [town.GetNameNoTier], [town.GetDeJureLiege.GetNameNoTierPossessive] greatest [town.GetTierAsNameNoTooltip]." \n\n"[mayor.Custom('FirstName')], our [mayor.GetTitleTierName], [mayor.Custom('get_hold_court_8001_flaw')]–we humbly ask [mayor.GetSheHe] be replaced by someone else...""
+ hold_court.8001.desc:0 "A provincial merchant steps forward, clearly out of [merchant.GetHerHis] element in my rich halls. I beckon, "Come [merchant.GetWomanMan], we don't have all day." \n\n"Y-yes my [ROOT.Char.GetLadyLord]!", [merchant.GetSheHe] stammers, "I am [merchant.Custom('FirstName')], representing the disgruntled traders and freemen of [town.GetNameNoTier], [town.GetDeJureLiege.GetNameNoTierPossessive] greatest [town.GetTierAsNameNoTooltip]." \n\n"[mayor.Custom('FirstName')], our [mayor.Custom('TitleTierName')], [mayor.Custom('get_hold_court_8001_flaw')]–we humbly ask [mayor.GetSheHe] be replaced by someone else...""
  hold_court.8001.a:0 "[town.GetBaseNameNoTierPossessiveNoTooltip] election will come early."
- hold_court.8001.b:0 "Very well, #EMP YOU#! shall be the new [mayor.GetTitleTierName]!"
+ hold_court.8001.b:0 "Very well, #EMP YOU#! shall be the new [mayor.Custom('TitleTierName')]!"
  hold_court.8001.b.tt_success:0 "[merchant.Custom('FirstNameNoTooltip')] puts [town.GetBaseNameNoTierNoTooltip] in order"
  hold_court.8001.b.tt_failure:0 "[merchant.Custom('FirstNameNoTooltip')] is even worse"
  hold_court.8001.c:0 "And what does [mayor.Custom('FirstNameNoTooltip')] have to say?"
  hold_court.8001.c.tt_success:0 "Evidence of [mayor.Custom('FirstNamePossessiveNoTooltip')] incompetence is found"
  hold_court.8001.c.tt_failure:0 "[mayor.Custom('FirstNamePossessiveNoTooltip')] wrongdoing is not proved"
  hold_court.8001.d:0 "The crown will compensate the town's merchants."
- hold_court.8001.e:1 "You dare question the #EMP [ROOT.Char.GetTitleTierNamePossessive] [mayor.GetTitleTierName]?!#!"
+ hold_court.8001.e:1 "You dare question the #EMP [ROOT.Char.GetTitleTierNamePossessive] [mayor.Custom('TitleTierName')]?!#!"
  # Custom
  hold_court_8001.desc_lazy:0 "shirks every duty and scarcely upholds the law unless pressed"
  hold_court_8001.desc_greedy:0 "extracts ludicrous tariffs and crippling fines for [mayor.GetHerHis] own purse"
@@ -74,7 +74,7 @@
  holiness_fallback_3:0 "I will not refuse [ROOT.Char.GetFaith.HighGodNameAlternatePossessive] [ROOT.Char.GetFaith.PriestNeuterPlural]."
  # # Civic Rivalry
  hold_court.8030.t:0 "Civic Rivalry"
- hold_court.8030.desc.intro_1:0 "[mayor_2.Custom('TitledFirstName')], who has clearly been working [mayor_2.GetHerselfHimself] up about something, greets me. \n\n"My [ROOT.Char.GetTitleTierName], the dogs of [mayor_1.GetPrimaryTitle.GetNameNoTierNoTooltip] think they are better than us..." [mayor_2.GetSheHe] spews, "...cracking their haughty jokes each market day!"\n\n"[mayor_1.Custom('TitledFirstName')], the [mayor_1.Custom('InsultAdjective')] [mayor_1.Custom('InsultNoun')], needs to be put in [mayor_1.GetHerHis] place, and those"
+ hold_court.8030.desc.intro_1:0 "[mayor_2.Custom('TitledFirstName')], who has clearly been working [mayor_2.GetHerselfHimself] up about something, greets me. \n\n"My [ROOT.Char.Custom('TitleTierName')], the dogs of [mayor_1.GetPrimaryTitle.GetNameNoTierNoTooltip] think they are better than us..." [mayor_2.GetSheHe] spews, "...cracking their haughty jokes each market day!"\n\n"[mayor_1.Custom('TitledFirstName')], the [mayor_1.Custom('InsultAdjective')] [mayor_1.Custom('InsultNoun')], needs to be put in [mayor_1.GetHerHis] place, and those"
  hold_court.8030.desc.intro_heretical:0 "heretical"
  hold_court.8030.desc.intro_heathen:0 "heathen"
  hold_court.8030.desc.intro_foreign:0 "foreign"
@@ -103,7 +103,7 @@
  hold_court_8030_settled_county_modifier:0 "Civic Cooperation"
  # # Special Treatment
  hold_court.8040.t:0 "Special Treatment"
- hold_court.8040.desc:0 "The unrepentant [infidel_vassal.Custom('TitledFirstName')] graces you with [infidel_vassal.GetHerHis] presence. \n\nHaltingly, [infidel_vassal.GetSheHe] begins: "My [ROOT.Char.GetTitleTierName], I am a loyal and willing subject – let me practice my faith in peace." \n\n"
+ hold_court.8040.desc:0 "The unrepentant [infidel_vassal.Custom('TitledFirstName')] graces you with [infidel_vassal.GetHerHis] presence. \n\nHaltingly, [infidel_vassal.GetSheHe] begins: "My [ROOT.Char.Custom('TitleTierName')], I am a loyal and willing subject – let me practice my faith in peace." \n\n"
  hold_court.8040.desc.intro_same_religion:0 ""We [infidel_vassal.GetFaith.GetAdherentNamePlural] worship [infidel_vassal.GetFaith.CreatorName] just as the [ROOT.Char.GetFaith.GetAdherentNamePlural] do. Leave your [ROOT.Char.GetFaith.GetReligion.GetAdjective] [ROOT.Char.Custom('SisterBrother')]s to worship as they please, united instead against the wicked [ROOT.Char.Custom('GetUnbelieverNamePlural')] who follow false demons and allow [infidel_vassal.GetFaith.DevilName] to corrupt their hearts.""
  hold_court.8040.desc.intro_fallback:0 ""Why can't a [ROOT.Char.GetFaith.GetReligion.GetAdjective] and a [infidel_vassal.GetFaith.GetReligion.GetAdjective] live in harmony, separated by the teachings of [ROOT.Char.GetFaith.HighGodName] and [infidel_vassal.GetFaith.HighGodName] but united in piety? Let us follow our [infidel_vassal.GetFaith.ReligiousText] and you your [ROOT.Char.GetFaith.ReligiousText] side by side."
  hold_court.8040.a:0 "Judgment is reserved for [ROOT.Char.GetFaith.HighGodName] alone."

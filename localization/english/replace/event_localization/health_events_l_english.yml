@@ -48,7 +48,7 @@
 
  # Disease Contraction, by Mathilda Bjarnehed
  health.1001.t:1 "[SCOPE.Custom('EventTitleDisease')]: My Mortal Body"
- health.1001.desc:0 "[ROOT.Char.GetTitleTierName] or peasant, high or low, it does not matter. In the end, we are all mortals. I was reminded of this as I woke coughing in the early morning hours, a dull ache pounding through my head and throat."
+ health.1001.desc:0 "[ROOT.Char.Custom('TitleTierName')] or peasant, high or low, it does not matter. In the end, we are all mortals. I was reminded of this as I woke coughing in the early morning hours, a dull ache pounding through my head and throat."
  health.1001.court_physician.desc:0 "\n\n"You seem to be under the weather, my [ROOT.Char.GetLadyLord]. I know a fair number of suitable remedies.""
  health.1001.a:0 "All I want is to stay in bed..."
  health.1001.b:0 "I must return home #EMP at once!#!"
@@ -70,7 +70,7 @@
  health.1004.a:0 "What have I done to deserve this curse?"
 
  health.1005.t:1 "[SCOPE.Custom('EventTitleDisease')]: Camp Fever"
- health.1005.desc:0 "I have heard stories about brave soldiers dying like flies before they even set foot on the battlefield. But me, a [ROOT.Char.GetTitleTierName]? This aching, feverish nightmare is not a fate meant for me.\n\nAs yet another meal forces its way up my throat, I pray for redemption, my nostrils stinging with the sharp stench of bile."
+ health.1005.desc:0 "I have heard stories about brave soldiers dying like flies before they even set foot on the battlefield. But me, a [ROOT.Char.Custom('TitleTierName')]? This aching, feverish nightmare is not a fate meant for me.\n\nAs yet another meal forces its way up my throat, I pray for redemption, my nostrils stinging with the sharp stench of bile."
  health.1005.court_physician.desc:0 "\n\n"Do not worry, my [ROOT.Char.GetLadyLord]! Typhus is treatable, I assure you.""
  health.1005.a:0 "I beg, let it end!"
 
@@ -256,8 +256,8 @@
  # Recruit physician event
  health.3001.disease.t:0 "[SCOPE.Custom('EventTitleDisease')]:"
  health.3001.t:0 "Court Physician"
- health.3001.fallback_reason.desc:0 "This world is full of dangers, even to a [ROOT.Char.GetTitleTierName] and [ROOT.Char.GetHerHis] court. I should hire a court physician lest injury or disease befalls us.\n\nI have asked around for recommendations, and have assembled a few options to chose from."
- health.3001.decision.desc:0 "This world is full of dangers, even to a [ROOT.Char.GetTitleTierName] and [ROOT.Char.GetHerHis] court. As per my request, my servants have inquired after recommendations. Now they have assembled a few options to chose from."
+ health.3001.fallback_reason.desc:0 "This world is full of dangers, even to a [ROOT.Char.Custom('TitleTierName')] and [ROOT.Char.GetHerHis] court. I should hire a court physician lest injury or disease befalls us.\n\nI have asked around for recommendations, and have assembled a few options to chose from."
+ health.3001.decision.desc:0 "This world is full of dangers, even to a [ROOT.Char.Custom('TitleTierName')] and [ROOT.Char.GetHerHis] court. As per my request, my servants have inquired after recommendations. Now they have assembled a few options to chose from."
  health.3001.already_sick.desc:0 "Finally, my servants have found some people who might be fit to serve as court physician. Either way, I fear I cannot afford to be picky now."
  health.3001.a:0 "Apparently, [high_skill_option.Custom('FirstNameNoTooltip')] is quite experienced."
  health.3001.a.tt:1 "A [GetCourtPositionType('court_physician_court_position').GetName()] also has a monthly salary of [gold_i][SCOPE.ScriptValue('court_position_physician_salary')]"
@@ -441,13 +441,13 @@
 
  health.4101.t:1 "$health_wounded_title$ Healing"
  health.4101.desc_infection:0 "As [physician.Custom('FirstName')] started to gently mash herbs and honey together, I thought [physician.GetSheHe] was jesting — surely greenery could not help me. As [physician.GetSheHe] smeared the poultice over my aching wound it"
- health.4101.desc_1:0 "As [physician.Custom('FirstName')] upended a bottle of wine over my wound, the pain was beyond anything the injury itself had brought me.\n\n"Please bare it, my [ROOT.Char.GetTitleTierName]. It is necessary to dispel the foulness within."\n\nAnd indeed, after bandaging the wound tightly, it"
+ health.4101.desc_1:0 "As [physician.Custom('FirstName')] upended a bottle of wine over my wound, the pain was beyond anything the injury itself had brought me.\n\n"Please bare it, my [ROOT.Char.Custom('TitleTierName')]. It is necessary to dispel the foulness within."\n\nAnd indeed, after bandaging the wound tightly, it"
  health.4101.desc_2:0 "[physician.Custom('FirstName')] quickly threaded a needle and set to work on my wound as if [physician.GetSheHe] was doing needlework around the fire. The resulting sight of stitches holding my flesh together was macabre! As time went on it"
  health.4101.desc_end:0 "soon started to heal."
  health.4101.a:0 "Excellent work, [physician.Custom('FirstNameNoTooltip')]!"
 
  health.4102.t:1 "$health_wounded_title$ Aching"
- health.4102.desc_infection:0 "The bag [physician.Custom('FirstName')] carried into my chambers moved on its own, the interior convulsing as if alive. As [physician.Custom('FirstNameNoTooltip')] pulled out a wriggling leech I felt my face go white. "Just hold still now, my [ROOT.Char.GetTitleTierName]..."\n\nWhatever effect [physician.GetSheHe] had hoped for it surely wasn't this; as the creatures bled me it"
+ health.4102.desc_infection:0 "The bag [physician.Custom('FirstName')] carried into my chambers moved on its own, the interior convulsing as if alive. As [physician.Custom('FirstNameNoTooltip')] pulled out a wriggling leech I felt my face go white. "Just hold still now, my [ROOT.Char.Custom('TitleTierName')]..."\n\nWhatever effect [physician.GetSheHe] had hoped for it surely wasn't this; as the creatures bled me it"
  health.4102.desc_end:0 "did nothing to balance my humors, and the pain only grew worse."
  health.4102.a:0 "Argh...! Don't touch me!"
 

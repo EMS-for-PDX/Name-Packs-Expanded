@@ -34,7 +34,7 @@
  vassal.2001.b:0 "Your [child_to_educate.Custom('GetDaughterSon')] is your responsibility!"
 
  vassal.2101.t:0 "Fervent Feaster"
- vassal.2101.desc:1 ""Many months have passed since the Lords and Ladies of the realm gathered for a feast, my [ROOT.Char.GetTitleTierName]."\n\n[party_vassal.Custom('TitledFirstName')] [ROOT.Char.Custom2('QuirkAdverbPosOrNeg', party_vassal)] continues, "It would benefit you — not to mention those among us who appreciate a good feast — if this was remedied soon!""
+ vassal.2101.desc:1 ""Many months have passed since the Lords and Ladies of the realm gathered for a feast, my [ROOT.Char.Custom('TitleTierName')]."\n\n[party_vassal.Custom('TitledFirstName')] [ROOT.Char.Custom2('QuirkAdverbPosOrNeg', party_vassal)] continues, "It would benefit you — not to mention those among us who appreciate a good feast — if this was remedied soon!""
  vassal.2101.a:0 "I promise that a feast will be hosted soon!"
  vassal.2101.a_hyped:0 "Of course we should feast! I don't know why I waited so long."
  vassal.2101.a.tt:0 "#F [party_vassal.Custom('FirstNameNoTooltip')] will remember the promise I made, and be grateful if it's fulfilled within ten years#!"
@@ -53,7 +53,7 @@
  vassal.2120.a:0 "I must have forgotten!"
 
  vassal.2201.t:0 "Monetary Ministrations"
- vassal.2201.desc:0 ""My [ROOT.Char.GetTitleTierName], I could not help but notice that you might benefit from some monetary aid."\n\nMy [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('vassal_loan_holder'))], [vassal_loan_holder.Custom('TitledFirstName')], [vassal_loan_holder.Custom('quirk_pos_present')] as [vassal_loan_holder.GetSheHe] proposes an arrangement: a loan to ease the burden on my treasury."
+ vassal.2201.desc:0 ""My [ROOT.Char.Custom('TitleTierName')], I could not help but notice that you might benefit from some monetary aid."\n\nMy [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('vassal_loan_holder'))], [vassal_loan_holder.Custom('TitledFirstName')], [vassal_loan_holder.Custom('quirk_pos_present')] as [vassal_loan_holder.GetSheHe] proposes an arrangement: a loan to ease the burden on my treasury."
  vassal.2201.a:0 "Your help is appreciated, [vassal_loan_holder.Custom('FirstNameNoTooltip')]."
  vassal.2201.a.money_loan_tooltip:0 "I will borrow [gold_i] #bold [THIS.Var('amount_to_loan_root').GetValue]#! Gold from [vassal_loan_holder.Custom('FirstNameNoTooltip')]."
  vassal.2201.a.repay_loan:0 "I will need to use the #bold Repay Loan#! decision to repay the loan."
@@ -91,14 +91,14 @@
 
  vassal.2401.t:0 "Glimmering Hope"
  vassal.2401.desc_family:0 ""[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('vassal_needs_gold'))|U], I require some financing.""
- vassal.2401.desc_other:0 ""My [ROOT.Char.GetLadyLord] – my [ROOT.Char.GetTitleTierName] – I require some financing.""
+ vassal.2401.desc_other:0 ""My [ROOT.Char.GetLadyLord] – my [ROOT.Char.Custom('TitleTierName')] – I require some financing.""
  vassal.2401.desc:0 "\n\nMy [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('vassal_needs_gold'))], [vassal_needs_gold.Custom('TitledFirstName')], looks at me [ROOT.Char.Custom2('QuirkAdverbPosOrNeg', SCOPE.sC('vassal_needs_gold'))] before continuing, "I am even willing to make concessions... Please, I know that you have the means to help me!""
  vassal.2401.a:0 "Gold for [possible_county.GetNameNoTierNoTooltip] is reasonable, right?"
  vassal.2401.b:0 "You have been enjoying a #EMP very#! beneficial contract..."
  vassal.2401.c:0 "Can you not manage your own gold?!"
 
  vassal.2451.t:0 "A Better Contract"
- vassal.2451.desc:0 "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('negotiating_vassal'))], [negotiating_vassal.Custom('TitledFirstName')], approaches me with a [ROOT.Char.Custom2('QuirkAdjectivePosOrNeg', SCOPE.sC('negotiating_vassal'))] smile.\n\n"I would appreciate it if we could... renegotiate my contract, my [ROOT.Char.GetTitleTierName]. Any improvement would, of course, be met with enthusiasm from my treasury or my lands.""
+ vassal.2451.desc:0 "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('negotiating_vassal'))], [negotiating_vassal.Custom('TitledFirstName')], approaches me with a [ROOT.Char.Custom2('QuirkAdjectivePosOrNeg', SCOPE.sC('negotiating_vassal'))] smile.\n\n"I would appreciate it if we could... renegotiate my contract, my [ROOT.Char.Custom('TitleTierName')]. Any improvement would, of course, be met with enthusiasm from my treasury or my lands.""
  vassal.2451.a:0 "I #EMP have#! been interested in [possible_county.GetNameNoTierNoTooltip]..."
  vassal.2451.b:0 "My treasury could need a refill, that's for sure."
  vassal.2451.c:0 "You'll find no deal here, [negotiating_vassal.Custom('FirstNameNoTooltip')]."
@@ -106,7 +106,7 @@
  vassal.2501.t:0 "A Plea for Peace"
  vassal.2501.desc:0 ""My [ROOT.Char.GetLadyLord], this war..." My [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('peaceful_vassal'))] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('peaceful_vassal'))], [peaceful_vassal.Custom('TitledFirstName')], sighs before continuing, "It is hard on the troops — hard on all of us. I must admit that I have doubts."\n\nMaybe I should do something to alleviate [peaceful_vassal.GetHerHis] growing misgivings?"
  vassal.2501.a:0 "Less pressure placed on [peaceful_vassal.GetHerHim] might help."
- vassal.2501.b:0 "Must I remind you who is the [ROOT.Char.GetTitleTierName]?!"
+ vassal.2501.b:0 "Must I remind you who is the [ROOT.Char.Custom('TitleTierName')]?!"
  vassal.2501.c:0 "You must learn to curb your doubts."
 
  vassal.2601.t:0 "Wishing for War"
@@ -141,13 +141,13 @@
  vassal.2801.b:0 "If you could lessen my other obligations..."
 
  vassal.2901.t:0 "[claim_to_propose.GetNameNoTier|U]"
- vassal.2901.desc:0 ""My [ROOT.Char.GetTitleTierName], you are currently in possession of something — someplace — that should be mine."\n\nMy [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('claim_vassal'))] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('claim_vassal'))] [claim_vassal.Custom('TitledFirstName')] has come before me, insisting that I grant him the [claim_to_propose.GetName]."
+ vassal.2901.desc:0 ""My [ROOT.Char.Custom('TitleTierName')], you are currently in possession of something — someplace — that should be mine."\n\nMy [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('claim_vassal'))] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('claim_vassal'))] [claim_vassal.Custom('TitledFirstName')] has come before me, insisting that I grant him the [claim_to_propose.GetName]."
  vassal.2901.a:0 "I'll see what I can do."
  vassal.2901.a.tt:0 "#F [claim_vassal.Custom('FirstNameNoTooltip')] will remember my promise, and be grateful if it's kept!#!"
  vassal.2901.b:0 "[claim_to_propose.GetNameNoTierNoTooltip] belongs to me!"
  vassal.2901.z:0 "You should receive what you ask."
 
- vassal.2910.desc:0 ""Thank you, my [ROOT.Char.GetTitleTierName]!"\n\nMy [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('recipient'))] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('recipient'))], [recipient.Custom('TitledFirstName')], is happy with the title I granted [recipient.GetHerHim], and I am delighted with the favor owned."
+ vassal.2910.desc:0 ""Thank you, my [ROOT.Char.Custom('TitleTierName')]!"\n\nMy [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('recipient'))] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('recipient'))], [recipient.Custom('TitledFirstName')], is happy with the title I granted [recipient.GetHerHim], and I am delighted with the favor owned."
  vassal.2910.a:0 "Everything has its prize!"
 
  vassal.2911.desc:0 "My [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('claim_vassal'))] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('claim_vassal'))] is furious. [claim_vassal.GetSheHe|U] has finally realized that my promise to grant [claim_vassal.GetHerHim] the [claim_to_propose.GetName] was nothing but empty words."
@@ -198,7 +198,7 @@
  vassal.5010.a.tt:0 "#F I pledge to declare a war against the infidels.#!"
  vassal.5010.b:0 "When the time is right..."
  vassal.5010.b.tt:0 "#F I have promised everything and nothing.#!"
- vassal.5010.c:0 "Do not tell the [ROOT.Char.GetTitleTierName] what [ROOT.Char.GetSheHe] must do!"
+ vassal.5010.c:0 "Do not tell the [ROOT.Char.Custom('TitleTierName')] what [ROOT.Char.GetSheHe] must do!"
 
  vassal.5020.t:0 "A Pious Promise Broken"
  vassal.5020.desc:0 "Six months have now passed since I made my pledge to send armies against the enemies of the faith. [vassal.Custom('TitledFirstName')] will be unhappy about my lack of promised action."

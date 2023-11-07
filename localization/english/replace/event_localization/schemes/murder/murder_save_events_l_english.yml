@@ -7,7 +7,7 @@
  murder_save.dynasty_member_used_guile_legacy_5_save_desc:0 "[target.Custom('TitledFirstName')] survived an attempt on [target.GetHerHis] life due to the protection of [GetDynastyPerk('guile_legacy_5').GetName]!"
 
  murder_save.0001.t:1 "$murder_save_header$ Foiled by Love"
- murder_save.0001.opening:1 "My attempt on [target.Custom('TitledFirstNamePossessive')] life has been thwarted!\n\nThe assassin made [dummy_assassin_gender.GetHerHis] way to the [target.GetTitleTierName]'s chambers, but found [target.GetHerHim] in the company of"
+ murder_save.0001.opening:1 "My attempt on [target.Custom('TitledFirstNamePossessive')] life has been thwarted!\n\nThe assassin made [dummy_assassin_gender.GetHerHis] way to the [target.Custom('TitleTierName')]'s chambers, but found [target.GetHerHim] in the company of"
  murder_save.0001.rel_to_me:0 "—my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('lover'))]—"
  murder_save.0001.end:0 "[lover.Custom('TitledFirstName')], [target.GetHerHis] lover!\n\n[lover.Custom('FirstName')] sprang to [target.Custom('FirstNamePossessive')] aid, and the defensive struggle left both [lover.GetHerHim] and the assassin dead on the floor."
  murder_save.0001.a:0 "I will never get [target.GetHerHim] now."
@@ -26,7 +26,7 @@
  murder_save.1002.desc:1 ""Come back to bed, my [lover.Custom('LoverPetName')]..."\n\nI am about to act on my lover's invitation when [lover.GetSheHe] starts to scream. "What is it?!" My question is answered when [lover.GetSheHe] twists and thrashes enough to reveal the [SCOPE.Custom('VenomousCreatureType')] crawling between the sheets.\n\nBy the time a physician arrives, [lover.Custom('FirstName')] is already turning stiff and cold. I am left cold as well. That [SCOPE.Custom('VenomousCreatureType')] was intended for me."
 
  murder_save.0003.t:1 "$murder_save_header$ Assassin"
- murder_save.0003.desc:0 "[target.Custom('TitledFirstName')] lives still!\n\nMy assassin made it to the [target.GetTitleTierName]'s chambers, but [broken_person.Custom('TitledFirstName')] — of all people — intervened! [target.Custom('FirstName')] has done nothing but torment [broken_person.GetHerHim], and yet [broken_person.GetSheHe] gave [broken_person.GetHerHis] life to protect [target.GetHerHim]. My assassin is just as dead, and [target.Custom('FirstName')] gets to walk away."
+ murder_save.0003.desc:0 "[target.Custom('TitledFirstName')] lives still!\n\nMy assassin made it to the [target.Custom('TitleTierName')]'s chambers, but [broken_person.Custom('TitledFirstName')] — of all people — intervened! [target.Custom('FirstName')] has done nothing but torment [broken_person.GetHerHim], and yet [broken_person.GetSheHe] gave [broken_person.GetHerHis] life to protect [target.GetHerHim]. My assassin is just as dead, and [target.Custom('FirstName')] gets to walk away."
  murder_save.0003.a:0 "What an unjust world we live in."
  murder_save.0003.b:0 "I must try with a new plan!"
 
@@ -34,10 +34,10 @@
  murder_save.1003.a:0 "Consider this an appropriate punishment, [broken_person.Custom('FirstNameNoTooltip')]."
 
  murder_save.0004.t:1 "$murder_save_header$ Accosted"
- murder_save.0004.desc:0 "[target.Custom('TitledFirstName')] is still alive!\n\nMy hired thugs ambushed [target.GetHerHis] retinue as planned, but failed to overpower them! They might have been able to seize the [target.GetTitleTierName] had it not been for that vicious and thrice-damned warhorse [target.GetSheHe] is so proud of!"
+ murder_save.0004.desc:0 "[target.Custom('TitledFirstName')] is still alive!\n\nMy hired thugs ambushed [target.GetHerHis] retinue as planned, but failed to overpower them! They might have been able to seize the [target.Custom('TitleTierName')] had it not been for that vicious and thrice-damned warhorse [target.GetSheHe] is so proud of!"
  murder_save_failure_warhorse_tt:0 "[target.Custom('FirstNamePossessiveNoTooltip')] warhorse dies from its wounds"
  
- murder_save.1004.opening:0 "I am traveling with my retinue when a shout comes from a copse of trees. "Attack! Go for the [ROOT.Char.GetTitleTierName]!" An ambush!\n\nThese are no mere bandits after my gold, but thugs after my life! However, my trusted [ROOT.Char.Custom('HorseStoryMareStallion')] knows what to do! [ROOT.Char.Custom('HorseStorySheHe')|U] rears and kicks to keep me from their swinging blades as my guards rally to fight them off."
+ murder_save.1004.opening:0 "I am traveling with my retinue when a shout comes from a copse of trees. "Attack! Go for the [ROOT.Char.Custom('TitleTierName')]!" An ambush!\n\nThese are no mere bandits after my gold, but thugs after my life! However, my trusted [ROOT.Char.Custom('HorseStoryMareStallion')] knows what to do! [ROOT.Char.Custom('HorseStorySheHe')|U] rears and kicks to keep me from their swinging blades as my guards rally to fight them off."
  murder_save.1004.warhorse_dies:0 "\n\nIt is only when the fighting has subsided that [ROOT.Char.Custom('WarhorseStoryName')] buckles underneath me, and I discover [ROOT.Char.Custom('HorseStoryHerHis')] deep wounds. [ROOT.Char.Custom('HorseStorySheHe')|U] truly protected me until the very last..."
  murder_save.1004.a:0 "These thugs were in someone's employment, but whose?"
  murder_save.1004.b:0 "It is obvious who was behind this!"

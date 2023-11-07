@@ -28,7 +28,7 @@
  murder_outcome.1004.b:0 "This is not the way to do it."
 
  murder_outcome.1005.t:1 "$knight_culture_player_plural_no_tooltip$ and Peasants"
- murder_outcome.1005.desc:0 "With the recent upset among the peasants of [home_province.GetNameNoTier], one of my agents has presented a unique suggestion for taking care of [target.Custom('TitledFirstName')].\n\nWith coin in the right pockets and agitators on every corner, we could stage an entire riot while the [target.GetTitleTierName] is passing through the streets."
+ murder_outcome.1005.desc:0 "With the recent upset among the peasants of [home_province.GetNameNoTier], one of my agents has presented a unique suggestion for taking care of [target.Custom('TitledFirstName')].\n\nWith coin in the right pockets and agitators on every corner, we could stage an entire riot while the [target.Custom('TitleTierName')] is passing through the streets."
  murder_outcome.1005.a:0 "Time for some good, old-fashioned mob rule."
  murder_outcome.1005.b:0 "This is far too unpredictable!"
 
@@ -88,7 +88,7 @@
  murder_outcome.1302.b:0 "No, not now."
 
  murder_outcome.1401.t:0 "A Mercy"
- murder_outcome.1401.desc:0 "Poor, defenseless [target.Custom('TitledFirstName')]... When is a life even worth living?\n\nOne of my agents has arranged for an assassin to make his way into the chambers where the incapacitated [target.GetTitleTierName] is "resting.""
+ murder_outcome.1401.desc:0 "Poor, defenseless [target.Custom('TitledFirstName')]... When is a life even worth living?\n\nOne of my agents has arranged for an assassin to make his way into the chambers where the incapacitated [target.Custom('TitleTierName')] is "resting.""
  murder_outcome.1401.a:0 "This is for the best."
  murder_outcome.1401.b:0 "No, this seems wrong."
 
@@ -252,7 +252,7 @@
  murder_outcome.4002.a.less_arrogant:0 "Such a simple task, and yet..."
  murder_outcome.4002.a.discovered:0 "Typical bandits. They will say anything to get off lightly."
 
- murder_outcome.4003.desc:0 "\n\nThe poison did not have its intended effect, but merely left the [target.GetTitleTierName] bedridden for a week."
+ murder_outcome.4003.desc:0 "\n\nThe poison did not have its intended effect, but merely left the [target.Custom('TitleTierName')] bedridden for a week."
  murder_outcome.4003.exposed_scheme:0 "To make matters worse, the herbalist supplying the poison was tracked down, and [target.Custom('FirstNameNoTooltip')] now knows I was behind the plot!"
  murder_outcome.4003.not_exposed_scheme:0 "Thankfully it is thought to have been nothing but a common illness, and [target.Custom('FirstName')] is none the wiser."
  murder_outcome.4003.a:0 "Next time I will make sure [target.GetSheHe] chokes on it!"
@@ -266,7 +266,7 @@
  murder_outcome.4004.a:0 "Your luck will only stretch so far, [target.Custom('FirstNameNoTooltip')]!"
 
  murder_outcome.4005.failure_declaration_1:0 "[target.Custom('TitledFirstName')] has survived the attack of the peasant horde!"
- murder_outcome.4005.failed_attempt_1:0 "\n\nMy agitators successfully riled them up, but when the mob started rioting, [target.Custom('FirstNamePossessive')] soldiers cut them down. The survivors fled in terror as the [target.GetTitleTierName] made [target.GetHerHis] way back to the [target.Custom('ResidenceBuilding')]."
+ murder_outcome.4005.failed_attempt_1:0 "\n\nMy agitators successfully riled them up, but when the mob started rioting, [target.Custom('FirstNamePossessive')] soldiers cut them down. The survivors fled in terror as the [target.Custom('TitleTierName')] made [target.GetHerHis] way back to the [target.Custom('ResidenceBuilding')]."
  murder_outcome.4005.scheme_owner_known:0 "\n\nMany peasants were hanged, and my agitators confessed to my involvement!"
  murder_outcome.4005.scheme_known:0 "\n\nMany peasants were hanged, and the agitators confessed to the involvement of outside forces. Thankfully even they did not know that I was behind it."
  murder_outcome.4005.scheme_unknown:0 "\n\nMany peasants were hanged, but thankfully so were my agitators, which means the riot cannot be traced back to me."
@@ -340,7 +340,7 @@
  murder_outcome.4301.a:0 "Curses!"
 
  murder_outcome.4401.failure_declaration_1:0 "Somehow, #EMP somehow#!, [target.Custom('TitledFirstName')] still lives!"
- murder_outcome.4401.failed_attempt_1:0 "The assassin broke into [target.GetHerHis] chambers, but no matter how long he held a pillow over the [target.GetTitleTierName]'s face, the [target.GetWomanMan] simply would not die."
+ murder_outcome.4401.failed_attempt_1:0 "The assassin broke into [target.GetHerHis] chambers, but no matter how long he held a pillow over the [target.Custom('TitleTierName')]'s face, the [target.GetWomanMan] simply would not die."
  murder_outcome.4401.disastrous_attempt_1:0 "\n\nSoon enough guards arrived, and the assassin confessed not only to the plan, but to my involvement in it as well!"
  murder_outcome.4401.something_is_known:0 "\n\nSoon enough guards arrived, and the assassin had to make a swift escape. At least no one knows I was behind the attempt."
  murder_outcome.4401.unknown_so_far:0 "\n\nWhen guards appeared, my assassin had to make a swift escape, but at least he went unnoticed, and no one knows he was ever there."

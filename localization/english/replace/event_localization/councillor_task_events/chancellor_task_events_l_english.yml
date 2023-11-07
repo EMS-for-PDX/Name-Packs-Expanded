@@ -9,7 +9,7 @@
  chancellor_task.1001.message:0 "[councillor.Custom('TitledFirstName')] officially acknowledged your claim to the [target_county.GetName]"
 
  chancellor_task.1002.t:0 "The End of a Peace"
- chancellor_task.1002.desc:0 "In [councillor.Custom('TitledFirstNamePossessive')] attempt at improving my reputation, my incompetent [councillor.GetCouncilTitle] has agreed to a treaty that #EMP cancels out#! parts of my old treaty with [target.GetName]!\n\nThe way the [target.GetTitleTierName] sees it, [target.GetSheHe] is free to declare war on me as [target.GetSheHe] might wish."
+ chancellor_task.1002.desc:0 "In [councillor.Custom('TitledFirstNamePossessive')] attempt at improving my reputation, my incompetent [councillor.GetCouncilTitle] has agreed to a treaty that #EMP cancels out#! parts of my old treaty with [target.GetName]!\n\nThe way the [target.Custom('TitleTierName')] sees it, [target.GetSheHe] is free to declare war on me as [target.GetSheHe] might wish."
  chancellor_task.1002.a:0 "Why would you ever agree to this, [councillor.Custom('FirstNameNoTooltip')]?!"
 
  chancellor_task.1003.opening:1 "[neighbor.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
@@ -33,7 +33,7 @@
  chancellor_task.2001.a:0 "What have you done, [councillor.Custom('FirstNameNoTooltip')]..."
  chancellor_task.2001.notification:0 "My [councillor.GetCouncilTitle]'s incompetence' has caused the people of [county.GetName] to lose respect for me"
 
- chancellor_task.2002.desc:0 "My honored [councillor.Custom2('RelationToMe', ROOT.Char)]...\n\nIt seems that I have made some errors in judgment. The reforms I have introduced in the [county.GetName] were meant to strengthen your grip on the region, but instead people seem to barely know who their [ROOT.Char.GetTitleTierName] is..."
+ chancellor_task.2002.desc:0 "My honored [councillor.Custom2('RelationToMe', ROOT.Char)]...\n\nIt seems that I have made some errors in judgment. The reforms I have introduced in the [county.GetName] were meant to strengthen your grip on the region, but instead people seem to barely know who their [ROOT.Char.Custom('TitleTierName')] is..."
  chancellor_task.2002.a:0 "You made things #EMP even worse?!#!"
  chancellor_task.2002.notification:0 "My [councillor.GetCouncilTitle] is losing control in the [county.GetName]!"
 
@@ -70,7 +70,7 @@
  chancellor_task.3101.opening:0 "[active_councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
  chancellor_task.3101.desc:0 "With the ongoing conflict between [attacker_vassal.Custom('TitledFirstName')] and [defender_vassal.Custom('TitledFirstName')], I have been working tirelessly to get to the heart of their quarrel. I believe that with the right encouragement, a settlement may be reached."
  chancellor_task.3101.a:0 "Whatever the cost, get them to stop fighting."
- chancellor_task.3101.b:0 "They will do as I say, as their [ROOT.Char.GetTitleTierName]!"
+ chancellor_task.3101.b:0 "They will do as I say, as their [ROOT.Char.Custom('TitleTierName')]!"
  chancellor_task.3101.c:0 "Let them sort out their differences."
  chancellor_task.3101.c.tt:0 "The war between [attacker_vassal.Custom('FirstNameNoTooltip')] and [defender_vassal.Custom('FirstNameNoTooltip')] continues"
 
