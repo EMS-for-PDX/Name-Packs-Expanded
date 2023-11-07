@@ -1,10 +1,10 @@
 ﻿l_english:
- improve_city_province_decision:1 "$improve_city_province_decision_name$"
+ improve_city_province_decision: "$improve_city_province_decision_name$"
  improve_city_province_decision_name:0 "Expand Cities"
- improve_city_province_decision_desc:1 "Pay for extravagant new quarters to be built in your city"
+ improve_city_province_decision_desc: "Pay for extravagant new quarters to be built in your city"
  improve_city_province_decision_confirm:0 "Start the expansion"
  improve_city_province_decision_tooltip:0 "Invest money in order to obtain new [building|E] slots in your [cities|E]"
- improve_city_province_decision_decision_no_effect:1 "No [city|E] is eligible"
+ improve_city_province_decision_decision_no_effect: "No [city|E] is eligible"
  improve_city_province_decision_at_least_one_city_tt:0 "At least one city has less than 5 building slots"
 
  fp2_secure_mediterranean.t:0 "Secure the Mediterranean"
@@ -18,7 +18,7 @@
  fp2_struggle_uninvolved_or_external_tt:0 "Your [capital|E] is outside the [GetGeographicalRegion('world_europe_west_iberia').GetName] [region|E]"
  fp2_struggle_secure_iberian_foothold_empire_tt:0 "You [hold|E] an [empire|E] [title|E] that is not [GetTitleByKey('e_spain').GetNameNoTier]"
 
- fp2_struggle_phase_hostility_or_opportunity_tt:1 "The Iberian [struggle_phase|E] is [struggle_phase_iberia_hostility|E] or [struggle_phase_iberia_opportunity|E] (Current: [GetStruggle('iberian_struggle').GetCurrentPhase.GetName])"
+ fp2_struggle_phase_hostility_or_opportunity_tt: "The Iberian [struggle_phase|E] is [struggle_phase_iberia_hostility|E] or [struggle_phase_iberia_opportunity|E] (Current: [GetStruggle('iberian_struggle').GetCurrentPhase.GetName])"
  fp2_struggle_secure_iberian_foothold_kingdom_iberian_tt:0 "You [hold|E] and [completely_control|E] a [de_jure|E] [kingdom|E] of [GetTitleByKey('e_spain').GetNameNoTier]"
 
  fp2_struggle_secure_iberian_foothold_kingdom_faith_tt:0 "At least #Z [SCOPE.ScriptValue('fp2_struggle_secure_iberian_foothold_faith_target_percent_value')|0]%#! of this [titlepossessive|E] [de_jure|E] [counties|E] are [THIS.Char.GetFaith.GetAdjective]"
@@ -178,7 +178,7 @@
  fp2_other_decisions.1100.a:0 "Long may our kingdom prosper."
 
  fp2_other_decisions.1101.desc:0 "Going from strength to strength, [toledo_former.Custom('TitledFirstName')] has had [toledo_former.GetHerselfHimself] formally crowned in [GetTitleByKey('c_toledo').GetNameNoTier].\n\nThe strength of this new [toledo_former.GetFaith.GetAdjective] kingdom, incorporating the lands of the old dominions of Iberia, is now beyond doubt.\n\n"
- fp2_other_decisions.1101.stolen:1 "These vexatious upstarts will have to be dealt with sooner rather than later!"
+ fp2_other_decisions.1101.stolen: "These vexatious upstarts will have to be dealt with sooner rather than later!"
  fp2_other_decisions.1101.mozarab:0 "Though this bodes well for our faith, it may be a double-edged sword..."
  fp2_other_decisions.1101.a:0 "They will not last long!"
  fp2_other_decisions.1101.b:0 "Something to keep an eye on."

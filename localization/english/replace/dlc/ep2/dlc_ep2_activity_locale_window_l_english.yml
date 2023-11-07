@@ -8,7 +8,7 @@
  locale_window_activity_log:0 "Activity Log"
  locale_window_activity_log_no_entries:0 "No log entries"
 
- locale_window_enter_locale_tooltip:1 "Enter [ActivityLocale.GetName]\n\n[ActivityLocale.GetDescription]"
+ locale_window_enter_locale_tooltip: "Enter [ActivityLocale.GetName]\n\n[ActivityLocale.GetDescription]"
  locale_window_enter_locale_error_not_arrived:0 "@warning_icon!#X You have not yet arrived at the activity location.#!"
  locale_window_enter_locale_error_no_activity:0 "@warning_icon!#X No activity.#!"
  locale_window_enter_locale_error_no_character:0 "@warning_icon!#X You are observer.#!"
@@ -22,10 +22,10 @@
 
  locale_window_your_activity_status:0 "You are $locale_window_your_activity_status_select_hosting_or_attending$ [Activity.GetNameNoTooltip] in [Activity.GetCurrentPhase.GetLocation.GetNameNoTooltip]$locale_window_your_activity_status_select_special_guest$."
  locale_window_your_activity_status_select_hosting_or_attending:0 "[SelectLocalization( ObjectsEqual( GetPlayer, Activity.GetHost ), 'locale_window_your_activity_status_hosting', 'locale_window_your_activity_status_attending')]"
- locale_window_your_activity_status_attending:0 "attending [Activity.GetHost.GetShortUINamePossessive]"
+ locale_window_your_activity_status_attending:0 "attending [Activity.GetHost.Custom('ShortNamePossessive')]"
  locale_window_your_activity_status_hosting:0 "hosting a"
  locale_window_your_activity_status_select_special_guest:0 "[SelectLocalization( Activity.IsSpecialGuest( GetPlayer ), 'locale_window_your_activity_status_hosting', '')]"
- locale_window_your_activity_status_special_guest:1 " as a [Activity.GetSpecialGuestTypeForCharacter(GetPlayer).GetNameIfHost( Activity.GetHost )]"
+ locale_window_your_activity_status_special_guest: " as a [Activity.GetSpecialGuestTypeForCharacter(GetPlayer).GetNameIfHost( Activity.GetHost )]"
  
  locale_window_status_icon_location_tooltip:0 "You are at [Activity.GetCurrentPhase.GetLocation.GetName]"
  locale_window_status_icon_special_guest_tooltip:0 "You are a [Activity.GetSpecialGuestTypeForCharacter(GetPlayer).GetNameIfHost( Activity.GetHost )] in [Activity.GetName]"

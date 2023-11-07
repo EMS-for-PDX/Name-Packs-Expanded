@@ -5,11 +5,11 @@
  imprisonment_would_cause_regency_trigger.tt.imprisoned_abroad:0 "You are [imprisoned|E] abroad"
  DIARCHY_TEMPORARY_OR_DESIGNATED_REGENT_WEDDING_ACCEPTANCE:0 "Reliable [regent|E]: $VALUE|=+0$"
  DIARCHY_ENTRENCHED_REGENT_WEDDING_ACCEPTANCE:0 "[scales_of_power|E]: $VALUE|=+0$"
- remove_strife_per_invited_powerful_vassal_effect.tt:1 "[host.Custom('ShortName')|U] lost #P [host.MakeScope.Var('strife_loss_total').GetValue|0]#! [strife|E] due to attending [powerful_vassals|E] from [host.GetLiege.GetPrimaryTitle.GetBaseName]"
+ remove_strife_per_invited_powerful_vassal_effect.tt: "[host.Custom('ShortName')|U] lost #P [host.MakeScope.Var('strife_loss_total').GetValue|0]#! [strife|E] due to attending [powerful_vassals|E] from [host.GetLiege.GetPrimaryTitle.GetBaseName]"
 
  ##################################################
  # #Swing Update Strings
- update_diarchy_swing_with_perspective_effect.preamble: "[liege_loc.GetShortUINamePossessive|U] [liege_loc.GetDiarchyTypeName] [scales_of_power|E] swings by"
+ update_diarchy_swing_with_perspective_effect.preamble: "[liege_loc.Custom('ShortNamePossessive')|U] [liege_loc.GetDiarchyTypeName] [scales_of_power|E] swings by"
  update_diarchy_swing_with_perspective_effect.postamble.diarch: "#!towards [liege_loc.GetDiarchy.GetDiarch.Custom('ShortName')]"
  update_diarchy_swing_with_perspective_effect.postamble.liege: "#!towards [liege_loc.Custom('ShortName')]"
 
@@ -65,19 +65,19 @@
  
  ##################################################
  # #Diarchy Types
- temporary_regency_diarchy_type:1 "[regency|E]"
+ temporary_regency_diarchy_type: "[regency|E]"
  temporary_regency_diarch_title:0 "$regency_diarch_title$"
- regency_diarchy_type:1 "[entrenched_regency|E]"
+ regency_diarchy_type: "[entrenched_regency|E]"
  regency_diarch_title:0 "Regent"
 
  ##################################################
  # #Mandates
  fill_coffers_mandate:0 "Fill Coffers"
- fill_coffers_mandate_desc:1 "#BOL Possible [mandate|E] Effects:#!\n$EFFECT_LIST_BULLET$ Extra [gold|E]\n$EFFECT_LIST_BULLET$ Free [domain|E] [development|E]\n$EFFECT_LIST_BULLET$ [feudal_contracts|E] adjusted in the [liege|E]'s favor\n\n#WEAK The [regent|E] is instructed to increase revenues for their $game_concept_liege$, at any cost.#!"
+ fill_coffers_mandate_desc: "#BOL Possible [mandate|E] Effects:#!\n$EFFECT_LIST_BULLET$ Extra [gold|E]\n$EFFECT_LIST_BULLET$ Free [domain|E] [development|E]\n$EFFECT_LIST_BULLET$ [feudal_contracts|E] adjusted in the [liege|E]'s favor\n\n#WEAK The [regent|E] is instructed to increase revenues for their $game_concept_liege$, at any cost.#!"
  swell_armies_mandate:0 "Swell Armies"
- swell_armies_mandate_desc:1 "#BOL Possible [mandate|E] Effects:#!\n$EFFECT_LIST_BULLET$ Beneficial [men_at_arms|E] [modifiers|E]\n$EFFECT_LIST_BULLET$ Beneficial [levy|E] $game_concept_modifiers$\n$EFFECT_LIST_BULLET$ Skilled [knights|E] [courtiers|E]\n\n#WEAK Current or future campaigns call for fresh bodies to fight, and the [liege|E] has decreed that their [regent|E] shall find them.#!"
+ swell_armies_mandate_desc: "#BOL Possible [mandate|E] Effects:#!\n$EFFECT_LIST_BULLET$ Beneficial [men_at_arms|E] [modifiers|E]\n$EFFECT_LIST_BULLET$ Beneficial [levy|E] $game_concept_modifiers$\n$EFFECT_LIST_BULLET$ Skilled [knights|E] [courtiers|E]\n\n#WEAK Current or future campaigns call for fresh bodies to fight, and the [liege|E] has decreed that their [regent|E] shall find them.#!"
  promote_authority_mandate:0 "Promote Authority"
- promote_authority_mandate_desc:1 "#BOL Possible [mandate|E] Effects:#!\n$EFFECT_LIST_BULLET$ [characters|E] and [counties|E] leaving [factions|E]\n$EFFECT_LIST_BULLET$ Boosted [crown_authority|E]\n$EFFECT_LIST_BULLET$ Boosted [councillor|E] [opinion|E]\n\n#WEAK The [liege|E] calls on their [regent|E] to help build and focus the power of the throne.#!"
+ promote_authority_mandate_desc: "#BOL Possible [mandate|E] Effects:#!\n$EFFECT_LIST_BULLET$ [characters|E] and [counties|E] leaving [factions|E]\n$EFFECT_LIST_BULLET$ Boosted [crown_authority|E]\n$EFFECT_LIST_BULLET$ Boosted [councillor|E] [opinion|E]\n\n#WEAK The [liege|E] calls on their [regent|E] to help build and focus the power of the throne.#!"
 
  mandate_aptitude.fill_coffers.category:0 "$fill_coffers_mandate$"
  mandate_aptitude.fill_coffers.primary_skill.stewardship:0 "[mandate|E] relies on [stewardship|E]"
@@ -123,10 +123,10 @@
  regents_can_try_to_overthrow_present_lieges:0 "[diarchs|E] can issue an ultimatum to their [liege|E], demanding permanent transfer of rule, #EMP if#! they can convince the majority of their $game_concept_liege$'s [powerful_vassals|E] to support a coup"
  regents_can_try_to_overthrow_present_lieges_help:0 "Coups are launched via a [decision|E], whilst [powerful_vassals|E] are invited via a [character_interaction|E]"
  
- liege_pays_currency_surcharge_for_mundane_interactions_mild:1 "[liege|E] pays token #WEAK ([prestige_i][EmptyScope.ScriptValue('liege_diarchy_surcharge_interaction_miniscule_value')|0] or more)#! [prestige|E] on [diarch_affected_actions|E]"
- liege_pays_currency_surcharge_for_mundane_interactions_medium:1 "[liege|E] pays some #WEAK ([prestige_i][EmptyScope.ScriptValue('liege_diarchy_surcharge_interaction_minor_value')|0] or more)#! [prestige|E] on [diarch_affected_actions|E]"
- liege_pays_currency_surcharge_for_mundane_interactions_major:1 "[liege|E] pays significant #WEAK ([prestige_i][EmptyScope.ScriptValue('liege_diarchy_surcharge_interaction_medium_value')|0] or more)#! [prestige|E] on [diarch_affected_actions|E]"
- liege_pays_currency_surcharge_for_mundane_interactions_massive:1 "[liege|E] pays abhorrent #WEAK ([prestige_i][EmptyScope.ScriptValue('liege_diarchy_surcharge_interaction_major_value')|0] or more)#! [prestige|E] on [diarch_affected_actions|E]"
+ liege_pays_currency_surcharge_for_mundane_interactions_mild: "[liege|E] pays token #WEAK ([prestige_i][EmptyScope.ScriptValue('liege_diarchy_surcharge_interaction_miniscule_value')|0] or more)#! [prestige|E] on [diarch_affected_actions|E]"
+ liege_pays_currency_surcharge_for_mundane_interactions_medium: "[liege|E] pays some #WEAK ([prestige_i][EmptyScope.ScriptValue('liege_diarchy_surcharge_interaction_minor_value')|0] or more)#! [prestige|E] on [diarch_affected_actions|E]"
+ liege_pays_currency_surcharge_for_mundane_interactions_major: "[liege|E] pays significant #WEAK ([prestige_i][EmptyScope.ScriptValue('liege_diarchy_surcharge_interaction_medium_value')|0] or more)#! [prestige|E] on [diarch_affected_actions|E]"
+ liege_pays_currency_surcharge_for_mundane_interactions_massive: "[liege|E] pays abhorrent #WEAK ([prestige_i][EmptyScope.ScriptValue('liege_diarchy_surcharge_interaction_major_value')|0] or more)#! [prestige|E] on [diarch_affected_actions|E]"
  
  can_be_instantly_dismissed:0 "This [regency|E] can be ended at any time that the [liege|E] is fully capable"
  dismissal_requires_gift:0 "[entrenched_regencies|E] can be given a gift to try and dismiss them"
@@ -173,8 +173,8 @@
  diarch_succession_score.regency.cripplingly_ill:0 "Has Crippling Illness"
  diarch_succession_score.regency.badly_wounded:0 "Has Crippling Wounds"
  diarch_succession_score.regency.known_criminal:0 "Known [criminal|E]"
- diarch_succession_score.regency.your_negative_relation:1 "Negative [relationship|E] with [ROOT.Char.GetLiege.Custom('GetLiegeYou')]"
- diarch_succession_score.regency.dislikes_you:1 "Negative [opinion|E] of [ROOT.Char.GetLiege.Custom('GetLiegeYou')]"
+ diarch_succession_score.regency.your_negative_relation: "Negative [relationship|E] with [ROOT.Char.GetLiege.Custom('GetLiegeYou')]"
+ diarch_succession_score.regency.dislikes_you: "Negative [opinion|E] of [ROOT.Char.GetLiege.Custom('GetLiegeYou')]"
  diarch_succession_score.regency.very_young:0 "Is Too Young"
  diarch_succession_score.regency.lazy:0 "[GetTrait('lazy').GetName( ROOT.Char )]"
  diarch_succession_score.regency.humble:0 "[GetTrait('humble').GetName( ROOT.Char )]"
@@ -183,18 +183,18 @@
  diarch_succession_score.regency.illegitimate:0 "Is Illegitimate"
  diarch_succession_score.regency.mildly_ill:0 "Has Mild Illness"
  diarch_succession_score.regency.mildly_wounded:0 "Has Mild Wounds"
- diarch_succession_score.regency.neither_vassal_nor_courtier:1 "Neither [ROOT.Char.GetLiege.Custom('GetLiegeYour')] [vassal|E] nor [courtier|E]"
+ diarch_succession_score.regency.neither_vassal_nor_courtier: "Neither [ROOT.Char.GetLiege.Custom('GetLiegeYour')] [vassal|E] nor [courtier|E]"
  diarch_succession_score.regency.child:0 "Is a [child|E]"
  diarch_succession_score.regency.imprisoned:0 "Is [imprisoned|E]"
  diarch_succession_score.regency.incapable_or_infirm:0 "Is [GetTrait('incapable').GetName( ROOT.Char )] or [GetTrait('infirm').GetName( ROOT.Char )]"
- diarch_succession_score.regency.not_speak_language:1 "Doesn't speak [ROOT.Char.GetLiege.Custom('GetLiegeYour')] Main [language|E]"
+ diarch_succession_score.regency.not_speak_language: "Doesn't speak [ROOT.Char.GetLiege.Custom('GetLiegeYour')] Main [language|E]"
  diarch_succession_score.regency.court_type.diplomacy:0 "[diplomacy|E] [skill|E] at $court_diplomatic$"
  diarch_succession_score.regency.court_type.martial:0 "[martial|E] [skill|E] at $court_warlike$"
  diarch_succession_score.regency.court_type.stewardship:0 "[stewardship|E] [skill|E] at $court_administrative$"
  diarch_succession_score.regency.court_type.intrigue:0 "[intrigue|E] [skill|E] at $court_intrigue$"
  diarch_succession_score.regency.court_type.learning:0 "[learning|E] [skill|E] at $court_scholarly$"
  diarch_succession_score.regency.court_type.prowess:0 "[prowess|E] [skill|E] at $court_tribal$"
- diarch_succession_score.regency.speaks_court_language:1 "Speaks [ROOT.Char.GetLiege.Custom('GetLiegeYour')] [court_language|E]"
+ diarch_succession_score.regency.speaks_court_language: "Speaks [ROOT.Char.GetLiege.Custom('GetLiegeYour')] [court_language|E]"
 
  ##################################################
  # #Loyalty Loc
@@ -219,7 +219,7 @@
  diarch_loyalty_score.regency.tradition_fp2_malleable_subjects:0 "[culture|E] has [GetCultureTradition('tradition_fp2_malleable_subjects').GetName]"
  diarch_loyalty_score.regency.tradition_talent_acquisition:0 "Is [lowborn|E] & [culture|E] has [GetCultureTradition('tradition_talent_acquisition').GetName]"
  diarch_loyalty_score.regency.tradition_astute_diplomats.positive:0 "Positive [opinion|E] & [culture|E] has [GetCultureTradition('tradition_astute_diplomats').GetName]"
- diarch_loyalty_score.regency.tradition_astute_diplomats.negative:1 "Negative [opinion|E] & [culture|E] has [GetCultureTradition('tradition_astute_diplomats').GetName]"
+ diarch_loyalty_score.regency.tradition_astute_diplomats.negative: "Negative [opinion|E] & [culture|E] has [GetCultureTradition('tradition_astute_diplomats').GetName]"
  diarch_loyalty_score.regency.tradition_ruling_caste:0 "[liege|E] [culture|E] has [GetCultureTradition('tradition_ruling_caste').GetName]"
  diarch_loyalty_score.regency.tradition_family_entrepreneurship:0 "Is [extended_family|E] & [culture|E] has [GetCultureTradition('tradition_family_entrepreneurship').GetName]"
  diarch_loyalty_score.regency.tradition_hereditary_hierarchy:0 "[culture|E] has [GetCultureTradition('tradition_hereditary_hierarchy').GetName]"

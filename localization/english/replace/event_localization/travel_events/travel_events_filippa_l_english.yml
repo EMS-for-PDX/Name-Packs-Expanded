@@ -47,7 +47,7 @@
  travel_events.2002.t:0 "$travel_event_prefix$ The Trodden Path"
  travel_events.2002.desc:0 "The procession has ground to a halt a stone's throw away from [ROOT.Char.GetCurrentLocation.GetName]. I look over to see my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('guide_leader'))] [guide_leader.Custom('FirstName')], dismounted and intently staring at something on the ground. The other entourage members have gathered around [guide_leader.GetHerHim].\n\n[guide_leader.Custom('FirstNameNoTooltip')] looks up as I approach. "My [ROOT.Char.GetLadyLord], there is an ant path here. I may be a tad superstitious, but you should never cross an ant path."\n\n[guide_leader.GetSheHe|U] pauses. "My great-grand[great_grand_parent.Custom('MotherFather')] did, and [great_grand_parent.GetSheHe] never returned home.""
  travel_events.2002.a:0 "#EMP Fine#!. We'll find another path."
- travel_events.2002.b:1 "This is nonsense. I'll take over as guide!"
+ travel_events.2002.b: "This is nonsense. I'll take over as guide!"
  travel_events.2002.c:0 "I have just the cure for your superstition."
  travel_competent_guide_tt:0 "You are a competent guide"
  travel.competent_guide:0 "$travel_competent_guide_tt$"
@@ -58,7 +58,7 @@
  travel_events.2003.intro:0 "[local_captain.Custom('FirstName')], the local captain, and a few of [local_captain.GetHerHis] officers greet me as my entourage enter the military camps of [ROOT.Char.GetCurrentLocation.GetName]."
  travel_events.2003.desc_barracks:0 "I quickly dismount, eager to inspect the local barracks.\n\nThey are positively brimming with activity; soldiers are all around, but each seem to know exactly their purpose and have a clear direction as to where they are headed."
  travel_events.2003.desc_regiment:0 "I briefly observe the regiment grounds and then dismount.\n\n[local_captain.Custom('FirstNameNoTooltip')] points towards a group of three to four soldiers, engaged over a battle plan. "Those are our elite soldiers, over there, my [ROOT.Char.GetLadyLord].""
- travel_events.2003.desc_camp:1 "As [local_captain.GetSheHe] wanders off, I quickly dismount and follow [local_captain.GetHerHim].\n\nA couple of paces forward, [local_captain.Custom('FirstNameNoTooltip')] stops and turns to the latest siege equipment which is neatly placed in rows before me: "Quite a sight, isn't it?""
+ travel_events.2003.desc_camp: "As [local_captain.GetSheHe] wanders off, I quickly dismount and follow [local_captain.GetHerHim].\n\nA couple of paces forward, [local_captain.Custom('FirstNameNoTooltip')] stops and turns to the latest siege equipment which is neatly placed in rows before me: "Quite a sight, isn't it?""
  travel_events.2003.outro:0 "\n\nI nod, appreciating the organized chaos I am observing.\n"Now, what would my [ROOT.Char.GetLadyLord] want to do next?" [local_captain.Custom('FirstNameNoTooltip')] looks at me expectantly."
  travel_events.2003.a:0 "I wouldn't mind some sparring!"
  travel_events.2003.a_sparring_tt:0 "You successfully spar with the troops"
@@ -89,7 +89,7 @@
 #Visit another ruler's pasture - Give advice or sabotage the pasture
  travel_events.2005.t:0 "$travel_event_prefix$ Other People's Pastures"
  travel_events.2005.desc:0 "A fine day like this, the weather is nice, the pastures of [ROOT.Char.GetCurrentLocation.GetName] look great and the local livestock are positively jumping and cheering in their own guttural manner. Calves are walking next to their mothers, their fur shiny and clean.\n\nOverall the place is very competently run, although I do notice a couple of oddities that I would manage a bit differently.\n\nThe local [local_farmer.Custom('MatriarchPatriarch')] approaches me. "A fine morning to you, my [ROOT.Char.GetLadyLord]! Are these beauties not a sight to behold?""
- travel_events.2005.a:1 "I could apply some of this back home!"
+ travel_events.2005.a: "I could apply some of this back home!"
  travel_events.2005.a_success_tt:0 "Successful Advice"
  travel_events.2005.a_implemented_tt:0 "Your advice is successfully implemented"
  travel_events.2005.a_failure_tt:0 "Misinterpreted Advice"
@@ -109,7 +109,7 @@
  travel_events.2006.b_tt:0 "You decapitate the camel"
  travel_events.2006_camel_head:0 "Camel Head"
  travel_events.2006_camel_head_desc:0 "The head of a disobedient camel."
- travel_events.2006.c:1 "A beast is but a mindless creature."
+ travel_events.2006.c: "A beast is but a mindless creature."
 
 #Visit an elephant pen - Train with the elephants
  travel_events.2007.t:0 "$travel_event_prefix$ Elephantastic"
@@ -155,7 +155,7 @@
  travel_events.2010.outro:0 "below a tree, in shambles and sobbing violently.\n\nIt would seem as if [fallen_child.GetSheHe] made an attempt at climbing the tree, before slipping and falling to the ground. One of the bone pipes are protruding at a strange angle."
  travel_events.2010.a:0 "These trees are a health hazard!"
  travel_events.2010.a_flavor:0 "Burn this place to the ground!"
- travel_events.2010.a_tt:0 "[fallen_child.GetShortUINamePossessive] injuries might get worse"
+ travel_events.2010.a_tt:0 "[fallen_child.Custom('ShortNamePossessive')] injuries might get worse"
  travel_events.2010.a_tt_2: "[ROOT.Char.Custom('TitledFirstName')] burned down your orchards in [location_county.GetNameNoTier]!"
  travel_events.2010.b:0 "What were you thinking, [fallen_child.Custom('FirstNameNoTooltip')]!"
  travel_events.2010.b_tt:0 "Trait Gained"
@@ -166,9 +166,9 @@
 
 #Orchard hidden follow-up event
  travel_events.2011.tt_healed:0 "Wounds Healed"
- travel_events.2011.tt_healed_desc:0 "[fallen_child.GetShortUINamePossessive] wounds healed"
+ travel_events.2011.tt_healed_desc:0 "[fallen_child.Custom('ShortNamePossessive')] wounds healed"
  travel_events.2011.tt_worsened:0 "Wounds Worsened"
- travel_events.2011.tt_worsened_desc:0 "[fallen_child.GetShortUINamePossessive] wounds got worse"
+ travel_events.2011.tt_worsened_desc:0 "[fallen_child.Custom('ShortNamePossessive')] wounds got worse"
 
 #Visit a plantation - Fire!
  travel_events.2012.t:0 "$travel_event_prefix$ Fire!"
@@ -244,19 +244,19 @@
  travel_events.2015.b_flavor:0 "You bribe [quarry_guide.Custom('ShortName')]"
 #Visit a hill farm - Bull rush!
  travel_events.2016.t:0 "Bully For You?"
- travel_events.2016.desc:1 "Gentle mooing and the scent of manure aren't all [ROOT.Char.GetCurrentLocation.GetName]'s hillside pasturelands offer the traveler. There's also screaming farmhands, stentorian bellowing, and an escaped bull on the road before us.\n\nThe behemoth charges to and fro in great distress, until it fixes on a victim: [entourage_member.Custom('FirstName')], atop [entourage_member.GetHerHis] panicking steed.\n\nThere's an open gate to hold the beast behind — one of us just needs courage enough to lure it!"
+ travel_events.2016.desc: "Gentle mooing and the scent of manure aren't all [ROOT.Char.GetCurrentLocation.GetName]'s hillside pasturelands offer the traveler. There's also screaming farmhands, stentorian bellowing, and an escaped bull on the road before us.\n\nThe behemoth charges to and fro in great distress, until it fixes on a victim: [entourage_member.Custom('FirstName')], atop [entourage_member.GetHerHis] panicking steed.\n\nThere's an open gate to hold the beast behind — one of us just needs courage enough to lure it!"
  travel_events.2016.a:0 "Over here, you [bull_loc.Custom('InsultAdjective')] bull!"
  travel_events.2016.a_captured.tt:0 "Captured"
  travel_events.2016.a_captured.desc:0 "You capture the bull successfully"
  travel_events.2016.a_wounded.tt:0 "$travel_events.2001.c_failure.tt$"
  travel_events.2016.a_wounded.desc:0 "The bull is captured but you become wounded"
- travel_events.2016.b:1 "[guard_type_character.Custom('FirstNameNoTooltip')], #EMP do something!#!"
+ travel_events.2016.b: "[guard_type_character.Custom('FirstNameNoTooltip')], #EMP do something!#!"
  travel_events.2016.b_putdown.tt:0 "Put Down"
- travel_events.2016.b_putdown.desc:1 "[guard_type_character.Custom('ShortName')] puts the bull out of its misery"
- travel_events.2016.b_wounded.desc:1 "[guard_type_character.Custom('ShortName')] takes a hit"
+ travel_events.2016.b_putdown.desc: "[guard_type_character.Custom('ShortName')] puts the bull out of its misery"
+ travel_events.2016.b_wounded.desc: "[guard_type_character.Custom('ShortName')] takes a hit"
  travel_events.2016.c:0 "Better not risk it."
  travel_events.2016.c_escaped.tt:0 "Escaped"
- travel_events.2016.c_escaped.desc:1 "[entourage_member.Custom('ShortName')] narrowly escapes the bull's charge"
+ travel_events.2016.c_escaped.desc: "[entourage_member.Custom('ShortName')] narrowly escapes the bull's charge"
  travel_events.2016.c_wounded.desc:0 "[entourage_member.Custom('ShortName')] gets injured"
 
 #Visit a 'haunted' mansion (farm estate) - Enter at your own peril
@@ -366,7 +366,7 @@
  travel_events.2026.d:0 "How #EMP dare#! you!"
 #Visit your own quarry - Encounter hungry workers
  travel_events.2027.t:0 "$travel_event_prefix$ Quarry Quarrel"
- travel_events.2027.desc:1 "Upon entering the local quarry at [ROOT.Char.GetCurrentLocation.GetName], I spot several spindly and dirty children helping their famished parents with the heavy work. Food appears to be sparse in this area.\n\nA bit further up the landing, the quarry foreman, [foreman_character.Custom('FirstName')], is having an argument with [peasant_leader.Custom('FirstName')], who appears to be a spokesman for the workers. "This is #EMP unacceptable#!, m'[foreman_character.GetLadyLord]!" [peasant_leader.Custom('FirstNameNoTooltip')] says.\n\n"We cannot afford enough food and have gone to bed hungry for months now. Our children are starving and our strength is dwindling, performing such heavy work. All we would need is the #EMP tiniest#! raise..." [peasant_leader.GetSheHe|U] trails off as [peasant_leader.GetSheHe] notices my presence."
+ travel_events.2027.desc: "Upon entering the local quarry at [ROOT.Char.GetCurrentLocation.GetName], I spot several spindly and dirty children helping their famished parents with the heavy work. Food appears to be sparse in this area.\n\nA bit further up the landing, the quarry foreman, [foreman_character.Custom('FirstName')], is having an argument with [peasant_leader.Custom('FirstName')], who appears to be a spokesman for the workers. "This is #EMP unacceptable#!, m'[foreman_character.GetLadyLord]!" [peasant_leader.Custom('FirstNameNoTooltip')] says.\n\n"We cannot afford enough food and have gone to bed hungry for months now. Our children are starving and our strength is dwindling, performing such heavy work. All we would need is the #EMP tiniest#! raise..." [peasant_leader.GetSheHe|U] trails off as [peasant_leader.GetSheHe] notices my presence."
  travel_events.2027.a:0 "Safe and nourished workers are more effective."
  travel_events.2027.b:0 "Hunger keeps the motivation up."
  travel_events.2027.c:0 "Get in line, #EMP peasant.#!"
@@ -374,7 +374,7 @@
 
 #Visit someone else's quarry - Encounter an architect
  travel_events.2028.t:0 "$travel_event_prefix$ Architect's Digest"
- travel_events.2028.desc:1 "[budding_architect.Custom('FirstName')] is lost deep in thought when our entourage enters the quarries of [ROOT.Char.GetCurrentLocation.GetName]. [budding_architect.GetSheHe|U] is leaned over a large roughly cut wooden table, absorbed in drawing something on a scroll.\n\nI lean in closer over [budding_architect.GetHerHis] shoulder, drawing [budding_architect.GetHerHis] attention. "My [ROOT.Char.GetLadyLord]! I did not notice you there, my sincere apologies!"\n\nI inquire about what [budding_architect.GetSheHe] is up to, and [budding_architect.Custom('FirstNameNoTooltip')] replies.\n"Oh, I'm drawing up my thoughts on construction and the building of foundations. I am quite the architect, you see," [budding_architect.GetSheHe] smiles shyly."
+ travel_events.2028.desc: "[budding_architect.Custom('FirstName')] is lost deep in thought when our entourage enters the quarries of [ROOT.Char.GetCurrentLocation.GetName]. [budding_architect.GetSheHe|U] is leaned over a large roughly cut wooden table, absorbed in drawing something on a scroll.\n\nI lean in closer over [budding_architect.GetHerHis] shoulder, drawing [budding_architect.GetHerHis] attention. "My [ROOT.Char.GetLadyLord]! I did not notice you there, my sincere apologies!"\n\nI inquire about what [budding_architect.GetSheHe] is up to, and [budding_architect.Custom('FirstNameNoTooltip')] replies.\n"Oh, I'm drawing up my thoughts on construction and the building of foundations. I am quite the architect, you see," [budding_architect.GetSheHe] smiles shyly."
  travel_events.2028.a_architect:0 "These are pretty good. I'll take one!"
  travel_events.2028.a:0 "Architect you say? I'll take one of the drawings!"
  holding_blueprint:0 "Architect Drawing"
@@ -385,9 +385,9 @@
  travel_events.2028.c:0 "That's... nice... Keep up the good work."
 
 #Visit a cereal field - Encounter a heathen
- travel_events.2029.t:1 "$travel_event_prefix$ Awakening"
- travel_events.2029.desc:1 "It is nightfall and [crop_circler.Custom('FirstName')] is hard at work when we arrive at the cereal fields south of [ROOT.Char.GetCurrentLocation.GetName]. [crop_circler.GetSheHe|U] appears to be flattening crops at a rapid pace, using a large flat piece of wood and heavy stones.\n\nI frown as I watch the [crop_circler.GetWomanMan] performing [crop_circler.GetHerHis] labor, then inquire as to what exactly [crop_circler.GetSheHe] is up to.\n\n[crop_circler.GetSheHe|U] winces, then starts on a long rant about how we all need to wake up and meet our true masters instead of hiding behind the false [crop_circler.GetFaith.GetReligion.GetAdjectiveNoTooltip] teachings. I take a few steps back in surprise."
- travel_events.2029.a:1 "Stop that, you heretic!"
+ travel_events.2029.t: "$travel_event_prefix$ Awakening"
+ travel_events.2029.desc: "It is nightfall and [crop_circler.Custom('FirstName')] is hard at work when we arrive at the cereal fields south of [ROOT.Char.GetCurrentLocation.GetName]. [crop_circler.GetSheHe|U] appears to be flattening crops at a rapid pace, using a large flat piece of wood and heavy stones.\n\nI frown as I watch the [crop_circler.GetWomanMan] performing [crop_circler.GetHerHis] labor, then inquire as to what exactly [crop_circler.GetSheHe] is up to.\n\n[crop_circler.GetSheHe|U] winces, then starts on a long rant about how we all need to wake up and meet our true masters instead of hiding behind the false [crop_circler.GetFaith.GetReligion.GetAdjectiveNoTooltip] teachings. I take a few steps back in surprise."
+ travel_events.2029.a: "Stop that, you heretic!"
  travel_events.2029.b:0 "How dare you defile [ROOT.Char.GetFaith.GetReligion.GetNameNoTooltip]!"
  travel_events.2029.c:0 "Tell me more of these #EMP true masters#!."
  travel_events.2029.d:0 "Umm... alright."
@@ -409,9 +409,9 @@
  travel_events.2032.t:0 "$travel_event_prefix$ One Herb for You..."
  travel_events.2032.desc:0 "The impressive defensive structure at the peak of [ROOT.Char.GetCurrentLocation.GetName] [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l] is quite something. As I wander along the outer perimeter, I notice a peculiar person in the distance.\n\n[herbalist_character.GetSheHe|U] appears to be mumbling to [herbalist_character.GetHerselfHimself], all the while stopping to crouch and collect what appears to be herbs of various kinds. It's almost as if [herbalist_character.GetSheHe] is talking to... the #EMP herbs#!?\n\nI approach [herbalist_character.GetHerHim] carefully, and [herbalist_character.GetSheHe] looks up, various herbs displayed in [herbalist_character.GetHerHis] palm. I notice a spark of curiosity behind [herbalist_character.GetHerHis] eyes, proposing an unspoken question."
  travel_events.2032.a:0 "So what does this herb do?"
- travel_events.2032.a_poisonous.tt:1 "You procure some poisonous herbs that you can apply to your next [GetScheme('murder').GetTypeName] [scheme|E]"
+ travel_events.2032.a_poisonous.tt: "You procure some poisonous herbs that you can apply to your next [GetScheme('murder').GetTypeName] [scheme|E]"
  travel_events.2032.a_poisonous.t:0 "Herbs Procured"
- travel_events.2032.a_poisonous.desc:1 "You found some poisonous herbs"
+ travel_events.2032.a_poisonous.desc: "You found some poisonous herbs"
  travel_events.2032.a_learning.tt:0 "Skill Improved"
  travel_events.2032.b:0 "Would you be interested in becoming my court physician?"
  travel_events.2032.c:0 "This is a waste of my time."
@@ -427,8 +427,8 @@
  travel_events.2033.a_cannibal:0 "Ah yes, prisoners; the other white meat."
  travel_events.2033.a_manhunt_tt:0 "A target who escapes a manhunt may come back for revenge"
  travel_events.2033.a_manhunt.tt:0 "Manhunt Fulfilled"
- travel_events.2033.a_manhunt.desc:1 "[prisoner.Custom('ShortName')] is hunted and killed"
- travel_events.2033.a_caught_trophy.desc:1 "[prisoner.Custom('ShortName')] is hunted and turned into a trophy"
+ travel_events.2033.a_manhunt.desc: "[prisoner.Custom('ShortName')] is hunted and killed"
+ travel_events.2033.a_caught_trophy.desc: "[prisoner.Custom('ShortName')] is hunted and turned into a trophy"
  travel_events.2033.a_caught_eaten.tt:0 "Prisoner Eaten"
  travel_events.2033.a_caught_eaten.desc:0 "[prisoner.Custom('ShortName')] is caught and eaten"
  travel_events.2033.a_escaped.tt:0 "Prisoner Escaped"
@@ -436,7 +436,7 @@
  travel_events.2033.a_killed.desc:0 "[prisoner.Custom('ShortName')] kills you and escapes"
  travel_events.2033.a_accident.desc:0 "You stumble and break your neck"
  manhunt_skull_cup:0 "Manhunt Skull Cup"
- manhunt_skull_cup_desc:0 "This skull cup is a trophy from the successful manhunt of [new_skull_cup.MakeScope.Var('skull_origin').Char.GetUIName] at the [ROOT.Char.GetCurrentLocation.GetName] [ ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l]."
+ manhunt_skull_cup_desc:0 "This skull cup is a trophy from the successful manhunt of [new_skull_cup.MakeScope.Var('skull_origin').Char.Custom('UIName')] at the [ROOT.Char.GetCurrentLocation.GetName] [ ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l]."
  manhunt_skull_cup_desc_fallback:0 "This skull cup is a trophy from the successful manhunt of human prey."
  travel_events.2033.b:0 "... I guess we should catch [prisoner.GetHerHim]?"
  travel_events.2033.b_caught.tt:0 "Prisoner Caught"
@@ -451,7 +451,7 @@
  travel_events.2034.desc_long_time:0 "and out of the corner of my eye I spot a [vengeful_prisoner.GetWomanMan], knife drawn.\n\n[vengeful_prisoner.GetSheHe|U] smiles wryly. "You don't remember me, do you? Well, I remember #EMP you#!, [ROOT.Char.Custom('TitledFirstNameNoTooltip')] and your #EMP sadistic#! manhunting practices." A vague memory returns to me. Escaped prisoner #EMP [vengeful_prisoner.Custom('TitledFirstName')]#!...?"
  travel_events.2034.a:0 "You don't have to do this!"
  travel_events.2034.a_overpowered_desc:0 "You overpower [vengeful_prisoner.Custom('ShortName')]"
- travel_events.2034.a_overpowered_effect:0 "You get to decide [vengeful_prisoner.GetShortUINamePossessive] fate"
+ travel_events.2034.a_overpowered_effect:0 "You get to decide [vengeful_prisoner.Custom('ShortNamePossessive')] fate"
  travel_events.2034.a_death_desc:0 "$travel_events.2019.a_death.desc$"
  travel_events.2034.b:0 "#EMP [bodyguard.Custom('FirstNameNoTooltip')]!!#!"
  travel_events.2034.b_overpowered_desc:0 "[bodyguard.Custom('ShortName')] overpowers [vengeful_prisoner.Custom('ShortName')]"
@@ -481,17 +481,17 @@
  travel_events.2037.desc:0 "We encounter [2037_county_liege.Custom('TitledFirstName')], the ruler of [ROOT.Char.GetCurrentLocation.GetName], and [2037_county_liege.GetHerHis] entourage at the local hunting grounds.\n\nAfter an  exchange of polite greetings, [2037_county_liege.GetSheHe] looks at me with a mischievous grin: "Would you care to join me for the most noble of sports, "
  travel_events.2037.desc_child:0 "little one?" "
  travel_events.2037.desc_adult:0 "my [2037_county_liege.Custom2('RelationToMeShort', ROOT.Char)]?" "
- travel_events.2037.desc_segway:1 "[2037_county_liege.GetSheHe|U] nods at the prisoner in chains at the forest's edge."
- travel_events.2037.desc_outro_segway_adult:1 "\n\nI all too soon realize what #EMP sport#! [2037_county_liege.GetSheHe] is referring to."
- travel_events.2037.desc_outro_child:1 "\n\nMy curiosity is definitely piqued. What game could this possibly be... ? Tag?\n\nAs I consider the offer, I notice my [ROOT.Char.Custom2('RelationToMeShort',  SCOPE.sC('entourage_character'))] [entourage_character.Custom('TitledFirstName')] seeking my attention and carefully shaking [entourage_character.GetHerHis] head."
+ travel_events.2037.desc_segway: "[2037_county_liege.GetSheHe|U] nods at the prisoner in chains at the forest's edge."
+ travel_events.2037.desc_outro_segway_adult: "\n\nI all too soon realize what #EMP sport#! [2037_county_liege.GetSheHe] is referring to."
+ travel_events.2037.desc_outro_child: "\n\nMy curiosity is definitely piqued. What game could this possibly be... ? Tag?\n\nAs I consider the offer, I notice my [ROOT.Char.Custom2('RelationToMeShort',  SCOPE.sC('entourage_character'))] [entourage_character.Custom('TitledFirstName')] seeking my attention and carefully shaking [entourage_character.GetHerHis] head."
  travel_events.2037.desc_outro_manhunter:0 "As an experienced manhunter, this suggestion tickles my fancy."
- travel_events.2037.desc_outro:1 "#EMP Manhunting.#! I am truly disgusted... or am I intrigued?"
+ travel_events.2037.desc_outro: "#EMP Manhunting.#! I am truly disgusted... or am I intrigued?"
  travel_events.2037.a:0 "Sounds interesting enough..."
  travel_events.2037.a_child:0 "I'll play!"
  travel_events.2037.a_manhunted:0 "Let us begin."
- travel_events.2037.a_your_kill.desc:1 "You hunt and slay [2037_manhunt_prisoner.Custom('ShortName')]"
+ travel_events.2037.a_your_kill.desc: "You hunt and slay [2037_manhunt_prisoner.Custom('ShortName')]"
  travel_events.2037.a_their_kill.tt:0 "[2037_county_liege.Custom('ShortNameNoTooltip')] Gets The Kill"
- travel_events.2037.a_their_kill.desc:1 "[2037_manhunt_prisoner.Custom('ShortName')] is hunted and slain by [2037_county_liege.Custom('ShortName')]"
+ travel_events.2037.a_their_kill.desc: "[2037_manhunt_prisoner.Custom('ShortName')] is hunted and slain by [2037_county_liege.Custom('ShortName')]"
  travel_events.2037.b:0 "I could find use for that prisoner, if you don't mind."
  travel_events.2037.b_child:0 "I'd rather have [2037_manhunt_prisoner.Custom('FirstNameNoTooltip')] come with me."
  travel_events.2037.c:0 "Are you insane?"
@@ -512,9 +512,9 @@
 
 #Follow-up hunt outcome
  travel_events.2039.t:0 "$travel_event_prefix$ Truest Aim"
- travel_events.2039.desc_child_won:1 "[entourage_character.Custom('TitledFirstName')] scrambles after the rabbit, bow readied, oblivious to the feeble bluff of my poorly loosed arrows.\n\nAfter some tussle with the undergrowth, [entourage_character.Custom('TitledFirstNameNoTooltip')] chirps triumphantly and darts forward, picking up the carcass of the pristine animal with an arrow firmly lodged in its tiny torso. I clap my hands as [entourage_character.GetSheHe] beams at me."
- travel_events.2039.desc_won:1 "Rabbit in sight, we both slowly but purposefully move closer to the rabbit, taking aim for its tiny body as it gnashes away at a piece of straw. I pull my string — and release — as the arrow goes #EMP straight into the animal's body#!.\n\nThe sudden impact launches it a few paces, then the tiny body slumps down on the ground, motionless. I roar in triumph, and [entourage_character.Custom('TitledFirstName')] joins me in my cheer. "Nice shot," [entourage_character.GetSheHe] cries, as I dart forward to pick up the trophy."
- travel_events.2039.desc_lost:1 "[entourage_character.Custom('TitledFirstName')] is a few paces ahead of me, as we strive to get closer to the rabbit for the shot. I struggle to keep up, as [entourage_character.GetSheHe] aims an arrow at the animal and, in one swift motion, releases it straight into the creature's tiny body.\n\n[entourage_character.Custom('FirstNameNoTooltip')] makes a victory gesture and shouts as the rabbit goes limp on the ground, and [entourage_character.GetSheHe] hurries forward to pick up the carcass. I clap in appreciation."
+ travel_events.2039.desc_child_won: "[entourage_character.Custom('TitledFirstName')] scrambles after the rabbit, bow readied, oblivious to the feeble bluff of my poorly loosed arrows.\n\nAfter some tussle with the undergrowth, [entourage_character.Custom('TitledFirstNameNoTooltip')] chirps triumphantly and darts forward, picking up the carcass of the pristine animal with an arrow firmly lodged in its tiny torso. I clap my hands as [entourage_character.GetSheHe] beams at me."
+ travel_events.2039.desc_won: "Rabbit in sight, we both slowly but purposefully move closer to the rabbit, taking aim for its tiny body as it gnashes away at a piece of straw. I pull my string — and release — as the arrow goes #EMP straight into the animal's body#!.\n\nThe sudden impact launches it a few paces, then the tiny body slumps down on the ground, motionless. I roar in triumph, and [entourage_character.Custom('TitledFirstName')] joins me in my cheer. "Nice shot," [entourage_character.GetSheHe] cries, as I dart forward to pick up the trophy."
+ travel_events.2039.desc_lost: "[entourage_character.Custom('TitledFirstName')] is a few paces ahead of me, as we strive to get closer to the rabbit for the shot. I struggle to keep up, as [entourage_character.GetSheHe] aims an arrow at the animal and, in one swift motion, releases it straight into the creature's tiny body.\n\n[entourage_character.Custom('FirstNameNoTooltip')] makes a victory gesture and shouts as the rabbit goes limp on the ground, and [entourage_character.GetSheHe] hurries forward to pick up the carcass. I clap in appreciation."
  travel_events.2039.a:0 "Nice shot!"
  travel_events.2039.a_trinket.t:0 "Trinket Gained"
  travel_events.2039.a_win:0 "This was fun!"
@@ -581,7 +581,7 @@
  travel_events.2100.b_outcome_tt:0 "[murder_target.Custom('ShortName')] will remember this"
 
 #Target Ruler: You are being assassinated
- travel_events.2101.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Assassins!"
+ travel_events.2101.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Assassins!"
  travel_events.2101.desc:0 "While surveying the lands of [ROOT.Char.GetCurrentLocation.GetName], the sun is high and there is a light breeze. I look around and reflect over the fact that the area is pretty desolate, save some migratory birds far up in the sky.\n\nAs I lean down to adjust my boot, I am suddenly jolted upright when we hear riders approaching. The cloaked figures seem to be coming from every direction, and before I know it one of the villains is right in front of me, blade drawn and lunging at my throat!"
  travel_events.2101.a:0 "How dare you!"
  travel_events.2101.a_guards:0 "[bodyguard.GetNameNoTooltip]!!"
@@ -597,7 +597,7 @@
  travel_events.2101.a_ruler_survived.desc:0 "[murder_target.Custom('ShortName')] survived the assassination attempt in [visiting_ruler.MakeScope.Var('assassination_location').GetProvince.GetName]"
 
 #Target Ruler: Wait a minute, didn't I see Visiting Ruler??
- travel_events.2102.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Betrayed"
+ travel_events.2102.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Betrayed"
  travel_events.2102.desc:0 "The fight rages on for what seems like hours, but in reality it only lasts a couple of minutes. The assassins are fought off, and we survive unscathed.\n\nI scour the battlefield and find evidence of the murder plot that was concocted against me on one of the corpses. In my heightened state of awareness I also notice a banner disappearing just out of sight. [visiting_ruler.Custom('TitledFirstName')]?"
  travel_events.2102.desc_negative:0 "\n\nOf course. It would be nonsensical of me to expect support from someone like [visiting_ruler.Custom('FirstNameNoTooltip')] and [visiting_ruler.GetHerHis] ilk. A curse on [visiting_ruler.GetHerHis] grave."
  travel_events.2102.desc_positive:0 "\n\nHow... could [visiting_ruler.GetSheHe]? I... expected more from [visiting_ruler.GetHerHim]. My eyes are half-closed as the sting of this betrayal wounds me more than any blade could."
@@ -613,7 +613,7 @@
  travel_events.2103.a:0 "Well, [murder_target.GetSheHe] #EMP survived#! after all."
 
 #Visiting Ruler: You heroically thwart the assassination of Target Ruler
- travel_events.2104.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, How to Save a Life"
+ travel_events.2104.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, How to Save a Life"
  travel_events.2104.desc:0 "Me and my entourage ride head-first into the would-be assassins, blindsiding them completely. How incompetent do you have to be to not to have a clear view of your rear?\n\nWe easily slice through the few that resist, and the rest run off into the wilds. I look up to see [murder_target.Custom('TitledFirstName')] staring at me, eyes wide and mouth slightly agape.\n\nAs [murder_target.GetSheHe] snaps out of it, [murder_target.GetHerHis] facial features adjust, but [murder_target.GetSheHe] still seem surprised and grateful of my intervention. [murder_target.GetSheHe|U] beckons for me to come over."
  travel_events.2104.a:0 "That's my good deed for the day."
  travel_events.2104.a_shy:0 "It was the right thing to do."
@@ -629,7 +629,7 @@
  travel_events.2105.a.tt: "[visiting_ruler.Custom('ShortName')] came to your aid!"
 
 #County Liege: You notice a Travelling Ruler coming under attack
- travel_events.2107.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Safe Haven"
+ travel_events.2107.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Safe Haven"
  travel_events.2107.desc_intro_plains:0 "As the sun is starting to set, I peer out over the [holding_location.GetTerrain.GetNameNoTooltip|l] from my quarters at [holding_location.GetName]. In the distance, a group of travelers are traversing the grassy land splayed out ahead of them. "
  travel_events.2107.desc_intro_desert:0 "A dull breeze is playing in the sands outside [holding_location.GetName], sending small puffs of dirt whirling in every direction. As I watch the wandering sun outside the keep, I notice a set of travelers diligently striding across the sands. "
  travel_events.2107.desc_intro_wetlands:0 "As the sun is setting, the [holding_location.GetTerrain.GetNameNoTooltip|l] outside [holding_location.GetName] has a distinct hue to them this evening. From the sanctity of my keep I observe the changing colors and approaching dark, and while doing so I notice a set of travelers far outside the holding, traversing the muddy roads. "
@@ -651,8 +651,8 @@
  travel_events.2107.b_outcome_tt:0 "If [travelling_ruler.Custom('ShortName')] survives, [travelling_ruler.GetSheHe] will remember this"
 
 #Travelling Ruler: You are saved by County Liege
- travel_events.2108.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Saved"
- travel_events.2108.desc_intro:1 "Traversing the [holding_location.GetTerrain.GetNameNoTooltip|l] on the outskirts of [holding_location.GetName], we are suddenly attacked by a swarm of bandit riders, out for blood. Another set of riders rapidly approach from the nearby holding, led by [province_liege.Custom('TitledFirstName')]!"
+ travel_events.2108.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Saved"
+ travel_events.2108.desc_intro: "Traversing the [holding_location.GetTerrain.GetNameNoTooltip|l] on the outskirts of [holding_location.GetName], we are suddenly attacked by a swarm of bandit riders, out for blood. Another set of riders rapidly approach from the nearby holding, led by [province_liege.Custom('TitledFirstName')]!"
  travel_events.2108.desc_negative:0 "\n\nI contain my surprise for now, as being saved by none other than my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('province_liege'))] was certainly not something I expected!"
  travel_events.2108.desc_positive:0 "\n\nMy heart warms as my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('province_liege'))] [province_liege.Custom('FirstNameNoTooltip')] leads the charge head-on into the unprotected rear of the scoundrel party."
  travel_events.2108.desc:0 "\n\nI am very pleasantly surprised by the altruistic demeanor of the local [province_liege.Custom('TitleAsNameNoTooltip')], and I praise [ROOT.Char.GetFaith.HighGodName] that they arrived just in time."
@@ -685,7 +685,7 @@
  travel_events.2109.a_none_hurt.desc:0 "None of your [ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')] were injured in the battle"
 
 #Travelling Ruler: You get ruthlessly attacked
- travel_events.2110.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Stranded"
+ travel_events.2110.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Stranded"
  travel_events.2110.desc:0 "Traversing the [holding_location.GetTerrain.GetNameNoTooltip|l] on the outskirts of [holding_location.GetName], we are suddenly attacked by a swarm of bandit riders, out for blood. We are so close to the holding, surely [province_liege.Custom('TitledFirstName')] will send help?\n\nAs time drags on and we are chased by the scoundrels, for the longest avoiding battle, it becomes painfully clear that no help is coming."
  travel_events.2110.desc_negative:0 "I am not sure what I was expecting from a [travelling_ruler.Custom('InsultNoun')] such as [province_liege.Custom('FirstNameNoTooltip')]. But even this is beneath [province_liege.GetHerHim]."
  travel_events.2110.desc_positive:0 "I feel a sharp pain in my chest as I come to realize the betrayal that just now has been performed by [province_liege.Custom('TitledFirstNameNoTooltip')]."
@@ -703,7 +703,7 @@
  travel_events.2110.b_tt:0 "[knight_to_sacrifice.Custom('ShortName')] stays behind to distract the attackers"
 
 #County Liege: You observe the attack on Travelling Ruler
- travel_events.2111.t:1 "$travel_danger_prefix$ $travel_events.2110.t$"
+ travel_events.2111.t: "$travel_danger_prefix$ $travel_events.2110.t$"
  travel_events.2111.desc_sacrifice:0 "The sun is setting over the [holding_location.GetTerrain.GetNameNoTooltip|l] as I observe the scene in front of me. If I was expecting a full-scale battle, I was wrong.\n\nIt would seem as if [travelling_ruler.Custom('TitledFirstName')] has ordered a decoy and a retreat, meaning that one of [travelling_ruler.GetHerHis] [travelling_ruler.Custom('KnightCulturePluralNoTooltipLowercase')] stays behind to save the tail of the party. Meanwhile the traveling party has reorganized and is making a break for the far end of the city limits.\n\nIt seems to be working, as the riders ignore the fleeing group and instead hone in on the lone soldier, fully engulfing [knight_to_sacrifice.GetHerHim] from my view. Hopefully the end was swift."
  travel_events.2111.desc_unscathed:0 "As the sun colors the sky red when it perishes down the horizon, the battle in front of me colors the ground red. It would appear, however, that this is only red with bandit blood.\n\nThe traveling group is showing surprising prowess in the face of sudden attack, and are fighting tooth and nail — eventually forcing the scoundrels on the run. They simply throw their weapons and quickly retreat back the way they came from.\n\n[travelling_ruler.Custom('TitledFirstName')] gestures defiantly in the direction of my holding, and I raise my eyebrows in silent surprise. This was #EMP most#! unexpected."
  travel_events.2111.desc_survived:0 "As the sun sets over the [holding_location.GetTerrain.GetNameNoTooltip|l], the two groups converge in a mass of weapons and pain. I observe as the initial shock of the traveling party fades and they diligently get back on their feet, pushing back the armed riders.\n\n[travelling_ruler.Custom('TitledFirstName')] takes the lead as the counterattack comes, swift and deadly, down onto the grubby bandits. One of the scoundrels seemingly manage to get a fairly severe hit on [travelling_ruler.Custom('FirstNameNoTooltip')] however, but that is soon retaliated by one of [travelling_ruler.GetHerHis] [travelling_ruler.Custom('KnightCulturePluralNoTooltipLowercase')].\n\nThe riders who are still breathing and able leave the scene, as quickly and sudden as they appeared. In their wake, bodies and dead animals; but a surprisingly healthy gathering of travelers."

@@ -30,7 +30,7 @@
  yearly.1010.t:0 "Gone In The Night"
  yearly.1010.start.desc:0 "When I enter [abductee.Custom('TitledFirstNamePossessive')] chambers, the first thing I notice is the guard slumped over in the corner. The second thing is the bright red gash across [dummy_gender.GetHerHis] throat. My [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('abductee'))], however, is nowhere to be seen!\n\n"
  yearly.1010.friend.desc:0 "[hunter.Custom('TitledFirstName')] steps into the room, a bow slung across [hunter.GetHerHis] shoulder. "I am sorry, old friend. It was [abductor.Custom('TitledFirstName')] who took [abductee.GetHerHim]."
- yearly.1010.marshal.desc:1 "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('hunter'))] steps into the room, a bow slung across [hunter.GetHerHis] shoulder. "The surviving guard claims it was [abductor.Custom('TitledFirstName')] who took [abductee.GetHerHim], my liege."
+ yearly.1010.marshal.desc: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('hunter'))] steps into the room, a bow slung across [hunter.GetHerHis] shoulder. "The surviving guard claims it was [abductor.Custom('TitledFirstName')] who took [abductee.GetHerHim], my liege."
  yearly.1010.end.desc:0 "The hounds and the [dummy_gender.GetWomenMen] are ready. What are your orders?""
  yearly.1010.abduction.tt:0 "[abductee.Custom('TitledFirstName')] has been abducted by [abductor.Custom('TitledFirstName')]"
  yearly.1010.friend.tt:0 "My [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('hunter'))] [hunter.Custom('TitledFirstName')] is here to help."
@@ -93,7 +93,7 @@
  yearly.1015.a:0 "I do not know what to believe..."
  
  yearly.1020.opening:0 "[vip.Custom2('AppropriateGreeting', ROOT.Char)]"
- yearly.1020.desc:1 "In a few days' time my [enemy.Custom('InsultAdjective')] [vip.Custom2('RelationToMeShort', SCOPE.sC('enemy'))], [enemy.Custom('TitledFirstName')], will travel through [my_county.GetNameNoTierNoTooltip]. If you orchestrate an ambush and capture [enemy.GetHerHim], I will reward you generously.\n\nIf you accept my offer, you will get half of the money now, and the other half when you turn over [enemy.Custom('TitledFirstNameNoTooltip')]. If [enemy.GetSheHe] should die in the fray, I will shed no tears, but I will not pay for [enemy.GetHerHis] corpse.\n\nI trust that the words on this parchment will stay between us. I look forward to your reply."
+ yearly.1020.desc: "In a few days' time my [enemy.Custom('InsultAdjective')] [vip.Custom2('RelationToMeShort', SCOPE.sC('enemy'))], [enemy.Custom('TitledFirstName')], will travel through [my_county.GetNameNoTierNoTooltip]. If you orchestrate an ambush and capture [enemy.GetHerHim], I will reward you generously.\n\nIf you accept my offer, you will get half of the money now, and the other half when you turn over [enemy.Custom('TitledFirstNameNoTooltip')]. If [enemy.GetSheHe] should die in the fray, I will shed no tears, but I will not pay for [enemy.GetHerHis] corpse.\n\nI trust that the words on this parchment will stay between us. I look forward to your reply."
  yearly.1020.a:0 "I know the perfect place for an ambush..."
  yearly.1020.a.rl.t:0 "In a few days"
  yearly.1020.a.capture.desc:0 "I capture [enemy.Custom('TitledFirstNameNoTooltip')]"
@@ -125,9 +125,9 @@
  yearly.1030.confident.desc:0 "The forceful knock on the door clears every bit of drowsiness from my mind. Who disturbs a [ROOT.Char.Custom('TitleAsNameNoTooltip')] at this hour?\n\nMy late night visitor is none other than [hooked.Custom('TitledFirstName')]. "I have to speak with you privately, away from listening ears. I have discovered something #EMP very#! interesting.""
  yearly.1030.end.desc:0 "\n\n[hooked.Custom('TitledFirstNameNoTooltip')] has uncovered a secret of [secret_character.Custom('TitledFirstNamePossessive')]. [hooked.GetSheHe|U] is willing to share it with me if I let [hooked.GetHerHim] off the hook."
  yearly.1030.a:0 "I swear, after this, you will owe me no longer."
- yearly.1030.a.tt:1 "[hooked.Custom('TitledFirstName')] will tell me a [secret|E] about [secret_character.Custom('TitledFirstName')]"
+ yearly.1030.a.tt: "[hooked.Custom('TitledFirstName')] will tell me a [secret|E] about [secret_character.Custom('TitledFirstName')]"
  yearly.1030.b:0 "You think you can make demands? Tell me, or else!"
- yearly.1030.b.tt:1 "I force [hooked.Custom('TitledFirstName')] to tell me a [secret|E] about [secret_character.Custom('TitledFirstName')]"
+ yearly.1030.b.tt: "I force [hooked.Custom('TitledFirstName')] to tell me a [secret|E] about [secret_character.Custom('TitledFirstName')]"
  yearly.1030.c:0 "I would rather have you in my pocket than [secret_character.GetHerHim]."
  yearly.1030.a.start.desc:0 "Secret Discovered"
  yearly.1030.a.secret_deviant.desc:0 "about [secret_character.Custom('TitledFirstNamePossessive')] perversion!"
@@ -325,7 +325,7 @@
  yearly.1084.b:0 "Get out of my sight, you treacherous [suspicious.Custom('InsultNoun')]!"
 
  # Paranoid confrontation: denial
- yearly.1085.start.desc:1 "The guards keep a respectable distance to [suspicious.Custom('TitledFirstName')], but they are ready to seize [suspicious.GetHerHim] at a moment's notice. [suspicious.GetSheHe|U] seems well aware; there is an unusual tension in [suspicious.GetHerHis] shoulders.\n\n"Why have you summoned me, [ROOT.Char.Custom2('RelationToMeAddress', suspicious)]? Do you have something to ask me?"\n\nThe accusation spills from my mouth like venom, but when I see the look on [suspicious.Custom('FirstNamePossessiveNoTooltip')] face, doubt besets me. That is not guilt,"
+ yearly.1085.start.desc: "The guards keep a respectable distance to [suspicious.Custom('TitledFirstName')], but they are ready to seize [suspicious.GetHerHim] at a moment's notice. [suspicious.GetSheHe|U] seems well aware; there is an unusual tension in [suspicious.GetHerHis] shoulders.\n\n"Why have you summoned me, [ROOT.Char.Custom2('RelationToMeAddress', suspicious)]? Do you have something to ask me?"\n\nThe accusation spills from my mouth like venom, but when I see the look on [suspicious.Custom('FirstNamePossessiveNoTooltip')] face, doubt besets me. That is not guilt,"
  yearly.1085.angry.desc:0 "but anger.\n\n"How dare you accuse me thusly? After everything I have done for you!""
  yearly.1085.sad.desc:0 "but grief.\n\n"I have always been your faithful servant," [suspicious.GetSheHe] cries. "I would never betray you!""
  yearly.1085.a:0 "You may leave."

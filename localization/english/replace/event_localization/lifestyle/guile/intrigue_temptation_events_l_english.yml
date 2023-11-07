@@ -27,7 +27,7 @@
  intrigue_temptation_special.1002.c:0 "Power and influence."
  intrigue_temptation_special.1002.c.tt:0 "#F People who desire wealth and success tend to prefer powerful partners.\n\nIf my assumption is wrong, I can assume [wants_love.Custom('FirstName')] prefers a matching personality or attractiveness.#!"
  intrigue_temptation_special.1002.d:0 "I would rather find out whether [wants_love.GetSheHe] prefers men or women. "
- intrigue_temptation_special.1002.d.tt:1 "#F Most people prefer partners of the opposite gender, but it is not uncommon to prefer those of the same gender, or of both.#!"
+ intrigue_temptation_special.1002.d.tt: "#F Most people prefer partners of the opposite gender, but it is not uncommon to prefer those of the same gender, or of both.#!"
 
  intrigue_temptation_special.1003.t:0 "Making the Match"
  intrigue_temptation_special.1003.start.desc:0 "I have observed [wants_love.Custom('TitledFirstName')] for some time now and my conclusion is certain."
@@ -60,7 +60,7 @@
  intrigue_temptation_special.1004.tt:0 "I should pick an activity which both [wants_love.Custom('FirstName')] and [chosen_match.Custom('FirstName')] will find familiar and enjoyable based on their skills"
 
  intrigue_temptation_special.1005.t:0 "Putting Feelings to the Test"
- intrigue_temptation_special.1005.great_diplomacy.desc:1 "I am usually not given to bragging, yet I must say — it will be many, many years before this dance is forgotten! In fact, I suspect last night will become a cherished memory of [wants_love.Custom('FirstNamePossessive')] as well as [chosen_match.Custom('FirstNamePossessive')]. They shared almost every dance and could not take their eyes off one another!"
+ intrigue_temptation_special.1005.great_diplomacy.desc: "I am usually not given to bragging, yet I must say — it will be many, many years before this dance is forgotten! In fact, I suspect last night will become a cherished memory of [wants_love.Custom('FirstNamePossessive')] as well as [chosen_match.Custom('FirstNamePossessive')]. They shared almost every dance and could not take their eyes off one another!"
  intrigue_temptation_special.1005.great_martial.desc:0 "I do not normally say this, but sometimes, I can be quite the genius! Both [wants_love.Custom('FirstName')] and [chosen_match.Custom('FirstName')] enjoyed themselves immensely at the hunt. They worked together like they had known each other for a lifetime and were the most successful couple by far."
  intrigue_temptation_special.1005.great_stewardship.desc:0 "[wants_love.Custom('FirstName')] and [chosen_match.Custom('FirstName')] riding side by side was a sight for sore eyes! They talked for hours about bridges, mills and irrigation systems before they fell behind the rest of the party. Who knows which territories their conversation ventured into then, but [wants_love.Custom('FirstName')] looked quite enchanted."
  intrigue_temptation_special.1005.great_intrigue.desc:0 "[wants_love.Custom('FirstName')] and [chosen_match.Custom('FirstName')] fit right in with the old foxes! Not before long, they were dominating the conversation, bouncing ideas off one another at an impressive speed. Rarely have I seen two minds so synchronized!"
@@ -95,10 +95,10 @@
  
  #Guest, by Alexander Oltner
  intrigue_temptation.3000.t:0 "A Sweet Farewell"
- intrigue_temptation.3000.desc:1 ""My [ROOT.Char.GetLadyLord] it is... it was... I mean, it has been a pleasure to be your guest here in [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]..." [guest_lover.Custom('FirstName')] stammers, as [guest_lover.GetSheHe] readies for departure.\n\n"I got to meet #emphasis you#!. That alone made my stay worth it. But still, I beg you... would you spend a night of passion with me, before I leave?"\n\n[guest_lover.Custom('FirstName')] has fallen for my subtle manipulation! Now, how should I capitalise on this opportunity?"
+ intrigue_temptation.3000.desc: ""My [ROOT.Char.GetLadyLord] it is... it was... I mean, it has been a pleasure to be your guest here in [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]..." [guest_lover.Custom('FirstName')] stammers, as [guest_lover.GetSheHe] readies for departure.\n\n"I got to meet #emphasis you#!. That alone made my stay worth it. But still, I beg you... would you spend a night of passion with me, before I leave?"\n\n[guest_lover.Custom('FirstName')] has fallen for my subtle manipulation! Now, how should I capitalise on this opportunity?"
  intrigue_temptation.3000.a:0 "Yes, my love, I would do #emphasis anything#! for you!"
- intrigue_temptation.3000.b:1 "So, darling, that rumor about my vassal?"
- intrigue_temptation.3000.c:1 "My sweet, would you speak to [guest_lovers_friend.Custom('FirstNameNoTooltip')]?"
+ intrigue_temptation.3000.b: "So, darling, that rumor about my vassal?"
+ intrigue_temptation.3000.c: "My sweet, would you speak to [guest_lovers_friend.Custom('FirstNameNoTooltip')]?"
  intrigue_temptation.3000.d:0 "Ah, I cannot... now off you go!"
  intrigue_temptation.3000.c.tt:0 "I use [guest_lover.Custom('FirstName')] to get closer to [guest_lover.GetHerHis] friend, [guest_lovers_friend.Custom('FullName')]"
  intrigue_temptation.3000.b.tt:0 "I try to make [guest_lover.GetHerHim] reveal my vassal's secret"
@@ -111,7 +111,7 @@
  #Wing(wo)man, by Mathilda Bjarnehed
  intrigue_temptation.3010.t:0 "A Bloom In The Wilderness"
  intrigue_temptation.3010.start.desc:0 "For the third night in a row, I am sitting at the same table, at the same inn. It has an excellent view of the bar — and the captivating [bar_servant.Custom('bar_servant')] behind it.\n\nMy daydream is interrupted when [wingman.Custom2('MyCharacterIntroduction', ROOT.Char)] slams [wingman.GetHerHis] tankard down on the table. "I have seen you gawking at [bar_servant.Custom('FirstName')] all night," [wingman.GetSheHe] whispers with a sly smile. "I do not blame you, [bar_servant.GetSheHe] is a"
- intrigue_temptation.3010.end.desc:1 "[bar_servant.Custom('RomanticComplimentAdjective')] [bar_servant.GetWomanMan]. Do you want me to make introductions?""
+ intrigue_temptation.3010.end.desc: "[bar_servant.Custom('RomanticComplimentAdjective')] [bar_servant.GetWomanMan]. Do you want me to make introductions?""
  intrigue_temptation.3010.a:0 "You know [bar_servant.GetHerHim]? That would be perfect!"
  intrigue_temptation.3010.b:0 "I want to do this myself."
  intrigue_temptation.3010.c:0 "I am just here for the drinks..."
@@ -160,7 +160,7 @@
  intrigue_temptation.3021.b.2_dates.tt:0 "I have picked [date_1.Custom('ShortName')] and [date_2.Custom('ShortName')] and can pick #V 1#! more"
  intrigue_temptation.3021.b.1_date.tt:0 "I have picked [date_1.Custom('ShortName')] and can pick #V 2#! more"
  intrigue_temptation.3021.c:0 "No thanks! Put it in the left pile."
- intrigue_temptation.3021.c.tt:0 "Discard [potential_date.GetShortUINamePossessive] portrait"
+ intrigue_temptation.3021.c.tt:0 "Discard [potential_date.Custom('ShortNamePossessive')] portrait"
  every_approved_date:0 "Everyone whose portrait I kept"
  intrigue_temptation.3021.d:0 "This is hopeless! What an awful idea."
  intrigue_temptation.3021.d.tt:0 "Put the portraits back in the attic"

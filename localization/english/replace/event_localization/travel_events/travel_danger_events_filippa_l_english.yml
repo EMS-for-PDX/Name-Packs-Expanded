@@ -20,7 +20,7 @@
  travel_danger_events.4000.c:0 "It is too late."
  travel_danger_events.4000.c.flavor:0 "The tailwinds will make us go faster!"
  #Illness, an entourage member falls ill
- travel_danger_events.4010.t:1 "$travel_danger_prefix$ This Is Fine"
+ travel_danger_events.4010.t: "$travel_danger_prefix$ This Is Fine"
  travel_danger_events.4010.desc:0 "Traveling through the, sometimes harsh, environments has invigorating effects on at least #EMP my#! state of mind and vigor.\n\nAs I glance over at [ill_character.Custom('TitledFirstName')], however, [ill_character.GetSheHe] does not appear to be doing quite as good. [ill_character.GetHerHis|U] movement is labored, [ill_character.GetHerHis] breathing heavy and spontaneous bursts of coughing ripple through [ill_character.GetHerHis] body — clearly [ill_character.GetSheHe] is not well."
  travel_danger_events.4010.desc_again:0 "We are just about to break camp morning, on our way to [destination.GetNameNoTooltip], when I find [ill_character.Custom('TitledFirstName')] in [ill_character.GetHerHis] lodgings, breathing heavily and pale as a sheet. [ill_character.GetSheHe|U] winces under my scrutiny, and lets out a bellowing cough.\n\nDid [ill_character.Custom('FirstNameNoTooltip')] also contract something? Is this an epidemic?"
  travel_danger_events.4010.desc_sea:0 "As we sail towards [destination.GetNameNoTooltip], the fresh sea air is doing wonders for at least #EMP my#! health and well-being. However, we are not all so lucky.\n\nI have noticed how [ill_character.Custom('TitledFirstName')] has been deteriorating over the past few days, and now there is no doubt that [ill_character.GetSheHe] has contracted an illness of some kind."
@@ -29,7 +29,7 @@
  travel_danger_events.4010.a_sea:0 "Find a port so that [ill_character.Custom('FirstNameNoTooltip')] may rest and recover fully."
  travel_danger_events.4010.b:0 "I think I know a cure."
  travel_danger_events.4010.b.flavor:0 "A sprig of this, a dash of that..."
- travel_danger_events.4010.b.tt:0 "[ill_character.GetShortUINamePossessive] develops [GetTrait('pneumonic').GetName( GetNullCharacter )]"
+ travel_danger_events.4010.b.tt:0 "[ill_character.Custom('ShortNamePossessive')] develops [GetTrait('pneumonic').GetName( GetNullCharacter )]"
  travel_danger_events.4010.b.cured.t:0 "Cured"
  travel_danger_events.4010.b.cured.desc:0 "[ill_character.GetSheHe|U] is fully recovered"
  travel_danger_events.4010.b.worsened.t:0 "Condition Worsened"

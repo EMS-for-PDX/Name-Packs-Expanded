@@ -1,6 +1,6 @@
 ﻿l_english:
  
- east_europe.0001.t:1 "The West Slavs United"
+ east_europe.0001.t: "The West Slavs United"
  east_europe.0001.desc:0 "The old tribes stand united once more. I have brought us together, just like Samo did centuries ago. His empire died with him, but I am certain [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] has a prosperous future ahead. This is just the beginning!"
  east_europe.0001.a:0 "Glory to [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]!"
 
@@ -25,10 +25,10 @@
  east_europe.0015.d:0 "... [target_list_member_d.GetNameNoTierNoTooltip]."
  east_europe.0015.tooltip:0 "The holding gains the [special_building|E] [GetBuilding('hall_of_heroes_01').GetName]"
 
- east_europe.0016.desc:1 "Under my leadership, the clans have united to raise a great war hall in [holy_site.GetNameNoTierNoTooltip]. Within its thick stone walls, we prepare for war...\n\nFor generations, foreign scavengers have had their eyes on our lands. Let them come, I say! Let them test their might against our brave [defender_of_highgod.GetFaith.GetAdjectiveNoTooltip] heroes! Let their blood soak into the earth and color the rivers red!"
- east_europe.0016.a:1 "Hail [defender_of_highgod.GetFaith.WarGodName]!"
+ east_europe.0016.desc: "Under my leadership, the clans have united to raise a great war hall in [holy_site.GetNameNoTierNoTooltip]. Within its thick stone walls, we prepare for war...\n\nFor generations, foreign scavengers have had their eyes on our lands. Let them come, I say! Let them test their might against our brave [defender_of_highgod.GetFaith.GetAdjectiveNoTooltip] heroes! Let their blood soak into the earth and color the rivers red!"
+ east_europe.0016.a: "Hail [defender_of_highgod.GetFaith.WarGodName]!"
 
- east_europe.0017.desc:1 "[defender_of_highgod.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has united the clans in [defender_of_highgod.GetHerHis] realm in defense against foreign invaders. A great hall of war has been built in [holy_site.GetNameNoTierNoTooltip] where the proud [defender_of_highgod.GetFaith.GetAdjectiveNoTooltip] heroes have already gathered."
+ east_europe.0017.desc: "[defender_of_highgod.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has united the clans in [defender_of_highgod.GetHerHis] realm in defense against foreign invaders. A great hall of war has been built in [holy_site.GetNameNoTierNoTooltip] where the proud [defender_of_highgod.GetFaith.GetAdjectiveNoTooltip] heroes have already gathered."
 
 
 #HUNGARIAN DECISIONS
@@ -37,13 +37,13 @@
  east_europe.0030.a:0 "You are all welcome!"
  east_europe.0031.t:0 "The New Settlers"
  east_europe.0031.desc.vassals:0 "[scoped_ruler.Custom('TitledFirstName')] has decided to welcome foreign settlers from the neighboring [scoped_ruler.GetFaith.GetReligion.GetAdjectiveNoTooltip] realms.\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate our land faster and increase commerce with our allies."
- east_europe.0031.desc.others:1 "[scoped_ruler.Custom('TitledFirstName')] has decided to welcome foreign settlers from the [scoped_ruler.GetFaith.GetReligion.GetAdjectiveNoTooltip] realms neighboring [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip].\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate [scoped_ruler.GetHerHis] land faster and increase commerce with [scoped_ruler.GetHerHis] allies."
+ east_europe.0031.desc.others: "[scoped_ruler.Custom('TitledFirstName')] has decided to welcome foreign settlers from the [scoped_ruler.GetFaith.GetReligion.GetAdjectiveNoTooltip] realms neighboring [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip].\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate [scoped_ruler.GetHerHis] land faster and increase commerce with [scoped_ruler.GetHerHis] allies."
  east_europe.0031.a:0 "Well, I don't trust them!"
  east_europe.0031.b:0 "I see..."
 
  east_europe.0032.t:0 "The Old Rites"
- east_europe.0032.desc:1 "My predecessors embraced [old_faith.GetNameNoTooltip] in a misguided attempt at dragging [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip] into the modern era, but it has only brought us rebellion, penury, and strife.\n\nWith the immense temporal and ecclesiastic sway I now hold over my realm, I shall right this wrong and return us to true faith of $magyar_pagan$.\n\nYet, this is a watershed moment, and though a return to the Old Ways is sorely needed, perhaps their exact interpretation could be altered a little?"
- east_europe.0032.a:1 "We return to the Old Ways, unsullied."
+ east_europe.0032.desc: "My predecessors embraced [old_faith.GetNameNoTooltip] in a misguided attempt at dragging [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip] into the modern era, but it has only brought us rebellion, penury, and strife.\n\nWith the immense temporal and ecclesiastic sway I now hold over my realm, I shall right this wrong and return us to true faith of $magyar_pagan$.\n\nYet, this is a watershed moment, and though a return to the Old Ways is sorely needed, perhaps their exact interpretation could be altered a little?"
+ east_europe.0032.a: "We return to the Old Ways, unsullied."
  east_europe.0032.b:0 "Perhaps- perhaps we can keep a few of the new teachings..."
  east_europe.0032.c:0 "Skulls for [ROOT.Char.GetFaith.WarGodName]!"
  east_europe.0032.d:0 "Our dogged faith to old traditions, of any kind, is a weakness."
@@ -188,7 +188,7 @@
  east_europe.0124.desc.hof_died:0 "After the death of [hof.Custom('TitledFirstName')], the inquisition into [heretic.GetPrimaryTitle.GetNameNoTierNoTooltip] has fallen apart, with many important church dignitaries recalled to deal with the ecclesiastic succession."
  east_europe.0124.desc.heretic_died:0 "After the death of [heretic.Custom('TitledFirstName')], [hof.Custom('TitledFirstName')] seems satisfied that any major deviations amongst the $bosnian_church_adherent_plural$ will soon fade away, since the suspected-heresiarch is, apparently, surely gone to [hof.GetFaith.NegativeAfterLife|U]."
  east_europe.0124.desc.hof_no_longer_hof:0 "With the ousting of former-[absolute_faith.ReligiousHeadName] [hof.Custom('FirstName')], chaos has enveloped the inquisition into [heretic.GetPrimaryTitle.GetNameNoTierNoTooltip], and any chance of a useful verdict has evaporated."
- east_europe.0124.desc.heretic_not_independent_ruler:1 "Now that [Select_CString(heretic.IsLocalPlayer,'I am',heretic.Custom('ShortName'))][Select_CString(heretic.IsLocalPlayer,'',' is')] no longer an independent Christian ruler, [hof.Custom('TitledFirstName')] no longer sees [Select_CString(heretic.IsLocalPlayer,'me','them')] as worth investigating."
+ east_europe.0124.desc.heretic_not_independent_ruler: "Now that [Select_CString(heretic.IsLocalPlayer,'I am',heretic.Custom('ShortName'))][Select_CString(heretic.IsLocalPlayer,'',' is')] no longer an independent Christian ruler, [hof.Custom('TitledFirstName')] no longer sees [Select_CString(heretic.IsLocalPlayer,'me','them')] as worth investigating."
  east_europe.0124.desc.heretic_now_ecumenical_christian:0 "With my recent conversion to [heretic.GetFaith.GetName], [hof.Custom('TitledFirstName')] no longer has any cause to doubt my faith in [hof.GetFaith.HighGodName]."
  east_europe.0124.desc.heretic_now_different_heresy:0 "With my recent conversion to [heretic.GetFaith.GetName], [hof.Custom('TitledFirstName')] #EMP already#! considers me a heretic, and is too busy decrying my base faithlessness to seriously back [hof.GetHerHis] own inquisition investigating some lesser potential-heresy."
  east_europe.0124.desc.heretic_now_infidel:0 "With my recent conversion to [heretic.GetFaith.GetName], [hof.Custom('TitledFirstName')] has proclaimed me an infidel and traitor before [hof.GetFaith.HighGodName]. The potential crimes of the $bosnian_church_adherent_plural$ must look quite mild by comparison."
@@ -215,8 +215,8 @@
 
 #LIVONIAN DECISIONS
  east_europe.0200.t:0 "The [founder.Custom('TitleAsNameNoTooltip')] of Livonia"
- east_europe.0200.desc.christian:1 "The Baltics have for centuries been primitive and untamed, merely home to various heretical faiths and devil worshipers. With the coronation of a [ROOT.Char.GetFaith.GetReligion.GetNameNoTooltip] [founder.Custom('TitleAsNameNoTooltip')] of Livonia, the power of [founder.GetFaith.HighGodName] warms this wet, frigid land.\n\nWith the mission of [ROOT.Char.GetFaith.GetReligion.GetNameNoTooltip] succeeding in the Baltics, I am free to proclaim Livonia; a title to unite all in the Baltics behind our shared mission to spread the word of [founder.GetFaith.random_GoodGodNames]."
- east_europe.0200.desc.nonchristian:1 "The Balts have for centuries lacked a Kingdom for their own people, while vikingr ravaged our coastal villages and foreign missionaries from far-off lands named us primitive and untame — but no more. The disparate Baltic people now kneel together before the crown of Livonia.\n\nWith my coronation as [founder.Custom('TitleAsNameNoTooltip')], I shall usher in a golden age not merely for the [founder.GetCulture.GetName] people, but for all Balts lining the shoreline."
+ east_europe.0200.desc.christian: "The Baltics have for centuries been primitive and untamed, merely home to various heretical faiths and devil worshipers. With the coronation of a [ROOT.Char.GetFaith.GetReligion.GetNameNoTooltip] [founder.Custom('TitleAsNameNoTooltip')] of Livonia, the power of [founder.GetFaith.HighGodName] warms this wet, frigid land.\n\nWith the mission of [ROOT.Char.GetFaith.GetReligion.GetNameNoTooltip] succeeding in the Baltics, I am free to proclaim Livonia; a title to unite all in the Baltics behind our shared mission to spread the word of [founder.GetFaith.random_GoodGodNames]."
+ east_europe.0200.desc.nonchristian: "The Balts have for centuries lacked a Kingdom for their own people, while vikingr ravaged our coastal villages and foreign missionaries from far-off lands named us primitive and untame — but no more. The disparate Baltic people now kneel together before the crown of Livonia.\n\nWith my coronation as [founder.Custom('TitleAsNameNoTooltip')], I shall usher in a golden age not merely for the [founder.GetCulture.GetName] people, but for all Balts lining the shoreline."
  east_europe.0200.desc.outro:0 "\n\nI hold the fate of the Baltics in my hands, and with the foundation of this Kingdom, I shall usher in a new golden age of faith and glory under [founder.GetFaith.HighGodName]."
  east_europe.0200.a:0 "My legacy shall outlast my lifetime!"
  east_europe.0200.b:0 "For [founder.GetFaith.HighGodName] and glory!"

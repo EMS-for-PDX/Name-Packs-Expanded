@@ -16,7 +16,7 @@
  witch.1003.b:0 "No, I don't think so..."
  witch.1003.c:0 "This is blasphemy!"
 
- witch.2001.t:1 "$convert_to_witch$: The Time Has Come"
+ witch.2001.t: "$convert_to_witch$: The Time Has Come"
  witch.2001.start.desc:0 "I cannot force [target.Custom('FirstName')] to see the truth, but I have done all I can to open [target.GetHerHis] mind to it."
  witch.2001.secrecy.desc:0 "I pray to [owner.GetFaith.WitchGodName] that [target.Custom('FirstNameNoTooltip')] has connected to something in our innocent conversations and the sacred texts I left in [target.GetHerHis] chambers."
  witch.2001.no_secrecy.desc:0 "I pray to [owner.GetFaith.WitchGodName] that [target.Custom('FirstNameNoTooltip')] has connected to something in those long discussions and the sacred texts I gave [target.GetHerHim]."
@@ -24,7 +24,7 @@
  witch.2001.a:0 "[target.GetSheHe|U] deserves to make up [target.GetHerHis] own mind."
  witch.2001.b1:0 "The risks are too great."
  witch.2001.b2:0 "[target.Custom('FirstNameNoTooltip')] isn't ready."
- witch.2001.a.tt:1 "You go ahead with your plan to convert [target.Custom('ShortName')] to the path of [owner.GetFaith.WitchGodName]"
+ witch.2001.a.tt: "You go ahead with your plan to convert [target.Custom('ShortName')] to the path of [owner.GetFaith.WitchGodName]"
 
  witch.2002.t:0 "A Servant of [owner.GetFaith.WitchGodName]"
  witch.2002.start.desc:0 "As I open my eyes in the dark, I am immediately overwhelmed by an ominous feeling. Is someone watching me?\n\n"Are you ready to embrace the truth, [ROOT.Char.Custom('FirstNameNoTooltip')]?""
@@ -35,7 +35,7 @@
  witch.2002.b:0 "I want nothing to do with this. Begone, demon!"
  witch.2002.c:0 "The world will know of your sin, [owner.Custom('FirstNameNoTooltip')]!"
 
- witch.2003.t:1 "$convert_to_witch$: A New Novice"
+ witch.2003.t: "$convert_to_witch$: A New Novice"
  witch.2003.desc:0 "I watch the sleeping shape of [target.Custom('FirstName')] while I send a quick prayer to [owner.GetFaith.WitchGodName]. As soon as the last whispered word pass my lips, [target.GetSheHe] stirs, as if [target.GetHerHis] subconscious mind has waited for this moment.\n\nWhen I step out of the shadows and offer [target.Custom('FirstNameNoTooltip')] [owner.GetFaith.WitchGodHerHis|U] blessing, there is no fear or hesitation in [target.GetHerHis] eyes. No, [target.GetHerHis] acceptance is whole-hearted and hungry."
 
  witch.2003.a:0 "Welcome to our communion, [target.Custom('SisterBrother')|U]."
@@ -45,7 +45,7 @@
 
  witch.2003.message:0 "The witch reveals [owner.GetHerselfHimself] to me"
 
- witch.2004.t:1 "$convert_to_witch$: Closed Mind, Cold Heart"
+ witch.2004.t: "$convert_to_witch$: Closed Mind, Cold Heart"
  witch.2004.start.desc:0 "[target.Custom('FirstName')] stirs from sleep as I climb through [target.GetHerHis] window. "Who goes there?" [target.GetSheHe] demands with an unsteady voice.\n\n"My name is not relevant. I am here in the service of [owner.GetFaith.WitchGodName]."\n\n"
  witch.2004.discovered.desc:0 "[target.Custom('FirstNameNoTooltip')] squints. "[ROOT.Char.Custom('FirstNameNoTooltip')], is that you? '[owner.GetFaith.WitchGodName|U]'? What is this nonsense?!"
  witch.2004.not_discovered.desc:0 "[target.Custom('FirstNameNoTooltip')] scrambles out of bed, reaching for something on [target.GetHerHis] bedside table. Probably nothing good. "I want nothing to do with you or your lies! Begone, demon!" [target.Custom('FirstNameNoTooltip')] shouts, and I am not slow to obey."
@@ -61,26 +61,26 @@
 
  witch.2007.t:0 "Hidden Ally"
  witch.2007.desc:0 "I'm in the middle of a nightly ritual in honor of [owner.GetFaith.WitchGodName] when there's a sudden noise behind me. A burglar? A visitor? An assassin?!\n\nAs I twist around I find myself face to face with [owner.Custom2('MyCharacterIntroduction', ROOT.Char)], dressed up in a dark cloak adorned by the unmistakable mark of [owner.GetFaith.WitchGodName] – a classic outfit for conversions."
- witch.2007.a:1 "There's no need for that with me, #EMP [owner.Custom('SisterBrother')|U]#!!"
+ witch.2007.a: "There's no need for that with me, #EMP [owner.Custom('SisterBrother')|U]#!!"
 
- witch.2010.t:1 "$convert_to_witchcraft_key$: Overheard"
- witch.talk.2010:1 "[target.Custom('FirstName')] and I talk about [owner.GetFaith.WitchGodName] and [owner.GetFaith.WitchGodHerHis] will for many hours. When the sky subtly shifts to blue at the horizon, we make our farewells."
+ witch.2010.t: "$convert_to_witchcraft_key$: Overheard"
+ witch.talk.2010: "[target.Custom('FirstName')] and I talk about [owner.GetFaith.WitchGodName] and [owner.GetFaith.WitchGodHerHis] will for many hours. When the sky subtly shifts to blue at the horizon, we make our farewells."
  witch.leave.2010:0 "Once I have imparted the most essential of [ROOT.Char.GetFaith.WitchGodHerHis|U] wisdom onto [target.Custom('FirstName')], and given [target.GetHerHim] [target.GetHerHis] very own grimoire, I take my leave."
  witch.end.2010:0 "\n\nAs I open the chamber door, I hear rapid footsteps disappearing down the corridor. Was someone listening?"
  witch.2010.a:0 "[ROOT.Char.GetFaith.HighGodName] be damned!"
- witch.2010.a.tt:1 "Someone knows your [secret|E]"
+ witch.2010.a.tt: "Someone knows your [secret|E]"
  witch.2010.message:0 "Secret Discovered"
 
  convert_to_witchcraft_key:0 "Convert to Witchcraft"
- convert_to_witchcraft_interaction:1 "$convert_to_witchcraft_key$ #weak (Scheme)#!"
+ convert_to_witchcraft_interaction: "$convert_to_witchcraft_key$ #weak (Scheme)#!"
  convert_to_witchcraft_interaction_desc:0 "Attempt to convert [recipient.Custom('ShortNameNoTooltip')] to the ways of [actor.GetFaith.WitchGodName]"
- convert_to_witchcraft:2 "$convert_to_witchcraft_key$"
+ convert_to_witchcraft: "$convert_to_witchcraft_key$"
  convert_to_witchcraft_desc:0 "I will lead [SCHEME.GetTarget.Custom('ShortNameNoTooltip')] down the path of [SCHEME.GetOwner.GetFaith.WitchGodName] and show [SCHEME.GetTarget.GetHerHim] the true extent of [SCHEME.GetOwner.GetFaith.WitchGodHerHis|U] power."
  convert_to_witchcraft_desc_general:0 "Lead a target down the true path and show them the extent of this power."
  convert_to_witchcraft_action:0 "Convert"
  convert_to_witchcraft_interaction_notification:0 "Convert to Witchcraft"
  convert_to_witchcraft_scheme_invalidated_title:0 "@scheme_icon! Convert to Witchcraft Scheme Ends"
- convert_to_witchcraft_general_desc:1 "A scheme to introduce a target into witchcraft in hopes to grow their coven."
+ convert_to_witchcraft_general_desc: "A scheme to introduce a target into witchcraft in hopes to grow their coven."
 
 
  ### REVEAL AS WITCH INTERACTION ###
@@ -88,7 +88,7 @@
  reveal_as_witch_interaction_desc:0 "Reveal your devotion to [actor.GetFaith.WitchGodName] to a fellow [GetTrait('witch').GetName( GetNullCharacter )]"
 
  witch.2900.t:0 "[actor.Custom2('AppropriateGreetingPositive', ROOT.Char )]"
- witch.2900.desc:1 "You have long been an inspiration to me, and I feel you deserve to know what I have been hiding from the world.\n\nI, too, am a follower of [actor.GetFaith.WitchGodName] and a student of [actor.GetFaith.WitchGodHerHis|U] mysteries. It is my hope that our shared endeavor will bring us closer.\n\nMay our cunning [actor.GetFaith.WitchGodMistressMaster] watch over you."
+ witch.2900.desc: "You have long been an inspiration to me, and I feel you deserve to know what I have been hiding from the world.\n\nI, too, am a follower of [actor.GetFaith.WitchGodName] and a student of [actor.GetFaith.WitchGodHerHis|U] mysteries. It is my hope that our shared endeavor will bring us closer.\n\nMay our cunning [actor.GetFaith.WitchGodMistressMaster] watch over you."
  witch.2900.a:0 "Our numbers grow!"
 
  witch.2901.t:0 "[recipient.Custom2('AppropriateGreetingPositive', ROOT.Char )]"
@@ -105,13 +105,13 @@
  activity_witch_ritual:0 "Grand Rite"
  activity_witch_ritual_name:0 "[ACTIVITY.GetOwner.Custom('RegNamePossessiveOrMy')|U] Grand Rite"
  activity_witch_ritual_owner:0 "Host"
- activity_witch_ritual_desc:3 "True followers with the [GetTrait('witch').GetName( GetNullCharacter )] [trait|E] are invited to celebrate the might of [GetPlayer.GetFaith.WitchGodName], and delve deep into the mysteries."
+ activity_witch_ritual_desc: "True followers with the [GetTrait('witch').GetName( GetNullCharacter )] [trait|E] are invited to celebrate the might of [GetPlayer.GetFaith.WitchGodName], and delve deep into the mysteries."
  activity_witch_ritual_destination_selection:0 "You can only host a $activity_witch_ritual$ in your [capital|E]."
  activity_witch_ritual_selection_tooltip:0 "Worship [GetPlayer.GetFaith.WitchGodName] and embrace [GetPlayer.GetFaith.WitchGodHerHis|U] dark gift\n\nAnticipated Rewards:\n$BULLET_WITH_TAB$[opinion_i] [opinion|E]\n$BULLET_WITH_TAB$[stress_loss_i] [stress|E] Loss"
- activity_witch_ritual_province_desc:1 "This is your [capital|E]"
- activity_witch_ritual_host_desc:1 "$BULLET_WITH_TAB$May gain Lifestyle Experience\n$BULLET_WITH_TAB$Participants may gain attending characters [opinion|E]\n$BULLET_WITH_TAB$Participants may lose [stress_loss_i][stress|E]"
- activity_witch_ritual_conclusion_desc:1 "The [GetActivityType( 'activity_witch_ritual' ).GetName] has concluded"
- activity_witch_ritual_guest_desc:1 "$BULLET_WITH_TAB$ Participants may gain attending characters [opinion|E]\n$BULLET_WITH_TAB$ Participants may lose [stress_loss_i][stress|E]"
+ activity_witch_ritual_province_desc: "This is your [capital|E]"
+ activity_witch_ritual_host_desc: "$BULLET_WITH_TAB$May gain Lifestyle Experience\n$BULLET_WITH_TAB$Participants may gain attending characters [opinion|E]\n$BULLET_WITH_TAB$Participants may lose [stress_loss_i][stress|E]"
+ activity_witch_ritual_conclusion_desc: "The [GetActivityType( 'activity_witch_ritual' ).GetName] has concluded"
+ activity_witch_ritual_guest_desc: "$BULLET_WITH_TAB$ Participants may gain attending characters [opinion|E]\n$BULLET_WITH_TAB$ Participants may lose [stress_loss_i][stress|E]"
  activity_witch_ritual_guest_help_text:0 "$activity_witch_ritual_desc$"
  witch_ritual_phase_desc:0 "Devote yourself to [GetPlayer.GetFaith.WitchGodName]"
  host_witch_ritual_title:0 "Grand Rite"
@@ -123,8 +123,8 @@
  witch_ritual_phase:0 "Dark Ritual"
 
  ### INTENTS
- worship_devil_intent:2 "Worship [GetPlayer.GetFaith.WitchGodName]"
- worship_devil_intent_desc:1 "Devote yourself to the hidden one. In body. In mind."
+ worship_devil_intent: "Worship [GetPlayer.GetFaith.WitchGodName]"
+ worship_devil_intent_desc: "Devote yourself to the hidden one. In body. In mind."
 
  #Invitation
  witch.3001.t:0 "Dear [ROOT.Char.Custom('SisterBrother')|U] [ROOT.Char.Custom('FirstNameNoTooltip')],"
@@ -133,20 +133,20 @@
  witch.3001.b:0 "I would rather eat a bowl of slugs."
 
  #Uninvited guest
- witch.3003.t:2 "An Uninvited Guest"
- witch.3003.desc:1 "As my fellow witches arrive in [capital.GetNameNoTooltip], I catch a glimpse of an unfamiliar face.\n\nWhen I go to greet [inviter.Custom2('MyCharacterIntroduction', ROOT.Char)], [inviter.GetSheHe] introduces the strange [new_guest.GetWomanMan] as [new_guest.Custom('FirstName')]. They are old acquaintances, as it turns out, and [inviter.Custom('FirstNameNoTooltip')] asks if [new_guest.Custom('FirstNameNoTooltip')] may join our rite."
+ witch.3003.t: "An Uninvited Guest"
+ witch.3003.desc: "As my fellow witches arrive in [capital.GetNameNoTooltip], I catch a glimpse of an unfamiliar face.\n\nWhen I go to greet [inviter.Custom2('MyCharacterIntroduction', ROOT.Char)], [inviter.GetSheHe] introduces the strange [new_guest.GetWomanMan] as [new_guest.Custom('FirstName')]. They are old acquaintances, as it turns out, and [inviter.Custom('FirstNameNoTooltip')] asks if [new_guest.Custom('FirstNameNoTooltip')] may join our rite."
  witch.3003.a:0 "The more, the merrier!"
  witch.3003.b:0 "You will be my guest of honor, [new_guest.Custom('FirstNameNoTooltip')]."
  witch.3003.c:0 "The $activity_witch_ritual$ is a private affair."
 
  #No one attended
- witch.3002.t:1 "Lacking Devotion"
+ witch.3002.t: "Lacking Devotion"
  witch.3002.desc:0 "Not one soul has accepted my invitation. They do not deserve the blessings of [ROOT.Char.GetFaith.WitchGodName]!"
  witch.3002.a:0 "They will know [ROOT.Char.GetFaith.WitchGodHerHis|U] fury."
 
  #Starting event
  every_grand_rite_participant:0 "Every guest at the $activity_witch_ritual$"
- witch.3010.t:2 "The Full Moon Rises"
+ witch.3010.t: "The Full Moon Rises"
  witch.3010.desc:0 "As the moon rises in the heavens, heralding [ROOT.Char.GetFaith.WitchGodHerHis|U] arrival, I can feel my body responding to the strange energies in the air. The silhouettes around the great bonfire are silent, unmoving. Waiting for that which is to come.\n\nAs the host of this gathering, it is up to me to begin the ritual. I will..."
  witch.3010.a:0 "Read from an ancient grimoire."
  witch.3010.a.great:0 "My translation is impressive"
@@ -186,26 +186,26 @@
  witch.3014.b.intrigue:0 "scheming."
  witch.3014.b.learning:0 "poetry."
  witch.3014.c:0 "Share [ROOT.Char.GetFaith.WitchGodHerHis|U] carnal gifts with someone."
- witch.3014.c.tt:1 "You try to find someone with a similar urge"
+ witch.3014.c.tt: "You try to find someone with a similar urge"
  witch.3014.d:0 "Spend time with the [new_guest.Custom('ComplimentAdjective')] [new_guest.Custom('FirstNameNoTooltip')]."
  witch.3014.e:0 "Where is my [sex_partner.Custom('LoverPetName')]? I crave [sex_partner.GetHerHis] touch..."
  witch.3014.d.move_in:0 "We get along splendidly"
  witch.3014.d.friend:0 "We get along well"
  witch.3014.d.enemy:0 "We get into a heated argument"
- witch.3014.f:1 "Laugh, drink, dance — enjoy [ROOT.Char.GetFaith.WitchGodHerHis|U] blessings!"
+ witch.3014.f: "Laugh, drink, dance — enjoy [ROOT.Char.GetFaith.WitchGodHerHis|U] blessings!"
 
  #Regular seduction event
- witch.3015.t:1 "By the Pond"
+ witch.3015.t: "By the Pond"
  witch.3015.start.desc:0 "The power of [ROOT.Char.GetFaith.WitchGodName] is throbbing in my veins as I wander into the woods. A choir of sighs and moans greets me — I am not the only one craving company tonight.\n\n"
  witch.3015.new_guest.desc:0 "I stumble upon my new acquaintance, [sex_partner.Custom('FirstName')], by a moonlit pond."
  witch.3015.regular.desc:0 "I find [sex_partner.Custom2('MyCharacterIntroduction', ROOT.Char)] by a moonlit pond."
  witch.3015.end.desc:0 "As I look into [sex_partner.GetHerHis] eyes, everything falls into place. This is [ROOT.Char.GetFaith.WitchGodHerHis|U] will. [sex_partner.GetSheHe|U] beckons me closer..."
  witch.3015.a:0 "Let us worship together."
  witch.3015.b:0 "I... was looking for someone else."
- witch.3015.b.tt:1 "You spend the night alone"
+ witch.3015.b.tt: "You spend the night alone"
 
  #Lover/spouse seduction event
- witch.3016.t:1 "The Stars Align"
+ witch.3016.t: "The Stars Align"
  witch.3016.end.desc:0 "A familiar voice calls out to me — it is [sex_partner.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)]. As I turn around and meet [sex_partner.GetHerHis] gaze, everything falls into place. The two of us... It is [ROOT.Char.GetFaith.WitchGodHerHis|U] will. We are meant to be together."
  witch.3016.a:0 "Forever."
  witch.3016.b:0 "I... I'm not ready for this."
@@ -216,7 +216,7 @@
  witch.3017.b:0 "I... forgot something! Sorry!"
 
  #End events
- witch.3098.t:1 "Until Next Time"
+ witch.3098.t: "Until Next Time"
  witch.3098.start.desc:0 "My guests and I"
  witch.3098.end.desc:0 "have worshiped [ROOT.Char.GetFaith.WitchGodName], exchanged sacred knowledge and tied deep bonds. My mind is buzzing with new ideas, but my body is in desperate need of rest. A warm bed has never felt so tempting."
  witch.3098.a:0 "May [ROOT.Char.GetFaith.WitchGodSheHe|U] watch over us until the next $activity_witch_ritual$."
@@ -281,7 +281,7 @@
 
 #PERSONAL WITCH RITUAL
  witch.4010.t:0 "[ROOT.Char.GetFaith.WitchGodHerHis|U] Gifts Are Plentiful"
- witch.4010.desc:1 "I pour my gifts onto the soil; herbs, milk and honey. With my eyes closed and smoke stinging in my nostrils, I raise my arms towards the moon.\n\n"[ROOT.Char.GetFaith.WitchGodMistressMaster|U]! Knower of all truths, [ROOT.Char.GetFaith.WitchGodMotherFather] of all power! Please accept my humble gifts, and offer me your guidance in turn!"\n\nI ask [ROOT.Char.GetFaith.WitchGodName] for..."
+ witch.4010.desc: "I pour my gifts onto the soil; herbs, milk and honey. With my eyes closed and smoke stinging in my nostrils, I raise my arms towards the moon.\n\n"[ROOT.Char.GetFaith.WitchGodMistressMaster|U]! Knower of all truths, [ROOT.Char.GetFaith.WitchGodMotherFather] of all power! Please accept my humble gifts, and offer me your guidance in turn!"\n\nI ask [ROOT.Char.GetFaith.WitchGodName] for..."
  witch.4010.a:0 "Luck in the art of love."
  witch.4010.b:0 "Charm and tact."
  witch.4010.c:0 "A strategist's mind."
@@ -305,8 +305,8 @@
  witch.4020.c:0 "[ROOT.Char.GetFaith.WitchGodMotherFather|U] of secrets, lend me your power!"
 
  witch.4030.t:0 "Leather-Bound Secrets"
- witch.4030.no_friend.desc:1 "My contacts have sent me a tome written in some strange code, its leather covers decorated with my [ROOT.Char.GetFaith.WitchGodMistressMaster|U]'s symbols.\n\nI have only been able to decipher the first few pages so far, but they are deeply fascinating."
- witch.4030.friend.desc:1 "My good [ROOT.GetCharacter.Custom2('RelationToMeShort' , SCOPE.sC('witch_friend'))] [witch_friend.Custom('TitledFirstName')] has brought me a tome written in some strange code, its leather covers decorated with our [ROOT.Char.GetFaith.WitchGodMistressMaster|U]'s symbols.\n\n[witch_friend.GetSheHe|U] has only been able to decipher the first few pages so far, but they are deeply fascinating."
+ witch.4030.no_friend.desc: "My contacts have sent me a tome written in some strange code, its leather covers decorated with my [ROOT.Char.GetFaith.WitchGodMistressMaster|U]'s symbols.\n\nI have only been able to decipher the first few pages so far, but they are deeply fascinating."
+ witch.4030.friend.desc: "My good [ROOT.GetCharacter.Custom2('RelationToMeShort' , SCOPE.sC('witch_friend'))] [witch_friend.Custom('TitledFirstName')] has brought me a tome written in some strange code, its leather covers decorated with our [ROOT.Char.GetFaith.WitchGodMistressMaster|U]'s symbols.\n\n[witch_friend.GetSheHe|U] has only been able to decipher the first few pages so far, but they are deeply fascinating."
 
  witch.4030.friend.a:0 "Together, we will unlock its secrets."
  witch.4030.no_friend.a:0 "I will unlock its secrets, no matter how long it takes!"

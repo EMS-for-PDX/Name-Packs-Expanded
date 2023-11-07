@@ -26,7 +26,7 @@
  pregnancy.1103.desc_concubine:0 "I am writing to inform you that I am with child, and it is most certainly yours.\n\nSince we were together when this child was conceived there is no stain of bastardry; when the babe is born they will be known as your offspring."
  pregnancy.1103.a:0 "Okay then."
 
- pregnancy_not_first_child_message:1 "Your [spouse.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], is bearing your child"
+ pregnancy_not_first_child_message: "Your [spouse.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], is bearing your child"
 
  pregnancy.2001.t:0 "Out of Wedlock"
  pregnancy.2001.opening:0 "I have agonized over it, and the signs are clear. I am with child!"
@@ -44,7 +44,7 @@
  pregnancy.2002.a:0 "I confess my infidelity!"
  pregnancy.2002.b:0 "[real_father.Custom('FirstNameNoTooltip')] will know, in confidence."
  pregnancy.2002.c:0 "No one must ever know."
- pregnancy.2002.c.tt:1 "#F You hope that it remains a secret#!"
+ pregnancy.2002.c.tt: "#F You hope that it remains a secret#!"
  reveal_illegitimate_pregnancy_to_real_father_tt:0 "The secret is revealed to [real_father.Custom('FirstName')]"
  pregnancy.2002.d:0 "I need a wise woman's brew."
  search_for_real_father_tt:0 "#F I will search for him!#!"
@@ -87,13 +87,13 @@
  pregnancy.3001.lovers_not_love:0 "[mother.GetSheHe|U] has said nothing, but could this be the result of our carnal relations?"
  pregnancy.3001.not_lovers:0 "[mother.GetSheHe|U] has said nothing, but could this be the result of our recent dalliance?"
  pregnancy.3001.a:0 "I must ask [mother.GetHerHim] about it myself."
- pregnancy.3001.a.tt:1 "You confront [mother.Custom('FirstNameNoTooltip')] about the child"
+ pregnancy.3001.a.tt: "You confront [mother.Custom('FirstNameNoTooltip')] about the child"
  pregnancy.3001.b:0 "I might never know, but I will always wonder..."
  pregnancy.3001.b.tt:0 "You do not act on your suspicions"
 
  pregnancy.3002.t:0 "Indiscretions"
- pregnancy.3002.lovers:1 "Of course I had my suspicions when my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('mother'))] [mother.Custom('TitledFirstName')] started showing signs of being with child, and now [mother.GetSheHe] has let me know that it is mine."
- pregnancy.3002.not_lovers:1 "[mother.Custom('TitledFirstName')] is with child, and [mother.GetSheHe] has let me know in confidence that this is the result of our illicit dalliance."
+ pregnancy.3002.lovers: "Of course I had my suspicions when my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('mother'))] [mother.Custom('TitledFirstName')] started showing signs of being with child, and now [mother.GetSheHe] has let me know that it is mine."
+ pregnancy.3002.not_lovers: "[mother.Custom('TitledFirstName')] is with child, and [mother.GetSheHe] has let me know in confidence that this is the result of our illicit dalliance."
  pregnancy.3002.spouse_exists:0 "\n\nThankfully [mother.GetHerHis] [mother.Custom2('RelationToMe', SCOPE.sC('spouse'))], [spouse.Custom('TitledFirstName')] thinks it is [spouse.GetHersHis]."
  pregnancy.3002.a:0 "Oh [mother.Custom('FirstNameNoTooltip')], if it was only us and our child..."
  pregnancy.3002.b.not_again:0 "How could I let this happen again?!"
@@ -103,14 +103,14 @@
 
 
  pregnancy.3003.t:0 "A Swollen Belly"
- pregnancy.3003.desc:1 "[mother.Custom('TitledFirstName')] has come to me, and I immediately knew why. [mother.GetSheHe|U] is with child, and there is as little doubt in [mother.GetHerHis] heart, as in mine, as to who the father is. A child born outside the legitimate bounds of marriage is destined to the life of a bastard. Is that a fate I want for my child?"
+ pregnancy.3003.desc: "[mother.Custom('TitledFirstName')] has come to me, and I immediately knew why. [mother.GetSheHe|U] is with child, and there is as little doubt in [mother.GetHerHis] heart, as in mine, as to who the father is. A child born outside the legitimate bounds of marriage is destined to the life of a bastard. Is that a fate I want for my child?"
  pregnancy.3003.desc_no_bastards:0 "[mother.Custom('TitledFirstName')] has come to me, and I immediately knew why. [mother.GetSheHe|U] is with child, and there is as little doubt in [mother.GetHerHis] heart, as in mine, as to who the father is. What kind of life awaits my child, born outside the bonds of marriage?"
  pregnancy.3003.a:0 "This must be kept a secret!"
  pregnancy.3003.a.tt:0 "The secret stays hidden, for now"
  pregnancy.3003.b:0 "Oh, this is joyous news!"
 
  pregnancy.3004.t:0 "A Swollen Belly"
- pregnancy.3004.desc:1 "[mother.Custom('TitledFirstName')] has come to me, and I immediately knew why. [mother.GetSheHe|U] is with child, and there is as little doubt in [mother.GetHerHis] heart, as in mine, as to who the father is.\n\nHowever, with my marriage to [spouse.Custom('FirstName')] there is nothing I can do except hope that my involvement stays secret."
+ pregnancy.3004.desc: "[mother.Custom('TitledFirstName')] has come to me, and I immediately knew why. [mother.GetSheHe|U] is with child, and there is as little doubt in [mother.GetHerHis] heart, as in mine, as to who the father is.\n\nHowever, with my marriage to [spouse.Custom('FirstName')] there is nothing I can do except hope that my involvement stays secret."
  pregnancy.3004.a:0 "I never thought it would come to this."
 
  pregnancy.5001.t:0 ""I Need to Know!""
@@ -127,8 +127,8 @@
  pregnancy.5002.b:0 "This is joyous news, and must be shared!"
 
  pregnancy.5003.t:0 "The Wrong Idea"
- pregnancy.5003.desc:1 "Even though I keep pressing the matter, [mother.Custom('TitledFirstName')] remains adamant. "The child is not yours, [ROOT.Char.Custom('FirstNameNoTooltip')]."\n\nWas I really so wrong?"
- pregnancy.5003.a:1 "Is [mother.GetSheHe] telling me the truth?"
+ pregnancy.5003.desc: "Even though I keep pressing the matter, [mother.Custom('TitledFirstName')] remains adamant. "The child is not yours, [ROOT.Char.Custom('FirstNameNoTooltip')]."\n\nWas I really so wrong?"
+ pregnancy.5003.a: "Is [mother.GetSheHe] telling me the truth?"
  pregnancy.5003.a.tt:0 ""Only time will tell if I am right...""
 
  pregnancy_announcement_my_child_will_be_a_bastard:0 "My child will be born a [bastard|E] with [real_father.Custom('TitledFirstNameNoTooltip')] as its father"
@@ -140,34 +140,34 @@
  pregnancy.6001.a:0 "I will always do what is best for my child."
 
  pregnancy.6002.t:0 "Beyond All Doubt"
- pregnancy.6002.desc:1 "[mother.Custom('TitledFirstName')] has publicly named me as the father of [mother.GetHerHis] unborn child!"
+ pregnancy.6002.desc: "[mother.Custom('TitledFirstName')] has publicly named me as the father of [mother.GetHerHis] unborn child!"
  pregnancy.6002.married:0 "\n\n"How could you do this?!" [spouse.Custom('FirstName')] watches me in [spouse.Custom('GeneralTemperament')]."
- pregnancy.6002.unmarried_sympathetic:1 "\n\nBorn outside the bonds of marriage, the child will have a difficult life, but at least it will know the truth."
- pregnancy.6002.unmarried_unsympathetic:1 "\n\nIs it not enough that [mother.GetSheHe] bear this burden, must [mother.GetSheHe] drag me down with [mother.GetHerHis], too?"
+ pregnancy.6002.unmarried_sympathetic: "\n\nBorn outside the bonds of marriage, the child will have a difficult life, but at least it will know the truth."
+ pregnancy.6002.unmarried_unsympathetic: "\n\nIs it not enough that [mother.GetSheHe] bear this burden, must [mother.GetSheHe] drag me down with [mother.GetHerHis], too?"
  pregnancy.6002.a:0 "What will people say?"
 
  pregnancy.6003.t:0 "Beyond All Doubt"
- pregnancy.6003.desc:1 "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], has confessed that not only is [mother.GetHerHis] pregnancy the result of an illegitimate union, but the true father of [mother.GetHerHis] unborn child is none other than [real_father.Custom('TitledFirstName')]!\n\nWhat shame [mother.GetSheHe] has brought on my house! How could [mother.GetSheHe] do this to me? To us?"
+ pregnancy.6003.desc: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], has confessed that not only is [mother.GetHerHis] pregnancy the result of an illegitimate union, but the true father of [mother.GetHerHis] unborn child is none other than [real_father.Custom('TitledFirstName')]!\n\nWhat shame [mother.GetSheHe] has brought on my house! How could [mother.GetSheHe] do this to me? To us?"
  pregnancy.6003.a:0 "[real_father.Custom('FirstNameNoTooltip')]?!"
 
  pregnancy.6004.t:0 "Beyond All Doubt"
- pregnancy.6004.desc:1 "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], has let it be known that not only is [mother.GetHerHis] unborn child the product of an illicit union, but the father is none other than [real_father.Custom2('MyCharacterIntroduction', ROOT.Char)]!"
+ pregnancy.6004.desc: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], has let it be known that not only is [mother.GetHerHis] unborn child the product of an illicit union, but the father is none other than [real_father.Custom2('MyCharacterIntroduction', ROOT.Char)]!"
  pregnancy.6004.incest:0 "\n\nWhat will become of the child, created from such an unholy union?"
- pregnancy.6004.mother_married:1 "\n\nWhat does this even mean for [mother.GetHerHis] marriage to [spouse.Custom('TitledFirstName')]?"
- pregnancy.6004.mother_unmarried:1 "\n\nWhat will even become of [mother.GetHerHis] child, now that the whole world knows?"
- pregnancy.6004.a:1 "[mother.GetSheHe|U] has thrown this house into turmoil!"
+ pregnancy.6004.mother_married: "\n\nWhat does this even mean for [mother.GetHerHis] marriage to [spouse.Custom('TitledFirstName')]?"
+ pregnancy.6004.mother_unmarried: "\n\nWhat will even become of [mother.GetHerHis] child, now that the whole world knows?"
+ pregnancy.6004.a: "[mother.GetSheHe|U] has thrown this house into turmoil!"
 
  pregnancy.6005.t:0 "Beyond All Doubt"
  pregnancy.6005.desc:0 "[mother.Custom('TitledFirstName')] has let the world know the father of [mother.GetHerHis] illicit pregnancy. I wanted to hope it wasn't so, but of course I knew it to be true. My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('real_father'))], [real_father.Custom('TitledFirstName')], is the real father of [mother.GetHerHis] unborn child!"
  pregnancy.6005.a:0 "[real_father.Custom('FirstNameNoTooltip')], how could you?"
 
  pregnancy.6006.t:0 "Beyond All Doubt"
- pregnancy.6006.desc:1 "[real_father.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has been named as the real father of the unborn child of [mother.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)]!"
- pregnancy.6006.real_father_married:1 "\n\nHas [real_father.GetSheHe] no thought for the importance of [real_father.GetHerHis] marriage to [spouse.Custom2('HerHisCharacterIntroduction', SCOPE.sC('real_father'))]?"
- pregnancy.6006.real_father_unmarried:1 "Had [real_father.GetSheHe] no thought for the honor of [real_father.GetHerHis] family?"
+ pregnancy.6006.desc: "[real_father.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has been named as the real father of the unborn child of [mother.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)]!"
+ pregnancy.6006.real_father_married: "\n\nHas [real_father.GetSheHe] no thought for the importance of [real_father.GetHerHis] marriage to [spouse.Custom2('HerHisCharacterIntroduction', SCOPE.sC('real_father'))]?"
+ pregnancy.6006.real_father_unmarried: "Had [real_father.GetSheHe] no thought for the honor of [real_father.GetHerHis] family?"
  pregnancy.6006.a:0 "What will this bastard child mean for us?"
  
  # For polyamorous faith reveal
  pregnancy.6999.t:0 "By Another Man"
- pregnancy.6999.desc:1 "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], has let it be known that [mother.GetSheHe] is pregnant with the child of [real_father.Custom2('MyCharacterIntroduction', ROOT.Char)]. Even though the child is not mine, I am still [mother.GetHerHis] [ROOT.Char.Custom('WifeHusband')], and it is my duty to care for [mother.GetHerHim] during the coming months."
- pregnancy.6999.a:1 "A duty I shall fulfill."
+ pregnancy.6999.desc: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], has let it be known that [mother.GetSheHe] is pregnant with the child of [real_father.Custom2('MyCharacterIntroduction', ROOT.Char)]. Even though the child is not mine, I am still [mother.GetHerHis] [ROOT.Char.Custom('WifeHusband')], and it is my duty to care for [mother.GetHerHim] during the coming months."
+ pregnancy.6999.a: "A duty I shall fulfill."

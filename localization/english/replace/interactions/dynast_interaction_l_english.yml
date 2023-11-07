@@ -1,5 +1,5 @@
 ﻿l_english:
- dynasty_interaction_header:1 "[dynast_interaction|E]\n"
+ dynasty_interaction_header: "[dynast_interaction|E]\n"
  disinherit_interaction:0 "Disinherit"
  disinherit_interaction_desc:0 "$dynasty_interaction_header$Remove [recipient.Custom('ShortNameNoTooltip')] from the [line_of_succession|E]"
  disinherit_interaction_notification:0 "Disinherited Dynasty Member"
@@ -24,15 +24,15 @@
  call_dynasty_member_to_war_interaction_desc:0 "Call [recipient.Custom('ShortNameNoTooltip')] to serve [recipient.GetHerHis] [dynasty|E] in war"
  call_dynasty_member_to_war_interaction_extra_icon:0 "$hook_extra_icon$"
 
- dynast_legitimize_bastard_interaction:1 "Legitimize Bastard #weak (Dynasty)#!"
- dynast_legitimize_bastard_interaction_desc:2 "$dynasty_interaction_header$Declare [recipient.Custom('ShortNameNoTooltip')] to be a $game_concept_legitimized_bastard$\n\n#weak This is available because [recipient.GetSheHe] is a [bastard|E] of my [dynasty|E]#!"
+ dynast_legitimize_bastard_interaction: "Legitimize Bastard #weak (Dynasty)#!"
+ dynast_legitimize_bastard_interaction_desc: "$dynasty_interaction_header$Declare [recipient.Custom('ShortNameNoTooltip')] to be a $game_concept_legitimized_bastard$\n\n#weak This is available because [recipient.GetSheHe] is a [bastard|E] of my [dynasty|E]#!"
  dynast_legitimize_bastard_interaction_notification:0 "Legitimized Bastard"
 
  dynast_claim_title_interaction:0 "Claim Title"
  dynast_claim_title_interaction_desc:0 "$dynasty_interaction_header$[claim|EU] a [title|E] held by [recipient.Custom('ShortNameNoTooltip')] for yourself"
  dynast_claim_title_interaction_notification:0 "Claimed Title"
  ALREADY_HAVE_CLAIM_ON_THIS_TITLE:0 "You already have a claim on this title"
- ALREADY_HAVE_CLAIMS_ON_ALL_TITLES:1 "You already have claims on all of [TARGET_CHARACTER.GetShortUINamePossessive] titles"
+ ALREADY_HAVE_CLAIMS_ON_ALL_TITLES: "You already have claims on all of [TARGET_CHARACTER.Custom('ShortNamePossessive')] titles"
 
  dynast_end_dynasty_wars_interaction:0 "End Dynasty Wars"
  dynast_end_dynasty_wars_interaction_desc:0 "$dynasty_interaction_header$Demand that [recipient.Custom('ShortNameNoTooltip')] immediately ends all their offensive wars against any other members of our [dynasty|E]"
@@ -42,5 +42,5 @@
 
  send_to_varangian_guard_interaction:0 "Send to the Varangian Guard #weak (Dynasty)#!"
  send_to_varangian_guard_interaction_desc:0 "$dynasty_interaction_header$Send [recipient.Custom('ShortNameNoTooltip')] away to gain glory and fortune in the Varangian Guard. Who knows, it might even help build character!"
- send_to_varangian_guard_interaction_toast:1 "[recipient.Custom('ShortName')] left for the Varangian Guard"
+ send_to_varangian_guard_interaction_toast: "[recipient.Custom('ShortName')] left for the Varangian Guard"
  send_to_varangian_guard_interaction_toast_desc:0 "Fame and glory awaits!"

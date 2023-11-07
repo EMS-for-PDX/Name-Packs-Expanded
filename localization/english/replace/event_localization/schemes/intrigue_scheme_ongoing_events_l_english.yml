@@ -27,7 +27,7 @@
  intrigue_scheme_ongoing.1006.elope.desc:0 "Of course that [agent_in_question.Custom('InsultAdjective')] [agent_in_question.Custom('TitledFirstName')] would cause problems.\n\n[agent_in_question.GetSheHe|U] fails to take proper precautions when moving around [scheme.GetTarget.Custom('TitledFirstNamePossessive')] court, and [scheme.GetTarget.GetLiege.Custom2('HerHisCharacterIntroduction', scheme.GetTarget)] is starting to notice. It is only a matter of time until [agent_in_question.Custom('FirstNameNoTooltip')] is discovered!"
  intrigue_scheme_ongoing.1006.a.success:0 "[agent_in_question.Custom('FirstNameNoTooltip')] remains undetected"
  intrigue_scheme_ongoing.1006.a.failure:0 "[agent_in_question.Custom('FirstNameNoTooltip')] is discovered"
- intrigue_scheme_ongoing.1006.a:1 "Traces of someone sneaking about will surely stress [scheme.GetTarget.Custom('FirstNameNoTooltip')] out!"
+ intrigue_scheme_ongoing.1006.a: "Traces of someone sneaking about will surely stress [scheme.GetTarget.Custom('FirstNameNoTooltip')] out!"
  intrigue_scheme_ongoing.1006.b:0 "[agent_in_question.GetSheHe|U] needs to take the time to do better."
 
  intrigue_scheme_ongoing.1007.t:0 "Voiced Concern"
@@ -41,10 +41,10 @@
  intrigue_scheme_ongoing.1008.a.success:0 "[agent.Custom('FirstNameNoTooltip')] remains undetected"
  intrigue_scheme_ongoing.1008.a.failure:0 "[agent.Custom('FirstNameNoTooltip')] is discovered"
  intrigue_scheme_ongoing.1008.b:0 "[agent.GetHerHis|U] trail to me needs to end. Now."
- intrigue_scheme_ongoing.1008.c:1 "Thank [ROOT.Char.GetFaith.HighGodNameAlternate] that [councillor.Custom('TitledFirstName')] is there and can intervene."
+ intrigue_scheme_ongoing.1008.c: "Thank [ROOT.Char.GetFaith.HighGodNameAlternate] that [councillor.Custom('TitledFirstName')] is there and can intervene."
 
  intrigue_scheme_ongoing.1009.t:0 "Help"
- intrigue_scheme_ongoing.1009.desc:1 "[potential_agent.Custom('TitledFirstName')] has come to me, a determined look in [potential_agent.GetHerHis] eyes.\n\n"My [potential_agent.Custom2('RelationToMe', ROOT.Char)], I have been reluctant to join your plans against my [potential_agent.Custom2('RelationToMe', SCOPE.sC('target'))], [target.Custom('TitledFirstName')], but I feel it is time I trust your judgment in this matter.""
+ intrigue_scheme_ongoing.1009.desc: "[potential_agent.Custom('TitledFirstName')] has come to me, a determined look in [potential_agent.GetHerHis] eyes.\n\n"My [potential_agent.Custom2('RelationToMe', ROOT.Char)], I have been reluctant to join your plans against my [potential_agent.Custom2('RelationToMe', SCOPE.sC('target'))], [target.Custom('TitledFirstName')], but I feel it is time I trust your judgment in this matter.""
  intrigue_scheme_ongoing.1009.elope.desc:0 "[potential_agent.Custom('TitledFirstName')] has come to me, a determined look in [potential_agent.GetHerHis] eyes.\n\n"My [potential_agent.Custom2('RelationToMe', ROOT.Char)], I have been reluctant to join your plans to elope with [target.Custom('TitledFirstName')], but now I can see you truly care for [target.GetHerHim].""
  intrigue_scheme_ongoing.1009.a:0 "Please support my cause, [potential_agent.Custom('FirstNameNoTooltip')]."
  intrigue_scheme_ongoing.1009.b:0 "I would only ask you for one little favor..."
@@ -57,7 +57,7 @@
  intrigue_scheme_ongoing.2002.t:0 "The Drunk Mark"
  intrigue_scheme_ongoing.2002.desc:0 "[target.Custom('TitledFirstName')] is overly fond of drink, which causes [target.GetHerHim] to act irrationally at times.\n\nIt would be quite simple for [agent_in_question.Custom('TitledFirstName')] to indulge [target.GetHerHim], and ensure that these habits are kept up."
  intrigue_scheme_ongoing.2002.a:0 "I will help [agent_in_question.Custom('FirstNameNoTooltip')] import the most potent brew!"
- intrigue_scheme_ongoing.2002.b:1 "Make [target.GetHerHim] feel safe in [target.GetHerHis] crapulence."
+ intrigue_scheme_ongoing.2002.b: "Make [target.GetHerHim] feel safe in [target.GetHerHis] crapulence."
  intrigue_scheme_ongoing.2002.c:0 "Hah, the damn fool does not know [target.GetHerHis] own weakness!"
 
  intrigue_scheme_ongoing.2003.t:0 "Serendipitous Espionage"
@@ -142,7 +142,7 @@
  intrigue_scheme_ongoing.5002.a:0 "A bad omen for a bad [target.Custom('TitleAsNameNoTooltip')]!"
  intrigue_scheme_ongoing.5002.a.tt:0 "I believe [target.Custom('FirstNameNoTooltip')] is easier to affect with bad news"
  intrigue_scheme_ongoing.5002.a.success:0 "[target.GetSheHe|U] spends many sleepless nights worrying"
- intrigue_scheme_ongoing.5002.a.failure:1 "[target.GetSheHe|U] only grows more vigilant"
+ intrigue_scheme_ongoing.5002.a.failure: "[target.GetSheHe|U] only grows more vigilant"
  intrigue_scheme_ongoing.5002.b:0 "A good omen, to lull [target.GetHerHim] with false security."
  intrigue_scheme_ongoing.5002.b.tt:0 "I believe [target.Custom('FirstNameNoTooltip')] is likelier to believe good news"
  intrigue_scheme_ongoing.5002.b.success:0 "[target.GetSheHe|U] lets [target.GetHerHis] guard down"
@@ -150,10 +150,10 @@
 
  intrigue_scheme_ongoing.5003.t:0 "The Omen"
  intrigue_scheme_ongoing.5003.desc_opening:0 "A local mystic insisted on seeing me, and upon being brought into my presence [dummy_clergy_gender.GetSheHe] started wailing, and... is that blood on [dummy_clergy_gender.GetHerHis] hands?\n\n"
- intrigue_scheme_ongoing.5003.desc:1 ""The signs! The signs are not in your favor, my [target.GetLadyLord]. I spilled the intestines of a hen, and the blood showed me your future – it's dark and full of death!""
+ intrigue_scheme_ongoing.5003.desc: ""The signs! The signs are not in your favor, my [target.GetLadyLord]. I spilled the intestines of a hen, and the blood showed me your future – it's dark and full of death!""
  intrigue_scheme_ongoing.5003.a:0 "Well that's ominous...!"
 
- intrigue_scheme_ongoing.5004.desc:1 ""The signs! The signs are in your favor, my [target.GetLadyLord]. I spilled the intestines of a hen, and the blood showed me your future – it is glorious!""
+ intrigue_scheme_ongoing.5004.desc: ""The signs! The signs are in your favor, my [target.GetLadyLord]. I spilled the intestines of a hen, and the blood showed me your future – it is glorious!""
  intrigue_scheme_ongoing.5004.a:0 "Well... thank you?"
 
  intrigue_scheme_ongoing.5005.t:0 "All That Glitters"
@@ -177,7 +177,7 @@
  intrigue_scheme_ongoing.5009.t:0 "The Tunnel"
  intrigue_scheme_ongoing.5009.desc:0 "Reports reach me about a high concentration of rats around [target.Custom('TitledFirstNamePossessive')] [target.Custom('ResidenceBuilding')], and since I have a way with animals I leave to investigate.\n\nAs I reach the area the rats converge on me, bidding me welcome, and lead me to a dark tunnel some way away from the [target.Custom('ResidenceBuilding')]."
  intrigue_scheme_ongoing.5009.a:0 "Show me the way, my friends!"
- intrigue_scheme_ongoing.5009.a.tt:1 "I wonder where this #EMP rodents#!"
+ intrigue_scheme_ongoing.5009.a.tt: "I wonder where this #EMP rodents#!"
  intrigue_scheme_ongoing.5009.b:0 "Ew. I'm not going in there."
 
  intrigue_scheme_ongoing.5010.desc:0 "It's dark, and the skittering of small feet echo in air heavy with the stench of refuse.\n\nSuddenly a breath of fresh air reaches me, and I see light filtering in through a grate up ahead. The rats lead me to a tunnel that goes straight into [target.Custom('TitledFirstNamePossessive')] [target.Custom('ResidenceBuilding')]!"
@@ -218,7 +218,7 @@
 
  intrigue_scheme_ongoing.5017.t:0 "Gullible [target.Custom2('RelationToMe', SCOPE.sC('spouse'))|U]"
  intrigue_scheme_ongoing.5017.desc:0 "I can barely contain my glee as I find [spouse.Custom('TitledFirstName')], [target.Custom('TitledFirstNamePossessive')] [target.Custom2('RelationToMe', SCOPE.sC('spouse'))] waiting for me along with a small equipage. If I could get #EMP [spouse.GetHerHim]#! to help me in my scheme...\n\n"You sent word that you wanted to see me, my [ROOT.Char.GetLadyLord]?""
- intrigue_scheme_ongoing.5017.a:1 "Your [spouse.Custom2('RelationToMe', SCOPE.sC('target'))] has been calling you [spouse.Custom('InsultAdjectiveArticle')] [spouse.Custom('InsultNoun')]."
+ intrigue_scheme_ongoing.5017.a: "Your [spouse.Custom2('RelationToMe', SCOPE.sC('target'))] has been calling you [spouse.Custom('InsultAdjectiveArticle')] [spouse.Custom('InsultNoun')]."
  intrigue_scheme_ongoing.5017.a.success:0 "[spouse.Custom('TitledFirstNameNoTooltip')] believes me"
  intrigue_scheme_ongoing.5017.a.failure:0 "The [target.Custom('TitleAsNameNoTooltip')] convinces [spouse.GetHerHim] that it's a lie"
  intrigue_scheme_ongoing.5017.b:0 "Please, tell me about your [target.Custom('ResidenceBuilding')]!"
@@ -230,9 +230,9 @@
  intrigue_scheme_ongoing.5018.msg.t:0 "Supplies burned in accident"
 
  intrigue_scheme_ongoing.5019.t:0 "Secret Tunnel"
- intrigue_scheme_ongoing.5019.desc:1 "My agent [agent.Custom('TitledFirstName')] approaches me with a bunch of parchment clutched in [agent.GetHerHis] hands.\n\n"I found old architectural sketches of the [target.GetTitleAsNamePossessive] [target.Custom('ResidenceBuilding')]! They might be a bit outdated, but look here...""
+ intrigue_scheme_ongoing.5019.desc: "My agent [agent.Custom('TitledFirstName')] approaches me with a bunch of parchment clutched in [agent.GetHerHis] hands.\n\n"I found old architectural sketches of the [target.GetTitleAsNamePossessive] [target.Custom('ResidenceBuilding')]! They might be a bit outdated, but look here...""
  intrigue_scheme_ongoing.5019.a:0 "That looks like a tunnel we can use!"
- intrigue_scheme_ongoing.5019.b:1 "If only I had this many hidden places... Call my architects."
+ intrigue_scheme_ongoing.5019.b: "If only I had this many hidden places... Call my architects."
  intrigue_scheme_ongoing.5019.b.tt:0 "Your [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('architect'))|U] [architect.Custom('FirstNameNoTooltip')] will oversee the construction works."
 
  intrigue_scheme_ongoing.5021.t:0 "Precarious Preoccupations"
@@ -271,7 +271,7 @@
  intrigue_scheme_ongoing.5026.b_agent:0 ""You've already agreed to help me, so...""
  intrigue_scheme_ongoing.5026.b:0 ""But according to [target.GetFaith.HighGodName]...""
  intrigue_scheme_ongoing.5026.b_scholar:0 ""Let's look at what [target.GetFaith.HighGodName] would want.""
- intrigue_scheme_ongoing.5026.b_scholar_tt:1 "What a coincidence that it will be the same as what I want!"
+ intrigue_scheme_ongoing.5026.b_scholar_tt: "What a coincidence that it will be the same as what I want!"
  intrigue_scheme_ongoing.5026.c:0 "That's between [target.GetHerHim] and [target.GetFaith.PantheonTerm]."
 
  intrigue_scheme_ongoing.3010.t:0 "[scheme.GetNameNoTooltip]: [target.GetCulture.GetLanguage.GetNameNoTooltip] Secrets"

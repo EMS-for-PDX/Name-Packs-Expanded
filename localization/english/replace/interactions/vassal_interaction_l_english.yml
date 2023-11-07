@@ -27,28 +27,28 @@
  stop_defender_vassal_war_interaction:0 "Demand Surrender in Vassal War"
  STOP_VASSAL_WAR_ATTACKER:0 "Select war to demand an end to"
  STOP_VASSAL_WAR_DEFENDER:0 "Select war to demand an end to"
- stop_vassal_war_negotiation:2 "Demand that [recipient.Custom('ShortName')] abandons [recipient.GetHerHis] war\n\n[recipient.GetShortUINamePossessive] willingness to end the war is determined by:\n$BULLET_WITH_TAB$Both of your [diplomacy|E] skills\n$BULLET_WITH_TAB$The state of the war\n$BULLET_WITH_TAB$[recipient.GetHerHis|U] [traits|E]\n$BULLET_WITH_TAB$[recipient.GetHerHis|U] [opinion|E] of you\n$BULLET_WITH_TAB$Whether [recipient.GetSheHe] is [intimidated|E] or [cowed|E] by you"
- stop_vassal_war_use_hook:1 "You will be able to use your [hook|E] if necessary"
+ stop_vassal_war_negotiation: "Demand that [recipient.Custom('ShortName')] abandons [recipient.GetHerHis] war\n\n[recipient.Custom('ShortNamePossessive')] willingness to end the war is determined by:\n$BULLET_WITH_TAB$Both of your [diplomacy|E] skills\n$BULLET_WITH_TAB$The state of the war\n$BULLET_WITH_TAB$[recipient.GetHerHis|U] [traits|E]\n$BULLET_WITH_TAB$[recipient.GetHerHis|U] [opinion|E] of you\n$BULLET_WITH_TAB$Whether [recipient.GetSheHe] is [intimidated|E] or [cowed|E] by you"
+ stop_vassal_war_use_hook: "You will be able to use your [hook|E] if necessary"
  force_join_faction_interaction:0 "Force to Join Faction"
- force_join_faction_interaction_desc:1 "Use a [hook|E] on [recipient.Custom('ShortName')] to force them to join your current [faction|E]"
+ force_join_faction_interaction_desc: "Use a [hook|E] on [recipient.Custom('ShortName')] to force them to join your current [faction|E]"
  force_join_faction_interaction_notification:0 "Forced to Join Faction"
 
- stop_attacker_vassal_war_decline_summary:1 "[recipient.Custom('ShortNameNoTooltip')] might ask for something in return"
+ stop_attacker_vassal_war_decline_summary: "[recipient.Custom('ShortNameNoTooltip')] might ask for something in return"
 
- IS_FIGHTING_AGAINST_ME:1 "You are fighting [TARGET_CHARACTER.Custom('ShortName')]"
- I_HAVE_RECENTLY_ASKED_TO_STOP_WAR:1 "You recently asked [TARGET_CHARACTER.Custom('ShortName')] to stop a war"
+ IS_FIGHTING_AGAINST_ME: "You are fighting [TARGET_CHARACTER.Custom('ShortName')]"
+ I_HAVE_RECENTLY_ASKED_TO_STOP_WAR: "You recently asked [TARGET_CHARACTER.Custom('ShortName')] to stop a war"
  interfere_in_war:0 "Stop Vassal War"
 
  force_onto_council:0 "Demand Council Position"
  force_onto_council_desc:0 "Use a [hook|E] to force [recipient.Custom('ShortNameNoTooltip')] to grant you a [council|E] position of your choice"
- force_onto_council_extra_icon:1 "@weak_hook_icon!Available because you have a [hook|E]"
+ force_onto_council_extra_icon: "@weak_hook_icon!Available because you have a [hook|E]"
  force_onto_council.notification.strong_hook:0 "I have decided that it is in your best interests to have me as your faithful [council_task.GetPositionName].\n\nYou #EMP know#! what will happen if you try to refuse."
  force_onto_council.notification.fallback:0 "Per our arrangement, I intend to act as your [council_task.GetPositionName] henceforth.\n\nNaturally, this rights your debt to me."
  force_onto_council.desc.tt:0 "[Select_CString(actor.IsLocalPlayer,'You',actor.Custom('ShortName'))] [Select_CString(actor.IsLocalPlayer,'are','is')] made a [councillor|E]"
  force_onto_council.recipient.tt:0 "[actor.Custom('ShortName')] has become your [council_task.GetPositionName]"
- force_onto_council.recipient.tt.duration:2 "[actor.GetSheHe|U] cannot be fired for [SCOPE.ScriptValue('council_position_locked_value')|0] years"
+ force_onto_council.recipient.tt.duration: "[actor.GetSheHe|U] cannot be fired for [SCOPE.ScriptValue('council_position_locked_value')|0] years"
  force_onto_council.actor.tt:0 "You have become your liege's [council_task.GetPositionName]"
- force_onto_council.actor.tt.duration:2 "You cannot be fired for [SCOPE.ScriptValue('council_position_locked_value')|0] years"
+ force_onto_council.actor.tt.duration: "You cannot be fired for [SCOPE.ScriptValue('council_position_locked_value')|0] years"
 
  arrange_marriage_interaction_extra_icon:0 "@weak_hook_icon!You can use your [hook|E] to make them accept"
 
@@ -71,7 +71,7 @@
  ASK_FOR_PARDON_NOTIFICATION:0 "I humbly ask of you to grant me pardon for my crimes."
  
  pardon_interaction:0 "Grant Pardon"
- pardon_interaction_desc:1 "You consider [recipient.GetName] to be a [criminal|E] ([recipient.GetImprisonmentReasons( actor.Self )]), allowing you to [imprison|E] them at any time without gaining [tyranny|E].\n\nIf you would prefer that they remain free, you can choose to pardon them. This will remove any and all reasons you have to [imprison|E] them and increase their [opinion|E] of you."
+ pardon_interaction_desc: "You consider [recipient.GetName] to be a [criminal|E] ([recipient.GetImprisonmentReasons( actor.Self )]), allowing you to [imprison|E] them at any time without gaining [tyranny|E].\n\nIf you would prefer that they remain free, you can choose to pardon them. This will remove any and all reasons you have to [imprison|E] them and increase their [opinion|E] of you."
  pardon_interaction_toast:0 "Your benevolent liege, [actor.Custom('FirstName')], has pardoned your crimes!"
 
  county_must_have_city_tt:0 "[CHARACTER.GetPrimaryTitle.GetNameNoTooltip] must contain one [city|E] or have a [development|E] level of over 20."

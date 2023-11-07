@@ -86,9 +86,9 @@
  # Vassal Factionalism — Persuade a vassal to leave a faction for 10 years, by Sean Hughes
  stewardship_duty.4010.t:0 "Vassal Factionalism"
  stewardship_duty.4010.desc.start:0 "[faction_member.Custom('TitledFirstName')] has been using [faction_member.GetHerHis] influence to push for the advancement of"
- stewardship_duty.4010.desc.independence:1 "the [targeting_faction.GetName]. They are seeking to break free from my rule, claiming that I am not their rightful liege."
+ stewardship_duty.4010.desc.independence: "the [targeting_faction.GetName]. They are seeking to break free from my rule, claiming that I am not their rightful liege."
  stewardship_duty.4010.desc.liberty:0 "the [targeting_faction.GetName]. They seek to nullify several laws in the [ROOT.Char.GetPrimaryTitle.GetName] that they believe interfere with the traditional rights of the [faction_member.Custom('StatecraftGetVassalType')]."
- stewardship_duty.4010.desc.claimant:2 "the [targeting_faction.GetName], believing that their figurehead would ultimately be a better ruler than I."
+ stewardship_duty.4010.desc.claimant: "the [targeting_faction.GetName], believing that their figurehead would ultimately be a better ruler than I."
  stewardship_duty.4010.desc.peasant:0 "the [targeting_faction.GetName]. They are unhappy being subjects of one they consider to be a [Root.Char.Custom2('GetUnbelieverAndForeignerTerm', faction_member)] and wish to instead have a ruler like [faction_leader.Custom('TitledFirstName')], who shares their culture and faith."
 
  stewardship_duty.4010.desc.end:0 "\n\nWhile I do not doubt [faction_member.Custom('FirstNamePossessiveNoTooltip')] convictions, [faction_member.GetSheHe] is only human. If I can convince [faction_member.GetHerHim] to curb these activities, it will make it easier for me to consolidate the power I have over my vassals."
@@ -180,7 +180,7 @@
  stewardship_duty.4060.c:0 "[faction_leader.GetSheHe|U] must not be allowed to act on [faction_leader.GetHerHis] plans!"
  stewardship_duty.4060.d:0 "I cannot worry about this now."
  stewardship_duty.4060.attempt.tt:0 "[faction_leader.Custom('TitledFirstNameNoTooltip')] will make a decision based on [faction_leader.GetHerHis] personality"
- stewardship_duty.4060.decline.tt:1 "You ignore the faction for the time being"
+ stewardship_duty.4060.decline.tt: "You ignore the faction for the time being"
  stewardship_duty.4060.failure.tt:0 "[targeting_faction.GetName] does not lose any discontent"
 
  # A Vassal cheats their contract, by Linnéa Thimrén

@@ -2,7 +2,7 @@
  sibling.0001.t:0 "Just Dues"
  sibling.0001.desc:0 "[sibling.Custom('TitledFirstName')] has come seeking an official audience with me!\n\n"Dear [sibling.Custom2('RelationToMe' , ROOT.GetCharacter )], I have served you loyally. Is it not time I was duly rewarded for my good work?""
  sibling.0001.a:0 "I will grant you a title and land of your own!"
- sibling_promised_land_tt:1 "[sibling.Custom('FirstName')] will expect me to provide a title for [sibling.GetHerHim] very soon"
+ sibling_promised_land_tt: "[sibling.Custom('FirstName')] will expect me to provide a title for [sibling.GetHerHim] very soon"
  sibling.0001.b:0 "You can ask for any favor, my [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sibling'))]."
  sibling.0001.c:0 "Take this gift and prove yourself to the world, dear [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sibling') )]!"
  sibling_funded_for_invasion:0 "[sibling.Custom('FirstName')] will look for a suitable realm in which to try [sibling.GetHerHis] luck."
@@ -10,10 +10,10 @@
  sibling.0001.e:0 "You have done nothing more than your duty, [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sibling') )]!"
 
  sibling.0002.desc:0 "My [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sibling') )], [sibling.Custom('FirstName')], has come to me, reminding me that I once promised [sibling.GetHerHim] lands and a title of [sibling.GetHerHis] own.\n\n"I have waited long enough, [sibling.Custom2('RelationToMe' , ROOT.Char )].""
- sibling.0002.a:1 "I'll pay you to forget that promise."
+ sibling.0002.a: "I'll pay you to forget that promise."
  sibling.0002.b:0 "I have nothing to give you, [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sibling') )]."
 
- sibling.0003.desc:1 "My [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sibling') )], [sibling.Custom('FirstName')], has come to me, bearing tithes from [sibling.GetHerHis] new lands.\n\n"[sibling.Custom2('RelationToMe' , ROOT.Char )|U]! May these gifts forever bind us as companions as well as we are bound by blood!""
+ sibling.0003.desc: "My [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sibling') )], [sibling.Custom('FirstName')], has come to me, bearing tithes from [sibling.GetHerHis] new lands.\n\n"[sibling.Custom2('RelationToMe' , ROOT.Char )|U]! May these gifts forever bind us as companions as well as we are bound by blood!""
  sibling.0003.a:0 "For family and the realm!"
 
  sibling.0004.t:0 "My [sibling.Custom('SisterBrother')|U] and a Vassal"
@@ -26,8 +26,8 @@
  sibling.0005.t:0 "A Source of Trouble"
  sibling.0005.desc:0 "For a while I have known the day of reckoning would come for [sibling.Custom2('MyCharacterIntroduction', ROOT.Char )].\n\n[vassal.Custom('TitledFirstName')] presented me with demands not just on behalf of [vassal.GetHerselfHimself], but from all my [ROOT.GetCharacter.Custom('powerful_vassals_loc')], that I do something about my intolerable [ROOT.GetCharacter.Custom2('RelationToMeShort' , SCOPE.sC('sibling') )]."
  sibling.0005.a:0 ""Don't you dare speak of [sibling.GetHerHim|U] like that!""
- sibling.0005.b:1 "[sibling.GetSheHe|U] must learn that [sibling.GetHerHis] behavior is unacceptable."
- sibling.0005.c:1 "Enough is enough, [sibling.Custom('FirstNameNoTooltip')]!"
+ sibling.0005.b: "[sibling.GetSheHe|U] must learn that [sibling.GetHerHis] behavior is unacceptable."
+ sibling.0005.c: "Enough is enough, [sibling.Custom('FirstNameNoTooltip')]!"
 
  sibling.1001.t:0 "Diplomatic Support"
  sibling.1001.desc:0 "My [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sibling') ) ], [sibling.Custom('TitledFirstName')], has come to me with ideas of how to put [sibling.GetHerHis] silver tongue to good use.\n\n"I can serve as an envoy, or even dictate dispatches for your scribes.""
@@ -77,7 +77,7 @@
  sibling.8003.b:0 "[sibling.GetSheHe|U] may no longer see the [sibling.Custom('servant_for_romance')]!"
 
  sibling.8004.t:0 "Respect for Superiors"
- sibling.8004.desc:1 "Traveling through [province.GetName], my [ROOT.Char.Custom2('RelationToMeShort' , SCOPE.sC('sibling') )] seems to have greatly upset the peasants of several villages and towns. [sibling.Custom('TitledFirstName')] demanded not only housing and to be treated as though [sibling.GetSheHe] was a [ROOT.GetCharacter.Custom2('using_my_title' , SCOPE.sC('sibling') ) ], but [sibling.GetSheHe] also punished people for the slightest display of disrespect."
+ sibling.8004.desc: "Traveling through [province.GetName], my [ROOT.Char.Custom2('RelationToMeShort' , SCOPE.sC('sibling') )] seems to have greatly upset the peasants of several villages and towns. [sibling.Custom('TitledFirstName')] demanded not only housing and to be treated as though [sibling.GetSheHe] was a [ROOT.GetCharacter.Custom2('using_my_title' , SCOPE.sC('sibling') ) ], but [sibling.GetSheHe] also punished people for the slightest display of disrespect."
  sibling.8004.a:0 "I can see why they are upset."
  peasants_dislike_sibling_tt:0 "The peasants of [province.GetName] are not pleased"
 
@@ -87,6 +87,6 @@
  sibling.8005.b:0 ""[sibling.Custom('FirstNameNoTooltip')]!!!""
 
  sibling.8006.t:0 "Tough But Fair"
- sibling.8006.desc:1 "While visiting the court of [vassal.Custom('TitledFirstName')], my [ROOT.Char.Custom2('RelationToMeShort' , SCOPE.sC('sibling') )], [sibling.Custom('TitledFirstName')], was asked to adjudicate on my behalf. [vassal.Custom('FirstNameNoTooltip')] praised [sibling.Custom('FirstNamePossessiveNoTooltip')] sense of justice at length, and seems very happy with my [sibling.Custom('SisterBrotherPossessive')] visit."
+ sibling.8006.desc: "While visiting the court of [vassal.Custom('TitledFirstName')], my [ROOT.Char.Custom2('RelationToMeShort' , SCOPE.sC('sibling') )], [sibling.Custom('TitledFirstName')], was asked to adjudicate on my behalf. [vassal.Custom('FirstNameNoTooltip')] praised [sibling.Custom('FirstNamePossessiveNoTooltip')] sense of justice at length, and seems very happy with my [sibling.Custom('SisterBrotherPossessive')] visit."
  sibling.8006.a:0 "[sibling.Custom('FirstNameNoTooltip')] should spend more time at [vassal.Custom('FirstNamePossessiveNoTooltip')] court."
  sibling.8006.b:0 "I too have some cases my [ROOT.Char.Custom2('RelationToMeShort' , SCOPE.sC('sibling') )] could judge for me!"

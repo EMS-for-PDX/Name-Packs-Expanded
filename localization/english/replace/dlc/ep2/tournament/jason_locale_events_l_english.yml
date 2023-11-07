@@ -17,8 +17,8 @@
  jason_locale_events.100.a:0 "You owe me your service, remember?"
  jason_locale_events.100.a.tt:0 "Perhaps [unreliable_knight.GetSheHe] isn't prepared to give [unreliable_knight.GetHerHis] best, but this $knight_culture_player_no_tooltip_lowercase$ #EMP will#! bend to your authority."
 
- jason_locale_events.100.b:1 "Compete! I'll give you anything!"
- jason_locale_events.100.b.tt:1 "And look after my best $knight_culture_player_plural_no_tooltip_lowercase$, I swear it!"
+ jason_locale_events.100.b: "Compete! I'll give you anything!"
+ jason_locale_events.100.b.tt: "And look after my best $knight_culture_player_plural_no_tooltip_lowercase$, I swear it!"
 
  jason_locale_events.100.c.mad:0 "Your oath is forfeit, maniac! Begone!"
  jason_locale_events.100.c.drunk:0 "Your oath is forfeit, drunkard! Begone!"
@@ -33,9 +33,9 @@
  jason_locale_events.100.d.not_competing:0 "[unreliable_knight.Custom('ShortName')] will not compete or aid in team contests"
 
  knight_not_participating_log_title:0 "Retainer Withdraws"
- knight_not_participating_log:1 "[CHARACTER.Custom('TitledFirstNamePossessive')] warrior [TARGET_CHARACTER.Custom('TitledFirstName')] has withdrawn from the tournament. Rumors abound."
+ knight_not_participating_log: "[CHARACTER.Custom('TitledFirstNamePossessive')] warrior [TARGET_CHARACTER.Custom('TitledFirstName')] has withdrawn from the tournament. Rumors abound."
  knight_dismissed_log_title:0 "Retainer Dismissed"
- knight_dismissed_log:1 "[CHARACTER.Custom('TitledFirstName')] released the noted competitor [TARGET_CHARACTER.Custom('TitledFirstName')] from [CHARACTER.GetHerHis] service following a mysterious incident."
+ knight_dismissed_log: "[CHARACTER.Custom('TitledFirstName')] released the noted competitor [TARGET_CHARACTER.Custom('TitledFirstName')] from [CHARACTER.GetHerHis] service following a mysterious incident."
 
  jason_locale_events.210.t.camel_cavalry:0 "Masters of the Desert"
  jason_locale_events.210.t.elephant_cavalry:0 "Mahouts in the Making"
@@ -71,7 +71,7 @@
  jason_locale_events.210.d.horse_archer:0 "We [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] face our enemies!"
  jason_locale_events.210.d.tt.horse_archer:0 "Let the honorless [foreign_lord.GetCulture.GetCollectiveNounNoTooltip] ride circles! How jealous their wives and husbands must be of their horses..."
  jason_locale_events.210.d.heavy_cavalry:0 "We [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] strike hard enough!"
- jason_locale_events.210.d.tt.heavy_cavalry:1 "We've no need to crash together mindlessly!"
+ jason_locale_events.210.d.tt.heavy_cavalry: "We've no need to crash together mindlessly!"
  jason_locale_events.210.d.crossbowmen:0 "We [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] need no contraptions!"
  jason_locale_events.210.d.tt.crossbowmen:0 "Like cowards, the [foreign_lord.GetCulture.GetCollectiveNounNoTooltip]snuff out the noblest warriors from afar. But we, we shall never."
  jason_locale_events.210.d.heavy_infantry:0 "We [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] can defend ourselves!"
@@ -94,7 +94,7 @@
 
  jason_locale_events.200.a:0 "Prove yourself, $knight_culture_player_no_tooltip_lowercase$! #EMP Drink!#!"
  jason_locale_events.200.a.tt:0 "The blind-drunk [drunk_knight.Custom('FirstNameNoTooltip')] will try to prove [drunk_knight_liege.GetHerHis] merit... how? Only the drink knows."
- jason_locale_events.200.a.tt.join:0 "[drunk_knight.Custom('FirstNameNoTooltip')] becomes your $knight_culture_player_no_tooltip_lowercase$, invoking [drunk_knight_liege.GetShortUINamePossessive] anger"
+ jason_locale_events.200.a.tt.join:0 "[drunk_knight.Custom('FirstNameNoTooltip')] becomes your $knight_culture_player_no_tooltip_lowercase$, invoking [drunk_knight_liege.Custom('ShortNamePossessive')] anger"
  jason_locale_events.200.a.tt.recruit:0 ""The [ROOT.Char.Custom('TitleTierName')] calls, $knight_culture_player_plural_no_tooltip_lowercase$! Will you answer?""
  jason_locale_events.200.a.tt.recruit_desc:0 "Additional drunk $knight_culture_player_plural_no_tooltip_lowercase$ are sworn to you"
  jason_locale_events.200.a.tt.join_three:0 "[drunk_knight.Custom('ShortName')] becomes your $knight_culture_player_no_tooltip_lowercase$"
@@ -105,7 +105,7 @@
  jason_locale_events.200.a.tt.beatings:0 ""Want to see me fight, do you?""
  jason_locale_events.200.a.tt.beatings_specific:0 "[drunk_knight.Custom('FirstNameNoTooltip')] proves [drunk_knight.GetHerselfHimself] with some brutal beatings"
  jason_locale_events.200.a.tt.marry:0 ""Only a marriage will seal our bond!""
- jason_locale_events.200.a.tt.marry_desc:0 "One of your [house|E] or [close_family|E] members will marry [drunk_knight.GetUIName]"
+ jason_locale_events.200.a.tt.marry_desc:0 "One of your [house|E] or [close_family|E] members will marry [drunk_knight.Custom('UIName')]"
  jason_locale_events.200.a.tt.marry_specific:0 "Your [ROOT.Char.Custom2('RelationToMeShort', surprise_spouse)] [surprise_spouse.Custom('FirstNameNoTooltip')] marries [drunk_knight.Custom('FirstNameNoTooltip')]"
  jason_locale_events.200.a.tt.death:0 ""I shall match you drink for drink, my [ROOT.Char.Custom('TitleTierName')]!""
  jason_locale_events.200.a.tt.death_specific:0 "[drunk_knight.Custom('FirstNamePossessiveNoTooltip')] talent for drinking... failed [drunk_knight.GetHerHim]"
@@ -113,8 +113,8 @@
  jason_locale_events.200.b:0 "May your devotion never sway... though you do!"
  jason_locale_events.200.b.tt:0 "Perform the ceremonial oath-swearing, that cannot be recanted come morning."
 
- jason_locale_events.200.c:1 "Stand aside, idiot. Your liege will hear of this."
- jason_locale_events.200.c.tt:1 "What's this drunk traitor going to do? Vomit on me? [drunk_knight.GetSheHe|U]'s not exactly fighting fit."
+ jason_locale_events.200.c: "Stand aside, idiot. Your liege will hear of this."
+ jason_locale_events.200.c.tt: "What's this drunk traitor going to do? Vomit on me? [drunk_knight.GetSheHe|U]'s not exactly fighting fit."
 
  jason_locale_events.200.c.unchallenged:0 "The $knight_culture_player_no_tooltip_lowercase$ backs down"
 
@@ -128,20 +128,20 @@
 
 
  jason_locale_events.200.d:0 "Hush. Mind your honor, [drunk_knight.Custom('FirstNameNoTooltip')]."
- jason_locale_events.200.d.tt:1 "One shouldn't choose drunk, unwise words over standing oaths of loyalty."
+ jason_locale_events.200.d.tt: "One shouldn't choose drunk, unwise words over standing oaths of loyalty."
 
  tournament_wound_non_root_combatants_effect:0 "Some other lords' warriors are wounded"
 
  poached_drunk_knight_log_title:0 "Allegiance Change"
- poached_drunk_knight_log:1 "[CHARACTER.Custom('TitledFirstName')] seized on [TARGET_CHARACTER.Custom('TitledFirstNamePossessive')] drunken oaths to poach the warrior from [TARGET_CHARACTER.GetHerHis] liege."
+ poached_drunk_knight_log: "[CHARACTER.Custom('TitledFirstName')] seized on [TARGET_CHARACTER.Custom('TitledFirstNamePossessive')] drunken oaths to poach the warrior from [TARGET_CHARACTER.GetHerHis] liege."
  drunk_knight_dies_log_title:0 "Victim to Revelry"
- drunk_knight_dies_log:1 "[TARGET_CHARACTER.Custom('TitledFirstName')] drank [TARGET_CHARACTER.GetHerselfHimself] to death while on a wild binge with [CHARACTER.Custom('TitledFirstName')]."
+ drunk_knight_dies_log: "[TARGET_CHARACTER.Custom('TitledFirstName')] drank [TARGET_CHARACTER.GetHerselfHimself] to death while on a wild binge with [CHARACTER.Custom('TitledFirstName')]."
  drunk_knight_marries_log_title:0 "The Night's Promises"
- drunk_knight_marries_log:1 "[TARGET_CHARACTER.Custom('TitledFirstName')] emerged from heavy carousing with both a new master and a marriage into [CHARACTER.Custom('TitledFirstNamePossessive')] family."
+ drunk_knight_marries_log: "[TARGET_CHARACTER.Custom('TitledFirstName')] emerged from heavy carousing with both a new master and a marriage into [CHARACTER.Custom('TitledFirstNamePossessive')] family."
  drunk_knight_beats_log_title:0 "Terror of the Tavern"
- drunk_knight_beats_log:1 "While drunk, [TARGET_CHARACTER.Custom('TitledFirstName')] badly beat a number of prominent warriors to earn a place among [CHARACTER.Custom('TitledFirstNamePossessive')] $knight_culture_player_plural_no_tooltip_lowercase$."
+ drunk_knight_beats_log: "While drunk, [TARGET_CHARACTER.Custom('TitledFirstName')] badly beat a number of prominent warriors to earn a place among [CHARACTER.Custom('TitledFirstNamePossessive')] $knight_culture_player_plural_no_tooltip_lowercase$."
  drunk_oaths_log_title:0 "Recruiter of the Red-Faced"
- drunk_oaths_log:1 "[CHARACTER.Custom('TitledFirstName')] compelled a group of soused $knight_culture_player_plural_no_tooltip_lowercase$, [TARGET_CHARACTER.Custom('TitledFirstName')] the greatest among them, to leave their lieges for [CHARACTER.GetHerHim]."
+ drunk_oaths_log: "[CHARACTER.Custom('TitledFirstName')] compelled a group of soused $knight_culture_player_plural_no_tooltip_lowercase$, [TARGET_CHARACTER.Custom('TitledFirstName')] the greatest among them, to leave their lieges for [CHARACTER.GetHerHim]."
 
 # TOURNAMENT GROUNDS
 
@@ -163,8 +163,8 @@
  jason_locale_events.0220.e:0 "Best them all, [senior_knight.Custom('FirstNameNoTooltip')]. #EMP Now.#!"
  jason_locale_events.0220.e.tt:0 "Give everyone something to gawp at! #EMP Defend yourself!#!"
 
- every_knight_change_contestant_score_effect_low_tt:0 "[THIS.Char.GetShortUINamePossessive|U] [knights|e]' scores #positive_value increase slightly#!"
+ every_knight_change_contestant_score_effect_low_tt:0 "[THIS.Char.Custom('ShortNamePossessive')|U] [knights|e]' scores #positive_value increase slightly#!"
 
- every_knight_change_contestant_score_effect_tt:0 "[THIS.Char.GetShortUINamePossessive|U] [knights|e]' scores #positive_value increase moderately#!"
+ every_knight_change_contestant_score_effect_tt:0 "[THIS.Char.Custom('ShortNamePossessive')|U] [knights|e]' scores #positive_value increase moderately#!"
 
  senior_knight_gains_nickname_tt:0 "[senior_knight.Custom('ShortName')] may gain an impressive [nickname|e]"

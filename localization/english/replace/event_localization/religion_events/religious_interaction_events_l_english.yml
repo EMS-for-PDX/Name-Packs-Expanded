@@ -52,7 +52,7 @@
 
  religious_interaction.1001.t.fatwa:0 "Fatwa Issued!"
  religious_interaction.1001.t:0 "Legal Condemnation!"
- religious_interaction.1001.desc:1 "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('actor'))], [actor.Custom('TitledFirstName')], has seen me condemned as a sinner in a writ issued by [actor.GetHerHis] [actor.GetFaith.PriestNeuterPlural]!\n\nThis could be used as a legal basis to argue that I am unfit to rule [recipient.GetFaith.GetAdjective] lands."
+ religious_interaction.1001.desc: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('actor'))], [actor.Custom('TitledFirstName')], has seen me condemned as a sinner in a writ issued by [actor.GetHerHis] [actor.GetFaith.PriestNeuterPlural]!\n\nThis could be used as a legal basis to argue that I am unfit to rule [recipient.GetFaith.GetAdjective] lands."
  religious_interaction.1001.a:0 "Were [actor.GetSheHe] not my liege, I would have..."
  religious_interaction.1001.a.revoke_tt:0 "[actor.Custom('TitledFirstName')] can [revoke|E] one of my titles"
 
@@ -102,7 +102,7 @@
 
 #I have been left in the sun to die!
  religious_interaction.2100.t:0 "[imprisoner.GetFaith.HighGodNamePossessive|U] Judgment"
- religious_interaction.2100.desc:1 "After [ROOT.Char.GetFaith.HighGodName] knows how long in a dark cell, the harsh daylight is blinding. The guards who escort me out of the [imprisoner.Custom('FortifiedBuilding')] and into the wilderness are surprisingly solemn — ceremonious, even.\n\n"
+ religious_interaction.2100.desc: "After [ROOT.Char.GetFaith.HighGodName] knows how long in a dark cell, the harsh daylight is blinding. The guards who escort me out of the [imprisoner.Custom('FortifiedBuilding')] and into the wilderness are surprisingly solemn — ceremonious, even.\n\n"
  religious_interaction.2100.descwaterlogged: "Whilst the sun shines brightly, the marshy ground I stand on squelches and sucks at my feet. I soon spot my imprisoner [imprisoner.Custom('TitledFirstName')] approaching smugly but somewhat gingerly across the sodden turf, accompanied by several [imprisoner.Custom('DefaultPriestTitlePlural')].\n\n"
  religious_interaction.2100.descpleasant: "The sun shines brightly, the ground I stand on looks healthy and lush. I soon spot my imprisoner [imprisoner.Custom('TitledFirstName')] approaching — with something of an air of uncertainty — accompanied by several [imprisoner.Custom('DefaultPriestTitlePlural')].\n\n"
  religious_interaction.2100.descforest: "The sun shines brightly, falling in dappled rays through the tree cover. I soon spot my imprisoner [imprisoner.Custom('TitledFirstName')] fighting [imprisoner.GetHerHis] way through the thicket, accompanied by several [imprisoner.Custom('DefaultPriestTitlePlural')].\n\n"
@@ -182,8 +182,8 @@
 
  religious_interaction.2403.desc:0 "[victim.Custom('TitledFirstName')] does not even stand a chance. Although [victim.GetSheHe] believes [victim.GetHerselfHimself] well prepared, I swat away [victim.GetHerHis] feeble arguments like they were flies. With every counterpoint, [victim.Custom('FirstNameNoTooltip')] winces as if struck by a blow. As time passes, [victim.GetSheHe] seems so incapable of defending [victim.GetHerselfHimself] that even the crowd goes silent.\n\n"...and that is why," I say as I raise my hand dramatically, an accusatory finger pointed across the room, "you will never—"\nI stop when I realize [victim.Custom('FirstNameNoTooltip')] is gasping for air and clutching"
  religious_interaction.2403.conclusion_either:0 "[victim.GetHerHis] chest."
- religious_interaction.2403.conclusion_man:1 "[victim.GetHerHis] arm."
- religious_interaction.2403.conclusion_woman:1 "[victim.GetHerHis] stomach."
+ religious_interaction.2403.conclusion_man: "[victim.GetHerHis] arm."
+ religious_interaction.2403.conclusion_woman: "[victim.GetHerHis] stomach."
  religious_interaction.2403.a.low_compassion:0 ""Taking the coward's way out, I see.""
  religious_interaction.2403.a.zealous:0 ""It seems [ROOT.Char.GetFaith.PantheonTerm] [ROOT.Char.GetFaith.PantheonTermHasHave] chosen a victor.""
  religious_interaction.2403.a.stubborn:0 ""Hey, I haven't finished!""

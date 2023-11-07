@@ -1,6 +1,6 @@
 ﻿l_english:
  # Intents
- reduce_stress_intent:1 "Recreation"
+ reduce_stress_intent: "Recreation"
 
  reduce_stress_intent_desc:0 "You want to focus on reducing stress by looking for [stress|E]-relieving opportunities."
 
@@ -18,7 +18,7 @@
 
  altruism_intent_header:0 "Altruism:"
  altruism_intent:0 "Altruism"
- altruism_intent_desc:1 "You seek to improve the lives of others by looking for opportunities to take altruistic actions. This often leads to an increase in [county_opinion|E] and [piety|E]. [GetTrait('zealous').GetName( GetNullCharacter )|U], [GetTrait('generous').GetName( GetNullCharacter )], and [GetTrait('improvident').GetName( GetNullCharacter )] characters may lose [stress|E]."
+ altruism_intent_desc: "You seek to improve the lives of others by looking for opportunities to take altruistic actions. This often leads to an increase in [county_opinion|E] and [piety|E]. [GetTrait('zealous').GetName( GetNullCharacter )|U], [GetTrait('generous').GetName( GetNullCharacter )], and [GetTrait('improvident').GetName( GetNullCharacter )] characters may lose [stress|E]."
 
  justice_intent:0 "Justice"
  justice_intent_desc:0 "You seek to distribute justice to even the pettiest of criminals within your realm. This often leads to an increase in [control|E] and [GetTrait('just').GetName( GetNullCharacter )] characters may lose [stress|E]."
@@ -26,13 +26,13 @@
  recruit_knights_intent:0 "Recruit"
  recruit_knights_intent_desc:0 "You seek to improve your court with new and powerful [knights|E]. This often leads to recruiting opportunities."
  # TOOLTIPS
- intent_murder_success_tt:1 "You killed [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Murder [intent|E]"
- intent_murder_dead_tt:1 "[THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Murder [intent|E] target, died"
- intent_murder_fail_tt:1 "You failed to kill [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Murder [intent|E]"
- intent_woo_success_tt:1 "You seduced [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Woo [intent|E]"
- intent_woo_potential_tt:1 "You piqued the interest of [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Woo [intent|E]"
- intent_woo_fail_tt:1 "You failed to seduce [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Woo [intent|E]"
- intent_befriend_success_tt:1 "You bonded with [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Befriend [intent|E]"
- intent_befriend_potential_tt:1 "You spent some time with [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Befriend [intent|E]"
- intent_befriend_fail_tt:1 "You failed to bond with [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Befriend [intent|E]"
- activity_intent_complete_toast:1 "Intent Achieved"
+ intent_murder_success_tt: "You killed [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Murder [intent|E]"
+ intent_murder_dead_tt: "[THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Murder [intent|E] target, died"
+ intent_murder_fail_tt: "You failed to kill [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Murder [intent|E]"
+ intent_woo_success_tt: "You seduced [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Woo [intent|E]"
+ intent_woo_potential_tt: "You piqued the interest of [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Woo [intent|E]"
+ intent_woo_fail_tt: "You failed to seduce [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Woo [intent|E]"
+ intent_befriend_success_tt: "You bonded with [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Befriend [intent|E]"
+ intent_befriend_potential_tt: "You spent some time with [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Befriend [intent|E]"
+ intent_befriend_fail_tt: "You failed to bond with [THIS.Char.GetIntentTarget.Custom('ShortName')], object of your Befriend [intent|E]"
+ activity_intent_complete_toast: "Intent Achieved"

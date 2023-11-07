@@ -27,7 +27,7 @@
 
  #Become a Holy Warrior
  learn_commander_trait.0006.t:0 "The Blade of [ROOT.Char.GetFaith.WarGodName]"
- learn_commander_trait.0006.desc:1 "I have seen heathens fight. I know with what great viciousness they strike down the faithful.\n\nIn the name of [ROOT.Char.GetFaith.WarGodName], I will stand against them with the courage [ROOT.Char.GetFaith.WarGodSheHe] grants me!"
+ learn_commander_trait.0006.desc: "I have seen heathens fight. I know with what great viciousness they strike down the faithful.\n\nIn the name of [ROOT.Char.GetFaith.WarGodName], I will stand against them with the courage [ROOT.Char.GetFaith.WarGodSheHe] grants me!"
  learn_commander_trait.0006.a:0 "I will not rest until I have laid waste to the enemies of [ROOT.Char.GetFaith.PantheonTerm]!"
 
  #Become a Desert Warrior
@@ -46,14 +46,14 @@
  learn_commander_trait.0009.a:0 "We strike like hail."
 
 #Training offer
- learn_commander_trait.11.opening:1 ""I understand you are interested in deepening your grasp on warfare?" [teacher.Custom('TitledFirstName')] [teacher.Custom('quirk_pos_present')] as [teacher.GetSheHe] approaches me. "I might be able to help you see the battlefield in new ways.""
+ learn_commander_trait.11.opening: ""I understand you are interested in deepening your grasp on warfare?" [teacher.Custom('TitledFirstName')] [teacher.Custom('quirk_pos_present')] as [teacher.GetSheHe] approaches me. "I might be able to help you see the battlefield in new ways.""
 
 #Generic:
  #Offer:
- learn_commander_trait.11.desc:1 "\n\n[teacher.Custom('FirstName')] is well-known for [teacher.GetHerHis] mastery of [ROOT.Char.Custom('CommanderTraitSkillDescription')]. If there was one who could help me understand, it would be [teacher.GetHerHim]."
+ learn_commander_trait.11.desc: "\n\n[teacher.Custom('FirstName')] is well-known for [teacher.GetHerHis] mastery of [ROOT.Char.Custom('CommanderTraitSkillDescription')]. If there was one who could help me understand, it would be [teacher.GetHerHim]."
  learn_commander_trait.11.a:0 "I want to learn."
  learn_commander_trait.11.b:0 "I'll leave it to my generals."
- learn_commander_trait.11.martial_tt:1 "[teacher.Custom('FirstName')] will attempt to teach you [teacher.GetHerHis] [THIS.Char.Custom('CommanderTraitBeingTaught')] skill\n$EFFECT_LIST_BULLET$High [martial_skill|E] will be beneficial in these pursuits"
+ learn_commander_trait.11.martial_tt: "[teacher.Custom('FirstName')] will attempt to teach you [teacher.GetHerHis] [THIS.Char.Custom('CommanderTraitBeingTaught')] skill\n$EFFECT_LIST_BULLET$High [martial_skill|E] will be beneficial in these pursuits"
  learn_commander_trait.11.b.tt:0 "#F Maybe some other time.#!"
  #Final Test:
  learn_commander_trait.12.desc:0 "[teacher.Custom('TitledFirstName')] has shown me the ins and outs of [ROOT.Char.Custom('CommanderTraitSkillDescription')]. My final test is a mock battle against [teacher.GetHerHim], to show what I have learned."
@@ -70,9 +70,9 @@
  #Failure:
  learn_commander_trait.14.desc:0 ""Perhaps there are a few more things for you to learn..." [teacher.Custom('TitledFirstName')] reaches down a hand to help me up from the mud.\n\nMy troops put in a less than stellar showing. I must confess that [teacher.GetSheHe] might be right."
  learn_commander_trait.14.a:0 "Show me again how it is you do."
- learn_commander_trait.14.a.tt:1 ""I will try my hand at this one more time...""
+ learn_commander_trait.14.a.tt: ""I will try my hand at this one more time...""
  learn_commander_trait.14.b:0 "This is too hard!"
- learn_commander_trait.14.b.tt:1 ""I give up! At least for now.""
+ learn_commander_trait.14.b.tt: ""I give up! At least for now.""
 
 #Logistics
  learn_commander_trait.01.t:0 "A Supply of Knowledge"

@@ -1,7 +1,7 @@
 ﻿l_english:
  rivalry.0001.t:0 "Burying the Hatchet"
- rivalry.0001.desc:2 ""[ROOT.Char.Custom('TitledFirstNameNoTooltip')], we have had our differences in the past, but don't you agree that it's time to let bygones be bygones?"\n\n[rival.Custom2('MyCharacterIntroduction', ROOT.Char)|U] gestures from me to [rival.GetHerHim], "Whatever is between us... let us start anew!""
- rivalry.0001.a:1 "Yes, let us."
+ rivalry.0001.desc: ""[ROOT.Char.Custom('TitledFirstNameNoTooltip')], we have had our differences in the past, but don't you agree that it's time to let bygones be bygones?"\n\n[rival.Custom2('MyCharacterIntroduction', ROOT.Char)|U] gestures from me to [rival.GetHerHim], "Whatever is between us... let us start anew!""
+ rivalry.0001.a: "Yes, let us."
  rivalry.0001.b:0 "You're groveling before me?! [ROOT.Char.GetFaith.HighGodName] is good!"
 
  rivalry.0002.t:0 "Burying the Hatchet"
@@ -29,7 +29,7 @@
  rivalry.1001.emotional:0 "[rival.GetSheHe|U] takes every opportunity to make a scene and cast me as the villain! [rival.GetSheHe|U] snivels and complains, dragging my name through the mud, and blaming me for everything wrong in [rival.GetHerHis] life."
  rivalry.1001.levelheaded:0 "It does not matter whether it's to sabotage my rule or to deliver a smarting insult, [rival.GetSheHe] is always there, waiting."
  rivalry.1001.desc.fallback:0 "It feels as though no matter where I go or what I do, [rival.Custom('TitledFirstName')] manages to let [rival.GetHerHis] presence be known. It is a shadow constantly darkening my every day."
- rivalry.1001.a:1 "Curse you, [rival.Custom('FirstNameNoTooltip')]!"
+ rivalry.1001.a: "Curse you, [rival.Custom('FirstNameNoTooltip')]!"
  
  rivalry.1010.t:0 "Spiteful Acts"
  rivalry.1010.desc:0 "[rival.Custom('TitledFirstNamePossessive')] [rival.Custom('InsultBehavior')] has always bothered me, but"
@@ -79,7 +79,7 @@
  rivalry.1016.a.exposed:0 "Why did I think that was a good idea?"
 
  rivalry.1017.t:0 "Audacious Insult!"
- rivalry.1017.desc:2 "I was [ROOT.GetCharacter.Custom('quirk_pos_adverb')] going about my business when [from_rival.Custom('TitledFirstName')] came up to me and insulted me straight to my face.\n\n"[ROOT.GetCharacter.Custom('quirk_neg_adjective')|U] [ROOT.GetCharacter.Custom('InsultNoun')], your presence makes me weep!"
+ rivalry.1017.desc: "I was [ROOT.GetCharacter.Custom('quirk_pos_adverb')] going about my business when [from_rival.Custom('TitledFirstName')] came up to me and insulted me straight to my face.\n\n"[ROOT.GetCharacter.Custom('quirk_neg_adjective')|U] [ROOT.GetCharacter.Custom('InsultNoun')], your presence makes me weep!"
  rivalry.1017.a:0 "I respond to this defamation with a slew of my own insults!"
  rivalry.1017.b:0 "That lying wretch will answer to me in a duel!"
  rivalry.1017.b.tt:0 "#F I will show that wastrel that I am better than [from_rival.GetSheHe] is#!"
@@ -103,28 +103,28 @@
  rivalry.1024.tt:0 "Humiliating defeat"
 
  rivalry.1021.t:0 "Triumphant Victory"
- rivalry.1021.desc:1 "From the start of my duel with [duel_loser.Custom('TitledFirstName')] it's clear that I have the upper hand. I press the advantage, keeping [duel_loser.GetHerHim] off-balance. Soon [duel_loser.GetSheHe] makes a mistake and leaves me an opening, which I seize advantage of to [ROOT.GetCharacter.Custom('SignatureWeaponCritical')] [duel_loser.GetHerHis] arm, ending the match!\n\nThe fact that my victory was swift and decisive makes it all the better."
- rivalry.1021.a:1 "I have proven myself to be [duel_loser.Custom('FirstNamePossessiveNoTooltip')] better!"
+ rivalry.1021.desc: "From the start of my duel with [duel_loser.Custom('TitledFirstName')] it's clear that I have the upper hand. I press the advantage, keeping [duel_loser.GetHerHim] off-balance. Soon [duel_loser.GetSheHe] makes a mistake and leaves me an opening, which I seize advantage of to [ROOT.GetCharacter.Custom('SignatureWeaponCritical')] [duel_loser.GetHerHis] arm, ending the match!\n\nThe fact that my victory was swift and decisive makes it all the better."
+ rivalry.1021.a: "I have proven myself to be [duel_loser.Custom('FirstNamePossessiveNoTooltip')] better!"
 
  rivalry.1022.t:0 "Narrow Victory"
- rivalry.1022.desc:2 "I begin my duel with [duel_loser.Custom('TitledFirstName')] and realize we're more evenly matched than I expected. We trade strikes and parries back and forth for some time, neither gaining an advantage over the other for long.\n\nEventually we both start suffering from exhaustion and he leaves himself open, allowing me to [ROOT.GetCharacter.Custom('SignatureWeaponCritical')] [duel_loser.GetHerHis] leg and end the match!"
+ rivalry.1022.desc: "I begin my duel with [duel_loser.Custom('TitledFirstName')] and realize we're more evenly matched than I expected. We trade strikes and parries back and forth for some time, neither gaining an advantage over the other for long.\n\nEventually we both start suffering from exhaustion and he leaves himself open, allowing me to [ROOT.GetCharacter.Custom('SignatureWeaponCritical')] [duel_loser.GetHerHis] leg and end the match!"
  rivalry.1022.a:0 "My victory proves that I was in the right."
 
  rivalry.1023.t:0 "Narrow Defeat"
- rivalry.1023.desc:2 "As [duel_winner.Custom('TitledFirstName')] and I begin our duel I realize that [duel_winner.GetSheHe] is a greater foe than I anticipated. The battle is close, with each of us trading attacks and parries as we seek an opening.\n\nEventually as I start to suffer from exhaustion my guard slips for just a moment, which [duel_winner.Custom('FirstName')] takes advantage of to [duel_winner.Custom('SignatureWeaponCritical')] my arm with [duel_winner.GetHerHis] [duel_winner.Custom('signature_weapon')]."
+ rivalry.1023.desc: "As [duel_winner.Custom('TitledFirstName')] and I begin our duel I realize that [duel_winner.GetSheHe] is a greater foe than I anticipated. The battle is close, with each of us trading attacks and parries as we seek an opening.\n\nEventually as I start to suffer from exhaustion my guard slips for just a moment, which [duel_winner.Custom('FirstName')] takes advantage of to [duel_winner.Custom('SignatureWeaponCritical')] my arm with [duel_winner.GetHerHis] [duel_winner.Custom('signature_weapon')]."
  rivalry.1023.desc.end:0 "Bleeding heavily, I have no choice but to concede the match."
  rivalry.1023.desc.death:0 "My wounds take their toll on me and I crumple to the ground."
- rivalry.1023.a:2 "I will get you next time [duel_winner.Custom('TitledFirstNameNoTooltip')]!"
+ rivalry.1023.a: "I will get you next time [duel_winner.Custom('TitledFirstNameNoTooltip')]!"
  rivalry.1023.a.death:0 "It's so dark..."
 
  rivalry.1024.t:0 "Humiliating Defeat"
- rivalry.1024.desc:2 "When [duel_winner.Custom('TitledFirstName')] and I meet to begin our duel [duel_winner.GetSheHe] wastes no time before leaping into action! Caught off-guard, I struggle to regain my ground and [duel_winner.Custom('FirstNamePossessive')] relentless attacks leave me no room to recover.\n\nIt is not long before [duel_winner.GetSheHe] slips past my guard and [duel_winner.Custom('SignatureWeaponCriticalPresent')] my leg with [duel_winner.GetHerHis] [duel_winner.Custom('signature_weapon')],"
+ rivalry.1024.desc: "When [duel_winner.Custom('TitledFirstName')] and I meet to begin our duel [duel_winner.GetSheHe] wastes no time before leaping into action! Caught off-guard, I struggle to regain my ground and [duel_winner.Custom('FirstNamePossessive')] relentless attacks leave me no room to recover.\n\nIt is not long before [duel_winner.GetSheHe] slips past my guard and [duel_winner.Custom('SignatureWeaponCriticalPresent')] my leg with [duel_winner.GetHerHis] [duel_winner.Custom('signature_weapon')],"
  rivalry.1024.desc.end:0 "clearly marking the end of the match. My embarrassing defeat has left me humiliated and ashamed!"
  rivalry.1024.desc.death:0 "causing me to crumple and fall to the ground."
  rivalry.1024.a:0 "I must limp home in disgrace."
 
  rivalry.1025.t:0 "Shameful Display"
- rivalry.1025.desc:1 "That coward [from_rival.Custom('TitledFirstName')] has refused to duel me, despite having insulted me to my face! I cannot think of anything more shameful than to be so disrespectful without the will to back it up. I always knew that [rival.GetSheHe] was dishonorable, and this proves it!"
+ rivalry.1025.desc: "That coward [from_rival.Custom('TitledFirstName')] has refused to duel me, despite having insulted me to my face! I cannot think of anything more shameful than to be so disrespectful without the will to back it up. I always knew that [rival.GetSheHe] was dishonorable, and this proves it!"
  rivalry.1025.a:0 "At least I have maintained my honor."
 
  rivalry.1030.t:0 "Meddling in Marriage"
@@ -132,11 +132,11 @@
  rivalry.1030.desc.neutral:0 "The loveless marriage between my rival [rival.Custom('TitledFirstName')] and [rival.GetHerHis] [rival_spouse.GetWifeHusband] [rival_spouse.Custom('TitledFirstName')] leaves a tempting opportunity for me. If I can sow suspicion and distrust between the two, [rival.Custom('FirstName')] would be so distracted by [rival.GetHerHis] unraveling marriage that [rival.GetSheHe] would be unable to interfere with my plans!"
  rivalry.1030.desc.unhappy:0 "It is not uncommon for my rival [rival.Custom('TitledFirstName')] and [rival.GetHerHis] [rival_spouse.GetWifeHusband] [rival_spouse.Custom('TitledFirstName')] to be at each other's throats. I could instigate another fight between them with a carefully planted note, distracting [rival.Custom('FirstName')] and making it harder for [rival.GetHerHim] to interfere with my plans..."
  rivalry.1030.a:0 "I will plant letters to [rival_spouse.Custom('TitledFirstNameNoTooltip')] from a secret lover."
- rivalry.1030.a.tt:1 "[rival.Custom('TitledFirstName')] will discover some incriminating evidence... but will [rival.GetSheHe] believe it?"
+ rivalry.1030.a.tt: "[rival.Custom('TitledFirstName')] will discover some incriminating evidence... but will [rival.GetSheHe] believe it?"
  rivalry.1030.b:0 "I would rather frame [rival.Custom('TitledFirstNameNoTooltip')] instead."
- rivalry.1030.b.tt:1 "[rival_spouse.Custom('TitledFirstName')] will discover some incriminating evidence... but will [rival_spouse.GetSheHe] believe it?"
+ rivalry.1030.b.tt: "[rival_spouse.Custom('TitledFirstName')] will discover some incriminating evidence... but will [rival_spouse.GetSheHe] believe it?"
  rivalry.1030.c:0 "Meddling in another's union is going too far!"
- rivalry.1030.c.tt:1 "Abandon this path for now"
+ rivalry.1030.c.tt: "Abandon this path for now"
  rivalry.1030.a_success:0 "Successful framing"
  rivalry.1030.a_failure:0 "The plan fails"
 
@@ -148,20 +148,20 @@
  rivalry.1031.a.suspicious:0 "Investigate quietly to determine what is going on."
  rivalry.1031.b.fooled:0 "I will confront [my_spouse.Custom('FirstNameNoTooltip')] directly about the letter!"
  rivalry.1031.b.suspicious:0 "I will confront [my_spouse.Custom('FirstNameNoTooltip')] directly and learn the truth!"
- rivalry.1031.b.tt:1 "I will ask [my_spouse.Custom('TitledFirstName')] if [my_spouse.GetSheHe] has been unfaithful"
+ rivalry.1031.b.tt: "I will ask [my_spouse.Custom('TitledFirstName')] if [my_spouse.GetSheHe] has been unfaithful"
  rivalry.1031.c:0 "I trust [my_spouse.Custom('TitledFirstNameNoTooltip')], this letter must be a forgery!"
- rivalry.1031.c.tt:1 "I throw the letter away"
+ rivalry.1031.c.tt: "I throw the letter away"
 
  rivalry.1032.t:0 "Accusations of Unfaithfulness"
  rivalry.1032.desc:0 "My [suspicious_spouse.GetWifeHusband] [suspicious_spouse.Custom('FirstName')] approached me today with a letter in hand that [suspicious_spouse.GetSheHe] says was written by my secret lover! Now [suspicious_spouse.GetSheHe] is accusing me of having an affair!"
  rivalry.1032.a:0 "I have not been unfaithful to you, I swear!"
- rivalry.1032.a.tt:1 "I attempt to convince [suspicious_spouse.Custom('FirstNameNoTooltip')] that I have been faithful"
+ rivalry.1032.a.tt: "I attempt to convince [suspicious_spouse.Custom('FirstNameNoTooltip')] that I have been faithful"
  rivalry.1032.b:0 "I must confess to my affair with [spouse_lover.Custom('TitledFirstNameNoTooltip')]!"
 
  rivalry.1033.t:0 "Denial of Wrongdoing"
  rivalry.1033.desc:0 "I confronted [my_spouse.Custom('FirstName')] about the letter from [my_spouse.GetHerHis] secret lover today, but [my_spouse.GetSheHe] seemed shocked and hurt by the accusation, and protested [my_spouse.GetHerHis] innocence!"
  rivalry.1033.a:0 "I trust [my_spouse.Custom('FirstNameNoTooltip')] and believe what [my_spouse.GetSheHe] says!"
- rivalry.1033.a.tt:1 "I put an end to this line of inquiry"
+ rivalry.1033.a.tt: "I put an end to this line of inquiry"
  rivalry.1033.b:0 "Lies! I will investigate further and find the truth!"
 
  rivalry.1034.t:0 "A Tearful Confession"
@@ -190,7 +190,7 @@
  rivalry.1039.a:0 "Well now... that #EMP is#! interesting"
 
  rivalry.2001.t:0 "An Obstacle to Friendship"
- rivalry.2001.desc:2 "I have received a letter from [target_in_question.Custom('TitledFirstName')] asking what I think of [rival.Custom('TitledFirstName')]. It seems that [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('rival') )] is making diplomatic overtures towards [target_in_question.GetHerHim]."
+ rivalry.2001.desc: "I have received a letter from [target_in_question.Custom('TitledFirstName')] asking what I think of [rival.Custom('TitledFirstName')]. It seems that [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('rival') )] is making diplomatic overtures towards [target_in_question.GetHerHim]."
  rivalry.2001.a:0 "Hah, does [target_in_question.Custom('FirstName')] even have to ask?"
  rivalry.2001.b:0 "[target_in_question.Custom('FirstName')] should make up [target_in_question.GetHerHis] own mind."
 
@@ -202,12 +202,12 @@
  rivalry.3001.desc.opening:0 "As if it was not enough that [rival.GetSheHe] embraces the worst vices of humanity, [rival.Custom('TitledFirstName')] has now insulted me to my face!\n\n"
  rivalry.3001.malicious:0 "[rival.GetSheHe|U] sent a messenger, making sure that the whole court could hear the vile comments delivered. "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]", it began, and only got worse as it went on. The [rival.Custom('InsultAdjective')] [rival.GetWomanMan] has some nerve!"
  rivalry.3001.benevolent:0 "[rival.GetSheHe|U] sent a letter, asking for better relations and at the same time addressing me as "The [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]." [rival.GetSheHe|U] truly shows [rival.GetHerHis] true colors now!"
- rivalry.3001.dominant:1 "[rival.GetSheHe|U] sent a messenger, addressing me as the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]", and practically begging for a fight!"
+ rivalry.3001.dominant: "[rival.GetSheHe|U] sent a messenger, addressing me as the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]", and practically begging for a fight!"
  rivalry.3001.submissive:0 "I found a note in my private chambers, smuggled there under the cover of night. "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]", it began, and only got worse as it went on. The [rival.Custom('InsultAdjective')] [rival.GetWomanMan] even had the nerve to sign it with [rival.GetHerHis] name!"
- rivalry.3001.extroverted:1 "[rival.GetSheHe|U] sent a messenger to me while I was holding court, who greeted me as the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]", and continued to drag my name through the mud in front of everyone!"
- rivalry.3001.emotional:1 "[rival.GetSheHe|U] sent a messenger accusing me of "sabotaging [rival.Custom('FirstNamePossessiveNoTooltip')] whole life", calling me the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]", and then proceeded to make a scene."
- rivalry.3001.levelheaded:1 "[rival.GetSheHe|U] sent a messenger who bode [rival.GetHerHis] time, waiting for the perfect opportunity to address me as the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]" as if by accident, and then [rival.GetSheHe] acted as if it had all been a mistake."
- rivalry.3001.desc.fallback:1 "[rival.GetSheHe|U] sent a messenger who called me the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]" in front of everyone!"
+ rivalry.3001.extroverted: "[rival.GetSheHe|U] sent a messenger to me while I was holding court, who greeted me as the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]", and continued to drag my name through the mud in front of everyone!"
+ rivalry.3001.emotional: "[rival.GetSheHe|U] sent a messenger accusing me of "sabotaging [rival.Custom('FirstNamePossessiveNoTooltip')] whole life", calling me the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]", and then proceeded to make a scene."
+ rivalry.3001.levelheaded: "[rival.GetSheHe|U] sent a messenger who bode [rival.GetHerHis] time, waiting for the perfect opportunity to address me as the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]" as if by accident, and then [rival.GetSheHe] acted as if it had all been a mistake."
+ rivalry.3001.desc.fallback: "[rival.GetSheHe|U] sent a messenger who called me the "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('TitledFirstName')]" in front of everyone!"
  rivalry.3001.desc.end:0 "\n\nThis cannot stand, I will make sure [rival.GetSheHe] pays for [rival.GetHerHis] insolence."
  rivalry.3001.a:0 "Just you wait, [rival.Custom('TitledFirstNameNoTooltip')]!"
 
@@ -217,7 +217,7 @@
  rivalry.3002.b:0 "[rival.Custom('TitledFirstName')] doesn't have to know how I feel."
 
  rivalry.3003.t:0 "Rats Gathering"
- rivalry.3003.desc:2 "It seems as if [first_friend.Custom('TitledFirstName')] has denounced me, citing my rivalry with [first_friend.GetHerHis] [first_friend.Custom2('RelationToMe', SCOPE.sC('friend') )], the [first_friend.Custom('InsultAdjective')] [friend.Custom('TitledFirstName')].\n\nMy enemies appear to be multiplying..."
+ rivalry.3003.desc: "It seems as if [first_friend.Custom('TitledFirstName')] has denounced me, citing my rivalry with [first_friend.GetHerHis] [first_friend.Custom2('RelationToMe', SCOPE.sC('friend') )], the [first_friend.Custom('InsultAdjective')] [friend.Custom('TitledFirstName')].\n\nMy enemies appear to be multiplying..."
  rivalry.3003.a:0 "Bah! A flock of sheep."
 
  rivalry.3004.t:0 "The Worst Person Possible"

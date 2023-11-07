@@ -6,8 +6,8 @@
  diarch_title_diarch:0 "diarch"
  diarch_title_regent:0 "regent"
  mandate_event_prefix:0 "Mandate: "
- diarch_coup_equal_truce:0 "[liege.GetUINameNotMe|U] agreed to this in the wake of [usurper.GetUINamePossessive|U] coup"
- diarch_coup_unequal_truce_for_liege:0 "[liege.GetUINameNotMe|U] agreed to this in the wake of [usurper.GetUINamePossessive|U] bloodless coup"
+ diarch_coup_equal_truce:0 "[liege.GetUINameNotMe|U] agreed to this in the wake of [usurper.Custom('UINamePossessive')|U] coup"
+ diarch_coup_unequal_truce_for_liege:0 "[liege.GetUINameNotMe|U] agreed to this in the wake of [usurper.Custom('UINamePossessive')|U] bloodless coup"
  diarch_coup_unequal_truce_for_usurper:0 "$diarch_coup_unequal_truce_for_liege$"
 
 
@@ -18,12 +18,12 @@
 
  ##################################################
  # #Notifications
- diarchies.0000.diarch_fulfills_mandate.t:1 "[liege.GetDiarchTitle|U] furthers [mandate|E]"
- diarchies.0000.diarch_fails_at_mandate.t:1 "[liege.GetDiarchTitle|U] unsuccessfully furthers [mandate|E]"
- diarchies.0000.diarch_skims_mandate.t:1 "[liege.GetDiarchTitle|U] skims from [mandate|E]"
- diarchies.0000.diarch_fails_to_skim_mandate.t:1 "[liege.GetDiarchTitle|U] fails to skim from [mandate|E]"
- diarchies.0000.diarch_rejects_mandate.t:1 "[liege.GetDiarchTitle|U] rejects [mandate|E] due to [personality_trait|E]"
- diarchies.0000.diarch_lax_with_mandate.t:1 "[liege.GetDiarchTitle|U] avoiding [mandate|E] duties"
+ diarchies.0000.diarch_fulfills_mandate.t: "[liege.GetDiarchTitle|U] furthers [mandate|E]"
+ diarchies.0000.diarch_fails_at_mandate.t: "[liege.GetDiarchTitle|U] unsuccessfully furthers [mandate|E]"
+ diarchies.0000.diarch_skims_mandate.t: "[liege.GetDiarchTitle|U] skims from [mandate|E]"
+ diarchies.0000.diarch_fails_to_skim_mandate.t: "[liege.GetDiarchTitle|U] fails to skim from [mandate|E]"
+ diarchies.0000.diarch_rejects_mandate.t: "[liege.GetDiarchTitle|U] rejects [mandate|E] due to [personality_trait|E]"
+ diarchies.0000.diarch_lax_with_mandate.t: "[liege.GetDiarchTitle|U] avoiding [mandate|E] duties"
 
  diarchies.0000.diarch_mandate_fail.tt.obtain_gold.liege:0 "[diarch.GetSheHe|U] tried to obtain you [gold|E]"
  diarchies.0000.diarch_mandate_fail.tt.obtain_gold.split:0 "[diarch.GetSheHe|U] tried to obtain [gold|E] for both of you"
@@ -39,7 +39,7 @@
  diarchies.0000.diarch_mandate_fail.tt.network.self:0 "[diarch.GetSheHe|U] tried to curry favor for [diarch.GetHerselfHimself] with your [vassals|E]"
  diarchies.0000.diarch_mandate_fail.tt.train_self.self:0 "[diarch.GetSheHe|U] focused on training [diarch.GetHerselfHimself] instead of your troops"
 
- diarchy.0021.t:1 "Called to Become [liege.GetDiarchTitle|U]"
+ diarchy.0021.t: "Called to Become [liege.GetDiarchTitle|U]"
  diarchy.0021.desc.appointment_nature.child:0 "With [liege.Custom2('MyCharacterIntroduction', ROOT.Char)] a mere child, it's abundantly clear that [liege.GetSheHe] cannot effectively govern the [liege.GetPrimaryTitle.GetName]. [liege.GetSheHe|U] needs a firm, steady hand to guide [liege.GetHerHim], at least till [liege.GetHerHis] majority."
  diarchy.0021.desc.appointment_nature.incapable:0 "With [liege.Custom2('MyCharacterIntroduction', ROOT.Char)] reduced to a trembling, infirm #EMP mess#!, the [liege.GetPrimaryTitle.GetName] teeters on the edge of absolute anarchy. Especially since, given [liege.GetHerHis] condition, who knows how long we'll be bereft of authority?"
  diarchy.0021.desc.appointment_nature.imprisoned:0 "With [liege.Custom2('MyCharacterIntroduction', ROOT.Char)] imprisoned by [liege.GetImprisonedBy.Custom('TitledFirstName')], the [liege.GetPrimaryTitle.GetName] is rudderless and adrift. Communication from our liege is only as frequent as [liege.GetHerHis] gaoler will allow, and which letters #EMP truly#! come from the [liege.Custom('TitleAsNameNoTooltip')] is a subject of constant debate."
@@ -116,7 +116,7 @@
  ##################################################
  # #Mandates - Fill Coffers
  diarchy.1201.t:0 "Open Hearts, Open Pockets"
- diarchy.1201.desc:1 ""Back taxes? What do you mean #EMP back taxes#!?" scoffs [exploitable_vassal.Custom('TitledFirstName')]. "I pay my fees to the Crown on time and to the halfpenny, same as the rest, and don't appreciate being extorted for more".\n\n[exploitable_vassal.GetSheHe|U]'s more... resistant to the idea of paying an extra tithe than I'd hoped, but my mandate as [liege.GetDiarchTitle] requires me to pursue such things to service my liege."
+ diarchy.1201.desc: ""Back taxes? What do you mean #EMP back taxes#!?" scoffs [exploitable_vassal.Custom('TitledFirstName')]. "I pay my fees to the Crown on time and to the halfpenny, same as the rest, and don't appreciate being extorted for more".\n\n[exploitable_vassal.GetSheHe|U]'s more... resistant to the idea of paying an extra tithe than I'd hoped, but my mandate as [liege.GetDiarchTitle] requires me to pursue such things to service my liege."
  diarchy.1201.a:0 "By the authority of [liege.Custom('TitledFirstNameNoTooltip')], you #EMP will#! pay."
  diarchy.1201.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.1201.b:0 "You say that, yet these records show partial revenues at best..."
@@ -134,7 +134,7 @@
  diarchy.1201.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.1211.t:0 "Terms & Conditions"
- diarchy.1211.desc:1 ""... and several of these witnesses to your oaths of fealty confirm that you promised to #EMP exceed#! your obligations, not merely match them", I finish. [exploitable_vassal.Custom('TitledFirstName')] stares back at me from across the council table, gobsmacked.\n\n"Are you suggesting that the testimony of some no-name petty nobility justifies my owing our liege even #EMP more#!?" [exploitable_vassal.GetSheHe] stutters out, still stunned by the audacity of my claim.\n\nIt's a risky suggestion, but my mandate as [liege.GetDiarchTitle] demands I advance the position of [liege.Custom('TitledFirstName')]."
+ diarchy.1211.desc: ""... and several of these witnesses to your oaths of fealty confirm that you promised to #EMP exceed#! your obligations, not merely match them", I finish. [exploitable_vassal.Custom('TitledFirstName')] stares back at me from across the council table, gobsmacked.\n\n"Are you suggesting that the testimony of some no-name petty nobility justifies my owing our liege even #EMP more#!?" [exploitable_vassal.GetSheHe] stutters out, still stunned by the audacity of my claim.\n\nIt's a risky suggestion, but my mandate as [liege.GetDiarchTitle] demands I advance the position of [liege.Custom('TitledFirstName')]."
  diarchy.1211.a:0 "I am, and if you don't like these witnesses, I have others."
  diarchy.1211.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.1211.b:0 "The witnesses are material — these oaths are sacred."
@@ -189,7 +189,7 @@
  diarchy.1231.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.1241.t:0 "A Taxing Subject"
- diarchy.1241.desc:1 "One of my duties as [liege.GetDiarchTitle] is to fulfill the mandate set for me by [liege.Custom('TitledFirstName')], which, at present, demands cold, hard cash.\n\nI've been wracking my brains for fresh sources of income for the Crown, and keep coming back to one obvious, if unorthodox, solution: [diarch.Custom('GetFaithTaxExemptInstitution')].\n\nTraditionally exempt from most taxation, a special levy on [diarch.Custom('GetFaithTaxExemptInstitution')] would likely be lucrative. Just... not exactly pious."
+ diarchy.1241.desc: "One of my duties as [liege.GetDiarchTitle] is to fulfill the mandate set for me by [liege.Custom('TitledFirstName')], which, at present, demands cold, hard cash.\n\nI've been wracking my brains for fresh sources of income for the Crown, and keep coming back to one obvious, if unorthodox, solution: [diarch.Custom('GetFaithTaxExemptInstitution')].\n\nTraditionally exempt from most taxation, a special levy on [diarch.Custom('GetFaithTaxExemptInstitution')] would likely be lucrative. Just... not exactly pious."
  diarchy.1241.a:0 "[diarch.Custom('GetFaithTaxExemptInstitution')|U]? They've had it all their way for far too long!"
  diarchy.1241.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.1241.b:0 "Surely a special levy for necessary expenses wouldn't go awry?"
@@ -218,7 +218,7 @@
  ##################################################
  # #Mandates - Promote Authority
  diarchy.1701.t:0 "The Right to Rule"
- diarchy.1701.desc:1 "Being [liege.Custom('TitledFirstNamePossessive')] [liege.GetDiarchTitle], I'm duty-bound to follow [liege.GetHerHis] mandate to promote central authority in [liege.GetPrimaryTitle.GetNameNoTier].\n\nToday, that's led me to a tense council chamber, sandwiched between [councillor_1.Custom('TitledFirstName')] the [councillor_1.Custom('CouncilPosition')] and [councillor_2.Custom('TitledFirstName')] the [councillor_2.Custom('CouncilPosition')] as they shout at each other over petty personal business.\n\nI had hoped to extract an agreement to approve several new privileges for the [liege.Custom('TitleAsNameNoTooltip')], but I'm getting nowhere till this argument's ended."
+ diarchy.1701.desc: "Being [liege.Custom('TitledFirstNamePossessive')] [liege.GetDiarchTitle], I'm duty-bound to follow [liege.GetHerHis] mandate to promote central authority in [liege.GetPrimaryTitle.GetNameNoTier].\n\nToday, that's led me to a tense council chamber, sandwiched between [councillor_1.Custom('TitledFirstName')] the [councillor_1.Custom('CouncilPosition')] and [councillor_2.Custom('TitledFirstName')] the [councillor_2.Custom('CouncilPosition')] as they shout at each other over petty personal business.\n\nI had hoped to extract an agreement to approve several new privileges for the [liege.Custom('TitleAsNameNoTooltip')], but I'm getting nowhere till this argument's ended."
  diarchy.1701.a:0 "I think you're both talking past each other — allow me..."
  diarchy.1701.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.1701.b:0 "Noble lords, we're getting off track... "
@@ -237,7 +237,7 @@
  diarchy.1701.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.1711.t:0 "Expiration Date"
- diarchy.1711.desc:1 ""Honestly, I thought this issue was settled. My arrangements with [liege.Custom('TitledFirstName')] were supposed to be fixed the last time we renegotiated my obligations", mumbles [exploitable_vassal.Custom('TitledFirstName')]. "I don't understand how you can say that I've managed to void my oaths this thoroughly? Surely the words should be binding forever?"\n\n[exploitable_vassal.GetSheHe|U]'s not entirely wrong. I'm grasping at air with this, but I am the [liege.GetDiarchTitle] and my mandate is clear as a fine summer's day. If [exploitable_vassal.Custom('FirstNamePossessiveNoTooltip')] oaths are partially void, then the [liege.Custom('TitleAsNameNoTooltip')] will have room to adjust them, and I will have done my job."
+ diarchy.1711.desc: ""Honestly, I thought this issue was settled. My arrangements with [liege.Custom('TitledFirstName')] were supposed to be fixed the last time we renegotiated my obligations", mumbles [exploitable_vassal.Custom('TitledFirstName')]. "I don't understand how you can say that I've managed to void my oaths this thoroughly? Surely the words should be binding forever?"\n\n[exploitable_vassal.GetSheHe|U]'s not entirely wrong. I'm grasping at air with this, but I am the [liege.GetDiarchTitle] and my mandate is clear as a fine summer's day. If [exploitable_vassal.Custom('FirstNamePossessiveNoTooltip')] oaths are partially void, then the [liege.Custom('TitleAsNameNoTooltip')] will have room to adjust them, and I will have done my job."
  diarchy.1711.a:0 "Am I not known for my just and legal mind?"
  diarchy.1711.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.1711.b:0 "Alright, let's go over the arguments again..."
@@ -255,7 +255,7 @@
  diarchy.1711.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.1721.t:0 "Settling Grievances"
- diarchy.1721.desc:1 ""I don't even see why you're so keen to get involved, [diarch.Custom('FirstName')]", sighs [exploitable_vassal.Custom('TitledFirstName')], "it's not like our grievances lie with you."\n\nIt's no secret that the [exploitable_vassal.Custom('TitleAsNameNoTooltip')] holds ambitions that run contrary to the will of [liege.Custom('TitledFirstName')]. Ambitions that could drag the realm into a disastrous civil war if left unchecked.\n\nAs my liege's [liege.GetDiarchTitle], it falls within my mandate to try and soothe over the tensions between the two, but so far [exploitable_vassal.GetSheHe] seems impervious to my efforts."
+ diarchy.1721.desc: ""I don't even see why you're so keen to get involved, [diarch.Custom('FirstName')]", sighs [exploitable_vassal.Custom('TitledFirstName')], "it's not like our grievances lie with you."\n\nIt's no secret that the [exploitable_vassal.Custom('TitleAsNameNoTooltip')] holds ambitions that run contrary to the will of [liege.Custom('TitledFirstName')]. Ambitions that could drag the realm into a disastrous civil war if left unchecked.\n\nAs my liege's [liege.GetDiarchTitle], it falls within my mandate to try and soothe over the tensions between the two, but so far [exploitable_vassal.GetSheHe] seems impervious to my efforts."
  diarchy.1721.a:0 "Did we not both swear an oath to [liege.Custom('TitledFirstNameNoTooltip')]?"
  diarchy.1721.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.1721.b:0 "You're right. My castle certainly won't be the first besieged."
@@ -273,7 +273,7 @@
  diarchy.1721.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.1731.t:0 "Settling Accounts"
- diarchy.1731.desc:1 "The crowd throngs in front of me, a motley gang of angry representatives from [county_1.GetNameNoTier], [county_2.GetNameNoTier], and [county_3.GetNameNoTier], disparate towns and villages united by their condemnation of [liege.Custom('TitledFirstName')]. As [liege.GetHerHis] unfortunate [liege.GetDiarchTitle], it falls to me to try and mollify them, per my mandate.\n\nWith no clear central leadership, the mob jeers at me, shrieking out concerns and overly-detailed incidents "
+ diarchy.1731.desc: "The crowd throngs in front of me, a motley gang of angry representatives from [county_1.GetNameNoTier], [county_2.GetNameNoTier], and [county_3.GetNameNoTier], disparate towns and villages united by their condemnation of [liege.Custom('TitledFirstName')]. As [liege.GetHerHis] unfortunate [liege.GetDiarchTitle], it falls to me to try and mollify them, per my mandate.\n\nWith no clear central leadership, the mob jeers at me, shrieking out concerns and overly-detailed incidents "
  diarchy_1731.tt.affected_counties_removed:0 "[county_1.GetNameNoTier], [county_2.GetNameNoTier], & [county_3.GetNameNoTier] leave the [faction.GetName|V]"
  diarchy.1731.a:0 "Please, be civil! I will listen to your problems in turn."
  diarchy.1731.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
@@ -292,7 +292,7 @@
  diarchy.1731.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.1741.t:0 "Look at it this Way"
- diarchy.1741.desc:1 ""We are not opposed to [liege.Custom('TitledFirstNamePossessive')] wishes", drawls [councillor_1.Custom('TitledFirstName')], sneering all the while, "merely not enslaved to them. It's not so hard to understand".\n\nI've spent the better part of my afternoon trying to improve relations between my liege and [liege.GetHerHis] councillors, to no avail, thanks in no small part to this ignorant [councillor_1.GetWomanMan]'s bullheadedness.\n\nI sigh internally. I am the [liege.GetDiarchTitle], and my mandate necessitates these duties."
+ diarchy.1741.desc: ""We are not opposed to [liege.Custom('TitledFirstNamePossessive')] wishes", drawls [councillor_1.Custom('TitledFirstName')], sneering all the while, "merely not enslaved to them. It's not so hard to understand".\n\nI've spent the better part of my afternoon trying to improve relations between my liege and [liege.GetHerHis] councillors, to no avail, thanks in no small part to this ignorant [councillor_1.GetWomanMan]'s bullheadedness.\n\nI sigh internally. I am the [liege.GetDiarchTitle], and my mandate necessitates these duties."
  diarchy.1741.a:0 "I think you're missing how much the [liege.Custom('TitleAsNameNoTooltip')] does for you..."
  diarchy.1741.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.1741.custom.several_councillors:0 "Every councillor present\t"
@@ -322,7 +322,7 @@
  ##################################################
  # #Mandates - Swell Armies
  diarchy.2201.t:0 "Bring Out Your Youth"
- diarchy.2201.desc:1 "The locals of [exploitable_county.GetNameNoTier] are required to provide a certain number of troops to [liege.Custom('TitledFirstName')], which they duly do whenever asked.\n\nThat's not to say that's everyone of fighting age in the area, though, and my recent investigations as [liege.GetDiarchTitle] have shown that their obligations are almost #EMP shockingly#! light. The numbers we could be drafting all but dwarf the paltry contingents actually levied.\n\nThe locals are resistant, but my mandate spurs me on regardless."
+ diarchy.2201.desc: "The locals of [exploitable_county.GetNameNoTier] are required to provide a certain number of troops to [liege.Custom('TitledFirstName')], which they duly do whenever asked.\n\nThat's not to say that's everyone of fighting age in the area, though, and my recent investigations as [liege.GetDiarchTitle] have shown that their obligations are almost #EMP shockingly#! light. The numbers we could be drafting all but dwarf the paltry contingents actually levied.\n\nThe locals are resistant, but my mandate spurs me on regardless."
  diarchy.2201.a:0 "If they can swing a spear they can die to one!"
  diarchy.2201.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.2201.b:0 "Let the peons know this is their chance to acquire #EMP plunder#!."
@@ -340,7 +340,7 @@
  diarchy.2201.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.2211.t:0 "A Rare Talent"
- diarchy.2211.desc:1 "A warrior of rare talent is passing through [hedge_knight_location.GetNameNoTier], one whose sword would doubtless be greatly valued in [liege.Custom('TitledFirstNamePossessive')] armies.\n\nMy mandate as [liege.GetDiarchTitle] calls for me to be on the look out for such individuals, and I've already sent numerous entreaties to [hedge_knight.Custom('FirstName')], trying to recruit [hedge_knight.GetHerHim] for my liege.\n\nExcept that the roaming fighter doesn't seem too enthused by the thought of swearing [hedge_knight.GetHerHis] blade to our cause, rebuffing every envoy in turn."
+ diarchy.2211.desc: "A warrior of rare talent is passing through [hedge_knight_location.GetNameNoTier], one whose sword would doubtless be greatly valued in [liege.Custom('TitledFirstNamePossessive')] armies.\n\nMy mandate as [liege.GetDiarchTitle] calls for me to be on the look out for such individuals, and I've already sent numerous entreaties to [hedge_knight.Custom('FirstName')], trying to recruit [hedge_knight.GetHerHim] for my liege.\n\nExcept that the roaming fighter doesn't seem too enthused by the thought of swearing [hedge_knight.GetHerHis] blade to our cause, rebuffing every envoy in turn."
  diarchy.2211.a:0 "A mere $knight_culture_player_no_tooltip_lowercase$ #EMP will#! agree to serve. Eventually."
  diarchy.2211.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.2211.b:0 "Perhaps I can talk [hedge_knight.Custom('FirstNameNoTooltip')] around personally?"
@@ -358,7 +358,7 @@
  diarchy.2211.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.2221.t:0 "Martial Donatives"
- diarchy.2221.desc:1 "The major settlements of [liege.GetPrimaryTitle.GetNameNoTier] offer no end of places to recruit sellswords. The market square where I stand, tossing a purse of monies at a mob of them, is just one of many.\n\nOrdinarily, these ad-hoc warrior bands are absorbed into larger mercenary groups or hired to bolster the private levies of minor lords in war, an inefficient arrangement.\n\nMy mandate as [liege.GetDiarchTitle] requires me to swell the armies of [liege.Custom('TitledFirstName')], and so I find myself trying to recruit some more directly."
+ diarchy.2221.desc: "The major settlements of [liege.GetPrimaryTitle.GetNameNoTier] offer no end of places to recruit sellswords. The market square where I stand, tossing a purse of monies at a mob of them, is just one of many.\n\nOrdinarily, these ad-hoc warrior bands are absorbed into larger mercenary groups or hired to bolster the private levies of minor lords in war, an inefficient arrangement.\n\nMy mandate as [liege.GetDiarchTitle] requires me to swell the armies of [liege.Custom('TitledFirstName')], and so I find myself trying to recruit some more directly."
  diarchy.2221.a:0 "This coin is nothing compared to the loot you'll earn!"
  diarchy.2221.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.2221.b:0 "This silver is just a taste of [liege.Custom('TitledFirstNamePossessiveNoTooltip')] treasury!"
@@ -376,10 +376,10 @@
  diarchy.2221.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.2231.t:0 "A Better Use for You"
- diarchy.2231.desc:1 "The gaols and courts of [exploitable_county.GetNameNoTier] have been processing an unfortunately high number of miscreants lately. Under normal circumstances, justice would find these malefactors swiftly, then they'd be turned loose to the wilds or the grave.\n\nLuckily for them, many have ample experience with sword or arrow, and my mandate as [liege.GetDiarchTitle] requires me to find fresh soldiers. The distasteful solution of service in [liege.Custom('TitledFirstNamePossessive')] armies seems obvious, and though this turns up plenty of hardy bandits and eagle-eyed poachers, the notion has the peasantry are up in arms."
+ diarchy.2231.desc: "The gaols and courts of [exploitable_county.GetNameNoTier] have been processing an unfortunately high number of miscreants lately. Under normal circumstances, justice would find these malefactors swiftly, then they'd be turned loose to the wilds or the grave.\n\nLuckily for them, many have ample experience with sword or arrow, and my mandate as [liege.GetDiarchTitle] requires me to find fresh soldiers. The distasteful solution of service in [liege.Custom('TitledFirstNamePossessive')] armies seems obvious, and though this turns up plenty of hardy bandits and eagle-eyed poachers, the notion has the peasantry are up in arms."
  diarchy.2231.a:0 "Plow on; these complaints will pass with time."
  diarchy.2231.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
- diarchy.2231.b:1 "Perhaps we need only take the very best?"
+ diarchy.2231.b: "Perhaps we need only take the very best?"
  diarchy.2231.b.tt.success:0 "A balance is struck"
  diarchy.2231.b.tt.failure:0 "Most of the criminals flee as soon as they can"
  diarchy.2231.b.t:0 "$diarchies.0000.diarch_fails_at_mandate.t$"
@@ -394,7 +394,7 @@
  diarchy.2231.e.t:0 "$diarchies.0000.diarch_lax_with_mandate.t$"
 
  diarchy.2241.t:0 "Threshing Wheat from Chaff"
- diarchy.2241.desc:1 "The mandate set for me by [liege.Custom('TitledFirstName')] demands that, as [liege.GetHerHis] [liege.GetDiarchTitle], I find [liege.GetHerHim] sources of fresh troops regularly.\n\nWell, what better place to start than the poorly-sorted levies of [exploitable_vassal.Custom('TitledFirstName')]? My retainers and I have rounded up the locals for assessment, but are still struggling to get enough of them to a standard where it's even #EMP worth#! calling them up in future."
+ diarchy.2241.desc: "The mandate set for me by [liege.Custom('TitledFirstName')] demands that, as [liege.GetHerHis] [liege.GetDiarchTitle], I find [liege.GetHerHim] sources of fresh troops regularly.\n\nWell, what better place to start than the poorly-sorted levies of [exploitable_vassal.Custom('TitledFirstName')]? My retainers and I have rounded up the locals for assessment, but are still struggling to get enough of them to a standard where it's even #EMP worth#! calling them up in future."
  diarchy.2241.a:0 "After me, soldiers! Watch!"
  diarchy.2241.a.t:0 "$diarchies.0000.diarch_fulfills_mandate.t$"
  diarchy.2241.b:0 "Come on you louts, I'll whip you into shape!"
@@ -634,7 +634,7 @@
  diarchy.9024.t:0 "$diarchy.9021.t$"
  diarchy.9024.desc.proxy.proxy_fought:0 "Sadly, I am just a little too far from [usurper.Custom('TitledFirstName')] to hear [usurper.GetHerHis] dying curse, but I do get the pleasure of watching [usurper.GetHerHim] expire.\n\n[proxy.Custom('TitledFirstName')] fought well in my service, slaughtering the traitor by the very foot of my throne with what seemed like contemptuous ease. The act puts resolve into my guards and shatters the coterie of conspirators, and what follows is a few minutes of desperate bloodshed as the rebels are cut down."
  diarchy.9024.desc.proxy.self_fought:0 "[usurper.Custom('TitledFirstNamePossessive')] corpse lies shattered before me, butchered by my own hand.\n\nIn a blind panic, the coterie of conspirators shatters and tries to flee, but my own guards are bolstered by my success and charge into their midst. What follows is a few minutes of desperate bloodshed, the rebels cut down one by one."
- diarchy.9024.desc.scuffled:1 "Fortunately, my expedient cries for help brought a veritable #EMP horde#! of loyal troops and hirelings from nearby chambers. For all that [usurper.Custom('TitledFirstNamePossessive')] coterie of traitors fought well, they were soon overwhelmed.\n\nI watched [usurper.Custom('FirstNameNoTooltip')] die, one of the last, panic in [usurper.GetHerHis] [usurper.Custom('EyeEyes')] as steel flashed around [usurper.GetHerHim]. Then into [usurper.GetHerHim]. Then through [usurper.GetHerHim].\n\nSuch is the price of treason."
+ diarchy.9024.desc.scuffled: "Fortunately, my expedient cries for help brought a veritable #EMP horde#! of loyal troops and hirelings from nearby chambers. For all that [usurper.Custom('TitledFirstNamePossessive')] coterie of traitors fought well, they were soon overwhelmed.\n\nI watched [usurper.Custom('FirstNameNoTooltip')] die, one of the last, panic in [usurper.GetHerHis] [usurper.Custom('EyeEyes')] as steel flashed around [usurper.GetHerHim]. Then into [usurper.GetHerHim]. Then through [usurper.GetHerHim].\n\nSuch is the price of treason."
  diarchy.9024.desc.outro:0 "\n\nI expect the news to ripple out over the rest of the [liege.GetPrimaryTitle.GetTierAsName] shortly, and hope that this will serve as a lesson to future would-be usurpers."
  diarchy.9024.a:0 "Put down like the mangy cur [usurper.GetSheHe] was."
 

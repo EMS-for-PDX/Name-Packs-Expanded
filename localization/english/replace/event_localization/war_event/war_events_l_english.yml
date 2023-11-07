@@ -1,11 +1,11 @@
 ﻿l_english:
 
- war_event.1901:1 "Your liege won their war with [defender_loser.Custom('ShortName')]!"
- war_event.1902:1 "Your liege lost their war with [attacker_winner.Custom('ShortName')]!"
- war_event.1903:1 "Your liege has signed a White Peace with [defender_white_peace.Custom('ShortName')]!"
- war_event.1904:1 "Your liege has signed a White Peace with [attacker_white_peace.Custom('ShortName')]!"
- war_event.1905:1 "Your liege lost their war with [defender_winner.Custom('ShortName')]!"
- war_event.1906:1 "Your liege won their war with [attacker_loser.Custom('ShortName')]!"
+ war_event.1901: "Your liege won their war with [defender_loser.Custom('ShortName')]!"
+ war_event.1902: "Your liege lost their war with [attacker_winner.Custom('ShortName')]!"
+ war_event.1903: "Your liege has signed a White Peace with [defender_white_peace.Custom('ShortName')]!"
+ war_event.1904: "Your liege has signed a White Peace with [attacker_white_peace.Custom('ShortName')]!"
+ war_event.1905: "Your liege lost their war with [defender_winner.Custom('ShortName')]!"
+ war_event.1906: "Your liege won their war with [attacker_loser.Custom('ShortName')]!"
  war_event.notification_liege_win.t:0 "Liege Won War"
  war_event.notification_liege_loss.t:0 "Liege Lost War"
 
@@ -43,13 +43,13 @@
  war_event.3003.2.b:0 "Maybe I should just end our alliance...?"
 
  war_event.neighbor_war.both_neighbors.t:0 "Neighbors' War Resolved"
- war_event.neighbor_war.both_neighbors.desc:1 "Your neighbor [winner.Custom('TitledFirstName')] won against your other neighbor [loser.Custom('TitledFirstName')] in the [war.GetName]!"
+ war_event.neighbor_war.both_neighbors.desc: "Your neighbor [winner.Custom('TitledFirstName')] won against your other neighbor [loser.Custom('TitledFirstName')] in the [war.GetName]!"
 
  war_event.neighbor_war.only_winner.t:0 "Neighboring Ruler Won War"
- war_event.neighbor_war.only_winner.desc:3 "Your neighbor [winner.Custom('TitledFirstName')] has won against [loser.Custom2('YourCharacterIntroductionNoComma', this_player)] in the [war.GetName]!"
+ war_event.neighbor_war.only_winner.desc: "Your neighbor [winner.Custom('TitledFirstName')] has won against [loser.Custom2('YourCharacterIntroductionNoComma', this_player)] in the [war.GetName]!"
 
  war_event.neighbor_war.only_loser.t:0 "Neighboring Ruler Lost War"
- war_event.neighbor_war.only_loser.desc:2 "Your neighbor [loser.Custom('TitledFirstName')] has lost against [winner.Custom2('YourCharacterIntroductionNoComma', this_player)] in the [war.GetName]!"
+ war_event.neighbor_war.only_loser.desc: "Your neighbor [loser.Custom('TitledFirstName')] has lost against [winner.Custom2('YourCharacterIntroductionNoComma', this_player)] in the [war.GetName]!"
 
  #Holy wars "soft invalidated" by faith change
  war_event.3101.t:0 "Newfound Faith"
