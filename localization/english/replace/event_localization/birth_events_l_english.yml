@@ -50,9 +50,9 @@
  birth.1002.b.tt:0 "The world at large is none the wiser to their true parentage."
  birth.1002.c:0 "I wonder where [real_father.Custom('FirstNameNoTooltip')] is right now..."
 
- birth.1003.loves_mother.desc: "Oh, [mother.Custom('FirstName')], you have been so brave! So strong! Words cannot describe my love for you, and now we have"
+ birth.1003.loves_mother.desc:1 "Oh, [mother.Custom('FirstName')], you have been so brave! So strong! Words cannot describe my love for you, and now we have"
  birth.1003.likes_mother.desc:0 "With a tired yet blissful smile, [mother.Custom('FirstName')] presents me with"
- birth.1003.dislikes_mother.desc: "Praise [ROOT.Char.GetFaith.FertilityGodName], [mother.Custom('FirstNameNoTooltip')] has given birth to"
+ birth.1003.dislikes_mother.desc:1 "Praise [ROOT.Char.GetFaith.FertilityGodName], [mother.Custom('FirstNameNoTooltip')] has given birth to"
  birth.1003.sondaughter.desc:0 "perfect little [child.Custom('GetDaughterSon')]!\n\n"
  birth.1003.daughters.desc:0 "perfect little girls!\n\n"
  birth.1003.sons.desc:0 "perfect little boys!\n\n"
@@ -72,15 +72,16 @@
  birth.1006.not_known:0 "\n\nThankfully, [spouse_of_mother.Custom2('HerHisCharacterIntroduction', SCOPE.sC('mother'))] believes it to be [spouse_of_mother.GetHerHis]."
  birth.1006.unmarried:0 "\n\nThankfully, [mother.Custom('FirstNameNoTooltip')] has kept quiet about me, and no one else knows the truth, at least for now..."
  birth.1006.a:0 "I must be very careful about this."
- birth.1006.a.tt: "You keep the Secret to yourself"
+ birth.1006.a.tt:1 "You keep the Secret to yourself"
  birth.1006.a.message_desc:0 "Real Father Knows"
  birth.1006.a.mother_message:0 "[real_father.Custom('TitledFirstName')] has learned that [real_father.GetSheHe] is the true father"
  birth.1006.b:0 "The world will know of my child!"
+ birth.1006.bastard_explanation:0 "You learned of [child.Custom('FirstName')]'s birth, the mother, [mother.Custom('ShortName')] gains the [secret.GetName] Secret"
 
  birth.1010.t:0 "Child of My Dynasty"
  birth.1010.t_twins:0 "Children of My Dynasty"
  birth.1010.desc.twin:0 "[mother.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has given birth to two [child.Custom('TwinDaughtersSonsChildren')]!\n\nSince the little ones are part of the [ROOT.Char.GetDynasty.GetName] dynasty they should be blessed with good names."
- birth.1010.desc:0 "[mother.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has given birth to a [child.Custom('GetDaughterSon')]!\n\nSince the little one is part of the [ROOT.Char.GetDynasty.GetName] dynasty [child.GetSheHe] should be blessed with a good name."
+ birth.1010.desc:0 "[mother.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has given birth to a [child.Custom('GetDaughterSon')]!\n\nSince the little one is part of the [ROOT.Char.GetDynasty.GetName] dynasty, [child.GetSheHe] should be blessed with a good name."
 
  birth.1100.title:0 "[child.Custom('GetTaltosTerm')] Born"
  birth.1100.message:0 "The [child.Custom('DefaultPriestTitlePlural')] have identified [child.Custom2('MyCharacterIntroduction', ROOT.Char)] as a [child.Custom('GetTaltosTerm')].\n\nChosen by the [child.GetFaith.PantheonTerm] for a mysterious purpose, what does this child's future hold?"
@@ -109,7 +110,7 @@
  birth.2003.t:0 "A Rough Start"
  birth.2003.desc.standard_start:0 "I wish I could celebrate the birth of our [child.Custom('GetDaughterSon')], but [legitimizer.Custom('TitledFirstName')] has made it clear that the babe will not be considered a true member of [legitimizer.GetHerHis] house."
  birth.2003.desc.twin_start:0 "I wish I could celebrate the birth of our children, but [legitimizer.Custom('TitledFirstName')] has made it clear the babes are not to be true members of [legitimizer.GetHerHis] house."
- birth.2003.desc.landed_end:0 "\n\nThe brand of bastard-hood never washes off completely, though the acknowledgment of a [legitimizer.Custom('TitleTierName')] surely would have helped..."
+ birth.2003.desc.landed_end:0 "\n\nThe brand of bastard-hood never washes off completely, though the acknowledgment of a [legitimizer.GetTitleTierName] surely would have helped..."
  birth.2003.desc.unlanded_end:0 "\n\nThe brand of bastard-hood never washes off completely, though the acknowledgment of a [legitimizer.GetLadyLord] surely would have helped..."
  birth.2003.a:0 "I wish things were otherwise, little [child.Custom('FirstNameNoTooltip')]!"
 
@@ -126,7 +127,7 @@
 
  birth.2102.t:0 "[real_father.Custom('TitledFirstNamePossessiveNoTooltip')|U] Spawn"
  birth.2102.desc:0 "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], has given birth to a child sired by another man. Now [mother.GetSheHe] is nursing [real_father.Custom('TitledFirstNamePossessive')] [child.Custom('GetDaughterSon')]. They call [child.GetHerHim] [child.Custom('FirstName')]."
- birth.2102.desc.twin: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], has given birth to [real_father.Custom('TitledFirstNamePossessive')] [child.Custom('TwinDaughtersSonsChildren')]. They call them [child.Custom('FirstName')] and [child_2.Custom('FirstName')]."
+ birth.2102.desc.twin:1 "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('mother'))], [mother.Custom('TitledFirstName')], has given birth to [real_father.Custom('TitledFirstNamePossessive')] [child.Custom('TwinDaughtersSonsChildren')]. They call them [child.Custom('FirstName')] and [child_2.Custom('FirstName')]."
  birth.2102.a:0 "What am I to do with this?"
 
  birth.2104.t:0 "A Strange Child"
@@ -138,15 +139,15 @@
 
  birth.3001.t:0 "Cradled by Death"
  birth.3001.desc_other_child:0 ""Just one more push, my [ROOT.Char.GetLadyLord]! The baby is almost here!" A scream escapes my lips as I bear down for the last time. The pain is everywhere, too much, overwhelming — and then, it is over. I... I did it.\n\n"Is [dummy_gender.GetSheHe] alright?" I barely recognize my own voice. "Is [dummy_gender.GetSheHe]... Is it a [dummy_gender.Custom('GirlBoy')]?"\n\nThe midwife does not answer me, does not even look at me. No, she only has eyes for the unmoving infant in her arms."
- birth.3001.a: "Isn't... Why isn't [dummy_gender.GetSheHe] breathing?! #EMP Do something!#!"
- birth.3001.a.tt: "Your [dummy_gender.Custom('DaughterSon')] was stillborn"
+ birth.3001.a:1 "Isn't... Why isn't [dummy_gender.GetSheHe] breathing?! #EMP Do something!#!"
+ birth.3001.a.tt:1 "Your [dummy_gender.Custom('DaughterSon')] was stillborn"
 
  birth.3002.desc:0 "As the door to the birthing chamber opens, I am not greeted by smiling midwives and a crying babe, but instead [mother.Custom('TitledFirstNamePossessive')] heart-wrenching wails.\n\n"I am so sorry, my [ROOT.Char.GetLadyLord]." The midwife does not look me in the eye. In her arms is a tiny, covered bundle. "Your [dummy_gender.Custom('DaughterSon')]... [dummy_gender.GetSheHe|U] is in [ROOT.Char.GetFaith.PositiveAfterLife] now.""
  birth.3002.a:0 "My [dummy_gender.Custom('DaughterSon')]? In... in [ROOT.Char.GetFaith.PositiveAfterLife]?"
 
  birth.3011.desc_twin:0 "The twins are perfect. Their little faces, the way they smell... I want to stay in this moment forever, but the midwife only lets me hold them for a few breaths. I try to protest when she takes them from me, but my arms are weak and I struggle to find the words.\n\n"Do not fret, My Lady. Your [child.Custom('TwinDaughtersSonsChildren')] are strong and healthy. You are our concern now."\n\nAs my handmaidens scurry frantically back and forth, the world grows darker..."
  birth.3011.desc:0 "My [child.Custom('DaughterSon')] is perfect. [child.GetHerHis|U] little face, the way [child.GetSheHe] smells... I want to stay in this moment forever, but the midwife only lets me hold [child.GetHerHim] for a few breaths. I try to protest when she takes [child.GetHerHim] from me, but my arms are weak and I struggle to find the words.\n\n"Do not fret, My Lady. Your [child.Custom('DaughterSon')] is strong and healthy. You are our concern now."\n\nAs my handmaidens scurry frantically back and forth, the world grows darker..."
- birth.3011.twin.a: "Please... Their names..."
+ birth.3011.twin.a:1 "Please... Their names..."
  birth.3011.a:0 "Please... [child.GetHerHis|U] name..."
 
  birth.3012.start.desc:0 "When the midwife finally exits the birth chamber with a softly crying bundle in her arms, relief washes over me.\n\nThen I see the look on her face.\n\n"I am sorry, my [ROOT.Char.GetLadyLord]. [mother.GetLadyLord|U] [mother.Custom('FirstNameNoTooltip')]..." Words fail her, but the tone of her voice says it all.\n\nOne life has been extinguished, but"
@@ -159,7 +160,7 @@
 
 
  birth.3022.desc:0 "As I wait outside the birthing chamber, each minute feels like a lifetime. [mother.Custom('FirstNamePossessive')] screams have ceased with no infant's cry replace it. Something is wrong; I can feel it in my bones.\n\nThe door opens. The midwife's wretched expression confirms all my fears.\n\n"I am so very sorry, my [ROOT.Char.GetLadyLord]. [mother.GetLadyLord|U] [mother.Custom('FirstNameNoTooltip')]... Your [dummy_gender.Custom('DaughterSon')]... They are both in [ROOT.Char.GetFaith.PositiveAfterLife] now.""
- birth.3022.a: "Why?! [ROOT.Char.GetFaith.FertilityGodName|U], what have I done to deserve this?"
+ birth.3022.a:1 "Why?! [ROOT.Char.GetFaith.FertilityGodName|U], what have I done to deserve this?"
  birth.3022.a.buddhism:0 "What have we done to deserve this?!"
 
  birth.3031.t:0 "Cradled by Sickness"
@@ -216,14 +217,16 @@
  birth.9002.a.tt.2:0 "We name our child [SCOPE.GetFlagName('name_suggestion')]"
  birth.9002.b1:0 "Actually, I had something else in mind..."
  birth.9002.b2:0 "What?! That is a terrible idea!"
- birth.9002.b.tt: "You will name [child.GetHerHim] something more suitable"
+ birth.9002.b.tt:1 "You will name [child.GetHerHim] something more suitable"
 
  birth.9003.desc:0 "I gently pick up the babe from [suggester.Custom('TitledFirstNamePossessive')] arms and look into [child.GetHerHis] perfect little eyes. Who will you become?"
  birth.9003.a:0 "Much better."
  
  birth.9004.t:0 "What's in a Name?"
  birth.9004.desc.me:0 "[ROOT.Char.Custom('FirstNameNoTooltip')].\n\nSuch a drab name, I sometimes think, pondering how it will read to future historians.\n\nYet I am a [ROOT.Char.Custom('TitleAsNameNoTooltip')], and if I wish to be called differently, surely I need only let the world know?"
+ birth.9004.desc:0 "[child.Custom('FirstNameNoTooltip')].\n\nInitially I was fond of the name, but now it seems strange to my ears. What will [child.GetSheHe] think of [child.GetHerHis] name once grown up?\n\nMaybe I should change it to something better?"
  birth.9004.a:0 "Ah, a #EMP much#! better name!"
  birth.9004.b:0 "On second thoughts, I think [ROOT.Char.Custom('FirstNameNoTooltip')] is fine..."
+ birth.9004.b.other:0 "Actually [child.Custom('FirstNameNoTooltip')] is pretty good, after all..."
  birth.9004.b.tt:0 "You keep your old name"
-
+ birth.9004.b.tt.other:0 "[child.Custom('FirstNameNoTooltip')] keeps [child.GetHerHis] old name"

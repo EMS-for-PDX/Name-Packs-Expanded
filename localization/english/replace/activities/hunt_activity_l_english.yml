@@ -1,0 +1,145 @@
+﻿l_english:
+ activity_window_character_animal_slayer: "Beast Slayer\n[Character.Custom('ShortNameNoTooltip')|U]"
+ activity_window_character_master_of_hunt: "$master_of_hunt_court_position$\n[Character.Custom('ShortNameNoTooltip')|U]"
+ activity_window_character_hunter: "Hunter\n[Character.Custom('ShortNameNoTooltip')|U]"
+
+ hunt_revenge_skull_name_1: "[host.Custom('TitledFirstNamePossessiveNoTooltip')] Bane"
+ hunt_revenge_skull_name_2: "[host.GetTitleAsNamePossessiveNoTooltip] Bane"
+ hunt_revenge_skull_name_3: "[host.Custom('TitleAsNameNoTooltip')] Slayer"
+ hunt_revenge_skull_desc: "The head of [newly_created_artifact.GetFeatureText( 'animal_skull_type' )] which killed [host.Custom('TitledFirstName')] while hunting, requested by [host.GetHerHis] heir, [creator.Custom('TitledFirstName')]. It is [SCOPE.Custom('ArtifactAdverbQuality')] preserved and attached to a [SCOPE.Custom('ArtifactAdverbWealth')] carved [newly_created_artifact.GetFeatureText( 'generic_material_wood' )] mount."
+ hunt_rampage_trinket_slain_desc: "The [newly_created_artifact.Custom('ArtifactAnimalTrinketType')] of a rampaging [activity.Custom('GetAnimalTypeKill')] which attacked [host.Custom('RegName')] and [similar_participant.Custom('RegName')] in [creator.GetCurrentLocation.GetBaronyNameExplicitly], felled by [animal_slayer.Custom('FirstNamePossessive')] knife."
+ hunt_rampage_trinket_wound_desc: "The [newly_created_artifact.Custom('ArtifactAnimalTrinketType')] of a rampaging [activity.Custom('GetAnimalTypeKill')] which attacked [host.Custom('RegName')] and [similar_participant.Custom('RegName')] in [creator.GetCurrentLocation.GetBaronyNameExplicitly], wounding [animal_slayer.Custom('FirstName')] as [animal_slayer.GetSheHe] slew it."
+ hunt_rampage_trinket_death_desc: "The [newly_created_artifact.Custom('ArtifactAnimalTrinketType')] of a rampaging [activity.Custom('GetAnimalTypeKill')] which attacked [host.Custom('RegName')] and [similar_participant.Custom('RegName')] in [creator.GetCurrentLocation.GetBaronyNameExplicitly], killing [animal_slayer.Custom('FirstName')] as [animal_slayer.GetSheHe] slew it."
+
+ artifact_bird_feather_description: "The feather of a [owner.Custom('GetAnimalType')] hunted in [location.GetBaronyNameExplicitly] by [creator.Custom('TitledFirstNamePossessive')] [creator.GetInvolvedActivity.Custom('GetRaptorType')]."
+ artifact_bird_feather_raptor_description: "The feather of [owner.Custom('TitledFirstNamePossessive')] [owner.GetInvolvedActivity.Custom('GetRaptorType')], felled by a larger raptor while hunting in [location.GetBaronyNameExplicitly]."
+
+ CHARACTER_IS_REMOVED_FROM_ACTIVITY: "Removes [CHARACTER.Custom('ShortName')] from the Activity"
+ GLOBAL_IS_REMOVED_FROM_ACTIVITY: "Removes [CHARACTER.Custom('ShortName')] from the Activity"
+
+ CHARACTER_IS_REMOVED_FROM_ACTIVITY_PAST: "Removed [CHARACTER.Custom('ShortName')] from the Activity"
+ GLOBAL_IS_REMOVED_FROM_ACTIVITY_PAST: "[CHARACTER.Custom('ShortName')] was removed from the Activity"
+ # TOOLTIPS
+
+ hunt_activity_chase_tt: "[host.Custom('ShortName')|U] will attempt to #V corner#! the [activity.Custom('GetAnimalType')] #weak (Spear)#!\n@warning_icon!#X This method is more [hunt_dangerous|E]#!"
+ hunt_activity_ambush_tt: "[host.Custom('ShortName')|U] will attempt to #V ambush#! the [activity.Custom('GetAnimalType')] #weak (Bow)#!"
+ hunt_activity_stealth_tt: "[host.Custom('ShortName')|U] will attempt to #V surprise#! the [activity.Custom('GetAnimalType')] #weak (Bow)#!"
+ hunt_activity_captive_tt: "[host.Custom('ShortName')|U] will attempt to release and slay your #V captive#! [activity.Custom('GetAnimalType')] #weak (Spear)#!\n@warning_icon!#X This method is [hunt_dangerous|E]#!"
+
+ hunt_seek_current_tt: "[host.Custom('ShortName')|U] will seek the [activity.Custom('GetAnimalType')|V]:\n[activity.Custom('ActivityAnimalSafety')]\n[activity.Custom('ActivityAnimalPrestige')]"
+ hunt_seek_current_legendary_tt: "[host.Custom('ShortName')|U] will seek the [activity.Custom('GetLegendaryColor')|V] [activity.Custom('GetAnimalType')|V]:\n[activity.Custom('ActivityAnimalSafety')]\n[activity.Custom('ActivityAnimalPrestige')]"
+ hunt_seek_current_falconry_tt: "[host.Custom('ShortName')|U] will seek to #V hawk#! a [activity.Custom('GetAnimalType')|V]:\n[activity.Custom('ActivityAnimalPrestige')]"
+ hunt_seek_waterfowl_falconry_tt: "[host.Custom('ShortName')|U] will seek to #V hawk#! a [activity.Custom('GetAnimalTypeWaterfowl')|V]:\n[activity.Custom('ActivityAnimalPrestige')]"
+ hunt_seek_gamebird_falconry_tt: "[host.Custom('ShortName')|U] will seek to #V hawk#! a [activity.Custom('GetAnimalTypeGamebird')|V]:\n[activity.Custom('ActivityAnimalPrestige')]"
+
+ hunt_target_attendee_injured_tt: "[murder_target.Custom('ShortName')] is [GetTrait('wounded_1').GetName( GetNullCharacter )]"
+ hunt_target_attendee_injured_chance_tt: "[murder_target.Custom('ShortName')] may be injured"
+ hunt_target_attendee_killed_tt: "@death_icon![murder_target.Custom('ShortName')] dies"
+
+ hunt_progress_towards_trait_0_tt: "[THIS.Char.GetShortUINameNoFormat|U] may adopt the [GetTrait('lifestyle_hunter').GetName( GetNullCharacter )] [lifestyle_trait|E]"
+
+ hunter_accident_victim_family_tt: "[murder_target.Custom('ShortNamePossessive')] [family|E]"
+
+ hunt_captive_animal_tt: "[host.Custom('ShortName')|U] will hunt a captive [host.Custom('GetAnimalTypeCaptive')|V]"
+ # MELEE
+ hunt_kill_success_melee_guest: "[animal_slayer.Custom('FirstNameNoTooltip')] slays the [activity.Custom('GetAnimalTypeKill')]"
+
+ hunt_kill_failure_melee_guest: "[animal_slayer.Custom('FirstNameNoTooltip')] is wounded by the [activity.Custom('GetAnimalTypeKill')]"
+
+ hunt_kill_critical_failure_melee_guest: "[animal_slayer.Custom('FirstNameNoTooltip')] is killed by the [activity.Custom('GetAnimalTypeKill')]"
+
+ hunt_kill_failure_melee: "...but wounds [THIS.Char.GetFirstNameOrMeNoTooltip]"
+ hunt_kill_critical_failure_melee: "...but kills [THIS.Char.GetFirstNameOrMeNoTooltip]"
+ #GROUP
+ hunt_kill_murder_missed: "[murder_target.GetFirstNameOrMeNoTooltip] gets lucky"
+ hunt_kill_murder_injured: "[murder_target.GetFirstNameOrMeNoTooltip] is "accidentally" wounded"
+ hunt_kill_murder_killed: "[murder_target.GetFirstNameOrMeNoTooltip] is "tragically" killed"
+ hunt_kill_murder_escape: "[murder_target.GetFirstNameOrMeNoTooltip] escapes"
+ #BOW
+ hunt_kill_success_bow_guest: "[animal_slayer.Custom('FirstNameNoTooltip')] fells the [activity.Custom('GetAnimalTypeKill')]"
+ hunt_kill_failure_bow: "[injury_target.Custom('FirstNameNoTooltip')] is wounded by the [activity.Custom('GetAnimalTypeKill')]"
+ # ACTIVITY LOG
+ hunt_quarry_selected_log: "[CHARACTER.Custom('ShortName')|U] decided the party will be hunting [CHARACTER.GetInvolvedActivity.Custom('GetAnimalArticle')] [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_chase_method_selected_log: "[CHARACTER.Custom('ShortName')|U] decided to chase and corner the [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_quarry_legendary_log: "[CHARACTER.Custom('ShortName')|U] and the party set off after the [CHARACTER.GetInvolvedActivity.Custom('GetLegendaryColor')] [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_quarry_falconry_log: "[CHARACTER.Custom('ShortName')|U] and the party set off to find some [CHARACTER.GetInvolvedActivity.Custom('GetAnimalPlural')]"
+
+ hunt_ambush_method_selected_log: "[CHARACTER.Custom('ShortName')|U] decided to lie in wait and ambush the [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_stealth_method_selected_log: "[CHARACTER.Custom('ShortName')|U] decided to sneak up on and surprise the [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_captive_method_selected_log: "[CHARACTER.Custom('ShortName')|U] decided to release and hunt [CHARACTER.GetHerHis] captive [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_falconry_method_selected_log: "[CHARACTER.Custom('ShortName')|U] decided to try and hunt [CHARACTER.GetInvolvedActivity.Custom('GetAnimalPlural')] with [CHARACTER.GetHerHis] raptor"
+
+ hunt_rampage_wound_log: "[CHARACTER.Custom('ShortName')|U] [CHARACTER.GetDeathReason]"
+
+ hunt_rampage_death_log: "[CHARACTER.Custom('ShortName')|U] [CHARACTER.GetDeathReason]"
+
+ hunt_rampage_fled_log: "[CHARACTER.Custom('ShortName')|U] fled a rampaging [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_rampage_frightened_log: "[CHARACTER.Custom('ShortName')|U] frightened away a rampaging [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_rampage_befriend_log: "[CHARACTER.Custom('ShortName')|U] befriended a rampaging [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_rampage_befriend_fail_log: "[CHARACTER.Custom('ShortName')|U] tried and failed to befriend a rampaging [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_rampage_bodyguard_log: "[TARGET_CHARACTER.Custom('ShortName')|U], [TARGET_CHARACTER.Custom('ShortNamePossessive')] bodyguard, saved [CHARACTER.GetHerHim] from a rampaging [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_melee_log: "[CHARACTER.Custom('ShortName')|U] slew a [CHARACTER.Custom('GetAnimalType')]"
+
+ hunt_melee_wounded_log: "[CHARACTER.Custom('ShortName')|U] gained a wound from a [CHARACTER.GetInvolvedActivity.Custom('GetAnimalTypeKill')]"
+
+ hunt_melee_killed_log: "[CHARACTER.Custom('ShortName')|U] was killed by a [CHARACTER.Custom('GetAnimalType')]"
+
+ hunt_melee_group_log: "[CHARACTER.Custom('ShortName')|U] led the party in slaying a [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_melee_capture_log: "[CHARACTER.Custom('ShortName')|U] led the party in capturing a [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_melee_group_wounded_log: "[CHARACTER.Custom('ShortName')|U] gained a wound from a [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_melee_group_killed_log: "[CHARACTER.Custom('ShortName')|U] was killed by a [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_bow_log: "[CHARACTER.Custom('ShortName')|U] brought down a [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')] with a single arrow"
+
+ hunt_bow_wounded_log: "[TARGET_CHARACTER.Custom('ShortName')|U] was wounded by a frantic [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')] when [CHARACTER.Custom('ShortNamePossessive')] arrow missed it"
+
+ hunt_bow_miss_log: "[CHARACTER.Custom('ShortNamePossessive')|U] arrow missed a [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')] and it escaped"
+
+ hunt_poachers_punished_log: "[CHARACTER.Custom('ShortName')|U] strung up poachers who had the audacity to hunt on [CHARACTER.Custom('ShortNamePossessive')] land"
+
+ hunt_guest_died_log: "[CHARACTER.Custom('ShortName')|U] [CHARACTER.GetDeathReason]"
+
+ hunt_guest_injured_log: "[CHARACTER.Custom('ShortName')|U] suffered a hunting accident injury"
+
+ hunt_bird_snatched_log: "[CHARACTER.Custom('ShortName')|U] raptor was itself preyed upon by a bird higher up the food chain"
+
+ hunt_eyas_found_log: "[CHARACTER.Custom('ShortName')|U] came upon a raptor nest, and found an eyas in the wild"
+
+ hunt_completed_success_log: "[CHARACTER.Custom('ShortNamePossessive')|U] party slew a [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+
+ hunt_completed_failure_log: "[CHARACTER.Custom('ShortNamePossessive')|U] party did not slay a [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
+ #APA
+ hunt_tracks_character_title:0 "[hunter.Custom('ShortNameNoTooltip')|U] Found Tracks"
+
+ hunt_tracks_dog_title: "[hunter.Custom('ShortNamePossessiveNoTooltip')|U] Dog, [hunter.Custom('DogStoryName')], Found the Scent"
+
+ hunt_hunters_bond_title: "[first.Custom('ShortNameNoTooltip')|U] and [second.Custom('ShortNameNoTooltip')] Bonded Over Hunting"
+ hunt_dog_bond_title: "[first.Custom('ShortNameNoTooltip')|U] and [second.Custom('ShortNameNoTooltip')] Bonded Over Dogs"
+ hunt_knowledge_sharing_title: "[first.Custom('ShortNameNoTooltip')|U] Shared Knowledge with [second.Custom('ShortNameNoTooltip')]"
+ hunt_small_game_title: "[hunter.Custom('ShortNameNoTooltip')|U] Hunted a [hunter.Custom('GetRandomRegionalSmallGame')|U]"
+
+ hunt_poetic_inspiration_title: "[poet.Custom('ShortNameNoTooltip')|U] Found Poetic Inspiration"
+
+ hunt_distinguished_ability_title: "[hunter.Custom('ShortNamePossessiveNoTooltip')|U] Abilities Impressed"
+ hunt_annoyed_owner_title: "[first.Custom('ShortNamePossessiveNoTooltip')|U] Resented [second.Custom('ShortNamePossessiveNoTooltip')] Hunt"
+ hunt_impressive_grounds_title: "[second.Custom('ShortNameNoTooltip')|U] Admired [first.Custom('ShortNamePossessiveNoTooltip')] Hunting Grounds"
+ hunt_eggs_found_title: "[eggman.Custom('ShortNameNoTooltip')|U] Found Raptor Eggs"
+
+ # MEMORY
+ hunt_animal_slayer_memory_desc_second_perspective: "You slew a [SCOPE.Custom('GetAnimalType')] at [host.Custom('TitledFirstNamePossessive')] [GetActivityType('activity_hunt').GetName] in [ROOT.Var('location').Province.GetBaronyNameExplicitly]"
+ hunt_animal_slayer_memory_desc_host_third_perspective: "[animal_slayer.Custom('TitledFirstName')] slew a [SCOPE.Custom('GetAnimalType')] at [animal_slayer.GetHerHis] [GetActivityType('activity_hunt').GetName] in [ROOT.Var('location').Province.GetBaronyNameExplicitly]"
+ hunt_animal_slayer_memory_desc_third_perspective: "[animal_slayer.Custom('TitledFirstName')] slew a [SCOPE.Custom('GetAnimalType')] at [host.Custom('TitledFirstNamePossessive')] [GetActivityType('activity_hunt').GetName] in [ROOT.Var('location').Province.GetBaronyNameExplicitly]"

@@ -4,11 +4,11 @@
  chronicle_interaction_title: "[recipient.Custom('FullNameNoTooltip')]"
  chronicle_interaction_title_load: "[recipient.MakeScope.Var('char').Char.Custom('FullNameNoTooltip')]"
 
- chronicle_action_read_chronicle_desc: "[secondary_recipient.GetFullName] [secondary_recipient.GetDeathReasonHideKiller]$chronicle_translation_on$[secondary_recipient.GetDeathDate.GetString|V] [secondary_recipient.GetAgeInfo]$chronicle_translation_period$ $chronicle_translation_read_action.4$$chronicle_translation_period$"
+ chronicle_action_read_chronicle_desc: "[secondary_recipient.Custom('FullName')] [secondary_recipient.GetDeathReasonHideKiller]$chronicle_translation_on$[secondary_recipient.GetDeathDate.GetString|V] [secondary_recipient.GetAgeInfo]$chronicle_translation_period$ $chronicle_translation_read_action.4$$chronicle_translation_period$"
 
  chronicle_action_read_chronicle_combined_label: "[secondary_recipient.Custom('FullNameNoTooltip')]"
 
- chronicle_action_read_important_chronicle_desc: "[secondary_recipient.GetFullName] [secondary_recipient.GetDeathReasonHideKiller]$chronicle_translation_on$[secondary_recipient.GetDeathDate.GetString|V] [secondary_recipient.GetAgeInfo]$chronicle_translation_period$ $chronicle_translation_read_action.4$$chronicle_translation_period$"
+ chronicle_action_read_important_chronicle_desc: "[secondary_recipient.Custom('FullName')] [secondary_recipient.GetDeathReasonHideKiller]$chronicle_translation_on$[secondary_recipient.GetDeathDate.GetString|V] [secondary_recipient.GetAgeInfo]$chronicle_translation_period$ $chronicle_translation_read_action.4$$chronicle_translation_period$"
 
  chronicle_action_read_important_chronicle_combined_label: "[secondary_recipient.Custom('FullNameNoTooltip')]"
 
