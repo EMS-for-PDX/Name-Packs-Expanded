@@ -115,6 +115,26 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144105 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:144104 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:karluk0019 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:karluk0043 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_1 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_2 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_3 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_4 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_5 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_6 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_7 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_8 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_9 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_10 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_11 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_12 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_13 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_14 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_15 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_16 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_17 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_18 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_karakhanids_19 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:3012 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:144108 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:188854 }
@@ -181,6 +201,45 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:302684 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:302685 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:302685 }
+	}
+	character:extra_karakhanids_19 = {
+		change_first_name = Satuq
+		add_to_global_variable_list = { name = Bugra_regnal_regnal target = this }
+	}
+	character:extra_karakhanids_15 = {
+		change_first_name = Muhammad
+		add_to_global_variable_list = { name = Togan_regnal_regnal target = this }
+	}
+	character:extra_karakhanids_14 = {
+		change_first_name = Shuja
+	}
+	character:extra_karakhanids_12 = {
+		change_first_name = Shah
+	}
+	character:extra_karakhanids_11 = {
+		change_first_name = Terken
+	}
+	character:extra_karakhanids_10 = {
+		change_first_name = Hasan
+		add_to_global_variable_list = { name = Bugra_regnal target = this }
+		house_effect_ne = yes
+	}
+	character:extra_karakhanids_9 = {
+		change_first_name = Ala-Nur
+	}
+	character:extra_karakhanids_6 = {
+		change_first_name = Husayn
+		add_to_global_variable_list = { name = Bugra_regnal target = this }
+	}
+	character:extra_karakhanids_5 = {
+		change_first_name = Hasan
+		add_to_global_variable_list = { name = Bugra_regnal target = this }
+	}
+	character:extra_karakhanids_4 = {
+		change_first_name = Jafar
+	}
+	character:extra_karakhanids_1 = {
+		change_first_name = Maryam
 	}
 	character:302684 = {
 		change_first_name = Chagri
@@ -268,6 +327,7 @@
 	}
 	character:3000 = {
 		change_first_name = Ali
+		house_effect_ne = yes
 		add_to_global_variable_list = { name = Arslan_regnal target = this }
 	}
 	character:3002 = {
