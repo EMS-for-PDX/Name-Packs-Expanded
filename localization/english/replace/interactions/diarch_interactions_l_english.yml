@@ -171,7 +171,7 @@
  diarch_coup_liege_interaction.tt.secondary_recipient.chancellor_sabotage: "As the [realm|E]'s [chancellor|E], [secondary_recipient.Custom('ShortNamePossessive')] will deny help to [recipient.Custom('ShortName')] during a [diplomacy|E] coup"
  diarch_coup_liege_interaction.tt.secondary_recipient.spymaster_sabotage: "As the [realm|E]'s [spymaster|E], [secondary_recipient.Custom('ShortNamePossessive')] will deny help to [recipient.Custom('ShortName')] during an [intrigue|E] coup"
  diarch_coup_liege_interaction.tt.secondary_recipient.champion_sabotage: "As the [realm|E]'s $champion_court_position$, [secondary_recipient.Custom('ShortNamePossessive')] will deny help to [recipient.Custom('ShortName')] during a [prowess|E] coup"
- diarch_coup_liege_interaction.tt.secondary_recipient.champion_sabotage.others: "Other, less able fighters may still step up for their [recipient.GetTitleAsName]"
+ diarch_coup_liege_interaction.tt.secondary_recipient.champion_sabotage.others: "Other, less able fighters may still step up for their [recipient.Custom('TitleAsName')]"
  diarch_coup_liege_interaction.tt.liege_has_loyalty_hook.tt.has_trait.disloyal: "I am [GetTrait('disloyal').GetName(secondary_recipient)]: $VALUE|+=0$"
  diarch_coup_liege_interaction.tt.liege_has_loyalty_hook.tt.has_trait.ambitious: "I am [GetTrait('ambitious').GetName(secondary_recipient)]: $VALUE|+=0$"
  diarch_coup_liege_interaction.tt.liege_has_loyalty_hook.tt.has_trait.arbitrary: "I am [GetTrait('arbitrary').GetName(secondary_recipient)]: $VALUE|+=0$"

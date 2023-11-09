@@ -69,7 +69,7 @@
  artifact_wall_banner_dynasty_name: "[target.GetBaseNameNoTooltip] Dynasty Banner"
  artifact_wall_banner_dynasty_description: "This is the banner of the [target.GetBaseName] dynasty, a symbol of the authority of the bloodline and all its members, commissioned by [newly_created_artifact.MakeScope.Var('banner_commissioner').Char.GetNameRegnal]."
  artifact_wall_banner_name: "[target.GetAdjectiveNoTooltip] Banner"
- artifact_wall_banner_description: "This is a [target.GetAdjective] banner, a symbol of the authority of the [target.GetHolder.GetTitleAsName]."
+ artifact_wall_banner_description: "This is a [target.GetAdjective] banner, a symbol of the authority of the [target.GetHolder.Custom('TitleAsName')]."
 
  artifact_wall_banner_kaviani_name: "Derafsh Kaviani"
  artifact_wall_banner_kaviani: "This is the legendary Derafsh Kaviani — the royal standard of the fallen Sassanid Empire. A symbol of identity and pride for the heirs of the Empire of Persia."
@@ -551,7 +551,7 @@
  feature_book_title_soulmate: "$artifact_name_prefix_artifact_scope$ Devotion"
  feature_book_topic_soulmate: "[Artifact.GetOwner.Custom('ArtifactArticleWealth')|U] and colorfully illuminated manuscript [Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')] conveying the devotion [Artifact.GetOwner.Custom('TitledFirstName')] feels for [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('TitledFirstName')] – immortalizing their love."
  feature_book_title_nemesis: "The Undying Hatred of [Artifact.GetOwner.Custom('TitledFirstName')]"
- feature_book_topic_nemesis: "[Artifact.GetOwner.Custom('ArtifactArticleWealth')|U] manuscript [Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')] conveying the hatred [Artifact.GetOwner.GetTitleAsName] feels for [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('TitledFirstName')] – naming [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.GetHerHim] [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('InsultAdjectiveArticle')] [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('InsultNoun')] among many other things. The text is painstakingly illustrated to portray the [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.GetWomanMan] in as many unflattering situations as possible."
+ feature_book_topic_nemesis: "[Artifact.GetOwner.Custom('ArtifactArticleWealth')|U] manuscript [Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')] conveying the hatred [Artifact.GetOwner.Custom('TitleAsName')] feels for [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('TitledFirstName')] – naming [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.GetHerHim] [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('InsultAdjectiveArticle')] [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.Custom('InsultNoun')] among many other things. The text is painstakingly illustrated to portray the [Artifact.GetOwner.MakeScope.Var('book_topic_relationship').Char.GetWomanMan] in as many unflattering situations as possible."
  
 # mystical animal
  feature_book_title_mystical_animal: "The White [Artifact.GetOwner.Custom('GetAnimalType')|U]"

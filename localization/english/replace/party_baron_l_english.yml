@@ -35,14 +35,14 @@
  party_baron.1001.a: "Perhaps I could learn a thing or two from [party_baron.GetHerHis] popularity..."
  party_baron.1001.b: "But #EMP I#! am the one who should be heaped with praise!"
  party_baron.1001.c: "It sounds like I should get to know this [party_baron.GetWomanMan]!"
- party_baron.1001.c.tt: "Write a letter to the [party_baron.GetTitleAsName]"
+ party_baron.1001.c.tt: "Write a letter to the [party_baron.Custom('TitleAsName')]"
 
  party_baron.1002.opening: "[party_baron.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
  party_baron.1002.desc: "I thank you for your kind words of greetings! It feels good to hear from someone who truly appreciates that true joy is the one you bring to others.\n\nI hope to one day host you as my honored guest, and although it is presumptuous of me to say so, I hope you may one day come to consider me a friend."
  party_baron.1002.a: "[party_baron.GetSheHe|U] seems very pleasant, even by letter!"
 
- party_baron.1003.desc: "It feels as if I blinked for a moment, and missed it entirely, but [party_baron.Custom('FirstName')] has gone from [party_baron.GetHerHis] lowly barony, to being my [party_baron_header.GetTitleAsName]...\n\nThe world has turned upside down faster than I could imagine."
- party_baron.1003.a: "At least I now have a generous [party_baron.GetTitleAsName]."
+ party_baron.1003.desc: "It feels as if I blinked for a moment, and missed it entirely, but [party_baron.Custom('FirstName')] has gone from [party_baron.GetHerHis] lowly barony, to being my [party_baron_header.Custom('TitleAsName')]...\n\nThe world has turned upside down faster than I could imagine."
+ party_baron.1003.a: "At least I now have a generous [party_baron.Custom('TitleAsName')]."
  party_baron.1003.b: "Let us just forget all those things I said..."
 
  party_baron.2001.t: "$party_baron_header$"
@@ -87,11 +87,11 @@
  party_baron.3001.b: "Perhaps I am being a little harsh..."
 
  party_baron.3002.t: "$party_baron_header$"
- party_baron.3002.desc: "So it is not enough that [party_baron.Custom('TitledFirstName')] is beloved by all, #EMP I#! must love [party_baron.GetHerHim] as well?\n\nSeveral of my vassals have signed a writ requesting that I cease speaking foul words about that useless [party_baron.GetTitleAsName]!"
+ party_baron.3002.desc: "So it is not enough that [party_baron.Custom('TitledFirstName')] is beloved by all, #EMP I#! must love [party_baron.GetHerHim] as well?\n\nSeveral of my vassals have signed a writ requesting that I cease speaking foul words about that useless [party_baron.Custom('TitleAsName')]!"
  party_baron.3002.a: "Oh, I'll show those uppity cretins some "foul words.""
  party_baron.3002.b: "It doesn't hurt to be a little gentler. In public."
 
- party_baron.3003.desc: "Even after everything I have said about [party_baron.GetHerHim], [party_baron.Custom('TitledFirstName')] remains undeterred. [party_baron.GetSheHe|U] even dares approach me at a feast, alone.\n\n"I have a feeling you don't like me very much." I snort. [party_baron.GetSheHe|U] can say that again. But of course instead [party_baron.GetSheHe] continues without flinching. "Could we talk for a moment?"\n\nEverything that happens next is a blur, but it turned into one of the best feasts of my life. I must admit, perhaps I was wrong about the [party_baron.GetTitleAsName] after all..."
+ party_baron.3003.desc: "Even after everything I have said about [party_baron.GetHerHim], [party_baron.Custom('TitledFirstName')] remains undeterred. [party_baron.GetSheHe|U] even dares approach me at a feast, alone.\n\n"I have a feeling you don't like me very much." I snort. [party_baron.GetSheHe|U] can say that again. But of course instead [party_baron.GetSheHe] continues without flinching. "Could we talk for a moment?"\n\nEverything that happens next is a blur, but it turned into one of the best feasts of my life. I must admit, perhaps I was wrong about the [party_baron.Custom('TitleAsName')] after all..."
  party_baron.3003.a: "To think you would get me in the end, [party_baron.Custom('FirstNameNoTooltip')]!"
  party_baron.3003.b: "No! Nothing has changed!"
 
