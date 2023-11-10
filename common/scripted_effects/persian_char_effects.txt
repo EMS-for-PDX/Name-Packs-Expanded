@@ -25,7 +25,7 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:saffarid_01 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:saffarid_03 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:saffarid_04 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:saffarid_25 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_saffarids_25 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:163101 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:saffarid_01 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:saffarid_03 }
@@ -359,6 +359,7 @@
 	character:159599.dynasty = { #Sasanid hell
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbpersian008 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbpersian007 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:159599 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:160309 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:159600 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:180602 }
@@ -389,6 +390,7 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:160292 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:160293 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:160294 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:180615 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:45105 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:160295 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:160286 }
@@ -423,6 +425,9 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:180618 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:180606 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:159602 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:180629 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:180639 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:216902 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:216910 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:216909 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:216909 }
@@ -487,8 +492,32 @@
 	character:extra_farighunids_4 = {
 		dynasty_effect_ne = yes
 	}
+	character:180639 = {
+		change_first_name = Yazdandad
+	}
+	character:180620 = {
+		give_nickname = nick_the_hunter
+	}
+	character:180645 = {
+		give_nickname = nick_the_ladder_legs
+	}
+	character:180629 = {
+		change_first_name = Gushtahm
+	}
 	character:1230316 = {
 		change_first_name = Suri
+	}
+	character:180631 = {
+		give_nickname = nick_the_undefeated
+	}
+	character:180619 = {
+		give_nickname = nick_the_peacemaker
+	}
+	character:180617 = {
+		give_nickname = nick_the_righteous
+	}
+	character:180637 = {
+		give_nickname = nick_the_accursed
 	}
 	character:extra_banijurids_8 = {
 		change_first_name = Harith
@@ -505,7 +534,7 @@
 	character:extra_saffarids_3 = {
 		change_first_name = Muaddal
 	}
-	character:saffarid_25 = {
+	character:extra_saffarids_25 = {
 		change_first_name = Muaddal
 	}
 	character:extra_tahirids_17 = {
@@ -533,7 +562,7 @@
         change_first_name = Windad
     }
     character:216013 = {
-        change_first_name = Khurshid
+        change_first_name = Khwarshed
     }
     character:216019 = {
         change_first_name = Ohrmazd
@@ -856,13 +885,13 @@
         add_to_variable_list = { name = dynasty_independent target = character:146098 }
         add_to_variable_list = { name = dynasty_independent target = character:146101 }
     }
-	character:93269.dynasty = {
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:93269 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:93270 }
+	character:93272.dynasty = {
+#        add_to_variable_list = { name = name_pack_support_dynasty target = character:93269 }
+#        add_to_variable_list = { name = name_pack_support_dynasty target = character:93270 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:93271 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:93272 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93271 }
-        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93270 }
+#        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93270 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:93269 }
     }
 	character:20703.dynasty = {
@@ -1328,15 +1357,15 @@
     character:93271 = {
         change_first_name = Abbas
     }
-    character:93270 = {
-        change_first_name = Tahir
-    }
-    character:93269 = {
-        change_first_name = Nasr
-        add_character_flag = has_reg_laqab
-        add_to_global_variable_list = { name = Taj_ad_Din target = this }
-        dynasty_effect_ne = yes
-    }
+#    character:93270 = {
+#        change_first_name = Tahir
+#    }
+#    character:93269 = {
+#        change_first_name = Nasr
+#        add_character_flag = has_reg_laqab
+#        add_to_global_variable_list = { name = Taj_ad_Din target = this }
+#        dynasty_effect_ne = yes
+#    }
     character:146128 = {
         change_first_name = Gushtahm
     }
