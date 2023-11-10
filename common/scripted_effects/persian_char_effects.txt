@@ -115,18 +115,18 @@
         add_to_variable_list = { name = dynasty_independent target = character:180751 }
         add_to_variable_list = { name = dynasty_independent target = character:180752 }
     }
-	character:1230318.house = {
-		set_variable = {
-			name = name_founder
-			value = character:npedbpersian002
-		}
-	}
-	character:1230318.dynasty = {
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbpersian002 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:1230318 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:93132 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:1230319 }
-    }
+#	character:1230318.house = {
+#		set_variable = {
+#			name = name_founder
+#			value = character:npedbpersian002
+#		}
+#	}
+#	character:1230318.dynasty = {
+#        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbpersian002 }
+#        add_to_variable_list = { name = name_pack_support_dynasty target = character:1230318 }
+#        add_to_variable_list = { name = name_pack_support_dynasty target = character:93132 }
+#        add_to_variable_list = { name = name_pack_support_dynasty target = character:1230319 }
+#    }
 	character:188637.house = {
 		set_variable = {
 			name = name_founder
@@ -484,11 +484,34 @@
 	}
 	character:extra_ghurids_1.dynasty = { #Shansaban
         add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_ghurids_1 }
-        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_ghurids_4 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_farighunids_4 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_ghurids_6 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1230316 }
     }
+	character:extra_kurds_0001.dynasty = { #Azadmardi
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_kurds_0001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_kurds_0002 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_kurds_0003 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_kurds_0002 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_kurds_0003 }
+    }
+	character:extra_kurds_0009.dynasty = { #Bawazaji
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_kurds_0009 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_kurds_0010 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_kurds_0011 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_kurds_0010 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_kurds_0011 }
+    }
+	character:extra_kurds_0009 = {
+		change_first_name = Abdal-Hamid
+		dynasty_effect_ne = yes
+	}
+	character:extra_kurds_0002 = {
+		change_first_name = Ubayd-Allah
+	}
+	character:extra_kurds_0001 = {
+		dynasty_effect_ne = yes
+	}
 	character:extra_farighunids_4 = {
 		dynasty_effect_ne = yes
 	}
@@ -500,6 +523,9 @@
 	}
 	character:180645 = {
 		give_nickname = nick_the_ladder_legs
+	}
+	character:160294 = {
+		change_first_name = Karen
 	}
 	character:180629 = {
 		change_first_name = Gushtahm
