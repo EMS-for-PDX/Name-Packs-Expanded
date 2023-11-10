@@ -403,6 +403,7 @@
 	culture = "levantine"
 	trait = education_learning_2
 	father = 159271
+	mother = extra_bedouins_0031
 	1033.1.1 = {
 		birth = "1033.1.1"
 	}
@@ -3395,7 +3396,7 @@
 	culture = "egyptian"
 	1061.1.1 = {
 		birth = "1061.1.1"
-	}	
+	}
 	1111.1.1 = {
 		death = "1111.1.1"
 	}
@@ -3410,7 +3411,7 @@
 	father = 226051
 	1188.1.1 = {
 		birth = "1188.1.1"
-	}	
+	}
 	1205.1.1 = {
 		death = "1205.1.1"
 	}
@@ -3425,7 +3426,7 @@
 	father = 226051
 	1213.1.1 = {
 		birth = "1213.1.1"
-	}	
+	}
 	1236.11.1 = {
 		death = "1236.11.1"
 	}
@@ -3441,7 +3442,7 @@
 	father = 34702
 	1229.1.1 = {
 		birth = "1229.1.1"
-	}	
+	}
 	1255.1.1 = {
 		death = "1255.1.1"
 	}
@@ -3457,7 +3458,7 @@
 	father = 34703
 	1245.1.1 = {
 		birth = "1245.1.1"
-	}	
+	}
 	1295.1.1 = {
 		death = "1295.1.1"
 	}
@@ -3473,7 +3474,7 @@
 	father = 144081
 	1230.1.1 = {
 		birth = "1230.1.1"
-	}	
+	}
 	1260.1.1 = {
 		death = "1260.1.1"
 	}
@@ -3489,7 +3490,7 @@
 	father = 144082
 	1244.1.1 = {
 		birth = "1244.1.1"
-	}	
+	}
 	1260.1.1 = {
 		death = "1260.1.1"
 	}
@@ -3504,7 +3505,7 @@
 	father = 226051
 	1195.1.1 = {
 		birth = "1195.1.1"
-	}	
+	}
 	1241.1.1 = {
 		death = "1241.1.1"
 	}
@@ -3519,7 +3520,7 @@
 	1230.1.1 = {
 		birth = "1230.1.1"
 	}
-		
+
 	1263.1.1 = {
 		death = "1263.1.1"
 	}
@@ -5232,7 +5233,7 @@
 
 93477 = {
 	name = "Ali"
-	#placeholder
+	#placeholder, mostly made irrelevant in the FP3 history pass
 	religion = "ashari"
 	culture = "levantine"
 	1040.1.1 = {
@@ -5842,7 +5843,7 @@
 }
 
 159731 = {
-	name = "Shaykh"
+	name = "Ahmad"
 	religion = "ashari"
 	culture = "levantine"
 	dynasty = 1029123
@@ -5861,6 +5862,7 @@
 	culture = "levantine"
 	dynasty = 1029123
 	father = 159731
+	trait = ambitious
 	820.1.1 = {
 		birth = "820.1.1"
 	}
@@ -7206,20 +7208,20 @@
 	}
 }
 
-163133 = {
-	name = "Hamdan"
-	dynasty = 7518
+		  
+				
+			   
 
-	culture = "levantine"
-	religion = "ismaili"
+					  
+					 
 
-	837.1.1 = {
-		birth = "837.1.1"
-	}
-	874.1.1 = {
-		death = "874.1.1"
-	}
-}
+			
+				   
+  
+			
+				   
+  
+ 
 163167 = {
 	name = "Muhammad"
 	dynasty = 1029123
@@ -7250,18 +7252,18 @@
 	}
 }
 
-188655 = {
-	name = "Salahaddin" # fictitious holder of Al-Habbariyah
-	dynasty = 1042127 # Banu Taghlib
-	religion = "ashari"
-	culture = "levantine"
-	733.1.1 = {
-		birth = yes
-	}
-	800.1.1 = {
-		death = yes
-	}
-}
+		  
+														 
+								 
+					
+					  
+			
+			 
+  
+			
+			 
+  
+ 
 146038 = {
 	name = "Sulayman"
 	dynasty = 1022360 # Subaid
@@ -7691,7 +7693,7 @@
 	}
 }
 302364 = {
-	name = "Mohammed"
+	name = "Muhammad"
 	dynasty = 2001067	#Shuabid
 	religion = ashari
 	culture = levantine
@@ -7859,7 +7861,7 @@
 
 levantine000001 = {
 	name = "Zurara"
-	dynasty = 7503 
+	dynasty = 7503
 	religion = ashari
 	culture = levantine
 	789.1.1 = {
@@ -7872,7 +7874,7 @@ levantine000001 = {
 
 levantine000002 = {
 	name = "Musa"
-	dynasty = 7503 
+	dynasty = 7503
 	religion = ashari
 	father = levantine000001
 	culture = levantine
@@ -7886,7 +7888,7 @@ levantine000002 = {
 
 levantine000003 = {
 	name = "Abu_l_Maghra"
-	dynasty = 7503 
+	dynasty = 7503
 	religion = ashari
 	father = levantine000002
 	culture = levantine
@@ -7911,104 +7913,35 @@ levantine000004 = { #fictional ruler of Banu Shayban
 	}
 }
 
-levantine000005 = { #fictional wife 
-	name = "Jamila"
-	female = yes
-	religion = ashari
-	culture = levantine
-	829.1.1 = {
-		birth = yes
-	}
-	849.1.1 = {
-		add_spouse = levantine000004
-	}
-	895.1.1 = {
-		death = yes
-	}
-}
-
-levantine000006 = { #fictional son
-	name = "Zahir"
-	dynasty = levantine_banu_shayban
-	father = levantine000004
-	mother = levantine000005
-	religion = ashari
-	culture = levantine
-	850.1.1 = {
-		birth = yes
-	}
-	910.1.1 = {
-		death = yes
-	}
-}
-
-levantine000007 = { #fictional son
-	name = "Umar"
-	dynasty = levantine_banu_shayban
-	father = levantine000004
-	mother = levantine000005
-	religion = ashari
-	culture = levantine
-	851.1.1 = {
-		birth = yes
-	}
-	899.1.1 = {
-		death = yes
-	}
-}
-
-levantine000008 = { #fictional daughter
-	name = "Halima"
-	dynasty = levantine_banu_shayban
-	father = levantine000004
-	mother = levantine000005
-	female = yes
-	religion = ashari
-	culture = levantine
-	855.1.1 = {
-		birth = yes
-	}
-	910.1.1 = {
-		death = yes
-	}
-}
-
-levantine000011 = { #Ayyub's father
-	name = "Ahmed"
-	dynasty = 1042127 #Banu Taghlib
-	religion = ashari
-	culture = levantine
-	
-	820.1.1 = {
-		birth = yes
-	}
-	865.1.1 = {
-		death = yes
-	}
-}
+###########Banu Taghlib for FP3 - this dynasty is very ancient, large and well-attested, much more work will be needed! I focused on their rule in the Jazira. ####################
 
 levantine000009 = { #Ruler in 867
-	name = "Ayyub"
-	dynasty = 1042127 #Banu Taghlib
+	name = "Ahmad"
+	dynasty_house = house_attab
 	religion = ashari
 	culture = levantine
-	father = levantine000011
-	
+	father = levantine0001
+
 	840.1.1 = {
 		birth = yes
 	}
 	889.1.1 = {
+							  
+  
+			
 		death = yes
 	}
 }
 
 levantine000012 = { #Ayyub's son
 	name = "Hasan"
-	dynasty = 1042127 #Banu Taghlib
+	dynasty_house = house_attab
+						 
+						 
 	religion = ashari
 	culture = levantine
 	father = levantine000009
-	
+
 	856.1.1 = {
 		birth = yes
 	}
@@ -8017,12 +7950,324 @@ levantine000012 = { #Ayyub's son
 	}
 }
 
+extra_taghlibs_1 = {
+	name = "Al-Khattab"
+	dynasty_house = house_al_adawiyya #Banu Taghlib al-ʿAdawīyya
+	religion = nestorian 
+	culture = bedouin
+	father = extra_taghlibs_10 #this connection is completely wrong, but there was no time to delve deeper into the history of this branch of the dynasty for FP3. 
+	742.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_2 = {
+	name = "Umar"
+	dynasty_house = house_al_adawiyya #Banu Taghlib al-ʿAdawīyya
+						 
+						 
+	religion = nestorian
+	culture = levantine
+	father = extra_taghlibs_1
+	765.1.1 = {
+		birth = yes
+	}
+	801.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_3 = { #appointed ruler of Mosul in 813
+	name = "al-Hasan"
+	dynasty_house = house_al_adawiyya #Banu Taghlib al-ʿAdawīyya
+	religion = nestorian 
+	culture = levantine
+	father = extra_taghlibs_2
+	787.1.1 = {
+		birth = yes
+	}
+	812.1.1 = {
+		faith = ashari 
+	}
+	826.10.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_4 = { 
+	name = "Malik"
+	dynasty_house = house_attab #Banu Taghlib Attab
+	religion = nestorian 
+	culture = levantine
+	father = extra_taghlibs_16
+	750.1.1 = {
+		birth = yes
+	}
+	813.2.9 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_5 = { #appointed ruler of Diyar Rabi'a ~820
+	name = "Tawf"
+	dynasty_house = house_attab #Banu Taghlib Attab
+	religion = nestorian 
+	culture = levantine
+	father = extra_taghlibs_4
+	771.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		faith = ashari 
+	}
+	836.5.12 = {
+		death = yes
+	}
+}
+
+levantine0001 = {
+	name = "MA_lik" #Governor of Damascus and Urdunn in early 870's
+	dynasty_house = house_attab
+	religion = nestorian
+	culture = levantine
+	father = extra_taghlibs_5
+	808.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		faith = ashari 
+	}
+	873.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_6 = { 
+	name = "al-Harith"
+	dynasty = 1042127
+	religion = nestorian 
+	culture = levantine
+	father = extra_taghlibs_10
+	750.1.1 = {
+		birth = yes
+	}
+	822.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_7 = { #appointed ruler of Diyar Rabi'a ~820
+	name = "Hamdun"
+	dynasty = 1042127
+	religion = nestorian 
+	culture = levantine
+	father = extra_taghlibs_6
+	780.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+163133 = { #joined the Azariqa rebellion, founded the Hamdanid dynasty 
+	name = "Hamdan"
+	dynasty_house = house_hamdan #a little bit early, but it makes the dynasty tree better
+	religion = ashari
+	culture = levantine
+	father = extra_taghlibs_7
+	trait = zealous
+	trait = education_martial_3
+	832.1.1 = {
+		birth = yes
+	}
+	863.1.1 = {
+		effect = {
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:azariqa }
+	 		learn_language_of_culture = culture:persian
+		} 
+	}
+	895.1.1 = {
+		death = {
+			death_reason = death_prison 
+		}
+	}
+}
+
+extra_taghlibs_8 = { 
+	name = "Ibrahim"
+	dynasty_house = house_hamdan #Banu Taghlib Attab
+	religion = ashari
+	culture = levantine
+	father = 163133
+	855.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_9 = { 
+	name = "Husayn"
+	dynasty_house = house_hamdan
+	religion = ashari
+	culture = levantine
+	father = 163133
+	861.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = yes
+	}
+}
+
+fictional_taghlibs_1 = { 
+	name = "Aisha"
+	dynasty_house = house_hamdan
+	religion = ashari
+	female = yes 
+	culture = levantine
+	father = 163133
+ 
+	857.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_10 = { 
+	name = "Luqman"
+	dynasty = 1042127
+	religion = nestorian 
+	culture = levantine
+	father = extra_taghlibs_11
+	723.1.1 = {
+			
+		birth = yes
+	}
+	798.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_11 = { 
+	name = "Rashid"
+	dynasty = 1042127
+	religion = nestorian 
+	culture = bedouin
+	father = extra_taghlibs_12
+	698.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_12 = { 
+	name = "al-Muthanna"
+	dynasty = 1042127
+	religion = nestorian 
+	culture = bedouin
+	father = extra_taghlibs_13
+	661.1.1 = {
+		birth = yes
+	}
+	719.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_13 = { 
+	name = "Rafi"
+	dynasty = 1042127
+	religion = nestorian 
+	culture = bedouin
+	father = extra_taghlibs_14
+	638.1.1 = {
+		birth = yes
+	}
+	701.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_14 = { 
+	name = "al-Harith"
+	dynasty = 1042127
+	religion = nestorian 
+	culture = bedouin
+	father = extra_taghlibs_15
+	599.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_15 = { 
+	name = "Utayr"
+	dynasty = 1042127
+	religion = nestorian 
+	culture = bedouin
+	568.1.1 = {
+		birth = yes
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+
+extra_taghlibs_16 = { 
+	name = "Attab"
+	dynasty = 1042127
+	religion = nestorian 
+	culture = levantine
+	father = extra_taghlibs_11 #this parentage is entirely fictional, but works for now to tie the dynasty together 
+	725.1.1 = {
+		birth = yes
+	}
+	755.1.1 = {
+		dynasty_house = house_attab
+	}
+	771.2.9 = {
+		death = yes
+	}
+}
+
+fictional_taghlibs_2 = { #attested circumstancially 
+	name = "Noor"
+	dynasty_house = house_al_adawiyya
+	religion = nestorian
+	female = yes 
+	culture = levantine
+	father = extra_taghlibs_2
+	786.1.1 = {
+		birth = yes
+	}
+	802.1.1 = {
+		add_spouse = extra_taghlibs_5
+	}
+	822.5.10 = {
+		death = yes
+	}
+}
+
+###################Banu Taghlib end###########################
+
 levantine000010 = { #fictional ruler of Banu Kilab
 	name = "Khalid"
 	dynasty = 1042113
 	religion = ashari
 	culture = levantine
-	
+
 	839.1.1 = {
 		birth = yes
 	}
@@ -8034,7 +8279,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 #Abbasids moved from Bedouin
 34002 = {
 	name = "Al-Mansur"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34000
@@ -8052,23 +8297,26 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34003 = {
 	name = "Al-Mahdi"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34002
 	mother = 188746
 	trait = sayyid
+	trait = lifestyle_hunter
 	735.1.1 = {
 		birth = yes
 	}
 	785.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_hunting_accident
+		}
 	}
 }
 
 34004 = {
 	name = "Al-Hadi"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34003
@@ -8083,22 +8331,26 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34005 = {
 	name = "Harun_al-Rashid"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34003
+	trait = education_diplomacy_4
 	trait = sayyid
+	trait = just
 	763.1.1 = {
 		birth = "763.1.1"
 	}
 	809.1.1 = {
-		death = "809.1.1"
+		death = {
+			death_reason = death_ill
+		}
 	}
 }
 
 34006 = {
 	name = "Al-Amin"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34005
@@ -8113,8 +8365,8 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34007 = {
 	name = "Al-Ma_mum"
-	dynasty = 101727
-	religion = "ashari"
+	dynasty_house = house_abbasid
+	religion = "mutazila" #FP3 change - he promoted this doctrine throughout.
 	culture = levantine
 	father = 34005
 	trait = sayyid
@@ -8128,8 +8380,8 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34008 = {
 	name = "Al-Mu_tasim"
-	dynasty = 101727
-	religion = "ashari"
+	dynasty_house = house_abbasid
+	religion = "mutazila" #FP3 change - he promoted this doctrine throughout.
 	culture = levantine
 	father = 34005
 	trait = sayyid
@@ -8143,11 +8395,13 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34009 = {
 	name = "Al-Wathiq"
-	dynasty = 101727
-	religion = "ashari"
+	dynasty_house = house_abbasid
+	religion = "mutazila" #FP3 change - he promoted this doctrine throughout.
 	culture = levantine
 	father = 34008
 	trait = sayyid
+	trait = one_eyed #FP3 - one of his eyes was paralyzed
+	trait = beauty_good_1 #FP3 - described by al-Tabari as very handsome
 	817.1.1 = {
 		birth = "817.1.1"
 	}
@@ -8158,7 +8412,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34010 = {
 	name = "Al-Mutawakkil"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34008
@@ -8166,17 +8420,32 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	821.3.1 = {
 		birth = "821.3.1"
 	}
+	839.1.1 = {
+		add_spouse = abbasid_concubines_5
+	}
+	840.1.1 = {
+		add_spouse =abbasid_concubines_6
+	}
+	841.1.1 = {
+		add_spouse = abbasid_concubines_2
+	}
+	845.1.1 = {
+		add_spouse = abbasid_concubines_1
+	}
+	847.1.1 = {
+		add_spouse = abbasid_concubines_3 
+	}
 	861.12.1 = {
-		death = {
-			death_reason = death_murder
-			killer = 34012
-		}
+		# Might have been killed by his son al-Muntasir (34012), but it's far from certain.
+		death = { death_reason = death_murder }
+				 
+   
 	}
 }
 
 34011 = {
 	name = "Muhammad"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34008
@@ -8191,10 +8460,11 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34012 = {
 	name = "Al-Muntasir"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34010
+	mother = abbasid_concubines_5
 	trait = sayyid
 	840.1.1 = {
 		birth = "840.1.1"
@@ -8209,7 +8479,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34013 = {
 	name = "Al-Musta_in"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34011
@@ -8227,20 +8497,25 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34014 = {
 	name = "Al-Mu_tazz"
-	dynasty = 101727
+	dna = 34014_caliph
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34010
+	mother = abbasid_concubines_1
 	trait = sayyid
-	trait = callous
-	trait = cynical
+	trait = poet
+	trait = generous
 	trait = arbitrary
-	trait = greedy
-	trait = lustful
-	trait = education_stewardship_1
-	
+	trait = calm
+				
+	trait = education_diplomacy_1
+
 	847.1.1 = {
 		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
 	866.1.1 = {
 		add_pressed_claim = title:k_egypt # Tulunids
@@ -8256,6 +8531,38 @@ levantine000010 = { #fictional ruler of Banu Kilab
 			flag = recent_nation_fracturing_faction_war
 			years = faction_nation_fracturing_war_defeat_cooldown
 		}
+
+		add_character_modifier = {
+			modifier = fp3_struggle_caliph_super_suspicious_modifier
+		}
+		
+		effect = {
+			add_gold = 700
+			spawn_army = {
+				name = event_troop_default_name
+				levies = 200
+				men_at_arms = {
+					type = mubarizun
+					stacks = 1
+				}
+				men_at_arms = {
+					type = ayyar
+					stacks = 1
+				}
+				men_at_arms = {
+					type = camel_rider
+					stacks = 1
+				}
+				location = province:4805 
+				origin = province:4805 
+				inheritable = yes
+			}
+			if = {
+				limit = { has_realm_law = crown_authority_0 }
+				add_realm_law = crown_authority_1
+			}
+		}
+		
 	}
 	869.1.1 = {
 		death = yes
@@ -8264,10 +8571,14 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34015 = {
 	name = "Al-Muhtadi"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34009
+	trait = education_learning_2
+	trait = just
+	trait = chaste
+	trait = temperate
 	trait = sayyid
 	833.1.1 = {
 		birth = yes
@@ -8279,10 +8590,11 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34016 = {
 	name = "Al-Mu_tamid"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34010
+	mother = abbasid_concubines_2
 	trait = sayyid
 	trait = just
 	trait = diligent
@@ -8298,25 +8610,39 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34017 = {
 	name = "Al-Muwaffak"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34010
+	mother = abbasid_concubines_6
+	martial = 7
+	diplomacy = 6
+	stewardship = 6
+	trait = education_martial_3
+	trait = brave
+	trait = diligent
+	trait = gregarious 
 	trait = sayyid
-	840.1.1 = {
+	843.11.20 = {
 		birth = yes
 	}
-	890.1.1 = {
+	860.1.1 = {
+		effect = {
+			set_relation_best_friend = character:163132
+		}
+	}
+	891.6.2 = {
 		death = yes
 	}
 }
 
 34018 = {
 	name = "Al-Mu_tadid"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34017
+	trait = sadistic 
 	trait = sayyid
 	857.1.1 = {
 		birth = yes
@@ -8328,7 +8654,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34019 = {
 	name = "Al-Muktafi"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34018
@@ -8343,7 +8669,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34020 = {
 	name = "Al-Qahir"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34018
@@ -8358,7 +8684,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34021 = {
 	name = "Al-Muqtadir"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34018
@@ -8373,7 +8699,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34022 = {
 	name = "Ar-Radi"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34021
@@ -8388,7 +8714,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34023 = {
 	name = "Al-Muttaqi"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34021
@@ -8403,7 +8729,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34024 = {
 	name = "Al-Mustakfi"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34019
@@ -8418,7 +8744,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34025 = {
 	name = "Al-Muti"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34021
@@ -8434,7 +8760,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 3082 = {
 	name = "Al-Qadir"
 	# AKA: Ahmad al
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34023
@@ -8456,7 +8782,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 3084 = {
 	name = "Al-Qa_im"
 	# AKA: Abdallah al
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 3082
@@ -8469,6 +8795,9 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	1017.1.1 = {
 		birth = "1017.1.1"
 	}
+	1058.1.1 = {
+		add_spouse = 1000229910
+	}
 	1075.1.1 = {
 		death = "1075.1.1"
 	}
@@ -8477,7 +8806,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 34026 = {
 	name = "Muhammad"
 	#Muhammad Dhakirat
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 3084
@@ -8493,7 +8822,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 3086 = {
 	name = "Al-Muqtadi"
 	# AKA: Abdallah al
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34026
@@ -8513,7 +8842,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34027 = {
 	name = "Az-Zahir"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 227000
@@ -8528,7 +8857,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34028 = {
 	name = "Al-Mustansir"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34027
@@ -8543,7 +8872,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34029 = {
 	name = "Al-Musta_sim"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34028
@@ -8558,7 +8887,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34030 = {
 	name = "Abu-Bakr"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 144060
@@ -8573,7 +8902,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34031 = {
 	name = "Al-Hasan"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34030
@@ -8588,7 +8917,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34032 = {
 	name = "Al-Mustansir"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34031
@@ -8603,7 +8932,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34033 = {
 	name = "Al-Hakim"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34032
@@ -8618,7 +8947,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34034 = {
 	name = "Al-Mustakfi"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34033
@@ -8633,7 +8962,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34035 = {
 	name = "Ahmad"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34033
@@ -8648,7 +8977,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34036 = {
 	name = "Al-Wathiq"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34035
@@ -8663,7 +8992,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34037 = {
 	name = "Al-Hakim"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34034
@@ -8678,7 +9007,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34038 = {
 	name = "Al-Mu_tadid"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34034
@@ -8693,7 +9022,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 34039 = {
 	name = "Al-Mutawakkil"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34038
@@ -8708,7 +9037,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 188747 = {
 	name = "Ja_far"
-	dynasty = 101727
+	dynasty_house = house_abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34002
@@ -8724,7 +9053,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 
 188648 = {
 	name = "al-Hadi" # half brother of al-Mahdi
-	dynasty = 101727 # Abbasid
+	dynasty_house = house_abbasid # Abbasid
 	religion = "ashari"
 	culture = levantine
 	father = 34002
@@ -8736,19 +9065,19 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	}
 }
 
-levantine0001 = {
-	name = "MA_lik" #Governor of Damascus and Urdunn in early 870's
-	dynasty = bedouindyn007
-	religion = "ashari"
-	culture = levantine
-	father = bedouin0051
-	840.1.1 = {
-		birth = yes
-	}
-	896.1.1 = {
-		death = yes
-	}
-}
+				 
+																
+						
+					
+					
+					 
+			
+			 
+  
+			
+			 
+  
+ 
 
 20780 = {
 	name = "Muawiyah"
@@ -8970,7 +9299,7 @@ levantine0001 = {
 	religion = muwalladi
 	culture = levantine
 	trait = education_stewardship_2
- 
+
 	father = 45001 # Emir al-Rasid of Cordoba
 
 	1036.1.1 = {
@@ -9012,7 +9341,7 @@ levantine0001 = {
 		add_concubine = levantine0024 # Hulal
 	}
 	763.1.1= {
-	 	give_nickname = nick_the_hawk_of_quraysh
+		give_nickname = nick_the_hawk_of_quraysh
 	}
 	788.9.29 = {
 		death = yes
@@ -11794,7 +12123,7 @@ levantine0125 = {
 	1054.1.1 = {
 		birth = yes
 	}
-	 1070.1.1 = {
+	1070.1.1 = {
 		trait = education_learning_2
 	}
 	1104.1.1 = {
@@ -11866,6 +12195,27 @@ levantine0129 = {
 		birth = yes
 	}
 	994.1.1 = {
+		death = yes
+	}
+}
+
+levantine0130 = {
+	name = "Rajiya" # Name fictionalised: we know she existed, just not what she was called.
+	dynasty_house = house_abbasid
+	religion = ashari
+	culture = levantine
+	father = 3084 # Calipha al-Qa'im
+	female = yes
+	trait = sayyid
+
+	# Dates are fictionalised: we only really know that she was of age to marry Alp Arslan's uncle/prior ruler of the Turks, Tughril-Beg.
+	1037.1.1 = {
+		birth = yes
+	}
+	1063.1.1 = {
+		add_spouse = 3038
+	}
+	1080.1.1 = {
 		death = yes
 	}
 }
@@ -12197,3 +12547,695 @@ levantine0129 = {
 		death = yes
 	}
 }
+
+#FP3 additions
+
+###Azariqa Rebels
+
+azariqa_0005 = { #continuation from bedouin.txt
+	name = "Musa"
+	dynasty = azariqa_bamid
+	religion = azariqa
+	culture = levantine
+
+	793.1.4 = {
+		birth = yes
+	}
+	835.3.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+azariqa_0006 = { #historical Azariqa leader in Bam
+	name = "Esmail"
+	dynasty = azariqa_bamid
+	religion = azariqa
+	culture = levantine
+	father = azariqa_0005
+	diplomacy = 9
+	martial = 12
+	prowess = 15
+	trait = education_martial_3
+	trait = peasant_leader
+	trait = unyielding_defender
+	trait = temperate
+	trait = callous
+	trait = zealous
+	disallow_random_traits = yes
+
+	821.12.12 = {
+		birth = yes
+	}
+	866.1.1 = {
+		effect = {
+			spawn_army = {
+				name = azariqa_fanatics
+				levies = 400
+				men_at_arms = {
+					type = mubarizun
+					stacks = 1
+				}
+				location = province:4083
+				origin = province:4083 
+				inheritable = yes
+			}
+			spawn_army = {
+				name = azariqa_fanatics
+				levies = 400
+				men_at_arms = {
+					type = mubarizun
+					stacks = 1
+				}
+				location = province:4083
+				origin = province:4083 
+				inheritable = yes
+			}
+			spawn_army = {
+				name = azariqa_fanatics
+				levies = 400
+				men_at_arms = {
+					type = mubarizun
+					stacks = 1
+				}
+				location = province:4083
+				origin = province:4083 
+				inheritable = yes
+			}
+			spawn_army = {
+				name = azariqa_fanatics
+				levies = 400
+				men_at_arms = {
+					type = mubarizun
+					stacks = 1
+				}
+				location = province:4083
+				origin = province:4083 
+				inheritable = yes
+			}
+		}
+	}
+	868.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 163101 #Ya'qub Saffarid
+		}
+	}
+}
+
+azariqa_0009 = { #historical Azariqa "caliph" in Karukh/Herat
+	name = "Abd-al-Rahim"
+	dna = scripted_appearence_azariqa_caliph
+	dynasty = azariqa_karukhid
+	religion = azariqa
+	culture = levantine
+	diplomacy = 8
+	martial = 12
+	intrigue = 10
+	stewardship = 3
+	learning = 5
+
+	trait = education_martial_2
+	trait = stubborn
+	trait = arrogant
+	trait = zealous
+	trait = one_eyed
+	trait = lifestyle_blademaster
+	trait = organizer
+	disallow_random_traits = yes
+	815.6.4 = {
+		birth = yes
+	}
+	866.1.1 = {
+		effect = {
+			add_character_flag = has_scripted_appearance
+			set_relation_potential_rival = character:163101 #Ya'qub Saffarid
+			set_relation_friend = character:azariqa_0003
+			set_relation_rival = character:163156 #Ibrahim Saffarid
+			add_unpressed_claim = title:d_herat
+			add_gold = 200
+			spawn_army = {
+				name = azariqa_fanatics
+				levies = 500
+				men_at_arms = {
+					type = ayyar
+					stacks = 2
+				}
+				location = province:4215 #Herat
+				origin = province:4215 #Herat
+				inheritable = no
+			}
+		}
+	}
+	875.1.1 = {
+		death = {
+			death_reason = death_murdered_by_religious_rebels #according to some other accounts, Ya'qub Saffarid had him beheaded
+		}
+	}
+}
+
+#Wives and concubines
+
+####Abbasid wives and concubines of assorted cultures####
+
+abbasid_concubines_1 = { #mother of al-Mut'azz
+	name = "Qabiha"
+	religion = orthodox
+	culture = greek
+	female = yes
+	825.1.1 = { #speculative 
+		birth = yes
+	}
+	842.1.1 = {
+		faith = ashari 
+	}
+	875.1.1 = {
+		death = yes
+	}
+}
+
+abbasid_concubines_2 = { #mother of al-Mu'tamid 
+	name = "Fityan"
+	religion = mutazila 
+	culture = levantine
+	female = yes
+	825.1.1 = { #speculative 
+		birth = yes
+	}
+	842.1.1 = {
+		faith = ashari 
+	}
+	865.1.1 = {
+		death = yes
+	}
+}
+
+abbasid_concubines_3 = { #wife of Al-Mutawakkil
+	name = "Farida"
+	religion = mutazila
+	culture = levantine
+	female = yes
+	trait = poet
+	trait = infertile #she never got any children it seems, so this seems reasonable 
+	trait = beauty_good_1 
+	830.1.1 = { 
+		birth = yes
+	}
+	845.1.1 = {
+		effect = {
+			set_relation_friend = character:abbasid_concubines_4
+		}
+		add_spouse = 34009 #Caliph al-Wathiq
+	}
+	880.1.1 = {
+		death = yes #fictional 
+	}
+}
+
+abbasid_concubines_4 = { #famous poet and singer at the caliphal courts
+	name = "Shariyah"
+	religion = ashari
+	culture = bedouin 
+	female = yes
+	diplomacy = 7
+	trait = education_diplomacy_3
+	trait = gregarious
+	trait = poet
+	trait = wild_oat
+	trait = diplomatic_court_2
+	815.1.1 = { 
+		birth = yes
+	}
+	843.1.1 = {
+		employer = 34009 #caliph al-Wathic
+		effect = {
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:mutazila }
+		} 
+	}
+	866.1.1 = {
+		employer = 1000230509 #Muhammad ibn Abdallah of Fars (fictional employer, but seems resonable) 
+		effect = {
+			set_relation_friend = character:1000230509
+		}
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+abbasid_concubines_5 = { #wife of Al-Mutawakkil
+	name = "Hubshiya"
+	religion = orthodox
+	culture = greek
+	female = yes
+	825.1.1 = { 
+		birth = yes
+	}
+	839.1.1 = {
+		faith = ashari 
+	}
+	861.1.1 = {
+		death = {	
+			death_reason = death_court_intrigue
+		}
+	}
+}
+
+abbasid_concubines_6 = { #wife of Al-Mutawakkil
+	name = "Umm"
+	religion = muwalladi
+	culture = andalusian
+	female = yes
+	825.1.1 = { 
+		birth = yes
+	}
+	839.1.1 = {
+		faith = ashari 
+	}
+	845.1.1 = {
+		death = {	
+			death_reason = death_court_intrigue
+		}
+	}
+}
+
+####Extra Abbasid princes####
+
+extra_abbasids_1 = { 
+	name = "al-mu_ayyad"
+	religion = ashari
+	culture = levantine
+	father = 34010
+	mother = abbasid_concubines_6
+	842.1.1 = {
+		birth = yes 
+	}
+	865.12.12 = { #a few days early for dramatic effect 
+		death = {	
+			death_reason = death_smothered_by_downy_robe
+			killer = 34014
+		}
+	}
+}
+
+extra_abbasids_2 = { #the forgotten son of al-Mu'tazz
+	name = "Abdallah"
+	religion = ashari
+	culture = levantine
+	father = 34014
+	mother = extra_karluks_6
+	trait = pensive
+	861.1.1 = {
+		birth = yes 
+	}
+	908.12.17 = { 
+		death = {	
+			death_reason = death_murder
+		}
+	}
+}
+
+extra_abbasids_3 = {
+	name = "Abdul-Wahab"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34012
+	853.1.1 = {
+		birth = yes
+	}
+	908.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_4 = {
+	name = "Abdallah"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34009
+	838.1.1 = {
+		birth = yes
+	}
+	846.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_5 = {
+	name = "Abdallah"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34015
+	852.1.1 = {
+		birth = yes
+	}
+	896.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_6 = {
+	name = "Abdallah"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34012
+	854.1.1 = {
+		birth = yes
+	}
+	897.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_7 = {
+	name = "Abu_Al-Abbas"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34013
+	857.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_8 = {
+	name = "Abu_Abdallah"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	845.1.1 = {
+		birth = yes
+	}
+	854.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_9 = {
+	name = "Abu_Al-Hasan"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	853.1.1 = {
+		birth = yes
+	}
+	886.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_10 = {
+	name = "Abu_Al-Qasim"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34013
+	858.1.1 = {
+		birth = yes
+	}
+	926.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_11 = {
+	name = "Abu_Isa"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	852.1.1 = {
+		birth = yes
+	}
+	893.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_12 = {
+	name = "Abu_Shaybah"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	849.1.1 = {
+		birth = yes
+	}
+	872.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_13 = {
+	name = "Ahmad"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34008
+	825.1.1 = {
+		birth = yes
+	}
+	868.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_14 = {
+	name = "Ahmad"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34009
+	840.1.1 = {
+		birth = yes
+	}
+	909.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_15 = {
+	name = "Ahmad"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34012
+	852.1.1 = {
+		birth = yes
+	}
+	901.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_16 = {
+	name = "Aisha"
+	female = yes
+	dynasty_house = house_abbasid 
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	851.1.1 = {
+		birth = yes
+	}
+	918.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_17 = {
+	name = "al-Abbasah"
+	female = yes
+	dynasty_house = house_abbasid 
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34009
+	841.1.1 = {
+		birth = yes
+	}
+	888.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_18 = {
+	name = "Arwa"
+	female = yes
+	dynasty_house = house_abbasid 
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	849.1.1 = {
+		birth = yes
+	}
+	905.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_19 = {
+	name = "Hamza"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34014
+	862.1.1 = {
+		birth = yes
+	}
+	914.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_20 = {
+	name = "Ibrahim"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34009
+	835.1.1 = {
+		birth = yes
+	}
+	896.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_21 = {
+	name = "Ismail"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	mother = abbasid_concubines_1
+	848.1.1 = {
+		birth = yes
+	}
+	887.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_22 = {
+	name = "Maymuna"
+	female = yes
+	dynasty_house = house_abbasid
+	religion = "ashari"	
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	845.1.1 = {
+		birth = yes
+	}
+	921.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_23 = {
+	name = "Muhammad"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	850.1.1 = {
+		birth = yes
+	}
+	888.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_24 = {
+	name = "Musa"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	mother = abbasid_concubines_5
+	841.1.1 = {
+		birth = yes
+	}
+	862.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_25 = {
+	name = "Musa"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = extra_abbasids_21
+	866.1.1 = {
+		birth = yes
+	}
+	909.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_26 = {
+	name = "Umm_Muhammad"
+	female = yes
+	dynasty_house = house_abbasid 
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	845.1.1 = {
+		birth = yes
+	}
+	896.1.1 = {
+		death = yes
+	}
+}
+
+extra_abbasids_27 = {
+	name = "Ya_qub"
+	dynasty_house = house_abbasid
+	religion = "ashari"
+	culture = "levantine"
+	trait = sayyid
+	father = 34010
+	854.1.1 = {
+		birth = yes
+	}
+	869.1.1 = {
+		death = yes
+	}
+}
+
+
