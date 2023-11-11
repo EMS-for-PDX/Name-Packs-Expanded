@@ -382,17 +382,19 @@
 	character:extra_bedouins_0020.dynasty = { #Banu Salema
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0020 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0021 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0027 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0028 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0029 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0031 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0027 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0028 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0029 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0031 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0022 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0023 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0021 }
-        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0027 }
-        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0028 }
-        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0029 }
-        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0031 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_bedouins_0027 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_bedouins_0028 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_bedouins_0029 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_bedouins_0031 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0022 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0023 }
 	}
 	character:188614.house = {
 		set_variable = {
@@ -416,13 +418,50 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0018 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0019 }
 	}
+	character:fictional_bedouins_0018 = { # Kinda
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0018 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0019 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_bedouins_0019 }
+	}
+	character:fictional_bedouins_0003 = { # al-Azd
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0003 }
+	}
+	
+	
+	character:188607.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic043
+		}
+	}
+	character:188607.dynasty = { #Tamimi
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic043 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:188607 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:azariqa_0001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:azariqa_0002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:azariqa_0003 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:azariqa_0001 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:azariqa_0002 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:azariqa_0003 }
+	}
+	
+	character:fictional_bedouins_0003 = {
+		dynasty_effect_ne = yes
+	}
+	character:fictional_bedouins_0018 = {
+		change_first_name = Qays
+		dynasty_effect_ne = yes
+	}
+	character:extra_bedouins_0023 = {
+		change_first_name = Muhammad
+	}
 	character:extra_bedouins_0022 = {
 		change_first_name = Abdal-Aziz
 	}
-	character:extra_bedouins_0029 = {
+	character:fictional_bedouins_0029 = {
 		change_first_name = Abdal-Wahhab
 	}
-	character:extra_bedouins_0028 = {
+	character:fictional_bedouins_0028 = {
 		change_first_name = Asad
 	}
 	character:extra_bedouins_0020 = {
@@ -723,6 +762,56 @@
 	}
 	character:34555.dynasty = { #Naguib
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:20818 }
+	}
+	character:fictional_bedouins_0040.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic044
+		}
+	}
+	character:fictional_bedouins_0040.dynasty = { #Other Numayr?
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic044 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0040 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0025 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0039 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0029 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0030 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0026 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0028 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0027 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0033 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0036 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0034 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0038 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0039 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0035 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0032 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0031 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0025 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0029 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0030 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0026 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0027 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0033 }
+	}
+	character:extra_bedouins_0028 = {
+		change_first_name = Mutah
+	}
+	character:extra_bedouins_0039 = {
+		change_first_name = Nura
+	}
+	character:extra_bedouins_0038 = {
+		change_first_name = Qamar
+	}
+	character:extra_bedouins_0026 = {
+		change_first_name = Wattab
+	}
+	character:extra_bedouins_0025 = {
+		change_first_name = Sabiq
+	}
+	character:20818 = {
+		change_first_name = Hasan
+		dynasty_effect_ne = yes
 	}
 	character:bedouin0117 = {
 		change_first_name = Wattab
