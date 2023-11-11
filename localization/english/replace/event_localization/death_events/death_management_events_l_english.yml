@@ -59,7 +59,7 @@
 
  death_management.liege.desc: "Your vassal, [dead_character.Custom('FirstNameNoTooltip')], [dead_character.GetDeathReason]."
 
- death_management.pinned.desc: "A person of interest to you, [dead_character.GetFullNameNoTooltip], [dead_character.GetDeathReason]."
+ death_management.pinned.desc: "A person of interest to you, [dead_character.Custom('FullNameNoTooltip')], [dead_character.GetDeathReason]."
 
  death_management.1008.desc: "[dead_character.Custom('TitledFirstName')], the spouse of my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('spouse_of_dead_character'))] [spouse_of_dead_character.Custom('FirstName')], has passed away. All those carefully crafted plans have been crushed by [ROOT.Char.GetFaith.DeathDeityNamePossessive] fickle impulse, though such complaints might seem petty and insubstantial compared to [dead_character.GetHerHis] family's pain..."
  death_management.1008.a: "Rest in peace."

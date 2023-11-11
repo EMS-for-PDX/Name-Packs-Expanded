@@ -54,7 +54,7 @@
  escape_from_prison_decision_effect_tooltip: "@warning_icon! The chance of success depends on your [prowess|E], [traits|E], and whether you are in the [dungeon|E]"
 
  tribal_challenge_ruler_decision: "Challenge the [ROOT.Char.GetLiege.Custom('TitleAsNameNoTooltip')|U]"
- tribal_challenge_ruler_decision_desc: "[ROOT.Char.GetLiege.Custom('FirstName')] carries the title of [ROOT.Char.GetLiege.Custom('TitleAsNameNoTooltip')] as if it is unquestionably [ROOT.Char.GetLiege.GetHersHis]; as if it is not skill and strength alone that should decide our leader.\n\nI, [ROOT.Char.GetFullNameNoTooltip], question [ROOT.Char.GetLiege.GetHerHis] right to the title, to all of [ROOT.Char.GetLiege.GetPrimaryTitle.GetNameNoTier], and I will be silent no longer!"
+ tribal_challenge_ruler_decision_desc: "[ROOT.Char.GetLiege.Custom('FirstName')] carries the title of [ROOT.Char.GetLiege.Custom('TitleAsNameNoTooltip')] as if it is unquestionably [ROOT.Char.GetLiege.GetHersHis]; as if it is not skill and strength alone that should decide our leader.\n\nI, [ROOT.Char.Custom('FullNameNoTooltip')], question [ROOT.Char.GetLiege.GetHerHis] right to the title, to all of [ROOT.Char.GetLiege.GetPrimaryTitle.GetNameNoTier], and I will be silent no longer!"
  tribal_challenge_ruler_decision_tooltip: "Challenge the [ROOT.Char.GetLiege.Custom('TitleAsNameNoTooltip')|U] for [ROOT.Char.GetLiege.GetHerHis] title and [ROOT.Char.GetLiege.GetHerHis] land"
  tribal_challenge_ruler_effect_tooltip: "[liege_to_challenge.Custom('TitledFirstNameNoTooltip')] will decide upon the challenge\n"
  tribal_challenge_ruler_desc_success: "You win the challenge"
@@ -197,7 +197,7 @@
  give_sky_burial_vassals: "Every Vassal who believes in Sky Burials"
 
  raise_runestone_decision: "Raise a Runestone"
- raise_runestone_decision_desc: "[ROOT.Var('ancestor_to_bury').Char.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has passed away. I will raise a runestone to honor [ROOT.Var('ancestor_to_bury').Char.GetHerHis] life, and to bring fame to all who bear the name [ROOT.Var('ancestor_to_bury').Char.GetDynasty.GetName]. Future generations will never forget the greatness of [ROOT.Var('ancestor_to_bury').Char.GetFullNameNicknamedNoTooltip]!"
+ raise_runestone_decision_desc: "[ROOT.Var('ancestor_to_bury').Char.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has passed away. I will raise a runestone to honor [ROOT.Var('ancestor_to_bury').Char.GetHerHis] life, and to bring fame to all who bear the name [ROOT.Var('ancestor_to_bury').Char.GetDynasty.GetName]. Future generations will never forget the greatness of [ROOT.Var('ancestor_to_bury').Char.Custom('FullNameNickNoTooltip')]!"
  raise_runestone_decision_tooltip: "Raise a runestone to honor your [ROOT.Char.Custom2('RelationToMeShort', ROOT.Var('ancestor_to_bury').Char)]"
  raise_runestone_decision_warning: "@warning_icon!#X The runestone will be destroyed if the [county|e] falls to someone outside of your [dynasty|E]#!"
  raise_runestone_decision_confirm: "Raise Runestone"

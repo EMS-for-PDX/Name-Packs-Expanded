@@ -20,8 +20,8 @@
  COURT_GRANDEUR_GRACE_PERIOD_NO_LEVEL_EFFECT_TOOLTIP: "losing all effects"
  COURT_GRANDEUR_GRACE_PERIOD_TOOLTIP: "Due to recently losing a [court_grandeur_level|E] you will have [CourtGrandeurData.GetGracePeriodEndDate.GetTimeToDate|V] to achieve [GetCourtGrandeurLevelModifier( CourtGrandeurData.GetCurrentLevel ).GetNameWithTooltip] again before [SelectLocalization( EqualTo_int32( CourtGrandeurData.GetCurrentLevelIgnoreGrace, '(int32)0' ), 'COURT_GRANDEUR_GRACE_PERIOD_NO_LEVEL_EFFECT_TOOLTIP', 'COURT_GRANDEUR_GRACE_PERIOD_LEVEL_EFFECT_TOOLTIP' )]."
  TOP_ROYAL_COURTS_HEADER: "#T This [royal_court|E] is $RANK|O$ out of $COURTS$ in the world#!"
- TOP_ROYAL_COURT_ENTRY: "$POSITION$. [CHARACTER.GetUINameNotMe]"
- TOP_ROYAL_COURT_ENTRY_DISPLAYED_COURT: "#bold $POSITION$. [CHARACTER.GetUINameNotMe] #weak (this Court)#!#!"
+ TOP_ROYAL_COURT_ENTRY: "$POSITION$. [CHARACTER.Custom('UINameNotMe')]"
+ TOP_ROYAL_COURT_ENTRY_DISPLAYED_COURT: "#bold $POSITION$. [CHARACTER.Custom('UINameNotMe')] #weak (this Court)#!#!"
  ELLIPSIS: "..."
   
  COURT_GRANDEUR_TOAST_GRANDEUR_INCREASED_TITLE: "Court Grandeur level increased"

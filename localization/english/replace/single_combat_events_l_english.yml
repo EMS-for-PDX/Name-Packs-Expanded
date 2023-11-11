@@ -101,7 +101,7 @@
  ## Combat Move Option Copy
  single_combat.0001.wait_and_hope: "Maybe if I wait, [my_foe.GetSheHe]'ll trip on [my_foe.GetHerHis] [my_foe.Custom('signature_weapon')]?"
  single_combat.0001.unsure_attack: "Uh, have at thee! Just #EMP die#!!"
- single_combat.0001.enthusiastic_onslaught.banned_house: "#EMP [myself.GetFullNameNoTooltip]!#!"
+ single_combat.0001.enthusiastic_onslaught.banned_house: "#EMP [myself.Custom('FullNameNoTooltip')]!#!"
  single_combat.0001.enthusiastic_onslaught.own_house: "You are a disgrace to the [myself.GetHouse.GetNameNoTooltip] name!"
  single_combat.0001.enthusiastic_onslaught.motto: "#EMP [myself.GetHouse.GetMotto]#!, scum!"
  single_combat.0001.hail_mary: "Fighting someone so skilled means I've got nothing to lose!"
@@ -236,7 +236,7 @@
  ## Opponent Combat Move Feedback
  single_combat.0001.desc.opponent_response.wait_and_hope: "[my_foe.Custom('FirstNameNoTooltip')] stays stock-still, seemingly hoping I'll just throw down my [myself.Custom('signature_weapon')]."
  single_combat.0001.desc.opponent_response.unsure_attack: "[my_foe.Custom('FirstNameNoTooltip')] tries, hesitantly, to launch a [myself.Custom('SignatureWeaponAttemptedLight')] at me, but the blow is easily swatted away."
- single_combat.0001.desc.opponent_response.enthusiastic_onslaught.banned_house: ""#EMP [my_foe.GetFullNameNoTooltip]!#!" $single_combat.0001.desc.opponent_response.enthusiastic_onslaught.epilogue$"
+ single_combat.0001.desc.opponent_response.enthusiastic_onslaught.banned_house: ""#EMP [my_foe.Custom('FullNameNoTooltip')]!#!" $single_combat.0001.desc.opponent_response.enthusiastic_onslaught.epilogue$"
  single_combat.0001.desc.opponent_response.enthusiastic_onslaught.own_house: ""You are a disgrace to the [my_foe.GetHouse.GetNameNoTooltip] name!" $single_combat.0001.desc.opponent_response.enthusiastic_onslaught.epilogue$"
  single_combat.0001.desc.opponent_response.enthusiastic_onslaught.motto: ""#EMP [my_foe.GetHouse.GetMotto]#!, scum!" $single_combat.0001.desc.opponent_response.enthusiastic_onslaught.epilogue$"
  single_combat.0001.desc.opponent_response.enthusiastic_onslaught.epilogue: "screams my opponent, [my_foe.Custom('SignatureWeaponFlourishPresentParticiple')] [my_foe.GetHerHis] [my_foe.Custom('signature_weapon')] furiously at, around, and near me."

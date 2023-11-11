@@ -149,7 +149,7 @@
  hold_court.8052.b: "Guards, arrest that [vassal.Custom('InsultNoun')]!"
  # # Perils of Glory
  hold_court.8053.t: "$hold_court.8050.t$: Prestige's Perils"
- hold_court.8053.desc.intro: "Word reaches you from the [battle_location.Custom('TerrainTypeProvince')] of [battle_location.GetName], where [knight.GetFirstNameNicknamed] is reported to have been cut down"
+ hold_court.8053.desc.intro: "Word reaches you from the [battle_location.Custom('TerrainTypeProvince')] of [battle_location.GetName], where [knight.Custom('FirstName')] is reported to have been cut down"
  hold_court.8053.killer: "by [knight.GetKiller.GetName]"
  hold_court.8053.battle: "amidst the chaotic melee"
  hold_court.8053.desc_talented: "in a blaze of glory, surrounded by the corpses of lesser [knight.GetWomenMen]."
@@ -318,7 +318,7 @@
  hold_court_8090_favorites_modifier: "Playing Favorites"
  # # A Child of the Court
  hold_court.8100.t: "A Child of the Court"
- hold_court.8100.desc.intro: "I am faced with [ward.GetFullNameNicknamedPossessive] sad eyes, which grow larger and more pitiful as [ward.GetHerHis] [ward.Custom2('RelationToMeShort', SCOPE.sC('advocate'))] [advocate.Custom('TitledFirstName')] gently ushers [ward.GetHerHim] towards my throne. \n\n"[ROOT.Char.Custom('TitleAsNameNoTooltip')]", [advocate.GetSheHe] laments, "the [ward.Custom('GirlBoy')] has been at"
+ hold_court.8100.desc.intro: "I am faced with [ward.Custom('FullNamePossessiveNick')] sad eyes, which grow larger and more pitiful as [ward.GetHerHis] [ward.Custom2('RelationToMeShort', SCOPE.sC('advocate'))] [advocate.Custom('TitledFirstName')] gently ushers [ward.GetHerHim] towards my throne. \n\n"[ROOT.Char.Custom('TitleAsNameNoTooltip')]", [advocate.GetSheHe] laments, "the [ward.Custom('GirlBoy')] has been at"
  hold_court.8100.desc.vassal: "[ward.GetLiege.Custom('FirstNamePossessive')]"
  hold_court.8100.desc.court: "your"
  hold_court.8100.desc.body: "court with no one to watch over [ward.GetHerHim] since the [ward.Custom('get_hold_court_8100_situation')] of [ward.GetHerHis] dear [ward.Custom('get_hold_court_8100_parent')] – please, look to [ward.GetHerHis] future." \n\n"

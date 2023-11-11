@@ -13,7 +13,7 @@
 
  SteleCommemoratesCarver: "[second.MakeScope.Var('stele_carver').Char.Custom('FirstNameNoTooltip')] carved"
 
- SteleCommemoratesAncestors_Intro: "Raised for [second.MakeScope.Var('stele_container').Char.GetTitledFirstNameNicknamed] by [second.MakeScope.Var('stele_container').Char.GetHerHis] [second.MakeScope.Var('stele_container').Char.Custom2('RelationToMeShort',second.MakeScope.Var('stele_commissioner').Char)]"
+ SteleCommemoratesAncestors_Intro: "Raised for [second.MakeScope.Var('stele_container').Char.Custom('TitledFirstName')] by [second.MakeScope.Var('stele_container').Char.GetHerHis] [second.MakeScope.Var('stele_container').Char.Custom2('RelationToMeShort',second.MakeScope.Var('stele_commissioner').Char)]"
  SteleCommemoratesAncestors_GenericFallback: "$SteleCommemoratesAncestors_Intro$. A beautiful soul, fondly missed. $SteleCommemoratesCarver$."
  SteleCommemoratesAncestors_ChildFallback: "$SteleCommemoratesAncestors_Intro$. Taken from us too soon. $SteleCommemoratesCarver$."
  SteleCommemoratesAncestors_Diplomat: "$SteleCommemoratesAncestors_Intro$. May [second.MakeScope.Var('stele_container').Char.GetHerHis] silver tongue live on forever. $SteleCommemoratesCarver$."
@@ -106,14 +106,14 @@
  SteleCommemoratesAncestors_GreatestOfKhans: "$SteleCommemoratesAncestors_Intro$. All the world trembled at [second.MakeScope.Var('stele_container').Char.GetHerHis] footsteps and by [second.MakeScope.Var('stele_container').Char.GetHerHis] will. $SteleCommemoratesCarver$."
  SteleCommemoratesAncestors_Paragon: "$SteleCommemoratesAncestors_Intro$. We may never again see another [second.MakeScope.Var('stele_container').Char.GetWomanMan] as pious. $SteleCommemoratesCarver$."
 
- SteleCommemoratesConquest_Intro: "Raised for [second.MakeScope.Var('stele_commissioner').Char.GetTitledFirstNameNicknamed] to mark [second.MakeScope.Var('stele_commissioner').Char.GetHerHis] victory over [second.MakeScope.Var('stele_container').Char.GetTitledFirstNameNicknamed]"
+ SteleCommemoratesConquest_Intro: "Raised for [second.MakeScope.Var('stele_commissioner').Char.Custom('TitledFirstName')] to mark [second.MakeScope.Var('stele_commissioner').Char.GetHerHis] victory over [second.MakeScope.Var('stele_container').Char.Custom('TitledFirstName')]"
  SteleCommemoratesConquest_Bloody: "$SteleCommemoratesConquest_Intro$. The war was one of history's bloodiest. $SteleCommemoratesCarver$."
  SteleCommemoratesConquest_Glorious: "$SteleCommemoratesConquest_Intro$. The conquest was a glorious one. $SteleCommemoratesCarver$."
  SteleCommemoratesConquest_HardFought: "$SteleCommemoratesConquest_Intro$. The war was harder fought than any other. $SteleCommemoratesCarver$."
  SteleCommemoratesConquest_EmbarrassinglyEasy: "$SteleCommemoratesConquest_Intro$. The fighting was embarrassingly easy. $SteleCommemoratesCarver$."
  SteleCommemoratesConquest_OftForgotten: "$SteleCommemoratesConquest_Intro$. This war, despite its importance, is oft-forgotten. $SteleCommemoratesCarver$."
 
- SteleCommemoratesPromotion_Intro: "Raised for [second.MakeScope.Var('stele_commissioner').Char.GetTitledFirstNameNicknamed] to mark [second.MakeScope.Var('stele_commissioner').Char.GetHerHis] succession to the throne of [second.MakeScope.Var('stele_container').Title.GetNameNoTier]"
+ SteleCommemoratesPromotion_Intro: "Raised for [second.MakeScope.Var('stele_commissioner').Char.Custom('TitledFirstName')] to mark [second.MakeScope.Var('stele_commissioner').Char.GetHerHis] succession to the throne of [second.MakeScope.Var('stele_container').Title.GetNameNoTier]"
  SteleCommemoratesPromotion_Predestined: "$SteleCommemoratesPromotion_Intro$. Many consider this predestined. $SteleCommemoratesCarver$."
  SteleCommemoratesPromotion_TrulyWorthy: "$SteleCommemoratesPromotion_Intro$. Only [second.MakeScope.Var('stele_commissioner').Char.GetSheHe] was truly worthy to rule. $SteleCommemoratesCarver$."
  SteleCommemoratesPromotion_Magnificent: "$SteleCommemoratesPromotion_Intro$. May [second.MakeScope.Var('stele_commissioner').Char.GetHerHis] magnificent reign last for a century. $SteleCommemoratesCarver$."
