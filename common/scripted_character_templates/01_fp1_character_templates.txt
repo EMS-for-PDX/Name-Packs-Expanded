@@ -484,6 +484,7 @@ fp1_jomsviking_bigwig = {
 		varangian = {}
 		strong = {}
 		shrewd = {}
+		tourney_participant = {}			  
 	}
 	random_traits = yes
 	gender_female_chance = {
@@ -651,7 +652,7 @@ fp1_jomsviking_retainer_prowess = {
 		if = {
 			limit = { has_dlc = tours_and_tournaments }
 			add_trait = tourney_participant
-			add_random_tourney_participant_level_effect = yes		  
+			add_random_tourney_participant_level_effect = yes
 		}
 		if = {
 			limit = {
@@ -1034,7 +1035,7 @@ fp1_capital_county_orphan_character = {
 	random_traits = yes
 	#Personality
 	random_traits_list = {
-		count = 2
+		count = 1
 		rowdy = {}
 		charming = {}
 		curious = {}
