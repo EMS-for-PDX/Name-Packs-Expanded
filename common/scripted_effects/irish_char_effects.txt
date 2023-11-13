@@ -644,13 +644,13 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166485 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166493 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166495 }
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:166499 } #Aedan
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166499 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166507 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166486 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166582 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166492 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:83574 }
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:83577 } #Aedan
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:83577 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:83578 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:83579 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:83580 }
@@ -674,7 +674,7 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166491 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166474 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166487 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:166489 } #Fiannamail
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:166489 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166496 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166500 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166503 }
@@ -698,9 +698,8 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159333 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159334 }
 		#Do in welsh, maybe I'll see if they exist
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:159334 } #Corb
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:159335 } #Mes Gegra
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:159336 } #Mes Corb
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159335 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:159336 }
 		add_to_variable_list = { name = dynasty_independent target = character:6018 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:6018 }
 	}
@@ -754,26 +753,31 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160261 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160262 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160263 }
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:160264 } Anluan
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:160264 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160265 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160266 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160267 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160268 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160269 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:160270 }
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:160271 } Cairtheann
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:160270 } Bloid
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:160271 }
+	}
+	character:83577 = {
+		change_first_name = Aedan
+	}
+	character:83577 = {
+		change_first_name = Aedan
 	}
 	character:160271 = {
 		change_first_name = Cairtheann #Real Name
         add_to_global_variable_list = { name = White_byname target = this }
 	}
-	character:160269 = {
+	character:160270 = {
 		change_first_name = Eochaid #Real Name
         add_to_global_variable_list = { name = Bailldearg_byname target = this }
 	}
 	character:160269 = {
-        add_to_global_variable_list = { name = Caem_byname target = this }
+        give_nickname = nick_the_gentle
 	}
 	character:160268 = {
 		change_first_name = Aed
@@ -872,7 +876,7 @@
 	}
 	character:159331 = {
 		change_first_name = Fedelmid
-        add_to_global_variable_list = { name = Lawful_byname target = this }
+        give_nickname = nick_the_righteous
 	}
 	character:83428 = {
 		change_first_name = Cormacc
@@ -1004,7 +1008,7 @@
 	}
 	character:83436 = {
 		change_first_name = Doi
-        add_to_global_variable_list = { name = CopperTongue_byname target = this }
+        give_nickname = nick_the_silver_tongue
 	}
 	character:83433 = {
 		change_first_name = Brion
@@ -1045,21 +1049,22 @@
         add_to_global_variable_list = { name = Meath_byname target = this }
 	}
 	character:7270 = {
+		change_first_name = Murchad
         add_to_global_variable_list = { name = Meath_byname target = this }
 	}
 	character:7268 = {
-        add_to_global_variable_list = { name = Dian_byname target = this }
+        give_nickname = nick_the_quick
 	}
 	character:7266 = {
 		change_first_name = Airmedach
-        add_to_global_variable_list = { name = Caech_byname target = this }
+        give_nickname = nick_the_one_eyed
 	}
 	character:7264 = {
         add_to_global_variable_list = { name = Guthbinn_byname target = this }
 	}
 	character:7260 = {
 		change_first_name = Colman
-        add_to_global_variable_list = { name = Large_byname target = this }
+        give_nickname = nick_the_giant
 	}
 	character:7256 = {
         add_to_global_variable_list = { name = SkewMouth_byname target = this }
@@ -1070,7 +1075,7 @@
 	}
 	character:6018 = {
 		change_first_name = Cinaed
-        add_to_global_variable_list = { name = Conqueror_byname target = this }
+        give_nickname = nick_the_conqueror
 	}
 	character:165002 = {
 		change_first_name = MaelMuire
@@ -1139,14 +1144,14 @@
 	}
 	character:166370 = {
 		change_first_name = Conall
-        add_to_global_variable_list = { name = Coel_byname target = this }
+        give_nickname = nick_the_beanstalk
 	}
 	character:166467 = {
 		change_first_name = MaelCobo
 	}
 	character:166368 = {
 		change_first_name = Conall
-        add_to_global_variable_list = { name = Wolf_byname target = this }
+        give_nickname = nick_the_wolf
 	}
 	character:83017 = {
 		change_first_name = MaelBresail
@@ -1191,11 +1196,11 @@
 	}
 	character:7263 = {
 		change_first_name = Domnall
-        add_to_global_variable_list = { name = ManyDeceits_byname target = this }
+        give_nickname = nick_the_deceiver
 	}
 	character:7265 = {
 		change_first_name = Aed
-        add_to_global_variable_list = { name = Warlike_byname target = this }
+        give_nickname = nick_the_quarrelsome
 	}
 	character:7267 = {
 		change_first_name = MaelFithrich
@@ -1209,7 +1214,7 @@
 	}
 	character:7275 = {
 		change_first_name = Aed
-        add_to_global_variable_list = { name = Undutiful_byname target = this }
+        give_nickname = nick_the_wicked
 	}
 	character:945 = {
 		change_first_name = Neil
@@ -1226,7 +1231,7 @@
 	}
 	character:944 = {
 		change_first_name = Aed
-        add_to_global_variable_list = { name = FairGrey_byname target = this }
+        add_to_global_variable_list = { name = Finnliath_byname target = this }
 	}
 	character:83426 = {
 		change_first_name = ConnCetchathach
@@ -1303,7 +1308,7 @@
 	}
 	character:160192 = {
 		change_first_name = Becc
-        add_to_global_variable_list = { name = Bairrche_byname target = this }
+        give_nickname = nick_the_bold
 	}
 	character:160191 = {
 		change_first_name = Blathmacc
@@ -1320,7 +1325,7 @@
 	}
 	character:160187 = {
 		change_first_name = Cairell
-        add_to_global_variable_list = { name = Victorious_byname target = this }
+        give_nickname = nick_the_victorious
 	}
 	character:160282 = {
 		change_first_name = Muiredach
@@ -1328,7 +1333,7 @@
 	}
 	character:160181 = {
 		change_first_name = Angus
-        add_to_global_variable_list = { name = White_byname target = this }
+        give_nickname = nick_the_white
 	}
 	character:160180 = {
 		change_first_name = Fergus
@@ -1342,14 +1347,14 @@
 	}
 	character:160176 = {
 		change_first_name = Fiatach
-        add_to_global_variable_list = { name = White_byname target = this }
+        give_nickname = nick_the_white
 	}
 	character:83523 = {
 		change_first_name = Fergna
 	}
 	character:83524 = {
 		change_first_name = Aed
-        add_to_global_variable_list = { name = White_byname target = this }
+        give_nickname = nick_the_white
 	}
 	character:83525 = {
 		change_first_name = Scandlan
@@ -1407,7 +1412,7 @@
 	}
 	character:83421 = {
 		change_first_name = Aed
-        add_to_global_variable_list = { name = Stammerer_byname target = this }
+        give_nickname = nick_the_stammerer
 	}
 	character:83413 = {
 		change_first_name = Cinaed
@@ -1515,7 +1520,7 @@
 	}
 	character:166001 = {
 		change_first_name = Feradach
-        add_to_global_variable_list = { name = White_byname target = this }
+        give_nickname = nick_the_white
 	}
 	character:166002 = {
 		change_first_name = Colman
@@ -1525,7 +1530,7 @@
 	}
 	character:166004 = {
 		change_first_name = Scandlan
-        add_to_global_variable_list = { name = Large_byname target = this }
+        give_nickname = nick_the_giant
 	}
 	character:166003 = {
 		change_first_name = Cruinnmael
@@ -1565,7 +1570,7 @@
 	}
 	character:83600 = {
 		change_first_name = Eogan
-        add_to_global_variable_list = { name = Taidlech_byname target = this }
+        give_nickname = nick_the_brilliant
 	}
 	character:83601 = {
 		change_first_name = Ailill
@@ -1573,7 +1578,7 @@
 	}
 	character:83603 = {
 		change_first_name = Eogan
-        add_to_global_variable_list = { name = Large_byname target = this }
+        give_nickname = nick_the_giant
 	}
 	character:83604 = {
 		change_first_name = Fiachu
@@ -1697,7 +1702,7 @@
 	}
 	character:83765 = {
 		change_first_name = Cairbre
-        add_to_global_variable_list = { name = Stoop_byname target = this }
+        give_nickname = nick_the_hunchback
 	}
 	character:83616 = {
         add_to_global_variable_list = { name = Feimen_byname target = this }
@@ -1707,7 +1712,7 @@
 	}
 	character:83757 = {
 		change_first_name = Fergus
-        add_to_global_variable_list = { name = Disputes_byname target = this }
+		give_nickname = nick_the_bully
 	}
 	character:83764 = {
 		change_first_name = Eogan
@@ -1727,7 +1732,7 @@
 	}
 	character:83618 = {
 		change_first_name = Aed
-        add_to_global_variable_list = { name = Black_byname target = this }
+        give_nickname = nick_the_black
 	}
 	character:83637 = {
 		change_first_name = DubdaCrich
@@ -1770,7 +1775,7 @@
 	}
 	character:83620 = {
 		change_first_name = Failbe
-        add_to_global_variable_list = { name = FlannN_byname target = this }
+        give_nickname = nick_the_bloody
 	}
 	character:83627 = {
 		change_first_name = Cruinnmael
@@ -1889,7 +1894,7 @@
 	}
 	character:83697 = {
 		change_first_name = Aed
-        add_to_global_variable_list = { name = Ualgarg_byname target = this }
+        give_nickname = nick_the_valiant
 	}
 	character:83699 = {
 		change_first_name = Fedelmid
@@ -2072,6 +2077,12 @@
 	}
 	character:131006.dynasty = { #Buchanan
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:131006 }
+	}
+	character:83034.house = {
+		set_variable = {
+			name = name_founder
+			value = character:7197
+		}
 	}
 	character:6026.dynasty = { #Cetchathach
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6026 }
@@ -2298,6 +2309,9 @@
 	}
 	character:131003.dynasty = { #Fife
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:131003 }
+	}
+	character:83045 = {
+		change_first_name = Fiachrae
 	}
 	character:20071 = {
 		change_first_name = MaelPedair
@@ -2597,7 +2611,7 @@
 		change_first_name = Cuilen
 	}
 	character:6028 = {
-        add_to_global_variable_list = { name = Agressor_byname target = this }
+        give_nickname = nick_the_quarreller
 	}
 	character:131006 = {
 		change_first_name = Cinaed
