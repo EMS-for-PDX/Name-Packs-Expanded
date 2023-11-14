@@ -55,10 +55,11 @@
 	character:45108.house = {
 		set_variable = {
 			name = name_founder
-			value = character:33925
+			value = character:163129
 		}
 	}
-	character:45108.dynasty = { #Hashim
+	character:33925.dynasty = { #Hashim
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:33924 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:33925 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:45108 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:163128 }
@@ -164,12 +165,6 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:45108 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:45108 }
 	}
-	character:163166.house = {
-		set_variable = {
-			name = name_founder
-			value = character:33911
-		}
-	}
 	character:163166.dynasty = { #Alavids
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:33911 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:163166 }
@@ -230,6 +225,9 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0159 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin0160 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0160 }
+	}
+	character:33925 = {
+		dynasty_effect_ne = yes
 	}
 	character:extra_bedouins_0007 = {
 		change_first_name = Maqal
