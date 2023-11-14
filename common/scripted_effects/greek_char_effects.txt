@@ -3,6 +3,7 @@
     add_to_global_variable_list = { name = name_pack_support_global target = character:302343 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:302354 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:168389 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:70599 }
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:145041 }
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:145043 }
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:145044 }
@@ -99,6 +100,7 @@
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:70587 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:70589 }
     add_to_global_variable_list = { name = global_list_dead_hofs target = character:70590 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:70556 }
     character:1700.house = {
         set_variable = {
             name = name_founder
@@ -887,6 +889,9 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbgreek071 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:70552 }
     }
+	character:70556 = {
+		change_first_name = John
+	}
 	character:70552 = {
 		change_first_name = Anthony
 	}
@@ -1209,6 +1214,7 @@
 	}
 }
 1066_greek_char_effect = {
+    add_to_global_variable_list = { name = name_pack_support_global target = character:41304 }
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:70554 }
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:70555 }
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:70553 }
@@ -1228,6 +1234,11 @@
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:70542 }
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:70541 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:1711 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:41304 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:70541 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:70543 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:70547 }
+    add_to_global_variable_list = { name = name_pack_support_global target = character:145039 }
 	character:1732.dynasty = { #Doukas
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1732 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1736 }
@@ -1779,6 +1790,18 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:20561 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:93452 }
     }
+	character:41304 = {
+		change_first_name = John
+	}
+	character:70541 = {
+		change_first_name = Michael
+	}
+	character:70543 = {
+		change_first_name = Eustace
+	}
+	character:70547 = {
+		change_first_name = Basil
+	}
     character:93452 = {
         change_first_name = Niketas
     }
