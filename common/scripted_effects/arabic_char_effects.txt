@@ -409,6 +409,57 @@
 	character:azariqa_0009.dynasty = { #Karukhid
         add_to_variable_list = { name = name_pack_support_dynasty target = character:azariqa_0009 }
 	}
+	character:extra_yemenis_0001.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic046
+		}
+	}
+	character:extra_yemenis_0001.dynasty = { #Hamdani
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic046 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_yemenis_0001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_yemenis_0002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_yemenis_0003 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_yemenis_0004 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_yemenis_0014 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_yemenis_0002 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_yemenis_0003 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_yemenis_0004 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_yemenis_0014 }
+	}
+	character:fictional_yemenis_0001.dynasty = { #al-Awd
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_yemenis_0001 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_yemenis_0002 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_yemenis_0003 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_yemenis_0004 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_yemenis_0006 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_yemenis_0002 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_yemenis_0003 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_yemenis_0004 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_yemenis_0006 }
+	}
+	character:fictional_yemenis_0006 = {
+		change_first_name = Khalil
+	}
+	character:fictional_yemenis_0004 = {
+		change_first_name = Bakr
+	}
+	character:fictional_yemenis_0003 = {
+		change_first_name = Muhammad
+	}
+	character:fictional_yemenis_0002 = {
+		change_first_name = Shuja
+	}
+	character:fictional_yemenis_0001 = {
+		change_first_name = Abid
+		dynasty_effect_ne = yes
+	}
+	character:fictional_yemenis_0014 = {
+		change_first_name = Ahmad
+	}
+	character:extra_yemenis_0002 = {
+		change_first_name = Abd-Allah
+	}
 	character:azariqa_0009 = {
 		change_first_name = Abdar-Rahim
 		dynasty_effect_ne = yes

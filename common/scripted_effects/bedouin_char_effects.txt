@@ -423,18 +423,21 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0019 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:fictional_bedouins_0019 }
 	}
-	character:fictional_bedouins_0003 = { # al-Azd
+	character:fictional_bedouins_0003.dynasty = { #al-Azd
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0010 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0011 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_bedouins_0012 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:fictional_bedouins_0003 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0011 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_bedouins_0012 }
 	}
-	
-	
 	character:188607.house = {
 		set_variable = {
 			name = name_founder
 			value = character:npedbarabic043
 		}
 	}
-	character:188607.dynasty = { #Tamimi
+	character:188607.dynasty = { #Sadaqa should be Kurds but w/e
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic043 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188607 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:azariqa_0001 }
@@ -445,7 +448,7 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:azariqa_0003 }
 	}
 	
-	character:fictional_bedouins_0003 = {
+	character:extra_bedouins_0011 = {
 		dynasty_effect_ne = yes
 	}
 	character:fictional_bedouins_0018 = {
