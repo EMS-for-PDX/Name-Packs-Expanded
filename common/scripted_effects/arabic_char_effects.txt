@@ -340,7 +340,14 @@
 	character:bedouin00162.dynasty = { #Isaid
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:bedouin00162 }
 	}
+	character:74038.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic045
+		}
+	}
 	character:74038.dynasty = { #Abd al-Qays
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic045 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:74038 }
 	}
 	character:159376.dynasty = { #Amirids
@@ -484,7 +491,7 @@
         dynasty_effect_ne = yes
     }
     character:74038 = {
-        dynasty_effect_ne = yes
+        change_first_name = Ali
     }
     character:33932 = {
         change_first_name = Muhammad
