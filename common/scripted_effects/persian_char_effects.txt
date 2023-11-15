@@ -936,11 +936,24 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144144 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:20703 }
     }
-	character:3050.dynasty = {
+	character:extra_tusids_2.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbpersian012
+		}
+	}
+	character:extra_tusids_2.dynasty = { #Tusids
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbpersian012 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:3050 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1000230500 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:1000230503 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_tusids_1 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_tusids_2 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_persians_10 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1000230503 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_tusids_1 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:3050 }
+		add_to_variable_list = { name = regular_laqab_dynasty target = character:3050 }
     }
 	character:daylamite0001.dynasty = {
         add_to_variable_list = { name = name_pack_support_dynasty target = character:daylamite0001 }
@@ -1126,6 +1139,15 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:badakhshanids_1 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:badakhshanids_2 }
     }
+	character:saffarid_05 = {
+		change_first_name = Yaqub
+	}
+	character:extra_persians_10 = {
+		change_first_name = Ubayd-Allah
+	}
+	character:extra_tusids_2 = {
+		change_first_name = Ishaq
+	}
 	character:badakhshanids_1 = {
 		dynasty_effect_ne = yes
 	}
@@ -1350,7 +1372,6 @@
     }
     character:3050 = {
         change_first_name = Hasan
-        dynasty_effect_ne = yes
         add_to_global_variable_list = { name = Nizam_al_Mulk target = this }
     }
     character:166989 = {
