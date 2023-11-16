@@ -258,6 +258,52 @@
         add_to_variable_list = { name = dynasty_independent target = character:200249 }
         add_to_variable_list = { name = dynasty_independent target = character:70000 }
     }
+	character:visigothic0016.dynasty = { #Carcassone
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:visigothic0016 }
+       #add_to_variable_list = { name = name_pack_support_dynasty target = character:visigothic0017 } Olibia
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:127025 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0090 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0100 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0099 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0097 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73997 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73999 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:73995 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:occitan0081 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:73785 }
+        add_to_variable_list = { name = dynasty_march target = character:73785 }
+    }
+	character:200225.dynasty = { #Walidid
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:200225 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0150 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:andalusian0151 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:andalusian0150 }
+    }
+	character:200225 = {
+		change_first_name = Walid
+		dynasty_effect_ne = yes
+	}
+	character:andalusian0150 = {
+		change_first_name = Anna
+	}
+	character:andalusian0151 = {
+		change_first_name = Lope
+	}
+	character:occitan0097 = {
+		change_first_name = Olivano
+	}
+	character:occitan0100 = {
+		change_first_name = Ecgfrid
+	}
+	character:occitan0090 = {
+		change_first_name = Ermesind
+	}
+	character:127025 = {
+		change_first_name = Ecgfrid
+	}
+	character:visigothic0016 = {
+		change_first_name = Ecgfrid
+	}
 	character:73874 = {
 		change_first_name = Vermund
 	}
