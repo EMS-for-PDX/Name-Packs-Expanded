@@ -1554,6 +1554,228 @@ CharacterGov = {
     }
 }
 CharacterCulture = {
+    type = character
+    log_loc_errors = no
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_high_german
+			}
+		}
+		localization_key = _german
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_anglic
+				has_name_list = name_list_old_saxon
+			}
+		}
+		localization_key = _oldsaxon
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_saxon
+			}
+		}
+		localization_key = _saxon
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_dutch
+			}
+		}
+		localization_key = _dutch
+	}
+	text = {
+		trigger = {
+			culture = {
+                has_cultural_pillar = language_omotic
+			}
+		}
+		localization_key = _wolayta
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_sardinian
+			}
+		}
+		localization_key = _sardinian
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_italian
+                has_name_list = name_list_cisalpine
+			}
+		}
+		localization_key = _cisalpine
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_italian
+			}
+		}
+		localization_key = _italian
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_italian
+			}
+		}
+		localization_key = _italian
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_frankish
+			}
+		}
+		localization_key = _frankish
+	}
+	text = {
+		trigger = {
+			culture = culture:roman
+		}
+		localization_key = _roman
+	}
+	text = {
+		trigger = {
+			culture = {
+                has_name_list = name_list_occitan
+				has_cultural_pillar = language_occitano_romance
+			}
+		}
+		localization_key = _occitan
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_french
+			}
+		}
+		localization_key = _french
+	}
+	text = {
+		trigger = {
+			culture = {
+                has_name_list = name_list_aragonese
+				OR = {
+                    has_cultural_pillar = language_iberian
+                    has_cultural_pillar = language_occitano_romance
+                }
+			}
+		}
+		localization_key = _aragonese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_basque
+			}
+		}
+		localization_key = _basque
+	}
+	text = {
+		trigger = {
+			culture = {
+                has_name_list = name_list_catalan
+				has_cultural_pillar = language_occitano_romance
+			}
+		}
+		localization_key = _catalan
+	}
+	text = {
+		trigger = {
+			culture = {
+                has_name_list = name_list_visigothic
+				has_cultural_pillar = language_iberian
+			}
+		}
+		localization_key = _visgothic
+	}
+	text = {
+		trigger = {
+			culture = {
+                OR = {
+                    has_name_list = name_list_galician
+                    has_name_list = name_list_portuguese
+                }
+				has_cultural_pillar = language_iberian
+			}
+		}
+		localization_key = _portuguese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_iberian
+			}
+		}
+		localization_key = _castillian
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_cushitic
+                has_name_list = name_list_afar
+			}
+		}
+		localization_key = _afar
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_cushitic
+                has_name_list = name_list_beja
+			}
+		}
+		localization_key = _beja
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_cushitic
+			}
+		}
+		localization_key = _somali
+	}
+	text = {
+		trigger = {
+            has_religion = religion:islam_religion
+			culture = {
+				OR = {
+					indoaryan_check = yes
+					AND = {
+						has_cultural_pillar = language_telugu
+						has_name_list = name_list_gond
+					}
+				}
+			}
+		}
+		localization_key = _iamuslim
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_rajasthani
+			}
+		}
+		localization_key = _gujaraj
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_sinhalese
+			}
+		}
+		localization_key = _sinhala
+	}
 	text = {
 		trigger = {
 			culture = {
