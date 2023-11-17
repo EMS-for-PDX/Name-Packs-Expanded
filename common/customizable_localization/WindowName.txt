@@ -225,19 +225,13 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
-				has_cultural_pillar = heritage_latin
-				has_cultural_pillar = language_sardinian
-			}
-		}
-		localization_key = Window_Sardinian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_era_or_later = culture_era_late_medieval
+				OR = {
+					has_cultural_era_or_later = culture_era_late_medieval
+					AND = {
+						has_cultural_pillar = heritage_latin
+						has_cultural_pillar = language_sardinian
+					}
+				}
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
@@ -1533,19 +1527,13 @@ WindowNameTT = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			culture = {
-				has_cultural_pillar = heritage_latin
-				has_cultural_pillar = language_sardinian
-			}
-		}
-		localization_key = Window_Sardinian_TT
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_era_or_later = culture_era_late_medieval
+				OR = {
+					has_cultural_era_or_later = culture_era_late_medieval
+					AND = {
+						has_cultural_pillar = heritage_latin
+						has_cultural_pillar = language_sardinian
+					}
+				}
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish

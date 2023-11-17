@@ -245,7 +245,13 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_era_or_later = culture_era_late_medieval
+				OR = {
+					has_cultural_era_or_later = culture_era_late_medieval
+					AND = {
+						has_cultural_pillar = heritage_latin
+						has_cultural_pillar = language_sardinian
+					}
+				}
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
@@ -1163,7 +1169,13 @@ FullNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_era_or_later = culture_era_late_medieval
+				OR = {
+					has_cultural_era_or_later = culture_era_late_medieval
+					AND = {
+						has_cultural_pillar = heritage_latin
+						has_cultural_pillar = language_sardinian
+					}
+				}
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
@@ -2081,7 +2093,13 @@ FullNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_era_or_later = culture_era_late_medieval
+				OR = {
+					has_cultural_era_or_later = culture_era_late_medieval
+					AND = {
+						has_cultural_pillar = heritage_latin
+						has_cultural_pillar = language_sardinian
+					}
+				}
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
@@ -2999,7 +3017,13 @@ FullNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_era_or_later = culture_era_late_medieval
+				OR = {
+					has_cultural_era_or_later = culture_era_late_medieval
+					AND = {
+						has_cultural_pillar = heritage_latin
+						has_cultural_pillar = language_sardinian
+					}
+				}
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
@@ -3918,7 +3942,13 @@ FullNameNick = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_era_or_later = culture_era_late_medieval
+				OR = {
+					has_cultural_era_or_later = culture_era_late_medieval
+					AND = {
+						has_cultural_pillar = heritage_latin
+						has_cultural_pillar = language_sardinian
+					}
+				}
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
@@ -4836,7 +4866,13 @@ FullNamePossessiveNick = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_era_or_later = culture_era_late_medieval
+				OR = {
+					has_cultural_era_or_later = culture_era_late_medieval
+					AND = {
+						has_cultural_pillar = heritage_latin
+						has_cultural_pillar = language_sardinian
+					}
+				}
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
@@ -5754,7 +5790,13 @@ FullNameNickNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_era_or_later = culture_era_late_medieval
+				OR = {
+					has_cultural_era_or_later = culture_era_late_medieval
+					AND = {
+						has_cultural_pillar = heritage_latin
+						has_cultural_pillar = language_sardinian
+					}
+				}
 				OR = {
 					has_cultural_pillar = heritage_iberian
 					has_cultural_pillar = heritage_frankish
