@@ -368,7 +368,18 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_iranian
+				OR = {
+					has_cultural_pillar = heritage_iranian
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						OR = {
+							has_cultural_pillar = heritage_peristani
+							has_cultural_pillar = heritage_tocharian
+						}
+					}
+				}
 			}
 		}
 		localization_key = First_Name_Persian
@@ -796,7 +807,18 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_iranian
+				OR = {
+					has_cultural_pillar = heritage_iranian
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						OR = {
+							has_cultural_pillar = heritage_peristani
+							has_cultural_pillar = heritage_tocharian
+						}
+					}
+				}
 			}
 		}
 		localization_key = First_Name_No_Tooltip_Persian
@@ -1220,7 +1242,18 @@ FirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_iranian
+				OR = {
+					has_cultural_pillar = heritage_iranian
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						OR = {
+							has_cultural_pillar = heritage_peristani
+							has_cultural_pillar = heritage_tocharian
+						}
+					}
+				}
 			}
 		}
 		localization_key = First_Name_Possessive_Persian
@@ -1644,7 +1677,18 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_iranian
+				OR = {
+					has_cultural_pillar = heritage_iranian
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						OR = {
+							has_cultural_pillar = heritage_peristani
+							has_cultural_pillar = heritage_tocharian
+						}
+					}
+				}
 			}
 		}
 		localization_key = First_Name_Possessive_No_Tooltip_Persian
@@ -2068,7 +2112,18 @@ FirstNameNicknamed = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_iranian
+				OR = {
+					has_cultural_pillar = heritage_iranian
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						OR = {
+							has_cultural_pillar = heritage_peristani
+							has_cultural_pillar = heritage_tocharian
+						}
+					}
+				}
 			}
 		}
 		localization_key = First_Name_Persian

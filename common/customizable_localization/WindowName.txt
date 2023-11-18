@@ -1246,7 +1246,18 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_iranian
+				OR = {
+					has_cultural_pillar = heritage_iranian
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						OR = {
+							has_cultural_pillar = heritage_peristani
+							has_cultural_pillar = heritage_tocharian
+						}
+					}
+				}
 			}
 		}
 		localization_key = Window_Persian
@@ -2545,7 +2556,18 @@ WindowNameTT = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_iranian
+				OR = {
+					has_cultural_pillar = heritage_iranian
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						OR = {
+							has_cultural_pillar = heritage_peristani
+							has_cultural_pillar = heritage_tocharian
+						}
+					}
+				}
 			}
 		}
 		localization_key = Window_Persian_TT

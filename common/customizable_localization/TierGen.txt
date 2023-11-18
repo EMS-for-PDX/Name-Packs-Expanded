@@ -1608,8 +1608,21 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				has_cultural_pillar = language_italian
-                has_name_list = name_list_cisalpine
+				OR = {
+                    AND = {
+                        has_cultural_pillar = language_italian
+                        has_name_list = name_list_cisalpine
+                    }
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        OR = {
+                            has_cultural_pillar = language_dalmatian
+                            has_cultural_pillar = language_pannonian_romance
+                        }
+                    }
+                }
 			}
 		}
 		localization_key = _cisalpine
@@ -1647,7 +1660,15 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_name_list = name_list_occitan
+                OR = {
+                    has_name_list = name_list_occitan
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_name_list = name_list_arpetan
+                    }
+                }
 				has_cultural_pillar = language_occitano_romance
 			}
 		}
@@ -1949,7 +1970,15 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_brythonic
+                OR = {
+                    has_cultural_pillar = language_brythonic
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_brythonek
+                    }
+                }
 			}
 		}
 		localization_key = _welsh
@@ -1957,7 +1986,15 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				has_cultural_pillar = language_mongolic
+				OR = {
+                    has_cultural_pillar = language_mongolic
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_mongolic
+                    }
+                }
 			}
 		}
 		localization_key = _mongol
@@ -2068,10 +2105,6 @@ CharacterCulture = {
                         }
                         has_cultural_pillar = language_khwarezmian
                     }
-                    #AND = {
-                    #    exists = global_var:CE_is_loaded
-                    #    has_cultural_pillar = language_khwarezmian
-                    #}
                 }
             
 			}
@@ -2086,12 +2119,15 @@ CharacterCulture = {
 				}
                 OR = {
                     has_cultural_pillar = language_scythian
-                    AND = {
-                        exists = global_var:CE_is_loaded
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
                         OR = {
                             has_cultural_pillar = language_pashto
                             has_cultural_pillar = language_pamiri
                             has_cultural_pillar = language_sogdian
+                            has_cultural_pillar = language_bactrian
                         }
                     }
                 }
@@ -2108,11 +2144,14 @@ CharacterCulture = {
 						has_cultural_pillar = language_scythian
 						has_name_list = name_list_afghan
 					}
-                    AND = {
-                        exists = global_var:CE_is_loaded
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
                         OR = {
                             has_cultural_pillar = language_caspian_iranian
                             has_cultural_pillar = language_balochi
+                            has_cultural_pillar = language_parthian
                         }
                     }
                 }

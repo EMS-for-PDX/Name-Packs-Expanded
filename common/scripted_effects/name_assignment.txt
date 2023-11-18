@@ -349,7 +349,15 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_occitan
+						OR = {
+							has_name_list = name_list_occitan
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_arpetan
+							}
+						}
 					}
 					add = 1
 				}
@@ -376,7 +384,18 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_ethiopian
+						OR = {
+							has_name_list = name_list_ethiopian
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_argobba
+							}
+						}
 					}
 					add = 1
 				}
@@ -406,6 +425,15 @@
 						OR = {
 							has_name_list = name_list_italian
 							has_name_list = name_list_cisalpine
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								OR = {
+									has_name_list = name_list_venetian
+									has_name_list = name_list_dalmatian
+								}
+							}
 						}
 					}
 					add = 1
@@ -433,7 +461,18 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_nubian
+						OR = {
+							has_name_list = name_list_nubian
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_sidama
+							}
+						}
 					}
 					add = 1
 				}
@@ -835,6 +874,15 @@
 							has_name_list = name_list_baranis
 							has_name_list = name_list_guanches
 							has_name_list = name_list_butr
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_tuareg
+							}
 						}
 					}
 					add = 1
@@ -851,6 +899,12 @@
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 							has_name_list = name_list_afghan
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_mazanderani
+							}
 						}
 					}
 					has_religion = religion:islam_religion
@@ -868,6 +922,12 @@
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 							has_name_list = name_list_afghan
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_mazanderani
+							}
 						}
 					}
 					has_religion = religion:christianity_religion
@@ -885,6 +945,12 @@
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 							has_name_list = name_list_afghan
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_mazanderani
+							}
 						}
 					}
 					NOT = {
@@ -1050,6 +1116,12 @@
 							has_name_list = name_list_buryat
 							has_name_list = name_list_kerait
 							has_name_list = name_list_oirat
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_evenk
+							}
 						}
 					}
 					add = 1
@@ -1071,6 +1143,12 @@
 						OR = {
 							has_name_list = name_list_croatian
 							has_name_list = name_list_carantanian
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_dalmatian
+							}
 						}
 					}
 					NOT = {
@@ -1088,6 +1166,12 @@
 						OR = {
 							has_name_list = name_list_croatian
 							has_name_list = name_list_carantanian
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_dalmatian
+							}
 						}
 					}
 					any_parent = {
@@ -1255,7 +1339,15 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_occitan
+						OR = {
+							has_name_list = name_list_occitan
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_arpetan
+							}
+						}
 					}
 					add = 1
 				}
@@ -1297,7 +1389,18 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_ethiopian
+						OR = {
+							has_name_list = name_list_ethiopian
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_argobba
+							}
+						}
 					}
 					add = 1
 				}
@@ -1327,6 +1430,15 @@
 						OR = {
 							has_name_list = name_list_italian
 							has_name_list = name_list_cisalpine
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								OR = {
+									has_name_list = name_list_venetian
+									has_name_list = name_list_dalmatian
+								}
+							}
 						}
 					}
 					add = 1
@@ -1354,7 +1466,18 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_nubian
+						OR = {
+							has_name_list = name_list_nubian
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_sidama
+							}
+						}
 					}
 					add = 1
 				}
@@ -1578,6 +1701,15 @@
 							has_name_list = name_list_baranis
 							has_name_list = name_list_guanches
 							has_name_list = name_list_butr
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_tuareg
+							}
 						}
 					}
 					add = 1
@@ -1594,6 +1726,12 @@
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 							has_name_list = name_list_afghan
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_mazanderani
+							}
 						}
 					}
 					has_religion = religion:islam_religion
@@ -1611,6 +1749,12 @@
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 							has_name_list = name_list_afghan
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_mazanderani
+							}
 						}
 					}
 					has_religion = religion:christianity_religion
@@ -1628,6 +1772,12 @@
 							has_name_list = name_list_daylamite
 							has_name_list = name_list_tajik
 							has_name_list = name_list_afghan
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_mazanderani
+							}
 						}
 					}
 					NOT = {
@@ -1793,6 +1943,12 @@
 							has_name_list = name_list_buryat
 							has_name_list = name_list_kerait
 							has_name_list = name_list_oirat
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = language_tungusic
+							}
 						}
 					}
 					add = 1
@@ -1814,6 +1970,12 @@
 						OR = {
 							has_name_list = name_list_croatian
 							has_name_list = name_list_carantanian
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_dalmatian
+							}
 						}
 					}
 					NOT = {
@@ -1831,6 +1993,12 @@
 						OR = {
 							has_name_list = name_list_croatian
 							has_name_list = name_list_carantanian
+							trigger_if = {
+								limit = {
+									exists = global_var:CE_is_loaded
+								}
+								has_name_list = name_list_dalmatian
+							}
 						}
 					}
 					any_parent = {
