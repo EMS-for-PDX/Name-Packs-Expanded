@@ -919,6 +919,35 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0078 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0077 }
 	}
+	character:baranis0079.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber025
+        }
+    }
+	character:baranis0079.dynasty = { # Razinids
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0079 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0080 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0081 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20883 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:20884 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:baranis0083 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:155005 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:155006 }
+		add_to_variable_list = { name = regular_laqab_dynasty target = character:baranis0081 }
+	}
+	character:baranis0081 ={
+        add_to_global_variable_list = { name = Izz_ad_Dawla target = this }
+	}
+	character:baranis0080 ={
+		change_first_name = Khalaf
+	}
+	character:baranis0079 ={
+		change_first_name = Lope
+	}
+	character:20883 ={
+		change_first_name = Abdal-Malik
+	}
 	character:159494 ={
 		change_first_name = Enoch
 	}
