@@ -180,7 +180,13 @@ south_slav_check = {
 	}
 }
 turkish_check = {
-	has_cultural_pillar = heritage_turkic
+	OR = {
+		has_cultural_pillar = heritage_turkic
+		AND = {
+			has_cultural_pillar = heritage_mongolic
+			has_name_list = name_list_ongud
+		}
+	}
 }
 pecheneg_check = {
 	has_cultural_pillar = language_turkic
@@ -193,7 +199,7 @@ uyghur_check = {
 		has_name_list = name_list_yughur
 		has_name_list = name_list_kirghiz
 		has_name_list = name_list_uriankhai
-		has_name_list = name_list_ongut
+		has_name_list = name_list_ongud
 	}
 }
 karluk_check = {
@@ -212,7 +218,10 @@ kipchak_check = {
 }
 mongol_check = {
 	OR = {
-		has_cultural_pillar = heritage_mongolic
+		AND = {
+			has_cultural_pillar = heritage_mongolic
+			uyghur_check = no
+			}
 		AND = {
 			has_cultural_pillar = heritage_mongolic
 			has_government = tribal_government

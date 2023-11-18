@@ -402,7 +402,15 @@
         add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic041 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:159195 }
 	}
+	character:azariqa_0005.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic047
+		}
+	}
 	character:azariqa_0005.dynasty = { #Bamids
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic047 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:azariqa_0005 }
         add_to_variable_list = { name = name_pack_support_dynasty target = character:azariqa_0005 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:azariqa_0006 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:azariqa_0006 }
@@ -488,9 +496,6 @@
 	}
 	character:azariqa_0006 = {
 		change_first_name = Ismail
-	}
-	character:azariqa_0005 = {
-		dynasty_effect_ne = yes
 	}
 	character:extra_abbasids_27 = {
 		change_first_name = Yaqub
