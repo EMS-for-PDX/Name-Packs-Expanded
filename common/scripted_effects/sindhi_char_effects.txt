@@ -76,16 +76,15 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188559 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188558 }
 	}
-	character:188563.house = {
+	character:178012.house = {
 		set_variable = {
 			name = name_founder
 			value = character:npedbhind055
 		}
 	}
-	character:188563.dynasty = { #Doolani
+	character:178012.dynasty = { #Doolani
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind055 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:178012 }
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:188563 }
 	}
 	character:188557.house = {
 		set_variable = {
@@ -111,6 +110,12 @@
 	character:175050.dynasty = { #Habbari 
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind058 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:175050 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_habbaris_1 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_habbaris_2 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:extra_habbaris_3 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_habbaris_2 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:175050 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_habbaris_3 }
 	}
 	character:188561.house = {
 		set_variable = {
@@ -122,6 +127,15 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind059 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:178014 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:188561 }
+	}
+	character:extra_habbaris_1 = {
+		change_first_name = Mansur
+	}
+	character:extra_habbaris_2 = {
+		change_first_name = Abdal-Aziz
+	}
+	character:extra_habbaris_3 = {
+		change_first_name = Abd-Allah
 	}
 	character:178014 ={
         change_first_name = Juna
