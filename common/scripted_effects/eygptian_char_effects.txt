@@ -28,12 +28,12 @@
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:161520 }
     add_to_global_variable_list = { name = name_pack_support_global target = character:161518 }
 	add_to_global_variable_list = { name = global_list_dead_hofs target = character:161518 }
-#	character:163115.house = {
-#		set_variable = {
-#			name = name_founder
-#			value = character:npedbarabic018
-#		}
-#	}
+	character:163115.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbarabic018
+		}
+	}
 	character:163115.dynasty = { #Tulunids
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbarabic018 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:163115 }
@@ -51,7 +51,6 @@
 	}
 	character:extra_tulunids_5 = {
 		change_first_name = Tolun
-		dynasty_effect_ne = yes
 	}
 	character:extra_tulunids_1 = {
 		change_first_name = Abbas
