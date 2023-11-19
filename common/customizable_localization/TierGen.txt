@@ -1576,18 +1576,37 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				has_cultural_pillar = language_saxon
+				OR = {
+                    has_cultural_pillar = language_dutch
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        AND = {
+                            has_cultural_pillar = language_low_german
+                            has_name_list = name_list_dutch
+                        }
+                    }
+                }
 			}
 		}
-		localization_key = _saxon
+		localization_key = _dutch
 	}
 	text = {
 		trigger = {
 			culture = {
-				has_cultural_pillar = language_dutch
+				OR = {
+                    has_cultural_pillar = language_saxon
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_low_german
+                    }
+                }
 			}
 		}
-		localization_key = _dutch
+		localization_key = _saxon
 	}
 	text = {
 		trigger = {
@@ -1976,7 +1995,10 @@ CharacterCulture = {
                         limit = {
                             exists = global_var:CE_is_loaded
                         }
-                        has_cultural_pillar = language_brythonek
+                        OR = {
+                            has_cultural_pillar = language_brythonek
+                            has_cultural_pillar = language_kymraeg
+                        }
                     }
                 }
 			}
