@@ -245,6 +245,20 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6878 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:6880 }
 	}
+	character:40605.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbnorse003
+		}
+	}
+	character:40605.dynasty = { #Rurikids
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbnorse003 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40605 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:40606 }
+	}
+	#character:40605 = { #How to handle switching from Hrorikingar > Rjurikovič?
+	#	dynasty_effect_ne = yes
+	#}
 	character:168650 = {
 		change_first_name = Gudthorm
 	}

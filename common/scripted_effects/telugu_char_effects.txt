@@ -264,12 +264,38 @@
 	character:velanati_chodas_1.house = {
 		set_variable = {
 			name = name_founder
-			value = character:npedbtelugu011
+			value = character:npedbtelugu012
 		}
 	}
 	character:velanati_chodas_1.dynasty = { #Velanati Chodas
-		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtelugu011 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtelugu012 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:velanati_chodas_1 }
+	}
+	character:cheraku_reddy_0.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbtelugu013
+		}
+	}
+	character:cheraku_reddy_0.dynasty = { # Cheraku Reddys
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtelugu013 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cheraku_reddy_0 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cheraku_reddy_1 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cheraku_reddy_2 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cheraku_reddy_2a }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cheraku_reddy_2b }
+	}
+	character:cheraku_reddy_2b ={
+        change_first_name = Bollaya
+	}
+	character:cheraku_reddy_2a ={
+        change_first_name = Suran
+	}
+	character:cheraku_reddy_1 ={
+        change_first_name = Katama
+	}
+	character:cheraku_reddy_0 ={
+        change_first_name = Kamavve
 	}
 	character:189229 ={
         change_first_name = Beta
