@@ -1627,20 +1627,19 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				OR = {
-                    AND = {
-                        has_cultural_pillar = language_italian
-                        has_name_list = name_list_cisalpine
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
                     }
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        OR = {
-                            has_cultural_pillar = language_dalmatian
-                            has_cultural_pillar = language_pannonian_romance
-                        }
+                    OR = {
+                        has_cultural_pillar = language_venetian
+                        has_cultural_pillar = language_dalmatian
+                        has_cultural_pillar = language_pannonian_romance
                     }
+                }
+                trigger_else = {
+                    has_cultural_pillar = language_italian
+                    has_name_list = name_list_cisalpine
                 }
 			}
 		}
@@ -1688,7 +1687,15 @@ CharacterCulture = {
                         has_name_list = name_list_arpetan
                     }
                 }
-				has_cultural_pillar = language_occitano_romance
+				OR = {
+                    has_cultural_pillar = language_occitano_romance
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_arpetan
+                    }
+                }
 			}
 		}
 		localization_key = _occitan
@@ -1881,13 +1888,21 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_name_list = language_middle_english
+                }
+                trigger_else = {
+                    has_cultural_pillar = language_anglic
+                }
                 OR = {
                     this = culture:english
                     any_parent_culture_or_above = {
                         this = culture:english
                     }
                 }
-                has_cultural_pillar = language_anglic
 			}
 		}
 		localization_key = _english
@@ -1971,8 +1986,16 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_brythonic
-                has_name_list = name_list_breton
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_breton
+                }
+                trigger_else = {
+                    has_cultural_pillar = language_brythonic
+                    has_name_list = name_list_breton
+                }
 			}
 		}
 		localization_key = _breton
@@ -1980,8 +2003,16 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_brythonic
-                has_name_list = name_list_cornish
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_cornish
+                }
+                trigger_else = {
+                    has_cultural_pillar = language_brythonic
+                    has_name_list = name_list_cornish
+                }    
 			}
 		}
 		localization_key = _cornish
@@ -1998,6 +2029,9 @@ CharacterCulture = {
                         OR = {
                             has_cultural_pillar = language_brythonek
                             has_cultural_pillar = language_kymraeg
+                            has_cultural_pillar = language_cumbrian
+                            has_cultural_pillar = language_cymraeg
+                            has_cultural_pillar = language_pictish
                         }
                     }
                 }
@@ -2116,17 +2150,15 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                OR = {
-                    AND = {
-                        has_cultural_pillar = language_scythian
-                        has_name_list = name_list_khwarezmian
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
                     }
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        has_cultural_pillar = language_khwarezmian
-                    }
+                    has_cultural_pillar = language_khwarezmian
+                }
+                trigger_else = {
+                    has_cultural_pillar = language_scythian
+                    has_name_list = name_list_khwarezmian
                 }
             
 			}
@@ -2136,21 +2168,21 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				NOT = {
-					has_name_list = name_list_afghan
-				}
-                OR = {
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    OR = {
+                        has_cultural_pillar = language_pashto
+                        has_cultural_pillar = language_pamiri
+                        has_cultural_pillar = language_sogdian
+                        has_cultural_pillar = language_bactrian
+                    }
+                }
+                trigger_else = {
                     has_cultural_pillar = language_scythian
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        OR = {
-                            has_cultural_pillar = language_pashto
-                            has_cultural_pillar = language_pamiri
-                            has_cultural_pillar = language_sogdian
-                            has_cultural_pillar = language_bactrian
-                        }
+                    NOT = {
+                        has_name_list = name_list_afghan
                     }
                 }
 			}
@@ -2160,20 +2192,25 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                OR = {
-                    has_cultural_pillar = language_iranian
-					AND = {
-						has_cultural_pillar = language_scythian
-						has_name_list = name_list_afghan
-					}
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        OR = {
-                            has_cultural_pillar = language_caspian_iranian
-                            has_cultural_pillar = language_balochi
-                            has_cultural_pillar = language_parthian
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    OR = {
+                        has_cultural_pillar = language_caspian_iranian
+                        has_cultural_pillar = language_balochi
+                        has_cultural_pillar = language_parthian
+                        has_cultural_pillar = language_mazandarani
+                        has_cultural_pillar = language_adhari
+                        has_cultural_pillar = language_daylamite
+                    }
+                }
+                trigger_else = {
+                    OR = {
+                        has_cultural_pillar = language_iranian
+                        AND = {
+                            has_cultural_pillar = language_pashto
+                            has_name_list = name_list_afghan
                         }
                     }
                 }
@@ -2232,7 +2269,16 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_turkic
+                OR = {
+                    has_cultural_pillar = language_turkic
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_oghuz
+                    }
+                }
+
 			}
 		}
 		localization_key = _turkish

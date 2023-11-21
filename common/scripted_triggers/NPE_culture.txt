@@ -106,6 +106,21 @@ is_npe_supported_culture = {
 				has_cultural_pillar = language_tungusic
 				has_cultural_pillar = language_kymraeg
 				has_cultural_pillar = language_low_german
+				has_cultural_pillar = language_oghuz
+				has_cultural_pillar = language_cumbrian
+				has_cultural_pillar = language_cymraeg
+				has_cultural_pillar = language_cornish
+				has_cultural_pillar = language_breton
+				has_cultural_pillar = language_pictish
+				has_cultural_pillar = language_middle_english
+				has_cultural_pillar = language_mazandarani
+				has_cultural_pillar = language_daylamite
+				has_cultural_pillar = language_venetian
+				has_cultural_pillar = language_siberian_turkic
+				has_cultural_pillar = language_karluk
+				has_cultural_pillar = language_kipchak
+				has_cultural_pillar = language_bolghar
+				has_cultural_pillar = language_khazar
 			}
 		}
 	}
@@ -207,18 +222,34 @@ pecheneg_check = {
 	has_name_list = name_list_pecheneg
 }
 uyghur_check = {
-	has_cultural_pillar = language_turkic
-	OR = {
-		has_name_list = name_list_uyghur
-		has_name_list = name_list_yughur
-		has_name_list = name_list_kirghiz
-		has_name_list = name_list_uriankhai
-		has_name_list = name_list_ongud
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = language_siberian_turkic
 	}
+	trigger_else = {
+		has_cultural_pillar = language_turkic
+		OR = {
+			has_name_list = name_list_uyghur
+			has_name_list = name_list_yughur
+			has_name_list = name_list_kirghiz
+			has_name_list = name_list_uriankhai
+			has_name_list = name_list_ongud
+		}
+	} 
 }
 karluk_check = {
-	has_cultural_pillar = language_turkic
-	has_name_list = name_list_karluk
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = language_karluk
+	}
+	trigger_else = {
+		has_cultural_pillar = language_turkic
+		has_name_list = name_list_karluk
+	}
 }
 kipchak_check = {
 	has_cultural_pillar = language_turkic
@@ -235,7 +266,7 @@ mongol_check = {
 		AND = {
 			has_cultural_pillar = heritage_mongolic
 			uyghur_check = no
-			}
+		}
 		AND = {
 			has_cultural_pillar = heritage_mongolic
 			has_government = tribal_government
@@ -323,7 +354,18 @@ assyrian_check = {
 	}
 }
 oghur_check = {
-	has_cultural_pillar = language_oghur
+	OR = {
+		has_cultural_pillar = language_oghur
+		trigger_if = {
+			limit = {
+				exists = global_var:CE_is_loaded
+			}
+			OR = {
+				has_cultural_pillar = language_bolghar
+				has_cultural_pillar = language_khazar
+			}
+		}
+	}
 }
 english_check = {
 	OR = {
