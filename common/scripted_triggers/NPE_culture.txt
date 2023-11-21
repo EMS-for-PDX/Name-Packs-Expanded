@@ -252,14 +252,22 @@ karluk_check = {
 	}
 }
 kipchak_check = {
-	has_cultural_pillar = language_turkic
-	OR = {
-		has_name_list = name_list_kipchak
-		has_name_list = name_list_cuman
-		has_name_list = name_list_kimek
-		has_name_list = name_list_laktan
-		has_name_list = name_list_bashkir
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		has_cultural_pillar = language_kipchak
 	}
+	trigger_else = {
+		has_cultural_pillar = language_turkic
+		OR = {
+			has_name_list = name_list_kipchak
+			has_name_list = name_list_cuman
+			has_name_list = name_list_kimek
+			has_name_list = name_list_laktan
+			has_name_list = name_list_bashkir
+		}
+	} 
 }
 mongol_check = {
 	OR = {
