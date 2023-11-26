@@ -11,6 +11,132 @@ Window_Sinhala_Indep: "#high [ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char
 Window_Sinhala_King: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē"
 Window_Sinhala_Emperor: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]"
 
+First_Name_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+
+First_Name_No_Tooltip_Sinhala: "[ROOT.Char.Custom('CharacterNameCheck')]"
+
+First_Name_Possessive_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
+
+First_Name_Possessive_No_Tooltip_Sinhala: "[ROOT.Char.Custom('CharacterNameCheck')]'s'"
+
+Titled_First_Name_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheck')]#!#!#!"
+Titled_First_Name_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē#!#!#!"
+Titled_First_Name_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]#!#!#!"
+
+Titled_First_Name_No_Tooltip_Sinhala: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheck')]"
+Titled_First_Name_No_Tooltip_Sinhala_King: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē"
+Titled_First_Name_No_Tooltip_Sinhala_Emperor: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]"
+
+Titled_First_Name_Possessive_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+Titled_First_Name_Possessive_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's#!#!#!"
+Titled_First_Name_Possessive_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]'s#!#!#!"
+
+Titled_First_Name_Possessive_No_Tooltip_Sinhala: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheck')]'s"
+Titled_First_Name_Possessive_No_Tooltip_Sinhala_King: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's"
+Titled_First_Name_Possessive_No_Tooltip_Sinhala_Emperor: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]'s"
+
+Full_Name_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+Full_Name_Sinhala_Dep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheck')]#!#!#!"
+Full_Name_Sinhala_Indep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+Full_Name_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē#!#!#!"
+Full_Name_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]#!#!#!"
+
+Full_Name_No_Tooltip_Sinhala: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
+Full_Name_No_Tooltip_Sinhala_Dep: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheck')]"
+Full_Name_No_Tooltip_Sinhala_Indep: "[ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+Full_Name_No_Tooltip_Sinhala_King: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē"
+Full_Name_No_Tooltip_Sinhala_Emperor: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]"
+
+Full_Name_Possessive_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
+Full_Name_Possessive_Sinhala_Dep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheck')]'s#!#!#!"
+Full_Name_Possessive_Sinhala_Indep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+Full_Name_Possessive_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's#!#!#!"
+Full_Name_Possessive_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]'s#!#!#!"
+
+Full_Name_Possessive_No_Tooltip_Sinhala: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s"
+Full_Name_Possessive_No_Tooltip_Sinhala_Dep: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]-[ROOT.Char.Custom('CharacterTierCheck')]'s"
+Full_Name_Possessive_No_Tooltip_Sinhala_Indep: "[ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Full_Name_Possessive_No_Tooltip_Sinhala_King: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's"
+Full_Name_Possessive_No_Tooltip_Sinhala_Emperor: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]'s"
+
+Name_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+Name_Sinhala_Dep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+Name_Sinhala_Indep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+Name_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē#!#!#!"
+Name_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]#!#!#!"
+
+Name_No_Tooltip_Sinhala: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
+Name_No_Tooltip_Sinhala_Dep: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+Name_No_Tooltip_Sinhala_Indep: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+Name_No_Tooltip_Sinhala_King: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē"
+Name_No_Tooltip_Sinhala_Emperor: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]"
+
+Name_Possessive_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
+Name_Possessive_Sinhala_Dep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+Name_Possessive_Sinhala_Indep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+Name_Possessive_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's#!#!#!"
+Name_Possessive_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]'s#!#!#!"
+
+Name_Possessive_No_Tooltip_Sinhala: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s"
+Name_Possessive_No_Tooltip_Sinhala_Dep: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Name_Possessive_No_Tooltip_Sinhala_Indep: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Name_Possessive_No_Tooltip_Sinhala_King: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's"
+Name_Possessive_No_Tooltip_Sinhala_Emperor: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]'s"
+
+Short_Name_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!#!"
+Short_Name_Sinhala_Dep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
+Short_Name_Sinhala_Indep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
+Short_Name_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē#!#!#!#!"
+Short_Name_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('SinhalEmpEnd')]#!#!#!#!"
+
+Short_Name_No_Tooltip_Sinhala: "#high [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!"
+Short_Name_No_Tooltip_Sinhala_Dep: "#high [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
+Short_Name_No_Tooltip_Sinhala_Indep: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
+Short_Name_No_Tooltip_Sinhala_King: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē#!"
+Short_Name_No_Tooltip_Sinhala_Emperor: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('SinhalEmpEnd')]#!"
+
+Short_Name_Possessive_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!#!"
+Short_Name_Possessive_Sinhala_Dep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
+Short_Name_Possessive_Sinhala_Indep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
+Short_Name_Possessive_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's#!#!#!#!"
+Short_Name_Possessive_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('SinhalEmpEnd')]'s#!#!#!#!"
+
+Short_Name_Possessive_No_Tooltip_Sinhala: "#high [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s#!"
+Short_Name_Possessive_No_Tooltip_Sinhala_Dep: "#high [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
+Short_Name_Possessive_No_Tooltip_Sinhala_Indep: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
+Short_Name_Possessive_No_Tooltip_Sinhala_King: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's#!"
+Short_Name_Possessive_No_Tooltip_Sinhala_Emperor: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('SinhalEmpEnd')]'s#!"
+
+Short_Name_Possessive_No_Tooltip_No_Format_Sinhala: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s"
+Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_Dep: "[CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_Indep: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
+Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_King: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's"
+Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_Emperor: "[ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('SinhalEmpEnd')]'s"
+
+UI_Name_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!#!"
+UI_Name_Sinhala_Dep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
+UI_Name_Sinhala_Indep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
+UI_Name_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē#!#!#!#!"
+UI_Name_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]#!#!#!#!"
+
+UI_Name_No_Tooltip_Sinhala: "#high [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!"
+UI_Name_No_Tooltip_Sinhala_Dep: "#high [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
+UI_Name_No_Tooltip_Sinhala_Indep: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
+UI_Name_No_Tooltip_Sinhala_King: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē#!"
+UI_Name_No_Tooltip_Sinhala_Emperor: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]#!"
+
+UI_Name_Possessive_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!#!"
+UI_Name_Possessive_Sinhala_Dep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
+UI_Name_Possessive_Sinhala_Indep: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!#!"
+UI_Name_Possessive_Sinhala_King: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's#!#!#!#!"
+UI_Name_Possessive_Sinhala_Emperor: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]'s#!#!#!#!"
+
+UI_Name_Possessive_No_Tooltip_Sinhala: "#high [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s#!"
+UI_Name_Possessive_No_Tooltip_Sinhala_Dep: "#high [CHARACTER.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
+UI_Name_Possessive_No_Tooltip_Sinhala_Indep: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!"
+UI_Name_Possessive_No_Tooltip_Sinhala_King: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]ayan-vahansē's#!"
+UI_Name_Possessive_No_Tooltip_Sinhala_Emperor: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]'s#!"
+
 SinhalLandEnd: " sakvittan-vahansē"
 SinhalUnlandEnd: " bisōvun-vahansē"
 
