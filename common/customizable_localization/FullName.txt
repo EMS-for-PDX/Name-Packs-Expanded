@@ -218,7 +218,7 @@
 					}
 				}
 			}
-			highest_held_title_tier = tier_emperor
+			highest_held_title_tier = tier_empire
 		}
 		localization_key = Full_Name_Sinhala_Emperor
 	}
@@ -284,6 +284,410 @@
 			}
 		}
 		localization_key = Full_Name_Sinhala
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					any_parent_culture_or_above = {
+						OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					}
+				}
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Telugu_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_spouse
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = scope:the_spouse
+						}
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Telugu_Spouse_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Telugu_HighBorn
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Telugu_HighBorn_Spouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Telugu_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Telugu_Spouse_Duke_Dep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Telugu
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = Full_Name_Kannada_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Full_Name_Kannada_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Kannada_HighSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Kannada_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Kannada_IndepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = root
+						}
+					}
+				}
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Kannada_IndepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Kannada_DepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Kannada_DepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_county
+		}
+		localization_key = Full_Name_Kannada_IndepCount
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			is_landed = yes
+		}
+		localization_key = Full_Name_Kannada_LowNoble
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				is_landed = yes
+			}
+		}
+		localization_key = Full_Name_Kannada_LowNobleSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Kannada
 	}
 	text = {
 		trigger = {
@@ -1239,7 +1643,7 @@ FullNameNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_emperor
+			highest_held_title_tier = tier_empire
 		}
 		localization_key = Full_Name_No_Tooltip_Sinhala_Emperor
 	}
@@ -1305,6 +1709,410 @@ FullNameNoTooltip = {
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Sinhala
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					any_parent_culture_or_above = {
+						OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					}
+				}
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_spouse
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = scope:the_spouse
+						}
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_Spouse_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_HighBorn
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_HighBorn_Spouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_Spouse_Duke_Dep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_HighSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_IndepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = root
+						}
+					}
+				}
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_IndepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_DepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_DepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_county
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_IndepCount
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			is_landed = yes
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_LowNoble
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				is_landed = yes
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_LowNobleSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada
 	}
 	text = {
 		trigger = {
@@ -2260,7 +3068,7 @@ FullNamePossessive = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_emperor
+			highest_held_title_tier = tier_empire
 		}
 		localization_key = Full_Name_Possessive_Sinhala_Emperor
 	}
@@ -2326,6 +3134,410 @@ FullNamePossessive = {
 			}
 		}
 		localization_key = Full_Name_Possessive_Sinhala
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					any_parent_culture_or_above = {
+						OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					}
+				}
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_spouse
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = scope:the_spouse
+						}
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_Spouse_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Possessive_Telugu_HighBorn
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_HighBorn_Spouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_Spouse_Duke_Dep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = Full_Name_Possessive_Kannada_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Full_Name_Possessive_Kannada_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_HighSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Possessive_Kannada_IndepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = root
+						}
+					}
+				}
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_IndepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Possessive_Kannada_DepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_DepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_county
+		}
+		localization_key = Full_Name_Possessive_Kannada_IndepCount
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			is_landed = yes
+		}
+		localization_key = Full_Name_Possessive_Kannada_LowNoble
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				is_landed = yes
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_LowNobleSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada
 	}
 	text = {
 		trigger = {
@@ -3281,7 +4493,7 @@ FullNamePossessiveNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_emperor
+			highest_held_title_tier = tier_empire
 		}
 		localization_key = Full_Name_Possessive_No_Tooltip_Sinhala_Emperor
 	}
@@ -3347,6 +4559,410 @@ FullNamePossessiveNoTooltip = {
 			}
 		}
 		localization_key = Full_Name_Possessive_No_Tooltip_Sinhala
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					any_parent_culture_or_above = {
+						OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					}
+				}
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Telugu_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_spouse
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = scope:the_spouse
+						}
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Telugu_Spouse_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Telugu_HighBorn
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Telugu_HighBorn_Spouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Telugu_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Telugu_Spouse_Duke_Dep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Telugu
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_HighSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_IndepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = root
+						}
+					}
+				}
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_IndepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_DepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_DepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_county
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_IndepCount
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			is_landed = yes
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_LowNoble
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				is_landed = yes
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada_LowNobleSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Kannada
 	}
 	text = {
 		trigger = {
@@ -4303,7 +5919,7 @@ FullNameNick = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_emperor
+			highest_held_title_tier = tier_empire
 		}
 		localization_key = Full_Name_Sinhala_Emperor
 	}
@@ -4369,6 +5985,410 @@ FullNameNick = {
 			}
 		}
 		localization_key = Full_Name_Sinhala
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					any_parent_culture_or_above = {
+						OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					}
+				}
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Telugu_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_spouse
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = scope:the_spouse
+						}
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Telugu_Spouse_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Telugu_HighBorn
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Telugu_HighBorn_Spouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Telugu_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Telugu_Spouse_Duke_Dep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Telugu
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = Full_Name_Kannada_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Full_Name_Kannada_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Kannada_HighSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Kannada_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Kannada_IndepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = root
+						}
+					}
+				}
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Kannada_IndepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Kannada_DepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Kannada_DepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_county
+		}
+		localization_key = Full_Name_Kannada_IndepCount
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			is_landed = yes
+		}
+		localization_key = Full_Name_Kannada_LowNoble
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				is_landed = yes
+			}
+		}
+		localization_key = Full_Name_Kannada_LowNobleSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Kannada
 	}
 	text = {
 		trigger = {
@@ -5324,7 +7344,7 @@ FullNamePossessiveNick = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_emperor
+			highest_held_title_tier = tier_empire
 		}
 		localization_key = Full_Name_Possessive_Sinhala_Emperor
 	}
@@ -5390,6 +7410,410 @@ FullNamePossessiveNick = {
 			}
 		}
 		localization_key = Full_Name_Possessive_Sinhala
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					any_parent_culture_or_above = {
+						OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					}
+				}
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_spouse
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = scope:the_spouse
+						}
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_Spouse_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Possessive_Telugu_HighBorn
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_HighBorn_Spouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu_Spouse_Duke_Dep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Telugu
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = Full_Name_Possessive_Kannada_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Full_Name_Possessive_Kannada_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_HighSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Possessive_Kannada_IndepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = root
+						}
+					}
+				}
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_IndepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_Possessive_Kannada_DepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_DepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_county
+		}
+		localization_key = Full_Name_Possessive_Kannada_IndepCount
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			is_landed = yes
+		}
+		localization_key = Full_Name_Possessive_Kannada_LowNoble
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				is_landed = yes
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada_LowNobleSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_Kannada
 	}
 	text = {
 		trigger = {
@@ -6345,7 +8769,7 @@ FullNameNickNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_emperor
+			highest_held_title_tier = tier_empire
 		}
 		localization_key = Full_Name_No_Tooltip_Sinhala_Emperor
 	}
@@ -6411,6 +8835,410 @@ FullNameNickNoTooltip = {
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Sinhala
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					any_parent_culture_or_above = {
+						OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+					}
+				}
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_spouse
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = scope:the_spouse
+						}
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_Spouse_Duke_Indep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_HighBorn
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_HighBorn_Spouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu_Spouse_Duke_Dep
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_telugu
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_telugu
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Telugu
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier = tier_empire
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_Emperor
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_King
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_HighSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_parent = {
+				even_if_dead = yes
+				save_temporary_scope_as = the_parent
+				OR = {
+					has_government = feudal_government
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_feudalclan
+							this = scope:the_parent
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_Prince
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_IndepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = root
+						}
+					}
+				}
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_IndepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_DepDuke
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_DepDukeSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			OR = {
+				is_independent_ruler = yes
+				dynasty ?= {
+					any_in_list = {
+						variable = dynasty_independent
+						this = root
+					}
+				}
+			}
+			highest_held_title_tier >= tier_county
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_IndepCount
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			is_landed = yes
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_LowNoble
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+			any_spouse = {
+				even_if_dead = yes
+				is_landed = yes
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada_LowNobleSpouse
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_dravidian
+				OR = {
+					has_cultural_pillar = language_kannada
+					any_parent_culture_or_above = {
+						has_cultural_pillar = language_kannada
+					}
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Kannada
 	}
 	text = {
 		trigger = {
