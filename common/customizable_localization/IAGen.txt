@@ -79,6 +79,39 @@ SinhalEmpEnd = {
 		localization_key = SinhalUnlandEnd
 	}
 }
+SinhalaSuffixCheck = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			is_male = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+        localization_key = VahanseKing
+	}
+	text = {
+		trigger = {
+			is_male = yes
+			father ?= {
+				OR = {
+					is_independent_ruler = yes
+					dynasty ?= {
+						any_in_list = {
+							variable = dynasty_independent
+							this = root.father
+						}
+					}
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = VahansePrince
+	}
+	text = {
+		fallback = yes
+		localization_key = VahanseElse
+	}
+}
 KingPreIA = {
 	type = character
 	log_loc_errors = no
