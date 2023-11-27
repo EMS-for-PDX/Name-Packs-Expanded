@@ -27,8 +27,31 @@
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189019 }
 		add_to_variable_list = { name = dynasty_independent target = character:189007 }
 	}
+	character:189154.house = {
+		set_variable = {
+			name = name_founder
+			value = character:npedbhind091
+		}
+	}
+	character:189154.dynasty = { #Adityavamsa
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbhind091 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189154 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189155 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189156 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189151 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189152 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189166 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189165 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:189153 }
+	}
 	character:175010 ={
-        add_to_global_variable_list = { name = Salamevan target = this } #Needs Abha Salamevan regnal name
+        add_to_global_variable_list = { name = SalamevanReg target = this }
+	}
+	character:189153 ={
+        change_first_name = Kirti
+	}
+	character:189155 ={
+        change_first_name = Dapulu
 	}
 	character:189000 ={
         change_first_name = Manavarma
@@ -140,19 +163,25 @@
 	character:189028 ={
         change_first_name = Kasyapa
 	}
-	character:189026 ={
-        change_first_name = Kasyapa
-	}
 	character:189025 ={
         change_first_name = Mihindu
 	}
 	character:189023 ={
         change_first_name = Mihindu
 	}
+	character:189021 ={
+        change_first_name = Dapulu
+	}
+	character:189020 ={
+        change_first_name = Dapulu
+	}
 	character:217369 ={
         change_first_name = Mita
 	}
-	character:189019 ={
+	character:189027 ={
         change_first_name = Moggallana
+	}
+	character:189019 ={
+        change_first_name = Kasyapa
 	}
 }
