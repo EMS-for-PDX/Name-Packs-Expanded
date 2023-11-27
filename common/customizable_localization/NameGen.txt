@@ -439,6 +439,29 @@ CharacterSpouseHouseCheck = {
 		localization_key = Gui_blank
 	}
 }
+SinhalaSuffixCheck = {
+	type = character
+	text = {
+		trigger = {
+			is_male = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = VahanseKing
+	}
+	text = {
+		trigger = {
+			is_male = yes
+			father ?= {
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		localization_key = VahansePrince
+	}
+	text = {
+		fallback = yes
+		localization_key = VahanseElse
+	}
+}
 CharacterSpouseHouseCheckAfter = {
 	parent = CharacterSpouseHouseCheck
 	suffix = "_After"
