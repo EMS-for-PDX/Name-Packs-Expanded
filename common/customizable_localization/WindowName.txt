@@ -385,7 +385,7 @@
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Window_Sinhala_Dep
 	}
@@ -1638,7 +1638,12 @@ WindowNameTT = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Window_Sinhala_Emperor_TT
 	}
@@ -1661,7 +1666,15 @@ WindowNameTT = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Window_Sinhala_King_TT
 	}
@@ -1691,7 +1704,7 @@ WindowNameTT = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Window_Sinhala_Dep_TT
 	}

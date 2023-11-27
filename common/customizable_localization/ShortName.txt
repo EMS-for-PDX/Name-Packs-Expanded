@@ -210,7 +210,12 @@
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_Sinhala_Emperor
 	}
@@ -233,7 +238,15 @@
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_Sinhala_King
 	}
@@ -263,7 +276,7 @@
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_Sinhala_Dep
 	}
@@ -884,7 +897,12 @@ ShortNameNotMeNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_No_Tooltip_Sinhala_Emperor
 	}
@@ -907,7 +925,15 @@ ShortNameNotMeNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_No_Tooltip_Sinhala_King
 	}
@@ -937,7 +963,7 @@ ShortNameNotMeNoTooltip = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_No_Tooltip_Sinhala_Dep
 	}
@@ -1558,7 +1584,12 @@ ShortNameNotMePossessive = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_Sinhala_Emperor
 	}
@@ -1581,7 +1612,15 @@ ShortNameNotMePossessive = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_Sinhala_King
 	}
@@ -1611,7 +1650,7 @@ ShortNameNotMePossessive = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_Possessive_Sinhala_Dep
 	}
@@ -2232,7 +2271,12 @@ ShortNameNotMePossessiveNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Sinhala_Emperor
 	}
@@ -2255,7 +2299,15 @@ ShortNameNotMePossessiveNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Sinhala_King
 	}
@@ -2285,7 +2337,7 @@ ShortNameNotMePossessiveNoTooltip = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Sinhala_Dep
 	}
@@ -2906,7 +2958,12 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_Emperor
 	}
@@ -2929,7 +2986,15 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_King
 	}
@@ -2959,7 +3024,7 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_Dep
 	}
@@ -3586,7 +3651,12 @@ ShortName = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_Sinhala_Emperor
 	}
@@ -3609,7 +3679,15 @@ ShortName = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_Sinhala_King
 	}
@@ -3639,7 +3717,7 @@ ShortName = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_Sinhala_Dep
 	}
@@ -4266,7 +4344,12 @@ ShortNameNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_No_Tooltip_Sinhala_Emperor
 	}
@@ -4289,7 +4372,15 @@ ShortNameNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_No_Tooltip_Sinhala_King
 	}
@@ -4319,7 +4410,7 @@ ShortNameNoTooltip = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_No_Tooltip_Sinhala_Dep
 	}
@@ -4946,7 +5037,12 @@ ShortNamePossessive = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_Sinhala_Emperor
 	}
@@ -4969,7 +5065,15 @@ ShortNamePossessive = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_Sinhala_King
 	}
@@ -4999,7 +5103,7 @@ ShortNamePossessive = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_Possessive_Sinhala_Dep
 	}
@@ -5616,7 +5720,12 @@ ShortNamePossessiveNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Sinhala_Emperor
 	}
@@ -5639,7 +5748,15 @@ ShortNamePossessiveNoTooltip = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Sinhala_King
 	}
@@ -5669,7 +5786,7 @@ ShortNamePossessiveNoTooltip = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Sinhala_Dep
 	}
@@ -6296,7 +6413,12 @@ ShortNamePossessiveNoTooltipNoFormat = {
 					}
 				}
 			}
-			highest_held_title_tier = tier_empire
+			OR = {
+				highest_held_title_tier = tier_empire
+				primary_spouse ?= {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_Emperor
 	}
@@ -6319,7 +6441,15 @@ ShortNamePossessiveNoTooltipNoFormat = {
 					}
 				}
 			}
-			highest_held_title_tier >= tier_kingdom
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				primary_spouse ?= {
+					highest_held_title_tier >= tier_kingdom
+				}
+				any_parent = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_King
 	}
@@ -6349,7 +6479,7 @@ ShortNamePossessiveNoTooltipNoFormat = {
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
-			highest_held_title_tier >= tier_county
+			is_landed = yes
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Sinhala_Dep
 	}
