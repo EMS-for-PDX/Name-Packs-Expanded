@@ -533,8 +533,22 @@
     character:302642.dynasty = { #Shavgari
         add_to_variable_list = { name = name_pack_support_dynasty target = character:302647 }
     }
+    character:1000230120.dynasty = { #Oghuz
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:1000230120 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:1000230146 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:1000230138 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:1000230137 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1000230138 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1000230137 }
+    }
+	character:1000230137 = {
+		change_first_name = Shahmalik
+	}
+	character:1000230120 = {
+		change_first_name = Teniz
+	}
 	character:extra_seljuks_3 = {
-		change_first_name = Toghrul
+		change_first_name = Tugrul
 	}
 	character:extra_seljuks_2 = {
 		change_first_name = Zulaykha

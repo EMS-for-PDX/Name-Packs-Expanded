@@ -120,7 +120,14 @@
 	character:167951.dynasty = { #Stazone
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:167951 }
 	}
+	character:75000.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbsard005
+        }
+    }
 	character:75006.dynasty = { #Torchitoriu
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbsard005 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:75006 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145908 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:145909 }
