@@ -23,7 +23,7 @@ SinhalaRegnal = {
 	text = {
 		trigger = {
 			dynasty ?= {
-				any_in_list = {
+				any_in_global_list = {
 					variable = SalamevanReg
 					this = root
 				}
@@ -34,7 +34,7 @@ SinhalaRegnal = {
 	text = {
 		trigger = {
 			dynasty ?= {
-				any_in_list = {
+				any_in_global_list = {
 					variable = SangboReg
 					this = root
 				}
@@ -64,6 +64,55 @@ SinhalaRegnal = {
 		fallback = yes
 		localization_key = Gui_blank
 	}
+}
+SinhalaRegnalOrName = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			dynasty ?= {
+				any_in_global_list = {
+					variable = SalamevanReg
+					this = root
+				}
+			}
+		}
+        localization_key = SalamevanRegShort
+	}
+	text = {
+		trigger = {
+			dynasty ?= {
+				any_in_global_list = {
+					variable = SangboReg
+					this = root
+				}
+			}
+		}
+        localization_key = SalamevanRegShort
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+                    dynasty ?= {
+                        any_in_list = {
+                            variable = name_pack_support_dynasty
+                            this = root
+                        }
+                    }
+                }
+                any_in_global_list = {
+                    variable = name_pack_support_global
+                    this = root
+                }
+			}
+		}
+		localization_key = Supported_Name
+	}
+    text = {
+        fallback = yes
+		localization_key = Nonsupported_Name
+    }
 }
 SinhalEmpEnd = {
 	type = character
