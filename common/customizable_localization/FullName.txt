@@ -24,8 +24,7 @@
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty ?= {
@@ -116,8 +115,7 @@
 				NOT = {
 					OR = {
 						AND = {
-							exists = father
-							father = {
+							father ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -427,7 +425,7 @@
 			}
 			any_spouse = {
 				even_if_dead = yes
-				highest_held_title_tier >= tier_duchy
+				highest_held_title_tier = tier_duchy
 			}
 		}
 		localization_key = Full_Name_Telugu_Spouse_Duke_Dep
@@ -1456,8 +1454,7 @@ FullNameNoTooltip = {
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty ?= {
@@ -1548,8 +1545,7 @@ FullNameNoTooltip = {
 				NOT = {
 					OR = {
 						AND = {
-							exists = father
-							father = {
+							father ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -1859,7 +1855,7 @@ FullNameNoTooltip = {
 			}
 			any_spouse = {
 				even_if_dead = yes
-				highest_held_title_tier >= tier_duchy
+				highest_held_title_tier = tier_duchy
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Telugu_Spouse_Duke_Dep
@@ -2888,8 +2884,7 @@ FullNamePossessive = {
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty ?= {
@@ -2980,8 +2975,7 @@ FullNamePossessive = {
 				NOT = {
 					OR = {
 						AND = {
-							exists = father
-							father = {
+							father ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -3291,7 +3285,7 @@ FullNamePossessive = {
 			}
 			any_spouse = {
 				even_if_dead = yes
-				highest_held_title_tier >= tier_duchy
+				highest_held_title_tier = tier_duchy
 			}
 		}
 		localization_key = Full_Name_Possessive_Telugu_Spouse_Duke_Dep
@@ -4320,8 +4314,7 @@ FullNamePossessiveNoTooltip = {
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty ?= {
@@ -4412,8 +4405,7 @@ FullNamePossessiveNoTooltip = {
 				NOT = {
 					OR = {
 						AND = {
-							exists = father
-							father = {
+							father ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -4723,7 +4715,7 @@ FullNamePossessiveNoTooltip = {
 			}
 			any_spouse = {
 				even_if_dead = yes
-				highest_held_title_tier >= tier_duchy
+				highest_held_title_tier = tier_duchy
 			}
 		}
 		localization_key = Full_Name_Possessive_No_Tooltip_Telugu_Spouse_Duke_Dep
@@ -5753,8 +5745,7 @@ FullNameNick = {
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty ?= {
@@ -5845,8 +5836,7 @@ FullNameNick = {
 				NOT = {
 					OR = {
 						AND = {
-							exists = father
-							father = {
+							father ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -6156,7 +6146,7 @@ FullNameNick = {
 			}
 			any_spouse = {
 				even_if_dead = yes
-				highest_held_title_tier >= tier_duchy
+				highest_held_title_tier = tier_duchy
 			}
 		}
 		localization_key = Full_Name_Telugu_Spouse_Duke_Dep
@@ -7185,8 +7175,7 @@ FullNamePossessiveNick = {
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty ?= {
@@ -7277,8 +7266,7 @@ FullNamePossessiveNick = {
 				NOT = {
 					OR = {
 						AND = {
-							exists = father
-							father = {
+							father ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -7588,7 +7576,7 @@ FullNamePossessiveNick = {
 			}
 			any_spouse = {
 				even_if_dead = yes
-				highest_held_title_tier >= tier_duchy
+				highest_held_title_tier = tier_duchy
 			}
 		}
 		localization_key = Full_Name_Possessive_Telugu_Spouse_Duke_Dep
@@ -8617,8 +8605,7 @@ FullNameNickNoTooltip = {
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty ?= {
@@ -8709,8 +8696,7 @@ FullNameNickNoTooltip = {
 				NOT = {
 					OR = {
 						AND = {
-							exists = father
-							father = {
+							father ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -9020,7 +9006,7 @@ FullNameNickNoTooltip = {
 			}
 			any_spouse = {
 				even_if_dead = yes
-				highest_held_title_tier >= tier_duchy
+				highest_held_title_tier = tier_duchy
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Telugu_Spouse_Duke_Dep

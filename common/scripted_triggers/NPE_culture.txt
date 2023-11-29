@@ -267,18 +267,12 @@ kipchak_check = {
 	} 
 }
 mongol_check = {
+	has_cultural_pillar = heritage_mongolic
 	OR = {
-		AND = {
-			has_cultural_pillar = heritage_mongolic
-			uyghur_check = no
-		}
-		AND = {
-			has_cultural_pillar = heritage_mongolic
-			has_government = tribal_government
-			OR = {
-				has_name_list = name_list_tuyuhun
-				has_name_list = name_list_khitan
-			}
+		uyghur_check = no
+		OR = {
+			has_name_list = name_list_tuyuhun
+			has_name_list = name_list_khitan
 		}
 	}
 }
