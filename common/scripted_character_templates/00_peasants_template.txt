@@ -774,4 +774,44 @@ child_peasant_character = {
 	}
 }
 
+servant_father_character = {
+	age = { 16 36 }
+	random_traits = yes
+	dynasty = none
+	gender = male
+	intrigue = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	
+	after_creation = {
+		if = {
+			limit = {
+				culture = {
+					is_npe_supported_culture = yes
+				}
+			}
+			name_gen_effect = yes
+			dynasty_effect_ne = yes
+		}
+		random_list = {
+			200 = {
+				# Character is of average weight, nothing happens	
+			}
+			25 = {
+				change_current_weight = -25
+			}
+			25 = {
+				change_current_weight = -75
+			}
+			25 = {
+				change_current_weight = 25
+			}
+			25 = {
+				change_current_weight = 75
+			}
+		}
+		add_character_flag = peasant_outfit
+	}
+}
 
