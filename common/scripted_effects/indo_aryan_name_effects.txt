@@ -302,7 +302,12 @@ name_ia_roll_male = {
 			}
 			modifier = {
 				any_parent = {
-					highest_held_title_tier >= tier_kingdom
+					OR = {
+						highest_held_title_tier >= tier_kingdom
+						any_parent = {
+							highest_held_title_tier >= tier_kingdom
+						}
+					}
 				}
 				add = 25
 			}
@@ -329,7 +334,12 @@ name_ia_roll_male = {
 			}
 			modifier = {
 				any_parent = {
-					highest_held_title_tier >= tier_kingdom
+					OR = {
+						highest_held_title_tier >= tier_kingdom
+						any_parent = {
+							highest_held_title_tier >= tier_kingdom
+						}
+					}
 				}
 				add = -25
 			}
