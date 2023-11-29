@@ -24,8 +24,7 @@
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty ?= {
@@ -310,7 +309,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -338,7 +336,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -825,7 +822,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -853,7 +849,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -943,7 +938,6 @@
 			OR = {
 				is_independent_ruler = yes
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_independent
@@ -1339,8 +1333,7 @@ WindowNameTT = {
 					highest_held_title_tier >= tier_kingdom
 				}
 				AND = {
-					exists = primary_spouse.dynasty
-					primary_spouse = {
+					primary_spouse ?= {
 						OR = {
 							is_independent_ruler = yes
 							dynasty ?= {
@@ -1437,8 +1430,7 @@ WindowNameTT = {
 							}
 						}
 						AND = {
-							exists = mother
-							mother = {
+							mother ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -1630,7 +1622,6 @@ WindowNameTT = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1658,7 +1649,6 @@ WindowNameTT = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1725,19 +1715,9 @@ WindowNameTT = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				OR = {
-					OR = {
 					has_cultural_pillar = language_telugu
 					any_parent_culture_or_above = {
 						has_cultural_pillar = language_telugu
-					}
-				}
-					any_parent_culture_or_above = {
-						OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
 					}
 				}
 			}
@@ -2155,7 +2135,6 @@ WindowNameTT = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -2183,7 +2162,6 @@ WindowNameTT = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -2273,7 +2251,6 @@ WindowNameTT = {
 			OR = {
 				is_independent_ruler = yes
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_independent

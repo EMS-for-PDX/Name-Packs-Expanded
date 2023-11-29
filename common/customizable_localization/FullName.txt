@@ -122,8 +122,7 @@
 							}
 						}
 						AND = {
-							exists = mother
-							mother = {
+							mother ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -209,7 +208,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -237,7 +235,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -304,19 +301,9 @@
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				OR = {
-					OR = {
 					has_cultural_pillar = language_telugu
 					any_parent_culture_or_above = {
 						has_cultural_pillar = language_telugu
-					}
-				}
-					any_parent_culture_or_above = {
-						OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
 					}
 				}
 			}
@@ -1003,7 +990,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1026,7 +1012,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1101,7 +1086,6 @@
 			OR = {
 				is_independent_ruler = yes
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_independent
@@ -1570,8 +1554,7 @@ FullNameNoTooltip = {
 							}
 						}
 						AND = {
-							exists = mother
-							mother = {
+							mother ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -1657,7 +1640,6 @@ FullNameNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1685,7 +1667,6 @@ FullNameNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1752,19 +1733,9 @@ FullNameNoTooltip = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				OR = {
-					OR = {
 					has_cultural_pillar = language_telugu
 					any_parent_culture_or_above = {
 						has_cultural_pillar = language_telugu
-					}
-				}
-					any_parent_culture_or_above = {
-						OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
 					}
 				}
 			}
@@ -2451,7 +2422,6 @@ FullNameNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -2474,7 +2444,6 @@ FullNameNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -2549,7 +2518,6 @@ FullNameNoTooltip = {
 			OR = {
 				is_independent_ruler = yes
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_independent
@@ -3018,8 +2986,7 @@ FullNamePossessive = {
 							}
 						}
 						AND = {
-							exists = mother
-							mother = {
+							mother ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -3105,7 +3072,6 @@ FullNamePossessive = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -3133,7 +3099,6 @@ FullNamePossessive = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -3200,19 +3165,9 @@ FullNamePossessive = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				OR = {
-					OR = {
 					has_cultural_pillar = language_telugu
 					any_parent_culture_or_above = {
 						has_cultural_pillar = language_telugu
-					}
-				}
-					any_parent_culture_or_above = {
-						OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
 					}
 				}
 			}
@@ -3899,7 +3854,6 @@ FullNamePossessive = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -3922,7 +3876,6 @@ FullNamePossessive = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -3997,7 +3950,6 @@ FullNamePossessive = {
 			OR = {
 				is_independent_ruler = yes
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_independent
@@ -4466,8 +4418,7 @@ FullNamePossessiveNoTooltip = {
 							}
 						}
 						AND = {
-							exists = mother
-							mother = {
+							mother ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -4553,7 +4504,6 @@ FullNamePossessiveNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -4581,7 +4531,6 @@ FullNamePossessiveNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -4648,19 +4597,9 @@ FullNamePossessiveNoTooltip = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				OR = {
-					OR = {
 					has_cultural_pillar = language_telugu
 					any_parent_culture_or_above = {
 						has_cultural_pillar = language_telugu
-					}
-				}
-					any_parent_culture_or_above = {
-						OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
 					}
 				}
 			}
@@ -5347,7 +5286,6 @@ FullNamePossessiveNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -5370,7 +5308,6 @@ FullNamePossessiveNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -5445,7 +5382,6 @@ FullNamePossessiveNoTooltip = {
 			OR = {
 				is_independent_ruler = yes
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_independent
@@ -5915,8 +5851,7 @@ FullNameNick = {
 							}
 						}
 						AND = {
-							exists = mother
-							mother = {
+							mother ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -6002,7 +5937,6 @@ FullNameNick = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -6030,7 +5964,6 @@ FullNameNick = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -6097,19 +6030,9 @@ FullNameNick = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				OR = {
-					OR = {
 					has_cultural_pillar = language_telugu
 					any_parent_culture_or_above = {
 						has_cultural_pillar = language_telugu
-					}
-				}
-					any_parent_culture_or_above = {
-						OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
 					}
 				}
 			}
@@ -6796,7 +6719,6 @@ FullNameNick = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -6819,7 +6741,6 @@ FullNameNick = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -6894,7 +6815,6 @@ FullNameNick = {
 			OR = {
 				is_independent_ruler = yes
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_independent
@@ -7363,8 +7283,7 @@ FullNamePossessiveNick = {
 							}
 						}
 						AND = {
-							exists = mother
-							mother = {
+							mother ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -7450,7 +7369,6 @@ FullNamePossessiveNick = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -7478,7 +7396,6 @@ FullNamePossessiveNick = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -7545,19 +7462,9 @@ FullNamePossessiveNick = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				OR = {
-					OR = {
 					has_cultural_pillar = language_telugu
 					any_parent_culture_or_above = {
 						has_cultural_pillar = language_telugu
-					}
-				}
-					any_parent_culture_or_above = {
-						OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
 					}
 				}
 			}
@@ -8244,7 +8151,6 @@ FullNamePossessiveNick = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -8267,7 +8173,6 @@ FullNamePossessiveNick = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -8342,7 +8247,6 @@ FullNamePossessiveNick = {
 			OR = {
 				is_independent_ruler = yes
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_independent
@@ -8811,8 +8715,7 @@ FullNameNickNoTooltip = {
 							}
 						}
 						AND = {
-							exists = mother
-							mother = {
+							mother ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
@@ -8898,7 +8801,6 @@ FullNameNickNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -8926,7 +8828,6 @@ FullNameNickNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -8993,19 +8894,9 @@ FullNameNickNoTooltip = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				OR = {
-					OR = {
 					has_cultural_pillar = language_telugu
 					any_parent_culture_or_above = {
 						has_cultural_pillar = language_telugu
-					}
-				}
-					any_parent_culture_or_above = {
-						OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
 					}
 				}
 			}
@@ -9692,7 +9583,6 @@ FullNameNickNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -9715,7 +9605,6 @@ FullNameNickNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -9790,7 +9679,6 @@ FullNameNickNoTooltip = {
 			OR = {
 				is_independent_ruler = yes
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_independent
