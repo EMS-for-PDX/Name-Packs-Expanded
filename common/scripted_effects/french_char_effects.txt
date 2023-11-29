@@ -394,7 +394,7 @@
 	character:168092.dynasty = { #La Tour du Pin
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:168092 } Angilbotto
 		#add_to_variable_list = { name = name_pack_support_dynasty target = character:168093 } Erlulf
-		#add_to_variable_list = { name = name_pack_support_dynasty target = character:168094 } Berilon 
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:168094 }
 	}
 	character:168059.house = {
 		set_variable = {
@@ -646,6 +646,9 @@
 		add_to_variable_list = { name = dynasty_independent target = character:168711 }
 		add_to_variable_list = { name = dynasty_independent target = character:168712 }
 		add_to_variable_list = { name = dynasty_independent target = character:168713 }
+	}
+	character:168094 = {
+		change_first_name = Berilon
 	}
 	character:74102 = {
 		change_first_name = Ermengard
@@ -1414,6 +1417,7 @@
 	add_to_global_variable_list = { name = name_pack_support_global target = character:41242 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:73271 }
 	add_to_global_variable_list = { name = name_pack_support_global target = character:204577 }
+	add_to_global_variable_list = { name = name_pack_support_global target = character:91173 }
 	character:127007.dynasty = { #Toulouse
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:110537 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:110539 }
@@ -3284,6 +3288,9 @@
 	character:174.dynasty = { #de Warenne
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:174 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:172 }
+	}
+	character:168102 = {
+		change_first_name = Berilon
 	}
 	character:168173 = {
 		change_first_name = Erlwin
