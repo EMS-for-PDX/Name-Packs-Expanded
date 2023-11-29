@@ -185,6 +185,7 @@
 	}
 }
 1066_tamil_char_effect = {
+    add_to_global_variable_list = { name = name_pack_support_global target = character:kolutunga_wife_1 }
 	character:175100.dynasty = { #Chera
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189050 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189051 }
@@ -283,6 +284,7 @@
 		}
 	}
 	character:189108.dynasty = { #Chalukya Chola
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil009 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189106 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:189108 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:chola_daughters_4 }
@@ -307,6 +309,19 @@
 	character:cholan_lankan_vassals_02.dynasty = { #Mukkuvar
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil011 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:cholan_lankan_vassals_02 }
+	}
+	character:cholan_grandee_1.house = { #Arumbakkam
+		set_variable = {
+			name = name_founder
+			value = character:npedbtamil012
+		}
+	}
+	character:cholan_grandee_1.dynasty = { #Arumbakkam
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:npedbtamil012 }
+		add_to_variable_list = { name = name_pack_support_dynasty target = character:cholan_grandee_1 }
+	}
+	character:kolutunga_wife_1 = {
+		change_first_name = Marrukalvi
 	}
 	character:malabari_vassal03 = {
 		change_first_name = Martanda

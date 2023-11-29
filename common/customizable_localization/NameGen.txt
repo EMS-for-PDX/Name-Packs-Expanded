@@ -364,6 +364,73 @@ TamilCharacterHouseCheckBefore = {
 	parent = TamilCharacterHouseCheck
 	suffix = "_Before"
 }
+TamilSpouseHouseCheck = {
+	type = character
+	text = {
+		trigger = {
+			exists = primary_spouse
+			trigger_if = {
+				limit = {
+					is_male = yes
+				}
+				matrilinear_marriage = yes
+			}
+			trigger_else = {
+				matrilinear_marriage = no
+			}
+			primary_spouse = {
+				exists = house.var:name_founder
+				house.var:name_founder = {
+					save_temporary_scope_as = good_lad
+				}
+				NOT = {
+					root = scope:good_lad
+				}
+				dynasty = {
+					any_in_list = {
+						variable = name_pack_support_dynasty
+						this = scope:good_lad
+					}
+				}
+			}
+		}
+		localization_key = Tamil_Spouse_House
+	}
+	text = {
+		trigger = {
+			any_former_spouse = {
+				exists = this
+				exists = house.var:name_founder
+				house.var:name_founder = {
+					save_temporary_scope_as = good_lad
+				}
+				NOT = {
+					root = scope:good_lad
+				}
+				dynasty = {
+					any_in_list = {
+						variable = name_pack_support_dynasty
+						this = scope:good_lad
+					}
+				}
+			}
+			trigger_if = {
+				limit = {
+					is_male = yes
+				}
+				matrilinear_marriage = yes
+			}
+			trigger_else = {
+				matrilinear_marriage = no
+			}
+		}
+		localization_key = Supported_Spouse_House_DEAD
+	}
+	text = {
+		fallback = yes
+		localization_key = Gui_blank
+	}
+}
 CharacterSpouseHouseCheck = {
 	type = character
 	text = {
