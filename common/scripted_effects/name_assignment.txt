@@ -557,7 +557,12 @@
 								}
 							}
 						}
-						highest_held_title_tier >= tier_kingdom
+						OR = {
+							highest_held_title_tier >= tier_kingdom
+							any_parent = {
+								highest_held_title_tier >= tier_kingdom
+							}
+						}
 					}
 					add = 1
 				}
@@ -611,7 +616,12 @@
 								}
 							}
 						}
-						highest_held_title_tier >= tier_kingdom
+						OR = {
+							highest_held_title_tier >= tier_kingdom
+							any_parent = {
+								highest_held_title_tier >= tier_kingdom
+							}
+						}
 					}
 					add = 1
 				}
@@ -666,7 +676,12 @@
 								}
 							}
 						}
-						highest_held_title_tier >= tier_kingdom
+						OR = {
+							highest_held_title_tier >= tier_kingdom
+							any_parent = {
+								highest_held_title_tier >= tier_kingdom
+							}
+						}
 					}
 					add = 1
 				}
