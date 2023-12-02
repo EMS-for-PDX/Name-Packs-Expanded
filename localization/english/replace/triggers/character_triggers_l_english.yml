@@ -867,9 +867,9 @@
  DOMAIN_LIMIT_TRIGGER: "[domain_limit|E]: $VALUE$"
  HAS_HAD_FOCUS_FOR_DAYS_TRIGGER: "Days spent having the same focus: $DAYS|V$"
 
- IS_COUNCIL_TASK_VALID: "[CHARACTER.GetName] can start the $TYPE|V$ task"
- IS_COUNCIL_TASK_VALID_COUNTY: "[CHARACTER.GetName] can start the $TYPE|V$ task in [PROVINCE.GetName]"
- IS_COUNCIL_TASK_VALID_COURT: "[CHARACTER.GetName] can start the $TYPE|V$ task targeting [TARGET_CHARACTER.Custom('UINamePossessive')] court"
+ IS_COUNCIL_TASK_VALID: "[CHARACTER.Custom('RegName')] can start the $TYPE|V$ task"
+ IS_COUNCIL_TASK_VALID_COUNTY: "[CHARACTER.Custom('RegName')] can start the $TYPE|V$ task in [PROVINCE.GetName]"
+ IS_COUNCIL_TASK_VALID_COURT: "[CHARACTER.Custom('RegName')] can start the $TYPE|V$ task targeting [TARGET_CHARACTER.Custom('UINamePossessive')] court"
 
  #has_any_court_position
  HAS_ANY_COURT_POSITION: "Holds a court position"

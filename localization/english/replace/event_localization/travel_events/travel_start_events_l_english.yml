@@ -38,10 +38,10 @@
  travel_start_event.1020.t_tour_tax: "$activity_tour$: A Lucrative Start"
  travel_start_event.1020.t_tour_dread: "$activity_tour$: A Dreadful Start"
  travel_start_event.1020.desc_tour_intro: "The time has come to depart for my [ROOT.Char.GetInvolvedActivity.GetShortName] of [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]. My court is packed, ready, and raring to go.\n\nOur first stop will be my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('next_stop_liege'))], [next_stop_liege.Custom('TitledFirstNamePossessive')], [next_stop_liege.Custom('FortifiedBuilding')], over in [next_stop_liege.GetCapitalLocation.GetName];"
- travel_start_event.1020.desc_sick_tour: "it will be interesting to meet the people.\n\nDespite being in poor health, I am certain that this [ROOT.Char.GetInvolvedActivity.GetShortNameNoTooltip] will be spoken of for years to come."
+ travel_start_event.1020.desc_sick_tour: "it will be interesting to meet the people.\n\nDespite being in poor health, I am certain that this [ROOT.Char.GetInvolvedActivity.Custom('ShortNameNoTooltip')] will be spoken of for years to come."
  travel_start_event.1020.desc_tour_majesty: "I look forward to visiting [next_stop_liege.GetHerHim] and seeing my realm, one holding at a time.\n\nI am certain that the [ROOT.Char.GetPrimaryTitle.GetNamePossessiveNoTooltip] subjects will speak of my benevolence for a long time to come."
  travel_start_event.1020.desc_tour_tax: "I look forward to helping the people contribute to the nation's wealth, by any means available.\n\nThe [ROOT.Char.GetPrimaryTitle.GetNamePossessiveNoTooltip] subjects should certainly not have any surplus hidden from the crown after this tour has concluded."
- travel_start_event.1020.desc_tour_dread: "I look forward to striking fear into my pathetic subjects, one holding at a time.\n\nI will make sure that the [ROOT.Char.GetPrimaryTitle.GetNamePossessiveNoTooltip] subjects never forgets about this [ROOT.Char.GetInvolvedActivity.GetShortNameNoTooltip], indeed..."
+ travel_start_event.1020.desc_tour_dread: "I look forward to striking fear into my pathetic subjects, one holding at a time.\n\nI will make sure that the [ROOT.Char.GetPrimaryTitle.GetNamePossessiveNoTooltip] subjects never forgets about this [ROOT.Char.GetInvolvedActivity.Custom('ShortNameNoTooltip')], indeed..."
  due_to_activity_options_tt: "Due to your [activity_options|E]:"
 
  #Travelling to a Wedding
@@ -99,17 +99,17 @@
  travel_start_event.1040.desc_feast_celebration: "\n\nThe [ROOT.Char.GetInvolvedActivity.GetNameNoTooltip|l] is to celebrate [celebratory_guest.Custom('TitledFirstNamePossessive')] latest accomplishments and feats."
  travel_start_event.1040.desc_feast_outro_sick: "\n\nEven though my health is failing me, I believe that attending this event might be a good way to get my mind off of that and relieve some stress."
  travel_start_event.1040.desc_feast_outro_negative: "\n\nI do need to guard both my back as well as my food during this visit, as [host.Custom('TitledFirstNameNoTooltip')] is a treacherous creature."
- travel_start_event.1040.desc_feast_outro_positive: "\n\nI do look forward to getting to spend more time with [host.Custom('TitledFirstNameNoTooltip')] during this [ROOT.Char.GetInvolvedActivity.GetShortNameNoTooltip]."
+ travel_start_event.1040.desc_feast_outro_positive: "\n\nI do look forward to getting to spend more time with [host.Custom('TitledFirstNameNoTooltip')] during this [ROOT.Char.GetInvolvedActivity.Custom('ShortNameNoTooltip')]."
  travel_start_event.1040.desc_feast_outro_default: "\n\nI do look forward to trying the [host.Custom('RegionalDrink')] of the [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip] region, as well as enjoying the local cuisine."
  ##My Murder Feast
  travel_start_event.1040.desc_sick_murder_feast: "The time has come for the reckoning of my [ROOT.Char.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName] [ROOT.Char.GetInvolvedActivity.GetShortName] guests.\n\nWe will now depart for [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName], where my own particular brand of feast will go down — and I must hurry before I myself depart this world."
  travel_start_event.1040.desc_murder_feast: "I shall introduce my guests to my particular set of festivities when I host [ROOT.Char.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName] [ROOT.Char.GetInvolvedActivity.GetShortName] over at [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName].\n\nEverything is prepared in the utmost detail, and I'm sure they will feel welcome. It will be a feast to remember... for those left alive."
  #My Feast
  travel_start_event.1040.desc_my_feast: "$travel_start_event.1000.intro_activity$"
- travel_start_event.1040.desc_my_feast_celebration_host: "\n\nThe [ROOT.Char.GetInvolvedActivity.GetShortNameNoTooltip|l] is in honor of me and all of my magnificent accomplishments and feats."
- travel_start_event.1040.desc_my_feast_celebration: "\n\nThis [ROOT.Char.GetInvolvedActivity.GetShortNameNoTooltip|l] is in honor of [celebratory_guest.Custom('TitledFirstName')], a truly remarkable human being whom deserves additional reverence."
+ travel_start_event.1040.desc_my_feast_celebration_host: "\n\nThe [ROOT.Char.GetInvolvedActivity.Custom('ShortNameNoTooltip')|l] is in honor of me and all of my magnificent accomplishments and feats."
+ travel_start_event.1040.desc_my_feast_celebration: "\n\nThis [ROOT.Char.GetInvolvedActivity.Custom('ShortNameNoTooltip')|l] is in honor of [celebratory_guest.Custom('TitledFirstName')], a truly remarkable human being whom deserves additional reverence."
  travel_start_event.1040.desc_my_feast_outro_sick: "\n\nI haven't been feeling well lately, but this feast will surely take my mind off of things."
- travel_start_event.1040.desc_my_feast_outro_extrovert: "\n\nI will make sure this [ROOT.Char.GetInvolvedActivity.GetShortNameNoTooltip|l] is a shindig to remember; one that folks will talk about for years to come!"
+ travel_start_event.1040.desc_my_feast_outro_extrovert: "\n\nI will make sure this [ROOT.Char.GetInvolvedActivity.Custom('ShortNameNoTooltip')|l] is a shindig to remember; one that folks will talk about for years to come!"
  travel_start_event.1040.desc_my_feast_outro_introvert: "\n\nWhile I do not particularly care for these types of events, they are a necessary evil every once in a while."
  travel_start_event.1040.desc_my_feast_outro: "\n\nI do look forward to a good feast and letting off some steam!"
 

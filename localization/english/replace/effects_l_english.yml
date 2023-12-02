@@ -163,11 +163,11 @@
  THEY_WILL_MARRY_MATRILINEALLY_EFFECT: "[CHARACTER.Custom('ShortName')|U] will [matrilineally|E] [marry|E] [TARGET_CHARACTER.Custom('ShortName')]"
  
  CHANGED_MY_GOVERNMENT: "Changed your government to [GOVERNMENT_TYPE.GetName]"
- CHANGED_THEIR_GOVERNMENT: "Changes [CHARACTER.GetName] government to [GOVERNMENT_TYPE.GetName]"
+ CHANGED_THEIR_GOVERNMENT: "Changes [CHARACTER.Custom('RegName')] government to [GOVERNMENT_TYPE.GetName]"
  CHANGED_GOVERNMENT: "Changed government to [GOVERNMENT_TYPE.GetName]"
  CHANGE_GOVERNMENT: "Changes government to [GOVERNMENT_TYPE.GetName]"
  CHANGE_MY_GOVERNMENT: "Changes your government to [GOVERNMENT_TYPE.GetName]"
- CHANGE_THEIR_GOVERNMENT: "Changes [CHARACTER.GetName] government to [GOVERNMENT_TYPE.GetName]"
+ CHANGE_THEIR_GOVERNMENT: "Changes [CHARACTER.Custom('RegName')] government to [GOVERNMENT_TYPE.GetName]"
 
  FORBID_FROM_SCHEME_EFFECT: "Forbid from being an Agent in [SCHEME.GetName]"
  ALLOW_IN_SCHEME_EFFECT: "Allow to join [SCHEME.GetName] as an Agent"
@@ -1451,8 +1451,8 @@
  REFILLS_GARRISON: "Refills the garrison"
  REFILLS_LEVIES: "Refills levies"
 
- SET_PRIMARY_TITLE_TO: "Make [TARGET_TITLE.GetName] the [primary_title|E] of [CHARACTER.GetName]"
- PRIMARY_TITLE_HAS_BEEN_SET_TO: "[TARGET_TITLE.GetName|U] has become the [primary_title|E] of [CHARACTER.GetName]"
+ SET_PRIMARY_TITLE_TO: "Make [TARGET_TITLE.GetName] the [primary_title|E] of [CHARACTER.Custom('RegName')]"
+ PRIMARY_TITLE_HAS_BEEN_SET_TO: "[TARGET_TITLE.GetName|U] has become the [primary_title|E] of [CHARACTER.Custom('RegName')]"
  TITLE_BECOMES_MY_PRIMARY: "[TARGET_TITLE.GetName|U] becomes your [primary_title|E]"
  TITLE_HAS_BECOME_MY_PRIMARY: "[TARGET_TITLE.GetName|U] has become your [primary_title|E]"
 
@@ -1463,7 +1463,7 @@
  REMOVE_DOCTRINE_DESC: "Remove #T $DOCTRINE$#! from [FAITH.GetName] faith"
  SET_REALM_CAPITAL_DESC: "[TARGET_TITLE.GetName|U] becomes their new Realm Capital"
  SET_REALM_CAPITAL_FIRST_DESC: "[TARGET_TITLE.GetName|U] becomes your new Realm Capital"
- SET_REALM_CAPITAL_THIRD_DESC: "[TARGET_TITLE.GetName|U] becomes the new Realm Capital of [CHARACTER.GetName]"
+ SET_REALM_CAPITAL_THIRD_DESC: "[TARGET_TITLE.GetName|U] becomes the new Realm Capital of [CHARACTER.Custom('RegName')]"
  ADD_INNOVATION_EFFECT: "The [CULTURE.GetName] culture discovers $INNOVATION_TYPE|V$"
  ADDED_INNOVATION_EFFECT: "The [CULTURE.GetCollectiveNoun] discovered $INNOVATION_TYPE|V$"
  REMOVE_INNOVATION_EFFECT: "The [CULTURE.GetName] culture loses knowledge of $INNOVATION_TYPE|V$"
@@ -2406,16 +2406,16 @@
  THEY_LEFT_TRAVEL_PLAN: "[TARGET_CHARACTER.Custom('ShortName')|U] left the travel entourage"
 
  I_DESIGNATE_DIARCH: "I designate [TARGET_CHARACTER.GetName] as my future [CHARACTER.GetDiarchTitle]"
- THEY_DESIGNATE_DIARCH: "[CHARACTER.GetName] designates [TARGET_CHARACTER.GetName] as [CHARACTER.GetHerHis] future [CHARACTER.GetDiarchTitle]"
+ THEY_DESIGNATE_DIARCH: "[CHARACTER.Custom('RegName')] designates [TARGET_CHARACTER.GetName] as [CHARACTER.GetHerHis] future [CHARACTER.GetDiarchTitle]"
 
  I_DESIGNATED_DIARCH: "I designated [TARGET_CHARACTER.GetName] as my future [CHARACTER.GetDiarchTitle]"
- THEY_DESIGNATED_DIARCH: "[CHARACTER.GetName] designated [TARGET_CHARACTER.GetName] as [CHARACTER.GetHerHis] future [CHARACTER.GetDiarchTitle]"
+ THEY_DESIGNATED_DIARCH: "[CHARACTER.Custom('RegName')] designated [TARGET_CHARACTER.GetName] as [CHARACTER.GetHerHis] future [CHARACTER.GetDiarchTitle]"
 
  I_START_DIARCHY: "I enter [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]"
- THEY_START_DIARCHY: "[CHARACTER.GetName] enters [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]"
+ THEY_START_DIARCHY: "[CHARACTER.Custom('RegName')] enters [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]"
 
  I_STARTED_DIARCHY: "I entered [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]"
- THEY_STARTED_DIARCHY: "[CHARACTER.GetName] entered [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]"
+ THEY_STARTED_DIARCHY: "[CHARACTER.Custom('RegName')] entered [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]"
 
  I_END_DIARCHY: "My [CHARACTER.GetDiarchyTypeName] ends"
  THEY_END_DIARCHY: "[CHARACTER.GetNamePossessive] [CHARACTER.GetDiarchyTypeName] ends"
@@ -2459,10 +2459,10 @@
  THEY_CHANGED_POWER_LEVEL: "[CHARACTER.GetNamePossessive] [CHARACTER.GetDiarchyTypeName] [scales_of_power|E] swing has changed by $VALUE|0$"
 
  I_GET_DEPOSED_DIARCH: "I am removed from my role as [CHARACTER.GetLiege.GetDiarchTitle]"
- THEY_GET_DEPOSED_DIARCH: "[CHARACTER.GetName] is removed from [CHARACTER.GetHerHis] role as [CHARACTER.GetLiege.GetDiarchTitle]"
+ THEY_GET_DEPOSED_DIARCH: "[CHARACTER.Custom('RegName')] is removed from [CHARACTER.GetHerHis] role as [CHARACTER.GetLiege.GetDiarchTitle]"
 
  I_GOT_DEPOSED_DIARCH: "I was removed from my role as [CHARACTER.GetLiege.GetDiarchTitle]"
- THEY_GOT_DEPOSED_DIARCH: "[CHARACTER.GetName] was removed from [CHARACTER.GetHerHis] role as [CHARACTER.GetLiege.GetDiarchTitle]"
+ THEY_GOT_DEPOSED_DIARCH: "[CHARACTER.Custom('RegName')] was removed from [CHARACTER.GetHerHis] role as [CHARACTER.GetLiege.GetDiarchTitle]"
 
  I_GAIN_STRIFE_OPINION: "@warning_icon!#X This is an abuse of power, and will cause $VALUE|-0$ [strife|E] with your peer [vassals|E]#!"
  I_LOSE_STRIFE_OPINION: "#P Reduce [strife|E]: Your peer [vassals|E] gain $VALUE|+0$ [opinion|E] of you#!"
@@ -2484,29 +2484,29 @@
 
  GAIN_TRAIT_XP: "Gains $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
  I_GAIN_TRAIT_XP: "You gain $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
- THEY_GAIN_TRAIT_XP: "[CHARACTER.GetName] gains $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ THEY_GAIN_TRAIT_XP: "[CHARACTER.Custom('RegName')] gains $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
  GAINED_TRAIT_XP: "Gained $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
  I_GAINED_TRAIT_XP: "You gained $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
- THEY_GAINED_TRAIT_XP: "[CHARACTER.GetName] gained $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ THEY_GAINED_TRAIT_XP: "[CHARACTER.Custom('RegName')] gained $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
  LOSE_TRAIT_XP: "Loses $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
  I_LOSE_TRAIT_XP: "You lose $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
- THEY_LOSE_TRAIT_XP: "[CHARACTER.GetName] loses $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ THEY_LOSE_TRAIT_XP: "[CHARACTER.Custom('RegName')] loses $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
  LOST_TRAIT_XP: "Lost $VALUE|V0$ $TRACK_NAME$ [trait_level_track_xp|E] #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
  I_LOST_TRAIT_XP: "You lost $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
- THEY_LOST_TRAIT_XP: "[CHARACTER.GetName] lost $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ THEY_LOST_TRAIT_XP: "[CHARACTER.Custom('RegName')] lost $VALUE|V0$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
 
  GAIN_TRAIT_XP_SINGLE: "Gains $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
  I_GAIN_TRAIT_XP_SINGLE: "You gain $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
- THEY_GAIN_TRAIT_XP_SINGLE: "[CHARACTER.GetName] gains $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ THEY_GAIN_TRAIT_XP_SINGLE: "[CHARACTER.Custom('RegName')] gains $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
  GAINED_TRAIT_XP_SINGLE: "Gained $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
  I_GAINED_TRAIT_XP_SINGLE: "You gained $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
- THEY_GAINED_TRAIT_XP_SINGLE: "[CHARACTER.GetName] gained $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ THEY_GAINED_TRAIT_XP_SINGLE: "[CHARACTER.Custom('RegName')] gained $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
  LOSE_TRAIT_XP_SINGLE: "Loses $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
  I_LOSE_TRAIT_XP_SINGLE: "You lose $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
- THEY_LOSE_TRAIT_XP_SINGLE: "[CHARACTER.GetName] loses $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ THEY_LOSE_TRAIT_XP_SINGLE: "[CHARACTER.Custom('RegName')] loses $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
  LOST_TRAIT_XP_SINGLE: "Lost $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
  I_LOST_TRAIT_XP_SINGLE: "You lost $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
- THEY_LOST_TRAIT_XP_SINGLE: "[CHARACTER.GetName] lost $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ THEY_LOST_TRAIT_XP_SINGLE: "[CHARACTER.Custom('RegName')] lost $VALUE|V0$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
 
  I_GAIN_POTENTIAL_HOOK: "You grow closer to gaining a [hook_i][hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"
  I_GOT_POTENTIAL_HOOK: "You grew closer to gaining a [hook_i][hook|E] on [TARGET_CHARACTER.Custom('ShortName')]"

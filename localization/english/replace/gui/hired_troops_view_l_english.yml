@@ -32,7 +32,7 @@
  HIRED_TROOPS_VIEW_LIST_NUMBER_OF_SOLDIERS: "[HiredTroop.GetCurrentSoldiers] [soldiers|E]"
  HIRED_TROOPS_VIEW_LIST_NUMBER_OF_KNIGHTS: "[HiredTroop.GetKnightCount] [HiredTroop.GetTitle.GetHolder.Custom('KnightCulturePlural')]"
  HIRED_TROOPS_VIEW_KNIGHT_LIST_TITLE: "#T List of [HiredTroop.GetTitle.GetHolder.Custom('KnightCulturePlural')]#!"
- HIRED_TROOPS_VIEW_KNIGHT_LIST_ENTRY: "$BULLET_WITH_TAB$[CHARACTER.GetName] (@skill_prowess_icon![CHARACTER.GetProwess])"
+ HIRED_TROOPS_VIEW_KNIGHT_LIST_ENTRY: "$BULLET_WITH_TAB$[CHARACTER.Custom('RegName')] (@skill_prowess_icon![CHARACTER.GetProwess])"
  HIRED_TROOPS_VIEW_PLEDGED_TO_GREAT_HOLY_WAR: "Participating in Great Holy War"
 
  HOLY_ORDER_HIRE_LIMIT_REACHED: "@warning_icon!#X You have already hired another [holy_order|E]#!"

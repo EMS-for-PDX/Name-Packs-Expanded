@@ -70,12 +70,12 @@
 
  I_AM_DESIGNATED_DIARCH: "[CHARACTER.GetLiege.GetName] designated me as [CHARACTER.GetLiege.GetHerHis] [CHARACTER.GetLiege.GetDiarchTitle]"
  NOT_I_AM_DESIGNATED_DIARCH: "I'm not a designated [CHARACTER.GetLiege.GetDiarchTitle] of [CHARACTER.GetLiege.GetName]"
- THEY_ARE_DESIGNATED_DIARCH: "[CHARACTER.GetLiege.GetName] designated [CHARACTER.GetName] as [CHARACTER.GetLiege.GetHerHis] [CHARACTER.GetLiege.GetDiarchTitle]"
- NOT_THEY_ARE_DESIGNATED_DIARCH: "[CHARACTER.GetName] not a designated [CHARACTER.GetLiege.GetDiarchTitle] of [CHARACTER.GetLiege.GetName]"
+ THEY_ARE_DESIGNATED_DIARCH: "[CHARACTER.GetLiege.GetName] designated [CHARACTER.Custom('RegName')] as [CHARACTER.GetLiege.GetHerHis] [CHARACTER.GetLiege.GetDiarchTitle]"
+ NOT_THEY_ARE_DESIGNATED_DIARCH: "[CHARACTER.Custom('RegName')] not a designated [CHARACTER.GetLiege.GetDiarchTitle] of [CHARACTER.GetLiege.GetName]"
 
  TIME_AFTER_DESIGNATED_DIARCH: "Time since diarch was designated is $COMPARATOR$ $DURATION|V$"
 
  I_HAVE_DIARCHY_TYPE: "I'm [sharing_power|E] in $DIARCHY_TYPE$"
  NOT_I_HAVE_DIARCHY_TYPE: "I'm not in $DIARCHY_TYPE$"
- THEY_HAVE_DIARCHY_TYPE: "[CHARACTER.GetName] is [sharing_power|E] in $DIARCHY_TYPE$"
- NOT_THEY_HAVE_DIARCHY_TYPE: "[CHARACTER.GetName] is not in $DIARCHY_TYPE$"
+ THEY_HAVE_DIARCHY_TYPE: "[CHARACTER.Custom('RegName')] is [sharing_power|E] in $DIARCHY_TYPE$"
+ NOT_THEY_HAVE_DIARCHY_TYPE: "[CHARACTER.Custom('RegName')] is not in $DIARCHY_TYPE$"
