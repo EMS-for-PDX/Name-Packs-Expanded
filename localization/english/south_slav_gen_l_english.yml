@@ -21,7 +21,7 @@ Titled_First_Name_Possessive_South_Slav: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #
 
 Titled_First_Name_Possessive_No_Tooltip_South_Slav: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s"
 
-Full_Name_South_Slav: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!#!"
+Full_Name_South_Slav: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][GetScriptedGui('scripted_gui_bap_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][GetScriptedGui('scripted_gui_slav_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!#!"
 Full_Name_Bulgarian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
 
 Full_Name_No_Tooltip_South_Slav: "[ROOT.Char.Custom('CharacterTierCheckBefore')][GetScriptedGui('scripted_gui_bap_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')][GetScriptedGui('scripted_gui_slav_name').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterPatCheckAfter')]"
