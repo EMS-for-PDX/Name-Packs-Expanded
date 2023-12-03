@@ -4,7 +4,14 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					has_cultural_pillar = heritage_turkic
+					AND = {
+						has_cultural_pillar = heritage_mongolic
+						has_name_list = name_list_ongud
+					}
+					has_cultural_pillar = heritage_somalian
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -233,7 +240,14 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					has_cultural_pillar = heritage_turkic
+					AND = {
+						has_cultural_pillar = heritage_mongolic
+						has_name_list = name_list_ongud
+					}
+					has_cultural_pillar = heritage_somalian
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -458,7 +472,14 @@ FirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					has_cultural_pillar = heritage_turkic
+					AND = {
+						has_cultural_pillar = heritage_mongolic
+						has_name_list = name_list_ongud
+					}
+					has_cultural_pillar = heritage_somalian
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -692,7 +713,14 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					has_cultural_pillar = heritage_turkic
+					AND = {
+						has_cultural_pillar = heritage_mongolic
+						has_name_list = name_list_ongud
+					}
+					has_cultural_pillar = heritage_somalian
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -822,15 +850,6 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Somali
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				has_cultural_pillar = language_tamil
 			}
@@ -936,7 +955,14 @@ FirstNameNicknamed = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					has_cultural_pillar = heritage_turkic
+					AND = {
+						has_cultural_pillar = heritage_mongolic
+						has_name_list = name_list_ongud
+					}
+					has_cultural_pillar = heritage_somalian
+				}
 			}
 			has_religion = religion:islam_religion
 		}
