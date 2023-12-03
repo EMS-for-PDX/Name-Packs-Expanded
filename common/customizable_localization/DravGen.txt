@@ -2348,3 +2348,22 @@ PriestSuf = {
 		localization_key = Blank
 	}
 }
+KannadaParamesvaraCheck = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			culture = {
+			any_parent_culture_or_above = {
+				NOT = {
+					has_cultural_pillar = heritage_indo_aryan
+				}
+			}
+		}
+        localization_key = ParamesvaraKannada
+	}
+	text = {
+		fallback = yes
+		localization_key = Blank
+	}
+}
