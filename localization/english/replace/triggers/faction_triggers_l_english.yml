@@ -1,5 +1,4 @@
 ﻿l_english:
-
  CAN_CREATE_FACTION_TRIGGER: "Can create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
  NOT_CAN_CREATE_FACTION_TRIGGER: "Can #bold not#! create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
  I_CAN_CREATE_FACTION_TRIGGER: "You can create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
@@ -7,23 +6,11 @@
  THEY_CAN_CREATE_FACTION_TRIGGER: "[CHARACTER.Custom('ShortName')|U] can create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
  NOT_THEY_CAN_CREATE_FACTION_TRIGGER: "[CHARACTER.Custom('ShortName')|U] can #bold not#! create a $TYPE|V$ [faction|E] against [TARGET_CHARACTER.Custom('ShortName')]"
 
- CAN_JOIN_FACTION_TRIGGER: "Can join the [FACTION.GetNameNoTooltip]"
- NOT_CAN_JOIN_FACTION_TRIGGER: "Can #bold not#! join the [FACTION.GetNameNoTooltip]"
- I_CAN_JOIN_FACTION_TRIGGER: "You can join the [FACTION.GetNameNoTooltip]"
- NOT_I_CAN_JOIN_FACTION_TRIGGER: "You can #bold not#! join the [FACTION.GetNameNoTooltip]"
  THEY_CAN_JOIN_FACTION_TRIGGER: "[CHARACTER.Custom('ShortName')|U] can join the [FACTION.GetNameNoTooltip]"
  NOT_THEY_CAN_JOIN_FACTION_TRIGGER: "[CHARACTER.Custom('ShortName')|U] can #bold not#! join the [FACTION.GetNameNoTooltip]"
 
- WAS_BLOCKED_FROM_JOINING_TRIGGER: "Was forbidden to join factions until [GetCurrentDateWithDiff( GetVarTimeRemaining( CHARACTER.MakeScope, 'joining_faction_block') )]"
- I_WAS_BLOCKED_FROM_JOINING_TRIGGER: "You were forbidden to join factions until [GetCurrentDateWithDiff( GetVarTimeRemaining( CHARACTER.MakeScope, 'joining_faction_block') )]"
  THEY_WAS_BLOCKED_FROM_JOINING_TRIGGER: "[CHARACTER.Custom('ShortName')|U] was forbidden to join factions until [GetCurrentDateWithDiff( GetVarTimeRemaining( CHARACTER.MakeScope, 'joining_faction_block') )]"
 
- BARONS_CANNOT_JOIN_INDEPENDENCE_FACTIONS: "[barons|E] cannot join [independence_factions|E]"
- 
  CANNOT_START_FACTION_AGAINST_CHARACTER: "It is not possible to start a [faction|E] against [CHARACTER.Custom('ShortName')]"
 
  CHARACTER_CANNOT_LOWER_CROWN_AUTHORITY: "[CHARACTER.Custom('ShortName')|U] already has the lowest possible [crown_authority|E]"
-
- CHARACTER_CANNOT_BE_IN_FACTION_DUE_TO_MODIFIER: "You have a [modifier|E] preventing you from being in a [faction|E]"
- IS_A_FACTION_MEMBER_TRIGGER: "Is a faction member"
- FACTION_CAN_PRESS_DEMANDS_TRIGGER: "Faction can press demands"

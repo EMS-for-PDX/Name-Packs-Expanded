@@ -1,14 +1,11 @@
 ﻿l_english:
- I_AM_HOSTAGE: "I am being held hostage"
- NOT_I_AM_HOSTAGE: "I am not a hostage"
  THEY_ARE_HOSTAGE: "[CHARACTER.Custom('RegName')] is being held hostage"
  NOT_THEY_ARE_HOSTAGE: "[CHARACTER.Custom('RegName')] is not being held hostage"
- I_AM_HOSTAGE_WARDEN: "I am a warden"
- NOT_I_AM_HOSTAGE_WARDEN: "I am not a warden"
+
  THEY_ARE_HOSTAGE_WARDEN: "[CHARACTER.Custom('RegName')] are a warden"
  NOT_THEY_ARE_HOSTAGE_WARDEN: "[CHARACTER.Custom('RegName')] are not a warden"
- I_HAVE_HOSTAGES_ABROAD: "[CHARACTER.GetName|U] have hostages abroad"
- NOT_I_HAVE_HOSTAGES_ABROAD: "[CHARACTER.GetName|U] doesn't have hostages abroad"
+ I_HAVE_HOSTAGES_ABROAD: "[CHARACTER.Custom(RegName')|U] have hostages abroad"
+ NOT_I_HAVE_HOSTAGES_ABROAD: "[CHARACTER.Custom(RegName')|U] doesn't have hostages abroad"
  THEY_HAVE_HOSTAGES_ABROAD: "[CHARACTER.Custom('RegName')] has hostages abroad"
  NOT_THEY_HAVE_HOSTAGES_ABROAD: "[CHARACTER.Custom('RegName')] doesn't have hostages abroad"
  I_HAVE_WARDEN: "[CHARACTER.Custom('ShortName')|U] are held hostage by [TARGET_CHARACTER.Custom('ShortName')]"
@@ -27,5 +24,3 @@
  NOT_I_WAS_HOSTAGE_FOR: "[CHARACTER.Custom('ShortName')|U] have not been a hostage for $TIME|V$"
  THEY_WERE_HOSTAGE_FOR: "[CHARACTER.Custom('ShortName')|U] have been a hostage for $TIME|V$"
  NOT_THEY_WERE_HOSTAGE_FOR: "[CHARACTER.Custom('ShortName')|U] have not been a hostage for $TIME|V$"
- GLOBAL_WAS_HOSTAGE_FOR: "Time spent as a hostage is $TIME|V$"
- NOT_GLOBAL_WAS_HOSTAGE_FOR: "Time spent as a hostage is not $TIME|V$"

@@ -1,9 +1,8 @@
 ﻿l_english:
-
  IS_AT_WAR_WITH_TRIGGER: "Is at [war|E] with [TARGET_CHARACTER.Custom('ShortName')|V]"
  NOT_IS_AT_WAR_WITH_TRIGGER: "Is #bold not#! at [war|E] with [TARGET_CHARACTER.Custom('ShortName')|V]"
  I_AM_AT_WAR_WITH_TRIGGER: "You are at [war|E] with [TARGET_CHARACTER.Custom('ShortName')|V]"
- NOT_I_AM_AT_WAR_TRIGGER: "You are #bold not#! at [war|E]"
+
  NOT_I_AM_AT_WAR_WITH_TRIGGER: "You are #bold not#! at [war|E] with [TARGET_CHARACTER.Custom('ShortName')|V]"
  THEY_ARE_AT_WAR_WITH_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is at [war|E] with [TARGET_CHARACTER.Custom('ShortName')|V]"
  NOT_THEY_ARE_AT_WAR_WITH_TRIGGER: "[CHARACTER.Custom('ShortName')|V] is #bold not#! at [war|E] with [TARGET_CHARACTER.Custom('ShortName')|V]"
@@ -32,34 +31,19 @@
  THEY_ARE_VASSAL_OR_BELOW: "[TARGET_CHARACTER.Custom('ShortName')|V] is a vassal"
  NOT_THEY_ARE_VASSAL_OR_BELOW: "[TARGET_CHARACTER.Custom('ShortName')|V] is #bold not#! a vassal"
 
- IS_ATTRACTED_TO_WOMEN_TRIGGER: "Is attracted to women"
- NOT_IS_ATTRACTED_TO_WOMEN_TRIGGER: "Is #bold not#! attracted to women"
-
- IS_ATTRACTED_TO_MEN_TRIGGER: "Is attracted to men"
- NOT_IS_ATTRACTED_TO_MEN_TRIGGER: "Is #bold not#! attracted to men"
-
- HAS_SEXUALITY_TRIGGER: "Is $SEXUALITY|V$"
-
  IS_ATTRACTED_TO: "Is attracted to [TARGET_CHARACTER.Custom('ShortName')]"
  HAS_RELATION_CRUSH_ON_TARGET: "Has a crush on [TARGET_CHARACTER.Custom('ShortName')]"
  HAS_RELATION_BULLY_BY_TARGET: "Bullied by [TARGET_CHARACTER.Custom('ShortName')]"
- num_of_relation_bully_trigger: "Number of bullies is $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_VICTIM_TRIGGER: "Number of bully victims is $COMPARATOR$ $NUM|V0$"
+
  HAS_RELATION_VICTIM_BY_TARGET: "Being bullied by [TARGET_CHARACTER.Custom('ShortName')]"
- NUM_OF_RELATION_LOVER_TRIGGER: "Number of lovers is $COMPARATOR$ $NUM|V0$"
+
  HAS_RELATION_RIVAL_WITH_TARGET: "Rivals with [TARGET_CHARACTER.Custom('ShortName')]"
- NUM_OF_RELATION_RIVAL_TRIGGER: "Number of Rivalries is $COMPARATOR$ $NUM|V0$"
- NOT_NUM_OF_RELATION_RIVAL_TRIGGER: "You need more [rivals|E]"
- NUM_OF_RELATION_NEMESIS_TRIGGER: "Number of Nemesis is $COMPARATOR$ $NUM|V0$"
+
  HAS_RELATION_FRIEND_WITH_TARGET: "Friends with [TARGET_CHARACTER.Custom('ShortName')]"
- NUM_OF_RELATION_FRIEND_TRIGGER: "Number of Friends is $COMPARATOR$ $NUM|V0$"
+
  HAS_RELATION_LOVER_WITH_TARGET: "Lovers with [TARGET_CHARACTER.Custom('ShortName')]"
  HAS_RELATION_BEST_FRIEND_WITH_TARGET: "Best Friends with [TARGET_CHARACTER.Custom('ShortName')]"
- NUM_OF_RELATION_GUARDIAN_TRIGGER: "Number of Guardians is $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_WARD_TRIGGER: "Number of Wards is $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_BEST_FRIEND_TRIGGER: "Number of best friends is $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_CRUSH_TRIGGER: "Number of Crushes is $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_SOULMATE_TRIGGER: "Number of Soulmates is $COMPARATOR$ $NUM|V0$"
+
  HAS_RELATION_POSSIBLE_PARENT_OF_TARGET: "Could possibly be the parent of [TARGET_CHARACTER.Custom('ShortName')]"
 
  HAS_RELATION_NEMESIS_WITH_TARGET: "Views [TARGET_CHARACTER.Custom('ShortName')] as their nemesis"
@@ -68,8 +52,3 @@
  HAS_RELATION_GUARDIAN_OF_TARGET: "[TARGET_CHARACTER.Custom('ShortName')] is the guardian of [CHARACTER.Custom('ShortName')]"
 
  HAS_ANY_RELATION_WITH_TARGET: "Has any relationships with [TARGET_CHARACTER.Custom('ShortName')]"
- HAS_MOTHER_TRIGGER: "Has a mother"
- HAS_FATHER_TRIGGER: "Has a father"
-
- HAS_ARTIFACT_TRIGGER: "Owns any artifacts"
- NOT_HAS_ARTIFACT_TRIGGER: "Has no artifacts"

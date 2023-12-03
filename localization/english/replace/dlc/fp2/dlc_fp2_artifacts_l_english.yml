@@ -1,36 +1,11 @@
 ﻿l_english:
-
-##################################################
-# Uniques
-
- fp2_chalice_dona_urraca: "Chalice of Dona Urraca"
  fp2_chalice_dona_urraca_desc: "A ritual chalice carved from deepest onyx and encrusted with jewels and gold latticework. Commissioned by [owner.Custom('TitledFirstName')] to honor the Church."
 
- fp2_santiago_aquamanile: "(Former) $fp2_santiago_bells$"
- # We have to use |U here so that al-Mansur is presented correctly.
  fp2_santiago_aquamanile_desc: "[reforger.Custom('TitledFirstName')|U] forged these jugs from the molten slag of the $fp2_santiago_bells$. Though now used to ritually cleanse their owner's hands, their mere existence confirms the primacy of Islam over Christianity."
  fp2_santiago_aquamanile_melted_desc: "Melted down #EMP again#!, most recently by [reforger.Custom('TitledFirstName')], the former $fp2_santiago_bells$ are some of the most hotly-contested water jugs in existence. Their present form trumpets the primacy of Islam in Iberia."
- fp2_santiago_aquamanile_melted_tally_desc: "$fp2_santiago_aquamanile_melted_desc$\n\nThe frequently-forged metal has changed hands [ROOT.Var('artefact_santiago_bells').GetValue] times."
 
- fp2_santiago_bells: "Bells of Santiago"
- fp2_santiago_bells_desc: "The illustrious Bells of Santiago de Compostela are a strong, simple, and above all #EMP loud#! reminder of the immutable spiritual authority of St. James."
  fp2_santiago_bells_melted_desc: "Recovered from the hands of the infidel, melted down, and returned to something like their original form by [reforger.Custom('TitledFirstName')], the illustrious Bells of Santiago de Compostela ring out to comfort all Christendom."
- fp2_santiago_bells_melted_tally_desc: "$fp2_santiago_bells_melted_desc$\n\nThe frequently-forged metal has changed hands [ROOT.Var('artefact_santiago_bells').GetValue] times."
 
-##################################################
-# Multiples
-
- fp2_armillary_sphere: "Armillary Sphere"
- fp2_armillary_sphere_desc: "An intricate astrological device of [SCOPE.Custom('ArtifactQuality')] craftsmanship. The rings are carved from [newly_created_artifact.GetFeatureText( 'generic_material_wood' )] inlaid with [newly_created_artifact.GetFeatureText( 'decoration_material_inlay' )], and model the meandering paths of the empyrean in wondrous detail."
-
- fp2_2p_chess_board: "Lucky Chess Board"
  fp2_2p_chess_board_desc: "Instrumental in a resoundingly successful game against [bg_loser.Custom('TitledFirstName')], this tool of leisure first brought its patented luck to [bg_victor.Custom('TitledFirstName')]."
 
- fp2_4p_chess_board: "Four-Player Chess Board"
  fp2_4p_chess_board_desc: "When [bg_victor.Custom('TitledFirstName')] beat [bg_loser.Custom('TitledFirstName')] at chess, [bg_victor.GetHerHis] first thought was to commemorate [bg_victor.GetHerHis] gaming prowess by devising an improved variant so specific that [bg_victor.GetSheHe] could never get anyone to play it."
-
- fp2_votive_crowns: "Visigothic Votive Crown"
- fp2_votive_crowns_desc: "Designed to be hung over or around church altars, and occasionally on statues, to offer a votive crown to God is to express submission before an authority higher than any mere royal."
-
- fp2_andalusian_aquamanile: "Ritual Aquamanile"
- fp2_andalusian_aquamanile_desc: "A beautiful [newly_created_artifact.GetFeatureText( 'goblet_material' )] ewer, with decorations of gilded [newly_created_artifact.GetFeatureText( 'decoration_material_inlay' )], intended to hold water with which to ritually wash one's hands."

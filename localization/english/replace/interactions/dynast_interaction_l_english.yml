@@ -1,46 +1,23 @@
 ﻿l_english:
- dynasty_interaction_header: "[dynast_interaction|E]\n"
- disinherit_interaction: "Disinherit"
  disinherit_interaction_desc: "$dynasty_interaction_header$Remove [recipient.Custom('ShortNameNoTooltip')] from the [line_of_succession|E]"
- disinherit_interaction_notification: "Disinherited Dynasty Member"
+
  courtly_vassal_disapproves_disinheriting: "Every [GetVassalStance( 'courtly' ).GetTextIcon][GetVassalStance( 'courtly' ).GetName] [vassal|E] ([actor.MakeScope.ScriptValue('number_of_courtly_vassals')|V0]) loses #N 20#! [opinion|E] of [actor.Custom('ShortName')] for #V 10 years#! #weak (Disapproves of Disinheriting non-Disputed Heir)#!"
 
-
- restore_inheritance_interaction: "Restore Inheritance"
  restore_inheritance_interaction_desc: "$dynasty_interaction_header$Restore [recipient.Custom('ShortNameNoTooltip')] to the natural [line_of_succession|E]\n\n#weak This is available because [recipient.GetSheHe] has been [disinherited|E]#!"
- restore_inheritance_interaction_notification: "Restored Inheritance"
 
- denounce_interaction: "Denounce"
  denounce_interaction_desc: "$dynasty_interaction_header$[denounce|E] [recipient.Custom('ShortNameNoTooltip')]\n\n#weak This will give all members of our [dynasty|E] an [imprisonment_reason|E] against [recipient.GetHerHim]#!"
- denounce_interaction_notification: "Denounced Dynasty member"
 
- forgive_interaction: "Forgive"
- denounced_change_to_forgiven: "The #V $denounced_opinion$ Opinion#! #weak (-50)#! changes to #V $forgave_denounced_opinion$#! #weak (-25)#! (#P +25#! [opinion|E])"
- forgiven_changed_to_denounced: "The #V $forgave_denounced_opinion$ Opinion#! #weak (-25)#! changes to #V $denounced_opinion$#! #weak (-50)#! (#N -25#! [opinion|E])"
  forgive_interaction_desc: "$dynasty_interaction_header$Retract the [denouncement|E] of [recipient.Custom('ShortNameNoTooltip')]"
- forgive_interaction_notification: "Forgave Dynasty Member"
 
- call_dynasty_member_to_war_interaction: "Call Dynasty Member To War"
  call_dynasty_member_to_war_interaction_desc: "Call [recipient.Custom('ShortNameNoTooltip')] to serve [recipient.GetHerHis] [dynasty|E] in war"
- call_dynasty_member_to_war_interaction_extra_icon: "$hook_extra_icon$"
 
- dynast_legitimize_bastard_interaction: "Legitimize Bastard #weak (Dynasty)#!"
  dynast_legitimize_bastard_interaction_desc: "$dynasty_interaction_header$Declare [recipient.Custom('ShortNameNoTooltip')] to be a $game_concept_legitimized_bastard$\n\n#weak This is available because [recipient.GetSheHe] is a [bastard|E] of my [dynasty|E]#!"
- dynast_legitimize_bastard_interaction_notification: "Legitimized Bastard"
 
- dynast_claim_title_interaction: "Claim Title"
  dynast_claim_title_interaction_desc: "$dynasty_interaction_header$[claim|EU] a [title|E] held by [recipient.Custom('ShortNameNoTooltip')] for yourself"
- dynast_claim_title_interaction_notification: "Claimed Title"
- ALREADY_HAVE_CLAIM_ON_THIS_TITLE: "You already have a claim on this title"
+
  ALREADY_HAVE_CLAIMS_ON_ALL_TITLES: "You already have claims on all of [TARGET_CHARACTER.Custom('ShortNamePossessive')] titles"
 
- dynast_end_dynasty_wars_interaction: "End Dynasty Wars"
  dynast_end_dynasty_wars_interaction_desc: "$dynasty_interaction_header$Demand that [recipient.Custom('ShortNameNoTooltip')] immediately ends all their offensive wars against any other members of our [dynasty|E]"
- dynast_end_dynasty_wars_interaction_notification: "Ended Dynasty War"
 
- recipient_secondary_legitimize_bastard_interaction: "Bastard"
-
- send_to_varangian_guard_interaction: "Send to the Varangian Guard #weak (Dynasty)#!"
  send_to_varangian_guard_interaction_desc: "$dynasty_interaction_header$Send [recipient.Custom('ShortNameNoTooltip')] away to gain glory and fortune in the Varangian Guard. Who knows, it might even help build character!"
  send_to_varangian_guard_interaction_toast: "[recipient.Custom('ShortName')] left for the Varangian Guard"
- send_to_varangian_guard_interaction_toast_desc: "Fame and glory awaits!"
