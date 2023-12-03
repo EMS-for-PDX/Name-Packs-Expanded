@@ -3,14 +3,6 @@ Window_Irish_TT: "#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('Char
 
 Window_Irish: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterHouseCheckAfter')]#!"
 
-First_Name_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
-
-First_Name_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')]"
-
-First_Name_Possessive_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
-
-First_Name_Possessive_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
-
 Titled_First_Name_Irish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 
 Titled_First_Name_No_Tooltip_Irish: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"

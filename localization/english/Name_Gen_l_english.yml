@@ -130,3 +130,9 @@ Title_As_Name_Default: "[ROOT.Char.GetTitleAsName]"
 Title_As_Name_No_Tooltip_Default: "[ROOT.Char.GetTitleAsNameNoTooltip]"
 Title_Tier_Name_Default: "[ROOT.Char.GetTitleTierName]"
 Title_Tier_Name_Possessive_Default: "[ROOT.Char.GetTitleTierNamePossessive]"
+
+#NPE General
+First_Name_Generic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+First_Name_No_Tooltip_Generic: "[ROOT.Char.Custom('CharacterNameCheck')]"
+First_Name_Possessive_Generic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
+First_Name_Possessive_No_Tooltip_Generic: "[ROOT.Char.Custom('CharacterNameCheck')]'s"

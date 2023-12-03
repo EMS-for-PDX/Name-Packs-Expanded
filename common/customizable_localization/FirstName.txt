@@ -82,43 +82,8 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_sudanic
-			}
-		}
-		localization_key = First_Name_Nubian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
-			}
-		}
-		localization_key = First_Name_Ethiopian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_indo_aryan
-				has_cultural_pillar = language_sinhalese
-			}
-		}
-		localization_key = First_Name_Sinhala
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
+				has_cultural_pillar = language_telugu
 			}
 			OR = {
 				any_parent = {
@@ -149,27 +114,7 @@
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Telugu
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			highest_held_title_tier >= tier_kingdom
 		}
@@ -180,12 +125,7 @@
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			any_spouse = {
 				even_if_dead = yes
@@ -199,12 +139,7 @@
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			OR = {
 				any_parent = {
@@ -229,31 +164,6 @@
 			}
 		}
 		localization_key = First_Name_Kannada_Low
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Kannada
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
-			}
-		}
-		localization_key = First_Name_Wolayta
 	}
 	text = {
 		trigger = {
@@ -286,36 +196,6 @@
 			}
 		}
 		localization_key = First_Name_ArabicA
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iberian
-					has_cultural_pillar = heritage_frankish
-					has_cultural_pillar = heritage_latin
-					has_cultural_pillar = heritage_central_germanic
-					romanian_check = yes
-					AND = {
-						english_check = yes
-						has_cultural_pillar = heritage_west_germanic
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Western_Euro
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-			has_government = theocracy_government
-		}
-		localization_key = First_Name_Tamil_Priest
 	}
 	text = {
 		trigger = {
@@ -385,82 +265,6 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-			any_parent = {
-				even_if_dead = yes
-				save_temporary_scope_as = the_parent
-				OR = {
-					has_government = feudal_government
-					AND = {
-						dynasty ?= {
-							any_in_list = {
-								variable = dynasty_feudalclan
-								this = scope:the_parent
-							}
-						}
-					}
-				}
-				highest_held_title_tier >= tier_kingdom
-			}
-		}
-		localization_key = First_Name_Tamil_Prince
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-		}
-		localization_key = First_Name_Tamil
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_indo_aryan
-			}
-		}
-		localization_key = First_Name_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_north_germanic
-					has_cultural_pillar = heritage_west_germanic
-				}
-			}
-		}
-		localization_key = First_Name_North
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_brythonic
-			}
-		}
-		localization_key = First_Name_OldBriton
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_goidelic
-
-			}
-		}
-		localization_key = First_Name_Irish
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
                 south_slav_check = yes
 			}
 		}
@@ -470,120 +274,21 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-                armenian_check = yes
-			}
-		}
-		localization_key = First_Name_Armenian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                georgian_check = yes
-			}
-		}
-		localization_key = First_Name_Georgian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                assyrian_check = yes
-			}
-		}
-		localization_key = First_Name_Assyrian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				alan_check = yes
-			}
-		}
-		localization_key = First_Name_Alan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_byzantine
-			}
-		}
-		localization_key = First_Name_Greek
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iranian
-					trigger_if = {
-						limit = {
-							exists = global_var:CE_is_loaded
-						}
-						OR = {
-							has_cultural_pillar = heritage_peristani
-							has_cultural_pillar = heritage_tocharian
-						}
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Persian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				turkish_check = yes
 				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_empire
-		}
-		localization_key = First_Name_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_kingdom
-		}
-		localization_key = First_Name_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				mongol_check = yes
-			}
-		}
-		localization_key = First_Name_Mongol
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				karluk_check = yes
 			}
 			is_independent_ruler = yes
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = First_Name_Turkish
+		localization_key = First_Name_Uyghur
 	}
 	text = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
 			}
 		}
-		localization_key = First_Name_Turkish
+		localization_key = First_Name_Generic
 	}
 	text = {
 		fallback = yes
@@ -674,43 +379,8 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_sudanic
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Nubian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Ethiopian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_indo_aryan
-				has_cultural_pillar = language_sinhalese
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Sinhala
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
+				has_cultural_pillar = language_telugu
 			}
 			OR = {
 				any_parent = {
@@ -741,27 +411,7 @@ FirstNameNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Telugu
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			highest_held_title_tier >= tier_kingdom
 		}
@@ -772,12 +422,7 @@ FirstNameNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			any_spouse = {
 				even_if_dead = yes
@@ -791,12 +436,7 @@ FirstNameNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			OR = {
 				any_parent = {
@@ -821,31 +461,6 @@ FirstNameNoTooltip = {
 			}
 		}
 		localization_key = First_Name_No_Tooltip_Kannada_Low
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Kannada
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Wolayta
 	}
 	text = {
 		trigger = {
@@ -878,36 +493,6 @@ FirstNameNoTooltip = {
 			}
 		}
 		localization_key = First_Name_No_Tooltip_ArabicA
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iberian
-					has_cultural_pillar = heritage_frankish
-					has_cultural_pillar = heritage_latin
-					has_cultural_pillar = heritage_central_germanic
-					romanian_check = yes
-					AND = {
-						english_check = yes
-						has_cultural_pillar = heritage_west_germanic
-					}
-				}
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Western_Euro
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-			has_government = theocracy_government
-		}
-		localization_key = First_Name_No_Tooltip_Tamil_Priest
 	}
 	text = {
 		trigger = {
@@ -973,80 +558,6 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-			any_parent = {
-				even_if_dead = yes
-				save_temporary_scope_as = the_parent
-				OR = {
-					has_government = feudal_government
-					dynasty ?= {
-						any_in_list = {
-							variable = dynasty_feudalclan
-							this = scope:the_parent
-						}
-					}
-				}
-				highest_held_title_tier >= tier_kingdom
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Tamil_Prince
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Tamil
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_indo_aryan
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_north_germanic
-					has_cultural_pillar = heritage_west_germanic
-				}
-			}
-		}
-		localization_key = First_Name_No_Tooltip_North
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_brythonic
-			}
-		}
-		localization_key = First_Name_No_Tooltip_OldBriton
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_goidelic
-
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Irish
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
                 south_slav_check = yes
 			}
 		}
@@ -1056,120 +567,21 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-                armenian_check = yes
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Armenian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                georgian_check = yes
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Georgian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                assyrian_check = yes
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Assyrian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				alan_check = yes
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Alan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_byzantine
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Greek
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iranian
-					trigger_if = {
-						limit = {
-							exists = global_var:CE_is_loaded
-						}
-						OR = {
-							has_cultural_pillar = heritage_peristani
-							has_cultural_pillar = heritage_tocharian
-						}
-					}
-				}
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Persian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				turkish_check = yes
 				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_empire
-		}
-		localization_key = First_Name_No_Tooltip_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_kingdom
-		}
-		localization_key = First_Name_No_Tooltip_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				karluk_check = yes
 			}
 			is_independent_ruler = yes
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = First_Name_No_Tooltip_Turkish
+		localization_key = First_Name_No_Tooltip_Uyghur
 	}
 	text = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				mongol_check = yes
 			}
 		}
-		localization_key = First_Name_No_Tooltip_Mongol
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-			}
-		}
-		localization_key = First_Name_No_Tooltip_Turkish
+		localization_key = First_Name_No_Tooltip_Generic
 	}
 	text = {
 		fallback = yes
@@ -1258,43 +670,8 @@ FirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_sudanic
-			}
-		}
-		localization_key = First_Name_Possessive_Nubian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
-			}
-		}
-		localization_key = First_Name_Possessive_Ethiopian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_indo_aryan
-				has_cultural_pillar = language_sinhalese
-			}
-		}
-		localization_key = First_Name_Possessive_Sinhala
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
+				has_cultural_pillar = language_telugu
 			}
 			OR = {
 				any_parent = {
@@ -1325,27 +702,7 @@ FirstNamePossessive = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_Telugu
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			highest_held_title_tier >= tier_kingdom
 		}
@@ -1356,12 +713,7 @@ FirstNamePossessive = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			any_spouse = {
 				even_if_dead = yes
@@ -1375,12 +727,7 @@ FirstNamePossessive = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			OR = {
 				any_parent = {
@@ -1405,31 +752,6 @@ FirstNamePossessive = {
 			}
 		}
 		localization_key = First_Name_Possessive_Kannada_Low
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_Kannada
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
-			}
-		}
-		localization_key = First_Name_Possessive_Wolayta
 	}
 	text = {
 		trigger = {
@@ -1462,25 +784,6 @@ FirstNamePossessive = {
 			}
 		}
 		localization_key = First_Name_Possessive_ArabicA
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iberian
-					has_cultural_pillar = heritage_frankish
-					has_cultural_pillar = heritage_latin
-					has_cultural_pillar = heritage_central_germanic
-					romanian_check = yes
-					AND = {
-						english_check = yes
-						has_cultural_pillar = heritage_west_germanic
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_Western_Euro
 	}
 	text = {
 		trigger = {
@@ -1555,80 +858,6 @@ FirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-			any_parent = {
-				even_if_dead = yes
-				save_temporary_scope_as = the_parent
-				OR = {
-					has_government = feudal_government
-					dynasty ?= {
-						any_in_list = {
-							variable = dynasty_feudalclan
-							this = scope:the_parent
-						}
-					}
-				}
-				highest_held_title_tier >= tier_kingdom
-			}
-		}
-		localization_key = First_Name_Possessive_Tamil_Prince
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-		}
-		localization_key = First_Name_Possessive_Tamil
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_indo_aryan
-			}
-		}
-		localization_key = First_Name_Possessive_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_north_germanic
-					has_cultural_pillar = heritage_west_germanic
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_North
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_brythonic
-			}
-		}
-		localization_key = First_Name_Possessive_OldBriton
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_goidelic
-
-			}
-		}
-		localization_key = First_Name_Possessive_Irish
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
                 south_slav_check = yes
 			}
 		}
@@ -1638,120 +867,21 @@ FirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-                armenian_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_Armenian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                georgian_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_Georgian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                assyrian_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_Assyrian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				alan_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_Alan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_byzantine
-			}
-		}
-		localization_key = First_Name_Possessive_Greek
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iranian
-					trigger_if = {
-						limit = {
-							exists = global_var:CE_is_loaded
-						}
-						OR = {
-							has_cultural_pillar = heritage_peristani
-							has_cultural_pillar = heritage_tocharian
-						}
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_Persian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				turkish_check = yes
 				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_empire
-		}
-		localization_key = First_Name_Possessive_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_kingdom
-		}
-		localization_key = First_Name_Possessive_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				karluk_check = yes
 			}
 			is_independent_ruler = yes
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = First_Name_Possessive_Turkish
+		localization_key = First_Name_Possessive_Uyghur
 	}
 	text = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
 			}
 		}
-		localization_key = First_Name_Possessive_Turkish
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				mongol_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_Mongol
+		localization_key = First_Name_Possessive_Generic
 	}
 	text = {
 		fallback = yes
@@ -1840,26 +970,6 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_sudanic
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Nubian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Ethiopian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_indo_aryan
 				has_cultural_pillar = language_sinhalese
 			}
@@ -1871,12 +981,7 @@ FirstNamePossessiveNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
+				has_cultural_pillar = language_telugu
 			}
 			OR = {
 				any_parent = {
@@ -1907,27 +1012,7 @@ FirstNamePossessiveNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Telugu
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			highest_held_title_tier >= tier_kingdom
 		}
@@ -1938,12 +1023,7 @@ FirstNamePossessiveNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			any_spouse = {
 				even_if_dead = yes
@@ -1957,12 +1037,7 @@ FirstNamePossessiveNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			OR = {
 				any_parent = {
@@ -1987,31 +1062,6 @@ FirstNamePossessiveNoTooltip = {
 			}
 		}
 		localization_key = First_Name_Possessive_No_Tooltip_Kannada_Low
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Kannada
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Wolayta
 	}
 	text = {
 		trigger = {
@@ -2044,25 +1094,6 @@ FirstNamePossessiveNoTooltip = {
 			}
 		}
 		localization_key = First_Name_Possessive_No_Tooltip_ArabicA
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iberian
-					has_cultural_pillar = heritage_frankish
-					has_cultural_pillar = heritage_latin
-					has_cultural_pillar = heritage_central_germanic
-					romanian_check = yes
-					AND = {
-						english_check = yes
-						has_cultural_pillar = heritage_west_germanic
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Western_Euro
 	}
 	text = {
 		trigger = {
@@ -2137,80 +1168,6 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-			any_parent = {
-				even_if_dead = yes
-				save_temporary_scope_as = the_parent
-				OR = {
-					has_government = feudal_government
-					dynasty ?= {
-						any_in_list = {
-							variable = dynasty_feudalclan
-							this = scope:the_parent
-						}
-					}
-				}
-				highest_held_title_tier >= tier_kingdom
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Tamil_Prince
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Tamil
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_indo_aryan
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_north_germanic
-					has_cultural_pillar = heritage_west_germanic
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_North
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_brythonic
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_OldBriton
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_goidelic
-
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Irish
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
                 south_slav_check = yes
 			}
 		}
@@ -2220,120 +1177,21 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-                armenian_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Armenian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                georgian_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Georgian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                assyrian_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Assyrian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				alan_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Alan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_byzantine
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Greek
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iranian
-					trigger_if = {
-						limit = {
-							exists = global_var:CE_is_loaded
-						}
-						OR = {
-							has_cultural_pillar = heritage_peristani
-							has_cultural_pillar = heritage_tocharian
-						}
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Persian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				turkish_check = yes
 				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_empire
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_kingdom
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				karluk_check = yes
 			}
 			is_independent_ruler = yes
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = First_Name_Possessive_No_Tooltip_Turkish
+		localization_key = First_Name_Possessive_No_Tooltip_Uyghur
 	}
 	text = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				mongol_check = yes
 			}
 		}
-		localization_key = First_Name_Possessive_No_Tooltip_Mongol
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_Turkish
+		localization_key = First_Name_Possessive_No_Tooltip_Generic
 	}
 	text = {
 		fallback = yes
@@ -2422,43 +1280,8 @@ FirstNameNicknamed = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_sudanic
-			}
-		}
-		localization_key = First_Name_Nubian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
-			}
-		}
-		localization_key = First_Name_Ethiopian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_indo_aryan
-				has_cultural_pillar = language_sinhalese
-			}
-		}
-		localization_key = First_Name_Sinhala
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
+				has_cultural_pillar = language_telugu
 			}
 			OR = {
 				any_parent = {
@@ -2489,27 +1312,7 @@ FirstNameNicknamed = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_telugu
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_telugu
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Telugu
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			highest_held_title_tier >= tier_kingdom
 		}
@@ -2520,12 +1323,7 @@ FirstNameNicknamed = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			any_spouse = {
 				even_if_dead = yes
@@ -2539,12 +1337,7 @@ FirstNameNicknamed = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
+				has_cultural_pillar = language_kannada
 			}
 			OR = {
 				any_parent = {
@@ -2569,31 +1362,6 @@ FirstNameNicknamed = {
 			}
 		}
 		localization_key = First_Name_Kannada_Low
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				OR = {
-					has_cultural_pillar = language_kannada
-					any_parent_culture_or_above = {
-						has_cultural_pillar = language_kannada
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Kannada
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
-			}
-		}
-		localization_key = First_Name_Wolayta
 	}
 	text = {
 		trigger = {
@@ -2626,36 +1394,6 @@ FirstNameNicknamed = {
 			}
 		}
 		localization_key = First_Name_ArabicA
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iberian
-					has_cultural_pillar = heritage_frankish
-					has_cultural_pillar = heritage_latin
-					has_cultural_pillar = heritage_central_germanic
-					romanian_check = yes
-					AND = {
-						english_check = yes
-						has_cultural_pillar = heritage_west_germanic
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Western_Euro
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-			has_government = theocracy_government
-		}
-		localization_key = First_Name_Tamil_Priest
 	}
 	text = {
 		trigger = {
@@ -2719,80 +1457,6 @@ FirstNameNicknamed = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-			any_parent = {
-				even_if_dead = yes
-				save_temporary_scope_as = the_parent
-				OR = {
-					has_government = feudal_government
-					dynasty ?= {
-						any_in_list = {
-							variable = dynasty_feudalclan
-							this = scope:the_parent
-						}
-					}
-				}
-				highest_held_title_tier >= tier_kingdom
-			}
-		}
-		localization_key = First_Name_Tamil_Prince
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_dravidian
-				has_cultural_pillar = language_tamil
-			}
-		}
-		localization_key = First_Name_Tamil
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_indo_aryan
-			}
-		}
-		localization_key = First_Name_Indoaryan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_north_germanic
-					has_cultural_pillar = heritage_west_germanic
-				}
-			}
-		}
-		localization_key = First_Name_North
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_brythonic
-			}
-		}
-		localization_key = First_Name_OldBriton
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_goidelic
-
-			}
-		}
-		localization_key = First_Name_Irish
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
                 south_slav_check = yes
 			}
 		}
@@ -2802,120 +1466,21 @@ FirstNameNicknamed = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-                armenian_check = yes
-			}
-		}
-		localization_key = First_Name_Armenian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                georgian_check = yes
-			}
-		}
-		localization_key = First_Name_Georgian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-                assyrian_check = yes
-			}
-		}
-		localization_key = First_Name_Assyrian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				alan_check = yes
-			}
-		}
-		localization_key = First_Name_Alan
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_byzantine
-			}
-		}
-		localization_key = First_Name_Greek
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				OR = {
-					has_cultural_pillar = heritage_iranian
-					trigger_if = {
-						limit = {
-							exists = global_var:CE_is_loaded
-						}
-						OR = {
-							has_cultural_pillar = heritage_peristani
-							has_cultural_pillar = heritage_tocharian
-						}
-					}
-				}
-			}
-		}
-		localization_key = First_Name_Persian
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				turkish_check = yes
 				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_empire
-		}
-		localization_key = First_Name_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				uyghur_check = yes
-			}
-			is_independent_ruler = yes
-			highest_held_title_tier = tier_kingdom
-		}
-		localization_key = First_Name_Uyghur
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				turkish_check = yes
-				karluk_check = yes
 			}
 			is_independent_ruler = yes
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = First_Name_Turkish
+		localization_key = First_Name_Uyghur
 	}
 	text = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
 			}
 		}
-		localization_key = First_Name_Turkish
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-				mongol_check = yes
-			}
-		}
-		localization_key = First_Name_Mongol
+		localization_key = First_Name_Generic
 	}
 	text = {
 		fallback = yes

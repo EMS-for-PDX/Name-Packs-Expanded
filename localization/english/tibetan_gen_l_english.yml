@@ -2,11 +2,6 @@
 Window_Tibetan_TT: "#TOOLTIP:GAME_CONCEPT,surname #color_red [ROOT.Char.Custom('CharacterHouseCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,nickname #color_green [Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!"
 Window_Tibetan: "#high [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterNameCheck')]#!"
 
-First_Name_Tibetan: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
-First_Name_No_Tooltip_Tibetan: "[ROOT.Char.Custom('CharacterNameCheck')]"
-First_Name_Possessive_Tibetan: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
-First_Name_Possessive_No_Tooltip_Tibetan: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
-
 Titled_First_Name_Tibetan: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
 Titled_First_Name_No_Tooltip_Tibetan: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
 Titled_First_Name_Possessive_Tibetan: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"

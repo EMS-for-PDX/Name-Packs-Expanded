@@ -3,14 +3,6 @@ Window_Persian_TT: "#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('Ch
 
 Window_Persian: "#high [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')]#!"
 
-First_Name_Persian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
-
-First_Name_No_Tooltip_Persian: "[ROOT.Char.Custom('CharacterNameCheck')]"
-
-First_Name_Possessive_Persian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
-
-First_Name_Possessive_No_Tooltip_Persian: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
-
 Titled_First_Name_Persian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 
 Titled_First_Name_No_Tooltip_Persian: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]"

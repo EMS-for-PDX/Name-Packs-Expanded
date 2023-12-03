@@ -17,13 +17,9 @@ Window_Telugu_Spouse_Duke_Indep_TT: "Śrīman-#TOOLTIP:GAME_CONCEPT,given_name #
 Window_Telugu_HighBorn_Spouse_TT: "Śrīman-#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#![Localize(Concatenate(Concatenate('SpouseSuf',ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
 Window_Telugu_Prince_TT: "Śrīman-#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]#!#!"
 
-First_Name_Telugu: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
 First_Name_Telugu_HighBorn: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]#!#!#!"
 
-First_Name_No_Tooltip_Telugu: "[ROOT.Char.Custom('CharacterNameCheck')]"
 First_Name_No_Tooltip_Telugu_HighBorn: "[ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]"
-
-First_Name_Possessive_Telugu: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
 First_Name_Possessive_Telugu_HighBorn: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('DevaRemovalSuf'),ROOT.Char.Custom('CharacterGender')), ROOT.Char.Custom('CharacterIndiaCulture')))]'s#!#!#!"
 
 First_Name_Possessive_No_Tooltip_Telugu: "[ROOT.Char.Custom('CharacterNameCheck')]'s"

@@ -7,14 +7,6 @@ Window_Mongol: "#high [ROOT.Char.Custom('CharacterHouseCheckBefore')][Localize(C
 Window_Mongol_Emperor: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('MongolNickBefore'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][Localize(Concatenate('TierSuffix',Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender'))))]#!"
 Window_Mongol_LowerTierFirst: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('MongolNickBefore'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))]#!"
 
-First_Name_Mongol: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
-
-First_Name_No_Tooltip_Mongol: "[ROOT.Char.Custom('CharacterNameCheck')]"
-
-First_Name_Possessive_Mongol: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
-
-First_Name_Possessive_No_Tooltip_Mongol: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
-
 Titled_First_Name_Mongol: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 Titled_First_Name_Mongol_Suffix: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate('TierSuffix',Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender'))))]#!#!#!"
 

@@ -1,15 +1,7 @@
 ﻿l_english:
 Window_OldBriton_TT: "#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('CharacterNameCheck')]#!#!#TOOLTIP:GAME_CONCEPT,nickname #color_green [Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))]#!#!#TOOLTIP:GAME_CONCEPT,patronym #color_light_blue [ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!"
 
-Window_OldBriton: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')] #!"
-
-First_Name_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
-
-First_Name_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')]"
-
-First_Name_Possessive_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
-
-First_Name_Possessive_No_Tooltip_OldBriton: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
+Window_OldBriton: "#high [ROOT.Char.Custom('CharacterNameCheck')][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterPatCheckAfter')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
 
 Titled_First_Name_OldBriton: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 

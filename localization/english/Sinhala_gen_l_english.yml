@@ -11,12 +11,6 @@ Window_Sinhala_Indep: "#high [ROOT.Char.Custom('CharacterNameCheck')] [ROOT.Char
 Window_Sinhala_King: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('SinhalaSuffixCheck')]"
 Window_Sinhala_Emperor: "#high [ROOT.Char.Custom('SinhalaRegnal')][ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('SinhalEmpEnd')]"
 
-First_Name_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
-
-First_Name_No_Tooltip_Sinhala: "[ROOT.Char.Custom('CharacterNameCheck')]"
-
-First_Name_Possessive_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
-
 First_Name_Possessive_No_Tooltip_Sinhala: "[ROOT.Char.Custom('CharacterNameCheck')]'s'"
 
 Titled_First_Name_Sinhala: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheck')]#!#!#!"

@@ -13,15 +13,12 @@
  Window_Turkish_Muslim_Low: "#high [ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(ROOT.Char.Custom('BulgharHistorical'))][ROOT.Char.Custom('KarlukRegnal')][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
  Window_Turkish_Muslim_Sultan: "#high [ROOT.Char.Custom('CharacterPatCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('PreLaqabCheck')][GetScriptedGui('scripted_gui_laqab_tek').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][Localize(Concatenate(Concatenate(ROOT.Char.Custom('NPENick'), ROOT.Char.Custom('CharacterCulture')), ROOT.Char.Custom('CharacterGender')))][ROOT.Char.Custom('CharacterNameCheck')][Localize(ROOT.Char.Custom('BulgharHistorical'))][ROOT.Char.Custom('KarlukRegnal')]#!"
 
- First_Name_Turkish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
  First_Name_Turkish_Muslim: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('LaqabNameCheck')]#!#!#!"
  First_Name_Uyghur: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('UyghurAtt1')][ROOT.Char.Custom('UyghurAtt2')][ROOT.Char.Custom('UyghurAtt3')][ROOT.Char.Custom('UyghurAtt4')][ROOT.Char.Custom('UyghurAtt5')][ROOT.Char.Custom('UyghurAtt6')]#!#!#!"
 
- First_Name_No_Tooltip_Turkish: "[ROOT.Char.Custom('CharacterNameCheck')]"
  First_Name_No_Tooltip_Turkish_Muslim: "[ROOT.Char.Custom('LaqabNameCheck')]"
  First_Name_No_Tooltip_Uyghur: "[ROOT.Char.Custom('UyghurAtt1')][ROOT.Char.Custom('UyghurAtt2')][ROOT.Char.Custom('UyghurAtt3')][ROOT.Char.Custom('UyghurAtt4')][ROOT.Char.Custom('UyghurAtt5')][ROOT.Char.Custom('UyghurAtt6')]"
 
- First_Name_Possessive_Turkish: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
  First_Name_Possessive_Turkish_Muslim: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('LaqabNameCheck')]'s#!#!#!"
  First_Name_Possessive_Uyghur: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('UyghurAtt1')][ROOT.Char.Custom('UyghurAtt2')][ROOT.Char.Custom('UyghurAtt3')][ROOT.Char.Custom('UyghurAtt4')][ROOT.Char.Custom('UyghurAtt5')][ROOT.Char.Custom('UyghurAtt6')]'s#!#!#!"
 
