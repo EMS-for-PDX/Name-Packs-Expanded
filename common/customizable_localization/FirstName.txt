@@ -7,64 +7,6 @@
 				turkish_check = yes
 			}
 			has_religion = religion:islam_religion
-			OR = {
-				AND = {
-					OR = {
-						is_independent_ruler = yes
-						dynasty ?= {
-							any_in_list = {
-								variable = dynasty_independent
-								this = root
-							}
-						}
-					}
-					highest_held_title_tier >= tier_kingdom
-				}
-				AND = {
-					primary_spouse ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.primary_spouse
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-				AND = {
-					is_male = yes
-					father ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.father
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-				AND = {
-					is_male = yes
-					mother ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.mother
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-			}
 		}
 		localization_key = First_Name_Turkish_Muslim
 	}
@@ -72,11 +14,15 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
 			}
-			has_religion = religion:islam_religion
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
 		}
-		localization_key = First_Name_Turkish_Muslim
+		localization_key = First_Name_ArabicA
 	}
 	text = {
 		trigger = {
@@ -187,20 +133,6 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			OR = {
-				culture = {
-					has_cultural_pillar = heritage_arabic
-				}
-				has_religion = religion:islam_religion
-			}
-		}
-		localization_key = First_Name_ArabicA
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				has_cultural_pillar = language_tamil
 			}
@@ -304,64 +236,6 @@ FirstNameNoTooltip = {
 				turkish_check = yes
 			}
 			has_religion = religion:islam_religion
-			OR = {
-				AND = {
-					OR = {
-						is_independent_ruler = yes
-						dynasty ?= {
-							any_in_list = {
-								variable = dynasty_independent
-								this = root
-							}
-						}
-					}
-					highest_held_title_tier >= tier_kingdom
-				}
-				AND = {
-					primary_spouse ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.primary_spouse
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-				AND = {
-					is_male = yes
-					father ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.father
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-				AND = {
-					is_male = yes
-					mother ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.mother
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-			}
 		}
 		localization_key = First_Name_No_Tooltip_Turkish_Muslim
 	}
@@ -369,11 +243,15 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
 			}
-			has_religion = religion:islam_religion
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
 		}
-		localization_key = First_Name_No_Tooltip_Turkish_Muslim
+		localization_key = First_Name_No_Tooltip_ArabicA
 	}
 	text = {
 		trigger = {
@@ -484,20 +362,6 @@ FirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			OR = {
-				culture = {
-					has_cultural_pillar = heritage_arabic
-				}
-				has_religion = religion:islam_religion
-			}
-		}
-		localization_key = First_Name_No_Tooltip_ArabicA
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				has_cultural_pillar = language_tamil
 			}
@@ -597,62 +461,6 @@ FirstNamePossessive = {
 				turkish_check = yes
 			}
 			has_religion = religion:islam_religion
-			OR = {
-				AND = {
-					OR = {
-						is_independent_ruler = yes
-						dynasty ?= {
-							any_in_list = {
-								variable = dynasty_independent
-								this = root
-							}
-						}
-					}
-					highest_held_title_tier >= tier_kingdom
-				}
-				primary_spouse ?= {
-					OR = {
-						is_independent_ruler = yes
-						dynasty ?= {
-							any_in_list = {
-								variable = dynasty_independent
-								this = root.primary_spouse
-							}
-						}
-					}
-					highest_held_title_tier >= tier_kingdom
-				}
-				AND = {
-					is_male = yes
-					father ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.father
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-				AND = {
-					is_male = yes
-					mother ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.mother
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-			}
 		}
 		localization_key = First_Name_Possessive_Turkish_Muslim
 	}
@@ -660,11 +468,15 @@ FirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
 			}
-			has_religion = religion:islam_religion
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
 		}
-		localization_key = First_Name_Possessive_Turkish_Muslim
+		localization_key = First_Name_Possessive_ArabicA
 	}
 	text = {
 		trigger = {
@@ -770,20 +582,6 @@ FirstNamePossessive = {
 			}
 		}
 		localization_key = First_Name_Possessive_Somali
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-			}
-			OR = {
-				culture = {
-					has_cultural_pillar = heritage_arabic
-				}
-				has_religion = religion:islam_religion
-			}
-		}
-		localization_key = First_Name_Possessive_ArabicA
 	}
 	text = {
 		trigger = {
@@ -897,62 +695,6 @@ FirstNamePossessiveNoTooltip = {
 				turkish_check = yes
 			}
 			has_religion = religion:islam_religion
-			OR = {
-				AND = {
-					OR = {
-						is_independent_ruler = yes
-						dynasty ?= {
-							any_in_list = {
-								variable = dynasty_independent
-								this = root
-							}
-						}
-					}
-					highest_held_title_tier >= tier_kingdom
-				}
-				primary_spouse ?= {
-					OR = {
-						is_independent_ruler = yes
-						dynasty ?= {
-							any_in_list = {
-								variable = dynasty_independent
-								this = root.primary_spouse
-							}
-						}
-					}
-					highest_held_title_tier >= tier_kingdom
-				}
-				AND = {
-					is_male = yes
-					father ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.father
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-				AND = {
-					is_male = yes
-					mother ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.mother
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-			}
 		}
 		localization_key = First_Name_Possessive_No_Tooltip_Turkish_Muslim
 	}
@@ -960,11 +702,15 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
 			}
-			has_religion = religion:islam_religion
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
 		}
-		localization_key = First_Name_Possessive_No_Tooltip_Turkish_Muslim
+		localization_key = First_Name_Possessive_No_Tooltip_ArabicA
 	}
 	text = {
 		trigger = {
@@ -1085,20 +831,6 @@ FirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-			}
-			OR = {
-				culture = {
-					has_cultural_pillar = heritage_arabic
-				}
-				has_religion = religion:islam_religion
-			}
-		}
-		localization_key = First_Name_Possessive_No_Tooltip_ArabicA
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_dravidian
 				has_cultural_pillar = language_tamil
 			}
@@ -1207,62 +939,6 @@ FirstNameNicknamed = {
 				turkish_check = yes
 			}
 			has_religion = religion:islam_religion
-			OR = {
-				AND = {
-					OR = {
-						is_independent_ruler = yes
-						dynasty ?= {
-							any_in_list = {
-								variable = dynasty_independent
-								this = root
-							}
-						}
-					}
-					highest_held_title_tier >= tier_kingdom
-				}
-				primary_spouse ?= {
-					OR = {
-						is_independent_ruler = yes
-						dynasty ?= {
-							any_in_list = {
-								variable = dynasty_independent
-								this = root.primary_spouse
-							}
-						}
-					}
-					highest_held_title_tier >= tier_kingdom
-				}
-				AND = {
-					is_male = yes
-					father ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.father
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-				AND = {
-					is_male = yes
-					mother ?= {
-						OR = {
-							is_independent_ruler = yes
-							dynasty ?= {
-								any_in_list = {
-									variable = dynasty_independent
-									this = root.mother
-								}
-							}
-						}
-						highest_held_title_tier >= tier_kingdom
-					}
-				}
-			}
 		}
 		localization_key = First_Name_Turkish_Muslim
 	}
@@ -1270,11 +946,15 @@ FirstNameNicknamed = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
 			}
-			has_religion = religion:islam_religion
+			OR = {
+				culture = {
+					has_cultural_pillar = heritage_arabic
+				}
+				has_religion = religion:islam_religion
+			}
 		}
-		localization_key = First_Name_Turkish_Muslim
+		localization_key = First_Name_ArabicA
 	}
 	text = {
 		trigger = {
@@ -1380,20 +1060,6 @@ FirstNameNicknamed = {
 			}
 		}
 		localization_key = First_Name_Somali
-	}
-	text = {
-		trigger = {
-			culture = {
-				is_npe_supported_culture = yes
-			}
-			OR = {
-				culture = {
-					has_cultural_pillar = heritage_arabic
-				}
-				has_religion = religion:islam_religion
-			}
-		}
-		localization_key = First_Name_ArabicA
 	}
 	text = {
 		trigger = {
