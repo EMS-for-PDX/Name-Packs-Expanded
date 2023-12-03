@@ -136,3 +136,13 @@ First_Name_Generic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[RO
 First_Name_No_Tooltip_Generic: "[ROOT.Char.Custom('CharacterNameCheck')]"
 First_Name_Possessive_Generic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
 First_Name_Possessive_No_Tooltip_Generic: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
+
+Full_Name_Name_Tier_Pat_No_Nick: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!#!"
+Full_Name_Name_Tier_Pat_No_Nick_No_Tooltip: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]"
+Full_Name_Name_Tier_Pat_No_Nick_Possessive: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]'s#!#!#!"
+Full_Name_Name_Tier_Pat_No_Nick_Possessive_No_Tooltip: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]'s"
+
+Full_Name_House_Tier_Name_No_Nick: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
+Full_Name_House_Tier_Name_No_Nick_No_Tooltip: "[ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
+Full_Name_House_Tier_Name_No_Nick_Possessive: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
+Full_Name_House_Tier_Name_No_Nick_Possessive_No_Tooltip: "[ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s"
