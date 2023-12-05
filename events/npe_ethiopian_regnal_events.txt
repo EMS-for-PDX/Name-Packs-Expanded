@@ -63,7 +63,7 @@ npeethioreg.002 = { #Give Other King
 		custom_tooltip = npeethioreg.002.b.tt
 		scope:recipient = {
 			set_regnal_name_ethiopian_effect = yes
-			add_character_flag = ethio_reg_assigned
+			add_character_flag = ethio_regnal_assigned
 			trigger_event = {
 				id = npeethioreg.005
 				days = -1
@@ -94,7 +94,7 @@ npeethioreg.003 = { #Give You King
 		name = npeethioreg.003.b
 		custom_tooltip = npeethioreg.003.b.tt
 		set_regnal_name_ethiopian_effect = yes
-		add_character_flag = ethio_reg_assigned
+		add_character_flag = ethio_regnal_assigned
 	}
 }
 npeethioreg.004 = { #Hidden Event King
@@ -111,7 +111,7 @@ npeethioreg.004 = { #Hidden Event King
 			regnal_name_ethio_consort_female_effect = yes
 		}
 		set_regnal_name_ethiopian_effect = yes
-		add_character_flag = ethio_reg_assigned
+		add_character_flag = ethio_regnal_assigned
 	}
 }
 npeethioreg.005 = { #Recieve King
