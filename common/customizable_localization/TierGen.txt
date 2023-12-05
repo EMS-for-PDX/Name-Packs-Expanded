@@ -1376,6 +1376,14 @@ CharacterGov = {
             NAND = {
                 is_independent_ruler = yes
                 highest_held_title_tier < tier_empire
+                AND = {
+                    is_landed = yes
+                    NOT = {
+                        top_liege ?= {
+                            has_title = title:e_byzantium
+                        }
+                    }
+                }
             }
             OR = {
                 AND = {
