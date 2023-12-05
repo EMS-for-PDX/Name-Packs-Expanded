@@ -68,7 +68,7 @@
                         this.var:regname_temp = flag:Badel-Mogasa
                 }
                 add_to_global_variable_list = { name = Badel-Mogasa_regnal target = this }
-				add_character_flag = Badel
+#				add_character_flag = Badel
 				add_character_flag = Mogasa
         }
         if = {
@@ -84,7 +84,7 @@
                         this.var:regname_temp = flag:Dengel-Mogasa
                 }
                 add_to_global_variable_list = { name = Dengel-Mogasa_regnal target = this }
-				add_character_flag = Dengel
+#				add_character_flag = Dengel
 				add_character_flag = Mogasa
         }
         if = {
@@ -106,7 +106,7 @@
                         this.var:regname_temp = flag:Masih-Mogasa
                 }
                 add_to_global_variable_list = { name = Masih-Mogasa_regnal target = this }
-				add_character_flag = Masih
+#				add_character_flag = Masih
 				add_character_flag = Mogasa
         }
         if = {
@@ -124,6 +124,12 @@
                 add_to_global_variable_list = { name = Malkea-Mogasa_regnal target = this }
 				add_character_flag = Malkea
 				add_character_flag = Mogasa
+        }
+        if = {
+                limit = {
+                        this.var:regname_temp = flag:Naod-Mogasa
+                }
+                add_to_global_variable_list = { name = Naod-Mogasa_regnal target = this }
         }
         if = {
                 limit = {
@@ -162,15 +168,15 @@
                         this.var:regname_temp = flag:Seyon-Mogasa
                 }
                 add_to_global_variable_list = { name = Seyon-Mogasa_regnal target = this }
-				add_character_flag = Seyon
+#				add_character_flag = Seyon
 				add_character_flag = Mogasa
         }
         if = {
                 limit = {
-                        this.var:regname_temp = flag:Sultan-Mogasa
+                        this.var:regname_temp = flag:Seltan-Mogasa
                 }
-                add_to_global_variable_list = { name = Sultan-Mogasa_regnal target = this }
-				add_character_flag = Sultan
+                add_to_global_variable_list = { name = Seltan-Mogasa_regnal target = this }
+				add_character_flag = Seltan
 				add_character_flag = Mogasa
         }
         if = {
@@ -407,7 +413,6 @@
                 }
                 add_to_global_variable_list = { name = Saba-Asgad_regnal target = this }
 				add_character_flag = Saba
-				add_character_flag = Asgad
         }
         if = {
                 limit = {
@@ -433,7 +438,7 @@
                 limit = {
                         this.var:regname_temp = flag:Sayfa-Sagad
                 }
-                add_to_global_variable_list = { name = Sayfa-Sagad target = this }
+                add_to_global_variable_list = { name = Sayfa-Sagad_regnal target = this }
         }
         if = {
                 limit = {
@@ -932,6 +937,12 @@ regnal_name_ethio_consort_female_effect = {
 				}
 			}
 			1 = {
+					set_variable = {
+							name = regname_temp
+							value = flag:Naod-Mogasa
+					}
+			}
+			1 = {
 				set_variable = {
 						name = regname_temp
 						value = flag:Zan-Kallala
@@ -1256,6 +1267,12 @@ regnal_name_ethiopian_female_effect = {
 				set_variable = {
 						name = regname_temp
 						value = flag:Masih-Mogasa
+				}
+		}
+		1 = {
+				set_variable = {
+						name = regname_temp
+						value = flag:Naod-Mogasa
 				}
 		}
 		1 = {

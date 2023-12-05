@@ -2840,13 +2840,14 @@ KannadaParamesvaraCheck = {
 	text = {
 		trigger = {
 			culture = {
-			any_parent_culture_or_above = {
-				NOT = {
-					has_cultural_pillar = heritage_indo_aryan
+				any_parent_culture_or_above = {
+					NOT = {
+						has_cultural_pillar = heritage_indo_aryan
+					}
 				}
 			}
 		}
-        localization_key = ParamesvaraKannada
+		localization_key = ParamesvaraKannada
 	}
 	text = {
 		fallback = yes

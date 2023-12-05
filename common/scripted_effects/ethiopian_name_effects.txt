@@ -1509,854 +1509,854 @@ ethiopian_female_name_effect = {
 		}
 	}
 }
-ethiopian_male_regnal_ruler = {
-	random_list = {
-		0 = {
-			modifier = {
-				OR = {
-					has_religion = religion:christianity_religion
-					has_religion = religion:judaism_religion
-				}
-				add = 2
-			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = David_regnal target = root }
-				}
-				1 = {
-					add_to_global_variable_list = { name = SolomonRegnal_regnal target = root }
-				}
-			}
-		}
-		0 = {
-			modifier = {
-				has_religion = religion:christianity_religion
-				add = 6
-			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Alexander_regnal target = root }
-				}
-				1 = {
-					add_to_global_variable_list = { name = Constantine_regnal target = root }
-				}
-				1 = {
-					add_to_global_variable_list = { name = Gabra-Maryam_regnal target = root }
-				}
-				1 = {
-					add_to_global_variable_list = { name = Gabra-Masqal_regnal target = root }
-				}
-				1 = {
-					add_to_global_variable_list = { name = Tasfa-Iyasis_regnal target = root }
-				}
-				1 = {
-					add_to_global_variable_list = { name = Theodore_regnal target = root }
-				}
-			}
-		}
-		1 = {
-			add_to_global_variable_list = { name = Adbar-Sagad_regnal target = root }
-			add_character_flag = Adbar
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Admas-Sagad_regnal target = root }
-			add_character_flag = Admas
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Adyam-Sagad_regnal target = root }
-			add_character_flag = Adyam
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Aelaf-Sagad_regnal target = root }
-			add_character_flag = Aelaf
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Alam-Sagad_regnal target = root }
-			add_character_flag = Alam
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Asnaf-Sagad_regnal target = root }
-			add_character_flag = Asnaf
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Asrar-Sagad_regnal target = root }
-			add_character_flag = Asrar
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Baala-Sagad_regnal target = root }
-			add_character_flag = Baala
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Badel-Nan_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Berhan-Sagad_regnal target = root }
-			add_character_flag = Berhan
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Ella-Asbeha_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Feqr-Sagad_regnal target = root }
-			add_character_flag = Feqr
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Germa-Asfare_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Hezba-Asgad_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Hezba-Nan_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Malak-Sagad_regnal target = root }
-			add_character_flag = Malak
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Malkea-Sagad_regnal target = root }
-			add_character_flag = Malkea
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Meherka-Nan_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Qedma-Asgad_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Saba-Asgad_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Sahay-Sagad_regnal target = root }
-			add_character_flag = Sahay
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Sayfa-Arad_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Sayfa-Arem_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Seltan-Sagad_regnal target = root }
-			add_character_flag = Seltan
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Senfa-Asgad_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Tebab-Sagad_regnal target = root }
-			add_character_flag = Tebab
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Walda-Ambasa_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Wanag-Sagad_regnal target = root }
-			add_character_flag = Wanag
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Wasan-Sagad_regnal target = root }
-			add_character_flag = Wasan
-			add_character_flag = Sagad
-		}
-		1 = {
-			add_to_global_variable_list = { name = Wedem-Arad_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Wedem-Asfare_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Zan-Asgad_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Zan-Sagad_regnal target = root }
-		}
-	}
-}
-ethiopian_female_regnal_ruler = {
-	random_list = {
-		0 = {
-			modifier = {
-				OR = {
-					has_religion = religion:christianity_religion
-					has_religion = religion:judaism_religion
-				}
-				add = 1
-			}
-			add_to_global_variable_list = { name = Seyon-Mogasa_regnal target = root }
-			add_character_flag = Seyon
-			add_character_flag = Mogasa
-		}
-		0 = {
-			modifier = {
-				has_religion = religion:christianity_religion
-				add = 3
-			}
-			random_list = {
-				1 = {
-					add_to_global_variable_list = { name = Dengel-Mogasa_regnal target = root }
-					add_character_flag = Dengel
-					add_character_flag = Mogasa
-				}
-				1 = {
-					add_to_global_variable_list = { name = Helen_regnal target = root }
-				}
-				1 = {
-					add_to_global_variable_list = { name = Masih-Mogasa_regnal target = root }
-					add_character_flag = Masih
-					add_character_flag = Mogasa
-				}
-			}
-		}
-		1 = {
-			add_to_global_variable_list = { name = Adbar-Sagad_regnal target = root }
-			add_character_flag = Adbar
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Admas-Mogasa_regnal target = root }
-			add_character_flag = Admas
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Adyam-Mogasa_regnal target = root }
-			add_character_flag = Adyam
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Aelaf-Mogasa_regnal target = root }
-			add_character_flag = Aelaf
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Alam-Mogasa_regnal target = root }
-			add_character_flag = Alam
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Asnaf-Mogasa_regnal target = root }
-			add_character_flag = Asnaf
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Asrar-Mogasa_regnal target = root }
-			add_character_flag = Asrar
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Badel-Mogasa_regnal target = root }
-			add_character_flag = Badel
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Berhan-Mogasa_regnal target = root }
-			add_character_flag = Berhan
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Feqr-Mogasa_regnal target = root }
-			add_character_flag = Feqr
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Hezba-Mogasa_regnal target = root }
-			add_character_flag = Hezba
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Malak-Mogasa_regnal target = root }
-			add_character_flag = Malak
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Malkea-Mogasa_regnal target = root }
-			add_character_flag = Malkea
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Meherka-Mogasa_regnal target = root }
-			add_character_flag = Meherka
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Naod-Mogasa_regnal target = root }
-			add_character_flag = Naod
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Qedma-Mogasa_regnal target = root }
-			add_character_flag = Qedma
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Saba-Mogasa_regnal target = root }
-			add_character_flag = Saba
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Sahay-Mogasa_regnal target = root }
-			add_character_flag = Sahay
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Sayfa-Mogasa_regnal target = root }
-			add_character_flag = Sayfa
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Sedeq-Mogasa_regnal target = root }
-			add_character_flag = Sedeq
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Seltan-Mogasa_regnal target = root }
-			add_character_flag = Seltan
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Tebab-Mogasa_regnal target = root }
-			add_character_flag = Tebab
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Wanag-Mogasa_regnal target = root }
-			add_character_flag = Wanag
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Wasan-Mogasa_regnal target = root }
-			add_character_flag = Wasan
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Wedem-Mogasa_regnal target = root }
-			add_character_flag = Wedem
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Zan-Kallala_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Zan-Khayla_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Zan-Mangasa_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Zan-Mogasa_regnal target = root }
-			add_character_flag = Zan
-			add_character_flag = Mogasa
-		}
-		1 = {
-			add_to_global_variable_list = { name = Zan-Mangasa_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Zan-Sayfa_regnal target = root }
-		}
-		1 = {
-			add_to_global_variable_list = { name = Zan-Zala_regnal target = root }
-		}
-	}
-}
-ethiopian_male_regnal_consort = {
-	save_scope_as = effect_root
-	if = {
-		limit = {
-			primary_spouse = {
-				has_character_flag = Mogasa
-			}
-		}
-		if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Adbar
-				}
-			}
-			add_to_global_variable_list = { name = Adbar-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Admas
-				}
-			}
-			add_to_global_variable_list = { name = Admas-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Adyam
-				}
-			}
-			add_to_global_variable_list = { name = Adyam-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Aelaf
-				}
-			}
-			add_to_global_variable_list = { name = Aelaf-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Alam
-				}
-			}
-			add_to_global_variable_list = { name = Alam-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Asnaf
-				}
-			}
-			add_to_global_variable_list = { name = Asnaf-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Asrar
-				}
-			}
-			add_to_global_variable_list = { name = Asrar-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Badel
-				}
-			}
-			add_to_global_variable_list = { name = Badel-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Berhan
-				}
-			}
-			add_to_global_variable_list = { name = Berhan-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Dengel
-				}
-			}
-			add_to_global_variable_list = { name = Dengel-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Feqr
-				}
-			}
-			add_to_global_variable_list = { name = Feqr-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Hezba
-				}
-			}
-			add_to_global_variable_list = { name = Hezba-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Malak
-				}
-			}
-			add_to_global_variable_list = { name = Malak-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Malkea
-				}
-			}
-			add_to_global_variable_list = { name = Malkea-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Masih
-				}
-			}
-			add_to_global_variable_list = { name = Masih-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Meherka
-				}
-			}
-			add_to_global_variable_list = { name = Meherka-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Naod
-				}
-			}
-			add_to_global_variable_list = { name = Naod-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Qedma
-				}
-			}
-			add_to_global_variable_list = { name = Qedma-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Saba
-				}
-			}
-			add_to_global_variable_list = { name = Saba-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Sahay
-				}
-			}
-			add_to_global_variable_list = { name = Sahay-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Sayfa
-				}
-			}
-			add_to_global_variable_list = { name = Sayfa-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Sedeq
-				}
-			}
-			add_to_global_variable_list = { name = Sedeq-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Seltan
-				}
-			}
-			add_to_global_variable_list = { name = Seltan-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Seyon
-				}
-			}
-			add_to_global_variable_list = { name = Seyon-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Tebab
-				}
-			}
-			add_to_global_variable_list = { name = Tebab-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Wanag
-				}
-			}
-			add_to_global_variable_list = { name = Wanag-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Wasan
-				}
-			}
-			add_to_global_variable_list = { name = Wasan-Sagad_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Wedem
-				}
-			}
-			add_to_global_variable_list = { name = Wedem-Sagad_regnal target = scope:effect_root }
-		}
-	}
-	else = {
-		random_list = {
-			0 = {
-				modifier = {
-					OR = {
-						has_religion = religion:christianity_religion
-						has_religion = religion:judaism_religion
-					}
-					add = 2
-				}
-				random_list = {
-					1 = {
-						add_to_global_variable_list = { name = David_regnal target = root }
-					}
-					1 = {
-						add_to_global_variable_list = { name = SolomonRegnal_regnal target = root }
-					}
-				}
-			}
-			0 = {
-				modifier = {
-					has_religion = religion:christianity_religion
-					add = 6
-				}
-				random_list = {
-					1 = {
-						add_to_global_variable_list = { name = Alexander_regnal target = root }
-					}
-					1 = {
-						add_to_global_variable_list = { name = Constantine_regnal target = root }
-					}
-					1 = {
-						add_to_global_variable_list = { name = Gabra-Maryam_regnal target = root }
-					}
-					1 = {
-						add_to_global_variable_list = { name = Gabra-Masqal_regnal target = root }
-					}
-					1 = {
-						add_to_global_variable_list = { name = Tasfa-Iyasis_regnal target = root }
-					}
-					1 = {
-						add_to_global_variable_list = { name = Theodore_regnal target = root }
-					}
-				}
-			}
-			1 = {
-				add_to_global_variable_list = { name = Badel-Nan_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Ella-Asbeha_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Germa-Asfare_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Hezba-Nan_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Meherka-Nan_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Sayfa-Arad_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Sayfa-Arem_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Walda-Ambasa_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Wedem-Arad_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Wedem-Asfare_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Zan-Sagad_regnal target = root }
-			}
-		}
-	}
-}
-ethiopian_female_regnal_consort = {
-	save_scope_as = effect_root
-	if = {
-		limit = {
-			primary_spouse = {
-				has_character_flag = Sagad
-			}
-		}
-		if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Adbar
-				}
-			}
-			add_to_global_variable_list = { name = Adbar-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Admas
-				}
-			}
-			add_to_global_variable_list = { name = Admas-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Adyam
-				}
-			}
-			add_to_global_variable_list = { name = Adyam-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Aelaf
-				}
-			}
-			add_to_global_variable_list = { name = Aelaf-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Alam
-				}
-			}
-			add_to_global_variable_list = { name = Alam-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Asnaf
-				}
-			}
-			add_to_global_variable_list = { name = Asnaf-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Asrar
-				}
-			}
-			add_to_global_variable_list = { name = Asrar-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Baala
-				}
-			}
-			add_to_global_variable_list = { name = Baala-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Berhan
-				}
-			}
-			add_to_global_variable_list = { name = Berhan-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Feqr
-				}
-			}
-			add_to_global_variable_list = { name = Feqr-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Malak
-				}
-			}
-			add_to_global_variable_list = { name = Malak-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Malkea
-				}
-			}
-			add_to_global_variable_list = { name = Malkea-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Sahay
-				}
-			}
-			add_to_global_variable_list = { name = Sahay-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Seltan
-				}
-			}
-			add_to_global_variable_list = { name = Seltan-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Tebab
-				}
-			}
-			add_to_global_variable_list = { name = Tebab-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Wanag
-				}
-			}
-			add_to_global_variable_list = { name = Wanag-Mogasa_regnal target = scope:effect_root }
-		}
-		else_if = {
-			limit = {
-				primary_spouse = {
-					has_character_flag = Wasan
-				}
-			}
-			add_to_global_variable_list = { name = Wasan-Mogasa_regnal target = scope:effect_root }
-		}
-	}
-	else = {
-		random_list = {
-			0 = {
-				modifier = {
-					has_religion = religion:christianity_religion
-					add = 1
-				}
-				add_to_global_variable_list = { name = Helen_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Zan-Kallala_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Zan-Khayla_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Zan-Mangasa_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Zan-Sayfa_regnal target = scope:effect_root }
-			}
-			1 = {
-				add_to_global_variable_list = { name = Zan-Zala_regnal target = scope:effect_root }
-			}
-		}
-	}
-}
+#ethiopian_male_regnal_ruler = {
+#	random_list = {
+#		0 = {
+#			modifier = {
+#				OR = {
+#					has_religion = religion:christianity_religion
+#					has_religion = religion:judaism_religion
+#				}
+#				add = 2
+#			}
+#			random_list = {
+#				1 = {
+#					add_to_global_variable_list = { name = David_regnal target = root }
+#				}
+#				1 = {
+#					add_to_global_variable_list = { name = SolomonRegnal_regnal target = root }
+#				}
+#			}
+#		}
+#		0 = {
+#			modifier = {
+#				has_religion = religion:christianity_religion
+#				add = 6
+#			}
+#			random_list = {
+#				1 = {
+#					add_to_global_variable_list = { name = Alexander_regnal target = root }
+#				}
+#				1 = {
+#					add_to_global_variable_list = { name = Constantine_regnal target = root }
+#				}
+#				1 = {
+#					add_to_global_variable_list = { name = Gabra-Maryam_regnal target = root }
+#				}
+#				1 = {
+#					add_to_global_variable_list = { name = Gabra-Masqal_regnal target = root }
+#				}
+#				1 = {
+#					add_to_global_variable_list = { name = Tasfa-Iyasis_regnal target = root }
+#				}
+#				1 = {
+#					add_to_global_variable_list = { name = Theodore_regnal target = root }
+#				}
+#			}
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Adbar-Sagad_regnal target = root }
+#			add_character_flag = Adbar
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Admas-Sagad_regnal target = root }
+#			add_character_flag = Admas
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Adyam-Sagad_regnal target = root }
+#			add_character_flag = Adyam
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Aelaf-Sagad_regnal target = root }
+#			add_character_flag = Aelaf
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Alam-Sagad_regnal target = root }
+#			add_character_flag = Alam
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Asnaf-Sagad_regnal target = root }
+#			add_character_flag = Asnaf
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Asrar-Sagad_regnal target = root }
+#			add_character_flag = Asrar
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Baala-Sagad_regnal target = root }
+#			add_character_flag = Baala
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Badel-Nan_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Berhan-Sagad_regnal target = root }
+#			add_character_flag = Berhan
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Ella-Asbeha_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Feqr-Sagad_regnal target = root }
+#			add_character_flag = Feqr
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Germa-Asfare_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Hezba-Asgad_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Hezba-Nan_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Malak-Sagad_regnal target = root }
+#			add_character_flag = Malak
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Malkea-Sagad_regnal target = root }
+#			add_character_flag = Malkea
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Meherka-Nan_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Qedma-Asgad_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Saba-Asgad_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Sahay-Sagad_regnal target = root }
+#			add_character_flag = Sahay
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Sayfa-Arad_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Sayfa-Arem_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Seltan-Sagad_regnal target = root }
+#			add_character_flag = Seltan
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Senfa-Asgad_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Tebab-Sagad_regnal target = root }
+#			add_character_flag = Tebab
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Walda-Ambasa_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Wanag-Sagad_regnal target = root }
+#			add_character_flag = Wanag
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Wasan-Sagad_regnal target = root }
+#			add_character_flag = Wasan
+#			add_character_flag = Sagad
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Wedem-Arad_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Wedem-Asfare_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Zan-Asgad_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Zan-Sagad_regnal target = root }
+#		}
+#	}
+#}
+#ethiopian_female_regnal_ruler = {
+#	random_list = {
+#		0 = {
+#			modifier = {
+#				OR = {
+#					has_religion = religion:christianity_religion
+#					has_religion = religion:judaism_religion
+#				}
+#				add = 1
+#			}
+#			add_to_global_variable_list = { name = Seyon-Mogasa_regnal target = root }
+#			add_character_flag = Seyon
+#			add_character_flag = Mogasa
+#		}
+#		0 = {
+#			modifier = {
+#				has_religion = religion:christianity_religion
+#				add = 3
+#			}
+#			random_list = {
+#				1 = {
+#					add_to_global_variable_list = { name = Dengel-Mogasa_regnal target = root }
+#					add_character_flag = Dengel
+#					add_character_flag = Mogasa
+#				}
+#				1 = {
+#					add_to_global_variable_list = { name = Helen_regnal target = root }
+#				}
+#				1 = {
+#					add_to_global_variable_list = { name = Masih-Mogasa_regnal target = root }
+#					add_character_flag = Masih
+#					add_character_flag = Mogasa
+#				}
+#			}
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Adbar-Sagad_regnal target = root }
+#			add_character_flag = Adbar
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Admas-Mogasa_regnal target = root }
+#			add_character_flag = Admas
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Adyam-Mogasa_regnal target = root }
+#			add_character_flag = Adyam
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Aelaf-Mogasa_regnal target = root }
+#			add_character_flag = Aelaf
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Alam-Mogasa_regnal target = root }
+#			add_character_flag = Alam
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Asnaf-Mogasa_regnal target = root }
+#			add_character_flag = Asnaf
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Asrar-Mogasa_regnal target = root }
+#			add_character_flag = Asrar
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Badel-Mogasa_regnal target = root }
+#			add_character_flag = Badel
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Berhan-Mogasa_regnal target = root }
+#			add_character_flag = Berhan
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Feqr-Mogasa_regnal target = root }
+#			add_character_flag = Feqr
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Hezba-Mogasa_regnal target = root }
+#			add_character_flag = Hezba
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Malak-Mogasa_regnal target = root }
+#			add_character_flag = Malak
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Malkea-Mogasa_regnal target = root }
+#			add_character_flag = Malkea
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Meherka-Mogasa_regnal target = root }
+#			add_character_flag = Meherka
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Naod-Mogasa_regnal target = root }
+#			add_character_flag = Naod
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Qedma-Mogasa_regnal target = root }
+#			add_character_flag = Qedma
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Saba-Mogasa_regnal target = root }
+#			add_character_flag = Saba
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Sahay-Mogasa_regnal target = root }
+#			add_character_flag = Sahay
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Sayfa-Mogasa_regnal target = root }
+#			add_character_flag = Sayfa
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Sedeq-Mogasa_regnal target = root }
+#			add_character_flag = Sedeq
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Seltan-Mogasa_regnal target = root }
+#			add_character_flag = Seltan
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Tebab-Mogasa_regnal target = root }
+#			add_character_flag = Tebab
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Wanag-Mogasa_regnal target = root }
+#			add_character_flag = Wanag
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Wasan-Mogasa_regnal target = root }
+#			add_character_flag = Wasan
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Wedem-Mogasa_regnal target = root }
+#			add_character_flag = Wedem
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Zan-Kallala_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Zan-Khayla_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Zan-Mangasa_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Zan-Mogasa_regnal target = root }
+#			add_character_flag = Zan
+#			add_character_flag = Mogasa
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Zan-Mangasa_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Zan-Sayfa_regnal target = root }
+#		}
+#		1 = {
+#			add_to_global_variable_list = { name = Zan-Zala_regnal target = root }
+#		}
+#	}
+#}
+#ethiopian_male_regnal_consort = {
+#	save_scope_as = effect_root
+#	if = {
+#		limit = {
+#			primary_spouse = {
+#				has_character_flag = Mogasa
+#			}
+#		}
+#		if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Adbar
+#				}
+#			}
+#			add_to_global_variable_list = { name = Adbar-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Admas
+#				}
+#			}
+#			add_to_global_variable_list = { name = Admas-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Adyam
+#				}
+#			}
+#			add_to_global_variable_list = { name = Adyam-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Aelaf
+#				}
+#			}
+#			add_to_global_variable_list = { name = Aelaf-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Alam
+#				}
+#			}
+#			add_to_global_variable_list = { name = Alam-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Asnaf
+#				}
+#			}
+#			add_to_global_variable_list = { name = Asnaf-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Asrar
+#				}
+#			}
+#			add_to_global_variable_list = { name = Asrar-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Badel
+#				}
+#			}
+#			add_to_global_variable_list = { name = Badel-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Berhan
+#				}
+#			}
+#			add_to_global_variable_list = { name = Berhan-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Dengel
+#				}
+#			}
+#			add_to_global_variable_list = { name = Dengel-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Feqr
+#				}
+#			}
+#			add_to_global_variable_list = { name = Feqr-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Hezba
+#				}
+#			}
+#			add_to_global_variable_list = { name = Hezba-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Malak
+#				}
+#			}
+#			add_to_global_variable_list = { name = Malak-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Malkea
+#				}
+#			}
+#			add_to_global_variable_list = { name = Malkea-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Masih
+#				}
+#			}
+#			add_to_global_variable_list = { name = Masih-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Meherka
+#				}
+#			}
+#			add_to_global_variable_list = { name = Meherka-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Naod
+#				}
+#			}
+#			add_to_global_variable_list = { name = Naod-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Qedma
+#				}
+#			}
+#			add_to_global_variable_list = { name = Qedma-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Saba
+#				}
+#			}
+#			add_to_global_variable_list = { name = Saba-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Sahay
+#				}
+#			}
+#			add_to_global_variable_list = { name = Sahay-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Sayfa
+#				}
+#			}
+#			add_to_global_variable_list = { name = Sayfa-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Sedeq
+#				}
+#			}
+#			add_to_global_variable_list = { name = Sedeq-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Seltan
+#				}
+#			}
+#			add_to_global_variable_list = { name = Seltan-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Seyon
+#				}
+#			}
+#			add_to_global_variable_list = { name = Seyon-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Tebab
+#				}
+#			}
+#			add_to_global_variable_list = { name = Tebab-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Wanag
+#				}
+#			}
+#			add_to_global_variable_list = { name = Wanag-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Wasan
+#				}
+#			}
+#			add_to_global_variable_list = { name = Wasan-Sagad_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Wedem
+#				}
+#			}
+#			add_to_global_variable_list = { name = Wedem-Sagad_regnal target = scope:effect_root }
+#		}
+#	}
+#	else = {
+#		random_list = {
+#			0 = {
+#				modifier = {
+#					OR = {
+#						has_religion = religion:christianity_religion
+#						has_religion = religion:judaism_religion
+#					}
+#					add = 2
+#				}
+#				random_list = {
+#					1 = {
+#						add_to_global_variable_list = { name = David_regnal target = root }
+#					}
+#					1 = {
+#						add_to_global_variable_list = { name = SolomonRegnal_regnal target = root }
+#					}
+#				}
+#			}
+#			0 = {
+#				modifier = {
+#					has_religion = religion:christianity_religion
+#					add = 6
+#				}
+#				random_list = {
+#					1 = {
+#						add_to_global_variable_list = { name = Alexander_regnal target = root }
+#					}
+#					1 = {
+#						add_to_global_variable_list = { name = Constantine_regnal target = root }
+#					}
+#					1 = {
+#						add_to_global_variable_list = { name = Gabra-Maryam_regnal target = root }
+#					}
+#					1 = {
+#						add_to_global_variable_list = { name = Gabra-Masqal_regnal target = root }
+#					}
+#					1 = {
+#						add_to_global_variable_list = { name = Tasfa-Iyasis_regnal target = root }
+#					}
+#					1 = {
+#						add_to_global_variable_list = { name = Theodore_regnal target = root }
+#					}
+#				}
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Badel-Nan_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Ella-Asbeha_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Germa-Asfare_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Hezba-Nan_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Meherka-Nan_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Sayfa-Arad_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Sayfa-Arem_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Walda-Ambasa_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Wedem-Arad_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Wedem-Asfare_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Zan-Sagad_regnal target = root }
+#			}
+#		}
+#	}
+#}
+#ethiopian_female_regnal_consort = {
+#	save_scope_as = effect_root
+#	if = {
+#		limit = {
+#			primary_spouse = {
+#				has_character_flag = Sagad
+#			}
+#		}
+#		if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Adbar
+#				}
+#			}
+#			add_to_global_variable_list = { name = Adbar-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Admas
+#				}
+#			}
+#			add_to_global_variable_list = { name = Admas-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Adyam
+#				}
+#			}
+#			add_to_global_variable_list = { name = Adyam-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Aelaf
+#				}
+#			}
+#			add_to_global_variable_list = { name = Aelaf-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Alam
+#				}
+#			}
+#			add_to_global_variable_list = { name = Alam-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Asnaf
+#				}
+#			}
+#			add_to_global_variable_list = { name = Asnaf-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Asrar
+#				}
+#			}
+#			add_to_global_variable_list = { name = Asrar-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Baala
+#				}
+#			}
+#			add_to_global_variable_list = { name = Baala-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Berhan
+#				}
+#			}
+#			add_to_global_variable_list = { name = Berhan-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Feqr
+#				}
+#			}
+#			add_to_global_variable_list = { name = Feqr-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Malak
+#				}
+#			}
+#			add_to_global_variable_list = { name = Malak-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Malkea
+#				}
+#			}
+#			add_to_global_variable_list = { name = Malkea-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Sahay
+#				}
+#			}
+#			add_to_global_variable_list = { name = Sahay-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Seltan
+#				}
+#			}
+#			add_to_global_variable_list = { name = Seltan-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Tebab
+#				}
+#			}
+#			add_to_global_variable_list = { name = Tebab-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Wanag
+#				}
+#			}
+#			add_to_global_variable_list = { name = Wanag-Mogasa_regnal target = scope:effect_root }
+#		}
+#		else_if = {
+#			limit = {
+#				primary_spouse = {
+#					has_character_flag = Wasan
+#				}
+#			}
+#			add_to_global_variable_list = { name = Wasan-Mogasa_regnal target = scope:effect_root }
+#		}
+#	}
+#	else = {
+#		random_list = {
+#			0 = {
+#				modifier = {
+#					has_religion = religion:christianity_religion
+#					add = 1
+#				}
+#				add_to_global_variable_list = { name = Helen_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Zan-Kallala_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Zan-Khayla_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Zan-Mangasa_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Zan-Sayfa_regnal target = scope:effect_root }
+#			}
+#			1 = {
+#				add_to_global_variable_list = { name = Zan-Zala_regnal target = scope:effect_root }
+#			}
+#		}
+#	}
+#}
