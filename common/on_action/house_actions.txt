@@ -1,6 +1,7 @@
 ﻿on_dynasty_created = {
 	on_actions = {
 		set_dynasty
+		check_support
 	}
 }
 set_dynasty = {
@@ -22,6 +23,29 @@ set_dynasty = {
 	effect = {
 		dynast = {
 			dynasty_effect_ne = yes
+		}
+	}
+}
+check_support = {
+	trigger = {
+		dynast = {
+			save_temporary_scope_as = good_lad
+			NOT = {
+				dynasty = {
+					any_in_list = {
+						variable = name_pack_support_dynasty
+						this = scope:good_lad
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		dynast = {
+			save_as_scope = new_guy
+			dynasty = {
+				add_to_variable_list = { name = name_pack_support_dynasty target = scope:new_guy }
+			}
 		}
 	}
 }
