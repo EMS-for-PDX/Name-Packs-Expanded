@@ -1,0 +1,145 @@
+﻿assign_regnal_name_ethiopian = {
+	icon = icon_vassal
+    common_interaction = yes
+    category = interaction_category_friendly
+    popup_on_receive = no
+    needs_recipient_to_open = yes
+    ai_max_reply_days = 1
+
+    desc = assign_regnal_name_ethiopian_desc
+
+    is_shown = {
+        scope:actor = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_east_african
+				has_cultural_pillar = language_ethiopic
+			}
+			highest_held_title_tier >= tier_kingdom
+            has_character_flag = ethio_regnal_assigned
+		}
+        scope:recipient = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_east_african
+				has_cultural_pillar = language_ethiopic
+			}
+			is_spouse_of = scope:actor
+            NOT = {
+                has_character_flag = ethio_regnal_assigned
+            }
+        }
+    }
+    is_valid_showing_failures_only = {
+        scope:actor = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_east_african
+				has_cultural_pillar = language_ethiopic
+			}
+			highest_held_title_tier >= tier_kingdom
+        }
+        scope:recipient = {
+			age >= 18
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_east_african
+				has_cultural_pillar = language_ethiopic
+			}
+			this.top_liege = scope:actor
+			is_spouse_of = scope:actor
+            NOT = {
+                has_character_flag = ethio_regnal_assigned
+            }
+        }
+    }
+    auto_accept = yes
+    send_option = {
+        is_shown = {
+			scope:actor = {
+				culture = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = heritage_east_african
+					has_cultural_pillar = language_ethiopic
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+			scope:recipient = {
+				age >= 18
+				culture = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = heritage_east_african
+					has_cultural_pillar = language_ethiopic
+				}
+				this.top_liege = scope:actor
+				is_spouse_of = scope:actor
+				NOT = {
+					has_character_flag = ethio_regnal_assigned
+				}
+			}
+        }
+        is_valid_showing_failures_only = {
+			scope:actor = {
+				culture = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = heritage_east_african
+					has_cultural_pillar = language_ethiopic
+				}
+				highest_held_title_tier >= tier_kingdom
+			}
+			scope:recipient = {
+				age >= 18
+				culture = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = heritage_east_african
+					has_cultural_pillar = language_ethiopic
+				}
+				this.top_liege = scope:actor
+				is_spouse_of = scope:actor
+				NOT = {
+					has_character_flag = ethio_regnal_assigned
+				}
+
+			}
+        }
+        current_description = assign_regnal_name_ethiopian_get_event_desc
+        localization = assign_regnal_name_ethiopian_get_event
+    }
+    on_send = {
+        if = {
+            limit = { scope:actor = { is_ai = no } }
+            scope:actor = {
+                trigger_event = {
+                    id = npeethioreg.002
+                    days = -1
+                }
+            }
+        }
+        else_if = {
+            limit = { scope:recipient = { is_ai = no } }
+            scope:recipient = {
+                trigger_event = {
+                    id = npeethioreg.003
+                    days = -1
+                }
+            }
+        }
+        else = {
+            scope:recipient = {
+                trigger_event = {
+                    id = npeethioreg.004
+                    days = -1
+                }
+            }
+        }
+    }
+    ai_targets = {
+        ai_recipients = spouses
+        chance = 0.25
+    }
+    ai_frequency = 6
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = 100
+}

@@ -1,85 +1,85 @@
-﻿ethio_regnal_ruler = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-    major = yes
-	desc = ethio_regnal_ruler_desc
-	selection_tooltip = ethio_regnal_ruler_tooltip
-	is_shown = {
-		culture = {
-			is_npe_supported_culture = yes
-			has_cultural_pillar = heritage_east_african
-			has_cultural_pillar = language_ethiopic
-		}
-		NOT = {
-			has_character_flag = ethio_regnal_assigned #living historical chars will need this flag BTW
-		}
-	}
-    is_valid = {
-		OR = {
-			AND = {
-				highest_held_title_tier >= tier_kingdom
-				has_government = feudal_government
-			}
-		}
-    }
-	effect = {
-		add_character_flag = ethio_regnal_assigned
-		if = {
-			limit = {
-				is_male = no
-			}
-			ethiopian_female_regnal_ruler = yes
-		}
-		else = {
-			ethiopian_male_regnal_ruler = yes
-		}
-	}
-
-    ai_will_do = {
-        base = 100
-    }
-
-    ai_goal = yes
-}
-ethio_regnal_consort = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-    major = yes
-	desc = ethio_regnal_consort_desc
-	selection_tooltip = ethio_regnal_consort_tooltip
-	is_shown = {
-		culture = {
-			is_npe_supported_culture = yes
-			has_cultural_pillar = heritage_east_african
-			has_cultural_pillar = language_ethiopic
-		}
-		NOT = {
-			has_character_flag = ethio_regnal_assigned #living historical chars will need this flag BTW
-		}
-	}
-    is_valid = {
-		OR = {
-			any_spouse = {
-				highest_held_title_tier >= tier_kingdom
-				has_government = feudal_government
-				has_character_flag = ethio_regnal_assigned
-			}
-		}
-    }
-	effect = {
-		add_character_flag = ethio_regnal_assigned
-		if = {
-			limit = {
-				is_male = no
-			}
-			ethiopian_female_regnal_consort = yes
-		}
-		else = {
-			ethiopian_male_regnal_consort = yes
-		}
-	}
-
-    ai_will_do = {
-        base = 100
-    }
-
-    ai_goal = yes
-}
+﻿#ethio_regnal_ruler = {
+#	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+#    major = yes
+#	desc = ethio_regnal_ruler_desc
+#	selection_tooltip = ethio_regnal_ruler_tooltip
+#	is_shown = {
+#		culture = {
+#			is_npe_supported_culture = yes
+#			has_cultural_pillar = heritage_east_african
+#			has_cultural_pillar = language_ethiopic
+#		}
+#		NOT = {
+#			has_character_flag = ethio_regnal_assigned #living historical chars will need this flag BTW
+#		}
+#	}
+#    is_valid = {
+#		OR = {
+#			AND = {
+#				highest_held_title_tier >= tier_kingdom
+#				has_government = feudal_government
+#			}
+#		}
+#    }
+#	effect = {
+#		add_character_flag = ethio_regnal_assigned
+#		if = {
+#			limit = {
+#				is_male = no
+#			}
+#			ethiopian_female_regnal_ruler = yes
+#		}
+#		else = {
+#			ethiopian_male_regnal_ruler = yes
+#		}
+#	}
+#
+#    ai_will_do = {
+#        base = 100
+#    }
+#
+#    ai_goal = yes
+#}
+#ethio_regnal_consort = {
+#	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+#    major = yes
+#	desc = ethio_regnal_consort_desc
+#	selection_tooltip = ethio_regnal_consort_tooltip
+#	is_shown = {
+#		culture = {
+#			is_npe_supported_culture = yes
+#			has_cultural_pillar = heritage_east_african
+#			has_cultural_pillar = language_ethiopic
+#		}
+#		NOT = {
+#			has_character_flag = ethio_regnal_assigned #living historical chars will need this flag BTW
+#		}
+#	}
+#    is_valid = {
+#		OR = {
+#			any_spouse = {
+#				highest_held_title_tier >= tier_kingdom
+#				has_government = feudal_government
+#				has_character_flag = ethio_regnal_assigned
+#			}
+#		}
+#    }
+#	effect = {
+#		add_character_flag = ethio_regnal_assigned
+#		if = {
+#			limit = {
+#				is_male = no
+#			}
+#			ethiopian_female_regnal_consort = yes
+#		}
+#		else = {
+#			ethiopian_male_regnal_consort = yes
+#		}
+#	}
+#
+#    ai_will_do = {
+#        base = 100
+#    }
+#
+#    ai_goal = yes
+#}

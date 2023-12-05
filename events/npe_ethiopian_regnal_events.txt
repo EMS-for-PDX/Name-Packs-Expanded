@@ -1,0 +1,129 @@
+﻿namespace = npeethioreg
+
+npeethioreg.001 = { #Regnal Name Decision
+    type = character_event
+	theme = faith
+	title = npeethioreg.001.t
+	desc = npeethioreg.001.desc
+	right_portrait = root
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_male = yes
+				}
+				regnal_name_ethiopian_male_effect = yes
+			}
+			else = {
+				regnal_name_ethiopian_female_effect = yes
+			}
+		}
+	}
+	option = {
+		name = npeethioreg.001.a
+		custom_tooltip = npeethioreg.001.a.tt
+		remove_variable = regname_temp
+		trigger_event = {
+			id = npeethioreg.001
+			days = -1
+		}
+	}
+	option = {
+		name = npeethioreg.001.b
+		custom_tooltip = npeethioreg.001.b.tt
+		set_regnal_name_ethiopian_effect = yes
+		add_character_flag = ethio_regnal_assigned
+	}
+}
+npeethioreg.002 = { #Give Other King
+    type = character_event
+	theme = faith
+	title = npeethioreg.002.t
+	desc = npeethioreg.002.desc
+	left_portrait = root
+	right_portrait = scope:recipient
+
+	immediate = {
+		hidden_effect = {
+			scope:recipient = {
+				if = {
+					limit = {
+						is_male = yes
+					}
+					regnal_name_ethio_consort_male_effect = yes
+				}
+				else = {
+					regnal_name_ethio_consort_female_effect = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = npeethioreg.002.b
+		custom_tooltip = npeethioreg.002.b.tt
+		scope:recipient = {
+			set_regnal_name_ethiopian_effect = yes
+			add_character_flag = ethio_reg_assigned
+			trigger_event = {
+				id = npeethioreg.005
+				days = -1
+			}
+		}
+	}
+}
+npeethioreg.003 = { #Give You King
+    type = character_event
+	theme = faith
+	title = npeethioreg.003.t
+	desc = npeethioreg.003.desc
+	left_portrait = scope:actor
+	right_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				is_male = yes
+			}
+			regnal_name_ethio_consort_male_effect = yes
+		}
+		else = {
+			regnal_name_ethio_consort_female_effect = yes
+		}
+	}
+	option = {
+		name = npeethioreg.003.b
+		custom_tooltip = npeethioreg.003.b.tt
+		set_regnal_name_ethiopian_effect = yes
+		add_character_flag = ethio_reg_assigned
+	}
+}
+npeethioreg.004 = { #Hidden Event King
+	type = character_event
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				is_male = yes
+			}
+			regnal_name_ethio_consort_male_effect = yes
+		}
+		else = {
+			regnal_name_ethio_consort_female_effect = yes
+		}
+		set_regnal_name_ethiopian_effect = yes
+		add_character_flag = ethio_reg_assigned
+	}
+}
+npeethioreg.005 = { #Recieve King
+    type = character_event
+	theme = faith
+	title = npeethioreg.004.t
+	desc = npeethioreg.004.desc
+	left_portrait = scope:actor
+	right_portrait = root
+
+	option = {
+		name = npeethioreg.003.b
+		custom_tooltip = npeethioreg.003.b.tt
+	}
+}
