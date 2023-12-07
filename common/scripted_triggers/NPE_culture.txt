@@ -120,6 +120,18 @@ is_npe_supported_culture = {
 				has_cultural_pillar = language_khazar
 			}
 		}
+		trigger_if = {
+			limit = {
+				exists = global_var:is_RICE_loaded_global_variable
+			}
+			NOR = {
+				has_cultural_pillar = language_south_arabian
+				has_cultural_pillar = language_sayhadic #South Arabic
+				has_cultural_pillar = language_burusho #Inida
+				has_cultural_pillar = language_nuristani #Inida
+				has_cultural_pillar = language_elamite #Iran
+			}
+		}
 	}
 }
 earl_check = {

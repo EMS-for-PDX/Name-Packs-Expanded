@@ -2185,6 +2185,12 @@ CharacterCulture = {
                         has_cultural_pillar = language_pamiri
                         has_cultural_pillar = language_sogdian
                         has_cultural_pillar = language_bactrian
+                        AND = {
+                            has_cultural_pillar = language_scythian
+                            NOT = {
+                                has_name_list = name_list_afghan
+                            }
+                        }
                     }
                 }
                 trigger_else = {
