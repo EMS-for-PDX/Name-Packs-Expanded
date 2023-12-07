@@ -1,0 +1,533 @@
+NPEChancellor = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_goidelic
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_irish_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_goidelic
+			}
+		}
+        localization_key = Chancellor_irish_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_name_list = language_middle_english
+                }
+                trigger_else = {
+                    has_cultural_pillar = language_anglic
+                }
+                OR = {
+                    this = culture:english
+                    any_parent_culture_or_above = {
+                        this = culture:english
+                    }
+                }
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_english_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_name_list = language_middle_english
+                }
+                trigger_else = {
+                    has_cultural_pillar = language_anglic
+                }
+                OR = {
+                    this = culture:english
+                    any_parent_culture_or_above = {
+                        this = culture:english
+                    }
+                }
+			}
+		}
+        localization_key = Chancellor_english_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_name_list = language_middle_english
+                }
+                trigger_else = {
+                    has_cultural_pillar = language_anglic
+                }
+                OR = {
+                    this = culture:scottish
+                    any_parent_culture_or_above = {
+                        this = culture:scottish
+                    }
+                }
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_scots_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_name_list = language_middle_english
+                }
+                trigger_else = {
+                    has_cultural_pillar = language_anglic
+                }
+                OR = {
+                    this = culture:scottish
+                    any_parent_culture_or_above = {
+                        this = culture:scottish
+                    }
+                }
+			}
+		}
+        localization_key = Chancellor_scots_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_anglic
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_anglosaxon_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_anglic
+			}
+		}
+        localization_key = Chancellor_anglosaxon_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_french
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_french_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_french
+			}
+		}
+        localization_key = Chancellor_french_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				OR = {
+                    has_name_list = name_list_occitan
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_name_list = name_list_arpetan
+                    }
+                }
+				OR = {
+                    has_cultural_pillar = language_occitano_romance
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_arpetan
+                    }
+                }
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_occitan_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				OR = {
+                    has_name_list = name_list_occitan
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_name_list = name_list_arpetan
+                    }
+                }
+				OR = {
+                    has_cultural_pillar = language_occitano_romance
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_arpetan
+                    }
+                }
+			}
+		}
+        localization_key = Chancellor_occitan_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_basque
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_basque_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_basque
+			}
+		}
+        localization_key = Chancellor_basque_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+                has_name_list = name_list_aragonese
+				OR = {
+                    has_cultural_pillar = language_iberian
+                    has_cultural_pillar = language_occitano_romance
+                }
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_aragonese_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+                has_name_list = name_list_aragonese
+				OR = {
+                    has_cultural_pillar = language_iberian
+                    has_cultural_pillar = language_occitano_romance
+                }
+			}
+		}
+        localization_key = Chancellor_aragonese_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+                OR = {
+                    has_name_list = name_list_galician
+                    has_name_list = name_list_portuguese
+                }
+				has_cultural_pillar = language_iberian
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_portuguese_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+                OR = {
+                    has_name_list = name_list_galician
+                    has_name_list = name_list_portuguese
+                }
+				has_cultural_pillar = language_iberian
+			}
+		}
+        localization_key = Chancellor_portuguese_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_iberian
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_castillian_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_iberian
+			}
+		}
+        localization_key = Chancellor_castillian_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_name_list = name_list_catalan
+				has_cultural_pillar = language_occitano_romance
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_catalan_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_name_list = name_list_catalan
+				has_cultural_pillar = language_occitano_romance
+			}
+		}
+        localization_key = Chancellor_catalan_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_norse
+                OR = {
+                    has_name_list = name_list_swedish
+                    has_name_list = name_list_danish
+                }
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_swedan_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_norse
+                OR = {
+                    has_name_list = name_list_swedish
+                    has_name_list = name_list_danish
+                }
+			}
+		}
+        localization_key = Chancellor_swedan_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_norse
+                has_name_list = name_list_norwegian
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_norweg_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_norse
+                has_name_list = name_list_norwegian
+			}
+		}
+        localization_key = Chancellor_norweg_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_norse
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_norse_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_norse
+			}
+		}
+        localization_key = Chancellor_norse_male
+	}
+	text = {
+		trigger = {
+			liege = {
+				has_title = title:e_hre
+				culture = {
+					OR = {
+						has_cultural_pillar = language_saxon
+						trigger_if = {
+							limit = {
+								exists = global_var:CE_is_loaded
+							}
+							has_cultural_pillar = language_low_german
+						}
+					}
+				}
+			}
+			is_female = yes
+		}
+        localization_key = Archchancellor_saxon_female
+	}
+	text = {
+		trigger = {
+			liege = {
+				has_title = title:e_hre
+				culture = {
+					OR = {
+						has_cultural_pillar = language_saxon
+						trigger_if = {
+							limit = {
+								exists = global_var:CE_is_loaded
+							}
+							has_cultural_pillar = language_low_german
+						}
+					}
+				}
+			}
+		}
+        localization_key = Archchancellor_saxon_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				OR = {
+                    has_cultural_pillar = language_saxon
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_low_german
+                    }
+                }
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_saxon_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				OR = {
+                    has_cultural_pillar = language_saxon
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_low_german
+                    }
+                }
+			}
+		}
+        localization_key = Chancellor_saxon_male
+	}
+	text = {
+		trigger = {
+			liege = {
+				has_title = title:e_hre
+				culture = {
+					has_cultural_pillar = language_high_german
+				}
+			}
+			is_female = yes
+		}
+        localization_key = Archchancellor_german_female
+	}
+	text = {
+		trigger = {
+			liege = {
+				has_title = title:e_hre
+				culture = {
+					has_cultural_pillar = language_high_german
+				}
+			}
+		}
+        localization_key = Archchancellor_german_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_high_german
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_german_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_high_german
+			}
+		}
+        localization_key = Chancellor_german_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_greek
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_greek_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_greek
+			}
+		}
+        localization_key = Chancellor_greek_male
+	}
+	text = {
+		trigger = {
+			liege = {
+				has_title = title:e_hre
+				culture = {
+					has_cultural_pillar = language_italian
+				}
+			}
+			is_female = yes
+		}
+        localization_key = Archchancellor_italian_female
+	}
+	text = {
+		trigger = {
+			liege = {
+				has_title = title:e_hre
+				culture = {
+					has_cultural_pillar = language_italian
+				}
+			}
+		}
+        localization_key = Archchancellor_italian_male
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_italian
+			}
+			is_female = yes
+		}
+        localization_key = Chancellor_italian_female
+	}
+	text = {
+		trigger = {
+			liege.culture = {
+				has_cultural_pillar = language_italian
+			}
+		}
+        localization_key = Chancellor_italian_male
+	}
+	text = {
+		fallback = yes
+		localization_key = Chancellor_general
+	}
+}
