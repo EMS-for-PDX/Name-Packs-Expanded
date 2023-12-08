@@ -37,31 +37,8 @@ NPEChancellor = {
                     }
                 }
 			}
-			is_female = yes
 		}
-        localization_key = Chancellor_english_female
-	}
-	text = {
-		trigger = {
-			liege.culture = {
-				trigger_if = {
-                    limit = {
-                        exists = global_var:CE_is_loaded
-                    }
-                    has_name_list = language_middle_english
-                }
-                trigger_else = {
-                    has_cultural_pillar = language_anglic
-                }
-                OR = {
-                    this = culture:english
-                    any_parent_culture_or_above = {
-                        this = culture:english
-                    }
-                }
-			}
-		}
-        localization_key = Chancellor_english_male
+        localization_key = Chancellor_english
 	}
 	text = {
 		trigger = {
@@ -113,26 +90,8 @@ NPEChancellor = {
 			liege.culture = {
 				has_cultural_pillar = language_anglic
 			}
-			is_female = yes
 		}
-        localization_key = Chancellor_anglosaxon_female
-	}
-	text = {
-		trigger = {
-			liege.culture = {
-				has_cultural_pillar = language_anglic
-			}
-		}
-        localization_key = Chancellor_anglosaxon_male
-	}
-	text = {
-		trigger = {
-			liege.culture = {
-				has_cultural_pillar = language_french
-			}
-			is_female = yes
-		}
-        localization_key = Chancellor_french_female
+        localization_key = Chancellor_anglosaxon
 	}
 	text = {
 		trigger = {
@@ -140,33 +99,7 @@ NPEChancellor = {
 				has_cultural_pillar = language_french
 			}
 		}
-        localization_key = Chancellor_french_male
-	}
-	text = {
-		trigger = {
-			liege.culture = {
-				OR = {
-                    has_name_list = name_list_occitan
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        has_name_list = name_list_arpetan
-                    }
-                }
-				OR = {
-                    has_cultural_pillar = language_occitano_romance
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        has_cultural_pillar = language_arpetan
-                    }
-                }
-			}
-			is_female = yes
-		}
-        localization_key = Chancellor_occitan_female
+        localization_key = Chancellor_french
 	}
 	text = {
 		trigger = {
@@ -191,16 +124,7 @@ NPEChancellor = {
                 }
 			}
 		}
-        localization_key = Chancellor_occitan_male
-	}
-	text = {
-		trigger = {
-			liege.culture = {
-				has_cultural_pillar = language_basque
-			}
-			is_female = yes
-		}
-        localization_key = Chancellor_basque_female
+        localization_key = Chancellor_occitan
 	}
 	text = {
 		trigger = {
@@ -208,20 +132,7 @@ NPEChancellor = {
 				has_cultural_pillar = language_basque
 			}
 		}
-        localization_key = Chancellor_basque_male
-	}
-	text = {
-		trigger = {
-			liege.culture = {
-                has_name_list = name_list_aragonese
-				OR = {
-                    has_cultural_pillar = language_iberian
-                    has_cultural_pillar = language_occitano_romance
-                }
-			}
-			is_female = yes
-		}
-        localization_key = Chancellor_aragonese_female
+        localization_key = Chancellor_basque
 	}
 	text = {
 		trigger = {
@@ -233,20 +144,7 @@ NPEChancellor = {
                 }
 			}
 		}
-        localization_key = Chancellor_aragonese_male
-	}
-	text = {
-		trigger = {
-			liege.culture = {
-                OR = {
-                    has_name_list = name_list_galician
-                    has_name_list = name_list_portuguese
-                }
-				has_cultural_pillar = language_iberian
-			}
-			is_female = yes
-		}
-        localization_key = Chancellor_portuguese_female
+        localization_key = Chancellor_aragonese
 	}
 	text = {
 		trigger = {
@@ -258,16 +156,7 @@ NPEChancellor = {
 				has_cultural_pillar = language_iberian
 			}
 		}
-        localization_key = Chancellor_portuguese_male
-	}
-	text = {
-		trigger = {
-			liege.culture = {
-				has_cultural_pillar = language_iberian
-			}
-			is_female = yes
-		}
-        localization_key = Chancellor_castillian_female
+        localization_key = Chancellor_portuguese
 	}
 	text = {
 		trigger = {
@@ -275,17 +164,7 @@ NPEChancellor = {
 				has_cultural_pillar = language_iberian
 			}
 		}
-        localization_key = Chancellor_castillian_male
-	}
-	text = {
-		trigger = {
-			liege.culture = {
-				has_name_list = name_list_catalan
-				has_cultural_pillar = language_occitano_romance
-			}
-			is_female = yes
-		}
-        localization_key = Chancellor_catalan_female
+        localization_key = Chancellor_castillian
 	}
 	text = {
 		trigger = {
@@ -294,7 +173,7 @@ NPEChancellor = {
 				has_cultural_pillar = language_occitano_romance
 			}
 		}
-        localization_key = Chancellor_catalan_male
+        localization_key = Chancellor_catalan
 	}
 	text = {
 		trigger = {
