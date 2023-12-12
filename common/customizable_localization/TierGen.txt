@@ -1590,10 +1590,13 @@ CharacterCulture = {
                         limit = {
                             exists = global_var:CE_is_loaded
                         }
-                        AND = {
-                            has_cultural_pillar = language_low_german
-                            has_name_list = name_list_dutch
-                        }
+						OR = {
+							AND = {
+								has_cultural_pillar = language_low_german
+								has_name_list = name_list_dutch
+							}
+							has_cultural_pillar = language_frisian
+						}
                     }
                 }
 			}
@@ -1627,7 +1630,15 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				has_cultural_pillar = language_sardinian
+				OR = {
+					has_cultural_pillar = language_sardinian
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						has_cultural_pillar = language_african_romance
+					}
+				}
 			}
 		}
 		localization_key = _sardinian
@@ -1652,14 +1663,6 @@ CharacterCulture = {
 			}
 		}
 		localization_key = _cisalpine
-	}
-	text = {
-		trigger = {
-			culture = {
-				has_cultural_pillar = language_italian
-			}
-		}
-		localization_key = _italian
 	}
 	text = {
 		trigger = {
@@ -2082,7 +2085,7 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_south_slavic
+				has_cultural_pillar = language_south_slavic
 				OR = {
 					has_name_list = name_list_croatian
 					has_name_list = name_list_carantanian
@@ -2094,7 +2097,11 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_south_slavic
+				has_cultural_pillar = language_south_slavic
+				OR = {
+					has_name_list = name_list_serbian
+					has_name_list = name_list_bosnian
+				}
 			}
 		}
 		localization_key = _serbian
@@ -2181,7 +2188,7 @@ CharacterCulture = {
                         exists = global_var:CE_is_loaded
                     }
                     OR = {
-                        has_cultural_pillar = language_pashto
+                        #has_cultural_pillar = language_pashto
                         has_cultural_pillar = language_pamiri
                         has_cultural_pillar = language_sogdian
                         has_cultural_pillar = language_bactrian
@@ -2219,6 +2226,7 @@ CharacterCulture = {
                         has_cultural_pillar = language_daylamite
                         has_cultural_pillar = language_iranian
                         has_cultural_pillar = language_avaric
+                        has_cultural_pillar = language_pashto
                     }
                 }
                 trigger_else = {
@@ -2237,7 +2245,15 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_arabic
+				OR = {
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						has_cultural_pillar = language_south_arabian
+					}
+					has_cultural_pillar = language_arabic
+				}
 			}
 		}
 		localization_key = _arabic
