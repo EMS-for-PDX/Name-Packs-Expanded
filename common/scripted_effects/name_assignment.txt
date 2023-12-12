@@ -819,7 +819,10 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_anglo_saxon
+						OR = {
+							has_name_list = name_list_anglo_saxon
+							has_name_list = name_list_old_saxon
+						}
 					}
 					add = 1
 				}
