@@ -1,4 +1,4 @@
-﻿name_gen_effect = {
+name_gen_effect = {
 	if = {
 		limit = {
 			culture = {
@@ -1169,8 +1169,11 @@
 							}
 						}
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -1195,6 +1198,9 @@
 					any_parent = {
 						is_ai = no
 					}
+					this = {
+						is_ai = no
+					}
 					add = 1
 				}
 				croatian_player_male_name_effect = yes
@@ -1204,8 +1210,11 @@
 					culture = {
 						has_name_list = name_list_bulgarian
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -1221,6 +1230,9 @@
 					any_parent = {
 						is_ai = no
 					}
+					this = {
+						is_ai = no
+					}
 					add = 1
 				}
 				bulgarian_player_male_name_effect = yes
@@ -1233,8 +1245,11 @@
 							has_name_list = name_list_bosnian
 						}
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -1251,6 +1266,9 @@
 						}
 					}
 					any_parent = {
+						is_ai = no
+					}
+					this = {
 						is_ai = no
 					}
 					add = 1
@@ -1996,8 +2014,11 @@
 							}
 						}
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -2022,6 +2043,9 @@
 					any_parent = {
 						is_ai = no
 					}
+					this = {
+						is_ai = no
+					}
 					add = 1
 				}
 				croatian_player_female_name_effect = yes
@@ -2031,8 +2055,11 @@
 					culture = {
 						has_name_list = name_list_bulgarian
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -2048,6 +2075,9 @@
 					any_parent = {
 						is_ai = no
 					}
+					this = {
+						is_ai = no
+					}
 					add = 1
 				}
 				bulgarian_player_female_name_effect = yes
@@ -2060,8 +2090,11 @@
 							has_name_list = name_list_bosnian
 						}
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -2078,6 +2111,9 @@
 						}
 					}
 					any_parent = {
+						is_ai = no
+					}
+					this = {
 						is_ai = no
 					}
 					add = 1

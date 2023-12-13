@@ -29,6 +29,7 @@ on_player_baptismal = {
 			mother ?= {
 				is_ai = no
 			}
+			is_ai = no
 		}
 		culture = {
 			has_name_list = name_list_croatian
@@ -38,13 +39,22 @@ on_player_baptismal = {
 		}
 	}
 	effect = {
-		save_scope_as = the_child
 		if = {
+			limit = {
+				is_ai = no
+			}
+			trigger_event = {
+				id = npebaptismal.001
+				days = { 14 30 }
+			}
+		}
+		else_if = {
 			limit = {
 				father ?= {
 					is_ai = no
 				}
 			}
+			save_scope_as = the_child
 			father = {
 				trigger_event = {
 					id = npebaptismal.001
@@ -53,6 +63,7 @@ on_player_baptismal = {
 			}
 		}
 		else = {
+			save_scope_as = the_child
 			mother = {
 				trigger_event = {
 					id = npebaptismal.001
