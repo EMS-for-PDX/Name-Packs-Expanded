@@ -20,19 +20,16 @@ on_birth_child_ne = {
 }
 on_player_baptismal = {
 	trigger = {
-		OR = {
-			father ?= {
-				is_ai = no
-			}
-			mother ?= {
-				is_ai = no
-			}
+		any_parent = {
+			is_ai = no
 		}
 		culture = {
-			has_name_list = name_list_croatian
-			has_name_list = name_list_bulgarian
-			has_name_list = name_list_serbian
-			has_name_list = name_list_bosnian
+			OR = {
+				has_name_list = name_list_croatian
+				has_name_list = name_list_bulgarian
+				has_name_list = name_list_serbian
+				has_name_list = name_list_bosnian
+			}
 		}
 	}
 	effect = {
@@ -53,13 +50,21 @@ on_player_baptismal = {
 				}
 			}
 		}
-		else = {
+		else_if = {
+			limit = {
+				mother ?= {
+					is_ai = no
+				}
+			}
 			mother = {
 				trigger_event = {
 					id = npebaptismal.001
 					days = { 14 30 }
 				}
 			}
+		}
+		else = {
+			remove_variable = getting_bapd
 		}
 	}
 }
