@@ -8,6 +8,12 @@ npebaptismal.001 = { #Check if want baptismal
 	right_portrait = root
 	left_portrait = scope:the_child
 	immediate = {
+		random_child = {
+			limit = {
+				has_variable = getting_bapd
+			}
+			save_scope_as = the_child
+		}
 		random_courtier_or_guest = {
 			limit = {
 				has_religion = religion:christianity_religion
@@ -122,6 +128,7 @@ npebaptismal.002 = {
 		name = npebaptismal.002.b
 		custom_tooltip = npebaptismal.002.b.tt
 		scope:the_child = {
+			remove_variable = getting_bapd
 			if = {
 				limit = {
 					culture = {
@@ -141,6 +148,7 @@ npebaptismal.002 = {
 		name = npebaptismal.002.c
 		custom_tooltip = npebaptismal.002.c.tt
 		scope:the_child = {
+			remove_variable = getting_bapd
 			if = {
 				limit = {
 					culture = {
@@ -154,41 +162,6 @@ npebaptismal.002 = {
 				}
 				slav_slav_primary_player_name_effect = yes
 			}
-		}
-	}
-}
-npebaptismal.003 = {
-	type = character_event
-	theme = faith
-	title = npebaptismal.001.t
-	desc = npebaptismal.001.desc
-	right_portrait = root
-	immediate = {
-		random_courtier_or_guest = {
-			limit = {
-				has_religion = religion:christianity_religion
-				OR = {
-					has_trait = devoted
-					has_council_position = councillor_court_chaplain
-				}
-			}
-			save_scope_as = baptiser
-		}
-		save_scope_as = the_child
-	}
-	option = {
-		name = npebaptismal.001.a
-		custom_tooltip = npebaptismal.001.a.tt
-		trigger_event = {
-			id = npebaptismal.002
-			days = -1
-		}
-	}
-	option = {
-		name = npebaptismal.001.b
-		custom_tooltip = npebaptismal.001.b.tt
-		scope:the_child = {
-			remove_variable = slav_name
 		}
 	}
 }
