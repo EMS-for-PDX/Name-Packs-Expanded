@@ -176,6 +176,69 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_mon
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_mon
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Window_MonKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+					OR = {
+						has_cultural_pillar = language_burmese
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_burmese
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Window_BurmeseKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_burman
+			}
+		}
+		localization_key = Window_Burmese
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_berber
 			}
 		}
@@ -214,6 +277,25 @@
 		localization_key = Window_ArabicA
 	}
 	#Everything after here doesn't need an islam check
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = language_scythian
+				has_name_list = name_list_saka
+			}
+		}
+		localization_key = Window_Khotanese
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_tocharian
+			}
+		}
+		localization_key = Window_Tocharian
+	}
 	text = {
 		trigger = {
 			has_culture = culture:roman
@@ -1247,10 +1329,7 @@
 						limit = {
 							exists = global_var:CE_is_loaded
 						}
-						OR = {
-							has_cultural_pillar = heritage_peristani
-							has_cultural_pillar = heritage_tocharian
-						}
+						has_cultural_pillar = heritage_peristani
 					}
 				}
 			}
@@ -1490,6 +1569,69 @@ WindowNameTT = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_mon
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_mon
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Window_MonKing_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+					OR = {
+						has_cultural_pillar = language_burmese
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_burmese
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Window_BurmeseKing_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_burman
+			}
+		}
+		localization_key = Window_Burmese_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_berber
 			}
 		}
@@ -1526,6 +1668,25 @@ WindowNameTT = {
 			}
 		}
 		localization_key = Window_ArabicA_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = language_scythian
+				has_name_list = name_list_saka
+			}
+		}
+		localization_key = Window_Khotanese_TT
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_tocharian
+			}
+		}
+		localization_key = Window_Tocharian_TT
 	}
 	text = {
 		trigger = {
@@ -2554,10 +2715,7 @@ WindowNameTT = {
 						limit = {
 							exists = global_var:CE_is_loaded
 						}
-						OR = {
-							has_cultural_pillar = heritage_peristani
-							has_cultural_pillar = heritage_tocharian
-						}
+						has_cultural_pillar = heritage_peristani
 					}
 				}
 			}

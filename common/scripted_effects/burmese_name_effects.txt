@@ -1,0 +1,1324 @@
+﻿burmese_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty ?= {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		1 = {
+			change_first_name = Aung
+		}
+		1 = {
+			change_first_name = Aung-Hla
+		}
+		1 = {
+			change_first_name = Aung-Hpa
+		}
+		1 = {
+			change_first_name = Aung-Mye-Thin
+		}
+		1 = {
+			change_first_name = Aung-Myin
+		}
+		1 = {
+			change_first_name = Aung-Myin-Thin
+		}
+		1 = {
+			change_first_name = Aung-Naing
+		}
+		1 = {
+			change_first_name = Aung-Pye
+		}
+		1 = {
+			change_first_name = Aung-Pyin
+		}
+		1 = {
+			change_first_name = Aung-Sin
+		}
+		1 = {
+			change_first_name = Aung-Tha
+		}
+		1 = {
+			change_first_name = Aung-Thin
+		}
+		1 = {
+			change_first_name = Aung-Zeya
+		}
+		1 = {
+			change_first_name = Aung-Zwa
+		}
+		1 = {
+			change_first_name = Ba-Saw
+		}
+		1 = {
+			change_first_name = Cakra
+		}
+		1 = {
+			change_first_name = Caku
+		}
+		1 = {
+			change_first_name = Dawlya
+		}
+		1 = {
+			change_first_name = Diga
+		}
+		1 = {
+			change_first_name = Dikkha
+		}
+		1 = {
+			change_first_name = Gyi
+		}
+		1 = {
+			change_first_name = Hari
+		}
+		1 = {
+			change_first_name = Hkin
+		}
+		1 = {
+			change_first_name = Hkin-Hla
+		}
+		1 = {
+			change_first_name = Hkin-Hnit
+		}
+		1 = {
+			change_first_name = Hkin-Hpwa
+		}
+		1 = {
+			change_first_name = Hkin-Hpyu
+		}
+		1 = {
+			change_first_name = Hkin-Lon
+		}
+		1 = {
+			change_first_name = Hkin-Maung
+		}
+		1 = {
+			change_first_name = Hkin-Pyin
+		}
+		1 = {
+			change_first_name = Hkonmaing
+		}
+		1 = {
+			change_first_name = Hla
+		}
+		1 = {
+			change_first_name = Hla-Gyi
+		}
+		1 = {
+			change_first_name = Hla-Mun
+		}
+		1 = {
+			change_first_name = Hla-Pyin
+		}
+		1 = {
+			change_first_name = Hla-Thin
+		}
+		1 = {
+			change_first_name = Hla-Wun
+		}
+		1 = {
+			change_first_name = Hla-Yin
+		}
+		1 = {
+			change_first_name = Hnaung
+		}
+		1 = {
+			change_first_name = Hnaung-Thin
+		}
+		1 = {
+			change_first_name = Hnit
+		}
+		1 = {
+			change_first_name = Hpi
+		}
+		1 = {
+			change_first_name = Hpon-Than
+		}
+		1 = {
+			change_first_name = Hpway-San
+		}
+		1 = {
+			change_first_name = Hpyu
+		}
+		1 = {
+			change_first_name = Hpyu-Gyi
+		}
+		1 = {
+			change_first_name = Hpyu-Lahan
+		}
+		1 = {
+			change_first_name = Hpyu-Pe
+		}
+		1 = {
+			change_first_name = Hpyu-Sin
+		}
+		1 = {
+			change_first_name = Hpyu-Thin
+		}
+		1 = {
+			change_first_name = Hsin-Mya
+		}
+		1 = {
+			change_first_name = Hsin-Thin
+		}
+		1 = {
+			change_first_name = Hti
+		}
+		1 = {
+			change_first_name = Htin
+		}
+		1 = {
+			change_first_name = Htun
+		}
+		1 = {
+			change_first_name = Htut
+		}
+		1 = {
+			change_first_name = Htwe
+		}
+		1 = {
+			change_first_name = Htwe-Hla
+		}
+		1 = {
+			change_first_name = Htwe-Hpa
+		}
+		1 = {
+			change_first_name = Htwe-Hpyu
+		}
+		1 = {
+			change_first_name = Htwe-Kri
+		}
+		1 = {
+			change_first_name = Htwe-Pum
+		}
+		1 = {
+			change_first_name = Htwe-Pye
+		}
+		1 = {
+			change_first_name = Htwe-Thin
+		}
+		1 = {
+			change_first_name = Jayasimha
+		}
+		1 = {
+			change_first_name = Jayasura
+		}
+		1 = {
+			change_first_name = Kala
+		}
+		1 = {
+			change_first_name = Ke
+		}
+		1 = {
+			change_first_name = Kha-Maung
+		}
+		1 = {
+			change_first_name = Khaing
+		}
+		1 = {
+			change_first_name = Khayi
+		}
+		1 = {
+			change_first_name = Kum-Kai
+		}
+		1 = {
+			change_first_name = Kyi
+		}
+		1 = {
+			change_first_name = Kyi-Bwei
+		}
+		1 = {
+			change_first_name = Kyi-Su-Thin
+		}
+		1 = {
+			change_first_name = Kywin
+		}
+		1 = {
+			change_first_name = La
+		}
+		1 = {
+			change_first_name = Lade
+		}
+		1 = {
+			change_first_name = Laung
+		}
+		1 = {
+			change_first_name = Laung-Thin
+		}
+		1 = {
+			change_first_name = Lu
+		}
+		1 = {
+			change_first_name = Lwe
+		}
+		1 = {
+			change_first_name = Lwe-San
+		}
+		1 = {
+			change_first_name = Mun
+		}
+		1 = {
+			change_first_name = Mun-Nit
+		}
+		1 = {
+			change_first_name = Mun-Thin
+		}
+		1 = {
+			change_first_name = Mun-U
+		}
+		1 = {
+			change_first_name = Myat
+		}
+		1 = {
+			change_first_name = Myat-Sa
+		}
+		1 = {
+			change_first_name = Myat-Thin
+		}
+		1 = {
+			change_first_name = Myin-Hkin
+		}
+		1 = {
+			change_first_name = Myin-Thin
+		}
+		1 = {
+			change_first_name = Myin-U
+		}
+		1 = {
+			change_first_name = Nan
+		}
+		1 = {
+			change_first_name = Nangyi
+		}
+		1 = {
+			change_first_name = Nansi
+		}
+		1 = {
+			change_first_name = Nauk-Hsan
+		}
+		1 = {
+			change_first_name = Nu
+		}
+		1 = {
+			change_first_name = Nyo
+		}
+		1 = {
+			change_first_name = Ohn
+		}
+		1 = {
+			change_first_name = Okka
+		}
+		1 = {
+			change_first_name = Ot-Hla
+		}
+		1 = {
+			change_first_name = Pa
+		}
+		1 = {
+			change_first_name = Pale
+		}
+		1 = {
+			change_first_name = Pati
+		}
+		1 = {
+			change_first_name = Pyin-Hla
+		}
+		1 = {
+			change_first_name = Pyin-Thin
+		}
+		1 = {
+			change_first_name = Rahula
+		}
+		1 = {
+			change_first_name = Rajasura
+		}
+		1 = {
+			change_first_name = Rit
+		}
+		1 = {
+			change_first_name = Sanda-Thin
+		}
+		1 = {
+			change_first_name = Saw
+		}
+		1 = {
+			change_first_name = Sein
+		}
+		1 = {
+			change_first_name = Shwe
+		}
+		1 = {
+			change_first_name = Shwe-Hnit
+		}
+		1 = {
+			change_first_name = Shwe-Hpin
+		}
+		1 = {
+			change_first_name = Shwe-Khet
+		}
+		1 = {
+			change_first_name = Shwe-Sin
+		}
+		1 = {
+			change_first_name = Sin-Gyi
+		}
+		1 = {
+			change_first_name = Sin-Kye
+		}
+		1 = {
+			change_first_name = Sin-Thin
+		}
+		1 = {
+			change_first_name = Su
+		}
+		1 = {
+			change_first_name = Swe
+		}
+		1 = {
+			change_first_name = Teik-Thin
+		}
+		1 = {
+			change_first_name = Tet-Pya
+		}
+		1 = {
+			change_first_name = Tha-Le-Kaung
+		}
+		1 = {
+			change_first_name = Tha-Nyo
+		}
+		1 = {
+			change_first_name = Tha-Sit
+		}
+		1 = {
+			change_first_name = Than
+		}
+		1 = {
+			change_first_name = Thauk-Thin
+		}
+		1 = {
+			change_first_name = U
+		}
+		1 = {
+			change_first_name = U-Gyi
+		}
+		1 = {
+			change_first_name = U-Hla
+		}
+		1 = {
+			change_first_name = U-Lon
+		}
+		1 = {
+			change_first_name = U-Lwe
+		}
+		1 = {
+			change_first_name = U-Pa
+		}
+		1 = {
+			change_first_name = U-Thin
+		}
+		1 = {
+			change_first_name = Wuntha-Thin
+		}
+		1 = {
+			change_first_name = Yan
+		}
+		1 = {
+			change_first_name = Yan-Aung
+		}
+		1 = {
+			change_first_name = Yan-Naung
+		}
+		1 = {
+			change_first_name = Yazagyi
+		}
+		1 = {
+			change_first_name = Ye-Gyi
+		}
+		1 = {
+			change_first_name = Ye-Hla
+		}
+		1 = {
+			change_first_name = Ye-Htut
+		}
+		1 = {
+			change_first_name = Yin
+		}
+		1 = {
+			change_first_name = Yin-Hla
+		}
+		1 = {
+			change_first_name = Yin-Hpyu
+		}
+		1 = {
+			change_first_name = Yin-Ti
+		}
+		1 = {
+			change_first_name = Yun
+		}
+	}
+}
+burmese_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		1 = {
+			change_first_name = Apeyadana
+		}
+		1 = {
+			change_first_name = Asaw-Lat
+		}
+		1 = {
+			change_first_name = Aung-Myat
+		}
+		1 = {
+			change_first_name = Beza
+		}
+		1 = {
+			change_first_name = Bo-Me
+		}
+		1 = {
+			change_first_name = Cala
+		}
+		1 = {
+			change_first_name = Candraa
+		}
+		1 = {
+			change_first_name = Chit
+		}
+		1 = {
+			change_first_name = Chit-Hsat
+		}
+		1 = {
+			change_first_name = Chit-Hson
+		}
+		1 = {
+			change_first_name = Chit-Kui
+		}
+		1 = {
+			change_first_name = Chit-La
+		}
+		1 = {
+			change_first_name = Chit-Myat
+		}
+		1 = {
+			change_first_name = Chit-Naing
+		}
+		1 = {
+			change_first_name = Chit-Pwa
+		}
+		1 = {
+			change_first_name = Chit-Thin
+		}
+		1 = {
+			change_first_name = Chit-U
+		}
+		1 = {
+			change_first_name = Chun
+		}
+		1 = {
+			change_first_name = Gyi
+		}
+		1 = {
+			change_first_name = Hkin-Hnin-Nwe
+		}
+		1 = {
+			change_first_name = Hkin-Hpa
+		}
+		1 = {
+			change_first_name = Hkin-Hpon-Gyi
+		}
+		1 = {
+			change_first_name = Hkin-Hpon-Htut
+		}
+		1 = {
+			change_first_name = Hkin-Hpon-Myat
+		}
+		1 = {
+			change_first_name = Hkin-Hpon-Myint
+		}
+		1 = {
+			change_first_name = Hkin-Htut
+		}
+		1 = {
+			change_first_name = Hkin-Htwe
+		}
+		1 = {
+			change_first_name = Hkin-Htwe-Hla
+		}
+		1 = {
+			change_first_name = Hkin-Htwe-Hpyu
+		}
+		1 = {
+			change_first_name = Hkin-Htwe-Myat
+		}
+		1 = {
+			change_first_name = Hkin-Htwe-Nyo
+		}
+		1 = {
+			change_first_name = Hkin-Me
+		}
+		1 = {
+			change_first_name = Hkin-Mi-Nay
+		}
+		1 = {
+			change_first_name = Hkin-Min-Hpyu
+		}
+		1 = {
+			change_first_name = Hkin-Nwe
+		}
+		1 = {
+			change_first_name = Hkin-Shwe-Pan
+		}
+		1 = {
+			change_first_name = Hkin-U
+		}
+		1 = {
+			change_first_name = Hla
+		}
+		1 = {
+			change_first_name = Hla-Htut
+		}
+		1 = {
+			change_first_name = Hla-Min
+		}
+		1 = {
+			change_first_name = Hla-Myat
+		}
+		1 = {
+			change_first_name = Hla-Nyet
+		}
+		1 = {
+			change_first_name = Hla-Pyi
+		}
+		1 = {
+			change_first_name = Hla-Wun
+		}
+		1 = {
+			change_first_name = Hla-Yin
+		}
+		1 = {
+			change_first_name = Hlekhta
+		}
+		1 = {
+			change_first_name = Hnin-An-Po
+		}
+		1 = {
+			change_first_name = Hpa
+		}
+		1 = {
+			change_first_name = Hpon-Hpya
+		}
+		1 = {
+			change_first_name = Hpon-Lut
+		}
+		1 = {
+			change_first_name = Hpyu
+		}
+		1 = {
+			change_first_name = Htak-Pyi-Thin
+		}
+		1 = {
+			change_first_name = Htut
+		}
+		1 = {
+			change_first_name = Htwe
+		}
+		1 = {
+			change_first_name = Htwe-Hla
+		}
+		1 = {
+			change_first_name = Htwe-Nyo
+		}
+		1 = {
+			change_first_name = Im-Kri-San
+		}
+		1 = {
+			change_first_name = Ke
+		}
+		1 = {
+			change_first_name = Khwe
+		}
+		1 = {
+			change_first_name = Kraung
+		}
+		1 = {
+			change_first_name = Kyun
+		}
+		1 = {
+			change_first_name = Lat
+		}
+		1 = {
+			change_first_name = Mi-Pyan
+		}
+		1 = {
+			change_first_name = Min-Phyu
+		}
+		1 = {
+			change_first_name = Min-Waing
+		}
+		1 = {
+			change_first_name = Mun
+		}
+		1 = {
+			change_first_name = Mun-Hla
+		}
+		1 = {
+			change_first_name = Mya-Hnit
+		}
+		1 = {
+			change_first_name = Myai
+		}
+		1 = {
+			change_first_name = Myat
+		}
+		1 = {
+			change_first_name = Myat-Hla
+		}
+		1 = {
+			change_first_name = Myat-Ke
+		}
+		1 = {
+			change_first_name = Myat-Le
+		}
+		1 = {
+			change_first_name = Myet-Hru
+		}
+		1 = {
+			change_first_name = Nan-Lon-Me
+		}
+		1 = {
+			change_first_name = Nyay-U
+		}
+		1 = {
+			change_first_name = Nyet-Htwa
+		}
+		1 = {
+			change_first_name = Pale
+		}
+		1 = {
+			change_first_name = Pu-Nyo
+		}
+		1 = {
+			change_first_name = Pu-Shwe
+		}
+		1 = {
+			change_first_name = Pwa-U
+		}
+		1 = {
+			change_first_name = Pya-Hauk
+		}
+		1 = {
+			change_first_name = Pyan
+		}
+		1 = {
+			change_first_name = Pyauk
+		}
+		1 = {
+			change_first_name = Pyin
+		}
+		1 = {
+			change_first_name = Pyo
+		}
+		1 = {
+			change_first_name = Ratnaa
+		}
+		1 = {
+			change_first_name = Sala
+		}
+		1 = {
+			change_first_name = Sambhula
+		}
+		1 = {
+			change_first_name = Saw-U
+		}
+		1 = {
+			change_first_name = Seim
+		}
+		1 = {
+			change_first_name = Shri
+		}
+		1 = {
+			change_first_name = Si-Hkum
+		}
+		1 = {
+			change_first_name = Sin
+		}
+		1 = {
+			change_first_name = Sin-Kye
+		}
+		1 = {
+			change_first_name = Sin-Thin
+		}
+		1 = {
+			change_first_name = Sit
+		}
+		1 = {
+			change_first_name = Soe
+		}
+		1 = {
+			change_first_name = Soe-Min
+		}
+		1 = {
+			change_first_name = Soe-Saing
+		}
+		1 = {
+			change_first_name = Swe
+		}
+		1 = {
+			change_first_name = Syan-Shwe
+		}
+		1 = {
+			change_first_name = To-U
+		}
+		1 = {
+			change_first_name = Thakin-Gyi
+		}
+		1 = {
+			change_first_name = Thin-Pyin
+		}
+		1 = {
+			change_first_name = Thwat
+		}
+		1 = {
+			change_first_name = U
+		}
+		1 = {
+			change_first_name = Uma
+		}
+		1 = {
+			change_first_name = Wuntha
+		}
+		1 = {
+			change_first_name = Yin
+		}
+	}
+}
+mon_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty ?= {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		1 = {
+			change_first_name = A-Che-Mwan
+		}
+		1 = {
+			change_first_name = Asari
+		}
+		1 = {
+			change_first_name = Ay-Gam-Bin
+		}
+		1 = {
+			change_first_name = Bala
+		}
+		1 = {
+			change_first_name = Baru
+		}
+		1 = {
+			change_first_name = Basun-Bansak
+		}
+		1 = {
+			change_first_name = Baw
+		}
+		1 = {
+			change_first_name = Cakkawade
+		}
+		1 = {
+			change_first_name = Cam
+		}
+		1 = {
+			change_first_name = Can
+		}
+		1 = {
+			change_first_name = Can-Dwiya
+		}
+		1 = {
+			change_first_name = Candima
+		}
+		1 = {
+			change_first_name = Candrima
+		}
+		1 = {
+			change_first_name = Chan
+		}
+		1 = {
+			change_first_name = Cun-Suin
+		}
+		1 = {
+			change_first_name = Dan
+		}
+		1 = {
+			change_first_name = Den
+		}
+		1 = {
+			change_first_name = Doc
+		}
+		1 = {
+			change_first_name = E
+		}
+		1 = {
+			change_first_name = E-Laung
+		}
+		1 = {
+			change_first_name = E-Law
+		}
+		1 = {
+			change_first_name = Et
+		}
+		1 = {
+			change_first_name = Gada
+		}
+		1 = {
+			change_first_name = Gadu
+		}
+		1 = {
+			change_first_name = Gana-Dak
+		}
+		1 = {
+			change_first_name = Ganda
+		}
+		1 = {
+			change_first_name = Gangeya
+		}
+		1 = {
+			change_first_name = Gi
+		}
+		1 = {
+			change_first_name = Glan
+		}
+		1 = {
+			change_first_name = Indra
+		}
+		1 = {
+			change_first_name = Jan
+		}
+		1 = {
+			change_first_name = Jita
+		}
+		1 = {
+			change_first_name = Kaman
+		}
+		1 = {
+			change_first_name = Kan-Kaung
+		}
+		1 = {
+			change_first_name = Kbu
+		}
+		1 = {
+			change_first_name = Khon-Maing
+		}
+		1 = {
+			change_first_name = Khuin
+		}
+		1 = {
+			change_first_name = Khuy
+		}
+		1 = {
+			change_first_name = Klay
+		}
+		1 = {
+			change_first_name = Kray
+		}
+		1 = {
+			change_first_name = Krun
+		}
+		1 = {
+			change_first_name = Krwan
+		}
+		1 = {
+			change_first_name = Kyak
+		}
+		1 = {
+			change_first_name = Kyan
+		}
+		1 = {
+			change_first_name = Kyaw
+		}
+		1 = {
+			change_first_name = Laik-Gyi
+		}
+		1 = {
+			change_first_name = Laksmani
+		}
+		1 = {
+			change_first_name = Law
+		}
+		1 = {
+			change_first_name = Le
+		}
+		1 = {
+			change_first_name = Lha
+		}
+		1 = {
+			change_first_name = Linka
+		}
+		1 = {
+			change_first_name = Lum
+		}
+		1 = {
+			change_first_name = Luta
+		}
+		1 = {
+			change_first_name = Lwoy
+		}
+		1 = {
+			change_first_name = Maharaja
+		}
+		1 = {
+			change_first_name = Mahaswassa
+		}
+		1 = {
+			change_first_name = Maru
+		}
+		1 = {
+			change_first_name = Mlir
+		}
+		1 = {
+			change_first_name = Mrik
+		}
+		1 = {
+			change_first_name = Mryuk
+		}
+		1 = {
+			change_first_name = Nanda
+		}
+		1 = {
+			change_first_name = Narasimha
+		}
+		1 = {
+			change_first_name = Ngan-Mohn
+		}
+		1 = {
+			change_first_name = Nge
+		}
+		1 = {
+			change_first_name = Noy
+		}
+		1 = {
+			change_first_name = O
+		}
+		1 = {
+			change_first_name = Pa-Mun
+		}
+		1 = {
+			change_first_name = Pan
+		}
+		1 = {
+			change_first_name = Panlay
+		}
+		1 = {
+			change_first_name = Plen
+		}
+		1 = {
+			change_first_name = Plen-Can
+		}
+		1 = {
+			change_first_name = Rama
+		}
+		1 = {
+			change_first_name = Ran
+		}
+		1 = {
+			change_first_name = Saam
+		}
+		1 = {
+			change_first_name = Saan
+		}
+		1 = {
+			change_first_name = Sadassa
+		}
+		1 = {
+			change_first_name = Sam-Kray
+		}
+		1 = {
+			change_first_name = Sam-Mlam
+		}
+		1 = {
+			change_first_name = Samcu
+		}
+		1 = {
+			change_first_name = San
+		}
+		1 = {
+			change_first_name = Sasanapala
+		}
+		1 = {
+			change_first_name = Sawk
+		}
+		1 = {
+			change_first_name = Shilakumara
+		}
+		1 = {
+			change_first_name = Shilapala
+		}
+		1 = {
+			change_first_name = Si
+		}
+		1 = {
+			change_first_name = Sikeai
+		}
+		1 = {
+			change_first_name = Sum-Chay
+		}
+		1 = {
+			change_first_name = Surya
+		}
+		1 = {
+			change_first_name = Ta-Shauk
+		}
+		1 = {
+			change_first_name = Takayutpi
+		}
+		1 = {
+			change_first_name = Ton-Buiw
+		}
+		1 = {
+			change_first_name = Tulya
+		}
+		1 = {
+			change_first_name = Tut
+		}
+		1 = {
+			change_first_name = U
+		}
+		1 = {
+			change_first_name = Vajra
+		}
+		1 = {
+			change_first_name = Wanna
+		}
+		1 = {
+			change_first_name = Waru
+		}
+		1 = {
+			change_first_name = Yasa
+		}
+		1 = {
+			change_first_name = Yi-Khi
+		}
+		1 = {
+			change_first_name = Zein-Pun
+		}
+	}
+}
+mon_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		1 = {
+			change_first_name = Ac
+		}
+		1 = {
+			change_first_name = An-Po
+		}
+		1 = {
+			change_first_name = Auk
+		}
+		1 = {
+			change_first_name = Aun
+		}
+		1 = {
+			change_first_name = Ba
+		}
+		1 = {
+			change_first_name = Bok
+		}
+		1 = {
+			change_first_name = Brat
+		}
+		1 = {
+			change_first_name = Bu
+		}
+		1 = {
+			change_first_name = Cran
+		}
+		1 = {
+			change_first_name = Daw
+		}
+		1 = {
+			change_first_name = Doc
+		}
+		1 = {
+			change_first_name = Ge
+		}
+		1 = {
+			change_first_name = Gma
+		}
+		1 = {
+			change_first_name = Gragar
+		}
+		1 = {
+			change_first_name = Guna-Nay
+		}
+		1 = {
+			change_first_name = Hla
+		}
+		1 = {
+			change_first_name = Htapi
+		}
+		1 = {
+			change_first_name = Ibac
+		}
+		1 = {
+			change_first_name = Ita
+		}
+		1 = {
+			change_first_name = Kaw
+		}
+		1 = {
+			change_first_name = Khan
+		}
+		1 = {
+			change_first_name = Khanban
+		}
+		1 = {
+			change_first_name = Knuy
+		}
+		1 = {
+			change_first_name = Krow
+		}
+		1 = {
+			change_first_name = Kruc
+		}
+		1 = {
+			change_first_name = Len
+		}
+		1 = {
+			change_first_name = Li
+		}
+		1 = {
+			change_first_name = Ma-Gu-Thauk
+		}
+		1 = {
+			change_first_name = Maneit
+		}
+		1 = {
+			change_first_name = Mwuy
+		}
+		1 = {
+			change_first_name = Nay
+		}
+		1 = {
+			change_first_name = Ne
+		}
+		1 = {
+			change_first_name = Nuy
+		}
+		1 = {
+			change_first_name = Ohn-Naung
+		}
+		1 = {
+			change_first_name = Pen
+		}
+		1 = {
+			change_first_name = Phaw
+		}
+		1 = {
+			change_first_name = Phuik
+		}
+		1 = {
+			change_first_name = Pi
+		}
+		1 = {
+			change_first_name = Plan
+		}
+		1 = {
+			change_first_name = Plo
+		}
+		1 = {
+			change_first_name = Ray
+		}
+		1 = {
+			change_first_name = San-Khuy
+		}
+		1 = {
+			change_first_name = Sandada
+		}
+		1 = {
+			change_first_name = Son
+		}
+		1 = {
+			change_first_name = Sony
+		}
+		1 = {
+			change_first_name = Suk
+		}
+		1 = {
+			change_first_name = Talat
+		}
+		1 = {
+			change_first_name = Thaw
+		}
+		1 = {
+			change_first_name = Theindya
+		}
+		1 = {
+			change_first_name = Thin
+		}
+		1 = {
+			change_first_name = Thiri
+		}
+		1 = {
+			change_first_name = Thwe
+		}
+		1 = {
+			change_first_name = To
+		}
+		1 = {
+			change_first_name = U-Si
+		}
+		1 = {
+			change_first_name = U-Yaing
+		}
+		1 = {
+			change_first_name = Viharadevi
+		}
+		1 = {
+			change_first_name = Wan
+		}
+		1 = {
+			change_first_name = Wi
+		}
+		1 = {
+			change_first_name = Yasodhara
+		}
+		1 = {
+			change_first_name = Zeik
+		}
+	}
+}

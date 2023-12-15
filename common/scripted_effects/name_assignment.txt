@@ -982,10 +982,28 @@ name_gen_effect = {
 			0 = {
 				modifier = {
 					culture = {
+						has_name_list = name_list_saka
+					}
+					add = 1
+				}
+				khotanese_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_tocharian
+					}
+					add = 1
+				}
+				tocharian_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1005,7 +1023,7 @@ name_gen_effect = {
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1025,7 +1043,7 @@ name_gen_effect = {
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1041,6 +1059,24 @@ name_gen_effect = {
 					add = 1
 				}
 				sogdian_default_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_mon
+					}
+					add = 1
+				}
+				mon_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_burmese
+					}
+					add = 1
+				}
+				burmese_male_name_effect = yes
 			}
 			0 = {
 				modifier = {
@@ -1833,10 +1869,28 @@ name_gen_effect = {
 			0 = {
 				modifier = {
 					culture = {
+						has_name_list = name_list_saka
+					}
+					add = 1
+				}
+				khotanese_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_tocharian
+					}
+					add = 1
+				}
+				tocharian_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1856,7 +1910,7 @@ name_gen_effect = {
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1876,7 +1930,7 @@ name_gen_effect = {
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1892,6 +1946,24 @@ name_gen_effect = {
 					add = 1
 				}
 				sogdian_fallback_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_mon
+					}
+					add = 1
+				}
+				mon_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_burmese
+					}
+					add = 1
+				}
+				burmese_female_name_effect = yes
 			}
 			0 = {
 				modifier = {

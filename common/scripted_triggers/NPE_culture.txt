@@ -1,4 +1,4 @@
-is_npe_supported_culture = {
+﻿is_npe_supported_culture = {
 	OR = {
 		has_cultural_pillar = heritage_turkic
 		has_cultural_pillar = heritage_arabic
@@ -22,6 +22,8 @@ is_npe_supported_culture = {
 		has_cultural_pillar = heritage_tibetan
 		has_cultural_pillar = heritage_central_germanic
 		has_cultural_pillar = heritage_west_slavic
+		has_cultural_pillar = heritage_burman
+		has_cultural_pillar = heritage_tocharian
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -31,7 +33,6 @@ is_npe_supported_culture = {
 				has_cultural_pillar = heritage_armenian
 				has_cultural_pillar = heritage_caucasian
 				has_cultural_pillar = heritage_peristani
-				has_cultural_pillar = heritage_tocharian
 			}
 		}
 	}
@@ -80,6 +81,8 @@ is_npe_supported_culture = {
 		has_cultural_pillar = language_frankish
 		has_cultural_pillar = language_high_german
 		has_cultural_pillar = language_sinhalese
+		has_cultural_pillar = language_burmese
+		has_cultural_pillar = language_tocharian
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -118,6 +121,10 @@ is_npe_supported_culture = {
 				has_cultural_pillar = language_kipchak
 				has_cultural_pillar = language_bolghar
 				has_cultural_pillar = language_khazar
+				has_cultural_pillar = language_mon
+				has_cultural_pillar = language_south_arabian
+				has_cultural_pillar = language_meitei
+				has_cultural_pillar = language_pyu
 			}
 		}
 		trigger_if = {
@@ -204,16 +211,36 @@ indoaryan_check = { #deprieated
 romanian_check = {
 	has_cultural_pillar = heritage_vlach
 }
-bulgarian_check = {
-	has_cultural_pillar = heritage_south_slavic
-	has_cultural_pillar = language_slavonic
-}
 south_slav_check = {
 	OR = {
 		has_cultural_pillar = heritage_south_slavic
 		AND = {
 			has_cultural_pillar = heritage_west_slavic
 			has_cultural_pillar = language_south_slavic
+		}
+		trigger_if = {
+			limit = {
+				exists = global_var:CE_is_loaded
+			}
+			AND = {
+				has_cultural_pillar = heritage_south_slavic
+				has_cultural_pillar = language_slavonic
+			}
+		}
+	}
+}
+bulgarian_check = {
+	has_cultural_pillar = heritage_south_slavic
+	has_cultural_pillar = language_slavonic
+	trigger_if = {
+		limit = {
+			exists = global_var:CE_is_loaded
+		}
+		NOT = {
+			has_name_list = name_list_croatian
+			has_name_list = name_list_bosnian
+			has_name_list = name_list_serbian
+			has_name_list = name_list_carantanian
 		}
 	}
 }
