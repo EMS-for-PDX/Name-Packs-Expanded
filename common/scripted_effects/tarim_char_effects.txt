@@ -1,5 +1,12 @@
 ﻿867_tarim_char_effect = {
 	character:166632.dynasty = { #Vijaya
+		every_dynasty_member = {
+			limit = {
+				highest_held_title_tier >= tier_kingdom
+			}
+			save_scope_as = formerkings
+			add_to_global_variable_list = { name = Visha_epithet target = scope:formerkings }
+		}
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166632 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166633 }
 		add_to_variable_list = { name = name_pack_support_dynasty target = character:166634 }
