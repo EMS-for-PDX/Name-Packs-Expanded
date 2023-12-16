@@ -3119,3 +3119,119 @@ BurmeseCultureCheck = {
 		localization_key = GUIBlank
 	}
 }
+BurmeseHonorificCheck = {
+	type = character
+	log_loc_errors = no
+    text = {
+		trigger = {
+			is_male = yes
+			NOT = {
+				has_council_position = councillor_court_chaplain
+			}
+			OR = {
+				AND = {
+					is_lowborn = yes
+					is_married = no
+				}
+				AND = {
+					is_landed = yes
+					highest_held_title_tier = tier_baron
+				}
+				AND = {
+					is_independent_ruler = no
+					highest_held_title_tier = tier_county
+				}
+			}
+			culture = {
+				has_cultural_pillar = heritage_burmese
+				has_name_list = name_list_burmese
+			}
+		}
+		localization_key = NgaHonorific
+	}
+    text = {
+		trigger = {
+			is_male = no
+			NOT = {
+				has_council_position = councillor_court_chaplain
+			}
+			OR = {
+				AND = {
+					is_lowborn = yes
+					is_married = no
+				}
+				AND = {
+					is_landed = yes
+					highest_held_title_tier = tier_baron
+				}
+				AND = {
+					is_independent_ruler = no
+					highest_held_title_tier = tier_county
+				}
+			}
+			culture = {
+				has_cultural_pillar = heritage_burmese
+				has_name_list = name_list_burmese
+			}
+		}
+		localization_key = UiwHonorific
+	}
+    text = {
+		trigger = {
+			is_male = yes
+			NOT = {
+				has_council_position = councillor_court_chaplain
+			}
+			OR = {
+				AND = {
+					is_lowborn = yes
+					is_married = no
+				}
+				AND = {
+					is_landed = yes
+					highest_held_title_tier = tier_baron
+				}
+				AND = {
+					is_independent_ruler = no
+					highest_held_title_tier = tier_county
+				}
+			}
+			culture = {
+				has_cultural_pillar = heritage_burmese
+				has_name_list = name_list_mon
+			}
+		}
+		localization_key = YanHonorific
+	}
+    text = {
+		trigger = {
+			is_male = no
+			NOT = {
+				has_council_position = councillor_court_chaplain
+			}
+			OR = {
+				AND = {
+					is_lowborn = yes
+					is_married = no
+				}
+				AND = {
+					is_landed = yes
+					highest_held_title_tier = tier_baron
+				}
+				AND = {
+					is_independent_ruler = no
+					highest_held_title_tier = tier_county
+				}
+			}
+			culture = {
+				has_cultural_pillar = heritage_burmese
+				has_name_list = name_list_mon
+			}
+		}
+		localization_key = YaHonorific
+	}
+	text = {
+		fallback = yes
+		localization_key = GUIBlank
+	}
+}

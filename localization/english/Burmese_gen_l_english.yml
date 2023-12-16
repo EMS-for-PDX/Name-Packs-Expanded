@@ -1,9 +1,9 @@
 ﻿l_english:
-Window_Burmese_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!"
+Window_Burmese_TT: "#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#!#TOOLTIP:GAME_CONCEPT,given_name #high [ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!"
 Window_BurmeseKing_TT: "#TOOLTIP:GAME_CONCEPT,regnal_name #color_blue_gray [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!"
 Window_MonKing_TT: "#TOOLTIP:GAME_CONCEPT,regnal_name #color_blue_gray #TOOLTIP:GAME_CONCEPT,tier_name #clickable [ROOT.Char.Custom('CharacterTierCheckBefore')]#!#![Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!"
 
-Window_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!"
+Window_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!"
 Window_BurmeseKing: "#high [Localize(Concatenate(ROOT.Char.Custom('BurmeseStyleOrRegnalOrName'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
 Window_MonKing: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseStyleOrRegnalOrName'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!"
 
@@ -12,10 +12,10 @@ First_Name_No_Tooltip_Burmese: "[Localize(Concatenate(ROOT.Char.Custom('BurmeseN
 First_Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
 First_Name_Possessive_No_Tooltip_Burmese: "[Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
 
-Titled_First_Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!"
-Titled_First_Name_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]"
-Titled_First_Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
-Titled_First_Name_Possessive_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
+Titled_First_Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!"
+Titled_First_Name_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]"
+Titled_First_Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
+Titled_First_Name_Possessive_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
 
 Titled_First_Name_BurmeseKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 Titled_First_Name_No_Tooltip_BurmeseKing: "[Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]"
@@ -27,10 +27,10 @@ Titled_First_Name_No_Tooltip_MonKing: "[ROOT.Char.Custom('CharacterTierCheckBefo
 Titled_First_Name_Possessive_MonKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
 Titled_First_Name_Possessive_No_Tooltip_MonKing: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
 
-Full_Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!"
-Full_Name_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]"
-Full_Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
-Full_Name_Possessive_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
+Full_Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!"
+Full_Name_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]"
+Full_Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
+Full_Name_Possessive_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
 
 Full_Name_BurmeseKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 Full_Name_No_Tooltip_BurmeseKing: "[Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]"
@@ -42,10 +42,10 @@ Full_Name_No_Tooltip_MonKing: "ROOT.Char.Custom('CharacterTierCheckBefore')][Loc
 Full_Name_Possessive_MonKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
 Full_Name_Possessive_No_Tooltip_MonKing: "ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
 
-Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!"
-Name_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]"
-Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
-Name_Possessive_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
+Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!"
+Name_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]"
+Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
+Name_Possessive_No_Tooltip_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
 
 Name_BurmeseKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
 Name_No_Tooltip_BurmeseKing: "[Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]"
@@ -57,11 +57,11 @@ Name_No_Tooltip_MonKing: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localiz
 Name_Possessive_MonKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!"
 Name_Possessive_No_Tooltip_MonKing: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
 
-Short_Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!#!"
-Short_Name_No_Tooltip_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!"
-Short_Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!#!"
-Short_Name_Possessive_No_Tooltip_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!"
-Short_Name_Possessive_No_Tooltip_No_Format_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
+Short_Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!#!"
+Short_Name_No_Tooltip_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!"
+Short_Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!#!"
+Short_Name_Possessive_No_Tooltip_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!"
+Short_Name_Possessive_No_Tooltip_No_Format_Burmese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
 
 Short_Name_BurmeseKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
 Short_Name_No_Tooltip_BurmeseKing: "#high [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
@@ -75,10 +75,10 @@ Short_Name_Possessive_MonKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CH
 Short_Name_Possessive_No_Tooltip_MonKing: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!"
 Short_Name_Possessive_No_Tooltip_No_Format_MonKing: "[ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s"
 
-UI_Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!#!"
-UI_Name_No_Tooltip_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!"
-UI_Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!#!"
-UI_Name_Possessive_No_Tooltip_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!"
+UI_Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!#!#!#!"
+UI_Name_No_Tooltip_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]#!"
+UI_Name_Possessive_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!#!"
+UI_Name_Possessive_No_Tooltip_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('BurmeseHonorificCheck')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!"
 
 UI_Name_BurmeseKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!#!"
 UI_Name_No_Tooltip_BurmeseKing: "#high [Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!"
@@ -109,4 +109,8 @@ TekPrefix_burmese_female: "Umm"
 TekSuffix_burmese_female: ""
 
 Supported_Name_Burmese: "[ROOT.Char.GetFirstNameNoTooltip]"
+NgaHonorific: "Ṅa "
+UiwHonorific: "ʼUiw "
+YanHonorific: "Yaṅ "
+YaHonorific: "Ya "
 GUIBlank: ""
