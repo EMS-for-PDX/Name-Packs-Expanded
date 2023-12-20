@@ -3127,6 +3127,32 @@ BurmeseHonorificCheck = {
 			is_male = yes
 			NOT = {
 				has_council_position = councillor_court_chaplain
+				OR = {
+					father ?= {
+						OR = {
+							is_independent_ruler = yes
+							dynasty ?= {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+					mother ?= {
+						OR = {
+							is_independent_ruler = yes
+							dynasty ?= {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
 			}
 			OR = {
 				AND = {
@@ -3154,6 +3180,32 @@ BurmeseHonorificCheck = {
 			is_male = no
 			NOT = {
 				has_council_position = councillor_court_chaplain
+				OR = {
+					father ?= {
+						OR = {
+							is_independent_ruler = yes
+							dynasty ?= {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+					mother ?= {
+						OR = {
+							is_independent_ruler = yes
+							dynasty ?= {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
 			}
 			OR = {
 				AND = {
@@ -3181,6 +3233,32 @@ BurmeseHonorificCheck = {
 			is_male = yes
 			NOT = {
 				has_council_position = councillor_court_chaplain
+				OR = {
+					father ?= {
+						OR = {
+							is_independent_ruler = yes
+							dynasty ?= {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+					mother ?= {
+						OR = {
+							is_independent_ruler = yes
+							dynasty ?= {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
 			}
 			OR = {
 				AND = {
@@ -3208,6 +3286,32 @@ BurmeseHonorificCheck = {
 			is_male = no
 			NOT = {
 				has_council_position = councillor_court_chaplain
+				OR = {
+					father ?= {
+						OR = {
+							is_independent_ruler = yes
+							dynasty ?= {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.father
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+					mother ?= {
+						OR = {
+							is_independent_ruler = yes
+							dynasty ?= {
+								any_in_list = {
+									variable = dynasty_independent
+									this = root.mother
+								}
+							}
+						}
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
 			}
 			OR = {
 				AND = {

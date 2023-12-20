@@ -413,7 +413,18 @@ name_gen_effect = {
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_somali
+						OR = {
+							has_name_list = name_list_somali
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_harla
+							}
+						}
 					}
 					add = 1
 				}
@@ -1496,7 +1507,18 @@ name_gen_effect = {
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_somali
+						OR = {
+							has_name_list = name_list_somali
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_harla
+							}
+						}
 					}
 					add = 1
 				}

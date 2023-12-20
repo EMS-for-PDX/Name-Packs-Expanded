@@ -184,7 +184,19 @@
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Ethiopian
@@ -441,7 +453,18 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Somali
@@ -1019,7 +1042,19 @@ TitledFirstNameNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Ethiopian
@@ -1276,7 +1311,18 @@ TitledFirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Somali
@@ -1842,7 +1888,19 @@ TitledFirstNamePossessive = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_Ethiopian
@@ -2099,7 +2157,18 @@ TitledFirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_Somali
@@ -2677,7 +2746,19 @@ TitledFirstNamePossessiveNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_No_Tooltip_Ethiopian
@@ -2934,7 +3015,18 @@ TitledFirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_No_Tooltip_Somali
@@ -3512,7 +3604,19 @@ TitledFirstNameNickName = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Ethiopian
@@ -3769,7 +3873,18 @@ TitledFirstNameNickName = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Somali
@@ -4347,7 +4462,19 @@ TitledFirstNameNickNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Ethiopian
@@ -4604,7 +4731,18 @@ TitledFirstNameNickNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Somali
@@ -5188,7 +5326,19 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_No_Tooltip_Ethiopian
@@ -5445,7 +5595,18 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_No_Tooltip_Somali
@@ -6029,7 +6190,19 @@ TitledFirstNameOrMe = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Ethiopian
@@ -6286,7 +6459,18 @@ TitledFirstNameOrMe = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Somali

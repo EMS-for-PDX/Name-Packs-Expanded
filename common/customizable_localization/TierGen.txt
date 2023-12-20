@@ -1622,7 +1622,7 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                has_cultural_pillar = language_omotic
+					has_cultural_pillar = language_omotic
 			}
 		}
 		localization_key = _wolayta
@@ -1835,14 +1835,6 @@ CharacterCulture = {
 	}
 	text = {
 		trigger = {
-			culture = {
-				has_cultural_pillar = language_cushitic
-			}
-		}
-		localization_key = _somali
-	}
-	text = {
-		trigger = {
             has_religion = religion:islam_religion
 			culture = {
 				OR = {
@@ -1929,10 +1921,29 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+					this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = _ethiopian
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_cushitic
+			}
+		}
+		localization_key = _somali
 	}
 	text = {
 		trigger = {
