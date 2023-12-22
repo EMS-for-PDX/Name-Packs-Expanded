@@ -2067,7 +2067,10 @@ CharacterCulture = {
                     limit = {
                         exists = global_var:CE_is_loaded
                     }
-                    has_cultural_pillar = language_cornish
+				OR = {
+					has_cultural_pillar = language_cornish
+					has_cultural_pillar = language_brythonek
+				}
                 }
                 trigger_else = {
                     has_cultural_pillar = language_brythonic
@@ -2087,7 +2090,7 @@ CharacterCulture = {
                             exists = global_var:CE_is_loaded
                         }
                         OR = {
-                            has_cultural_pillar = language_brythonek
+                            #has_cultural_pillar = language_brythonek
                             has_cultural_pillar = language_kymraeg
                             has_cultural_pillar = language_cumbrian
                             has_cultural_pillar = language_cymraeg
