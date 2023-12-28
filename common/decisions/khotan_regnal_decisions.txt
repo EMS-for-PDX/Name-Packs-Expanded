@@ -1,0 +1,36 @@
+﻿khotan_regnal = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	major = yes
+	desc = khotan_regnal_desc
+	selection_tooltip = khotan_regnal_tooltip
+	is_shown = {
+		culture = {
+			is_npe_supported_culture = yes
+			has_cultural_pillar = language_scythian
+			has_name_list = name_list_saka
+		}
+		is_male = yes
+		NOT = {
+			has_character_flag = khotanese_regnal_assigned #living historical chars will need this flag BTW
+		}
+	}
+    is_valid_showing_failures_only = {
+		OR = {
+			AND = {
+				is_independent_ruler = yes
+				highest_held_title_tier >= tier_kingdom
+				has_government = feudal_government
+			}
+		}
+    }
+	effect = {
+		add_character_flag = khotanese_regnal_assigned
+		khotanese_male_regnal_name_effect = yes
+	}
+
+    ai_will_do = {
+        base = 100
+    }
+
+    ai_goal = yes
+}

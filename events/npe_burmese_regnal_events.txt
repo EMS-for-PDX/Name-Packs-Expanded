@@ -1,0 +1,187 @@
+﻿namespace = npeburmesereg
+
+npeburmesereg.001 = { #Regnal Style Decision
+    type = character_event
+	theme = faith
+	title = npeburmesereg.001.t
+	desc = npeburmesereg.001.desc
+	right_portrait = root
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_male = yes
+				}
+				regnal_style_male_effect = yes
+			}
+			else = {
+				regnal_style_female_effect = yes
+			}
+		}
+	}
+	option = {
+		name = npeburmesereg.001.a
+		custom_tooltip = npeburmesereg.001.a.tt
+		remove_variable = regname_temp
+		trigger_event = {
+			id = npeburmesereg.001
+			days = -1
+		}
+	}
+	option = {
+		name = npeburmesereg.001.b
+		custom_tooltip = npeburmesereg.001.b.tt
+		set_regnal_style_effect = yes
+		add_character_flag = has_regnal_style
+	}
+}
+
+npeburmesereg.002 = { #Regnal Name Decision
+    type = character_event
+	theme = faith
+	title = npeburmesereg.002.t
+	desc = npeburmesereg.002.desc
+	right_portrait = root
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_male = yes
+				}
+				regnal_name_burmese_male_effect = yes
+			}
+			else = {
+				regnal_name_burmese_female_effect = yes
+			}
+		}
+	}
+	option = {
+		name = npeburmesereg.002.a
+		custom_tooltip = npeburmesereg.002.a.tt
+		remove_variable = regname_temp
+		trigger_event = {
+			id = npeburmesereg.002
+			days = -1
+		}
+	}
+	option = {
+		name = npeburmesereg.002.b
+		custom_tooltip = npeburmesereg.002.b.tt
+		set_regnal_name_burmese_effect = yes
+		add_character_flag = burmese_regnal_assigned
+	}
+}
+npeburmesereg.003 = { #Give Other King
+    type = character_event
+	theme = faith
+	title = npeburmesereg.003.t
+	desc = npeburmesereg.003.desc
+	left_portrait = root
+	right_portrait = scope:recipient
+
+	immediate = {
+		hidden_effect = {
+			scope:recipient = {
+				if = {
+					limit = {
+						is_male = yes
+					}
+					vassal_regnal_name_burmese_male_effect = yes
+				}
+				else = {
+					vassal_regnal_name_burmese_female_effect = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = npeburmesereg.003.a
+		custom_tooltip = npeburmesereg.003.a.tt
+		scope:recipient = {
+			remove_variable = regname_temp
+		}
+		trigger_event = {
+			id = npeburmesereg.003
+			days = -1
+		}
+	}
+	option = {
+		name = npeburmesereg.003.b
+		custom_tooltip = npeburmesereg.003.b.tt
+		scope:recipient = {
+			set_regnal_name_burmese_effect = yes
+			add_character_flag = burmese_vassal_reg_assigned
+			trigger_event = {
+				id = npeburmesereg.006
+				days = -1
+			}
+		}
+	}
+}
+npeburmesereg.004 = { #Give You King
+    type = character_event
+	theme = faith
+	title = npeburmesereg.004.t
+	desc = npeburmesereg.004.desc
+	left_portrait = scope:actor
+	right_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				is_male = yes
+			}
+			vassal_regnal_name_burmese_male_effect = yes
+		}
+		else = {
+			vassal_regnal_name_burmese_female_effect = yes
+		}
+	}
+
+	option = {
+		name = npeburmesereg.004.a
+		custom_tooltip = npeburmesereg.004.a.tt
+		remove_variable = regname_temp
+		trigger_event = {
+			id = npeburmesereg.004
+			days = -1
+		}
+	}
+	option = {
+		name = npeburmesereg.004.b
+		custom_tooltip = npeburmesereg.004.b.tt
+		set_regnal_name_burmese_effect = yes
+		add_character_flag = burmese_vassal_reg_assigned
+	}
+}
+npeburmesereg.005 = { #Hidden Event King
+	type = character_event
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				is_male = yes
+			}
+			vassal_regnal_name_burmese_male_effect = yes
+		}
+		else = {
+			vassal_regnal_name_burmese_female_effect = yes
+		}
+		set_regnal_name_burmese_effect = yes
+		add_character_flag = burmese_vassal_reg_assigned
+	}
+}
+npeburmesereg.006 = { #Recieve King
+    type = character_event
+	theme = faith
+	title = npeburmesereg.004.t
+	desc = npeburmesereg.004.desc
+	left_portrait = scope:actor
+	right_portrait = root
+
+	option = {
+		name = npeburmesereg.004.b
+		custom_tooltip = npeburmesereg.004.b.tt
+	}
+}

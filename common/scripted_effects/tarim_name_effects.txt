@@ -1,0 +1,1096 @@
+﻿khotanese_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty ?= {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+    random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:buddhism_religion
+				add = 9
+			}
+			random_list = {
+				1 = {
+					change_first_name = Buddhadatta
+				}
+				1 = {
+					change_first_name = Buddhasangha
+				}
+				1 = {
+					change_first_name = Sanghabuddha
+				}
+				1 = {
+					change_first_name = Sanghaka
+				}
+				1 = {
+					change_first_name = Sanghata
+				}
+				1 = {
+					change_first_name = Vasharasangha
+				}
+				1 = {
+					change_first_name = Budarsha
+				}
+				1 = {
+					change_first_name = Irasangha
+				}
+				1 = {
+					change_first_name = Namaubuddha
+				}
+			}
+		}
+		1 = {
+			change_first_name = Ajatashastru
+		}
+		1 = {
+			change_first_name = Ananda
+		}
+		1 = {
+			change_first_name = Aniruddha
+		}
+		1 = {
+			change_first_name = Arjuna
+		}
+		1 = {
+			change_first_name = Ashoka
+		}
+		1 = {
+			change_first_name = Dharma
+		}
+		1 = {
+			change_first_name = Dharmapunya
+		}
+		1 = {
+			change_first_name = Jaya
+		}
+		1 = {
+			change_first_name = Jalapunya
+		}
+		1 = {
+			change_first_name = Jalarjuna
+		}
+		1 = {
+			change_first_name = Kirti
+		}
+		1 = {
+			change_first_name = Mangala
+		}
+		1 = {
+			change_first_name = Mangalakana
+		}
+		1 = {
+			change_first_name = Mayadatta
+		}
+		1 = {
+			change_first_name = Nandaka
+		}
+		1 = {
+			change_first_name = Nanda
+		}
+		1 = {
+			change_first_name = Punyadatta
+		}
+		1 = {
+			change_first_name = Sambhava
+		}
+		1 = {
+			change_first_name = Sangrama
+		}
+		1 = {
+			change_first_name = Simha
+		}
+		1 = {
+			change_first_name = Shikshananda
+		}
+		1 = {
+			change_first_name = Shila
+		}
+		1 = {
+			change_first_name = Shilavarma
+		}
+		1 = {
+			change_first_name = Shridatta
+		}
+		1 = {
+			change_first_name = Svaradatta
+		}
+		1 = {
+			change_first_name = Sudharma
+		}
+		1 = {
+			change_first_name = Sudarjuna
+		}
+		1 = {
+			change_first_name = Sudatta
+		}
+		1 = {
+			change_first_name = Sukhendriya
+		}
+		1 = {
+			change_first_name = Shura
+		}
+		1 = {
+			change_first_name = Upadatta
+		}
+		1 = {
+			change_first_name = Vahana
+		}
+		1 = {
+			change_first_name = Vasudeva
+		}
+		1 = {
+			change_first_name = Vidyarjuna
+		}
+		1 = {
+			change_first_name = Vidyadatta
+		}
+		1 = {
+			change_first_name = Vikrama
+		}
+		1 = {
+			change_first_name = Vimaladatta
+		}
+		1 = {
+			change_first_name = Vinaya
+		}
+		1 = {
+			change_first_name = Visarjuna
+		}
+		1 = {
+			change_first_name = Vismadatta
+		}
+		1 = {
+			change_first_name = Visnudatta
+		}
+		1 = {
+			change_first_name = Alttam
+		}
+		1 = {
+			change_first_name = Aryamgula
+		}
+		1 = {
+			change_first_name = Badalai
+		}
+		1 = {
+			change_first_name = Bamdaka
+		}
+		1 = {
+			change_first_name = Birgamdara
+		}
+		1 = {
+			change_first_name = Bramgalaka
+		}
+		1 = {
+			change_first_name = Bryadaysai
+		}
+		1 = {
+			change_first_name = Cvemdu
+		}
+		1 = {
+			change_first_name = Damsa
+		}
+		1 = {
+			change_first_name = Darauka
+		}
+		1 = {
+			change_first_name = Dattaka
+		}
+		1 = {
+			change_first_name = Haskadarma
+		}
+		1 = {
+			change_first_name = Haskadatta
+		}
+		1 = {
+			change_first_name = Haskastara
+		}
+		1 = {
+			change_first_name = Hattakam
+		}
+		1 = {
+			change_first_name = Hvrrividta
+		}
+		1 = {
+			change_first_name = Jsajsaka
+		}
+		1 = {
+			change_first_name = Karusai
+		}
+		1 = {
+			change_first_name = Kharashau
+		}
+		1 = {
+			change_first_name = Khattinai
+		}
+		1 = {
+			change_first_name = Khuradatta
+		}
+		1 = {
+			change_first_name = Khvarnarsa
+		}
+		1 = {
+			change_first_name = Madasha
+		}
+		1 = {
+			change_first_name = Mamsaralabuda
+		}
+		1 = {
+			change_first_name = Marsa
+		}
+		1 = {
+			change_first_name = Mushajsa
+		}
+		1 = {
+			change_first_name = Mvamkalai
+		}
+		1 = {
+			change_first_name = Phamna
+		}
+		1 = {
+			change_first_name = Pharsaja
+		}
+		1 = {
+			change_first_name = Phemduka
+		}
+		1 = {
+			change_first_name = Punargam
+		}
+		1 = {
+			change_first_name = Punekula
+		}
+		1 = {
+			change_first_name = Rammaka
+		}
+		1 = {
+			change_first_name = Rruhadatta
+		}
+		1 = {
+			change_first_name = Samdara
+		}
+		1 = {
+			change_first_name = Sammada
+		}
+		1 = {
+			change_first_name = Sanira
+		}
+		1 = {
+			change_first_name = Shemaka
+		}
+		1 = {
+			change_first_name = Sidaka
+		}
+		1 = {
+			change_first_name = Shihvartcyamna
+		}
+		1 = {
+			change_first_name = Shiresala
+		}
+		1 = {
+			change_first_name = Sirphuka
+		}
+		1 = {
+			change_first_name = Skamca
+		}
+		1 = {
+			change_first_name = Ssaniraka
+		}
+		1 = {
+			change_first_name = Shudamgula
+		}
+		1 = {
+			change_first_name = Sulasha
+		}
+		1 = {
+			change_first_name = Sumauna
+		}
+		1 = {
+			change_first_name = Sumtharaka
+		}
+		1 = {
+			change_first_name = Suradatta
+		}
+		1 = {
+			change_first_name = Svarjuna
+		}
+		1 = {
+			change_first_name = Virsa
+		}
+		1 = {
+			change_first_name = Visaram
+		}
+		1 = {
+			change_first_name = Visma
+		}
+		1 = {
+			change_first_name = Yaduysa
+		}
+		1 = {
+			change_first_name = Yamnivi
+		}
+		1 = {
+			change_first_name = Yamnividta
+		}
+		1 = {
+			change_first_name = Ysadadatta
+		}
+		1 = {
+			change_first_name = Ysevidta
+		}
+		1 = {
+			change_first_name = Yumautcana
+		}
+		1 = {
+			change_first_name = Zambasta
+		}
+		1 = {
+			change_first_name = Arslan
+		}
+		1 = {
+			change_first_name = Tcusyau
+		}
+		1 = {
+			change_first_name = Stama
+		}
+		1 = {
+			change_first_name = Yimnaka
+		}
+		1 = {
+			change_first_name = Shvakala
+		}
+		1 = {
+			change_first_name = Halai
+		}
+		1 = {
+			change_first_name = Svahamka
+		}
+		1 = {
+			change_first_name = Chongde
+		}
+		1 = {
+			change_first_name = Tcumhyena
+		}
+		1 = {
+			change_first_name = Pu-Yam
+		}
+	}
+}
+khotanese_male_regnal_name_effect = {
+	random_list = {
+		1 = {
+			add_to_global_variable_list = { name = Visha_epithet target = this }
+		}
+		1 = {
+			add_to_global_variable_list = { name = Shri_epithet target = this }
+		}
+		1 = {
+			add_to_global_variable_list = { name = VishaShri_epithet target = this }
+		}
+	}
+	random_list = {
+		1 = {
+			change_first_name = Ajatashastra
+		}
+		1 = {
+			change_first_name = Ashoka
+		}
+		1 = {
+			change_first_name = Ananda
+		}
+		1 = {
+			change_first_name = Aniruddha
+		}
+		1 = {
+			change_first_name = Arjuna
+		}
+		1 = {
+			change_first_name = Dharma
+		}
+		1 = {
+			change_first_name = Jaya
+		}
+		1 = {
+			change_first_name = Kirti
+		}
+		1 = {
+			change_first_name = Mangala
+		}
+		1 = {
+			change_first_name = Nanda
+		}
+		1 = {
+			change_first_name = Sambhava
+		}
+		1 = {
+			change_first_name = Sanghaka
+		}
+		1 = {
+			change_first_name = Sanghata
+		}
+		1 = {
+			change_first_name = Shila
+		}
+		1 = {
+			change_first_name = Shura
+		}
+		1 = {
+			change_first_name = Simha
+		}
+		1 = {
+			change_first_name = Vahana
+		}
+		1 = {
+			change_first_name = Vikrama
+		}
+		1 = {
+			change_first_name = Vinaya
+		}
+	}
+}
+
+khotanese_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+    random_list = {
+		1 = {
+			change_first_name = Ashika
+		}
+		1 = {
+			change_first_name = Aysulya
+		}
+		1 = {
+			change_first_name = Dharmaa
+		}
+		1 = {
+			change_first_name = Duvaka
+		}
+		1 = {
+			change_first_name = Duvaki
+		}
+		1 = {
+			change_first_name = Gaushurya
+		}
+		1 = {
+			change_first_name = Jalapunyaa
+		}
+		1 = {
+			change_first_name = Jalottama
+		}
+		1 = {
+			change_first_name = Jvalakya
+		}
+		1 = {
+			change_first_name = Mandaka
+		}
+		1 = {
+			change_first_name = Phattana
+		}
+		1 = {
+			change_first_name = Rupajiva
+		}
+		1 = {
+			change_first_name = Samtusti
+		}
+		1 = {
+			change_first_name = Shiksamani
+		}
+		1 = {
+			change_first_name = Shvaprrui
+		}
+		1 = {
+			change_first_name = Suraimaitrra
+		}
+		1 = {
+			change_first_name = Suviprabha
+		}
+		1 = {
+			change_first_name = Tamaksana
+		}
+		1 = {
+			change_first_name = Vimalaprabha
+		}
+		1 = {
+			change_first_name = Vimausa
+		}
+		1 = {
+			change_first_name = Shutoka
+		}
+		1 = {
+			change_first_name = Punyesvara
+		}
+		1 = {
+			change_first_name = Shorgya
+		}
+    }
+}
+
+tocharian_male_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty ?= {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+    random_list = {
+        0 = {
+            modifier = {
+                has_religion = religion:buddhism_religion
+                add = 9
+            }
+            random_list = {
+				1 = {
+					change_first_name = Buddhadasa
+				}
+				1 = {
+					change_first_name = Buddhadatta
+				}
+				1 = {
+					change_first_name = Buddhagupta
+				}
+				1 = {
+					change_first_name = Buddhasena
+				}
+				1 = {
+					change_first_name = Buddhavarma
+				}
+				1 = {
+					change_first_name = Sanghadasa
+				}
+				1 = {
+					change_first_name = Sanghadeva
+				}
+            }
+        }
+		1 = {
+			change_first_name = Aryashke
+		}
+		1 = {
+			change_first_name = Indradeva
+		}
+		1 = {
+			change_first_name = Indravarma
+		}
+		1 = {
+			change_first_name = Moksacandra
+		}
+		1 = {
+			change_first_name = Moksagupta
+		}
+		1 = {
+			change_first_name = Moksarakshita
+		}
+		1 = {
+			change_first_name = Moksavarma
+		}
+		1 = {
+			change_first_name = Alp
+		}
+		1 = {
+			change_first_name = Ambara
+		}
+		1 = {
+			change_first_name = Amritadeva
+		}
+		1 = {
+			change_first_name = Amritarakshita
+		}
+		1 = {
+			change_first_name = Amritasena
+		}
+		1 = {
+			change_first_name = Amttule
+		}
+		1 = {
+			change_first_name = Anantavarma
+		}
+		1 = {
+			change_first_name = Aniruddha
+		}
+		1 = {
+			change_first_name = Aranemi
+		}
+		1 = {
+			change_first_name = Arjuna
+		}
+		1 = {
+			change_first_name = Arpela
+		}
+		1 = {
+			change_first_name = Arslan
+		}
+		1 = {
+			change_first_name = Aryadeva
+		}
+		1 = {
+			change_first_name = Aryaghosa
+		}
+		1 = {
+			change_first_name = Aryarakshita
+		}
+		1 = {
+			change_first_name = Aryavarma
+		}
+		1 = {
+			change_first_name = Ashoka
+		}
+		1 = {
+			change_first_name = Ashokamitra
+		}
+		1 = {
+			change_first_name = Ashokarakshita
+		}
+		1 = {
+			change_first_name = Ashtawi
+		}
+		1 = {
+			change_first_name = Aushake
+		}
+		1 = {
+			change_first_name = Bhadra
+		}
+		1 = {
+			change_first_name = Caitike
+		}
+		1 = {
+			change_first_name = Calaishke
+		}
+		1 = {
+			change_first_name = Camil
+		}
+		1 = {
+			change_first_name = Candradarshana
+		}
+		1 = {
+			change_first_name = Candramukha
+		}
+		1 = {
+			change_first_name = Capishakke
+		}
+		1 = {
+			change_first_name = Caukile
+		}
+		1 = {
+			change_first_name = Citra
+		}
+		1 = {
+			change_first_name = Citrerapashke
+		}
+		1 = {
+			change_first_name = Cowashke
+		}
+		1 = {
+			change_first_name = Devadatta
+		}
+		1 = {
+			change_first_name = Dharmacandra
+		}
+		1 = {
+			change_first_name = Dharmadasa
+		}
+		1 = {
+			change_first_name = Dharmarakshita
+		}
+		1 = {
+			change_first_name = Dharmasena
+		}
+		1 = {
+			change_first_name = Dharmavarma
+		}
+		1 = {
+			change_first_name = El
+		}
+		1 = {
+			change_first_name = Er
+		}
+		1 = {
+			change_first_name = Ercancishke
+		}
+		1 = {
+			change_first_name = Erkatsole
+		}
+		1 = {
+			change_first_name = Esmine
+		}
+		1 = {
+			change_first_name = Etrise
+		}
+		1 = {
+			change_first_name = Ettukane
+		}
+		1 = {
+			change_first_name = Gunacandra
+		}
+		1 = {
+			change_first_name = Haripuspa
+		}
+		1 = {
+			change_first_name = Indrishke
+		}
+		1 = {
+			change_first_name = Ishshapake
+		}
+		1 = {
+			change_first_name = Jayasena
+		}
+		1 = {
+			change_first_name = Jinadeva
+		}
+		1 = {
+			change_first_name = Jinagupta
+		}
+		1 = {
+			change_first_name = Jinasena
+		}
+		1 = {
+			change_first_name = Jnanacandra
+		}
+		1 = {
+			change_first_name = Jnanadeva
+		}
+		1 = {
+			change_first_name = Jnanaghosa
+		}
+		1 = {
+			change_first_name = Jnanagupta
+		}
+		1 = {
+			change_first_name = Jnanamoksa
+		}
+		1 = {
+			change_first_name = Jnanasena
+		}
+		1 = {
+			change_first_name = Kalanku
+		}
+		1 = {
+			change_first_name = Kalyanavardhana
+		}
+		1 = {
+			change_first_name = Kawotsine
+		}
+		1 = {
+			change_first_name = Kentarshke
+		}
+		1 = {
+			change_first_name = Kepaultile
+		}
+		1 = {
+			change_first_name = Kercapishke
+		}
+		1 = {
+			change_first_name = Kerdipole
+		}
+		1 = {
+			change_first_name = Kerentsile
+		}
+		1 = {
+			change_first_name = Kereptanne
+		}
+		1 = {
+			change_first_name = Kerkapey
+		}
+		1 = {
+			change_first_name = Ketsutaiyshe
+		}
+		1 = {
+			change_first_name = Klenkarako
+		}
+		1 = {
+			change_first_name = Konaikke
+		}
+		1 = {
+			change_first_name = Koppesale
+		}
+		1 = {
+			change_first_name = Korakke
+		}
+		1 = {
+			change_first_name = Koysele
+		}
+		1 = {
+			change_first_name = Koysishke
+		}
+		1 = {
+			change_first_name = Ksemarjuna
+		}
+		1 = {
+			change_first_name = Kumpante
+		}
+		1 = {
+			change_first_name = Kurrinkate
+		}
+		1 = {
+			change_first_name = Kwappale
+		}
+		1 = {
+			change_first_name = Kweshketar
+		}
+		1 = {
+			change_first_name = Laraciwe
+		}
+		1 = {
+			change_first_name = Laressale
+		}
+		1 = {
+			change_first_name = Malakke
+		}
+		1 = {
+			change_first_name = Mashuta
+		}
+		1 = {
+			change_first_name = Mikicandra
+		}
+		1 = {
+			change_first_name = Mitrayasha
+		}
+		1 = {
+			change_first_name = Nagasena
+		}
+		1 = {
+			change_first_name = Naniste
+		}
+		1 = {
+			change_first_name = Naradeva
+		}
+		1 = {
+			change_first_name = Nari
+		}
+		1 = {
+			change_first_name = Nashmi
+		}
+		1 = {
+			change_first_name = Nwetakke
+		}
+		1 = {
+			change_first_name = Oktale
+		}
+		1 = {
+			change_first_name = Palamtte
+		}
+		1 = {
+			change_first_name = Pallentakke
+		}
+		1 = {
+			change_first_name = Peshnare
+		}
+		1 = {
+			change_first_name = Priyadeva
+		}
+		1 = {
+			change_first_name = Punyacandra
+		}
+		1 = {
+			change_first_name = Punyarakshita
+		}
+		1 = {
+			change_first_name = Punyasena
+		}
+		1 = {
+			change_first_name = Punyayasha
+		}
+		1 = {
+			change_first_name = Raktadeva
+		}
+		1 = {
+			change_first_name = Satyavarma
+		}
+		1 = {
+			change_first_name = Shaile
+		}
+		1 = {
+			change_first_name = Shiladeva
+		}
+		1 = {
+			change_first_name = Shilavarna
+		}
+		1 = {
+			change_first_name = Shinkshke
+		}
+		1 = {
+			change_first_name = Simha
+		}
+		1 = {
+			change_first_name = Sotarkane
+		}
+		1 = {
+			change_first_name = Sumitra
+		}
+		1 = {
+			change_first_name = Suvarnadeva
+		}
+		1 = {
+			change_first_name = Suvarnaphala
+		}
+		1 = {
+			change_first_name = Suvarnapuspa
+		}
+		1 = {
+			change_first_name = Tisya
+		}
+		1 = {
+			change_first_name = Tottika
+		}
+		1 = {
+			change_first_name = Turkane
+		}
+		1 = {
+			change_first_name = Ulkhamukhe
+		}
+		1 = {
+			change_first_name = Upagupta
+		}
+		1 = {
+			change_first_name = Upadatta
+		}
+		1 = {
+			change_first_name = Upananda
+		}
+		1 = {
+			change_first_name = Upatisya
+		}
+		1 = {
+			change_first_name = Uttara
+		}
+		1 = {
+			change_first_name = Wrau
+		}
+		1 = {
+			change_first_name = Yashotarko
+		}
+		1 = {
+			change_first_name = Yataiyshe
+		}
+		1 = {
+			change_first_name = Ysassapyapyo
+		}
+	}
+}
+tocharian_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+    random_list = {
+		1 = {
+			change_first_name = Anandaa
+		}
+		1 = {
+			change_first_name = Arkwi
+		}
+		1 = {
+			change_first_name = Bhadraa
+		}
+		1 = {
+			change_first_name = Canca
+		}
+		1 = {
+			change_first_name = Caytishka
+		}
+		1 = {
+			change_first_name = Cetika
+		}
+		1 = {
+			change_first_name = Jnati
+		}
+		1 = {
+			change_first_name = Kimna
+		}
+		1 = {
+			change_first_name = Klyotishka
+		}
+		1 = {
+			change_first_name = Ksemika
+		}
+		1 = {
+			change_first_name = Kulkera
+		}
+		1 = {
+			change_first_name = Larishka
+		}
+		1 = {
+			change_first_name = Mallika
+		}
+		1 = {
+			change_first_name = Nandaa
+		}
+		1 = {
+			change_first_name = Nandabala
+		}
+		1 = {
+			change_first_name = Pattim
+		}
+		1 = {
+			change_first_name = Prabhakara
+		}
+		1 = {
+			change_first_name = Prishka
+		}
+		1 = {
+			change_first_name = Punyavati
+		}
+		1 = {
+			change_first_name = Raknashka
+		}
+		1 = {
+			change_first_name = Samapriya
+		}
+		1 = {
+			change_first_name = Shana
+		}
+		1 = {
+			change_first_name = Shantaa
+		}
+		1 = {
+			change_first_name = Sthulananda
+		}
+		1 = {
+			change_first_name = Sumagati
+		}
+		1 = {
+			change_first_name = Sundari
+		}
+		1 = {
+			change_first_name = Swayamprabha
+		}
+		1 = {
+			change_first_name = Tartvisara
+		}
+		1 = {
+			change_first_name = Uppalavarna
+		}
+		1 = {
+			change_first_name = Yashodhara
+		}
+    }
+}
