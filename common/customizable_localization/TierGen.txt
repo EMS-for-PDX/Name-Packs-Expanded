@@ -1884,6 +1884,12 @@ CharacterCulture = {
 					has_cultural_pillar = language_vrachada
 					has_cultural_pillar = language_kashmiri
 					has_cultural_pillar = language_pahari
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						has_cultural_pillar = language_nuristani
+					}
 				}
 			}
 		}
