@@ -1647,7 +1647,10 @@
 	}
 	text = {
 		trigger = {
-			has_nickname = nick_the_seductress
+			OR = {
+				has_nickname = nick_the_seductress
+				has_nickname = nick_the_seducer
+			}
 		}
         localization_key = Seducer
 	}
@@ -1663,12 +1666,6 @@
 		}
         localization_key = Lecher
 	}
-    text = {
-        trigger = {
-            has_nickname = nick_the_seducer     
-        }
-        localization_key = Seducer
-    }
     text = {
         trigger = {
             has_nickname = nick_the_shadow     
@@ -2691,15 +2688,12 @@
     }
     text = {
         trigger = {
-            has_nickname = nick_father_of_the_baltic     
+			OR = {
+				has_nickname = nick_father_of_the_baltic
+				has_nickname = nick_mother_of_the_baltic     		
+			}
         }
         localization_key = FatherBaltic
-    }
-    text = {
-        trigger = {
-            has_nickname = nick_mother_of_the_baltic     
-        }
-        localization_key = MotherBaltic
     }
     text = {
         trigger = {
@@ -2793,15 +2787,12 @@
     }
     text = {
         trigger = {
-            has_nickname = nick_the_garlic     
+			OR = {
+				has_nickname = nick_the_garlic   
+				has_nickname = nick_garlic_queen     
+			}
         }
         localization_key = Garlic
-    }
-    text = {
-        trigger = {
-            has_nickname = nick_garlic_queen     
-        }
-        localization_key = GarlicQueen
     }
     text = {
         trigger = {
@@ -3885,13 +3876,10 @@
     }
     text = {
         trigger = {
-            has_nickname = nick_monarch_of_fools_masc     
-        }
-        localization_key = MonarchofFools
-    }
-    text = {
-        trigger = {
-            has_nickname = nick_monarch_of_fools     
+			OR = {
+				has_nickname = nick_monarch_of_fools_masc
+				has_nickname = nick_monarch_of_fools
+			}
         }
         localization_key = MonarchofFools
     }
