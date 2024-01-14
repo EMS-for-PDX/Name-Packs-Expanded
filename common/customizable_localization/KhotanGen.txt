@@ -1,0 +1,44 @@
+﻿KhotanEpithetCheck = {
+	type = character
+	log_loc_errors = no
+	text = {
+		trigger = {
+			AND = {
+				highest_held_title_tier >= tier_kingdom
+				any_in_global_list = {
+					variable = Visha_epithet
+					this = root
+				}
+			}
+		}
+		localization_key = VishaEpithet
+	}
+	text = {
+		trigger = {
+			AND = {
+				highest_held_title_tier >= tier_kingdom
+				any_in_global_list = {
+					variable = Shri_epithet
+					this = root
+				}
+			}
+		}
+		localization_key = ShriEpithet
+	}
+	text = {
+		trigger = {
+			AND = {
+				highest_held_title_tier >= tier_kingdom
+				any_in_global_list = {
+					variable = VishaShri_epithet
+					this = root
+				}
+			}
+		}
+		localization_key = VishaShriEpithet
+	}
+	text = {
+		fallback = yes
+		localization_key = GUIBlank
+	}
+}

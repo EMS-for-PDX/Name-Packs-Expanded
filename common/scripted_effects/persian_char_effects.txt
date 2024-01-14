@@ -501,6 +501,20 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_kurds_0010 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:extra_kurds_0011 }
     }
+	character:saririds_1.dynasty = { #Sarir
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:saririds_1 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:saririds_2 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:saririds_3 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:saririds_4 }
+        #add_to_variable_list = { name = name_pack_support_dynasty target = character:saririds_5 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:saririds_6 }
+    }
+	character:saririds_6 = {
+		change_first_name = Bukhtyeshu
+	}
+	character:saririds_2 = {
+		change_first_name = Khusraw
+	}
 	character:extra_kurds_0009 = {
 		change_first_name = Abdal-Hamid
 		dynasty_effect_ne = yes
@@ -1146,6 +1160,16 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:badakhshanids_2 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:badakhshanids_3 }
     }
+	character:saririds_1.dynasty = { #Sarir
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:saririds_10 }
+        add_to_variable_list = { name = name_pack_support_dynasty target = character:saririds_9 }
+    }
+	character:saririds_10 = {
+		change_first_name = Peroz
+	}
+	character:saririds_9 = {
+		change_first_name = Bukhtyeshu
+	}
 	character:saffarid_05 = {
 		change_first_name = Yaqub
 	}

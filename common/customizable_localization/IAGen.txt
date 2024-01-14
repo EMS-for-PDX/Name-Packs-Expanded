@@ -214,6 +214,23 @@ CharacterIndiaCulture = { #for deva
 	text = {
 		trigger = {
 			culture = {
+				OR = {
+					has_cultural_pillar = language_iranian
+					has_cultural_pillar = language_scythian
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						has_cultural_pillar = language_balochi
+					}
+				}
+			}
+		}
+        localization_key = _persian
+	}
+	text = {
+		trigger = {
+			culture = {
 				has_cultural_pillar = language_tamil
 			}
 		}

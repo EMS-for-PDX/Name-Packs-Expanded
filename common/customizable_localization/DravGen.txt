@@ -2840,9 +2840,9 @@ KannadaParamesvaraCheck = {
 	text = {
 		trigger = {
 			culture = {
-				any_parent_culture_or_above = {
-					NOT = {
-						has_cultural_pillar = heritage_indo_aryan
+				NOT = {
+					any_parent_culture_or_above = {
+							has_cultural_pillar = heritage_indo_aryan
 					}
 				}
 			}
@@ -2851,6 +2851,6 @@ KannadaParamesvaraCheck = {
 	}
 	text = {
 		fallback = yes
-		localization_key = Blank
+		localization_key = GUIBlank
 	}
 }

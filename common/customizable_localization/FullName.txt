@@ -2,6 +2,12 @@
 	type = character
 	text = {
 		trigger = {
+			has_title = title:k_papal_state
+		}
+		localization_key = Name_Pope
+	}
+	text = {
+		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
 				turkish_check = yes
@@ -181,7 +187,19 @@
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Ethiopian
@@ -596,10 +614,84 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Somali
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_mon
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_mon
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_MonKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+					OR = {
+						has_cultural_pillar = language_burmese
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_burmese
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_BurmeseKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_burman
+			}
+		}
+		localization_key = Full_Name_Burmese
 	}
 	text = {
 		trigger = {
@@ -614,6 +706,23 @@
 			}
 		}
 		localization_key = Full_Name_ArabicA
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_scythian
+				has_name_list = name_list_saka
+			}
+		}
+		localization_key = Full_Name_Khotanese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = heritage_tocharian
+			}
+		}
+		localization_key = Full_Name_Tocharian
 	}
 	text = {
 		trigger = {
@@ -1112,6 +1221,12 @@ FullNameNoTooltip = {
 	type = character
 	text = {
 		trigger = {
+			has_title = title:k_papal_state
+		}
+		localization_key = Name_No_Tooltip_Pope
+	}
+	text = {
+		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
 				turkish_check = yes
@@ -1291,7 +1406,19 @@ FullNameNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Ethiopian
@@ -1706,10 +1833,84 @@ FullNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Somali
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_mon
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_mon
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_MonKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+					OR = {
+						has_cultural_pillar = language_burmese
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_burmese
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_BurmeseKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_burman
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Burmese
 	}
 	text = {
 		trigger = {
@@ -1724,6 +1925,23 @@ FullNameNoTooltip = {
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_ArabicA
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_scythian
+				has_name_list = name_list_saka
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Khotanese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = heritage_tocharian
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Tocharian
 	}
 	text = {
 		trigger = {
@@ -2222,6 +2440,12 @@ FullNamePossessive = {
 	type = character
 	text = {
 		trigger = {
+			has_title = title:k_papal_state
+		}
+		localization_key = Name_Possessive_Pope
+	}
+	text = {
+		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
 				turkish_check = yes
@@ -2401,7 +2625,19 @@ FullNamePossessive = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Possessive_Ethiopian
@@ -2816,10 +3052,84 @@ FullNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Possessive_Somali
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_mon
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_mon
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_MonKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+					OR = {
+						has_cultural_pillar = language_burmese
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_burmese
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_BurmeseKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_burman
+			}
+		}
+		localization_key = Full_Name_Possessive_Burmese
 	}
 	text = {
 		trigger = {
@@ -2834,6 +3144,23 @@ FullNamePossessive = {
 			}
 		}
 		localization_key = Full_Name_Possessive_ArabicA
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_scythian
+				has_name_list = name_list_saka
+			}
+		}
+		localization_key = Full_Name_Possessive_Khotanese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = heritage_tocharian
+			}
+		}
+		localization_key = Full_Name_Possessive_Tocharian
 	}
 	text = {
 		trigger = {
@@ -3332,6 +3659,12 @@ FullNamePossessiveNoTooltip = {
 	type = character
 	text = {
 		trigger = {
+			has_title = title:k_papal_state
+		}
+		localization_key = Name_Possessive_No_Tooltip_Pope
+	}
+	text = {
+		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
 				turkish_check = yes
@@ -3511,7 +3844,19 @@ FullNamePossessiveNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Possessive_No_Tooltip_Ethiopian
@@ -3926,10 +4271,84 @@ FullNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Possessive_No_Tooltip_Somali
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_mon
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_mon
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_MonKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+					OR = {
+						has_cultural_pillar = language_burmese
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_burmese
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_BurmeseKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_burman
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Burmese
 	}
 	text = {
 		trigger = {
@@ -3944,6 +4363,23 @@ FullNamePossessiveNoTooltip = {
 			}
 		}
 		localization_key = Full_Name_Possessive_No_Tooltip_ArabicA
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_scythian
+				has_name_list = name_list_saka
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Khotanese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = heritage_tocharian
+			}
+		}
+		localization_key = Full_Name_Possessive_No_Tooltip_Tocharian
 	}
 	text = {
 		trigger = {
@@ -4442,6 +4878,12 @@ FullNameNick = {
 	type = character
 	text = {
 		trigger = {
+			has_title = title:k_papal_state
+		}
+		localization_key = Name_Pope
+	}
+	text = {
+		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
 				turkish_check = yes
@@ -4621,7 +5063,19 @@ FullNameNick = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Ethiopian
@@ -5036,10 +5490,84 @@ FullNameNick = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Somali
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_mon
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_mon
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_MonKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+					OR = {
+						has_cultural_pillar = language_burmese
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_burmese
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_BurmeseKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_burman
+			}
+		}
+		localization_key = Full_Name_Burmese
 	}
 	text = {
 		trigger = {
@@ -5054,6 +5582,23 @@ FullNameNick = {
 			}
 		}
 		localization_key = Full_Name_ArabicA
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_scythian
+				has_name_list = name_list_saka
+			}
+		}
+		localization_key = Full_Name_Khotanese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = heritage_tocharian
+			}
+		}
+		localization_key = Full_Name_Tocharian
 	}
 	text = {
 		trigger = {
@@ -5552,6 +6097,12 @@ FullNamePossessiveNick = {
 	type = character
 	text = {
 		trigger = {
+			has_title = title:k_papal_state
+		}
+		localization_key = Name_Possessive_Pope
+	}
+	text = {
+		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
 				turkish_check = yes
@@ -5731,7 +6282,19 @@ FullNamePossessiveNick = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Possessive_Ethiopian
@@ -6146,10 +6709,84 @@ FullNamePossessiveNick = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_Possessive_Somali
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_mon
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_mon
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_MonKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+					OR = {
+						has_cultural_pillar = language_burmese
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_burmese
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_Possessive_BurmeseKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_burman
+			}
+		}
+		localization_key = Full_Name_Possessive_Burmese
 	}
 	text = {
 		trigger = {
@@ -6164,6 +6801,23 @@ FullNamePossessiveNick = {
 			}
 		}
 		localization_key = Full_Name_Possessive_ArabicA
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_scythian
+				has_name_list = name_list_saka
+			}
+		}
+		localization_key = Full_Name_Possessive_Khotanese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = heritage_tocharian
+			}
+		}
+		localization_key = Full_Name_Possessive_Tocharian
 	}
 	text = {
 		trigger = {
@@ -6662,6 +7316,12 @@ FullNameNickNoTooltip = {
 	type = character
 	text = {
 		trigger = {
+			has_title = title:k_papal_state
+		}
+		localization_key = Name_No_Tooltip_Pope
+	}
+	text = {
+		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
 				turkish_check = yes
@@ -6841,7 +7501,19 @@ FullNameNickNoTooltip = {
 			culture = {
 				is_npe_supported_culture = yes
 				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_ethiopic
+				OR = {
+					is_npe_supported_culture = yes
+					has_cultural_pillar = language_ethiopic
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						this = culture:agaw
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Ethiopian
@@ -7256,10 +7928,84 @@ FullNameNickNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_somalian
+				OR = {
+					has_cultural_pillar = heritage_somalian
+					trigger_if = {
+						limit = {
+							OR = {
+								exists = global_var:CE_is_loaded
+								exists = global_var:BAP_is_loaded
+							}
+						}
+						has_name_list = name_list_sidama
+					}
+				}
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Somali
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+                    has_cultural_pillar = language_mon
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_mon
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_MonKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+                trigger_if = {
+                    limit = {
+                        exists = global_var:CE_is_loaded
+                    }
+					OR = {
+						has_cultural_pillar = language_burmese
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+                }
+				trigger_else = {
+					has_cultural_pillar = language_burmese
+					has_name_list = name_list_burmese
+				}
+			}
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_spouse = {
+					even_if_dead = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_BurmeseKing
+	}
+	text = {
+		trigger = {
+			culture = {
+				is_npe_supported_culture = yes
+				has_cultural_pillar = heritage_burman
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Burmese
 	}
 	text = {
 		trigger = {
@@ -7274,6 +8020,23 @@ FullNameNickNoTooltip = {
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_ArabicA
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_scythian
+				has_name_list = name_list_saka
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Khotanese
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = heritage_tocharian
+			}
+		}
+		localization_key = Full_Name_No_Tooltip_Tocharian
 	}
 	text = {
 		trigger = {

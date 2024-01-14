@@ -1,0 +1,93 @@
+﻿get_regnal_style_burmese = {
+    picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	major = yes
+    desc = get_regnal_style_burmese_desc
+    selection_tooltip = get_regnal_style_burmese_tooltip
+
+    is_shown = {
+		culture = {
+		is_npe_supported_culture = yes
+			OR = {
+				has_cultural_pillar = language_burmese
+				trigger_if = {
+					limit = {
+						exists = global_var:CE_is_loaded
+					}
+					OR = {
+						has_cultural_pillar = language_mon
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+				}
+			}
+		}
+        is_independent_ruler = yes
+        highest_held_title_tier >= tier_kingdom
+		NOT = {
+			has_character_flag = has_regnal_style
+		}
+    }
+
+    effect = {
+        trigger_event = {
+            id = npeburmesereg.001
+            days = -1
+        }
+        custom_description = {
+            text = get_regnal_style_burmese_trigger
+        }
+    }
+
+    ai_will_do = {
+        base = 80
+    }
+
+    ai_goal = yes
+}
+get_regnal_name_burmese = {
+    picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	major = yes
+    desc = get_regnal_name_burmese_desc
+    selection_tooltip = get_regnal_name_burmese_tooltip
+
+    is_shown = {
+		culture = {
+		is_npe_supported_culture = yes
+			OR = {
+				has_cultural_pillar = language_burmese
+				trigger_if = {
+					limit = {
+						exists = global_var:CE_is_loaded
+					}
+					OR = {
+						has_cultural_pillar = language_mon
+						has_cultural_pillar = language_pyu
+						has_cultural_pillar = language_meitei
+					}
+				}
+			}
+		}
+
+        is_independent_ruler = yes
+        highest_held_title_tier >= tier_duchy
+		NOT = {
+			has_character_flag = burmese_regnal_assigned
+		}
+    }
+
+    effect = {
+        trigger_event = {
+            id = npeburmesereg.002
+            days = -1
+        }
+        custom_description = {
+            text = get_regnal_name_burmese_trigger
+        }
+    }
+
+    ai_will_do = {
+        base = 80
+    }
+
+    ai_goal = yes
+}

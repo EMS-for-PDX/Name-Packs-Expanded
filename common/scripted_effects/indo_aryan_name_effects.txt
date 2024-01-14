@@ -1,5 +1,4 @@
-﻿#Storage
-indo_aryan_male_name_effect = {
+﻿indo_aryan_male_name_effect = {
 	save_scope_as = thechar
 	if = {
 		limit = {
@@ -788,6 +787,9 @@ candra_male_name_effect = {
 					change_first_name = Prithvicandra
 				}
 				1 = {
+					change_first_name = Punyacandra
+				}
+				1 = {
 					change_first_name = Suvarnacandra
 				}
 				1 = {
@@ -1356,6 +1358,9 @@ deva_male_name_effect = {
 						1 = {
 							change_first_name = Buddhadeva
 						}
+						1 = {
+							change_first_name = Sanghadeva
+						}
 					}
 				}
                 0 = {
@@ -1446,6 +1451,12 @@ deva_male_name_effect = {
                 }
                 1 = {
                     change_first_name = Stambhadeva
+                }
+                1 = {
+                    change_first_name = Shiladeva
+                }
+                1 = {
+                    change_first_name = Suvarnadeva
                 }
             }
         }
@@ -1685,6 +1696,9 @@ gupta_male_name_effect = {
                     change_first_name = Jivitagupta
                 }
                 1 = {
+                    change_first_name = Moksagupta
+                }
+                1 = {
                     change_first_name = Jnanagupta
                 }
                 1 = {
@@ -1695,6 +1709,9 @@ gupta_male_name_effect = {
                 }
                 1 = {
                     change_first_name = Shubhakaragupta
+                }
+                1 = {
+                    change_first_name = Upagupta
                 }
             }
         }
@@ -2617,6 +2634,9 @@ sena_male_name_effect = {
                     change_first_name = Prithvisena
                 }
                 1 = {
+                    change_first_name = Punyasena
+                }
+                1 = {
                     change_first_name = Ratnasena
                 }
                 1 = {
@@ -2649,7 +2669,13 @@ sena_male_name_effect = {
                     change_first_name = Banasena
                 }
                 1 = {
+                    change_first_name = Amritasena
+                }
+                1 = {
                     change_first_name = Daharasena
+                }
+                1 = {
+                    change_first_name = Jnanasena
                 }
                 1 = {
                     change_first_name = Divakarasena
@@ -4205,6 +4231,9 @@ varma_male_name_effect = {
                     change_first_name = Madhavavarma
                 }
                 1 = {
+                    change_first_name = Dharmavarma
+                }
+                1 = {
                     change_first_name = Jatavarma
                 }
                 1 = {
@@ -4243,6 +4272,9 @@ varma_male_name_effect = {
             random_list = {
                 1 = {
                     change_first_name = Ahivarma
+                }
+                1 = {
+                    change_first_name = Aryavarma
                 }
                 1 = {
                     change_first_name = Dayitavarma
@@ -5232,7 +5264,7 @@ regnal_male_indo_aryan_name_effect = {
 							has_religion = religion:jainism_religion
 							has_religion = religion:buddhism_religion
 						}
-						add = 2
+						add = 5
 					}
 					random_list = {
 						1 = {
@@ -5295,7 +5327,7 @@ regnal_male_indo_aryan_name_effect = {
 				0 = {
 					modifier = {
 						has_religion = religion:buddhism_religion
-						add = 9
+						add = 11
 					}
 					random_list = {
 						1 = {
@@ -5327,6 +5359,12 @@ regnal_male_indo_aryan_name_effect = {
 						}
 						1 = {
 							change_first_name = Buddhagupta
+						}
+						1 = {
+							change_first_name = Upananda
+						}
+						1 = {
+							change_first_name = Sudatta
 						}
 					}
 				}
@@ -6789,6 +6827,17 @@ regnal_male_indo_aryan_name_effect = {
 							}
 						}
 						1 = {
+							change_first_name = Sanghadeva
+							if = {
+								limit = {
+									exists = dynasty
+								}
+								dynasty = {
+									add_to_variable_list = { name = deva_removal target = scope:thechar }
+								}
+							}
+						}
+						1 = {
 							change_first_name = Bodhisena
 						}
 						1 = {
@@ -7190,6 +7239,9 @@ regnal_male_indo_aryan_name_effect = {
 					change_first_name = Suraditya
 				}
 				1 = {
+					change_first_name = Sumitra
+				}
+				1 = {
 					change_first_name = Vajraditya
 				}
 				1 = {
@@ -7212,6 +7264,9 @@ regnal_male_indo_aryan_name_effect = {
 				}
 				1 = {
 					change_first_name = Prithvicandra
+				}
+				1 = {
+					change_first_name = Punyacandra
 				}
 				1 = {
 					change_first_name = Suvarnacandra
@@ -7584,6 +7639,9 @@ regnal_male_indo_aryan_name_effect = {
 				1 = {
 					change_first_name = Prithvisena
 				}
+                1 = {
+                    change_first_name = Punyasena
+                }
 				1 = {
 					change_first_name = Ratnasena
 				}
@@ -7632,6 +7690,9 @@ regnal_male_indo_aryan_name_effect = {
 				1 = {
 					change_first_name = Ratnavardhana
 				}
+                1 = {
+                    change_first_name = Dharmavarma
+                }
 				1 = {
 					change_first_name = Jatavarma
 				}
@@ -7667,6 +7728,12 @@ regnal_male_indo_aryan_name_effect = {
 				}
 				1 = {
 					change_first_name = Trailokyavarma
+				}
+				1 = {
+					change_first_name = Punyadatta
+				}
+				1 = {
+					change_first_name = Shridatta
 				}
 			}
 		}
@@ -7729,9 +7796,19 @@ regnal_male_indo_aryan_name_effect = {
 							has_religion = religion:buddhism_religion
 							has_religion = religion:jainism_religion
 						}
-						add = 1
+						add = 3
 					}
-					change_first_name = Keshavarudra
+					random_list = {
+						1 = {
+							change_first_name = Upananda
+						}
+						1 = {
+							change_first_name = Keshavarudra
+						}
+						1 = {
+							change_first_name = Sudatta
+						}
+					}
 				}
 				0 = {
 					modifier = {
@@ -7963,9 +8040,34 @@ regnal_male_indo_aryan_name_effect = {
 						}
 					}
 				}
+                1 = {
+                    change_first_name = Shiladeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
+                }
+                1 = {
+                    change_first_name = Suvarnadeva
+					if = {
+						limit = {
+							exists = dynasty
+						}
+						dynasty = {
+							add_to_variable_list = { name = deva_removal target = scope:thechar }
+						}
+					}
+                }
 				1 = {
 					change_first_name = Jivitagupta
 				}
+                1 = {
+                    change_first_name = Moksagupta
+                }
 				1 = {
 					change_first_name = Jnanagupta
 				}
@@ -7977,6 +8079,9 @@ regnal_male_indo_aryan_name_effect = {
 				}
 				1 = {
 					change_first_name = Shubhakaragupta
+				}
+				1 = {
+					change_first_name = Upagupta
 				}
 				1 = {
 					change_first_name = Tathagatagupta
@@ -8029,9 +8134,15 @@ regnal_male_indo_aryan_name_effect = {
 				1 = {
 					change_first_name = Banasena
 				}
+                1 = {
+                    change_first_name = Amritasena
+                }
 				1 = {
 					change_first_name = Daharasena
 				}
+                1 = {
+                    change_first_name = Jnanasena
+                }
 				1 = {
 					change_first_name = Divakarasena
 				}
@@ -8072,6 +8183,9 @@ regnal_male_indo_aryan_name_effect = {
 					change_first_name = Ahivarma
 				}
 				1 = {
+					change_first_name = Aryavarma
+				}
+				1 = {
 					change_first_name = Dayitavarma
 				}
 				1 = {
@@ -8085,6 +8199,27 @@ regnal_male_indo_aryan_name_effect = {
 				}
 				1 = {
 					change_first_name = Vindhyavarma
+				}
+				1 = {
+					change_first_name = Ajatashastru
+				}
+				1 = {
+					change_first_name = Aryaghosa
+				}
+				1 = {
+					change_first_name = Aryarakshita
+				}
+				1 = {
+					change_first_name = Punyarakshita
+				}	
+				1 = {
+					change_first_name = Sudharma
+				}	
+				1 = {
+					change_first_name = Vidyadatta
+				}
+				1 = {
+					change_first_name = Vimaladatta
 				}
 			}
 		}
@@ -8742,6 +8877,12 @@ short_male_indo_aryan_name_effect = {
 				1 = {
 					change_first_name = Vishruta
 				}
+				1 = {
+					change_first_name = Shila
+				}
+				1 = {
+					change_first_name = Vishruta
+				}
 			}
 		}
 	}
@@ -8837,6 +8978,9 @@ indo_aryan_female_name_effect = {
 				}
 				1 = {
 					change_first_name = Anantaa
+				}
+				1 = {
+					change_first_name = Anandaa
 				}
 				1 = {
 					change_first_name = Anupama
@@ -9270,6 +9414,9 @@ indo_aryan_female_name_effect = {
 				}
 				1 = {
 					change_first_name = Amrita
+				}
+				1 = {
+					change_first_name = Mallika
 				}
 				1 = {
 					change_first_name = Amritaprabha
@@ -9781,6 +9928,9 @@ indo_aryan_female_name_effect = {
 					change_first_name = Mahimaa
 				}
 				1 = {
+					change_first_name = Shantaa
+				}
+				1 = {
 					change_first_name = Shrimitra
 				}
 				1 = {
@@ -9829,6 +9979,9 @@ indo_aryan_female_name_effect = {
 					change_first_name = Suryamati
 				}
 				1 = {
+					change_first_name = Suryaprabhaa
+				}
+				1 = {
 					change_first_name = Suyasha
 				}
 				1 = {
@@ -9859,7 +10012,7 @@ indo_aryan_female_name_effect = {
 					change_first_name = Udayamati
 				}
 				1 = {
-					change_first_name = Upagupta
+					change_first_name = Upaguptaa
 				}
 				1 = {
 					change_first_name = Vajrinidevi
@@ -9898,6 +10051,9 @@ indo_aryan_female_name_effect = {
 				}
 				1 = {
 					change_first_name = Vilasa
+				}
+				1 = {
+					change_first_name = Vimalaprabha
 				}
 				1 = {
 					change_first_name = Vindurati

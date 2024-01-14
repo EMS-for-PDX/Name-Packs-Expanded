@@ -1,4 +1,4 @@
-﻿name_gen_effect = {
+name_gen_effect = {
 	if = {
 		limit = {
 			culture = {
@@ -413,7 +413,18 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_somali
+						OR = {
+							has_name_list = name_list_somali
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_harla
+							}
+						}
 					}
 					add = 1
 				}
@@ -819,7 +830,10 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_anglo_saxon
+						OR = {
+							has_name_list = name_list_anglo_saxon
+							has_name_list = name_list_old_saxon
+						}
 					}
 					add = 1
 				}
@@ -979,10 +993,28 @@
 			0 = {
 				modifier = {
 					culture = {
+						has_name_list = name_list_saka
+					}
+					add = 1
+				}
+				khotanese_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_tocharian
+					}
+					add = 1
+				}
+				tocharian_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1002,7 +1034,7 @@
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1022,7 +1054,7 @@
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1038,6 +1070,24 @@
 					add = 1
 				}
 				sogdian_default_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_mon
+					}
+					add = 1
+				}
+				mon_male_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_burmese
+					}
+					add = 1
+				}
+				burmese_male_name_effect = yes
 			}
 			0 = {
 				modifier = {
@@ -1166,8 +1216,11 @@
 							}
 						}
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -1189,8 +1242,13 @@
 							}
 						}
 					}
-					any_parent = {
-						is_ai = no
+					OR = {
+						any_parent = {
+							is_ai = no
+						}
+						this = {
+							is_ai = no
+						}
 					}
 					add = 1
 				}
@@ -1201,8 +1259,11 @@
 					culture = {
 						has_name_list = name_list_bulgarian
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -1215,8 +1276,13 @@
 					culture = {
 						has_name_list = name_list_bulgarian
 					}
-					any_parent = {
-						is_ai = no
+					OR = {
+						any_parent = {
+							is_ai = no
+						}
+						this = {
+							is_ai = no
+						}
 					}
 					add = 1
 				}
@@ -1230,8 +1296,11 @@
 							has_name_list = name_list_bosnian
 						}
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -1247,8 +1316,13 @@
 							has_name_list = name_list_bosnian
 						}
 					}
-					any_parent = {
-						is_ai = no
+					OR = {
+						any_parent = {
+							is_ai = no
+						}
+						this = {
+							is_ai = no
+						}
 					}
 					add = 1
 				}
@@ -1433,7 +1507,18 @@
 			0 = {
 				modifier = {
 					culture = {
-						has_name_list = name_list_somali
+						OR = {
+							has_name_list = name_list_somali
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_harla
+							}
+						}
 					}
 					add = 1
 				}
@@ -1806,10 +1891,28 @@
 			0 = {
 				modifier = {
 					culture = {
+						has_name_list = name_list_saka
+					}
+					add = 1
+				}
+				khotanese_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_tocharian
+					}
+					add = 1
+				}
+				tocharian_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1829,7 +1932,7 @@
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1849,7 +1952,7 @@
 						OR = {
 							has_name_list = name_list_khwarezmian
 							has_name_list = name_list_sogdian
-							has_name_list = name_list_saka
+							#has_name_list = name_list_saka
 							trigger_if = {
 								limit = {
 									exists = global_var:CE_is_loaded
@@ -1865,6 +1968,24 @@
 					add = 1
 				}
 				sogdian_fallback_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_mon
+					}
+					add = 1
+				}
+				mon_female_name_effect = yes
+			}
+			0 = {
+				modifier = {
+					culture = {
+						has_name_list = name_list_burmese
+					}
+					add = 1
+				}
+				burmese_female_name_effect = yes
 			}
 			0 = {
 				modifier = {
@@ -1993,8 +2114,11 @@
 							}
 						}
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -2016,8 +2140,13 @@
 							}
 						}
 					}
-					any_parent = {
-						is_ai = no
+					OR = {
+						any_parent = {
+							is_ai = no
+						}
+						this = {
+							is_ai = no
+						}
 					}
 					add = 1
 				}
@@ -2028,8 +2157,11 @@
 					culture = {
 						has_name_list = name_list_bulgarian
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -2042,8 +2174,13 @@
 					culture = {
 						has_name_list = name_list_bulgarian
 					}
-					any_parent = {
-						is_ai = no
+					OR = {
+						any_parent = {
+							is_ai = no
+						}
+						this = {
+							is_ai = no
+						}
 					}
 					add = 1
 				}
@@ -2057,8 +2194,11 @@
 							has_name_list = name_list_bosnian
 						}
 					}
-					NOT = {
+					NOR = {
 						any_parent = {
+							is_ai = no
+						}
+						this = {
 							is_ai = no
 						}
 					}
@@ -2074,8 +2214,13 @@
 							has_name_list = name_list_bosnian
 						}
 					}
-					any_parent = {
-						is_ai = no
+					OR = {
+						any_parent = {
+							is_ai = no
+						}
+						this = {
+							is_ai = no
+						}
 					}
 					add = 1
 				}
