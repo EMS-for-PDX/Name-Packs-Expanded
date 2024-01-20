@@ -20,7 +20,6 @@ genghis_khan_character_template = { # (history database char id 125501)
 	trait = athletic
 	random_traits = no
 	after_creation = {
-		add_to_global_variable_list = { name = name_pack_support_global target = this }
 		if = {
 			limit = { has_dlc = tours_and_tournaments }
 			add_trait = tourney_participant
@@ -65,9 +64,6 @@ borte_character_template = { # (history database char id 172004)
 	intrigue = 12
 	stewardship = 10
 	random_traits = no
-	after_creation = {
-		add_to_global_variable_list = { name = name_pack_support_global target = this }
-	}
 }
 
 jochi_character_template = {  # (history database char id 125502)
@@ -84,7 +80,6 @@ jochi_character_template = {  # (history database char id 125502)
 	random_traits = no
 	prowess = 20
 	after_creation = {
-		add_to_global_variable_list = { name = name_pack_support_global target = this }
 		if = {
 			limit = { has_dlc = tours_and_tournaments }
 			add_trait = tourney_participant
@@ -119,9 +114,6 @@ tolui_character_template = { # (history database char id 125520)
 	trait = rowdy
 	random_traits = no
 	prowess = 20
-	after_creation = {
-		add_to_global_variable_list = { name = name_pack_support_global target = this }
-	}
 }
 
 chagatai_character_template = { # (history database char id 93062)
@@ -137,7 +129,6 @@ chagatai_character_template = { # (history database char id 93062)
 	random_traits = no
 	prowess = 20
 	after_creation = {
-		add_to_global_variable_list = { name = name_pack_support_global target = this }
 		if = {
 			limit = { has_dlc = tours_and_tournaments }
 			add_trait = tourney_participant
@@ -172,9 +163,6 @@ ogodei_character_template = { # (history database char id 172005)
 	intrigue = 10
 	stewardship = 16
 	prowess = 20
-	after_creation = {
-		add_to_global_variable_list = { name = name_pack_support_global target = this }
-	}
 }
 
 altun_begi_character_template = { # (history database char id 217227)
@@ -185,9 +173,6 @@ altun_begi_character_template = { # (history database char id 217227)
 	culture = culture:mongol
 	trait = curious
 	random_traits = no
-	after_creation = {
-		add_to_global_variable_list = { name = name_pack_support_global target = this }
-	}
 }
 
 
@@ -213,7 +198,6 @@ subutai_character_template = { # (history database char id 34850
 	trait = loyal
 	random_traits = no
 	after_creation = {
-		add_to_global_variable_list = { name = name_pack_support_global target = this }
 		if = {
 			limit = { has_dlc = tours_and_tournaments }
 			add_trait = tourney_participant

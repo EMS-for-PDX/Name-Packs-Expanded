@@ -125,11 +125,8 @@ CharacterHouseNickCheck = {
 			NOT = {
 				root = scope:good_lad
 			}
-			dynasty = {
-				any_in_list = {
-					variable = name_pack_support_dynasty
-					this = scope:good_lad
-				}
+			house.var:name_founder.culture = {
+				is_npe_supported_culture = yes
 			}
 		}
 		localization_key = Supported_House

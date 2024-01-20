@@ -1,16 +1,4 @@
 ﻿anglo_saxon_male_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		40 = {
 			random_list = {
@@ -1035,18 +1023,6 @@
 	}
 }
 anglo_saxon_female_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		40 = {
 			random_list = {
@@ -1513,7 +1489,7 @@ anglo_saxon_female_name_effect = {
 	}
 }
 english_male_name_effect = {
-	save_scope_as = thechar
+	
 	random_list = {
 		0 = {
 			modifier = {
@@ -1528,36 +1504,6 @@ english_male_name_effect = {
 			}
 			father.father = {
 				save_scope_as = the_guy
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
 			}
 			change_first_name = { template_character = scope:the_guy }
 			father = {
@@ -1585,36 +1531,6 @@ english_male_name_effect = {
 			father = {
 				save_scope_as = the_guy
 			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
 			change_first_name = { template_character = scope:the_guy }
 			father = {
 				add_character_flag = father_name
@@ -1641,36 +1557,6 @@ english_male_name_effect = {
 						is_male = yes
 					}
 					save_scope_as = the_guy
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
 				}
 			}
 			change_first_name = { template_character = scope:the_guy }
@@ -1701,67 +1587,15 @@ english_male_name_effect = {
 					save_scope_as = the_guy
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
 			change_first_name = { template_character = scope:the_guy }
 			mother = {
 				add_character_flag = brother_name
 			}
 		}
 		20 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			change_first_name = William
 		}
 		30 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1784,17 +1618,6 @@ english_male_name_effect = {
 			}
 		}
 		20 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1821,17 +1644,6 @@ english_male_name_effect = {
 			}
 		}
 		15 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -1928,17 +1740,6 @@ english_male_name_effect = {
 			}
 		}
 		10 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2063,17 +1864,6 @@ english_male_name_effect = {
 			}
 		}
 		5 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2230,7 +2020,7 @@ english_male_name_effect = {
 	}
 }
 english_female_name_effect = {
-	save_scope_as = thechar
+	
 	random_list = {
 		0 = {
 			modifier = {
@@ -2245,36 +2035,6 @@ english_female_name_effect = {
 			}
 			mother.mother = {
 				save_scope_as = the_lady
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_lady = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_lady
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_lady
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
 			}
 			change_first_name = { template_character = scope:the_lady }
 			mother = {
@@ -2302,36 +2062,6 @@ english_female_name_effect = {
 			mother = {
 				save_scope_as = the_lady
 			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_lady = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_lady
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_lady
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
 			change_first_name = { template_character = scope:the_lady }
 			mother = {
 				add_character_flag = mother_name
@@ -2358,36 +2088,6 @@ english_female_name_effect = {
 						is_male = no
 					}
 					save_scope_as = the_lady
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_lady = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_lady
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_lady
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
 				}
 			}
 			change_first_name = { template_character = scope:the_lady }
@@ -2418,53 +2118,12 @@ english_female_name_effect = {
 					save_scope_as = the_lady
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_lady = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_lady
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_lady
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
 			change_first_name = { template_character = scope:the_lady }
 			mother = {
 				add_character_flag = sister_name
 			}
 		}
 		35 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				1 = {
 					change_first_name = Alice
@@ -2475,17 +2134,6 @@ english_female_name_effect = {
 			}
 		}
 		25 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2529,17 +2177,6 @@ english_female_name_effect = {
 			}
 		}
 		20 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2649,17 +2286,6 @@ english_female_name_effect = {
 			}
 		}
 		15 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2745,17 +2371,6 @@ english_female_name_effect = {
 			}
 		}
 		5 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -2836,7 +2451,7 @@ english_female_name_effect = {
 	}
 }
 scots_male_name_effect = {
-	save_scope_as = thechar
+	
 	random_list = {
 		0 = {
 			modifier = {
@@ -2851,36 +2466,6 @@ scots_male_name_effect = {
 			}
 			father.father = {
 				save_scope_as = the_guy
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
 			}
 			change_first_name = { template_character = scope:the_guy }
 			father = {
@@ -2908,36 +2493,6 @@ scots_male_name_effect = {
 			father = {
 				save_scope_as = the_guy
 			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
 			change_first_name = { template_character = scope:the_guy }
 			father = {
 				add_character_flag = father_name
@@ -2964,36 +2519,6 @@ scots_male_name_effect = {
 						is_male = yes
 					}
 					save_scope_as = the_guy
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
 				}
 			}
 			change_first_name = { template_character = scope:the_guy }
@@ -3024,53 +2549,12 @@ scots_male_name_effect = {
 					save_scope_as = the_guy
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
 			change_first_name = { template_character = scope:the_guy }
 			mother = {
 				add_character_flag = brother_name
 			}
 		}
 		0 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			modifier = {
 				OR = {
 					has_religion = religion:christianity_religion
@@ -3081,17 +2565,6 @@ scots_male_name_effect = {
 			change_first_name = John
 		}
 		30 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3112,17 +2585,6 @@ scots_male_name_effect = {
 			}
 		}
 		25 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3156,17 +2618,6 @@ scots_male_name_effect = {
 			}
 		}
 		15 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list ={
 				0 = {
 					modifier = {
@@ -3227,17 +2678,6 @@ scots_male_name_effect = {
 			}
 		}
 		10 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3335,17 +2775,6 @@ scots_male_name_effect = {
 			}
 		}
 		5 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				0 = {
 					modifier = {
@@ -3405,7 +2834,7 @@ scots_male_name_effect = {
 	}
 }
 scots_female_name_effect = {
-	save_scope_as = thechar
+	
 	random_list = {
 		0 = {
 			modifier = {
@@ -3420,36 +2849,6 @@ scots_female_name_effect = {
 			}
 			mother.mother = {
 				save_scope_as = the_lady
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_lady = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_lady
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_lady
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
 			}
 			change_first_name = { template_character = scope:the_lady }
 			mother = {
@@ -3476,36 +2875,6 @@ scots_female_name_effect = {
 			}
 			mother = {
 				save_scope_as = the_lady
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_lady = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_lady
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_lady
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
 			}
 			change_first_name = { template_character = scope:the_lady }
 			mother = {
@@ -3535,36 +2904,6 @@ scots_female_name_effect = {
 					save_scope_as = the_lady
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_lady = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_lady
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_lady
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
 			change_first_name = { template_character = scope:the_lady }
 			father = {
 				add_character_flag = sister_name
@@ -3593,53 +2932,12 @@ scots_female_name_effect = {
 					save_scope_as = the_lady
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_lady = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_lady
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_lady
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
 			change_first_name = { template_character = scope:the_lady }
 			mother = {
 				add_character_flag = sister_name
 			}
 		}
 		35 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {		
 				0 = {
 					modifier = {
@@ -3664,17 +2962,6 @@ scots_female_name_effect = {
 			}
 		}
 		25 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {		
 				0 = {
 					modifier = {
@@ -3715,17 +3002,6 @@ scots_female_name_effect = {
 			}
 		}
 		20 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {		
 				0 = {
 					modifier = {
@@ -3766,17 +3042,6 @@ scots_female_name_effect = {
 			}
 		}
 		15 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {		
 				0 = {
 					modifier = {
@@ -3826,17 +3091,6 @@ scots_female_name_effect = {
 			}
 		}
 		5 = {
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
 			random_list = {
 				1 = {
 					change_first_name = Athelreda

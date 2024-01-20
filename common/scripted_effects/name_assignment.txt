@@ -71,9 +71,6 @@ name_gen_effect = {
 				change_first_name = Louis
 				add_character_flag = this_is_louis
 				add_character_flag = living_duo
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
 				father = {
 					add_character_flag = first_born
 				}
@@ -97,9 +94,6 @@ name_gen_effect = {
 				change_first_name = Philip
 				add_character_flag = this_is_phillipe
 				add_character_flag = living_duo
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
 				father = {
 					add_character_flag = first_born
 				}
@@ -121,9 +115,7 @@ name_gen_effect = {
 				change_first_name = Philip
 				add_character_flag = this_is_phillipe
 				add_character_flag = living_duo
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
+				
 				father = {
 					add_character_flag = second_born
 				}
@@ -145,9 +137,7 @@ name_gen_effect = {
 				change_first_name = Louis
 				add_character_flag = this_is_louis
 				add_character_flag = living_duo
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
+				
 				father = {
 					add_character_flag = second_born
 				}
@@ -170,9 +160,7 @@ name_gen_effect = {
 				change_first_name = Louis
 				add_character_flag = this_is_louis
 				add_character_flag = living_duo
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
+				
 				father = {
 					add_character_flag = first_born
 				}
@@ -195,9 +183,7 @@ name_gen_effect = {
 				change_first_name = Philip
 				add_character_flag = this_is_phillipe
 				add_character_flag = living_duo
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
+				
 				father = {
 					add_character_flag = second_born
 				}
@@ -218,9 +204,7 @@ name_gen_effect = {
 					add = 1000
 				}
 				change_first_name = Charles
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
+				
 				father = {
 					add_character_flag = third_born
 				}
@@ -241,9 +225,7 @@ name_gen_effect = {
 					add = 1000
 				}
 				change_first_name = Robert
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
+				
 				father = {
 					add_character_flag = forth_born
 				}
@@ -260,9 +242,7 @@ name_gen_effect = {
 					add = 1000
 				}
 				change_first_name = Ermengaud
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
+				
 				father = {
 					add_character_flag = u_got_ermengolled
 				}
@@ -278,9 +258,7 @@ name_gen_effect = {
 					add = 1000
 				}
 				change_first_name = Odovacer
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
-				}
+				
 				father = {
 					add_character_flag = u_got_otakard
 				}
@@ -2226,21 +2204,6 @@ name_gen_effect = {
 				}
 				serbian_player_female_name_effect = yes
 			}
-		}
-	}
-}
-remove_name_gen = {
-	if = {
-		limit = {
-			dynasty = {
-				any_in_list = {
-					variable = name_pack_support_dynasty
-					this = root
-				}
-			}
-		}
-		dynasty = {
-			remove_list_variable = { name = name_pack_support_dynasty target = root }
 		}
 	}
 }

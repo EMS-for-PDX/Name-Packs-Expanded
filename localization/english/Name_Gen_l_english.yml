@@ -4,8 +4,6 @@ Gui_blank_After: ""
 Gui_blank_Before: ""
 
 #Given Names
-Supported_Name: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
-Nonsupported_Name: "[ROOT.Char.GetFirstNameNoTooltip]"
 SGUI_Supported_Name: "[Localize(Concatenate(CHARACTER.GetFirstNameNoTooltip,CHARACTER.Custom('CharacterCulture')))]"
 SGUI_Nonsupported_Name: "[CHARACTER.GetFirstNameNoTooltip]"
 
@@ -55,9 +53,9 @@ Supported_Spouse_House: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char
 Supported_Spouse_House_After: " [Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetPrimarySpouse.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, ROOT.Char.Custom('CharacterCulture')), '_house'), ROOT.Char.Custom('CharacterGender')))]"
 Supported_Spouse_House_Before: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetPrimarySpouse.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, ROOT.Char.Custom('CharacterCulture')), '_house'), ROOT.Char.Custom('CharacterGender')))] "
 
-Supported_Spouse_House_DEAD: "[GetScriptedGui('scripted_gui_grab_a_spouse').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')]"
-Supported_Spouse_House_DEAD_After: " [GetScriptedGui('scripted_gui_grab_a_spouse').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')]"
-Supported_Spouse_House_DEAD_Before: "[GetScriptedGui('scripted_gui_grab_a_spouse').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][ROOT.Char.Custom('CharacterNameCheck')] "
+Supported_Spouse_House_DEAD: "[GetScriptedGui('scripted_gui_grab_a_spouse').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
+Supported_Spouse_House_DEAD_After: " [GetScriptedGui('scripted_gui_grab_a_spouse').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
+Supported_Spouse_House_DEAD_Before: "[GetScriptedGui('scripted_gui_grab_a_spouse').ExecuteTooltip(GuiScope.SetRoot(ROOT.Char.MakeScope).End)][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))] "
 
 Spousal_House_Name: "[Localize(Concatenate(Concatenate(Concatenate(TARGET_CHARACTER.GetHouse.MakeScope.Var('name_founder').Char.GetFirstNameNoTooltip, CHARACTER.Custom('CharacterCulture')), '_house'), CHARACTER.Custom('CharacterGender')))]"
 
@@ -132,17 +130,17 @@ Title_Tier_Name_Default: "[ROOT.Char.GetTitleTierName]"
 Title_Tier_Name_Possessive_Default: "[ROOT.Char.GetTitleTierNamePossessive]"
 
 #NPE General
-First_Name_Generic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
-First_Name_No_Tooltip_Generic: "[ROOT.Char.Custom('CharacterNameCheck')]"
-First_Name_Possessive_Generic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
-First_Name_Possessive_No_Tooltip_Generic: "[ROOT.Char.Custom('CharacterNameCheck')]'s"
+First_Name_Generic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]#!#!#!"
+First_Name_No_Tooltip_Generic: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
+First_Name_Possessive_Generic: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]'s#!#!#!"
+First_Name_Possessive_No_Tooltip_Generic: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]'s"
 
-Full_Name_Name_Tier_Pat_No_Nick: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!#!"
-Full_Name_Name_Tier_Pat_No_Nick_No_Tooltip: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]"
-Full_Name_Name_Tier_Pat_No_Nick_Possessive: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]'s#!#!#!"
-Full_Name_Name_Tier_Pat_No_Nick_Possessive_No_Tooltip: "[ROOT.Char.Custom('CharacterNameCheck')][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]'s"
+Full_Name_Name_Tier_Pat_No_Nick: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]#!#!#!"
+Full_Name_Name_Tier_Pat_No_Nick_No_Tooltip: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]"
+Full_Name_Name_Tier_Pat_No_Nick_Possessive: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]'s#!#!#!"
+Full_Name_Name_Tier_Pat_No_Nick_Possessive_No_Tooltip: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')][ROOT.Char.Custom('CharacterPatCheckAfter')]'s"
 
-Full_Name_House_Tier_Name_No_Nick: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]#!#!#!"
-Full_Name_House_Tier_Name_No_Nick_No_Tooltip: "[ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]"
-Full_Name_House_Tier_Name_No_Nick_Possessive: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s#!#!#!"
-Full_Name_House_Tier_Name_No_Nick_Possessive_No_Tooltip: "[ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('CharacterNameCheck')]'s"
+Full_Name_House_Tier_Name_No_Nick: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]#!#!#!"
+Full_Name_House_Tier_Name_No_Nick_No_Tooltip: "[ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
+Full_Name_House_Tier_Name_No_Nick_Possessive: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]'s#!#!#!"
+Full_Name_House_Tier_Name_No_Nick_Possessive_No_Tooltip: "[ROOT.Char.Custom('CharacterHouseCheckBefore')][ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]'s"

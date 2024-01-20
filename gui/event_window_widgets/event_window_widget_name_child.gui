@@ -92,42 +92,36 @@ vbox = {
 			visible = "[And( Not( Character.IsFemale ), Character.GetFather.IsValid )]"
 			text = "event_window_widget_name_child_after_father"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetFather.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('NPE_name_dad').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	
 		event_widget_name_child_option = {
 			visible = "[And( Character.IsFemale, Character.GetMother.IsValid )]"
 			text = "event_window_widget_name_child_after_mother"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetMother.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('NPE_name_mom').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	
 		event_widget_name_child_option = {
 			visible = "[And( Not( Character.IsFemale ), Character.GetFather.GetFather.IsValid )]"
 			text = "event_window_widget_name_child_after_fathers_father"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetFather.GetFather.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('NPE_name_granddad1').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	
 		event_widget_name_child_option = {
 			visible = "[And( Character.IsFemale, Character.GetFather.GetMother.IsValid )]"
 			text = "event_window_widget_name_child_after_fathers_mother"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetFather.GetMother.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('NPE_name_grandmom1').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	
 		event_widget_name_child_option = {
 			visible = "[And( Not( Character.IsFemale ), Character.GetMother.GetFather.IsValid )]"
 			text = "event_window_widget_name_child_after_mothers_father"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetMother.GetFather.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('NPE_name_granddad2').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 
 		event_widget_name_child_option = {
 			visible = "[And( Character.IsFemale, Character.GetMother.GetMother.IsValid )]"
 			text = "event_window_widget_name_child_after_mothers_mother"
 			onclick = "[EventWindowWidgetNameCharacter.SetCurrentNameCultural( Character.GetMother.GetMother.GetFirstNameBase )]"
-			onclick = "[GetScriptedGui('NPE_name_grandmom2').Execute(GuiScope.SetRoot(EventWindowWidgetNameCharacter.GetCharacter.MakeScope).End)]"
 		}
 	}
 

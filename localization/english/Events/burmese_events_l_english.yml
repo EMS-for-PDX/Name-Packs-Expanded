@@ -24,7 +24,7 @@ npeburmesereg.001.b: "Honor to [ROOT.Char.GetFaith.GoodGodNames]!"
 npeburmesereg.001.b.tt: "You will adopt this name as your own."
 
 npeburmesereg.002.t: "A Regnal Name"
-npeburmesereg.002.desc: "I am more than deserving of a [regnal_name|E] commensurate with my status as #high [ROOT.Char.Custom('CharacterTierCheck')]#!.\n\nNo longer shall I merely be [ROOT.Char.Custom('CharacterNameCheck')], I will be known as #high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.MakeScope.Var('regname_temp').GetFlagName,ROOT.Char.Custom('CharacterCulture')))]#!!"
+npeburmesereg.002.desc: "I am more than deserving of a [regnal_name|E] commensurate with my status as #high [ROOT.Char.Custom('CharacterTierCheck')]#!.\n\nNo longer shall I merely be [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))], I will be known as #high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.MakeScope.Var('regname_temp').GetFlagName,ROOT.Char.Custom('CharacterCulture')))]#!!"
 npeburmesereg.002.a: "No, no... Not good enough."
 npeburmesereg.002.a.tt: "Randomly select a new name."
 npeburmesereg.002.b: "Honor to [ROOT.Char.GetFaith.GoodGodNames]!"

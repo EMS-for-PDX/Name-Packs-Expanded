@@ -61,14 +61,6 @@
                 culture = {
                     is_npe_supported_culture = yes
                 }
-                scope:new_head = {
-                    dynasty = {
-                        any_in_list = {
-                            variable = name_pack_support_dynasty
-                            this = scope:new_head
-                        }
-                    }
-                }
             }
             set_global_variable = {
 				name = temp_head

@@ -1,5 +1,5 @@
 ﻿irish_male_ancestor_effect = {
-	save_scope_as = thechar
+	
 	if = {
         limit = {
             exists = father.father
@@ -12,36 +12,6 @@
         }
         father.father = {
             save_scope_as = the_guy
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_guy = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_guy
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_guy
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
         }
         change_first_name = { template_character = scope:the_guy }
         father = {
@@ -61,36 +31,6 @@
         mother.father = {
             save_scope_as = the_guy
         }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_guy = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_guy
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_guy
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
         change_first_name = { template_character = scope:the_guy }
         mother = {
             add_character_flag = mother_father_name
@@ -108,36 +48,6 @@
         }
         father = {
             save_scope_as = the_guy
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_guy = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_guy
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_guy
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
         }
         change_first_name = { template_character = scope:the_guy }
         father = {
@@ -177,36 +87,6 @@
                 save_scope_as = the_brother
             }
         }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_brother = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_brother
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_brother
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
         change_first_name = { template_character = scope:the_brother }
         father = {
             add_character_flag = brother_name
@@ -238,36 +118,6 @@
                 save_scope_as = the_brother
             }
         }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_brother = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_brother
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_brother
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
         change_first_name = { template_character = scope:the_brother }
         mother = {
             add_character_flag = brother_name
@@ -296,36 +146,6 @@
             }
             save_scope_as = the_ancestor
         }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_ancestor = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_ancestor
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_ancestor
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
         change_first_name = { template_character = scope:the_ancestor }
     }
     else = {
@@ -333,7 +153,7 @@
     }
 }
 irish_female_ancestor_effect = {
-	save_scope_as = thechar
+	
 	if = {
         limit = {
             exists = mother.mother
@@ -346,36 +166,6 @@ irish_female_ancestor_effect = {
         }
         mother.mother = {
             save_scope_as = the_lady
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_lady = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_lady
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_lady
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
         }
         change_first_name = { template_character = scope:the_lady }
         mother = {
@@ -395,36 +185,6 @@ irish_female_ancestor_effect = {
         father.mother = {
             save_scope_as = the_lady
         }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_lady = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_lady
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_lady
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
         change_first_name = { template_character = scope:the_lady }
         father = {
             add_character_flag = father_mother_name
@@ -442,36 +202,6 @@ irish_female_ancestor_effect = {
         }
         mother = {
             save_scope_as = the_lady
-        }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_lady = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_lady
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_lady
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
         }
         change_first_name = { template_character = scope:the_lady }
         mother = {
@@ -511,36 +241,6 @@ irish_female_ancestor_effect = {
                 save_scope_as = the_sister
             }
         }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_sister = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_sister
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_sister
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
         change_first_name = { template_character = scope:the_sister }
         mother = {
             add_character_flag = sister_name
@@ -572,36 +272,6 @@ irish_female_ancestor_effect = {
                 save_scope_as = the_sister
             }
         }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_sister = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_sister
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_sister
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
         change_first_name = { template_character = scope:the_sister }
         father = {
             add_character_flag = sister_name
@@ -630,36 +300,6 @@ irish_female_ancestor_effect = {
             }
             save_scope_as = the_ancestor
         }
-        if = {
-            limit = {
-                OR = {
-                    scope:the_ancestor = {
-                        exists = dynasty
-                        dynasty = {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = scope:the_ancestor
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = scope:the_ancestor
-                    }
-                }
-            }
-			if = {
-				limit = {
-					exists = dynasty
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-				}
-			}
-			else = {
-				add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-			}
-        }
         change_first_name = { template_character = scope:the_ancestor }
     }
     else = {
@@ -667,18 +307,8 @@ irish_female_ancestor_effect = {
     }
 }
 irish_male_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
+	
 	random_list = {
 		40 = {
 			random_list = {
@@ -2474,18 +2104,8 @@ irish_male_name_effect = {
 	}
 }
 irish_female_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
+	
 	random_list = {
 		25 = {
 			change_first_name = Mor
@@ -2862,19 +2482,9 @@ irish_female_name_effect = {
 	}
 }
 irish_bishop_name = {
-    save_scope_as = thechar
+    
 	add_character_flag = irish_monk_name
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
     random_list = {
         1 = {
             change_first_name = Torccan

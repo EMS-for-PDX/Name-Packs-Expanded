@@ -163,34 +163,10 @@ eldest_son_fix = {
 		}
 	}
 }
-random_yearly_everyone_pulse = {
-	on_actions = {
-		courtiers_action
-	}
-}
-courtiers_action = {
-	trigger = {
-		culture = {
-			is_npe_supported_culture = yes
-		}
-		save_temporary_scope_as = to_be_checked
-		is_lowborn = yes
-		NOT = {
-			any_in_global_list = {
-				variable = name_pack_support_global
-				this = scope:to_be_checked
-			}
-		}
-	}
-	effect = {
-		name_gen_effect = yes
-	}
-}
 courtier_effect = {
 	effect = {
 		every_living_character = {
 			limit = {
-				save_temporary_scope_as = thecourt
 				is_lowborn = yes
 				culture = {
 					is_npe_supported_culture = yes
@@ -199,10 +175,12 @@ courtier_effect = {
 					is_foreign_court_or_pool_guest = yes
 					is_courtier = yes
 				}
-				NOT = {
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:thecourt
+				NOR = {
+					primary_spouse ?= {
+						is_landed = yes
+					}
+					any_ancestor = {
+						is_landed = yes
 					}
 				}
 			}
@@ -228,12 +206,6 @@ courtier_effect = {
 				}
 				culture = {
 					is_npe_supported_culture = yes
-				}
-				NOT = {
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:thebarontemp
-					}
 				}
 			}
 			name_gen_effect = yes
@@ -279,12 +251,6 @@ courtier_effect = {
 				}
 				culture = {
 					is_npe_supported_culture = yes
-				}
-				NOT = {
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:themerctemp
-					}
 				}
 			}
 			name_gen_effect = yes

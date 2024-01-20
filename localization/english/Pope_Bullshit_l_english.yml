@@ -37,9 +37,9 @@ UI_Name_Possessive_Pope: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTE
 
 UI_Name_Possessive_No_Tooltip_Pope: "#high [Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),'_default'),ROOT.Char.Custom('CharacterReligion')))] [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,'_default'))]'s#!"
 
-SNAT_First_Pope: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!"
+SNAT_First_Pope: "#high [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]#!"
 
-SNAT_First_Last_Pope: "#high[ROOT.Char.Custom('CharacterNameCheck')]!"
+SNAT_First_Last_Pope: "#high[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]!"
 
 Title_As_Name_Pope: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),'_default'),ROOT.Char.Custom('CharacterReligion')))]#!#!#!#!"
 Title_As_Name_No_Tooltip_Pope: "#high [Localize(Concatenate(Concatenate(Concatenate(Concatenate(ROOT.Char.Custom('CharacterTier'),ROOT.Char.Custom('CharacterGender')),ROOT.Char.Custom('CharacterGov')),'_default'),ROOT.Char.Custom('CharacterReligion')))]#!"

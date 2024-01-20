@@ -90,8 +90,8 @@ UI_Name_No_Tooltip_MonKing: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')
 UI_Name_Possessive_MonKing: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!#!#!#!"
 UI_Name_Possessive_No_Tooltip_MonKing: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][Localize(Concatenate(ROOT.Char.Custom('BurmeseNameOrRegnal'), ROOT.Char.Custom('BurmeseCultureCheck')))]'s#!"
 
-SNAT_First_Burmese: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!"
-SNAT_First_Last_Burmese: "#high [ROOT.Char.Custom('CharacterNameCheck')]#!"
+SNAT_First_Burmese: "#high [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]#!"
+SNAT_First_Last_Burmese: "#high [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]#!"
 
 Title_As_Name_Burmese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheck')]#!#!#!#!"
 Title_As_Name_No_Tooltip_Burmese: "#high [ROOT.Char.Custom('CharacterTierCheck')]#!"
