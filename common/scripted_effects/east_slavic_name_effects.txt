@@ -21,6 +21,18 @@
 		}
 		0 = {
 			modifier = {
+				OR = {
+					culture = {
+						has_cultural_era_or_later = culture_era_late_medieval
+					}
+					has_government = republic_government
+					any_parent = {
+						OR = {
+							piety_level = 4
+							has_government = republic_government
+						}
+					}
+				}
 				has_religion = religion:christianity_religion
 				add = 25
 			}
@@ -68,17 +80,11 @@
 			}
 		}
 		0 = {
-			modifier = {
-				religion = {
-					is_in_family = rf_abrahamic
-				}
-				add = 30
-			}
 			random_list = {
 				0 = {
 					modifier = {
 						has_religion = religion:islam_religion
-						add = 1
+						add = 30
 					}
 					random_list = {
 						1 = {
@@ -112,8 +118,20 @@
 				}
 				0 = {
 					modifier = {
+						OR = {
+							culture = {
+								has_cultural_era_or_later = culture_era_late_medieval
+							}
+							has_government = republic_government
+							any_parent = {
+								OR = {
+									piety_level = 4
+									has_government = republic_government
+								}
+							}
+						}
 						has_religion = religion:christianity_religion
-						add = 1
+						add = 30
 					}
 					random_list = {
 						1 = {
@@ -154,7 +172,7 @@
 				0 = {
 					modifier = {
 						has_religion = religion:judaism_religion
-						add = 1
+						add = 30
 					}
 					random_list = {
 						1 = {
@@ -202,7 +220,7 @@
 				0 = {
 					modifier = {
 						has_religion = religion:christianity_religion
-						add = 19
+						add = 31
 					}
 					random_list = {
 						1 = {
@@ -261,6 +279,42 @@
 						}
 						1 = {
 							change_first_name = Zachary
+						}
+						1 = {
+							change_first_name = Alexios
+						}
+						1 = {
+							change_first_name = Andrew
+						}
+						1 = {
+							change_first_name = Basil
+						}
+						1 = {
+							change_first_name = Daniel
+						}
+						1 = {
+							change_first_name = Demetrios
+						}
+						1 = {
+							change_first_name = George
+						}
+						1 = {
+							change_first_name = Gregory
+						}
+						1 = {
+							change_first_name = Michael
+						}
+						1 = {
+							change_first_name = Romanus
+						}
+						1 = {
+							change_first_name = Simeon
+						}
+						1 = {
+							change_first_name = Theodore
+						}
+						1 = {
+							change_first_name = John
 						}
 					}
 				}

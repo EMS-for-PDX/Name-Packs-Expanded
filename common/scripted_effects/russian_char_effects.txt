@@ -1,36 +1,92 @@
 ﻿867_russian_char_effect = {
-	character:301254.house = {
-		set_variable = {
-			name = name_founder
-			value = character:npedrussian001
-		}
+#	character:301254.house = {
+#		set_variable = {
+#			name = name_founder
+#			value = character:npedrussian001
+#		}
+#	}
+#	character:302245.house = {
+#		set_variable = {
+#			name = name_founder
+#			value = character:npedrussian002 #Kriviches
+#		}
+#	}
+#	character:302200.house = {
+#		set_variable = {
+#			name = name_founder
+#			value = character:npedrussian003 #Dregoviches
+#		}
+#	}
+#	character:194145.house = {
+#		set_variable = {
+#			name = name_founder
+#			value = character:npedrussian004 #Vyatich
+#		}
+#	}
+#	character:194140.house = {
+#		set_variable = {
+#			name = name_founder
+#			value = character:npedrussian005 #Radimich
+#		}
+#	}
+	character:302148 = {
+		change_first_name = Ratimir
+		dynasty_effect_ne = yes
 	}
-	character:302245.house = {
-		set_variable = {
-			name = name_founder
-			value = character:npedrussian002 #Kriviches
-		}
+	character:302149 = {
+		change_first_name = Vecheslav
 	}
-	character:302200.house = {
-		set_variable = {
-			name = name_founder
-			value = character:npedrussian003 #Dregoviches
-		}
+	character:302150 = {
+		change_first_name = Domaslava
 	}
-	character:194145.house = {
-		set_variable = {
-			name = name_founder
-			value = character:npedrussian004 #Vyatich
-		}
+	character:302166 = {
+		change_first_name = Dobrogost
 	}
-	character:194140.house = {
-		set_variable = {
-			name = name_founder
-			value = character:npedrussian005 #Radimich
-		}
+	character:302167 = {
+		change_first_name = Tverdislav
+	}
+	character:302168 = {
+		change_first_name = Vtoroj
+	}
+	character:302169 = {
+		change_first_name = Belovolod
+	}
+	character:194142 = {
+		change_first_name = Svetoslav
+	}
+	character:194144 = {
+		change_first_name = Svyatosha
+	}
+	character:159721 = {
+		change_first_name = Zhiroslav
+	}
+	character:6860 = {
+		change_first_name = Zhirokh
+	}
+	character:160111 = {
+		change_first_name = Zhiznomir
+	}
+	character:160112 = {
+		change_first_name = Dobrynya
+	}
+	character:160113 = {
+		change_first_name = Mojslav
 	}
 	character:194141 = {
 		change_first_name = Vojislav
+	}
+	character:160089 = {
+		change_first_name = Milosh
+	}
+	character:160090 = {
+		change_first_name = Lubomir
+	}
+	character:302219 = {
+		change_first_name = Zhdan
+		dynasty_effect_ne = yes
+	}
+	character:302220 = {
+		change_first_name = Zhiznomir
 	}
 	character:160141 = {
 		change_first_name = Vnezd
@@ -93,12 +149,8 @@
 	character:194138 = {
 		change_first_name = Tvorimir
 	}
-	character:256043 = {
-		dynasty_effect_ne = yes
-	}
 	character:302196 = {
 		change_first_name = Bogdan
-		dynasty_effect_ne = yes
 	}
 	character:302197 = {
 		change_first_name = Cheglok
@@ -127,5 +179,226 @@
 	}
 	character:302144 = {
 		change_first_name = Sudimir
+	}
+}
+1066_russian_char_effect = {
+	character:40605.dynasty = { #Rurikids
+        add_to_variable_list = { name = dynasty_feudalclan target = character:602 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:608 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:612 }
+        add_to_variable_list = { name = dynasty_independent target = character:602 }
+        add_to_variable_list = { name = dynasty_independent target = character:608 }
+        add_to_variable_list = { name = dynasty_independent target = character:612 }
+	}
+	character:602 = {
+		change_first_name = Svetoslav
+	}
+	character:302207 = {
+		change_first_name = Gorislav
+	}
+	character:302160 = {
+		change_first_name = Demetrios
+	}
+	character:302191 = {
+		change_first_name = Godomil
+	}
+	character:302172 = {
+		change_first_name = Boguslav
+	}
+	character:606 = {
+		change_first_name = Helgi
+	}
+	character:610 = {
+		change_first_name = Svetopolk
+		give_nickname = nick_the_accursed
+	}
+	character:616 = {
+		change_first_name = Izyaslav
+	}
+	character:125019 = {
+		change_first_name = Svetoslav
+	}
+	character:624 = {
+		change_first_name = Bars
+	}
+	character:625 = {
+		change_first_name = Gudleifr
+	}
+	character:168530 = {
+		change_first_name = Sophia
+	}
+	character:13501 = {
+		change_first_name = Mary
+	}
+	character:644 = {
+		change_first_name = Eustace
+	}
+	character:638 = {
+		change_first_name = Yngvar
+	}
+	character:668 = {
+		change_first_name = David
+	}
+	character:9132 = {
+		change_first_name = Vecheslav
+	}
+	character:9134 = {
+		change_first_name = Bars
+	}
+	character:660 = {
+		change_first_name = Helgi
+	}
+	character:656 = {
+		change_first_name = David
+	}
+	character:658 = {
+		change_first_name = Romanus
+	}
+	character:161257 = {
+		change_first_name = Vysheslava
+	}
+	character:654 = {
+		change_first_name = Gudleifr
+	}
+	character:633 = {
+		change_first_name = Elizabeth
+	}
+	character:40600 = {
+		change_first_name = Eupraxia
+	}
+	character:652 = {
+		change_first_name = Svetopolk
+	}
+	character:9130 = {
+		change_first_name = Basil
+	}
+	character:642 = {
+		change_first_name = Bretislav
+	}
+	character:672 = {
+		change_first_name = Gudleifr
+	}
+	character:674 = {
+		change_first_name = Romanus
+	}
+	character:676 = {
+		change_first_name = David
+	}
+	character:682 = {
+		change_first_name = Svetoslav
+	}
+	character:680 = {
+		change_first_name = Ragnvald
+	}
+	character:90138 = {
+		change_first_name = Demetrios
+	}
+	character:20416 = {
+		change_first_name = Putyata
+		dynasty_effect_ne = yes
+	}
+	character:20420 = {
+		change_first_name = Zhirokh
+		dynasty_effect_ne = yes
+	}
+	character:20450 = {
+		change_first_name = Theodore
+		dynasty_effect_ne = yes
+	}
+	character:90148 = {
+		change_first_name = Arkadios
+		dynasty_effect_ne = yes
+	}
+	character:20870 = {
+		change_first_name = Abd-Allah
+		dynasty_effect_ne = yes
+	}
+	character:20454 = {
+		change_first_name = George
+		dynasty_effect_ne = yes
+	}
+	character:302257 = {
+		change_first_name = Vojislav
+		dynasty_effect_ne = yes
+	}
+	character:302195 = {
+		change_first_name = Raguilo
+		dynasty_effect_ne = yes
+	}
+	character:20458 = {
+		change_first_name = Gnevash
+		dynasty_effect_ne = yes
+	}
+	character:302208 = {
+		change_first_name = Domazhir
+		dynasty_effect_ne = yes
+	}
+	character:628 = {
+		change_first_name = Svetoslav
+	}
+	character:626 = {
+		change_first_name = Izyaslav
+	}
+	character:302417 = {
+		change_first_name = Bretislav
+		dynasty_effect_ne = yes
+	}
+	character:302419 = {
+		change_first_name = John
+	}
+	character:302420 = {
+		change_first_name = Daniel
+	}
+	character:302421 = {
+		change_first_name = George
+	}
+	character:302258 = {
+		change_first_name = Niketas
+	}
+	character:20449 = {
+		change_first_name = Bojan
+	}
+	character:302264 = {
+		change_first_name = Stephen
+		dynasty_effect_ne = yes
+	}
+	character:302265 = {
+		change_first_name = Elijah
+	}
+	character:302266 = {
+		change_first_name = Leon
+	}
+	character:90146 = {
+		change_first_name = Bojan
+		dynasty_effect_ne = yes
+	}
+	character:90147 = {
+		change_first_name = Bezson
+	}
+	character:302261 = {
+		change_first_name = George
+		dynasty_effect_ne = yes
+	}
+	character:90135 = {
+		dynasty_effect_ne = yes
+	}
+	character:302262 = {
+		change_first_name = Kosmas
+	}
+	character:302263 = {
+		change_first_name = Cyril
+	}
+	character:90136 = {
+		change_first_name = John
+	}
+	character:302181 = {
+		change_first_name = George
+		dynasty_effect_ne = yes
+	}
+	character:302182 = {
+		change_first_name = Paul
+	}
+	character:302183 = {
+		change_first_name = Vtoroj
 	}
 }
