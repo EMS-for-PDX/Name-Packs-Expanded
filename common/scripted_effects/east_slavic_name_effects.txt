@@ -1,235 +1,21 @@
 ﻿east_slavic_male_name_effect = {
 	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
 	random_list = {
 		0 = {
 			modifier = {
-				has_government = feudal_government
-				exists = father.father
-				NOT = {
-					has_trait = bastard
-					father = {
-						has_character_flag = father_father_name
-					}
-				}
-				add = 40 #freq
-			}
-			father.father = {
-				save_scope_as = the_guy
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
-			change_first_name = { template_character = scope:the_guy }
-			father = {
-				add_character_flag = father_father_name
-			}
-		}
-		0 = {
-			modifier = {
-				has_government = feudal_government
-				father ?= {
-					OR = {
-						has_character_flag = father_father_name
-						NOT = {
-							exists = father
-						}
-					}
-					NOT = {
-						has_character_flag = father_name
-					}
-				}
-				NOT = {
-					has_trait = bastard
-				}
-				add = 20 #common
-			}
-			father = {
-				save_scope_as = the_guy
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
-			change_first_name = { template_character = scope:the_guy }
-			father = {
-				add_character_flag = father_name
-			}
-		}
-		0 = {
-			modifier = {
-				has_government = feudal_government
-				father ?= {
-					any_sibling = {
-						is_male = yes
-					}
-					NOT = {
-						has_character_flag = brother_name
-					}
-				}
-				NOT = {
-					has_trait = bastard
-				}
-				add = 20 #uncommon /2
-			}
-			father = {
-				random_sibling = {
-					limit = {
-						is_male = yes
-					}
-					save_scope_as = the_guy
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
-			change_first_name = { template_character = scope:the_guy }
-			father = {
-				add_character_flag = brother_name
-			}
-		}
-		0 = {
-			modifier = {
-				has_government = feudal_government
-				mother ?= {
-					any_sibling = {
-						is_male = yes
-					}
-					NOT = {
-						has_character_flag = brother_name
-					}
-				}
-				NOT = {
-					has_trait = bastard
-				}
-				add = 10 #uncommon /2
-			}
-			mother = {
-				random_sibling = {
-					limit = {
-						is_male = yes
-					}
-					save_scope_as = the_guy
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						scope:the_guy = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_guy
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_guy
-						}
-					}
-				}
-				if = {
-					limit = {
-						exists = dynasty
-					}
-					dynasty = {
-						add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-					}
-				}
-				else = {
-					add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-				}
-			}
-			change_first_name = { template_character = scope:the_guy }
-			mother = {
-				add_character_flag = brother_name
-			}
-		}
-		0 = {
-			modifier = {
 				has_religion = religion:islam_religion
-				add = 25 #uncommon /2
+				add = 25
 			}
 			change_first_name = Muhammad
 		}
@@ -243,9 +29,12 @@
 		0 = {
 			modifier = {
 				has_religion = religion:islam_religion
-				add = 40 #uncommon /2
+				add = 40
 			}
 			random_list = {
+				1 = {
+					change_first_name = Abd-Allah
+				}
 				1 = {
 					change_first_name = Ahmad
 				}
@@ -253,13 +42,13 @@
 					change_first_name = Ali
 				}
 				1 = {
-					change_first_name = Abd-Allah
-				}
-				1 = {
 					change_first_name = Hasan
 				}
 				1 = {
 					change_first_name = Husayn
+				}
+				1 = {
+					change_first_name = John
 				}
 				1 = {
 					change_first_name = Musa
@@ -283,7 +72,7 @@
 				religion = {
 					is_in_family = rf_abrahamic
 				}
-				add = 30 #uncommon /2
+				add = 30
 			}
 			random_list = {
 				0 = {
@@ -293,9 +82,6 @@
 					}
 					random_list = {
 						1 = {
-							change_first_name = Job
-						}
-						1 = {
 							change_first_name = Ibrahim
 						}
 						1 = {
@@ -303,6 +89,9 @@
 						}
 						1 = {
 							change_first_name = Ishaq
+						}
+						1 = {
+							change_first_name = Job
 						}
 						1 = {
 							change_first_name = Khalid
@@ -334,19 +123,19 @@
 							change_first_name = Andrew
 						}
 						1 = {
+							change_first_name = Basil
+						}
+						1 = {
 							change_first_name = Daniel
 						}
 						1 = {
 							change_first_name = Demetrios
 						}
 						1 = {
-							change_first_name = Theodore
+							change_first_name = George
 						}
 						1 = {
 							change_first_name = Gregory
-						}
-						1 = {
-							change_first_name = George
 						}
 						1 = {
 							change_first_name = Michael
@@ -358,7 +147,7 @@
 							change_first_name = Simeon
 						}
 						1 = {
-							change_first_name = Basil
+							change_first_name = Theodore
 						}
 					}
 				}
@@ -372,13 +161,16 @@
 							change_first_name = Daniel
 						}
 						1 = {
+							change_first_name = Jude
+						}
+						1 = {
 							change_first_name = Simeon
 						}
 						1 = {
 							change_first_name = Solomon
 						}
 						1 = {
-							change_first_name = Jude
+							change_first_name = Abraham
 						}
 						1 = {
 							change_first_name = David
@@ -393,16 +185,13 @@
 							change_first_name = Jacob
 						}
 						1 = {
-							change_first_name = Abraham
+							change_first_name = Joseph
 						}
 						1 = {
 							change_first_name = Moses
 						}
 						1 = {
 							change_first_name = Samuel
-						}
-						1 = {
-							change_first_name = Joseph
 						}
 					}
 				}
@@ -417,25 +206,37 @@
 					}
 					random_list = {
 						1 = {
-							change_first_name = Athanasios
+							change_first_name = Alexander
 						}
 						1 = {
-							change_first_name = Alexander
+							change_first_name = Athanasios
 						}
 						1 = {
 							change_first_name = Bars
 						}
 						1 = {
-							change_first_name = Thomas
-						}
-						1 = {
-							change_first_name = Gabriel
+							change_first_name = Constantine
 						}
 						1 = {
 							change_first_name = Cyril
 						}
 						1 = {
-							change_first_name = Constantine
+							change_first_name = David
+						}
+						1 = {
+							change_first_name = Elijah
+						}
+						1 = {
+							change_first_name = Gabriel
+						}
+						1 = {
+							change_first_name = Isaac
+						}
+						1 = {
+							change_first_name = Isidore
+						}
+						1 = {
+							change_first_name = Jacob
 						}
 						1 = {
 							change_first_name = Kosmas
@@ -453,28 +254,13 @@
 							change_first_name = Paul
 						}
 						1 = {
-							change_first_name = Peter
-						}
-						1 = {
-							change_first_name = Isidore
-						}
-						1 = {
 							change_first_name = Stephen
 						}
 						1 = {
+							change_first_name = Thomas
+						}
+						1 = {
 							change_first_name = Zachary
-						}
-						1 = {
-							change_first_name = David
-						}
-						1 = {
-							change_first_name = Elijah
-						}
-						1 = {
-							change_first_name = Isaac
-						}
-						1 = {
-							change_first_name = Jacob
 						}
 					}
 				}
@@ -485,19 +271,22 @@
 					}
 					random_list = {
 						1 = {
+							change_first_name = Aaron
+						}
+						1 = {
 							change_first_name = Adam
 						}
 						1 = {
 							change_first_name = Alexander
 						}
 						1 = {
-							change_first_name = Aaron
-						}
-						1 = {
-							change_first_name = Joel
+							change_first_name = Benjamin
 						}
 						1 = {
 							change_first_name = Israel
+						}
+						1 = {
+							change_first_name = Joel
 						}
 						1 = {
 							change_first_name = Leon
@@ -519,9 +308,6 @@
 						}
 						1 = {
 							change_first_name = Reuben
-						}
-						1 = {
-							change_first_name = Benjamin
 						}
 						1 = {
 							change_first_name = Zachary
@@ -559,10 +345,10 @@
 							change_first_name = Mansur
 						}
 						1 = {
-							change_first_name = Rashid
+							change_first_name = Ramadan
 						}
 						1 = {
-							change_first_name = Ramadan
+							change_first_name = Rashid
 						}
 					}
 				}
@@ -597,6 +383,9 @@
 					change_first_name = Gudleifr
 				}
 				1 = {
+					change_first_name = Helgi
+				}
+				1 = {
 					change_first_name = Yngvar
 				}
 				1 = {
@@ -616,9 +405,6 @@
 				}
 				1 = {
 					change_first_name = Mstivoj
-				}
-				1 = {
-					change_first_name = Helgi
 				}
 				1 = {
 					change_first_name = Ostromir
@@ -663,7 +449,7 @@
 					change_first_name = Tverdislav
 				}
 				1 = {
-					change_first_name = Vojislav
+					change_first_name = Vecheslav
 				}
 				1 = {
 					change_first_name = Vladimir
@@ -672,10 +458,10 @@
 					change_first_name = Vladislav
 				}
 				1 = {
-					change_first_name = Vsevolod
+					change_first_name = Vojislav
 				}
 				1 = {
-					change_first_name = Vecheslav
+					change_first_name = Vsevolod
 				}
 				1 = {
 					change_first_name = Vysheslav
@@ -703,13 +489,13 @@
 					}
 					random_list = {
 						1 = {
+							change_first_name = Abraham
+						}
+						1 = {
 							change_first_name = Anthony
 						}
 						1 = {
 							change_first_name = Artemios
-						}
-						1 = {
-							change_first_name = Abraham
 						}
 						1 = {
 							change_first_name = Clement
@@ -719,6 +505,9 @@
 						}
 						1 = {
 							change_first_name = Dorotheos
+						}
+						1 = {
+							change_first_name = Elisha
 						}
 						1 = {
 							change_first_name = Eusebios
@@ -736,16 +525,16 @@
 							change_first_name = Hananiah
 						}
 						1 = {
-							change_first_name = Elisha
+							change_first_name = Joseph
 						}
 						1 = {
 							change_first_name = Josiah
 						}
 						1 = {
-							change_first_name = Makarios
+							change_first_name = Lazarus
 						}
 						1 = {
-							change_first_name = Lazarus
+							change_first_name = Makarios
 						}
 						1 = {
 							change_first_name = Maximus
@@ -766,10 +555,10 @@
 							change_first_name = Philip
 						}
 						1 = {
-							change_first_name = Sergius
+							change_first_name = Samuel
 						}
 						1 = {
-							change_first_name = Samuel
+							change_first_name = Sergius
 						}
 						1 = {
 							change_first_name = Terentius
@@ -782,9 +571,6 @@
 						}
 						1 = {
 							change_first_name = Timothy
-						}
-						1 = {
-							change_first_name = Joseph
 						}
 					}
 				}
@@ -921,11 +707,26 @@
 						}
 					}
 				}
-				1 = {
-					change_first_name = Bela
-				}
-				1 = {
-					change_first_name = Belen
+				0 = {
+					modifier = {
+						NOT = {
+							any_parent = {
+								highest_held_title_tier > tier_county
+							}
+						}
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Bela
+						}
+						1 = {
+							change_first_name = Belen
+						}
+						1 = {
+							change_first_name = Dragan
+						}
+					}
 				}
 				1 = {
 					change_first_name = Belimir
@@ -956,9 +757,6 @@
 				}
 				1 = {
 					change_first_name = Domazhir
-				}
-				1 = {
-					change_first_name = Dragan
 				}
 				1 = {
 					change_first_name = Dragomir
@@ -1033,16 +831,13 @@
 					change_first_name = Ratisha
 				}
 				1 = {
-					change_first_name = Rurik
-				}
-				1 = {
 					change_first_name = Rodislav
 				}
 				1 = {
-					change_first_name = Sudimir
+					change_first_name = Rurik
 				}
 				1 = {
-					change_first_name = Svetosha
+					hange_first_name = Svetosha
 				}
 				1 = {
 					change_first_name = Tvorimir
@@ -1152,6 +947,394 @@
 				}
 				1 = {
 					change_first_name = Zhirokh
+				}
+			}
+		}
+	}
+}
+east_slavic_female_name_effect = {
+	save_scope_as = thechar
+	if = {
+		limit = {
+			exists = dynasty
+		}
+		dynasty = {
+			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
+		}
+	}
+	else = {
+		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
+	}
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 40
+			}
+			random_list = {
+				1 = {
+					change_first_name = Aisha
+				}
+				1 = {
+					change_first_name = Fatima
+				}
+				1 = {
+					change_first_name = Khadija
+				}
+				1 = {
+					change_first_name = Layla
+				}
+				1 = {
+					change_first_name = Maryam
+				}
+				1 = {
+					change_first_name = Zubayda
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:islam_religion
+				add = 30
+			}
+			random_list = {
+				1 = {
+					change_first_name = Amina
+				}
+				1 = {
+					change_first_name = Khalida
+				}
+				1 = {
+					change_first_name = Nadiya
+				}
+				1 = {
+					change_first_name = Nur
+				}
+				1 = {
+					change_first_name = Safiya
+				}
+				1 = {
+					change_first_name = Zohra
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 30
+			}
+			random_list = {
+				1 = {
+					change_first_name = Agrippina
+				}
+				1 = {
+					change_first_name = Anastasia
+				}
+				1 = {
+					change_first_name = Anna
+				}
+				1 = {
+					change_first_name = Aquilina
+				}
+				1 = {
+					change_first_name = Christina
+				}
+				1 = {
+					change_first_name = Eudokia
+				}
+				1 = {
+					change_first_name = Euphemia
+				}
+				1 = {
+					change_first_name = Helen
+				}
+				1 = {
+					change_first_name = Mary
+				}
+				1 = {
+					change_first_name = Sophia
+				}
+			}
+		}
+		20 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 13
+					}
+					random_list = {
+						1 = {
+							change_first_name = Agatha
+						}
+						1 = {
+							change_first_name = Catherine
+						}
+						1 = {
+							change_first_name = Domna
+						}
+						1 = {
+							change_first_name = Elizabeth
+						}
+						1 = {
+							change_first_name = Eupraxia
+						}
+						1 = {
+							change_first_name = Febronia
+						}
+						1 = {
+							change_first_name = Irene
+						}
+						1 = {
+							change_first_name = Juliana
+						}
+						1 = {
+							change_first_name = Marina
+						}
+						1 = {
+							change_first_name = Martha
+						}
+						1 = {
+							change_first_name = Thekla
+						}
+						1 = {
+							change_first_name = Theodosia
+						}
+						1 = {
+							change_first_name = Xenia
+						}
+					}
+				}
+				1 = {
+					change_first_name = Bazhena
+				}
+				1 = {
+					change_first_name = Bogdana
+				}
+				1 = {
+					change_first_name = Boguslava
+				}
+				1 = {
+					change_first_name = Bozhena
+				}
+				1 = {
+					change_first_name = Dobroslava
+				}
+				1 = {
+					change_first_name = Helga
+				}
+				1 = {
+					change_first_name = Ljubov
+				}
+				1 = {
+					change_first_name = Ljudmila
+				}
+				1 = {
+					change_first_name = Miloslava
+				}
+				1 = {
+					change_first_name = Miroslava
+				}
+				1 = {
+					change_first_name = Mstislava
+				}
+				1 = {
+					change_first_name = Predslava
+				}
+				1 = {
+					change_first_name = Radoslava
+				}
+				1 = {
+					change_first_name = Radosta
+				}
+				1 = {
+					change_first_name = Rostislava
+				}
+				1 = {
+					change_first_name = Sbyslava
+				}
+				1 = {
+					change_first_name = Stanislava
+				}
+				1 = {
+					change_first_name = Svetava
+				}
+				1 = {
+					change_first_name = Svetoslava
+				}
+				1 = {
+					change_first_name = Vysheslava
+				}
+				1 = {
+					change_first_name = Yaroslava
+				}
+				1 = {
+					change_first_name = Zhiznava
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 18
+					}
+					random_list = {
+						1 = {
+							change_first_name = Alexandra
+						}
+						1 = {
+							change_first_name = Barbara
+						}
+						1 = {
+							change_first_name = Basilissa
+						}
+						1 = {
+							change_first_name = Dominica
+						}
+						1 = {
+							change_first_name = Euphrosine
+						}
+						1 = {
+							change_first_name = Melania
+						}
+						1 = {
+							change_first_name = Natalia
+						}
+						1 = {
+							change_first_name = Pelagia
+						}
+						1 = {
+							change_first_name = Pereskeue
+						}
+						1 = {
+							change_first_name = Photeine
+						}
+						1 = {
+							change_first_name = Salome
+						}
+						1 = {
+							change_first_name = Solomonida
+						}
+						1 = {
+							change_first_name = Stephania
+						}
+						1 = {
+							change_first_name = Tatiana
+						}
+						1 = {
+							change_first_name = Theodora
+						}
+						1 = {
+							change_first_name = Theodoule
+						}
+						1 = {
+							change_first_name = Theophano
+						}
+						1 = {
+							change_first_name = Vera
+						}
+					}
+				}
+				1 = {
+					change_first_name = Bela
+				}
+				1 = {
+					change_first_name = Belka
+				}
+				1 = {
+					change_first_name = Deva
+				}
+				1 = {
+					change_first_name = Dobrava
+				}
+				1 = {
+					change_first_name = Dobrodeya
+				}
+				1 = {
+					change_first_name = Domaslava
+				}
+				1 = {
+					change_first_name = Dragomira
+				}
+				1 = {
+					change_first_name = Dragoslava
+				}
+				1 = {
+					change_first_name = Gorislava
+				}
+				1 = {
+					change_first_name = Gostyata
+				}
+				1 = {
+					change_first_name = Gremislava
+				}
+				1 = {
+					change_first_name = Hvalislava
+				}
+				1 = {
+					change_first_name = Ljubava
+				}
+				1 = {
+					change_first_name = Malmfrid
+				}
+				1 = {
+					change_first_name = Marica
+				}
+				1 = {
+					change_first_name = Mileva
+				}
+				1 = {
+					change_first_name = Milka
+				}
+				1 = {
+					change_first_name = Milokha
+				}
+				1 = {
+					change_first_name = Nadezhda
+				}
+				1 = {
+					change_first_name = Nedelka
+				}
+				1 = {
+					change_first_name = Negoshka
+				}
+				1 = {
+					change_first_name = Obezynya
+				}
+				1 = {
+					change_first_name = Perejaslava
+				}
+				1 = {
+					change_first_name = Ragnfrid
+				}
+				1 = {
+					change_first_name = Rodislava
+				}
+				1 = {
+					change_first_name = Svyatokhna
+				}
+				1 = {
+					change_first_name = Vladislava
+				}
+				1 = {
+					change_first_name = Vojslava
+				}
+				1 = {
+					change_first_name = Vseslava
+				}
+				1 = {
+					change_first_name = Vyshemila
+				}
+				1 = {
+					change_first_name = Zhdana
+				}
+				1 = {
+					change_first_name = Zhirava
+				}
+				1 = {
+					change_first_name = Zvenislava
 				}
 			}
 		}
