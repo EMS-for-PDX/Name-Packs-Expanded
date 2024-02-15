@@ -581,7 +581,7 @@
 					change_first_name = Vsevolod
 				}
 				1 = {
-					change_first_name = Vysheslav
+					change_first_name = Visheslav
 				}
 				1 = {
 					change_first_name = Yaropolk
@@ -828,10 +828,15 @@
 					modifier = {
 						NOT = {
 							any_parent = {
-								highest_held_title_tier > tier_county
+								OR = {
+									highest_held_title_tier > tier_county
+									any_parent = {
+										highest_held_title_tier > tier_county
+									}
+								}
 							}
 						}
-						add = 3
+						add = 12
 					}
 					random_list = {
 						1 = {
@@ -843,6 +848,33 @@
 						1 = {
 							change_first_name = Dragan
 						}
+						1 = {
+							change_first_name = Bojan
+						}
+						1 = {
+							change_first_name = Hodan
+						}
+						1 = {
+							change_first_name = Vojn
+						}
+						1 = {
+							change_first_name = Gnevash
+						}
+						1 = {
+							change_first_name = Hvala
+						}
+						1 = {
+							change_first_name = Vlas
+						}
+						1 = {
+							change_first_name = Vlk
+						}
+						1 = {
+							change_first_name = Klimata
+						}
+						1 = {
+							change_first_name = Nemir
+						}
 					}
 				}
 				1 = {
@@ -853,9 +885,6 @@
 				}
 				1 = {
 					change_first_name = Bogomil
-				}
-				1 = {
-					change_first_name = Bojan
 				}
 				1 = {
 					change_first_name = Danislav
@@ -882,9 +911,6 @@
 					change_first_name = Dragoslav
 				}
 				1 = {
-					change_first_name = Gnevash
-				}
-				1 = {
 					change_first_name = Godomil
 				}
 				1 = {
@@ -894,16 +920,10 @@
 					change_first_name = Hakon
 				}
 				1 = {
-					change_first_name = Hodan
-				}
-				1 = {
 					change_first_name = Hotemir
 				}
 				1 = {
 					change_first_name = Hoteslav
-				}
-				1 = {
-					change_first_name = Hvala
 				}
 				1 = {
 					change_first_name = Hvalislav
@@ -912,16 +932,10 @@
 					change_first_name = Ivar
 				}
 				1 = {
-					change_first_name = Klimata
-				}
-				1 = {
 					change_first_name = Milosh
 				}
 				1 = {
 					change_first_name = Mstibog
-				}
-				1 = {
-					change_first_name = Nemir
 				}
 				1 = {
 					change_first_name = Nezhata
@@ -954,7 +968,7 @@
 					change_first_name = Rurik
 				}
 				1 = {
-					hange_first_name = Svetosha
+					change_first_name = Svetosha
 				}
 				1 = {
 					change_first_name = Tvorimir
@@ -964,12 +978,6 @@
 				}
 				1 = {
 					change_first_name = Velimir
-				}
-				1 = {
-					change_first_name = Vlas
-				}
-				1 = {
-					change_first_name = Vlk
 				}
 				1 = {
 					change_first_name = Vnezd
@@ -1311,7 +1319,7 @@ east_slavic_female_name_effect = {
 							change_first_name = Dominica
 						}
 						1 = {
-							change_first_name = Euphrosine
+							change_first_name = Euphrosyne
 						}
 						1 = {
 							change_first_name = Melania
@@ -1323,7 +1331,7 @@ east_slavic_female_name_effect = {
 							change_first_name = Pelagia
 						}
 						1 = {
-							change_first_name = Pereskeue
+							change_first_name = Paraskeue
 						}
 						1 = {
 							change_first_name = Photeine
