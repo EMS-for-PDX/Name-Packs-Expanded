@@ -1,17 +1,80 @@
 ﻿east_slavic_male_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
+		0 = {
+			modifier = {
+				exists = father.father
+				NOT = {
+					has_trait = bastard
+					father = {
+						has_character_flag = father_father_name
+					}
+				}
+				add = 50 #v. freq
+			}
+			father.father = {
+				save_scope_as = the_guy
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = father_father_name
+			}
+		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 25 #common
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			father = {
+				add_character_flag = brother_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = yes
+					}
+					NOT = {
+						has_character_flag = brother_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 10 #uncommon
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = yes
+					}
+					save_scope_as = the_guy
+				}
+			}
+			change_first_name = { template_character = scope:the_guy }
+			mother = {
+				add_character_flag = brother_name
+			}
+		}
 		0 = {
 			modifier = {
 				has_religion = religion:islam_religion
@@ -34,7 +97,7 @@
 					}
 				}
 				has_religion = religion:christianity_religion
-				add = 25
+				add = 20
 			}
 			change_first_name = John
 		}
