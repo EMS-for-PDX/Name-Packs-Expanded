@@ -1567,6 +1567,26 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+				has_cultural_pillar = language_italian
+                any_parent_culture = {
+                    this = culture:langobard
+                }
+			}
+		}
+		localization_key = _langobard
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_italian
+                has_name_list = name_list_sicilian
+			}
+		}
+		localization_key = _sicilian
+	}
+	text = {
+		trigger = {
+			culture = {
 				has_cultural_pillar = language_high_german
 			}
 		}
