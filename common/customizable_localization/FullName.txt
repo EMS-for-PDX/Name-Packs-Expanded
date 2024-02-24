@@ -595,8 +595,14 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Full_Name_Wolayta
@@ -1814,8 +1820,14 @@ FullNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Wolayta
@@ -3033,8 +3045,14 @@ FullNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Full_Name_Possessive_Wolayta
@@ -4252,8 +4270,14 @@ FullNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Full_Name_Possessive_No_Tooltip_Wolayta
@@ -5471,8 +5495,14 @@ FullNameNick = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Full_Name_Wolayta
@@ -6690,8 +6720,14 @@ FullNamePossessiveNick = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Full_Name_Possessive_Wolayta
@@ -7909,8 +7945,14 @@ FullNameNickNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Full_Name_No_Tooltip_Wolayta
