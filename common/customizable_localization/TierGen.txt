@@ -1567,8 +1567,71 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+				OR = {
+                    AND = {
+                        has_cultural_pillar = language_finnic
+				        has_name_list = name_list_estonian
+                        trigger_if = {
+                            limit = {
+                                exists = global_var:CE_is_loaded
+                            }
+                            OR = {
+                                has_cultural_pillar = language_ingrian
+                                has_cultural_pillar = language_livonian
+                            }
+                        }
+                    }
+                }
+			}
+		}
+		localization_key = _estonian
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_finnic
+			}
+		}
+		localization_key = _finnish
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_sami
+			}
+		}
+		localization_key = _sami
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_ugro_permian
+				this = culture:komi
+			}
+		}
+		localization_key = _permian
+	}
+	text = {
+		trigger = {
+			culture = {
+				OR = {
+                    has_cultural_pillar = language_ugro_permian
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_mansi
+                    }
+                }
+			}
+		}
+		localization_key = _khanty
+	}
+	text = {
+		trigger = {
+			culture = {
 				has_cultural_pillar = language_baltic
-				this = culture:latgalian
+				has_name_list = name_list_latgalian
 			}
 		}
 		localization_key = _latgalian
@@ -1576,8 +1639,18 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				has_cultural_pillar = language_baltic
-				this = culture:prussian
+				OR = {
+                    AND = {
+                        has_cultural_pillar = language_baltic
+				        has_name_list = name_list_prussian
+                    }
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_dniepr_baltic
+                    }
+                }
 			}
 		}
 		localization_key = _prussian
@@ -1585,7 +1658,15 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-				has_cultural_pillar = language_baltic
+				OR = {
+                    has_cultural_pillar = language_baltic
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_pruthenic_baltic
+                    }
+                }
 			}
 		}
 		localization_key = _lithuanian
