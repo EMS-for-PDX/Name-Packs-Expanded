@@ -1649,6 +1649,7 @@ CharacterCulture = {
                             exists = global_var:CE_is_loaded
                         }
                         has_cultural_pillar = language_dniepr_baltic
+                        has_cultural_pillar = language_pruthenic_baltic
                     }
                 }
 			}
@@ -1660,12 +1661,6 @@ CharacterCulture = {
 			culture = {
 				OR = {
                     has_cultural_pillar = language_baltic
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        has_cultural_pillar = language_pruthenic_baltic
-                    }
                 }
 			}
 		}
