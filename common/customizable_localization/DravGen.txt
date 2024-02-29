@@ -928,28 +928,9 @@ KannadaRegnalOrName = {
         localization_key = YuddhamallaRegnal_
 	}
 	text = {
-		trigger = {
-			OR = {
-				AND = {
-                    dynasty ?= {
-                        any_in_list = {
-                            variable = name_pack_support_dynasty
-                            this = root
-                        }
-                    }
-                }
-                any_in_global_list = {
-                    variable = name_pack_support_global
-                    this = root
-                }
-			}
-		}
+        fallback = yes
 		localization_key = Supported_Name
 	}
-    text = {
-        fallback = yes
-		localization_key = Nonsupported_Name
-    }
 }
 TamilRegnal = {
 	type = character
@@ -2772,28 +2753,9 @@ TamilRegnalOrName = {
         localization_key = Villavanmadeviyar
 	}
 	text = {
-		trigger = {
-			OR = {
-				AND = {
-                    dynasty ?= {
-                        any_in_list = {
-                            variable = name_pack_support_dynasty
-                            this = root
-                        }
-                    }
-                }
-                any_in_global_list = {
-                    variable = name_pack_support_global
-                    this = root
-                }
-			}
-		}
+		fallback = yes
 		localization_key = Supported_Name_Tamil
 	}
-    text = {
-        fallback = yes
-		localization_key = Nonsupported_Name
-    }
 }
 PriestSuf = {
 	type = character

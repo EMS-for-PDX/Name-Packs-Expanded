@@ -1667,28 +1667,9 @@
         localization_key = Yaza-Kumari
     }
 	text = {
-		trigger = {
-			OR = {
-				AND = {
-                    dynasty ?= {
-                        any_in_list = {
-                            variable = name_pack_support_dynasty
-                            this = root
-                        }
-                    }
-                }
-                any_in_global_list = {
-                    variable = name_pack_support_global
-                    this = root
-                }
-			}
-		}
+		fallback = yes
 		localization_key = Supported_Name_Burmese
 	}
-    text = {
-        fallback = yes
-		localization_key = Nonsupported_Name
-    }
 }
 BurmeseNameOrRegnal = {
 	type = character
@@ -3044,48 +3025,15 @@ BurmeseNameOrRegnal = {
         localization_key = Yaza-Kumari
     }
 	text = {
-		trigger = {
-			OR = {
-				AND = {
-                    dynasty ?= {
-                        any_in_list = {
-                            variable = name_pack_support_dynasty
-                            this = root
-                        }
-                    }
-                }
-                any_in_global_list = {
-                    variable = name_pack_support_global
-                    this = root
-                }
-			}
-		}
+		fallback = yes
 		localization_key = Supported_Name_Burmese
 	}
-    text = {
-        fallback = yes
-		localization_key = Nonsupported_Name
-    }
 }
 BurmeseCultureCheck = {
 	type = character
 	log_loc_errors = no
     text = {
 		trigger = {
-			OR = {
-				AND = {
-                    dynasty ?= {
-                        any_in_list = {
-                            variable = name_pack_support_dynasty
-                            this = root
-                        }
-                    }
-                }
-                any_in_global_list = {
-                    variable = name_pack_support_global
-                    this = root
-                }
-			}
 			culture = {
 				has_name_list = name_list_burmese
 			}
@@ -3094,20 +3042,6 @@ BurmeseCultureCheck = {
 	}
     text = {
 		trigger = {
-			OR = {
-				AND = {
-                    dynasty ?= {
-                        any_in_list = {
-                            variable = name_pack_support_dynasty
-                            this = root
-                        }
-                    }
-                }
-                any_in_global_list = {
-                    variable = name_pack_support_global
-                    this = root
-                }
-			}
 			culture = {
 				has_name_list = name_list_mon
 			}

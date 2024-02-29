@@ -1,16 +1,6 @@
 ﻿persian_islam_male_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
+	
     random_list = {
         20 = {
             random_list = {
@@ -1001,18 +991,8 @@
     }
 }
 persian_christian_male_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
+	
     random_list = {
         40 = {
 	     random_list = {
@@ -1888,18 +1868,8 @@ persian_christian_male_name_effect = {
     }
 }
 persian_fallback_male_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
+	
     random_list = {
         40 = {
             random_list = {
@@ -2750,18 +2720,8 @@ persian_fallback_male_name_effect = {
     }
 }
 persian_islam_female_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
+	
     random_list = {
         50 = {
             random_list = {
@@ -3179,18 +3139,8 @@ persian_islam_female_name_effect = {
     }
 }
 persian_christian_female_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
+	
     random_list = {
 		25 = {
 			change_first_name = Mary
@@ -3545,18 +3495,8 @@ persian_christian_female_name_effect = {
     }
 }
 persian_fallback_female_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
+	
     random_list = {
         30 = {
             random_list = {

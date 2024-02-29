@@ -120,64 +120,14 @@ CharacterTierCheckBefore = {
 	parent = CharacterTierCheck
 	suffix = "_Before"
 }
-
-
-CharacterNameCheck = {
-	type = character
-	text = {
-		trigger = {
-			OR = {
-				AND = {
-                    dynasty ?= {
-                        any_in_list = {
-                            variable = name_pack_support_dynasty
-                            this = root
-                        }
-                    }
-                }
-                any_in_global_list = {
-                    variable = name_pack_support_global
-                    this = root
-                }
-			}
-		}
-		localization_key = Supported_Name
-	}
-    text = {
-        fallback = yes
-		localization_key = Nonsupported_Name
-    }
-}
 CharacterPatCheck = {
 	type = character
 	text = {
 		trigger = {
 			exists = father
-            father = {
-                OR = {
-                    AND = {
-                        dynasty ?= {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = root.father
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = root.father
-                    }
-                }
-            }
 		}
 		localization_key = Supported_Patronym
 	}
-    text = {
-        trigger = {
-            exists = father
-        }
-        localization_key = Nonsupported_Patronym
-    }
 	text = {
 		fallback = yes
 		localization_key = Gui_blank
@@ -195,31 +145,10 @@ CharacterGrandpaPatCheck = {
 	type = character
 	text = {
 		trigger = {
-            father.father ?= {
-                OR = {
-                    AND = {
-                        dynasty ?= {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = root.father.father
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = root.father.father
-                    }
-                }
-            }
+            exists = father.father
 		}
 		localization_key = Supported_Grandpatronym
 	}
-    text = {
-        trigger = {
-            exists = father.father
-        }
-        localization_key = Nonsupported_Grandpatronym
-    }
 	text = {
 		fallback = yes
 		localization_key = Gui_blank
@@ -241,15 +170,12 @@ TriaNominaHouseCheck = {
 			exists = house.var:roman
 			house.var:name_founder = {
 				save_temporary_scope_as = good_lad
+				culture = {
+					is_npe_supported_culture = yes
+				}
 			}
 			NOT = {
 				root = scope:good_lad
-			}
-			dynasty = {
-				any_in_list = {
-					variable = name_pack_support_dynasty
-					this = scope:good_lad
-				}
 			}
 		}
 		localization_key = Supported_House
@@ -274,15 +200,12 @@ TriaNominaDynastyCheck = {
 			exists = dynasty.var:name_founder
 			dynasty.var:name_founder = {
 				save_temporary_scope_as = good_lad
+				culture = {
+					is_npe_supported_culture = yes
+				}
 			}
 			NOT = {
 				root = scope:good_lad
-			}
-			dynasty = {
-				any_in_list = {
-					variable = name_pack_support_dynasty
-					this = scope:good_lad
-				}
 			}
 		}
 		localization_key = Supported_Dynasty
@@ -306,15 +229,12 @@ CharacterHouseCheck = {
 		trigger = {
 			house.var:name_founder ?= {
 				save_temporary_scope_as = good_lad
+				culture = {
+					is_npe_supported_culture = yes
+				}
 			}
 			NOT = {
-				root = scope:good_lad
-			}
-			dynasty = {
-				any_in_list = {
-					variable = name_pack_support_dynasty
-					this = scope:good_lad
-				}
+				this = scope:good_lad
 			}
 		}
 		localization_key = Supported_House
@@ -338,15 +258,12 @@ TamilCharacterHouseCheck = {
 		trigger = {
 			house.var:name_founder ?= {
 				save_temporary_scope_as = good_lad
+				culture = {
+					is_npe_supported_culture = yes
+				}
 			}
 			NOT = {
 				root = scope:good_lad
-			}
-			dynasty = {
-				any_in_list = {
-					variable = name_pack_support_dynasty
-					this = scope:good_lad
-				}
 			}
 		}
 		localization_key = Tamil_King_House
@@ -382,15 +299,12 @@ TamilSpouseHouseCheck = {
 				exists = house.var:name_founder
 				house.var:name_founder = {
 					save_temporary_scope_as = good_lad
+					culture = {
+						is_npe_supported_culture = yes
+					}
 				}
 				NOT = {
 					root = scope:good_lad
-				}
-				dynasty = {
-					any_in_list = {
-						variable = name_pack_support_dynasty
-						this = scope:good_lad
-					}
 				}
 			}
 		}
@@ -403,15 +317,12 @@ TamilSpouseHouseCheck = {
 				exists = house.var:name_founder
 				house.var:name_founder = {
 					save_temporary_scope_as = good_lad
+					culture = {
+						is_npe_supported_culture = yes
+					}
 				}
 				NOT = {
 					root = scope:good_lad
-				}
-				dynasty = {
-					any_in_list = {
-						variable = name_pack_support_dynasty
-						this = scope:good_lad
-					}
 				}
 			}
 			trigger_if = {
@@ -449,15 +360,12 @@ CharacterSpouseHouseCheck = {
 				exists = house.var:name_founder
 				house.var:name_founder = {
 					save_temporary_scope_as = good_lad
+					culture = {
+						is_npe_supported_culture = yes
+					}
 				}
 				NOT = {
 					root = scope:good_lad
-				}
-				dynasty = {
-					any_in_list = {
-						variable = name_pack_support_dynasty
-						this = scope:good_lad
-					}
 				}
 			}
 		}
@@ -470,15 +378,12 @@ CharacterSpouseHouseCheck = {
 				exists = house.var:name_founder
 				house.var:name_founder = {
 					save_temporary_scope_as = good_lad
+					culture = {
+						is_npe_supported_culture = yes
+					}
 				}
 				NOT = {
 					root = scope:good_lad
-				}
-				dynasty = {
-					any_in_list = {
-						variable = name_pack_support_dynasty
-						this = scope:good_lad
-					}
 				}
 			}
 			trigger_if = {

@@ -2,205 +2,8 @@
 NPE_text_edit = {
 	scope = character
 	effect = {
-		remove_name_gen = yes
-	}
-}
-NPE_name_dad = {
-	scope = character
-	effect = {
-		remove_name_gen = yes
-		father = {
-			save_scope_as = the_dad
-		}
-		IF = {
-			limit = {
-				OR = {
-					AND = {
-						scope:the_dad = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_dad
-								}
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:the_dad
-					}
-				}
-			}
-			dynasty = {
-				add_to_variable_list = { name = name_pack_support_dynasty target = root }
-			}
-		}
-	}
-}
-NPE_name_mom = {
-	scope = character
-	effect = {
-		remove_name_gen = yes
-		mother = {
-			save_scope_as = the_mom
-		}
-		IF = {
-			limit = {
-				OR = {
-					AND = {
-						scope:the_mom = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_mom
-								}
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:the_mom
-					}
-				}
-			}
-			dynasty = {
-				add_to_variable_list = { name = name_pack_support_dynasty target = root }
-			}
-		}
-	}
-}
-NPE_name_granddad1 = {
-	scope = character
-	effect = {
-		remove_name_gen = yes
-		father.father = {
-			save_scope_as = the_granddad
-		}
-		IF = {
-			limit = {
-				OR = {
-					AND = {
-						scope:the_granddad = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_granddad
-								}
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:the_granddad
-					}
-				}
-			}
-			dynasty = {
-				add_to_variable_list = { name = name_pack_support_dynasty target = root }
-			}
-		}
-	}
-}
-NPE_name_granddad2 = {
-	scope = character
-	effect = {
-		remove_name_gen = yes
-		mother.father = {
-			save_scope_as = the_granddad
-		}
-		IF = {
-			limit = {
-				OR = {
-					AND = {
-						scope:the_granddad = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_granddad
-								}
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:the_granddad
-					}
-				}
-			}
-			dynasty = {
-				add_to_variable_list = { name = name_pack_support_dynasty target = root }
-			}
-		}
-	}
-}
-NPE_name_grandmom1 = {
-	scope = character
-	effect = {
-		remove_name_gen = yes
-		father.mother = {
-			save_scope_as = the_grandmom
-		}
-		IF = {
-			limit = {
-				OR = {
-					AND = {
-						scope:the_grandmom = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_grandmom
-								}
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:the_grandmom
-					}
-				}
-			}
-			dynasty = {
-				add_to_variable_list = { name = name_pack_support_dynasty target = root }
-			}
-		}
-	}
-}
-NPE_name_grandmom2 = {
-	scope = character
-	effect = {
-		remove_name_gen = yes
-		mother.mother = {
-			save_scope_as = the_grandmom
-		}
-		IF = {
-			limit = {
-				OR = {
-					AND = {
-						scope:the_grandmom = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:the_grandmom
-								}
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:the_grandmom
-					}
-				}
-			}
-			dynasty = {
-				add_to_variable_list = { name = name_pack_support_dynasty target = root }
-			}
-		}
+		#remove_name_gen = yes
+		#Redo
 	}
 }
 NPE_pack_support = {
@@ -224,7 +27,6 @@ NPE_random_ancestor = {
 	effect = {
 		hidden_effect = {
 			save_scope_as = effect_root
-			remove_name_gen = yes
 			IF = {
 				limit = { is_male = yes }
 				random_ancestor = {
@@ -239,30 +41,6 @@ NPE_random_ancestor = {
 					limit = { is_male = no }
 					even_if_dead = yes
 					save_scope_as = the_ancestor
-				}
-			}
-			IF = {
-				limit = {
-					OR = {
-						AND = {
-							scope:the_ancestor = {
-								exists = dynasty
-								dynasty = {
-									any_in_list = {
-										variable = name_pack_support_dynasty
-										this = scope:the_ancestor
-									}
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:the_ancestor
-						}
-					}
-				}
-				dynasty = {
-					add_to_variable_list = { name = name_pack_support_dynasty target = root }
 				}
 			}
 			change_first_name = { template_character = scope:the_ancestor }
@@ -300,34 +78,11 @@ faith_has_female_saints = {
 random_saint_male_name = {
 	scope = character
 	effect = {
-		remove_name_gen = yes
 		faith = {
 			random_in_list = {
 				variable = faith_saints
 				limit = { is_male = yes }
 				save_temporary_scope_as = named_saint
-			}
-		}
-		IF = {
-			limit = {
-				OR = {
-					scope:named_saint = {
-						exists = dynasty
-						dynasty = {
-							any_in_list = {
-								variable = name_pack_support_dynasty
-								this = scope:named_saint
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:named_saint
-					}
-				}
-			}
-			dynasty = {
-				add_to_variable_list = { name = name_pack_support_dynasty target = root }
 			}
 		}
 		change_first_name = { template_character = scope:named_saint }
@@ -337,34 +92,11 @@ random_saint_male_name = {
 random_saint_female_name = {
 	scope = character
 	effect = {
-		remove_name_gen = yes
 		faith = {
 			random_in_list = {
 				variable = faith_saints
 				limit = { is_male = no }
 				save_temporary_scope_as = named_saint
-			}
-		}
-		IF = {
-			limit = {
-				OR = {
-					scope:named_saint = {
-						exists = dynasty
-						dynasty = {
-							any_in_list = {
-								variable = name_pack_support_dynasty
-								this = scope:named_saint
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:named_saint
-					}
-				}
-			}
-			dynasty = {
-				add_to_variable_list = { name = name_pack_support_dynasty target = root }
 			}
 		}
 		change_first_name = { template_character = scope:named_saint }
@@ -375,21 +107,6 @@ NPE_faith_name_support = {
 	scope = character
 	is_shown = {
 		always = no
-		#culture = {
-		#	is_npe_supported_culture = yes
-		#	NOT = {
-		#		has_name_list = name_list_persian
-		#		has_name_list = name_list_kurdish
-		#		has_name_list = name_list_baloch
-		#		has_name_list = name_list_daylamite
-		#		has_name_list = name_list_tajik
-		#	}
-		#}
-		#OR = {
-		#	has_religion = religion:islam_religion
-		#	has_religion = religion:christianity_religion
-		#	has_religion = religion:germanic_religion
-		#}
 	}
 }
 NPE_faith_name_no_support = {
@@ -399,11 +116,6 @@ NPE_faith_name_no_support = {
 			culture = {
 				is_npe_supported_culture = yes
 			}
-			#OR = {
-			#	has_religion = religion:islam_religion
-			#	has_religion = religion:christianity_religion
-			#	has_religion = religion:germanic_religion
-			#}
 		}
 	}
 }
@@ -412,7 +124,6 @@ NPE_faith_names = {
 	effect = {
 		hidden_effect = {
 			save_scope_as = effect_root
-			remove_name_gen = yes
 		}
 	}
 }
@@ -421,7 +132,6 @@ NPE_culture_names = {
 	effect = {
 		hidden_effect = {
 			save_scope_as = effect_root
-			remove_name_gen = yes
 			name_gen_effect = yes
 		}
 	}

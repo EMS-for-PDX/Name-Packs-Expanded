@@ -93,23 +93,6 @@
 		else_if = {
 			limit = {
 				exists = scope:scripted_gui_eldest_son
-				scope:scripted_gui_eldest_son = {
-					OR = {
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:scripted_gui_eldest_son
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:scripted_gui_eldest_son
-						}
-					}
-				}
 			}
 			custom_description_no_bullet = {
 				text = scripted_gui_trigger_tek_support
@@ -119,79 +102,17 @@
 		}
 		else_if = {
 			limit = {
-				exists = scope:scripted_gui_eldest_son
-				is_male = no
-			}
-			custom_description_no_bullet = {
-				text = scripted_gui_trigger_tek_non_support
-				subject = scope:effect_root
-				object = scope:scripted_gui_eldest_son
-			}
-		}
-		else_if = {
-			limit = {
 				exists = scope:scripted_gui_eldest_daughter
-				scope:scripted_gui_eldest_daughter = {
-					OR = {
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:scripted_gui_eldest_daughter
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:scripted_gui_eldest_daughter
-						}
-					}
-				}
 			}
 			custom_description_no_bullet = {
 				text = scripted_gui_trigger_tek_support
 				subject = scope:effect_root
 				object = scope:scripted_gui_eldest_daughter
-			}
-		}
-		else_if = {
-			limit = {
-				exists = scope:scripted_gui_eldest_daughter
-			}
-			custom_description_no_bullet = {
-				text = scripted_gui_trigger_tek_non_support
-				subject = scope:effect_root
-				object = scope:scripted_gui_eldest_daughter
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						exists = dynasty
-						dynasty = {
-							any_in_list = {
-								variable = name_pack_support_dynasty
-								this = scope:effect_root
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:effect_root
-					}
-				}
-			}
-			custom_description_no_bullet = {
-				text = scripted_gui_trigger_name_support
-				subject = scope:effect_root
-				object = scope:effect_root
 			}
 		}
 		else = {
 			custom_description_no_bullet = {
-				text = scripted_gui_trigger_name_non_support
+				text = scripted_gui_trigger_name_support
 				subject = scope:effect_root
 				object = scope:effect_root
 			}
@@ -293,23 +214,6 @@ scripted_gui_laqab_tek = {
 		else_if = {
 			limit = {
 				exists = scope:scripted_gui_eldest_son
-				scope:scripted_gui_eldest_son = {
-					OR = {
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:scripted_gui_eldest_son
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:scripted_gui_eldest_son
-						}
-					}
-				}
 			}
 			custom_description_no_bullet = {
 				text = scripted_gui_trigger_tek_support
@@ -319,48 +223,10 @@ scripted_gui_laqab_tek = {
 		}
 		else_if = {
 			limit = {
-				exists = scope:scripted_gui_eldest_son
-				is_male = no
-			}
-			custom_description_no_bullet = {
-				text = scripted_gui_trigger_tek_non_support
-				subject = scope:effect_root
-				object = scope:scripted_gui_eldest_son
-			}
-		}
-		else_if = {
-			limit = {
 				exists = scope:scripted_gui_eldest_daughter
-				scope:scripted_gui_eldest_daughter = {
-					OR = {
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:scripted_gui_eldest_daughter
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:scripted_gui_eldest_daughter
-						}
-					}
-				}
 			}
 			custom_description_no_bullet = {
 				text = scripted_gui_trigger_tek_support
-				subject = scope:effect_root
-				object = scope:scripted_gui_eldest_daughter
-			}
-		}
-		else_if = {
-			limit = {
-				exists = scope:scripted_gui_eldest_daughter
-			}
-			custom_description_no_bullet = {
-				text = scripted_gui_trigger_tek_non_support
 				subject = scope:effect_root
 				object = scope:scripted_gui_eldest_daughter
 			}
@@ -466,23 +332,6 @@ scripted_gui_tek = {
 		else_if = {
 			limit = {
 				exists = scope:scripted_gui_eldest_son
-				scope:scripted_gui_eldest_son = {
-					OR = {
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:scripted_gui_eldest_son
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:scripted_gui_eldest_son
-						}
-					}
-				}
 			}
 			custom_description_no_bullet = {
 				text = scripted_gui_trigger_tek_support
@@ -492,48 +341,10 @@ scripted_gui_tek = {
 		}
 		else_if = {
 			limit = {
-				exists = scope:scripted_gui_eldest_son
-				is_male = no
-			}
-			custom_description_no_bullet = {
-				text = scripted_gui_trigger_tek_non_support
-				subject = scope:effect_root
-				object = scope:scripted_gui_eldest_son
-			}
-		}
-		else_if = {
-			limit = {
 				exists = scope:scripted_gui_eldest_daughter
-				scope:scripted_gui_eldest_daughter = {
-					OR = {
-						AND = {
-							exists = dynasty
-							dynasty = {
-								any_in_list = {
-									variable = name_pack_support_dynasty
-									this = scope:scripted_gui_eldest_daughter
-								}
-							}
-						}
-						any_in_global_list = {
-							variable = name_pack_support_global
-							this = scope:scripted_gui_eldest_daughter
-						}
-					}
-				}
 			}
 			custom_description_no_bullet = {
 				text = scripted_gui_trigger_tek_support
-				subject = scope:effect_root
-				object = scope:scripted_gui_eldest_daughter
-			}
-		}
-		else_if = {
-			limit = {
-				exists = scope:scripted_gui_eldest_daughter
-			}
-			custom_description_no_bullet = {
-				text = scripted_gui_trigger_tek_non_support
 				subject = scope:effect_root
 				object = scope:scripted_gui_eldest_daughter
 			}
@@ -575,33 +386,9 @@ scripted_gui_laqab_name = {
 				object = scope:effect_root
 			}
 		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						exists = dynasty
-						dynasty = {
-							any_in_list = {
-								variable = name_pack_support_dynasty
-								this = scope:effect_root
-							}
-						}
-					}
-					any_in_global_list = {
-						variable = name_pack_support_global
-						this = scope:effect_root
-					}
-				}
-			}
-			custom_description_no_bullet = {
-				text = scripted_gui_trigger_name_support
-				subject = scope:effect_root
-				object = scope:effect_root
-			}
-		}
 		else = {
 			custom_description_no_bullet = {
-				text = scripted_gui_trigger_name_non_support
+				text = scripted_gui_trigger_name_support
 				subject = scope:effect_root
 				object = scope:effect_root
 			}

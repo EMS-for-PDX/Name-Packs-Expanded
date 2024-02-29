@@ -1,0 +1,2741 @@
+lithuanian_male_name_effect = {
+	save_scope_as = the_char
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = George
+				}
+				1 = {
+					change_first_name = John
+				}
+				1 = {
+					change_first_name = Peter
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:judaism_religion
+				add = 30
+			}
+			random_list = {
+				1 = {
+					change_first_name = Abraham
+				}
+				1 = {
+					change_first_name = Jacob
+				}
+				1 = {
+					change_first_name = Joseph
+				}
+				1 = {
+					change_first_name = Moses
+				}
+				1 = {
+					change_first_name = Solomon
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 15
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 1
+					}
+					change_first_name = Albert
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Constantine
+						}
+						1 = {
+							change_first_name = Demetrios
+						}
+						1 = {
+							change_first_name = Sergius
+						}
+						1 = {
+							change_first_name = Theodore
+						}
+					}
+				}
+				1 = {
+					change_first_name = Andrew
+				}
+				1 = {
+					change_first_name = Anthony
+				}
+				1 = {
+					change_first_name = Bartholomew
+				}
+				1 = {
+					change_first_name = Matthew
+				}
+				1 = {
+					change_first_name = Michael
+				}
+				1 = {
+					change_first_name = Nicholas
+				}
+				1 = {
+					change_first_name = Paul
+				}
+				1 = {
+					change_first_name = Stanislav
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:judaism_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = David
+				}
+				1 = {
+					change_first_name = Simon
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 10
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Bernhard
+						}
+						1 = {
+							change_first_name = Sigmund
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Alexios
+						}
+						1 = {
+							change_first_name = Basil
+						}
+						1 = {
+							change_first_name = Romanus
+						}
+						1 = {
+							change_first_name = Vladimir
+						}
+					}
+				}
+				1 = {
+					change_first_name = Alexander
+				}
+				1 = {
+					change_first_name = Eugene
+				}
+				1 = {
+					change_first_name = Gregory
+				}
+				1 = {
+					change_first_name = Hyacinth
+				}
+				1 = {
+					change_first_name = Laurence
+				}
+				1 = {
+					change_first_name = Martin
+				}
+				1 = {
+					change_first_name = Simon
+				}
+				1 = {
+					change_first_name = Stasys
+				}
+				1 = {
+					change_first_name = Thomas
+				}
+				1 = {
+					change_first_name = Victor
+				}
+				1 = {
+					change_first_name = Vladislav
+				}
+				1 = {
+					change_first_name = Abraham
+				}
+				1 = {
+					change_first_name = Jacob
+				}
+				1 = {
+					change_first_name = Joseph
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Conrad
+						}
+						1 = {
+							change_first_name = Henry
+						}
+						1 = {
+							change_first_name = Patrick
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 6
+					}
+					modifier = {
+						NOR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 1
+					}
+					random_list = {
+						1 = {
+							change_first_name = Christian
+						}
+						1 = {
+							change_first_name = Eustace
+						}
+						1 = {
+							change_first_name = Melchior
+						}
+						1 = {
+							change_first_name = Philip
+						}
+						0 = {
+							modifier = {
+								NOR = {
+									has_faith = faith:orthodox
+									has_faith = faith:iconoclaust
+								}
+								add = 1
+							}
+							change_first_name = Theodore
+						}
+						1 = {
+							change_first_name = Timothy
+						}
+						1 = {
+							change_first_name = David
+						}
+					}
+				}
+				1 = {
+					change_first_name = Algimantas
+				}
+				1 = {
+					change_first_name = Algirdas
+				}
+				1 = {
+					change_first_name = Alshis
+				}
+				1 = {
+					change_first_name = Arvydas
+				}
+				1 = {
+					change_first_name = Astikas
+				}
+				1 = {
+					change_first_name = Bardis
+				}
+				1 = {
+					change_first_name = Beinaras
+				}
+				1 = {
+					change_first_name = Bikshys
+				}
+				1 = {
+					change_first_name = Buivydas
+				}
+				1 = {
+					change_first_name = Butautas
+				}
+				1 = {
+					change_first_name = Buteikis
+				}
+				1 = {
+					change_first_name = Butigeidis
+				}
+				1 = {
+					change_first_name = Butrimas
+				}
+				1 = {
+					change_first_name = Butvilas
+				}
+				1 = {
+					change_first_name = Butvydas
+				}
+				1 = {
+					change_first_name = Cheputis
+				}
+				1 = {
+					change_first_name = Chiupurna
+				}
+				1 = {
+					change_first_name = Dargis
+				}
+				1 = {
+					change_first_name = Daugela
+				}
+				1 = {
+					change_first_name = Daugintas
+				}
+				1 = {
+					change_first_name = Daugirutis
+				}
+				1 = {
+					change_first_name = Daujotas
+				}
+				1 = {
+					change_first_name = Daumantas
+				}
+				1 = {
+					change_first_name = Daunoras
+				}
+				1 = {
+					change_first_name = Dausprungas
+				}
+				1 = {
+					change_first_name = Dautartas
+				}
+				1 = {
+					change_first_name = Dirsunas
+				}
+				1 = {
+					change_first_name = Eigintas
+				}
+				1 = {
+					change_first_name = Eikshis
+				}
+				1 = {
+					change_first_name = Eirimas
+				}
+				1 = {
+					change_first_name = Erdvilas
+				}
+				1 = {
+					change_first_name = Galminas
+				}
+				1 = {
+					change_first_name = Gedgaudas
+				}
+				1 = {
+					change_first_name = Gediminas
+				}
+				1 = {
+					change_first_name = Gedvydas
+				}
+				1 = {
+					change_first_name = Gengautas
+				}
+				1 = {
+					change_first_name = Gerstukas
+				}
+				1 = {
+					change_first_name = Getautas
+				}
+				1 = {
+					change_first_name = Giedrius
+				}
+				1 = {
+					change_first_name = Ginvilas
+				}
+				1 = {
+					change_first_name = Goshtautas
+				}
+				1 = {
+					change_first_name = Jagmina
+				}
+				1 = {
+					change_first_name = Jaunutis
+				}
+				1 = {
+					change_first_name = Jogaila
+				}
+				1 = {
+					change_first_name = Jokantas
+				}
+				1 = {
+					change_first_name = Javaisha
+				}
+				1 = {
+					change_first_name = Jundilas
+				}
+				1 = {
+					change_first_name = Juodikis
+				}
+				1 = {
+					change_first_name = Kantautas
+				}
+				1 = {
+					change_first_name = Kantigirdas
+				}
+				1 = {
+					change_first_name = Kaributas
+				}
+				1 = {
+					change_first_name = Karigaila
+				}
+				1 = {
+					change_first_name = Karijotas
+				}
+				1 = {
+					change_first_name = Kernius
+				}
+				1 = {
+					change_first_name = Kesgaila
+				}
+				1 = {
+					change_first_name = Kestaras
+				}
+				1 = {
+					change_first_name = Kestautas
+				}
+				1 = {
+					change_first_name = Kestutis
+				}
+				1 = {
+					change_first_name = Kintibutas
+				}
+				1 = {
+					change_first_name = Kitenis
+				}
+				1 = {
+					change_first_name = Klausigaila
+				}
+				1 = {
+					change_first_name = Komantas
+				}
+				1 = {
+					change_first_name = Lengvenis
+				}
+				1 = {
+					change_first_name = Liesis
+				}
+				1 = {
+					change_first_name = Ligeikis
+				}
+				1 = {
+					change_first_name = Liubartas
+				}
+				1 = {
+					change_first_name = Mantautas
+				}
+				1 = {
+					change_first_name = Mantigirdas
+				}
+				1 = {
+					change_first_name = Mantvilas
+				}
+				1 = {
+					change_first_name = Manvilas
+				}
+				1 = {
+					change_first_name = Manvydas
+				}
+				1 = {
+					change_first_name = Margiris
+				}
+				1 = {
+					change_first_name = Masiulis
+				}
+				1 = {
+					change_first_name = Mildaugas
+				}
+				1 = {
+					change_first_name = Minbaras
+				}
+				1 = {
+					change_first_name = Minbutas
+				}
+				1 = {
+					change_first_name = Mindaugas
+				}
+				1 = {
+					change_first_name = Mingaila
+				}
+				1 = {
+					change_first_name = Muntautas
+				}
+				1 = {
+					change_first_name = Narbutas
+				}
+				1 = {
+					change_first_name = Narimantas
+				}
+				1 = {
+					change_first_name = Narivaisha
+				}
+				1 = {
+					change_first_name = Narvilas
+				}
+				1 = {
+					change_first_name = Netimeras
+				}
+				1 = {
+					change_first_name = Norvydas
+				}
+				1 = {
+					change_first_name = Radvilas
+				}
+				1 = {
+					change_first_name = Rastvilas
+				}
+				1 = {
+					change_first_name = Replys
+				}
+				1 = {
+					change_first_name = Rimgailas
+				}
+				1 = {
+					change_first_name = Rimkantas
+				}
+				1 = {
+					change_first_name = Rimvydas
+				}
+				1 = {
+					change_first_name = Ruklys
+				}
+				1 = {
+					change_first_name = Rumbaudas
+				}
+				1 = {
+					change_first_name = Rupeikis
+				}
+				1 = {
+					change_first_name = Santautas
+				}
+				1 = {
+					change_first_name = Shedbaras
+				}
+				1 = {
+					change_first_name = Shemeta
+				}
+				1 = {
+					change_first_name = Shvitrigaila
+				}
+				1 = {
+					change_first_name = Skalmantas
+				}
+				1 = {
+					change_first_name = Skirgaila
+				}
+				1 = {
+					change_first_name = Skirmantas
+				}
+				1 = {
+					change_first_name = Steigvilas
+				}
+				1 = {
+					change_first_name = Stekshys
+				}
+				1 = {
+					change_first_name = Stirpeikis
+				}
+				1 = {
+					change_first_name = Sudimantas
+				}
+				1 = {
+					change_first_name = Sukse
+				}
+				1 = {
+					change_first_name = Survilas
+				}
+				1 = {
+					change_first_name = Svalkenis
+				}
+				1 = {
+					change_first_name = Tautvilas
+				}
+				1 = {
+					change_first_name = Tautvirdas
+				}
+				1 = {
+					change_first_name = Traidenis
+				}
+				1 = {
+					change_first_name = Treniota
+				}
+				1 = {
+					change_first_name = Vaidila
+				}
+				1 = {
+					change_first_name = Vaidotas
+				}
+				1 = {
+					change_first_name = Vaidutis
+				}
+				1 = {
+					change_first_name = Vaishelga
+				}
+				1 = {
+					change_first_name = Vaishvilas
+				}
+				1 = {
+					change_first_name = Vaishviltas
+				}
+				1 = {
+					change_first_name = Valimantas
+				}
+				1 = {
+					change_first_name = Velzhys
+				}
+				1 = {
+					change_first_name = Vilikaila
+				}
+				1 = {
+					change_first_name = Vintautas
+				}
+				1 = {
+					change_first_name = Visbaras
+				}
+				1 = {
+					change_first_name = Vismantas
+				}
+				1 = {
+					change_first_name = Vizbaras
+				}
+				1 = {
+					change_first_name = Vizgirdas
+				}
+				1 = {
+					change_first_name = Vykintas
+				}
+				1 = {
+					change_first_name = Vytautas
+				}
+				1 = {
+					change_first_name = Vytenis
+				}
+				1 = {
+					change_first_name = Vyzheitis
+				}
+				1 = {
+					change_first_name = Zavisha
+				}
+				1 = {
+					change_first_name = Zhivinbudas
+				}
+				1 = {
+					change_first_name = Zhvelgaitis
+				}
+				1 = {
+					change_first_name = Zhvelgutis
+				}
+				1 = {
+					change_first_name = Zhymantas
+				}
+			}
+		}
+	}
+}
+lithuanian_female_name_effect = {
+	save_scope_as = the_char
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Anna
+				}
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 1
+					}
+					change_first_name = Mary
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						OR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Dorothea
+						}
+						1 = {
+							change_first_name = Helga
+						}
+					}
+				}
+				1 = {
+					change_first_name = Barbara
+				}
+				1 = {
+					change_first_name = Catherine
+				}
+				1 = {
+					change_first_name = Christina
+				}
+				1 = {
+					change_first_name = Elizabeth
+				}
+				1 = {
+					change_first_name = Marina
+				}
+				1 = {
+					change_first_name = Sophia
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 10
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Gertrude
+						}
+						1 = {
+							change_first_name = Hedwig
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						NOT = {
+							has_faith = faith:catholic
+						}
+						add = 1
+					}
+					change_first_name = Mary
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Agrippina
+						}
+						1 = {
+							change_first_name = Eudokia
+						}
+						1 = {
+							change_first_name = Theodora
+						}
+					}
+				}
+				1 = {
+					change_first_name = Agnes
+				}
+				1 = {
+					change_first_name = Euphemia
+				}
+				1 = {
+					change_first_name = Helen
+				}
+				1 = {
+					change_first_name = Joanna
+				}
+				1 = {
+					change_first_name = Lucia
+				}
+				1 = {
+					change_first_name = Magdalena
+				}
+				1 = {
+					change_first_name = Margaret
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 1
+					}
+					change_first_name = Ursula
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 6
+					}
+					random_list = {
+						1 = {
+							change_first_name = Anastasia
+						}
+						1 = {
+							change_first_name = Augusta
+						}
+						1 = {
+							change_first_name = Cecilia
+						}
+						1 = {
+							change_first_name = Juliana
+						}
+						1 = {
+							change_first_name = Martha
+						}
+						1 = {
+							change_first_name = Sarah
+						}
+					}
+				}
+				1 = {
+					change_first_name = Aldona
+				}
+				1 = {
+					change_first_name = Algimante
+				}
+				1 = {
+					change_first_name = Algirde
+				}
+				1 = {
+					change_first_name = Alziute
+				}
+				1 = {
+					change_first_name = Arvyde
+				}
+				1 = {
+					change_first_name = Astike
+				}
+				1 = {
+					change_first_name = Birute
+				}
+				1 = {
+					change_first_name = Buivyda
+				}
+				1 = {
+					change_first_name = Butaute
+				}
+				1 = {
+					change_first_name = Butrime
+				}
+				1 = {
+					change_first_name = Butvile
+				}
+				1 = {
+					change_first_name = Butvyde
+				}
+				1 = {
+					change_first_name = Damilla
+				}
+				1 = {
+					change_first_name = Danute
+				}
+				1 = {
+					change_first_name = Dauginte
+				}
+				1 = {
+					change_first_name = Daujote
+				}
+				1 = {
+					change_first_name = Daumante
+				}
+				1 = {
+					change_first_name = Daunora
+				}
+				1 = {
+					change_first_name = Dautarte
+				}
+				1 = {
+					change_first_name = Dorota
+				}
+				1 = {
+					change_first_name = Eitaute
+				}
+				1 = {
+					change_first_name = Erdvile
+				}
+				1 = {
+					change_first_name = Galmina
+				}
+				1 = {
+					change_first_name = Gaudemante
+				}
+				1 = {
+					change_first_name = Gedgaude
+				}
+				1 = {
+					change_first_name = Gedimine
+				}
+				1 = {
+					change_first_name = Gedvide
+				}
+				1 = {
+					change_first_name = Getaute
+				}
+				1 = {
+					change_first_name = Ginvile
+				}
+				1 = {
+					change_first_name = Jaune
+				}
+				1 = {
+					change_first_name = Jogaile
+				}
+				1 = {
+					change_first_name = Jotvile
+				}
+				1 = {
+					change_first_name = Jundile
+				}
+				1 = {
+					change_first_name = Kantaute
+				}
+				1 = {
+					change_first_name = Karigaile
+				}
+				1 = {
+					change_first_name = Kena
+				}
+				1 = {
+					change_first_name = Kesgaile
+				}
+				1 = {
+					change_first_name = Kestaute
+				}
+				1 = {
+					change_first_name = Kestute
+				}
+				1 = {
+					change_first_name = Kintvile
+				}
+				1 = {
+					change_first_name = Liubarte
+				}
+				1 = {
+					change_first_name = Mantigirda
+				}
+				1 = {
+					change_first_name = Mantvile
+				}
+				1 = {
+					change_first_name = Manvyde
+				}
+				1 = {
+					change_first_name = Milochna
+				}
+				1 = {
+					change_first_name = Mindauge
+				}
+				1 = {
+					change_first_name = Mingaile
+				}
+				1 = {
+					change_first_name = Mite
+				}
+				1 = {
+					change_first_name = Narimante
+				}
+				1 = {
+					change_first_name = Norvyde
+				}
+				1 = {
+					change_first_name = Pajauta
+				}
+				1 = {
+					change_first_name = Radvile
+				}
+				1 = {
+					change_first_name = Ramune
+				}
+				1 = {
+					change_first_name = Rimgaile
+				}
+				1 = {
+					change_first_name = Rimkante
+				}
+				1 = {
+					change_first_name = Santaute
+				}
+				1 = {
+					change_first_name = Shvitrigaile
+				}
+				1 = {
+					change_first_name = Skirgaile
+				}
+				1 = {
+					change_first_name = Skirmante
+				}
+				1 = {
+					change_first_name = Steigvile
+				}
+				1 = {
+					change_first_name = Tautvile
+				}
+				1 = {
+					change_first_name = Vaidile
+				}
+				1 = {
+					change_first_name = Vaidote
+				}
+				1 = {
+					change_first_name = Vaidute
+				}
+				1 = {
+					change_first_name = Vaishvile
+				}
+				1 = {
+					change_first_name = Vismante
+				}
+				1 = {
+					change_first_name = Vykinte
+				}
+				1 = {
+					change_first_name = Vytaute
+				}
+				1 = {
+					change_first_name = Vytene
+				}
+				1 = {
+					change_first_name = Zelva
+				}
+				1 = {
+					change_first_name = Zhymante
+				}
+			}
+		}
+	}
+}
+latgalian_male_name_effect = {
+	save_scope_as = the_char
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = John
+				}
+				1 = {
+					change_first_name = Peter
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:judaism_religion
+				add = 30
+			}
+			hange_first_name = John
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 15
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Albert
+						}
+						1 = {
+							change_first_name = Henry
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Constantine
+						}
+						1 = {
+							change_first_name = Demetrios
+						}
+						1 = {
+							change_first_name = Theodore
+						}
+					}
+				}
+				1 = {
+					change_first_name = Alexander
+				}
+				1 = {
+					change_first_name = Andrew
+				}
+				1 = {
+					change_first_name = George
+				}
+				1 = {
+					change_first_name = Jacob
+				}
+				1 = {
+					change_first_name = Matthew
+				}
+				1 = {
+					change_first_name = Michael
+				}
+				1 = {
+					change_first_name = Nicholas
+				}
+				1 = {
+					change_first_name = Thomas
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:judaism_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Abraham
+				}
+				1 = {
+					change_first_name = Jacob
+				}
+				1 = {
+					change_first_name = Michael
+				}
+				1 = {
+					change_first_name = Simon
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 10
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Bernhard
+						}
+						1 = {
+							change_first_name = Ambrose
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 5
+					}
+					random_list = {
+						1 = {
+							change_first_name = Alexios
+						}
+						1 = {
+							change_first_name = Basil
+						}
+						1 = {
+							change_first_name = Romanus
+						}
+						1 = {
+							change_first_name = Sergius
+						}
+						1 = {
+							change_first_name = Vladimir
+						}
+					}
+				}
+				1 = {
+					change_first_name = Bartholomew
+				}
+				1 = {
+					change_first_name = Christopher
+				}
+				1 = {
+					change_first_name = Demetrios
+				}
+				1 = {
+					change_first_name = Dionysios
+				}
+				1 = {
+					change_first_name = Gregory
+				}
+				1 = {
+					change_first_name = Laurence
+				}
+				1 = {
+					change_first_name = Martin
+				}
+				1 = {
+					change_first_name = Paul
+				}
+				1 = {
+					change_first_name = Simon
+				}
+				1 = {
+					change_first_name = Victor
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Benedict
+						}
+						1 = {
+							change_first_name = Boniface
+						}
+						1 = {
+							change_first_name = Conrad
+						}
+						1 = {
+							change_first_name = Francis
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 4
+					}
+					modifier = {
+						NOR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 1
+					}
+					random_list = {
+						1 = {
+							change_first_name = Christian
+						}
+						1 = {
+							change_first_name = Dominic
+						}
+						1 = {
+							change_first_name = Jerome
+						}
+						1 = {
+							change_first_name = Stanislav
+						}
+						0 = {
+							modifier = {
+								NOR = {
+									has_faith = faith:orthodox
+									has_faith = faith:iconoclaust
+								}
+								add = 1
+							}
+							change_first_name = Theodore
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:baltic_religion
+						add = 1
+					}
+					change_first_name = Perkunas
+				}
+				1 = {
+					change_first_name = Balodis
+				}
+				1 = {
+					change_first_name = Bebers
+				}
+				1 = {
+					change_first_name = Bite
+				}
+				1 = {
+					change_first_name = Briedis
+				}
+				1 = {
+					change_first_name = Caune
+				}
+				1 = {
+					change_first_name = Chabulis
+				}
+				1 = {
+					change_first_name = Chakste
+				}
+				1 = {
+					change_first_name = Cirulis
+				}
+				1 = {
+					change_first_name = Cirulitus
+				}
+				1 = {
+					change_first_name = Dabrelis
+				}
+				1 = {
+					change_first_name = Dainis
+				}
+				1 = {
+					change_first_name = Darbeslave
+				}
+				1 = {
+					change_first_name = Daudzis
+				}
+				1 = {
+					change_first_name = Daugaviete
+				}
+				1 = {
+					change_first_name = Daugmants
+				}
+				1 = {
+					change_first_name = Dauksha
+				}
+				1 = {
+					change_first_name = Dievmilis
+				}
+				1 = {
+					change_first_name = Drivinalds
+				}
+				1 = {
+					change_first_name = Dumpjats
+				}
+				1 = {
+					change_first_name = Duvkants
+				}
+				1 = {
+					change_first_name = Dzenis
+				}
+				1 = {
+					change_first_name = Dzenitis
+				}
+				1 = {
+					change_first_name = Dzirdimis
+				}
+				1 = {
+					change_first_name = Erasts
+				}
+				1 = {
+					change_first_name = Gaikis
+				}
+				1 = {
+					change_first_name = Gaile
+				}
+				1 = {
+					change_first_name = Gailis
+				}
+				1 = {
+					change_first_name = Gailune
+				}
+				1 = {
+					change_first_name = Gans
+				}
+				1 = {
+					change_first_name = Gaushens
+				}
+				1 = {
+					change_first_name = Godis
+				}
+				1 = {
+					change_first_name = Godulis
+				}
+				1 = {
+					change_first_name = Gribonis
+				}
+				1 = {
+					change_first_name = Grimekis
+				}
+				1 = {
+					change_first_name = Jaunatis
+				}
+				1 = {
+					change_first_name = Jaunelis
+				}
+				1 = {
+					change_first_name = Jaunikis
+				}
+				1 = {
+					change_first_name = Kalns
+				}
+				1 = {
+					change_first_name = Klints
+				}
+				1 = {
+					change_first_name = Klusis
+				}
+				1 = {
+					change_first_name = Kreke
+				}
+				1 = {
+					change_first_name = Kuris
+				}
+				1 = {
+					change_first_name = Kursis
+				}
+				1 = {
+					change_first_name = Labrinsh
+				}
+				1 = {
+					change_first_name = Labsvirs
+				}
+				1 = {
+					change_first_name = Lacis
+				}
+				1 = {
+					change_first_name = Madis
+				}
+				1 = {
+					change_first_name = Manegints
+				}
+				1 = {
+					change_first_name = Mednis
+				}
+				1 = {
+					change_first_name = Melvaldis
+				}
+				1 = {
+					change_first_name = Meness
+				}
+				1 = {
+					change_first_name = Miervaldis
+				}
+				1 = {
+					change_first_name = Miglis
+				}
+				1 = {
+					change_first_name = Nameisis
+				}
+				1 = {
+					change_first_name = Ozolinsh
+				}
+				1 = {
+					change_first_name = Pelens
+				}
+				1 = {
+					change_first_name = Pitkejanis
+				}
+				1 = {
+					change_first_name = Radikis
+				}
+				1 = {
+					change_first_name = Ramekis
+				}
+				1 = {
+					change_first_name = Ramelis
+				}
+				1 = {
+					change_first_name = Rupis
+				}
+				1 = {
+					change_first_name = Rusinsh
+				}
+				1 = {
+					change_first_name = Sersma
+				}
+				1 = {
+					change_first_name = Sersnis
+				}
+				1 = {
+					change_first_name = Shabis
+				}
+				1 = {
+					change_first_name = Silis
+				}
+				1 = {
+					change_first_name = Sirkants
+				}
+				1 = {
+					change_first_name = Skaidrite
+				}
+				1 = {
+					change_first_name = Stagars
+				}
+				1 = {
+					change_first_name = Starkis
+				}
+				1 = {
+					change_first_name = Stradulis
+				}
+				1 = {
+					change_first_name = Strupis
+				}
+				1 = {
+					change_first_name = Subris
+				}
+				1 = {
+					change_first_name = Talivaldis
+				}
+				1 = {
+					change_first_name = Tontegode
+				}
+				1 = {
+					change_first_name = Tots
+				}
+				1 = {
+					change_first_name = Treinis
+				}
+				1 = {
+					change_first_name = Vanags
+				}
+				1 = {
+					change_first_name = Vardulis
+				}
+				1 = {
+					change_first_name = Varens
+				}
+				1 = {
+					change_first_name = Varibuls
+				}
+				1 = {
+					change_first_name = Varidots
+				}
+				1 = {
+					change_first_name = Varna
+				}
+				1 = {
+					change_first_name = Vaverite
+				}
+				1 = {
+					change_first_name = Vekis
+				}
+				1 = {
+					change_first_name = Viestards
+				}
+				1 = {
+					change_first_name = Vilkins
+				}
+				1 = {
+					change_first_name = Vilks
+				}
+				1 = {
+					change_first_name = Visvaldis
+				}
+				1 = {
+					change_first_name = Zemitis
+				}
+				1 = {
+					change_first_name = Ziemelis
+				}
+				1 = {
+					change_first_name = Zutis
+				}
+				1 = {
+					change_first_name = Zvirbulis
+				}
+			}
+		}
+	}
+}
+latgalian_female_name_effect = {
+	save_scope_as = the_char
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Anna
+				}
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 1
+					}
+					change_first_name = Mary
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						OR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Dorothea
+						}
+						1 = {
+							change_first_name = Helga
+						}
+					}
+				}
+				1 = {
+					change_first_name = Barbara
+				}
+				1 = {
+					change_first_name = Catherine
+				}
+				1 = {
+					change_first_name = Christina
+				}
+				1 = {
+					change_first_name = Elizabeth
+				}
+				1 = {
+					change_first_name = Sophia
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 10
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Adelheid
+						}
+						1 = {
+							change_first_name = Brigid
+						}
+						1 = {
+							change_first_name = Gertrude
+						}
+						1 = {
+							change_first_name = Odila
+						}
+					}
+				}
+				0 = {
+					modifier = {
+						NOT = {
+							has_faith = faith:catholic
+						}
+						add = 1
+					}
+					change_first_name = Mary
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 4
+					}
+					random_list = {
+						1 = {
+							change_first_name = Agrippina
+						}
+						1 = {
+							change_first_name = Eudokia
+						}
+						1 = {
+							change_first_name = Tatiana
+						}
+						1 = {
+							change_first_name = Theodora
+						}
+					}
+				}
+				1 = {
+					change_first_name = Agnes
+				}
+				1 = {
+					change_first_name = Euphemia
+				}
+				1 = {
+					change_first_name = Helen
+				}
+				1 = {
+					change_first_name = Irene
+				}
+				1 = {
+					change_first_name = Joanna
+				}
+				1 = {
+					change_first_name = Laura
+				}
+				1 = {
+					change_first_name = Lucia
+				}
+				1 = {
+					change_first_name = Magdalena
+				}
+				1 = {
+					change_first_name = Margaret
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Anastasia
+						}
+						1 = {
+							change_first_name = Marina
+						}
+						1 = {
+							change_first_name = Martha
+						}
+					}
+				}
+				1 = {
+					change_first_name = Ate
+				}
+				1 = {
+					change_first_name = Bitans
+				}
+				1 = {
+					change_first_name = Bite
+				}
+				1 = {
+					change_first_name = Dailida
+				}
+				1 = {
+					change_first_name = Dardza
+				}
+				1 = {
+					change_first_name = Daugaviete
+				}
+				1 = {
+					change_first_name = Dvesma
+				}
+				1 = {
+					change_first_name = Dzeguze
+				}
+				1 = {
+					change_first_name = Dzilna
+				}
+				1 = {
+					change_first_name = Egle
+				}
+				1 = {
+					change_first_name = Gaizha
+				}
+				1 = {
+					change_first_name = Galine
+				}
+				1 = {
+					change_first_name = Gundega
+				}
+				1 = {
+					change_first_name = Ievens
+				}
+				1 = {
+					change_first_name = Jaune
+				}
+				1 = {
+					change_first_name = Klusite
+				}
+				1 = {
+					change_first_name = Lakstigala
+				}
+				1 = {
+					change_first_name = Latis
+				}
+				1 = {
+					change_first_name = Ramele
+				}
+				1 = {
+					change_first_name = Rasite
+				}
+				1 = {
+					change_first_name = Resne
+				}
+				1 = {
+					change_first_name = Rupe
+				}
+				1 = {
+					change_first_name = Sarma
+				}
+				1 = {
+					change_first_name = Skudra
+				}
+				1 = {
+					change_first_name = Slaviete
+				}
+				1 = {
+					change_first_name = Spare
+				}
+				1 = {
+					change_first_name = Stinte
+				}
+				1 = {
+					change_first_name = Stirna
+				}
+				1 = {
+					change_first_name = Straume
+				}
+				1 = {
+					change_first_name = Tautule
+				}
+				1 = {
+					change_first_name = Varite
+				}
+				1 = {
+					change_first_name = Vasara
+				}
+				1 = {
+					change_first_name = Velava
+				}
+				1 = {
+					change_first_name = Venta
+				}
+				1 = {
+					change_first_name = Vesma
+				}
+				1 = {
+					change_first_name = Zhagata
+				}
+				1 = {
+					change_first_name = Zhagatina
+				}
+				1 = {
+					change_first_name = Zhelite
+				}
+				1 = {
+					change_first_name = Ziede
+				}
+				1 = {
+					change_first_name = Ziedite
+				}
+				1 = {
+					change_first_name = Zile
+				}
+				1 = {
+					change_first_name = Zilite
+				}
+			}
+		}
+	}
+}
+prussian_male_name_effect = {
+	save_scope_as = the_char
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 40
+			}
+			random_list = {
+				1 = {
+					change_first_name = George
+				}
+				1 = {
+					change_first_name = Hans
+				}
+				1 = {
+					change_first_name = Henry
+				}
+				1 = {
+					change_first_name = John
+				}
+				1 = {
+					change_first_name = Peter
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 30
+			}
+			random_list = {
+				1 = {
+					change_first_name = Andrew
+				}
+				1 = {
+					change_first_name = Jacob
+				}
+				1 = {
+					change_first_name = Martin
+				}
+				1 = {
+					change_first_name = Matthew
+				}
+				1 = {
+					change_first_name = Michael
+				}
+				1 = {
+					change_first_name = Nicholas
+				}
+				1 = {
+					change_first_name = Theodoric
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Bartholomew
+				}
+				1 = {
+					change_first_name = Benedict
+				}
+				1 = {
+					change_first_name = Christopher
+				}
+				1 = {
+					change_first_name = Conrad
+				}
+				1 = {
+					change_first_name = Dominic
+				}
+				1 = {
+					change_first_name = Gregory
+				}
+				1 = {
+					change_first_name = Herman
+				}
+				1 = {
+					change_first_name = Joseph
+				}
+				1 = {
+					change_first_name = Marcus
+				}
+				1 = {
+					change_first_name = Paul
+				}
+				1 = {
+					change_first_name = Philip
+				}
+				1 = {
+					change_first_name = Simon
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 1
+					}
+					change_first_name = Francis
+				}
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 8
+					}
+					random_list = {
+						1 = {
+							change_first_name = Bernhard
+						}
+						1 = {
+							change_first_name = Casper
+						}
+						1 = {
+							change_first_name = Charles
+						}
+						1 = {
+							change_first_name = Laurence
+						}
+						1 = {
+							change_first_name = Luke
+						}
+						1 = {
+							change_first_name = Richard
+						}
+						1 = {
+							change_first_name = Stephen
+						}
+						1 = {
+							change_first_name = Thomas
+						}
+					}
+				}
+				1 = {
+					change_first_name = Abdangs
+				}
+				1 = {
+					change_first_name = Ainiks
+				}
+				1 = {
+					change_first_name = Alsuns
+				}
+				1 = {
+					change_first_name = Alsuttis
+				}
+				1 = {
+					change_first_name = Andriks
+				}
+				1 = {
+					change_first_name = Antiks
+				}
+				1 = {
+					change_first_name = Ardangs
+				}
+				1 = {
+					change_first_name = Arniks
+				}
+				1 = {
+					change_first_name = Arpallis
+				}
+				1 = {
+					change_first_name = Arvydas
+				}
+				1 = {
+					change_first_name = Arwaids
+				}
+				1 = {
+					change_first_name = Arwidits
+				}
+				1 = {
+					change_first_name = Arwistis
+				}
+				1 = {
+					change_first_name = Astijats
+				}
+				1 = {
+					change_first_name = Astijuns
+				}
+				1 = {
+					change_first_name = Astims
+				}
+				1 = {
+					change_first_name = Aujats
+				}
+				1 = {
+					change_first_name = Auktums
+				}
+				1 = {
+					change_first_name = Austagaudis
+				}
+				1 = {
+					change_first_name = Baidats
+				}
+				1 = {
+					change_first_name = Bainis
+				}
+				1 = {
+					change_first_name = Baitiks
+				}
+				1 = {
+					change_first_name = Bandats
+				}
+				1 = {
+					change_first_name = Bands
+				}
+				1 = {
+					change_first_name = Banduks
+				}
+				1 = {
+					change_first_name = Banduns
+				}
+				1 = {
+					change_first_name = Bartiks
+				}
+				1 = {
+					change_first_name = Biswajs
+				}
+				1 = {
+					change_first_name = Bitauts
+				}
+				1 = {
+					change_first_name = Bundiks
+				}
+				1 = {
+					change_first_name = Buttis
+				}
+				1 = {
+					change_first_name = Darats
+				}
+				1 = {
+					change_first_name = Daugela
+				}
+				1 = {
+					change_first_name = Deiwis
+				}
+				1 = {
+					change_first_name = Dinguns
+				}
+				1 = {
+					change_first_name = Diwans
+				}
+				1 = {
+					change_first_name = Diwillis
+				}
+				1 = {
+					change_first_name = Eikants
+				}
+				1 = {
+					change_first_name = Eikints
+				}
+				1 = {
+					change_first_name = Eiwans
+				}
+				1 = {
+					change_first_name = Gaudiks
+				}
+				1 = {
+					change_first_name = Gaudins
+				}
+				1 = {
+					change_first_name = Geidauts
+				}
+				1 = {
+					change_first_name = Geiditis
+				}
+				1 = {
+					change_first_name = Gintils
+				}
+				1 = {
+					change_first_name = Girdaws
+				}
+				1 = {
+					change_first_name = Girdis
+				}
+				1 = {
+					change_first_name = Girduns
+				}
+				1 = {
+					change_first_name = Girks
+				}
+				1 = {
+					change_first_name = Glabs
+				}
+				1 = {
+					change_first_name = Glabuns
+				}
+				1 = {
+					change_first_name = Glandims
+				}
+				1 = {
+					change_first_name = Glands
+				}
+				1 = {
+					change_first_name = Glausats
+				}
+				1 = {
+					change_first_name = Grands
+				}
+				1 = {
+					change_first_name = Guntis
+				}
+				1 = {
+					change_first_name = Jadats
+				}
+				1 = {
+					change_first_name = Jaduttis
+				}
+				1 = {
+					change_first_name = Jakuns
+				}
+				1 = {
+					change_first_name = Janiks
+				}
+				1 = {
+					change_first_name = Kadrauws
+				}
+				1 = {
+					change_first_name = Kaglands
+				}
+				1 = {
+					change_first_name = Kaitis
+				}
+				1 = {
+					change_first_name = Kantims
+				}
+				1 = {
+					change_first_name = Karrijats
+				}
+				1 = {
+					change_first_name = Kerss
+				}
+				1 = {
+					change_first_name = Kins
+				}
+				1 = {
+					change_first_name = Klakis
+				}
+				1 = {
+					change_first_name = Klauks
+				}
+				1 = {
+					change_first_name = Kreks
+				}
+				1 = {
+					change_first_name = Likuts
+				}
+				1 = {
+					change_first_name = Links
+				}
+				1 = {
+					change_first_name = Makruttis
+				}
+				1 = {
+					change_first_name = Maldennis
+				}
+				1 = {
+					change_first_name = Maldits
+				}
+				1 = {
+					change_first_name = Manniks
+				}
+				1 = {
+					change_first_name = Mants
+				}
+				1 = {
+					change_first_name = Meditis
+				}
+				1 = {
+					change_first_name = Meraws
+				}
+				1 = {
+					change_first_name = Meriks
+				}
+				1 = {
+					change_first_name = Meruns
+				}
+				1 = {
+					change_first_name = Milagauds
+				}
+				1 = {
+					change_first_name = Milageidis
+				}
+				1 = {
+					change_first_name = Milauks
+				}
+				1 = {
+					change_first_name = Minauts
+				}
+				1 = {
+					change_first_name = Nadrauws
+				}
+				1 = {
+					change_first_name = Naglauds
+				}
+				1 = {
+					change_first_name = Naglinds
+				}
+				1 = {
+					change_first_name = Nameris
+				}
+				1 = {
+					change_first_name = Napragauws
+				}
+				1 = {
+					change_first_name = Naudis
+				}
+				1 = {
+					change_first_name = Nerwiks
+				}
+				1 = {
+					change_first_name = Padangs
+				}
+				1 = {
+					change_first_name = Paituns
+				}
+				1 = {
+					change_first_name = Pasjauts
+				}
+				1 = {
+					change_first_name = Perbands
+				}
+				1 = {
+					change_first_name = Preibuts
+				}
+				1 = {
+					change_first_name = Preidars
+				}
+				1 = {
+					change_first_name = Preimaks
+				}
+				1 = {
+					change_first_name = Preiwils
+				}
+				1 = {
+					change_first_name = Ramuttis
+				}
+				1 = {
+					change_first_name = Rettaws
+				}
+				1 = {
+					change_first_name = Rittaws
+				}
+				1 = {
+					change_first_name = Rozins
+				}
+				1 = {
+					change_first_name = Samilis
+				}
+				1 = {
+					change_first_name = Sandarris
+				}
+				1 = {
+					change_first_name = Sangauws
+				}
+				1 = {
+					change_first_name = Sangeidis
+				}
+				1 = {
+					change_first_name = Sanglands
+				}
+				1 = {
+					change_first_name = Sanglaubs
+				}
+				1 = {
+					change_first_name = Santaps
+				}
+				1 = {
+					change_first_name = Santirmis
+				}
+				1 = {
+					change_first_name = Seruns
+				}
+				1 = {
+					change_first_name = Skamants
+				}
+				1 = {
+					change_first_name = Skraits
+				}
+				1 = {
+					change_first_name = Spairats
+				}
+				1 = {
+					change_first_name = Spandats
+				}
+				1 = {
+					change_first_name = Spandennis
+				}
+				1 = {
+					change_first_name = Tarams
+				}
+				1 = {
+					change_first_name = Tautvilas
+				}
+				1 = {
+					change_first_name = Temparins
+				}
+				1 = {
+					change_first_name = Trenis
+				}
+				1 = {
+					change_first_name = Tulageidis
+				}
+				1 = {
+					change_first_name = Tulakaits
+				}
+				1 = {
+					change_first_name = Tulniks
+				}
+				1 = {
+					change_first_name = Tulnis
+				}
+				1 = {
+					change_first_name = Tungs
+				}
+				1 = {
+					change_first_name = Waduns
+				}
+				1 = {
+					change_first_name = Waisils
+				}
+				1 = {
+					change_first_name = Waisuttis
+				}
+				1 = {
+					change_first_name = Warpuns
+				}
+				1 = {
+					change_first_name = Weluns
+				}
+				1 = {
+					change_first_name = Widawutis
+				}
+				1 = {
+					change_first_name = Windiks
+				}
+				1 = {
+					change_first_name = Wisagaudis
+				}
+				1 = {
+					change_first_name = Wisageidis
+				}
+				1 = {
+					change_first_name = Wisakants
+				}
+			}
+		}
+	}
+}
+latgalian_female_name_effect = {
+	save_scope_as = the_char
+	random_list = {
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Anna
+				}
+				1 = {
+					change_first_name = Mary
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 20
+			}
+			random_list = {
+				1 = {
+					change_first_name = Adelheid
+				}
+				1 = {
+					change_first_name = Barbara
+				}
+				1 = {
+					change_first_name = Catherine
+				}
+				1 = {
+					change_first_name = Christina
+				}
+				1 = {
+					change_first_name = Elizabeth
+				}
+				1 = {
+					change_first_name = Gertrude
+				}
+			}
+		}
+		0 = {
+			modifier = {
+				has_religion = religion:christianity_religion
+				add = 10
+			}
+			random_list = {
+				0 = {
+					modifier = {
+						has_faith = faith:catholic
+						add = 1
+					}
+					change_first_name = Odila
+				}
+				0 = {
+					modifier = {
+						OR = {
+							has_faith = faith:orthodox
+							has_faith = faith:iconoclaust
+						}
+						add = 3
+					}
+					random_list = {
+						1 = {
+							change_first_name = Dorothea
+						}
+						1 = {
+							change_first_name = Irene
+						}
+						1 = {
+							change_first_name = Theodora
+						}
+					}
+				}
+				1 = {
+					change_first_name = Agnes
+				}
+				1 = {
+					change_first_name = Euphemia
+				}
+				1 = {
+					change_first_name = Helen
+				}
+				1 = {
+					change_first_name = Joanna
+				}
+				1 = {
+					change_first_name = Laura
+				}
+				1 = {
+					change_first_name = Lucia
+				}
+				1 = {
+					change_first_name = Magdalena
+				}
+				1 = {
+					change_first_name = Margaret
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				0 = {
+					modifier = {
+						has_religion = religion:christianity_religion
+						add = 2
+					}
+					random_list = {
+						1 = {
+							change_first_name = Marina
+						}
+						1 = {
+							change_first_name = Martha
+						}
+					}
+				}
+				1 = {
+					change_first_name = Algutti
+				}
+				1 = {
+					change_first_name = Alita
+				}
+				1 = {
+					change_first_name = Alka
+				}
+				1 = {
+					change_first_name = Alkamenni
+				}
+				1 = {
+					change_first_name = Alsuni
+				}
+				1 = {
+					change_first_name = Alwarmi
+				}
+				1 = {
+					change_first_name = Ardanga
+				}
+				1 = {
+					change_first_name = Arnika
+				}
+				1 = {
+					change_first_name = Arvyde
+				}
+				1 = {
+					change_first_name = Arwaida
+				}
+				1 = {
+					change_first_name = Banda
+				}
+				1 = {
+					change_first_name = Biswaja
+				}
+				1 = {
+					change_first_name = Borislava
+				}
+				1 = {
+					change_first_name = Darata
+				}
+				1 = {
+					change_first_name = Deiwi
+				}
+				1 = {
+					change_first_name = Diwilli
+				}
+				1 = {
+					change_first_name = Eikanta
+				}
+				1 = {
+					change_first_name = Gerda
+				}
+				1 = {
+					change_first_name = Girka
+				}
+				1 = {
+					change_first_name = Glabuni
+				}
+				1 = {
+					change_first_name = Grazutti
+				}
+				1 = {
+					change_first_name = Gunta
+				}
+				1 = {
+					change_first_name = Jakuni
+				}
+				1 = {
+					change_first_name = Kaite
+				}
+				1 = {
+					change_first_name = Kersa
+				}
+				1 = {
+					change_first_name = Kirsini
+				}
+				1 = {
+					change_first_name = Klets
+				}
+				1 = {
+					change_first_name = Laima
+				}
+				1 = {
+					change_first_name = Merika
+				}
+				1 = {
+					change_first_name = Meruni
+				}
+				1 = {
+					change_first_name = Milageidi
+				}
+				1 = {
+					change_first_name = Milauka
+				}
+				1 = {
+					change_first_name = Nadabba
+				}
+				1 = {
+					change_first_name = Namedda
+				}
+				1 = {
+					change_first_name = Nasanbanga
+				}
+				1 = {
+					change_first_name = Nerwikketa
+				}
+				1 = {
+					change_first_name = Padanga
+				}
+				1 = {
+					change_first_name = Paitunini
+				}
+				1 = {
+					change_first_name = Patuni
+				}
+				1 = {
+					change_first_name = Perbanda
+				}
+				1 = {
+					change_first_name = Preibuta
+				}
+				1 = {
+					change_first_name = Preidara
+				}
+				1 = {
+					change_first_name = Rittawa
+				}
+				1 = {
+					change_first_name = Samili
+				}
+				1 = {
+					change_first_name = Sandarre
+				}
+				1 = {
+					change_first_name = Sangeidi
+				}
+				1 = {
+					change_first_name = Santirme
+				}
+				1 = {
+					change_first_name = Skraita
+				}
+				1 = {
+					change_first_name = Spairata
+				}
+				1 = {
+					change_first_name = Spandata
+				}
+				1 = {
+					change_first_name = Tautvile
+				}
+				1 = {
+					change_first_name = Tulageidi
+				}
+				1 = {
+					change_first_name = Wilki
+				}
+				1 = {
+					change_first_name = Wisageidi
+				}
+				1 = {
+					change_first_name = Wisakanta
+				}
+			}
+		}
+	}
+}

@@ -1,16 +1,4 @@
 ﻿bulgarian_non_player_male_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		50 = {
 			random_list = {
@@ -492,18 +480,6 @@
 	}
 }
 bulgarian_non_player_female_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		50 = {
 			random_list = {
@@ -830,18 +806,6 @@ bulgarian_non_player_female_name_effect = {
 }
 bulgarian_player_male_name_effect = {
 	remove_variable = slav_name
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		50 = {
 			random_list = {
@@ -1440,18 +1404,6 @@ bulgarian_player_male_name_effect = {
 }
 bulgarian_player_female_name_effect = {
 	remove_variable = slav_name
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		50 = {
 			random_list = {
@@ -1629,7 +1581,7 @@ bulgarian_player_female_name_effect = {
 	}
 }
 bulgarian_baptismal_non_player_male_name_effect = {
-	save_scope_as = thechar
+	save_scope_as = scope:thechar
 	dynasty = {
 		add_to_variable_list = { name = baptismal_name_dynasty target = scope:thechar }
 	}
@@ -1748,7 +1700,7 @@ bulgarian_baptismal_non_player_male_name_effect = {
 	}
 }
 bulgarian_baptismal_non_player_female_name_effect = {
-	save_scope_as = thechar
+	
 	dynasty = {
 		add_to_variable_list = { name = baptismal_name_dynasty target = scope:thechar }
 	}
@@ -1818,7 +1770,7 @@ bulgarian_baptismal_non_player_female_name_effect = {
 	}
 }
 bulgarian_slav_non_player_male_name_effect = {
-	save_scope_as = thechar
+	
 	dynasty = {
 		add_to_variable_list = { name = slav_name_dynasty target = scope:thechar }
 	}
@@ -2087,7 +2039,7 @@ bulgarian_slav_non_player_male_name_effect = {
 	}
 }
 bulgarian_slav_non_player_female_name_effect = {
-	save_scope_as = thechar
+	
 	dynasty = {
 		add_to_variable_list = { name = slav_name_dynasty target = scope:thechar }
 	}

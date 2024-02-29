@@ -1567,6 +1567,52 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+				has_cultural_pillar = language_baltic
+				this = culture:latgalian
+			}
+		}
+		localization_key = _latgalian
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_baltic
+				this = culture:prussian
+			}
+		}
+		localization_key = _prussian
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_baltic
+			}
+		}
+		localization_key = _lithuanian
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_italian
+                any_parent_culture = {
+                    this = culture:langobard
+                }
+			}
+		}
+		localization_key = _langobard
+  }
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_italian
+                has_name_list = name_list_sicilian
+			}
+		}
+		localization_key = _sicilian
+}
+	text = {
+		trigger = {
+			culture = {
 				has_cultural_pillar = language_high_german
 			}
 		}
