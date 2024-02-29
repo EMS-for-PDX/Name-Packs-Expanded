@@ -1716,6 +1716,26 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+				has_cultural_pillar = language_italian
+                any_parent_culture = {
+                    this = culture:langobard
+                }
+			}
+		}
+		localization_key = _langobard
+  }
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_italian
+                has_name_list = name_list_sicilian
+			}
+		}
+		localization_key = _sicilian
+}
+	text = {
+		trigger = {
+			culture = {
 				has_cultural_pillar = language_high_german
 			}
 		}
@@ -2287,6 +2307,14 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+                has_cultural_pillar = language_east_slavic
+			}
+		}
+		localization_key = _russian
+	}
+	text = {
+		trigger = {
+			culture = {
 				trigger_if = {
 					limit = {
 						exists = global_var:CE_is_loaded
@@ -2695,9 +2723,9 @@ CharacterReligion = {
     }
     text = {
         trigger = {
-            has_religion = religion:baltic_religion
+            has_religion = religion:slavic_religion
         }
-        localization_key = _baltic
+        localization_key = _slavic
     }
     text = {
         trigger = {
