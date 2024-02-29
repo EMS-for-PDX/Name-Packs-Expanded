@@ -25,6 +25,7 @@
 		has_cultural_pillar = heritage_burman
 		has_cultural_pillar = heritage_tocharian
 		has_cultural_pillar = heritage_baltic
+		has_cultural_pillar = heritage_east_slavic
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -86,6 +87,7 @@
 		has_cultural_pillar = language_burmese
 		has_cultural_pillar = language_tocharian
 		has_cultural_pillar = language_baltic
+		has_cultural_pillar = language_east_slavic
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -218,6 +220,7 @@ south_slav_check = {
 	OR = {
 		has_cultural_pillar = heritage_south_slavic
 		has_cultural_pillar = heritage_baltic #To do
+		has_cultural_pillar = heritage_east_slavic
 		AND = {
 			has_cultural_pillar = heritage_west_slavic
 			has_cultural_pillar = language_south_slavic
