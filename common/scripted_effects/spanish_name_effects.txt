@@ -1472,9 +1472,16 @@ spanish_female_name_effect = {
 								has_name_list = name_list_portuguese
 							}
 						}
-						add = 1
+						add = 2
 					}
-					change_first_name = Thrudhild
+					random_list = {
+						1 = {
+							change_first_name = Thrudhild
+						}
+						1 = {
+							change_first_name = Vivilde
+						}
+					}
 				}
 				1 = {
 					change_first_name = Argilo
