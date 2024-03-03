@@ -1569,6 +1569,58 @@ CharacterCulture = {
 			culture = {
 				OR = {
 					AND = {
+						has_cultural_pillar = language_volga_finnic
+						OR = {
+							has_name_list = name_list_mordvin
+							has_name_list = name_list_meshchera
+						}
+					}
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						OR = {
+							has_cultural_pillar = language_mordvin
+							has_cultural_pillar = language_meshchera
+						}
+					}
+				}
+			}
+		}
+		localization_key = _mordvin
+	}
+	text = {
+		trigger = {
+			culture = {
+				OR = {
+					AND = {
+						has_cultural_pillar = language_volga_finnic
+						OR = {
+							has_name_list = name_list_mari
+							has_name_list = name_list_merya
+							has_name_list = name_list_muroma
+						}
+					}
+					trigger_if = {
+						limit = {
+							exists = global_var:CE_is_loaded
+						}
+						OR = {
+							has_cultural_pillar = language_mari
+							has_cultural_pillar = language_merya
+							has_cultural_pillar = language_muroma
+						}
+					}
+				}
+			}
+		}
+		localization_key = _mari
+	}
+	text = {
+		trigger = {
+			culture = {
+				OR = {
+					AND = {
 						has_cultural_pillar = language_finnic
 						has_name_list = name_list_vepsian
 					}
