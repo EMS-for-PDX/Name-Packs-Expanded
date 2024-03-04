@@ -81,7 +81,12 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -385,7 +390,6 @@
 						has_cultural_pillar = heritage_east_african
 						has_cultural_pillar = language_omotic
 					}
-					has_cultural_pillar = heritage_ugro_permian
 					has_cultural_pillar = heritage_balto_finnic #todo Veps
 				}
 			}
@@ -1408,7 +1412,12 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Window_Turkish
@@ -1501,7 +1510,12 @@ WindowNameTT = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -1809,7 +1823,6 @@ WindowNameTT = {
 						has_cultural_pillar = heritage_east_african
 						has_cultural_pillar = language_omotic
 					}
-					has_cultural_pillar = heritage_ugro_permian
 					has_cultural_pillar = heritage_balto_finnic #todo Veps
 				}
 			}
@@ -2826,7 +2839,12 @@ WindowNameTT = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Window_Turkish_TT
