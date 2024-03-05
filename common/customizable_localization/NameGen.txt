@@ -125,6 +125,17 @@ CharacterPatCheck = {
 	text = {
 		trigger = {
 			exists = father
+			culture = {
+				NAND = {
+					OR = {
+						has_name_list = name_list_khanty
+						has_cultural_pillar = heritage_baltic
+					}
+					root.faith = {
+						has_doctrine_parameter = unreformed
+					}
+				}
+			}
 		}
 		localization_key = Supported_Patronym
 	}
