@@ -26,8 +26,8 @@ Full_Name_Possessive_Tocharian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:C
 Full_Name_Possessive_No_Tooltip_Tocharian: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
 
 Name_Khotanese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('KhotanEpithetCheck')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]#!#!#!"
-Name_No_Tooltip_Khotanese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('KhotanEpithetCheck')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
-Name_Possessive_Khotanese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('KhotanEpithetCheck')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]'s#!#!#!"
+Name_No_Tooltip_Khotanese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('KhotanEpithetCheck')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
+Name_Possessive_Khotanese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('KhotanEpithetCheck')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]'s#!#!#!"
 Name_Possessive_No_Tooltip_Khotanese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('KhotanEpithetCheck')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]'s"
 
 Name_Tocharian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
@@ -41,9 +41,9 @@ Short_Name_Possessive_Khotanese: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:
 Short_Name_Possessive_No_Tooltip_Khotanese: "#high [ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('KhotanEpithetCheck')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]'s"
 Short_Name_Possessive_No_Tooltip_No_Format_Khotanese: "[ROOT.Char.Custom('CharacterTierCheckBefore')][ROOT.Char.Custom('KhotanEpithetCheck')][Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]'s"
 
-Short_Name_Tocharian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
-Short_Name_No_Tooltip_Tocharian: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]"
-Short_Name_Possessive_Tocharian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #L [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
+Short_Name_Tocharian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]#!#!#!"
+Short_Name_No_Tooltip_Tocharian: "#high [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]"
+Short_Name_Possessive_Tocharian: "#ONCLICK:CHARACTER,[ROOT.Char.GetID] #TOOLTIP:CHARACTER,[ROOT.Char.GetID] #high #L [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s#!#!#!"
 Short_Name_Possessive_No_Tooltip_Tocharian: "#high [Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
 Short_Name_Possessive_No_Tooltip_No_Format_Tocharian: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))][ROOT.Char.Custom('CharacterTierCheckAfter')]'s"
 
