@@ -6,7 +6,7 @@ Gui_blank_Before: ""
 #Given Names
 SGUI_Supported_Name: "[Localize(Concatenate(CHARACTER.GetFirstNameNoTooltip,CHARACTER.Custom('CharacterCulture')))]"
 SGUI_Nonsupported_Name: "[CHARACTER.GetFirstNameNoTooltip]"
-Supported_Name: "[Localize(Concatenate(CHARACTER.GetFirstNameNoTooltip,CHARACTER.Custom('CharacterCulture')))]"
+Supported_Name: "[Localize(Concatenate(ROOT.Char.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')))]"
 
 #Patronyms
 Supported_Patronym: "[Localize(Concatenate(Concatenate(Concatenate(ROOT.Char.GetFather.GetFirstNameNoTooltip,ROOT.Char.Custom('CharacterCulture')),'_pat_dad'),ROOT.Char.Custom('CharacterGender')))]"
