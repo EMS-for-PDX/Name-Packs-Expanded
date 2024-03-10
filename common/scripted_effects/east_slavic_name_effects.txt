@@ -1078,19 +1078,82 @@
 	}
 }
 east_slavic_female_name_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
+		0 = {
+			modifier = {
+				exists = mother.mother
+				NOT = {
+					has_trait = bastard
+					mother = {
+						has_character_flag = mother_mother_name
+					}
+				}
+				add = 40 #freq
+			}
+			mother.mother = {
+				save_scope_as = the_lady
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = mother_mother_name
+			}
+		}
+		0 = {
+			modifier = {
+				father ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 25 #common /2
+			}
+			father = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			father = {
+				add_character_flag = sister_name
+			}
+		}
+		0 = {
+			modifier = {
+				mother ?= {
+					any_sibling = {
+						is_male = no
+					}
+					NOT = {
+						has_character_flag = sister_name
+					}
+				}
+				NOT = {
+					has_trait = bastard
+				}
+				add = 10 #common /2
+			}
+			mother = {
+				random_sibling = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = the_lady
+				}
+			}
+			change_first_name = { template_character = scope:the_lady }
+			mother = {
+				add_character_flag = sister_name
+			}
+		}
 		0 = {
 			modifier = {
 				has_religion = religion:islam_religion
