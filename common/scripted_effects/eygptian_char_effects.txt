@@ -152,6 +152,14 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0025 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:bedouin0020 }
 	}
+	character:20783.dynasty = { #Mustafid
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:20783 }
+	}
+	character:20783 = {
+		change_first_name = Mustafa
+		dynasty_effect_ne = yes
+        add_to_global_variable_list = { name = Badr_ad_Din target = this }
+	}
 	character:34700 = { #This is Iftikhar ad-Dawla no known given name
 		change_first_name = Nafi
 		dynasty_effect_ne = yes
