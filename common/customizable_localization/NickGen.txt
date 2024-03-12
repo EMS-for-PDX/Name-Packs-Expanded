@@ -2432,15 +2432,12 @@
     }
     text = {
         trigger = {
-            has_nickname = nick_the_handsome     
+			OR = {
+				has_nickname = nick_the_fair
+				has_nickname = nick_the_handsome
+			}
         }
         localization_key = Handsome
-    }
-    text = {
-        trigger = {
-            has_nickname = nick_the_fair     
-        }
-        localization_key = Fair
     }
     text = {
         trigger = {
