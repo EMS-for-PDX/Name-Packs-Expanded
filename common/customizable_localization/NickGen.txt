@@ -1283,6 +1283,18 @@
 	}
 	text = {
 		trigger = {
+			has_nickname = nick_natures_bane
+		}
+        localization_key = NaturesBane
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_dragonslayer
+		}
+        localization_key = Dragonslayer
+	}
+	text = {
+		trigger = {
 			has_nickname = nick_the_conqueror
 		}
         localization_key = Conqueror
@@ -1421,7 +1433,10 @@
 	}
 	text = {
 		trigger = {
-			has_nickname = nick_the_dragon
+			OR = {
+				has_nickname = nick_the_dragon
+				has_nickname = nick_the_dragoness
+			}
 		}
         localization_key = Dragon
 	}
@@ -2990,12 +3005,6 @@
             has_nickname = nick_the_ill_ruler     
         }
         localization_key = IllRuler
-    }
-    text = {
-        trigger = {
-            has_nickname = nick_the_dragoness     
-        }
-        localization_key = Dragonless
     }
     text = {
         trigger = {
