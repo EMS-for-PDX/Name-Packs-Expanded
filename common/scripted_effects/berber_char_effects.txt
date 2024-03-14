@@ -183,8 +183,20 @@
 	character:danis0005 = {
 		vassal_contract_set_obligation_level = { type = special_contract level = special_contract_march }
 	}
+	character:273098 ={
+		change_first_name = Muhammad
+	}
+	character:danis0007 ={
+		change_first_name = Ghaniya
+	}
+	character:273100 ={
+		change_first_name = Tamsult
+	}
 	character:155116 ={
 		change_first_name = Khidr
+	}
+	character:128831 ={
+		change_first_name = Qasim
 	}
 	character:1236307 ={
 		change_first_name = Khidr
@@ -594,8 +606,73 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:155006 }
 		add_to_variable_list = { name = regular_laqab_dynasty target = character:baranis0081 }
 	}
+	character:baranis0064.dynasty = { # Qasimids
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:baranis0065 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:baranis0066 }
+		add_to_variable_list = { name = regular_laqab_dynasty target = character:baranis0067 }
+	}
 	character:155084 ={
 		dynasty_effect_ne = yes
+	}
+	character:1144553 ={
+		change_first_name = Arhasen
+	}
+	character:1228237 ={
+		change_first_name = Sekkura
+	}
+	character:155038 ={
+		change_first_name = Muansir
+	}
+	character:1228236 ={
+		change_first_name = Mahbuba
+	}
+	character:155026 ={
+		change_first_name = Seghmar
+	}
+	character:20850 ={
+		change_first_name = Righ
+	}
+	character:20811 ={
+		change_first_name = Muhsin
+	}
+	character:tagelmust0007 ={
+		change_first_name = Tigaman
+	}
+	character:268280 ={
+		change_first_name = Abd-Allah
+	}
+	character:baranis0068 ={
+		change_first_name = Layla
+	}
+	character:baranis0083 ={
+		change_first_name = Daniya
+	}
+	character:20769 ={
+		change_first_name = Masud
+	}
+	character:baranis0067 ={
+        add_to_global_variable_list = { name = Adud_ad_Dawla target = this }
+	}
+	character:baranis0066 ={
+        #add_to_global_variable_list = { name = Ymum_ad_Dawla target = this }
+	}
+	character:baranis0065 ={
+        add_to_global_variable_list = { name = Nizam_ad_Dawla target = this }
+	}
+	character:baranis0064 ={
+		dynasty_effect_ne = yes
+	}
+	character:baranis0068 ={
+		change_first_name = Layla
+	}
+	character:baranis0083 ={
+		change_first_name = Daniya
+	}
+	character:20769 ={
+		change_first_name = Masud
+	}
+	character:baranis0082 ={
+		change_first_name = Baraka
 	}
 	character:20803 ={
 		change_first_name = Abdal-Wahhab
