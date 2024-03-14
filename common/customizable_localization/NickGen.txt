@@ -2261,7 +2261,10 @@
     }
     text = {
         trigger = {
-            has_nickname = nick_the_monk     
+			OR = {
+				has_nickname = nick_the_monk     
+				has_nickname = nick_the_nun 
+			}
         }
         localization_key = Monk
     }
