@@ -1,4 +1,16 @@
 ﻿867_berber_char_effect = {
+	character:159501.dynasty = { #Idrisids
+		add_to_variable_list = { name = dynasty_feudalclan target = character:159501 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:159502 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:159503 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:159504 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:159505 }
+		add_to_variable_list = { name = dynasty_independent target = character:159501 }
+		add_to_variable_list = { name = dynasty_independent target = character:159502 }
+		add_to_variable_list = { name = dynasty_independent target = character:159503 }
+		add_to_variable_list = { name = dynasty_independent target = character:159504 }
+		add_to_variable_list = { name = dynasty_independent target = character:159505 }
+	}
 	character:168254.dynasty = { #Salihids
 		add_to_variable_list = { name = dynasty_independent target = character:168254 }
 		add_to_variable_list = { name = dynasty_independent target = character:168255 }
@@ -419,6 +431,10 @@
 	}
 }
 1066_berber_char_effect = {
+	character:159501.dynasty = { #Idrisids
+		add_to_variable_list = { name = dynasty_feudalclan target = character:159506 }
+		add_to_variable_list = { name = dynasty_independent target = character:159506 }
+	}
 	character:155077.house = {
         set_variable = {
             name = name_founder
@@ -426,6 +442,8 @@
         }
     }
 	character:155077.dynasty = { # Almoravids
+		add_to_variable_list = { name = dynasty_feudalclan target = character:32998 }
+		add_to_variable_list = { name = dynasty_independent target = character:32998 }
 		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:3853 }
 		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:3855 }
 		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:32963 }
@@ -623,6 +641,9 @@
 	character:155038 ={
 		change_first_name = Muansir
 	}
+	character:1228855 ={
+		change_first_name = Tariq
+	}
 	character:1228236 ={
 		change_first_name = Mahbuba
 	}
@@ -638,7 +659,32 @@
 	character:tagelmust0007 ={
 		change_first_name = Tigaman
 	}
+	character:155024 ={
+		change_first_name = Salih
+		dynasty_effect_ne = yes
+	}
+	character:155056 ={
+		change_first_name = Buba
+	}
+	character:273130 ={
+		change_first_name = Awrigh
+	}
+	character:273131 ={
+		change_first_name = Sandal
+	}
+	character:273132 ={
+		change_first_name = Khayr
+	}
+	character:73200 ={
+		change_first_name = Maymun
+	}
+	character:273134 ={
+		change_first_name = Maymun
+	}
 	character:268280 ={
+		change_first_name = Abd-Allah
+	}
+	character:baranis0088 ={
 		change_first_name = Abd-Allah
 	}
 	character:baranis0068 ={
