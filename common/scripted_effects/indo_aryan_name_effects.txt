@@ -1,6 +1,5 @@
 ﻿indo_aryan_male_name_effect = {
-	
-	
+	save_scope_as = thechar
 	if = {
 		limit = {
 			any_parent = {
@@ -45,147 +44,9 @@
 		}
 		random_list = {
 			30 = {
-#				modifier = {
-#					OR = {
-#						AND = {
-#							exists = father
-#							dynasty = father.dynasty
-#							NOT = {
-#								father = {
-#									has_character_flag = had_second_son
-#								}
-#							}
-#						}
-#						AND = {
-#							exists = mother
-#							dynasty = mother.dynasty
-#							NOT = {
-#								mother = {
-#									has_character_flag = had_second_son
-#								}
-#							}
-#						}
-#					}
-#					add = 25
-#				}
-#				modifier = {
-#					OR = {
-#						AND = {
-#							exists = father
-#							dynasty = father.dynasty
-#							NOT = {
-#								father = {
-#									has_character_flag = had_third_son
-#								}
-#							}
-#						}
-#						AND = {
-#							exists = mother
-#							dynasty = mother.dynasty
-#							NOT = {
-#								mother = {
-#									has_character_flag = had_third_son
-#								}
-#							}
-#						}
-#					}
-#					add = 25
-#				}
-#				modifier = {
-#					OR = {
-#						AND = {
-#							exists = father
-#							dynasty = father.dynasty
-#							NOT = {
-#								father = {
-#									has_character_flag = had_fourth_son
-#								}
-#							}
-#						}
-#						AND = {
-#							exists = mother
-#							dynasty = mother.dynasty
-#							NOT = {
-#								mother = {
-#									has_character_flag = had_fourth_son
-#								}
-#							}
-#						}
-#					}
-#					add = 25
-#				}
 				name_ia_roll_male = yes
 			}
 			70 = {
-#				modifier = {
-#					OR = {
-#						AND = {
-#							exists = father
-#							dynasty = father.dynasty
-#							NOT = {
-#								father = {
-#									has_character_flag = had_second_son
-#								}
-#							}
-#						}
-#						AND = {
-#							exists = mother
-#							dynasty = mother.dynasty
-#							NOT = {
-#								mother = {
-#									has_character_flag = had_second_son
-#								}
-#							}
-#						}
-#					}
-#					add = -25
-#				}
-#				modifier = {
-#					OR = {
-#						AND = {
-#							exists = father
-#							dynasty = father.dynasty
-#							NOT = {
-#								father = {
-#									has_character_flag = had_third_son
-#								}
-#							}
-#						}
-#						AND = {
-#							exists = mother
-#							dynasty = mother.dynasty
-#							NOT = {
-#								mother = {
-#									has_character_flag = had_third_son
-#								}
-#							}
-#						}
-#					}
-#					add = -25
-#				}
-#				modifier = {
-#					OR = {
-#						AND = {
-#							exists = father
-#							dynasty = father.dynasty
-#							NOT = {
-#								father = {
-#									has_character_flag = had_fourth_son
-#								}
-#							}
-#						}
-#						AND = {
-#							exists = mother
-#							dynasty = mother.dynasty
-#							NOT = {
-#								mother = {
-#									has_character_flag = had_fourth_son
-#								}
-#							}
-#						}
-#					}
-#					add = -25
-#				}
 				suffix_ia_roll_male = yes
 			}
 		}
@@ -2684,8 +2545,6 @@ sena_male_name_effect = {
     }
 }
 hinduism_male_name_effect = {
-	
-	
     random_list = {
 		0 = {
 			modifier = {
@@ -8868,8 +8727,6 @@ short_male_indo_aryan_name_effect = {
 	}
 }
 indo_aryan_female_name_effect = {
-	
-	
 	random_list = {
 		40 = {
 			random_list = {
@@ -10241,8 +10098,6 @@ indo_aryan_female_name_effect = {
 	}
 }
 indo_aryan_muslim_male_name_effect = {
-	
-	
 	random_list = {
 		25 = {
 			change_first_name = Muhammad
@@ -10740,8 +10595,6 @@ indo_aryan_muslim_male_name_effect = {
 	}
 }
 indo_aryan_muslim_female_name_effect = {
-	
-	
 	random_list = {
 		40 = {
 			random_list = {
@@ -10968,8 +10821,6 @@ indo_aryan_muslim_female_name_effect = {
 	}
 }
 sinhala_male_name_effect = {
-	
-	
 	random_list = {
 		40 = {
 			random_list = {
@@ -11734,8 +11585,6 @@ sinhala_male_name_effect = {
 	}
 }
 sinhala_female_name_effect = {
-	
-	
 	random_list = {
 		40 = {
 			random_list = {
