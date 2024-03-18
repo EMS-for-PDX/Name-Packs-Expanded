@@ -899,7 +899,7 @@
         add_to_variable_list = { name = dynasty_feudalclan target = character:247323 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:247324 }
     }
-	character:247322.house = {
+	character:305365.house = {
         set_variable = {
             name = name_founder
             value = character:npedbtibet046
@@ -1105,21 +1105,15 @@
         add_to_variable_list = { name = dynasty_feudalclan target = character:305200 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:305201 }
     }
-	character:304080.house = {
-        set_variable = {
-            name = name_founder
-            value = character:npedbtibet061
-        }
-    }
 	character:304080.dynasty = { #Panu, fictional
-        add_to_variable_list = { name = dynasty_feudalclan target = character:304080 }
-        add_to_variable_list = { name = dynasty_feudalclan target = character:304081 }
-        add_to_variable_list = { name = dynasty_feudalclan target = character:304082 }
-        add_to_variable_list = { name = dynasty_feudalclan target = character:304083 }
-        add_to_variable_list = { name = dynasty_feudalclan target = character:304084 }
-        add_to_variable_list = { name = dynasty_feudalclan target = character:304085 }
-        add_to_variable_list = { name = dynasty_feudalclan target = character:304086 }
-        add_to_variable_list = { name = dynasty_feudalclan target = character:304087 }
+        add_to_variable_list = { name = dynasty_independent target = character:304080 }
+        add_to_variable_list = { name = dynasty_independent target = character:304081 }
+        add_to_variable_list = { name = dynasty_independent target = character:304082 }
+        add_to_variable_list = { name = dynasty_independent target = character:304083 }
+        add_to_variable_list = { name = dynasty_independent target = character:304084 }
+        add_to_variable_list = { name = dynasty_independent target = character:304085 }
+        add_to_variable_list = { name = dynasty_independent target = character:304086 }
+        add_to_variable_list = { name = dynasty_independent target = character:304087 }
     }
 	character:bodpa0241 = {
 		change_first_name = Lhatri
@@ -2707,6 +2701,7 @@
 	}
 }
 1066_tibetan_char_effect = {
+    add_to_global_variable_list = { name = global_list_dead_hofs target = character:252012 }
 	character:247131.dynasty = { #Pugyel
         add_to_variable_list = { name = dynasty_independent target = character:247134 }
         add_to_variable_list = { name = dynasty_independent target = character:247135 }
@@ -3357,6 +3352,377 @@
         add_to_variable_list = { name = dynasty_tribe target = character:305494 }
         add_to_variable_list = { name = dynasty_tribe target = character:305495 }
     }
+	character:304783.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbtibet062
+        }
+    }
+	character:304783.dynasty = { #Purig, fictional
+        add_to_variable_list = { name = dynasty_tribe target = character:304783 }
+        add_to_variable_list = { name = dynasty_tribe target = character:304784 }
+        add_to_variable_list = { name = dynasty_tribe target = character:304785 }
+        add_to_variable_list = { name = dynasty_tribe target = character:304786 }
+        add_to_variable_list = { name = dynasty_tribe target = character:304787 }
+        add_to_variable_list = { name = dynasty_tribe target = character:304788 }
+    }
+	character:243001 = {
+		change_first_name = Songtsen
+	}
+	character:12064 = {
+		change_first_name = Drakpa-Gyelpo
+	}
+	character:305969 = {
+		change_first_name = Gyeltsen
+	}
+	character:305402 = {
+		change_first_name = Lhaton
+	}
+	character:305403 = {
+		change_first_name = Khorre
+	}
+	character:305404 = {
+		change_first_name = Tsenkong
+	}
+	character:305405 = {
+		change_first_name = Shatri
+	}
+	character:305406 = {
+		change_first_name = Gyeltsen
+	}
+	character:305407 = {
+		change_first_name = Khandro
+	}
+	character:305408 = {
+		change_first_name = Trizang
+	}
+	character:305409 = {
+		change_first_name = Lugyel
+	}
+	character:305410 = {
+		change_first_name = Lhalho
+	}
+	character:305084 = {
+		change_first_name = Nyetong
+	}
+	character:305085 = {
+		change_first_name = Chola
+	}
+	character:305086 = {
+		change_first_name = Dolo
+	}
+	character:305087 = {
+		change_first_name = Getsen
+	}
+	character:305088 = {
+		change_first_name = Nyima-Pel
+	}
+	character:305089 = {
+		change_first_name = Kunga-Dorje
+	}
+	character:305090 = {
+		change_first_name = Okyibar
+	}
+	character:305091 = {
+		change_first_name = Lonang
+	}
+	character:305092 = {
+		change_first_name = Rinchen-Gyeltsen
+	}
+	character:304900 = {
+		change_first_name = Songnge
+	}
+	character:304901 = {
+		change_first_name = Zhonnu-Lodro
+	}
+	character:304902 = {
+		change_first_name = Tsultrim-Gyelpo
+	}
+	character:304903 = {
+		change_first_name = Pelgyi-Dorje
+	}
+	character:304904 = {
+		change_first_name = Tritsen
+	}
+	character:304905 = {
+		change_first_name = Tsotsen
+	}
+	character:304906 = {
+		change_first_name = Jopel
+	}
+	character:304907 = {
+		change_first_name = Jayulwa
+	}
+	character:304908 = {
+		change_first_name = Neshak
+	}
+	character:12114 = {
+		change_first_name = Rinchen-Gyelpo
+	}
+	character:12112 = {
+		change_first_name = Detsen
+	}
+	character:247033 = {
+		change_first_name = Sanggye-Yeshe
+	}
+	character:247034 = {
+		change_first_name = Dongtsap
+	}
+	character:247035 = {
+		change_first_name = Khyibu
+	}
+	character:247036 = {
+		change_first_name = Sonam-Sengge
+	}
+	character:247037 = {
+		change_first_name = Donyo-Pel
+	}
+	character:247038 = {
+		change_first_name = Druppe-Dorje
+	}
+	character:247039 = {
+		change_first_name = Zhangzik
+	}
+	character:305084 = {
+		change_first_name = Lhalek
+	}
+	character:305085 = {
+		change_first_name = Soten
+	}
+	character:305086 = {
+		change_first_name = Trashi-De
+	}
+	character:305087 = {
+		change_first_name = Trashi-Pel
+	}
+	character:305088 = {
+		change_first_name = Chokyi-Lodro
+	}
+	character:305089 = {
+		change_first_name = Trigong
+	}
+	character:305090 = {
+		change_first_name = Khyituk
+	}
+	character:305091 = {
+		change_first_name = Tsangzhar
+	}
+	character:305092 = {
+		change_first_name = Donyo-Gyeltsen
+	}
+	character:304217 = {
+		change_first_name = Yelekpo
+	}
+	character:304232 = {
+		change_first_name = Lha-Kyi
+	}
+	character:304233 = {
+		change_first_name = Ye-Kyipo
+	}
+	character:304214 = {
+		change_first_name = Mengo
+	}
+	character:304215 = {
+		change_first_name = Taru-Merok
+	}
+	character:304212 = {
+		change_first_name = Rinchen-Gyeltsen
+	}
+	character:304213 = {
+		change_first_name = Jangchup-Gyeltsen
+	}
+	character:304115 = {
+		change_first_name = Rinchen-Jangchup
+	}
+	character:304116 = {
+		change_first_name = Chukdu
+	}
+	character:304117 = {
+		change_first_name = Yulsung
+	}
+	character:304118 = {
+		change_first_name = Lhatri
+	}
+	character:304119 = {
+		change_first_name = Tromzher
+	}
+	character:304120 = {
+		change_first_name = Luging
+	}
+	character:304121 = {
+		change_first_name = Ganden-Jangchup
+	}
+	character:304122 = {
+		change_first_name = Lodro-Sengge
+	}
+	character:304090 = {
+		change_first_name = Dutsen
+	}
+	character:304091 = {
+		change_first_name = Nyato
+	}
+	character:304092 = {
+		change_first_name = Sherap-Tsultrim
+	}
+	character:304093 = {
+		change_first_name = Namkha-Sengge
+	}
+	character:304094 = {
+		change_first_name = Sherap-Gyeltsen
+	}
+	character:304095 = {
+		change_first_name = Pel-Khortsen
+	}
+	character:304096 = {
+		change_first_name = Khyimare
+	}
+	character:304097 = {
+		change_first_name = Jangchup-Rgyatso
+	}
+	character:304098 = {
+		change_first_name = Kyide
+	}
+	character:304099 = {
+		change_first_name = Peto
+	}
+	character:305372 = {
+		change_first_name = Ludrup
+	}
+	character:305373 = {
+		change_first_name = Shakya-Gyeltsen
+	}
+	character:305374 = {
+		change_first_name = Sonam-Sherap
+	}
+	character:305375 = {
+		change_first_name = Netang
+	}
+	character:305376 = {
+		change_first_name = Pelston
+	}
+	character:305377 = {
+		change_first_name = Khongzung
+	}
+	character:305378 = {
+		change_first_name = Ozer-Pel
+	}
+	character:305379 = {
+		change_first_name = Shakya-Rinchen
+	}
+	character:305380 = {
+		change_first_name = Mangtsen
+	}
+	character:305381 = {
+		change_first_name = Dongtsen
+	}
+	character:305208 = {
+		change_first_name = Gyatso
+	}
+	character:305209 = {
+		change_first_name = Dondrup-Pelba
+	}
+	character:305210 = {
+		change_first_name = Chi-Detsen
+	}
+	character:305211 = {
+		change_first_name = Khongto
+	}
+	character:305212 = {
+		change_first_name = Dongzhi
+	}
+	character:305213 = {
+		change_first_name = Dukye
+	}
+	character:305214 = {
+		change_first_name = Nyema
+	}
+	character:304929 = {
+		change_first_name = Lumen
+	}
+	character:304930 = {
+		change_first_name = Gajaktak
+	}
+	character:304931 = {
+		change_first_name = Takchupa
+	}
+	character:304932 = {
+		change_first_name = Netsen
+	}
+	character:304933 = {
+		change_first_name = Doklhano
+	}
+	character:304934 = {
+		change_first_name = Gawe-Lodro
+	}
+	character:304935 = {
+		change_first_name = Dawa-Gyeltsen
+	}
+	character:304936 = {
+		change_first_name = Chokyi-Gyeltsen
+	}
+	character:304937 = {
+		change_first_name = Drakpa-De
+	}
+	character:304938 = {
+		change_first_name = Pakpa-Kyap
+	}
+	character:304783 = {
+		change_first_name = Dagong
+	}
+	character:304784 = {
+		change_first_name = Khyinyuk
+	}
+	character:304785 = {
+		change_first_name = Yeshe-Gyeltsen
+	}
+	character:304786 = {
+		change_first_name = Ramshak
+	}
+	character:304787 = {
+		change_first_name = Lhasde
+	}
+	character:304788 = {
+		change_first_name = Lodro-Pel
+	}
+	character:304789 = {
+		change_first_name = Trashi-Rinchen
+	}
+	character:304790 = {
+		change_first_name = Rizung
+	}
+	character:304791 = {
+		change_first_name = Rikpa-Gon
+	}
+	character:304421 = {
+		change_first_name = Wangchuk-Pel
+	}
+	character:304422 = {
+		change_first_name = Chototak
+	}
+	character:304423 = {
+		change_first_name = Yuchen
+	}
+	character:304424 = {
+		change_first_name = Pelde
+	}
+	character:304425 = {
+		change_first_name = Drakpa
+	}
+	character:304426 = {
+		change_first_name = Trashi-Sengge
+	}
+	character:304427 = {
+		change_first_name = Gelek
+	}
+	character:304428 = {
+		change_first_name = Taklo
+	}
+	character:304429 = {
+		change_first_name = Trashi-Drakpa
+	}
+	character:304430 = {
+		change_first_name = Dusong
+	}
 	character:305490 = {
 		change_first_name = Gyeltsen-Bum
 	}

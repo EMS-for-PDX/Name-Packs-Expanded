@@ -10,8 +10,21 @@
 		has_cultural_pillar = heritage_west_germanic
 		has_cultural_pillar = heritage_north_germanic
 		has_cultural_pillar = heritage_brythonic
-		has_cultural_pillar = heritage_mongolic
-		has_cultural_pillar = heritage_berber
+		AND = {
+			has_cultural_pillar = heritage_mongolic
+			NOT = {
+				OR = {
+					has_name_list = name_list_khitan
+					has_name_list = name_list_tuyuhun
+				}
+			}
+		}
+		AND = {
+			has_cultural_pillar = heritage_berber
+			NOT = {
+				has_name_list = name_list_guanches
+			}
+		}
 		has_cultural_pillar = heritage_indo_aryan
 		has_cultural_pillar = heritage_dravidian
 		has_cultural_pillar = heritage_east_african
@@ -19,7 +32,12 @@
 		has_cultural_pillar = heritage_iberian
 		has_cultural_pillar = heritage_frankish
 		has_cultural_pillar = heritage_latin
-		has_cultural_pillar = heritage_tibetan
+		AND = {
+			has_cultural_pillar = heritage_tibetan
+			NOT = {
+				has_name_list = name_list_kirati
+			}
+		}
 		has_cultural_pillar = heritage_central_germanic
 		has_cultural_pillar = heritage_west_slavic
 		has_cultural_pillar = heritage_burman
@@ -61,8 +79,21 @@
 		has_cultural_pillar = language_anglic
 		has_cultural_pillar = language_norse
 		has_cultural_pillar = language_brythonic
-		has_cultural_pillar = language_mongolic
-		has_cultural_pillar = language_berber
+		AND = {
+			has_cultural_pillar = language_mongolic
+			NOT = {
+				OR = {
+					has_name_list = name_list_khitan
+					has_name_list = name_list_tuyuhun
+				}
+			}
+		}
+		AND = {
+			has_cultural_pillar = language_berber
+			NOT = {
+				has_name_list = name_list_guanches
+			}
+		}
 		has_cultural_pillar = language_magadhan
 		has_cultural_pillar = language_marathi
 		has_cultural_pillar = language_pahari
@@ -80,7 +111,12 @@
 		has_cultural_pillar = language_italian
 		has_cultural_pillar = language_sardinian
 		has_cultural_pillar = language_omotic
-		has_cultural_pillar = language_tibetan
+		AND = {
+			has_cultural_pillar = language_tibetan
+			NOT = {
+				has_name_list = name_list_kirati
+			}
+		}
 		has_cultural_pillar = language_dutch
 		has_cultural_pillar = language_saxon
 		has_cultural_pillar = language_french

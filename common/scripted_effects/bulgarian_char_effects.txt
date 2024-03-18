@@ -89,14 +89,24 @@
 		}
 	}
 	character:70381.dynasty = { #Kometopoulos
-		add_to_variable_list = { name = dynasty_independent target = character:732 }
-		add_to_variable_list = { name = dynasty_independent target = character:730 }
 		add_to_variable_list = { name = dynasty_independent target = character:722 }
+		add_to_variable_list = { name = dynasty_independent target = character:728 }
+		add_to_variable_list = { name = dynasty_independent target = character:730 }
+		add_to_variable_list = { name = dynasty_independent target = character:732 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:722 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:728 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:730 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:732 }
 		add_to_variable_list = { name = slav_name_dynasty target = character:722 }
 		add_to_variable_list = { name = slav_name_dynasty target = character:730 }
 		add_to_variable_list = { name = slav_name_dynasty target = character:732 }
 		add_to_variable_list = { name = baptismal_name_dynasty target = character:4490 }
 		add_to_variable_list = { name = baptismal_name_dynasty target = character:40531 }
+	}
+	character:712.dynasty = { #Balgarsko
+		add_to_variable_list = { name = dynasty_independent target = character:712 }
+		add_to_variable_list = { name = dynasty_independent target = character:714 }
+		add_to_variable_list = { name = dynasty_independent target = character:716 }
 	}
 	character:34463.dynasty = { #Voiteh
 		add_to_variable_list = { name = slav_name_dynasty target = character:34463 }
@@ -105,8 +115,17 @@
 		change_first_name = George
 		dynasty_effect_ne = yes
 	}
+	character:716 = {
+		change_first_name = Bars
+	}
+	character:718 = {
+		change_first_name = Romanus
+	}
 	character:4490 = {
 		change_first_name = Miroslava
+	}
+	character:728 = {
+		change_first_name = Samuel
 	}
 	character:70380 = {
 		change_first_name = Presiyan
