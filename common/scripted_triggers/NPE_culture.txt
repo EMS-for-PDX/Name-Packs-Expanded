@@ -27,7 +27,12 @@
 		}
 		has_cultural_pillar = heritage_indo_aryan
 		has_cultural_pillar = heritage_dravidian
-		has_cultural_pillar = heritage_east_african
+		AND = {
+			has_cultural_pillar = heritage_east_african
+			NOT = {
+				has_name_list = name_list_daju
+			}
+		}
 		has_cultural_pillar = heritage_somalian
 		has_cultural_pillar = heritage_iberian
 		has_cultural_pillar = heritage_frankish
@@ -61,7 +66,12 @@
 		}
 	}
 	OR = {
-		has_cultural_pillar = language_sudanic
+		AND = {
+			has_cultural_pillar = language_sudanic
+			NOT = {
+				has_name_list = name_list_daju
+			}
+		}
 		has_cultural_pillar = language_ethiopic
 		has_cultural_pillar = language_turkic
 		has_cultural_pillar = language_oghur
