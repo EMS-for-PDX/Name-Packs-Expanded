@@ -2,9 +2,27 @@
 	on_actions = {
 		on_867_start
 		on_1066_start
+		on_867_start_special
+		on_1066_start_special
 		courtier_effect
 		always_NPE
 		eldest_son_fix
+	}
+}
+on_867_start_special = {
+	trigger = {
+		game_start_date = 867.1.1
+	}
+	effect = {
+		867_only_dynasty_effect = yes
+	}
+}
+on_1066_start_special = {
+	trigger = {
+		game_start_date = 1066.9.15
+	}
+	effect = {
+		1066_only_dynasty_effect = yes
 	}
 }
 always_NPE = {
