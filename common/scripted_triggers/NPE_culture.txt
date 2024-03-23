@@ -49,7 +49,12 @@
 		has_cultural_pillar = heritage_tocharian
 		has_cultural_pillar = heritage_baltic
 		has_cultural_pillar = heritage_balto_finnic
-		has_cultural_pillar = heritage_ugro_permian
+		AND = {
+			has_cultural_pillar = heritage_ugro_permian
+			NOT = {
+				has_name_list = name_list_samoyed
+			}
+		}
 		has_cultural_pillar = heritage_volga_finnic
 		has_cultural_pillar = heritage_east_slavic
 		trigger_if = {
@@ -136,7 +141,12 @@
 		has_cultural_pillar = language_burmese
 		has_cultural_pillar = language_tocharian
 		has_cultural_pillar = language_baltic
-		has_cultural_pillar = language_finnic
+		AND = {
+			has_cultural_pillar = language_finnic
+			NOT = {
+				has_name_list = name_list_samoyed
+			}
+		}
 		has_cultural_pillar = language_sami
 		has_cultural_pillar = language_ugro_permian
 		has_cultural_pillar = language_volga_finnic
