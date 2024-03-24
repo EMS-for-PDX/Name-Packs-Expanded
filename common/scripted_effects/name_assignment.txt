@@ -861,6 +861,15 @@
 							has_name_list = name_list_kashmiri
 							has_name_list = name_list_nepali
 							has_name_list = name_list_sinhala
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_jat
+							}
 						}
 					}
 					has_religion = religion:islam_religion
@@ -910,6 +919,19 @@
 							has_name_list = name_list_kashmiri
 							has_name_list = name_list_nepali
 							has_name_list = name_list_gond
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_jat
+							}
+							has_name_list = name_list_kashmiri
+							has_name_list = name_list_nepali
+							has_name_list = name_list_gond
+							}
 						}
 					}
 					NOT = {
@@ -1908,6 +1930,15 @@
 							has_name_list = name_list_kashmiri
 							has_name_list = name_list_nepali
 							has_name_list = name_list_sinhala
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_jat
+							}
 						}
 					}
 					has_religion = religion:islam_religion
@@ -1957,6 +1988,15 @@
 							has_name_list = name_list_kashmiri
 							has_name_list = name_list_nepali
 							has_name_list = name_list_gond
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_jat
+							}
 						}
 					}
 					NOT = {
