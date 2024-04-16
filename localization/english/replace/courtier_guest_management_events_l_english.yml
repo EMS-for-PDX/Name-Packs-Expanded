@@ -5,25 +5,17 @@
  courtier_guest_management.0500.t: "Your [SCOPE.sC('host').Custom2('RelationToMeShort', SCOPE.sC('guest'))] [guest.Custom('ShortNameNoTooltip')] is About To Leave Court"
  courtier_guest_management.0500.desc: "[guest.Custom('TitledFirstName')] has no reason to stay at court and will soon leave with [guest.GetHerHis] family"
 
- courtier_guest_management.0102.t: "My Last Chance"
  courtier_guest_management.0102.desc: "[courtier.Custom('TitledFirstName')] has decided that [courtier.GetHerHis] time in [capital.GetNameNoTierNoTooltip] has come to an end. The servants have packed [courtier.GetHerHis] chests and [courtier.GetSheHe] has said [courtier.GetHerHis] farewells.\n\nWith [courtier.Custom('TitledFirstNameNoTooltip')] goes [courtier.GetHerHis] claim on the [courtier_claim.GetName]. If I want to press it and make [courtier.GetHerHim] my vassal, this is my last chance to make [courtier.GetHerHim] stay."
 
- courtier_guest_management.0102.a: "Give me one year, and I will press your claim!"
- courtier_guest_management.0102.a.rl.desc: "In one year's time"
  courtier_guest_management.0102.a.stay: "If you have pressed [courtier.Custom('TitledFirstNamePossessiveNoTooltip')] claim"
  courtier_guest_management.0102.a.stay.tt: "[courtier.Custom('ShortName')|U] stays at court"
  courtier_guest_management.0102.a.leave: "If you have #bold not#! pressed [courtier.Custom('TitledFirstNamePossessiveNoTooltip')] claim"
- courtier_guest_management.0102.b: "May your journey be swift and safe."
- courtier_guest_management.1001.t: "Notable Guest Has Arrived"
+
  courtier_guest_management.1001.claimant.desc: "[exceptional_guest.Custom('ShortName')|U] has a claim on the [guest_claim.GetName]"
  courtier_guest_management.1001.marriage_start.desc: "[exceptional_guest.Custom('ShortName')|U] would make a good [exceptional_guest.Custom('WifeHusband')] for"
- courtier_guest_management.1001.marriage_me.desc: "you"
- courtier_guest_management.1001.marriage_my_children.desc: "one of your children"
- courtier_guest_management.1001.marriage_my_sons.desc: "one of your sons"
- courtier_guest_management.1001.marriage_my_daughters.desc: "one of your daughters"
+
  courtier_guest_management.1001.marriage_my_child.desc: "my [marriage_child.Custom('GetDaughterSon')], [marriage_child.Custom('ShortName')]"
  courtier_guest_management.1001.vassal.desc: "[exceptional_guest.Custom('ShortName')|U] would make for a loyal and accomplished vassal"
  courtier_guest_management.1001.commander.desc: "[exceptional_guest.Custom('ShortName')|U] would make for an accomplished commander"
  courtier_guest_management.1001.knight.desc: "[exceptional_guest.Custom('ShortName')|U] is an experienced fighter"
  courtier_guest_management.1001.physician.desc: "[exceptional_guest.Custom('ShortName')|U] is a trained healer"
-

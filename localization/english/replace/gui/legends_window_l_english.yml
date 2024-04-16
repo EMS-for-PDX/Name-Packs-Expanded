@@ -1,0 +1,4 @@
+﻿l_english:
+  PROMOTE_LEGEND_BUTTON_NOT_BLOCKED_TT: "Start [Legend.GetOwner.Custom('RegNamePossessive')] legend.[AddLine( '#D what else do we put here?#!' )]"
+  PROMOTE_LEGEND_BUTTON_BLOCKED_TT: "Start [Legend.GetOwner.Custom('RegNamePossessive')] legend.[AddLine( AddLine( '#X You cannot start this legend:#!' ) )][AddLine( GetCommandDesc( GetPlayer.StartPromotingLegend( Legend.Self ) ) )]"
+  START_PROMOTING_LEGEND_TEXT: "Start [Concept( 'promoted_legend', 'Promoting' )|E] the spread of [Legend.GetName] owned by [Legend.GetOwner.Custom('ShortName')] within your [realm|E].\n\nMaintenance: [GetIntervalCostString( Legend.GetMaintenanceCost( GetPlayer ), 'monthly' )]"

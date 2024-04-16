@@ -861,6 +861,15 @@
 							has_name_list = name_list_kashmiri
 							has_name_list = name_list_nepali
 							has_name_list = name_list_sinhala
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_jat
+							}
 						}
 					}
 					has_religion = religion:islam_religion
@@ -907,6 +916,18 @@
 							has_name_list = name_list_malvi
 							has_name_list = name_list_sindhi
 							has_name_list = name_list_marathi
+							has_name_list = name_list_kashmiri
+							has_name_list = name_list_nepali
+							has_name_list = name_list_gond
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_jat
+							}
 							has_name_list = name_list_kashmiri
 							has_name_list = name_list_nepali
 							has_name_list = name_list_gond
@@ -1908,6 +1929,15 @@
 							has_name_list = name_list_kashmiri
 							has_name_list = name_list_nepali
 							has_name_list = name_list_sinhala
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_jat
+							}
 						}
 					}
 					has_religion = religion:islam_religion
@@ -1957,6 +1987,15 @@
 							has_name_list = name_list_kashmiri
 							has_name_list = name_list_nepali
 							has_name_list = name_list_gond
+							trigger_if = {
+								limit = {
+									OR = {
+										exists = global_var:CE_is_loaded
+										exists = global_var:BAP_is_loaded
+									}
+								}
+								has_name_list = name_list_jat
+							}
 						}
 					}
 					NOT = {
@@ -1976,6 +2015,7 @@
 								has_name_list = name_list_egyptian
 								has_name_list = name_list_maghrebi
 								has_name_list = name_list_yemeni
+								has_name_list = name_list_andalusian
 							}
 						}
 						AND = {

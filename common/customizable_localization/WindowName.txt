@@ -1555,8 +1555,7 @@ WindowNameTT = {
 				NOT = {
 					OR = {
 						AND = {
-							exists = father
-							father = {
+							father ?= {
 								highest_held_title_tier >= tier_kingdom
 							}
 						}
