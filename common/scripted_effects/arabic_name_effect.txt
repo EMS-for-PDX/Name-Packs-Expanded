@@ -1,16 +1,5 @@
 ﻿arabic_male_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	
 	random_list = {
 		40 = {
 			random_list = {
@@ -103,10 +92,10 @@
 					}
 					random_list = {
 						1 = {
-							change_first_name = Peter
+							change_first_name = Pedro
 						}
 						1 = {
-							change_first_name = Michael
+							change_first_name = Miguel
 						}
 						1 = {
 							change_first_name = Lope
@@ -508,7 +497,7 @@
 							change_first_name = Abdal-Halim
 						}
 						1 = {
-							change_first_name = Abdal-Hayy
+							change_first_name = Abdal-Hay
 						}
 						1 = {
 							change_first_name = Abdal-Jabbar
@@ -559,6 +548,9 @@
 				}
 				1 = {
 					change_first_name = Affan
+				}
+				1 = {
+					change_first_name = Aflah
 				}
 				1 = {
 					change_first_name = Awn
@@ -691,9 +683,6 @@
 					change_first_name = Bakkar
 				}
 				1 = {
-					change_first_name = Bakkar
-				}
-				1 = {
 					change_first_name = Bakr
 				}
 				1 = {
@@ -770,9 +759,6 @@
 				}
 				1 = {
 					change_first_name = Jahl
-				}
-				1 = {
-					change_first_name = Jalil
 				}
 				1 = {
 					change_first_name = Jalil
@@ -1031,18 +1017,6 @@
 	}
 }
 arabic_female_effect = {
-	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		40 = {
 			random_list = {
@@ -1081,7 +1055,7 @@ arabic_female_effect = {
 					change_first_name = Eve
 				}
 				1 = {
-					change_first_name = Khalida
+					change_first_name = Khalidah
 				}
 				1 = {
 					change_first_name = Nadiya

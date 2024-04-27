@@ -1129,91 +1129,91 @@
     }
     text = {
         trigger = {
-            has_nickname = nick_wang_khan     
+            has_nickname = nick_wang_khan
         }
         localization_key = WangKhan
     }
     text = {
         trigger = {
-            has_nickname = nick_the_cucumber_king     
+            has_nickname = nick_the_cucumber_king
         }
         localization_key = CucumberKing
     }
     text = {
         trigger = {
-            has_nickname = nick_the_peaceful     
+            has_nickname = nick_the_peaceful
         }
-        localization_key = Peaceful
+        localization_key = PeaceN
     }
     text = {
         trigger = {
-            has_nickname = nick_the_whetstone     
+            has_nickname = nick_the_whetstone
         }
         localization_key = Whetstone
     }
     text = {
         trigger = {
-            has_nickname = nick_the_slayer_of_the_snake     
+            has_nickname = nick_the_slayer_of_the_snake
         }
         localization_key = SnakeSlayer
     }
     text = {
         trigger = {
-            has_nickname = nick_the_illuminator     
+            has_nickname = nick_the_illuminator
         }
         localization_key = Illuminator
     }
     text = {
         trigger = {
-            has_nickname = nick_the_builder     
+            has_nickname = nick_the_builder
         }
         localization_key = Builder
     }
     text = {
         trigger = {
-            has_nickname = nick_the_martyrophile     
+            has_nickname = nick_the_martyrophile
         }
         localization_key = Martyrophile
     }
     text = {
         trigger = {
-            has_nickname = nick_the_campeador     
+            has_nickname = nick_the_campeador
         }
         localization_key = Campeador
     }
     text = {
         trigger = {
-            has_nickname = nick_the_missionary     
+            has_nickname = nick_the_missionary
         }
         localization_key = Missionary
     }
     text = {
         trigger = {
-            has_nickname = nick_the_oppressor     
+            has_nickname = nick_the_oppressor
         }
         localization_key = Oppressor
     }
     text = {
         trigger = {
-            has_nickname = nick_genghis_khan     
+            has_nickname = nick_genghis_khan
         }
         localization_key = GenghisKhan
     }
     text = {
         trigger = {
-            has_nickname = nick_the_hairy     
+            has_nickname = nick_the_hairy
         }
         localization_key = Hairy
     }
     text = {
         trigger = {
-            has_nickname = nick_the_child     
+            has_nickname = nick_the_child
         }
         localization_key = Child
     }
     text = {
         trigger = {
-            has_nickname = nick_the_wake     
+            has_nickname = nick_the_wake
         }
         localization_key = Wake
     }
@@ -1232,17 +1232,13 @@
 	#Nicks
 	text = {
 		trigger = {
-			OR = {
-				has_nickname =  nick_the_rekindler_of_iran
-			}
+			has_nickname =  nick_the_rekindler_of_iran
 		}
         localization_key = FlameOfPersia
 	}
 	text = {
 		trigger = {
-			OR = {
 				has_nickname =  nick_the_firekeeper
-			}
 		}
         localization_key = Firekeeper
 	}
@@ -1284,6 +1280,18 @@
 			has_nickname = nick_the_traitor
 		}
         localization_key = Traitor
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_natures_bane
+		}
+        localization_key = NaturesBane
+	}
+	text = {
+		trigger = {
+			has_nickname = nick_the_dragonslayer
+		}
+        localization_key = Dragonslayer
 	}
 	text = {
 		trigger = {
@@ -1385,7 +1393,7 @@
 		trigger = {
 			has_nickname = nick_the_peacemaker
 		}
-        localization_key = Peaceful
+        localization_key = PeaceN
 	}
 	text = {
 		trigger = {
@@ -1425,7 +1433,10 @@
 	}
 	text = {
 		trigger = {
-			has_nickname = nick_the_dragon
+			OR = {
+				has_nickname = nick_the_dragon
+				has_nickname = nick_the_dragoness
+			}
 		}
         localization_key = Dragon
 	}
@@ -2250,7 +2261,10 @@
     }
     text = {
         trigger = {
-            has_nickname = nick_the_monk     
+			OR = {
+				has_nickname = nick_the_monk     
+				has_nickname = nick_the_nun 
+			}
         }
         localization_key = Monk
     }
@@ -2436,15 +2450,12 @@
     }
     text = {
         trigger = {
-            has_nickname = nick_the_handsome     
+			OR = {
+				has_nickname = nick_the_fair
+				has_nickname = nick_the_handsome
+			}
         }
         localization_key = Handsome
-    }
-    text = {
-        trigger = {
-            has_nickname = nick_the_fair     
-        }
-        localization_key = Fair
     }
     text = {
         trigger = {
@@ -2900,7 +2911,7 @@
         trigger = {
             has_nickname = nick_fabulous_she_he     
         }
-        localization_key = FabulousHe
+        localization_key = Fabulous
     }
     text = {
         trigger = {
@@ -2997,12 +3008,6 @@
             has_nickname = nick_the_ill_ruler     
         }
         localization_key = IllRuler
-    }
-    text = {
-        trigger = {
-            has_nickname = nick_the_dragoness     
-        }
-        localization_key = Dragonless
     }
     text = {
         trigger = {

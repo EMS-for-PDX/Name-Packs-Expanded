@@ -15,11 +15,8 @@
 			NOT = {
 				root = scope:good_lad
 			}
-			dynasty = {
-				any_in_list = {
-					variable = name_pack_support_dynasty
-					this = scope:good_lad
-				}
+			house.var:name_founder.culture = {
+				is_npe_supported_culture = yes
 			}
 		}
 		localization_key = Supported_House_After
@@ -48,31 +45,10 @@ ArabicPatCheck = {
 	}
 	text = {
 		trigger = {
-            father ?= {
-                OR = {
-                    AND = {
-                        dynasty ?= {
-                            any_in_list = {
-                                variable = name_pack_support_dynasty
-                                this = root.father
-                            }
-                        }
-                    }
-                    any_in_global_list = {
-                        variable = name_pack_support_global
-                        this = root.father
-                    }     
-        }
-            }
+            exists = father
 		}
 		localization_key = Supported_Patronym_After
 	}
-    text = {
-        trigger = {
-            exists = father
-        }
-        localization_key = Nonsupported_Patronym_After
-    }
 	text = {
 		fallback = yes
 		localization_key = Gui_blank

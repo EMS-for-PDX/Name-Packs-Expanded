@@ -81,7 +81,12 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -217,7 +222,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -240,7 +244,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -440,8 +443,13 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Wolayta
@@ -611,7 +619,6 @@
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -748,7 +755,7 @@
                 south_slav_check = yes
 			}
 		}
-		localization_key = Titled_First_Name_South_Slav
+		localization_key = Titled_First_Name_Slavic
 	}
 	text = {
 		trigger = {
@@ -852,7 +859,12 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Turkish
@@ -945,7 +957,12 @@ TitledFirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -1081,7 +1098,6 @@ TitledFirstNameNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1104,7 +1120,6 @@ TitledFirstNameNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1304,8 +1319,13 @@ TitledFirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Wolayta
@@ -1475,7 +1495,6 @@ TitledFirstNameNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1600,7 +1619,7 @@ TitledFirstNameNoTooltip = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Titled_First_Name_No_Tooltip_South_Slav
+		localization_key = Titled_First_Name_No_Tooltip_Slavic
 	}
 	text = {
 		trigger = {
@@ -1704,7 +1723,12 @@ TitledFirstNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Turkish
@@ -1797,7 +1821,12 @@ TitledFirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -1933,7 +1962,6 @@ TitledFirstNamePossessive = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -1956,7 +1984,6 @@ TitledFirstNamePossessive = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -2156,8 +2183,13 @@ TitledFirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_Wolayta
@@ -2327,7 +2359,6 @@ TitledFirstNamePossessive = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -2464,7 +2495,7 @@ TitledFirstNamePossessive = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Titled_First_Name_Possessive_South_Slav
+		localization_key = Titled_First_Name_Possessive_Slavic
 	}
 	text = {
 		trigger = {
@@ -2568,7 +2599,12 @@ TitledFirstNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_Turkish
@@ -2661,7 +2697,12 @@ TitledFirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -2797,7 +2838,6 @@ TitledFirstNamePossessiveNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -2820,7 +2860,6 @@ TitledFirstNamePossessiveNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -3020,8 +3059,13 @@ TitledFirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_No_Tooltip_Wolayta
@@ -3191,7 +3235,6 @@ TitledFirstNamePossessiveNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -3328,7 +3371,7 @@ TitledFirstNamePossessiveNoTooltip = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Titled_First_Name_Possessive_No_Tooltip_South_Slav
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Slavic
 	}
 	text = {
 		trigger = {
@@ -3432,7 +3475,12 @@ TitledFirstNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_No_Tooltip_Turkish
@@ -3525,7 +3573,12 @@ TitledFirstNameNickName = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -3661,7 +3714,6 @@ TitledFirstNameNickName = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -3684,7 +3736,6 @@ TitledFirstNameNickName = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -3884,8 +3935,13 @@ TitledFirstNameNickName = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Wolayta
@@ -4055,7 +4111,6 @@ TitledFirstNameNickName = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -4192,7 +4247,7 @@ TitledFirstNameNickName = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Titled_First_Name_South_Slav
+		localization_key = Titled_First_Name_Slavic
 	}
 	text = {
 		trigger = {
@@ -4296,7 +4351,12 @@ TitledFirstNameNickName = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Turkish
@@ -4389,7 +4449,12 @@ TitledFirstNameNickNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -4525,7 +4590,6 @@ TitledFirstNameNickNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -4548,7 +4612,6 @@ TitledFirstNameNickNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -4748,8 +4811,13 @@ TitledFirstNameNickNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Wolayta
@@ -4919,7 +4987,6 @@ TitledFirstNameNickNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -5056,7 +5123,7 @@ TitledFirstNameNickNoTooltip = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Titled_First_Name_No_Tooltip_South_Slav
+		localization_key = Titled_First_Name_No_Tooltip_Slavic
 	}
 	text = {
 		trigger = {
@@ -5160,7 +5227,12 @@ TitledFirstNameNickNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Titled_First_Name_No_Tooltip_Turkish
@@ -5259,7 +5331,12 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -5395,7 +5472,6 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -5418,7 +5494,6 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -5618,8 +5693,13 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_No_Tooltip_Wolayta
@@ -5789,7 +5869,6 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -5926,7 +6005,7 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Titled_First_Name_Possessive_No_Tooltip_South_Slav
+		localization_key = Titled_First_Name_Possessive_No_Tooltip_Slavic
 	}
 	text = {
 		trigger = {
@@ -6030,7 +6109,12 @@ TitledFirstNamePossessiveOrMyNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Possessive_No_Tooltip_Turkish
@@ -6129,7 +6213,12 @@ TitledFirstNameOrMe = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -6265,7 +6354,6 @@ TitledFirstNameOrMe = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -6288,7 +6376,6 @@ TitledFirstNameOrMe = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -6488,8 +6575,13 @@ TitledFirstNameOrMe = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Wolayta
@@ -6659,7 +6751,6 @@ TitledFirstNameOrMe = {
 			OR = {
 				has_government = feudal_government
 				AND = {
-					exists = dynasty
 					dynasty ?= {
 						any_in_list = {
 							variable = dynasty_feudalclan
@@ -6796,7 +6887,7 @@ TitledFirstNameOrMe = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Titled_First_Name_South_Slav
+		localization_key = Titled_First_Name_Slavic
 	}
 	text = {
 		trigger = {
@@ -6900,7 +6991,12 @@ TitledFirstNameOrMe = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Titled_First_Name_Turkish

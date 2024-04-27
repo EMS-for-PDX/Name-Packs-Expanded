@@ -1,16 +1,5 @@
 ﻿serbian_non_player_male_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		50 = {
 			random_list = {
@@ -506,17 +495,6 @@
 }
 serbian_non_player_female_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
 	random_list = {
 		50 = {
 			random_list = {
@@ -798,17 +776,7 @@ serbian_non_player_female_name_effect = {
 }
 serbian_player_male_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	remove_variable = slav_name
 	random_list = {
 		50 = {
 			random_list = {
@@ -1491,17 +1459,7 @@ serbian_player_male_name_effect = {
 }
 serbian_player_female_name_effect = {
 	save_scope_as = thechar
-	if = {
-		limit = {
-			exists = dynasty
-		}
-		dynasty = {
-			add_to_variable_list = { name = name_pack_support_dynasty target = scope:thechar }
-		}
-	}
-	else = {
-		add_to_global_variable_list = { name = name_pack_support_global target = scope:thechar }
-	}
+	remove_variable = slav_name
 	random_list = {
 		50 = {
 			random_list = {

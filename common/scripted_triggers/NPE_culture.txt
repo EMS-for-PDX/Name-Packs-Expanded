@@ -10,20 +10,53 @@
 		has_cultural_pillar = heritage_west_germanic
 		has_cultural_pillar = heritage_north_germanic
 		has_cultural_pillar = heritage_brythonic
-		has_cultural_pillar = heritage_mongolic
-		has_cultural_pillar = heritage_berber
+		AND = {
+			has_cultural_pillar = heritage_mongolic
+			NOT = {
+				OR = {
+					has_name_list = name_list_khitan
+					has_name_list = name_list_tuyuhun
+				}
+			}
+		}
+		AND = {
+			has_cultural_pillar = heritage_berber
+			NOT = {
+				has_name_list = name_list_guanches
+			}
+		}
 		has_cultural_pillar = heritage_indo_aryan
 		has_cultural_pillar = heritage_dravidian
-		has_cultural_pillar = heritage_east_african
+		AND = {
+			has_cultural_pillar = heritage_east_african
+			NOT = {
+				has_name_list = name_list_daju
+			}
+		}
 		has_cultural_pillar = heritage_somalian
 		has_cultural_pillar = heritage_iberian
 		has_cultural_pillar = heritage_frankish
 		has_cultural_pillar = heritage_latin
-		has_cultural_pillar = heritage_tibetan
+		AND = {
+			has_cultural_pillar = heritage_tibetan
+			NOT = {
+				has_name_list = name_list_kirati
+			}
+		}
 		has_cultural_pillar = heritage_central_germanic
 		has_cultural_pillar = heritage_west_slavic
 		has_cultural_pillar = heritage_burman
 		has_cultural_pillar = heritage_tocharian
+		has_cultural_pillar = heritage_baltic
+		has_cultural_pillar = heritage_balto_finnic
+		AND = {
+			has_cultural_pillar = heritage_ugro_permian
+			NOT = {
+				has_name_list = name_list_samoyed
+			}
+		}
+		has_cultural_pillar = heritage_volga_finnic
+		has_cultural_pillar = heritage_east_slavic
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -38,7 +71,12 @@
 		}
 	}
 	OR = {
-		has_cultural_pillar = language_sudanic
+		AND = {
+			has_cultural_pillar = language_sudanic
+			NOT = {
+				has_name_list = name_list_daju
+			}
+		}
 		has_cultural_pillar = language_ethiopic
 		has_cultural_pillar = language_turkic
 		has_cultural_pillar = language_oghur
@@ -56,8 +94,21 @@
 		has_cultural_pillar = language_anglic
 		has_cultural_pillar = language_norse
 		has_cultural_pillar = language_brythonic
-		has_cultural_pillar = language_mongolic
-		has_cultural_pillar = language_berber
+		AND = {
+			has_cultural_pillar = language_mongolic
+			NOT = {
+				OR = {
+					has_name_list = name_list_khitan
+					has_name_list = name_list_tuyuhun
+				}
+			}
+		}
+		AND = {
+			has_cultural_pillar = language_berber
+			NOT = {
+				has_name_list = name_list_guanches
+			}
+		}
 		has_cultural_pillar = language_magadhan
 		has_cultural_pillar = language_marathi
 		has_cultural_pillar = language_pahari
@@ -75,7 +126,12 @@
 		has_cultural_pillar = language_italian
 		has_cultural_pillar = language_sardinian
 		has_cultural_pillar = language_omotic
-		has_cultural_pillar = language_tibetan
+		AND = {
+			has_cultural_pillar = language_tibetan
+			NOT = {
+				has_name_list = name_list_kirati
+			}
+		}
 		has_cultural_pillar = language_dutch
 		has_cultural_pillar = language_saxon
 		has_cultural_pillar = language_french
@@ -84,6 +140,17 @@
 		has_cultural_pillar = language_sinhalese
 		has_cultural_pillar = language_burmese
 		has_cultural_pillar = language_tocharian
+		has_cultural_pillar = language_baltic
+		AND = {
+			has_cultural_pillar = language_finnic
+			NOT = {
+				has_name_list = name_list_samoyed
+			}
+		}
+		has_cultural_pillar = language_sami
+		has_cultural_pillar = language_ugro_permian
+		has_cultural_pillar = language_volga_finnic
+		has_cultural_pillar = language_east_slavic
 		trigger_if = {
 			limit = {
 				exists = global_var:CE_is_loaded
@@ -96,7 +163,7 @@
 				has_cultural_pillar = language_khwarezmian
 				has_cultural_pillar = language_pashto
 				has_cultural_pillar = language_pamiri
-				#has_cultural_pillar = language_sogdian
+				has_cultural_pillar = language_sogdian
 				has_cultural_pillar = language_brythonek
 				has_cultural_pillar = language_arpetan
 				has_cultural_pillar = language_nuristani #Palfouri check which spelling they need
@@ -126,6 +193,22 @@
 				has_cultural_pillar = language_south_arabian
 				has_cultural_pillar = language_meitei
 				has_cultural_pillar = language_pyu
+				has_cultural_pillar = language_pruthenic_baltic
+				has_cultural_pillar = language_dniepr_baltic
+				has_cultural_pillar = language_ingrian
+				has_cultural_pillar = language_livonian
+				has_cultural_pillar = language_mansi
+				has_cultural_pillar = language_khanty
+				has_cultural_pillar = language_finnish
+				has_cultural_pillar = language_karelian
+				has_cultural_pillar = language_vepsian
+				has_cultural_pillar = language_estonian
+				has_cultural_pillar = language_komi
+				has_cultural_pillar = language_mordvin
+				has_cultural_pillar = language_mari
+				has_cultural_pillar = language_merya
+				has_cultural_pillar = language_muroma
+				has_cultural_pillar = language_meshchera
 			}
 		}
 		trigger_if = {
@@ -215,6 +298,8 @@ romanian_check = {
 south_slav_check = {
 	OR = {
 		has_cultural_pillar = heritage_south_slavic
+		has_cultural_pillar = heritage_baltic #To do
+		has_cultural_pillar = heritage_east_slavic
 		AND = {
 			has_cultural_pillar = heritage_west_slavic
 			has_cultural_pillar = language_south_slavic

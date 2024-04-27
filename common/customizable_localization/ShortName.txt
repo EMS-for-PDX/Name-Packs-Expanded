@@ -82,7 +82,12 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -538,8 +543,13 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_Wolayta
@@ -903,7 +913,7 @@
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_South_Slav
+		localization_key = Short_Name_Slavic
 	}
 	text = {
 		trigger = {
@@ -1007,7 +1017,12 @@
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_Turkish
@@ -1100,7 +1115,12 @@ ShortNameNotMeNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -1556,8 +1576,13 @@ ShortNameNotMeNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_No_Tooltip_Wolayta
@@ -1921,7 +1946,7 @@ ShortNameNotMeNoTooltip = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_No_Tooltip_South_Slav
+		localization_key = Short_Name_No_Tooltip_Slavic
 	}
 	text = {
 		trigger = {
@@ -2025,7 +2050,12 @@ ShortNameNotMeNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_No_Tooltip_Turkish
@@ -2118,7 +2148,12 @@ ShortNameNotMePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -2574,8 +2609,13 @@ ShortNameNotMePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_Wolayta
@@ -2939,7 +2979,7 @@ ShortNameNotMePossessive = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_Possessive_South_Slav
+		localization_key = Short_Name_Possessive_Slavic
 	}
 	text = {
 		trigger = {
@@ -3043,7 +3083,12 @@ ShortNameNotMePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_Turkish
@@ -3136,7 +3181,12 @@ ShortNameNotMePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -3592,8 +3642,13 @@ ShortNameNotMePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Wolayta
@@ -3957,7 +4012,7 @@ ShortNameNotMePossessiveNoTooltip = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_Possessive_No_Tooltip_South_Slav
+		localization_key = Short_Name_Possessive_No_Tooltip_Slavic
 	}
 	text = {
 		trigger = {
@@ -4061,7 +4116,12 @@ ShortNameNotMePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Turkish
@@ -4154,7 +4214,12 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -4610,8 +4675,13 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Wolayta
@@ -4975,7 +5045,7 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_South_Slav
+		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Slavic
 	}
 	text = {
 		trigger = {
@@ -5079,7 +5149,12 @@ ShortNameNotMePossessiveNoTooltipNoFormat = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Turkish
@@ -5178,7 +5253,12 @@ ShortName = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -5634,8 +5714,13 @@ ShortName = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_Wolayta
@@ -5999,7 +6084,7 @@ ShortName = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_South_Slav
+		localization_key = Short_Name_Slavic
 	}
 	text = {
 		trigger = {
@@ -6103,7 +6188,12 @@ ShortName = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_Turkish
@@ -6202,7 +6292,12 @@ ShortNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -6658,8 +6753,13 @@ ShortNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_No_Tooltip_Wolayta
@@ -7023,7 +7123,7 @@ ShortNameNoTooltip = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_No_Tooltip_South_Slav
+		localization_key = Short_Name_No_Tooltip_Slavic
 	}
 	text = {
 		trigger = {
@@ -7127,7 +7227,12 @@ ShortNameNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_No_Tooltip_Turkish
@@ -7226,7 +7331,12 @@ ShortNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -7682,8 +7792,13 @@ ShortNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_Wolayta
@@ -8037,7 +8152,7 @@ ShortNamePossessive = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_Possessive_South_Slav
+		localization_key = Short_Name_Possessive_Slavic
 	}
 	text = {
 		trigger = {
@@ -8141,7 +8256,12 @@ ShortNamePossessive = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_Turkish
@@ -8240,7 +8360,12 @@ ShortNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -8696,8 +8821,13 @@ ShortNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Wolayta
@@ -9061,7 +9191,7 @@ ShortNamePossessiveNoTooltip = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_Possessive_No_Tooltip_South_Slav
+		localization_key = Short_Name_Possessive_No_Tooltip_Slavic
 	}
 	text = {
 		trigger = {
@@ -9165,7 +9295,12 @@ ShortNamePossessiveNoTooltip = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_Turkish
@@ -9264,7 +9399,12 @@ ShortNamePossessiveNoTooltipNoFormat = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 			has_religion = religion:islam_religion
 		}
@@ -9720,8 +9860,13 @@ ShortNamePossessiveNoTooltipNoFormat = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				has_cultural_pillar = heritage_east_african
-				has_cultural_pillar = language_omotic
+				OR = {
+					AND = {
+						has_cultural_pillar = heritage_east_african
+						has_cultural_pillar = language_omotic
+					}
+					has_cultural_pillar = heritage_balto_finnic #todo Veps
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Wolayta
@@ -10085,7 +10230,7 @@ ShortNamePossessiveNoTooltipNoFormat = {
                 south_slav_check = yes
 			}
 		}
-		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_South_Slav
+		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Slavic
 	}
 	text = {
 		trigger = {
@@ -10189,7 +10334,12 @@ ShortNamePossessiveNoTooltipNoFormat = {
 		trigger = {
 			culture = {
 				is_npe_supported_culture = yes
-				turkish_check = yes
+				OR = {
+					turkish_check = yes
+					has_cultural_pillar = heritage_volga_finnic
+					has_cultural_pillar = heritage_ugro_permian
+					has_cultural_pillar = heritage_magyar
+				}
 			}
 		}
 		localization_key = Short_Name_Possessive_No_Tooltip_No_Format_Turkish

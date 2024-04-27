@@ -1,0 +1,20 @@
+﻿867_only_dynasty_effect = {
+	character:40605 = {
+		dynasty_effect_ne = yes
+	}
+}
+1066_only_dynasty_effect = {
+	character:40605 = {
+		set_culture = culture:russian
+		dynasty_effect_ne = yes
+		if = {
+			limit = {
+				exists = global_var:CE_is_loaded
+			}
+			set_culture = culture:dane
+		}
+		else = {
+			set_culture = culture:norse
+		}
+	}
+}

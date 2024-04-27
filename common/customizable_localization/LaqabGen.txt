@@ -469,26 +469,9 @@ LaqabNameCheck = {
 		localization_key = Reg_Laqab_Gen
 	}
 	text = {
-		trigger = {
-			OR = {
-				dynasty ?= {
-					any_in_list = {
-						variable = name_pack_support_dynasty
-						this = root
-					}
-				}
-                any_in_global_list = {
-                    variable = name_pack_support_global
-                    this = root
-                }
-			}
-		}
+		fallback = yes
 		localization_key = Supported_Name
 	}
-    text = {
-        fallback = yes
-		localization_key = Nonsupported_Name
-    }
 }
 RegLaqabGen = {
 	type = character
