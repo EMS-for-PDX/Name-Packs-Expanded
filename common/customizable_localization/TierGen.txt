@@ -2351,6 +2351,17 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
+				AND = {
+					has_cultural_pillar = language_goidelic
+					has_name_list = name_list_gaelic
+				}
+			}
+		}
+		localization_key = _gaelic
+	}
+	text = {
+		trigger = {
+			culture = {
                 has_cultural_pillar = language_goidelic
 			}
 		}
