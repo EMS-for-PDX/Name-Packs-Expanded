@@ -1,68 +1,68 @@
 ﻿l_english:
 #generic
-GeneralUniUICharGetUIName: "[Character.Custom('UIName')]"
-GeneralUniUICharGetUINameNoTooltip: "[Character.Custom('UINameNoTooltip')]"
-GeneralUniUICharGetNameNoTooltip: "[Character.Custom('RegNameNoTooltip')]"
-GeneralUniUICharGetName: "[Character.Custom('RegName')]"
-GeneralUniUICharGetUINameNoTooltipU: "[Character.Custom('UINameNoTooltip')|U]"
-GeneralUniUICharGetShortUIName: "[Character.Custom('ShortName')]"
-GeneralUniUICharGetShortUINameNoTooltip: "[Character.Custom('ShortNameNoTooltip')]"
-GeneralUniUICharGetShortUINameNoTooltipU: "[Character.Custom('ShortNameNoTooltip')|U]"
-GeneralUniUICharGetUINameNotMeNoTooltipU: "[Character.Custom('UINameNotMeNoTooltip')|U]"
-GeneralUniUICharGetUINameNotMeNoTooltip: "[Character.Custom('UINameNotMeNoTooltip')]"
-GeneralUniUICharGetUINameUV: "[Character.Custom('UIName')|UV]"
-GeneralUniUICharGetShortUINameUV: "[Character.Custom('ShortName')|UV]"
+ GeneralUniUICharGetUIName: "[Character.Custom('UIName')]"
+ GeneralUniUICharGetUINameNoTooltip: "[Character.Custom('UINameNoTooltip')]"
+ GeneralUniUICharGetNameNoTooltip: "[Character.Custom('RegNameNoTooltip')]"
+ GeneralUniUICharGetName: "[Character.Custom('RegName')]"
+ GeneralUniUICharGetUINameNoTooltipU: "[Character.Custom('UINameNoTooltip')|U]"
+ GeneralUniUICharGetShortUIName: "[Character.Custom('ShortName')]"
+ GeneralUniUICharGetShortUINameNoTooltip: "[Character.Custom('ShortNameNoTooltip')]"
+ GeneralUniUICharGetShortUINameNoTooltipU: "[Character.Custom('ShortNameNoTooltip')|U]"
+ GeneralUniUICharGetUINameNotMeNoTooltipU: "[Character.Custom('UINameNotMeNoTooltip')|U]"
+ GeneralUniUICharGetUINameNotMeNoTooltip: "[Character.Custom('UINameNotMeNoTooltip')]"
+ GeneralUniUICharGetUINameUV: "[Character.Custom('UIName')|UV]"
+ GeneralUniUICharGetShortUINameUV: "[Character.Custom('ShortName')|UV]"
 
 #Debug Windows
-AIWatchWindowUniUICharGetUIName: "[AIWatchWindow.GetCharacter.Custom('UIName')]"
-WatchWindowUniUICharGetUINameNotMe: "[ParticipantInfo.GetCharacter.Custom('UINameNotMe')]"
+ AIWatchWindowUniUICharGetUIName: "[AIWatchWindow.GetCharacter.Custom('UIName')]"
+ WatchWindowUniUICharGetUINameNotMe: "[ParticipantInfo.GetCharacter.Custom('UINameNotMe')]"
 
 #Artifact
-ClaimantEntryUniUIGetUINameNoTooltip: "[ClaimantEntry.GetCharacter.Custom('UINameNoTooltip')]"
+ ClaimantEntryUniUIGetUINameNoTooltip: "[ClaimantEntry.GetCharacter.Custom('UINameNoTooltip')]"
 
 #Lobby
-LobbyCharNameUniUI: "[Character.Custom('UINameNotMeNoTooltip')], #low [Character.GetAge]#!"
+ LobbyCharNameUniUI: "[Character.Custom('UINameNotMeNoTooltip')], #low [Character.GetAge]#!"
 
 #Activity
-ActivityWindowUniUIGetShortUIName: "[ActivityWindow.GetActivity.GetOwner.Custom('ShortName')]"
+ ActivityWindowUniUIGetShortUIName: "[ActivityWindow.GetActivity.GetOwner.Custom('ShortName')]"
 
 #Character
-HOLYCHARACTERNAME: "[Character.Custom('WindowName')], "
-HOLYCHARACTERCONCEPT: "[Character.Custom('WindowNameTT')]"
+ HOLYCHARACTERNAME: "[Character.Custom('WindowName')], "
+ HOLYCHARACTERCONCEPT: "[Character.Custom('WindowNameTT')]"
 
 #Council
-PotentialTaskLocationWindowUniUIUINameNoTooltip: "[PotentialTaskLocationWindow.GetActiveTask.GetCouncillor.Custom('UINameNoTooltip')]"
+ PotentialTaskLocationWindowUniUIUINameNoTooltip: "[PotentialTaskLocationWindow.GetActiveTask.GetCouncillor.Custom('UINameNoTooltip')]"
 
 #CourtPosition
-GetEmployeeUniUIGetNameNoTooltip: "[CourtPosition.GetEmployee.Custom('RegNameNoTooltip')]"
+ GetEmployeeUniUIGetNameNoTooltip: "[CourtPosition.GetEmployee.Custom('RegNameNoTooltip')]"
 
 #Dynasty tree
-DynastyTreeItemUniUIGetShortUINameNotMeNoTooltip: "[DynastyTreeItem.GetCharacter.Custom('ShortNameNotMeNoTooltip')]"
-DynastyTreeUniUIFounderGetShortUINameNotMeNoTooltip: "[DynastyHouse.GetFounder.Custom('ShortNameNotMeNoTooltip')]"
-DynastyTreeUniUIHeadGetShortUINameNotMeNoTooltip: "[DynastyHouse.GetHeadOfHouse.Custom('ShortNameNotMeNoTooltip')]"
+ DynastyTreeItemUniUIGetShortUINameNotMeNoTooltip: "[DynastyTreeItem.GetCharacter.Custom('ShortNameNotMeNoTooltip')]"
+ DynastyTreeUniUIFounderGetShortUINameNotMeNoTooltip: "[DynastyHouse.GetFounder.Custom('ShortNameNotMeNoTooltip')]"
+ DynastyTreeUniUIHeadGetShortUINameNotMeNoTooltip: "[DynastyHouse.GetHeadOfHouse.Custom('ShortNameNotMeNoTooltip')]"
 
-DynastyHouseHeadNameUniUI: "[DynastyHouse.GetHeadOfHouse.Custom('RegName')]"
+ DynastyHouseHeadNameUniUI: "[DynastyHouse.GetHeadOfHouse.Custom('RegName')]"
 
 #GHW
-GetBeneficiaryUniUIGetFullName: "[GetPlayer.GetBeneficiary.Custom('FullName')]"
+ GetBeneficiaryUniUIGetFullName: "[GetPlayer.GetBeneficiary.Custom('FullName')]"
 
 #Hired Troops
-HiredTroopUniUIGetUIName: "[HiredTroop.GetTitle.GetHolder.Custom('UIName')]"
+ HiredTroopUniUIGetUIName: "[HiredTroop.GetTitle.GetHolder.Custom('UIName')]"
 
 #War
-WarParticipantItemUniUIGetName: "[WarParticipantItem.GetCharacter.Custom('RegName')]"
+ WarParticipantItemUniUIGetName: "[WarParticipantItem.GetCharacter.Custom('RegName')]"
 #WarOverviewWindowItemUniUIGetBeneficiaryName: "[WarOverviewWindow.GetBeneficiary.Custom('RegName')]"
 
 #realm
 
-MyRealmPlayerHeirGetUINameNoTooltip: "[MyRealmWindow.GetCharacter.GetPlayerHeir.Custom('UINameNoTooltip')]"
+ MyRealmPlayerHeirGetUINameNoTooltip: "[MyRealmWindow.GetCharacter.GetPlayerHeir.Custom('UINameNoTooltip')]"
 
 #Knights
-AcclaimedKnightGetNameNoTooltip: "[Accolade.GetAcclaimedKnight.Custom('RegNameNoTooltip')]"
-AcclaimedKnightGetFullNameNoTooltip: "[Accolade.GetAcclaimedKnight.Custom('FullNameNoTooltip')]"
+ AcclaimedKnightGetNameNoTooltip: "[Accolade.GetAcclaimedKnight.Custom('RegNameNoTooltip')]"
+ AcclaimedKnightGetFullNameNoTooltip: "[Accolade.GetAcclaimedKnight.Custom('FullNameNoTooltip')]"
 
 #Activities
-TournamentProgressPossessiveNoTooltip: "#D [Character.Custom('RegNamePossessiveNoTooltip')] progress towards victory in the upcoming contest.#!"
+ TournamentProgressPossessiveNoTooltip: "#D [Character.Custom('RegNamePossessiveNoTooltip')] progress towards victory in the upcoming contest.#!"
 
 #Diarch
-DisplayedDiarchGetUINameU: "[DiarchyWindow.GetDisplayedDiarch.Custom('UIName')|U]"
+ DisplayedDiarchGetUINameU: "[DiarchyWindow.GetDisplayedDiarch.Custom('UIName')|U]"
