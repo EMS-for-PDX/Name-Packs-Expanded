@@ -2235,6 +2235,13 @@ CharacterCulture = {
                 OR = {
                     has_name_list = name_list_swedish
                     has_name_list = name_list_danish
+                    trigger_if = {
+                        limit = { exists = global_var:CE_is_loaded }
+                        OR = {
+                            this = culture:geat
+                            this = culture:got
+                        }
+                    }
                 }
 			}
 		}
