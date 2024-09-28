@@ -4,8 +4,41 @@
     text = {
         trigger = {
             highest_held_title_tier = tier_empire
+            OR = {
+                has_diarchy_type = co_emperorship
+                has_diarchy_type = junior_emperorship
+            }
+        }
+        localization_key = EmperorA_senior
+    }
+    text = {
+        trigger = {
+            highest_held_title_tier = tier_empire
         }
         localization_key = EmperorA
+    }
+    text = {
+        trigger = {
+            is_diarch = yes
+            liege = {
+                highest_held_title_tier = tier_empire
+                OR = {
+                    has_diarchy_type = co_emperorship
+                    has_diarchy_type = junior_emperorship
+                }
+            }
+        }
+        localization_key = EmperorA_junior
+    }
+    text = {
+        trigger = {
+            is_heir_of = top_liege
+            top_liege = {
+                highest_held_title_tier = tier_empire
+                has_government = administrative_government
+            }
+        }
+        localization_key = Heir
     }
     text = {
         trigger = {
@@ -34,6 +67,7 @@
                         has_government = feudal_government
                         has_government = clan_government
                         has_government = tribal_government
+                        has_government = administrative_government
                         dynasty ?= {
                             OR = {
                                 any_in_list = {
@@ -42,6 +76,10 @@
                                 }
                                 any_in_list = {
                                     variable = dynasty_tribe
+                                    this = scope:the_spouse
+                                }
+                                any_in_list = {
+                                    variable = dynasty_byzantine
                                     this = scope:the_spouse
                                 }
                             }
@@ -56,6 +94,7 @@
                         has_government = feudal_government
                         has_government = clan_government
                         has_government = tribal_government
+                        has_government = administrative_government
                         dynasty ?= {
                             OR = {
                                 any_in_list = {
@@ -64,6 +103,10 @@
                                 }
                                 any_in_list = {
                                     variable = dynasty_tribe
+                                    this = scope:the_spouse
+                                }
+                                any_in_list = {
+                                    variable = dynasty_byzantine
                                     this = scope:the_spouse
                                 }
                             }
@@ -365,6 +408,7 @@
     text = {
         trigger = {
             highest_held_title_tier = tier_duchy
+                is_landed = yes
             OR = {
                 is_independent_ruler = yes
                 dynasty ?= {
@@ -400,6 +444,7 @@
                     even_if_dead = yes
                     save_temporary_scope_as = the_spouse
                     highest_held_title_tier = tier_duchy
+                    is_landed = yes
                     OR = {
                         is_independent_ruler = yes
                         dynasty ?= {
@@ -430,7 +475,8 @@
                 any_former_spouse = {
                     even_if_dead = yes
                     save_temporary_scope_as = the_spouse
-                    highest_held_title_tier = tier_duchy
+                    highest_held_title_tier = tier_duchy 
+                    is_landed = yes
                     OR = {
                         is_independent_ruler = yes
                         dynasty ?= {
@@ -748,6 +794,7 @@
     text = {
         trigger = {
             highest_held_title_tier = tier_duchy
+            is_landed = yes
         }
         localization_key = Duke
     }
@@ -774,6 +821,7 @@
                     even_if_dead = yes
                     save_temporary_scope_as = the_spouse
                     highest_held_title_tier = tier_duchy
+                    is_landed = yes
                     OR = {
                         has_government = feudal_government
                         has_government = clan_government
@@ -796,6 +844,7 @@
                     even_if_dead = yes
                     save_temporary_scope_as = the_spouse
                     highest_held_title_tier = tier_duchy
+                    is_landed = yes
                     OR = {
                         has_government = feudal_government
                         has_government = clan_government
@@ -1373,72 +1422,200 @@ CharacterGov = {
     }
     text = {
         trigger = {
-            NAND = {
-                is_independent_ruler = yes
-                highest_held_title_tier < tier_empire
+            is_landed = yes
+            NOT = {
+                any_spouse = {
+                    even_if_dead = yes
+                    highest_held_title_tier = tier_empire
+                }
+                any_former_spouse = {
+                    highest_held_title_tier = tier_empire
+                }
                 AND = {
-                    is_landed = yes
-                    NOT = {
-                        top_liege ?= {
-                            has_title = title:e_byzantium
+                    is_heir_of = top_liege
+                    top_liege = {
+                        highest_held_title_tier = tier_empire
+                        has_government = administrative_government
+                    }
+                }
+            }
+            has_government = administrative_government
+            OR = {
+                AND = {
+                    highest_held_title_tier = tier_kingdom 
+                    OR = {
+                        vassal_contract_has_flag = admin_theme_military
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_military_theme
+                                this = root
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    highest_held_title_tier = tier_county
+                    liege = {
+                        OR = {
+                            vassal_contract_has_flag = admin_theme_military
+                            vassal_contract_has_flag = admin_theme_frontier
+                            dynasty ?= {
+                                any_in_list = {
+                                    variable = dynasty_military_theme
+                                    this = root
+                                }
+                                any_in_list = {
+                                    variable = dynasty_frontier
+                                    this = root
+                                }
+                            }
                         }
                     }
                 }
             }
+        }
+        localization_key = _military
+    }
+    text = {
+        trigger = {
+            is_landed = yes
+            NOT = {
+                any_spouse = {
+                    even_if_dead = yes
+                    highest_held_title_tier = tier_empire
+                }
+                any_former_spouse = {
+                    highest_held_title_tier = tier_empire
+                }
+                AND = {
+                    is_heir_of = top_liege
+                    top_liege = {
+                        highest_held_title_tier = tier_empire
+                        has_government = administrative_government
+                    }
+                }
+            }
+            has_government = administrative_government
             OR = {
                 AND = {
-                    has_government = feudal_government
+                    highest_held_title_tier >= tier_duchy
                     OR = {
-                        has_title = title:e_byzantium
-                        top_liege ?= {
-                            has_title = title:e_byzantium
+                        vassal_contract_has_flag = admin_theme_naval
+                        dynasty ?= {
+                            any_in_list = {
+                                variable = dynasty_naval_theme
+                                this = root
+                            }
                         }
                     }
                 }
+                AND = {
+                    highest_held_title_tier = tier_county
+                    liege = {
+                        OR = {
+                            vassal_contract_has_flag = admin_theme_naval
+                            dynasty ?= {
+                                any_in_list = {
+                                    variable = dynasty_naval_theme
+                                    this = root
+                                }
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    highest_held_title_tier = tier_barony
+                    liege.liege = {
+                        OR = {
+                            vassal_contract_has_flag = admin_theme_naval
+                            dynasty ?= {
+                                any_in_list = {
+                                    variable = dynasty_naval_theme
+                                    this = root
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        localization_key = _naval
+    }
+    text = {
+        trigger = {
+            is_landed = yes
+            NOT = {
+                any_spouse = {
+                    even_if_dead = yes
+                    highest_held_title_tier = tier_empire
+                }
+                any_former_spouse = {
+                    highest_held_title_tier = tier_empire
+                }
+                AND = {
+                    is_heir_of = top_liege
+                    top_liege = {
+                        highest_held_title_tier = tier_empire
+                        has_government = administrative_government
+                    }
+                }
+            }
+            has_government = administrative_government
+            highest_held_title_tier = tier_duchy
+            OR = {
+                vassal_contract_has_flag = admin_theme_civilian
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_civilian_theme
+                        this = root
+                    }
+                }
+            }
+        }
+        localization_key = _civilian
+    }
+    text = {
+        trigger = {
+            NOT = {
+                any_spouse = {
+                    even_if_dead = yes
+                    highest_held_title_tier = tier_empire
+                }
+                any_former_spouse = {
+                    highest_held_title_tier = tier_empire
+                }
+                AND = {
+                    is_heir_of = top_liege
+                    top_liege = {
+                        highest_held_title_tier = tier_empire
+                        has_government = administrative_government
+                    }
+                }
+            }
+            highest_held_title_tier = tier_duchy
+            OR = {
+                AND = {
+                    vassal_contract_has_flag = admin_theme_frontier
+                    has_government = administrative_government
+                }
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_frontier
+                        this = root
+                    }
+                }
+            }
+        }
+        localization_key = _frontier
+    }
+    text = {
+        trigger = {
+            OR = {
+                has_government = administrative_government
                 dynasty ?= {
                     any_in_list = {
                         variable = dynasty_byzantine
                         this = root
-                    }
-                }
-                any_spouse = {
-                    even_if_dead = yes
-                    save_temporary_scope_as = the_spouse
-                    OR = {
-                        AND = {
-                            has_government = feudal_government
-                            OR = {
-                                has_title = title:e_byzantium
-                                top_liege ?= {
-                                    has_title = title:e_byzantium
-                                }
-                            }
-                        }
-                        dynasty ?= {
-                            any_in_list = {
-                                variable = dynasty_byzantine
-                                this = scope:the_spouse
-                            }
-                        }
-                    }
-                }
-                any_parent = {
-                    even_if_dead = yes
-                    save_temporary_scope_as = the_parent
-                    OR = {
-                        AND = {
-                            has_government = feudal_government
-                            has_title = title:e_byzantium
-                        }
-                        AND = {
-                            dynasty ?= {
-                                any_in_list = {
-                                    variable = dynasty_byzantine
-                                    this = scope:the_parent
-                                }
-                            }
-                            has_title = title:e_byzantium
-                        }
                     }
                 }
             }
@@ -1558,7 +1735,7 @@ CharacterGov = {
     }
     text = {
         fallback = yes
-        localization_key = _default
+        localization_key = _landless
     }
 }
 CharacterCulture = {
