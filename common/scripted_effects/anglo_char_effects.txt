@@ -663,3 +663,35 @@
 		dynasty_effect_ne = yes
 	}
 }
+1178_anglo_char_effect = {
+	character:984.house = { #Plantagenet
+		set_variable = {
+			name = name_founder
+			value = character:npedbirish014
+		}
+	}
+	character:204506.dynasty = {
+		add_to_variable_list = { name = dynasty_feudalclan target = character:204506 }
+	}
+	#character:204500 = {
+		#curtmantle
+	#}
+	character:204513 = {
+		change_first_name = Joanna
+	}
+	character:205730 = {
+		change_first_name = Eleanor
+	}
+	character:204513 = {
+		change_first_name = Joanna
+	}
+	character:204506 = {
+		change_first_name = Geoffrey
+	}
+	character:223525 = {
+		change_first_name = Fulk
+	}
+	character:204513 = {
+		give_nickname = nick_the_lionheart
+	}
+}

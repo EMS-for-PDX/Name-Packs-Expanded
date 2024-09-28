@@ -1606,9 +1606,30 @@
     }
 }
 1178_greek_char_effect = {
+    character:145018.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbgreek096
+        }
+    }
+    character:180997.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbgreek095
+        }
+    }
     character:215530.dynasty = {
         add_to_variable_list = { name = dynasty_byzantine target = character:223023 }
         add_to_variable_list = { name = dynasty_frontier target = character:215570 }
+        add_to_variable_list = { name = dynasty_byzantine target = character:1742 }
+        add_to_variable_list = { name = dynasty_frontier target = character:34340 }
+        add_to_variable_list = { name = dynasty_frontier target = character:34338 }
+    }
+    character:125751.dynasty = {
+        add_to_variable_list = { name = dynasty_frontier target = character:125751 }
+        add_to_variable_list = { name = dynasty_frontier target = character:1782 }
+        add_to_variable_list = { name = dynasty_byzantine target = character:1732 }
+        add_to_variable_list = { name = dynasty_frontier target = character:1748 }
     }
     character:215530 = {
         give_nickname = nick_the_great
@@ -1625,10 +1646,70 @@
     character:232511 = {
         change_first_name = Mary
     }
+    character:125704 = {
+        change_first_name = Mary
+    }
     character:223022 = {
+        change_first_name = Isaac
+    }
+    character:223020 = {
         change_first_name = Isaac
     }
     character:komnenos_3 = {
         change_first_name = Mary
+    }
+    character:215560 = {
+        change_first_name = Mary
+    }
+    character:24742 = {
+        change_first_name = Mary
+    }
+    character:222674 = {
+        change_first_name = Helen
+    }
+    character:215528 = {
+        change_first_name = Isaac
+    }
+    character:komnenos_7 = {
+        change_first_name = Adrian
+    }
+    character:komnenos_8 = {
+        change_first_name = Adrian
+    }
+    character:34332 = {
+        change_first_name = Eudokia
+    }
+    character:32335 = {
+        change_first_name = Adrian
+    }
+    character:32336 = {
+        change_first_name = Adrian
+    }
+    character:24280 = {
+        change_first_name = Constantine
+    }
+    character:34340 = {
+        change_first_name = Stephen
+    }
+    character:34341 = {
+        change_first_name = Isaac
+    }
+    character:34342 = {
+        change_first_name = Constantine
+    }
+    character:180997 = {
+        change_first_name = Constantine
+    }
+    character:215660 = {
+        change_first_name = Isaac
+    }
+    character:doukas_2 = {
+        change_first_name = Constantine
+    }
+    character:125751 = {
+        change_first_name = Constantine
+    }
+    character:125700 = {
+        change_first_name = Constantine
     }
 }

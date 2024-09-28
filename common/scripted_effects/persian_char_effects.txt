@@ -323,9 +323,7 @@
 	character:extra_farighunids_4 = {
 		dynasty_effect_ne = yes
 	}
-#	character:1059969 = {
-#		change_first_name = Khusraw
-#	}
+
 	character:180639 = {
 		change_first_name = Yazdandad
 	}
@@ -555,15 +553,7 @@
     character:166987 = {
         change_first_name = Ziar
     }
-#    character:248308 = {
-#        change_first_name = Ahmad
-#    }
-#    character:248306 = {
-#        change_first_name = Abbas
-#    }
-#    character:248307 = {
-#        change_first_name = Dawud
-#    }
+
 	character:74033 = {
 		change_first_name = Alexander
 	}
@@ -577,9 +567,7 @@
     character:163157 = {
         change_first_name = Ismail
     }
-#    character:1230319 = {
-#        change_first_name = Faridun
-#    }
+
     character:180753 = {
         change_first_name = Zahra
     }
@@ -1072,15 +1060,7 @@
     character:93271 = {
         change_first_name = Abbas
     }
-#    character:93270 = {
-#        change_first_name = Tahir
-#    }
-#    character:93269 = {
-#        change_first_name = Nasr
-#        add_character_flag = has_reg_laqab
-#        add_to_global_variable_list = { name = Taj_ad_Din target = this }
-#        dynasty_effect_ne = yes
-#    }
+
     character:146128 = {
         change_first_name = Gushtahm
     }
@@ -1104,5 +1084,38 @@
     }
     character:41702 = {
         change_first_name = Hasan
+    }
+}
+1178_persian_char_effect = {
+    character:226000.dynasty = {
+        add_to_variable_list = { name = dynasty_feudalclan target = character:226053 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:226000 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:226053 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:226000 }
+        add_to_variable_list = { name = pre_laqab_dynasty target = character:226000 }
+        add_to_variable_list = { name = pre_laqab_dynasty target = character:226053 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:226051 }
+    }
+    character:226053 = {
+        change_first_name = Jacob
+        add_to_global_variable_list = { name = Najm_ad_Din target = this }
+        add_to_global_variable_list = { name = al_Afdal target = this }
+        dynasty_effect_ne = yes
+    }
+    character:226000 = {
+        set_culture = culture:kurdish
+        change_first_name = Yusuf
+        add_character_flag = has_reg_laqab
+        add_character_flag = has_pre_laqab
+        add_to_global_variable_list = { name = Salah_ad_Din target = this }
+        add_to_global_variable_list = { name = an_Nasir target = this }
+    }
+    character:226051 = {
+        set_culture = culture:kurdish
+        change_first_name = Uthman
+    }
+    character:226054 = {
+        set_culture = culture:kurdish
+        change_first_name = Ghazi
     }
 }

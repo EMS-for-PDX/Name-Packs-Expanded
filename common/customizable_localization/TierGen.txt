@@ -408,7 +408,6 @@
     text = {
         trigger = {
             highest_held_title_tier = tier_duchy
-                is_landed = yes
             OR = {
                 is_independent_ruler = yes
                 dynasty ?= {
@@ -475,8 +474,7 @@
                 any_former_spouse = {
                     even_if_dead = yes
                     save_temporary_scope_as = the_spouse
-                    highest_held_title_tier = tier_duchy 
-                    is_landed = yes
+                    highest_held_title_tier = tier_duchy
                     OR = {
                         is_independent_ruler = yes
                         dynasty ?= {
@@ -794,7 +792,6 @@
     text = {
         trigger = {
             highest_held_title_tier = tier_duchy
-            is_landed = yes
         }
         localization_key = Duke
     }
@@ -1439,7 +1436,6 @@ CharacterGov = {
                     }
                 }
             }
-            has_government = administrative_government
             OR = {
                 AND = {
                     highest_held_title_tier = tier_kingdom 
@@ -1447,7 +1443,7 @@ CharacterGov = {
                         vassal_contract_has_flag = admin_theme_military
                         dynasty ?= {
                             any_in_list = {
-                                variable = dynasty_military_theme
+                                variable = dynasty_military
                                 this = root
                             }
                         }
@@ -1461,7 +1457,7 @@ CharacterGov = {
                             vassal_contract_has_flag = admin_theme_frontier
                             dynasty ?= {
                                 any_in_list = {
-                                    variable = dynasty_military_theme
+                                    variable = dynasty_military
                                     this = root
                                 }
                                 any_in_list = {
@@ -1495,7 +1491,6 @@ CharacterGov = {
                     }
                 }
             }
-            has_government = administrative_government
             OR = {
                 AND = {
                     highest_held_title_tier >= tier_duchy
@@ -1503,7 +1498,7 @@ CharacterGov = {
                         vassal_contract_has_flag = admin_theme_naval
                         dynasty ?= {
                             any_in_list = {
-                                variable = dynasty_naval_theme
+                                variable = dynasty_naval
                                 this = root
                             }
                         }
@@ -1516,7 +1511,7 @@ CharacterGov = {
                             vassal_contract_has_flag = admin_theme_naval
                             dynasty ?= {
                                 any_in_list = {
-                                    variable = dynasty_naval_theme
+                                    variable = dynasty_naval
                                     this = root
                                 }
                             }
@@ -1530,7 +1525,7 @@ CharacterGov = {
                             vassal_contract_has_flag = admin_theme_naval
                             dynasty ?= {
                                 any_in_list = {
-                                    variable = dynasty_naval_theme
+                                    variable = dynasty_naval
                                     this = root
                                 }
                             }
@@ -1560,13 +1555,12 @@ CharacterGov = {
                     }
                 }
             }
-            has_government = administrative_government
             highest_held_title_tier = tier_duchy
             OR = {
                 vassal_contract_has_flag = admin_theme_civilian
                 dynasty ?= {
                     any_in_list = {
-                        variable = dynasty_civilian_theme
+                        variable = dynasty_civilian
                         this = root
                     }
                 }
