@@ -667,15 +667,30 @@
 	character:984.house = { #Plantagenet
 		set_variable = {
 			name = name_founder
-			value = character:npedbirish014
+			value = character:npedbfrench058
 		}
+	}
+	character:salisbury_1.house = { #Salisbury
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench059
+		}
+	}
+	character:salisbury_1.dynasty = {
+		add_to_variable_list = { name = dynasty_feudalclan target = character:salisbury_1 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:204535 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:204533 }
 	}
 	character:204506.dynasty = {
 		add_to_variable_list = { name = dynasty_feudalclan target = character:204506 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:231067 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:223520 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:380 }
 	}
-	#character:204500 = {
-		#curtmantle
-	#}
+	character:205731.dynasty = {
+		add_to_variable_list = { name = dynasty_feudalclan target = character:205731 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:205733 }
+	}
 	character:204513 = {
 		change_first_name = Joanna
 	}
@@ -691,7 +706,55 @@
 	character:223525 = {
 		change_first_name = Fulk
 	}
-	character:204513 = {
-		give_nickname = nick_the_lionheart
+	character:204631 = {
+		change_first_name = Isabel
+	}
+	character:103000 = {
+		change_first_name = Ermengard
+	}
+	character:183345 = {
+		change_first_name = Geoffrey
+	}
+	character:204537 = {
+		change_first_name = Alice
+	}
+	character:183009 = {
+		change_first_name = Mary
+	}
+	character:127029 = {
+		change_first_name = Alice
+	}
+	character:7623 = {
+		change_first_name = Anges
+	}
+	character:223740 = {
+		change_first_name = Raymond
+	}
+	character:223742 = {
+		change_first_name = Baldwins
+	}
+	character:223651 = {
+		change_first_name = Raymond
+	}
+	character:31013 = {
+		change_first_name = Constantia
+	}
+	character:223743 = {
+		change_first_name = Mary
+	}
+	character:127032 = {
+		change_first_name = Henry
+	}
+	character:127033 = {
+		change_first_name = Adelheid
+	}
+	character:127036 = {
+		change_first_name = Agnes
+	}
+	character:127035 = {
+		change_first_name = Hugh
+	}
+	character:127037 = {
+		change_first_name = Beatris
 	}
 }
