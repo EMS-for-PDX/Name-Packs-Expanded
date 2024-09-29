@@ -69,9 +69,9 @@
 		}
 	}
 	character:191510.dynasty = { #Gaya
-		add_to_variable_list = { name = dynasty_feudalclan target = character:191510 }
-		add_to_variable_list = { name = dynasty_feudalclan target = character:191511 }
-		add_to_variable_list = { name = dynasty_feudalclan target = character:191512 }
+		add_to_variable_list = { name = dynasty_theocrats target = character:191510 }
+		add_to_variable_list = { name = dynasty_theocrats target = character:191511 }
+		add_to_variable_list = { name = dynasty_theocrats target = character:191512 }
 	}
 	character:191152.house = {
 		set_variable = {
@@ -262,6 +262,16 @@
 	character:190086.dynasty = {
 		add_to_variable_list = { name = deva_removal target = character:190086 }
 		add_to_variable_list = { name = deva_removal target = character:190087 }
+	}
+	character:191405.dynasty = { #Mana
+		add_to_variable_list = { name = dynasty_independent target = character:191405 }
+		add_to_variable_list = { name = dynasty_independent target = character:191406 }
+		add_to_variable_list = { name = dynasty_independent target = character:191407 }
+		add_to_variable_list = { name = dynasty_independent target = character:191408 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191405 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191406 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191407 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191408 }
 	}
 	character:190084 ={
         dynasty_effect_ne = yes
@@ -555,6 +565,23 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:191250 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:191251 }
 	}
+	character:1911413.dynasty = { #Mana
+		add_to_variable_list = { name = dynasty_feudalclan target = character:1911409 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:1911410 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:1911411 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:1911413 }
+		add_to_variable_list = { name = dynasty_independent target = character:1911409 }
+		add_to_variable_list = { name = dynasty_independent target = character:1911410 }
+		add_to_variable_list = { name = dynasty_independent target = character:1911411 }
+		add_to_variable_list = { name = dynasty_independent target = character:1911413 }
+	}
+	character:191514.dynasty = { #Gaya
+		add_to_variable_list = { name = dynasty_theocrats target = character:191514 }
+		add_to_variable_list = { name = dynasty_theocrats target = character:191515 }
+		add_to_variable_list = { name = dynasty_theocrats target = character:191516 }
+		add_to_variable_list = { name = dynasty_theocrats target = character:191517 }
+		add_to_variable_list = { name = dynasty_theocrats target = character:191164 }
+	}
 	character:191151 ={
 		change_first_name = Bhagya
 	}
@@ -633,3 +660,75 @@
 		dynasty_effect_ne = yes
 	}
 }
+1178_bengali_char_effect = {
+	character:154002.dynasty = { #Sena
+        set_variable = {
+            name = ia_dynasty_suffix
+            value = flag:sena
+        }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:154002 }
+		add_to_variable_list = { name = dynasty_independent target = character:154002 }
+
+	}
+	character:191537.dynasty = { #Ranaka
+		add_to_variable_list = { name = deva_removal target = character:191537 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191535 }
+		add_to_variable_list = { name = dynasty_independent target = character:191535 }
+	}
+	character:1911414.dynasty = { #Mana
+		add_to_variable_list = { name = dynasty_feudalclan target = character:1911414 }
+		add_to_variable_list = { name = dynasty_independent target = character:1911414 }
+	}
+	character:191062.dynasty = { #Karnata
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191062 }
+		add_to_variable_list = { name = dynasty_independent target = character:191062 }
+		add_to_variable_list = { name = deva_removal target = character:191063 }
+	}
+	character:191389.dynasty = { #Khayarwala
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191389 }
+	}
+	character:191397.dynasty = { #Gupta
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191397 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191398 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191399 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:191400 }
+	}
+	character:191398 ={
+        change_first_name = Damodaragupta
+	}
+	character:191138 ={
+        change_first_name = Rama
+	}
+	character:191390 ={
+        change_first_name = Pratapadhvaja
+	}
+	character:191166 ={
+        change_first_name = Rahula
+	}
+	character:191064 ={
+        change_first_name = Narasimha
+	}
+	character:191537 ={
+        change_first_name = Shrideva
+	}
+	character:191538 ={
+        change_first_name = Yakshapala
+	}
+	character:154002 ={
+        change_first_name = Vijayasena
+	}
+	character:154003 ={
+        change_first_name = Vilasa
+	}
+	character:154004 ={
+        change_first_name = Vallasena
+	}
+	character:154005 ={
+        change_first_name = Lakshmanasena
+	}
+	character:154006 ={
+        change_first_name = Vishvarupasena
+	}
+	character:sena_1 ={
+        change_first_name = Keshavasena
+	}
