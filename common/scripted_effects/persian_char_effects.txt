@@ -1096,8 +1096,23 @@
         add_to_variable_list = { name = pre_laqab_dynasty target = character:226053 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:226051 }
     }
+    character:232753.dynasty = {
+        add_to_variable_list = { name = dynasty_feudalclan target = character:232753 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:144567 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:146104 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:20734 }
+        add_to_variable_list = { name = dynasty_independent target = character:232753 }
+        add_to_variable_list = { name = dynasty_independent target = character:144567 }
+        add_to_variable_list = { name = dynasty_independent target = character:146104 }
+        add_to_variable_list = { name = dynasty_independent target = character:20734 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:232753 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144568 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144144 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144570 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144104 }
+    }
     character:226053 = {
-        change_first_name = Jacob
+        change_first_name = Job
         add_to_global_variable_list = { name = Najm_ad_Din target = this }
         add_to_global_variable_list = { name = al_Afdal target = this }
         dynasty_effect_ne = yes
@@ -1117,5 +1132,47 @@
     character:226054 = {
         set_culture = culture:kurdish
         change_first_name = Ghazi
+    }
+    character:146105 = {
+        change_first_name = Faridun
+    }
+    character:232753 = {
+        change_first_name = Manochihr
+    }
+    character:146107 = {
+        change_first_name = Manochihr
+    }
+    character:228068 = {
+        change_first_name = AExsartan
+    }
+    character:144569 = {
+        change_first_name = Farrokhzad
+    }
+    character:144570 = {
+        change_first_name = Gushtasp
+    }
+    character:93144 = {
+        change_first_name = Sam
+    }
+    character:144051 = {
+        dynasty_effect_ne = yes
+    }
+    character:93296 = {
+        change_first_name = Abu-Bakr
+    }
+    character:225015 = {
+        change_first_name = Qizilarslan
+    }
+    character:93295 = {
+        change_first_name = Qutluq
+    }
+    character:ildeguzid_1 = {
+        change_first_name = Umar
+    }
+    character:ildeguzid_2 = {
+        change_first_name = Abu-Bakr
+    }
+    character:144052 = {
+        change_first_name = Muhammad
     }
 }
