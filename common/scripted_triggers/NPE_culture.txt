@@ -10,6 +10,8 @@
 		has_cultural_pillar = heritage_west_germanic
 		has_cultural_pillar = heritage_north_germanic
 		has_cultural_pillar = heritage_brythonic
+		has_cultural_pillar = heritage_magyar
+		has_cultural_pillar = heritage_caucasian
 		AND = {
 			has_cultural_pillar = heritage_mongolic
 			NOT = {
@@ -64,7 +66,6 @@
 			OR = {
 				has_cultural_pillar = heritage_aramean
 				has_cultural_pillar = heritage_armenian
-				has_cultural_pillar = heritage_caucasian
 				has_cultural_pillar = heritage_peristani
 				has_cultural_pillar = heritage_sakan
 			}
@@ -94,6 +95,7 @@
 		has_cultural_pillar = language_anglic
 		has_cultural_pillar = language_norse
 		has_cultural_pillar = language_brythonic
+		has_cultural_pillar = language_magyar
 		AND = {
 			has_cultural_pillar = language_mongolic
 			NOT = {
@@ -451,18 +453,8 @@ armenian_check = {
 	}
 }
 georgian_check = {
-	trigger_if = {
-		limit = {
-			exists = global_var:CE_is_loaded
-		}
-		has_cultural_pillar = heritage_caucasian
-		has_cultural_pillar = language_georgian
-	}
-	trigger_else = {
-		has_cultural_pillar = heritage_byzantine
-		has_cultural_pillar = language_georgian
-
-	}
+	has_cultural_pillar = heritage_caucasian
+	has_cultural_pillar = language_georgian
 }
 assyrian_check = {
 	trigger_if = {
