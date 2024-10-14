@@ -251,6 +251,7 @@ courtier_effect = {
 				}
 			}
 			name_gen_effect = yes
+			save_scope_as = thebaron
 			if = {
 				limit = {
 					exists = this
@@ -259,7 +260,6 @@ courtier_effect = {
 						exists = house.var:name_founder
 					}
 				}
-				save_scope_as = thebaron
 				set_global_variable = {
 					name = temp_head
 					value = scope:thebaron

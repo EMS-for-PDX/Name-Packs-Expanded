@@ -402,6 +402,15 @@
 	}
 }
 1066_anglo_char_effect = {
+	character:salisbury_1.dynasty = { #salisbury
+		add_to_variable_list = { name = dynasty_feudalclan target = character:salisbury_1 }
+	}
+	character:82060.dynasty = { #briquessart
+		add_to_variable_list = { name = dynasty_feudalclan target = character:82060 }
+	}
+	character:salisbury_1 = {
+		dynasty_effect_ne = yes
+	}
 	character:161279 = {
 	}
 	character:161263 = {
@@ -708,17 +717,6 @@
 			value = character:npedbfrench058
 		}
 	}
-	character:salisbury_1.house = { #Salisbury
-		set_variable = {
-			name = name_founder
-			value = character:npedbfrench059
-		}
-	}
-	character:salisbury_1.dynasty = {
-		add_to_variable_list = { name = dynasty_feudalclan target = character:salisbury_1 }
-		add_to_variable_list = { name = dynasty_feudalclan target = character:204535 }
-		add_to_variable_list = { name = dynasty_feudalclan target = character:204533 }
-	}
 	character:204506.dynasty = {
 		add_to_variable_list = { name = dynasty_feudalclan target = character:204506 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:231067 }
@@ -729,14 +727,254 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:205731 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:205733 }
 	}
+	character:salisbury_1.dynasty = {
+		add_to_variable_list = { name = dynasty_feudalclan target = character:204535 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:204533 }
+	}
+	character:82060.dynasty = { #briquessart
+		add_to_variable_list = { name = dynasty_feudalclan target = character:204 }
+	}
+	character:204670.dynasty = { #Normandy/FitzRoy
+		add_to_variable_list = { name = dynasty_feudalclan target = character:203036 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:202992 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:146 }
+	}
+	character:204580.dynasty = { #Beaumont
+		add_to_variable_list = { name = dynasty_feudalclan target = character:204590 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:204596 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:204717 }
+	}
+	character:202969.dynasty = { #William
+		add_to_variable_list = { name = dynasty_feudalclan target = character:202969 }
+	}
+	character:202975 = {
+		change_first_name = GillaAdomnain
+	}
+	character:202974 = {
+		change_first_name = Domnall
+	}
+	character:202971 = {
+		change_first_name = Domnall
+	}
+	character:202969 = {
+		set_culture = culture:gaelic
+		dynasty_effect_ne = yes
+		set_culture = culture:scottish
+	}
+	character:129056 = {
+		set_culture = culture:english
+	}
+	character:204710 = {
+		set_culture = culture:english
+		change_first_name = Walram
+	}
+	character:204715 = {
+		set_culture = culture:english
+	}
+	character:161426 = {
+		set_culture = culture:english
+	}
+	character:32506 = {
+		set_culture = culture:english
+		change_first_name = Mabel
+	}
+	character:7441 = {
+		set_culture = culture:english
+	}
+	character:7443 = {
+		set_culture = culture:english
+		change_first_name = Walram
+	}
+	character:204791 = {
+		set_culture = culture:english
+	}
+	character:161434 = {
+		set_culture = culture:english
+		change_first_name = Isabel
+	}
+	character:204590 = {
+		set_culture = culture:english
+	}
+	character:161602 = {
+		set_culture = culture:english
+	}
+	character:204592 = {
+		set_culture = culture:english
+	}
+	character:204583 = {
+		set_culture = culture:english
+		change_first_name = Petronilla
+	}
+	character:204585 = {
+		set_culture = culture:english
+	}
+	character:204781 = {
+		set_culture = culture:english
+	}
+	character:204584 = {
+		set_culture = culture:english
+		change_first_name = Amicia
+	}
+	character:204582 = {
+		set_culture = culture:english
+	}
+	character:204581 = {
+		set_culture = culture:english
+		change_first_name = Petronilla
+	}
+	character:204580 = {
+		set_culture = culture:english
+	}
+	character:205898 = {
+		change_first_name = Adela
+	}
+	character:183132 = {
+		set_culture = culture:english
+	}
+	character:183130 = {
+		set_culture = culture:english
+	}
+	character:183129 = {
+		change_first_name = Gundrada
+	}
+	character:161256 = {
+		change_first_name = Sibyl
+	}
+	character:202990 = {
+		set_culture = culture:english
+		change_first_name = Constantia
+	}
+	character:183133 = {
+		set_culture = culture:english
+	}
+	character:183131 = {
+		set_culture = culture:english
+	}
+	character:202991 = {
+		set_culture = culture:english
+	}
+	character:203561 = {
+		set_culture = culture:english
+	}
+	character:129063 = {
+		set_culture = culture:english
+	}
+	character:204671 = {
+		set_culture = culture:english
+	}
+	character:204666 = {
+		set_culture = culture:english
+	}
+	character:204665 = {
+		set_culture = culture:english
+		change_first_name = Isabel
+	}
+	character:204664 = {
+		set_culture = culture:english
+	}
+	character:204670 = {
+		set_culture = culture:english
+	}
+	character:155249 = {
+		set_culture = culture:english
+	}
+	character:204022 = {
+		set_culture = culture:english
+	}
+	character:204023 = {
+		set_culture = culture:english
+	}
+	character:lacy_3 = {
+		set_culture = culture:english
+	}
+	character:lacy_2 = {
+		set_culture = culture:english
+	}
+	character:lacy_1 = {
+		set_culture = culture:english
+	}
+	character:204020 = {
+		set_culture = culture:english
+	}
+	character:lacy_4 = {
+		set_culture = culture:english
+	}
+	character:129089 = {
+		set_culture = culture:english
+	}
+	character:129087 = {
+		set_culture = culture:english
+		change_first_name = Alberada
+	}
+	character:129082 = {
+		set_culture = culture:english
+	}
+	character:204682 = {
+		set_culture = culture:english
+	}
+	character:204680 = {
+		set_culture = culture:english
+	}
+	character:204681 = {
+		set_culture = culture:english
+	}
+	character:204685 = {
+		set_culture = culture:english
+	}
+	character:204533 = {
+		set_culture = culture:english
+	}
+	character:204536 = {
+		set_culture = culture:english
+	}
+	character:204530 = {
+		set_culture = culture:english
+	}
+	character:183010 = {
+		set_culture = culture:english
+	}
+	character:204630 = {
+		set_culture = culture:english
+	}
+	character:204517 = {
+		set_culture = culture:english
+	}
+	character:204514 = {
+		set_culture = culture:english
+	}
+	character:204512 = {
+		set_culture = culture:english
+	}
+	character:204511 = {
+		set_culture = culture:english
+	}
+	character:204510 = {
+		set_culture = culture:english
+	}
+	character:204509 = {
+		set_culture = culture:english
+	}
+	character:204507 = {
+		set_culture = culture:english
+	}
+	character:204516 = {
+		set_culture = culture:english
+	}
+	character:204500 = {
+		set_culture = culture:english
+	}
+	character:232020 = {
+		set_culture = culture:english
+	}
+	character:204534 = {
+		change_first_name = Ala
+	}
 	character:204513 = {
 		change_first_name = Joanna
+		set_culture = culture:english
 	}
 	character:205730 = {
 		change_first_name = Eleanor
-	}
-	character:204513 = {
-		change_first_name = Joanna
 	}
 	character:204506 = {
 		change_first_name = Geoffrey
@@ -755,6 +993,7 @@
 	}
 	character:204537 = {
 		change_first_name = Alice
+		set_culture = culture:english
 	}
 	character:183009 = {
 		change_first_name = Mary

@@ -2119,39 +2119,6 @@ CharacterCulture = {
 	text = {
 		trigger = {
 			culture = {
-                OR = {
-                    has_name_list = name_list_occitan
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        has_name_list = name_list_arpetan
-                    }
-                }
-				OR = {
-                    has_cultural_pillar = language_occitano_romance
-                    trigger_if = {
-                        limit = {
-                            exists = global_var:CE_is_loaded
-                        }
-                        has_cultural_pillar = language_arpetan
-                    }
-                }
-			}
-		}
-		localization_key = _occitan
-	}
-	text = {
-		trigger = {
-			culture = {
-				has_cultural_pillar = language_french
-			}
-		}
-		localization_key = _french
-	}
-	text = {
-		trigger = {
-			culture = {
                 has_name_list = name_list_aragonese
 				OR = {
                     has_cultural_pillar = language_iberian
@@ -2348,6 +2315,7 @@ CharacterCulture = {
 	}
 	text = {
 		trigger = {
+            save_temporary_scope_as = the_char
 			culture = {
                 trigger_if = {
                     limit = {
@@ -2356,17 +2324,54 @@ CharacterCulture = {
                     has_cultural_pillar = language_middle_english
                 }
                 trigger_else = {
-                    has_cultural_pillar = language_anglic
-                }
-                OR = {
-                    this = culture:english
-                    any_parent_culture_or_above = {
-                        this = culture:english
+                    OR = {
+                        AND = {
+                            OR = {
+                                this = culture:english
+                                any_parent_culture_or_above = {
+                                    this = culture:english
+                                }
+                            }
+                            has_cultural_pillar = language_anglic
+                        }
                     }
                 }
 			}
 		}
 		localization_key = _english
+	}
+	text = {
+		trigger = {
+			culture = {
+                OR = {
+                    has_name_list = name_list_occitan
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_name_list = name_list_arpetan
+                    }
+                }
+				OR = {
+                    has_cultural_pillar = language_occitano_romance
+                    trigger_if = {
+                        limit = {
+                            exists = global_var:CE_is_loaded
+                        }
+                        has_cultural_pillar = language_arpetan
+                    }
+                }
+			}
+		}
+		localization_key = _occitan
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_french
+			}
+		}
+		localization_key = _french
 	}
 	text = {
 		trigger = {
