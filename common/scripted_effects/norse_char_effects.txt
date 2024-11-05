@@ -1360,6 +1360,9 @@
 	}
 }
 1178_norse_char_effect = {
+	faith:catholic = {
+		add_to_variable_list = { name = faith_saints target = character:200490 }
+	}
 	character:202051 = {
 		change_first_name = Magnus
 	}
@@ -1420,8 +1423,90 @@
 		add_to_variable_list = { name = dynasty_independent target = character:202501 }
 		add_to_variable_list = { name = dynasty_independent target = character:202507 }
 	}
-	character:7390.dynasty = { #Ynglingar
+	character:200490.dynasty = { #Erik
+		add_to_variable_list = { name = dynasty_feudalclan target = character:200490 }
+	}
+	character:7390.dynasty = {
 		add_to_variable_list = { name = dynasty_feudalclan target = character:7390 }
+	}
+	character:200541 = {
+		change_first_name = Charles
+	}
+	character:200542 = {
+		change_first_name = Christina
+	}
+	character:200531 = {
+		change_first_name = Askell
+	}
+	character:200530 = {
+		change_first_name = Margaret
+	}
+	character:200529 = {
+		change_first_name = Christina
+	}
+	character:200526 = {
+		change_first_name = Fulk
+	}
+	character:200524 = {
+		change_first_name = Philip
+	}
+	character:200523 = {
+		change_first_name = Birgir
+	}
+	character:194223 = {
+		change_first_name = Kol
+		dynasty_effect_ne = yes
+	}
+	character:167302 = {
+		change_first_name = Rodlaug
+	}
+	character:167301 = {
+		change_first_name = Leiknar
+	}
+	character:167305 = {
+		change_first_name = Gydlaug
+	}
+	character:167314 = {
+		change_first_name = Ingimar
+	}
+	character:167313 = {
+		change_first_name = Alfeid
+	}
+	character:167312 = {
+		change_first_name = Rikvi
+	}
+	character:167307 = {
+		change_first_name = Eadweald
+	}
+	character:167311 = {
+		change_first_name = Thorvar
+	}
+	character:167306 = {
+		change_first_name = Brynjulf
+	}
+	character:194223 = {
+		change_first_name = Laurence
+		dynasty_effect_ne = yes
+	}
+	character:200005 = {
+		change_first_name = Edward
+		dynasty_effect_ne = yes
+	}
+	character:200501 = {
+		change_first_name = John
+	}
+	character:200505 = {
+		change_first_name = Sigga
+	}
+	character:144648 = {
+		change_first_name = Philip
+	}
+	character:200506 = {
+		change_first_name = Margaret
+	}
+	character:200490 = {
+		change_first_name = Eric
+		dynasty_effect_ne = yes
 	}
 	character:7385 = {
 		change_first_name = Forbflaith
