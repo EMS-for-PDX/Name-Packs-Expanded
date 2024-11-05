@@ -108,3 +108,23 @@
 		change_first_name = Sthanu-Ravi
 	}
 }
+1178_tamil_effect = {
+	add_to_global_variable_list = { name = Parakesari_regnal target = character:189121 }
+	add_to_global_variable_list = { name = Rajakesari_regnal target = character:189120 }
+	add_to_global_variable_list = { name = Parakesari_regnal target = character:189119 }
+	add_to_global_variable_list = { name = Rajakesari_regnal target = character:189118 }
+	add_to_global_variable_list = { name = Parakesari_regnal target = character:189117 }
+	character:189120.dynasty = { #Calukki Cola
+		add_to_variable_list = { name = dynasty_feudalclan target = character:189120 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:189119 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:189118 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:189117 }
+		add_to_variable_list = { name = dynasty_independent target = character:189117 }
+		add_to_variable_list = { name = dynasty_independent target = character:189118 }
+		add_to_variable_list = { name = dynasty_independent target = character:189119 }
+		add_to_variable_list = { name = dynasty_independent target = character:189120 }
+	}
+	character:189117 = {
+		change_first_name = Vikrama
+	}
+}
