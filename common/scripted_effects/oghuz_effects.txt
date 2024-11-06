@@ -751,6 +751,17 @@
         add_to_variable_list = { name = dynasty_independent target = character:144100 }
         add_to_variable_list = { name = dynasty_independent target = character:144099 }
     }
+    character:7299.dynasty = { #Saltiqids
+        add_to_variable_list = { name = dynasty_feudalclan target = character:144045 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:144044 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:144047 }
+        add_to_variable_list = { name = dynasty_independent target = character:144045 }
+        add_to_variable_list = { name = dynasty_independent target = character:144044 }
+        add_to_variable_list = { name = dynasty_independent target = character:144047 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:34396 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144046 }
+		
+    }
     character:230000 = {
         change_first_name = Tekes
     }
@@ -858,5 +869,24 @@
     }
     character:3079 = {
         change_first_name = Aqsunqur
+    }
+    character:144047 = {
+        change_first_name = Saltiq
+    }
+    character:34397 = {
+        change_first_name = Malikshah
+    }
+    character:34396 = {
+        change_first_name = Muhammad  #Fake
+        add_to_global_variable_list = { name = Ala_ad_Din target = this }
+		add_Character_flag = has_reg_laqab
+    }
+    character:144046 = {
+        change_first_name = Ahmad  #Fake
+        add_to_global_variable_list = { name = Diya_ad_Din target = this }
+		add_Character_flag = has_reg_laqab
+    }
+    character:34395 = {
+        change_first_name = Mama
     }
 }

@@ -31,6 +31,8 @@
 	character:41541.dynasty = { #Bagrationi
         add_to_variable_list = { name = dynasty_independent target = character:41540 }
         add_to_variable_list = { name = dynasty_independent target = character:41539 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:41540 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:41539 }
 	}
     character:159790.house = {
         set_variable = {
@@ -172,6 +174,8 @@
 	character:9952.dynasty = { #Bagrationi
         add_to_variable_list = { name = dynasty_independent target = character:41547 }
         add_to_variable_list = { name = dynasty_independent target = character:9950 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:41547 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:9950 }
 	}
 	character:90152 = {
 		change_first_name = Vardan
@@ -227,5 +231,52 @@
 	}
 	character:9954 = {
 		change_first_name = Demetrios
+	}
+}
+1178_georgian_char_effect = {
+	character:216515.dynasty = { #Bagrationi
+        add_to_variable_list = { name = dynasty_independent target = character:216516 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:216516 }
+        add_to_variable_list = { name = dynasty_independent target = character:216517 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:216517 }
+        add_to_variable_list = { name = dynasty_independent target = character:9952 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:9952 }
+        add_to_variable_list = { name = dynasty_independent target = character:9957 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:9957 }
+        add_to_variable_list = { name = dynasty_independent target = character:9959 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:9959 }
+        add_to_variable_list = { name = dynasty_independent target = character:41550 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:41550 }
+	}
+	character:216515 = {
+		change_first_name = George
+	}
+	character:144565 = {
+		change_first_name = Axsartan
+	}
+	character:bagratuni_1 = {
+		change_first_name = Vaxtang
+	}
+	character:144010 = {
+		change_first_name = David
+	}
+	character:9954 = {
+		change_first_name = Demetrios
+	}
+	character:9959 = {
+		change_first_name = David
+	}
+	character:216517 = {
+		change_first_name = David
+	}
+	character:41550 = {
+		change_first_name = Atom
+	}
+	character:216524 = {
+		change_first_name = Dzhadaron
+	}
+	character:232762 = {
+		change_first_name = Kaxaber
+		dynasty_effect_ne = yes
 	}
 }
