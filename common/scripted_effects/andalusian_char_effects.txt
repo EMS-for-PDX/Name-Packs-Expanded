@@ -25,6 +25,8 @@
         add_to_variable_list = { name = dynasty_feudalclan target = character:73680 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:73681 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:73682 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:levantine0010 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:levantine0011 }
         add_to_variable_list = { name = dynasty_independent target = character:73683 }
         add_to_variable_list = { name = dynasty_independent target = character:73679 }
         add_to_variable_list = { name = dynasty_independent target = character:73680 }
@@ -67,6 +69,9 @@
 		}
 	}
 	character:73957.dynasty = {
+        add_to_variable_list = { name = dynasty_feudalclan target = character:73956 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:73955 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73956 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:73957 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:andalusian0095 }
     }
@@ -328,11 +333,17 @@
 			value = character:93272
 		}
 	}
+    character:levantine0013 = {
+        change_first_name = Marjan
+    }
     character:73838 = {
         change_first_name = Irzaq
     }
     character:levantine0002 = {
         dynasty_effect_ne = yes
+    }
+    character:baranis0007 = {
+        change_first_name = Moti
     }
     character:andalusian0144 = {
         change_first_name = Ambrose
