@@ -1304,6 +1304,27 @@
     }
     text = {
         trigger = {
+            has_trait = born_in_the_purple
+            top_liege ?= {
+                has_government = administrative_government
+            }
+        }
+        localization_key = BornPurple
+    }
+    text = {
+        trigger = {
+            OR = {
+                is_lowborn = no
+                any_spouse = {
+                    even_if_dead = yes
+                    is_lowborn = no
+                }
+            }
+        }
+        localization_key = lord
+    }
+    text = {
+        trigger = {
             OR = {
                 is_lowborn = no
                 any_spouse = {
