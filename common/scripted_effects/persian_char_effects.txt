@@ -1088,12 +1088,19 @@
 }
 1178_persian_char_effect = {
     character:226000.dynasty = {
+        add_to_variable_list = { name = dynasty_feudalclan target = character:32911 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:32912 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:226053 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:226000 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:226053 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:226000 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:226012 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:226052 }
         add_to_variable_list = { name = pre_laqab_dynasty target = character:226000 }
+        add_to_variable_list = { name = pre_laqab_dynasty target = character:226052 }
         add_to_variable_list = { name = pre_laqab_dynasty target = character:226053 }
+        add_to_variable_list = { name = pre_laqab_dynasty target = character:144083 }
+        add_to_variable_list = { name = pre_laqab_dynasty target = character:226011 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:226051 }
     }
     character:232753.dynasty = {
@@ -1110,6 +1117,26 @@
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144144 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144570 }
         add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144104 }
+    }
+    character:144228.house = {
+		set_variable = {
+			name = name_founder
+			value = character:144228
+		}
+	}
+    character:144228.dynasty = { #Nizarid
+        add_to_variable_list = { name = dynasty_theocrats target = character:nizarid_1 }
+        add_to_variable_list = { name = dynasty_theocrats target = character:nizarid_2 }
+        add_to_variable_list = { name = dynasty_theocrats target = character:nizarid_3 }
+        add_to_variable_list = { name = dynasty_theocrats target = character:nizarid_4 }
+        add_to_variable_list = { name = dynasty_independent target = character:nizarid_1 }
+        add_to_variable_list = { name = dynasty_independent target = character:nizarid_2 }
+        add_to_variable_list = { name = dynasty_independent target = character:nizarid_3 }
+        add_to_variable_list = { name = dynasty_independent target = character:nizarid_4 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:nizarid_4 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:nizarid_3 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:nizarid_2 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:nizarid_1 }
     }
     character:226053 = {
         change_first_name = Job
@@ -1136,8 +1163,33 @@
     character:146105 = {
         change_first_name = Faridun
     }
+    character:144083 = {
+        change_first_name = Muhammad
+        add_character_flag = has_pre_laqab
+        add_to_global_variable_list = { name = al-Mansur target = this }
+    }
+    character:226011 = {
+        change_first_name = Umar
+        add_character_flag = has_pre_laqab
+        add_to_global_variable_list = { name = al-Muzaffar target = this }
+    }
+    character:226012 = {
+        change_first_name = Muhammad
+        add_character_flag = has_reg_laqab
+        add_to_global_variable_list = { name = Nasr_ad_Din target = this }
+    }
+    character:144086 = {
+        change_first_name = Muhammad
+    }
     character:232753 = {
         change_first_name = Manochihr
+    }
+    character:226052 = {
+        change_first_name = Ahmad
+        add_character_flag = has_reg_laqab
+        add_character_flag = has_pre_laqab
+        add_to_global_variable_list = { name = Sayf_ad_Din target = this }
+        add_to_global_variable_list = { name = al-Adil target = this }
     }
     character:146107 = {
         change_first_name = Manochihr
@@ -1151,6 +1203,12 @@
     character:93139 = {
         change_first_name = Husayn
     }
+    character:32913 = {
+        change_first_name = Shahanshah
+    }
+    character:226012 = {
+        change_first_name = Sherkoh
+    }
     character:93143 = {
         change_first_name = Husayn
     }
@@ -1162,6 +1220,9 @@
     }
     character:93148 = {
         change_first_name = Sam
+    }
+    character:32911 = {
+        change_first_name = Shadi
     }
     character:93141 = {
         change_first_name = Sam
@@ -1182,6 +1243,12 @@
     character:225015 = {
         change_first_name = Qizilarslan
     }
+    character:93166 = {
+        change_first_name = Hasan
+    }
+    character:93168 = {
+        change_first_name = Rustam
+    }
     character:93295 = {
         change_first_name = Qutluq
     }
@@ -1192,6 +1259,12 @@
         change_first_name = Abu-Bakr
     }
     character:144052 = {
+        change_first_name = Muhammad
+    }
+    character:144228 = {
+        change_first_name = Muhammad
+    }
+    character:nizarid_3 = {
         change_first_name = Muhammad
     }
     character:93146 = {

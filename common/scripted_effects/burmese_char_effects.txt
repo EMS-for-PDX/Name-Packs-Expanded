@@ -192,6 +192,10 @@
 
 }
 1178_burma_char_effect = {
+	character:earlyburman001.dynasty = { #Pagan
+		add_to_variable_list = { name = dynasty_independent target = character:burman001 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:burman001 }
+	}
 	character:pagan_3 = {
 		change_first_name = Saw #Fake
 		add_to_global_variable_list = { name = Sithu_regnal target = this }
