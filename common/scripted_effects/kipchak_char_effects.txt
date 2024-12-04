@@ -456,7 +456,7 @@
         dynasty_effect_ne = yes
     }
     character:228059 = {
-        change_first_name = Etrak
+        change_first_name = Etrek
     }
     character:20655 = {
         change_first_name = Borch
@@ -562,5 +562,24 @@
     }
     character:806 = {
         change_first_name = Sari
+    }
+}
+1178_kipchak_effect = {
+    character:806.dynasty = {
+		add_to_variable_list = { name = dynasty_tribal target = character:806 }
+		add_to_variable_list = { name = dynasty_independent target = character:806 }
+		add_to_variable_list = { name = dynasty_tribal target = character:90143 }
+		add_to_variable_list = { name = dynasty_independent target = character:90143 }
+		add_to_variable_list = { name = dynasty_tribal target = character:125401 }
+		add_to_variable_list = { name = dynasty_independent target = character:125401 }
+    }
+    character:125401 = {
+        change_first_name = Etrek
+    }
+    character:228030 = {
+        change_first_name = Konchek
+    }
+    character:125404 = {
+        change_first_name = Kotan
     }
 }
