@@ -940,3 +940,74 @@
         change_first_name = Farrokh
     }
 }
+1178_mashriqi_char_effect = {
+    add_to_global_variable_list = { name = global_list_dead_hofs target = character:144063 }
+    add_to_global_variable_list = { name = global_list_dead_hofs target = character:144062 }
+    add_to_global_variable_list = { name = global_list_dead_hofs target = character:144060 }
+    add_to_global_variable_list = { name = global_list_dead_hofs target = character:3088 }
+    add_to_global_variable_list = { name = global_list_dead_hofs target = character:3084 }
+	character:144060.dynasty = { #Abbasids
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144062 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144060 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144063 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144064 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:3088 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144064 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144061 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144060 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:227000 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34027 }
+	}
+	character:34509.dynasty = { #Hakamiyun
+		add_to_variable_list = { name = dynasty_feudalclan target = character:34510 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:34509 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:34508 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:34507 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34512 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34510 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34509 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34508 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:34507 }
+	}
+    character:34031 = {
+        change_first_name = Hasan
+    }
+    character:144061 = {
+        change_first_name = Rashid
+    }
+    character:34027 = {
+        change_first_name = Zahir
+    }
+    character:227000 = {
+        change_first_name = Nasir
+    }
+    character:144060 = {
+        change_first_name = Fadl
+        add_to_global_variable_list = { name = Mustarshid_billah target = this }
+    }
+    character:3088 = {
+        change_first_name = Ahmad
+        add_to_global_variable_list = { name = Mustazhir_billah target = this }
+    }
+    character:144062 = {
+        change_first_name = Abd-Allah
+        add_to_global_variable_list = { name = Muqtadi_bi_Amr_Allah target = this }
+    }
+    character:144063 = {
+        change_first_name = Yusuf
+        add_to_global_variable_list = { name = Mustanjid_billah target = this }
+    }
+    character:144064 = {
+        change_first_name = Hasan
+        add_to_global_variable_list = { name = Mustadi_bi_Amr_Allah target = this }
+    }
+    character:34511 = {
+        change_first_name = Husayn
+    }
+    character:34510 = {
+        change_first_name = Ismail
+    }
+    character:34512 = {
+        change_first_name = Nur
+    }
+}

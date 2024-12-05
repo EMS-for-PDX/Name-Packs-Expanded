@@ -734,3 +734,17 @@
 		change_first_name = Salim
 	}
 }
+1178_bedouin_char_effect = {
+	character:144152.dynasty = { # Uyunid
+		add_to_variable_list = { name = dynasty_feudalclan target = character:20900 }
+		add_to_variable_list = { name = dynasty_independent target = character:20900 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144151 }
+		add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144152 }
+	}
+	character:144152 = {
+		change_first_name = Hasan
+	}
+	character:144151 = {
+		change_first_name = Husayn
+	}
+}
