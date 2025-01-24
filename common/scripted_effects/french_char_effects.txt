@@ -26,7 +26,29 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:90103 }
 		add_to_variable_list = { name = dynasty_independent target = character:30228 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:30228 }
-
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131720 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:194170 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131717 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131716 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131721 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:144989 }
+	}
+	character:127005.dynasty = { #Folcwald
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168627 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168621 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168620 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131730 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131729 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131728 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131726 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168220 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168619 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131725 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131727 }
+	}
+	character:127005.dynasty = { #Toulouse
+		add_to_variable_list = { name = dynasty_feudalclan target = character:127006 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:40230 }
 	}
 	character:167830.dynasty = { #Orleans
 		add_to_variable_list = { name = dynasty_feudalclan target = character:200142 }
@@ -41,6 +63,16 @@
 	}
 	character:91383.dynasty = { #Hardoin
 		add_to_variable_list = { name = dynasty_feudalclan target = character:91383 }
+	}
+	character:131715.dynasty = { #Chaumontois
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131716 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:131717 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:194170 }
+	}
+	character:159965.dynasty = { #Breizh
+		add_to_variable_list = { name = dynasty_feudalclan target = character:159965 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:159694 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:194170 }
 	}
 	character:127007.house = {
 		set_variable = {
@@ -65,6 +97,15 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:6440 }
 		add_to_variable_list = { name = dynasty_march target = character:6440 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:91005 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:91004 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:33327 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:33328 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:194450 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:91000 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190404 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190403 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190402 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190401 }
 	}
 	character:163060.dynasty = { #Vasconia
 		add_to_variable_list = { name = dynasty_feudalclan target = character:168122 }
@@ -111,6 +152,7 @@
 	}
 	character:7976.dynasty = { #Bosonid
 		add_to_variable_list = { name = dynasty_feudalclan target = character:7976 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:7977 }
 	}
 	character:168238.house = {
 		set_variable = {
@@ -130,6 +172,12 @@
 	character:200141.dynasty = { #Ramponing
 		add_to_variable_list = { name = dynasty_feudalclan target = character:200141 }
 		add_to_variable_list = { name = dynasty_march target = character:200141 }
+	}
+	character:303409.dynasty = { #Berengier
+		add_to_variable_list = { name = dynasty_feudalclan target = character:303408 }
+	}
+	character:168060.dynasty = { #Berengier
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168060 }
 	}
 	character:200144.dynasty = { #Saissac
 		add_to_variable_list = { name = dynasty_feudalclan target = character:200144 }
@@ -183,6 +231,16 @@
 		add_to_variable_list = { name = dynasty_independent target = character:168712 }
 		add_to_variable_list = { name = dynasty_independent target = character:168713 }
 	}
+	character:168059 = {
+		change_first_name = Theodotos
+		dynasty_effect_ne = yes
+	}
+	character:91002 = {
+		change_first_name = Ermengard
+	}
+	character:260026 = {
+		dynasty_effect_ne = yes
+	}
 	character:91124 = {
 		dynasty_effect_ne = yes
 	}
@@ -194,6 +252,7 @@
 	}
 	character:french0001 = {
 		change_first_name = William
+		dynasty_effect_ne = yes
 	}
 	character:occitan0139 = {
 		change_first_name = Alfgeir
@@ -891,9 +950,6 @@
 		change_first_name = Ranulf
 	}
 	character:40230 = {
-		change_first_name = Folkher
-	}
-	character:40230 = {
 		change_first_name = Raymond
 	}
 	character:127007 = {
@@ -1026,7 +1082,6 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:336 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:40234 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:40232 }
-		add_to_variable_list = { name = dynasty_feudalclan target = character:40230 }
 	}
 	character:90128.house = {
 		set_variable = {

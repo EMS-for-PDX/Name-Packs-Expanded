@@ -24,6 +24,21 @@
 			value = character:npedbgerman003
 		}
 	}
+	character:190375.dynasty = { #Thuringen
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168227 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168226 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168224 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190386 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190385 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190384 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190383 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190382 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190381 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190378 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190379 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190376 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:190375 }
+	}
 	character:200143.dynasty = { #Orliens
 		add_to_variable_list = { name = dynasty_feudalclan target = character:7946 }
 	}
@@ -34,11 +49,28 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:161472 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:161473 }
 	}
+	character:31702.dynasty = { #Chastenois
+		add_to_variable_list = { name = dynasty_feudalclan target = character:31701 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168079 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:31700 }
+	}
+	character:167848.dynasty = { #Alaholfinger
+		add_to_variable_list = { name = dynasty_feudalclan target = character:167844 }
+	}
+	character:167813.dynasty = { #Ernstinge
+		add_to_variable_list = { name = dynasty_feudalclan target = character:167810 }
+	}
+	character:168192.dynasty = { #Sigehelminge
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168191 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168190 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:168188 }
+	}
 	character:easteregg_dietwin = {
 		change_first_name = Theodwin
 	}
 	character:260028 = {
 		change_first_name = Wighard
+		dynasty_effect_ne = yes
 	}
 	character:163052 = {
 		change_first_name = Wilbert
@@ -110,8 +142,13 @@
 	character:33331 = {
 		change_first_name = Theodoric
 	}
+	character:carantanian0001 = {
+		change_first_name = Grubesha
+		dynasty_effect_ne = yes
+	}
 	character:260024 = {
 		change_first_name = Theodmar
+		dynasty_effect_ne = yes
 	}
 	character:71901 = {
 		change_first_name = Berengar
