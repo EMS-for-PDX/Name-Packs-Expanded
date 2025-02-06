@@ -1400,8 +1400,17 @@
 	character:202502 = {
 		change_first_name = Hakon
 	}
+	character:83591 = {
+		change_first_name = Cinaed
+	}
+	character:220044 = {
+		change_first_name = Gunhild
+	}
 	character:202506 = {
 		change_first_name = Cecilia
+	}
+	character:220038 = {
+		change_first_name = Gormlaith
 	}
 	character:202507.dynasty = { #Ynglingar
 		add_to_variable_list = { name = dynasty_feudalclan target = character:202507 }
@@ -1413,6 +1422,8 @@
 		add_to_variable_list = { name = dynasty_feudalclan target = character:222595 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:222598 }
 		add_to_variable_list = { name = dynasty_feudalclan target = character:202511 }
+		add_to_variable_list = { name = dynasty_feudalclan target = character:102531 }
+		add_to_variable_list = { name = dynasty_independent target = character:102531 }
 		add_to_variable_list = { name = dynasty_independent target = character:202511 }
 		add_to_variable_list = { name = dynasty_independent target = character:222598 }
 		add_to_variable_list = { name = dynasty_independent target = character:222595 }
@@ -1448,6 +1459,50 @@
 	}
 	character:7390.dynasty = {
 		add_to_variable_list = { name = dynasty_feudalclan target = character:7390 }
+	}
+	character:kongsbror_1 = {
+		add_to_global_variable_list = { name = Kingsfriend_byname target = this }
+	}
+	character:kongsbror_2 = {
+		change_first_name = Ivar
+		dynasty_effect_ne = yes
+	}
+	character:161124 = {
+		change_first_name = Aswulf
+		dynasty_effect_ne = yes
+	}
+	character:202006 = {
+		change_first_name = Runvid
+		dynasty_effect_ne = yes
+	}
+	character:202003 = {
+		change_first_name = Edwin
+		dynasty_effect_ne = yes
+	}
+	character:hit_1 = {
+		change_first_name = Sigurd
+		dynasty_effect_ne = yes
+	}
+	character:nidaros_bishop_1 = {
+		change_first_name = Eystan
+	}
+	character:202030 = {
+		change_first_name = Bard
+	}
+	character:202042 = {
+		change_first_name = Sigfridr
+	}
+	character:161127 = {
+		change_first_name = Ragnhild
+	}
+	character:202040 = {
+		change_first_name = Gudthorm
+	}
+	character:183908 = {
+		change_first_name = Ragnhild
+	}
+	character:183909 = {
+		change_first_name = Sigfridr
 	}
 	character:201508 = {
 		change_first_name = Knut
@@ -1582,6 +1637,7 @@
 	}
 	character:202511 = {
 		change_first_name = Magnus
+		add_to_global_variable_list = { name = Barefoot_byname target = this }
 	}
 	character:202027 = {
 		change_first_name = Thora
@@ -1600,10 +1656,10 @@
 	}
 	character:202507 = {
 		change_first_name = Hakon
-		#Herdebrei
+		add_to_global_variable_list = { name = Broadshoulder_byname target = this }
 	}
 	character:202501 = {
-		#munn
+		add_to_global_variable_list = { name = Mouth3_byname target = this }
 	}
 	character:202514 = {
 		change_first_name = Eystan
