@@ -1626,7 +1626,10 @@ CharacterGov = {
     text = {
         trigger = {
             OR = {
-                has_government = administrative_government
+                AND = {
+                    has_government = administrative_government
+                    is_landless_ruler = no
+                }
                 dynasty ?= {
                     any_in_list = {
                         variable = dynasty_byzantine
@@ -1634,6 +1637,7 @@ CharacterGov = {
                     }
                 }
             }
+            is_landless_ruler = n
         }
         localization_key = _theme
     }
