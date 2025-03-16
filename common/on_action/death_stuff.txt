@@ -10,6 +10,7 @@
         on_hof_death
         on_repub_death
         on_merc_death
+        on_landless_death
         #on_monk_death
 		on_female_death
 		on_male_death
@@ -78,6 +79,18 @@ on_male_death = {
 #		dynasty = { add_to_variable_list = { name = dynasty_abbot target = root} }
 #	}
 #}
+on_landless_death = {
+    trigger = {
+        culture = {
+			is_npe_supported_culture = yes
+		}
+		is_landless_ruler = yes
+		exists = dynasty
+	}
+	effect = {
+		dynasty = { add_to_variable_list = { name = dynasty_landless target = root} }
+	}
+}
 on_merc_death = {
     trigger = {
         culture = {

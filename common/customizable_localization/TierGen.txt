@@ -1749,8 +1749,22 @@ CharacterGov = {
         localization_key = _merc
     }
     text = {
-        fallback = yes
+        trigger = {
+            OR = {
+                is_landless_ruler = yes
+                dynasty ?= {
+                    any_in_list = {
+                        variable = dynasty_landless
+                        this = root
+                    }
+                }
+            }
+        }
         localization_key = _landless
+    }
+    text = {
+        fallback = yes
+        localization_key = _default
     }
 }
 CharacterCulture = {
