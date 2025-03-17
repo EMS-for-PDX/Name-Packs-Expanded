@@ -1054,9 +1054,46 @@
 	}
 }
 1178_berber_char_effect = {
+	character:32978.house = { #Almohad
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber028
+        }
+    }
 	character:32978.dynasty = { # Almohad
 		add_to_variable_list = { name = dynasty_feudalclan target = character:32978 }
 		add_to_variable_list = { name = dynasty_independent target = character:32978 }
+	}
+	character:33012.house = {
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber026
+        }
+    }
+	character:33012.dynasty = { # Hafsids
+		add_to_variable_list = { name = dynasty_feudalclan target = character:33012 }
+	}
+
+	character:hintata_1.house = { #Hintata
+        set_variable = {
+            name = name_founder
+            value = character:npedbberber027
+        }
+    }
+	character:hintata_1 ={
+		change_first_name = Umar
+	}
+	character:hintata_9 ={
+		change_first_name = Abdal-Haqq
+	}
+	character:33012 ={
+		change_first_name = Umar
+	}
+	character:155087 ={
+		change_first_name = Abd-Allah
+	}
+	character:155092 ={
+		change_first_name = Abdar-Rahman
 	}
 	character:32978 ={
 		change_first_name = Abdal-Mumin
