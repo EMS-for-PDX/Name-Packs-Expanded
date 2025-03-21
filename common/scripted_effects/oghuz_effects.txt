@@ -579,7 +579,7 @@
     character:144133 = {
         change_first_name = Ibrahim
         add_to_global_variable_list = { name = Zahir_ad_Dawla target = this }
-		add_Character_flag = has_reg_laqab
+		add_character_flag = has_reg_laqab
     }
     character:93160 = {
         add_to_global_variable_list = { name = Alpsungqur_byname target = this } 
@@ -685,6 +685,7 @@
     }
     character:3042 = {
         change_first_name = Malikshah
+        add_to_global_variable_list = { name = HasanN_byname target = this }
     }
     character:1229922 = {
         change_first_name = Tekes
@@ -761,7 +762,101 @@
         add_to_variable_list = { name = dynasty_independent target = character:144047 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:34396 }
         add_to_variable_list = { name = regular_laqab_dynasty target = character:144046 }
-		
+    }
+    character:144056.dynasty = { #Seljuks
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144056 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144055 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:1229955 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:93126 }
+        add_to_variable_list = { name = dynasty_list_ctp_sons target = character:144014 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144055 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144054 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144053 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144049 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144050 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144014 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:3042 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:93126 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144043 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144048 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144013 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144012 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144015 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:3044 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144020 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:144023 }
+        add_to_variable_list = { name = regular_laqab_dynasty target = character:93128 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:3040 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:3042 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:144043 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:144055 }
+        add_to_variable_list = { name = dynasty_feudalclan target = character:144054 }
+        add_to_variable_list = { name = dynasty_independent target = character:144054 }
+        add_to_variable_list = { name = dynasty_independent target = character:144055 }
+        add_to_variable_list = { name = dynasty_independent target = character:144043 }
+        add_to_variable_list = { name = dynasty_independent target = character:3042 }
+        add_to_variable_list = { name = dynasty_independent target = character:3040 }
+    }
+    character:93128 = {
+        add_to_global_variable_list = { name = Shams_ad_Dawla target = this }
+    }
+    character:extra_seljuks_4 = {
+        change_first_name = Akka
+    }
+    character:93434 = {
+        change_first_name = Irtash
+    }
+    character:144023 = {
+        add_to_global_variable_list = { name = Shams_al_Mulk target = this }
+    }
+    character:144022 = {
+        change_first_name = Sultanshah
+    }
+    character:144021 = {
+        change_first_name = Alp-Arslan #the mute
+        add_to_global_variable_list = { name = Taj_ad_Dawla target = this }
+    }
+    character:144020 = {
+        change_first_name = Ridwan
+        add_to_global_variable_list = { name = Fakhr_ad_Dawla target = this }
+    }
+    character:3044 = {
+        add_to_global_variable_list = { name = Taj_ad_Dawla target = this }
+    }
+    character:1229947 = {
+        change_first_name = Mengubars
+    }
+    character:144015 = {
+        add_to_global_variable_list = { name = Muizz_ad_Din target = this }
+        add_to_global_variable_list = { name = AhmadN_byname target = this }
+    }
+    character:144012 = {
+        add_to_global_variable_list = { name = Nasir_ad_Din target = this }
+    }
+    character:144013 = {
+        change_first_name = Berkyaruk
+        add_to_global_variable_list = { name = Rukn_ad_Din target = this }
+    }
+    character:144048 = {
+        add_to_global_variable_list = { name = Mugith_ad_Din target = this }
+    }
+    character:1229951 = {
+        change_first_name = Sancarshah
+    }
+    character:93127 = {
+        change_first_name = Sancarshah
+    }
+    character:93126 = {
+        change_first_name = Sulayman-Shah
+        add_to_global_variable_list = { name = Muizz_ad_Din target = this }
+    }
+    character:3042 = {
+        add_to_global_variable_list = { name = Muizz_ad_Din target = this }
+    }
+    character:144014 = {
+        change_first_name = Muhammad
+        add_to_global_variable_list = { name = Ghiyath_ad_Din target = this }
+        add_to_global_variable_list = { name = Tapir_byname target = this }
     }
     character:155113 = {
 		change_first_name = Qaraqush
@@ -796,7 +891,8 @@
         change_first_name = Sancar
     }
     character:144043 = {
-        change_first_name = Berkyaruk
+        change_first_name = Mahmud
+        add_to_global_variable_list = { name = Mugith_ad_Din target = this }
     }
     character:144041 = {
         change_first_name = Muhammad
@@ -809,12 +905,15 @@
     }
     character:144053 = {
         change_first_name = Malikshah
+        add_to_global_variable_list = { name = Muin_ad_Din target = this }
     }
     character:144054 = {
-        change_first_name = Muhammad
+        change_first_name = Muhammad-Shah
+        add_to_global_variable_list = { name = Rukn_ad_Din target = this }
     }
     character:144049 = {
         change_first_name = Masud
+        add_to_global_variable_list = { name = Ghiyath_ad_Din target = this }
     }
     character:1229952 = {
         change_first_name = Chagri
@@ -827,12 +926,16 @@
     }
     character:144050 = {
         change_first_name = Tugrul
+        add_to_global_variable_list = { name = Rukn_ad_Din target = this }
     }
     character:144055 = {
         change_first_name = Arslanshah
+        add_to_global_variable_list = { name = Muizz_ad_Din target = this }
     }
     character:144056 = {
         change_first_name = Tugrul
+        add_to_global_variable_list = { name = Rukn_ad_Din target = this }
+		add_character_flag = has_reg_laqab
     }
     character:93283 = {
         change_first_name = Inaltigin
@@ -888,12 +991,12 @@
     character:34396 = {
         change_first_name = Muhammad  #Fake
         add_to_global_variable_list = { name = Ala_ad_Din target = this }
-		add_Character_flag = has_reg_laqab
+		add_character_flag = has_reg_laqab
     }
     character:144046 = {
         change_first_name = Ahmad  #Fake
         add_to_global_variable_list = { name = Diya_ad_Din target = this }
-		add_Character_flag = has_reg_laqab
+		add_character_flag = has_reg_laqab
     }
     character:34395 = {
         change_first_name = Mama
