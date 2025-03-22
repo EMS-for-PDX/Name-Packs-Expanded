@@ -3808,6 +3808,10 @@
 	character:210508.dynasty = { #Barcelona
         add_to_variable_list = { name = dynasty_feudalclan target = character:210508 }
     }
+	character:110500.dynasty = { #Arago
+        add_to_variable_list = { name = dynasty_independent target = character:210508 }
+        add_to_variable_list = { name = dynasty_independent target = character:70231 }
+    }
 	character:210572.dynasty = { #Urgell
         add_to_variable_list = { name = dynasty_feudalclan target = character:210572 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:210576 }
@@ -3819,6 +3823,47 @@
         add_to_variable_list = { name = dynasty_independent target = character:207500 }
         add_to_variable_list = { name = dynasty_feudalclan target = character:207520 }
         add_to_variable_list = { name = dynasty_independent target = character:207520 }
+        add_to_variable_list = { name = dynasty_independent target = character:108500 }
+    }
+	character:108500.dynasty = { #Jimena
+        add_to_variable_list = { name = dynasty_independent target = character:207660 }
+        add_to_variable_list = { name = dynasty_independent target = character:207500 }
+    }
+	character:209503.house = { #Borgona-Portugal
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench006
+		}
+	}
+	character:207520.house = { #Borgona-Castille
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench006
+		}
+	}
+	character:208500.house = { #Borgona-Leon
+		set_variable = {
+			name = name_founder
+			value = character:npedbfrench006
+		}
+	}
+	character:207520.dynasty = { #Borgona-Castille
+        add_to_variable_list = { name = dynasty_independent target = character:207520 }
+    }
+	character:142141.house = { #Braganza different one apparently
+		set_variable = {
+			name = name_founder
+			value = character:npedbspanish013
+		}
+	}
+	character:142009.house = { #de Sousa different one apparently
+		set_variable = {
+			name = name_founder
+			value = character:npedbspanish012
+		}
+	}
+    character:70233 = {
+        change_first_name = Ramiro
     }
     character:142170 = {
         change_first_name = Ferdinand
