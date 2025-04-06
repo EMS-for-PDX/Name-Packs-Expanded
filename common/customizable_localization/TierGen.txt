@@ -2412,6 +2412,17 @@ CharacterCulture = {
 		trigger = {
 			culture = {
 				has_cultural_pillar = language_french
+                OR = {
+                    has_name_list = name_list_norman
+                }
+			}
+		}
+		localization_key = _norman
+	}
+	text = {
+		trigger = {
+			culture = {
+				has_cultural_pillar = language_french
 			}
 		}
 		localization_key = _french

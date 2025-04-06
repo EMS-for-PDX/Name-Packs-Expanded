@@ -1,1035 +1,1117 @@
 ﻿french_male_name_effect = {
-	random_list = {
-		0 = {
-			modifier = {
-				exists = father.father
-				NOT = {
-					has_trait = bastard
-					father = {
-						has_character_flag = father_father_name
-					}
-				}
-				add = 40 #freq
+	if = {
+		limit = {
+			culture = {
+				has_name_list = name_list_norman
 			}
-			father.father = {
-				save_scope_as = the_guy
+			NOT = {
+				has_trait = bastard
 			}
-			change_first_name = { template_character = scope:the_guy }
+			exists = father
 			father = {
-				add_character_flag = father_father_name
+				is_alive = no
 			}
 		}
-		0 = {
-			modifier = {
-				father ?= {
-					OR = {
-						has_character_flag = father_father_name
-						NOT = {
-							exists = father
+		father = {
+			save_scope_as = male_ancestor
+		}
+		change_first_name = { template_character = scope:male_ancestor }
+	}
+	else_if = {
+		limit = {
+			culture = {
+				has_name_list = name_list_norman
+			}
+			NOT = {
+				has_trait = bastard
+			}
+			exists = father
+			father = {
+				is_alive = yes
+				any_in_list = {
+					variable = male_ancestors
+					exists = this
+				}
+			}
+		}
+		father = {
+			random_in_list = {
+				variable = male_ancestors
+				save_scope_as = male_ancestor
+			}
+		}
+		change_first_name = { template_character = scope:male_ancestor }
+		father = {
+			remove_list_variable = { name = male_ancestors target = scope:male_ancestor }
+			every_close_family_member = {
+				remove_list_variable = { name = male_ancestors target = scope:male_ancestor }
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			culture = {
+				has_name_list = name_list_norman
+			}
+			NOT = {
+				has_trait = bastard
+			}
+			exists = mother
+			mother = {
+				is_alive = yes
+				any_in_list = {
+					variable = male_ancestors
+					exists = this
+				}
+			}
+		}
+		mother = {
+			random_in_list = {
+				variable = male_ancestors
+				save_scope_as = male_ancestor
+			}
+		}
+		change_first_name = { template_character = scope:male_ancestor }
+		mother = {
+			remove_list_variable = { name = male_ancestors target = scope:male_ancestor }
+			every_close_family_member = {
+				remove_list_variable = { name = male_ancestors target = scope:male_ancestor }
+			}
+		}
+	}
+	else = {
+		random_list = {
+			0 = {
+				modifier = {
+					exists = father.father
+					NOT = {
+						has_trait = bastard
+						father = {
+							has_character_flag = father_father_name
 						}
 					}
-					NOT = {
-						has_character_flag = father_name
-					}
+					add = 40 #freq
 				}
-				NOT = {
-					has_trait = bastard
-				}
-				add = 20 #common
-			}
-			father = {
-				save_scope_as = the_guy
-			}
-			change_first_name = { template_character = scope:the_guy }
-			father = {
-				add_character_flag = father_name
-			}
-		}
-		0 = {
-			modifier = {
-				father ?= {
-					any_sibling = {
-						is_male = yes
-					}
-					NOT = {
-						has_character_flag = brother_name
-					}
-				}
-				NOT = {
-					has_trait = bastard
-				}
-				add = 20 #uncommon /2
-			}
-			father = {
-				random_sibling = {
-					limit = {
-						is_male = yes
-					}
+				father.father = {
 					save_scope_as = the_guy
 				}
-			}
-			change_first_name = { template_character = scope:the_guy }
-			father = {
-				add_character_flag = brother_name
-			}
-		}
-		0 = {
-			modifier = {
-				mother ?= {
-					any_sibling = {
-						is_male = yes
-					}
-					NOT = {
-						has_character_flag = brother_name
-					}
-				}
-				NOT = {
-					has_trait = bastard
-				}
-				add = 10 #uncommon /2
-			}
-			mother = {
-				random_sibling = {
-					limit = {
-						is_male = yes
-					}
-					save_scope_as = the_guy
+				change_first_name = { template_character = scope:the_guy }
+				father = {
+					add_character_flag = father_father_name
 				}
 			}
-			change_first_name = { template_character = scope:the_guy }
-			mother = {
-				add_character_flag = brother_name
-			}
-		}
-		40 = {
-			random_list = {
-				0 = {
-					modifier = {
-						culture = {
-							has_cultural_era_or_later = culture_era_late_medieval
-						}
-						has_religion = religion:christianity_religion
-						add = 3
-					}
-					random_list = {
-						1 = {
-							change_first_name = Stephen
-						}
-						1 = {
-							change_first_name = John
-						}
-						1 = {
-							change_first_name = Peter
-						}
-					}
-				}
-				1 = {
-					change_first_name = Hugh
-				}
-				1 = {
-					change_first_name = Geoffrey
-				}
-				1 = {
-					change_first_name = Robert
-				}
-			}
-		}
-		30 = {
-			random_list = {
-				0 = {
-					modifier = {
+			0 = {
+				modifier = {
+					father ?= {
 						OR = {
-							location.duchy ?= title:d_burgundy
-							location.kingdom ?= title:d_upper_burgundy
-						}
-						add = 1
-					}
-					change_first_name = Otto
-				}
-				0 = {
-					modifier = {
-						OR = {
-							location.duchy ?= title:d_burgundy
-							location.kingdom ?= title:k_burgundy
-						}
-						has_religion = religion:christianity_religion
-						add = 1
-					}
-					change_first_name = Amadeus
-				}
-				0 = {
-					modifier = {
-						OR = {
-							location.duchy ?= title:d_flanders
-							location.kingdom ?= title:d_champagne
-						}
-						has_religion = religion:christianity_religion
-						add = 1
-					}
-					change_first_name = Eustace
-				}
-				0 = {
-					modifier = {
-						culture = {
+							has_character_flag = father_father_name
 							NOT = {
-								has_cultural_era_or_later = culture_era_late_medieval
+								exists = father
 							}
 						}
-						has_religion = religion:christianity_religion
-						add = 3
-					}
-					random_list = {
-						1 = {
-							change_first_name = Stephen
-						}
-						1 = {
-							change_first_name = John
-						}
-						1 = {
-							change_first_name = Peter
+						NOT = {
+							has_character_flag = father_name
 						}
 					}
-				}
-				0 = {
-					modifier = {
-						OR = {
-							location.duchy ?= title:d_berry
-							location.kingdom ?= title:k_burgundy
-						}
-						add = 2
+					NOT = {
+						has_trait = bastard
 					}
-					random_list = {
-						1 = {
-							change_first_name = Humbald
-						}
-						1 = {
-							change_first_name = Humbert
-						}
-					}
+					add = 20 #common
 				}
-				0 = {
-					modifier = {
-						OR = {
-							location.duchy ?= title:d_burgundy
-							location.kingdom ?= title:k_burgundy
-						}
-						add = 1
-					}
-					change_first_name = Haimo
+				father = {
+					save_scope_as = the_guy
 				}
-				0 = {
-					modifier = {
-						location.duchy ?= title:d_flanders
-						add = 2
-					}
-					random_list = {
-						1 = {
-							change_first_name = Baldwin
-						}
-						1 = {
-							change_first_name = Godfrey
-						}
-					}
-				}
-				1 = {
-					change_first_name = Aymeric
-				}
-				1 = {
-					change_first_name = Bernhard
-				}
-				1 = {
-					change_first_name = Odo
-				}
-				1 = {
-					change_first_name = Walter
-				}
-				1 = {
-					change_first_name = Gerhard
-				}
-				1 = {
-					change_first_name = Gerald
-				}
-				1 = {
-					change_first_name = Guy
-				}
-				1 = {
-					change_first_name = William
-				}
-				1 = {
-					change_first_name = Radulf
-				}
-				1 = {
-					change_first_name = Ragnvald
-				}
-				1 = {
-					change_first_name = Theobald
+				change_first_name = { template_character = scope:the_guy }
+				father = {
+					add_character_flag = father_name
 				}
 			}
-		}
-		20 = {
-			random_list = {
-				0 = {
-					modifier = {
-						OR = {
-							location.duchy ?= title:d_burgundy
-							location.kingdom ?= title:d_poitou
+			0 = {
+				modifier = {
+					father ?= {
+						any_sibling = {
+							is_male = yes
 						}
-						add = 1
-					}
-					change_first_name = Landric
-				}
-				0 = {
-					modifier = {
-						location.kingdom ?= title:d_dauphine
-						add = 1
-					}
-					change_first_name = Guigo
-				}
-				0 = {
-					modifier = {
-						location.kingdom ?= title:d_flanders
-						has_religion = religion:christianity_religion
-						add = 1
-					}
-					change_first_name = Florentius
-				}
-				0 = {
-					modifier = {
-						location.kingdom ?= title:k_burgundy
-						add = 1
-					}
-					change_first_name = Rudolf
-				}
-				0 = {
-					modifier = {
-						location.duchy ?= title:d_poitou
-						add = 2
-					}
-					random_list = {
-						1 = {
-							change_first_name = Ranulf
-						}
-						1 = {
-							change_first_name = Savaric
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						OR = {
-							location.duchy ?= title:d_berry
-							location.duchy ?= title:d_poitou
-							location.duchy ?= title:d_burgundy
-							location.duchy ?= title:d_dauphine
-						}
-						add = 1
-						has_religion = religion:christianity_religion
-					}
-					change_first_name = Pontios
-				}
-				0 = {
-					modifier = {
-						location.duchy ?= title:d_berry
-						add = 1
-					}
-					change_first_name = Archibald
-				}
-				0 = {
-					modifier = {
-						OR = {
-							location.duchy ?= title:d_berry
-							location.duchy ?= title:d_poitou
-						}
-						add = 1
-					}
-					change_first_name = Audamar
-				}
-				0 = {
-					modifier = {
-						location.duchy ?= title:d_flanders
-						add = 3
-					}
-					random_list = {
-						1 = {
-							change_first_name = Arnold
-						}
-						1 = {
-							change_first_name = Albert
-						}
-						1 = {
-							change_first_name = Athelhelm
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						NOR = {
-							location.duchy ?= title:d_berry
-							location.kingdom ?= title:k_burgundy
-						}
-						add = 2
-					}
-					random_list = {
-						1 = {
-							change_first_name = Humbald
-						}
-						1 = {
-							change_first_name = Humbert
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						NOR = {
-							location.duchy ?= title:d_burgundy
-							location.kingdom ?= title:k_burgundy
-						}
-						add = 1
-					}
-					change_first_name = Haimo
-				}
-				0 = {
-					modifier = {
 						NOT = {
-							location.duchy ?= title:d_flanders
+							has_character_flag = brother_name
 						}
-						add = 2
 					}
-					random_list = {
-						1 = {
-							change_first_name = Baldwin
+					NOT = {
+						has_trait = bastard
+					}
+					add = 20 #uncommon /2
+				}
+				father = {
+					random_sibling = {
+						limit = {
+							is_male = yes
 						}
-						1 = {
-							change_first_name = Godfrey
-						}
+						save_scope_as = the_guy
 					}
 				}
-				0 = {
-					modifier = {
-						religion = {
-							is_in_family = rf_abrahamic
+				change_first_name = { template_character = scope:the_guy }
+				father = {
+					add_character_flag = brother_name
+				}
+			}
+			0 = {
+				modifier = {
+					mother ?= {
+						any_sibling = {
+							is_male = yes
 						}
-						add = 3
+						NOT = {
+							has_character_flag = brother_name
+						}
 					}
-					random_list = {
-						1 = {
-							change_first_name = Adam
+					NOT = {
+						has_trait = bastard
+					}
+					add = 10 #uncommon /2
+				}
+				mother = {
+					random_sibling = {
+						limit = {
+							is_male = yes
 						}
-						1 = {
-							change_first_name = Elijah
-						}
-						1 = {
-							change_first_name = Jacob
-						}
+						save_scope_as = the_guy
 					}
 				}
-				0 = {
-					modifier = {
-						has_religion = religion:christianity_religion
-						add = 8
-					}
-					random_list = {
-						1 = {
-							change_first_name = Andrew
-						}
-						1 = {
-							change_first_name = Bartholomew
-						}
-						1 = {
-							change_first_name = Aegidius
-						}
-						1 = {
-							change_first_name = Herve
-						}
-						1 = {
-							change_first_name = Jordan
-						}
-						1 = {
-							change_first_name = Miles
-						}
-						1 = {
-							change_first_name = Nicholas
-						}
-						1 = {
-							change_first_name = Thomas
-						}
-					}
+				change_first_name = { template_character = scope:the_guy }
+				mother = {
+					add_character_flag = brother_name
 				}
-				0 = {
-					modifier = {
-						OR = {
+			}
+			40 = {
+				random_list = {
+					0 = {
+						modifier = {
+							culture = {
+								has_cultural_era_or_later = culture_era_late_medieval
+							}
 							has_religion = religion:christianity_religion
-							has_religion = religion:judaism_religion
+							add = 3
 						}
-						add = 2
+						random_list = {
+							1 = {
+								change_first_name = Stephen
+							}
+							1 = {
+								change_first_name = John
+							}
+							1 = {
+								change_first_name = Peter
+							}
+						}
 					}
-					random_list = {
-						1 = {
-							change_first_name = Manasses
-						}
-						1 = {
-							change_first_name = Simon
-						}
+					1 = {
+						change_first_name = Hugh
 					}
-				}
-				1 = {
-					change_first_name = Athelhard
-				}
-				1 = {
-					change_first_name = Aymeric
-				}
-				1 = {
-					change_first_name = Arnwulf
-				}
-				1 = {
-					change_first_name = Alfric
-				}
-				1 = {
-					change_first_name = Berthold
-				}
-				1 = {
-					change_first_name = Bertram
-				}
-				1 = {
-					change_first_name = Charles
-				}
-				1 = {
-					change_first_name = Drogo
-				}
-				1 = {
-					change_first_name = Ingram
-				}
-				1 = {
-					change_first_name = Erhard
-				}
-				1 = {
-					change_first_name = Eberhard
-				}
-				1 = {
-					change_first_name = Fulk
-				}
-				1 = {
-					change_first_name = Walram
-				}
-				1 = {
-					change_first_name = Werner
-				}
-				1 = {
-					change_first_name = Walher
-				}
-				1 = {
-					change_first_name = Gilbert
-				}
-				1 = {
-					change_first_name = Warin
-				}
-				1 = {
-					change_first_name = Henry
-				}
-				1 = {
-					change_first_name = Herbert
-				}
-				1 = {
-					change_first_name = Hubert
-				}
-				1 = {
-					change_first_name = Gausbert
-				}
-				1 = {
-					change_first_name = Joscelin
-				}
-				1 = {
-					change_first_name = Lambert
-				}
-				1 = {
-					change_first_name = Louis
-				}
-				1 = {
-					change_first_name = Philip
-				}
-				1 = {
-					change_first_name = Reginhard
-				}
-				1 = {
-					change_first_name = Ragnar
-				}
-				1 = {
-					change_first_name = Richard
-				}
-				1 = {
-					change_first_name = Roger
-				}
-				1 = {
-					change_first_name = Theodoric
+					1 = {
+						change_first_name = Geoffrey
+					}
+					1 = {
+						change_first_name = Robert
+					}
 				}
 			}
-		}
-		10 = {
-			random_list = {
-				0 = {
-					modifier = {
-						location.kingdom ?= title:d_burgundy
-						has_religion = religion:christianity_religion
-						add = 1
+			30 = {
+				random_list = {
+					0 = {
+						modifier = {
+							OR = {
+								location.duchy ?= title:d_burgundy
+								location.kingdom ?= title:d_upper_burgundy
+							}
+							add = 1
+						}
+						change_first_name = Otto
 					}
-					change_first_name = Dalmatius
-				}
-				0 = {
-					modifier = {
-						NOR = {
-							location.duchy ?= title:d_burgundy
-							location.kingdom ?= title:d_upper_burgundy
-						}
-						add = 1
-					}
-					change_first_name = Otto
-				}
-				0 = {
-					modifier = {
-						NOR = {
-							location.duchy ?= title:d_burgundy
-							location.kingdom ?= title:k_burgundy
-						}
-						has_religion = religion:christianity_religion
-						add = 1
-					}
-					change_first_name = Amadeus
-				}
-				0 = {
-					modifier = {
-						NOR = {
-							location.duchy ?= title:d_flanders
-							location.kingdom ?= title:d_champagne
-						}
-						has_religion = religion:christianity_religion
-						add = 1
-					}
-					change_first_name = Eustace
-				}
-				0 = {
-					modifier = {
-						NOT = {
-							location.duchy ?= title:d_berry
-						}
-						add = 1
-					}
-					change_first_name = Archibald
-				}
-				0 = {
-					modifier = {
-						NOR = {
-							location.duchy ?= title:d_berry
-							location.duchy ?= title:d_poitou
-						}
-						add = 1
-					}
-					change_first_name = Audamar
-				}
-				0 = {
-					modifier = {
-						NOT = {
-							location.duchy ?= title:d_flanders
-						}
-						add = 3
-					}
-					random_list = {
-						1 = {
-							change_first_name = Arnold
-						}
-						1 = {
-							change_first_name = Albert
-						}
-						1 = {
-							change_first_name = Athelhelm
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						NOR = {
-							location.duchy ?= title:d_berry
-							location.duchy ?= title:d_poitou
-							location.duchy ?= title:d_burgundy
-							location.duchy ?= title:d_dauphine
-						}
-						has_religion = religion:christianity_religion
-						add = 1
-					}
-					change_first_name = Pontios
-				}
-				0 = {
-					modifier = {
-						NOT = {
-							location.duchy ?= title:d_poitou
-						}
-						add = 2
-					}
-					random_list = {
-						1 = {
-							change_first_name = Ranulf
-						}
-						1 = {
-							change_first_name = Savaric
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						religion = {
-							is_in_family = rf_abrahamic
-						}
-						add = 1
-					}
-					change_first_name = David
-				}
-				0 = {
-					modifier = {
-						has_religion = religion:christianity_religion
-						add = 9
-					}
-					random_list = {
-						1 = {
-							change_first_name = Dominic
-						}
-						1 = {
-							change_first_name = Durant
-						}
-						1 = {
-							change_first_name = Gervais
-						}
-						1 = {
-							change_first_name = Gregory
-						}
-						1 = {
-							change_first_name = George
-						}
-						1 = {
-							change_first_name = Laurence
-						}
-						1 = {
-							change_first_name = Matthew
-						}
-						1 = {
-							change_first_name = Martin
-						}
-						1 = {
-							change_first_name = Maurice
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						OR = {
+					0 = {
+						modifier = {
+							OR = {
+								location.duchy ?= title:d_burgundy
+								location.kingdom ?= title:k_burgundy
+							}
 							has_religion = religion:christianity_religion
-							has_religion = religion:judaism_religion
+							add = 1
 						}
-						add = 1
+						change_first_name = Amadeus
 					}
-					change_first_name = Michael
-				}
-				1 = {
-					change_first_name = Alan
-				}
-				1 = {
-					change_first_name = Alexander
-				}
-				1 = {
-					change_first_name = Ancel
-				}
-				1 = {
-					change_first_name = Anselm
-				}
-				1 = {
-					change_first_name = Anthony
-				}
-				1 = {
-					change_first_name = Bernwald
-				}
-				1 = {
-					change_first_name = Burchard
-				}
-				1 = {
-					change_first_name = Daimbert
-				}
-				1 = {
-					change_first_name = Ebles
-				}
-				1 = {
-					change_first_name = Frederick
-				}
-				1 = {
-					change_first_name = Folkher
-				}
-				1 = {
-					change_first_name = Francis
-				}
-				1 = {
-					change_first_name = Wigbert
-				}
-				1 = {
-					change_first_name = Wighard
-				}
-				1 = {
-					change_first_name = Guiscard
-				}
-				1 = {
-					change_first_name = Hilduin
-				}
-				1 = {
-					change_first_name = Gausram
-				}
-				1 = {
-					change_first_name = Lisiard
-				}
-				1 = {
-					change_first_name = Meginher
-				}
-				1 = {
-					change_first_name = Edgar
-				}
-				1 = {
-					change_first_name = Oliver
-				}
-				1 = {
-					change_first_name = Humphrey
-				}
-				1 = {
-					change_first_name = Ulrich
-				}
-				1 = {
-					change_first_name = Pagan
-				}
-				1 = {
-					change_first_name = Reginbald
-				}
-				1 = {
-					change_first_name = Rurik
-				}
-				1 = {
-					change_first_name = Sigwin
-				}
-				1 = {
-					change_first_name = Isembard
-				}
-				1 = {
-					change_first_name = Ivo
+					0 = {
+						modifier = {
+							OR = {
+								location.duchy ?= title:d_flanders
+								location.kingdom ?= title:d_champagne
+							}
+							has_religion = religion:christianity_religion
+							add = 1
+						}
+						change_first_name = Eustace
+					}
+					0 = {
+						modifier = {
+							culture = {
+								NOT = {
+									has_cultural_era_or_later = culture_era_late_medieval
+								}
+							}
+							has_religion = religion:christianity_religion
+							add = 3
+						}
+						random_list = {
+							1 = {
+								change_first_name = Stephen
+							}
+							1 = {
+								change_first_name = John
+							}
+							1 = {
+								change_first_name = Peter
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							OR = {
+								location.duchy ?= title:d_berry
+								location.kingdom ?= title:k_burgundy
+							}
+							add = 2
+						}
+						random_list = {
+							1 = {
+								change_first_name = Humbald
+							}
+							1 = {
+								change_first_name = Humbert
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							OR = {
+								location.duchy ?= title:d_burgundy
+								location.kingdom ?= title:k_burgundy
+							}
+							add = 1
+						}
+						change_first_name = Haimo
+					}
+					0 = {
+						modifier = {
+							location.duchy ?= title:d_flanders
+							add = 2
+						}
+						random_list = {
+							1 = {
+								change_first_name = Baldwin
+							}
+							1 = {
+								change_first_name = Godfrey
+							}
+						}
+					}
+					1 = {
+						change_first_name = Aymeric
+					}
+					1 = {
+						change_first_name = Bernhard
+					}
+					1 = {
+						change_first_name = Odo
+					}
+					1 = {
+						change_first_name = Walter
+					}
+					1 = {
+						change_first_name = Gerhard
+					}
+					1 = {
+						change_first_name = Gerald
+					}
+					1 = {
+						change_first_name = Guy
+					}
+					1 = {
+						change_first_name = William
+					}
+					1 = {
+						change_first_name = Radulf
+					}
+					1 = {
+						change_first_name = Ragnvald
+					}
+					1 = {
+						change_first_name = Theobald
+					}
 				}
 			}
-		}
-		1 = {
-			random_list = {
-				0 = {
-					modifier = {
-						NOT = {
-							location.kingdom ?= title:d_burgundy
+			20 = {
+				random_list = {
+					0 = {
+						modifier = {
+							OR = {
+								location.duchy ?= title:d_burgundy
+								location.kingdom ?= title:d_poitou
+							}
+							add = 1
 						}
-						has_religion = religion:christianity_religion
-						add = 1
+						change_first_name = Landric
 					}
-					change_first_name = Dalmatius
-				}
-				0 = {
-					modifier = {
-						NOR = {
-							location.duchy ?= title:d_burgundy
-							location.kingdom ?= title:d_poitou
-						}
-						add = 1
-					}
-					change_first_name = Landric
-				}
-				0 = {
-					modifier = {
-						NOT = {
+					0 = {
+						modifier = {
 							location.kingdom ?= title:d_dauphine
+							add = 1
 						}
-						add = 1
+						change_first_name = Guigo
 					}
-					change_first_name = Guigo
-				}
-				0 = {
-					modifier = {
-						NOT = {
+					0 = {
+						modifier = {
 							location.kingdom ?= title:d_flanders
-						}
-						has_religion = religion:christianity_religion
-						add = 1
-					}
-					change_first_name = Florentius
-				}
-				0 = {
-					modifier = {
-						NOT = {
-							location.kingdom ?= title:k_burgundy
-						}
-						add = 1
-					}
-					change_first_name = Rudolf
-				}
-				0 = {
-					modifier = {
-						religion = {
-							is_in_family = rf_abrahamic
-						}
-						add = 1
-					}
-					change_first_name = Abel
-				}
-				0 = {
-					modifier = {
-						has_religion = religion:christianity_religion
-						add = 11
-					}
-					random_list = {
-						1 = {
-							change_first_name = Hilarius
-						}
-						1 = {
-							change_first_name = Benedict
-						}
-						1 = {
-							change_first_name = Clement
-						}
-						1 = {
-							change_first_name = Christian
-						}
-						1 = {
-							change_first_name = Dionysios
-						}
-						1 = {
-							change_first_name = Luke
-						}
-						1 = {
-							change_first_name = Marcel
-						}
-						1 = {
-							change_first_name = Marcus
-						}
-						1 = {
-							change_first_name = Paul
-						}
-						1 = {
-							change_first_name = Samson
-						}
-						1 = {
-							change_first_name = Vincent
-						}
-					}
-				}
-				0 = {
-					modifier = {
-						OR = {
 							has_religion = religion:christianity_religion
-							has_religion = religion:judaism_religion
+							add = 1
 						}
-						add = 1
+						change_first_name = Florentius
 					}
-					change_first_name = Daniel
+					0 = {
+						modifier = {
+							location.kingdom ?= title:k_burgundy
+							add = 1
+						}
+						change_first_name = Rudolf
+					}
+					0 = {
+						modifier = {
+							location.duchy ?= title:d_poitou
+							add = 2
+						}
+						random_list = {
+							1 = {
+								change_first_name = Ranulf
+							}
+							1 = {
+								change_first_name = Savaric
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							OR = {
+								location.duchy ?= title:d_berry
+								location.duchy ?= title:d_poitou
+								location.duchy ?= title:d_burgundy
+								location.duchy ?= title:d_dauphine
+							}
+							add = 1
+							has_religion = religion:christianity_religion
+						}
+						change_first_name = Pontios
+					}
+					0 = {
+						modifier = {
+							location.duchy ?= title:d_berry
+							add = 1
+						}
+						change_first_name = Archibald
+					}
+					0 = {
+						modifier = {
+							OR = {
+								location.duchy ?= title:d_berry
+								location.duchy ?= title:d_poitou
+							}
+							add = 1
+						}
+						change_first_name = Audamar
+					}
+					0 = {
+						modifier = {
+							location.duchy ?= title:d_flanders
+							add = 3
+						}
+						random_list = {
+							1 = {
+								change_first_name = Arnold
+							}
+							1 = {
+								change_first_name = Albert
+							}
+							1 = {
+								change_first_name = Athelhelm
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							NOR = {
+								location.duchy ?= title:d_berry
+								location.kingdom ?= title:k_burgundy
+							}
+							add = 2
+						}
+						random_list = {
+							1 = {
+								change_first_name = Humbald
+							}
+							1 = {
+								change_first_name = Humbert
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							NOR = {
+								location.duchy ?= title:d_burgundy
+								location.kingdom ?= title:k_burgundy
+							}
+							add = 1
+						}
+						change_first_name = Haimo
+					}
+					0 = {
+						modifier = {
+							NOT = {
+								location.duchy ?= title:d_flanders
+							}
+							add = 2
+						}
+						random_list = {
+							1 = {
+								change_first_name = Baldwin
+							}
+							1 = {
+								change_first_name = Godfrey
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							religion = {
+								is_in_family = rf_abrahamic
+							}
+							add = 3
+						}
+						random_list = {
+							1 = {
+								change_first_name = Adam
+							}
+							1 = {
+								change_first_name = Elijah
+							}
+							1 = {
+								change_first_name = Jacob
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							has_religion = religion:christianity_religion
+							add = 8
+						}
+						random_list = {
+							1 = {
+								change_first_name = Andrew
+							}
+							1 = {
+								change_first_name = Bartholomew
+							}
+							1 = {
+								change_first_name = Aegidius
+							}
+							1 = {
+								change_first_name = Herve
+							}
+							1 = {
+								change_first_name = Jordan
+							}
+							1 = {
+								change_first_name = Miles
+							}
+							1 = {
+								change_first_name = Nicholas
+							}
+							1 = {
+								change_first_name = Thomas
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							OR = {
+								has_religion = religion:christianity_religion
+								has_religion = religion:judaism_religion
+							}
+							add = 2
+						}
+						random_list = {
+							1 = {
+								change_first_name = Manasses
+							}
+							1 = {
+								change_first_name = Simon
+							}
+						}
+					}
+					1 = {
+						change_first_name = Athelhard
+					}
+					1 = {
+						change_first_name = Aymeric
+					}
+					1 = {
+						change_first_name = Arnwulf
+					}
+					1 = {
+						change_first_name = Alfric
+					}
+					1 = {
+						change_first_name = Berthold
+					}
+					1 = {
+						change_first_name = Bertram
+					}
+					1 = {
+						change_first_name = Charles
+					}
+					1 = {
+						change_first_name = Drogo
+					}
+					1 = {
+						change_first_name = Ingram
+					}
+					1 = {
+						change_first_name = Erhard
+					}
+					1 = {
+						change_first_name = Eberhard
+					}
+					1 = {
+						change_first_name = Fulk
+					}
+					1 = {
+						change_first_name = Walram
+					}
+					1 = {
+						change_first_name = Werner
+					}
+					1 = {
+						change_first_name = Walher
+					}
+					1 = {
+						change_first_name = Gilbert
+					}
+					1 = {
+						change_first_name = Warin
+					}
+					1 = {
+						change_first_name = Henry
+					}
+					1 = {
+						change_first_name = Herbert
+					}
+					1 = {
+						change_first_name = Hubert
+					}
+					1 = {
+						change_first_name = Gausbert
+					}
+					1 = {
+						change_first_name = Joscelin
+					}
+					1 = {
+						change_first_name = Lambert
+					}
+					1 = {
+						change_first_name = Louis
+					}
+					1 = {
+						change_first_name = Philip
+					}
+					1 = {
+						change_first_name = Reginhard
+					}
+					1 = {
+						change_first_name = Ragnar
+					}
+					1 = {
+						change_first_name = Richard
+					}
+					1 = {
+						change_first_name = Roger
+					}
+					1 = {
+						change_first_name = Theodoric
+					}
 				}
-				1 = {
-					change_first_name = Abelard
+			}
+			10 = {
+				random_list = {
+					0 = {
+						modifier = {
+							location.kingdom ?= title:d_burgundy
+							has_religion = religion:christianity_religion
+							add = 1
+						}
+						change_first_name = Dalmatius
+					}
+					0 = {
+						modifier = {
+							NOR = {
+								location.duchy ?= title:d_burgundy
+								location.kingdom ?= title:d_upper_burgundy
+							}
+							add = 1
+						}
+						change_first_name = Otto
+					}
+					0 = {
+						modifier = {
+							NOR = {
+								location.duchy ?= title:d_burgundy
+								location.kingdom ?= title:k_burgundy
+							}
+							has_religion = religion:christianity_religion
+							add = 1
+						}
+						change_first_name = Amadeus
+					}
+					0 = {
+						modifier = {
+							NOR = {
+								location.duchy ?= title:d_flanders
+								location.kingdom ?= title:d_champagne
+							}
+							has_religion = religion:christianity_religion
+							add = 1
+						}
+						change_first_name = Eustace
+					}
+					0 = {
+						modifier = {
+							NOT = {
+								location.duchy ?= title:d_berry
+							}
+							add = 1
+						}
+						change_first_name = Archibald
+					}
+					0 = {
+						modifier = {
+							NOR = {
+								location.duchy ?= title:d_berry
+								location.duchy ?= title:d_poitou
+							}
+							add = 1
+						}
+						change_first_name = Audamar
+					}
+					0 = {
+						modifier = {
+							NOT = {
+								location.duchy ?= title:d_flanders
+							}
+							add = 3
+						}
+						random_list = {
+							1 = {
+								change_first_name = Arnold
+							}
+							1 = {
+								change_first_name = Albert
+							}
+							1 = {
+								change_first_name = Athelhelm
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							NOR = {
+								location.duchy ?= title:d_berry
+								location.duchy ?= title:d_poitou
+								location.duchy ?= title:d_burgundy
+								location.duchy ?= title:d_dauphine
+							}
+							has_religion = religion:christianity_religion
+							add = 1
+						}
+						change_first_name = Pontios
+					}
+					0 = {
+						modifier = {
+							NOT = {
+								location.duchy ?= title:d_poitou
+							}
+							add = 2
+						}
+						random_list = {
+							1 = {
+								change_first_name = Ranulf
+							}
+							1 = {
+								change_first_name = Savaric
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							religion = {
+								is_in_family = rf_abrahamic
+							}
+							add = 1
+						}
+						change_first_name = David
+					}
+					0 = {
+						modifier = {
+							has_religion = religion:christianity_religion
+							add = 9
+						}
+						random_list = {
+							1 = {
+								change_first_name = Dominic
+							}
+							1 = {
+								change_first_name = Durant
+							}
+							1 = {
+								change_first_name = Gervais
+							}
+							1 = {
+								change_first_name = Gregory
+							}
+							1 = {
+								change_first_name = George
+							}
+							1 = {
+								change_first_name = Laurence
+							}
+							1 = {
+								change_first_name = Matthew
+							}
+							1 = {
+								change_first_name = Martin
+							}
+							1 = {
+								change_first_name = Maurice
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							OR = {
+								has_religion = religion:christianity_religion
+								has_religion = religion:judaism_religion
+							}
+							add = 1
+						}
+						change_first_name = Michael
+					}
+					1 = {
+						change_first_name = Alan
+					}
+					1 = {
+						change_first_name = Alexander
+					}
+					1 = {
+						change_first_name = Ancel
+					}
+					1 = {
+						change_first_name = Anselm
+					}
+					1 = {
+						change_first_name = Anthony
+					}
+					1 = {
+						change_first_name = Bernwald
+					}
+					1 = {
+						change_first_name = Burchard
+					}
+					1 = {
+						change_first_name = Daimbert
+					}
+					1 = {
+						change_first_name = Ebles
+					}
+					1 = {
+						change_first_name = Frederick
+					}
+					1 = {
+						change_first_name = Folkher
+					}
+					1 = {
+						change_first_name = Francis
+					}
+					1 = {
+						change_first_name = Wigbert
+					}
+					1 = {
+						change_first_name = Wighard
+					}
+					1 = {
+						change_first_name = Guiscard
+					}
+					1 = {
+						change_first_name = Hilduin
+					}
+					1 = {
+						change_first_name = Gausram
+					}
+					1 = {
+						change_first_name = Lisiard
+					}
+					1 = {
+						change_first_name = Meginher
+					}
+					1 = {
+						change_first_name = Edgar
+					}
+					1 = {
+						change_first_name = Oliver
+					}
+					1 = {
+						change_first_name = Humphrey
+					}
+					1 = {
+						change_first_name = Ulrich
+					}
+					1 = {
+						change_first_name = Pagan
+					}
+					1 = {
+						change_first_name = Reginbald
+					}
+					1 = {
+						change_first_name = Rurik
+					}
+					1 = {
+						change_first_name = Sigwin
+					}
+					1 = {
+						change_first_name = Isembard
+					}
+					1 = {
+						change_first_name = Ivo
+					}
 				}
-				1 = {
-					change_first_name = Ecghard
-				}
-				1 = {
-					change_first_name = Athelwulf
-				}
-				1 = {
-					change_first_name = Ansgar
-				}
-				1 = {
-					change_first_name = Ansfrid
-				}
-				1 = {
-					change_first_name = Askell
-				}
-				1 = {
-					change_first_name = Arthur
-				}
-				1 = {
-					change_first_name = Bernher
-				}
-				1 = {
-					change_first_name = Claudius
-				}
-				1 = {
-					change_first_name = Cuno
-				}
-				1 = {
-					change_first_name = Conrad
-				}
-				1 = {
-					change_first_name = Theodotos
-				}
-				1 = {
-					change_first_name = Edward
-				}
-				1 = {
-					change_first_name = Engelbert
-				}
-				1 = {
-					change_first_name = Eberwin
-				}
-				1 = {
-					change_first_name = Germanus
-				}
-				1 = {
-					change_first_name = Hardwin
-				}
-				1 = {
-					change_first_name = Harold
-				}
-				1 = {
-					change_first_name = Herman
-				}
-				1 = {
-					change_first_name = Isnard
-				}
-				1 = {
-					change_first_name = Lancelot
-				}
-				1 = {
-					change_first_name = Leonard
-				}
-				1 = {
-					change_first_name = Lothar
-				}
-				1 = {
-					change_first_name = Nibelung
-				}
-				1 = {
-					change_first_name = Noel
-				}
-				1 = {
-					change_first_name = Odin
-				}
-				1 = {
-					change_first_name = Percival
-				}
-				1 = {
-					change_first_name = Philibert
-				}
-				1 = {
-					change_first_name = Roland
-				}
-				1 = {
-					change_first_name = Roscelin
-				}
-				1 = {
-					change_first_name = Sylvester
-				}
-				1 = {
-					change_first_name = Sulpice
-				}
-				1 = {
-					change_first_name = Drystan
-				}
-				1 = {
-					change_first_name = Vilain
-				}
-				1 = {
-					change_first_name = Eogan
+			}
+			1 = {
+				random_list = {
+					0 = {
+						modifier = {
+							NOT = {
+								location.kingdom ?= title:d_burgundy
+							}
+							has_religion = religion:christianity_religion
+							add = 1
+						}
+						change_first_name = Dalmatius
+					}
+					0 = {
+						modifier = {
+							NOR = {
+								location.duchy ?= title:d_burgundy
+								location.kingdom ?= title:d_poitou
+							}
+							add = 1
+						}
+						change_first_name = Landric
+					}
+					0 = {
+						modifier = {
+							NOT = {
+								location.kingdom ?= title:d_dauphine
+							}
+							add = 1
+						}
+						change_first_name = Guigo
+					}
+					0 = {
+						modifier = {
+							NOT = {
+								location.kingdom ?= title:d_flanders
+							}
+							has_religion = religion:christianity_religion
+							add = 1
+						}
+						change_first_name = Florentius
+					}
+					0 = {
+						modifier = {
+							NOT = {
+								location.kingdom ?= title:k_burgundy
+							}
+							add = 1
+						}
+						change_first_name = Rudolf
+					}
+					0 = {
+						modifier = {
+							religion = {
+								is_in_family = rf_abrahamic
+							}
+							add = 1
+						}
+						change_first_name = Abel
+					}
+					0 = {
+						modifier = {
+							has_religion = religion:christianity_religion
+							add = 11
+						}
+						random_list = {
+							1 = {
+								change_first_name = Hilarius
+							}
+							1 = {
+								change_first_name = Benedict
+							}
+							1 = {
+								change_first_name = Clement
+							}
+							1 = {
+								change_first_name = Christian
+							}
+							1 = {
+								change_first_name = Dionysios
+							}
+							1 = {
+								change_first_name = Luke
+							}
+							1 = {
+								change_first_name = Marcel
+							}
+							1 = {
+								change_first_name = Marcus
+							}
+							1 = {
+								change_first_name = Paul
+							}
+							1 = {
+								change_first_name = Samson
+							}
+							1 = {
+								change_first_name = Vincent
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							OR = {
+								has_religion = religion:christianity_religion
+								has_religion = religion:judaism_religion
+							}
+							add = 1
+						}
+						change_first_name = Daniel
+					}
+					1 = {
+						change_first_name = Abelard
+					}
+					1 = {
+						change_first_name = Ecghard
+					}
+					1 = {
+						change_first_name = Athelwulf
+					}
+					1 = {
+						change_first_name = Ansgar
+					}
+					1 = {
+						change_first_name = Ansfrid
+					}
+					1 = {
+						change_first_name = Askell
+					}
+					1 = {
+						change_first_name = Arthur
+					}
+					1 = {
+						change_first_name = Bernher
+					}
+					1 = {
+						change_first_name = Claudius
+					}
+					1 = {
+						change_first_name = Cuno
+					}
+					1 = {
+						change_first_name = Conrad
+					}
+					1 = {
+						change_first_name = Theodotos
+					}
+					1 = {
+						change_first_name = Edward
+					}
+					1 = {
+						change_first_name = Engelbert
+					}
+					1 = {
+						change_first_name = Eberwin
+					}
+					1 = {
+						change_first_name = Germanus
+					}
+					1 = {
+						change_first_name = Hardwin
+					}
+					1 = {
+						change_first_name = Harold
+					}
+					1 = {
+						change_first_name = Herman
+					}
+					1 = {
+						change_first_name = Isnard
+					}
+					1 = {
+						change_first_name = Lancelot
+					}
+					1 = {
+						change_first_name = Leonard
+					}
+					1 = {
+						change_first_name = Lothar
+					}
+					1 = {
+						change_first_name = Nibelung
+					}
+					1 = {
+						change_first_name = Noel
+					}
+					1 = {
+						change_first_name = Odin
+					}
+					1 = {
+						change_first_name = Percival
+					}
+					1 = {
+						change_first_name = Philibert
+					}
+					1 = {
+						change_first_name = Roland
+					}
+					1 = {
+						change_first_name = Roscelin
+					}
+					1 = {
+						change_first_name = Sylvester
+					}
+					1 = {
+						change_first_name = Sulpice
+					}
+					1 = {
+						change_first_name = Drystan
+					}
+					1 = {
+						change_first_name = Vilain
+					}
+					1 = {
+						change_first_name = Eogan
+					}
 				}
 			}
 		}
